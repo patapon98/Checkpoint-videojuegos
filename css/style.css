@@ -309,3 +309,20 @@ footer{border-top:1px solid var(--line);margin-top:40px}
   .countdown{flex-direction:column;align-items:flex-start}
   .pros-cons{grid-template-columns:1fr}
 }
+
+
+/* Herramientas y enlaces de compra del calendario */
+.calendar-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px 0 12px}
+.release-search{display:flex;align-items:center;gap:10px;min-width:min(100%,360px);padding:11px 14px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.035);transition:border-color .2s,box-shadow .2s}
+.release-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,61,113,.12)}
+.release-search svg{width:18px;height:18px;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round}
+.release-search input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font:inherit}
+.release-search input::placeholder{color:var(--muted)}
+.release-count{color:var(--muted);font-size:.86rem;white-space:nowrap}
+.affiliate-link{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;margin-left:7px;border:1px solid rgba(255,255,255,.12);border-radius:7px;color:#ffb12b;background:rgba(255,177,43,.08);vertical-align:-5px;transition:color .2s,border-color .2s,background .2s,transform .2s}
+.affiliate-link:hover{color:#ffd073;border-color:rgba(255,177,43,.55);background:rgba(255,177,43,.16);transform:translateY(-1px)}
+.affiliate-link:focus-visible{outline:2px solid #ffb12b;outline-offset:2px}
+.affiliate-link svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.affiliate-link-static{margin:0 5px 0 0;width:22px;height:22px;pointer-events:none;vertical-align:-6px}
+.affiliate-disclosure{margin:7px 0 0;color:var(--muted);font-size:.78rem;line-height:1.55}
+@media(max-width:600px){.calendar-tools{align-items:stretch;flex-direction:column;gap:8px}.release-search{min-width:0;width:100%}.release-count{padding-left:2px}}

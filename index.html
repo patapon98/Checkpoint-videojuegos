@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moderlode — Reseñas y actualidad de videojuegos</title>
+<meta name="description" content="Reseñas de videojuegos escritas a mano, calendario de lanzamientos siempre al día y solo las noticias que importan. Sin ruido, sin clickbait.">
+<link rel="canonical" href="https://moderlode.alexanderblanc3.workers.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Moderlode">
+<meta property="og:title" content="Moderlode — Reseñas y actualidad de videojuegos">
+<meta property="og:description" content="Reseñas escritas a mano, calendario de lanzamientos y solo las noticias que importan.">
+<meta property="og:url" content="https://moderlode.alexanderblanc3.workers.dev/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Moderlode",
+  "url": "https://moderlode.alexanderblanc3.workers.dev/",
+  "description": "Reseñas de videojuegos, calendario de lanzamientos y noticias.",
+  "inLanguage": "es"
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track" id="ticker">
+    <span><b>Nueva reseña</b> Rubinite (80) — el boss rush del año</span>
+    <span><b>GTA VI</b> confirmado para el 19 de noviembre — la cuenta atrás ha empezado</span>
+    <span><b>Reseña 90</b> Resident Evil Requiem, el mejor RE en años</span>
+    <span><b>Elden Ring</b> llega a Switch 2 el 28 de agosto</span>
+    <span><b>Nueva reseña</b> Rubinite (80) — el boss rush del año</span>
+    <span><b>GTA VI</b> confirmado para el 19 de noviembre — la cuenta atrás ha empezado</span>
+    <span><b>Reseña 90</b> Resident Evil Requiem, el mejor RE en años</span>
+    <span><b>Elden Ring</b> llega a Switch 2 el 28 de agosto</span>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Moder<span>lode</span></a>
+    <nav>
+      <a href="#resenas" data-i18n="nav_reviews">Reseñas</a>
+      <a href="#calendario" data-i18n="nav_calendar">Calendario</a>
+      <a href="#noticias" data-i18n="nav_news">Noticias</a>
+      <a href="#newsletter" class="always" data-i18n="nav_sub">Suscríbete</a>
+      <div class="lang-toggle">
+        <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="wrap hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="line kicker" data-i18n="hero_kicker">Blog de videojuegos</div>
+      <h1 class="line" data-i18n-html="hero_title">Crítica con criterio, <em>hype</em> con calendario.</h1>
+      <p class="line" data-i18n="hero_sub">Reseñas escritas a mano, un calendario de lanzamientos siempre al día y las noticias que de verdad importan. Sin ruido, sin clickbait.</p>
+      <div class="line">
+        <a href="#resenas" class="btn" data-i18n="hero_cta1">Leer reseñas</a>
+        <a href="#calendario" class="btn ghost" data-i18n="hero_cta2">Ver lanzamientos</a>
+      </div>
+    </div>
+    <a class="hero-card" id="heroCard" href="resenas/resident-evil-requiem.html">
+      <div class="score">90</div>
+      <div class="tag" data-i18n="hero_card_tag">Reseña destacada</div>
+      <h3>Resident Evil Requiem</h3>
+      <p data-i18n="hero_card_sub">Terror y acción combinados en uno de los mejores RE jamás hechos.</p>
+    </a>
+  </div>
+</div>
+
+<!-- RESEÑAS -->
+<section id="resenas" class="wrap reveal">
+  <div class="kicker" data-i18n="rev_kicker">Análisis</div>
+  <h2 class="section-title" data-i18n="rev_title">Últimas reseñas</h2>
+  <p class="section-sub" data-i18n="rev_sub">Análisis en profundidad de los juegos que voy terminando. Opinión personal, sin notas infladas.</p>
+  <div class="cards stagger" id="cardsGrid">
+    <a class="card" data-tilt href="resenas/rubinite.html">
+      <div class="card-art art-6"><img src="img/rubinite-2.jpg" alt="Rubinite" loading="lazy">
+        <div class="ring" style="--target:25"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">80</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Boss rush · PC</div>
+        <h3>Rubinite</h3>
+        <p>Un boss rush singular con pixel art maravilloso y una de las mecánicas de combate más originales del año.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/ac-black-flag-resynced.html">
+      <div class="card-art art-12"><span class="initial">BF</span>
+        <div class="ring" style="--target:29"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">77</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Acción · PC / PS5 / Xbox</div>
+        <h3>AC Black Flag Resynced</h3>
+        <p>Vuelta al Caribe con el remake del clásico pirata de Ubisoft. Puntuación desglosada; análisis en camino.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/rhythm-paradise-groove.html">
+      <div class="card-art art-7"><span class="initial">♪</span>
+        <div class="ring" style="--target:25"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">80</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Ritmo · Switch</div>
+        <h3>Rhythm Paradise Groove</h3>
+        <p>El regreso de la saga de ritmo más carismática de Nintendo tras una década. El alma de la fiesta.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/creature-kitchen.html">
+      <div class="card-art art-10"><span class="initial">CK</span>
+        <div class="ring" style="--target:25"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">80</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Indie / Puzzle · PC</div>
+        <h3>Creature Kitchen</h3>
+        <p>Cocina para monstruos sibaritas: un caramelito con un loop adictivo y una atmósfera que recuerda a Inscryption.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/saros.html">
+      <div class="card-art art-8"><span class="initial">S</span>
+        <div class="ring" style="--target:18"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">86</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Acción / Roguelite · PS5</div>
+        <h3>Saros</h3>
+        <p>La secuela espiritual de Returnal supera al original: el gameplay más satisfactorio que he probado en años.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/pragmata.html">
+      <div class="card-art art-5"><span class="initial">P</span>
+        <div class="ring" style="--target:18"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">86</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Ciencia ficción · PS5 / PC</div>
+        <h3>Pragmata</h3>
+        <p>La nueva IP de Capcom mezcla shooter y puzzles de hackeo con una de las mejores relaciones entre personajes del año.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/resident-evil-requiem.html">
+      <div class="card-art art-4"><span class="initial">RE</span>
+        <div class="ring" style="--target:13"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">90</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Survival horror · PC / PS5</div>
+        <h3>Resident Evil Requiem</h3>
+        <p>Grace y Leon protagonizan uno de los mejores Resident Evil jamás hechos. Terror y acción en su máxima expresión.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/reanimal.html">
+      <div class="card-art art-9"><span class="initial">R</span>
+        <div class="ring" style="--target:24"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">81</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Cozy horror · PC / PS5 / Xbox</div>
+        <h3>REANIMAL</h3>
+        <p>Tarsier vuelve con un cozy horror cooperativo retorcido, grotesco y bello. Candidato a indie del año.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+    <a class="card" data-tilt href="resenas/cairn.html">
+      <div class="card-art art-11"><span class="initial">C</span>
+        <div class="ring" style="--target:18"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">86</span></div>
+      </div>
+      <div class="card-body">
+        <div class="meta">Aventura / Escalada · PC / PS5</div>
+        <h3>Cairn</h3>
+        <p>El mejor juego de escalada jamás hecho. Una experiencia única de comunión con la montaña.</p>
+        <span class="read"><u>Leer reseña</u></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CALENDARIO -->
+<section id="calendario" class="reveal">
+  <div class="kicker" data-i18n="cal_kicker">Próximos lanzamientos</div>
+  <h2 class="section-title" data-i18n="cal_title">Calendario 2026</h2>
+  <p class="section-sub" data-i18n="cal_sub">Los lanzamientos más importantes de los próximos meses, siempre al día.</p>
+
+  <div class="countdown">
+    <div class="cd-label">
+      <b>Grand Theft Auto VI</b>
+      <span data-i18n="cd_sub">19 de noviembre de 2026 · PS5 · Xbox Series X|S</span>
+    </div>
+    <div class="cd-units">
+      <div class="cd-unit"><b id="cd-d">—</b><span data-i18n="cd_days">Días</span></div>
+      <div class="cd-unit"><b id="cd-h">—</b><span data-i18n="cd_hours">Horas</span></div>
+      <div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div>
+      <div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div>
+    </div>
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="filter on" data-f="all" data-i18n="f_all">Todos</button>
+    <button class="filter" data-f="ps5">PS5</button>
+    <button class="filter" data-f="xbox">Xbox</button>
+    <button class="filter" data-f="switch">Switch 2</button>
+    <button class="filter" data-f="pc">PC</button>
+  </div>
+
+  <div id="releases">
+    <div class="month-label" data-month data-i18n="m_aug">Agosto 2026</div>
+    <div class="release" data-plat="ps5 xbox pc"><div class="day">27<small>AGO</small></div><div><h4>Star Wars: Zero Company</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox pc switch"><div class="day">27<small>AGO</small></div><div><h4>Metal Gear Solid Collection Vol. 2</h4><div class="platforms">PS5 · Xbox · PC · Switch 2</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
+    <div class="release" data-plat="switch"><div class="day">28<small>AGO</small></div><div><h4>Elden Ring: Tarnished Edition</h4><div class="platforms">Switch 2</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+
+    <div class="month-label" data-month data-i18n="m_sep">Septiembre 2026</div>
+    <div class="release" data-plat="switch"><div class="day">24<small>SEP</small></div><div><h4>Dragon Quest XI S — Definitive Edition</h4><div class="platforms">Switch 2</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
+
+    <div class="month-label" data-month data-i18n="m_oct">Octubre 2026</div>
+    <div class="release" data-plat="xbox pc"><div class="day">6<small>OCT</small></div><div><h4>Gears of War: E-Day</h4><div class="platforms">Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox pc"><div class="day">8<small>OCT</small></div><div><h4>Kingdom Hearts Collection</h4><div class="platforms">PS5 · Xbox · PC</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
+    <div class="release" data-plat="ps5 xbox pc switch"><div class="day">9<small>OCT</small></div><div><h4>Dragon's Dogma 2: Dark Arisen</h4><div class="platforms">PS5 · Xbox · PC · Switch 2</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox pc"><div class="day">13<small>OCT</small></div><div><h4>Planet Zoo 2</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
+
+    <div class="month-label" data-month data-i18n="m_nov">Noviembre 2026</div>
+    <div class="release" data-plat="ps5 xbox"><div class="day">19<small>NOV</small></div><div><h4>Grand Theft Auto VI</h4><div class="platforms">PS5 · Xbox Series X|S</div></div><span class="hype hype-max" data-i18n="hype_max">El evento del año</span></div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section id="noticias" class="wrap reveal">
+  <div class="kicker" data-i18n="news_kicker">Actualidad</div>
+  <h2 class="section-title" data-i18n="news_title">Solo lo relevante</h2>
+  <p class="section-sub" data-i18n="news_sub">Un resumen diario de las 3-5 noticias que de verdad merecen tu tiempo. Nada de notas de prensa recicladas.</p>
+
+  <div class="news-list stagger">
+    <div class="news-item">
+      <span class="date">20 JUL 2026</span>
+      <div>
+        <h3 data-i18n="n1_t">Take-Two reafirma la fecha de GTA VI: 19 de noviembre</h3>
+        <p data-i18n="n1_p">El CEO Strauss Zelnick vuelve a confirmar la fecha en un documento oficial y disipa los rumores de un tercer retraso. El marketing arranca este verano.</p>
+      </div>
+      <span class="cat">GTA VI</span>
+    </div>
+    <div class="news-item">
+      <span class="date">14 JUL 2026</span>
+      <div>
+        <h3 data-i18n="n2_t">Agosto abre la temporada alta: Elden Ring llega a Switch 2</h3>
+        <p data-i18n="n2_p">Tarnished Edition inaugura el 28 de agosto uno de los tramos más cargados del calendario reciente, con septiembre y octubre repletos de lanzamientos.</p>
+      </div>
+      <span class="cat">Nintendo</span>
+    </div>
+    <div class="news-item">
+      <span class="date">8 JUL 2026</span>
+      <div>
+        <h3 data-i18n="n3_t">Wuthering Waves aterriza en Xbox y Where Winds Meet estrena expansión</h3>
+        <p data-i18n="n3_p">Los free-to-play siguen ganando terreno en consola: 'Hidden Mountain' es la primera gran expansión de Where Winds Meet.</p>
+      </div>
+      <span class="cat">F2P</span>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="reveal" style="padding:0 24px">
+  <div class="newsletter">
+    <h2 data-i18n="nl_title">Un email a la semana. Cero spam.</h2>
+    <p data-i18n="nl_sub">Las reseñas nuevas, el calendario actualizado y las 5 noticias de la semana, cada viernes en tu bandeja.</p>
+    <form onsubmit="event.preventDefault();this.innerHTML='<strong>✓ ¡Gracias por suscribirte!</strong>'">
+      <input type="email" placeholder="tu@email.com" required>
+      <button class="btn" type="submit" data-i18n="nl_btn">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Moderlode</span>
+    <span data-i18n="foot2">Reseñas · Calendario · Noticias · Contacto</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

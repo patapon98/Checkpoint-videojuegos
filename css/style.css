@@ -71,12 +71,14 @@ h2.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);f
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:10px}
 .btn.ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);box-shadow:none}
 
-.hero-card{position:relative;background:linear-gradient(145deg,#1c1b22,#3d2b3a 60%,#e4572e);border-radius:24px;aspect-ratio:4/4.6;padding:28px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 24px 60px -24px rgba(22,21,26,.4);transform:rotate(2deg);transition:transform .18s ease, box-shadow .3s ease;will-change:transform}
-.hero-card::before{content:'';position:absolute;inset:0;border-radius:24px;background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.14),transparent 40%);pointer-events:none}
-.hero-card .tag{align-self:flex-start;background:rgba(255,255,255,.16);backdrop-filter:blur(4px);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:14px}
-.hero-card h3{font-family:var(--serif);font-size:1.7rem;font-weight:600;line-height:1.15;margin-bottom:6px}
-.hero-card p{font-size:.88rem;opacity:.85}
-.hero-card .score{position:absolute;top:18px;right:26px;font-family:var(--serif);font-size:4.2rem;font-weight:700}
+.hero-card{position:relative;background:linear-gradient(145deg,#1c1b22,#3d2b3a 60%,#e4572e);border-radius:24px;aspect-ratio:4/4.6;padding:28px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 24px 60px -24px rgba(22,21,26,.4);transform:rotate(2deg);transition:transform .18s ease, box-shadow .3s ease;will-change:transform;overflow:hidden}
+.hero-card>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-card::before{content:'';position:absolute;inset:0;border-radius:24px;background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.14),transparent 40%);pointer-events:none;z-index:1}
+.hero-card::after{content:'';position:absolute;inset:0;border-radius:24px;background:linear-gradient(180deg,rgba(15,12,20,.1) 0%,rgba(15,12,20,.5) 55%,rgba(15,12,20,.92) 100%);z-index:1}
+.hero-card .tag{align-self:flex-start;background:rgba(255,255,255,.16);backdrop-filter:blur(4px);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:14px;position:relative;z-index:2}
+.hero-card h3{font-family:var(--serif);font-size:1.7rem;font-weight:600;line-height:1.15;margin-bottom:6px;position:relative;z-index:2}
+.hero-card p{font-size:.88rem;opacity:.85;position:relative;z-index:2}
+.hero-card .score{position:absolute;top:18px;right:26px;font-family:var(--serif);font-size:4.2rem;font-weight:700;z-index:2}
 
 /* ---------- Review cards ---------- */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;perspective:1200px}
@@ -265,6 +267,8 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .pill-filter.on{background:var(--ink);border-color:var(--ink);color:#fff}
 
 .view-all-wrap{text-align:center;margin-top:40px}
+#calendario .btn.ghost{color:#fdfcfa;border-color:rgba(255,255,255,.28)}
+#calendario .btn.ghost:hover{color:#ff8c66;border-color:#ff8c66;background:rgba(255,140,102,.12)}
 
 /* ---------- Desglose de puntuación ---------- */
 .breakdown{margin:38px 0;border:1px solid var(--line);border-radius:18px;padding:28px}

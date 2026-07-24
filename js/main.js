@@ -1,5 +1,5 @@
 /* ============================================
-   CHECKPOINT — JS compartido
+   CHECKPOINT: JS compartido
    ============================================ */
 
 /* ---------- i18n (solo en la home) ---------- */
@@ -19,11 +19,12 @@ const i18n = {
     rev3:"Tras años de acceso anticipado, la versión final demuestra que había un gran juego detrás del meme.",
     read_more:"Leer reseña",
     view_all:"Ver todas las reseñas →",
+    view_all_cal:"Ver calendario completo →",
     cal_kicker:"Próximos lanzamientos",cal_title:"Calendario 2026",
     cal_sub:"Los lanzamientos más importantes de los próximos meses, siempre al día.",
     cd_sub:"19 de noviembre de 2026 · PS5 · Xbox Series X|S",cd_days:"Días",cd_hours:"Horas",
     f_all:"Todos",
-    m_aug:"Agosto 2026",m_sep:"Septiembre 2026",m_oct:"Octubre 2026",m_nov:"Noviembre 2026",
+    m_jul:"Julio 2026",m_aug:"Agosto 2026",m_sep:"Septiembre 2026",m_oct:"Octubre 2026",m_nov:"Noviembre 2026",
     hype_high:"Hype alto",hype_mid:"Interesante",hype_max:"El evento del año",
     news_kicker:"Actualidad",news_title:"Solo lo relevante",
     news_sub:"Un resumen diario de las 3-5 noticias que de verdad merecen tu tiempo. Nada de notas de prensa recicladas.",
@@ -53,11 +54,12 @@ const i18n = {
     rev3:"After years in early access, the final release proves there was a great game behind the meme.",
     read_more:"Read review",
     view_all:"See all reviews →",
+    view_all_cal:"See full calendar →",
     cal_kicker:"Upcoming releases",cal_title:"2026 Calendar",
     cal_sub:"The most important releases of the coming months, always up to date.",
     cd_sub:"November 19, 2026 · PS5 · Xbox Series X|S",cd_days:"Days",cd_hours:"Hours",
     f_all:"All",
-    m_aug:"August 2026",m_sep:"September 2026",m_oct:"October 2026",m_nov:"November 2026",
+    m_jul:"July 2026",m_aug:"August 2026",m_sep:"September 2026",m_oct:"October 2026",m_nov:"November 2026",
     hype_high:"High hype",hype_mid:"Worth a look",hype_max:"Event of the year",
     news_kicker:"Now",news_title:"Only what matters",
     news_sub:"A daily digest of the 3-5 stories actually worth your time. No recycled press releases.",
@@ -174,3 +176,29 @@ if(filters){
     });
   });
 }
+
+/* ---------- Slider de imágenes ---------- */
+document.querySelectorAll('[data-slider]').forEach(root=>{
+  const track=root.querySelector('.slider-track');
+  const slides=[...root.querySelectorAll('.slide')];
+  const dotsWrap=root.querySelector('.slider-dots');
+  let i=0;
+  slides.forEach((_,n)=>{
+    const b=document.createElement('button');
+    if(n===0) b.classList.add('on');
+    b.setAttribute('aria-label','Ir a la foto '+(n+1));
+    b.addEventListener('click',()=>go(n));
+    dotsWrap.appendChild(b);
+  });
+  const dots=[...dotsWrap.children];
+  function go(n){
+    i=(n+slides.length)%slides.length;
+    track.style.transform=`translateX(-${i*100}%)`;
+    dots.forEach((d,k)=>d.classList.toggle('on',k===i));
+  }
+  root.querySelector('.prev').addEventListener('click',()=>go(i-1));
+  root.querySelector('.next').addEventListener('click',()=>go(i+1));
+  let timer=setInterval(()=>go(i+1),4500);
+  root.addEventListener('mouseenter',()=>clearInterval(timer));
+  root.addEventListener('mouseleave',()=>{timer=setInterval(()=>go(i+1),4500)});
+});

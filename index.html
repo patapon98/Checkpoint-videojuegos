@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moderlode — Reseñas y actualidad de videojuegos</title>
+<title>Moderlode: Reseñas y actualidad de videojuegos</title>
 <meta name="description" content="Reseñas de videojuegos escritas a mano, calendario de lanzamientos siempre al día y solo las noticias que importan. Sin ruido, sin clickbait.">
 <link rel="canonical" href="https://moderlode.alexanderblanc3.workers.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moderlode">
-<meta property="og:title" content="Moderlode — Reseñas y actualidad de videojuegos">
+<meta property="og:title" content="Moderlode: Reseñas y actualidad de videojuegos">
 <meta property="og:description" content="Reseñas escritas a mano, calendario de lanzamientos y solo las noticias que importan.">
 <meta property="og:url" content="https://moderlode.alexanderblanc3.workers.dev/">
 <meta name="twitter:card" content="summary">
@@ -32,12 +32,12 @@
 
 <div class="ticker">
   <div class="ticker-track" id="ticker">
-    <span><b>Nueva reseña</b> Rubinite (80) — el boss rush del año</span>
-    <span><b>GTA VI</b> confirmado para el 19 de noviembre — la cuenta atrás ha empezado</span>
+    <span><b>Nueva reseña</b> Rubinite (80): el boss rush del año</span>
+    <span><b>GTA VI</b> confirmado para el 19 de noviembre, la cuenta atrás ha empezado</span>
     <span><b>Reseña 90</b> Resident Evil Requiem, el mejor RE en años</span>
     <span><b>Elden Ring</b> llega a Switch 2 el 28 de agosto</span>
-    <span><b>Nueva reseña</b> Rubinite (80) — el boss rush del año</span>
-    <span><b>GTA VI</b> confirmado para el 19 de noviembre — la cuenta atrás ha empezado</span>
+    <span><b>Nueva reseña</b> Rubinite (80): el boss rush del año</span>
+    <span><b>GTA VI</b> confirmado para el 19 de noviembre, la cuenta atrás ha empezado</span>
     <span><b>Reseña 90</b> Resident Evil Requiem, el mejor RE en años</span>
     <span><b>Elden Ring</b> llega a Switch 2 el 28 de agosto</span>
   </div>
@@ -48,7 +48,7 @@
     <a href="index.html" class="logo">Moder<span>lode</span></a>
     <nav>
       <a href="resenas.html" data-i18n="nav_reviews">Reseñas</a>
-      <a href="#calendario" data-i18n="nav_calendar">Calendario</a>
+      <a href="calendario.html" data-i18n="nav_calendar">Calendario</a>
       <a href="#noticias" data-i18n="nav_news">Noticias</a>
       <a href="#newsletter" class="always" data-i18n="nav_sub">Suscríbete</a>
       <div class="lang-toggle">
@@ -90,7 +90,7 @@
   <div class="cards stagger" id="cardsGrid">
     <a class="card" data-tilt href="resenas/rubinite.html">
       <div class="card-art art-6">
-        <img src="img/rubinite-2.jpg" alt="Rubinite" loading="lazy">
+        <img src="img/rubinite/rubinite-2.jpg" alt="Rubinite" loading="lazy">
         <div class="date-pill"><b>24</b><span>Jul</span></div>
         <div class="ring" style="--target:25"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">80</span></div>
       </div>
@@ -102,19 +102,21 @@
       </div>
     </a>
     <a class="card" data-tilt href="resenas/ac-black-flag-resynced.html">
-      <div class="card-art art-12"><span class="initial">BF</span>
+      <div class="card-art art-12">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751950/e38674a3067b5ac028974bbfb42c835d0cf27122/capsule_231x87.jpg" alt="AC Black Flag Resynced" loading="lazy">
         <div class="date-pill"><b>21</b><span>Jul</span></div>
         <div class="ring" style="--target:29"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">77</span></div>
       </div>
       <div class="card-body">
         <div class="meta">Acción · PC / PS5 / Xbox</div>
         <h3>AC Black Flag Resynced</h3>
-        <p>Vuelta al Caribe con el remake del clásico pirata de Ubisoft. Puntuación desglosada; análisis en camino.</p>
+        <p>Vuelta al Caribe con el remake del clásico pirata de Ubisoft. Puntuación desglosada, análisis en camino.</p>
         <span class="read"><u>Leer reseña</u></span>
       </div>
     </a>
     <a class="card" data-tilt href="resenas/rhythm-paradise-groove.html">
-      <div class="card-art art-7"><span class="initial">♪</span>
+      <div class="card-art art-7">
+        <img src="img/rhythm%20heaven%20groove/rhythm_1.png" alt="Rhythm Paradise Groove" loading="lazy">
         <div class="date-pill"><b>10</b><span>Jul</span></div>
         <div class="ring" style="--target:25"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">80</span></div>
       </div>
@@ -150,31 +152,16 @@
     </div>
   </div>
 
-  <div class="filters" id="filters">
-    <button class="filter on" data-f="all" data-i18n="f_all">Todos</button>
-    <button class="filter" data-f="ps5">PS5</button>
-    <button class="filter" data-f="xbox">Xbox</button>
-    <button class="filter" data-f="switch">Switch 2</button>
-    <button class="filter" data-f="pc">PC</button>
+  <div id="releases">
+    <div class="release" data-plat="ps5 xbox pc"><div class="release-art"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2806050/c4569404286b4e8bc5810fbc11282d7b842d4e4a/capsule_231x87.jpg" alt="Halo: Campaign Evolved" loading="lazy"><div class="rdate"><b>28</b><span>Jul</span></div><a class="wish" href="https://store.steampowered.com/app/2806050/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Halo: Campaign Evolved</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="xbox ps5 pc"><div class="release-art"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/8051f36f9874f82c4d998354409343346b5f6b3f/capsule_231x87.jpg" alt="Beast of Reincarnation" loading="lazy"><div class="rdate"><b>4</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2001760/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Beast of Reincarnation</h4><div class="platforms">Xbox Series X|S · PS5 · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox pc"><div class="release-art"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2713000/0d06636f2a2c3dcf0b473c91212f36a0b3e2e1a8/capsule_231x87.jpg" alt="Resonance: A Plague Tale Legacy" loading="lazy"><div class="rdate"><b>27</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2713000/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Resonance: A Plague Tale Legacy</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="xbox pc ps5"><div class="release-art"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2075800/56484e8832119b4b37b3fa3a6a5ec23209cd835c/capsule_231x87.jpg" alt="Star Wars Zero Company" loading="lazy"><div class="rdate"><b>27</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2075800/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Star Wars Zero Company</h4><div class="platforms">Xbox Series X|S · PC · PS5</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox"><div class="release-art"><img src="https://static.wikia.nocookie.net/gtawiki/images/2/25/GTAVI-CoverArt.jpg/revision/latest/scale-to-width-down/700" alt="Grand Theft Auto VI" loading="lazy"><div class="rdate"><b>19</b><span>Nov</span></div></div><div><h4>Grand Theft Auto VI</h4><div class="platforms">PS5 · Xbox Series X|S</div></div><span class="hype hype-max" data-i18n="hype_max">El evento del año</span></div>
   </div>
 
-  <div id="releases">
-    <div class="month-label" data-month data-i18n="m_aug">Agosto 2026</div>
-    <div class="release" data-plat="ps5 xbox pc"><div class="day">27<small>AGO</small></div><div><h4>Star Wars: Zero Company</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="ps5 xbox pc switch"><div class="day">27<small>AGO</small></div><div><h4>Metal Gear Solid Collection Vol. 2</h4><div class="platforms">PS5 · Xbox · PC · Switch 2</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
-    <div class="release" data-plat="switch"><div class="day">28<small>AGO</small></div><div><h4>Elden Ring: Tarnished Edition</h4><div class="platforms">Switch 2</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-
-    <div class="month-label" data-month data-i18n="m_sep">Septiembre 2026</div>
-    <div class="release" data-plat="switch"><div class="day">24<small>SEP</small></div><div><h4>Dragon Quest XI S — Definitive Edition</h4><div class="platforms">Switch 2</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
-
-    <div class="month-label" data-month data-i18n="m_oct">Octubre 2026</div>
-    <div class="release" data-plat="xbox pc"><div class="day">6<small>OCT</small></div><div><h4>Gears of War: E-Day</h4><div class="platforms">Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="ps5 xbox pc"><div class="day">8<small>OCT</small></div><div><h4>Kingdom Hearts Collection</h4><div class="platforms">PS5 · Xbox · PC</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
-    <div class="release" data-plat="ps5 xbox pc switch"><div class="day">9<small>OCT</small></div><div><h4>Dragon's Dogma 2: Dark Arisen</h4><div class="platforms">PS5 · Xbox · PC · Switch 2</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="ps5 xbox pc"><div class="day">13<small>OCT</small></div><div><h4>Planet Zoo 2</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-mid" data-i18n="hype_mid">Interesante</span></div>
-
-    <div class="month-label" data-month data-i18n="m_nov">Noviembre 2026</div>
-    <div class="release" data-plat="ps5 xbox"><div class="day">19<small>NOV</small></div><div><h4>Grand Theft Auto VI</h4><div class="platforms">PS5 · Xbox Series X|S</div></div><span class="hype hype-max" data-i18n="hype_max">El evento del año</span></div>
+  <div class="view-all-wrap">
+    <a href="calendario.html" class="btn ghost" data-i18n="view_all_cal">Ver calendario completo →</a>
   </div>
 </section>
 

@@ -156,25 +156,40 @@ if(cdD){
   tick();setInterval(tick,1000);
 }
 
-/* ---------- Filtros del calendario ---------- */
+/* ---------- Búsqueda y filtros del calendario ---------- */
 const filters=document.getElementById('filters');
+const releaseSearch=document.getElementById('releaseSearch');
+const releaseCount=document.getElementById('releaseCount');
 if(filters){
-  filters.addEventListener('click',e=>{
-    const btn=e.target.closest('.filter'); if(!btn)return;
-    document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('on',b===btn));
-    const f=btn.dataset.f;
-    document.querySelectorAll('.release').forEach(r=>{
-      r.classList.toggle('hide', f!=='all' && !r.dataset.plat.split(' ').includes(f));
+  let activePlatform='all';
+  const applyReleaseFilters=()=>{
+    const query=(releaseSearch?.value||'').trim().toLocaleLowerCase('es');
+    let visible=0;
+    document.querySelectorAll('#releases .release').forEach(r=>{
+      const platformMatch=activePlatform==='all'||r.dataset.plat.split(' ').includes(activePlatform);
+      const title=(r.querySelector('h4')?.textContent||'').toLocaleLowerCase('es');
+      const show=platformMatch&&(!query||title.includes(query));
+      r.classList.toggle('hide',!show);
+      if(show) visible++;
     });
-    document.querySelectorAll('[data-month]').forEach(m=>{
+    document.querySelectorAll('#releases [data-month]').forEach(m=>{
       let el=m.nextElementSibling, any=false;
-      while(el && !el.hasAttribute('data-month')){
-        if(el.classList.contains('release') && !el.classList.contains('hide')) any=true;
+      while(el&&!el.hasAttribute('data-month')){
+        if(el.classList.contains('release')&&!el.classList.contains('hide')) any=true;
         el=el.nextElementSibling;
       }
       m.style.display=any?'':'none';
     });
+    if(releaseCount) releaseCount.textContent=visible+' '+(visible===1?'juego':'juegos');
+  };
+  filters.addEventListener('click',e=>{
+    const btn=e.target.closest('.filter'); if(!btn)return;
+    document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('on',b===btn));
+    activePlatform=btn.dataset.f;
+    applyReleaseFilters();
   });
+  releaseSearch?.addEventListener('input',applyReleaseFilters);
+  applyReleaseFilters();
 }
 
 /* ---------- Slider de imágenes ---------- */

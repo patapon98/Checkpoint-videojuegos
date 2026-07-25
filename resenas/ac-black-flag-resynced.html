@@ -34,6 +34,10 @@
 :root{--accent:#b3872a;--accent-soft:#f7f0de}
 body{background:#fdfcf8}
 .verdict .v-score{color:#e5c26a}
+
+/* Paleta oscura editorial de la reseña */
+html[data-theme="dark"]{--accent:#e4bd65;--accent-soft:#332713;--bg:#11100c;--card:#1c1912;--header-bg:rgba(17,16,12,.88);--line:#3b3424}
+html[data-theme="dark"] .verdict .v-score{color:#e4bd65}
 </style>
 <script>
 (function(){
@@ -100,7 +104,7 @@ body{background:#fdfcf8}
     <div class="v-score">77</div>
     <div class="v-text">
       <h3>Veredicto</h3>
-      <p>Un remake técnicamente impecable del clásico pirata. Análisis completo próximamente.</p>
+      <p><strong>Un remake técnicamente impecable del clásico pirata.</strong> Análisis completo próximamente.</p>
     </div>
   </div>
 </article>

@@ -1,3 +1,31 @@
+/* ---------- Tema claro / oscuro ---------- */
+const themeToggle=document.getElementById('themeToggle');
+const themeMedia=window.matchMedia('(prefers-color-scheme: dark)');
+function applyTheme(theme,persist=false){
+  const dark=theme==='dark';
+  document.documentElement.setAttribute('data-theme',theme);
+  document.documentElement.style.colorScheme=theme;
+  if(persist){
+    try{localStorage.setItem('moderlode-theme',theme);}catch(e){}
+  }
+  if(themeToggle){
+    themeToggle.setAttribute('aria-pressed',String(dark));
+    themeToggle.setAttribute('aria-label',dark?'Activar modo claro':'Activar modo oscuro');
+    themeToggle.title=dark?'Activar modo claro':'Activar modo oscuro';
+  }
+}
+if(themeToggle){
+  applyTheme(document.documentElement.getAttribute('data-theme')||'light');
+  themeToggle.addEventListener('click',()=>{
+    applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark',true);
+  });
+}
+themeMedia.addEventListener?.('change',event=>{
+  try{
+    if(!localStorage.getItem('moderlode-theme')) applyTheme(event.matches?'dark':'light');
+  }catch(e){}
+});
+
 /* ============================================
    CHECKPOINT: JS compartido
    ============================================ */

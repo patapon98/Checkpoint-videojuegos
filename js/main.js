@@ -7,6 +7,8 @@
     script.onload=onload||null;
     document.head.appendChild(script);
   };
+
+  load('site-nav.js');
   load('main-core.js',()=>load('calendar-labels.js',()=>{
     load('calendar-trailers.js');
     load('calendar-gcal.js');

@@ -25,6 +25,22 @@
     }).format(new Date(value + "T12:00:00Z"));
   }
 
+  /* Solo las noticias con tráiler propio (anuncios, fechas, lanzamientos) lo incluyen. */
+  function trailerLink(item, lang) {
+    if (!item.trailer?.url) return "";
+    const label = text(item.trailer.label, lang) || (lang === "en" ? "Watch trailer" : "Ver tráiler");
+    const title = text(item.title, lang);
+    const aria = lang === "en"
+      ? `Watch the official ${title} trailer on YouTube`
+      : `Ver el tráiler oficial de ${title} en YouTube`;
+    return `
+      <a class="news-trailer" href="${escapeHTML(item.trailer.url)}" target="_blank" rel="noopener noreferrer"
+         aria-label="${escapeHTML(aria)}">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>
+        <span>${escapeHTML(label)}</span>
+      </a>`;
+  }
+
   function sourceLinks(item, lang, compact) {
     const label = lang === "en" ? "Sources:" : "Fuentes:";
     const links = item.sources.map(source => `
@@ -33,7 +49,7 @@
         <span>${escapeHTML(source.label)}</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
       </a>`).join("");
-    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}</div>`;
+    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}</div>`;
   }
 
   function latestBadge(item, lang) {

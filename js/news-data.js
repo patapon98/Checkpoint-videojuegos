@@ -89,6 +89,10 @@ window.MODERLODE_NEWS = [
       es: "No es solo la fecha de uno de los grandes exclusivos de 2027. Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
       en: "This is more than a date for one of 2027's major exclusives. Santa Monica Studio has clarified how the next two God of War games will connect."
     },
+    trailer: {
+      url: "https://www.youtube.com/watch?v=HLMX2w3cwuE",
+      label: { es: "Ver tráiler", en: "Watch trailer" }
+    },
     sources: [
       {
         label: "PlayStation",
@@ -157,16 +161,15 @@ window.MODERLODE_NEWS = [
       es: "Es uno de los grandes lanzamientos de PlayStation para 2026 y ya tiene una fecha definitiva.",
       en: "It is one of PlayStation's biggest 2026 releases and now has a firm date."
     },
+    trailer: {
+      url: "https://www.youtube.com/watch?v=3Z42tBfBLJY",
+      label: { es: "Ver tráiler", en: "Watch trailer" }
+    },
     sources: [
       {
         label: "PlayStation Blog",
         type: { es: "Fuente oficial", en: "Official source" },
         url: "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
-      },
-      {
-        label: "IGN",
-        type: { es: "Tráiler", en: "Trailer" },
-        url: "https://www.youtube.com/watch?v=1RlTT-f_cIw"
       }
     ]
   },
@@ -226,6 +229,10 @@ window.MODERLODE_NEWS = [
       es: "La llegada simultánea a PlayStation confirma hasta qué punto Xbox está ampliando el alcance de sus franquicias históricas.",
       en: "Its simultaneous PlayStation release shows how far Xbox is expanding the reach of its historic franchises."
     },
+    trailer: {
+      url: "https://www.youtube.com/watch?v=5KhzCSeZxAU",
+      label: { es: "Ver tráiler", en: "Watch trailer" }
+    },
     sources: [
       {
         label: "Xbox Wire",
@@ -256,6 +263,10 @@ window.MODERLODE_NEWS = [
     why: {
       es: "Es una de las pruebas técnicas y comerciales más importantes para el catálogo third-party de Switch 2.",
       en: "It is one of the most important technical and commercial tests for Switch 2's third-party catalogue."
+    },
+    trailer: {
+      url: "https://www.youtube.com/watch?v=pMeYxev9PZM",
+      label: { es: "Ver tráiler", en: "Watch trailer" }
     },
     sources: [
       {

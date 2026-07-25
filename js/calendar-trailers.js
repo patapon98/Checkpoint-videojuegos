@@ -59,7 +59,10 @@
     ['Godzilla: Destroy All Monsters Melee','https://www.youtube.com/watch?v=w-veMlH2L-A'],
     ['Metaphor: ReFantazio','https://www.youtube.com/watch?v=FlccMxW_0bc'],
     ['Grand Theft Auto VI','https://www.youtube.com/watch?v=VQRLujxTm3c'],
+    ['Tomb Raider: Legacy of Atlantis','https://www.youtube.com/watch?v=fn1EREGsdFg'],
     ['God of War Laufey','https://www.youtube.com/watch?v=HLMX2w3cwuE'],
+    ['Persona 4 Revival','https://www.youtube.com/watch?v=Wg3Enwd7Ba4'],
+    ['Fable','https://www.youtube.com/watch?v=3iW1i78zFvk'],
     ['Elden Ring: Tarnished Edition','https://www.youtube.com/watch?v=pMeYxev9PZM']
   ]);
 

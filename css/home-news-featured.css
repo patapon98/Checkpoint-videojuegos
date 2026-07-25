@@ -1,0 +1,4 @@
+.news-home-flip-featured{position:relative;isolation:isolate;overflow:hidden;border-radius:26px}
+.news-home-flip-featured::before{content:"Destacada";position:absolute;top:22px;left:-48px;z-index:6;width:180px;padding:6px 0;text-align:center;transform:rotate(-45deg);transform-origin:center;background:linear-gradient(120deg,var(--home-news-b),var(--home-news-a));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 6px 14px -6px rgba(0,0,0,.45);pointer-events:none}
+html[lang="en"] .news-home-flip-featured::before{content:"Featured"}
+@media(max-width:540px){.news-home-flip-featured::before{top:16px;left:-40px;width:160px;font-size:.64rem;padding:5px 0}}

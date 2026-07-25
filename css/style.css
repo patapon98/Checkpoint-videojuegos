@@ -44,6 +44,14 @@ html[data-theme="dark"] body{
   background:var(--bg);
   color:var(--ink);
 }
+/* ---------- Transiciones entre páginas ---------- */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.42s;animation-timing-function:cubic-bezier(.22,1,.36,1)}
+::view-transition-old(root){animation-name:moderlode-fade-out}
+::view-transition-new(root){animation-name:moderlode-fade-in}
+@keyframes moderlode-fade-out{from{opacity:1}to{opacity:0}}
+@keyframes moderlode-fade-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:95px}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}

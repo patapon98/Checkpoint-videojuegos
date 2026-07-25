@@ -42,7 +42,7 @@
     .replaceAll('"','&quot;').replaceAll("'",'&#039;');
 
   function enhance(){
-    archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach(card=>{
+    archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach((card,i)=>{
       const item=window.MODERLODE_NEWS.find(entry=>entry.id===card.id);
       const body=card.querySelector('.news-archive-body');
       if(!item||!body) return;
@@ -84,6 +84,9 @@
       inner.append(front,back);
       card.replaceChildren(inner);
       card.dataset.flipReady='true';
+
+      card.style.transitionDelay=(Math.min(i,8)*70)+'ms';
+      requestAnimationFrame(()=>requestAnimationFrame(()=>card.classList.add('visible')));
     });
   }
 

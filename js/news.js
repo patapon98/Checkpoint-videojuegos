@@ -108,7 +108,7 @@
       ? `<span>${lang === "en" ? "Updated" : "Actualizado"} ${formatDate(item.updated, lang)}</span>`
       : "";
     return `
-      <article class="news-archive-card" id="${escapeHTML(item.id)}">
+      <article class="news-archive-card reveal" id="${escapeHTML(item.id)}">
         <div class="news-archive-date">
           ${latestBadge(item, lang)}
           <time datetime="${item.date}">${formatDate(item.date, lang)}</time>

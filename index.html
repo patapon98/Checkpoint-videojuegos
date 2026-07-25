@@ -42,15 +42,15 @@
 <body>
 
 <div class="ticker">
-  <div class="ticker-track" id="ticker">
-    <span><b>God of War Laufey</b> llegará a PS5 el 16 de febrero de 2027</span>
-    <span><b>PlayStation</b> dejará de producir discos para nuevos juegos en 2028</span>
-    <span><b>Xbox</b> estrena la retrocompatibilidad de sus clásicos en PC</span>
-    <span><b>Industria</b> Xbox recortará 3.200 empleos durante su reestructuración</span>
-    <span><b>God of War Laufey</b> llegará a PS5 el 16 de febrero de 2027</span>
-    <span><b>PlayStation</b> dejará de producir discos para nuevos juegos en 2028</span>
-    <span><b>Xbox</b> estrena la retrocompatibilidad de sus clásicos en PC</span>
-    <span><b>Industria</b> Xbox recortará 3.200 empleos durante su reestructuración</span>
+  <div class="ticker-track" id="ticker" aria-label="Últimas noticias">
+    <a href="noticias.html#god-of-war-laufey-fecha"><b>God of War Laufey</b> llegará a PS5 el 16 de febrero de 2027</a>
+    <a href="noticias.html#playstation-fin-formato-fisico"><b>PlayStation</b> dejará de producir discos para nuevos juegos en 2028</a>
+    <a href="noticias.html#xbox-retrocompatibilidad-pc"><b>Xbox</b> estrena la retrocompatibilidad de sus clásicos en PC</a>
+    <a href="noticias.html#xbox-reestructuracion-despidos"><b>Industria</b> Xbox recortará 3.200 empleos durante su reestructuración</a>
+    <a href="noticias.html#god-of-war-laufey-fecha" aria-hidden="true" tabindex="-1"><b>God of War Laufey</b> llegará a PS5 el 16 de febrero de 2027</a>
+    <a href="noticias.html#playstation-fin-formato-fisico" aria-hidden="true" tabindex="-1"><b>PlayStation</b> dejará de producir discos para nuevos juegos en 2028</a>
+    <a href="noticias.html#xbox-retrocompatibilidad-pc" aria-hidden="true" tabindex="-1"><b>Xbox</b> estrena la retrocompatibilidad de sus clásicos en PC</a>
+    <a href="noticias.html#xbox-reestructuracion-despidos" aria-hidden="true" tabindex="-1"><b>Industria</b> Xbox recortará 3.200 empleos durante su reestructuración</a>
   </div>
 </div>
 
@@ -60,7 +60,7 @@
     <nav>
       <a href="resenas.html" data-i18n="nav_reviews">Reseñas</a>
       <a href="calendario.html" data-i18n="nav_calendar">Calendario</a>
-      <a href="#noticias" data-i18n="nav_news">Noticias</a>
+      <a href="noticias.html" data-i18n="nav_news">Noticias</a>
       <a href="#newsletter" class="always" data-i18n="nav_sub">Suscríbete</a>
       <div class="lang-toggle">
         <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
@@ -97,6 +97,14 @@
     </a>
   </div>
 </div>
+
+<nav class="home-section-nav wrap" aria-label="Secciones de la portada">
+  <span data-i18n="home_nav_label">En esta portada</span>
+  <a href="#resenas" data-i18n="home_nav_reviews">Últimas reseñas</a>
+  <a href="#calendario" data-i18n="home_nav_calendar">Próximos lanzamientos</a>
+  <a href="#noticias" data-i18n="home_nav_news">Actualidad</a>
+  <a href="#newsletter" data-i18n="home_nav_newsletter">Newsletter</a>
+</nav>
 
 <!-- RESEÑAS -->
 <section id="resenas" class="wrap reveal">

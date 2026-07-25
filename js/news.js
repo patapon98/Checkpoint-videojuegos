@@ -141,6 +141,14 @@
         es: ["Xbox", " estrena la retrocompatibilidad de sus clásicos en PC"],
         en: ["Xbox", " brings backward-compatible classics to PC"]
       },
+      "ea-compra-autorizacion-ue": {
+        es: ["Electronic Arts", " supera el control europeo de competencia para su compra"],
+        en: ["Electronic Arts", " clears the EU merger review for its acquisition"]
+      },
+      "xbox-nube-gratis-anuncios": {
+        es: ["Xbox", " prueba el juego en la nube gratuito con anuncios"],
+        en: ["Xbox", " tests free ad-supported cloud gaming"]
+      },
       "xbox-reestructuracion-despidos": {
         es: ["Industria", " Xbox recortará 3.200 empleos durante su reestructuración"],
         en: ["Industry", " Xbox will cut 3,200 jobs in its restructuring"]
@@ -162,7 +170,7 @@
     if (home && featured) {
       home.innerHTML = `
         ${featuredCard(featured, selectedLang)}
-        <div class="news-brief-grid">${rest.slice(0, 4).map(item => briefCard(item, selectedLang)).join("")}</div>`;
+        <div class="news-brief-grid">${rest.slice(0, 3).map(item => briefCard(item, selectedLang)).join("")}</div>`;
     }
 
     const archive = document.getElementById("newsArchive");

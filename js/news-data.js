@@ -144,6 +144,101 @@ window.MODERLODE_NEWS = [
     ]
   },
   {
+    id: "ea-compra-autorizacion-ue",
+    category: { es: "Industria", en: "Industry" },
+    date: "2026-07-23",
+    featured: false,
+    ticker: true,
+    tone: "industry",
+    title: {
+      es: "La UE autoriza bajo sus reglas de competencia la compra de Electronic Arts por 55.000 millones de dólares",
+      en: "The EU clears the $55 billion Electronic Arts acquisition under its merger rules"
+    },
+    summary: {
+      es: "La Comisión Europea considera que la adquisición de EA por el consorcio formado por PIF, Silver Lake y Affinity Partners no plantea problemas de competencia. La operación todavía espera una revisión europea separada sobre subvenciones extranjeras.",
+      en: "The European Commission says EA's acquisition by the consortium formed by PIF, Silver Lake and Affinity Partners raises no competition concerns. The deal still faces a separate EU foreign-subsidies review."
+    },
+    why: {
+      es: "Es un paso decisivo para que una de las mayores editoras del mundo pase a manos privadas y quede controlada mayoritariamente por el fondo soberano saudí.",
+      en: "It is a decisive step toward taking one of the world's largest publishers private under majority Saudi sovereign-wealth-fund control."
+    },
+    sources: [
+      {
+        label: "Comisión Europea",
+        type: { es: "Expediente oficial", en: "Official case" },
+        url: "https://competition-cases.ec.europa.eu/cases/M.12213"
+      },
+      {
+        label: "Reuters",
+        type: { es: "Información", en: "Reporting" },
+        url: "https://www.reuters.com/legal/litigation/saudi-pifs-55-billion-ea-deal-approved-under-eu-merger-rules-2026-07-23/"
+      }
+    ]
+  },
+  {
+    id: "xbox-nube-gratis-anuncios",
+    category: { es: "Plataformas", en: "Platforms" },
+    date: "2026-07-23",
+    featured: false,
+    ticker: true,
+    tone: "xbox",
+    title: {
+      es: "Xbox prueba el juego en la nube gratuito con anuncios",
+      en: "Xbox tests free ad-supported cloud gaming"
+    },
+    summary: {
+      es: "Xbox Insiders pueden retransmitir gratuitamente una selección de juegos que ya poseen después de ver anuncios. Las sesiones duran un máximo de una hora y la publicidad aparece antes de jugar, sin interrumpir la partida.",
+      en: "Xbox Insiders can stream selected games they already own for free after watching ads. Sessions are limited to one hour and ads play before gameplay rather than interrupting it."
+    },
+    why: {
+      es: "Microsoft está probando una nueva puerta de entrada a Xbox Cloud Gaming que reduce el coste de acceso y abre otra vía de monetización al margen de Game Pass.",
+      en: "Microsoft is testing a new entry point to Xbox Cloud Gaming that lowers access costs and creates a monetisation route outside Game Pass."
+    },
+    sources: [
+      {
+        label: "Xbox Wire",
+        type: { es: "Fuente oficial", en: "Official source" },
+        url: "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
+      },
+      {
+        label: "The Verge",
+        type: { es: "Contexto", en: "Context" },
+        url: "https://www.theverge.com/games/969969/xbox-testing-ad-supported-streaming"
+      }
+    ]
+  },
+  {
+    id: "amazon-luna-prime-video",
+    category: { es: "Plataformas", en: "Platforms" },
+    date: "2026-07-23",
+    featured: false,
+    tone: "industry",
+    title: {
+      es: "Amazon integra Luna dentro de Prime Video en Estados Unidos y Reino Unido",
+      en: "Amazon integrates Luna into Prime Video in the US and UK"
+    },
+    summary: {
+      es: "Los miembros de Prime con Fire TV ya pueden abrir juegos de Luna desde una nueva pestaña de Prime Video, sin descargas ni compras adicionales. El despliegue inicial se limita a Estados Unidos y Reino Unido.",
+      en: "Prime members with Fire TV can now launch Luna games from a new Prime Video tab without downloads or additional purchases. The initial rollout is limited to the US and UK."
+    },
+    why: {
+      es: "Amazon deja de presentar Luna como un servicio aislado y convierte el juego en una capa integrada dentro de su principal plataforma audiovisual.",
+      en: "Amazon is moving Luna beyond a standalone service and turning gaming into an integrated layer of its main video platform."
+    },
+    sources: [
+      {
+        label: "Amazon Game Studios",
+        type: { es: "Fuente oficial", en: "Official source" },
+        url: "https://www.amazongamestudios.com/en-us/news/articles/primevideo-and-luna"
+      },
+      {
+        label: "The Verge",
+        type: { es: "Contexto", en: "Context" },
+        url: "https://www.theverge.com/streaming/970099/amazon-prime-video-luna-gaming"
+      }
+    ]
+  },
+  {
     id: "marvel-wolverine-fecha",
     category: { es: "Juegos", en: "Games" },
     date: "2026-07-23",

@@ -2,11 +2,6 @@
   const archive=document.getElementById('newsArchive');
   if(!archive||!Array.isArray(window.MODERLODE_NEWS)) return;
 
-  /*
-   * Cada ampliación está editada de forma individual.
-   * El objetivo no es repetir el resumen frontal, sino seleccionar nombres,
-   * cifras, consecuencias y decisiones que cambian el significado de la noticia.
-   */
   const expanded={
     'playstation-fin-formato-fisico':[
       'La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.',
@@ -43,11 +38,8 @@
   };
 
   const escapeHTML=value=>String(value)
-    .replaceAll('&','&amp;')
-    .replaceAll('<','&lt;')
-    .replaceAll('>','&gt;')
-    .replaceAll('"','&quot;')
-    .replaceAll("'",'&#039;');
+    .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
+    .replaceAll('"','&quot;').replaceAll("'",'&#039;');
 
   function enhance(){
     archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach(card=>{
@@ -56,10 +48,9 @@
       if(!item||!body) return;
 
       const date=card.querySelector('.news-archive-date');
-      const sources=body.querySelector('.news-sources')?.outerHTML||'';
       const paragraphs=expanded[item.id]||[item.summary?.es||'',item.why?.es||''];
-      const title=item.title?.es||'';
       const category=item.category?.es||'';
+      const dateText=date?.querySelector('time')?.textContent||'';
 
       const front=document.createElement('section');
       front.className='news-flip-face news-flip-front';
@@ -78,18 +69,15 @@
       back.className='news-flip-face news-flip-back';
       back.setAttribute('aria-hidden','true');
       back.innerHTML=`
-        <div class="news-back-heading">
+        <div class="news-back-meta">
           <span class="news-category">${escapeHTML(category)}</span>
-          <h2>${escapeHTML(title)}</h2>
+          <span class="news-back-date">${escapeHTML(dateText)}</span>
         </div>
         <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${escapeHTML(text)}</p>`).join('')}</div>
-        <div class="news-back-footer">
-          ${sources}
-          <button class="news-flip-button" type="button" aria-expanded="true">
-            <span>Volver al resumen</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v6h6"/></svg>
-          </button>
-        </div>`;
+        <button class="news-flip-button" type="button" aria-expanded="true">
+          <span>Volver al resumen</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v6h6"/></svg>
+        </button>`;
 
       const inner=document.createElement('div');
       inner.className='news-flip-inner';

@@ -2,12 +2,20 @@
   const root=document.getElementById('releases');
   if(!root||root.dataset.mosaicReady) return;
 
-  /* Los ajustes específicos de la cuadrícula viven en una hoja separada. */
+  /* Los ajustes específicos de la cuadrícula viven en hojas separadas. */
   if(!document.getElementById('calendarGridStyles')){
     const styles=document.createElement('link');
     styles.id='calendarGridStyles';
     styles.rel='stylesheet';
     styles.href='css/calendar-grid.css';
+    document.head.append(styles);
+  }
+
+  if(!document.getElementById('calendarPolishStyles')){
+    const styles=document.createElement('link');
+    styles.id='calendarPolishStyles';
+    styles.rel='stylesheet';
+    styles.href='css/calendar-polish.css';
     document.head.append(styles);
   }
 

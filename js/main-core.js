@@ -38,7 +38,7 @@ const i18n = {
     hero_kicker:"Blog de videojuegos",
     hero_title:'Crítica con criterio, <em>hype</em> con calendario.',
     hero_sub:"Reseñas escritas a mano, un calendario de lanzamientos siempre al día y las noticias que de verdad importan. Sin ruido, sin clickbait.",
-    hero_cta1:"Leer reseñas",hero_cta2:"Ver lanzamientos",
+    hero_cta1:"Ver la actualidad",hero_cta2:"Ver lanzamientos",
     hero_card_tag:"Reseña destacada",
     hero_card_sub:"Terror y acción combinados en uno de los mejores RE jamás hechos.",
     rev_kicker:"Análisis",rev_title:"Últimas reseñas",
@@ -66,7 +66,7 @@ const i18n = {
     nl_title:"Un email a la semana. Cero spam.",
     nl_sub:"Las reseñas nuevas, el calendario actualizado y las 5 noticias de la semana, cada viernes en tu bandeja.",
     nl_btn:"Suscribirme",
-    foot2:"Reseñas · Calendario · Noticias · Contacto"
+    foot2:"Noticias · Calendario · Reseñas · Contacto"
   },
   en:{
     nav_reviews:"Reviews",nav_calendar:"Calendar",nav_news:"News",nav_sub:"Subscribe",
@@ -74,7 +74,7 @@ const i18n = {
     hero_kicker:"Video game blog",
     hero_title:'Reviews with judgment, <em>hype</em> with a calendar.',
     hero_sub:"Hand-written reviews, an always up-to-date release calendar, and only the news that truly matters. No noise, no clickbait.",
-    hero_cta1:"Read reviews",hero_cta2:"See releases",
+    hero_cta1:"See the news",hero_cta2:"See releases",
     hero_card_tag:"Featured review",
     hero_card_sub:"Terror and action combined in one of the best RE games ever made.",
     rev_kicker:"Analysis",rev_title:"Latest reviews",
@@ -102,7 +102,7 @@ const i18n = {
     nl_title:"One email a week. Zero spam.",
     nl_sub:"New reviews, the updated calendar and the week's top 5 stories, every Friday in your inbox.",
     nl_btn:"Subscribe",
-    foot2:"Reviews · Calendar · News · Contact"
+    foot2:"News · Calendar · Reviews · Contact"
   }
 };
 

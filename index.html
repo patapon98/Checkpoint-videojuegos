@@ -58,9 +58,9 @@
   <div class="header-inner">
     <a href="index.html" class="logo">Moder<span>lode</span></a>
     <nav>
-      <a href="resenas.html" data-i18n="nav_reviews">Reseñas</a>
-      <a href="calendario.html" data-i18n="nav_calendar">Calendario</a>
       <a href="noticias.html" data-i18n="nav_news">Noticias</a>
+      <a href="calendario.html" data-i18n="nav_calendar">Calendario</a>
+      <a href="resenas.html" data-i18n="nav_reviews">Reseñas</a>
       <div class="lang-toggle">
         <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
         <button id="btn-en" onclick="setLang('en')">EN</button>
@@ -83,7 +83,7 @@
       <h1 class="line" data-i18n-html="hero_title">Crítica con criterio, <em>hype</em> con calendario.</h1>
       <p class="line" data-i18n="hero_sub">Reseñas escritas a mano, un calendario de lanzamientos siempre al día y las noticias que de verdad importan. Sin ruido, sin clickbait.</p>
       <div class="line">
-        <a href="resenas.html" class="btn" data-i18n="hero_cta1">Leer reseñas</a>
+        <a href="#noticias" class="btn" data-i18n="hero_cta1">Ver la actualidad</a>
         <a href="#calendario" class="btn ghost" data-i18n="hero_cta2">Ver lanzamientos</a>
       </div>
     </div>
@@ -99,10 +99,54 @@
 
 <nav class="home-section-nav wrap" aria-label="Secciones de la portada">
   <span data-i18n="home_nav_label">En esta portada</span>
-  <a href="#resenas" data-i18n="home_nav_reviews">Últimas reseñas</a>
-  <a href="#calendario" data-i18n="home_nav_calendar">Próximos lanzamientos</a>
   <a href="#noticias" data-i18n="home_nav_news">Actualidad</a>
+  <a href="#calendario" data-i18n="home_nav_calendar">Próximos lanzamientos</a>
+  <a href="#resenas" data-i18n="home_nav_reviews">Últimas reseñas</a>
 </nav>
+
+<!-- NOTICIAS -->
+<section id="noticias" class="wrap reveal">
+  <div class="kicker" data-i18n="news_kicker">Actualidad</div>
+  <h2 class="section-title" data-i18n="news_title">Solo lo relevante</h2>
+  <p class="section-sub" data-i18n="news_sub">Las noticias que cambian la industria, las plataformas o el calendario. Con contexto, fuentes directas y sin ruido.</p>
+  <div id="newsHome" aria-live="polite"></div>
+  <div class="news-home-actions">
+    <a href="noticias.html" class="btn ghost">Ver toda la actualidad →</a>
+  </div>
+</section>
+
+<!-- CALENDARIO -->
+<section id="calendario" class="reveal">
+  <div class="kicker" data-i18n="cal_kicker">Próximos lanzamientos</div>
+  <h2 class="section-title" data-i18n="cal_title">Calendario 2026</h2>
+  <p class="section-sub" data-i18n="cal_sub">Los lanzamientos más importantes de los próximos meses, siempre al día.</p>
+
+  <div class="countdown">
+    <div class="cd-label">
+      <b>Grand Theft Auto VI</b>
+      <span data-i18n="cd_sub">19 de noviembre de 2026 · PS5 · Xbox Series X|S</span>
+    </div>
+    <div class="cd-units">
+      <div class="cd-unit"><b id="cd-d">—</b><span data-i18n="cd_days">Días</span></div>
+      <div class="cd-unit"><b id="cd-h">—</b><span data-i18n="cd_hours">Horas</span></div>
+      <div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div>
+      <div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div>
+    </div>
+  </div>
+
+  <div id="releases">
+    <div class="release" data-plat="ps5 xbox pc"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/screenshots/c44/c445c015eb08b156eed3f047f9718508.jpg" alt="Halo: Campaign Evolved" loading="lazy"><div class="rdate"><b>28</b><span>Jul</span></div><a class="wish" href="https://store.steampowered.com/app/2806050/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Halo: Campaign Evolved</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="xbox ps5 pc"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/games/bf4/bf449e2f579f618cc43ffebf0ac3a472.jpg" alt="Beast of Reincarnation" loading="lazy"><div class="rdate"><b>4</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2001760/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Beast of Reincarnation</h4><div class="platforms">Xbox Series X|S · PS5 · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox pc"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/screenshots/5c3/5c3db4df4bbff72b83626a7328bdaf20.jpg" alt="Resonance: A Plague Tale Legacy" loading="lazy"><div class="rdate"><b>27</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2713000/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Resonance: A Plague Tale Legacy <a class="store-cta" href="https://www.instant-gaming.com/en/19517-buy-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-942821" target="_blank" rel="noopener noreferrer" title="Comprar en Instant Gaming y ayudar a sostener el proyecto" aria-label="Comprar Resonance: A Plague Tale Legacy en Instant Gaming. Este enlace ayuda a sostener el proyecto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l-1 11h-9l-1-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><span>Instant Gaming</span></a></h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="xbox pc ps5"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/screenshots/faa/faa8c8ddde9c4ce33e5d6df5311378d3.jpg" alt="Star Wars Zero Company" loading="lazy"><div class="rdate"><b>27</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2075800/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Star Wars Zero Company <a class="store-cta" href="https://www.instant-gaming.com/en/19161-buy-star-wars-zero-company-pc-steam/?igr=gamer-942821" target="_blank" rel="noopener noreferrer" title="Comprar en Instant Gaming y ayudar a sostener el proyecto" aria-label="Comprar Star Wars Zero Company en Instant Gaming. Este enlace ayuda a sostener el proyecto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l-1 11h-9l-1-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><span>Instant Gaming</span></a></h4><div class="platforms">Xbox Series X|S · PC · PS5</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
+    <div class="release" data-plat="ps5 xbox"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg" alt="Grand Theft Auto VI" loading="lazy"><div class="rdate"><b>19</b><span>Nov</span></div></div><div><h4>Grand Theft Auto VI</h4><div class="platforms">PS5 · Xbox Series X|S</div></div><span class="hype hype-max" data-i18n="hype_max">El evento del año</span></div>
+  </div>
+
+  <div class="view-all-wrap">
+    <a href="calendario.html" class="btn ghost" data-i18n="view_all_cal">Ver calendario completo →</a>
+  </div>
+  <p class="project-support-note">Los enlaces de Instant Gaming ayudan a sostener el proyecto.</p>
+</section>
 
 <!-- RESEÑAS -->
 <section id="resenas" class="wrap reveal">
@@ -155,55 +199,11 @@
   </div>
 </section>
 
-<!-- CALENDARIO -->
-<section id="calendario" class="reveal">
-  <div class="kicker" data-i18n="cal_kicker">Próximos lanzamientos</div>
-  <h2 class="section-title" data-i18n="cal_title">Calendario 2026</h2>
-  <p class="section-sub" data-i18n="cal_sub">Los lanzamientos más importantes de los próximos meses, siempre al día.</p>
-
-  <div class="countdown">
-    <div class="cd-label">
-      <b>Grand Theft Auto VI</b>
-      <span data-i18n="cd_sub">19 de noviembre de 2026 · PS5 · Xbox Series X|S</span>
-    </div>
-    <div class="cd-units">
-      <div class="cd-unit"><b id="cd-d">—</b><span data-i18n="cd_days">Días</span></div>
-      <div class="cd-unit"><b id="cd-h">—</b><span data-i18n="cd_hours">Horas</span></div>
-      <div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div>
-      <div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div>
-    </div>
-  </div>
-
-  <div id="releases">
-    <div class="release" data-plat="ps5 xbox pc"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/screenshots/c44/c445c015eb08b156eed3f047f9718508.jpg" alt="Halo: Campaign Evolved" loading="lazy"><div class="rdate"><b>28</b><span>Jul</span></div><a class="wish" href="https://store.steampowered.com/app/2806050/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Halo: Campaign Evolved</h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="xbox ps5 pc"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/games/bf4/bf449e2f579f618cc43ffebf0ac3a472.jpg" alt="Beast of Reincarnation" loading="lazy"><div class="rdate"><b>4</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2001760/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Beast of Reincarnation</h4><div class="platforms">Xbox Series X|S · PS5 · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="ps5 xbox pc"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/screenshots/5c3/5c3db4df4bbff72b83626a7328bdaf20.jpg" alt="Resonance: A Plague Tale Legacy" loading="lazy"><div class="rdate"><b>27</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2713000/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Resonance: A Plague Tale Legacy <a class="store-cta" href="https://www.instant-gaming.com/en/19517-buy-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-942821" target="_blank" rel="noopener noreferrer" title="Comprar en Instant Gaming y ayudar a sostener el proyecto" aria-label="Comprar Resonance: A Plague Tale Legacy en Instant Gaming. Este enlace ayuda a sostener el proyecto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l-1 11h-9l-1-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><span>Instant Gaming</span></a></h4><div class="platforms">PS5 · Xbox Series X|S · PC</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="xbox pc ps5"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/screenshots/faa/faa8c8ddde9c4ce33e5d6df5311378d3.jpg" alt="Star Wars Zero Company" loading="lazy"><div class="rdate"><b>27</b><span>Ago</span></div><a class="wish" href="https://store.steampowered.com/app/2075800/" target="_blank" rel="noopener" title="Wishlist en Steam" aria-label="Wishlist en Steam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></a></div><div><h4>Star Wars Zero Company <a class="store-cta" href="https://www.instant-gaming.com/en/19161-buy-star-wars-zero-company-pc-steam/?igr=gamer-942821" target="_blank" rel="noopener noreferrer" title="Comprar en Instant Gaming y ayudar a sostener el proyecto" aria-label="Comprar Star Wars Zero Company en Instant Gaming. Este enlace ayuda a sostener el proyecto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l-1 11h-9l-1-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><span>Instant Gaming</span></a></h4><div class="platforms">Xbox Series X|S · PC · PS5</div></div><span class="hype hype-high" data-i18n="hype_high">Hype alto</span></div>
-    <div class="release" data-plat="ps5 xbox"><div class="release-art"><img src="https://media.rawg.io/media/resize/420/-/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg" alt="Grand Theft Auto VI" loading="lazy"><div class="rdate"><b>19</b><span>Nov</span></div></div><div><h4>Grand Theft Auto VI</h4><div class="platforms">PS5 · Xbox Series X|S</div></div><span class="hype hype-max" data-i18n="hype_max">El evento del año</span></div>
-  </div>
-
-  <div class="view-all-wrap">
-    <a href="calendario.html" class="btn ghost" data-i18n="view_all_cal">Ver calendario completo →</a>
-  </div>
-  <p class="project-support-note">Los enlaces de Instant Gaming ayudan a sostener el proyecto.</p>
-</section>
-
-<!-- NOTICIAS -->
-<section id="noticias" class="wrap reveal">
-  <div class="kicker" data-i18n="news_kicker">Actualidad</div>
-  <h2 class="section-title" data-i18n="news_title">Solo lo relevante</h2>
-  <p class="section-sub" data-i18n="news_sub">Las noticias que cambian la industria, las plataformas o el calendario. Con contexto, fuentes directas y sin ruido.</p>
-  <div id="newsHome" aria-live="polite"></div>
-  <div class="news-home-actions">
-    <a href="noticias.html" class="btn ghost">Ver toda la actualidad →</a>
-  </div>
-</section>
-
 
 <footer>
   <div class="footer-inner">
     <span>© 2026 Moderlode</span>
-    <span data-i18n="foot2">Reseñas · Calendario · Noticias · Contacto</span>
+    <span data-i18n="foot2">Noticias · Calendario · Reseñas · Contacto</span>
   </div>
 </footer>
 

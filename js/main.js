@@ -34,6 +34,7 @@ themeMedia.addEventListener?.('change',event=>{
 const i18n = {
   es:{
     nav_reviews:"Reseñas",nav_calendar:"Calendario",nav_news:"Noticias",nav_sub:"Suscríbete",
+    home_nav_label:"En esta portada",home_nav_reviews:"Últimas reseñas",home_nav_calendar:"Próximos lanzamientos",home_nav_news:"Actualidad",home_nav_newsletter:"Newsletter",
     hero_kicker:"Blog de videojuegos",
     hero_title:'Crítica con criterio, <em>hype</em> con calendario.',
     hero_sub:"Reseñas escritas a mano, un calendario de lanzamientos siempre al día y las noticias que de verdad importan. Sin ruido, sin clickbait.",
@@ -69,6 +70,7 @@ const i18n = {
   },
   en:{
     nav_reviews:"Reviews",nav_calendar:"Calendar",nav_news:"News",nav_sub:"Subscribe",
+    home_nav_label:"On this page",home_nav_reviews:"Latest reviews",home_nav_calendar:"Upcoming releases",home_nav_news:"News",home_nav_newsletter:"Newsletter",
     hero_kicker:"Video game blog",
     hero_title:'Reviews with judgment, <em>hype</em> with a calendar.',
     hero_sub:"Hand-written reviews, an always up-to-date release calendar, and only the news that truly matters. No noise, no clickbait.",
@@ -189,15 +191,23 @@ if(cdD){
 const filters=document.getElementById('filters');
 const releaseSearch=document.getElementById('releaseSearch');
 const releaseCount=document.getElementById('releaseCount');
+const monthFilter=document.getElementById('monthFilter');
 if(filters){
   let activePlatform='all';
+  let activeMonth='all';
+  let currentMonth='';
+  document.querySelectorAll('#releases > *').forEach(el=>{
+    if(el.hasAttribute('data-month')) currentMonth=el.dataset.month;
+    else if(el.classList.contains('release')) el.dataset.releaseMonth=currentMonth;
+  });
   const applyReleaseFilters=()=>{
     const query=(releaseSearch?.value||'').trim().toLocaleLowerCase('es');
     let visible=0;
     document.querySelectorAll('#releases .release').forEach(r=>{
       const platformMatch=activePlatform==='all'||r.dataset.plat.split(' ').includes(activePlatform);
+      const monthMatch=activeMonth==='all'||r.dataset.releaseMonth===activeMonth;
       const title=(r.querySelector('h4')?.textContent||'').toLocaleLowerCase('es');
-      const show=platformMatch&&(!query||title.includes(query));
+      const show=platformMatch&&monthMatch&&(!query||title.includes(query));
       r.classList.toggle('hide',!show);
       if(show) visible++;
     });
@@ -218,6 +228,11 @@ if(filters){
     applyReleaseFilters();
   });
   releaseSearch?.addEventListener('input',applyReleaseFilters);
+  monthFilter?.addEventListener('change',()=>{
+    activeMonth=monthFilter.value;
+    applyReleaseFilters();
+    document.getElementById('releases')?.scrollIntoView({behavior:'smooth',block:'start'});
+  });
   applyReleaseFilters();
 }
 

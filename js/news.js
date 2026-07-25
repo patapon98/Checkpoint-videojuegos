@@ -26,7 +26,7 @@
   }
 
   function sourceLinks(item, lang, compact) {
-    const label = lang === "en" ? "Sources" : "Fuentes";
+    const label = lang === "en" ? "Sources:" : "Fuentes:";
     const links = item.sources.map(source => `
       <a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer"
          aria-label="${escapeHTML(text(source.type, lang))}. ${escapeHTML(source.label)}">
@@ -34,6 +34,11 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
       </a>`).join("");
     return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}</div>`;
+  }
+
+  function latestBadge(item, lang) {
+    if (!item.latest) return "";
+    return `<span class="news-latest"><i aria-hidden="true"></i>${lang === "en" ? "Breaking" : "Última hora"}</span>`;
   }
 
   function featuredCard(item, lang) {
@@ -49,6 +54,7 @@
         <div class="news-lead-copy">
           <div class="news-meta">
             <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+            ${latestBadge(item, lang)}
             <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
             ${updated}
           </div>
@@ -68,6 +74,7 @@
       <article class="news-brief">
         <div class="news-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+          ${latestBadge(item, lang)}
           <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
@@ -87,6 +94,7 @@
     return `
       <article class="news-archive-card" id="${escapeHTML(item.id)}">
         <div class="news-archive-date">
+          ${latestBadge(item, lang)}
           <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
           ${updated}
         </div>
@@ -124,6 +132,17 @@
         return b.date.localeCompare(a.date);
       });
       archive.innerHTML = ordered.map(item => archiveCard(item, selectedLang)).join("");
+    }
+
+    const ticker = document.getElementById("ticker");
+    if (ticker) {
+      const tickerItems = news.filter(item => item.ticker);
+      const tickerLinks = tickerItems.map(item =>
+        `<a href="noticias.html#${escapeHTML(item.id)}">${escapeHTML(text(item.title, selectedLang))}</a>`
+      ).join("");
+      ticker.innerHTML = tickerLinks + tickerItems.map(item =>
+        `<a href="noticias.html#${escapeHTML(item.id)}" aria-hidden="true" tabindex="-1">${escapeHTML(text(item.title, selectedLang))}</a>`
+      ).join("");
     }
   }
 

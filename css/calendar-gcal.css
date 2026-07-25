@@ -1,0 +1,19 @@
+/* El acceso a Google Calendar debe permanecer visible en todas las fichas futuras. */
+#releases.view-grid .release[data-tier="3"] .release-art .gcal{
+  display:flex;
+  top:50%;
+  right:4px;
+  bottom:auto;
+  width:22px;
+  height:22px;
+  opacity:.92;
+  transform:translateY(-50%);
+  background:rgba(10,8,22,.76);
+}
+#releases.view-grid .release[data-tier="3"] .release-art .gcal:hover{
+  transform:translateY(-50%) scale(1.08);
+}
+#releases.view-grid .release[data-tier="3"] .release-art .gcal svg{
+  width:12px;
+  height:12px;
+}

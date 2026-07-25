@@ -2,11 +2,19 @@
   const root=document.getElementById('releases');
   if(!root) return;
 
+  /* Estilos propios para que el botón siga visible también en fichas compactas. */
+  if(!document.getElementById('calendarGcalStyles')){
+    const styles=document.createElement('link');
+    styles.id='calendarGcalStyles';
+    styles.rel='stylesheet';
+    styles.href=new URL('../css/calendar-gcal.css',document.currentScript.src).href;
+    document.head.append(styles);
+  }
+
   /*
    * Botón "añadir a Google Calendar" para cada lanzamiento pendiente.
-   * El año y el mes salen del data-month de la cabecera correspondiente;
-   * el día, del recuadro de fecha de la carátula. Los juegos ya publicados
-   * se omiten: un evento en el pasado no aporta nada.
+   * Funciona tanto antes como después de que calendar-mosaic.js agrupe los
+   * lanzamientos dentro de .month-group, evitando depender del orden de carga.
    */
 
   const MONTHS_ES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
@@ -18,20 +26,29 @@
 
   const icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>';
 
-  let currentMonth=null;
+  function monthForRelease(release){
+    const group=release.closest('.month-group[data-group-month]');
+    if(group?.dataset.groupMonth) return group.dataset.groupMonth;
 
-  [...root.children].forEach(node=>{
-    if(node.classList.contains('month-label')){
-      currentMonth=node.dataset.month||null;
-      return;
+    let sibling=release.previousElementSibling;
+    while(sibling){
+      if(sibling.classList.contains('month-label')&&sibling.dataset.month){
+        return sibling.dataset.month;
+      }
+      sibling=sibling.previousElementSibling;
     }
-    if(!node.classList.contains('release')||!currentMonth) return;
-    if(node.querySelector('.hype-out')) return;
-    if(node.querySelector('.release-art .gcal')) return;
+    return null;
+  }
 
-    const art=node.querySelector('.release-art');
-    const heading=node.querySelector('h4');
-    const day=Number(node.querySelector('.rdate b')?.textContent.trim());
+  root.querySelectorAll('.release').forEach(release=>{
+    const currentMonth=monthForRelease(release);
+    if(!currentMonth) return;
+    if(release.querySelector('.hype-out')) return;
+    if(release.querySelector('.release-art .gcal')) return;
+
+    const art=release.querySelector('.release-art');
+    const heading=release.querySelector('h4');
+    const day=Number(release.querySelector('.rdate b')?.textContent.trim());
     if(!art||!heading||!Number.isInteger(day)||day<1||day>31) return;
 
     const [year,month]=currentMonth.split('-').map(Number);
@@ -42,7 +59,7 @@
     const end=new Date(start.getTime()+86400000);
 
     const title=(heading.childNodes[0]?.textContent||heading.textContent).trim();
-    const platforms=node.querySelector('.platforms')?.textContent.trim()||'';
+    const platforms=release.querySelector('.platforms')?.textContent.trim()||'';
     const readable=`${day} de ${MONTHS_ES[month-1]} de ${year}`;
 
     const details=[

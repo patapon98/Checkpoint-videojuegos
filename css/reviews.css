@@ -121,6 +121,34 @@
   outline:3px solid color-mix(in srgb,var(--accent) 45%,transparent);
   outline-offset:3px;
 }
+
+/* Entrada progresiva de las reseñas: todas aparecen con una cadencia suave */
+#allReviews.stagger>.card{
+  opacity:0;
+  filter:blur(4px);
+  transform:translateY(24px) scale(.985);
+  transition:
+    opacity .58s ease,
+    filter .58s ease,
+    transform .72s cubic-bezier(.22,1,.36,1),
+    box-shadow .3s ease;
+}
+#allReviews.stagger.visible>.card:not(.hide){
+  opacity:1;
+  filter:none;
+  transform:none;
+}
+#allReviews.stagger.visible>.card:nth-child(1){transition-delay:.04s}
+#allReviews.stagger.visible>.card:nth-child(2){transition-delay:.10s}
+#allReviews.stagger.visible>.card:nth-child(3){transition-delay:.16s}
+#allReviews.stagger.visible>.card:nth-child(4){transition-delay:.22s}
+#allReviews.stagger.visible>.card:nth-child(5){transition-delay:.28s}
+#allReviews.stagger.visible>.card:nth-child(6){transition-delay:.34s}
+#allReviews.stagger.visible>.card:nth-child(7){transition-delay:.40s}
+#allReviews.stagger.visible>.card:nth-child(8){transition-delay:.46s}
+#allReviews.stagger.visible>.card:nth-child(9){transition-delay:.52s}
+#allReviews.stagger.visible>.card:nth-child(n+10){transition-delay:.58s}
+
 @media(max-width:700px){
   .review-tools{grid-template-columns:1fr;gap:10px}
   .review-sort{justify-content:space-between}
@@ -129,4 +157,13 @@
   .review-filter-row .pill-filters{flex-wrap:nowrap;width:calc(100% + 24px);overflow-x:auto;padding:2px 24px 6px 0}
   .review-filter-row .pill-filter{flex:0 0 auto}
   .review-result-count{padding-left:2px}
+}
+@media(prefers-reduced-motion:reduce){
+  #allReviews.stagger>.card,
+  #allReviews.stagger.visible>.card:not(.hide){
+    opacity:1;
+    filter:none;
+    transform:none;
+    transition:none;
+  }
 }

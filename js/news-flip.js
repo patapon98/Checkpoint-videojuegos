@@ -19,6 +19,18 @@
       'La edición japonesa de GTA VI para PS5 se venderá dentro de una caja, pero contendrá un código de descarga y no un disco. Rockstar fija para ese código una validez de 170 días desde su fecha de emisión, indicada como el 19 de noviembre de 2026.',
       'Una unidad que permanezca precintada más allá de ese plazo podría perder su utilidad. La limitación afecta especialmente al coleccionismo, los regalos tardíos, el stock almacenado y la reventa, y muestra una diferencia esencial entre poseer un disco y recibir una licencia digital dentro de una caja.'
     ],
+    'ea-compra-autorizacion-ue':[
+      'La Comisión Europea ha autorizado la adquisición de Electronic Arts bajo el Reglamento de concentraciones tras concluir que el cambio de propiedad no plantea problemas de competencia. El comprador es un consorcio formado por el fondo soberano saudí PIF, Silver Lake y Affinity Partners.',
+      'La autorización no cierra todavía la operación. Bruselas mantiene una revisión separada bajo el Reglamento sobre Subvenciones Extranjeras, con una decisión prevista para el 30 de julio. Si supera ese último control, EA pasará a ser una compañía privada dentro de una compra valorada en 55.000 millones de dólares.'
+    ],
+    'xbox-nube-gratis-anuncios':[
+      'La prueba permite a Xbox Insiders retransmitir una selección de juegos que ya poseen sin pagar por el acceso a la nube. Los anuncios se muestran antes de comenzar y cada sesión tiene un límite de una hora, pero la partida no se interrumpe con publicidad.',
+      'Microsoft presenta el sistema como una forma opcional de reducir el coste de entrada, especialmente para quienes usan móviles, televisores, ordenadores modestos o Xbox One. De momento no existe confirmación de que la prueba vaya a convertirse en un nivel comercial permanente.'
+    ],
+    'amazon-luna-prime-video':[
+      'Amazon ha añadido una pestaña de juegos dentro de Prime Video para los miembros de Prime que utilizan Fire TV en Estados Unidos y Reino Unido. Desde ella pueden iniciar juegos de Luna con un mando o con el teléfono, sin descargas ni pagos adicionales.',
+      'El cambio integra el juego en el mismo espacio donde Amazon distribuye películas, series y deportes. La compañía promete ampliar dispositivos, países y catálogo, pero España y Japón no forman parte del despliegue inicial.'
+    ],
     'marvel-wolverine-fecha':[
       "Insomniac ha fijado Marvel's Wolverine para el 15 de septiembre de 2026, ha abierto las reservas y ha publicado un nuevo tráiler centrado en la historia. El material permite concretar mejor el tono del juego y el papel de los personajes que acompañarán a Logan.",
       'La fecha convierte al título en uno de los principales exclusivos de PS5 para la segunda mitad de 2026 y cierra una larga etapa de incertidumbre desde su anuncio. Para PlayStation, será además el siguiente gran lanzamiento de Insomniac tras la saga Spider-Man.'

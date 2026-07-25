@@ -55,7 +55,7 @@ const i18n = {
     m_jul:"Julio 2026",m_aug:"Agosto 2026",m_sep:"Septiembre 2026",m_oct:"Octubre 2026",m_nov:"Noviembre 2026",
     hype_high:"Hype alto",hype_mid:"Interesante",hype_max:"El evento del año",
     news_kicker:"Actualidad",news_title:"Solo lo relevante",
-    news_sub:"Un resumen diario de las 3-5 noticias que de verdad merecen tu tiempo. Nada de notas de prensa recicladas.",
+    news_sub:"Las noticias que cambian la industria, las plataformas o el calendario. Con contexto, fuentes directas y sin ruido.",
     n1_t:"Take-Two reafirma la fecha de GTA VI: 19 de noviembre",
     n1_p:"El CEO Strauss Zelnick vuelve a confirmar la fecha en un documento oficial y disipa los rumores de un tercer retraso. El marketing arranca este verano.",
     n2_t:"Agosto abre la temporada alta: Elden Ring llega a Switch 2",
@@ -90,7 +90,7 @@ const i18n = {
     m_jul:"July 2026",m_aug:"August 2026",m_sep:"September 2026",m_oct:"October 2026",m_nov:"November 2026",
     hype_high:"High hype",hype_mid:"Worth a look",hype_max:"Event of the year",
     news_kicker:"Now",news_title:"Only what matters",
-    news_sub:"A daily digest of the 3-5 stories actually worth your time. No recycled press releases.",
+    news_sub:"The stories that change the industry, platforms or release calendar. With context, direct sources and no noise.",
     n1_t:"Take-Two reaffirms GTA VI's date: November 19",
     n1_p:"CEO Strauss Zelnick confirms the date again in an official filing, dispelling rumors of a third delay. Marketing kicks off this summer.",
     n2_t:"August opens high season: Elden Ring comes to Switch 2",
@@ -117,6 +117,7 @@ function setLang(lang){
   const es=document.getElementById('btn-es'), en=document.getElementById('btn-en');
   if(es) es.classList.toggle('on',lang==='es');
   if(en) en.classList.toggle('on',lang==='en');
+  if(window.renderNews) window.renderNews(lang);
 }
 
 /* ---------- Reveal on scroll ---------- */

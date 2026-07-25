@@ -245,3 +245,26 @@ document.querySelectorAll('[data-slider]').forEach(root=>{
   root.addEventListener('mouseenter',()=>clearInterval(timer));
   root.addEventListener('mouseleave',()=>{timer=setInterval(()=>go(i+1),4500)});
 });
+
+
+/* ---------- Progreso de lectura ---------- */
+const reviewArticle=document.querySelector('.article-body');
+if(reviewArticle){
+  const readingProgress=document.createElement('div');
+  readingProgress.className='reading-progress';
+  readingProgress.setAttribute('aria-hidden','true');
+  document.body.appendChild(readingProgress);
+  let progressFrame=0;
+  const updateReadingProgress=()=>{
+    const maxScroll=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+    const progress=Math.min(1,Math.max(0,window.scrollY/maxScroll));
+    readingProgress.style.transform='scaleX('+progress+')';
+    progressFrame=0;
+  };
+  const requestProgressUpdate=()=>{
+    if(!progressFrame) progressFrame=requestAnimationFrame(updateReadingProgress);
+  };
+  window.addEventListener('scroll',requestProgressUpdate,{passive:true});
+  window.addEventListener('resize',requestProgressUpdate);
+  updateReadingProgress();
+}

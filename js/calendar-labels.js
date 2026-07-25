@@ -43,7 +43,10 @@
     'Gears of War: E-Day',
     "Castlevania: Belmont's Curse",
     'Phantom Blade Zero',
-    'God of War Laufey'
+    'Tomb Raider: Legacy of Atlantis',
+    'God of War Laufey',
+    'Persona 4 Revival',
+    'Fable'
   ]);
 
   const interesting=new Set([

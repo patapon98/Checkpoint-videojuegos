@@ -29,11 +29,11 @@
     const label = lang === "en" ? "Sources" : "Fuentes";
     const links = item.sources.map(source => `
       <a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer"
-         aria-label="${escapeHTML(text(source.type, lang))}: ${escapeHTML(source.label)}">
+         aria-label="${escapeHTML(text(source.type, lang))}. ${escapeHTML(source.label)}">
         <span>${escapeHTML(source.label)}</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
       </a>`).join("");
-    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}:</b>${links}</div>`;
+    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}</div>`;
   }
 
   function featuredCard(item, lang) {
@@ -73,7 +73,7 @@
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <p>${escapeHTML(text(item.summary, lang))}</p>
         <div class="news-brief-why">
-          <b>${lang === "en" ? "Why it matters:" : "Por qué importa:"}</b>
+          <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
           ${escapeHTML(text(item.why, lang))}
         </div>
         ${sourceLinks(item, lang, true)}

@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reviews.css">
 <script>
 (function(){
   try{
@@ -53,19 +54,39 @@
   <p class="section-sub" style="max-width:600px">Cada juego que termino, analizado sin filtros. Opinión personal, sin notas infladas, ordenadas de la más reciente a la más antigua.</p>
 
   <div class="stats-bar">
-    <div class="stat"><b>9</b><span>Reseñas publicadas</span></div>
-    <div class="stat"><b>83</b><span>Nota media</span></div>
-    <div class="stat"><b>90</b><span>Mejor nota: RE Requiem</span></div>
+    <div class="stat"><b id="reviewTotal">9</b><span>Reseñas publicadas</span></div>
+    <div class="stat"><b id="reviewAverage">83</b><span>Nota media</span></div>
+    <div class="stat"><b id="reviewBest">90</b><span id="reviewBestLabel">Mejor nota: Resident Evil Requiem</span></div>
   </div>
 </div>
 
 <section class="wrap reveal" style="padding-top:0">
-  <div class="pill-filters" id="revFilters">
-    <button class="pill-filter on" data-f="all">Todos</button>
-    <button class="pill-filter" data-f="ps5">PS5</button>
-    <button class="pill-filter" data-f="xbox">Xbox</button>
-    <button class="pill-filter" data-f="switch">Switch 2</button>
-    <button class="pill-filter" data-f="pc">PC</button>
+  <div class="review-tools" aria-label="Buscar y ordenar reseñas">
+    <div class="review-search">
+      <label class="review-visually-hidden" for="reviewSearch">Buscar reseñas</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="reviewSearch" type="search" placeholder="Buscar por juego, género o plataforma…" autocomplete="off">
+      <button class="review-search-clear" id="reviewSearchClear" type="button" aria-label="Borrar búsqueda" title="Borrar búsqueda" hidden>×</button>
+    </div>
+    <label class="review-sort" for="reviewSort">
+      <span>Ordenar</span>
+      <select id="reviewSort">
+        <option value="recent">Más recientes</option>
+        <option value="score">Mejor puntuadas</option>
+        <option value="title">Orden alfabético</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="review-filter-row">
+    <div class="pill-filters" id="revFilters" aria-label="Filtrar por plataforma">
+      <button class="pill-filter on" type="button" data-f="all" aria-pressed="true">Todos</button>
+      <button class="pill-filter" type="button" data-f="ps5" aria-pressed="false">PS5</button>
+      <button class="pill-filter" type="button" data-f="xbox" aria-pressed="false">Xbox</button>
+      <button class="pill-filter" type="button" data-f="switch" aria-pressed="false">Switch 2</button>
+      <button class="pill-filter" type="button" data-f="pc" aria-pressed="false">PC</button>
+    </div>
+    <p class="review-result-count" id="reviewResultCount" aria-live="polite">9 reseñas encontradas</p>
   </div>
 
   <div class="cards stagger" id="allReviews">
@@ -197,6 +218,12 @@
     </a>
 
   </div>
+
+  <div class="review-empty" id="reviewEmpty" hidden>
+    <h2>No encuentro ninguna reseña</h2>
+    <p>Prueba con otro título, género o plataforma.</p>
+    <button class="btn" id="reviewReset" type="button">Limpiar búsqueda y filtros</button>
+  </div>
 </section>
 
 <!-- NEWSLETTER -->
@@ -219,15 +246,6 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script>
-document.getElementById('revFilters').addEventListener('click',e=>{
-  const btn=e.target.closest('.pill-filter'); if(!btn)return;
-  document.querySelectorAll('.pill-filter').forEach(b=>b.classList.toggle('on',b===btn));
-  const f=btn.dataset.f;
-  document.querySelectorAll('#allReviews .card').forEach(c=>{
-    c.classList.toggle('hide', f!=='all' && !c.dataset.plat.split(' ').includes(f));
-  });
-});
-</script>
+<script src="js/reviews.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ window.MODERLODE_NEWS = [
     date: "2026-07-01",
     updated: "2026-07-25",
     featured: true,
+    ticker: true,
     tone: "playstation",
     title: {
       es: "PlayStation dejará de producir discos para sus nuevos juegos en 2028",
@@ -41,6 +42,7 @@ window.MODERLODE_NEWS = [
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-22",
     featured: false,
+    ticker: true,
     tone: "xbox",
     title: {
       es: "Xbox lleva su retrocompatibilidad a PC con cuatro clásicos",
@@ -72,6 +74,8 @@ window.MODERLODE_NEWS = [
     category: { es: "Juegos", en: "Games" },
     date: "2026-07-25",
     featured: false,
+    latest: true,
+    ticker: true,
     tone: "playstation",
     title: {
       es: "God of War Laufey llegará el 16 de febrero de 2027 y prepara el regreso de Kratos",
@@ -172,6 +176,7 @@ window.MODERLODE_NEWS = [
     date: "2026-07-06",
     updated: "2026-07-15",
     featured: false,
+    ticker: true,
     tone: "industry",
     title: {
       es: "Xbox recortará 3.200 empleos en su mayor reestructuración",

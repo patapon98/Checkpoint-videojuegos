@@ -61,7 +61,6 @@
       <a href="resenas.html" data-i18n="nav_reviews">Reseñas</a>
       <a href="calendario.html" data-i18n="nav_calendar">Calendario</a>
       <a href="noticias.html" data-i18n="nav_news">Noticias</a>
-      <a href="#newsletter" class="always" data-i18n="nav_sub">Suscríbete</a>
       <div class="lang-toggle">
         <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
         <button id="btn-en" onclick="setLang('en')">EN</button>
@@ -103,7 +102,6 @@
   <a href="#resenas" data-i18n="home_nav_reviews">Últimas reseñas</a>
   <a href="#calendario" data-i18n="home_nav_calendar">Próximos lanzamientos</a>
   <a href="#noticias" data-i18n="home_nav_news">Actualidad</a>
-  <a href="#newsletter" data-i18n="home_nav_newsletter">Newsletter</a>
 </nav>
 
 <!-- RESEÑAS -->
@@ -201,17 +199,6 @@
   </div>
 </section>
 
-<!-- NEWSLETTER -->
-<section id="newsletter" class="reveal" style="padding:0 24px">
-  <div class="newsletter">
-    <h2 data-i18n="nl_title">Un email a la semana. Cero spam.</h2>
-    <p data-i18n="nl_sub">Las reseñas nuevas, el calendario actualizado y las 5 noticias de la semana, cada viernes en tu bandeja.</p>
-    <form onsubmit="event.preventDefault();this.innerHTML='<strong>✓ ¡Gracias por suscribirte!</strong>'">
-      <input type="email" placeholder="tu@email.com" required>
-      <button class="btn" type="submit" data-i18n="nl_btn">Suscribirme</button>
-    </form>
-  </div>
-</section>
 
 <footer>
   <div class="footer-inner">

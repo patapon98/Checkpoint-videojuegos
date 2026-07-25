@@ -122,11 +122,29 @@ function setLang(lang){
   if(window.renderNews) window.renderNews(lang);
 }
 
-/* ---------- Reveal on scroll ---------- */
-const obs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target);} });
-},{threshold:.08});
-document.querySelectorAll('.reveal,.stagger').forEach(el=>obs.observe(el));
+/* ---------- Reveal on scroll (inmediato y por zonas en el calendario) ---------- */
+const revealEls=document.querySelectorAll('.reveal,.stagger');
+if(document.body.classList.contains('calendar-page')){
+  const releasesRoot=document.getElementById('releases');
+  const STEP=110;
+  if(releasesRoot){
+    let group=1;
+    [...releasesRoot.children].forEach(child=>{
+      if(child.hasAttribute('data-month')){
+        child.style.transitionDelay=(group*STEP)+'ms';
+        group++;
+      }else if(child.classList.contains('release')){
+        child.style.transitionDelay=((group-1)*STEP)+'ms';
+      }
+    });
+  }
+  requestAnimationFrame(()=>revealEls.forEach(el=>el.classList.add('visible')));
+}else{
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target);} });
+  },{threshold:.08});
+  revealEls.forEach(el=>obs.observe(el));
+}
 
 /* ---------- Nav activa según scroll ---------- */
 const sections=[...document.querySelectorAll('section[id]')];

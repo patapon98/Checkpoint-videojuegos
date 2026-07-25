@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias de videojuegos: solo lo relevante | Moderlode</title>
+<meta name="description" content="La actualidad esencial del videojuego: industria, plataformas, grandes anuncios y fechas importantes, con fuentes directas y sin ruido.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="canonical" href="https://moderlode.alexanderblanc3.workers.dev/noticias.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Moderlode">
+<meta property="og:title" content="Noticias de videojuegos: solo lo relevante | Moderlode">
+<meta property="og:description" content="La actualidad esencial del videojuego, con fuentes directas y sin ruido.">
+<meta property="og:url" content="https://moderlode.alexanderblanc3.workers.dev/noticias.html">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/news.css">
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('moderlode-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
+</head>
+<body class="news-page">
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Moder<span>lode</span></a>
+    <nav>
+      <a href="resenas.html">Reseñas</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="noticias.html" class="active">Noticias</a>
+      <a href="index.html#newsletter" class="always">Suscríbete</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap article-hero reveal">
+  <a href="index.html" class="back">← Volver al inicio</a>
+  <div class="kicker">Actualidad esencial</div>
+  <h1>Lo que está pasando en videojuegos</h1>
+  <div class="news-page-intro">
+    <p class="section-sub">Una selección breve de las noticias que cambian la industria, las plataformas o el calendario. Cada asunto incluye contexto, por qué importa y enlaces para comprobar la información.</p>
+    <aside class="news-editorial-note">
+      <b>El criterio</b>
+      Si una noticia no afecta a muchos jugadores, a una gran compañía o a un lanzamiento importante, probablemente no entre aquí.
+    </aside>
+  </div>
+</div>
+
+<main class="wrap reveal" style="padding-top:0">
+  <div id="newsArchive" aria-live="polite"></div>
+</main>
+
+<section class="reveal" style="padding:52px 24px 0">
+  <div class="newsletter">
+    <h2>Un email a la semana. Cero spam.</h2>
+    <p>Las reseñas nuevas, el calendario actualizado y las noticias esenciales, cada viernes en tu bandeja.</p>
+    <form onsubmit="event.preventDefault();this.innerHTML='<strong>✓ ¡Gracias por suscribirte!</strong>'">
+      <input type="email" placeholder="tu@email.com" required>
+      <button class="btn" type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Moderlode</span>
+    <span>Reseñas · Calendario · Noticias · Contacto</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/news.js"></script>
+</body>
+</html>

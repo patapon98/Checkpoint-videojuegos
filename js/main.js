@@ -34,6 +34,7 @@ themeMedia.addEventListener?.('change',event=>{
 const i18n = {
   es:{
     nav_reviews:"Reseñas",nav_calendar:"Calendario",nav_news:"Noticias",nav_sub:"Suscríbete",
+    home_nav_label:"En esta portada",home_nav_reviews:"Últimas reseñas",home_nav_calendar:"Próximos lanzamientos",home_nav_news:"Actualidad",home_nav_newsletter:"Newsletter",
     hero_kicker:"Blog de videojuegos",
     hero_title:'Crítica con criterio, <em>hype</em> con calendario.',
     hero_sub:"Reseñas escritas a mano, un calendario de lanzamientos siempre al día y las noticias que de verdad importan. Sin ruido, sin clickbait.",
@@ -55,13 +56,13 @@ const i18n = {
     m_jul:"Julio 2026",m_aug:"Agosto 2026",m_sep:"Septiembre 2026",m_oct:"Octubre 2026",m_nov:"Noviembre 2026",
     hype_high:"Hype alto",hype_mid:"Interesante",hype_max:"El evento del año",
     news_kicker:"Actualidad",news_title:"Solo lo relevante",
-    news_sub:"Un resumen diario de las 3-5 noticias que de verdad merecen tu tiempo. Nada de notas de prensa recicladas.",
-    n1_t:"Take-Two reafirma la fecha de GTA VI: 19 de noviembre",
+    news_sub:"Las noticias que cambian la industria, las plataformas o el calendario. Con contexto, fuentes directas y sin ruido.",
+    n1_t:"Take-Two reafirma la fecha de GTA VI para el 19 de noviembre",
     n1_p:"El CEO Strauss Zelnick vuelve a confirmar la fecha en un documento oficial y disipa los rumores de un tercer retraso. El marketing arranca este verano.",
-    n2_t:"Agosto abre la temporada alta: Elden Ring llega a Switch 2",
+    n2_t:"Agosto abre la temporada alta con Elden Ring en Switch 2",
     n2_p:"Tarnished Edition inaugura el 28 de agosto uno de los tramos más cargados del calendario reciente, con septiembre y octubre repletos de lanzamientos.",
     n3_t:"Wuthering Waves aterriza en Xbox y Where Winds Meet estrena expansión",
-    n3_p:"Los free-to-play siguen ganando terreno en consola: 'Hidden Mountain' es la primera gran expansión de Where Winds Meet.",
+    n3_p:"Los free-to-play siguen ganando terreno en consola y 'Hidden Mountain' es la primera gran expansión de Where Winds Meet.",
     nl_title:"Un email a la semana. Cero spam.",
     nl_sub:"Las reseñas nuevas, el calendario actualizado y las 5 noticias de la semana, cada viernes en tu bandeja.",
     nl_btn:"Suscribirme",
@@ -69,6 +70,7 @@ const i18n = {
   },
   en:{
     nav_reviews:"Reviews",nav_calendar:"Calendar",nav_news:"News",nav_sub:"Subscribe",
+    home_nav_label:"On this page",home_nav_reviews:"Latest reviews",home_nav_calendar:"Upcoming releases",home_nav_news:"News",home_nav_newsletter:"Newsletter",
     hero_kicker:"Video game blog",
     hero_title:'Reviews with judgment, <em>hype</em> with a calendar.',
     hero_sub:"Hand-written reviews, an always up-to-date release calendar, and only the news that truly matters. No noise, no clickbait.",
@@ -90,13 +92,13 @@ const i18n = {
     m_jul:"July 2026",m_aug:"August 2026",m_sep:"September 2026",m_oct:"October 2026",m_nov:"November 2026",
     hype_high:"High hype",hype_mid:"Worth a look",hype_max:"Event of the year",
     news_kicker:"Now",news_title:"Only what matters",
-    news_sub:"A daily digest of the 3-5 stories actually worth your time. No recycled press releases.",
-    n1_t:"Take-Two reaffirms GTA VI's date: November 19",
+    news_sub:"The stories that change the industry, platforms or release calendar. With context, direct sources and no noise.",
+    n1_t:"Take-Two reaffirms GTA VI's November 19 release date",
     n1_p:"CEO Strauss Zelnick confirms the date again in an official filing, dispelling rumors of a third delay. Marketing kicks off this summer.",
-    n2_t:"August opens high season: Elden Ring comes to Switch 2",
+    n2_t:"August opens the high season with Elden Ring on Switch 2",
     n2_p:"Tarnished Edition launches August 28, kicking off one of the busiest stretches of the recent calendar, with September and October packed.",
     n3_t:"Wuthering Waves lands on Xbox as Where Winds Meet gets its first expansion",
-    n3_p:"Free-to-play keeps gaining console ground: 'Hidden Mountain' is Where Winds Meet's first major expansion.",
+    n3_p:"Free-to-play keeps gaining console ground and 'Hidden Mountain' is Where Winds Meet's first major expansion.",
     nl_title:"One email a week. Zero spam.",
     nl_sub:"New reviews, the updated calendar and the week's top 5 stories, every Friday in your inbox.",
     nl_btn:"Subscribe",
@@ -117,6 +119,7 @@ function setLang(lang){
   const es=document.getElementById('btn-es'), en=document.getElementById('btn-en');
   if(es) es.classList.toggle('on',lang==='es');
   if(en) en.classList.toggle('on',lang==='en');
+  if(window.renderNews) window.renderNews(lang);
 }
 
 /* ---------- Reveal on scroll ---------- */
@@ -188,15 +191,23 @@ if(cdD){
 const filters=document.getElementById('filters');
 const releaseSearch=document.getElementById('releaseSearch');
 const releaseCount=document.getElementById('releaseCount');
+const monthFilter=document.getElementById('monthFilter');
 if(filters){
   let activePlatform='all';
+  let activeMonth='all';
+  let currentMonth='';
+  document.querySelectorAll('#releases > *').forEach(el=>{
+    if(el.hasAttribute('data-month')) currentMonth=el.dataset.month;
+    else if(el.classList.contains('release')) el.dataset.releaseMonth=currentMonth;
+  });
   const applyReleaseFilters=()=>{
     const query=(releaseSearch?.value||'').trim().toLocaleLowerCase('es');
     let visible=0;
     document.querySelectorAll('#releases .release').forEach(r=>{
       const platformMatch=activePlatform==='all'||r.dataset.plat.split(' ').includes(activePlatform);
+      const monthMatch=activeMonth==='all'||r.dataset.releaseMonth===activeMonth;
       const title=(r.querySelector('h4')?.textContent||'').toLocaleLowerCase('es');
-      const show=platformMatch&&(!query||title.includes(query));
+      const show=platformMatch&&monthMatch&&(!query||title.includes(query));
       r.classList.toggle('hide',!show);
       if(show) visible++;
     });
@@ -217,6 +228,11 @@ if(filters){
     applyReleaseFilters();
   });
   releaseSearch?.addEventListener('input',applyReleaseFilters);
+  monthFilter?.addEventListener('change',()=>{
+    activeMonth=monthFilter.value;
+    applyReleaseFilters();
+    document.getElementById('releases')?.scrollIntoView({behavior:'smooth',block:'start'});
+  });
   applyReleaseFilters();
 }
 

@@ -51,9 +51,10 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- Ticker ---------- */
 .ticker{background:#16151a;color:#fff;overflow:hidden;white-space:nowrap;font-size:.8rem;font-weight:500;padding:9px 0;position:relative}
-.ticker-track{display:inline-flex;gap:48px;animation:scroll 30s linear infinite;padding-left:100%}
-.ticker:hover .ticker-track{animation-play-state:paused}
-.ticker-track span{display:inline-flex;align-items:center;gap:10px}
+.ticker-track{display:inline-flex;gap:56px;animation:scroll 58s linear infinite;padding-left:100%}
+.ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
+.ticker-track a{display:inline-flex;align-items:center;gap:10px;color:#fff;transition:color .2s}
+.ticker-track a:hover,.ticker-track a:focus-visible{color:#ffb39a;outline:none}
 .ticker-track b{color:#ff8c66;font-weight:700}
 @keyframes scroll{to{transform:translateX(-100%)}}
 
@@ -70,6 +71,13 @@ nav a.active{color:var(--accent);background:var(--accent-soft)}
 .lang-toggle{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-left:12px}
 .lang-toggle button{border:0;background:transparent;font-family:var(--sans);font-size:.78rem;font-weight:600;padding:6px 12px;cursor:pointer;color:var(--ink-soft);transition:all .25s ease}
 .lang-toggle button.on{background:var(--button-bg);color:var(--button-ink)}
+
+/* ---------- Navegación interna de portada ---------- */
+.home-section-nav{display:flex;align-items:center;justify-content:center;gap:8px;overflow-x:auto;padding-top:4px;padding-bottom:4px;scrollbar-width:none}
+.home-section-nav::-webkit-scrollbar{display:none}
+.home-section-nav span{flex:0 0 auto;margin-right:6px;color:var(--ink-soft);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.home-section-nav a{flex:0 0 auto;padding:8px 13px;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink-soft);font-size:.82rem;font-weight:650;transition:color .2s,border-color .2s,background .2s}
+.home-section-nav a:hover,.home-section-nav a.active{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
 
 /* ---------- Layout ---------- */
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
@@ -343,17 +351,21 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 
 /* Herramientas y enlaces de compra del calendario */
 .calendar-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px 0 12px}
-.release-search{display:flex;align-items:center;gap:10px;min-width:min(100%,360px);padding:11px 14px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.035);transition:border-color .2s,box-shadow .2s}
+.release-search{display:flex;align-items:center;gap:10px;min-width:min(100%,360px);padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);transition:border-color .2s,box-shadow .2s}
 .release-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,61,113,.12)}
-.release-search svg{width:18px;height:18px;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round}
-.release-search input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font:inherit}
-.release-search input::placeholder{color:var(--muted)}
-.release-count{color:var(--muted);font-size:.86rem;white-space:nowrap}
+.release-search svg{width:18px;height:18px;fill:none;stroke:var(--ink-soft);stroke-width:2;stroke-linecap:round}
+.release-search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:inherit}
+.release-search input::placeholder{color:var(--ink-soft)}
+.month-filter{display:flex;align-items:center;gap:10px;min-width:220px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink-soft)}
+.month-filter span{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.month-filter select{min-width:0;flex:1;border:0;outline:0;background:transparent;color:var(--ink);font:inherit;font-size:.88rem;cursor:pointer}
+.month-filter:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.release-count{color:var(--ink-soft);font-size:.86rem;white-space:nowrap}
 .release h4 .store-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:30px;margin-left:3px;padding:5px 9px;border:1px solid rgba(255,177,43,.48);border-radius:8px;color:#ffd073;background:rgba(255,177,43,.12);font-family:var(--sans);font-size:.64rem;font-weight:800;line-height:1;letter-spacing:.025em;text-decoration:none;white-space:nowrap;transition:color .2s,border-color .2s,background .2s,transform .2s}
 .release h4 .store-cta:hover{color:#fff0c8;border-color:#ffb12b;background:rgba(255,177,43,.22);transform:translateY(-1px)}
 .release h4 .store-cta:focus-visible{outline:2px solid #ffb12b;outline-offset:2px}
 .store-cta svg{width:15px;height:15px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.project-support-note{margin:9px 0 0;color:var(--muted);font-size:.82rem;line-height:1.55}
+.project-support-note{margin:9px 0 0;color:var(--ink-soft);font-size:.82rem;line-height:1.55}
 .calendar-page .wrap{max-width:1240px}
 .calendar-page .month-label{font-size:1.28rem;margin-top:40px;padding-bottom:10px}
 .calendar-page .release{grid-template-columns:144px minmax(0,1fr) auto;gap:22px;min-height:104px;padding:12px 18px}
@@ -374,6 +386,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 @media(max-width:700px){
   .calendar-tools{align-items:stretch;flex-direction:column;gap:8px}
   .release-search{min-width:0;width:100%}
+  .month-filter{width:100%;min-width:0}
   .release-count{padding-left:2px}
   .calendar-page .release{grid-template-columns:104px minmax(0,1fr);gap:14px;min-height:82px;padding:10px 8px}
   .calendar-page .release-art{width:104px;height:59px}
@@ -381,6 +394,15 @@ footer{border-top:1px solid var(--line);margin-top:40px}
   .calendar-page .release h4{font-size:.98rem}
   .calendar-page .release h4 .store-cta{min-height:27px;padding:4px 7px;font-size:.59rem}
   .calendar-page .release .platforms{font-size:.76rem}
+}
+
+@media(max-width:900px){
+  .home-section-nav{justify-content:flex-start;margin-top:6px}
+  .home-section-nav a{display:inline-flex}
+}
+
+@media(max-width:540px){
+  .home-section-nav span{display:none}
 }
 
 

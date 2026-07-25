@@ -2,6 +2,15 @@
   const root=document.getElementById('releases');
   if(!root||root.dataset.mosaicReady) return;
 
+  /* Los ajustes específicos de la cuadrícula viven en una hoja separada. */
+  if(!document.getElementById('calendarGridStyles')){
+    const styles=document.createElement('link');
+    styles.id='calendarGridStyles';
+    styles.rel='stylesheet';
+    styles.href='css/calendar-grid.css';
+    document.head.append(styles);
+  }
+
   /*
    * Prepara el calendario para la vista de mosaico sin tocar el orden del HTML:
    *  - envuelve los lanzamientos de cada mes en un .month-group
@@ -13,14 +22,6 @@
 
   const TIER={'hype-max':1,'hype-high':2};
 
-  /*
-   * Carátula vertical para las tarjetas destacadas del mosaico.
-   * Se indica a mano con data-poster en el .release correspondiente. No se puede
-   * deducir de Steam: cada recurso vive bajo un hash distinto en su CDN y el
-   * retrato 600x900 no aparece en ninguna API pública.
-   * Solo se aplica a los niveles 1 y 2; en las fichas mínimas no se apreciaría.
-   * Si la imagen falla o no es vertical se descarta y la tarjeta queda como está.
-   */
   function addPoster(release){
     if(release.dataset.tier==='3'||release.querySelector('.release-poster')) return;
     const url=release.dataset.poster;
@@ -41,6 +42,34 @@
     if(title) poster.setAttribute('aria-hidden','true');
   }
 
+  function addCompactDate(release){
+    if(release.querySelector(':scope > .compact-date')) return;
+    const source=release.querySelector('.release-art .rdate');
+    if(!source) return;
+    const day=source.querySelector('b')?.textContent.trim();
+    const month=source.querySelector('span')?.textContent.trim();
+    if(!day) return;
+
+    const date=document.createElement('span');
+    date.className='compact-date';
+    date.setAttribute('aria-hidden','true');
+    const dayNode=document.createElement('b');
+    dayNode.textContent=day;
+    date.append(dayNode);
+    if(month){
+      const monthNode=document.createElement('span');
+      monthNode.textContent=month;
+      date.append(monthNode);
+    }
+    release.prepend(date);
+  }
+
+  function monthName(monthKey){
+    const [year,month]=monthKey.split('-').map(Number);
+    if(!year||!month) return '';
+    return new Intl.DateTimeFormat('es-ES',{month:'long'}).format(new Date(year,month-1,1));
+  }
+
   const months=[];
   let current=null;
 
@@ -58,6 +87,7 @@
     group.className='month-group';
     group.dataset.groupMonth=entry.month;
     entry.label.after(group);
+
     entry.releases.forEach(release=>{
       const badge=release.querySelector(':scope > .hype');
       let tier=3;
@@ -67,19 +97,27 @@
         }
       }
       release.dataset.tier=String(tier);
-      release.style.order=String(tier);
+      release.style.order=tier===3?'4':String(tier);
       group.append(release);
       addPoster(release);
+      if(tier===3) addCompactDate(release);
     });
 
-    /*
-     * Las fichas mínimas arrancan en fila nueva. Si no, cuando un mes tiene
-     * un número de destacados que no llena la última fila, se cuela una ficha
-     * baja al lado de dos tarjetas altas y deja un hueco debajo.
-     */
-    const compact=entry.releases.find(release=>release.dataset.tier==='3');
-    const hasFeatured=entry.releases.some(release=>release.dataset.tier!=='3');
-    if(compact&&hasFeatured) compact.classList.add('row-start');
+    const compact=entry.releases.filter(release=>release.dataset.tier==='3');
+    const featured=entry.releases.filter(release=>release.dataset.tier!=='3');
+    const tierTwo=entry.releases.filter(release=>release.dataset.tier==='2');
+    group.dataset.featuredCount=String(featured.length);
+    group.dataset.tierTwoCount=String(tierTwo.length);
+    group.dataset.tierTwoLayout=tierTwo.length===1?'single':(tierTwo.length===3||tierTwo.length>=5?'thirds':'halves');
+
+    if(compact.length&&featured.length){
+      compact[0].classList.add('row-start');
+      const secondaryLabel=document.createElement('div');
+      secondaryLabel.className='month-secondary-label';
+      const name=monthName(entry.month);
+      secondaryLabel.textContent=name?`Otros lanzamientos de ${name}`:'Otros lanzamientos';
+      group.append(secondaryLabel);
+    }
 
     entry.group=group;
   });

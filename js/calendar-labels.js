@@ -28,7 +28,6 @@
     'Mistfall Hunter',
     'Big Walk',
     'Duskfade',
-    'Mafia: The Old Country',
     'The Sinking City 2',
     'Mortal Shell II',
     "Fire Emblem: Fortune's Weave",
@@ -36,18 +35,14 @@
     'EA Sports FC 27',
     'Minecraft Dungeons II',
     'Star Wars: Galactic Racer',
-    "Dragon's Dogma 2: Dark Arisen",
     'Final Fantasy Resonance',
     'Call of Duty: Modern Warfare 4'
   ]);
 
-  const objectiveLabels=new Map([
-    ['Dune: Awakening','Nueva plataforma'],
-    ['Elden Ring: Tarnished Edition','Nueva plataforma'],
-    ['Metaphor: ReFantazio','Nueva plataforma'],
-    ['Kingdom Hearts Collection [I~III]','Recopilatorio'],
-    ['MGS: Master Collection Vol. 2','Recopilatorio'],
-    ['Godzilla: Destroy All Monsters Melee','Remaster']
+  const newPlatform=new Set([
+    'Dune: Awakening',
+    'Elden Ring: Tarnished Edition',
+    'Metaphor: ReFantazio'
   ]);
 
   releases.forEach(release=>{
@@ -58,6 +53,19 @@
     const title=(heading.childNodes[0]?.textContent||heading.textContent).trim();
     if(badge.classList.contains('hype-out')) return;
 
+    if(newPlatform.has(title)&&!heading.querySelector('.tag-dlc')){
+      const tag=document.createElement('span');
+      tag.className='tag-dlc';
+      tag.textContent='Nueva plataforma';
+      heading.append(' ',tag);
+    }
+
+    const hasObjectiveTag=Boolean(heading.querySelector('.tag-dlc'));
+    if(hasObjectiveTag){
+      badge.remove();
+      return;
+    }
+
     if(eventOfYear.has(title)){
       badge.className='hype hype-max';
       badge.textContent='El evento del año';
@@ -67,13 +75,6 @@
     if(highHype.has(title)){
       badge.className='hype hype-high';
       badge.textContent='Hype alto';
-      return;
-    }
-
-    const objective=objectiveLabels.get(title);
-    if(objective){
-      badge.className='hype hype-mid';
-      badge.textContent=objective;
       return;
     }
 

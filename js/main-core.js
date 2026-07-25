@@ -230,10 +230,18 @@ if(filters){
       if(show) visible++;
     });
     document.querySelectorAll('#releases [data-month]').forEach(m=>{
-      let el=m.nextElementSibling, any=false;
-      while(el&&!el.hasAttribute('data-month')){
-        if(el.classList.contains('release')&&!el.classList.contains('hide')) any=true;
-        el=el.nextElementSibling;
+      const next=m.nextElementSibling;
+      const group=next&&next.classList.contains('month-group')?next:null;
+      let any=false;
+      if(group){
+        any=[...group.children].some(el=>el.classList.contains('release')&&!el.classList.contains('hide'));
+        group.style.display=any?'':'none';
+      }else{
+        let el=next;
+        while(el&&!el.hasAttribute('data-month')){
+          if(el.classList.contains('release')&&!el.classList.contains('hide')) any=true;
+          el=el.nextElementSibling;
+        }
       }
       m.style.display=any?'':'none';
     });

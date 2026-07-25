@@ -374,6 +374,106 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .month-filter select option{background:var(--card);color:var(--ink)}
 .month-filter:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 .release-count{color:var(--ink-soft);font-size:.86rem;white-space:nowrap;margin-left:auto}
+
+/* ---------- Selector de vista del calendario ---------- */
+.view-toggle{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:99px;background:var(--card)}
+.view-btn{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border:0;border-radius:99px;background:transparent;color:var(--ink-soft);font-family:var(--sans);font-size:.82rem;font-weight:650;line-height:1;cursor:pointer;transition:background .2s ease,color .2s ease}
+.view-btn:hover{color:var(--ink)}
+.view-btn.on{background:var(--accent);color:#fff}
+.view-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.view-btn svg{width:16px;height:16px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- Calendario: meses anteriores plegados ---------- */
+.past-months{margin:8px 0 4px}
+.past-months summary{display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink-soft);font-size:.88rem;font-weight:650;cursor:pointer;list-style:none;transition:border-color .2s,color .2s}
+.past-months summary::-webkit-details-marker{display:none}
+.past-months summary::before{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);transition:transform .2s ease}
+.past-months[open] summary::before{transform:rotate(45deg)}
+.past-months summary:hover{border-color:var(--accent);color:var(--accent)}
+.past-months summary small{margin-left:auto;font-weight:600;opacity:.75}
+.past-months .month-label:first-of-type{margin-top:22px}
+
+/* ---------- Calendario: vista de mosaico ---------- */
+#releases.view-grid .month-group{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;align-items:start}
+#releases.view-grid .release{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:0;min-height:0;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+#releases.view-grid .release:hover{transform:translateY(-3px);background:transparent;border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+#releases.view-grid .release.hide,
+#releases.view-grid .release[data-tier="1"].hide,
+#releases.view-grid .release[data-tier="2"].hide,
+#releases.view-grid .release[data-tier="3"].hide{display:none}
+#releases.view-grid .release .hype{display:none}
+#releases.view-grid .release.row-start{grid-column-start:1}
+
+/* Niveles 1 y 2: la carátula es el fondo y el título va encima */
+#releases.view-grid .release[data-tier="1"],
+#releases.view-grid .release[data-tier="2"]{background:#12111a}
+#releases.view-grid .release[data-tier="1"]{grid-column:1/-1;height:210px}
+#releases.view-grid .release[data-tier="2"]{height:126px}
+#releases.view-grid .release[data-tier="1"] .release-art,
+#releases.view-grid .release[data-tier="2"] .release-art{position:absolute;inset:0;width:100%;height:100%;border-radius:0}
+#releases.view-grid .release[data-tier="1"] .release-art+div,
+#releases.view-grid .release[data-tier="2"] .release-art+div{position:relative;z-index:3;padding:34px 13px 11px;background:linear-gradient(transparent,rgba(8,7,14,.72) 42%,rgba(8,7,14,.97))}
+/* La imagen se oscurece un punto para que el título aguante también sobre arte claro */
+#releases.view-grid .release[data-tier="1"] .release-art::after,
+#releases.view-grid .release[data-tier="2"] .release-art::after{content:"";position:absolute;inset:0;z-index:1;background:rgba(8,7,14,.28);transition:background .25s ease}
+#releases.view-grid .release[data-tier="1"]:hover .release-art::after,
+#releases.view-grid .release[data-tier="2"]:hover .release-art::after{background:rgba(8,7,14,.1)}
+#releases.view-grid .release[data-tier="1"] h4,
+#releases.view-grid .release[data-tier="2"] h4{text-shadow:0 1px 12px rgba(0,0,0,.75)}
+#releases.view-grid .release[data-tier="1"] h4,
+#releases.view-grid .release[data-tier="2"] h4{color:#fff;line-height:1.25}
+#releases.view-grid .release[data-tier="1"] h4{font-size:1.35rem}
+#releases.view-grid .release[data-tier="2"] h4{font-size:.95rem}
+#releases.view-grid .release[data-tier="1"] .platforms,
+#releases.view-grid .release[data-tier="2"] .platforms{color:rgba(255,255,255,.68);font-size:.74rem;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#releases.view-grid .release[data-tier="2"] .store-cta{display:none}
+
+/* Carátula vertical sobre el arte apaisado, que pasa a hacer de fondo */
+.release-poster{display:none}
+#releases.view-grid .release.has-poster .release-poster{display:block;position:absolute;z-index:4;left:12px;bottom:11px;border-radius:7px;border:1px solid rgba(255,255,255,.16);box-shadow:0 6px 18px -6px rgba(0,0,0,.85);object-fit:cover;background:#0b0a0d}
+#releases.view-grid .release[data-tier="1"].has-poster .release-poster{width:78px;height:110px}
+#releases.view-grid .release[data-tier="2"].has-poster .release-poster{width:52px;height:74px}
+#releases.view-grid .release.has-poster .release-art img{opacity:.55;filter:saturate(.85)}
+#releases.view-grid .release.has-poster:hover .release-art img{opacity:.72}
+#releases.view-grid .release[data-tier="1"].has-poster .release-art+div{padding-left:104px}
+#releases.view-grid .release[data-tier="2"].has-poster .release-art+div{padding-left:76px}
+
+/* Los iconos suben arriba: abajo manda el título */
+#releases.view-grid .release[data-tier="1"] .release-art .rdate,
+#releases.view-grid .release[data-tier="2"] .release-art .rdate{top:6px;left:6px;bottom:auto}
+#releases.view-grid .release[data-tier="1"] .release-art .trailer,
+#releases.view-grid .release[data-tier="2"] .release-art .trailer{top:6px;right:6px;left:auto}
+#releases.view-grid .release[data-tier="1"] .release-art .gcal,
+#releases.view-grid .release[data-tier="2"] .release-art .gcal{top:6px;right:37px;bottom:auto}
+#releases.view-grid .release[data-tier="1"] .release-art .wish,
+#releases.view-grid .release[data-tier="2"] .release-art .wish{top:6px;right:68px}
+
+/* Nivel 3: ficha mínima, miniatura y título */
+#releases.view-grid .release[data-tier="3"]{flex-direction:row;align-items:center;gap:10px;height:auto;padding:5px 10px 5px 5px;background:var(--card)}
+#releases.view-grid .release[data-tier="3"] .release-art{position:static;width:54px;height:31px;border-radius:6px;flex:0 0 auto}
+#releases.view-grid .release[data-tier="3"] .release-art .trailer,
+#releases.view-grid .release[data-tier="3"] .release-art .wish,
+#releases.view-grid .release[data-tier="3"] .release-art .gcal{display:none}
+#releases.view-grid .release[data-tier="3"] .release-art .rdate{padding:1px 4px;border-radius:4px}
+#releases.view-grid .release[data-tier="3"] .release-art .rdate b{font-size:.56rem}
+#releases.view-grid .release[data-tier="3"] .release-art .rdate span{display:none}
+#releases.view-grid .release[data-tier="3"] .release-art+div{min-width:0;flex:1}
+#releases.view-grid .release[data-tier="3"] h4{display:block;font-size:.82rem;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#releases.view-grid .release[data-tier="3"] .platforms{font-size:.68rem;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#releases.view-grid .release[data-tier="3"] .store-cta,
+#releases.view-grid .release[data-tier="3"] .tag-dlc{display:none}
+
+@media(max-width:980px){
+  #releases.view-grid .month-group{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #releases.view-grid .release[data-tier="1"]{height:180px}
+}
+@media(max-width:600px){
+  #releases.view-grid .month-group{grid-template-columns:minmax(0,1fr);gap:7px}
+  #releases.view-grid .release[data-tier="1"]{height:160px}
+  #releases.view-grid .release[data-tier="2"]{height:116px}
+  .view-btn span{display:none}
+  .view-btn{padding:8px 11px}
+}
 .release h4 .store-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:30px;margin-left:3px;padding:5px 9px;border:1px solid rgba(255,177,43,.48);border-radius:8px;color:#ffd073;background:rgba(255,177,43,.12);font-family:var(--sans);font-size:.64rem;font-weight:800;line-height:1;letter-spacing:.025em;text-decoration:none;white-space:nowrap;transition:color .2s,border-color .2s,background .2s,transform .2s}
 .release h4 .store-cta:hover{color:#fff0c8;border-color:#ffb12b;background:rgba(255,177,43,.22);transform:translateY(-1px)}
 .release h4 .store-cta:focus-visible{outline:2px solid #ffb12b;outline-offset:2px}
@@ -405,6 +505,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
   .release-search{min-width:0;width:100%}
   .month-filter{width:100%;min-width:0}
   .release-count{padding-left:2px;margin-left:0}
+  .view-toggle{align-self:flex-start}
   .calendar-page .release{grid-template-columns:104px minmax(0,1fr);gap:14px;min-height:82px;padding:10px 8px}
   .calendar-page .release-art{width:104px;height:59px}
   .calendar-page .release .hype{display:none}

@@ -87,6 +87,16 @@
       </select>
     </label>
     <span class="release-count" id="releaseCount" aria-live="polite"></span>
+    <div class="view-toggle" id="viewToggle" role="group" aria-label="Vista del calendario">
+      <button type="button" class="view-btn on" data-view="list" aria-pressed="true" title="Vista de lista">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="5" height="4" rx="1"/><rect x="3" y="14" width="5" height="4" rx="1"/><path d="M11 7h10M11 16h10"/></svg>
+        <span>Lista</span>
+      </button>
+      <button type="button" class="view-btn" data-view="grid" aria-pressed="false" title="Vista de cuadrícula">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="13" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/></svg>
+        <span>Cuadrícula</span>
+      </button>
+    </div>
   </div>
 
   <div class="filters reveal" id="filters">

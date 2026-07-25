@@ -10,5 +10,6 @@
   load('main-core.js',()=>load('calendar-labels.js',()=>{
     load('calendar-trailers.js');
     load('calendar-gcal.js');
+    load('calendar-mosaic.js',()=>load('calendar-view.js'));
   }));
 })();

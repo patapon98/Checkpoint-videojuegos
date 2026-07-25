@@ -42,6 +42,25 @@
     if(title) poster.setAttribute('aria-hidden','true');
   }
 
+  /*
+   * La etiqueta del listado se conserva intacta y se clona como un banderín
+   * exclusivo de la cuadrícula. Así DLC, remasters, recopilatorios o nuevas
+   * plataformas no pierden contexto al cambiar de vista.
+   */
+  function addCardRibbon(release){
+    if(release.querySelector(':scope > .card-ribbon')) return;
+    const source=release.querySelector('h4 .tag-dlc');
+    const text=source?.textContent.trim();
+    if(!text) return;
+
+    const ribbon=document.createElement('span');
+    ribbon.className='card-ribbon';
+    ribbon.textContent=text;
+    ribbon.setAttribute('aria-hidden','true');
+    release.append(ribbon);
+    release.classList.add('has-card-ribbon');
+  }
+
   function addCompactDate(release){
     if(release.querySelector(':scope > .compact-date')) return;
     const source=release.querySelector('.release-art .rdate');
@@ -99,6 +118,7 @@
       release.dataset.tier=String(tier);
       release.style.order=tier===3?'4':String(tier);
       group.append(release);
+      addCardRibbon(release);
       addPoster(release);
       if(tier===3) addCompactDate(release);
     });

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Moderlode</title>
+<meta name="description" content="Contacta con Moderlode para proponer correcciones, compartir noticias, hablar de videojuegos o plantear colaboraciones.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="canonical" href="https://moderlode.alexanderblanc3.workers.dev/contacto.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Moderlode">
+<meta property="og:title" content="Contacto | Moderlode">
+<meta property="og:description" content="Correcciones, noticias, colaboraciones o simplemente una buena conversación sobre videojuegos.">
+<meta property="og:url" content="https://moderlode.alexanderblanc3.workers.dev/contacto.html">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('moderlode-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
+</head>
+<body class="contact-page">
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Moder<span>lode</span></a>
+    <nav>
+      <a href="noticias.html">Noticias</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="resenas.html">Reseñas</a>
+      <a href="contacto.html" class="active" data-contact-link aria-current="page">Contacto</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap contact-hero">
+    <div class="contact-intro reveal">
+      <div class="kicker">Contacto</div>
+      <h1>Hablemos de <em>videojuegos.</em></h1>
+      <p class="contact-lead">¿Has detectado una fecha incorrecta, una noticia que debería estar en el radar o simplemente quieres comentar una reseña? Este espacio está abierto para lectores, estudios, agencias y cualquier persona con algo interesante que aportar.</p>
+
+      <div class="contact-topics" aria-label="Motivos habituales de contacto">
+        <span>Correcciones</span>
+        <span>Noticias y pistas</span>
+        <span>Colaboraciones</span>
+        <span>Códigos de prensa</span>
+        <span>Opiniones</span>
+      </div>
+
+      <div class="contact-human">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H8l-4 3v-14Z"/><path d="M8 9h8M8 13h5"/></svg>
+        <div>
+          <b>Respuesta humana, sin bots</b>
+          <span>Leo personalmente todos los mensajes y respondo cuando puedo aportar algo útil.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-card reveal">
+      <div class="contact-form-head">
+        <div>
+          <h2>Cuéntame</h2>
+          <p>Un poco de contexto ayuda mucho. No hace falta que el mensaje sea formal.</p>
+        </div>
+        <span class="contact-form-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m3 5 9 7 9-7"/><rect x="3" y="5" width="18" height="14" rx="3"/></svg>
+        </span>
+      </div>
+
+      <div class="contact-success" id="contactSuccess" role="status" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+        <div>
+          <b>Mensaje enviado</b>
+          <span>Gracias por escribir. Te responderé en cuanto pueda.</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/alex@unav.es" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde Moderlode">
+        <input type="hidden" name="_replyto" value="">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://moderlode.alexanderblanc3.workers.dev/contacto.html?enviado=1">
+        <input type="hidden" name="_url" value="https://moderlode.alexanderblanc3.workers.dev/contacto.html">
+        <input type="hidden" name="_autoresponse" value="Gracias por escribir a Moderlode. He recibido tu mensaje y responderé en cuanto pueda.">
+        <input class="contact-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="contact-form-row">
+          <div class="contact-field">
+            <label for="contactName">Nombre</label>
+            <input id="contactName" name="nombre" type="text" autocomplete="name" placeholder="Cómo te llamas" maxlength="80" required>
+          </div>
+          <div class="contact-field">
+            <label for="contactEmail">Correo electrónico</label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" maxlength="140" required>
+          </div>
+        </div>
+
+        <div class="contact-field">
+          <label for="contactTopic">¿Sobre qué quieres escribir?</label>
+          <select id="contactTopic" name="tema" required>
+            <option value="" selected disabled>Elige una opción</option>
+            <option value="Corrección o actualización">Corrección o actualización</option>
+            <option value="Noticia o pista">Noticia o pista</option>
+            <option value="Colaboración o propuesta profesional">Colaboración o propuesta profesional</option>
+            <option value="Código de prensa o información editorial">Código de prensa o información editorial</option>
+            <option value="Comentario sobre una reseña">Comentario sobre una reseña</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="contact-field">
+          <label for="contactMessage">Mensaje</label>
+          <textarea id="contactMessage" name="mensaje" placeholder="Escribe aquí lo que tengas en mente…" maxlength="1800" required></textarea>
+          <div class="contact-message-meta"><span id="contactCount">0</span>/1800</div>
+        </div>
+
+        <label class="contact-consent">
+          <input type="checkbox" required>
+          <span>Acepto que estos datos se utilicen únicamente para gestionar y responder este mensaje.</span>
+        </label>
+
+        <button class="contact-submit" type="submit">
+          <span>Enviar mensaje</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 17 8-17 8 3-8-3-8Z"/><path d="M7 12h14"/></svg>
+        </button>
+      </form>
+
+      <p class="contact-privacy">El envío se procesa mediante FormSubmit, un servicio externo de formularios. No incluyas contraseñas, datos bancarios ni otra información sensible.</p>
+    </div>
+  </section>
+
+  <section class="wrap contact-direct reveal">
+    <div>
+      <h2>¿Prefieres el correo de toda la vida?</h2>
+      <p>Puedes escribir directamente y adjuntar archivos desde tu cliente de correo.</p>
+    </div>
+    <a href="mailto:alex@unav.es?subject=Contacto%20desde%20Moderlode">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 9 7 9-7"/><rect x="3" y="5" width="18" height="14" rx="3"/></svg>
+      alex@unav.es
+    </a>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Moderlode</span>
+    <span>Noticias · Calendario · Reseñas · Contacto</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

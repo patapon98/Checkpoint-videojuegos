@@ -1,0 +1,263 @@
+/* Ajustes visuales de la vista de cuadrícula del calendario.
+   Se carga desde calendar-mosaic.js para mantener aislada la composición. */
+
+#releases.view-grid .month-group{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:12px;
+  align-items:stretch;
+}
+
+#releases.view-grid .release{
+  box-shadow:0 10px 24px -22px rgba(8,7,14,.7);
+}
+
+/* Destacados: un máximo ocupa la fila completa; los "high" se adaptan
+   al número de tarjetas del mes para evitar huecos visuales. */
+#releases.view-grid .release[data-tier="1"]{
+  grid-column:1/-1;
+  height:220px;
+}
+
+#releases.view-grid .release[data-tier="2"]{
+  grid-column:span 3;
+  height:176px;
+}
+
+#releases.view-grid .month-group[data-tier-two-layout="single"] .release[data-tier="2"]{
+  grid-column:1/-1;
+}
+
+#releases.view-grid .month-group[data-tier-two-layout="thirds"] .release[data-tier="2"]{
+  grid-column:span 2;
+}
+
+/* El degradado pertenece a toda la tarjeta, no a una caja detrás del texto. */
+#releases.view-grid .release[data-tier="1"]::before,
+#releases.view-grid .release[data-tier="2"]::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(8,7,14,0) 24%,rgba(8,7,14,.18) 48%,rgba(8,7,14,.72) 78%,rgba(8,7,14,.96) 100%);
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art+div,
+#releases.view-grid .release[data-tier="2"] .release-art+div{
+  z-index:3;
+  padding:72px 18px 15px;
+  background:none;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art::after,
+#releases.view-grid .release[data-tier="2"] .release-art::after{
+  background:rgba(8,7,14,.18);
+}
+
+#releases.view-grid .release[data-tier="1"]:hover .release-art::after,
+#releases.view-grid .release[data-tier="2"]:hover .release-art::after{
+  background:rgba(8,7,14,.06);
+}
+
+#releases.view-grid .release[data-tier="1"] h4{
+  font-size:1.38rem;
+}
+
+#releases.view-grid .release[data-tier="2"] h4{
+  font-size:1.08rem;
+}
+
+#releases.view-grid .release[data-tier="1"] h4,
+#releases.view-grid .release[data-tier="2"] h4{
+  text-wrap:balance;
+  text-shadow:0 2px 16px rgba(0,0,0,.86);
+}
+
+#releases.view-grid .release[data-tier="1"] .platforms,
+#releases.view-grid .release[data-tier="2"] .platforms{
+  font-size:.78rem;
+  color:rgba(255,255,255,.76);
+}
+
+/* Controles presentes pero subordinados al arte y al título. */
+#releases.view-grid .release[data-tier="1"] .release-art .rdate,
+#releases.view-grid .release[data-tier="2"] .release-art .rdate{
+  top:10px;
+  left:10px;
+  min-width:44px;
+  padding:5px 8px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:9px;
+  background:rgba(10,8,22,.68);
+  box-shadow:0 6px 16px rgba(0,0,0,.16);
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art .rdate b,
+#releases.view-grid .release[data-tier="2"] .release-art .rdate b{
+  font-size:.86rem;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art .rdate span,
+#releases.view-grid .release[data-tier="2"] .release-art .rdate span{
+  font-size:.52rem;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art .trailer,
+#releases.view-grid .release[data-tier="2"] .release-art .trailer,
+#releases.view-grid .release[data-tier="1"] .release-art .gcal,
+#releases.view-grid .release[data-tier="2"] .release-art .gcal,
+#releases.view-grid .release[data-tier="1"] .release-art .wish,
+#releases.view-grid .release[data-tier="2"] .release-art .wish{
+  top:10px;
+  width:29px;
+  height:29px;
+  opacity:.82;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(10,8,22,.66);
+  transition:opacity .2s ease,background .2s ease,transform .2s ease;
+}
+
+#releases.view-grid .release[data-tier="1"]:hover .release-art .trailer,
+#releases.view-grid .release[data-tier="2"]:hover .release-art .trailer,
+#releases.view-grid .release[data-tier="1"]:hover .release-art .gcal,
+#releases.view-grid .release[data-tier="2"]:hover .release-art .gcal,
+#releases.view-grid .release[data-tier="1"]:hover .release-art .wish,
+#releases.view-grid .release[data-tier="2"]:hover .release-art .wish{
+  opacity:1;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art .trailer,
+#releases.view-grid .release[data-tier="2"] .release-art .trailer{right:10px}
+#releases.view-grid .release[data-tier="1"] .release-art .gcal,
+#releases.view-grid .release[data-tier="2"] .release-art .gcal{right:45px}
+#releases.view-grid .release[data-tier="1"] .release-art .wish,
+#releases.view-grid .release[data-tier="2"] .release-art .wish{right:80px}
+
+/* Separación explícita entre destacados y el resto del mes. */
+.month-secondary-label{display:none}
+#releases.view-grid .month-secondary-label{
+  display:flex;
+  grid-column:1/-1;
+  order:3;
+  align-items:center;
+  gap:12px;
+  margin-top:5px;
+  padding-top:13px;
+  color:var(--ink-soft);
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+#releases.view-grid .month-secondary-label::after{
+  content:"";
+  height:1px;
+  flex:1;
+  background:var(--line);
+}
+
+#releases.view-grid .month-group:not(:has(.release[data-tier="3"]:not(.hide))) .month-secondary-label,
+#releases.view-grid .month-group:not(:has(.release[data-tier="1"]:not(.hide),.release[data-tier="2"]:not(.hide))) .month-secondary-label{
+  display:none;
+}
+
+/* Lanzamientos secundarios: fecha independiente, miniatura limpia y más aire. */
+.compact-date{display:none}
+
+#releases.view-grid .release[data-tier="3"]{
+  grid-column:span 2;
+  order:4!important;
+  min-height:64px;
+  padding:8px 12px 8px 8px;
+  gap:10px;
+  border-radius:13px;
+}
+
+#releases.view-grid .release[data-tier="3"]>.compact-date{
+  display:flex;
+  flex:0 0 38px;
+  height:44px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border-right:1px solid var(--line);
+  color:var(--ink);
+  line-height:1;
+}
+
+#releases.view-grid .release[data-tier="3"]>.compact-date b{
+  font-family:var(--serif);
+  font-size:.84rem;
+  font-weight:750;
+}
+
+#releases.view-grid .release[data-tier="3"]>.compact-date span{
+  margin-top:3px;
+  color:var(--ink-soft);
+  font-size:.5rem;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+#releases.view-grid .release[data-tier="3"] .release-art{
+  width:70px;
+  height:40px;
+  border-radius:7px;
+}
+
+#releases.view-grid .release[data-tier="3"] .release-art .rdate{
+  display:none;
+}
+
+#releases.view-grid .release[data-tier="3"] h4{
+  font-size:.84rem;
+}
+
+#releases.view-grid .release[data-tier="3"] .platforms{
+  font-size:.69rem;
+  margin-top:2px;
+}
+
+@media(max-width:980px){
+  #releases.view-grid .month-group{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+  }
+
+  #releases.view-grid .release[data-tier="2"],
+  #releases.view-grid .month-group[data-tier-two-layout="thirds"] .release[data-tier="2"]{
+    grid-column:span 2;
+    height:164px;
+  }
+
+  #releases.view-grid .month-group[data-tier-two-layout="single"] .release[data-tier="2"]{
+    grid-column:1/-1;
+  }
+
+  #releases.view-grid .release[data-tier="3"]{
+    grid-column:span 2;
+  }
+}
+
+@media(max-width:640px){
+  #releases.view-grid .month-group{
+    grid-template-columns:minmax(0,1fr);
+    gap:9px;
+  }
+
+  #releases.view-grid .release[data-tier="1"],
+  #releases.view-grid .release[data-tier="2"],
+  #releases.view-grid .month-group[data-tier-two-layout] .release[data-tier="2"],
+  #releases.view-grid .release[data-tier="3"]{
+    grid-column:1;
+  }
+
+  #releases.view-grid .release[data-tier="1"]{height:170px}
+  #releases.view-grid .release[data-tier="2"]{height:148px}
+  #releases.view-grid .release[data-tier="1"] .release-art+div,
+  #releases.view-grid .release[data-tier="2"] .release-art+div{padding:62px 14px 13px}
+  #releases.view-grid .month-secondary-label{margin-top:2px}
+  #releases.view-grid .release[data-tier="3"]{min-height:62px}
+}

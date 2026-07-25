@@ -47,6 +47,10 @@ html[data-theme="dark"] body{
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* Escala visual al 110%: reproduce el look del zoom manual del navegador, solo en escritorio */
+@media(min-width:901px){
+  html{zoom:1.1}
+}
 a{color:inherit;text-decoration:none}
 
 /* ---------- Ticker ---------- */
@@ -350,7 +354,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 
 
 /* Herramientas y enlaces de compra del calendario */
-.calendar-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px 0 12px}
+.calendar-tools{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:24px 0 12px}
 .release-search{display:flex;align-items:center;gap:10px;min-width:min(100%,360px);padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);transition:border-color .2s,box-shadow .2s}
 .release-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,61,113,.12)}
 .release-search svg{width:18px;height:18px;fill:none;stroke:var(--ink-soft);stroke-width:2;stroke-linecap:round}
@@ -358,9 +362,10 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .release-search input::placeholder{color:var(--ink-soft)}
 .month-filter{display:flex;align-items:center;gap:10px;min-width:220px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink-soft)}
 .month-filter span{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.month-filter select{min-width:0;flex:1;border:0;outline:0;background:transparent;color:var(--ink);font:inherit;font-size:.88rem;cursor:pointer}
+.month-filter select{min-width:0;flex:1;border:0;outline:0;background:transparent;color:var(--ink);font:inherit;font-size:.88rem;cursor:pointer;color-scheme:light dark}
+.month-filter select option{background:var(--card);color:var(--ink)}
 .month-filter:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
-.release-count{color:var(--ink-soft);font-size:.86rem;white-space:nowrap}
+.release-count{color:var(--ink-soft);font-size:.86rem;white-space:nowrap;margin-left:auto}
 .release h4 .store-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:30px;margin-left:3px;padding:5px 9px;border:1px solid rgba(255,177,43,.48);border-radius:8px;color:#ffd073;background:rgba(255,177,43,.12);font-family:var(--sans);font-size:.64rem;font-weight:800;line-height:1;letter-spacing:.025em;text-decoration:none;white-space:nowrap;transition:color .2s,border-color .2s,background .2s,transform .2s}
 .release h4 .store-cta:hover{color:#fff0c8;border-color:#ffb12b;background:rgba(255,177,43,.22);transform:translateY(-1px)}
 .release h4 .store-cta:focus-visible{outline:2px solid #ffb12b;outline-offset:2px}
@@ -387,7 +392,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
   .calendar-tools{align-items:stretch;flex-direction:column;gap:8px}
   .release-search{min-width:0;width:100%}
   .month-filter{width:100%;min-width:0}
-  .release-count{padding-left:2px}
+  .release-count{padding-left:2px;margin-left:0}
   .calendar-page .release{grid-template-columns:104px minmax(0,1fr);gap:14px;min-height:82px;padding:10px 8px}
   .calendar-page .release-art{width:104px;height:59px}
   .calendar-page .release .hype{display:none}

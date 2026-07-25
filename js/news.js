@@ -107,7 +107,7 @@
     const selectedLang = lang === "en" ? "en" : "es";
     const featured = news.find(item => item.featured) || news[0];
     const rest = news
-      .filter(item => item !== featured)
+      .filter(item => item !== featured && item.home !== false)
       .sort((a, b) => b.date.localeCompare(a.date));
 
     const home = document.getElementById("newsHome");

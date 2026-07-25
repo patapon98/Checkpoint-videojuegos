@@ -8,10 +8,18 @@
   if(!archive||!filters||!toggle) return;
 
   const pageSize=10;
+  const STORAGE_KEY='moderlode:news-view';
+  const viewButtons=[...toggle.querySelectorAll('.view-btn')];
+  const gridButton=viewButtons.find(button=>button.dataset.view==='grid');
+  const listButton=viewButtons.find(button=>button.dataset.view==='list');
   let activeCategory='all';
   let activeView='grid';
   let activePage=readPage();
   let pagination=document.getElementById('newsPagination');
+
+  /* La vista principal aparece primero, igual que en el Calendario. */
+  if(gridButton) toggle.prepend(gridButton);
+  if(listButton) toggle.append(listButton);
 
   if(!pagination){
     pagination=document.createElement('nav');
@@ -21,9 +29,10 @@
     archive.insertAdjacentElement('afterend',pagination);
   }
 
+  /* Nueva clave: la primera visita tras el cambio arranca siempre en cuadrícula. */
   try{
-    const saved=localStorage.getItem('moderlode-news-view');
-    if(saved==='grid'||saved==='list') activeView=saved;
+    const saved=localStorage.getItem(STORAGE_KEY);
+    if(saved==='list') activeView='list';
   }catch(e){}
 
   function readPage(){
@@ -152,7 +161,7 @@
     const button=event.target.closest('.view-btn');
     if(!button) return;
     activeView=button.dataset.view;
-    try{localStorage.setItem('moderlode-news-view',activeView)}catch(e){}
+    try{localStorage.setItem(STORAGE_KEY,activeView)}catch(e){}
     apply();
   });
 

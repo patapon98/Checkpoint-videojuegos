@@ -18,7 +18,7 @@
     ['Dave the Diver','https://www.youtube.com/watch?v=HCYultesGEg'],
     ['Deltarune: Chapter 5','https://www.youtube.com/watch?v=P3rE7su1Fxg'],
     ['Star Fox','https://www.youtube.com/watch?v=SBKbRlPix2U'],
-    ['DOOM: The Dark Ages','https://www.youtube.com/watch?v=nL_JF1ZNllI'],
+    ['DOOM: The Dark Ages | Revelations','https://www.youtube.com/watch?v=nL_JF1ZNllI'],
     ['AC Black Flag Resynced','https://www.youtube.com/watch?v=U9EmVkQ5v54'],
     ['Granblue Fantasy: Relink','https://www.youtube.com/watch?v=klUbdrmc618'],
     ['Denshattack!','https://www.youtube.com/watch?v=2gOL6y8iCHc'],

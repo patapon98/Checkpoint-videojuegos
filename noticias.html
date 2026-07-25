@@ -18,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/news-grid.css">
 <script>
 (function(){
   try{
@@ -30,7 +31,6 @@
 </script>
 </head>
 <body class="news-page">
-
 <header>
   <div class="header-inner">
     <a href="index.html" class="logo">Moder<span>lode</span></a>
@@ -45,7 +45,6 @@
     </nav>
   </div>
 </header>
-
 <div class="wrap article-hero reveal">
   <a href="index.html" class="back">← Volver al inicio</a>
   <div class="kicker">Actualidad esencial</div>
@@ -58,19 +57,33 @@
     </aside>
   </div>
 </div>
-
 <main class="wrap reveal" style="padding-top:0">
-  <div id="newsArchive" aria-live="polite"></div>
+  <div class="news-tools" aria-label="Controles de noticias">
+    <div class="news-filters" id="newsFilters" role="group" aria-label="Filtrar noticias por categoría">
+      <button class="news-filter on" type="button" data-category="all" aria-pressed="true">Todas</button>
+      <button class="news-filter" type="button" data-category="Juegos" aria-pressed="false">Juegos</button>
+      <button class="news-filter" type="button" data-category="Plataformas" aria-pressed="false">Plataformas</button>
+      <button class="news-filter" type="button" data-category="Industria" aria-pressed="false">Industria</button>
+      <button class="news-filter" type="button" data-category="Lanzamientos" aria-pressed="false">Lanzamientos</button>
+    </div>
+    <div class="view-toggle news-view-toggle" id="newsViewToggle" role="group" aria-label="Vista de noticias">
+      <button type="button" class="view-btn" data-view="list" aria-pressed="false" title="Vista de lista">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="5" height="4" rx="1"/><rect x="3" y="14" width="5" height="4" rx="1"/><path d="M11 7h10M11 16h10"/></svg><span>Lista</span>
+      </button>
+      <button type="button" class="view-btn on" data-view="grid" aria-pressed="true" title="Vista de cuadrícula">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="13" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/></svg><span>Cuadrícula</span>
+      </button>
+    </div>
+  </div>
+  <p class="news-results" id="newsResults" aria-live="polite"></p>
+  <div id="newsArchive" class="is-grid" aria-live="polite"></div>
 </main>
-
-
 <footer>
   <div class="footer-inner">
     <span>© 2026 Moderlode</span>
     <span>Noticias · Calendario · Reseñas · Contacto</span>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 <script src="js/news-data.js"></script>
 <script src="js/news.js"></script>

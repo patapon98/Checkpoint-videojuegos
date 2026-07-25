@@ -40,6 +40,10 @@ html[data-theme="dark"]{
   --button-ink:#16151a;
   --hover-bg:rgba(255,255,255,.055);
 }
+html[data-theme="dark"] body{
+  background:var(--bg);
+  color:var(--ink);
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}

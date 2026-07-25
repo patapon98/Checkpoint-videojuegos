@@ -23,15 +23,15 @@
     const image=release.querySelector('.release-art img');
     if(!config||!image) return;
 
-    image.classList.remove('fit-contain');
-    image.decoding='async';
-    image.src=config.src;
-
     let fallbackUsed=false;
     image.addEventListener('error',()=>{
       if(fallbackUsed||!config.fallback) return;
       fallbackUsed=true;
       image.src=config.fallback;
     });
+
+    image.classList.remove('fit-contain');
+    image.decoding='async';
+    image.src=config.src;
   });
 })();

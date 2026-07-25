@@ -68,6 +68,74 @@ window.MODERLODE_NEWS = [
     ]
   },
   {
+    id: "god-of-war-laufey-fecha",
+    category: { es: "Juegos", en: "Games" },
+    date: "2026-07-25",
+    featured: false,
+    tone: "playstation",
+    title: {
+      es: "God of War Laufey llegará el 16 de febrero de 2027 y prepara el regreso de Kratos",
+      en: "God of War Laufey arrives February 16, 2027 and sets up Kratos's return"
+    },
+    summary: {
+      es: "Sony ha fijado el lanzamiento de God of War Laufey para PS5. Cory Barlog también ha confirmado que el siguiente juego de la saga volverá a estar protagonizado por Kratos y conectará directamente con la historia de Faye.",
+      en: "Sony has dated God of War Laufey for PS5. Cory Barlog also confirmed that the following game in the series will once again star Kratos and connect directly to Faye's story."
+    },
+    why: {
+      es: "No es solo la fecha de uno de los grandes exclusivos de 2027: Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
+      en: "This is more than a date for one of 2027's major exclusives: Santa Monica Studio has clarified how the next two God of War games will connect."
+    },
+    sources: [
+      {
+        label: "PlayStation",
+        type: { es: "Anuncio oficial", en: "Official announcement" },
+        url: "https://x.com/PlayStation/status/2080831588317773861"
+      },
+      {
+        label: "VGC",
+        type: { es: "Información", en: "Reporting" },
+        url: "https://www.videogameschronicle.com/news/playstation-confirms-god-of-war-laufey-release-date-and-return-of-kratos-in-next-game/"
+      },
+      {
+        label: "Gematsu",
+        type: { es: "Contexto", en: "Context" },
+        url: "https://www.gematsu.com/2026/07/god-of-war-laufey-launches-february-16-2027"
+      }
+    ]
+  },
+  {
+    id: "gta-vi-codigos-japon",
+    category: { es: "Plataformas", en: "Platforms" },
+    date: "2026-07-25",
+    featured: false,
+    home: false,
+    tone: "playstation",
+    title: {
+      es: "Los códigos japoneses de GTA VI para PS5 caducarán 170 días después del lanzamiento",
+      en: "Japanese GTA VI PS5 codes will expire 170 days after launch"
+    },
+    summary: {
+      es: "Las cajas japonesas de GTA VI para PS5 incluirán un código de descarga, no un disco. Rockstar indica que esos códigos caducarán 170 días después de su emisión, fechada el 19 de noviembre de 2026.",
+      en: "Japanese boxed copies of GTA VI for PS5 will contain a download code rather than a disc. Rockstar says those codes expire 170 days after issuance on November 19, 2026."
+    },
+    why: {
+      es: "Aunque es una restricción regional, muestra una de las limitaciones prácticas de sustituir el disco por un código dentro de una caja.",
+      en: "Although this is a regional restriction, it demonstrates one practical limitation of replacing a disc with a code inside a box."
+    },
+    sources: [
+      {
+        label: "Rockstar Support",
+        type: { es: "Fuente oficial", en: "Official source" },
+        url: "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+      },
+      {
+        label: "VGC",
+        type: { es: "Contexto", en: "Context" },
+        url: "https://www.videogameschronicle.com/news/gta-6-download-codes-expire-only-170-days-after-launch-in-japan/"
+      }
+    ]
+  },
+  {
     id: "marvel-wolverine-fecha",
     category: { es: "Juegos", en: "Games" },
     date: "2026-07-23",

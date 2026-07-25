@@ -4,7 +4,7 @@
   if(!releases||!toggle) return;
 
   /*
-   * Alterna entre la lista densa y la cuadrícula. Ambas vistas usan el mismo
+   * Alterna entre la cuadrícula y la lista densa. Ambas vistas usan el mismo
    * HTML, pero los mosaicos destacados pueden cargar una imagen de mayor
    * resolución sin penalizar la vista de lista ni descargar todos los banners
    * HD de golpe.
@@ -12,8 +12,14 @@
 
   const STORAGE_KEY='moderlode:calendar-view';
   const buttons=[...toggle.querySelectorAll('.view-btn')];
+  const gridButton=buttons.find(btn=>btn.dataset.view==='grid');
+  const listButton=buttons.find(btn=>btn.dataset.view==='list');
   const featuredImages=[...releases.querySelectorAll('.release[data-tier="1"] .release-art img,.release[data-tier="2"] .release-art img')];
   let artworkObserver=null;
+
+  /* La opción principal queda visualmente a la izquierda. */
+  if(gridButton) toggle.prepend(gridButton);
+  if(listButton) toggle.append(listButton);
 
   /*
    * data-grid-art permite indicar manualmente una imagen concreta en el HTML.
@@ -146,7 +152,7 @@
 
   let saved=null;
   try{ saved=localStorage.getItem(STORAGE_KEY); }catch(err){ saved=null; }
-  apply(saved==='grid'?'grid':'list');
+  apply(saved==='list'?'list':'grid');
 
   toggle.addEventListener('click',event=>{
     const btn=event.target.closest('.view-btn');

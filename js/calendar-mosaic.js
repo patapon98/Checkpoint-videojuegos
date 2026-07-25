@@ -69,6 +69,25 @@
     release.classList.add('has-card-ribbon');
   }
 
+  /*
+   * El enlace de afiliación sigue visible en la lista y se clona como una acción
+   * específica de la cuadrícula. En los mosaicos grandes se presenta como un CTA
+   * breve; en las fichas compactas queda reducido al icono de compra.
+   */
+  function addGridStoreAction(release){
+    if(release.querySelector(':scope > .grid-store-cta')) return;
+    const source=release.querySelector('h4 .store-cta');
+    if(!source) return;
+
+    const action=source.cloneNode(true);
+    action.className='grid-store-cta';
+    action.querySelector('span')?.replaceChildren(document.createTextNode('Comprar'));
+    action.title=source.title||'Comprar en Instant Gaming';
+    action.setAttribute('aria-label',source.getAttribute('aria-label')||action.title);
+    release.append(action);
+    release.classList.add('has-grid-store');
+  }
+
   function addCompactDate(release){
     if(release.querySelector(':scope > .compact-date')) return;
     const source=release.querySelector('.release-art .rdate');
@@ -127,6 +146,7 @@
       release.style.order=tier===3?'4':String(tier);
       group.append(release);
       addCardRibbon(release);
+      addGridStoreAction(release);
       addPoster(release);
       if(tier===3) addCompactDate(release);
     });

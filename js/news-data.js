@@ -82,8 +82,8 @@ window.MODERLODE_NEWS = [
       en: "Sony has dated God of War Laufey for PS5. Cory Barlog also confirmed that the following game in the series will once again star Kratos and connect directly to Faye's story."
     },
     why: {
-      es: "No es solo la fecha de uno de los grandes exclusivos de 2027: Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
-      en: "This is more than a date for one of 2027's major exclusives: Santa Monica Studio has clarified how the next two God of War games will connect."
+      es: "No es solo la fecha de uno de los grandes exclusivos de 2027. Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
+      en: "This is more than a date for one of 2027's major exclusives. Santa Monica Studio has clarified how the next two God of War games will connect."
     },
     sources: [
       {

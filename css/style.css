@@ -407,3 +407,14 @@ html[data-theme="dark"] .article-banner .big-ring .num{color:#16151a}
 html[data-theme="dark"] .article-body figure img,
 html[data-theme="dark"] .img-slider{box-shadow:0 16px 40px -20px rgba(0,0,0,.75)}
 @media(max-width:900px){.theme-toggle{margin-left:2px}}
+
+
+/* ---------- Experiencia de lectura de reseñas ---------- */
+.article-body>p{line-height:1.78;text-wrap:pretty}
+.article-body>p:first-child{font-size:clamp(1.08rem,1.8vw,1.15rem);line-height:1.82;color:var(--ink);margin-bottom:28px}
+.article-body strong{color:var(--ink);font-weight:750;letter-spacing:-.006em}
+.article-body h2{position:relative;padding-left:18px}
+.article-body h2::before{content:"";position:absolute;left:0;top:.2em;width:4px;height:1.05em;border-radius:99px;background:var(--accent)}
+.reading-progress{position:fixed;z-index:1000;top:0;left:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left center;pointer-events:none;will-change:transform;box-shadow:0 0 10px color-mix(in srgb,var(--accent) 55%,transparent)}
+@media(max-width:700px){.article-body>p{line-height:1.72}.article-body>p:first-child{font-size:1.06rem}.article-body h2{padding-left:14px}.article-body h2::before{width:3px}}
+@media(prefers-reduced-motion:reduce){.reading-progress{transition:none}}

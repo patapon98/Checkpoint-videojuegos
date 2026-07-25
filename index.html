@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/news.css">
 <script>
 (function(){
   try{
@@ -42,14 +43,14 @@
 
 <div class="ticker">
   <div class="ticker-track" id="ticker">
-    <span><b>Nueva reseña</b> Rubinite (80): el boss rush del año</span>
-    <span><b>GTA VI</b> confirmado para el 19 de noviembre, la cuenta atrás ha empezado</span>
-    <span><b>Reseña 90</b> Resident Evil Requiem, el mejor RE en años</span>
-    <span><b>Elden Ring</b> llega a Switch 2 el 28 de agosto</span>
-    <span><b>Nueva reseña</b> Rubinite (80): el boss rush del año</span>
-    <span><b>GTA VI</b> confirmado para el 19 de noviembre, la cuenta atrás ha empezado</span>
-    <span><b>Reseña 90</b> Resident Evil Requiem, el mejor RE en años</span>
-    <span><b>Elden Ring</b> llega a Switch 2 el 28 de agosto</span>
+    <span><b>PlayStation</b> dejará de producir discos para nuevos juegos en 2028</span>
+    <span><b>Xbox</b> estrena la retrocompatibilidad de sus clásicos en PC</span>
+    <span><b>Industria</b> Xbox recortará 3.200 empleos durante su reestructuración</span>
+    <span><b>Marvel's Wolverine</b> llegará a PS5 el 15 de septiembre</span>
+    <span><b>PlayStation</b> dejará de producir discos para nuevos juegos en 2028</span>
+    <span><b>Xbox</b> estrena la retrocompatibilidad de sus clásicos en PC</span>
+    <span><b>Industria</b> Xbox recortará 3.200 empleos durante su reestructuración</span>
+    <span><b>Marvel's Wolverine</b> llegará a PS5 el 15 de septiembre</span>
   </div>
 </div>
 
@@ -185,33 +186,10 @@
 <section id="noticias" class="wrap reveal">
   <div class="kicker" data-i18n="news_kicker">Actualidad</div>
   <h2 class="section-title" data-i18n="news_title">Solo lo relevante</h2>
-  <p class="section-sub" data-i18n="news_sub">Un resumen diario de las 3-5 noticias que de verdad merecen tu tiempo. Nada de notas de prensa recicladas.</p>
-
-  <div class="news-list stagger">
-    <div class="news-item">
-      <span class="date">20 JUL 2026</span>
-      <div>
-        <h3 data-i18n="n1_t">Take-Two reafirma la fecha de GTA VI: 19 de noviembre</h3>
-        <p data-i18n="n1_p">El CEO Strauss Zelnick vuelve a confirmar la fecha en un documento oficial y disipa los rumores de un tercer retraso. El marketing arranca este verano.</p>
-      </div>
-      <span class="cat">GTA VI</span>
-    </div>
-    <div class="news-item">
-      <span class="date">14 JUL 2026</span>
-      <div>
-        <h3 data-i18n="n2_t">Agosto abre la temporada alta: Elden Ring llega a Switch 2</h3>
-        <p data-i18n="n2_p">Tarnished Edition inaugura el 28 de agosto uno de los tramos más cargados del calendario reciente, con septiembre y octubre repletos de lanzamientos.</p>
-      </div>
-      <span class="cat">Nintendo</span>
-    </div>
-    <div class="news-item">
-      <span class="date">8 JUL 2026</span>
-      <div>
-        <h3 data-i18n="n3_t">Wuthering Waves aterriza en Xbox y Where Winds Meet estrena expansión</h3>
-        <p data-i18n="n3_p">Los free-to-play siguen ganando terreno en consola: 'Hidden Mountain' es la primera gran expansión de Where Winds Meet.</p>
-      </div>
-      <span class="cat">F2P</span>
-    </div>
+  <p class="section-sub" data-i18n="news_sub">Las noticias que cambian la industria, las plataformas o el calendario. Con contexto, fuentes directas y sin ruido.</p>
+  <div id="newsHome" aria-live="polite"></div>
+  <div class="news-home-actions">
+    <a href="noticias.html" class="btn ghost">Ver toda la actualidad →</a>
   </div>
 </section>
 
@@ -235,5 +213,7 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/news.js"></script>
 </body>
 </html>

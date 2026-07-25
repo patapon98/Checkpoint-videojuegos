@@ -111,6 +111,30 @@
       </article>`;
   }
 
+  function tickerCopy(item, lang) {
+    const copy = {
+      "god-of-war-laufey-fecha": {
+        es: ["God of War Laufey", " llegará a PS5 el 16 de febrero de 2027"],
+        en: ["God of War Laufey", " comes to PS5 on February 16, 2027"]
+      },
+      "playstation-fin-formato-fisico": {
+        es: ["PlayStation", " dejará de producir discos para nuevos juegos en 2028"],
+        en: ["PlayStation", " will stop producing discs for new games in 2028"]
+      },
+      "xbox-retrocompatibilidad-pc": {
+        es: ["Xbox", " estrena la retrocompatibilidad de sus clásicos en PC"],
+        en: ["Xbox", " brings backward-compatible classics to PC"]
+      },
+      "xbox-reestructuracion-despidos": {
+        es: ["Industria", " Xbox recortará 3.200 empleos durante su reestructuración"],
+        en: ["Industry", " Xbox will cut 3,200 jobs in its restructuring"]
+      }
+    };
+    const parts = copy[item.id]?.[lang];
+    if (!parts) return escapeHTML(text(item.title, lang));
+    return `<b>${escapeHTML(parts[0])}</b>${escapeHTML(parts[1])}`;
+  }
+
   function renderNews(lang) {
     const selectedLang = lang === "en" ? "en" : "es";
     const featured = news.find(item => item.featured) || news[0];
@@ -138,10 +162,10 @@
     if (ticker) {
       const tickerItems = news.filter(item => item.ticker);
       const tickerLinks = tickerItems.map(item =>
-        `<a href="noticias.html#${escapeHTML(item.id)}">${escapeHTML(text(item.title, selectedLang))}</a>`
+        `<a href="noticias.html#${escapeHTML(item.id)}">${tickerCopy(item, selectedLang)}</a>`
       ).join("");
       ticker.innerHTML = tickerLinks + tickerItems.map(item =>
-        `<a href="noticias.html#${escapeHTML(item.id)}" aria-hidden="true" tabindex="-1">${escapeHTML(text(item.title, selectedLang))}</a>`
+        `<a href="noticias.html#${escapeHTML(item.id)}" aria-hidden="true" tabindex="-1">${tickerCopy(item, selectedLang)}</a>`
       ).join("");
     }
   }

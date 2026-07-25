@@ -39,10 +39,11 @@
     'Call of Duty: Modern Warfare 4'
   ]);
 
-  const newPlatform=new Set([
-    'Dune: Awakening',
-    'Elden Ring: Tarnished Edition',
-    'Metaphor: ReFantazio'
+  const objectiveTags=new Map([
+    ['Dune: Awakening','Nueva plataforma'],
+    ['Elden Ring: Tarnished Edition','Nueva plataforma'],
+    ['Metaphor: ReFantazio','Nueva plataforma'],
+    ['Godzilla: Destroy All Monsters Melee','Remaster']
   ]);
 
   releases.forEach(release=>{
@@ -53,10 +54,11 @@
     const title=(heading.childNodes[0]?.textContent||heading.textContent).trim();
     if(badge.classList.contains('hype-out')) return;
 
-    if(newPlatform.has(title)&&!heading.querySelector('.tag-dlc')){
+    const objectiveTag=objectiveTags.get(title);
+    if(objectiveTag&&!heading.querySelector('.tag-dlc')){
       const tag=document.createElement('span');
       tag.className='tag-dlc';
-      tag.textContent='Nueva plataforma';
+      tag.textContent=objectiveTag;
       heading.append(' ',tag);
     }
 

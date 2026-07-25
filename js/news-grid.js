@@ -27,8 +27,6 @@
       card.classList.remove('news-category-games','news-category-platforms','news-category-industry','news-category-releases','news-featured');
       card.classList.add(`news-category-${categoryClass(category)}`);
       if(item.featured) card.classList.add('news-featured');
-      card.style.removeProperty('grid-row-end');
-      card.querySelector('.news-flip-inner')?.style.removeProperty('--news-face-height');
     });
   }
 

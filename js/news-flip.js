@@ -2,38 +2,43 @@
   const archive=document.getElementById('newsArchive');
   if(!archive||!Array.isArray(window.MODERLODE_NEWS)) return;
 
+  /*
+   * Cada ampliación está editada de forma individual.
+   * El objetivo no es repetir el resumen frontal, sino seleccionar nombres,
+   * cifras, consecuencias y decisiones que cambian el significado de la noticia.
+   */
   const expanded={
     'playstation-fin-formato-fisico':[
-      'La medida se aplicará a los juegos nuevos publicados desde enero de 2028. Los títulos anteriores podrán seguir fabricándose y vendiéndose en disco, pero los estrenos posteriores dependerán de la distribución digital.',
-      'El cambio elimina la posibilidad de prestar, revender o conservar físicamente esos nuevos lanzamientos. También concentra la compra en PlayStation Store y reduce el papel de las tiendas y del mercado de segunda mano.'
+      'La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.',
+      'Los lanzamientos posteriores dependerán de PlayStation Store: no podrán prestarse ni revenderse como un disco y quedarán más expuestos al cierre de servidores, la retirada de licencias o cambios de precio. Las tiendas físicas y el mercado de segunda mano perderán además su principal vía de participación.'
     ],
     'xbox-retrocompatibilidad-pc':[
-      'Microsoft ha iniciado el programa con Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy. Las licencias digitales compatibles que ya se tengan en Xbox también pueden utilizarse en Windows 11.',
-      'El primer catálogo es pequeño, pero establece la infraestructura para trasladar más clásicos a PC. Esto amplía su disponibilidad y reduce la dependencia del hardware original.'
+      'El programa comienza con Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy. Quienes ya posean una licencia digital compatible en Xbox podrán utilizarla también en Windows 11 mediante Xbox Play Anywhere, sin comprar otra copia.',
+      'La selección inicial es pequeña, pero lo relevante es la infraestructura: Microsoft empieza a trasladar su catálogo histórico a PC con licencias compartidas. Si el programa crece, reducirá la dependencia de las consolas originales y facilitará la conservación de juegos que no tenían versión nativa para ordenador.'
     ],
     'god-of-war-laufey-fecha':[
-      'God of War Laufey llegará en exclusiva a PS5 el 16 de febrero de 2027. La entrega estará centrada en Faye y ampliará su historia antes de los acontecimientos protagonizados por Kratos.',
-      'Cory Barlog también ha confirmado que el juego posterior recuperará a Kratos como protagonista y conectará directamente con Laufey. El anuncio ordena así las próximas dos entregas de la saga.'
+      'God of War Laufey llegará en exclusiva a PS5 el 16 de febrero de 2027 y estará centrado en Faye, ampliando su historia antes de los acontecimientos vividos junto a Kratos y Atreus.',
+      'Cory Barlog también ha confirmado que la entrega posterior recuperará a Kratos como protagonista y conectará directamente con Laufey. El anuncio no solo fecha un juego: ordena la continuidad narrativa de las próximas dos entregas de la saga.'
     ],
     'gta-vi-codigos-japon':[
-      'La edición japonesa de GTA VI para PS5 se venderá en caja, pero incluirá un código de descarga en lugar de un disco. Ese código tendrá una validez de 170 días desde la fecha de emisión indicada por Rockstar.',
-      'Una copia sin canjear perderá su utilidad cuando expire el código. Esto afecta especialmente a regalos tardíos, unidades almacenadas, coleccionismo y reventa, aunque la restricción anunciada se limite a Japón.'
+      'La edición japonesa de GTA VI para PS5 se venderá dentro de una caja, pero contendrá un código de descarga y no un disco. Rockstar fija para ese código una validez de 170 días desde su fecha de emisión, indicada como el 19 de noviembre de 2026.',
+      'Una unidad que permanezca precintada más allá de ese plazo podría perder su utilidad. La limitación afecta especialmente al coleccionismo, los regalos tardíos, el stock almacenado y la reventa, y muestra una diferencia esencial entre poseer un disco y recibir una licencia digital dentro de una caja.'
     ],
     'marvel-wolverine-fecha':[
-      "Insomniac ha fijado Marvel's Wolverine para el 15 de septiembre de 2026 y ha abierto las reservas. El nuevo tráiler ofrece una visión más clara de la historia, el tono y los personajes que acompañarán a Logan.",
-      'La confirmación coloca al juego como uno de los pilares del calendario de PS5 para la segunda mitad del año y reduce la incertidumbre alrededor de un proyecto anunciado mucho tiempo atrás.'
+      "Insomniac ha fijado Marvel's Wolverine para el 15 de septiembre de 2026, ha abierto las reservas y ha publicado un nuevo tráiler centrado en la historia. El material permite concretar mejor el tono del juego y el papel de los personajes que acompañarán a Logan.",
+      'La fecha convierte al título en uno de los principales exclusivos de PS5 para la segunda mitad de 2026 y cierra una larga etapa de incertidumbre desde su anuncio. Para PlayStation, será además el siguiente gran lanzamiento de Insomniac tras la saga Spider-Man.'
     ],
     'xbox-reestructuracion-despidos':[
-      'Microsoft plantea reducir aproximadamente una quinta parte de la plantilla de Xbox durante su año fiscal 2027. La primera fase contempla 1.600 salidas inmediatas y una reorganización que afecta a varios estudios.',
-      'El impacto no se limita al empleo. Menos equipos y cambios de propiedad pueden alterar calendarios, cancelar proyectos y modificar la capacidad de Xbox para mantener su actual volumen de producción.'
+      'Compulsion Games y Double Fine volverán a ser independientes, conservando sus propiedades intelectuales, catálogos y financiación para sus próximos proyectos. Ninja Theory y Undead Labs pasarán a nuevos propietarios con fondos para completar Senua y State of Decay 3; Arkane Lyon estudia opciones estratégicas mediante el proceso de consulta laboral francés.',
+      'Xbox eliminará unos 3.200 puestos durante su año fiscal 2027, con 1.600 salidas inmediatas. Los recortes alcanzan a Activision, Bethesda/ZeniMax, Blizzard, King, Mojang y Xbox Game Studios. Microsoft afirma que no ha cancelado ningún proyecto first-party anunciado, aunque la propiedad de varios equipos y la capacidad global de producción sí se reducen.'
     ],
     'halo-campaign-evolved-lanzamiento':[
       'Halo: Campaign Evolved reconstruye la primera campaña de la saga y se publicará el 28 de julio en Xbox Series, PC, nube y PS5. Incluirá juego cruzado y cooperativo online para hasta cuatro personas.',
-      'El estreno simultáneo en PlayStation convierte el lanzamiento en algo más que un remake. Es otra señal de que Microsoft está priorizando el alcance de sus franquicias sobre la exclusividad tradicional.'
+      'La llegada simultánea a PlayStation es el elemento industrial más significativo: una de las franquicias que definieron Xbox debutará en la consola rival el mismo día. El lanzamiento confirma que Microsoft está priorizando el alcance comercial de su catálogo sobre la exclusividad tradicional.'
     ],
     'elden-ring-switch-2-fecha':[
-      'Tarnished Edition llevará a Switch 2 el juego base, Shadow of the Erdtree y contenido adicional el 28 de agosto. Ese mismo día, el resto de plataformas recibirá el nuevo Tarnished Pack.',
-      'La adaptación medirá el rendimiento de uno de los mundos abiertos más exigentes en el hardware de Nintendo y puede influir en la confianza de otras editoras para llevar grandes producciones a Switch 2.'
+      'Tarnished Edition incluirá Elden Ring, Shadow of the Erdtree y contenido adicional cuando llegue a Switch 2 el 28 de agosto. Ese mismo día, las demás plataformas recibirán el nuevo Tarnished Pack.',
+      'Más allá de la fecha, la adaptación será una prueba técnica y comercial para Switch 2: deberá trasladar uno de los mundos abiertos más exigentes de la generación y puede influir en la confianza de otras editoras para publicar grandes producciones en la consola.'
     ]
   };
 

@@ -34,7 +34,21 @@
 :root{--accent:#3a6bd6;--accent-soft:#e9f0fc}
 body{background:#fafbfd}
 .verdict .v-score{color:#8fb5ff}
+
+/* Paleta oscura editorial de la reseña */
+html[data-theme="dark"]{--accent:#7da7ff;--accent-soft:#17233f;--bg:#0c1019;--card:#131a29;--header-bg:rgba(12,16,25,.88);--line:#2a3853}
+html[data-theme="dark"] .verdict .v-score{color:#7da7ff}
 </style>
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('moderlode-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 
@@ -46,6 +60,10 @@ body{background:#fafbfd}
       <a href="../calendario.html">Calendario</a>
       <a href="../index.html#noticias">Noticias</a>
       <a href="../index.html#newsletter" class="always">Suscríbete</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -72,10 +90,10 @@ body{background:#fafbfd}
 <article class="wrap article-body">
   <p>De cuando fui a la Gamescom en 2025 recuerdo dos cosas: por un lado, el camino de penitencia que tuvimos que atravesar por las escaleras de caracol para subir a lo alto de la Catedral de Colonia, donde vi con mis propios ojos la forma que encarnaba la agonía y el sufrimiento humano… y por otro, la demo de Pragmata que pudimos probar a 30 minutos de que cerraran el recinto. Desde esa primera toma de contacto ya me quedó claro que "esta era mi mierda", y efectivamente, así ha sido.</p>
 
-  <p>Esta nueva IP está desarrollada por un equipo joven dentro de Capcom donde debuta como director el surcoreano Yonghee Cho, que anteriormente trabajó como artista en juegos emblemáticos como Metal Gear Rising: Revengeance o NieR: Automata. Me encanta que Capcom sea un estudio que no le tiene miedo a experimentar: así lo vimos hace unos años con el magnífico Kunitsu-gami o con la mezcla entre terror y acción del reciente RE Requiem. Pragmata tuvo un desarrollo un poco turbulento: se dio a conocer en 2020 con lanzamiento esperado para 2022 y, tras varios retrasos (alguno de carácter indefinido), finalmente vio la luz este año… y qué bien que lo haya hecho.</p>
+  <p>Esta nueva IP está desarrollada por un equipo joven dentro de Capcom donde debuta como director el surcoreano Yonghee Cho, que anteriormente trabajó como artista en juegos emblemáticos como Metal Gear Rising: Revengeance o NieR: Automata. <strong>Me encanta que Capcom sea un estudio que no le tiene miedo a experimentar</strong>: así lo vimos hace unos años con el magnífico Kunitsu-gami o con la mezcla entre terror y acción del reciente RE Requiem. Pragmata tuvo un desarrollo un poco turbulento: se dio a conocer en 2020 con lanzamiento esperado para 2022 y, tras varios retrasos (alguno de carácter indefinido), finalmente vio la luz este año… y qué bien que lo haya hecho.</p>
 
   <h2>Hugh y Diana</h2>
-  <p>La historia va de que la humanidad ha descubierto un valioso mineral en la Luna llamado lúnum, cuyo refinamiento da lugar a la fibraluna, una sustancia capaz de replicar casi cualquier tejido o material. Esta tecnología es investigada por la corporación Delphi en una remota estación lunar conocida como La Cuna, que un día queda repentinamente en silencio. Hugh y su equipo son enviados a investigar qué ha ocurrido... Poco después, Hugh se encontrará en la estación con Diana: una misteriosa androide con apariencia de niña que deambula sola. La trama me ha parecido notablemente interesante e intrigante, pero lo más valioso que tiene el juego a nivel narrativo es la relación que se construye entre los dos protagonistas. Personalmente, una de las relaciones más naturales que he visto en un videojuego.</p>
+  <p>La historia va de que la humanidad ha descubierto un valioso mineral en la Luna llamado lúnum, cuyo refinamiento da lugar a la fibraluna, una sustancia capaz de replicar casi cualquier tejido o material. Esta tecnología es investigada por la corporación Delphi en una remota estación lunar conocida como La Cuna, que un día queda repentinamente en silencio. Hugh y su equipo son enviados a investigar qué ha ocurrido... Poco después, Hugh se encontrará en la estación con Diana: una misteriosa androide con apariencia de niña que deambula sola. La trama me ha parecido notablemente interesante e intrigante, pero lo más valioso que tiene el juego a nivel narrativo es la relación que se construye entre los dos protagonistas. Personalmente, <strong>una de las relaciones más naturales que he visto en un videojuego.</strong></p>
 
   <figure>
     <img src="../img/pragmata/Captura%20de%20pantalla%202026-07-25%20051541.png" alt="Primer plano del rostro de Diana" loading="lazy">
@@ -84,7 +102,7 @@ body{background:#fafbfd}
 
   <div class="pull-quote">"La relación entre Hugh y Diana es una de las más naturales que he visto en un videojuego."</div>
 
-  <p>Me he enamorado del rol de mentor y padre que Hugh desempeña con Diana. Una relación muy orgánica y genuina. Hay multitud de momentos y diálogos en los que vemos a Hugh (un humano) intercambiando reflexiones con Diana (una máquina). Me parece muy inteligente la aproximación que han tenido con ella: Por un lado es una máquina y, por naturaleza, no comprende las particularidades de la condición humana. Por otro, es una niña, y los niños son esponjas de conocimiento cuya inocencia hace que constantemente pregunten porque no conocen todavía el mundo que les rodea. Diana es así: una niña con curiosidad genuina que hace preguntas propias de su naturaleza no-humana.</p>
+  <p><strong>Me he enamorado del rol de mentor y padre que Hugh desempeña con Diana.</strong> Una relación muy orgánica y genuina. Hay multitud de momentos y diálogos en los que vemos a Hugh (un humano) intercambiando reflexiones con Diana (una máquina). Me parece muy inteligente la aproximación que han tenido con ella: Por un lado es una máquina y, por naturaleza, no comprende las particularidades de la condición humana. Por otro, es una niña, y los niños son esponjas de conocimiento cuya inocencia hace que constantemente pregunten porque no conocen todavía el mundo que les rodea. Diana es así: una niña con curiosidad genuina que hace preguntas propias de su naturaleza no-humana.</p>
 
   <p>Hay muchos diálogos buenos, pero uno de mis favoritos es cuando Diana le pregunta a Hugh qué diferencia a un humano de una máquina. Hugh contesta que los humanos tienen alma y las máquinas no, a lo que Diana responde… "Entonces, ¿yo no tengo alma?". Simplemente increíble. Otro que me dejó pensando es cuando Hugh le cuenta que sus padres le adoptaron y Diana pregunta si eso es diferente a tener una familia normal. Hugh contesta: "No sé cómo es tener una familia <em>normal</em>, pero ellos me querían, y eso para mí era lo único que importaba". Sublime. Muchos de estos diálogos aparecen de forma automática mientras exploras los niveles, similar a las conversaciones entre Kratos y Atreus en el God of War de 2018. En redes sociales circulaba el meme de que Pragmata activaba el "instinto paternal" de todos nosotros como estrategia de Japón para incrementar las tasas de natalidad del país, y me lo creo perfectamente.</p>
 
@@ -94,7 +112,7 @@ body{background:#fafbfd}
   </figure>
 
   <h2>Disparar y hackear a la vez</h2>
-  <p>La parte que más llamaba la atención, y que al principio generaba más dudas, es su jugabilidad. Pragmata trae una forma original de gameplay que combina inteligentemente la acción típica de shooter en tercera persona con puzzles a través del pirateo de enemigos. En pocas palabras: los enemigos necesitan estar <em>expuestos</em> para que puedas hacerles daño, y esa exposición se logra a través de un pequeño minijuego de hackeo que consiste en llevar una luz del punto A al punto B, preferiblemente por un camino que haga que la exposición dure más. Me ha parecido genuinamente entretenido y no se me ha hecho pesado en ningún momento.</p>
+  <p>La parte que más llamaba la atención, y que al principio generaba más dudas, es su jugabilidad. <strong>Pragmata trae una forma original de gameplay que combina inteligentemente la acción típica de shooter en tercera persona con puzzles a través del pirateo de enemigos.</strong> En pocas palabras: los enemigos necesitan estar <em>expuestos</em> para que puedas hacerles daño, y esa exposición se logra a través de un pequeño minijuego de hackeo que consiste en llevar una luz del punto A al punto B, preferiblemente por un camino que haga que la exposición dure más. Me ha parecido genuinamente entretenido y no se me ha hecho pesado en ningún momento.</p>
 
   <p>Esta es la base jugable de principio a fin, y lo que hace el juego es expandirla: en la parte shooter de Hugh irás desbloqueando nuevas armas (ofensivas, tácticas y auxiliares) para reventar robots de mil formas distintas. En el hackeo de Diana irás consiguiendo módulos que activan efectos al completar el pirateo: daño crítico, parálisis, propagación del hackeo a enemigos cercanos, etc. Hay una cantidad más que razonable de ambas, más de las que esperaba, y están muy bien diferenciadas entre sí.</p>
 
@@ -103,14 +121,14 @@ body{background:#fafbfd}
     <figcaption>Disparar y piratear a la vez: la combinación que hace única la jugabilidad de Pragmata.</figcaption>
   </figure>
 
-  <p>Es un juego lineal dividido por áreas con un objetivo principal y exploración opcional que recompensa: materiales de mejora, módulos de hackeo, estimulantes… Luego está el refugio, que funciona como base de operaciones y se va expandiendo conforme progresas. Me ha gustado tanto cómo está planteado que me lo he hecho al 100%: la exploración sirve para algo porque recompensa al jugador de forma directa, y no es un coñazo: no hay que dar cientos de vueltas, las cosas están a un pequeño desvío y con frecuencia te llevan a secciones de combate o plataformeo únicas.</p>
+  <p>Es un juego lineal dividido por áreas con un objetivo principal y exploración opcional que recompensa: materiales de mejora, módulos de hackeo, estimulantes… Luego está el refugio, que funciona como base de operaciones y se va expandiendo conforme progresas. Me ha gustado tanto cómo está planteado que me lo he hecho al 100%: <strong>la exploración sirve para algo porque recompensa al jugador de forma directa</strong>, y no es un coñazo: no hay que dar cientos de vueltas, las cosas están a un pequeño desvío y con frecuencia te llevan a secciones de combate o plataformeo únicas.</p>
 
-  <p>Mención especial a los LMT (Lectores de Memoria Terrestre), coleccionables que básicamente son juguetes para Diana. Cuando los encuentras, se los puedes entregar para que juegue con ellos. Si encuentras el globo terráqueo, al volver a la base a veces verás a Diana haciéndolo girar a toda velocidad preguntándose: "¿Dónde vivirá Hugh?". Viendo esa escena, ¿quién es el desalmado que no querría conseguir todos los juguetes para su niña? La base se siente cada vez más viva con los juguetes por todas partes. Un ejemplo perfecto de coleccionable hecho con cabeza.</p>
+  <p>Mención especial a los LMT (Lectores de Memoria Terrestre), coleccionables que básicamente son juguetes para Diana. Cuando los encuentras, se los puedes entregar para que juegue con ellos. Si encuentras el globo terráqueo, al volver a la base a veces verás a Diana haciéndolo girar a toda velocidad preguntándose: "¿Dónde vivirá Hugh?". Viendo esa escena, ¿quién es el desalmado que no querría conseguir todos los juguetes para su niña? La base se siente cada vez más viva con los juguetes por todas partes. <strong>Un ejemplo perfecto de coleccionable hecho con cabeza.</strong></p>
 
   <h2>Contenido y apartado técnico</h2>
   <p>El juego goza de mucho contenido adicional para el que quiera exprimirlo hasta la última gota: un "simulador de entrenamiento" con desafíos de arenas, plataformeo y contrarreloj (algunos bastante desafiantes), contenido post-game muy bien traído, New Game+ y la dificultad lunática, que me hice. La duración ronda las 10-15 horas para una primera partida. En mi caso me lo pasé dos veces, me saqué el Platino y le dediqué 30 horas disfrutando cada minuto.</p>
 
-  <p>Pragmata, en línea con los últimos juegos de Capcom, es una delicia técnica. Me lo he pasado en la PS5 Pro: gráficamente se ve espectacular (texturas, partículas, animaciones, fluidez…) y la ambientación de la base lunar futurista hace que el trazado de rayos salga a relucir. En PC es aún más bestia con las últimas gráficas de NVIDIA y el Path Tracing activado, similar al Requiem. La única cosa que mejoraría: en secciones con muchísimos enemigos me costaba targetear bien al objetivo del pirateo, y cuando hay tanta acción en pantalla (láseres, misiles, explosiones y robots viniéndote a melee) llega a agobiar el simple hecho de piratear mientras te mueves y disparas. Algo anecdótico. En general la experiencia ha sido muy fluida.</p>
+  <p><strong>Pragmata, en línea con los últimos juegos de Capcom, es una delicia técnica.</strong> Me lo he pasado en la PS5 Pro: gráficamente se ve espectacular (texturas, partículas, animaciones, fluidez…) y la ambientación de la base lunar futurista hace que el trazado de rayos salga a relucir. En PC es aún más bestia con las últimas gráficas de NVIDIA y el Path Tracing activado, similar al Requiem. La única cosa que mejoraría: en secciones con muchísimos enemigos me costaba targetear bien al objetivo del pirateo, y cuando hay tanta acción en pantalla (láseres, misiles, explosiones y robots viniéndote a melee) llega a agobiar el simple hecho de piratear mientras te mueves y disparas. Algo anecdótico. En general la experiencia ha sido muy fluida.</p>
 
   <p>Pragmata llegó al millón de copias vendidas en solo dos días desde su lanzamiento, una <a href="https://www.capcom.co.jp/ir/english/news/html/e260420.html" target="_blank" rel="noopener">noticia</a> excelente para una IP recién nacida. Capcom lleva años con una racha importante de juegarrales pero este 2026 va a ser su año: con un excelente Resident Evil Requiem, la propuesta fresca de este Pragmata y el reboot de Onimusha pendiente de salir, Capcom se corona como uno de los estudios capaces de entregar, de manera sistemática y a un ritmo apabullante, juegos de una calidad excelente.</p>
 

@@ -34,7 +34,21 @@
 :root{--accent:#b0201f;--accent-soft:#fbeae8}
 body{background:#fdfafa}
 .verdict .v-score{color:#ff7a6b}
+
+/* Paleta oscura editorial de la reseña */
+html[data-theme="dark"]{--accent:#ff6f67;--accent-soft:#361816;--bg:#150d0d;--card:#211414;--header-bg:rgba(21,13,13,.88);--line:#462523}
+html[data-theme="dark"] .verdict .v-score{color:#ff6f67}
 </style>
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('moderlode-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 
@@ -46,6 +60,10 @@ body{background:#fdfafa}
       <a href="../calendario.html">Calendario</a>
       <a href="../index.html#noticias">Noticias</a>
       <a href="../index.html#newsletter" class="always">Suscríbete</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -70,14 +88,14 @@ body{background:#fdfafa}
 </div>
 
 <article class="wrap article-body">
-  <p>La espera ha sido larga: tres años desde el último Resident Evil y cinco desde la última entrega numerada. Los fans hemos tenido que aguantar pacientemente a que Capcom terminara el desarrollo de este Resident Evil Requiem, un videojuego que con casi total seguridad se convierte en uno de los mejores títulos de la franquicia. El juego se lanzaba en Steam a las 6:00 de la mañana hora española y me desperté de forma natural a las 6:30, sin ningún tipo de alarma, de las ganas que tenía de probarlo. Muy pocas veces me ha ocurrido tener este hype con un juego. La mejor parte es que ha estado a la altura de las expectativas, sin ningún tipo de duda. Ha sido fascinante de principio a final.</p>
+  <p>La espera ha sido larga: tres años desde el último Resident Evil y cinco desde la última entrega numerada. Los fans hemos tenido que aguantar pacientemente a que Capcom terminara el desarrollo de este Resident Evil Requiem, un videojuego que con casi total seguridad se convierte en <strong>uno de los mejores títulos de la franquicia</strong>. El juego se lanzaba en Steam a las 6:00 de la mañana hora española y me desperté de forma natural a las 6:30, sin ningún tipo de alarma, de las ganas que tenía de probarlo. Muy pocas veces me ha ocurrido tener este hype con un juego. La mejor parte es que <strong>ha estado a la altura de las expectativas, sin ningún tipo de duda.</strong> Ha sido fascinante de principio a final.</p>
 
   <p>El juego fue revelado por primera vez en junio de 2025 durante el Summer Game Fest con un tráiler donde se podía ver a la nueva protagonista, Grace Ashcroft: una analista del FBI encargada de investigar el Wrenwood Hotel porque se han hallado una serie de cuerpos infectados con variaciones del Virus-T (el virus del RE2 que produce el desastre de Raccoon City). Lo que se mostraba de Grace era muy enfocado al terror y a la experiencia survival horror clásica (tipo RE7 o RE2 Remake). No obstante, Capcom tenía un as en la manga, algo con lo que sorprender al mundo. Ese as cuidadosamente guardado en secreto era ni más ni menos que el moderfokin Leon S. Kennedy. Sí, lo tenemos de vuelta, sí, ahora es un madurito buenorro, y sí, vuelve a soltar sus <em>one-liners</em> en la peor situación imaginable.</p>
 
   <h2>Dos juegos en uno</h2>
-  <p>El juego combina por primera vez ambos tipos de jugabilidad de Resident Evil en una misma entrega: la experiencia más centrada en el horror en primera persona característico de Resident Evil 7, encarnada en las partes de Grace, y la acción desenfrenada en tercera persona del RE4 Remake en las partes en las que manejamos a Leon. El juego además deja a elección del jugador el uso de la cámara en primera o tercera persona, dependiendo del tipo de experiencia que uno desee (más centrada al terror o a la acción). Como Capcom lo definió, Requiem intercala en sus niveles la tensión con la liberación (<em>tension and release</em>). Grace es el personaje perfecto para plasmar esta atmósfera de terror porque además de ser joven e inexperta, es muy asustadiza (como yo). En cambio, Leon es todo lo contrario: es el veterano, el <em>papucho</em>, el que viene a ajusticiar a los residentes malignos… eso y a petar cabezas. Por cierto, pocas veces he visto a tal cantidad de gente simpear tanto por un personaje de un videojuego y, a ver… lo cierto es que no les puedo juzgar.</p>
+  <p><strong>El juego combina por primera vez ambos tipos de jugabilidad de Resident Evil en una misma entrega</strong>: la experiencia más centrada en el horror en primera persona característico de Resident Evil 7, encarnada en las partes de Grace, y la acción desenfrenada en tercera persona del RE4 Remake en las partes en las que manejamos a Leon. El juego además deja a elección del jugador el uso de la cámara en primera o tercera persona, dependiendo del tipo de experiencia que uno desee (más centrada al terror o a la acción). Como Capcom lo definió, Requiem intercala en sus niveles la tensión con la liberación (<em>tension and release</em>). Grace es el personaje perfecto para plasmar esta atmósfera de terror porque además de ser joven e inexperta, es muy asustadiza (como yo). En cambio, Leon es todo lo contrario: es el veterano, el <em>papucho</em>, el que viene a ajusticiar a los residentes malignos… eso y a petar cabezas. Por cierto, pocas veces he visto a tal cantidad de gente simpear tanto por un personaje de un videojuego y, a ver… lo cierto es que no les puedo juzgar.</p>
 
-  <p>La jugabilidad de las secciones de Grace es survival horror puro y duro, a lo RE2 Remake con la comisaría de Raccoon City. Vas explorando las distintas salas y te encuentras cosas bloqueadas o que necesitan algún objeto clave que todavía no tienes para resolver el puzzle. Vas consiguiendo las piezas, haces backtracking y al final todo encaja de manera perfecta y sientes una satisfacción sin igual. Personalmente, la primera zona del juego, el hospital de Rhodes Hill, es casi con total seguridad la mejor sección jugable que se ha hecho jamás en un Resident Evil. Al nivel de los apartamentos Wood Side de Silent Hill 2. Qué maravilla, de verdad.</p>
+  <p>La jugabilidad de las secciones de Grace es survival horror puro y duro, a lo RE2 Remake con la comisaría de Raccoon City. Vas explorando las distintas salas y te encuentras cosas bloqueadas o que necesitan algún objeto clave que todavía no tienes para resolver el puzzle. Vas consiguiendo las piezas, haces backtracking y al final todo encaja de manera perfecta y sientes una satisfacción sin igual. Personalmente, la primera zona del juego, el hospital de Rhodes Hill, es casi con total seguridad <strong>la mejor sección jugable que se ha hecho jamás en un Resident Evil.</strong> Al nivel de los apartamentos Wood Side de Silent Hill 2. Qué maravilla, de verdad.</p>
 
   <figure>
     <img src="../img/resident%20evil%20requiem/resident-evil-requiem-1.png" alt="Grace avanza sola por un pasillo en penumbra" loading="lazy">
@@ -101,12 +119,12 @@ body{background:#fdfafa}
     <figcaption>La tensión del thriller nunca baja: nunca sabes de quién puedes fiarte.</figcaption>
   </figure>
 
-  <p>Otro de los aspectos sobresalientes, sin ningún tipo de duda, es el apartado gráfico y técnico. El RE Engine hace tiempo que nos demostró que era capaz de hacer maravillas. En Requiem han hecho una de las mejores demostraciones técnicas jamás vistas del uso del Path Tracing, una tecnología de NVIDIA que lleva el trazado de rayos a otro nivel mejorando iluminación, sombras y reflejos. Había zonas que prácticamente eran indistinguibles de la realidad. Me ha sorprendido sobre todo el realismo del pelo de Grace bajo esta tecnología (cuando se encuentra a contraluz, por ejemplo). Os recomiendo el <a href="https://youtu.be/jC98WaHzd4I" target="_blank" rel="noopener">vídeo análisis</a> de Digital Foundry sobre cómo esta tecnología amplifica la experiencia de terror dentro de Requiem.</p>
+  <p>Otro de los aspectos sobresalientes, sin ningún tipo de duda, es el apartado gráfico y técnico. El RE Engine hace tiempo que nos demostró que era capaz de hacer maravillas. En Requiem han hecho <strong>una de las mejores demostraciones técnicas jamás vistas del uso del Path Tracing</strong>, una tecnología de NVIDIA que lleva el trazado de rayos a otro nivel mejorando iluminación, sombras y reflejos. Había zonas que prácticamente eran indistinguibles de la realidad. Me ha sorprendido sobre todo el realismo del pelo de Grace bajo esta tecnología (cuando se encuentra a contraluz, por ejemplo). Os recomiendo el <a href="https://youtu.be/jC98WaHzd4I" target="_blank" rel="noopener">vídeo análisis</a> de Digital Foundry sobre cómo esta tecnología amplifica la experiencia de terror dentro de Requiem.</p>
 
   <h2>Las pegas</h2>
-  <p>Quizás la mayor pega que le encuentro a Requiem es que va de más a menos. No quiero decir que la segunda mitad sea mala, ni mucho menos. Me refiero a que la primera mitad es magistral. Pese a que en general me gusta más el emblemático Leon como personaje, en esta entrega me ha gustado más el papel de Grace, tanto a nivel narrativo y de caracterización como por su jugabilidad más de survival horror clásico.</p>
+  <p>Quizás <strong>la mayor pega que le encuentro a Requiem es que va de más a menos.</strong> No quiero decir que la segunda mitad sea mala, ni mucho menos. Me refiero a que la primera mitad es magistral. Pese a que en general me gusta más el emblemático Leon como personaje, en esta entrega me ha gustado más el papel de Grace, tanto a nivel narrativo y de caracterización como por su jugabilidad más de survival horror clásico.</p>
 
-  <p>Luego, una de las claves del marketing de Capcom era contar que los zombies de este Resident Evil eran algo nunca visto en la saga: mantenían hábitos y recuerdos difusos de su vida humana en función del oficio que habían tenido en el pasado. Un zombie carnicero al que obsesivamente le gusta cortar y trocear carne, o una dama de la limpieza que no puede parar de quitar la suciedad de un espejo. Contaban que el jugador iba a poder "jugar" en torno a esta mecánica: si te encuentras a un zombie empleado de hotel obsesionado con que la gente no se deje las luces encendidas, puedes encender una bombilla para llamar su atención y pasar en sigilo a la siguiente habitación. Bueno, pues esto que me parece súper interesante solo se ve al principio del juego. No se vuelve a ver prácticamente en todo el juego. Desde entonces volvemos al "zombie genérico 1", "zombie genérico 2", "zombie genérico 3"…</p>
+  <p>Luego, una de las claves del marketing de Capcom era contar que los zombies de este Resident Evil eran algo nunca visto en la saga: mantenían hábitos y recuerdos difusos de su vida humana en función del oficio que habían tenido en el pasado. Un zombie carnicero al que obsesivamente le gusta cortar y trocear carne, o una dama de la limpieza que no puede parar de quitar la suciedad de un espejo. Contaban que el jugador iba a poder "jugar" en torno a esta mecánica: si te encuentras a un zombie empleado de hotel obsesionado con que la gente no se deje las luces encendidas, puedes encender una bombilla para llamar su atención y pasar en sigilo a la siguiente habitación. Bueno, pues esto que me parece súper interesante <strong>solo se ve al principio del juego.</strong> No se vuelve a ver prácticamente en todo el juego. Desde entonces volvemos al "zombie genérico 1", "zombie genérico 2", "zombie genérico 3"…</p>
 
   <figure>
     <img src="../img/resident%20evil%20requiem/resident-evil-requiem-3.png" alt="Grace inyecta un vial de sangre a un enemigo con la cabeza vendada" loading="lazy">
@@ -127,7 +145,7 @@ body{background:#fdfafa}
     <div class="v-score">90</div>
     <div class="v-text">
       <h3>Veredicto</h3>
-      <p>Uno de los mejores Resident Evil que se han hecho jamás. Combina inteligentemente terror, survival horror y acción a través de un protagonismo compartido y un gameplay híbrido. Si te gustaron los remakes, es casi imposible que no te guste este. Capcom hizo una apuesta arriesgada, pero pese a sus momentos valle es un juego muy redondo donde el entretenimiento está asegurado para todo tipo de jugador.</p>
+      <p><strong>Uno de los mejores Resident Evil que se han hecho jamás.</strong> Combina inteligentemente terror, survival horror y acción a través de un protagonismo compartido y un gameplay híbrido. Si te gustaron los remakes, es casi imposible que no te guste este. Capcom hizo una apuesta arriesgada, pero pese a sus momentos valle es un juego muy redondo donde el entretenimiento está asegurado para todo tipo de jugador.</p>
     </div>
   </div>
 </article>

@@ -1,3 +1,31 @@
+/* ---------- Tema claro / oscuro ---------- */
+const themeToggle=document.getElementById('themeToggle');
+const themeMedia=window.matchMedia('(prefers-color-scheme: dark)');
+function applyTheme(theme,persist=false){
+  const dark=theme==='dark';
+  document.documentElement.setAttribute('data-theme',theme);
+  document.documentElement.style.colorScheme=theme;
+  if(persist){
+    try{localStorage.setItem('moderlode-theme',theme);}catch(e){}
+  }
+  if(themeToggle){
+    themeToggle.setAttribute('aria-pressed',String(dark));
+    themeToggle.setAttribute('aria-label',dark?'Activar modo claro':'Activar modo oscuro');
+    themeToggle.title=dark?'Activar modo claro':'Activar modo oscuro';
+  }
+}
+if(themeToggle){
+  applyTheme(document.documentElement.getAttribute('data-theme')||'light');
+  themeToggle.addEventListener('click',()=>{
+    applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark',true);
+  });
+}
+themeMedia.addEventListener?.('change',event=>{
+  try{
+    if(!localStorage.getItem('moderlode-theme')) applyTheme(event.matches?'dark':'light');
+  }catch(e){}
+});
+
 /* ============================================
    CHECKPOINT: JS compartido
    ============================================ */
@@ -217,3 +245,26 @@ document.querySelectorAll('[data-slider]').forEach(root=>{
   root.addEventListener('mouseenter',()=>clearInterval(timer));
   root.addEventListener('mouseleave',()=>{timer=setInterval(()=>go(i+1),4500)});
 });
+
+
+/* ---------- Progreso de lectura ---------- */
+const reviewArticle=document.querySelector('.article-body');
+if(reviewArticle){
+  const readingProgress=document.createElement('div');
+  readingProgress.className='reading-progress';
+  readingProgress.setAttribute('aria-hidden','true');
+  document.body.appendChild(readingProgress);
+  let progressFrame=0;
+  const updateReadingProgress=()=>{
+    const maxScroll=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+    const progress=Math.min(1,Math.max(0,window.scrollY/maxScroll));
+    readingProgress.style.transform='scaleX('+progress+')';
+    progressFrame=0;
+  };
+  const requestProgressUpdate=()=>{
+    if(!progressFrame) progressFrame=requestAnimationFrame(updateReadingProgress);
+  };
+  window.addEventListener('scroll',requestProgressUpdate,{passive:true});
+  window.addEventListener('resize',requestProgressUpdate);
+  updateReadingProgress();
+}

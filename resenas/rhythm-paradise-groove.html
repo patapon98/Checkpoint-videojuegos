@@ -34,7 +34,21 @@
 :root{--accent:#e04d92;--accent-soft:#fdeaf4}
 body{background:#fdfafc}
 .verdict .v-score{color:#ff8fc4}
+
+/* Paleta oscura editorial de la reseña */
+html[data-theme="dark"]{--accent:#ff81be;--accent-soft:#351a2a;--bg:#150e13;--card:#21151c;--header-bg:rgba(21,14,19,.88);--line:#422636}
+html[data-theme="dark"] .verdict .v-score{color:#ff81be}
 </style>
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('moderlode-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 
@@ -46,6 +60,10 @@ body{background:#fdfafc}
       <a href="../calendario.html">Calendario</a>
       <a href="../index.html#noticias">Noticias</a>
       <a href="../index.html#newsletter" class="always">Suscríbete</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -72,7 +90,7 @@ body{background:#fdfafc}
 <article class="wrap article-body">
   <p>Mi relación con esta saga se remonta a 2009, cuando mis padres me compraron para la DS el Rhythm Paradise. Era un juego de ritmo y música de lo más peculiar, caracterizado por tener decenas de minijuegos muy breves, graciosos, pero diseñados de forma milimétrica para hacer que el jugador fluya rítmicamente mientras juega. Guardaba muy buenos recuerdos de esta saga, de irme al pueblo de mis padres y matarnos a hacer <em>perfects</em>. No sabéis qué ilusión me hizo saber que iban a sacar una nueva entrega después de una década.</p>
 
-  <p>Rhythm Paradise Groove, como los demás de la franquicia, está estructurado en etapas que contienen una serie de minijuegos. Cada etapa cuenta con 5, siendo el último un remix que mezcla las mecánicas de los otros 4. Cada minijuego presenta un sencillo juego de ritmo donde, como diría Lucio de Overwatch, tendrás que dejarte llevar. Pese a tener más de 80 minijuegos en solitario y más de 30 en multijugador, todos cuentan con un diseño excelente y son muy divertidos. Además, como ya es típico, cada nivel está protagonizado por un personaje de diseño muy sencillo pero con un carisma desbordante.</p>
+  <p>Rhythm Paradise Groove, como los demás de la franquicia, está estructurado en etapas que contienen una serie de minijuegos. Cada etapa cuenta con 5, siendo el último un remix que mezcla las mecánicas de los otros 4. Cada minijuego presenta un sencillo juego de ritmo donde, como diría Lucio de Overwatch, tendrás que dejarte llevar. Pese a tener más de 80 minijuegos en solitario y más de 30 en multijugador, <strong>todos cuentan con un diseño excelente y son muy divertidos.</strong> Además, como ya es típico, cada nivel está protagonizado por un personaje de diseño muy sencillo pero con un carisma desbordante.</p>
 
   <figure>
     <img src="../img/rhythm%20heaven%20groove/rhythm_2.png" alt="Collage de cuatro minijuegos distintos" loading="lazy">
@@ -80,7 +98,7 @@ body{background:#fdfafc}
   </figure>
 
   <h2>La visión de Tsunku</h2>
-  <p>Este juego musical no se entiende sin Tsunku, el creador, productor y compositor principal de la franquicia. Tsunku estuvo metido en el ajo desde el primer juego de todos, el Rhythm Tengoku de Game Boy Advance (2006, Japón). Planteó la idea a Nintendo porque sentía que los juegos de ritmo de la época, como Dance Dance Revolution o Guitar Hero, no enseñaban a la gente a "llevar el ritmo real" de forma natural. Así nace la idea nuclear de la saga: entender el ritmo como una intuición del ser humano, algo que surge del interior de forma natural. Por ello, la saga evita que el jugador "lea" una partitura. En su lugar aprende patrones, anticipa silencios, interioriza acentos y responde con uno o dos botones. Muchos niveles parecen chistes visuales tipo WarioWare (cortar verduras, saltar con ranas, seguir coreografías absurdas), pero tras las bambalinas hay un diseño muy inteligente.</p>
+  <p>Este juego musical no se entiende sin Tsunku, el creador, productor y compositor principal de la franquicia. Tsunku estuvo metido en el ajo desde el primer juego de todos, el Rhythm Tengoku de Game Boy Advance (2006, Japón). Planteó la idea a Nintendo porque sentía que los juegos de ritmo de la época, como Dance Dance Revolution o Guitar Hero, no enseñaban a la gente a "llevar el ritmo real" de forma natural. Así nace <strong>la idea nuclear de la saga: entender el ritmo como una intuición del ser humano</strong>, algo que surge del interior de forma natural. Por ello, la saga evita que el jugador "lea" una partitura. En su lugar aprende patrones, anticipa silencios, interioriza acentos y responde con uno o dos botones. Muchos niveles parecen chistes visuales tipo WarioWare (cortar verduras, saltar con ranas, seguir coreografías absurdas), pero tras las bambalinas hay un diseño muy inteligente.</p>
 
   <figure>
     <img src="../img/rhythm%20heaven%20groove/rhythm_3.png" alt="Una chica saltando a la comba al ritmo del juego" loading="lazy">
@@ -92,17 +110,17 @@ body{background:#fdfafc}
   <h2>Modos, multijugador y música</h2>
   <p>Más allá de los clásicos minijuegos en solitario, hay una serie de modos con minijuegos especiales muy chulos. Me ha gustado mucho el Beatspell, una especie de RPG rítmico con ambientación fantástica donde lanzas hechizos siguiendo patrones. Conforme alcanzas la máxima puntuación en los niveles, consigues medallas que desbloquean minijuegos <em>for fun</em> sin final, pero igualmente divertidos.</p>
 
-  <p>Lo que más me ha llamado la atención, en el mejor de los sentidos, es el modo multijugador local de hasta cuatro jugadores, con minijuegos cooperativos y competitivos. Son 10 minijuegos, pero cada uno con dos variantes adicionales que incrementan la dificultad introduciendo una mecánica nueva. Ojo, porque hay un par que son difíciles de narices y os van a requerir muchos intentos. Comparto lo que dice Alejandro Castillo en su review para Meristation: <em>"Reconocemos que nos lo hemos pasado muy bien jugando, pero ha sido compartiendo la experiencia en multijugador cuando nos ha abierto los ojos. Papel y boli: Rhythm Paradise Groove es el alma de la fiesta en Nintendo Switch"</em>. En mi caso lo he jugado en compañía y nos hemos reído, picado y sufrido a partes iguales. Qué buenos son los cooperativos, por favor.</p>
+  <p>Lo que más me ha llamado la atención, en el mejor de los sentidos, es <strong>el modo multijugador local de hasta cuatro jugadores</strong>, con minijuegos cooperativos y competitivos. Son 10 minijuegos, pero cada uno con dos variantes adicionales que incrementan la dificultad introduciendo una mecánica nueva. Ojo, porque hay un par que son difíciles de narices y os van a requerir muchos intentos. Comparto lo que dice Alejandro Castillo en su review para Meristation: <em>"Reconocemos que nos lo hemos pasado muy bien jugando, pero ha sido compartiendo la experiencia en multijugador cuando nos ha abierto los ojos. Papel y boli: Rhythm Paradise Groove es el alma de la fiesta en Nintendo Switch"</em>. En mi caso lo he jugado en compañía y nos hemos reído, picado y sufrido a partes iguales. Qué buenos son los cooperativos, por favor.</p>
 
   <figure>
     <img src="../img/rhythm%20heaven%20groove/rhythm_4.png" alt="Collage de cuatro minijuegos más: lucha libre, cena y béisbol" loading="lazy">
     <figcaption>El multijugador local aporta aún más variedad: lucha libre, cenas y béisbol al ritmo de la música.</figcaption>
   </figure>
 
-  <p>Las canciones y temas de los niveles son excelentes. Tsunku vuelve a estar al frente de la banda sonora, con colaboraciones destacadas como la de <a href="https://www.youtube.com/watch?v=WSuAVkaSC38" target="_blank" rel="noopener">Ado</a>, una de las artistas japonesas más importantes del momento (cantó el tema principal de One Piece Film: Red). Me encanta que algunos niveles estén cantados por un artista musical. Hay minijuegos que se recuerdan por su diseño, pero aquí se recuerdan sobre todo por el ritmo y la canción que los acompaña; es difícil no acabar tarareando alguna melodía. Como anécdota, todavía recuerdo muchos de los temas del Rhythm Paradise de la DS, ¡más de 15 años después! Pese a ser ejemplares, las canciones de esta entrega no van a tener un calado tan profundo en mí, quizás porque el anterior lo jugué de pequeño, con el disco duro todavía vacío.</p>
+  <p><strong>Las canciones y temas de los niveles son excelentes.</strong> Tsunku vuelve a estar al frente de la banda sonora, con colaboraciones destacadas como la de <a href="https://www.youtube.com/watch?v=WSuAVkaSC38" target="_blank" rel="noopener">Ado</a>, una de las artistas japonesas más importantes del momento (cantó el tema principal de One Piece Film: Red). Me encanta que algunos niveles estén cantados por un artista musical. Hay minijuegos que se recuerdan por su diseño, pero aquí se recuerdan sobre todo por el ritmo y la canción que los acompaña; es difícil no acabar tarareando alguna melodía. Como anécdota, todavía recuerdo muchos de los temas del Rhythm Paradise de la DS, ¡más de 15 años después! Pese a ser ejemplares, las canciones de esta entrega no van a tener un calado tan profundo en mí, quizás porque el anterior lo jugué de pequeño, con el disco duro todavía vacío.</p>
 
   <h2>Fricciones</h2>
-  <p>Algunas cositas que pueden generar fricción. La principal: cómo está ideado el sistema de perfects. El juego, a veces y de forma aleatoria, te señala un nivel para que te lo pases sin ningún fallo. Tienes tres intentos. Si lo consigues, te dan una chapita y desbloqueas una breve tira de cómic del nivel. Ahora bien, si no lo consigues, adiós: tienes que esperar a que el juego te vuelva a dar la posibilidad. ¿Qué sentido tiene esperar a que una ruleta te dé la oportunidad? Hay muchos niveles que me hice sin fallos al primer intento y no me los dieron como perfectos porque el juego aún no los había seleccionado.</p>
+  <p>Algunas cositas que pueden generar fricción. <strong>La principal: cómo está ideado el sistema de perfects.</strong> El juego, a veces y de forma aleatoria, te señala un nivel para que te lo pases sin ningún fallo. Tienes tres intentos. Si lo consigues, te dan una chapita y desbloqueas una breve tira de cómic del nivel. Ahora bien, si no lo consigues, adiós: tienes que esperar a que el juego te vuelva a dar la posibilidad. ¿Qué sentido tiene esperar a que una ruleta te dé la oportunidad? Hay muchos niveles que me hice sin fallos al primer intento y no me los dieron como perfectos porque el juego aún no los había seleccionado.</p>
 
   <p>Luego, los más de 80 minijuegos en solitario tienen truco. El juego tiene 16 etapas, pero al terminar la etapa 8 (donde ya salen los créditos) desbloqueas una cara B con otras 8 etapas donde la gran mayoría son versiones más difíciles de lo ya jugado. A mí me ha encantado y me los hice todos: es una manera inteligente de alargar el juego porque ya sabes cómo funciona cada minijuego y te añaden mecánicas nuevas, cambia el escenario, cambia la canción… Pero entiendo que a alguien le pueda dar pereza repetir "el mismo" minijuego. También introducen algún nivel completamente nuevo en esta segunda vuelta y hay bastantes cameos de juegos anteriores, así que el más fan se lo gozará.</p>
 
@@ -111,7 +129,7 @@ body{background:#fdfafc}
     <figcaption>El humor absurdo y los pequeños chistes visuales son marca de la casa hasta el último minijuego.</figcaption>
   </figure>
 
-  <p>En conclusión, ha sido una experiencia maravillosa. Rhythm Paradise es sin duda mi saga musical y de ritmo favorita. Es divertida y muy satisfactoria de jugar, graciosa con su humor y personajes tan particulares, con una banda sonora genial que transmite vibras muy positivas. A nivel de ambición pertenece a esa Nintendo más excéntrica y menos blockbuster que no trata de trascender: la Nintendo de ideas pequeñas pero muy pulidas, similar a WarioWare o Tomodachi Life. Y el mercado ha reaccionado de forma sorprendente: casi 400.000 copias físicas solo en Japón durante la primera semana, el mejor debut de la saga en su historia. Me alegra tanto que haya vuelto este clásico y que le esté yendo tan bien. Si nunca habéis jugado una entrega de esta saga, esta es una excelente puerta de entrada.</p>
+  <p>En conclusión, ha sido una experiencia maravillosa. Rhythm Paradise es sin duda mi saga musical y de ritmo favorita. Es divertida y muy satisfactoria de jugar, graciosa con su humor y personajes tan particulares, con una banda sonora genial que transmite vibras muy positivas. A nivel de ambición pertenece a esa Nintendo más excéntrica y menos blockbuster que no trata de trascender: la Nintendo de ideas pequeñas pero muy pulidas, similar a WarioWare o Tomodachi Life. Y el mercado ha reaccionado de forma sorprendente: casi 400.000 copias físicas solo en Japón durante la primera semana, el mejor debut de la saga en su historia. Me alegra tanto que haya vuelto este clásico y que le esté yendo tan bien. Si nunca habéis jugado una entrega de esta saga, <strong>esta es una excelente puerta de entrada.</strong></p>
 
   <div class="breakdown reveal">
     <h3>Desglose de puntuación</h3>

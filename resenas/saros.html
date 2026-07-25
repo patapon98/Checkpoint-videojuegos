@@ -34,7 +34,21 @@
 :root{--accent:#6a3bd8;--accent-soft:#efeafc}
 body{background:#fbfafd}
 .verdict .v-score{color:#a98fff}
+
+/* Paleta oscura editorial de la reseña */
+html[data-theme="dark"]{--accent:#a98cff;--accent-soft:#241a3b;--bg:#100d18;--card:#191426;--header-bg:rgba(16,13,24,.88);--line:#382c52}
+html[data-theme="dark"] .verdict .v-score{color:#a98cff}
 </style>
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('moderlode-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 
@@ -46,6 +60,10 @@ body{background:#fbfafd}
       <a href="../calendario.html">Calendario</a>
       <a href="../index.html#noticias">Noticias</a>
       <a href="../index.html#newsletter" class="always">Suscríbete</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -70,10 +88,10 @@ body{background:#fbfafd}
 </div>
 
 <article class="wrap article-body">
-  <p>Saros es el nuevo juego de acción en tercera persona de Housemarque que mezcla elementos de shooter, <em>bullet hell</em> y <em>roguelite</em>. Por hacer memoria: en 2021 el estudio lanzó el aclamado Returnal para PS5 (y en 2023 para PC). Desde el primer momento me quedé absolutamente enamorado de la jugabilidad de Returnal: extremadamente satisfactoria, muy adictiva y ciertamente desafiante. Unos años más tarde, en el State of Play de febrero de 2025, se anunció Saros para finalmente ver la luz este 2026. En pocas palabras: me ha gustado más que Returnal en todos los sentidos.</p>
+  <p>Saros es el nuevo juego de acción en tercera persona de Housemarque que mezcla elementos de shooter, <em>bullet hell</em> y <em>roguelite</em>. Por hacer memoria: en 2021 el estudio lanzó el aclamado Returnal para PS5 (y en 2023 para PC). Desde el primer momento me quedé absolutamente enamorado de la jugabilidad de Returnal: extremadamente satisfactoria, muy adictiva y ciertamente desafiante. Unos años más tarde, en el State of Play de febrero de 2025, se anunció Saros para finalmente ver la luz este 2026. En pocas palabras: <strong>me ha gustado más que Returnal en todos los sentidos.</strong></p>
 
   <h2>Carcosa y el eclipse</h2>
-  <p>La historia es uno de los aspectos donde he notado una mejoría sustancial. Me he visto más intrigado por la trama, más interesado por sus personajes y más sumergido en el mundo. La narrativa nos traslada al planeta Carcosa, una colonia minera perdida atrapada bajo un eclipse permanente. El protagonista es Arjun Devraj, un enviado de la corporación minera Soltari con la misión de investigar las desapariciones de las anteriores expediciones. Cuando llega al planeta descubre que la colonia ha colapsado, la mayoría de los supervivientes han enloquecido o muerto de formas misteriosas, y el propio planeta parece alterar la realidad cada vez que ocurre el eclipse. Además, similar a lo que le ocurría a Selene en Returnal, Arjun queda atrapado en un bucle de muerte y resurrección: cada vez que muere vuelve a despertar en la base, pero el mundo cambia parcialmente a su alrededor.</p>
+  <p><strong>La historia es uno de los aspectos donde he notado una mejoría sustancial.</strong> Me he visto más intrigado por la trama, más interesado por sus personajes y más sumergido en el mundo. La narrativa nos traslada al planeta Carcosa, una colonia minera perdida atrapada bajo un eclipse permanente. El protagonista es Arjun Devraj, un enviado de la corporación minera Soltari con la misión de investigar las desapariciones de las anteriores expediciones. Cuando llega al planeta descubre que la colonia ha colapsado, la mayoría de los supervivientes han enloquecido o muerto de formas misteriosas, y el propio planeta parece alterar la realidad cada vez que ocurre el eclipse. Además, similar a lo que le ocurría a Selene en Returnal, Arjun queda atrapado en un bucle de muerte y resurrección: cada vez que muere vuelve a despertar en la base, pero el mundo cambia parcialmente a su alrededor.</p>
 
   <p>Hay aspectos que siguen la línea de Returnal: la mezcla de ciencia ficción con horror psicológico y temas existenciales, y una historia críptica y ambigua, especialmente al principio. Pero poco a poco se van despejando las incógnitas conforme avanzas por Carcosa. De cara al final, la ambigüedad queda bastante despejada, mucho más que en el anterior, y no te queda otra más que irte a la esquina de tu habitación, hacerte una bolita y quedarte reflexionando acerca de las cuestiones existenciales del ser y del saber. Fuera bromas: me ha gustado mucho lo que plantea y cómo lo hace.</p>
 
@@ -83,7 +101,7 @@ body{background:#fbfafd}
   </figure>
 
   <h2>La evolución jugable</h2>
-  <p>Este juego es a todas luces el sucesor espiritual de Returnal, pues parte de la misma base jugable. No obstante, Saros introduce una serie de mecánicas que potencian la jugabilidad haciéndola más satisfactoria y entretenida, aún más si cabe. La más importante es el escudo Soltari: una esfera alrededor del personaje que puedes invocar en cualquier momento para defenderte, absorber proyectiles enemigos y convertir esa energía en contraataques. Esto altera el ritmo de <em>bullet hell</em> de Returnal, porque ya no todo consiste en esquivar, sino que también puedes "leer" patrones para absorberlos y devolver el daño.</p>
+  <p>Este juego es a todas luces el sucesor espiritual de Returnal, pues parte de la misma base jugable. No obstante, Saros introduce una serie de mecánicas que potencian la jugabilidad haciéndola más satisfactoria y entretenida, aún más si cabe. <strong>La más importante es el escudo Soltari</strong>: una esfera alrededor del personaje que puedes invocar en cualquier momento para defenderte, absorber proyectiles enemigos y convertir esa energía en contraataques. Esto altera el ritmo de <em>bullet hell</em> de Returnal, porque ya no todo consiste en esquivar, sino que también puedes "leer" patrones para absorberlos y devolver el daño.</p>
 
   <figure>
     <img src="../img/saros/Captura%20de%20pantalla%202026-07-25%20051630.png" alt="El escudo Soltari deflectando disparos enemigos" loading="lazy">
@@ -92,28 +110,28 @@ body{background:#fbfafd}
 
   <div class="pull-quote">"Es de lo más satisfactorio que he jugado a nivel de gameplay en toda mi vida: todo fluye a las mil maravillas."</div>
 
-  <p>Otra adición que me parece una gran implementación es la progresión permanente a través de un árbol de pasivas gigantesco. Mientras que en Returnal al morir perdías casi todo tu progreso, en Saros cada muerte implica mejoras permanentes para tu personaje: integridad, capacidad de absorción del escudo, cantidad de recursos que extraes en una run… Es un elemento roguelite que tienen juegos como Hades y que me gusta mucho: una forma inteligente de evitar que el jugador sienta que "ha perdido el tiempo" cuando muere. En esta <a href="https://www.ign.com/articles/saros-review" target="_blank" rel="noopener">review de IGN</a>, Michael Higham lo explica muy bien: el progreso no trata de cambiar fundamentalmente tu estilo de juego, sino de hacer los desafíos más manejables para futuras partidas y, por supuesto, jugar de forma más inteligente.</p>
+  <p>Otra adición que me parece una gran implementación es la progresión permanente a través de un árbol de pasivas gigantesco. Mientras que en Returnal al morir perdías casi todo tu progreso, <strong>en Saros cada muerte implica mejoras permanentes para tu personaje</strong>: integridad, capacidad de absorción del escudo, cantidad de recursos que extraes en una run… Es un elemento roguelite que tienen juegos como Hades y que me gusta mucho: una forma inteligente de evitar que el jugador sienta que "ha perdido el tiempo" cuando muere. En esta <a href="https://www.ign.com/articles/saros-review" target="_blank" rel="noopener">review de IGN</a>, Michael Higham lo explica muy bien: el progreso no trata de cambiar fundamentalmente tu estilo de juego, sino de hacer los desafíos más manejables para futuras partidas y, por supuesto, jugar de forma más inteligente.</p>
 
   <figure>
     <img src="../img/saros/Captura%20de%20pantalla%202026-07-25%20051640.png" alt="Árbol de pasivas con el nodo Second Chance seleccionado" loading="lazy">
     <figcaption>El árbol de pasivas: cada muerte se traduce en mejoras permanentes, no en tiempo perdido.</figcaption>
   </figure>
 
-  <p>La estructura también está planteada de manera distinta: las runs son mucho más cortas (unos 30 minutos de media) y al pasar a un nuevo bioma desbloqueas un teletransportador que te permite empezar desde ese punto. No hay necesidad de empezar desde el primer bioma al morir. Creo que lo han planteado así por varias razones: hacerlo más accesible, porque el juego es sustancialmente más largo que Returnal (morir al final sería una patada en la entrepierna), y porque la historia muchas veces te obliga a volver a la base. A mí no me ha desagradado este cambio. No me importa que esté más enfocado a la acción-aventura que al roguelite. Y para quien prefiera el estilo clásico, siempre puedes empezar desde el primer bioma y jugarlo como si fuera Returnal.</p>
+  <p>La estructura también está planteada de manera distinta: <strong>las runs son mucho más cortas (unos 30 minutos de media)</strong> y al pasar a un nuevo bioma desbloqueas un teletransportador que te permite empezar desde ese punto. No hay necesidad de empezar desde el primer bioma al morir. Creo que lo han planteado así por varias razones: hacerlo más accesible, porque el juego es sustancialmente más largo que Returnal (morir al final sería una patada en la entrepierna), y porque la historia muchas veces te obliga a volver a la base. A mí no me ha desagradado este cambio. No me importa que esté más enfocado a la acción-aventura que al roguelite. Y para quien prefiera el estilo clásico, siempre puedes empezar desde el primer bioma y jugarlo como si fuera Returnal.</p>
 
-  <p>Saros es una versión más guiada y <em>casualizada</em> que Returnal. Si quieres hacer el true ending, el juego te dice exactamente qué hacer y a dónde ir. La muerte no está tan penalizada y la mayoría de los bosses te los harás al primer intento. El desafío está ahí, pero no vas a sufrir como un gorrino. Eso sí: tras pasarte un par de biomas desbloqueas los "Modificadores carcosianos", ventajas y desventajas que puedes ponerte para personalizar la experiencia a tu gusto. Cuantas más desventajas te pongas, más ventajas podrás equipar. Me ha gustado bastante este enfoque más directo y menos aleatorizado.</p>
+  <p><strong>Saros es una versión más guiada</strong> y <em>casualizada</em> que Returnal. Si quieres hacer el true ending, el juego te dice exactamente qué hacer y a dónde ir. La muerte no está tan penalizada y la mayoría de los bosses te los harás al primer intento. El desafío está ahí, pero no vas a sufrir como un gorrino. Eso sí: tras pasarte un par de biomas desbloqueas los "Modificadores carcosianos", ventajas y desventajas que puedes ponerte para personalizar la experiencia a tu gusto. Cuantas más desventajas te pongas, más ventajas podrás equipar. Me ha gustado bastante este enfoque más directo y menos aleatorizado.</p>
 
   <h2>Espectáculo técnico</h2>
-  <p>El juego luce espectacular, tanto a nivel gráfico como artístico. Lo que más me ha impactado es cómo cambia la atmósfera a algo mucho más inquietante y místico cuando hay eclipse: el escenario se vuelve retorcido y oscuro. Y la cantidad de proyectiles luminosos y partículas de colores en medio del combate convierte el juego por momentos en un maravilloso espectáculo de luces.</p>
+  <p><strong>El juego luce espectacular, tanto a nivel gráfico como artístico.</strong> Lo que más me ha impactado es cómo cambia la atmósfera a algo mucho más inquietante y místico cuando hay eclipse: el escenario se vuelve retorcido y oscuro. Y la cantidad de proyectiles luminosos y partículas de colores en medio del combate convierte el juego por momentos en un maravilloso espectáculo de luces.</p>
 
   <figure>
     <img src="../img/saros/Captura%20de%20pantalla%202026-07-25%20051659.png" alt="Combate contra un jefe alto y espigado en una gran sala" loading="lazy">
     <figcaption>Los combates contra jefes son un espectáculo técnico y visual de primer nivel.</figcaption>
   </figure>
 
-  <p>A nivel técnico está desarrollado en Unreal Engine 5 y aprovecha de forma muy agresiva las capacidades de PS5 y PS5 Pro, con tiempos de carga mínimos y un gran uso del DualSense mediante gatillos adaptativos y vibración háptica contextual: si hundes un poco el L2 entras en el modo de disparo secundario del arma, y al disparar con el R2 notas una pequeña vibración simulando el retroceso. Aporta mucho a la experiencia. Como curiosidad, no hay modos "rendimiento" y "calidad": el juego está optimizado para correr constantemente a 60fps. En momentos muy específicos con decenas de enemigos y partículas en pantalla daba algún tironcillo de fotogramas, pero nada significativo.</p>
+  <p>A nivel técnico está desarrollado en Unreal Engine 5 y aprovecha de forma muy agresiva las capacidades de PS5 y PS5 Pro, con tiempos de carga mínimos y un gran uso del DualSense mediante gatillos adaptativos y vibración háptica contextual: si hundes un poco el L2 entras en el modo de disparo secundario del arma, y al disparar con el R2 notas una pequeña vibración simulando el retroceso. Aporta mucho a la experiencia. Como curiosidad, no hay modos "rendimiento" y "calidad": <strong>el juego está optimizado para correr constantemente a 60fps.</strong> En momentos muy específicos con decenas de enemigos y partículas en pantalla daba algún tironcillo de fotogramas, pero nada significativo.</p>
 
-  <p>En conclusión, una magnífica secuela espiritual de Returnal con más acción, una historia más intrigante y una jugabilidad más extendida. Todo amante de los juegos de acción está obligado a jugar Saros: es de lo más satisfactorio que he jugado a nivel de gameplay en toda mi vida y todo fluye a las mil maravillas. Pese a las bajas <a href="https://www.pushsquare.com/news/2026/05/saros-ps5-sales-estimates-at-300k-selling-slower-than-returnal-on-a-bigger-install-base" target="_blank" rel="noopener">ventas</a> que pueda tener, ojalá poder disfrutar de otra entrega de este maravilloso estudio finlandés en el futuro. ¡Lo recomiendo sin duda!</p>
+  <p>En conclusión, una magnífica secuela espiritual de Returnal con más acción, una historia más intrigante y una jugabilidad más extendida. <strong>Todo amante de los juegos de acción está obligado a jugar Saros</strong>: es de lo más satisfactorio que he jugado a nivel de gameplay en toda mi vida y todo fluye a las mil maravillas. Pese a las bajas <a href="https://www.pushsquare.com/news/2026/05/saros-ps5-sales-estimates-at-300k-selling-slower-than-returnal-on-a-bigger-install-base" target="_blank" rel="noopener">ventas</a> que pueda tener, ojalá poder disfrutar de otra entrega de este maravilloso estudio finlandés en el futuro. ¡Lo recomiendo sin duda!</p>
 
   <div class="breakdown reveal">
     <h3>Desglose de puntuación</h3>

@@ -27,7 +27,7 @@
       Industria:'industry',
       Lanzamientos:'releases'
     };
-    return map[category]||'industry';
+    return map[category]||'all';
   }
 
   function prepareCards(){

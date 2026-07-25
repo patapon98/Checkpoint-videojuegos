@@ -1,0 +1,123 @@
+/* Remates de la vista de cuadrícula: etiquetas editoriales y controles. */
+
+.card-ribbon{display:none}
+
+/* En cuadrícula, la etiqueta original del listado se sustituye por un banderín. */
+#releases.view-grid .release .tag-dlc{display:none}
+
+#releases.view-grid .release>.card-ribbon{
+  position:absolute;
+  z-index:6;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  max-width:132px;
+  color:#fff;
+  background:linear-gradient(135deg,#6f56d9,#967cff);
+  box-shadow:0 7px 18px -8px rgba(15,8,40,.9);
+  font-family:var(--sans);
+  font-weight:850;
+  line-height:1;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  pointer-events:none;
+}
+
+/* Destacados: banderín encajado en el borde superior derecho. */
+#releases.view-grid .release[data-tier="1"]>.card-ribbon,
+#releases.view-grid .release[data-tier="2"]>.card-ribbon{
+  top:10px;
+  right:0;
+  min-height:27px;
+  padding:6px 13px 6px 20px;
+  font-size:.57rem;
+  clip-path:polygon(10px 0,100% 0,100% 100%,10px 100%,0 50%);
+}
+
+/* Fichas compactas: versión mínima del mismo lenguaje visual. */
+#releases.view-grid .release[data-tier="3"]>.card-ribbon{
+  top:0;
+  right:0;
+  min-height:22px;
+  max-width:112px;
+  padding:5px 9px 5px 14px;
+  border-radius:0 12px 0 0;
+  font-size:.49rem;
+  clip-path:polygon(8px 0,100% 0,100% 100%,8px 100%,0 50%);
+}
+
+#releases.view-grid .release[data-tier="3"].has-card-ribbon>.release-art+div{
+  padding-right:108px;
+}
+
+/* Los tres accesos vuelven a tener posiciones independientes y predecibles. */
+#releases.view-grid .release[data-tier="1"] .release-art .trailer,
+#releases.view-grid .release[data-tier="2"] .release-art .trailer,
+#releases.view-grid .release[data-tier="1"] .release-art .wish,
+#releases.view-grid .release[data-tier="2"] .release-art .wish,
+#releases.view-grid .release[data-tier="1"] .release-art .gcal,
+#releases.view-grid .release[data-tier="2"] .release-art .gcal{
+  z-index:7;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0;
+  line-height:0;
+}
+
+/* YouTube y wishlist forman una pareja en la esquina superior derecha. */
+#releases.view-grid .release[data-tier="1"] .release-art .trailer,
+#releases.view-grid .release[data-tier="2"] .release-art .trailer{
+  top:10px;
+  right:10px;
+  bottom:auto;
+  left:auto;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art .wish,
+#releases.view-grid .release[data-tier="2"] .release-art .wish{
+  top:10px;
+  right:45px;
+  bottom:auto;
+  left:auto;
+}
+
+/* Cuando hay banderín, la pareja baja una línea para no competir con él. */
+#releases.view-grid .release[data-tier="1"].has-card-ribbon .release-art .trailer,
+#releases.view-grid .release[data-tier="2"].has-card-ribbon .release-art .trailer,
+#releases.view-grid .release[data-tier="1"].has-card-ribbon .release-art .wish,
+#releases.view-grid .release[data-tier="2"].has-card-ribbon .release-art .wish{
+  top:47px;
+}
+
+/* Google Calendar queda separado, abajo a la derecha. */
+#releases.view-grid .release[data-tier="1"] .release-art .gcal,
+#releases.view-grid .release[data-tier="2"] .release-art .gcal{
+  top:auto;
+  right:10px;
+  bottom:10px;
+  left:auto;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art .trailer svg,
+#releases.view-grid .release[data-tier="2"] .release-art .trailer svg,
+#releases.view-grid .release[data-tier="1"] .release-art .wish svg,
+#releases.view-grid .release[data-tier="2"] .release-art .wish svg,
+#releases.view-grid .release[data-tier="1"] .release-art .gcal svg,
+#releases.view-grid .release[data-tier="2"] .release-art .gcal svg{
+  display:block;
+  margin:0;
+}
+
+@media(max-width:640px){
+  #releases.view-grid .release[data-tier="3"].has-card-ribbon>.release-art+div{
+    padding-right:96px;
+  }
+
+  #releases.view-grid .release[data-tier="3"]>.card-ribbon{
+    max-width:100px;
+  }
+}

@@ -53,6 +53,28 @@
     .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
     .replaceAll('"','&quot;').replaceAll("'",'&#039;');
 
+  function emphasizedHTML(value,item){
+    const raw=String(value);
+    const phrases=item.emphasis?.es||[];
+    if(!phrases.length) return escapeHTML(raw);
+    const matches=phrases.map(phrase=>({phrase,index:raw.indexOf(phrase)}))
+      .filter(match=>match.index>=0).sort((a,b)=>a.index-b.index);
+    let cursor=0,html='';
+    matches.forEach(match=>{
+      if(match.index<cursor) return;
+      html+=escapeHTML(raw.slice(cursor,match.index));
+      html+='<strong>'+escapeHTML(match.phrase)+'</strong>';
+      cursor=match.index+match.phrase.length;
+    });
+    return html+escapeHTML(raw.slice(cursor));
+  }
+
+  function importanceBadge(item){
+    return item.important&&!item.featured
+      ? '<span class="news-important"><i aria-hidden="true">★</i>Relevante</span>'
+      : '';
+  }
+
   function enhance(){
     archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach((card,i)=>{
       const item=window.FINALSECRETO_NEWS.find(entry=>entry.id===card.id);
@@ -83,9 +105,10 @@
       back.innerHTML=`
         <div class="news-back-meta">
           <span class="news-category">${escapeHTML(category)}</span>
+          ${importanceBadge(item)}
           <span class="news-back-date">${escapeHTML(dateText)}</span>
         </div>
-        <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${escapeHTML(text)}</p>`).join('')}</div>
+        <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${emphasizedHTML(text,item)}</p>`).join('')}</div>
         <button class="news-flip-button" type="button" aria-expanded="true">
           <span>Volver al resumen</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v6h6"/></svg>

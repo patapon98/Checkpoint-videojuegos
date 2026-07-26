@@ -26,3 +26,27 @@ html[lang="en"] .news-home-flip-featured::before{content:"Featured"}
   .news-home-flip-featured .news-lead-signal{min-height:108px;padding:19px}
   .news-home-flip-featured .news-lead h3{font-size:1.75rem}
 }
+
+/* Los controles de las tarjetas del carrusel comparten una coordenada estable
+   en anverso y reverso, independientemente de la longitud del texto. */
+.news-home-flip-brief .news-home-flip-front,
+.news-home-flip-brief .news-home-flip-back{
+  position:relative;
+  padding-bottom:78px;
+}
+.news-home-flip-brief .news-home-flip-front .news-home-flip-button,
+.news-home-flip-brief .news-home-flip-back .news-home-flip-button{
+  position:absolute;
+  right:26px;
+  bottom:26px;
+  margin:0;
+}
+@media(max-width:540px){
+  .news-home-flip-brief .news-home-flip-front,
+  .news-home-flip-brief .news-home-flip-back{padding-bottom:70px}
+  .news-home-flip-brief .news-home-flip-front .news-home-flip-button,
+  .news-home-flip-brief .news-home-flip-back .news-home-flip-button{
+    right:20px;
+    bottom:20px;
+  }
+}

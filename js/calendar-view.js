@@ -153,6 +153,7 @@
   let saved=null;
   try{ saved=localStorage.getItem(STORAGE_KEY); }catch(err){ saved=null; }
   apply(saved==='list'?'list':'grid');
+  document.documentElement.classList.remove('calendar-booting');
 
   toggle.addEventListener('click',event=>{
     const btn=event.target.closest('.view-btn');

@@ -159,16 +159,50 @@ if(document.body.classList.contains('calendar-page')){
   observeReveals(revealEls);
 }
 
-/* ---------- Nav activa según scroll ---------- */
+/* ---------- Nav interna activa según scroll ---------- */
+const homeSectionNav=document.querySelector('.home-section-nav');
 const sections=[...document.querySelectorAll('section[id]')];
-const navLinks=[...document.querySelectorAll('nav a[href^="#"]')];
-if(sections.length && navLinks.length){
-  window.addEventListener('scroll',()=>{
-    const y=window.scrollY+140;
-    let cur=null;
-    sections.forEach(s=>{ if(s.offsetTop<=y) cur=s.id; });
-    navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
-  },{passive:true});
+const navLinks=[...(homeSectionNav?.querySelectorAll('a[href^="#"]')||[])];
+if(homeSectionNav && sections.length && navLinks.length){
+  const pageHeader=document.querySelector('header');
+  let activeSection=null;
+  let navFrame=0;
+
+  const updateActiveSection=()=>{
+    const activationLine=(pageHeader?.getBoundingClientRect().bottom||0)+homeSectionNav.getBoundingClientRect().height+16;
+    let current=null;
+    sections.forEach(section=>{
+      if(section.getBoundingClientRect().top<=activationLine) current=section.id;
+    });
+
+    navLinks.forEach(link=>{
+      const isActive=link.getAttribute('href')==='#'+current;
+      link.classList.toggle('active',isActive);
+      if(isActive) link.setAttribute('aria-current','location');
+      else link.removeAttribute('aria-current');
+    });
+
+    if(current!==activeSection){
+      activeSection=current;
+      const activeLink=navLinks.find(link=>link.classList.contains('active'));
+      if(activeLink){
+        const targetLeft=activeLink.offsetLeft-(homeSectionNav.clientWidth-activeLink.offsetWidth)/2;
+        homeSectionNav.scrollTo({
+          left:Math.max(0,targetLeft),
+          behavior:reducedMotion?'auto':'smooth'
+        });
+      }
+    }
+    navFrame=0;
+  };
+
+  const requestNavUpdate=()=>{
+    if(!navFrame) navFrame=requestAnimationFrame(updateActiveSection);
+  };
+
+  window.addEventListener('scroll',requestNavUpdate,{passive:true});
+  window.addEventListener('resize',requestNavUpdate);
+  updateActiveSection();
 }
 
 /* ---------- Hero card: glow + tilt ---------- */

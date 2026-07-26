@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Final Secreto | Reseñas y actualidad de videojuegos</title>
-<meta name="description" content="Reseñas de videojuegos escritas a mano, calendario de lanzamientos siempre al día y solo las noticias que importan. Sin ruido, sin clickbait.">
+<title>Final Secreto | Noticias, lanzamientos, análisis y reseñas</title>
+<meta name="description" content="Noticias relevantes de videojuegos, próximos lanzamientos, análisis de industria y reseñas escogidas personalmente. Sin ruido, relleno ni clickbait.">
 <link rel="canonical" href="https://finalsecreto.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Final Secreto">
-<meta property="og:title" content="Final Secreto | Reseñas y actualidad de videojuegos">
-<meta property="og:description" content="Reseñas escritas a mano, calendario de lanzamientos y solo las noticias que importan.">
+<meta property="og:title" content="Final Secreto | Noticias, lanzamientos, análisis y reseñas">
+<meta property="og:description" content="Noticias relevantes de videojuegos, próximos lanzamientos, análisis de industria y reseñas escogidas personalmente. Sin ruido, relleno ni clickbait.">
 <meta property="og:url" content="https://finalsecreto.com/">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">
@@ -18,15 +18,25 @@
   "@type": "WebSite",
   "name": "Final Secreto",
   "url": "https://finalsecreto.com/",
-  "description": "Reseñas de videojuegos, calendario de lanzamientos y noticias.",
+  "description": "Noticias relevantes de videojuegos, próximos lanzamientos, análisis de industria y reseñas escogidas personalmente. Sin ruido, relleno ni clickbait.",
   "inLanguage": "es"
 }
 </script>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Final Secreto",
+  "url": "https://finalsecreto.com/",
+  "logo": "https://finalsecreto.com/favicon.svg"
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/css/brand-logo.css">
 <link rel="stylesheet" href="css/news.css">
 <script>
 (function(){
@@ -56,15 +66,12 @@
 
 <header>
   <div class="header-inner">
-    <a href="/" class="logo">Final <span>Secreto</span></a>
+    <a href="/" class="logo"><img class="site-logo-mark" src="/favicon.svg" alt="" aria-hidden="true" width="36" height="36">Final <span>Secreto</span></a>
     <nav>
       <a href="/noticias" data-i18n="nav_news">Noticias</a>
       <a href="/calendario" data-i18n="nav_calendar">Calendario</a>
       <a href="/resenas" data-i18n="nav_reviews">Reseñas</a>
-      <div class="lang-toggle">
-        <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
-        <button id="btn-en" onclick="setLang('en')">EN</button>
-      </div>
+      <a href="/contacto">Contacto</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
         <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
         <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -80,8 +87,8 @@
   <div class="hero-grid">
     <div>
       <div class="line kicker" data-i18n="hero_kicker">Blog de videojuegos</div>
-      <h1 class="line" data-i18n-html="hero_title">Crítica con criterio, <em>hype</em> con calendario.</h1>
-      <p class="line" data-i18n="hero_sub">Reseñas escritas a mano, un calendario de lanzamientos siempre al día y las noticias que de verdad importan. Sin ruido, sin clickbait.</p>
+      <h1 class="line" data-i18n-html="hero_title">Todo lo que importa de los videojuegos, en un mismo lugar.</h1>
+      <p class="line" data-i18n="hero_sub">Noticias relevantes, grandes lanzamientos, análisis y reseñas con un toque único, escogidos personalmente para no hacerte perder el tiempo.</p>
       <div class="line">
         <a href="#noticias" class="btn" data-i18n="hero_cta1">Ver la actualidad</a>
         <a href="#calendario" class="btn ghost" data-i18n="hero_cta2">Ver lanzamientos</a>
@@ -107,8 +114,8 @@
 <!-- NOTICIAS -->
 <section id="noticias" class="wrap reveal">
   <div class="kicker" data-i18n="news_kicker">Actualidad</div>
-  <h2 class="section-title" data-i18n="news_title">Solo lo relevante</h2>
-  <p class="section-sub" data-i18n="news_sub">Las noticias que cambian la industria, las plataformas o el calendario. Con contexto, fuentes directas y sin ruido.</p>
+  <h2 class="section-title" data-i18n="news_title">La actualidad, bien explicada</h2>
+  <p class="section-sub" data-i18n="news_sub">Las noticias más importantes del videojuego, seleccionadas por relevancia y explicadas con contexto, fuentes verificadas y perspectiva.</p>
   <div id="newsHome" aria-live="polite"></div>
   <div class="news-home-actions">
     <a href="/noticias" class="btn ghost">Ver toda la actualidad →</a>

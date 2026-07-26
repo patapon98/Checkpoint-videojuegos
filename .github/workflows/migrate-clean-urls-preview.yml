@@ -1,0 +1,93 @@
+name: Migrate clean URLs in preview branch
+
+on:
+  push:
+    branches:
+      - agent/urls-limpias-preview
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/urls-limpias-preview
+          fetch-depth: 0
+
+      - name: Replace internal HTML URLs safely
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import re
+          from urllib.parse import urlsplit, urlunsplit
+
+          ROOT = 'https://finalsecreto.com'
+          ATTR_RE = re.compile(r'(?P<prefix>\b(?:href|content|value)=["\'])(?P<url>[^"\']+)(?P<suffix>["\'])', re.I)
+
+          def clean_path(path: str) -> str:
+              if path in ('/index.html', 'index.html'):
+                  return '/'
+              if path.endswith('.html'):
+                  return path[:-5]
+              return path
+
+          def transform_url(raw: str, file_path: Path) -> str:
+              if raw.startswith(('mailto:', 'tel:', 'javascript:', '#', 'data:')):
+                  return raw
+
+              if raw.startswith(ROOT):
+                  parts = urlsplit(raw)
+                  return urlunsplit((parts.scheme, parts.netloc, clean_path(parts.path), parts.query, parts.fragment))
+
+              parts = urlsplit(raw)
+              if parts.scheme or parts.netloc or not parts.path.endswith('.html'):
+                  return raw
+
+              current_dir = PurePosixPath('/') / PurePosixPath(file_path.as_posix()).parent
+              resolved = PurePosixPath('/') / PurePosixPath(current_dir, parts.path)
+              normalized = '/' + str(resolved).lstrip('/')
+              while '/./' in normalized:
+                  normalized = normalized.replace('/./', '/')
+              segments = []
+              for segment in normalized.split('/'):
+                  if segment in ('', '.'):
+                      continue
+                  if segment == '..':
+                      if segments:
+                          segments.pop()
+                  else:
+                      segments.append(segment)
+              normalized = '/' + '/'.join(segments)
+              normalized = clean_path(normalized)
+              return urlunsplit(('', '', normalized, parts.query, parts.fragment))
+
+          changed = []
+          for path in sorted(Path('.').rglob('*.html')):
+              text = path.read_text(encoding='utf-8')
+              new = ATTR_RE.sub(lambda m: m.group('prefix') + transform_url(m.group('url'), path) + m.group('suffix'), text)
+              if new != text:
+                  path.write_text(new, encoding='utf-8')
+                  changed.append(str(path))
+
+          print(f'Updated {len(changed)} HTML files')
+          for item in changed:
+              print(item)
+          PY
+
+      - name: Commit migrated URLs
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes required"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.html'
+          git commit -m "Migra canonical y enlaces internos a URL limpias"
+          git push origin HEAD:agent/urls-limpias-preview

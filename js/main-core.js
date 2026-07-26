@@ -174,8 +174,16 @@ if(homeSectionNav && sections.length && navLinks.length){
   const pageHeader=document.querySelector('header');
   let activeSection=null;
   let navFrame=0;
+  let lastScrollY=window.scrollY;
 
   const updateActiveSection=()=>{
+    const chromeHeight=(pageHeader?.offsetHeight||0)+homeSectionNav.offsetHeight;
+    const y=window.scrollY;
+    const delta=y-lastScrollY;
+    if(delta>4 && y>chromeHeight) homeSectionNav.classList.add('nav-hidden');
+    else if(delta<-4 || y<chromeHeight) homeSectionNav.classList.remove('nav-hidden');
+    lastScrollY=y;
+
     const activationLine=(pageHeader?.getBoundingClientRect().bottom||0)+homeSectionNav.getBoundingClientRect().height+16;
     let current=null;
     sections.forEach(section=>{
@@ -210,6 +218,30 @@ if(homeSectionNav && sections.length && navLinks.length){
   window.addEventListener('scroll',requestNavUpdate,{passive:true});
   window.addEventListener('resize',requestNavUpdate);
   updateActiveSection();
+}
+
+/* ---------- Ocultar barra de filtros de noticias al bajar ---------- */
+const newsTools=document.querySelector('.news-tools');
+if(newsTools){
+  let toolsLastY=window.scrollY;
+  let toolsFrame=0;
+
+  const updateToolsVisibility=()=>{
+    const chromeHeight=(document.querySelector('header')?.offsetHeight||0)+newsTools.offsetHeight;
+    const y=window.scrollY;
+    const delta=y-toolsLastY;
+    if(delta>4 && y>chromeHeight) newsTools.classList.add('nav-hidden');
+    else if(delta<-4 || y<chromeHeight) newsTools.classList.remove('nav-hidden');
+    toolsLastY=y;
+    toolsFrame=0;
+  };
+
+  const requestToolsUpdate=()=>{
+    if(!toolsFrame) toolsFrame=requestAnimationFrame(updateToolsVisibility);
+  };
+
+  window.addEventListener('scroll',requestToolsUpdate,{passive:true});
+  window.addEventListener('resize',requestToolsUpdate);
 }
 
 /* ---------- Hero card: glow + tilt ---------- */

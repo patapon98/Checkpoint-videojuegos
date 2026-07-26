@@ -557,7 +557,6 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .release h4 .store-cta:hover{color:#fff0c8;border-color:#ffb12b;background:rgba(255,177,43,.22);transform:translateY(-1px)}
 .release h4 .store-cta:focus-visible{outline:2px solid #ffb12b;outline-offset:2px}
 .store-cta svg{width:15px;height:15px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.project-support-note{margin:24px 0 0;color:var(--ink-soft);font-size:.82rem;line-height:1.55}
 .calendar-page .wrap{max-width:1240px}
 .calendar-page .month-label{font-size:1.28rem;margin-top:40px;padding-bottom:10px}
 .calendar-page .release{grid-template-columns:144px minmax(0,1fr) auto;gap:22px;min-height:104px;padding:12px 18px}

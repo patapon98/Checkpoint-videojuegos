@@ -6,11 +6,11 @@ html[lang="en"] .news-home-flip-featured::before{content:"Featured"}
 /* La destacada funciona como una pieza editorial propia y compacta */
 .news-home-flip-featured .news-lead{grid-template-columns:minmax(155px,.5fr) minmax(0,1.5fr);min-height:350px}
 .news-home-flip-featured .news-lead-signal{padding:22px}
-.news-home-flip-featured .news-lead-copy{position:relative;padding:clamp(22px,3.2vw,34px);background:radial-gradient(circle at 100% 0,var(--home-news-soft),transparent 42%),var(--card)}
+.news-home-flip-featured .news-lead-copy{position:relative;justify-content:flex-start;padding:clamp(22px,3.2vw,34px);background:radial-gradient(circle at 100% 0,var(--home-news-soft),transparent 42%),var(--card)}
 .news-home-flip-featured .news-lead h3{font-size:clamp(1.8rem,3.15vw,2.7rem);margin:10px 0}
 .news-home-flip-featured .news-lead-copy>p{font-size:.94rem;line-height:1.55}
 .news-home-flip-featured .news-why{margin-top:15px;padding:13px 16px}
-.news-home-flip-featured .news-sources{margin-top:14px}
+.news-home-flip-featured .news-sources{margin-top:auto;padding-top:14px}
 .news-home-flip-featured .news-home-flip-button{margin-top:10px}
 .news-home-flip-featured .news-home-flip-back{min-height:350px;padding:clamp(22px,3.2vw,34px);border-width:2px}
 

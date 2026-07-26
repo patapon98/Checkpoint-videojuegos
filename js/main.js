@@ -11,6 +11,7 @@
 
   load('home-analysis-links.js');
   load('main-core.js',()=>{
+    if(!document.body.classList.contains('calendar-page')) return;
     load('calendar-images.js',()=>load('calendar-labels.js',()=>{
       load('calendar-trailers.js');
       load('calendar-gcal.js');

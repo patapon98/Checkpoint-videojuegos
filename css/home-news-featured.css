@@ -1,26 +1,52 @@
-.news-home-flip-featured{position:relative;isolation:isolate;overflow:hidden;border-radius:26px}
+.news-home-flip-featured{position:relative;isolation:isolate;overflow:hidden;border-radius:26px;box-shadow:0 24px 56px -38px color-mix(in srgb,var(--home-news-a) 66%,transparent)}
+.news-home-flip-featured::after{content:"";position:absolute;inset:0;z-index:5;border:2px solid color-mix(in srgb,var(--home-news-a) 42%,var(--line));border-radius:inherit;pointer-events:none}
 .news-home-flip-featured::before{content:"Destacada";position:absolute;top:22px;right:-48px;left:auto;z-index:6;width:180px;padding:6px 0;text-align:center;transform:rotate(45deg);transform-origin:center;background:linear-gradient(120deg,var(--home-news-b),var(--home-news-a));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 6px 14px -6px rgba(0,0,0,.45);pointer-events:none}
 html[lang="en"] .news-home-flip-featured::before{content:"Featured"}
 
-/* La destacada mantiene jerarquía, pero ocupa menos altura que antes */
-.news-home-flip-featured .news-lead{grid-template-columns:minmax(190px,.64fr) minmax(0,1.36fr);min-height:382px}
-.news-home-flip-featured .news-lead-signal{padding:26px}
-.news-home-flip-featured .news-lead-copy{padding:clamp(26px,4vw,44px)}
-.news-home-flip-featured .news-lead h3{font-size:clamp(1.9rem,3.55vw,3rem);margin:14px 0}
-.news-home-flip-featured .news-lead-copy>p{font-size:.98rem}
-.news-home-flip-featured .news-why{margin-top:20px;padding:15px 18px}
-.news-home-flip-featured .news-sources{margin-top:18px}
-.news-home-flip-featured .news-home-flip-button{margin-top:13px}
-.news-home-flip-featured .news-home-flip-back{min-height:382px;padding:clamp(26px,4vw,44px)}
+/* La destacada funciona como una pieza editorial propia y compacta */
+.news-home-flip-featured .news-lead{grid-template-columns:minmax(155px,.5fr) minmax(0,1.5fr);min-height:350px}
+.news-home-flip-featured .news-lead-signal{padding:22px}
+.news-home-flip-featured .news-lead-copy{position:relative;justify-content:flex-start;padding:clamp(22px,3.2vw,34px);background:radial-gradient(circle at 100% 0,var(--home-news-soft),transparent 42%),var(--card)}
+.news-home-flip-featured .news-lead h3{font-size:clamp(1.8rem,3.15vw,2.7rem);margin:10px 0}
+.news-home-flip-featured .news-lead-copy>p{font-size:.94rem;line-height:1.55}
+.news-home-flip-featured .news-why{margin-top:15px;padding:13px 16px}
+.news-home-flip-featured .news-sources{margin-top:auto;padding-top:14px}
+.news-home-flip-featured .news-home-flip-button{margin-top:10px}
+.news-home-flip-featured .news-home-flip-back .news-home-flip-button{margin-top:auto}
+.news-home-flip-featured .news-home-flip-back{min-height:350px;padding:clamp(22px,3.2vw,34px);border-width:2px}
 
 @media(max-width:800px){
   .news-home-flip-featured .news-lead{grid-template-columns:1fr;min-height:0}
-  .news-home-flip-featured .news-lead-signal{min-height:138px;padding:24px}
-  .news-home-flip-featured .news-lead-copy{padding:25px 22px}
-  .news-home-flip-featured .news-home-flip-back{min-height:0;padding:25px 22px}
+  .news-home-flip-featured .news-lead-signal{min-height:118px;padding:21px}
+  .news-home-flip-featured .news-lead-copy{padding:23px 21px}
+  .news-home-flip-featured .news-home-flip-back{min-height:0;padding:23px 21px}
 }
 @media(max-width:540px){
   .news-home-flip-featured::before{top:16px;right:-40px;left:auto;width:160px;font-size:.64rem;padding:5px 0}
-  .news-home-flip-featured .news-lead-signal{min-height:126px;padding:21px}
-  .news-home-flip-featured .news-lead h3{font-size:1.85rem}
+  .news-home-flip-featured .news-lead-signal{min-height:108px;padding:19px}
+  .news-home-flip-featured .news-lead h3{font-size:1.75rem}
+}
+
+/* Los controles de las tarjetas del carrusel comparten una coordenada estable
+   en anverso y reverso, independientemente de la longitud del texto. */
+.news-home-flip-brief .news-home-flip-front,
+.news-home-flip-brief .news-home-flip-back{
+  position:relative;
+  padding-bottom:78px;
+}
+.news-home-flip-brief .news-home-flip-front .news-home-flip-button,
+.news-home-flip-brief .news-home-flip-back .news-home-flip-button{
+  position:absolute;
+  right:26px;
+  bottom:26px;
+  margin:0;
+}
+@media(max-width:540px){
+  .news-home-flip-brief .news-home-flip-front,
+  .news-home-flip-brief .news-home-flip-back{padding-bottom:70px}
+  .news-home-flip-brief .news-home-flip-front .news-home-flip-button,
+  .news-home-flip-brief .news-home-flip-back .news-home-flip-button{
+    right:20px;
+    bottom:20px;
+  }
 }

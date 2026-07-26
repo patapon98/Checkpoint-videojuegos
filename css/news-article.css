@@ -53,3 +53,36 @@ html[data-theme="dark"]{--story-blue:#7aa2ff;--story-blue-soft:#18223d;--story-d
 .news-read-more{display:inline-flex!important;align-items:center;gap:8px;margin-top:16px!important;padding:10px 15px!important;border-radius:99px!important;background:var(--button-bg)!important;color:var(--button-ink)!important;font-weight:700!important;font-size:.78rem!important;text-decoration:none!important}.news-read-more:hover{background:var(--accent)!important}
 @media(max-width:920px){.story-hero-grid,.story-layout{grid-template-columns:1fr}.story-visual{min-height:340px;max-width:620px;width:100%}.story-layout{gap:28px}.story-rail{position:static;grid-template-columns:repeat(3,1fr)}.story-rail-link{grid-column:1/-1}}
 @media(max-width:620px){.story-hero{padding-top:34px}.story-hero-grid{gap:32px}.story-hero-copy h1{font-size:2.55rem}.story-visual{min-height:300px}.disc{width:160px;height:160px;right:20px;top:35px}.case{width:130px;height:185px;left:25px;bottom:62px;padding:15px}.story-layout{padding-top:38px}.story-body{font-size:.98rem}.story-rail{grid-template-columns:1fr}.story-rail-link{grid-column:auto}.story-sources a{display:block}.story-sources span{display:block;text-align:left;margin-top:4px}.revenue-visual{padding:22px 18px}.revenue-big{grid-template-columns:1fr}.revenue-big span{font-size:3.35rem}}
+
+/* El contenido del artículo debe poder contraerse al ancho real del móvil */
+.news-story-page .wrap,
+.story-hero-grid,
+.story-layout,
+.story-hero-copy,
+.story-body,
+.story-rail{min-width:0}
+.story-body>*{max-width:100%;box-sizing:border-box}
+.revenue-table-wrap{width:100%;max-width:100%}
+@media(max-width:920px){
+  .story-hero-grid,.story-layout{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:620px){
+  .story-hero{padding:30px 0 40px}
+  .story-hero-copy .back{margin-bottom:20px}
+  .story-hero-copy h1{
+    max-width:100%;
+    font-size:clamp(2rem,10.5vw,2.55rem);
+    overflow-wrap:anywhere;
+  }
+  .story-deck{font-size:1rem;line-height:1.58}
+  .story-meta{gap:8px 14px;margin-top:20px;padding-top:16px}
+  .story-visual{min-height:270px;border-radius:22px}
+  .story-layout{padding-top:34px;padding-bottom:58px}
+  .story-body{font-size:.98rem;overflow-wrap:anywhere}
+  .story-summary{padding:20px 18px}
+  .story-callout{margin:30px 0;padding:22px 18px}
+  .story-callout p{font-size:1.2rem}
+  .story-pull{margin:40px 0;padding-left:18px}
+  .revenue-table{min-width:520px}
+}
+

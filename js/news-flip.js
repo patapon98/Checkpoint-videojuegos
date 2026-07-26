@@ -84,7 +84,8 @@
       const date=card.querySelector('.news-archive-date');
       const paragraphs=expanded[item.id]||[item.summary?.es||'',item.why?.es||''];
       const category=item.category?.es||'';
-      const dateText=date?.querySelector('time')?.textContent||'';
+      const dateText=[...(date?.querySelectorAll('time')||[])]
+        .map(node=>node.textContent.trim()).filter(Boolean).join(' · ');
 
       const front=document.createElement('section');
       front.className='news-flip-face news-flip-front';

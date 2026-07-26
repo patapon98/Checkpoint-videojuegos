@@ -77,6 +77,35 @@
     }).format(new Date(value + "T12:00:00Z"));
   }
 
+  function relativeDate(item, lang) {
+    const hasTime = Boolean(item.publishedAt);
+    const published = new Date(hasTime ? item.publishedAt : item.date + "T12:00:00Z");
+    const now = new Date();
+    const exact = new Intl.DateTimeFormat(locale[lang] || locale.es, {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      ...(hasTime ? { hour: "2-digit", minute: "2-digit" } : {}),
+      timeZone: "UTC"
+    }).format(published);
+    const dayStart = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    const publishedDay = Date.UTC(published.getUTCFullYear(), published.getUTCMonth(), published.getUTCDate());
+    const days = Math.max(0, Math.floor((dayStart - publishedDay) / 864e5));
+    let label;
+
+    if (hasTime) {
+      const hours = Math.max(0, Math.floor((now - published) / 36e5));
+      if (hours < 1) label = lang === "en" ? "Less than an hour ago" : "Hace menos de una hora";
+      else if (hours < 24) label = lang === "en" ? `${hours} hour${hours === 1 ? "" : "s"} ago` : `Hace ${hours} hora${hours === 1 ? "" : "s"}`;
+    }
+    if (!label) {
+      if (days === 0) label = lang === "en" ? "Today" : "Hoy";
+      else if (days === 1) label = lang === "en" ? "Yesterday" : "Ayer";
+      else label = lang === "en" ? `${days} days ago` : `Hace ${days} días`;
+    }
+    return `<time class="news-relative-time" datetime="${escapeHTML(item.publishedAt || item.date)}" title="${escapeHTML(exact)}">${escapeHTML(label)}</time>`;
+  }
+
   /* Solo las noticias con tráiler propio (anuncios, fechas, lanzamientos) lo incluyen. */
   function trailerLink(item, lang) {
     if (!item.trailer?.url) return "";
@@ -131,7 +160,7 @@
       <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}" aria-hidden="true" inert>
         <div class="news-home-back-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
-          <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
+          ${relativeDate(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <div class="news-home-expanded-copy">${paragraphs.map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("")}</div>
@@ -164,7 +193,7 @@
           <div class="news-meta">
             <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
             ${latestBadge(item, lang)}
-            <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
+            ${relativeDate(item, lang)}
             ${updated}
           </div>
           <h3>${escapeHTML(text(item.title, lang))}</h3>
@@ -186,7 +215,7 @@
         <div class="news-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
           ${latestBadge(item, lang)}
-          <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
+          ${relativeDate(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <p>${escapeHTML(text(item.summary, lang))}</p>
@@ -216,6 +245,39 @@
     }
   }
 
+  function bindHomeCarousel(home) {
+    const carousel = home.querySelector("[data-news-carousel]");
+    const track = carousel?.querySelector("[data-news-carousel-track]");
+    const pages = [...(carousel?.querySelectorAll(".news-brief-page") || [])];
+    if (!track || pages.length < 2) return;
+    let current = 0;
+    const previous = carousel.querySelector("[data-carousel-prev]");
+    const next = carousel.querySelector("[data-carousel-next]");
+    const dots = [...carousel.querySelectorAll("[data-carousel-page]")];
+
+    const show = index => {
+      current = Math.max(0, Math.min(index, pages.length - 1));
+      track.style.transform = `translateX(-${current * 100}%)`;
+      pages.forEach((page, pageIndex) => {
+        const hidden = pageIndex !== current;
+        page.setAttribute("aria-hidden", String(hidden));
+        page.inert = hidden;
+      });
+      dots.forEach((dot, dotIndex) => {
+        const active = dotIndex === current;
+        dot.classList.toggle("on", active);
+        dot.setAttribute("aria-pressed", String(active));
+      });
+      previous.disabled = current === 0;
+      next.disabled = current === pages.length - 1;
+    };
+
+    previous.addEventListener("click", () => show(current - 1));
+    next.addEventListener("click", () => show(current + 1));
+    dots.forEach(dot => dot.addEventListener("click", () => show(Number(dot.dataset.carouselPage))));
+    show(0);
+  }
+
   function bindHomeFlips(home) {
     if (home.dataset.flipBound === "true") return;
     home.dataset.flipBound = "true";
@@ -241,7 +303,7 @@
       <article class="news-archive-card reveal" id="${escapeHTML(item.id)}">
         <div class="news-archive-date">
           ${latestBadge(item, lang)}
-          <time datetime="${item.date}">${formatDate(item.date, lang)}</time>
+          ${relativeDate(item, lang)}
           ${updated}
         </div>
         <div class="news-archive-body">
@@ -299,9 +361,29 @@
     const home = document.getElementById("newsHome");
     if (home && featured) {
       bindHomeFlips(home);
+      const recent = rest.slice(0, 4);
+      const pages = [recent.slice(0, 2), recent.slice(2, 4)].filter(page => page.length);
       home.innerHTML = `
         ${featuredCard(featured, selectedLang)}
-        <div class="news-brief-grid">${rest.slice(0, 4).map(item => briefCard(item, selectedLang)).join("")}</div>`;
+        <div class="news-brief-carousel" data-news-carousel>
+          <div class="news-brief-viewport">
+            <div class="news-brief-track" data-news-carousel-track>
+              ${pages.map((page, index) => `
+                <div class="news-brief-page" aria-hidden="${index > 0}">
+                  ${page.map(item => briefCard(item, selectedLang)).join("")}
+                </div>`).join("")}
+            </div>
+          </div>
+          ${pages.length > 1 ? `
+            <div class="news-carousel-controls" aria-label="${selectedLang === "en" ? "More recent news" : "Más noticias recientes"}">
+              <button type="button" data-carousel-prev aria-label="${selectedLang === "en" ? "Previous news" : "Noticias anteriores"}" disabled>←</button>
+              <div class="news-carousel-dots">
+                ${pages.map((_, index) => `<button type="button" data-carousel-page="${index}" class="${index === 0 ? "on" : ""}" aria-label="${selectedLang === "en" ? `Show news page ${index + 1}` : `Mostrar página ${index + 1} de noticias`}" aria-pressed="${index === 0}"></button>`).join("")}
+              </div>
+              <button type="button" data-carousel-next aria-label="${selectedLang === "en" ? "Next news" : "Noticias siguientes"}">→</button>
+            </div>` : ""}
+        </div>`;
+      bindHomeCarousel(home);
     }
 
     const archive = document.getElementById("newsArchive");

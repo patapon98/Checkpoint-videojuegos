@@ -6,6 +6,10 @@
   white-space:nowrap;
 }
 
+.logo span{
+  margin-left:.22em;
+}
+
 .logo .site-logo-mark{
   width:36px;
   height:36px;

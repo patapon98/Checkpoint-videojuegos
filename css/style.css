@@ -218,7 +218,7 @@ h2.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);f
 .card-body .read u{text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
 
 /* ---------- Calendario ---------- */
-#calendario{background:#16151a;color:#fdfcfa;border-radius:36px;margin:48px auto;max-width:1160px;padding:64px 48px;position:relative;overflow:hidden}
+#calendario{background:#16151a;color:#fdfcfa;border-radius:36px;margin:48px auto;max-width:1160px;padding:64px 48px 40px;position:relative;overflow:hidden}
 #calendario::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(228,87,46,.22),transparent 65%);top:-200px;right:-140px;pointer-events:none}
 #calendario .kicker{color:#ff8c66}
 #calendario .section-sub{color:#a5a1ad}
@@ -370,7 +370,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .pill-filter:hover{border-color:var(--accent);color:var(--accent)}
 .pill-filter.on{background:var(--button-bg);border-color:var(--button-bg);color:var(--button-ink)}
 
-.view-all-wrap{text-align:center;margin-top:40px}
+.view-all-wrap{text-align:center;margin-top:24px}
 #calendario .btn.ghost{color:#fdfcfa;border-color:rgba(255,255,255,.28)}
 #calendario .btn.ghost:hover{color:#ff8c66;border-color:#ff8c66;background:rgba(255,140,102,.12)}
 

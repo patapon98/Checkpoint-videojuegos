@@ -1,6 +1,7 @@
 window.FINALSECRETO_NEWS = [
   {
     id: "playstation-fin-formato-fisico",
+    emphasis: { es: ["juegos nuevos publicados desde enero de 2028","no podrán prestarse ni revenderse como un disco","propiedad, la reventa, la preservación"] },
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-01",
     updated: "2026-07-25",
@@ -39,6 +40,7 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "xbox-retrocompatibilidad-pc",
+    emphasis: { es: ["sin comprar otra copia","trasladar su catálogo histórico a PC","mejorar su conservación"] },
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-22",
     featured: false,
@@ -71,6 +73,8 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "god-of-war-laufey-fecha",
+    important: true,
+    emphasis: { es: ["en exclusiva a PS5 el 16 de febrero de 2027","recuperará a Kratos como protagonista","próximas dos entregas"] },
     category: { es: "Juegos", en: "Games" },
     date: "2026-07-25",
     featured: false,
@@ -113,6 +117,7 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "gta-vi-codigos-japon",
+    emphasis: { es: ["un código de descarga y no un disco","validez de 170 días","podría perder su utilidad"] },
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-25",
     featured: false,
@@ -145,6 +150,8 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "ea-compra-autorizacion-ue",
+    important: true,
+    emphasis: { es: ["55.000 millones de dólares","no plantea problemas de competencia","revisión separada sobre subvenciones extranjeras"] },
     category: { es: "Industria", en: "Industry" },
     date: "2026-07-23",
     featured: false,
@@ -177,6 +184,7 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "xbox-nube-gratis-anuncios",
+    emphasis: { es: ["sin pagar por el acceso a la nube","límite de una hora","no se interrumpe con publicidad"] },
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-23",
     featured: false,
@@ -209,6 +217,7 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "amazon-luna-prime-video",
+    emphasis: { es: ["sin descargas ni pagos adicionales","España y Japón no forman parte del despliegue inicial"] },
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-23",
     featured: false,
@@ -240,6 +249,8 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "marvel-wolverine-fecha",
+    important: true,
+    emphasis: { es: ["15 de septiembre de 2026","uno de los principales exclusivos de PS5"] },
     category: { es: "Juegos", en: "Games" },
     date: "2026-07-23",
     featured: false,
@@ -270,6 +281,8 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "xbox-reestructuracion-despidos",
+    important: true,
+    emphasis: { es: ["3.200 puestos","1.600 salidas inmediatas","no ha cancelado ningún proyecto first-party anunciado"] },
     category: { es: "Industria", en: "Industry" },
     date: "2026-07-06",
     updated: "2026-07-15",
@@ -308,6 +321,8 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "halo-campaign-evolved-lanzamiento",
+    important: true,
+    emphasis: { es: ["también a PS5","juego cruzado y cooperativo online para hasta cuatro personas","priorizando el alcance comercial"] },
     category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-23",
     featured: false,
@@ -343,6 +358,7 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "elden-ring-switch-2-fecha",
+    emphasis: { es: ["Elden Ring, Shadow of the Erdtree y contenido adicional","prueba técnica y comercial para Switch 2"] },
     category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-06-05",
     featured: false,

@@ -12,6 +12,27 @@
     icon.type='image/svg+xml';
     icon.href='/favicon.svg';
 
+    let brandStyles=document.querySelector('link[data-final-secreto-brand]');
+    if(!brandStyles){
+      brandStyles=document.createElement('link');
+      brandStyles.rel='stylesheet';
+      brandStyles.href='/css/brand-logo.css';
+      brandStyles.dataset.finalSecretoBrand='';
+      document.head.appendChild(brandStyles);
+    }
+
+    document.querySelectorAll('a.logo').forEach(logo=>{
+      if(logo.querySelector('.site-logo-mark')) return;
+      const mark=document.createElement('img');
+      mark.className='site-logo-mark';
+      mark.src='/favicon.svg';
+      mark.alt='';
+      mark.setAttribute('aria-hidden','true');
+      mark.width=36;
+      mark.height=36;
+      logo.prepend(mark);
+    });
+
     if(location.pathname==='/'||location.pathname==='/index.html'){
       const existing=document.querySelector('script[data-final-secreto-organization]');
       if(!existing){

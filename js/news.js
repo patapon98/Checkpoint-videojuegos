@@ -374,16 +374,16 @@
   }
 
   function archiveCard(item, lang) {
-    const updated = item.updated
-      ? `<span>${lang === "en" ? "Updated" : "Actualizado"} ${formatDate(item.updated, lang)}</span>`
-      : "";
+    const published = `<time class="news-published-date" datetime="${escapeHTML(item.date)}">${escapeHTML(formatDate(item.date, lang))}</time>`;
     return `
       <article class="news-archive-card reveal" id="${escapeHTML(item.id)}">
         <div class="news-archive-date">
           ${latestBadge(item, lang)}
           ${importanceBadge(item, lang)}
-          ${relativeDate(item, lang)}
-          ${updated}
+          <span class="news-card-date">
+            ${published}
+            ${relativeDate(item, lang)}
+          </span>
         </div>
         <div class="news-archive-body">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>

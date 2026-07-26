@@ -375,11 +375,11 @@
 
   function archiveCard(item, lang) {
     const published = `<time class="news-published-date" datetime="${escapeHTML(item.date)}">${escapeHTML(formatDate(item.date, lang))}</time>`;
+    const archiveBadges = `${latestBadge(item, lang)}${importanceBadge(item, lang)}`;
     return `
       <article class="news-archive-card reveal" id="${escapeHTML(item.id)}">
-        <div class="news-archive-date">
-          ${latestBadge(item, lang)}
-          ${importanceBadge(item, lang)}
+        <div class="news-archive-date${archiveBadges ? " has-badges" : ""}">
+          ${archiveBadges}
         </div>
         <div class="news-archive-body">
           <div class="news-card-heading">

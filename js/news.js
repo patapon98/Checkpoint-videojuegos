@@ -276,34 +276,84 @@
   function bindHomeCarousel(home) {
     const carousel = home.querySelector("[data-news-carousel]");
     const track = carousel?.querySelector("[data-news-carousel-track]");
-    const pages = [...(carousel?.querySelectorAll(".news-brief-page") || [])];
-    if (!track || pages.length < 2) return;
+    const slides = [...(carousel?.querySelectorAll(".news-brief-slide") || [])];
+    if (!track || slides.length < 2) return;
     let current = 0;
     const previous = carousel.querySelector("[data-carousel-prev]");
     const next = carousel.querySelector("[data-carousel-next]");
-    const dots = [...carousel.querySelectorAll("[data-carousel-page]")];
+    const dotsContainer = carousel.querySelector("[data-carousel-dots]");
+    const mobileQuery = window.matchMedia("(max-width: 800px)");
+    let perView = mobileQuery.matches ? 1 : 2;
+    let pageCount = Math.ceil(slides.length / perView);
 
     const show = index => {
-      current = Math.max(0, Math.min(index, pages.length - 1));
-      track.style.transform = `translateX(-${current * 100}%)`;
-      pages.forEach((page, pageIndex) => {
-        const hidden = pageIndex !== current;
-        page.setAttribute("aria-hidden", String(hidden));
-        page.inert = hidden;
+      current = Math.max(0, Math.min(index, pageCount - 1));
+      const firstVisible = current * perView;
+      const offset = slides[firstVisible]?.offsetLeft || 0;
+      track.style.transform = `translateX(-${offset}px)`;
+      slides.forEach((slide, slideIndex) => {
+        const hidden = slideIndex < firstVisible || slideIndex >= firstVisible + perView;
+        slide.setAttribute("aria-hidden", String(hidden));
+        slide.inert = hidden;
       });
-      dots.forEach((dot, dotIndex) => {
+      [...dotsContainer.querySelectorAll("[data-carousel-page]")].forEach((dot, dotIndex) => {
         const active = dotIndex === current;
         dot.classList.toggle("on", active);
         dot.setAttribute("aria-pressed", String(active));
       });
       previous.disabled = current === 0;
-      next.disabled = current === pages.length - 1;
+      next.disabled = current === pageCount - 1;
+    };
+
+    const buildDots = () => {
+      dotsContainer.innerHTML = Array.from({ length: pageCount }, (_, index) =>
+        `<button type="button" data-carousel-page="${index}" aria-label="${
+          mobileQuery.matches
+            ? `Mostrar noticia ${index + 1} de ${slides.length}`
+            : `Mostrar grupo ${index + 1} de noticias`
+        }" aria-pressed="${index === current}"></button>`
+      ).join("");
+    };
+
+    const refreshLayout = () => {
+      const firstVisible = current * perView;
+      perView = mobileQuery.matches ? 1 : 2;
+      pageCount = Math.ceil(slides.length / perView);
+      current = Math.min(Math.floor(firstVisible / perView), pageCount - 1);
+      buildDots();
+      show(current);
     };
 
     previous.addEventListener("click", () => show(current - 1));
     next.addEventListener("click", () => show(current + 1));
-    dots.forEach(dot => dot.addEventListener("click", () => show(Number(dot.dataset.carouselPage))));
-    show(0);
+    dotsContainer.addEventListener("click", event => {
+      const dot = event.target.closest("[data-carousel-page]");
+      if (dot) show(Number(dot.dataset.carouselPage));
+    });
+
+    let pointerStart = null;
+    carousel.querySelector(".news-brief-viewport")?.addEventListener("pointerdown", event => {
+      if (event.target.closest("a,button")) return;
+      pointerStart = { x: event.clientX, y: event.clientY };
+    });
+    carousel.querySelector(".news-brief-viewport")?.addEventListener("pointerup", event => {
+      if (!pointerStart) return;
+      const deltaX = event.clientX - pointerStart.x;
+      const deltaY = event.clientY - pointerStart.y;
+      pointerStart = null;
+      if (Math.abs(deltaX) < 45 || Math.abs(deltaX) <= Math.abs(deltaY) * 1.15) return;
+      show(current + (deltaX < 0 ? 1 : -1));
+    });
+    carousel.querySelector(".news-brief-viewport")?.addEventListener("pointercancel", () => {
+      pointerStart = null;
+    });
+
+    let resizeFrame = 0;
+    window.addEventListener("resize", () => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(refreshLayout);
+    }, { passive: true });
+    refreshLayout();
   }
 
   function bindHomeFlips(home) {
@@ -331,6 +381,7 @@
       <article class="news-archive-card reveal" id="${escapeHTML(item.id)}">
         <div class="news-archive-date">
           ${latestBadge(item, lang)}
+          ${importanceBadge(item, lang)}
           ${relativeDate(item, lang)}
           ${updated}
         </div>
@@ -390,24 +441,21 @@
     if (home && featured) {
       bindHomeFlips(home);
       const recent = rest.slice(0, 4);
-      const pages = [recent.slice(0, 2), recent.slice(2, 4)].filter(page => page.length);
       home.innerHTML = `
         ${featuredCard(featured, selectedLang)}
         <div class="news-brief-carousel" data-news-carousel>
           <div class="news-brief-viewport">
             <div class="news-brief-track" data-news-carousel-track>
-              ${pages.map((page, index) => `
-                <div class="news-brief-page" aria-hidden="${index > 0}">
-                  ${page.map(item => briefCard(item, selectedLang)).join("")}
+              ${recent.map((item, index) => `
+                <div class="news-brief-slide" aria-hidden="${index > 1}">
+                  ${briefCard(item, selectedLang)}
                 </div>`).join("")}
             </div>
           </div>
-          ${pages.length > 1 ? `
+          ${recent.length > 2 ? `
             <div class="news-carousel-controls" aria-label="${selectedLang === "en" ? "More recent news" : "Más noticias recientes"}">
               <button type="button" data-carousel-prev aria-label="${selectedLang === "en" ? "Previous news" : "Noticias anteriores"}" disabled>←</button>
-              <div class="news-carousel-dots">
-                ${pages.map((_, index) => `<button type="button" data-carousel-page="${index}" class="${index === 0 ? "on" : ""}" aria-label="${selectedLang === "en" ? `Show news page ${index + 1}` : `Mostrar página ${index + 1} de noticias`}" aria-pressed="${index === 0}"></button>`).join("")}
-              </div>
+              <div class="news-carousel-dots" data-carousel-dots></div>
               <button type="button" data-carousel-next aria-label="${selectedLang === "en" ? "Next news" : "Noticias siguientes"}">→</button>
             </div>` : ""}
         </div>`;

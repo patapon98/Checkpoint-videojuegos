@@ -174,8 +174,16 @@ if(homeSectionNav && sections.length && navLinks.length){
   const pageHeader=document.querySelector('header');
   let activeSection=null;
   let navFrame=0;
+  let lastScrollY=window.scrollY;
 
   const updateActiveSection=()=>{
+    const chromeHeight=(pageHeader?.offsetHeight||0)+homeSectionNav.offsetHeight;
+    const y=window.scrollY;
+    const delta=y-lastScrollY;
+    if(delta>4 && y>chromeHeight) homeSectionNav.classList.add('nav-hidden');
+    else if(delta<-4 || y<chromeHeight) homeSectionNav.classList.remove('nav-hidden');
+    lastScrollY=y;
+
     const activationLine=(pageHeader?.getBoundingClientRect().bottom||0)+homeSectionNav.getBoundingClientRect().height+16;
     let current=null;
     sections.forEach(section=>{

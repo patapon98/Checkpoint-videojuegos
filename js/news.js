@@ -360,9 +360,22 @@
       seenSwipeHint = sessionStorage.getItem("finalsecreto:seen-carousel-hint") === "1";
     } catch (e) {}
     if (mobileQuery.matches && !seenSwipeHint) {
-      requestAnimationFrame(() => track.classList.add("peek-nudge"));
-      track.addEventListener("animationend", () => track.classList.remove("peek-nudge"), { once: true });
-      try { sessionStorage.setItem("finalsecreto:seen-carousel-hint", "1"); } catch (e) {}
+      const triggerSwipeHint = () => {
+        track.classList.add("peek-nudge");
+        track.addEventListener("animationend", () => track.classList.remove("peek-nudge"), { once: true });
+        try { sessionStorage.setItem("finalsecreto:seen-carousel-hint", "1"); } catch (e) {}
+      };
+      if ("IntersectionObserver" in window) {
+        const hintObserver = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting)) {
+            hintObserver.disconnect();
+            triggerSwipeHint();
+          }
+        }, { threshold: 0.6 });
+        hintObserver.observe(carousel);
+      } else {
+        triggerSwipeHint();
+      }
     }
   }
 

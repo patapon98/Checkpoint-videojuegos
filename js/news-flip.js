@@ -81,7 +81,7 @@
       const body=card.querySelector('.news-archive-body');
       if(!item||!body) return;
 
-      const date=card.querySelector('.news-archive-date');
+      const date=card.querySelector('.news-card-date');
       const paragraphs=expanded[item.id]||[item.summary?.es||'',item.why?.es||''];
       const category=item.category?.es||'';
       const dateText=[...(date?.querySelectorAll('time')||[])]

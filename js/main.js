@@ -1,6 +1,37 @@
 (function(){
   const current=document.currentScript;
   const base=current?.src||location.href;
+
+  const ensureBrandAssets=()=>{
+    let icon=document.querySelector('link[rel~="icon"]');
+    if(!icon){
+      icon=document.createElement('link');
+      icon.rel='icon';
+      document.head.appendChild(icon);
+    }
+    icon.type='image/svg+xml';
+    icon.href='/favicon.svg';
+
+    if(location.pathname==='/'||location.pathname==='/index.html'){
+      const existing=document.querySelector('script[data-final-secreto-organization]');
+      if(!existing){
+        const schema=document.createElement('script');
+        schema.type='application/ld+json';
+        schema.dataset.finalSecretoOrganization='';
+        schema.textContent=JSON.stringify({
+          '@context':'https://schema.org',
+          '@type':'Organization',
+          name:'Final Secreto',
+          url:'https://finalsecreto.com/',
+          logo:'https://finalsecreto.com/favicon.svg'
+        });
+        document.head.appendChild(schema);
+      }
+    }
+  };
+
+  ensureBrandAssets();
+
   const load=(name,onload)=>{
     const script=document.createElement('script');
     script.src=new URL(name,base).href;

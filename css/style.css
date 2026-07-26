@@ -593,3 +593,8 @@ html[data-theme="dark"] .review-hitpoints dl,html[data-theme="dark"] .article-bo
   .review-hitpoints dl>div:nth-last-child(-n+2){border-bottom:0}
   .review-related-links{grid-template-columns:1fr}
 }
+
+
+/* Evita mostrar el calendario mientras se prepara su vista persistida. */
+html.calendar-booting #releases,
+html.calendar-booting .calendar-tools{visibility:hidden}

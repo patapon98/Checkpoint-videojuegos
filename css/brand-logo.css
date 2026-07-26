@@ -2,7 +2,7 @@
 .logo{
   display:inline-flex;
   align-items:center;
-  gap:10px;
+  gap:0;
   white-space:nowrap;
 }
 
@@ -12,6 +12,7 @@
   display:block;
   flex:0 0 auto;
   object-fit:contain;
+  margin-right:10px;
   transition:transform .3s cubic-bezier(.34,1.56,.64,1),filter .25s ease;
 }
 
@@ -24,6 +25,6 @@ html[data-theme="dark"] .logo .site-logo-mark{
 }
 
 @media(max-width:620px){
-  .logo{gap:8px;font-size:1.28rem}
-  .logo .site-logo-mark{width:30px;height:30px}
+  .logo{font-size:1.28rem}
+  .logo .site-logo-mark{width:30px;height:30px;margin-right:8px}
 }

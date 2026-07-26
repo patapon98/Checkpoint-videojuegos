@@ -126,6 +126,13 @@ function setLang(lang){
 const revealEls=[...document.querySelectorAll('.reveal,.stagger')];
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+/* ---------- Atajo para volver al inicio ---------- */
+document.querySelectorAll('[data-scroll-top]').forEach(button=>{
+  button.addEventListener('click',()=>{
+    window.scrollTo({top:0,behavior:reducedMotion?'auto':'smooth'});
+  });
+});
+
 const revealImmediately=elements=>elements.forEach(el=>el.classList.add('visible'));
 
 const observeReveals=(elements,{stagger=false}={})=>{

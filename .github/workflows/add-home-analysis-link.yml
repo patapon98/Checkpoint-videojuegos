@@ -18,7 +18,7 @@ jobs:
           ref: agent/noticia-destacada-playstation
           fetch-depth: 0
 
-      - name: Add conditional analysis links
+      - name: Replace conditional analysis links
         shell: bash
         run: |
           python - <<'PY'

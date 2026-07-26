@@ -1,0 +1,29 @@
+/* Isotipo de Final Secreto en la cabecera */
+.logo{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  white-space:nowrap;
+}
+
+.logo .site-logo-mark{
+  width:36px;
+  height:36px;
+  display:block;
+  flex:0 0 auto;
+  object-fit:contain;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),filter .25s ease;
+}
+
+.logo:hover .site-logo-mark{
+  transform:rotate(-5deg) scale(1.08);
+}
+
+html[data-theme="dark"] .logo .site-logo-mark{
+  filter:drop-shadow(0 0 8px rgba(255,118,24,.16));
+}
+
+@media(max-width:620px){
+  .logo{gap:8px;font-size:1.28rem}
+  .logo .site-logo-mark{width:30px;height:30px}
+}

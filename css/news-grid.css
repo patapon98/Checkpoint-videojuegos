@@ -168,3 +168,16 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
   .news-tools-actions{gap:4px}
   .news-tools-actions .scroll-top-shortcut{width:32px;height:32px}
 }
+
+
+/* Controles de giro siempre en la esquina inferior derecha */
+.news-page #newsArchive .news-flip-front .news-archive-body > .news-sources{
+  margin-top:auto;
+}
+.news-page #newsArchive .news-flip-front .news-archive-body > .news-flip-button,
+.news-page #newsArchive .news-flip-back > .news-flip-button{
+  align-self:flex-end;
+}
+.news-page #newsArchive .news-flip-back > .news-flip-button{
+  margin-top:auto;
+}

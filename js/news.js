@@ -354,6 +354,34 @@
       resizeFrame = requestAnimationFrame(refreshLayout);
     }, { passive: true });
     refreshLayout();
+
+    let seenSwipeHint = true;
+    try {
+      seenSwipeHint = sessionStorage.getItem("finalsecreto:seen-carousel-hint") === "1";
+    } catch (e) {}
+    if (mobileQuery.matches && !seenSwipeHint) {
+      const arrow = carousel.querySelector("[data-news-swipe-hint]");
+      const triggerSwipeHint = () => {
+        track.classList.add("peek-nudge");
+        track.addEventListener("animationend", () => track.classList.remove("peek-nudge"), { once: true });
+        if (arrow) {
+          arrow.classList.add("show");
+          arrow.addEventListener("animationend", () => arrow.classList.remove("show"), { once: true });
+        }
+        try { sessionStorage.setItem("finalsecreto:seen-carousel-hint", "1"); } catch (e) {}
+      };
+      if ("IntersectionObserver" in window) {
+        const hintObserver = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting)) {
+            hintObserver.disconnect();
+            triggerSwipeHint();
+          }
+        }, { threshold: 0.6 });
+        hintObserver.observe(carousel);
+      } else {
+        triggerSwipeHint();
+      }
+    }
   }
 
   function bindHomeFlips(home) {
@@ -453,6 +481,9 @@
                   ${briefCard(item, selectedLang)}
                 </div>`).join("")}
             </div>
+            <span class="news-swipe-hint" data-news-swipe-hint aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+            </span>
           </div>
           ${recent.length > 2 ? `
             <div class="news-carousel-controls" aria-label="${selectedLang === "en" ? "More recent news" : "Más noticias recientes"}">

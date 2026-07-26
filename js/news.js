@@ -68,6 +68,26 @@
       .replaceAll("'", "&#039;");
   }
 
+  function emphasizedHTML(value, item, lang) {
+    const raw = text(value, lang);
+    const phrases = item.emphasis?.[lang] || item.emphasis?.es || [];
+    if (!phrases.length) return escapeHTML(raw);
+    const matches = phrases
+      .map(phrase => ({ phrase, index: raw.indexOf(phrase) }))
+      .filter(match => match.index >= 0)
+      .sort((a, b) => a.index - b.index);
+    if (!matches.length) return escapeHTML(raw);
+    let cursor = 0;
+    let html = "";
+    matches.forEach(match => {
+      if (match.index < cursor) return;
+      html += escapeHTML(raw.slice(cursor, match.index));
+      html += `<strong>${escapeHTML(match.phrase)}</strong>`;
+      cursor = match.index + match.phrase.length;
+    });
+    return html + escapeHTML(raw.slice(cursor));
+  }
+
   function formatDate(value, lang) {
     return new Intl.DateTimeFormat(locale[lang] || locale.es, {
       day: "numeric",
@@ -138,6 +158,11 @@
     return `<span class="news-latest"><i aria-hidden="true"></i>${lang === "en" ? "Breaking" : "Última hora"}</span>`;
   }
 
+  function importanceBadge(item, lang) {
+    if (!item.important || item.featured) return "";
+    return `<span class="news-important"><i aria-hidden="true">★</i>${lang === "en" ? "Major" : "Relevante"}</span>`;
+  }
+
   function homeFlipButton(item, lang, back) {
     const title = text(item.title, lang);
     const label = back
@@ -160,10 +185,11 @@
       <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}" aria-hidden="true" inert>
         <div class="news-home-back-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+          ${importanceBadge(item, lang)}
           ${relativeDate(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
-        <div class="news-home-expanded-copy">${paragraphs.map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("")}</div>
+        <div class="news-home-expanded-copy">${paragraphs.map(paragraph => `<p>${emphasizedHTML(paragraph, item, lang)}</p>`).join("")}</div>
         ${homeFlipButton(item, lang, true)}
       </section>`;
   }
@@ -193,6 +219,7 @@
           <div class="news-meta">
             <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
             ${latestBadge(item, lang)}
+            ${importanceBadge(item, lang)}
             ${relativeDate(item, lang)}
             ${updated}
           </div>
@@ -215,6 +242,7 @@
         <div class="news-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
           ${latestBadge(item, lang)}
+          ${importanceBadge(item, lang)}
           ${relativeDate(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>

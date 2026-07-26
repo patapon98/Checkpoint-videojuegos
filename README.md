@@ -1,8 +1,8 @@
-# Moderlode
+# Final Secreto
 
 Blog de videojuegos: reseñas, calendario de lanzamientos y noticias.
 
-- Web: https://moderlode.alexanderblanc3.workers.dev/
+- Web: https://finalsecreto.com/
 - Hosting: Cloudflare Workers (assets estáticos)
 - Despliegue: automático con cada push a `main` (Cloudflare Workers Builds)
 

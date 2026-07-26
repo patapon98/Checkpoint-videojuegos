@@ -30,7 +30,7 @@
   form.addEventListener('submit',()=>{
     const topicLabel=topic?.selectedOptions[0]?.textContent.trim()||'Mensaje general';
     if(replyTo&&email) replyTo.value=email.value.trim();
-    if(subject) subject.value=`Moderlode · ${topicLabel}`;
+    if(subject) subject.value=`Final Secreto · ${topicLabel}`;
 
     if(submit){
       submit.setAttribute('aria-busy','true');

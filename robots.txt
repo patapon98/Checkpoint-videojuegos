@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://moderlode.alexanderblanc3.workers.dev/sitemap.xml
+Sitemap: https://finalsecreto.com/sitemap.xml

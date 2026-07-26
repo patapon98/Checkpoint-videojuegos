@@ -1,7 +1,7 @@
 {
-  // Configuración de despliegue de Moderlode en Cloudflare Workers.
+  // Configuración de despliegue de Final Secreto en Cloudflare Workers.
   // El "name" debe coincidir con el nombre del Worker en el panel de Cloudflare.
-  "name": "moderlode",
+  "name": "finalsecreto",
   "compatibility_date": "2026-07-01",
   "assets": {
     "directory": "./",

@@ -10,7 +10,7 @@
    * HD de golpe.
    */
 
-  const STORAGE_KEY='moderlode:calendar-view';
+  const STORAGE_KEY='finalsecreto:calendar-view';
   const buttons=[...toggle.querySelectorAll('.view-btn')];
   const gridButton=buttons.find(btn=>btn.dataset.view==='grid');
   const listButton=buttons.find(btn=>btn.dataset.view==='list');

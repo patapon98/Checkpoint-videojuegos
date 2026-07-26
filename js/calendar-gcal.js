@@ -66,7 +66,7 @@
       `Lanzamiento de ${title}.`,
       platforms?`Plataformas: ${platforms}.`:'',
       '',
-      'Fecha recogida del calendario de lanzamientos de Moderlode.'
+      'Fecha recogida del calendario de lanzamientos de Final Secreto.'
     ].filter(Boolean).join('\n');
 
     const params=new URLSearchParams({

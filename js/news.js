@@ -1,5 +1,5 @@
 (function () {
-  const news = Array.isArray(window.MODERLODE_NEWS) ? window.MODERLODE_NEWS : [];
+  const news = Array.isArray(window.FINALSECRETO_NEWS) ? window.FINALSECRETO_NEWS : [];
   const locale = { es: "es-ES", en: "en-GB" };
   const homeDetails = {
     "playstation-fin-formato-fisico": {

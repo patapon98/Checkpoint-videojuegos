@@ -1,4 +1,4 @@
-window.MODERLODE_NEWS = [
+window.FINALSECRETO_NEWS = [
   {
     id: "playstation-fin-formato-fisico",
     category: { es: "Plataformas", en: "Platforms" },

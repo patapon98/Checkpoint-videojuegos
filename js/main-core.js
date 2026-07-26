@@ -6,7 +6,7 @@ function applyTheme(theme,persist=false){
   document.documentElement.setAttribute('data-theme',theme);
   document.documentElement.style.colorScheme=theme;
   if(persist){
-    try{localStorage.setItem('moderlode-theme',theme);}catch(e){}
+    try{localStorage.setItem('finalsecreto-theme',theme);}catch(e){}
   }
   if(themeToggle){
     themeToggle.setAttribute('aria-pressed',String(dark));
@@ -22,7 +22,7 @@ if(themeToggle){
 }
 themeMedia.addEventListener?.('change',event=>{
   try{
-    if(!localStorage.getItem('moderlode-theme')) applyTheme(event.matches?'dark':'light');
+    if(!localStorage.getItem('finalsecreto-theme')) applyTheme(event.matches?'dark':'light');
   }catch(e){}
 });
 

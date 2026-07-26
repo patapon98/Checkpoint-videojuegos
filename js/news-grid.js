@@ -4,11 +4,11 @@
   const toggle=document.getElementById('newsViewToggle');
   const results=document.getElementById('newsResults');
   const tools=document.querySelector('.news-tools');
-  const news=Array.isArray(window.MODERLODE_NEWS)?window.MODERLODE_NEWS:[];
+  const news=Array.isArray(window.FINALSECRETO_NEWS)?window.FINALSECRETO_NEWS:[];
   if(!archive||!filters||!toggle) return;
 
   const pageSize=10;
-  const STORAGE_KEY='moderlode:news-view';
+  const STORAGE_KEY='finalsecreto:news-view';
   const viewButtons=[...toggle.querySelectorAll('.view-btn')];
   const gridButton=viewButtons.find(button=>button.dataset.view==='grid');
   const listButton=viewButtons.find(button=>button.dataset.view==='list');

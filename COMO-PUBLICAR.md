@@ -1,6 +1,6 @@
-# Cómo publicar Moderlode (Cloudflare)
+# Cómo publicar Final Secreto (Cloudflare)
 
-Tu web está en: **https://moderlode.alexanderblanc3.workers.dev/**
+Tu web está en: **https://finalsecreto.com/**
 
 ## Actualizar la web (flujo con GitHub — automático)
 
@@ -9,14 +9,15 @@ Tu web está en: **https://moderlode.alexanderblanc3.workers.dev/**
 3. Pulsa **Push origin**.
 4. Cloudflare construye y publica solo en ~1 minuto. Nada más que hacer.
 
-Puedes ver el estado del despliegue en dash.cloudflare.com → moderlode →
+Puedes ver el estado del despliegue en dash.cloudflare.com → finalsecreto →
 Deployments → View build history.
 
-## Cuando compres el dominio
+## Dominio propio: finalsecreto.com
 
-Puedes comprarlo en el propio Cloudflare (Domain Registration, precio de coste)
-y conectarlo al proyecto en un par de clics. Avísame: yo actualizaré el
-sitemap, robots.txt y las URLs canónicas al dominio nuevo.
+Ya tienes el dominio comprado. Falta conectarlo al Worker desde el panel de
+Cloudflare (Workers & Pages → finalsecreto → Settings → Domains & Routes →
+Add → Custom domain) y esperar a que el certificado se active. El código ya
+apunta a finalsecreto.com en el sitemap, robots.txt y las URLs canónicas.
 
 ## Después del dominio: Google
 
@@ -30,7 +31,9 @@ con esta carpeta seleccionada: yo la extraigo, creo la página con su tema de
 color, la enlazo en portada y actualizo el sitemap. Después solo tienes que
 volver a subir la carpeta a Cloudflare.
 
-## Nota sobre Netlify
+## Nota sobre copias antiguas
 
-La copia antigua en moderlode.netlify.app ya no se actualizará.
-Puedes borrar el sitio desde tu panel de Netlify cuando quieras.
+La copia antigua en moderlode.netlify.app ya no se actualizará: puedes
+borrar el sitio desde tu panel de Netlify cuando quieras. Lo mismo aplica
+a moderlode.alexanderblanc3.workers.dev en cuanto finalsecreto.com quede
+conectado como dominio del Worker.

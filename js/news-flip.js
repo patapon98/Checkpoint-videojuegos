@@ -1,6 +1,6 @@
 (function(){
   const archive=document.getElementById('newsArchive');
-  if(!archive||!Array.isArray(window.MODERLODE_NEWS)) return;
+  if(!archive||!Array.isArray(window.FINALSECRETO_NEWS)) return;
 
   const expanded={
     'playstation-fin-formato-fisico':[
@@ -55,7 +55,7 @@
 
   function enhance(){
     archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach((card,i)=>{
-      const item=window.MODERLODE_NEWS.find(entry=>entry.id===card.id);
+      const item=window.FINALSECRETO_NEWS.find(entry=>entry.id===card.id);
       const body=card.querySelector('.news-archive-body');
       if(!item||!body) return;
 

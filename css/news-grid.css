@@ -88,8 +88,8 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
   text-transform:none;
 }
 .news-page #newsArchive .news-published-date{color:var(--ink);font-weight:780}
-.news-page #newsArchive .news-archive-date:empty{display:none}
-.news-page #newsArchive .news-featured .news-flip-front .news-archive-date:empty{display:flex}
+.news-page #newsArchive .news-archive-date:not(.has-badges){display:none}
+.news-page #newsArchive .news-featured .news-flip-front .news-archive-date:not(.has-badges){display:flex}
 .news-page #newsArchive .news-featured .news-flip-front .news-archive-date{
   position:relative;
   flex-direction:column;

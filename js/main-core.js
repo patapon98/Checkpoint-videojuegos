@@ -122,28 +122,41 @@ function setLang(lang){
   if(window.renderNews) window.renderNews(lang);
 }
 
-/* ---------- Reveal on scroll (inmediato y por zonas en el calendario) ---------- */
-const revealEls=document.querySelectorAll('.reveal,.stagger');
-if(document.body.classList.contains('calendar-page')){
-  const releasesRoot=document.getElementById('releases');
-  const STEP=110;
-  if(releasesRoot){
-    let group=1;
-    [...releasesRoot.children].forEach(child=>{
-      if(child.hasAttribute('data-month')){
-        child.style.transitionDelay=(group*STEP)+'ms';
-        group++;
-      }else if(child.classList.contains('release')){
-        child.style.transitionDelay=((group-1)*STEP)+'ms';
-      }
-    });
+/* ---------- Reveal on scroll ---------- */
+const revealEls=[...document.querySelectorAll('.reveal,.stagger')];
+const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const revealImmediately=elements=>elements.forEach(el=>el.classList.add('visible'));
+
+const observeReveals=(elements,{stagger=false}={})=>{
+  if(reducedMotion||!('IntersectionObserver' in window)){
+    revealImmediately(elements);
+    return;
   }
-  requestAnimationFrame(()=>revealEls.forEach(el=>el.classList.add('visible')));
+  const obs=new IntersectionObserver(entries=>{
+    const entering=entries
+      .filter(entry=>entry.isIntersecting)
+      .sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+    entering.forEach((entry,index)=>{
+      if(stagger) entry.target.style.transitionDelay=Math.min(index*55,220)+'ms';
+      entry.target.classList.add('visible');
+      obs.unobserve(entry.target);
+      entry.target.addEventListener('transitionend',()=>{
+        entry.target.style.removeProperty('transition-delay');
+      },{once:true});
+    });
+  },{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+  elements.forEach(el=>obs.observe(el));
+};
+
+if(document.body.classList.contains('calendar-page')){
+  /*
+   * El calendario se construye antes de mostrarse. Esperamos a que termine para
+   * que la protección anti-parpadeo no se coma las transiciones intencionadas.
+   */
+  window.addEventListener('calendar:ready',()=>observeReveals(revealEls,{stagger:true}),{once:true});
 }else{
-  const obs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target);} });
-  },{threshold:.08});
-  revealEls.forEach(el=>obs.observe(el));
+  observeReveals(revealEls);
 }
 
 /* ---------- Nav activa según scroll ---------- */

@@ -9,7 +9,7 @@
     document.head.appendChild(script);
   };
 
-  load('home-analysis-links.js');
+  load('home-analysis-links.js?v=20260726-2');
   load('main-core.js?v=20260726-3',()=>{
     if(!document.body.classList.contains('calendar-page')) return;
     load('calendar-images.js',()=>load('calendar-labels.js',()=>{

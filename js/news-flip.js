@@ -81,6 +81,7 @@
       const body=card.querySelector('.news-archive-body');
       if(!item||!body) return;
 
+      const signal=card.querySelector('.news-archive-date');
       const date=card.querySelector('.news-card-date');
       const paragraphs=expanded[item.id]||[item.summary?.es||'',item.why?.es||''];
       const category=item.category?.es||'';
@@ -90,7 +91,7 @@
       const front=document.createElement('section');
       front.className='news-flip-face news-flip-front';
       front.setAttribute('aria-label','Resumen de la noticia');
-      if(date) front.append(date);
+      if(signal) front.append(signal);
       front.append(body);
 
       const open=document.createElement('button');

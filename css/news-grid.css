@@ -81,7 +81,7 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 .news-page #newsArchive .news-featured .news-flip-front .news-archive-date{
   flex-direction:column;
   align-items:flex-start;
-  justify-content:space-between;
+  justify-content:flex-start;
   align-content:stretch;
 }
 .news-page #newsArchive .news-featured .news-flip-front .news-card-date{
@@ -94,16 +94,20 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
   color:#fff;
 }
 .news-page #newsArchive .news-featured .news-flip-front .news-archive-date::after{
+  position:absolute;
+  top:50%;
+  left:50%;
   display:block;
-  align-self:flex-end;
   font-family:var(--serif);
-  font-size:clamp(2.7rem,5vw,4.8rem);
+  font-size:clamp(2.35rem,4vw,3.85rem);
   font-weight:700;
   line-height:.86;
   letter-spacing:-.06em;
-  writing-mode:vertical-rl;
-  transform:rotate(180deg);
+  white-space:nowrap;
+  writing-mode:horizontal-tb;
+  transform:translate(-50%,-50%) rotate(-90deg);
   opacity:.92;
+  pointer-events:none;
 }
 @media(max-width:700px){
   .news-page #newsArchive .news-featured .news-flip-front .news-archive-date{
@@ -118,7 +122,11 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
     gap:4px 9px;
   }
   .news-page #newsArchive .news-featured .news-flip-front .news-archive-date::after{
+    position:static;
+    top:auto;
+    left:auto;
     align-self:flex-start;
+    margin-left:0;
     font-size:clamp(2.3rem,12vw,3.7rem);
     line-height:.86;
     writing-mode:horizontal-tb;

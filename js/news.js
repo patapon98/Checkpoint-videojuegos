@@ -380,13 +380,15 @@
         <div class="news-archive-date">
           ${latestBadge(item, lang)}
           ${importanceBadge(item, lang)}
-          <span class="news-card-date">
-            ${published}
-            ${relativeDate(item, lang)}
-          </span>
         </div>
         <div class="news-archive-body">
-          <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+          <div class="news-card-heading">
+            <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+            <span class="news-card-date">
+              ${published}
+              ${relativeDate(item, lang)}
+            </span>
+          </div>
           <h2>${escapeHTML(text(item.title, lang))}</h2>
           <p>${escapeHTML(text(item.summary, lang))}</p>
           <div class="news-why">

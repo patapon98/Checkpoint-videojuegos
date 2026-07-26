@@ -75,8 +75,33 @@
       : '';
   }
 
+  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealObserver=!reducedMotion&&'IntersectionObserver' in window
+    ? new IntersectionObserver(entries=>{
+        const entering=entries
+          .filter(entry=>entry.isIntersecting)
+          .sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+        entering.forEach((entry,index)=>{
+          entry.target.style.transitionDelay=Math.min(index*55,220)+'ms';
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+          entry.target.addEventListener('transitionend',()=>{
+            entry.target.style.removeProperty('transition-delay');
+          },{once:true});
+        });
+      },{threshold:.08,rootMargin:'0px 0px -4% 0px'})
+    : null;
+
+  function revealOnScroll(card){
+    if(!revealObserver){
+      card.classList.add('visible');
+      return;
+    }
+    revealObserver.observe(card);
+  }
+
   function enhance(){
-    archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach((card,i)=>{
+    archive.querySelectorAll('.news-archive-card:not([data-flip-ready])').forEach(card=>{
       const item=window.FINALSECRETO_NEWS.find(entry=>entry.id===card.id);
       const body=card.querySelector('.news-archive-body');
       if(!item||!body) return;
@@ -108,7 +133,7 @@
         <div class="news-back-meta">
           <span class="news-category">${escapeHTML(category)}</span>
           ${importanceBadge(item)}
-          <span class="news-back-date">${escapeHTML(dateText)}</span>
+          <span class="news-back-date news-card-date">${date?.innerHTML||escapeHTML(dateText)}</span>
         </div>
         <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${emphasizedHTML(text,item)}</p>`).join('')}</div>
         <button class="news-flip-button" type="button" aria-expanded="true">
@@ -122,8 +147,7 @@
       card.replaceChildren(inner);
       card.dataset.flipReady='true';
 
-      card.style.transitionDelay=(Math.min(i,8)*70)+'ms';
-      requestAnimationFrame(()=>requestAnimationFrame(()=>card.classList.add('visible')));
+      revealOnScroll(card);
     });
   }
 

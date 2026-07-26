@@ -50,3 +50,40 @@ html[lang="en"] .news-home-flip-featured::before{content:"Featured"}
     bottom:20px;
   }
 }
+
+
+/* Acciones ancladas al pie de las tarjetas, también en la destacada */
+.news-home-flip-featured .news-home-flip-back .news-home-actions{
+  width:100%;
+  margin-top:auto;
+  padding-top:22px;
+  justify-content:flex-end;
+  align-items:center;
+}
+.news-home-flip-featured .news-home-flip-back .news-home-actions .news-home-flip-button{
+  margin:0;
+}
+.news-home-flip-brief .news-home-flip-front .news-home-actions,
+.news-home-flip-brief .news-home-flip-back .news-home-actions{
+  position:absolute;
+  right:26px;
+  bottom:26px;
+  margin:0;
+  justify-content:flex-end;
+}
+.news-home-flip-brief .news-home-flip-front .news-home-actions .news-home-flip-button,
+.news-home-flip-brief .news-home-flip-back .news-home-actions .news-home-flip-button{
+  position:static;
+  margin:0;
+}
+@media(max-width:540px){
+  .news-home-flip-featured .news-home-flip-back .news-home-actions{
+    gap:8px;
+    padding-top:18px;
+  }
+  .news-home-flip-brief .news-home-flip-front .news-home-actions,
+  .news-home-flip-brief .news-home-flip-back .news-home-actions{
+    right:20px;
+    bottom:20px;
+  }
+}

@@ -63,6 +63,7 @@
     ['God of War Laufey','https://www.youtube.com/watch?v=HLMX2w3cwuE'],
     ['Persona 4 Revival','https://www.youtube.com/watch?v=Wg3Enwd7Ba4'],
     ['Fable','https://www.youtube.com/watch?v=3iW1i78zFvk'],
+    ['The Elder Scrolls IV: Oblivion Remastered','https://www.youtube.com/watch?v=kk5cymSWmqo'],
     ['Elden Ring: Tarnished Edition','https://www.youtube.com/watch?v=pMeYxev9PZM']
   ]);
 

@@ -354,6 +354,16 @@
       resizeFrame = requestAnimationFrame(refreshLayout);
     }, { passive: true });
     refreshLayout();
+
+    let seenSwipeHint = true;
+    try {
+      seenSwipeHint = sessionStorage.getItem("finalsecreto:seen-carousel-hint") === "1";
+    } catch (e) {}
+    if (mobileQuery.matches && !seenSwipeHint) {
+      requestAnimationFrame(() => track.classList.add("peek-nudge"));
+      track.addEventListener("animationend", () => track.classList.remove("peek-nudge"), { once: true });
+      try { sessionStorage.setItem("finalsecreto:seen-carousel-hint", "1"); } catch (e) {}
+    }
   }
 
   function bindHomeFlips(home) {

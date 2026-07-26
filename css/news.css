@@ -190,6 +190,15 @@ html[data-theme="dark"] .news-brief:hover{box-shadow:0 18px 38px -25px rgba(0,0,
   .news-brief-track{grid-auto-columns:100%}
   .news-carousel-controls{justify-content:center}
 }
+
+/* Pista de "esto se desliza": un asomo breve de la siguiente tarjeta en la primera visita */
+@keyframes news-carousel-peek{
+  0%{transform:translateX(0)}
+  38%{transform:translateX(-20px)}
+  100%{transform:translateX(0)}
+}
+.news-brief-track.peek-nudge{animation:news-carousel-peek 1s ease-in-out}
+
 @media(prefers-reduced-motion:reduce){
   .news-brief-track{transition:none}
   .news-carousel-controls>button:hover:not(:disabled){transform:none}

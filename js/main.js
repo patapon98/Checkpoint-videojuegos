@@ -60,6 +60,7 @@
     document.head.appendChild(script);
   };
 
+  load('spanish-only.js');
   load('site-nav.js');
   load('home-news-copy.js');
   load('home-analysis-links.js');

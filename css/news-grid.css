@@ -26,7 +26,7 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 .news-page #newsArchive .news-featured .news-flip-front .news-archive-body h2{font-size:clamp(1.72rem,3vw,2.15rem);margin-top:8px}
 .news-page #newsArchive .news-featured .news-flip-front .news-archive-body>p{-webkit-line-clamp:2;font-size:.92rem}
 .news-page #newsArchive .news-featured .news-flip-front .news-why{margin-top:11px;padding:10px 13px}
-.news-page #newsArchive .news-featured .news-flip-front .news-sources{margin-top:19px;padding-top:0;row-gap:10px}
+.news-page #newsArchive .news-featured .news-flip-front .news-sources{margin-top:auto;padding-top:20px;row-gap:10px}
 .news-page #newsArchive .news-featured .news-flip-front .news-flip-button{margin-top:9px}
 .news-page #newsArchive .news-featured .news-flip-back{border-width:2px;border-color:color-mix(in srgb,var(--news-a) 42%,var(--line))}
 .news-page #newsArchive.is-list .news-featured .news-flip-front{grid-template-columns:145px minmax(0,1fr);min-height:250px;padding:0}

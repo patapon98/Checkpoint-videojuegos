@@ -10,6 +10,7 @@
 
   load('site-nav.js');
   load('home-news-copy.js');
+  load('home-analysis-links.js');
   load('main-core.js',()=>load('calendar-images.js',()=>load('calendar-labels.js',()=>{
     load('calendar-trailers.js');
     load('calendar-gcal.js');

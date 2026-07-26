@@ -180,16 +180,50 @@
     apply({syncHash:true});
   });
 
+  let hashAlignment=0;
+  let highlightTimer=0;
+
+  function alignHashTarget(){
+    const id=decodeURIComponent(window.location.hash.slice(1));
+    const target=id?document.getElementById(id):null;
+    if(!target||target.hidden) return;
+
+    const obstruction=[document.querySelector('header'),tools].reduce((height,element)=>{
+      if(!element) return height;
+      const position=getComputedStyle(element).position;
+      return height+(position==='fixed'||position==='sticky'?element.getBoundingClientRect().height:0);
+    },0);
+    const rect=target.getBoundingClientRect();
+    const available=Math.max(0,window.innerHeight-obstruction);
+    const visibleHeight=Math.min(rect.height,available);
+    const targetTop=obstruction+Math.max(18,(available-visibleHeight)/2);
+    window.scrollTo({top:Math.max(0,window.scrollY+rect.top-targetTop),behavior:'auto'});
+
+    target.classList.remove('news-anchor-highlight');
+    void target.offsetWidth;
+    target.classList.add('news-anchor-highlight');
+    clearTimeout(highlightTimer);
+    highlightTimer=window.setTimeout(()=>target.classList.remove('news-anchor-highlight'),1800);
+  }
+
+  function settleHashTarget(){
+    if(!window.location.hash) return;
+    const alignment=++hashAlignment;
+    const fontsReady=document.fonts?.ready||Promise.resolve();
+    fontsReady.then(()=>{
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        if(alignment===hashAlignment) alignHashTarget();
+      }));
+    });
+  }
+
   window.addEventListener('hashchange',()=>{
     apply({syncHash:true});
-    requestAnimationFrame(()=>document.getElementById(decodeURIComponent(window.location.hash.slice(1)))?.scrollIntoView({block:'center'}));
+    settleHashTarget();
   });
 
   const observer=new MutationObserver(()=>apply({syncHash:true}));
   observer.observe(archive,{childList:true,subtree:false});
   apply({syncHash:true});
-
-  if(window.location.hash){
-    requestAnimationFrame(()=>document.getElementById(decodeURIComponent(window.location.hash.slice(1)))?.scrollIntoView({block:'center'}));
-  }
+  settleHashTarget();
 })();

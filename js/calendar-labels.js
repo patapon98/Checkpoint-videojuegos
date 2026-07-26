@@ -68,6 +68,7 @@
     ['Dune: Awakening','Nueva plataforma'],
     ['Elden Ring: Tarnished Edition','Nueva plataforma'],
     ['Metaphor: ReFantazio','Nueva plataforma'],
+    ['The Elder Scrolls IV: Oblivion Remastered','Nueva plataforma'],
     ['Godzilla: Destroy All Monsters Melee','Remaster']
   ]);
 

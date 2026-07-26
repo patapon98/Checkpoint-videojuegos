@@ -64,3 +64,70 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
     box-shadow:0 0 0 3px color-mix(in srgb,var(--news-a) 52%,transparent);
   }
 }
+
+/* Fecha completa visible y señal ESENCIAL coherente con la portada */
+.news-page #newsArchive .news-card-date{
+  display:inline-flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:4px 9px;
+  color:var(--ink-soft);
+  font-size:.72rem;
+  font-weight:650;
+  letter-spacing:0;
+  text-transform:none;
+}
+.news-page #newsArchive .news-published-date{color:var(--ink);font-weight:780}
+.news-page #newsArchive .news-featured .news-flip-front .news-archive-date{
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:space-between;
+  align-content:stretch;
+}
+.news-page #newsArchive .news-featured .news-flip-front .news-card-date{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:2px;
+  color:rgba(255,255,255,.8);
+}
+.news-page #newsArchive .news-featured .news-flip-front .news-published-date{
+  color:#fff;
+}
+.news-page #newsArchive .news-featured .news-flip-front .news-archive-date::after{
+  display:block;
+  align-self:flex-end;
+  font-family:var(--serif);
+  font-size:clamp(2.7rem,5vw,4.8rem);
+  font-weight:700;
+  line-height:.86;
+  letter-spacing:-.06em;
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+  opacity:.92;
+}
+@media(max-width:700px){
+  .news-page #newsArchive .news-featured .news-flip-front .news-archive-date{
+    min-height:118px;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding:21px;
+  }
+  .news-page #newsArchive .news-featured .news-flip-front .news-card-date{
+    flex-direction:row;
+    gap:4px 9px;
+  }
+  .news-page #newsArchive .news-featured .news-flip-front .news-archive-date::after{
+    align-self:flex-start;
+    font-size:clamp(2.3rem,12vw,3.7rem);
+    line-height:.86;
+    writing-mode:horizontal-tb;
+    transform:none;
+  }
+}
+@media(max-width:520px){
+  .news-page #newsArchive .news-featured .news-flip-front .news-archive-date::after{
+    display:block;
+  }
+}
+

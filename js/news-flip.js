@@ -108,7 +108,7 @@
         <div class="news-back-meta">
           <span class="news-category">${escapeHTML(category)}</span>
           ${importanceBadge(item)}
-          <span class="news-back-date">${escapeHTML(dateText)}</span>
+          <span class="news-back-date news-card-date">${date?.innerHTML||escapeHTML(dateText)}</span>
         </div>
         <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${emphasizedHTML(text,item)}</p>`).join('')}</div>
         <button class="news-flip-button" type="button" aria-expanded="true">

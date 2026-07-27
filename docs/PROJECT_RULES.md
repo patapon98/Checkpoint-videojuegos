@@ -63,6 +63,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - El menú sticky de portada debe mostrar «Actualidad», «Calendario» y «Reseñas».
 - No permitir texto cortado ni scroll horizontal accidental en móvil.
 - Mantener el modo oscuro y los colores particulares de cada reseña.
+- Toda reseña individual debe incluir un bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos y coherentes con el análisis.
 - Revisar tanto la portada como las páginas individuales cuando compartan componentes o estilos.
 - Evitar soluciones vinculadas a identificadores concretos cuando la regla deba aplicarse también al contenido futuro.
 

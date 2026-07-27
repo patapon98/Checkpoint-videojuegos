@@ -320,7 +320,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .article-body a:hover{color:var(--ink)}
 .article-body h2{font-family:var(--serif);font-size:1.6rem;font-weight:600;margin:40px 0 16px;letter-spacing:-.01em}
 .pull-quote{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1.4;border-left:4px solid var(--accent);padding:8px 0 8px 26px;margin:36px 0;color:var(--ink)}
-.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:36px 0}
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:32px 0 0}
 .pros-cons .box{border:1px solid var(--line);border-radius:18px;padding:24px}
 .pros-cons h3{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
 .pros-cons .pros h3{color:var(--accent3)}
@@ -329,7 +329,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .pros-cons li{font-size:.92rem;padding:6px 0;color:var(--ink-soft);display:flex;gap:10px}
 .pros-cons .pros li::before{content:'+';color:var(--accent3);font-weight:700}
 .pros-cons .cons li::before{content:'−';color:var(--accent);font-weight:700}
-.verdict{background:#16151a;color:#fdfcfa;border-radius:24px;padding:36px;margin:44px 0;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.verdict{background:#16151a;color:#fdfcfa;border-radius:24px;padding:36px;margin:32px 0;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
 .verdict .v-score{font-family:var(--serif);font-size:3.6rem;font-weight:700;color:#ff8c66;line-height:1}
 .verdict .v-text h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:6px}
 .verdict .v-text p{font-size:.92rem;color:#a5a1ad;max-width:480px}
@@ -376,7 +376,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 #calendario .btn.ghost:hover{color:#ff8c66;border-color:#ff8c66;background:rgba(255,140,102,.12)}
 
 /* ---------- Desglose de puntuación ---------- */
-.breakdown{margin:38px 0;border:1px solid var(--line);border-radius:18px;padding:28px}
+.breakdown{margin:32px 0 0;border:1px solid var(--line);border-radius:18px;padding:28px}
 .breakdown h3{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
 .bd-row{display:grid;grid-template-columns:190px 1fr 64px;gap:14px;align-items:center;padding:7px 0;font-size:.88rem}
 .bd-row .bd-num{text-align:right;font-weight:600;color:var(--ink-soft);font-variant-numeric:tabular-nums}

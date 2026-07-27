@@ -57,17 +57,10 @@ html[data-theme="dark"] .news-sources .news-trailer:hover{color:#fff;border-colo
 /* Reverso de las noticias en portada */
 .news-home-flip{--home-news-a:var(--accent);--home-news-b:#9a3412;--home-news-soft:var(--accent-soft);min-width:0;perspective:1600px}
 /* Misma jerarquía cromática que en la sección Noticias */
-.news-home-flip[data-news-id="god-of-war-laufey-fecha"],
-.news-home-flip[data-news-id="marvel-wolverine-fecha"]{--home-news-a:#9b5de5;--home-news-b:#6236a8;--home-news-soft:rgba(155,93,229,.13)}
-.news-home-flip[data-news-id="playstation-fin-formato-fisico"],
-.news-home-flip[data-news-id="xbox-retrocompatibilidad-pc"],
-.news-home-flip[data-news-id="gta-vi-codigos-japon"],
-.news-home-flip[data-news-id="xbox-nube-gratis-anuncios"],
-.news-home-flip[data-news-id="amazon-luna-prime-video"]{--home-news-a:#1672e8;--home-news-b:#003791;--home-news-soft:rgba(22,114,232,.12)}
-.news-home-flip[data-news-id="ea-compra-autorizacion-ue"],
-.news-home-flip[data-news-id="xbox-reestructuracion-despidos"]{--home-news-a:#e4572e;--home-news-b:#9a3412;--home-news-soft:rgba(228,87,46,.12)}
-.news-home-flip[data-news-id="halo-campaign-evolved-lanzamiento"],
-.news-home-flip[data-news-id="elden-ring-switch-2-fecha"]{--home-news-a:#238b8f;--home-news-b:#155e63;--home-news-soft:rgba(35,139,143,.13)}
+.news-home-flip.news-category-games{--home-news-a:#9b5de5;--home-news-b:#6236a8;--home-news-soft:rgba(155,93,229,.13)}
+.news-home-flip.news-category-platforms{--home-news-a:#1672e8;--home-news-b:#003791;--home-news-soft:rgba(22,114,232,.12)}
+.news-home-flip.news-category-industry{--home-news-a:#e4572e;--home-news-b:#9a3412;--home-news-soft:rgba(228,87,46,.12)}
+.news-home-flip.news-category-releases{--home-news-a:#238b8f;--home-news-b:#155e63;--home-news-soft:rgba(35,139,143,.13)}
 .news-home-flip .news-category{display:inline-flex;width:max-content;padding:5px 9px;border-radius:999px;background:var(--home-news-soft);color:var(--home-news-a)}
 .news-home-flip .news-why{border-left-color:var(--home-news-a);background:var(--home-news-soft)}
 .news-home-flip .news-why b{color:var(--home-news-a)}

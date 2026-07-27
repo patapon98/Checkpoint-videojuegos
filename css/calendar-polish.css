@@ -201,6 +201,23 @@
   padding-right:112px;
 }
 
+/* El tráiler vuelve a mostrarse en las fichas compactas ahora que la miniatura
+   tiene posición propia: ya no compite con el ribbon ni con el botón de compra. */
+#releases.view-grid .release[data-tier="3"] .release-art .trailer{
+  display:flex;
+}
+
+/* Toda la ficha compacta actúa como enlace a la wishlist; los iconos y el botón
+   de compra conservan su propio destino y detienen la navegación de la tarjeta. */
+#releases.view-grid .release[data-tier="3"].card-clickable{
+  cursor:pointer;
+}
+
+#releases.view-grid .release[data-tier="3"].card-clickable:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
 @media(max-width:640px){
   #releases.view-grid .release[data-tier="3"].has-card-ribbon>.release-art+div{
     padding-right:96px;

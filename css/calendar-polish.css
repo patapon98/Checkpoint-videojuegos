@@ -202,9 +202,22 @@
 }
 
 /* El tráiler vuelve a mostrarse en las fichas compactas ahora que la miniatura
-   tiene posición propia: ya no compite con el ribbon ni con el botón de compra. */
+   tiene posición propia, pero permanece oculto en reposo y solo aparece al
+   pasar el ratón (o al enfocarlo con teclado) para no tapar la carátula.
+   El icono de Google Calendar se retira de estas fichas para no saturarlas. */
 #releases.view-grid .release[data-tier="3"] .release-art .trailer{
   display:flex;
+  opacity:0;
+  transition:opacity .18s ease;
+}
+
+#releases.view-grid .release[data-tier="3"]:hover .release-art .trailer,
+#releases.view-grid .release[data-tier="3"] .release-art .trailer:focus-visible{
+  opacity:1;
+}
+
+#releases.view-grid .release[data-tier="3"] .release-art .gcal{
+  display:none;
 }
 
 /* Toda la ficha compacta actúa como enlace a la wishlist; los iconos y el botón

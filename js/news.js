@@ -59,6 +59,15 @@
     return value?.[lang] || value?.es || "";
   }
 
+  function categoryKey(item) {
+    return ({
+      Juegos: "games",
+      Plataformas: "platforms",
+      Industria: "industry",
+      Lanzamientos: "releases"
+    })[item.category?.es] || "industry";
+  }
+
   function escapeHTML(value) {
     return String(value)
       .replaceAll("&", "&amp;")
@@ -196,7 +205,7 @@
 
   function homeShell(item, lang, front, compact) {
     return `
-      <article class="news-home-flip ${compact ? "news-home-flip-brief" : "news-home-flip-featured"} news-tone-${escapeHTML(item.tone)}"
+      <article class="news-home-flip ${compact ? "news-home-flip-brief" : "news-home-flip-featured"} news-category-${categoryKey(item)} news-tone-${escapeHTML(item.tone)}"
                data-news-id="${escapeHTML(item.id)}">
         <div class="news-home-flip-inner">
           ${front}

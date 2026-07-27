@@ -61,7 +61,7 @@
 
   const updateCalendarDate=()=>{
     const note=[...document.querySelectorAll('.section-sub')].find(element=>element.textContent.includes('Calendario actualizado a'));
-    if(note) note.innerHTML='Calendario actualizado a 27 de julio de 2026. No se incluyen títulos sin fecha exacta anunciada. El icono <b>+</b> en las carátulas enlaza directamente a la ficha oficial o tienda correspondiente.';
+    if(note) note.innerHTML='Calendario actualizado a 27 de julio de 2026. No se incluyen títulos sin fecha exacta anunciada. El icono en la carátula enlaza directamente a Steam, PlayStation Store o la ficha oficial del juego, según corresponda.';
   };
 
   const wishIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';

@@ -110,6 +110,37 @@
     release.prepend(date);
   }
 
+  /*
+   * En las fichas compactas ("otros lanzamientos"), toda la tarjeta enlaza a la
+   * wishlist (el "+" que ya llevaba el HTML). Los iconos propios de la miniatura
+   * (tráiler, Google Calendar) y el botón de Instant Gaming conservan su destino:
+   * un clic sobre cualquier <a> anidado no dispara la navegación de la tarjeta.
+   */
+  function makeCardClickable(release){
+    if(release.dataset.clickableReady) return;
+    const wish=release.querySelector('.release-art > .wish');
+    if(!wish) return;
+    release.dataset.clickableReady='true';
+    release.classList.add('card-clickable');
+    release.tabIndex=0;
+    release.setAttribute('role','link');
+    release.setAttribute('aria-label',wish.getAttribute('aria-label')||wish.title||'');
+
+    const activate=event=>{
+      if(!root.classList.contains('view-grid')) return;
+      if(event.target.closest('a')) return;
+      window.open(wish.href,'_blank','noopener');
+    };
+    release.addEventListener('click',activate);
+    release.addEventListener('keydown',event=>{
+      if(event.key!=='Enter'&&event.key!==' ') return;
+      if(event.target.closest('a')) return;
+      if(!root.classList.contains('view-grid')) return;
+      event.preventDefault();
+      window.open(wish.href,'_blank','noopener');
+    });
+  }
+
   function monthName(monthKey){
     const [year,month]=monthKey.split('-').map(Number);
     if(!year||!month) return '';
@@ -148,7 +179,10 @@
       addCardRibbon(release);
       addGridStoreAction(release);
       addPoster(release);
-      if(tier===3) addCompactDate(release);
+      if(tier===3){
+        addCompactDate(release);
+        makeCardClickable(release);
+      }
     });
 
     const compact=entry.releases.filter(release=>release.dataset.tier==='3');

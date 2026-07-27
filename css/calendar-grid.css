@@ -203,6 +203,7 @@
 }
 
 #releases.view-grid .release[data-tier="3"] .release-art{
+  position:relative;
   width:70px;
   height:40px;
   border-radius:7px;

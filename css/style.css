@@ -253,7 +253,7 @@ h2.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);f
 .release-art .rdate span{display:block;font-family:var(--sans);font-size:.5rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:1px}
 .release-art .wish{position:absolute;top:4px;right:4px;z-index:2;width:20px;height:20px;border-radius:50%;background:rgba(10,8,22,.78);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .2s ease,transform .2s ease}
 .release-art .wish:hover{background:var(--accent);transform:scale(1.12)}
-.release-art .wish svg{width:11px;height:11px;display:block}
+.release-art .wish svg{width:13px;height:13px;display:block}
 .release-art .trailer{position:absolute;top:4px;left:4px;z-index:2;width:20px;height:20px;border-radius:50%;background:rgba(10,8,22,.78);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .2s ease,transform .2s ease,color .2s ease}
 .release-art .trailer:hover{background:#ff0033;color:#fff;transform:scale(1.12)}
 .release-art .trailer:focus-visible{outline:2px solid #ff0033;outline-offset:2px}
@@ -566,7 +566,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .calendar-page .release-art .rdate b{font-size:.84rem}
 .calendar-page .release-art .rdate span{font-size:.56rem}
 .calendar-page .release-art .wish{width:25px;height:25px}
-.calendar-page .release-art .wish svg{width:13px;height:13px}
+.calendar-page .release-art .wish svg{width:16px;height:16px}
 .calendar-page .release-art .trailer{width:25px;height:25px}
 .calendar-page .release-art .trailer svg{width:15px;height:15px}
 .calendar-page .release-art .gcal{width:25px;height:25px}

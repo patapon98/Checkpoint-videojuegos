@@ -110,7 +110,7 @@
     monthText:'Ago',
     platforms:'Switch 2',
     dataPlat:'switch',
-    image:'https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png?twic=v1/cover=1280/step=10/quality=80/output=preview',
+    image:'https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png',
     storeUrl:'https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition',
     storeTitle:'Ver ficha oficial'
   });
@@ -123,7 +123,7 @@
     monthText:'Ago',
     platforms:'PS5 · Xbox Series X|S · Switch · PC',
     dataPlat:'ps5 xbox switch pc',
-    image:'https://p325k7wa.twic.pics/high/captain-tsubasa/captain-tsubasa-2-worlds-fighter/00-page-setup/CT2-header-mobile.jpg?twic=v1/cover=1280/step=10/quality=80/output=preview',
+    image:'https://p325k7wa.twic.pics/high/captain-tsubasa/captain-tsubasa-2-worlds-fighter/00-page-setup/CT2-header-mobile.jpg',
     storeUrl:'https://en.bandainamcoent.eu/captain-tsubasa/captain-tsubasa-2-world-fighters',
     storeTitle:'Ver ficha oficial'
   });

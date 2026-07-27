@@ -14,6 +14,6 @@
     const gta=[...root.querySelectorAll('.release')].find(item=>titleOf(item)==='Grand Theft Auto VI');
     root.insertBefore(release,gta||null);
   };
-  add({title:'Elden Ring: Tarnished Edition',day:28,month:'Ago',image:'https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png?twic=v1/cover=1280/step=10/quality=80/output=preview',platforms:'Switch 2',dataPlat:'switch',url:'https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition',badge:'Nueva plataforma',badgeClass:'hype-mid'});
+  add({title:'Elden Ring: Tarnished Edition',day:28,month:'Ago',image:'https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png?twic=v1/cover=1920x1080/quality=100',platforms:'Switch 2',dataPlat:'switch',url:'https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition',badge:'Nueva plataforma',badgeClass:'hype-mid'});
   add({title:'Valheim 1.0',day:9,month:'Sep',image:'https://img2.storyblok.com/fit-in/1920x1080/f/157036/6001x3323/1f79e49ebe/deep-north-art-2.jpg',platforms:'PC · Xbox · PS5 · Switch 2',dataPlat:'pc xbox ps5 switch',url:'https://www.valheimgame.com/news/valheim-has-a-release-date-/',badge:'Hype alto',badgeClass:'hype-high'});
 })();

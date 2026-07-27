@@ -51,6 +51,7 @@
   function updatePageURL(page,mode){
     if(!window.history?.[`${mode}State`]) return;
     window.history[`${mode}State`]({},'',pageURL(page));
+    clearHashSelection();
   }
 
   function categoryClass(category){
@@ -178,6 +179,7 @@
   window.addEventListener('popstate',()=>{
     activePage=readPage();
     apply({syncHash:true});
+    settleHashTarget();
   });
 
   let hashAlignment=0;

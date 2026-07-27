@@ -182,11 +182,36 @@
 
   let hashAlignment=0;
   let highlightTimer=0;
+  const reducedAnchorMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function clearHashSelection(except=null){
+    archive.querySelectorAll('.news-anchor-selected').forEach(card=>{
+      if(card===except) return;
+      card.classList.remove('news-anchor-selected','news-anchor-highlight');
+      card.querySelector('.news-anchor-marker')?.remove();
+      if(card.dataset.newsAnchorFocus==='true'){
+        card.removeAttribute('tabindex');
+        delete card.dataset.newsAnchorFocus;
+      }
+    });
+  }
 
   function alignHashTarget(){
     const id=decodeURIComponent(window.location.hash.slice(1));
     const target=id?document.getElementById(id):null;
     if(!target||target.hidden) return;
+
+    clearHashSelection(target);
+    target.classList.add('news-anchor-selected');
+    let marker=target.querySelector('.news-anchor-marker');
+    if(!marker){
+      marker=document.createElement('span');
+      marker.className='news-anchor-marker';
+      marker.setAttribute('aria-hidden','true');
+      marker.textContent='Noticia seleccionada';
+      const heading=target.querySelector('.news-card-heading');
+      (heading?.parentElement||target).insertBefore(marker,heading||null);
+    }
 
     const obstruction=[document.querySelector('header'),tools].reduce((height,element)=>{
       if(!element) return height;
@@ -197,17 +222,28 @@
     const available=Math.max(0,window.innerHeight-obstruction);
     const visibleHeight=Math.min(rect.height,available);
     const targetTop=obstruction+Math.max(18,(available-visibleHeight)/2);
-    window.scrollTo({top:Math.max(0,window.scrollY+rect.top-targetTop),behavior:'auto'});
+    window.scrollTo({
+      top:Math.max(0,window.scrollY+rect.top-targetTop),
+      behavior:reducedAnchorMotion?'auto':'smooth'
+    });
 
+    if(!target.hasAttribute('tabindex')){
+      target.tabIndex=-1;
+      target.dataset.newsAnchorFocus='true';
+    }
+    target.focus({preventScroll:true});
     target.classList.remove('news-anchor-highlight');
     void target.offsetWidth;
     target.classList.add('news-anchor-highlight');
     clearTimeout(highlightTimer);
-    highlightTimer=window.setTimeout(()=>target.classList.remove('news-anchor-highlight'),1800);
+    highlightTimer=window.setTimeout(()=>target.classList.remove('news-anchor-highlight'),2400);
   }
 
   function settleHashTarget(){
-    if(!window.location.hash) return;
+    if(!window.location.hash){
+      clearHashSelection();
+      return;
+    }
     const alignment=++hashAlignment;
     const fontsReady=document.fonts?.ready||Promise.resolve();
     fontsReady.then(()=>{

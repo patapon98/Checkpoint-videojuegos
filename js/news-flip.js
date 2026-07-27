@@ -7,6 +7,14 @@
       'La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.',
       'Los lanzamientos posteriores dependerán de PlayStation Store: no podrán prestarse ni revenderse como un disco y quedarán más expuestos al cierre de servidores, la retirada de licencias o cambios de precio. Las tiendas físicas y el mercado de segunda mano perderán además su principal vía de participación.'
     ],
+    'bethesda-futuro-fallout':[
+      'Bethesda Game Studios ha confirmado que trabaja en remasterizaciones de Fallout 3 y Fallout: New Vegas, todavía sin fecha. También prepara Raven Rock para Fallout 76 en 2027 y mantiene Fallout 5 como objetivo a largo plazo, ya en preproducción.',
+      'El movimiento más llamativo es la vuelta de Obsidian a la franquicia con un nuevo proyecto de Fallout sin título, fecha ni plataformas anunciadas. La información es oficial, pero Bethesda no ha aclarado si se trata de un juego principal, un spin-off o cuándo podría llegar.'
+    ],
+    'tomb-raider-catalyst-2028':[
+      'Durante una entrevista sobre la estrategia de Amazon, el responsable de Amazon Games situó Tomb Raider: Catalyst en 2028. El juego había sido anunciado originalmente con una ventana de lanzamiento en 2027.',
+      'Horas después, la propia compañía evitó confirmar el cambio y declaró que no tenía novedades sobre la fecha, aunque el desarrollo avanzaba bien. Por eso, 2028 no debe considerarse todavía una fecha oficial: es una declaración relevante del máximo responsable de la división, contradicha por la respuesta corporativa posterior.'
+    ],
     'xbox-retrocompatibilidad-pc':[
       'El programa comienza con Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy. Quienes ya posean una licencia digital compatible en Xbox podrán utilizarla también en Windows 11 mediante Xbox Play Anywhere, sin comprar otra copia.',
       'La selección inicial es pequeña, pero lo relevante es la infraestructura: Microsoft empieza a trasladar su catálogo histórico a PC con licencias compartidas. Si el programa crece, reducirá la dependencia de las consolas originales y facilitará la conservación de juegos que no tenían versión nativa para ordenador.'

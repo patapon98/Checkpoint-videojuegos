@@ -59,6 +59,11 @@
     document.querySelector(`#monthFilter option[value="${month}"]`)?.remove();
   };
 
+  const updateCalendarDate=()=>{
+    const note=[...document.querySelectorAll('.section-sub')].find(element=>element.textContent.includes('Calendario actualizado a'));
+    if(note) note.innerHTML='Calendario actualizado a 27 de julio de 2026. No se incluyen títulos sin fecha exacta anunciada. El icono <b>+</b> en las carátulas enlaza directamente a la ficha oficial o tienda correspondiente.';
+  };
+
   const wishIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
   const createRelease=({id,title,day,month,monthText,platforms,dataPlat,image,storeUrl,storeTitle='Ver en la tienda',hype='Interesante'})=>{
     if(root.querySelector(`[data-release-id="${id}"]`)||findRelease(title)) return;
@@ -81,6 +86,7 @@
   };
 
   removeMonth('2026-05');
+  updateCalendarDate();
 
   setPlatforms('The Adventures of Elliot','Switch 2 · PS5 · Xbox Series X|S · PC','switch ps5 xbox pc');
   setPlatforms('Dave the Diver','Switch 2 · Switch · PS5 · PC','switch ps5 pc');
@@ -110,7 +116,7 @@
     monthText:'Ago',
     platforms:'Switch 2',
     dataPlat:'switch',
-    image:'https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png',
+    image:'https://i.ytimg.com/vi/pMeYxev9PZM/maxresdefault.jpg',
     storeUrl:'https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition',
     storeTitle:'Ver ficha oficial'
   });
@@ -123,7 +129,7 @@
     monthText:'Ago',
     platforms:'PS5 · Xbox Series X|S · Switch · PC',
     dataPlat:'ps5 xbox switch pc',
-    image:'https://p325k7wa.twic.pics/high/captain-tsubasa/captain-tsubasa-2-worlds-fighter/00-page-setup/CT2-header-mobile.jpg',
+    image:'https://i.ytimg.com/vi/c6yniKaV6io/maxresdefault.jpg',
     storeUrl:'https://en.bandainamcoent.eu/captain-tsubasa/captain-tsubasa-2-world-fighters',
     storeTitle:'Ver ficha oficial'
   });

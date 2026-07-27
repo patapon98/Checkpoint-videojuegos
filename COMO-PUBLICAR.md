@@ -63,11 +63,12 @@ Al publicar una reseña nueva:
 
 1. Crea o actualiza la página individual.
 2. Conserva la identidad visual específica del juego en modo claro y oscuro.
-3. Añade la reseña a los listados y secciones correspondientes.
-4. Revisa metadatos, URL canónica y datos estructurados.
-5. Actualiza el sitemap cuando se cree una URL nueva.
-6. Comprueba escritorio, móvil, Chromium y Firefox.
-7. Actualiza la caché de los recursos modificados cuando corresponda.
+3. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
+4. Añade la reseña a los listados y secciones correspondientes.
+5. Revisa metadatos, URL canónica y datos estructurados.
+6. Actualiza el sitemap cuando se cree una URL nueva.
+7. Comprueba escritorio, móvil, Chromium y Firefox.
+8. Actualiza la caché de los recursos modificados cuando corresponda.
 
 ## Si algo sale mal
 

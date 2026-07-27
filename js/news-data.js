@@ -1,3 +1,4 @@
+// Taxonomía editorial: «Lanzamientos» cubre fechas, ventanas, adelantos y retrasos; «Juegos», el resto de noticias centradas en títulos concretos.
 window.FINALSECRETO_NEWS = [
   {
     id: "playstation-fin-formato-fisico",
@@ -141,7 +142,7 @@ window.FINALSECRETO_NEWS = [
     id: "god-of-war-laufey-fecha",
     important: true,
     emphasis: { es: ["en exclusiva a PS5 el 16 de febrero de 2027","recuperará a Kratos como protagonista","próximas dos entregas"] },
-    category: { es: "Juegos", en: "Games" },
+    category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-25",
     featured: false,
     latest: true,
@@ -317,7 +318,7 @@ window.FINALSECRETO_NEWS = [
     id: "marvel-wolverine-fecha",
     important: true,
     emphasis: { es: ["15 de septiembre de 2026","uno de los principales exclusivos de PS5"] },
-    category: { es: "Juegos", en: "Games" },
+    category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-23",
     featured: false,
     tone: "wolverine",

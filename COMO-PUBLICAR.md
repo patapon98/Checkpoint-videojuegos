@@ -1,39 +1,74 @@
-# Cómo publicar Final Secreto (Cloudflare)
+# Cómo publicar Final Secreto
 
-Tu web está en: **https://finalsecreto.com/**
+La web está disponible en **https://finalsecreto.com/** y se despliega mediante Cloudflare Workers Builds. Cada cambio que llega a `main` inicia automáticamente un nuevo despliegue.
 
-## Actualizar la web (flujo con GitHub — automático)
+Antes de modificar cualquier archivo, parte siempre de la versión más reciente de `main`.
 
-1. Abre **GitHub Desktop**: los cambios pendientes aparecen en la pestaña Changes.
-2. Escribe un mensajito en "Summary" (ej.: "nueva reseña de X") y pulsa **Commit to main**.
-3. Pulsa **Push origin**.
-4. Cloudflare construye y publica solo en ~1 minuto. Nada más que hacer.
+## Cambios realizados por el usuario
 
-Puedes ver el estado del despliegue en dash.cloudflare.com → finalsecreto →
-Deployments → View build history.
+Si haces una corrección pequeña mediante Replit, GitHub Desktop u otra herramienta, puedes guardarla directamente en `main`:
 
-## Dominio propio: finalsecreto.com
+1. Sincroniza o actualiza el proyecto para obtener el último `main`.
+2. Modifica los archivos necesarios.
+3. Revisa el diff antes de publicar.
+4. Escribe un mensaje de commit que describa el cambio.
+5. Haz push a `main`.
+6. Comprueba que el despliegue de Cloudflare termina correctamente y revisa el resultado en la web.
 
-Ya tienes el dominio comprado. Falta conectarlo al Worker desde el panel de
-Cloudflare (Workers & Pages → finalsecreto → Settings → Domains & Routes →
-Add → Custom domain) y esperar a que el certificado se active. El código ya
-apunta a finalsecreto.com en el sitemap, robots.txt y las URLs canónicas.
+Para cambios amplios o que afecten a varias secciones, es preferible usar una rama y revisar una vista previa antes de fusionar.
 
-## Después del dominio: Google
+## Cambios realizados por asistentes
 
-Date de alta en Google Search Console (search.google.com/search-console),
-añade tu dominio y envía el sitemap. Pídeme ayuda cuando llegues aquí.
+Salvo autorización expresa para una excepción concreta, cualquier asistente debe seguir este flujo:
 
-## Publicar una reseña nueva
+1. Consultar la última versión de `main`.
+2. Crear una rama nueva desde ese estado.
+3. Aplicar y validar únicamente los cambios solicitados.
+4. Revisar el diff completo.
+5. Comprobar la vista previa o el despliegue de prueba.
+6. Abrir una PR, preferiblemente en borrador.
+7. Entregar al usuario el enlace a la PR y a la vista previa.
 
-Escríbela en tu doc de Google como siempre y dímelo en una sesión de Cowork
-con esta carpeta seleccionada: yo la extraigo, creo la página con su tema de
-color, la enlazo en portada y actualizo el sitemap. Después solo tienes que
-volver a subir la carpeta a Cloudflare.
+El asistente no debe modificar directamente `main` ni hacer merge. La decisión de fusionar corresponde al usuario. Una autorización excepcional no cambia esta regla para trabajos futuros.
 
-## Nota sobre copias antiguas
+Las reglas completas están en [`docs/PROJECT_RULES.md`](docs/PROJECT_RULES.md).
 
-La copia antigua en moderlode.netlify.app ya no se actualizará: puedes
-borrar el sitio desde tu panel de Netlify cuando quieras. Lo mismo aplica
-a moderlode.alexanderblanc3.workers.dev en cuanto finalsecreto.com quede
-conectado como dominio del Worker.
+## Después de hacer merge o push a main
+
+Cloudflare debería iniciar el despliegue automáticamente. Comprueba:
+
+- que la compilación termina sin errores;
+- que el último despliegue corresponde al commit esperado;
+- que la página modificada carga correctamente;
+- que no aparece una versión antigua por la caché;
+- que las imágenes, enlaces y recursos actualizados funcionan.
+
+El estado se consulta en Cloudflare, dentro del proyecto de Final Secreto, en el historial de despliegues.
+
+Si el cambio no aparece, revisa primero que el commit esté realmente en `main`, que el despliegue haya finalizado y que se hayan actualizado los parámetros de versión de los recursos modificados cuando corresponda.
+
+## Publicar contenido nuevo
+
+### Noticias
+
+Comprueba la categoría, la fecha, las fuentes, el reverso ampliado, las insignias y el comportamiento en portada y en la página de Noticias. Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
+
+### Calendario
+
+Toda actualización debe seguir [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md). La checklist cubre el calendario completo, la portada, las fechas, plataformas, imágenes, enlaces, tráileres, filtros, vistas, animaciones, móvil, caché y validación final.
+
+### Reseñas
+
+Al publicar una reseña nueva:
+
+1. Crea o actualiza la página individual.
+2. Conserva la identidad visual específica del juego en modo claro y oscuro.
+3. Añade la reseña a los listados y secciones correspondientes.
+4. Revisa metadatos, URL canónica y datos estructurados.
+5. Actualiza el sitemap cuando se cree una URL nueva.
+6. Comprueba escritorio, móvil, Chromium y Firefox.
+7. Actualiza la caché de los recursos modificados cuando corresponda.
+
+## Si algo sale mal
+
+No borres cambios ni fuerces el historial. Identifica primero el commit y el despliegue afectados. Si el problema procede de una PR recién fusionada, utiliza una reversión mediante GitHub o prepara una nueva rama correctiva. Antes de actuar, comprueba que no haya cambios posteriores de otras personas o asistentes.

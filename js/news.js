@@ -434,6 +434,10 @@
         es: ["God of War Laufey", " llegará a PS5 el 16 de febrero de 2027"],
         en: ["God of War Laufey", " comes to PS5 on February 16, 2027"]
       },
+      "bethesda-futuro-fallout": {
+        es: ["Fallout", " confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian"],
+        en: ["Fallout", " confirms Fallout 3 and New Vegas remasters and a new Obsidian project"]
+      },
       "playstation-fin-formato-fisico": {
         es: ["PlayStation", " dejará de producir discos para nuevos juegos en 2028"],
         en: ["PlayStation", " will stop producing discs for new games in 2028"]

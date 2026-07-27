@@ -5,6 +5,22 @@
   const titleOf=release=>(release.querySelector('h4')?.childNodes[0]?.textContent||release.querySelector('h4')?.textContent||'').trim();
   const findRelease=title=>[...root.querySelectorAll('.release')].find(release=>titleOf(release)===title);
   const monthLabel=month=>[...root.querySelectorAll(`.month-label[data-month="${month}"]`)][0];
+  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const observeDynamicRelease=release=>{
+    if(reducedMotion||!('IntersectionObserver' in window)){
+      release.classList.add('visible');
+      return;
+    }
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    },{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+    observer.observe(release);
+  };
 
   const setPlatforms=(title,text,dataPlat)=>{
     const release=findRelease(title);
@@ -61,6 +77,7 @@
     }
     const next=releases.find(item=>Number(item.querySelector('.rdate b')?.textContent||0)>Number(day));
     root.insertBefore(release,next||(releases.at(-1)?.nextElementSibling||node||null));
+    observeDynamicRelease(release);
   };
 
   removeMonth('2026-05');

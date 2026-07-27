@@ -116,7 +116,7 @@
     monthText:'Ago',
     platforms:'Switch 2',
     dataPlat:'switch',
-    image:'https://i.ytimg.com/vi/pMeYxev9PZM/maxresdefault.jpg',
+    image:'https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png?twic=v1/cover=1920x1080/quality=100',
     storeUrl:'https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition',
     storeTitle:'Ver ficha oficial'
   });

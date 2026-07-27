@@ -186,3 +186,21 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 .news-page #newsArchive .news-flip-back > .news-flip-button{
   margin-top:auto;
 }
+
+
+/* Giro 3D estable y fluido en Firefox: cada cara mantiene su propia capa. */
+.news-page #newsArchive .news-flip-face{
+  will-change:transform;
+}
+.news-page #newsArchive .news-flip-front{
+  transform:rotateY(0deg) translateZ(0);
+}
+.news-page #newsArchive .news-flip-front:hover{
+  transform:rotateY(0deg) translateY(-2px) translateZ(0);
+}
+.news-page #newsArchive .news-archive-card.is-flipped .news-flip-front:hover{
+  transform:rotateY(0deg) translateZ(0);
+}
+.news-page #newsArchive .news-flip-back{
+  transform:rotateY(180deg) translateZ(0);
+}

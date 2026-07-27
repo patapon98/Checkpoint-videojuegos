@@ -6,4 +6,8 @@ Blog de videojuegos: reseñas, calendario de lanzamientos y noticias.
 - Hosting: Cloudflare Workers (assets estáticos)
 - Despliegue: automático con cada push a `main` (Cloudflare Workers Builds)
 
-La guía de mantenimiento está en `COMO-PUBLICAR.md`.
+## Documentación
+
+- Reglas permanentes del proyecto: [`docs/PROJECT_RULES.md`](docs/PROJECT_RULES.md)
+- Checklist de actualización del calendario: [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md)
+- Guía de mantenimiento: [`COMO-PUBLICAR.md`](COMO-PUBLICAR.md)

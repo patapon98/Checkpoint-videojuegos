@@ -188,25 +188,19 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 }
 
 
-/* Giro 3D estable en Firefox: la cara inactiva cambia de opacidad en el ecuador de la animación. */
+/* Giro 3D estable y fluido en Firefox: cada cara mantiene su propia capa. */
+.news-page #newsArchive .news-flip-face{
+  will-change:transform;
+}
 .news-page #newsArchive .news-flip-front{
-  transform:rotateY(0deg);
-  opacity:1;
-  transition:opacity 0s linear .31s;
+  transform:rotateY(0deg) translateZ(0);
+}
+.news-page #newsArchive .news-flip-front:hover{
+  transform:rotateY(0deg) translateY(-2px) translateZ(0);
+}
+.news-page #newsArchive .news-archive-card.is-flipped .news-flip-front:hover{
+  transform:rotateY(0deg) translateZ(0);
 }
 .news-page #newsArchive .news-flip-back{
-  opacity:0;
-  transition:opacity 0s linear .31s;
-}
-.news-page #newsArchive .news-archive-card.is-flipped .news-flip-front{
-  opacity:0;
-}
-.news-page #newsArchive .news-archive-card.is-flipped .news-flip-back{
-  opacity:1;
-}
-@media(prefers-reduced-motion:reduce){
-  .news-page #newsArchive .news-flip-front,
-  .news-page #newsArchive .news-flip-back{
-    transition:none;
-  }
+  transform:rotateY(180deg) translateZ(0);
 }

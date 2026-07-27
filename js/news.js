@@ -59,6 +59,15 @@
     return value?.[lang] || value?.es || "";
   }
 
+  function categoryKey(item) {
+    return ({
+      Juegos: "games",
+      Plataformas: "platforms",
+      Industria: "industry",
+      Lanzamientos: "releases"
+    })[item.category?.es] || "industry";
+  }
+
   function escapeHTML(value) {
     return String(value)
       .replaceAll("&", "&amp;")
@@ -196,7 +205,7 @@
 
   function homeShell(item, lang, front, compact) {
     return `
-      <article class="news-home-flip ${compact ? "news-home-flip-brief" : "news-home-flip-featured"} news-tone-${escapeHTML(item.tone)}"
+      <article class="news-home-flip ${compact ? "news-home-flip-brief" : "news-home-flip-featured"} news-category-${categoryKey(item)} news-tone-${escapeHTML(item.tone)}"
                data-news-id="${escapeHTML(item.id)}">
         <div class="news-home-flip-inner">
           ${front}
@@ -433,6 +442,10 @@
       "god-of-war-laufey-fecha": {
         es: ["God of War Laufey", " llegará a PS5 el 16 de febrero de 2027"],
         en: ["God of War Laufey", " comes to PS5 on February 16, 2027"]
+      },
+      "bethesda-futuro-fallout": {
+        es: ["Fallout", " confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian"],
+        en: ["Fallout", " confirms Fallout 3 and New Vegas remasters and a new Obsidian project"]
       },
       "playstation-fin-formato-fisico": {
         es: ["PlayStation", " dejará de producir discos para nuevos juegos en 2028"],

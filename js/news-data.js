@@ -1,3 +1,4 @@
+// Taxonomía editorial: «Lanzamientos» cubre fechas, ventanas, adelantos y retrasos; «Juegos», el resto de noticias centradas en títulos concretos.
 window.FINALSECRETO_NEWS = [
   {
     id: "playstation-fin-formato-fisico",
@@ -39,6 +40,72 @@ window.FINALSECRETO_NEWS = [
     ]
   },
   {
+    id: "bethesda-futuro-fallout",
+    important: true,
+    emphasis: { es: ["remasterizaciones de Fallout 3 y Fallout: New Vegas","vuelta de Obsidian a la franquicia","sin título, fecha ni plataformas anunciadas"] },
+    category: { es: "Juegos", en: "Games" },
+    date: "2026-07-17",
+    featured: false,
+    ticker: true,
+    tone: "xbox",
+    title: {
+      es: "Bethesda confirma dos remasterizaciones de Fallout y un nuevo proyecto de Obsidian",
+      en: "Bethesda confirms two Fallout remasters and a new Obsidian project"
+    },
+    summary: {
+      es: "Bethesda trabaja en remasterizaciones de Fallout 3 y Fallout: New Vegas. Además, Obsidian desarrolla un nuevo proyecto de la saga y Fallout 5 ya está en preproducción, aunque ninguno tiene fecha.",
+      en: "Bethesda is working on Fallout 3 and Fallout: New Vegas remasters. Obsidian is also developing a new project in the series, while Fallout 5 is now in pre-production, with no release dates announced."
+    },
+    why: {
+      es: "Es la hoja de ruta más concreta de Fallout en años y devuelve a Obsidian a la franquicia en la que creó New Vegas.",
+      en: "It is Fallout's most concrete roadmap in years and brings Obsidian back to the franchise where it made New Vegas."
+    },
+    sources: [
+      {
+        label: "Bethesda Game Studios",
+        type: { es: "Comunicado oficial", en: "Official statement" },
+        url: "https://bethesda.net/article/7wrffyXajE4BmCLJVpOkcN/a-note-from-bethesda-game-studios"
+      },
+      {
+        label: "PC Gamer",
+        type: { es: "Contexto", en: "Context" },
+        url: "https://www.pcgamer.com/games/fallout/bethesda-confirms-fallout-3-and-new-vegas-remasters-makes-obsidian-collaboration-official-and-says-fallout-5-is-in-pre-production/"
+      }
+    ]
+  },
+  {
+    id: "tomb-raider-catalyst-2028",
+    emphasis: { es: ["el responsable de Amazon Games situó Tomb Raider: Catalyst en 2028","la propia compañía evitó confirmar el cambio","no debe considerarse todavía una fecha oficial"] },
+    category: { es: "Lanzamientos", en: "Releases" },
+    date: "2026-07-24",
+    featured: false,
+    tone: "industry",
+    title: {
+      es: "Amazon apunta a 2028 para Tomb Raider: Catalyst, pero evita confirmar el retraso",
+      en: "Amazon points to 2028 for Tomb Raider: Catalyst but stops short of confirming a delay"
+    },
+    summary: {
+      es: "Jeff Gattis, responsable de Amazon Games, situó el nuevo Tomb Raider en 2028 durante una entrevista. Después, la compañía aseguró que no tenía novedades sobre su fecha y que el desarrollo avanza bien.",
+      en: "Amazon Games head Jeff Gattis placed the new Tomb Raider in 2028 during an interview. The company later said it had no timing update and that development was progressing well."
+    },
+    why: {
+      es: "La ventana anunciada de 2027 queda en duda, pero la respuesta posterior de Amazon impide tratar 2028 como una fecha definitiva.",
+      en: "The announced 2027 window is now in doubt, but Amazon's follow-up response means 2028 should not be treated as final."
+    },
+    sources: [
+      {
+        label: "Gematsu",
+        type: { es: "Declaración y respuesta oficial", en: "Statement and official response" },
+        url: "https://www.gematsu.com/2026/07/tomb-raider-catalyst-amazon-games-boss-suggests-2028-delay-but-publisher-says-no-updates"
+      },
+      {
+        label: "PC Gamer",
+        type: { es: "Contexto", en: "Context" },
+        url: "https://www.pcgamer.com/games/action/tomb-raider-catalyst-delayed-to-2028/"
+      }
+    ]
+  },
+  {
     id: "xbox-retrocompatibilidad-pc",
     emphasis: { es: ["sin comprar otra copia","trasladar su catálogo histórico a PC","mejorar su conservación"] },
     category: { es: "Plataformas", en: "Platforms" },
@@ -75,7 +142,7 @@ window.FINALSECRETO_NEWS = [
     id: "god-of-war-laufey-fecha",
     important: true,
     emphasis: { es: ["en exclusiva a PS5 el 16 de febrero de 2027","recuperará a Kratos como protagonista","próximas dos entregas"] },
-    category: { es: "Juegos", en: "Games" },
+    category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-25",
     featured: false,
     latest: true,
@@ -251,7 +318,7 @@ window.FINALSECRETO_NEWS = [
     id: "marvel-wolverine-fecha",
     important: true,
     emphasis: { es: ["15 de septiembre de 2026","uno de los principales exclusivos de PS5"] },
-    category: { es: "Juegos", en: "Games" },
+    category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-23",
     featured: false,
     tone: "wolverine",

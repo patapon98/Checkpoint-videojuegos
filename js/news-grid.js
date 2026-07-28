@@ -94,6 +94,26 @@
     return cards.filter(card=>card!==featured);
   }
 
+  function syncToolsPosition(featured){
+    if(!tools||!results) return;
+    if(mobileQuery.matches){
+      if(tools.parentElement!==archive||tools.previousElementSibling!==featured){
+        if(featured) featured.insertAdjacentElement('afterend',tools);
+        else archive.prepend(tools);
+      }
+      if(results.parentElement!==archive||results.previousElementSibling!==tools){
+        tools.insertAdjacentElement('afterend',results);
+      }
+    }else{
+      if(tools.parentElement!==archive.parentElement||tools.nextElementSibling!==archive){
+        archive.parentElement.insertBefore(tools,archive);
+      }
+      if(results.parentElement!==archive.parentElement||results.previousElementSibling!==tools){
+        tools.insertAdjacentElement('afterend',results);
+      }
+    }
+  }
+
   function ensureMobileCarousel(){
     if(mobileCarousel?.isConnected) return;
     mobileCarousel=document.createElement('div');
@@ -248,6 +268,7 @@
     const isMobile=mobileQuery.matches;
     const featured=featuredCard(cards);
     const recent=recentCards(cards);
+    syncToolsPosition(featured);
     const totalPages=Math.max(1,Math.ceil((isMobile?recent.length:cards.length)/(isMobile?mobilePageSize:desktopPageSize)));
     activePage=Math.min(Math.max(activePage,1),totalPages);
     const pageSize=isMobile?mobilePageSize:desktopPageSize;

@@ -312,6 +312,10 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
   .news-page #newsArchive .news-mobile-track>.news-archive-card .news-why{margin-top:8px;padding:8px 10px;gap:2px;font-size:.71rem;line-height:1.3}
   .news-page #newsArchive .news-mobile-track>.news-archive-card .news-sources{margin-top:9px;padding-top:8px;gap:4px 8px;font-size:.64rem}
   .news-page #newsArchive .news-mobile-track>.news-archive-card .news-flip-button{margin-top:6px;padding:6px 10px;font-size:.66rem}
+
+  /* Reverso de la tarjeta igual de compacto, para que "Volver" no quede fuera de pantalla */
+  .news-page #newsArchive .news-mobile-track>.news-archive-card .news-back-meta{gap:8px;margin-bottom:10px;font-size:.68rem}
+  .news-page #newsArchive .news-mobile-track>.news-archive-card .news-expanded-copy{gap:9px;font-size:.78rem;line-height:1.42}
 }
 @media(prefers-reduced-motion:reduce){
   .news-mobile-track{transition:none}

@@ -135,7 +135,7 @@ document.querySelectorAll('[data-scroll-top]').forEach(button=>{
 
 const revealImmediately=elements=>elements.forEach(el=>el.classList.add('visible'));
 
-const observeReveals=(elements,{stagger=false,rootMargin='0px 0px -4% 0px'}={})=>{
+const observeReveals=(elements,{stagger=false,rootMargin='0px 0px 20% 0px'}={})=>{
   if(reducedMotion||!('IntersectionObserver' in window)){
     revealImmediately(elements);
     return;

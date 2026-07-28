@@ -11,7 +11,7 @@
 
   load('home-analysis-links.js?v=20260728-1');
   load('home-calendar-updates.js?v=20260727-3');
-  load('main-core.js?v=20260729-4',()=>{
+  load('main-core.js?v=20260729-5',()=>{
     load('review-lightbox-fixes.js?v=20260729-1');
     if(!document.body.classList.contains('calendar-page')) return;
     load('calendar-releases.js?v=20260727-7',()=>load('calendar-images.js',()=>load('calendar-labels.js?v=20260727-1',()=>{

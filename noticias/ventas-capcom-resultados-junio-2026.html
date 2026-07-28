@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resultados de Capcom de abril a junio de 2026, explicados</title>
-<meta name="description" content="Capcom vendió 23,81 millones de juegos entre el 1 de abril y el 30 de junio de 2026. Explicamos el periodo fiscal, los resultados y las ventas por título.">
+<meta name="description" content="Capcom vendió 23,81 millones de juegos entre el 1 de abril y el 30 de junio de 2026. Explicamos el periodo fiscal, los resultados y las copias vendidas por título.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://finalsecreto.com/noticias/ventas-capcom-resultados-junio-2026">
 <meta property="og:type" content="article">
@@ -22,7 +22,7 @@
   "@context":"https://schema.org",
   "@type":"NewsArticle",
   "headline":"Resultados de Capcom de abril a junio de 2026, explicados",
-  "description":"Capcom vendió 23,81 millones de juegos entre el 1 de abril y el 30 de junio de 2026. Explicamos el periodo fiscal, los resultados y las ventas por título.",
+  "description":"Capcom vendió 23,81 millones de juegos entre el 1 de abril y el 30 de junio de 2026. Explicamos el periodo fiscal, los resultados y las copias vendidas por título.",
   "image":"https://finalsecreto.com/img/pragmata/Captura%20de%20pantalla%202026-07-25%20051532.png",
   "datePublished":"2026-07-28",
   "dateModified":"2026-07-28",
@@ -49,7 +49,7 @@
 <link rel="stylesheet" href="../css/style.css?v=20260728-3">
 <link rel="stylesheet" href="/css/brand-logo.css">
 <link rel="stylesheet" href="../css/news-article.css?v=20260726-2">
-<link rel="stylesheet" href="../css/capcom-results.css?v=20260728-6">
+<link rel="stylesheet" href="../css/capcom-results.css?v=20260728-7">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="news-story-page capcom-results-page">
@@ -79,7 +79,7 @@
         <p class="story-deck"><em>PRAGMATA</em> aportó 2,51 millones como novedad. <em>Resident Evil</em>, <em>Monster Hunter</em> y <em>Devil May Cry</em> explican el resto de un primer trimestre fiscal que conviene leer con fechas y categorías precisas.</p>
         <div class="story-meta"><span>Por <b>Alex</b></span><span>Publicado el 28 de julio de 2026</span><span>14 min de lectura</span></div>
       </div>
-      <div class="story-visual capcom-hero-visual" aria-label="Resumen visual de las ventas de juegos de Capcom entre abril y junio de 2026">
+      <div class="story-visual capcom-hero-visual" aria-label="Resumen visual de las copias vendidas por Capcom entre abril y junio de 2026">
         <div class="capcom-wordmark">CAPCOM</div>
         <div class="hero-total"><span>23,81</span><b>millones de juegos</b><small>del 1 de abril al 30 de junio de 2026</small></div>
         <div class="hero-split">
@@ -115,7 +115,7 @@
         <p>Capcom denomina este periodo <strong>Q1 del ejercicio fiscal 2027</strong> porque su año contable termina en marzo de 2027. No se refiere a enero–marzo ni a todo 2026. A partir de aquí alternaremos «Q1» y «primer trimestre fiscal». En las comparaciones históricas, cada Q1 abarcará siempre <strong>del 1 de abril al 30 de junio</strong>.</p>
       </section>
 
-      <p class="story-lead">La primera lectura es inequívoca. Capcom creció con fuerza durante el Q1. Sin embargo, sus documentos reúnen resultados consolidados de toda la compañía, ventas de la división de videojuegos, datos del primer trimestre fiscal y acumulados históricos por juego. <strong>Separar esas capas es imprescindible para entender qué ocurrió de verdad.</strong></p>
+      <p class="story-lead">La primera lectura es inequívoca. Capcom creció con fuerza durante el Q1. Sin embargo, sus documentos reúnen resultados consolidados de toda la compañía, unidades de la división de videojuegos, datos del primer trimestre fiscal y acumulados históricos por juego. <strong>Separar esas capas es imprescindible para entender qué ocurrió de verdad.</strong></p>
 
       <section class="capcom-kpis" aria-label="Resultados consolidados de Capcom en el Q1 de 2026">
         <div><span>70,4</span><b>mil millones de yenes en ingresos <small class="currency-inline">(≈ 380 millones de euros)</small></b><small>+54,7% frente al Q1 de 2025</small></div>
@@ -135,10 +135,15 @@
             <span>Gráfico interactivo</span>
             <h3 id="financial-chart-title">Q1 de Capcom entre 2022 y 2026</h3>
           </div>
-          <div class="chart-controls" role="group" aria-label="Métrica financiera">
-            <button type="button" class="is-active" data-financial-metric="sales" aria-pressed="true">Ingresos</button>
-            <button type="button" data-financial-metric="profit" aria-pressed="false">Beneficio operativo</button>
-            <button type="button" data-financial-metric="margin" aria-pressed="false">Margen</button>
+          <div class="chart-controls">
+            <label class="chart-select-control" for="financialMetric">
+              <span>Métrica</span>
+              <select id="financialMetric">
+                <option value="sales">Ingresos</option>
+                <option value="profit">Beneficio operativo</option>
+                <option value="margin">Margen operativo</option>
+              </select>
+            </label>
           </div>
         </div>
         <div id="financialChart" class="interactive-chart" data-chart-reveal role="group" aria-label="Comparación de los resultados consolidados de Capcom entre abril y junio de 2022, 2023, 2024, 2025 y 2026"></div>
@@ -191,15 +196,20 @@
         <div class="data-lab-heading">
           <div>
             <span>Gráfico interactivo</span>
-            <h3 id="games-chart-title">Ventas por juego durante el Q1 de 2026</h3>
+            <h3 id="games-chart-title">Copias vendidas por juego durante el Q1 de 2026</h3>
           </div>
-          <div class="chart-controls" role="group" aria-label="Periodo de ventas por juego">
-            <button type="button" class="is-active" data-games-metric="quarter" aria-pressed="true">Q1</button>
-            <button type="button" data-games-metric="cumulative" aria-pressed="false">Acumulado</button>
+          <div class="chart-controls">
+            <label class="chart-select-control" for="gamesMetric">
+              <span>Vista</span>
+              <select id="gamesMetric">
+                <option value="quarter">Q1 de 2026</option>
+                <option value="cumulative">Acumulado</option>
+              </select>
+            </label>
           </div>
         </div>
-        <div id="gamesChart" class="interactive-chart chart-ranking" data-chart-reveal role="group" aria-label="Ventas de los diez juegos de Capcom con más unidades entre el 1 de abril y el 30 de junio de 2026"></div>
-        <p class="chart-note" id="games-chart-note">El gráfico muestra <strong>solo las ventas del Q1 de 2026</strong>, del 1 de abril al 30 de junio. Activa «Acumulado» para consultar el total desde el lanzamiento. Cada vista se ordena por separado y utiliza su propia escala.</p>
+        <div id="gamesChart" class="interactive-chart chart-ranking" data-chart-reveal role="group" aria-label="Copias vendidas de los diez juegos de Capcom con más unidades entre el 1 de abril y el 30 de junio de 2026"></div>
+        <p class="chart-note" id="games-chart-note">El gráfico muestra <strong>solo las copias vendidas en el Q1 de 2026</strong>, del 1 de abril al 30 de junio. Selecciona «Acumulado» para consultar el total desde el lanzamiento. Cada vista se ordena por separado y utiliza su propia escala.</p>
       </section>
 
       <h2><em>Resident Evil</em> es la base del Q1</h2>
@@ -224,15 +234,15 @@
         <div class="data-lab-heading">
           <div>
             <span>Gráfico interactivo</span>
-            <h3 id="timeline-chart-title">Ventas acumuladas entre marzo de 2025 y junio de 2026</h3>
+            <h3 id="timeline-chart-title">Copias vendidas acumuladas entre marzo de 2025 y junio de 2026</h3>
           </div>
         </div>
         <div class="title-picker" id="titlePicker" role="group" aria-label="Elegir juegos para el gráfico"></div>
-        <div id="timelineChart" class="interactive-chart chart-timeline" data-chart-reveal role="group" aria-label="Evolución de las ventas acumuladas de varios juegos de Capcom entre marzo de 2025 y junio de 2026"></div>
+        <div id="timelineChart" class="interactive-chart chart-timeline" data-chart-reveal role="group" aria-label="Evolución de las copias vendidas acumuladas de varios juegos de Capcom entre marzo de 2025 y junio de 2026"></div>
         <p class="chart-note">Este gráfico utiliza <strong>solo acumulados</strong> publicados por Capcom en seis cierres sucesivos y mantiene una escala fija de 8 a 20 mill.. Puedes activar o desactivar juegos y consultar cada valor con el cursor, el tacto o el teclado.</p>
       </section>
 
-      <h2>Cómo se distribuyeron las ventas del Q1</h2>
+      <h2>Cómo se distribuyeron las copias vendidas en el Q1</h2>
       <p>Las mismas 23,81 mill. de unidades pueden analizarse desde tres perspectivas: cuándo se publicó cada juego, por qué canal y plataforma se vendió, y en qué territorio. <strong>Cada reparto responde a una pregunta distinta y sus porcentajes no deben sumarse entre sí.</strong></p>
 
       <section class="breakdown-infographic" id="breakdownInfographic" data-chart-reveal aria-labelledby="breakdown-title">
@@ -271,8 +281,8 @@
         </div>
       </section>
 
-      <p>En volumen absoluto, Capcom vendió 22,22 mill. de unidades digitales y 1,59 mill. físicas. Dentro de las ventas digitales, 14,37 mill. correspondieron a PC y 7,84 millones a consolas. Fuera de Japón se colocaron 21,63 mill. de unidades, frente a 2,18 mill. en el mercado doméstico. Los subtotales pueden diferir en 0,01 millones porque la presentación redondea cada cifra a bloques de 10.000 unidades.</p>
-      <p>Que el formato físico represente solo el <strong>6,7% de las unidades de Capcom en este Q1</strong> no demuestra que el disco haya dejado de tener público en toda la industria. Sí muestra que, dentro del negocio de una gran editora, su peso ya puede ser muy reducido incluso cuando las ventas totales baten récords.</p>
+      <p>En volumen absoluto, Capcom vendió 22,22 mill. de unidades digitales y 1,59 mill. físicas. Dentro de las copias digitales, 14,37 mill. correspondieron a PC y 7,84 mill. a consolas. Fuera de Japón se colocaron 21,63 mill. de unidades, frente a 2,18 mill. en el mercado doméstico. Los subtotales pueden diferir en 0,01 millones porque la presentación redondea cada cifra a bloques de 10.000 unidades.</p>
+      <p>Que el formato físico represente solo el <strong>6,7% de las unidades de Capcom en este Q1</strong> no demuestra que el disco haya dejado de tener público en toda la industria. Sí muestra que, dentro del negocio de una gran editora, su peso ya puede ser muy reducido incluso cuando el total de copias vendidas bate récords.</p>
       <p>El dato ofrece un contrapunto a las críticas contra la decisión de Sony de abandonar los discos en sus futuros lanzamientos. Que todavía exista demanda física y que las editoras dependan cada vez menos de ella pueden ser verdad al mismo tiempo. En nuestro análisis sobre <a href="/noticias/playstation-fin-formato-fisico"><strong>el fin del formato físico en PlayStation</strong></a> explicamos por qué la pérdida de esa alternativa afecta a la propiedad, la competencia y la preservación, aunque el mercado avance hacia lo digital.</p>
 
       <h2>La previsión anual sigue intacta</h2>
@@ -283,17 +293,17 @@
       <div class="story-pull">“<em>PRAGMATA</em> es el gran estreno del Q1. Los títulos anteriores son la infraestructura económica que sostiene el resultado.”</div>
 
       <h2>Mi lectura</h2>
-      <p>El dato más interesante no es que Capcom haya vendido mucho, sino <strong>cómo distribuye el riesgo</strong>. Un lanzamiento nuevo puede superar 2,5 millones sin cargar por sí solo con el primer trimestre fiscal. A la vez, juegos de 2017, 2019 o 2023 continúan generando millones de ventas gracias a precios más bajos, nuevas plataformas y una estrategia constante de marca.</p>
+      <p>El dato más interesante no es que Capcom haya vendido mucho, sino <strong>cómo distribuye el riesgo</strong>. Un lanzamiento nuevo puede superar 2,5 millones sin cargar por sí solo con el primer trimestre fiscal. A la vez, juegos de 2017, 2019 o 2023 continúan sumando millones de copias vendidas gracias a precios más bajos, nuevas plataformas y una estrategia constante de marca.</p>
       <p>Hay dos límites que conviene no perder de vista. Las unidades no equivalen a ingresos porque desconocemos el precio medio de cada juego, y un margen trimestral excepcional no debe proyectarse automáticamente sobre todo el año. Las cifras muestran una compañía muy rentable y con un fondo comercial extraordinario, pero no permiten afirmar que cada copia antigua sea igual de valiosa que una novedad ni que el ritmo vaya a repetirse sin cambios.</p>
 
       <section class="story-sources">
         <h2>Fuentes</h2>
         <a href="https://www.capcom.co.jp/ir/english/data/pdf/result/2026/1st/result_2026_1st_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — resultados financieros</b><span>Estados consolidados del 1 de abril al 30 de junio de 2026</span></a>
-        <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2026/1st/explanation_2026_1st_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — presentación del trimestre</b><span>Definiciones, ventas por juego, plataformas y comparación histórica</span></a>
+        <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2026/1st/explanation_2026_1st_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — presentación del trimestre</b><span>Definiciones, copias vendidas por juego, plataformas y comparación histórica</span></a>
         <a href="https://www.capcom.co.jp/ir/english/news/pdf/e260728b.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — comunicado de resultados</b><span>Resumen oficial y previsión para el ejercicio completo</span></a>
-        <a href="https://www.videogameschronicle.com/news/capcom-reports-another-strong-quarter-as-resident-evil-requiem-passes-8-million-sold-and-pragmata-hits-2-5-million/" target="_blank" rel="noopener noreferrer"><b>VGC — contexto editorial</b><span>Lectura de las ventas de Resident Evil, PRAGMATA y Devil May Cry 5</span></a>
+        <a href="https://www.videogameschronicle.com/news/capcom-reports-another-strong-quarter-as-resident-evil-requiem-passes-8-million-sold-and-pragmata-hits-2-5-million/" target="_blank" rel="noopener noreferrer"><b>VGC — contexto editorial</b><span>Lectura de las copias vendidas de Resident Evil, PRAGMATA y Devil May Cry 5</span></a>
         <a href="https://gamebiz.jp/news/430113" target="_blank" rel="noopener noreferrer"><b>gamebiz — cobertura financiera japonesa</b><span>Resultados por segmentos y mantenimiento de la previsión anual</span></a>
-        <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2025/full/explanation_2025_full_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — cierre de marzo de 2026</b><span>Base histórica para las ventas acumuladas</span></a>
+        <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2025/full/explanation_2025_full_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — cierre de marzo de 2026</b><span>Base histórica para las copias vendidas acumuladas</span></a>
         <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2025/1st/explanation_2025_1st_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — junio de 2025</b><span>Primer corte trimestral de la serie histórica</span></a>
         <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2025/2nd/explanation_2025_2nd_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — septiembre de 2025</b><span>Segundo corte de la evolución acumulada</span></a>
         <a href="https://www.capcom.co.jp/ir/english/data/pdf/explanation/2025/3rd/explanation_2025_3rd_01.pdf" target="_blank" rel="noopener noreferrer"><b>Capcom — diciembre de 2025</b><span>Tercer corte de la evolución acumulada</span></a>
@@ -316,6 +326,6 @@
 
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span><span>Noticias · Calendario · Reseñas · Contacto</span></div></footer>
 <script src="../js/main.js?v=20260728-2"></script>
-<script src="../js/capcom-results-charts.js?v=20260728-7"></script>
+<script src="../js/capcom-results-charts.js?v=20260728-8"></script>
 </body>
 </html>

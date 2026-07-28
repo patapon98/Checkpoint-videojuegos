@@ -1,32 +1,38 @@
-# Actualización de PlayStation Plus
+# Actualización automática de PlayStation Plus
 
-La página pública vive en `/playstation-plus` y sus datos se centralizan en `data/playstation-plus.json`.
+La sección de PlayStation Plus se mantiene a partir de publicaciones oficiales de PlayStation Blog y se despliega sin intervención manual cuando hay información nueva verificable.
 
-## Fuente y alcance
+## Fuente de datos
 
-- Usar únicamente publicaciones oficiales de PlayStation Blog.
-- La referencia editorial es España y Europa.
-- Distinguir siempre Essential, Extra y Premium.
-- Indicar las consolas y el periodo de disponibilidad.
-- Mantener el enlace a la publicación oficial en cada juego.
-- Cuando un plan todavía no se haya anunciado, mostrar el estado pendiente en lugar de completar datos por inferencia.
+- El archivo central es `data/playstation-plus.json`.
+- Las fuentes deben ser publicaciones oficiales de PlayStation Blog.
+- No se completan planes, fechas, plataformas o juegos mediante rumores o inferencias.
+- Cuando un plan todavía no se ha anunciado, se conserva un estado pendiente visible.
 
-## Automatización
+## Flujo automático
 
-El flujo `.github/workflows/update-playstation-plus.yml` revisa cada día el feed oficial de PlayStation Plus.
+El workflow `.github/workflows/update-playstation-plus.yml` se ejecuta diariamente y también puede lanzarse manualmente.
 
-Cuando detecta una publicación mensual nueva:
+1. Descarga la última versión de `main`.
+2. Consulta el feed oficial de PlayStation Plus.
+3. Actualiza el archivo de datos solo cuando detecta publicaciones nuevas.
+4. Genera una página individual por cada mes con información oficial mediante `scripts/generate-ps-plus-pages.mjs`.
+5. Regenera `sitemap.xml`.
+6. Comprueba sintaxis, estructura de datos, páginas generadas y diff.
+7. Si hay cambios, hace commit y push directamente a `main`.
 
-1. Extrae títulos, planes, plataformas, fechas e imágenes oficiales.
-2. Actualiza `data/playstation-plus.json`.
-3. Abre o actualiza una PR en borrador desde `bot/playstation-plus-auto`.
-4. Nunca fusiona la PR ni modifica `main` directamente.
+Este push directo es una excepción autorizada a la regla general de trabajar mediante PR. La automatización solo puede modificar datos y páginas de PlayStation Plus y el sitemap derivado. Cloudflare despliega el resultado tras el push a `main`.
 
-## Revisión antes del merge
+## URLs
 
-- Confirmar que la información coincide con la publicación oficial.
-- Comprobar posibles diferencias regionales.
-- Revisar que las imágenes cargan y tienen un recorte correcto.
-- Probar filtros, selector mensual y enlaces.
-- Revisar escritorio y móvil, modo claro y oscuro.
-- Comprobar que no existe scroll horizontal accidental.
+- Hub general: `/playstation-plus`
+- Página mensual: `/playstation-plus/AAAA-MM`
+
+Las páginas mensuales se crean cuando el mes contiene al menos un juego oficial. Se eliminan automáticamente las páginas generadas que ya no correspondan a un mes presente en los datos.
+
+## Revisión técnica
+
+- El workflow de validación comprueba la sintaxis JavaScript.
+- El generador debe ser idempotente. Ejecutarlo sin cambios en los datos no puede alterar los archivos.
+- Las imágenes deben proceder de la fuente oficial y conservar un texto alternativo útil.
+- La interfaz debe funcionar en móvil y escritorio, modo claro y oscuro y con `prefers-reduced-motion`.

@@ -33,6 +33,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Escribir para un lector interesado en videojuegos, pero no asumir que conoce todos los juegos, sagas, estudios o antecedentes.
 - Explicar brevemente un término o referencia la primera vez que aparezca cuando sea necesario para entender la información.
 - Evitar los dos puntos en el texto visible. Se permiten cuando sean necesarios en horas, URLs, código, metadatos y títulos oficiales.
+- No usar el punto y coma como recurso editorial en el texto visible. Se permite únicamente cuando sea necesario en código, estilos, URLs o entidades HTML.
 - Usar titulares factuales, claros y sin exageraciones.
 - Distinguir expresamente entre hechos confirmados, información periodística y rumores.
 - Priorizar fuentes oficiales y añadir medios solventes cuando aporten contexto o contraste.

@@ -38,6 +38,9 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Priorizar fuentes oficiales y añadir medios solventes cuando aporten contexto o contraste.
 - No publicar rumores débiles, polémicas menores de redes sociales, parches, skins, tráileres rutinarios o noticias demasiado pequeñas.
 - No presentar una inferencia como un hecho confirmado.
+- En artículos extensos, escribir los títulos de videojuegos en *cursiva* y usar **negritas** selectivas para cifras, hechos y conclusiones que ayuden a escanear el texto; no aplicar énfasis de forma indiscriminada.
+- En información financiera o cuantitativa, indicar siempre las fechas exactas del periodo y explicar qué significa el trimestre fiscal antes de analizarlo.
+- No enfrentar en un mismo gráfico ventas de un periodo y ventas acumuladas, ni presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables, explicados junto al gráfico.
 
 ## 4. Categorías de noticias
 

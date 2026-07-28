@@ -7,10 +7,9 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
-  group: update-playstation-plus
+  group: update-playstation-plus-main
   cancel-in-progress: false
 
 jobs:
@@ -28,63 +27,51 @@ jobs:
         with:
           node-version: 22
 
+      - name: Sincronizar main
+        run: git pull --ff-only origin main
+
       - name: Configurar Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Actualizar una PR existente
-        id: existing
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Comprobar sintaxis
         run: |
-          branch="bot/playstation-plus-auto"
-          number="$(gh pr list --state open --head "$branch" --json number --jq '.[0].number // empty')"
-          if [ -z "$number" ]; then
-            echo "found=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "found=true" >> "$GITHUB_OUTPUT"
-          echo "number=$number" >> "$GITHUB_OUTPUT"
-          git fetch origin "$branch"
-          git checkout -B "$branch" "origin/$branch"
-          git merge --no-edit origin/main
-          node scripts/run-ps-plus-update.mjs
-
-          if git diff --quiet; then
-            echo "La PR existente ya contiene todos los datos oficiales disponibles."
-            exit 0
-          fi
-
-          git add data/playstation-plus.json
-          git commit -m "Actualiza PlayStation Plus"
-          git push origin "$branch"
+          node --check scripts/update-ps-plus.mjs
+          node --check scripts/run-ps-plus-update.mjs
+          node --check scripts/generate-ps-plus-pages.mjs
+          node --check scripts/generate-sitemap.mjs
+          node --check js/playstation-plus.js
+          node --check js/playstation-plus-month.js
+          node --check js/calendar-psplus-entry.js
 
       - name: Buscar novedades oficiales
-        if: steps.existing.outputs.found != 'true'
         id: changes
         run: |
           node scripts/run-ps-plus-update.mjs
-          if git diff --quiet; then
+          if git diff --quiet -- data/playstation-plus.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Abrir PR en borrador
-        if: steps.existing.outputs.found != 'true' && steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Generar páginas mensuales
+        if: steps.changes.outputs.changed == 'true'
+        run: node scripts/generate-ps-plus-pages.mjs
+
+      - name: Regenerar sitemap
+        if: steps.changes.outputs.changed == 'true'
+        run: SITEMAP_DATE="$(node -p "require('./data/playstation-plus.json').updatedAt")" node scripts/generate-sitemap.mjs
+
+      - name: Validar datos y archivos
+        if: steps.changes.outputs.changed == 'true'
         run: |
-          branch="bot/playstation-plus-auto"
-          git checkout -b "$branch"
-          git add data/playstation-plus.json
+          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.groups)) throw new Error(`Mes incompleto ${month.id}`);}'
+          git diff --check
+
+      - name: Publicar en main
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git add data/playstation-plus.json playstation-plus sitemap.xml
           git commit -m "Actualiza PlayStation Plus"
-          git push -u origin "$branch"
-          gh pr create \
-            --draft \
-            --base main \
-            --head "$branch" \
-            --title "Actualiza los juegos de PlayStation Plus" \
-            --body $'## Qué cambia\n\nActualiza la página mensual de PlayStation Plus a partir de publicaciones oficiales de PlayStation Blog.\n\n## Revisión necesaria\n\n- Comprobar títulos, planes, consolas y fechas.\n- Revisar las imágenes y sus recortes en escritorio y móvil.\n- Confirmar que la selección coincide con España y Europa.\n\nLa automatización nunca fusiona la PR.'
+          git push origin HEAD:main

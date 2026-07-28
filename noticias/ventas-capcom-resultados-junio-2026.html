@@ -193,38 +193,17 @@
             <span>Gráfico interactivo</span>
             <h3 id="games-chart-title">Ventas por juego durante el Q1 de 2026</h3>
           </div>
+          <div class="chart-controls" role="group" aria-label="Periodo de ventas por juego">
+            <button type="button" class="is-active" data-games-metric="quarter" aria-pressed="true">Q1</button>
+            <button type="button" data-games-metric="cumulative" aria-pressed="false">Acumulado</button>
+          </div>
         </div>
         <div id="gamesChart" class="interactive-chart chart-ranking" data-chart-reveal role="group" aria-label="Ventas de los diez juegos de Capcom con más unidades entre el 1 de abril y el 30 de junio de 2026"></div>
-        <p class="chart-note">El gráfico muestra <strong>solo las ventas del Q1 de 2026</strong>, del 1 de abril al 30 de junio. Las cifras acumuladas aparecen aparte en la tabla y en la evolución histórica, para no presentar ambas magnitudes como si fueran comparables.</p>
+        <p class="chart-note" id="games-chart-note">El gráfico muestra <strong>solo las ventas del Q1 de 2026</strong>, del 1 de abril al 30 de junio. Activa «Acumulado» para consultar el total desde el lanzamiento. Cada vista se ordena por separado y utiliza su propia escala.</p>
       </section>
 
-      <div class="sales-table-wrap">
-        <table class="sales-table">
-          <thead>
-            <tr>
-              <th>Juego</th>
-              <th>1 abr–30 jun 2026</th>
-              <th>Acumuladas a 30 jun 2026</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td><em>PRAGMATA</em></td><td>2,51 mill.</td><td>2,51 mill.</td></tr>
-            <tr><td><em>Resident Evil 4</em></td><td>2,43 mill.</td><td>16,04 mill.</td></tr>
-            <tr><td><em>Resident Evil 2</em></td><td>1,42 mill.</td><td>19,75 mill.</td></tr>
-            <tr><td><em>Devil May Cry 5</em></td><td>1,29 mill.</td><td>14,24 mill.</td></tr>
-            <tr><td><em>Resident Evil 3</em></td><td>1,15 mill.</td><td>14,52 mill.</td></tr>
-            <tr><td><em>Resident Evil Requiem</em></td><td>1,14 mill.</td><td>8,06 mill.</td></tr>
-            <tr><td><em>Resident Evil 7 biohazard</em></td><td>1,01 mill.</td><td>18,41 mill.</td></tr>
-            <tr><td><em>Resident Evil Village</em></td><td>0,93 mill.</td><td>15,86 mill.</td></tr>
-            <tr><td><em>Monster Hunter World</em></td><td>0,78 mill.</td><td>30,45 mill.</td></tr>
-            <tr><td><em>Resident Evil 6</em></td><td>0,71 mill.</td><td>17,60 mill.</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="data-caveat"><strong>Las dos columnas responden a preguntas distintas.</strong> La primera mide solo el Q1 de 2026. La segunda suma ventas desde el lanzamiento hasta el 30 de junio. Además, esta tabla de Capcom agrupa versiones y adaptaciones a plataformas adicionales. La página Platinum Titles puede separar productos y utiliza un cierre anterior. Por eso no deben cruzarse sus cifras sin comprobar fecha y metodología.</p>
-
       <h2><em>Resident Evil</em> es la base del Q1</h2>
-      <p>Siete de los diez juegos de la tabla pertenecen a <em>Resident Evil</em>. Juntos vendieron <strong>8,79 mill. de unidades</strong> durante el Q1, el 36,9% de todo el volumen de Capcom. Cinco de ellos superaron individualmente el millón de copias en el primer trimestre fiscal.</p>
+      <p>Siete de los diez juegos de la clasificación pertenecen a <em>Resident Evil</em>. Juntos vendieron <strong>8,79 mill. de unidades</strong> durante el Q1, el 36,9% de todo el volumen de Capcom. Cinco de ellos superaron individualmente el millón de copias en el primer trimestre fiscal.</p>
       <p><em>Resident Evil Requiem</em> alcanzó 8,06 mill. acumulados tras sumar 1,14 millones en el periodo. <em>Resident Evil 4</em> pasó de 13,60 mill. al cierre de marzo a 16,04 millones en junio. <em>Resident Evil 2</em> avanzó de 18,32 a 19,75 mill.. El informe relaciona esta continuidad con promociones de precio y con la expansión de la audiencia internacional.</p>
 
       <h2><em>Devil May Cry 5</em> vuelve a crecer siete años después</h2>
@@ -253,12 +232,12 @@
         <p class="chart-note">Este gráfico utiliza <strong>solo acumulados</strong> publicados por Capcom en seis cierres sucesivos y mantiene una escala fija de 8 a 20 mill.. Puedes activar o desactivar juegos y consultar cada valor con el cursor, el tacto o el teclado.</p>
       </section>
 
-      <h2>Digital, PC e internacional no son la misma comparación</h2>
-      <p>Capcom ofrece varios repartos de las mismas 23,81 mill. de unidades. Uno distingue el momento de lanzamiento, otro el canal o plataforma de venta y otro el mercado geográfico. <strong>Son tres cortes independientes y sus porcentajes no deben sumarse entre sí.</strong></p>
+      <h2>Cómo se distribuyeron las ventas del Q1</h2>
+      <p>Las mismas 23,81 mill. de unidades pueden analizarse desde tres perspectivas: cuándo se publicó cada juego, por qué canal y plataforma se vendió, y en qué territorio. <strong>Cada reparto responde a una pregunta distinta y sus porcentajes no deben sumarse entre sí.</strong></p>
 
       <section class="breakdown-infographic" id="breakdownInfographic" data-chart-reveal aria-labelledby="breakdown-title">
-        <div class="revenue-kicker">Tres formas distintas de leer el total</div>
-        <h3 id="breakdown-title">Cómo se repartieron las 23,81 mill. de unidades</h3>
+        <div class="revenue-kicker">Tres perspectivas independientes</div>
+        <h3 id="breakdown-title">Las 23,81 mill. de unidades, desde tres ángulos</h3>
         <div class="breakdown-grid">
           <article class="breakdown-card">
             <h4>Según el momento de lanzamiento</h4>
@@ -337,6 +316,6 @@
 
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span><span>Noticias · Calendario · Reseñas · Contacto</span></div></footer>
 <script src="../js/main.js?v=20260728-2"></script>
-<script src="../js/capcom-results-charts.js?v=20260728-6"></script>
+<script src="../js/capcom-results-charts.js?v=20260728-7"></script>
 </body>
 </html>

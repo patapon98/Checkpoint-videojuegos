@@ -1,0 +1,184 @@
+{
+  "updatedAt": "2026-07-29",
+  "region": "España y Europa",
+  "months": [
+    {
+      "id": "2026-08",
+      "label": "Agosto 2026",
+      "availability": "Del 4 al 31 de agosto",
+      "headline": "PlayStation Plus en agosto de 2026",
+      "source": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/",
+      "groups": [
+        {
+          "id": "essential",
+          "label": "Essential",
+          "access": "Disponible también para Extra y Premium",
+          "games": [
+            {
+              "title": "Dying Light 2 Stay Human: Reloaded Edition",
+              "platforms": ["PS5", "PS4"],
+              "available": "4–31 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/07/5cdc2119766ef3e9f79921f669ad0f5f4a4e5349.jpg",
+              "summary": "Acción y supervivencia en una ciudad posapocalíptica que puede recorrerse en solitario o en cooperativo.",
+              "source": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+            },
+            {
+              "title": "Big Walk",
+              "platforms": ["PS5"],
+              "available": "4–31 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/07/62653875e39800fd0931ab582a4a082c767d64ab.jpg",
+              "summary": "Una aventura cooperativa centrada en hablar, orientarse y resolver desafíos con amigos.",
+              "source": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+            },
+            {
+              "title": "Signalis",
+              "platforms": ["PS4"],
+              "available": "4–31 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/07/dca788f5daab1fb265812d328fa0bfe84b63db14.jpg",
+              "summary": "Terror de supervivencia psicológico con estética retrofuturista, puzles y una atmósfera opresiva.",
+              "source": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+            }
+          ]
+        },
+        {
+          "id": "extra",
+          "label": "Extra",
+          "access": "Catálogo de juegos",
+          "pending": "Sony todavía no ha anunciado el catálogo de agosto. Esta sección se completará cuando se publique la información oficial."
+        },
+        {
+          "id": "premium",
+          "label": "Premium",
+          "access": "Clásicos y ventajas adicionales",
+          "pending": "Los clásicos y añadidos de Premium para agosto todavía no se han anunciado oficialmente."
+        }
+      ]
+    },
+    {
+      "id": "2026-07",
+      "label": "Julio 2026",
+      "availability": "Juegos mensuales hasta el 3 de agosto",
+      "headline": "PlayStation Plus en julio de 2026",
+      "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/",
+      "groups": [
+        {
+          "id": "essential",
+          "label": "Essential",
+          "access": "Disponible también para Extra y Premium",
+          "games": [
+            {
+              "title": "Call of Duty: Modern Warfare III – Cross-Gen Bundle",
+              "platforms": ["PS5", "PS4"],
+              "available": "7 de julio–3 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/07/ccf0a4447756fee9ba12ee9bd19916e480d3fa5e.jpg",
+              "summary": "Campaña, multijugador y modo Zombis en el paquete intergeneracional del shooter de Activision.",
+              "source": "https://blog.playstation.com/2026/07/01/playstation-plus-monthly-games-for-july-call-of-duty-modern-warfare-iii-for-the-king-ii-crosscode/"
+            },
+            {
+              "title": "For the King II",
+              "platforms": ["PS5", "PS4"],
+              "available": "7 de julio–3 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/07/2fc6da856c5b7554f5f7a0a0d0fd5d1b4220fa4d.jpg",
+              "summary": "Rol táctico con estructura de juego de mesa y partidas cooperativas para hasta cuatro jugadores.",
+              "source": "https://blog.playstation.com/2026/07/01/playstation-plus-monthly-games-for-july-call-of-duty-modern-warfare-iii-for-the-king-ii-crosscode/"
+            },
+            {
+              "title": "CrossCode",
+              "platforms": ["PS5", "PS4"],
+              "available": "7 de julio–3 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/07/9d2e7957da760fb32462004b112bce5b2e3147bb.jpg",
+              "summary": "Un RPG de acción con estética de 16 bits, combate veloz y puzles de mazmorra.",
+              "source": "https://blog.playstation.com/2026/07/01/playstation-plus-monthly-games-for-july-call-of-duty-modern-warfare-iii-for-the-king-ii-crosscode/"
+            }
+          ]
+        },
+        {
+          "id": "extra",
+          "label": "Extra",
+          "access": "También disponible para Premium",
+          "games": [
+            {
+              "title": "Avatar: Frontiers of Pandora",
+              "platforms": ["PS5"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/726aab05578f54b5abf6473f8bee26466d05780a.jpg",
+              "summary": "Aventura de acción en mundo abierto ambientada en la frontera occidental de Pandora.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Rise of the Ronin",
+              "platforms": ["PS5"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/8db364ea489bc9de8561cddd787648db5e0e8981.jpg",
+              "summary": "RPG de acción en mundo abierto de Team Ninja situado en el Japón del siglo XIX.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Firefighting Simulator: Ignite",
+              "platforms": ["PS5"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/10cf944ea315bac79c7841323acb220bdc944d99.jpg",
+              "summary": "Simulación cooperativa de emergencias con incendios dinámicos y rescates en equipo.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Mighty Morphin Power Rangers: Rita’s Rewind",
+              "platforms": ["PS5", "PS4"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/528f7750110a022a8f03ddf661806bc8e92ee26a.jpg",
+              "summary": "Beat ’em up de desplazamiento lateral inspirado en la serie clásica de los Power Rangers.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Dying Light",
+              "platforms": ["PS4"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/30b4e73b8580070dbb17d37cceaea942b41be0ea.jpg",
+              "summary": "Acción de supervivencia en primera persona con parkour, combate y juego cooperativo.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Citizen Sleeper 2: Starward Vector",
+              "platforms": ["PS5"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/8a2d2b888ab51e8e05a4bc06cf98da5a9640c352.jpg",
+              "summary": "RPG narrativo de ciencia ficción basado en decisiones, contratos y tiradas de dados.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Snow Bros. Wonderland",
+              "platforms": ["PS5"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/069d263548e5c6f369dd9b63f0dce992e7577fde.jpg",
+              "summary": "El arcade clásico regresa con perspectiva isométrica, acción cooperativa y escenarios en 3D.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            }
+          ]
+        },
+        {
+          "id": "premium",
+          "label": "Premium",
+          "access": "Catálogo de clásicos",
+          "games": [
+            {
+              "title": "Psi-Ops: The Mindgate Conspiracy",
+              "platforms": ["PS5", "PS4"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/f40ab68d4c43399801e2d0c5a46d2bd2fa8b3895.jpg",
+              "summary": "Clásico de acción de PS2 basado en poderes psíquicos, sigilo y manipulación del entorno.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            },
+            {
+              "title": "Indigo Prophecy",
+              "platforms": ["PS4"],
+              "available": "Desde el 21 de julio",
+              "image": "https://blog.playstation.com/uploads/2026/07/e1afd8dbbbf76fd7526a7b65d0602e5f5652861b.png",
+              "summary": "El thriller sobrenatural de Quantic Dream, conocido en Europa como Fahrenheit.",
+              "source": "https://blog.playstation.com/2026/07/15/playstation-plus-game-catalog-for-july-avatar-frontiers-of-pandora-rise-of-the-ronin-firefighting-simulator-ignite-and-more/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -32,3 +32,17 @@ html[data-theme="dark"] .logo .site-logo-mark{
   .logo{font-size:1.28rem}
   .logo .site-logo-mark{width:30px;height:30px;margin-right:8px}
 }
+
+/* Mantiene alineadas las llamadas a la acción del hero cuando se apilan. */
+@media(max-width:540px){
+  .home-page .hero .line:has(> .btn){
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+  }
+
+  .home-page .hero .line:has(> .btn) .btn.ghost{
+    margin-left:0;
+  }
+}

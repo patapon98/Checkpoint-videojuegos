@@ -135,7 +135,7 @@ document.querySelectorAll('[data-scroll-top]').forEach(button=>{
 
 const revealImmediately=elements=>elements.forEach(el=>el.classList.add('visible'));
 
-const observeReveals=(elements,{stagger=false}={})=>{
+const observeReveals=(elements,{stagger=false,rootMargin='0px 0px -4% 0px'}={})=>{
   if(reducedMotion||!('IntersectionObserver' in window)){
     revealImmediately(elements);
     return;
@@ -152,7 +152,7 @@ const observeReveals=(elements,{stagger=false}={})=>{
         entry.target.style.removeProperty('transition-delay');
       },{once:true});
     });
-  },{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+  },{threshold:.08,rootMargin});
   elements.forEach(el=>obs.observe(el));
 };
 
@@ -163,7 +163,16 @@ if(document.body.classList.contains('calendar-page')){
    */
   window.addEventListener('calendar:ready',()=>observeReveals(revealEls,{stagger:true}),{once:true});
 }else{
-  observeReveals(revealEls);
+  const earlyMobileNewsReveal=
+    document.body.classList.contains('news-page')&&
+    window.matchMedia('(max-width:700px)').matches;
+  if(earlyMobileNewsReveal){
+    const newsMain=revealEls.filter(el=>el.matches('main'));
+    observeReveals(revealEls.filter(el=>!newsMain.includes(el)));
+    observeReveals(newsMain,{rootMargin:'0px 0px 45% 0px'});
+  }else{
+    observeReveals(revealEls);
+  }
 }
 
 /* ---------- Nav interna activa según scroll ---------- */

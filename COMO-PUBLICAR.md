@@ -49,6 +49,23 @@ Si el cambio no aparece, revisa primero que el commit esté realmente en `main`,
 
 ## Publicar contenido nuevo
 
+### Artículos de análisis
+
+Las reglas editoriales completas están en las secciones «Artículos de análisis», «Cifras y unidades», «Gráficos e infografías» e «Imágenes en artículos» de [`docs/PROJECT_RULES.md`](docs/PROJECT_RULES.md).
+
+Antes de entregar o publicar un artículo de análisis:
+
+1. Comprueba que la idea central y su relevancia se entienden desde el inicio.
+2. Contrasta los datos con las fuentes primarias y revisa varios medios solventes para obtener contexto.
+3. Verifica que se distinguen los hechos, la interpretación editorial, los datos del periodo y las cifras acumuladas.
+4. Confirma que cada cifra indica la métrica, la unidad, el periodo y la fecha de corte necesarios para interpretarla.
+5. Revisa que cada gráfico mantiene magnitudes comparables y que sus cambios de vista actualizan título, escala, orden, unidades, *tooltips* y nota metodológica.
+6. Prueba todos los *tooltips* en los límites superior, inferior y laterales. Comprueba también barras superiores y puntos extremos.
+7. Verifica las interacciones con ratón, teclado y pantalla táctil, y comprueba que las animaciones respetan `prefers-reduced-motion`.
+8. Revisa en el despliegue real el encuadre, la resolución, el texto alternativo y la procedencia de todas las imágenes.
+9. Comprueba los enlaces internos, las fuentes, los metadatos, la URL canónica y los datos estructurados.
+10. Valida el resultado en escritorio y móvil, modo claro y oscuro, Chromium y Firefox. Revisa desbordamientos, caché y cambios de vista.
+
 ### Noticias
 
 Comprueba la categoría, la fecha, las fuentes, el reverso ampliado, las insignias y el comportamiento en portada y en la página de Noticias. Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.

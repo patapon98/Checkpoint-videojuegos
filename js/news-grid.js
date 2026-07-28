@@ -146,21 +146,81 @@
       if(dot) showMobileSlide(Number(dot.dataset.mobileSlide));
     });
 
-    let pointerStart=null;
+    /* Arrastre en tiempo real, igual que el carrusel de la portada: la tarjeta
+       sigue al dedo mientras se desliza y luego encaja con una transición. */
+    let pointerState=null;
     const viewport=mobileCarousel.querySelector('.news-mobile-viewport');
+    const getSlideOffset=index=>{
+      const slides=[...mobileTrack.querySelectorAll('.news-archive-card:not([hidden])')];
+      return slides[index]?.offsetLeft||0;
+    };
+    const setTrackPosition=(offset,dragOffset=0)=>{
+      mobileTrack.style.transform=`translate3d(${Math.round(-offset+dragOffset)}px,0,0)`;
+    };
+    const clearDrag=()=>{
+      pointerState=null;
+      mobileCarousel.classList.remove('is-dragging');
+      mobileTrack.classList.remove('is-dragging');
+    };
     viewport.addEventListener('pointerdown',event=>{
+      if(!event.isPrimary||event.button!==0) return;
       if(event.target.closest('a,button')) return;
-      pointerStart={x:event.clientX,y:event.clientY};
+      mobileTrack.classList.remove('peek-nudge');
+      mobileCarousel.querySelector('[data-news-mobile-swipe-hint]')?.classList.remove('show');
+      pointerState={
+        id:event.pointerId,
+        x:event.clientX,
+        y:event.clientY,
+        startedAt:performance.now(),
+        baseOffset:getSlideOffset(mobileSlide),
+        axis:null
+      };
+      try{viewport.setPointerCapture(event.pointerId)}catch(e){}
     });
-    viewport.addEventListener('pointerup',event=>{
-      if(!pointerStart) return;
-      const deltaX=event.clientX-pointerStart.x;
-      const deltaY=event.clientY-pointerStart.y;
-      pointerStart=null;
-      if(Math.abs(deltaX)<45||Math.abs(deltaX)<=Math.abs(deltaY)*1.15) return;
-      showMobileSlide(mobileSlide+(deltaX<0?1:-1));
-    });
-    viewport.addEventListener('pointercancel',()=>{pointerStart=null;});
+    viewport.addEventListener('pointermove',event=>{
+      if(!pointerState||event.pointerId!==pointerState.id) return;
+      const deltaX=event.clientX-pointerState.x;
+      const deltaY=event.clientY-pointerState.y;
+      const absX=Math.abs(deltaX);
+      const absY=Math.abs(deltaY);
+      if(!pointerState.axis){
+        if(Math.max(absX,absY)<7) return;
+        if(absX>absY*1.08) pointerState.axis='x';
+        else if(absY>absX) pointerState.axis='y';
+        else return;
+      }
+      if(pointerState.axis!=='x') return;
+      event.preventDefault();
+      mobileCarousel.classList.add('is-dragging');
+      mobileTrack.classList.add('is-dragging');
+      const slides=[...mobileTrack.querySelectorAll('.news-archive-card:not([hidden])')];
+      let dragOffset=deltaX;
+      const beyondFirst=mobileSlide===0&&deltaX>0;
+      const beyondLast=mobileSlide===slides.length-1&&deltaX<0;
+      if(beyondFirst||beyondLast) dragOffset*=0.28;
+      const limit=viewport.clientWidth*0.92;
+      dragOffset=Math.max(-limit,Math.min(limit,dragOffset));
+      setTrackPosition(pointerState.baseOffset,dragOffset);
+    },{passive:false});
+    const finishPointer=(event,cancelled)=>{
+      if(!pointerState||event.pointerId!==pointerState.id) return;
+      const state=pointerState;
+      const deltaX=event.clientX-state.x;
+      const elapsed=Math.max(1,performance.now()-state.startedAt);
+      const velocity=deltaX/elapsed;
+      const horizontal=state.axis==='x';
+      clearDrag();
+      try{if(viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId)}catch(e){}
+      if(!horizontal) return;
+      const threshold=Math.min(90,viewport.clientWidth*0.18);
+      const shouldAdvance=!cancelled&&(Math.abs(deltaX)>=threshold||Math.abs(velocity)>=0.5);
+      const target=shouldAdvance?mobileSlide+(deltaX<0?1:-1):mobileSlide;
+      /* Fuerza un fotograma entre el arrastre sin transición y el ajuste final. */
+      void mobileTrack.offsetWidth;
+      showMobileSlide(target);
+    };
+    viewport.addEventListener('pointerup',event=>finishPointer(event,false));
+    viewport.addEventListener('pointercancel',event=>finishPointer(event,true));
 
     let seenSwipeHint=true;
     try{seenSwipeHint=sessionStorage.getItem('finalsecreto:seen-news-archive-carousel-hint')==='1'}catch(e){}

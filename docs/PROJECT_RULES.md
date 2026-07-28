@@ -40,9 +40,48 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No publicar rumores débiles, polémicas menores de redes sociales, parches, skins, tráileres rutinarios o noticias demasiado pequeñas.
 - No presentar una inferencia como un hecho confirmado.
 - En artículos extensos, escribir los títulos de videojuegos en *cursiva* y usar **negritas** selectivas para cifras, hechos y conclusiones que ayuden a escanear el texto; no aplicar énfasis de forma indiscriminada.
+### Artículos de análisis
+
+- Antes de redactar, revisar íntegramente las fuentes primarias y consultar la cobertura de varios medios solventes para detectar contexto, antecedentes y posibles errores de interpretación. Las cifras y los hechos deben proceder de la fuente original cuando esté disponible.
+- Definir antes de escribir cuál es la idea central del artículo y por qué importa. No limitarse a reorganizar un comunicado corporativo.
+- Abrir los artículos complejos con unas claves breves que permitan comprender la conclusión principal antes de entrar en los detalles.
+- Organizar la información de forma progresiva. Primero se explica el periodo, concepto o contexto necesario. Después se presentan los datos y, finalmente, su interpretación.
+- Cada sección debe responder a una pregunta concreta. No agrupar bajo un mismo encabezado dimensiones diferentes, como formato, plataforma y territorio.
+- No asumir conocimientos previos. Las siglas y los conceptos especializados deben explicarse la primera vez. Una vez definidos, pueden alternarse de forma natural la denominación completa y la abreviatura para evitar repeticiones.
+- Separar con claridad los resultados de toda la empresa y los de una división, los ingresos y las copias vendidas, los datos de un periodo y las cifras acumuladas, y los hechos publicados por la fuente y la interpretación editorial de Final Secreto.
+- Si una empresa utiliza un término potencialmente ambiguo, explicar qué incluye exactamente en ese documento. No trasladar su terminología corporativa al artículo sin aclararla.
+- No generalizar una conclusión a toda la industria a partir de los datos de una sola empresa, plataforma, trimestre o territorio. Se puede relacionar con debates más amplios, pero indicando los límites de la comparación.
+- Incorporar enlaces internos cuando aporten contexto real a la lectura. La relación debe explicarse en el texto y no añadirse como una referencia aislada.
+- La publicación de una pieza nueva no la convierte automáticamente en «Esencial» ni debe desplazar otra más importante. La prioridad se decide por relevancia editorial, no solo por recencia.
+
+### Cifras y unidades
+
 - En información financiera o cuantitativa, indicar siempre las fechas exactas del periodo y explicar qué significa el trimestre fiscal antes de analizarlo.
 - Cuando una cifra se refiera al número de videojuegos comercializados, escribir «copias vendidas» o «unidades», no «ventas» a secas. Reservar «ventas» para contextos monetarios o generales en los que no pueda confundirse con ingresos.
-- No enfrentar en un mismo gráfico copias vendidas en un periodo y copias vendidas acumuladas, ni presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables, explicados junto al gráfico.
+- Mantener la misma unidad y el mismo criterio dentro de cada comparación.
+- Escribir «millones» en la primera mención y en las frases principales. Usar «mill.» en gráficos, tablas, etiquetas y repeticiones donde mejore la legibilidad.
+- Cuando se utilice una moneda poco familiar para el público español, conservar la cifra original y añadir una equivalencia aproximada en euros junto a las cantidades principales. Indicar la fecha o referencia del tipo de cambio y no repetir la conversión en cada aparición.
+- En información financiera, diferenciar siempre ingresos, beneficio operativo y margen. Añadir un glosario breve junto al gráfico cuando los conceptos puedan resultar desconocidos.
+
+### Gráficos e infografías
+
+- Todo gráfico debe indicar claramente en el título o subtítulo la métrica, la unidad y el periodo representados.
+- Añadir junto a cada visualización la fuente, la fecha de corte y una nota metodológica cuando sea necesaria para interpretarla correctamente.
+- No mostrar simultáneamente datos de un periodo y cifras acumuladas como si fueran comparables. Pueden compartir un componente si aparecen como estados excluyentes y, al cambiar de vista, se actualizan el título, el orden, la escala, las unidades, los *tooltips* y la explicación metodológica.
+- No presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables.
+- Cuando un control sustituya completamente una representación por otra, usar preferentemente un desplegable compacto. Mantener botones cuando permitan activar varias series simultáneamente.
+- Evitar repetir de forma visible una tabla que reproduzca exactamente el gráfico. Conservar una alternativa accesible mediante texto, semántica o datos no redundantes.
+- Los *tooltips* deben calcular los límites superior, inferior y laterales del gráfico. Deben comprobarse expresamente las barras superiores, los puntos extremos y las visualizaciones cercanas a los bordes.
+- Toda interacción debe funcionar con ratón, teclado y pantalla táctil.
+- Las animaciones deben ayudar a entender la aparición o el cambio de los datos y respetar `prefers-reduced-motion`.
+- Validar los gráficos en el despliegue real, tanto en escritorio como en móvil. Comprobar cambios de vista, escalas, textos, desbordamientos y caché.
+
+### Imágenes en artículos
+
+- Comprobar las imágenes en la página desplegada, no solo mediante la existencia del archivo.
+- Evitar recortes accidentales, deformaciones, fondos añadidos, marcos negros o zonas importantes fuera del encuadre.
+- Ajustar `object-fit`, `object-position` y el contenedor según la composición de cada imagen. Si el recurso no funciona correctamente, sustituirlo por otro adecuado.
+- Toda imagen debe tener procedencia clara, resolución suficiente y texto alternativo descriptivo.
 
 ## 4. Categorías de noticias
 

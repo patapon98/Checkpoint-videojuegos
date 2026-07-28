@@ -295,7 +295,7 @@
       svg.append(name);
 
       const periodLabel = isCumulative
-        ? "acumulados hasta el 30 de junio de 2026"
+        ? "hasta el 30 de junio de 2026"
         : "entre el 1 de abril y el 30 de junio de 2026";
       const rect = svgEl("rect", {
         x: margin.left,
@@ -306,7 +306,7 @@
         class: "chart-bar",
         tabindex: "0",
         role: "graphics-symbol",
-        "aria-label": `${item.name}, ${format(value)} mill. de unidades ${periodLabel}`
+        "aria-label": `${item.name}, ${format(value)} mill. de copias vendidas ${periodLabel}`
       });
       rect.style.setProperty("--animation-delay", `${index * 45}ms`);
       svg.append(rect);
@@ -467,8 +467,6 @@
       }
 
       const show = () => {
-        const segmentBox = segment.getBoundingClientRect();
-        const cardBox = card.getBoundingClientRect();
         const heading = document.createElement("b");
         heading.textContent = segment.dataset.breakdownLabel;
         tooltip.replaceChildren(heading, document.createTextNode(segment.dataset.breakdownValue));

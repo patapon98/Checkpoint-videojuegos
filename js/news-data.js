@@ -6,9 +6,13 @@ window.FINALSECRETO_NEWS = [
     emphasis: { es: ["algunos juegos instalados desde disco", "error 0x87e107df", "tener el disco no garantizó poder jugar"] },
     category: { es: "Plataformas" },
     date: "2026-07-27",
+    publishedAt: "2026-07-27T03:00:00Z",
     updated: "2026-07-28",
     featured: false,
-    ticker: true,
+    ticker: {
+      keyword: { es: "Xbox" },
+      copy: { es: "Xbox sufrió una caída global que llegó a bloquear algunos juegos en disco" }
+    },
     tone: "xbox",
     title: {
       es: "Una caída global de Xbox llegó a bloquear algunos juegos en disco"
@@ -44,7 +48,10 @@ window.FINALSECRETO_NEWS = [
     date: "2026-07-01",
     updated: "2026-07-25",
     featured: true,
-    ticker: true,
+    ticker: {
+      keyword: { es: "PlayStation" },
+      copy: { es: "PlayStation dejará de producir discos para nuevos juegos en 2028" }
+    },
     tone: "playstation",
     title: {
       es: "PlayStation dejará de producir discos para sus nuevos juegos en 2028",
@@ -83,7 +90,10 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Juegos", en: "Games" },
     date: "2026-07-17",
     featured: false,
-    ticker: true,
+    ticker: {
+      keyword: { es: "Fallout" },
+      copy: { es: "Fallout confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian" }
+    },
     tone: "xbox",
     title: {
       es: "Bethesda confirma dos remasterizaciones de Fallout y un nuevo proyecto de Obsidian",
@@ -148,7 +158,10 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-22",
     featured: false,
-    ticker: true,
+    ticker: {
+      keyword: { es: "Xbox" },
+      copy: { es: "Xbox estrena la retrocompatibilidad de sus clásicos en PC" }
+    },
     tone: "xbox",
     title: {
       es: "Xbox lleva su retrocompatibilidad a PC con cuatro clásicos",
@@ -182,8 +195,10 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-25",
     featured: false,
-    latest: true,
-    ticker: true,
+    ticker: {
+      keyword: { es: "God of War Laufey" },
+      copy: { es: "God of War Laufey llegará a PS5 el 16 de febrero de 2027" }
+    },
     tone: "playstation",
     title: {
       es: "God of War Laufey llegará el 16 de febrero de 2027 y prepara el regreso de Kratos",
@@ -259,7 +274,10 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Industria", en: "Industry" },
     date: "2026-07-23",
     featured: false,
-    ticker: true,
+    ticker: {
+      keyword: { es: "Electronic Arts" },
+      copy: { es: "Electronic Arts supera el control europeo de competencia para su compra" }
+    },
     tone: "industry",
     title: {
       es: "La UE autoriza bajo sus reglas de competencia la compra de Electronic Arts por 55.000 millones de dólares",
@@ -292,7 +310,10 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-23",
     featured: false,
-    ticker: true,
+    ticker: {
+      keyword: { es: "Xbox" },
+      copy: { es: "Xbox prueba el juego en la nube gratuito con anuncios" }
+    },
     tone: "xbox",
     title: {
       es: "Xbox prueba el juego en la nube gratuito con anuncios",
@@ -391,7 +412,10 @@ window.FINALSECRETO_NEWS = [
     date: "2026-07-06",
     updated: "2026-07-15",
     featured: false,
-    ticker: true,
+    ticker: {
+      keyword: { es: "Xbox" },
+      copy: { es: "Xbox recortará 3.200 empleos durante su reestructuración" }
+    },
     tone: "industry",
     title: {
       es: "Xbox recortará 3.200 empleos en su mayor reestructuración",

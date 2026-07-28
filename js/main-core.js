@@ -236,11 +236,13 @@ if(newsTools){
   let toolsFrame=0;
 
   const updateToolsVisibility=()=>{
-    const chromeHeight=(document.querySelector('header')?.offsetHeight||0)+newsTools.offsetHeight;
+    const stickyTop=parseFloat(getComputedStyle(newsTools).top)||0;
+    const naturalBottom=window.scrollY+newsTools.getBoundingClientRect().top+newsTools.offsetHeight;
+    const hideAfter=Math.max(0,naturalBottom-stickyTop);
     const y=window.scrollY;
     const delta=y-toolsLastY;
-    if(delta>4 && y>chromeHeight) newsTools.classList.add('nav-hidden');
-    else if(delta<-4 || y<chromeHeight) newsTools.classList.remove('nav-hidden');
+    if(delta>4 && y>hideAfter) newsTools.classList.add('nav-hidden');
+    else if(delta<-4 || y<=hideAfter) newsTools.classList.remove('nav-hidden');
     toolsLastY=y;
     toolsFrame=0;
   };

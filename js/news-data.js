@@ -3,26 +3,26 @@ window.FINALSECRETO_NEWS = [
   {
     id: "capcom-resultados-ventas-junio-2026",
     important: true,
-    emphasis: { es: ["23,81 millones de juegos", "el 89,3% procedió del catálogo", "PRAGMATA superó 2,5 millones"] },
+    emphasis: { es: ["del 1 de abril al 30 de junio de 2026", "21,26 millones correspondieron a juegos publicados antes de abril", "PRAGMATA vendió 2,51 millones"] },
     category: { es: "Industria" },
     date: "2026-07-28",
-    featured: true,
+    featured: false,
     ticker: {
       keyword: { es: "Capcom" },
-      copy: { es: "Capcom vendió 23,81 millones de juegos en tres meses y el 89% procedió de su catálogo" }
+      copy: { es: "Capcom vendió 23,81 millones de juegos entre abril y junio; 21,26 millones eran títulos anteriores" }
     },
     article: {
       url: "/noticias/ventas-capcom-resultados-junio-2026"
     },
     tone: "industry",
     title: {
-      es: "Capcom vende 23,81 millones de juegos en tres meses y el 89% procede de su catálogo"
+      es: "Capcom vendió 23,81 millones de juegos entre abril y junio, impulsada por títulos anteriores"
     },
     summary: {
-      es: "La editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA superó 2,5 millones, pero 21,26 de los 23,81 millones de juegos vendidos procedieron del catálogo."
+      es: "Del 1 de abril al 30 de junio de 2026, la editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA vendió 2,51 millones, mientras que 21,26 millones correspondieron a juegos publicados antes de abril."
     },
     why: {
-      es: "Las cifras muestran hasta qué punto Resident Evil, Monster Hunter y Devil May Cry sostienen el crecimiento de Capcom años después de cada lanzamiento."
+      es: "El informe muestra cómo Resident Evil, Monster Hunter y Devil May Cry sostienen el negocio de Capcom, pero exige distinguir las ventas del trimestre de los acumulados históricos."
     },
     sources: [
       {
@@ -84,7 +84,7 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Plataformas", en: "Platforms" },
     date: "2026-07-01",
     updated: "2026-07-25",
-    featured: false,
+    featured: true,
     ticker: {
       keyword: { es: "PlayStation" },
       copy: { es: "PlayStation dejará de producir discos para nuevos juegos en 2028" }

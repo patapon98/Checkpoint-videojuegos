@@ -2,6 +2,7 @@
   const NS = "http://www.w3.org/2000/svg";
   const colors = ["#0b4da2", "#e23835", "#8b5cf6", "#0f9d76", "#e69b18"];
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const JPY_PER_EUR = 185.08;
 
   const financial = [
     { year: "2022", period: "1 abr–30 jun 2022", sales: 25.2, profit: 12.0, margin: 47.8 },
@@ -131,7 +132,9 @@
     const rawMax = Math.max(...values);
     const max = metric === "margin" ? 70 : Math.ceil(rawMax / 10) * 10;
     const ticks = metric === "margin" ? 7 : max / 10;
-    const unit = metric === "margin" ? "%" : " mil millones de yenes";
+    const financialValue = value => metric === "margin"
+      ? `${format(value)}%`
+      : `${format(value)} mil millones de yenes (≈ ${format(Math.round(value * 1000 / JPY_PER_EUR))} millones de euros)`;
     const svg = svgEl("svg", {
       viewBox: `0 0 ${width} ${height}`
     });
@@ -154,11 +157,11 @@
         class: "chart-bar",
         tabindex: "0",
         role: "graphics-symbol",
-        "aria-label": `${item.period}, ${format(value)}${unit}`
+        "aria-label": `${item.period}, ${financialValue(value)}`
       });
       rect.style.setProperty("--animation-delay", `${index * 75}ms`);
       svg.append(rect);
-      bindTooltip(container, tooltip, rect, item.period, `${format(value)}${unit}`);
+      bindTooltip(container, tooltip, rect, item.period, financialValue(value));
 
       const valueText = svgEl("text", {
         x: x + barWidth / 2,
@@ -175,7 +178,7 @@
         "text-anchor": "middle",
         class: "chart-axis-label"
       });
-      label.textContent = `abr–jun ${item.year.slice(2)}`;
+      label.textContent = `Q1 ${item.year}`;
       svg.append(label);
     });
 
@@ -380,6 +383,51 @@
     if (animate) restartReveal(container);
   }
 
+  function setupBreakdownTooltips() {
+    const segments = document.querySelectorAll("[data-breakdown-label]");
+    const tooltips = [];
+
+    segments.forEach(segment => {
+      const card = segment.closest(".breakdown-card");
+      if (!card) return;
+      let tooltip = card.querySelector(".breakdown-tooltip");
+      if (!tooltip) {
+        tooltip = document.createElement("div");
+        tooltip.className = "breakdown-tooltip";
+        tooltip.hidden = true;
+        card.append(tooltip);
+        tooltips.push(tooltip);
+      }
+
+      const show = () => {
+        const segmentBox = segment.getBoundingClientRect();
+        const cardBox = card.getBoundingClientRect();
+        const heading = document.createElement("b");
+        heading.textContent = segment.dataset.breakdownLabel;
+        tooltip.replaceChildren(heading, document.createTextNode(segment.dataset.breakdownValue));
+        tooltip.hidden = false;
+        tooltip.style.left = `${segmentBox.left - cardBox.left + segmentBox.width / 2}px`;
+        tooltip.style.top = `${segmentBox.top - cardBox.top}px`;
+      };
+      const hide = () => {
+        tooltip.hidden = true;
+      };
+
+      segment.addEventListener("mouseenter", show);
+      segment.addEventListener("focus", show);
+      segment.addEventListener("pointerdown", show);
+      segment.addEventListener("mouseleave", hide);
+      segment.addEventListener("blur", hide);
+    });
+
+    document.addEventListener("pointerdown", event => {
+      if (event.target.closest("[data-breakdown-label]")) return;
+      tooltips.forEach(tooltip => {
+        tooltip.hidden = true;
+      });
+    });
+  }
+
   function setupRevealAnimations() {
     const targets = document.querySelectorAll("[data-chart-reveal]");
     if (reducedMotion || !("IntersectionObserver" in window)) {
@@ -417,6 +465,7 @@
   renderFinancial();
   renderGames();
   renderTimeline();
+  setupBreakdownTooltips();
   setupRevealAnimations();
 
   let resizeTimer;

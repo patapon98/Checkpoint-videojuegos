@@ -1,6 +1,8 @@
 (function () {
   const news = Array.isArray(window.FINALSECRETO_NEWS) ? window.FINALSECRETO_NEWS : [];
   const locale = { es: "es-ES", en: "en-GB" };
+  const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
+  let latestExpiryTimer = null;
   const homeDetails = {
     "playstation-fin-formato-fisico": {
       es: [
@@ -162,9 +164,37 @@
     return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}</div>`;
   }
 
+  function latestExpiry(item) {
+    if (!item.important || !item.publishedAt) return 0;
+    const published = Date.parse(item.publishedAt);
+    return Number.isFinite(published) ? published + LATEST_WINDOW_MS : 0;
+  }
+
+  function isLatest(item, now = Date.now()) {
+    const expiry = latestExpiry(item);
+    return expiry > now && expiry - LATEST_WINDOW_MS <= now;
+  }
+
   function latestBadge(item, lang) {
-    if (!item.latest) return "";
-    return `<span class="news-latest"><i aria-hidden="true"></i>${lang === "en" ? "Breaking" : "Última hora"}</span>`;
+    if (!isLatest(item)) return "";
+    return `<span class="news-latest" data-latest-expiry="${latestExpiry(item)}"><i aria-hidden="true"></i>${lang === "en" ? "Breaking" : "Última hora"}</span>`;
+  }
+
+  function scheduleLatestExpiry() {
+    window.clearTimeout(latestExpiryTimer);
+    const now = Date.now();
+    const expiries = [...document.querySelectorAll("[data-latest-expiry]")]
+      .map(badge => Number(badge.dataset.latestExpiry))
+      .filter(expiry => Number.isFinite(expiry) && expiry > now);
+    if (!expiries.length) return;
+    const nextExpiry = Math.min(...expiries);
+    latestExpiryTimer = window.setTimeout(() => {
+      const current = Date.now();
+      document.querySelectorAll("[data-latest-expiry]").forEach(badge => {
+        if (Number(badge.dataset.latestExpiry) <= current) badge.remove();
+      });
+      scheduleLatestExpiry();
+    }, Math.min(nextExpiry - now + 50, 2147483647));
   }
 
   function importanceBadge(item, lang) {
@@ -531,39 +561,14 @@
   }
 
   function tickerCopy(item, lang) {
-    const copy = {
-      "god-of-war-laufey-fecha": {
-        es: ["God of War Laufey", " llegará a PS5 el 16 de febrero de 2027"],
-        en: ["God of War Laufey", " comes to PS5 on February 16, 2027"]
-      },
-      "bethesda-futuro-fallout": {
-        es: ["Fallout", " confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian"],
-        en: ["Fallout", " confirms Fallout 3 and New Vegas remasters and a new Obsidian project"]
-      },
-      "playstation-fin-formato-fisico": {
-        es: ["PlayStation", " dejará de producir discos para nuevos juegos en 2028"],
-        en: ["PlayStation", " will stop producing discs for new games in 2028"]
-      },
-      "xbox-retrocompatibilidad-pc": {
-        es: ["Xbox", " estrena la retrocompatibilidad de sus clásicos en PC"],
-        en: ["Xbox", " brings backward-compatible classics to PC"]
-      },
-      "ea-compra-autorizacion-ue": {
-        es: ["Electronic Arts", " supera el control europeo de competencia para su compra"],
-        en: ["Electronic Arts", " clears the EU merger review for its acquisition"]
-      },
-      "xbox-nube-gratis-anuncios": {
-        es: ["Xbox", " prueba el juego en la nube gratuito con anuncios"],
-        en: ["Xbox", " tests free ad-supported cloud gaming"]
-      },
-      "xbox-reestructuracion-despidos": {
-        es: ["Industria", " Xbox recortará 3.200 empleos durante su reestructuración"],
-        en: ["Industry", " Xbox will cut 3,200 jobs in its restructuring"]
-      }
-    };
-    const parts = copy[item.id]?.[lang];
-    if (!parts) return escapeHTML(text(item.title, lang));
-    return `<b>${escapeHTML(parts[0])}</b>${escapeHTML(parts[1])}`;
+    if (!item.ticker || typeof item.ticker !== "object") {
+      return escapeHTML(text(item.title, lang));
+    }
+    const copy = text(item.ticker.copy, lang) || text(item.title, lang);
+    const keyword = text(item.ticker.keyword, lang);
+    const keywordIndex = keyword ? copy.indexOf(keyword) : -1;
+    if (keywordIndex < 0) return escapeHTML(copy);
+    return `${escapeHTML(copy.slice(0, keywordIndex))}<b>${escapeHTML(keyword)}</b>${escapeHTML(copy.slice(keywordIndex + keyword.length))}`;
   }
 
   function renderNews(lang) {
@@ -620,6 +625,7 @@
         `<a href="noticias.html#${escapeHTML(item.id)}" aria-hidden="true" tabindex="-1">${tickerCopy(item, selectedLang)}</a>`
       ).join("");
     }
+    scheduleLatestExpiry();
   }
 
   window.renderNews = renderNews;

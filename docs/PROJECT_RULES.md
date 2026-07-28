@@ -41,7 +41,8 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No presentar una inferencia como un hecho confirmado.
 - En artículos extensos, escribir los títulos de videojuegos en *cursiva* y usar **negritas** selectivas para cifras, hechos y conclusiones que ayuden a escanear el texto; no aplicar énfasis de forma indiscriminada.
 - En información financiera o cuantitativa, indicar siempre las fechas exactas del periodo y explicar qué significa el trimestre fiscal antes de analizarlo.
-- No enfrentar en un mismo gráfico ventas de un periodo y ventas acumuladas, ni presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables, explicados junto al gráfico.
+- Cuando una cifra se refiera al número de videojuegos comercializados, escribir «copias vendidas» o «unidades», no «ventas» a secas. Reservar «ventas» para contextos monetarios o generales en los que no pueda confundirse con ingresos.
+- No enfrentar en un mismo gráfico copias vendidas en un periodo y copias vendidas acumuladas, ni presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables, explicados junto al gráfico.
 
 ## 4. Categorías de noticias
 

@@ -82,6 +82,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Centralizar los datos y comportamientos reutilizables.
 - No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.
 - No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
+- El sitemap se genera con `scripts/generate-sitemap.mjs`. Al publicar una reseña, la automatización de GitHub debe incorporar su URL canónica y actualizar `lastmod`; no mantener a mano una lista paralela de reseñas.
 - Actualizar las versiones de caché de todos los recursos modificados que se carguen con parámetros de versión.
 - Revisar escritorio y móvil, modo claro y oscuro, Chromium y Firefox cuando el cambio afecte a la interfaz.
 - Comprobar sintaxis, enlaces, accesibilidad básica y ausencia de huecos invisibles.

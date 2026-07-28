@@ -153,7 +153,13 @@ const observeReveals=(elements,{stagger=false,rootMargin='0px 0px -4% 0px'}={})=
       },{once:true});
     });
   },{threshold:.08,rootMargin});
-  elements.forEach(el=>obs.observe(el));
+  /* Forzamos que el navegador pinte el estado oculto antes de observar: si un
+     elemento ya está en el viewport al cargar, el observer dispara casi al
+     instante y, sin este respiro, el navegador se salta la transición. */
+  elements.forEach(el=>el.getBoundingClientRect());
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    elements.forEach(el=>obs.observe(el));
+  }));
 };
 
 if(document.body.classList.contains('calendar-page')){

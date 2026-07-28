@@ -65,7 +65,10 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - La noticia destacada debe diferenciarse visualmente sin generar una altura excesiva ni grandes huecos vacíos.
 - Usar «Relevante» y «Última hora» con moderación y solo cuando estén justificadas.
 - «Última hora» no se asigna manualmente. Se muestra automáticamente solo si la noticia tiene prioridad alta (`important: true`) y un `publishedAt` ISO 8601 de hace menos de 24 horas; al cumplirse las 24 horas debe desaparecer, incluso con la página abierta. Las noticias sin hora confirmada no llevan esta insignia.
-- Toda noticia incluida en el ticker debe declarar `ticker.keyword` y `ticker.copy`. `ticker.keyword` será la palabra o nombre propio más importante de la noticia —por ejemplo, Xbox, PlayStation, God of War Laufey o Fallout— y el componente la mostrará siempre en negrita naranja.
+- Toda nueva noticia debe declarar `ticker.keyword` y `ticker.copy`. `ticker.keyword` será la palabra o nombre propio más importante de la noticia —por ejemplo, Xbox, PlayStation, God of War Laufey o Fallout— y el componente la mostrará siempre en negrita naranja.
+- El ticker debe mostrar automáticamente y en orden las cuatro noticias más recientes; nunca se mantiene mediante una selección manual de identificadores.
+- Las noticias con página individual deben declarar `article.url`. Ese dato alimenta tanto el botón blanco «Leer noticia completa» como el archivo cronológico situado al final de Noticias.
+- El rojo queda reservado para la acción «Ver tráiler»; «Leer noticia completa» debe usar el tratamiento blanco.
 - «ESENCIAL» debe conservar el mismo diseño en la portada y en Noticias.
 
 ## 6. Interfaz permanente

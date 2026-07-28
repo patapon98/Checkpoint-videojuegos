@@ -52,6 +52,9 @@ window.FINALSECRETO_NEWS = [
       keyword: { es: "PlayStation" },
       copy: { es: "PlayStation dejará de producir discos para nuevos juegos en 2028" }
     },
+    article: {
+      url: "/noticias/playstation-fin-formato-fisico"
+    },
     tone: "playstation",
     title: {
       es: "PlayStation dejará de producir discos para sus nuevos juegos en 2028",
@@ -126,6 +129,10 @@ window.FINALSECRETO_NEWS = [
     category: { es: "Lanzamientos", en: "Releases" },
     date: "2026-07-24",
     featured: false,
+    ticker: {
+      keyword: { es: "Tomb Raider: Catalyst" },
+      copy: { es: "Tomb Raider: Catalyst apunta a 2028, aunque Amazon no confirma el retraso" }
+    },
     tone: "industry",
     title: {
       es: "Amazon apunta a 2028 para Tomb Raider: Catalyst, pero evita confirmar el retraso",
@@ -241,6 +248,10 @@ window.FINALSECRETO_NEWS = [
     date: "2026-07-25",
     featured: false,
     home: false,
+    ticker: {
+      keyword: { es: "GTA VI" },
+      copy: { es: "GTA VI para PS5 en Japón incluirá códigos que caducan 170 días después del lanzamiento" }
+    },
     tone: "playstation",
     title: {
       es: "Los códigos japoneses de GTA VI para PS5 caducarán 170 días después del lanzamiento",

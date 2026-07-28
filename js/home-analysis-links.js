@@ -1,25 +1,22 @@
 (function(){
-  const articleLinks={
-    'playstation-fin-formato-fisico':'/noticias/playstation-fin-formato-fisico'
-  };
+  const label='Leer noticia completa';
 
-  const labels={
-    es:'Leer análisis completo',
-    en:'Read full analysis'
-  };
+  function articleUrlFor(newsId){
+    const news=Array.isArray(window.FINALSECRETO_NEWS)?window.FINALSECRETO_NEWS:[];
+    return news.find(item=>item.id===newsId)?.article?.url||'';
+  }
 
   function createLink(url,title){
-    const lang=document.documentElement.lang==='en'?'en':'es';
     const link=document.createElement('a');
     link.className='news-home-analysis-link';
     link.href=url;
-    link.setAttribute('aria-label',`${labels[lang]}. ${title}`);
-    link.innerHTML=`<span>${labels[lang]}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+    link.setAttribute('aria-label',`${label}. ${title}`);
+    link.innerHTML=`<span>${label}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
     return link;
   }
 
   function enhanceCard(card){
-    const url=articleLinks[card.dataset.newsId];
+    const url=articleUrlFor(card.dataset.newsId);
     if(!url) return;
     const title=card.querySelector('h3')?.textContent?.trim()||'';
 
@@ -60,5 +57,4 @@
   if(home){
     new MutationObserver(enhance).observe(home,{childList:true,subtree:true});
   }
-  document.addEventListener('languagechange',enhance);
 })();

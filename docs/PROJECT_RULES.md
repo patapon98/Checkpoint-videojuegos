@@ -33,11 +33,16 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Escribir para un lector interesado en videojuegos, pero no asumir que conoce todos los juegos, sagas, estudios o antecedentes.
 - Explicar brevemente un término o referencia la primera vez que aparezca cuando sea necesario para entender la información.
 - Evitar los dos puntos en el texto visible. Se permiten cuando sean necesarios en horas, URLs, código, metadatos y títulos oficiales.
+- No usar el punto y coma en el cuerpo editorial ni en otros textos visibles. Sustituirlo por punto o coma, salvo cuando forme parte de una cita literal, código, estilos, una URL, una entidad HTML o un dato técnico que deba conservarse.
 - Usar titulares factuales, claros y sin exageraciones.
 - Distinguir expresamente entre hechos confirmados, información periodística y rumores.
 - Priorizar fuentes oficiales y añadir medios solventes cuando aporten contexto o contraste.
 - No publicar rumores débiles, polémicas menores de redes sociales, parches, skins, tráileres rutinarios o noticias demasiado pequeñas.
 - No presentar una inferencia como un hecho confirmado.
+- En artículos extensos, escribir los títulos de videojuegos en *cursiva* y usar **negritas** selectivas para cifras, hechos y conclusiones que ayuden a escanear el texto; no aplicar énfasis de forma indiscriminada.
+- En información financiera o cuantitativa, indicar siempre las fechas exactas del periodo y explicar qué significa el trimestre fiscal antes de analizarlo.
+- Cuando una cifra se refiera al número de videojuegos comercializados, escribir «copias vendidas» o «unidades», no «ventas» a secas. Reservar «ventas» para contextos monetarios o generales en los que no pueda confundirse con ingresos.
+- No enfrentar en un mismo gráfico copias vendidas en un periodo y copias vendidas acumuladas, ni presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables, explicados junto al gráfico.
 
 ## 4. Categorías de noticias
 

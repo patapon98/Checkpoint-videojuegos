@@ -1,6 +1,43 @@
 // Taxonomía editorial: «Lanzamientos» cubre fechas, ventanas, adelantos y retrasos; «Juegos», el resto de noticias centradas en títulos concretos.
 window.FINALSECRETO_NEWS = [
   {
+    id: "xbox-caida-global-juegos-fisicos",
+    important: true,
+    emphasis: { es: ["algunos juegos instalados desde disco", "error 0x87e107df", "tener el disco no garantizó poder jugar"] },
+    category: { es: "Plataformas" },
+    date: "2026-07-27",
+    updated: "2026-07-28",
+    featured: false,
+    ticker: true,
+    tone: "xbox",
+    title: {
+      es: "Una caída global de Xbox llegó a bloquear algunos juegos en disco"
+    },
+    summary: {
+      es: "Una interrupción de casi 20 horas impidió iniciar sesión, consultar bibliotecas, usar Game Pass, comprar y ejecutar juegos. Algunos juegos instalados desde disco tampoco arrancaron y mostraron el error 0x87e107df."
+    },
+    why: {
+      es: "La incidencia expuso la dependencia de los servidores para validar licencias. Durante la caída, tener el disco no garantizó poder jugar, una limitación relevante para la propiedad y la preservación."
+    },
+    sources: [
+      {
+        label: "Estado de Xbox",
+        type: { es: "Fuente oficial" },
+        url: "https://support.xbox.com/xbox-live-status"
+      },
+      {
+        label: "VGC",
+        type: { es: "Declaración de Xbox Support" },
+        url: "https://www.videogameschronicle.com/news/xbox-says-its-aware-of-major-outages-when-signing-in-and-launching-games-and-is-working-to-mitigate-the-issue/"
+      },
+      {
+        label: "The Verge",
+        type: { es: "Impacto en juegos físicos y restablecimiento" },
+        url: "https://www.theverge.com/games/971545/xbox-outage-disc-physical-games"
+      }
+    ]
+  },
+  {
     id: "playstation-fin-formato-fisico",
     emphasis: { es: ["juegos nuevos publicados desde enero de 2028","no podrán prestarse ni revenderse como un disco","propiedad, la reventa, la preservación"] },
     category: { es: "Plataformas", en: "Platforms" },

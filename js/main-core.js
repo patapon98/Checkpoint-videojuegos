@@ -27,7 +27,7 @@ themeMedia.addEventListener?.('change',event=>{
 });
 
 /* ============================================
-   CHECKPOINT: JS compartido
+   FINAL SECRETO: JS compartido
    ============================================ */
 
 /* ---------- i18n (solo en la home) ---------- */
@@ -380,4 +380,135 @@ if(reviewArticle){
   window.addEventListener('scroll',requestProgressUpdate,{passive:true});
   window.addEventListener('resize',requestProgressUpdate);
   updateReadingProgress();
+}
+
+
+/* ---------- Ampliación de imágenes de reseñas ---------- */
+if(reviewArticle){
+  const reviewImages=[...reviewArticle.querySelectorAll('figure>img')].filter(image=>!image.closest('a'));
+  if(reviewImages.length){
+    const lightbox=document.createElement('dialog');
+    lightbox.className='review-lightbox';
+    lightbox.setAttribute('aria-label','Imagen ampliada');
+    lightbox.innerHTML=
+      '<button class="review-lightbox-close" type="button" aria-label="Cerrar imagen ampliada">×</button>'+
+      '<figure class="review-lightbox-frame">'+
+        '<img class="review-lightbox-image" alt="">'+
+        '<figcaption class="review-lightbox-caption"></figcaption>'+
+      '</figure>';
+    document.body.appendChild(lightbox);
+
+    const lightboxImage=lightbox.querySelector('.review-lightbox-image');
+    const lightboxCaption=lightbox.querySelector('.review-lightbox-caption');
+    const closeButton=lightbox.querySelector('.review-lightbox-close');
+    let sourceImage=null;
+    let closing=false;
+
+    const nextFrame=()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    const imageTransition=(sourceRect,targetRect,opening)=>{
+      const deltaX=sourceRect.left-targetRect.left;
+      const deltaY=sourceRect.top-targetRect.top;
+      const scaleX=Math.max(.01,sourceRect.width/Math.max(1,targetRect.width));
+      const scaleY=Math.max(.01,sourceRect.height/Math.max(1,targetRect.height));
+      const compact={
+        transform:'translate('+deltaX+'px,'+deltaY+'px) scale('+scaleX+','+scaleY+')',
+        opacity:.72
+      };
+      const expanded={transform:'translate(0,0) scale(1,1)',opacity:1};
+      return lightboxImage.animate(opening?[compact,expanded]:[expanded,compact],{
+        duration:opening?380:320,
+        easing:'cubic-bezier(.22,1,.36,1)',
+        fill:'forwards'
+      });
+    };
+    const finishClose=()=>{
+      if(lightbox.open) lightbox.close();
+      else lightbox.removeAttribute('open');
+    };
+    const closeLightbox=async()=>{
+      if(!lightbox.open||closing) return;
+      closing=true;
+      if(!reducedMotion&&sourceImage?.isConnected){
+        const sourceRect=sourceImage.getBoundingClientRect();
+        const targetRect=lightboxImage.getBoundingClientRect();
+        const imageAnimation=imageTransition(sourceRect,targetRect,false);
+        const captionAnimation=lightboxCaption.animate(
+          [{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(8px)'}],
+          {duration:180,easing:'ease',fill:'forwards'}
+        );
+        const buttonAnimation=closeButton.animate(
+          [{opacity:1,transform:'scale(1)'},{opacity:0,transform:'scale(.86)'}],
+          {duration:160,easing:'ease',fill:'forwards'}
+        );
+        await Promise.allSettled([imageAnimation.finished,captionAnimation.finished,buttonAnimation.finished]);
+      }
+      finishClose();
+    };
+    const openLightbox=async image=>{
+      if(lightbox.open||closing) return;
+      sourceImage=image;
+      const sourceRect=image.getBoundingClientRect();
+      const figure=image.closest('figure');
+      const caption=figure?.querySelector('figcaption')?.textContent.trim()||image.alt.trim();
+      lightboxImage.src=image.currentSrc||image.src;
+      lightboxImage.alt=image.alt;
+      lightboxCaption.textContent=caption;
+      lightboxCaption.hidden=!caption;
+      lightbox.setAttribute('aria-label',image.alt?'Imagen ampliada: '+image.alt:'Imagen ampliada');
+      document.body.classList.add('review-lightbox-open');
+      if(typeof lightbox.showModal==='function') lightbox.showModal();
+      else lightbox.setAttribute('open','');
+      closeButton.focus();
+
+      if(!reducedMotion){
+        try{await lightboxImage.decode();}catch(error){}
+        await nextFrame();
+        if(!lightbox.open) return;
+        const targetRect=lightboxImage.getBoundingClientRect();
+        const imageAnimation=imageTransition(sourceRect,targetRect,true);
+        lightboxCaption.animate(
+          [{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],
+          {duration:220,delay:130,easing:'ease',fill:'both'}
+        );
+        closeButton.animate(
+          [{opacity:0,transform:'scale(.86)'},{opacity:1,transform:'scale(1)'}],
+          {duration:200,delay:120,easing:'ease',fill:'both'}
+        );
+        await imageAnimation.finished.catch(()=>{});
+        imageAnimation.cancel();
+      }
+    };
+
+    reviewImages.forEach(image=>{
+      image.classList.add('review-image-zoom');
+      image.tabIndex=0;
+      image.setAttribute('role','button');
+      image.setAttribute('aria-label','Ampliar imagen: '+(image.alt||'imagen de la reseña'));
+      image.addEventListener('click',()=>openLightbox(image));
+      image.addEventListener('keydown',event=>{
+        if(event.key!=='Enter'&&event.key!==' ') return;
+        event.preventDefault();
+        openLightbox(image);
+      });
+    });
+
+    closeButton.addEventListener('click',closeLightbox);
+    lightbox.addEventListener('click',event=>{
+      if(event.target!==lightboxImage&&!event.target.closest('.review-lightbox-close')) closeLightbox();
+    });
+    lightbox.addEventListener('cancel',event=>{
+      event.preventDefault();
+      closeLightbox();
+    });
+    lightbox.addEventListener('close',()=>{
+      document.body.classList.remove('review-lightbox-open');
+      lightboxImage.getAnimations().forEach(animation=>animation.cancel());
+      lightboxCaption.getAnimations().forEach(animation=>animation.cancel());
+      closeButton.getAnimations().forEach(animation=>animation.cancel());
+      lightboxImage.removeAttribute('src');
+      sourceImage?.focus();
+      sourceImage=null;
+      closing=false;
+    });
+  }
 }

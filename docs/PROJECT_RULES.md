@@ -122,7 +122,12 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - La tarjeta superior de la portada es un bloque editorial de «Novedades», no una reseña fija. Puede destacar una noticia, un artículo o una reseña reciente según su relevancia. Su etiqueta, imagen, título, resumen y enlace deben describir el tipo de contenido seleccionado, y no debe conservar elementos propios de una reseña, como la nota, cuando destaque otra clase de pieza.
 - No permitir texto cortado ni scroll horizontal accidental en móvil.
 - Mantener el modo oscuro y los colores particulares de cada reseña.
+- Las reseñas individuales deben mantener una composición editorial común: cabecera cinematográfica con el título y los metadatos sobre la imagen principal, «Hitpoints» en una banda técnica, columna de lectura contenida y primer párrafo tratado como entradilla. El sistema debe conservar los colores propios de cada juego, funcionar en modo claro y oscuro y no copiar la identidad visual de otro medio.
+- Los pies de las imágenes del cuerpo de las reseñas deben aparecer centrados. Las imágenes interiores deben poder ampliarse mediante clic, toque o teclado en un visor accesible; el visor debe cerrarse con un control visible, al pulsar fuera o mediante la tecla Escape. La imagen principal de cabecera queda fuera de este comportamiento.
 - Toda reseña individual debe incluir un bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos y coherentes con el análisis.
+- El bloque «Hitpoints» de toda reseña debe contener exactamente estos cuatro campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego». No sustituirlos por la nota, el género, la dificultad u otros datos.
+- «Fecha de lanzamiento» debe indicar la fecha comercial del juego, «Desarrollador» el estudio responsable y «Plataformas» todas las plataformas en las que se publicó, no solo aquella en la que se realizó la reseña.
+- «Tiempo de juego» debe reflejar el tiempo real del autor cuando se conozca. Si no se dispone de él, usar una estimación contrastada con HowLongToBeat u otra fuente solvente y anteponer «Aprox.» para distinguirla de una medición propia.
 - Revisar tanto la portada como las páginas individuales cuando compartan componentes o estilos.
 - Evitar soluciones vinculadas a identificadores concretos cuando la regla deba aplicarse también al contenido futuro.
 

@@ -11,6 +11,14 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Final Secreto no pretende competir como medio generalista. Sus pilares son la selección editorial, un calendario realmente útil, las reseñas propias y el análisis de industria.
 - Prestar especial atención a la propiedad, el formato físico, el acceso y la preservación de videojuegos.
 
+### Títulos SEO
+
+- La portada puede mantener la marca en el título SEO.
+- Las páginas principales de sección pueden usar el sufijo `| Final Secreto` cuando el título sea corto y no provoque truncamientos.
+- Las reseñas y noticias individuales no deben añadir `| Final Secreto` a `<title>` ni a `og:title`. Todo el espacio debe dedicarse al título específico del contenido.
+- La marca debe seguir identificándose mediante `og:site_name`, el editor de los datos estructurados, el dominio y la cabecera del sitio.
+- Esta regla se aplica también a toda nueva reseña o noticia individual.
+
 ## 2. Flujo obligatorio para asistentes
 
 - Consultar siempre la versión más reciente de `main` antes de analizar, proponer o aplicar cambios.

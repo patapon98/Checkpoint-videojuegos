@@ -234,6 +234,14 @@ html[data-theme="dark"] .capcom-results-page {
   line-height: 1.4;
 }
 
+.capcom-kpis .currency-inline {
+  display: inline;
+  margin: 0 0 0 3px;
+  color: var(--ink-soft);
+  font-size: .72rem;
+  font-weight: 650;
+}
+
 .definition-card {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -467,6 +475,40 @@ html[data-theme="dark"] .capcom-results-page {
   line-height: 1.6 !important;
 }
 
+.chart-glossary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin: 18px 0 0;
+}
+
+.chart-glossary > div {
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--capcom-blue) 4%, var(--card));
+}
+
+.chart-glossary dt {
+  color: var(--ink);
+  font-size: .7rem;
+  font-weight: 800;
+}
+
+.chart-glossary dd {
+  margin: 5px 0 0;
+  color: var(--ink-soft);
+  font-size: .66rem;
+  line-height: 1.45;
+}
+
+.currency-note {
+  margin: 10px 0 0 !important;
+  color: var(--ink-soft);
+  font-size: .68rem !important;
+  line-height: 1.5 !important;
+}
+
 .chart-ranking {
   min-height: 560px;
 }
@@ -604,6 +646,7 @@ html[data-theme="dark"] .capcom-results-page {
 }
 
 .breakdown-card {
+  position: relative;
   min-width: 0;
   padding: 18px;
   border: 1px solid var(--line);
@@ -634,7 +677,19 @@ html[data-theme="dark"] .capcom-results-page {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  transition: transform .75s cubic-bezier(.2, .75, .2, 1) var(--segment-delay, 0ms);
+  cursor: pointer;
+  transition:
+    transform .75s cubic-bezier(.2, .75, .2, 1) var(--segment-delay, 0ms),
+    filter .16s ease,
+    opacity .16s ease;
+}
+
+.segment:hover,
+.segment:focus {
+  z-index: 1;
+  filter: brightness(1.12);
+  opacity: .88;
+  outline: none;
 }
 
 .segment:nth-child(2) {
@@ -672,6 +727,28 @@ html[data-theme="dark"] .capcom-results-page {
   color: var(--ink);
 }
 
+.breakdown-tooltip {
+  position: absolute;
+  z-index: 6;
+  max-width: 210px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: .66rem;
+  line-height: 1.35;
+  box-shadow: 0 12px 30px -14px rgba(0, 0, 0, .7);
+  pointer-events: none;
+  transform: translate(-50%, -115%);
+}
+
+.breakdown-tooltip b {
+  display: block;
+  color: inherit;
+  font-size: .7rem;
+}
+
 @media (max-width: 920px) {
   .capcom-hero-visual {
     max-width: none;
@@ -691,6 +768,10 @@ html[data-theme="dark"] .capcom-results-page {
   }
 
   .breakdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-glossary {
     grid-template-columns: 1fr;
   }
 

@@ -74,8 +74,13 @@
     heading.textContent = title;
     tooltip.replaceChildren(heading, document.createTextNode(value));
     tooltip.hidden = false;
+    const spaceAbove = box.top - host.top + container.scrollTop;
+    const placeBelow = spaceAbove < tooltip.offsetHeight + 12;
+    tooltip.dataset.placement = placeBelow ? "below" : "above";
     tooltip.style.left = `${box.left - host.left + box.width / 2 + container.scrollLeft}px`;
-    tooltip.style.top = `${box.top - host.top + container.scrollTop}px`;
+    tooltip.style.top = placeBelow
+      ? `${box.bottom - host.top + container.scrollTop}px`
+      : `${spaceAbove}px`;
   }
 
   function bindTooltip(container, tooltip, target, title, value) {
@@ -215,7 +220,7 @@
         "text-anchor": "middle",
         class: "chart-axis-label"
       });
-      label.textContent = `${format(max * index / 6)} M`;
+      label.textContent = `${format(max * index / 6)} mill.`;
       svg.append(label);
     }
 
@@ -251,7 +256,7 @@
         tooltip,
         rect,
         item.name,
-        `${format(value)} millones · 1 abr–30 jun 2026`
+        `${format(value)} mill. · 1 abr–30 jun 2026`
       );
 
       const valueText = svgEl("text", {
@@ -259,7 +264,7 @@
         y: y + barHeight * .72,
         class: "chart-value-label"
       });
-      valueText.textContent = `${format(value)} M`;
+      valueText.textContent = `${format(value)} mill.`;
       svg.append(valueText);
     });
 
@@ -324,7 +329,7 @@
         "text-anchor": "end",
         class: "chart-axis-label"
       });
-      label.textContent = `${format(value)} M`;
+      label.textContent = `${format(value)} mill.`;
       svg.append(label);
     }
 
@@ -365,7 +370,7 @@
           class: "chart-point",
           tabindex: "0",
           role: "graphics-symbol",
-          "aria-label": `${series.name}, ${point.date.full}, ${format(point.value)} millones acumulados`
+          "aria-label": `${series.name}, ${point.date.full}, ${format(point.value)} mill. acumulados`
         });
         circle.style.setProperty("--animation-delay", `${250 + seriesIndex * 90 + pointIndex * 45}ms`);
         svg.append(circle);
@@ -374,7 +379,7 @@
           tooltip,
           circle,
           `${series.name} · ${point.date.full}`,
-          `${format(point.value)} millones acumulados`
+          `${format(point.value)} mill. acumulados`
         );
       });
     });

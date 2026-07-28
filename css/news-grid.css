@@ -259,6 +259,29 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 .news-mobile-track{display:contents}
 .news-mobile-controls{display:none}
 @media(max-width:700px){
+  .news-page main.wrap,
+  .news-page #newsArchive,
+  .news-page #newsArchive > *,
+  .news-mobile-carousel,
+  .news-mobile-viewport,
+  .news-mobile-track,
+  .news-mobile-track > .news-archive-card,
+  .news-page #newsArchive .news-flip-inner,
+  .news-page #newsArchive .news-flip-face,
+  .news-page #newsArchive .news-archive-body{min-width:0;max-width:100%}
+  .news-page #newsArchive,
+  .news-page #newsArchive > .news-featured,
+  .news-tools,
+  .news-results,
+  .news-mobile-carousel,
+  .news-mobile-viewport{width:100%}
+  .news-page #newsArchive .news-card-heading,
+  .news-page #newsArchive .news-sources{min-width:0;max-width:100%}
+  .news-page #newsArchive .news-archive-body h2,
+  .news-page #newsArchive .news-archive-body p,
+  .news-page #newsArchive .news-why{max-width:100%;overflow-wrap:anywhere}
+  .news-tools{overflow:hidden}
+  .news-tools .news-filters{overflow-x:auto;overscroll-behavior-inline:contain}
   .news-view-toggle{display:none}
   .news-mobile-carousel{display:block;min-width:0}
   .news-mobile-viewport{position:relative;display:block;overflow:hidden;border-radius:22px;touch-action:pan-y}

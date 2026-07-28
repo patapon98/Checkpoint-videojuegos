@@ -232,22 +232,36 @@ if(homeSectionNav && sections.length && navLinks.length){
 /* ---------- Ocultar barra de filtros de noticias al bajar ---------- */
 const newsTools=document.querySelector('.news-tools');
 if(newsTools){
+  const toolsAnchor=document.createElement('span');
+  toolsAnchor.setAttribute('aria-hidden','true');
+  toolsAnchor.style.cssText='display:block;height:0;pointer-events:none';
+  newsTools.before(toolsAnchor);
+
   let toolsLastY=window.scrollY;
+  let toolsDownTravel=0;
+  let toolsHideAfter=0;
   let toolsFrame=0;
 
-  const updateToolsVisibility=()=>{
+  const measureToolsThreshold=()=>{
     const stickyTop=parseFloat(getComputedStyle(newsTools).top)||0;
-    let naturalTop=0;
-    let offsetNode=newsTools;
-    while(offsetNode){
-      naturalTop+=offsetNode.offsetTop;
-      offsetNode=offsetNode.offsetParent;
-    }
-    const hideAfter=Math.max(0,naturalTop+newsTools.offsetHeight-stickyTop);
+    toolsHideAfter=Math.max(0,toolsAnchor.getBoundingClientRect().top+window.scrollY+newsTools.offsetHeight-stickyTop);
+  };
+
+  const updateToolsVisibility=()=>{
     const y=window.scrollY;
     const delta=y-toolsLastY;
-    if(delta>4 && y>hideAfter) newsTools.classList.add('nav-hidden');
-    else if(delta<-4 || y<=hideAfter) newsTools.classList.remove('nav-hidden');
+
+    if(y<=toolsHideAfter){
+      toolsDownTravel=0;
+      newsTools.classList.remove('nav-hidden');
+    }else if(delta<0){
+      toolsDownTravel=0;
+      newsTools.classList.remove('nav-hidden');
+    }else if(delta>0){
+      toolsDownTravel+=delta;
+      if(toolsDownTravel>=18) newsTools.classList.add('nav-hidden');
+    }
+
     toolsLastY=y;
     toolsFrame=0;
   };
@@ -256,8 +270,16 @@ if(newsTools){
     if(!toolsFrame) toolsFrame=requestAnimationFrame(updateToolsVisibility);
   };
 
+  const refreshToolsThreshold=()=>{
+    newsTools.classList.remove('nav-hidden');
+    toolsDownTravel=0;
+    measureToolsThreshold();
+    requestToolsUpdate();
+  };
+
+  measureToolsThreshold();
   window.addEventListener('scroll',requestToolsUpdate,{passive:true});
-  window.addEventListener('resize',requestToolsUpdate);
+  window.addEventListener('resize',refreshToolsThreshold);
 }
 
 /* ---------- Hero card: glow + tilt ---------- */

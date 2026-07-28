@@ -237,8 +237,13 @@ if(newsTools){
 
   const updateToolsVisibility=()=>{
     const stickyTop=parseFloat(getComputedStyle(newsTools).top)||0;
-    const naturalBottom=window.scrollY+newsTools.getBoundingClientRect().top+newsTools.offsetHeight;
-    const hideAfter=Math.max(0,naturalBottom-stickyTop);
+    let naturalTop=0;
+    let offsetNode=newsTools;
+    while(offsetNode){
+      naturalTop+=offsetNode.offsetTop;
+      offsetNode=offsetNode.offsetParent;
+    }
+    const hideAfter=Math.max(0,naturalTop+newsTools.offsetHeight-stickyTop);
     const y=window.scrollY;
     const delta=y-toolsLastY;
     if(delta>4 && y>hideAfter) newsTools.classList.add('nav-hidden');

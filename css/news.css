@@ -169,6 +169,8 @@ html[data-theme="dark"] .news-brief:hover{box-shadow:0 18px 38px -25px rgba(0,0,
 .news-brief-carousel{margin-top:20px}
 .news-brief-viewport{position:relative;overflow:hidden;border-radius:20px;touch-action:pan-y}
 .news-brief-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 18px)/2);gap:18px;align-items:stretch;transition:transform .55s cubic-bezier(.22,1,.36,1);will-change:transform}
+.news-brief-track.is-dragging{transition:none}
+.news-brief-carousel.is-dragging{user-select:none}
 .news-brief-slide{min-width:0;height:100%}
 .news-brief-slide .news-home-flip{height:100%}
 .news-carousel-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:14px}
@@ -186,10 +188,10 @@ html[data-theme="dark"] .news-brief:hover{box-shadow:0 18px 38px -25px rgba(0,0,
 
 /* Pista de "esto se desliza": un asomo de la siguiente tarjeta + flecha, en la primera visita */
 @keyframes news-carousel-peek{
-  0%{transform:translateX(0)}
-  30%{transform:translateX(-34px)}
-  62%{transform:translateX(-34px)}
-  100%{transform:translateX(0)}
+  0%{transform:translate3d(0,0,0)}
+  30%{transform:translate3d(-34px,0,0)}
+  62%{transform:translate3d(-34px,0,0)}
+  100%{transform:translate3d(0,0,0)}
 }
 .news-brief-track.peek-nudge{animation:news-carousel-peek 1.6s ease-in-out}
 
@@ -204,6 +206,7 @@ html[data-theme="dark"] .news-brief:hover{box-shadow:0 18px 38px -25px rgba(0,0,
 
 @media(prefers-reduced-motion:reduce){
   .news-brief-track{transition:none}
+  .news-brief-track.peek-nudge,.news-swipe-hint.show{animation:none}
   .news-carousel-controls>button:hover:not(:disabled){transform:none}
 }
 

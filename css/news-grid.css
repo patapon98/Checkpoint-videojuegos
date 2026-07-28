@@ -279,6 +279,7 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
     will-change:transform
   }
   .news-mobile-track>.news-archive-card{height:100%}
+  .news-mobile-track.peek-nudge{animation:news-carousel-peek 1.6s ease-in-out}
   .news-mobile-controls{display:flex;justify-content:center}
   .news-mobile-carousel.has-single-slide .news-mobile-controls{display:none}
   .news-page #newsArchive.is-grid,

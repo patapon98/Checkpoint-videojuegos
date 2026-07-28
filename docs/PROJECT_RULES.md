@@ -64,6 +64,8 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - La solución debe aplicarse a las clases y componentes genéricos para que las tarjetas futuras hereden el comportamiento.
 - La noticia destacada debe diferenciarse visualmente sin generar una altura excesiva ni grandes huecos vacíos.
 - Usar «Relevante» y «Última hora» con moderación y solo cuando estén justificadas.
+- «Última hora» no se asigna manualmente. Se muestra automáticamente solo si la noticia tiene prioridad alta (`important: true`) y un `publishedAt` ISO 8601 de hace menos de 24 horas; al cumplirse las 24 horas debe desaparecer, incluso con la página abierta. Las noticias sin hora confirmada no llevan esta insignia.
+- Toda noticia incluida en el ticker debe declarar `ticker.keyword` y `ticker.copy`. `ticker.keyword` será la palabra o nombre propio más importante de la noticia —por ejemplo, Xbox, PlayStation, God of War Laufey o Fallout— y el componente la mostrará siempre en negrita naranja.
 - «ESENCIAL» debe conservar el mismo diseño en la portada y en Noticias.
 
 ## 6. Interfaz permanente
@@ -78,6 +80,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 ## 7. Reglas técnicas
 
 - Centralizar los datos y comportamientos reutilizables.
+- No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.
 - No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
 - Actualizar las versiones de caché de todos los recursos modificados que se carguen con parámetros de versión.
 - Revisar escritorio y móvil, modo claro y oscuro, Chromium y Firefox cuando el cambio afecte a la interfaz.

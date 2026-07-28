@@ -396,8 +396,8 @@
     },0);
     const rect=target.getBoundingClientRect();
     const available=Math.max(0,window.innerHeight-obstruction);
-    const visibleHeight=Math.min(rect.height,available);
-    const targetTop=obstruction+Math.max(18,(available-visibleHeight)/2);
+    const centeredTop=(available-rect.height)/2;
+    const targetTop=obstruction+Math.max(-80,centeredTop);
     window.scrollTo({
       top:Math.max(0,window.scrollY+rect.top-targetTop),
       behavior:reducedAnchorMotion?'auto':'smooth'

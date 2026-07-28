@@ -6,6 +6,7 @@
 
   const state={data:null,month:null,filter:'all'};
   const tierNames={essential:'Essential',extra:'Extra',premium:'Premium'};
+  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const formatUpdated=(value)=>{
     const date=new Date(value+'T12:00:00');
@@ -28,6 +29,8 @@
 
   const renderCard=(game,group)=>{
     const card=element('article','psplus-card');
+    card.dataset.tier=group.id;
+    card.dataset.platforms=game.platforms.map((platform)=>platform.toLowerCase()).join(' ');
     const media=element('div','psplus-card-media');
     const image=document.createElement('img');
     image.src=game.image;
@@ -40,7 +43,7 @@
       media.setAttribute('aria-label',`No se pudo cargar la imagen de ${game.title}`);
     });
     media.appendChild(image);
-    media.appendChild(element('span','psplus-card-tier',tierNames[group.id]||group.label));
+    media.appendChild(element('span',`psplus-card-tier tier-${group.id}`,tierNames[group.id]||group.label));
 
     const body=element('div','psplus-card-body');
     body.appendChild(element('h4','',game.title));
@@ -74,6 +77,22 @@
     return pending;
   };
 
+  const revealRendered=()=>{
+    const groups=[...groupsRoot.querySelectorAll('.psplus-group')];
+    if(reducedMotion){
+      groups.forEach((group)=>group.classList.add('visible'));
+      return;
+    }
+    groups.forEach((group)=>group.getBoundingClientRect());
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      groups.forEach((group,index)=>{
+        group.style.transitionDelay=`${Math.min(index*70,210)}ms`;
+        group.classList.add('visible');
+        group.addEventListener('transitionend',()=>group.style.removeProperty('transition-delay'),{once:true});
+      });
+    }));
+  };
+
   const render=()=>{
     const month=state.data.months.find((item)=>item.id===state.month)||state.data.months[0];
     state.month=month.id;
@@ -81,6 +100,8 @@
     document.getElementById('psplusAvailability').textContent=month.availability;
     const mainSource=document.getElementById('psplusMainSource');
     mainSource.href=month.source;
+    const monthPage=document.getElementById('psplusMonthPage');
+    if(monthPage)monthPage.href=`/playstation-plus/${month.id}`;
 
     groupsRoot.replaceChildren();
     let visibleGames=0;
@@ -93,11 +114,11 @@
       if(!games.length&&!group.pending)return;
       if(group.pending&&!['all',group.id].includes(state.filter))return;
 
-      const section=element('section','psplus-group');
+      const section=element('section','psplus-group reveal');
       section.dataset.tier=group.id;
       const head=element('div','psplus-group-head');
       const titleWrap=element('div','psplus-group-title');
-      titleWrap.appendChild(element('span','psplus-tier-mark',group.label));
+      titleWrap.appendChild(element('span',`psplus-tier-mark tier-${group.id}`,group.label));
       titleWrap.appendChild(element('h3','',group.access));
       head.appendChild(titleWrap);
 
@@ -123,6 +144,7 @@
     const selectedLabel=month.label.toLowerCase();
     const status=document.getElementById('psplusStatus');
     status.textContent=`${visibleGames||'Sin'} ${visibleGames===1?'juego visible':'juegos visibles'} · ${selectedLabel}`;
+    revealRendered();
   };
 
   const selectMonth=(id,updateUrl=true)=>{

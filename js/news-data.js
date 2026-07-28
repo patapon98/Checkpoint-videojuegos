@@ -9,7 +9,7 @@ window.FINALSECRETO_NEWS = [
     featured: false,
     ticker: {
       keyword: { es: "Capcom" },
-      copy: { es: "Capcom vendió 23,81 millones de juegos entre abril y junio; 21,26 millones eran títulos anteriores" }
+      copy: { es: "Capcom vendió 23,81 millones de juegos entre abril y junio y 21,26 millones eran títulos anteriores" }
     },
     article: {
       url: "/noticias/ventas-capcom-resultados-junio-2026"
@@ -19,7 +19,7 @@ window.FINALSECRETO_NEWS = [
       es: "Capcom vendió 23,81 millones de juegos entre abril y junio, impulsada por títulos anteriores"
     },
     summary: {
-      es: "Del 1 de abril al 30 de junio de 2026, la editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA vendió 2,51 millones, mientras que 21,26 millones correspondieron a juegos publicados antes de abril."
+      es: "Durante su primer trimestre fiscal, del 1 de abril al 30 de junio de 2026, la editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA vendió 2,51 millones, mientras que 21,26 millones correspondieron a juegos publicados antes del ejercicio actual."
     },
     why: {
       es: "El informe muestra cómo Resident Evil, Monster Hunter y Devil May Cry sostienen el negocio de Capcom, pero exige distinguir las ventas del trimestre de los acumulados históricos."

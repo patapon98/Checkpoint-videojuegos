@@ -284,22 +284,41 @@
 
   function bindHomeCarousel(home) {
     const carousel = home.querySelector("[data-news-carousel]");
+    const viewport = carousel?.querySelector(".news-brief-viewport");
     const track = carousel?.querySelector("[data-news-carousel-track]");
     const slides = [...(carousel?.querySelectorAll(".news-brief-slide") || [])];
-    if (!track || slides.length < 2) return;
+    if (!viewport || !track || slides.length < 2) return;
     let current = 0;
     const previous = carousel.querySelector("[data-carousel-prev]");
     const next = carousel.querySelector("[data-carousel-next]");
     const dotsContainer = carousel.querySelector("[data-carousel-dots]");
     const mobileQuery = window.matchMedia("(max-width: 800px)");
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let perView = mobileQuery.matches ? 1 : 2;
     let pageCount = Math.ceil(slides.length / perView);
+    let pointerState = null;
+
+    const offsetForPage = index => {
+      const firstVisible = index * perView;
+      return slides[firstVisible]?.offsetLeft || 0;
+    };
+
+    const setTrackPosition = (offset, dragOffset = 0) => {
+      track.style.transform = `translate3d(${Math.round(-offset + dragOffset)}px, 0, 0)`;
+    };
+
+    const clearDrag = () => {
+      pointerState = null;
+      carousel.classList.remove("is-dragging");
+      track.classList.remove("is-dragging");
+    };
 
     const show = index => {
       current = Math.max(0, Math.min(index, pageCount - 1));
       const firstVisible = current * perView;
-      const offset = slides[firstVisible]?.offsetLeft || 0;
-      track.style.transform = `translateX(-${offset}px)`;
+      track.classList.remove("peek-nudge");
+      clearDrag();
+      setTrackPosition(offsetForPage(current));
       slides.forEach((slide, slideIndex) => {
         const hidden = slideIndex < firstVisible || slideIndex >= firstVisible + perView;
         slide.setAttribute("aria-hidden", String(hidden));
@@ -326,6 +345,7 @@
 
     const refreshLayout = () => {
       const firstVisible = current * perView;
+      clearDrag();
       perView = mobileQuery.matches ? 1 : 2;
       pageCount = Math.ceil(slides.length / perView);
       current = Math.min(Math.floor(firstVisible / perView), pageCount - 1);
@@ -340,22 +360,77 @@
       if (dot) show(Number(dot.dataset.carouselPage));
     });
 
-    let pointerStart = null;
-    carousel.querySelector(".news-brief-viewport")?.addEventListener("pointerdown", event => {
+    viewport.addEventListener("pointerdown", event => {
+      if (!mobileQuery.matches || !event.isPrimary || event.button !== 0) return;
       if (event.target.closest("a,button")) return;
-      pointerStart = { x: event.clientX, y: event.clientY };
+      track.classList.remove("peek-nudge");
+      carousel.querySelector("[data-news-swipe-hint]")?.classList.remove("show");
+      pointerState = {
+        id: event.pointerId,
+        x: event.clientX,
+        y: event.clientY,
+        startedAt: performance.now(),
+        baseOffset: offsetForPage(current),
+        axis: null
+      };
+      try { viewport.setPointerCapture(event.pointerId); } catch (e) {}
     });
-    carousel.querySelector(".news-brief-viewport")?.addEventListener("pointerup", event => {
-      if (!pointerStart) return;
-      const deltaX = event.clientX - pointerStart.x;
-      const deltaY = event.clientY - pointerStart.y;
-      pointerStart = null;
-      if (Math.abs(deltaX) < 45 || Math.abs(deltaX) <= Math.abs(deltaY) * 1.15) return;
-      show(current + (deltaX < 0 ? 1 : -1));
-    });
-    carousel.querySelector(".news-brief-viewport")?.addEventListener("pointercancel", () => {
-      pointerStart = null;
-    });
+
+    viewport.addEventListener("pointermove", event => {
+      if (!pointerState || event.pointerId !== pointerState.id) return;
+      const deltaX = event.clientX - pointerState.x;
+      const deltaY = event.clientY - pointerState.y;
+      const absX = Math.abs(deltaX);
+      const absY = Math.abs(deltaY);
+
+      if (!pointerState.axis) {
+        if (Math.max(absX, absY) < 7) return;
+        if (absX > absY * 1.08) pointerState.axis = "x";
+        else if (absY > absX) pointerState.axis = "y";
+        else return;
+      }
+      if (pointerState.axis !== "x") return;
+
+      event.preventDefault();
+      carousel.classList.add("is-dragging");
+      track.classList.add("is-dragging");
+
+      let dragOffset = deltaX;
+      const beyondFirst = current === 0 && deltaX > 0;
+      const beyondLast = current === pageCount - 1 && deltaX < 0;
+      if (beyondFirst || beyondLast) dragOffset *= 0.28;
+      const limit = viewport.clientWidth * 0.92;
+      dragOffset = Math.max(-limit, Math.min(limit, dragOffset));
+      setTrackPosition(pointerState.baseOffset, dragOffset);
+    }, { passive: false });
+
+    const finishPointer = (event, cancelled) => {
+      if (!pointerState || event.pointerId !== pointerState.id) return;
+      const state = pointerState;
+      const deltaX = event.clientX - state.x;
+      const elapsed = Math.max(1, performance.now() - state.startedAt);
+      const velocity = deltaX / elapsed;
+      const horizontal = state.axis === "x";
+      clearDrag();
+      try {
+        if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
+      } catch (e) {}
+
+      if (!horizontal) return;
+      const threshold = Math.min(90, viewport.clientWidth * 0.18);
+      const shouldAdvance = !cancelled &&
+        (Math.abs(deltaX) >= threshold || Math.abs(velocity) >= 0.5);
+      const target = shouldAdvance
+        ? current + (deltaX < 0 ? 1 : -1)
+        : current;
+
+      /* Fuerza un fotograma entre el arrastre sin transición y el ajuste final. */
+      void track.offsetWidth;
+      show(target);
+    };
+
+    viewport.addEventListener("pointerup", event => finishPointer(event, false));
+    viewport.addEventListener("pointercancel", event => finishPointer(event, true));
 
     let resizeFrame = 0;
     window.addEventListener("resize", () => {
@@ -364,11 +439,12 @@
     }, { passive: true });
     refreshLayout();
 
+    const swipeHintKey = "finalsecreto:seen-carousel-hint-v2";
     let seenSwipeHint = true;
     try {
-      seenSwipeHint = sessionStorage.getItem("finalsecreto:seen-carousel-hint") === "1";
+      seenSwipeHint = sessionStorage.getItem(swipeHintKey) === "1";
     } catch (e) {}
-    if (mobileQuery.matches && !seenSwipeHint) {
+    if (mobileQuery.matches && !reducedMotionQuery.matches && !seenSwipeHint) {
       const arrow = carousel.querySelector("[data-news-swipe-hint]");
       const triggerSwipeHint = () => {
         track.classList.add("peek-nudge");
@@ -377,7 +453,7 @@
           arrow.classList.add("show");
           arrow.addEventListener("animationend", () => arrow.classList.remove("show"), { once: true });
         }
-        try { sessionStorage.setItem("finalsecreto:seen-carousel-hint", "1"); } catch (e) {}
+        try { sessionStorage.setItem(swipeHintKey, "1"); } catch (e) {}
       };
       if ("IntersectionObserver" in window) {
         const hintObserver = new IntersectionObserver(entries => {
@@ -385,7 +461,7 @@
             hintObserver.disconnect();
             triggerSwipeHint();
           }
-        }, { threshold: 0.6 });
+        }, { threshold: 0.25, rootMargin: "0px 0px -8% 0px" });
         hintObserver.observe(carousel);
       } else {
         triggerSwipeHint();

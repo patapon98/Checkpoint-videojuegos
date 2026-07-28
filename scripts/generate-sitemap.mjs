@@ -7,6 +7,7 @@ const SITE_ORIGIN = "https://finalsecreto.com";
 const OUTPUT = path.join(ROOT, "sitemap.xml");
 const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|playstation-plus|sobre-mi|contacto)\.html$|^(?:noticias|resenas|playstation-plus)\/[^/]+\.html$/;
 const DATE_OVERRIDE = process.env.SITEMAP_DATE;
+const PSPLUS_DATE_OVERRIDE = process.env.SITEMAP_PSPLUS_DATE;
 
 async function walk(directory = ROOT) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -63,6 +64,7 @@ function isNoIndex(html) {
 
 function lastModified(file) {
   if (DATE_OVERRIDE) return DATE_OVERRIDE;
+  if (PSPLUS_DATE_OVERRIDE && (file === "playstation-plus.html" || file.startsWith("playstation-plus/"))) return PSPLUS_DATE_OVERRIDE;
 
   try {
     const date = execFileSync(

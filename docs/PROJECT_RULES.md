@@ -73,12 +73,14 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Toda nueva noticia debe declarar `ticker.keyword` y `ticker.copy`. `ticker.keyword` será la palabra o nombre propio más importante de la noticia —por ejemplo, Xbox, PlayStation, God of War Laufey o Fallout— y el componente la mostrará siempre en negrita naranja.
 - El ticker debe mostrar automáticamente y en orden las cuatro noticias más recientes; nunca se mantiene mediante una selección manual de identificadores.
 - Las noticias con página individual deben declarar `article.url`. Ese dato alimenta tanto el botón blanco «Leer noticia completa» como el archivo cronológico situado al final de Noticias.
+- Toda tarjeta de portada asociada a una noticia con `article.url` debe mostrar «Leer noticia completa» en el anverso y el reverso. El enlace debe derivarse de los datos compartidos, nunca de una lista manual de identificadores.
 - El rojo queda reservado para la acción «Ver tráiler»; «Leer noticia completa» debe usar el tratamiento blanco.
 - «ESENCIAL» debe conservar el mismo diseño en la portada y en Noticias.
 
 ## 6. Interfaz permanente
 
 - El menú sticky de portada debe mostrar «Actualidad», «Calendario» y «Reseñas».
+- La tarjeta superior de la portada es un bloque editorial de «Novedades», no una reseña fija. Puede destacar una noticia, un artículo o una reseña reciente según su relevancia. Su etiqueta, imagen, título, resumen y enlace deben describir el tipo de contenido seleccionado, y no debe conservar elementos propios de una reseña, como la nota, cuando destaque otra clase de pieza.
 - No permitir texto cortado ni scroll horizontal accidental en móvil.
 - Mantener el modo oscuro y los colores particulares de cada reseña.
 - Toda reseña individual debe incluir un bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos y coherentes con el análisis.

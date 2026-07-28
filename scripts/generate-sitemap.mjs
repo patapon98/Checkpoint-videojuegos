@@ -5,7 +5,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const SITE_ORIGIN = "https://finalsecreto.com";
 const OUTPUT = path.join(ROOT, "sitemap.xml");
-const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|contacto)\.html$|^(?:noticias|resenas)\/[^/]+\.html$/;
+const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|sobre-mi|contacto)\.html$|^(?:noticias|resenas)\/[^/]+\.html$/;
 const DATE_OVERRIDE = process.env.SITEMAP_DATE;
 
 async function walk(directory = ROOT) {
@@ -95,13 +95,14 @@ function pageOrder(page) {
     ["/noticias", 1],
     ["/resenas", 3],
     ["/calendario", 5],
-    ["/contacto", 6]
+    ["/sobre-mi", 6],
+    ["/contacto", 7]
   ]);
 
   if (fixed.has(pathname)) return [fixed.get(pathname), pathname];
   if (pathname.startsWith("/noticias/")) return [2, pathname];
   if (pathname.startsWith("/resenas/")) return [4, pathname];
-  return [7, pathname];
+  return [8, pathname];
 }
 
 const pages = [];

@@ -1,0 +1,40 @@
+name: Actualizar sitemap
+
+on:
+  push:
+    paths:
+      - "resenas.html"
+      - "resenas/*.html"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sitemap-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generar el sitemap
+        run: node scripts/generate-sitemap.mjs
+
+      - name: Guardar el sitemap actualizado
+        shell: bash
+        run: |
+          if git diff --quiet -- sitemap.xml; then
+            echo "El sitemap ya está actualizado."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "Actualiza el sitemap automáticamente"
+          git push

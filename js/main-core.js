@@ -27,7 +27,7 @@ themeMedia.addEventListener?.('change',event=>{
 });
 
 /* ============================================
-   CHECKPOINT: JS compartido
+   FINAL SECRETO: JS compartido
    ============================================ */
 
 /* ---------- i18n (solo en la home) ---------- */
@@ -380,4 +380,69 @@ if(reviewArticle){
   window.addEventListener('scroll',requestProgressUpdate,{passive:true});
   window.addEventListener('resize',requestProgressUpdate);
   updateReadingProgress();
+}
+
+
+/* ---------- Ampliación de imágenes de reseñas ---------- */
+if(reviewArticle){
+  const reviewImages=[...reviewArticle.querySelectorAll('figure>img')].filter(image=>!image.closest('a'));
+  if(reviewImages.length){
+    const lightbox=document.createElement('dialog');
+    lightbox.className='review-lightbox';
+    lightbox.setAttribute('aria-label','Imagen ampliada');
+    lightbox.innerHTML=
+      '<button class="review-lightbox-close" type="button" aria-label="Cerrar imagen ampliada">×</button>'+
+      '<figure class="review-lightbox-frame">'+
+        '<img class="review-lightbox-image" alt="">'+
+        '<figcaption class="review-lightbox-caption"></figcaption>'+
+      '</figure>';
+    document.body.appendChild(lightbox);
+
+    const lightboxImage=lightbox.querySelector('.review-lightbox-image');
+    const lightboxCaption=lightbox.querySelector('.review-lightbox-caption');
+    const closeButton=lightbox.querySelector('.review-lightbox-close');
+    let sourceImage=null;
+
+    const closeLightbox=()=>{
+      if(lightbox.open) lightbox.close();
+    };
+    const openLightbox=image=>{
+      sourceImage=image;
+      const figure=image.closest('figure');
+      const caption=figure?.querySelector('figcaption')?.textContent.trim()||image.alt.trim();
+      lightboxImage.src=image.currentSrc||image.src;
+      lightboxImage.alt=image.alt;
+      lightboxCaption.textContent=caption;
+      lightboxCaption.hidden=!caption;
+      lightbox.setAttribute('aria-label',image.alt?'Imagen ampliada: '+image.alt:'Imagen ampliada');
+      document.body.classList.add('review-lightbox-open');
+      if(typeof lightbox.showModal==='function') lightbox.showModal();
+      else lightbox.setAttribute('open','');
+      closeButton.focus();
+    };
+
+    reviewImages.forEach(image=>{
+      image.classList.add('review-image-zoom');
+      image.tabIndex=0;
+      image.setAttribute('role','button');
+      image.setAttribute('aria-label','Ampliar imagen: '+(image.alt||'imagen de la reseña'));
+      image.addEventListener('click',()=>openLightbox(image));
+      image.addEventListener('keydown',event=>{
+        if(event.key!=='Enter'&&event.key!==' ') return;
+        event.preventDefault();
+        openLightbox(image);
+      });
+    });
+
+    closeButton.addEventListener('click',closeLightbox);
+    lightbox.addEventListener('click',event=>{
+      if(event.target===lightbox) closeLightbox();
+    });
+    lightbox.addEventListener('close',()=>{
+      document.body.classList.remove('review-lightbox-open');
+      lightboxImage.removeAttribute('src');
+      sourceImage?.focus();
+      sourceImage=null;
+    });
+  }
 }

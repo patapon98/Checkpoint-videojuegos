@@ -82,7 +82,8 @@ Al publicar una reseña nueva:
 2. Conserva la identidad visual específica del juego en modo claro y oscuro.
 3. Comprueba que la cabecera cinematográfica mantiene el título, los metadatos y la nota legibles sobre la imagen, sin recortes problemáticos en escritorio ni móvil.
 4. Verifica que la banda «Hitpoints», la entradilla y las imágenes anchas respetan la jerarquía común y no provocan desbordamiento horizontal.
-5. Incluye el bloque «Hitpoints» con exactamente estos campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego».
+5. Comprueba que todos los pies de imagen están centrados y que las imágenes interiores se amplían con ratón, pantalla táctil y teclado. Prueba también el cierre mediante botón, clic exterior y Escape.
+6. Incluye el bloque «Hitpoints» con exactamente estos campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego».
 6. Contrasta la fecha, el estudio y todas las plataformas con fuentes oficiales. Usa el tiempo real del autor cuando exista o una estimación externa marcada con «Aprox.» cuando no se conozca.
 7. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
 8. Añade la reseña a los listados y secciones correspondientes.

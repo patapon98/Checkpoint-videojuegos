@@ -13,16 +13,16 @@
   ];
 
   const games = [
-    { name: "PRAGMATA", quarter: 2.51 },
-    { name: "Resident Evil 4", quarter: 2.43 },
-    { name: "Resident Evil 2", quarter: 1.42 },
-    { name: "Devil May Cry 5", quarter: 1.29 },
-    { name: "Resident Evil 3", quarter: 1.15 },
-    { name: "Resident Evil Requiem", quarter: 1.14 },
-    { name: "Resident Evil 7", quarter: 1.01 },
-    { name: "Resident Evil Village", quarter: 0.93 },
-    { name: "Monster Hunter World", quarter: 0.78 },
-    { name: "Resident Evil 6", quarter: 0.71 }
+    { name: "PRAGMATA", quarter: 2.51, cumulative: 2.51 },
+    { name: "Resident Evil 4", quarter: 2.43, cumulative: 16.04 },
+    { name: "Resident Evil 2", quarter: 1.42, cumulative: 19.75 },
+    { name: "Devil May Cry 5", quarter: 1.29, cumulative: 14.24 },
+    { name: "Resident Evil 3", quarter: 1.15, cumulative: 14.52 },
+    { name: "Resident Evil Requiem", quarter: 1.14, cumulative: 8.06 },
+    { name: "Resident Evil 7", quarter: 1.01, cumulative: 18.41 },
+    { name: "Resident Evil Village", quarter: 0.93, cumulative: 15.86 },
+    { name: "Monster Hunter World", quarter: 0.78, cumulative: 30.45 },
+    { name: "Resident Evil 6", quarter: 0.71, cumulative: 17.60 }
   ];
 
   const dates = [
@@ -44,6 +44,7 @@
 
   const state = {
     financialMetric: "sales",
+    gamesMetric: "quarter",
     selectedTitles: new Set(["Resident Evil 4", "Resident Evil 2", "Devil May Cry 5"])
   };
 
@@ -191,22 +192,46 @@
     if (animate) restartReveal(container);
   }
 
-  function renderGames() {
+  function renderGames(animate = false) {
     const container = document.getElementById("gamesChart");
     if (!container) return;
     const tooltip = clearChart(container);
+    const metric = state.gamesMetric;
+    const isCumulative = metric === "cumulative";
+    const orderedGames = [...games].sort((a, b) => b[metric] - a[metric]);
     const width = Math.max(650, container.clientWidth || 650);
     const height = 560;
-    const margin = { top: 16, right: 62, bottom: 28, left: 175 };
-    const max = 3;
+    const margin = { top: 16, right: 72, bottom: 28, left: 175 };
+    const max = isCumulative ? 35 : 3;
+    const ticks = isCumulative ? 7 : 6;
     const plotWidth = width - margin.left - margin.right;
-    const rowHeight = (height - margin.top - margin.bottom) / games.length;
+    const rowHeight = (height - margin.top - margin.bottom) / orderedGames.length;
+    const title = document.getElementById("games-chart-title");
+    const note = document.getElementById("games-chart-note");
+
+    if (title) {
+      title.textContent = isCumulative
+        ? "Ventas acumuladas por juego a 30 de junio de 2026"
+        : "Ventas por juego durante el Q1 de 2026";
+    }
+    if (note) {
+      note.innerHTML = isCumulative
+        ? "El gráfico muestra las <strong>ventas acumuladas desde el lanzamiento hasta el 30 de junio de 2026</strong>. Los juegos se reordenan y la escala cambia para esta vista. Las cifras agrupan versiones y adaptaciones adicionales según la tabla trimestral de Capcom."
+        : "El gráfico muestra <strong>solo las ventas del Q1 de 2026</strong>, del 1 de abril al 30 de junio. Activa «Acumulado» para consultar el total desde el lanzamiento. Cada vista se ordena por separado y utiliza su propia escala.";
+    }
+    container.setAttribute(
+      "aria-label",
+      isCumulative
+        ? "Ventas acumuladas de diez juegos de Capcom hasta el 30 de junio de 2026"
+        : "Ventas de los diez juegos de Capcom con más unidades entre el 1 de abril y el 30 de junio de 2026"
+    );
+
     const svg = svgEl("svg", {
       viewBox: `0 0 ${width} ${height}`
     });
 
-    for (let index = 0; index <= 6; index += 1) {
-      const x = margin.left + plotWidth * index / 6;
+    for (let index = 0; index <= ticks; index += 1) {
+      const x = margin.left + plotWidth * index / ticks;
       svg.append(svgEl("line", {
         x1: x,
         y1: margin.top,
@@ -220,12 +245,12 @@
         "text-anchor": "middle",
         class: "chart-axis-label"
       });
-      label.textContent = `${format(max * index / 6)} mill.`;
+      label.textContent = `${format(max * index / ticks)} mill.`;
       svg.append(label);
     }
 
-    games.forEach((item, index) => {
-      const value = item.quarter;
+    orderedGames.forEach((item, index) => {
+      const value = item[metric];
       const y = margin.top + index * rowHeight + rowHeight * .2;
       const barHeight = rowHeight * .58;
       const barWidth = value / max * plotWidth;
@@ -238,6 +263,9 @@
       name.textContent = item.name;
       svg.append(name);
 
+      const periodLabel = isCumulative
+        ? "acumulados hasta el 30 de junio de 2026"
+        : "entre el 1 de abril y el 30 de junio de 2026";
       const rect = svgEl("rect", {
         x: margin.left,
         y,
@@ -247,7 +275,7 @@
         class: "chart-bar",
         tabindex: "0",
         role: "graphics-symbol",
-        "aria-label": `${item.name}, ${format(value)} millones entre el 1 de abril y el 30 de junio de 2026`
+        "aria-label": `${item.name}, ${format(value)} mill. de unidades ${periodLabel}`
       });
       rect.style.setProperty("--animation-delay", `${index * 45}ms`);
       svg.append(rect);
@@ -256,7 +284,9 @@
         tooltip,
         rect,
         item.name,
-        `${format(value)} mill. · 1 abr–30 jun 2026`
+        isCumulative
+          ? `${format(value)} mill. acumulados · hasta 30 jun 2026`
+          : `${format(value)} mill. · Q1 2026`
       );
 
       const valueText = svgEl("text", {
@@ -269,6 +299,7 @@
     });
 
     container.prepend(svg);
+    if (animate) restartReveal(container);
   }
 
   function renderPicker() {
@@ -463,6 +494,18 @@
         item.setAttribute("aria-pressed", String(active));
       });
       renderFinancial(true);
+    });
+  });
+
+  document.querySelectorAll("[data-games-metric]").forEach(button => {
+    button.addEventListener("click", () => {
+      state.gamesMetric = button.dataset.gamesMetric;
+      document.querySelectorAll("[data-games-metric]").forEach(item => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      renderGames(true);
     });
   });
 

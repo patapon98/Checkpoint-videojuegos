@@ -61,7 +61,7 @@ updated.months = updated.months.filter((month) => originalIds.has(month.id) || m
 const comparable = (data) => JSON.stringify({ ...data, updatedAt: "" });
 if (comparable(updated) === comparable(original)) {
   await writeFile(file, originalText, "utf8");
-  console.log("No hay novedades vigentes que requieran una PR.");
+  console.log("No hay novedades oficiales vigentes.");
 } else {
   updated.updatedAt = now.toISOString().slice(0, 10);
   await writeFile(file, JSON.stringify(updated, null, 2) + "\n", "utf8");

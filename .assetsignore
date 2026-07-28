@@ -1,5 +1,23 @@
+# Nada de lo que aparezca aquí se sube como asset a Cloudflare.
+# El directorio de assets es la raíz del repositorio, así que todo lo que no
+# forme parte de la web publicada debe excluirse expresamente.
+
+# Historial de Git. Sin esta línea el repositorio entero queda servido en
+# el dominio y, además, el fichero pack rompe el límite de 25 MiB por asset.
+.git
+.gitattributes
+.gitignore
+
+# Configuración de despliegue y del entorno de desarrollo
+.assetsignore
 wrangler.jsonc
+.claude
+.replit
+replit.md
+serve.py
+
+# Material de trabajo y documentación interna
+attached_assets
+docs
 COMO-PUBLICAR.md
 README.md
-.gitignore
-.assetsignore

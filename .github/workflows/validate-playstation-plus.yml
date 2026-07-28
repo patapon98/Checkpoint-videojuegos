@@ -4,16 +4,22 @@ on:
   pull_request:
     paths:
       - "playstation-plus.html"
+      - "playstation-plus/**"
       - "data/playstation-plus.json"
       - "css/playstation-plus.css"
       - "css/calendar-psplus-entry.css"
+      - "img/playstation-plus-mark.svg"
       - "js/playstation-plus.js"
+      - "js/playstation-plus-month.js"
       - "js/calendar-psplus-entry.js"
       - "js/main.js"
       - "scripts/update-ps-plus.mjs"
       - "scripts/run-ps-plus-update.mjs"
+      - "scripts/generate-ps-plus-pages.mjs"
       - "scripts/generate-sitemap.mjs"
       - "sitemap.xml"
+      - "docs/PLAYSTATION_PLUS_UPDATE.md"
+      - "docs/PROJECT_RULES.md"
       - ".github/workflows/update-playstation-plus.yml"
       - ".github/workflows/validate-playstation-plus.yml"
   workflow_dispatch:
@@ -40,8 +46,10 @@ jobs:
           node --check js/main.js
           node --check js/calendar-psplus-entry.js
           node --check js/playstation-plus.js
+          node --check js/playstation-plus-month.js
           node --check scripts/update-ps-plus.mjs
           node --check scripts/run-ps-plus-update.mjs
+          node --check scripts/generate-ps-plus-pages.mjs
           node --check scripts/generate-sitemap.mjs
 
       - name: Comprobar los datos
@@ -53,9 +61,17 @@ jobs:
           node scripts/run-ps-plus-update.mjs
           git diff --exit-code -- data/playstation-plus.json
 
+      - name: Regenerar páginas mensuales
+        run: |
+          node scripts/generate-ps-plus-pages.mjs
+          git diff --exit-code -- playstation-plus
+
       - name: Regenerar y comparar el sitemap
         env:
           SITEMAP_DATE: "2026-07-29"
         run: |
           node scripts/generate-sitemap.mjs
           git diff --exit-code -- sitemap.xml
+
+      - name: Comprobar diff
+        run: git diff --check

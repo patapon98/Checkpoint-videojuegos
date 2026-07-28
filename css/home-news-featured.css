@@ -87,3 +87,67 @@ html[lang="en"] .news-home-flip-featured::before{content:"Featured"}
     bottom:20px;
   }
 }
+
+
+/* En la portada móvil, las noticias recientes conservan todo su contenido
+   sin heredar el espaciado vertical de las tarjetas de escritorio. */
+@media(max-width:540px){
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-front,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-back{
+    padding:16px 16px 62px;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-meta,
+  body.home-page #newsHome .news-home-flip-brief .news-home-back-meta{
+    gap:6px 9px;
+    font-size:.66rem;
+    line-height:1.25;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-category{
+    padding:4px 8px;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-latest,
+  body.home-page #newsHome .news-home-flip-brief .news-important{
+    padding:3px 7px;
+    font-size:.6rem;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-brief h3,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-back h3,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-back.compact h3{
+    margin:9px 0 7px;
+    font-size:1.2rem;
+    line-height:1.12;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-brief>p{
+    font-size:.82rem;
+    line-height:1.45;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-brief-why{
+    margin-top:10px;
+    padding-top:9px;
+    font-size:.75rem;
+    line-height:1.42;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-sources{
+    margin-top:11px;
+    padding-top:0;
+    gap:6px 9px;
+    font-size:.7rem;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-sources>b,
+  body.home-page #newsHome .news-home-flip-brief .news-sources.compact a{
+    font-size:.68rem;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-home-expanded-copy,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-back.compact .news-home-expanded-copy{
+    gap:9px;
+    font-size:.8rem;
+    line-height:1.45;
+  }
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-front .news-home-flip-button,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-back .news-home-flip-button,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-front .news-home-actions,
+  body.home-page #newsHome .news-home-flip-brief .news-home-flip-back .news-home-actions{
+    right:16px;
+    bottom:16px;
+  }
+}

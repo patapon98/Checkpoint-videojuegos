@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Bottom: análisis, duración y nota</title>
+<meta name="description" content="Análisis de Rock Bottom, el juego incremental de excavar y mejorar. Cómo funciona su bucle, por qué se repite y nota 53.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://finalsecreto.com/resenas/rock-bottom">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Final Secreto">
+<meta property="og:title" content="Rock Bottom: análisis, duración y nota">
+<meta property="og:description" content="Análisis de Rock Bottom, el juego incremental de excavar y mejorar. Cómo funciona su bucle, por qué se repite y nota 53.">
+<meta property="og:url" content="https://finalsecreto.com/resenas/rock-bottom">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "VideoGame",
+    "name": "Rock Bottom",
+    "gamePlatform": [
+      "PC"
+    ],
+    "genre": "Incremental"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "53",
+    "bestRating": "100",
+    "worstRating": "0"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Alex"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Final Secreto"
+  },
+  "datePublished": "2026-07-16",
+  "inLanguage": "es",
+  "dateModified": "2026-07-28"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://finalsecreto.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Reseñas",
+      "item": "https://finalsecreto.com/resenas"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Rock Bottom",
+      "item": "https://finalsecreto.com/resenas/rock-bottom"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=20260728-3">
+<link rel="stylesheet" href="/css/brand-logo.css">
+<style>
+/* Tema: Rock Bottom, ocre de subsuelo */
+:root{--accent:#8a6420;--accent-soft:#f6efdf}
+body{background:#fdfcf8}
+.verdict .v-score{color:#c8a35c}
+
+/* Paleta oscura editorial de la reseña */
+html[data-theme="dark"]{--accent:#d4ad63;--accent-soft:#2d2312;--bg:#12100a;--card:#1b1811;--header-bg:rgba(18,16,10,.88);--line:#38301e}
+html[data-theme="dark"] .verdict .v-score{color:#d4ad63}
+</style>
+<script>
+(function(){
+  try{
+    var saved=localStorage.getItem('finalsecreto-theme');
+    var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',theme);
+    document.documentElement.style.colorScheme=theme;
+  }catch(e){}
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo"><img class="site-logo-mark" src="/favicon.svg" alt="" aria-hidden="true" width="36" height="36">Final <span>Secreto</span></a>
+    <nav>
+      <a href="/noticias">Noticias</a>
+      <a href="/calendario">Calendario</a>
+      <a href="/resenas">Reseñas</a>
+      <a href="/contacto">Contacto</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.7 8.7 0 1 0 20.2 15.4Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap article-hero">
+  <a href="/resenas" class="back">← Volver a reseñas</a>
+  <div class="kicker">Reseña · Incremental · PC</div>
+  <h1>Rock Bottom, dopamina pura y dura bajo tierra</h1>
+  <div class="article-meta">
+    <span>Por <b>Alex</b></span>
+    <span>16 de julio de 2026</span>
+    <span>4 min de lectura</span>
+  </div>
+
+  <div class="article-banner art-22 reveal">
+    <span class="initial">R</span>
+    <div class="big-ring" style="--target:106">
+      <svg width="84" height="84"><circle class="bg" cx="42" cy="42" r="40"/><circle class="track" cx="42" cy="42" r="36"/><circle class="bar" cx="42" cy="42" r="36"/></svg>
+      <span class="num">53</span>
+    </div>
+  </div>
+</div>
+
+<aside class="review-hitpoints wrap" aria-labelledby="hitpoints-title">
+  <h2 id="hitpoints-title">Hitpoints</h2>
+  <dl>
+    <div><dt>Nota</dt><dd>53 / 100</dd></div>
+    <div><dt>Plataformas</dt><dd>PC</dd></div>
+    <div><dt>Género</dt><dd>Incremental</dd></div>
+    <div><dt>Duración</dt><dd>6-8 horas</dd></div>
+  </dl>
+</aside>
+
+<article class="wrap article-body">
+  <p>Un amigo está ahora mismo en una época de jugar a jueguecillos que no te hagan pensar. Juegos que no tengan historia, ni mecánicas complejas, ni puzles difíciles. Que sean solo dopamina pura y dura, que solo veas numeritos subiendo acompañados de un festival de luces y colores. Por eso me envió un juego llamado Rock Bottom que se lanzaba en Steam al día siguiente diciéndome que parecía interesante. Yo, que soy un hombre de mundo y curioso por naturaleza, no cierro nunca mis puertas a nada, incluso cuando sé que es un juego del que no voy a extraer nada al final del día.</p>
+
+  <h2>Los incrementales deberían llamarse casino-likes</h2>
+  <p>A este género se le conoce comúnmente como juegos incrementales o <em>clickers</em>, pero creo que deberíamos rebautizarlos y llamarlos <em>casino-like</em>. Y no lo digo porque despilfarres dinero apostando, sino porque la experiencia de juego es similar a la de una casa de apuestas. La estructura básica es siempre la misma. <strong>Mientras que el bucle de un juego incremental consiste en producir, mejorar y reinvertir lo producido, en un casino sería apostar, conocer el resultado y volver a apostar.</strong> Ciclos cortos de acción y recompensa inmediata para que sientas que estás progresando constantemente y la rueda nunca pare de girar. A esto hay que sumarle los destellos de colores, los efectos de sonido satisfactorios y los numeritos que nunca paran de subir. Cuando menos te lo esperas, una parte de tu cerebro ya ha hecho clic y estás completamente enganchado.</p>
+
+  <div class="pull-quote">"No es culpa por haber derrochado dinero, sino por haber malgastado algo peor, mi tiempo."</div>
+
+  <p>Ahí es donde creo que reside la virtud de juegos como Rock Bottom. Están genialmente pensados para ser increíblemente adictivos, con un bucle casi perfecto donde te encuentras progresando de forma constante. En este caso el progreso está en avanzar por las distintas capas del subsuelo consiguiendo materiales que sirven para mejorar a tu personaje y que, en última instancia, te sirven para conseguir más materiales. Lo bueno es que en seis u ocho horas ya te lo has terminado y eres libre de seguir con tu vida, pero hay algo en mi interior que no puede dejar de sentir cierta culpabilidad. No por haber derrochado dinero, sino por haber malgastado algo peor, mi tiempo.</p>
+
+  <h2>Todos los biomas son el mismo bioma</h2>
+  <p>Rock Bottom es esencialmente igual durante todo el juego, quizás más que otros incrementales. <strong>Todos los biomas son exactamente iguales, lo único que cambia son los materiales que recoges y su ambientación</strong>, ya sea bosque, submarino o lava. El juego está estructurado de manera que cada bioma representa un nivel de mejoras. Cuando consigues los minerales de un bioma tienes que fundirlos para hacer lingotes, que a su vez sirven para mejorar a tu personaje en un árbol de habilidades gigantesco. Esas mejoras te permiten picar más rápido, aumentar la potencia del pico o conseguir mayor número de recursos. Una vez subes de nivel, pasas al siguiente bioma y repites el proceso. Así hasta llegar al final.</p>
+
+  <p>La verdad es que no hay mucho más que comentar. Es dopamina pura y dura, como cuando te pones a ver TikTok antes de irte a la cama y cuando menos te lo esperas ya han pasado dos horas. Es un juego de usar y tirar, la definición perfecta de lo que es consumir un producto. Ojo, igual estoy sonando demasiado crítico, así que quiero recalcar que <strong>como juego cumple con creces su función de entretenerte.</strong> En ese sentido es muy bueno. Pero a mí en lo personal siempre me ha gustado ver los videojuegos como un medio con capacidad de trascender, de aspirar a algo más donde el jugador pueda extraer algún tipo de aprendizaje, reflexión o sentimiento al terminar. En ese otro sentido, el juego no consigue nada. Es ideal si te interesa mantener el encefalograma plano, perfecto para jugarlo mientras escuchas un podcast de fondo o hablas con un amigo por Discord.</p>
+
+  <p>En conclusión, Rock Bottom es un incremental decente, pero no considero que sea ni mucho menos uno de los mejores dentro del género. Por ejemplo, creo que el Berry Bury Berry que jugué hace unos meses es una propuesta jugable sustancialmente mejor. De todos modos, si te interesa matar las horas con algo sin complicarte mucho la vida, Rock Bottom es tremendamente adictivo y entretenido, aunque <strong>hay alternativas muchísimo mejores dentro de estos casino-likes.</strong></p>
+
+  <section class="pros-cons reveal" aria-label="Lo mejor y lo peor">
+    <div class="box pros">
+      <h3>Lo mejor</h3>
+      <ul>
+        <li>Un bucle de progresión tremendamente adictivo.</li>
+        <li>Se termina en seis u ocho horas y no se alarga artificialmente.</li>
+        <li>Ideal para acompañar un podcast o una conversación de fondo.</li>
+      </ul>
+    </div>
+    <div class="box cons">
+      <h3>Lo peor</h3>
+      <ul>
+        <li>Todos los biomas son idénticos salvo por la ambientación.</li>
+        <li>No hay prácticamente nada de historia ni de contenido que deje poso.</li>
+        <li>Otros incrementales, como Berry Bury Berry, ofrecen bastante más.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="breakdown reveal">
+    <h3>Desglose de puntuación</h3>
+    <div class="bd-row"><span>Jugabilidad / Mecánicas</span><div class="bd-bar"><div class="bd-fill" style="--w:50%"></div></div><span class="bd-num">15 / 30</span></div>
+    <div class="bd-row"><span>Historia / Narrativa</span><div class="bd-bar"><div class="bd-fill" style="--w:25%"></div></div><span class="bd-num">5 / 20</span></div>
+    <div class="bd-row"><span>Artístico / Visual</span><div class="bd-bar"><div class="bd-fill" style="--w:70%"></div></div><span class="bd-num">14 / 20</span></div>
+    <div class="bd-row"><span>Diseño / Estructura</span><div class="bd-bar"><div class="bd-fill" style="--w:70%"></div></div><span class="bd-num">7 / 10</span></div>
+    <div class="bd-row"><span>Técnico / Gráfico</span><div class="bd-bar"><div class="bd-fill" style="--w:70%"></div></div><span class="bd-num">7 / 10</span></div>
+    <div class="bd-row"><span>Música / Sonido</span><div class="bd-bar"><div class="bd-fill" style="--w:50%"></div></div><span class="bd-num">5 / 10</span></div>
+  </div>
+
+  <div class="verdict reveal">
+    <div class="v-score">53</div>
+    <div class="v-text">
+      <h3>Veredicto</h3>
+      <p>Un incremental decente y adictivo que cumple su función de entretener, pero que se repite de principio a fin y no deja absolutamente nada detrás.</p>
+    </div>
+  </div>
+  <aside class="review-related" aria-labelledby="related-title">
+    <h2 id="related-title">Más reseñas relacionadas</h2>
+    <div class="review-related-links">
+      <a href="/resenas/berry-bury-berry"><strong>Berry Bury Berry</strong><span>Un incremental bastante mejor que este</span></a>
+      <a href="/resenas/agreeee"><strong>Agreeee</strong><span>Otro juego corto que exige más paciencia que talento</span></a>
+    </div>
+  </aside>
+</article>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Final Secreto</span>
+    <span>Noticias · Calendario · Reseñas · Contacto</span>
+  </div>
+</footer>
+
+<script src="../js/main.js?v=20260726-2"></script>
+</body>
+</html>

@@ -195,6 +195,16 @@ h2.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);f
 .art-10{background:linear-gradient(135deg,#173b2a,#5ec27e)}
 .art-11{background:linear-gradient(135deg,#2c3e50,#a8c6e5)}
 .art-12{background:linear-gradient(135deg,#0e3559,#d4a017)}
+.art-13{background:linear-gradient(135deg,#123043,#5fb3c4)}
+.art-14{background:linear-gradient(135deg,#2f2a4a,#c2a3d6)}
+.art-15{background:linear-gradient(135deg,#3d0a24,#e0533f)}
+.art-16{background:linear-gradient(135deg,#3a3a3a,#9aa0a6)}
+.art-17{background:linear-gradient(135deg,#3b1224,#c94f6d)}
+.art-18{background:linear-gradient(135deg,#1d4032,#8fcf9a)}
+.art-19{background:linear-gradient(135deg,#101a2e,#4f7fbf)}
+.art-20{background:linear-gradient(135deg,#1b1026,#7a4bb5)}
+.art-21{background:linear-gradient(135deg,#4a0f1c,#ef476f)}
+.art-22{background:linear-gradient(135deg,#2e2415,#a9762f)}
 
 .ring{position:absolute;top:14px;right:14px;width:52px;height:52px}
 .ring svg{transform:rotate(-90deg)}

@@ -49,6 +49,23 @@ Si el cambio no aparece, revisa primero que el commit esté realmente en `main`,
 
 ## Publicar contenido nuevo
 
+### Artículos de análisis
+
+Las reglas editoriales completas están en las secciones «Artículos de análisis», «Cifras y unidades», «Gráficos e infografías» e «Imágenes en artículos» de [`docs/PROJECT_RULES.md`](docs/PROJECT_RULES.md).
+
+Antes de entregar o publicar un artículo de análisis:
+
+1. Comprueba que la idea central y su relevancia se entienden desde el inicio.
+2. Contrasta los datos con las fuentes primarias y revisa varios medios solventes para obtener contexto.
+3. Verifica que se distinguen los hechos, la interpretación editorial, los datos del periodo y las cifras acumuladas.
+4. Confirma que cada cifra indica la métrica, la unidad, el periodo y la fecha de corte necesarios para interpretarla.
+5. Revisa que cada gráfico mantiene magnitudes comparables y que sus cambios de vista actualizan título, escala, orden, unidades, *tooltips* y nota metodológica.
+6. Prueba todos los *tooltips* en los límites superior, inferior y laterales. Comprueba también barras superiores y puntos extremos.
+7. Verifica las interacciones con ratón, teclado y pantalla táctil, y comprueba que las animaciones respetan `prefers-reduced-motion`.
+8. Revisa en el despliegue real el encuadre, la resolución, el texto alternativo y la procedencia de todas las imágenes.
+9. Comprueba los enlaces internos, las fuentes, los metadatos, la URL canónica y los datos estructurados.
+10. Valida el resultado en escritorio y móvil, modo claro y oscuro, Chromium y Firefox. Revisa desbordamientos, caché y cambios de vista.
+
 ### Noticias
 
 Comprueba la categoría, la fecha, las fuentes, el reverso ampliado, las insignias y el comportamiento en portada y en la página de Noticias. Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
@@ -63,12 +80,17 @@ Al publicar una reseña nueva:
 
 1. Crea o actualiza la página individual.
 2. Conserva la identidad visual específica del juego en modo claro y oscuro.
-3. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
-4. Añade la reseña a los listados y secciones correspondientes.
-5. Revisa metadatos, URL canónica y datos estructurados.
-6. Comprueba que la automatización de GitHub ha incorporado la URL nueva y actualizado las fechas en `sitemap.xml`.
-7. Comprueba escritorio, móvil, Chromium y Firefox.
-8. Actualiza la caché de los recursos modificados cuando corresponda.
+3. Comprueba que la cabecera cinematográfica mantiene el título, los metadatos y la nota legibles sobre la imagen, sin recortes problemáticos en escritorio ni móvil.
+4. Verifica que la banda «Hitpoints», la entradilla y las imágenes anchas respetan la jerarquía común y no provocan desbordamiento horizontal.
+5. Comprueba que todos los pies de imagen están centrados y que las imágenes interiores se amplían con ratón, pantalla táctil y teclado. Prueba también el cierre mediante botón, clic exterior y Escape.
+6. Incluye el bloque «Hitpoints» con exactamente estos campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego».
+7. Contrasta la fecha, el estudio y todas las plataformas con fuentes oficiales. Usa el tiempo real del autor cuando exista o una estimación externa marcada con «Aprox.» cuando no se conozca.
+8. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
+9. Añade la reseña a los listados y secciones correspondientes.
+10. Revisa metadatos, URL canónica y datos estructurados. Las plataformas de `VideoGame` deben coincidir con las de «Hitpoints».
+11. Comprueba que la automatización de GitHub ha incorporado la URL nueva y actualizado las fechas en `sitemap.xml`.
+12. Comprueba escritorio, móvil, Chromium y Firefox.
+13. Actualiza la caché de los recursos modificados cuando corresponda.
 
 ### Sitemap automático
 

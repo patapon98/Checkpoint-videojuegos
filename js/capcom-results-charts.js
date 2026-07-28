@@ -68,20 +68,51 @@
     return tooltip;
   }
 
+  function positionTooltip(container, tooltip, target) {
+    const targetBox = target.getBoundingClientRect();
+    const hostBox = container.getBoundingClientRect();
+    const gap = 10;
+    const edge = 8;
+    const scrollLeft = container.scrollLeft || 0;
+    const scrollTop = container.scrollTop || 0;
+    const targetLeft = targetBox.left - hostBox.left + scrollLeft;
+    const targetTop = targetBox.top - hostBox.top + scrollTop;
+    const targetBottom = targetBox.bottom - hostBox.top + scrollTop;
+    const visibleLeft = scrollLeft + edge;
+    const visibleRight = scrollLeft + container.clientWidth - edge;
+    const visibleTop = scrollTop + edge;
+    const visibleBottom = scrollTop + container.clientHeight - edge;
+    const tooltipWidth = tooltip.offsetWidth;
+    const tooltipHeight = tooltip.offsetHeight;
+    const centeredLeft = targetLeft + targetBox.width / 2 - tooltipWidth / 2;
+    const maxLeft = Math.max(visibleLeft, visibleRight - tooltipWidth);
+    const aboveTop = targetTop - tooltipHeight - gap;
+    const belowTop = targetBottom + gap;
+
+    tooltip.style.left = `${Math.max(visibleLeft, Math.min(centeredLeft, maxLeft))}px`;
+
+    if (aboveTop >= visibleTop) {
+      tooltip.dataset.placement = "above";
+      tooltip.style.top = `${aboveTop}px`;
+      return;
+    }
+
+    if (belowTop + tooltipHeight <= visibleBottom) {
+      tooltip.dataset.placement = "below";
+      tooltip.style.top = `${belowTop}px`;
+      return;
+    }
+
+    tooltip.dataset.placement = "inside";
+    tooltip.style.top = `${Math.max(visibleTop, Math.min(belowTop, visibleBottom - tooltipHeight))}px`;
+  }
+
   function showTooltip(container, tooltip, target, title, value) {
-    const box = target.getBoundingClientRect();
-    const host = container.getBoundingClientRect();
     const heading = document.createElement("b");
     heading.textContent = title;
     tooltip.replaceChildren(heading, document.createTextNode(value));
     tooltip.hidden = false;
-    const spaceAbove = box.top - host.top + container.scrollTop;
-    const placeBelow = spaceAbove < tooltip.offsetHeight + 12;
-    tooltip.dataset.placement = placeBelow ? "below" : "above";
-    tooltip.style.left = `${box.left - host.left + box.width / 2 + container.scrollLeft}px`;
-    tooltip.style.top = placeBelow
-      ? `${box.bottom - host.top + container.scrollTop}px`
-      : `${spaceAbove}px`;
+    positionTooltip(container, tooltip, target);
   }
 
   function bindTooltip(container, tooltip, target, title, value) {
@@ -211,19 +242,19 @@
 
     if (title) {
       title.textContent = isCumulative
-        ? "Ventas acumuladas por juego a 30 de junio de 2026"
-        : "Ventas por juego durante el Q1 de 2026";
+        ? "Copias vendidas por juego hasta el 30 de junio de 2026"
+        : "Copias vendidas por juego durante el Q1 de 2026";
     }
     if (note) {
       note.innerHTML = isCumulative
-        ? "El gráfico muestra las <strong>ventas acumuladas desde el lanzamiento hasta el 30 de junio de 2026</strong>. Los juegos se reordenan y la escala cambia para esta vista. Las cifras agrupan versiones y adaptaciones adicionales según la tabla trimestral de Capcom."
-        : "El gráfico muestra <strong>solo las ventas del Q1 de 2026</strong>, del 1 de abril al 30 de junio. Activa «Acumulado» para consultar el total desde el lanzamiento. Cada vista se ordena por separado y utiliza su propia escala.";
+        ? "El gráfico muestra el <strong>total de copias vendidas desde el lanzamiento hasta el 30 de junio de 2026</strong>. Los juegos se reordenan y la escala cambia para esta vista. Las cifras agrupan versiones y adaptaciones adicionales según la tabla trimestral de Capcom."
+        : "El gráfico muestra <strong>solo las copias vendidas en el Q1 de 2026</strong>, del 1 de abril al 30 de junio. Selecciona «Acumulado» para consultar el total desde el lanzamiento. Cada vista se ordena por separado y utiliza su propia escala.";
     }
     container.setAttribute(
       "aria-label",
       isCumulative
-        ? "Ventas acumuladas de diez juegos de Capcom hasta el 30 de junio de 2026"
-        : "Ventas de los diez juegos de Capcom con más unidades entre el 1 de abril y el 30 de junio de 2026"
+        ? "Copias vendidas de diez juegos de Capcom hasta el 30 de junio de 2026"
+        : "Copias vendidas de los diez juegos de Capcom con más unidades entre el 1 de abril y el 30 de junio de 2026"
     );
 
     const svg = svgEl("svg", {
@@ -285,8 +316,8 @@
         rect,
         item.name,
         isCumulative
-          ? `${format(value)} mill. acumulados · hasta 30 jun 2026`
-          : `${format(value)} mill. · Q1 2026`
+          ? `${format(value)} mill. de copias vendidas · hasta 30 jun 2026`
+          : `${format(value)} mill. de copias vendidas · Q1 2026`
       );
 
       const valueText = svgEl("text", {
@@ -401,7 +432,7 @@
           class: "chart-point",
           tabindex: "0",
           role: "graphics-symbol",
-          "aria-label": `${series.name}, ${point.date.full}, ${format(point.value)} mill. acumulados`
+          "aria-label": `${series.name}, ${point.date.full}, ${format(point.value)} mill. de copias vendidas acumuladas`
         });
         circle.style.setProperty("--animation-delay", `${250 + seriesIndex * 90 + pointIndex * 45}ms`);
         svg.append(circle);
@@ -410,7 +441,7 @@
           tooltip,
           circle,
           `${series.name} · ${point.date.full}`,
-          `${format(point.value)} mill. acumulados`
+          `${format(point.value)} mill. de copias vendidas acumuladas`
         );
       });
     });
@@ -442,8 +473,7 @@
         heading.textContent = segment.dataset.breakdownLabel;
         tooltip.replaceChildren(heading, document.createTextNode(segment.dataset.breakdownValue));
         tooltip.hidden = false;
-        tooltip.style.left = `${segmentBox.left - cardBox.left + segmentBox.width / 2}px`;
-        tooltip.style.top = `${segmentBox.top - cardBox.top}px`;
+        positionTooltip(card, tooltip, segment);
       };
       const hide = () => {
         tooltip.hidden = true;
@@ -485,29 +515,21 @@
     targets.forEach(target => observer.observe(target));
   }
 
-  document.querySelectorAll("[data-financial-metric]").forEach(button => {
-    button.addEventListener("click", () => {
-      state.financialMetric = button.dataset.financialMetric;
-      document.querySelectorAll("[data-financial-metric]").forEach(item => {
-        const active = item === button;
-        item.classList.toggle("is-active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
+  const financialMetric = document.getElementById("financialMetric");
+  if (financialMetric) {
+    financialMetric.addEventListener("change", () => {
+      state.financialMetric = financialMetric.value;
       renderFinancial(true);
     });
-  });
+  }
 
-  document.querySelectorAll("[data-games-metric]").forEach(button => {
-    button.addEventListener("click", () => {
-      state.gamesMetric = button.dataset.gamesMetric;
-      document.querySelectorAll("[data-games-metric]").forEach(item => {
-        const active = item === button;
-        item.classList.toggle("is-active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
+  const gamesMetric = document.getElementById("gamesMetric");
+  if (gamesMetric) {
+    gamesMetric.addEventListener("change", () => {
+      state.gamesMetric = gamesMetric.value;
       renderGames(true);
     });
-  });
+  }
 
   renderPicker();
   renderFinancial();

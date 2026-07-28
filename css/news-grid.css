@@ -305,3 +305,68 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 @media(prefers-reduced-motion:reduce){
   .news-mobile-track{transition:none}
 }
+
+
+/* Archivo cronológico de contenidos con página individual */
+.news-article-archive{
+  margin-top:clamp(54px,8vw,88px);
+  padding-top:clamp(34px,5vw,52px);
+  border-top:1px solid var(--line);
+}
+.news-article-archive-heading{
+  display:grid;
+  grid-template-columns:minmax(0,.7fr) minmax(280px,1.3fr);
+  gap:24px 42px;
+  align-items:end;
+  margin-bottom:22px;
+}
+.news-article-archive-heading h2{
+  margin:5px 0 0;
+  font-family:var(--serif);
+  font-size:clamp(1.8rem,4vw,2.8rem);
+  line-height:1.05;
+  letter-spacing:-.035em;
+}
+.news-article-archive-heading p{margin:0;color:var(--ink-soft);max-width:650px}
+.news-article-archive-list{display:grid;gap:12px}
+.news-article-archive-item{
+  display:grid;
+  grid-template-columns:minmax(160px,.45fr) minmax(0,1.25fr) auto;
+  gap:16px 24px;
+  align-items:center;
+  padding:20px 22px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:var(--card);
+  color:var(--ink);
+  transition:transform .22s,border-color .22s,box-shadow .22s;
+}
+.news-article-archive-item:hover{
+  transform:translateY(-2px);
+  border-color:color-mix(in srgb,var(--accent) 42%,var(--line));
+  box-shadow:0 18px 35px -30px rgba(22,21,26,.6);
+}
+.news-article-archive-meta{
+  color:var(--accent);
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.news-article-archive-item strong{
+  font-family:var(--serif);
+  font-size:1.08rem;
+  line-height:1.25;
+}
+.news-article-archive-cta{
+  color:var(--ink-soft);
+  font-size:.75rem;
+  font-weight:800;
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .news-article-archive{margin-top:48px;padding-top:32px}
+  .news-article-archive-heading{grid-template-columns:1fr;gap:10px;margin-bottom:18px}
+  .news-article-archive-item{grid-template-columns:1fr;gap:7px;padding:18px}
+  .news-article-archive-cta{margin-top:4px}
+}

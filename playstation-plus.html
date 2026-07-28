@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css?v=20260729-6">
   <link rel="stylesheet" href="/css/brand-logo.css">
-  <link rel="stylesheet" href="/css/playstation-plus.css?v=20260729-1">
+  <link rel="stylesheet" href="/css/playstation-plus.css?v=20260729-2">
   <script>
   (function(){
     try{
@@ -70,14 +70,17 @@
             <p>Consulta qué llega a Essential, Extra y Premium, durante cuánto tiempo puede reclamarse y en qué consolas está disponible.</p>
           </div>
           <div class="psplus-symbol" aria-hidden="true">
-            <span>△</span><span>○</span><span>×</span><span>□</span>
+            <span><svg viewBox="0 0 48 48"><rect x="13" y="13" width="22" height="22" rx="1"/></svg></span>
+            <span><svg viewBox="0 0 48 48"><path d="M24 11 37 35H11Z"/></svg></span>
+            <span><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="13"/></svg></span>
+            <span><svg viewBox="0 0 48 48"><path d="m14 14 20 20M34 14 14 34"/></svg></span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="wrap psplus-content" aria-labelledby="psplusMonthTitle">
-      <div class="psplus-toolbar">
+      <div class="psplus-toolbar reveal">
         <label class="psplus-month-control" for="psplusMonth">
           <span>Mes</span>
           <select id="psplusMonth" aria-describedby="psplusStatus"></select>
@@ -85,15 +88,18 @@
         <div class="psplus-status" id="psplusStatus" aria-live="polite"></div>
       </div>
 
-      <div class="psplus-month-heading">
+      <div class="psplus-month-heading reveal">
         <div>
           <span class="psplus-eyebrow" id="psplusAvailability"></span>
           <h2 id="psplusMonthTitle">Cargando juegos…</h2>
         </div>
-        <a class="psplus-source-link" id="psplusMainSource" href="#" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a>
+        <div class="psplus-month-actions">
+          <a class="psplus-month-page-link" id="psplusMonthPage" href="/playstation-plus">Ver página del mes →</a>
+          <a class="psplus-source-link" id="psplusMainSource" href="#" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a>
+        </div>
       </div>
 
-      <div class="psplus-filters" id="psplusFilters" role="group" aria-label="Filtrar juegos">
+      <div class="psplus-filters reveal" id="psplusFilters" role="group" aria-label="Filtrar juegos">
         <button type="button" class="on" data-filter="all" aria-pressed="true">Todos</button>
         <button type="button" data-filter="essential" aria-pressed="false">Essential</button>
         <button type="button" data-filter="extra" aria-pressed="false">Extra</button>
@@ -104,7 +110,7 @@
 
       <div class="psplus-groups" id="psplusGroups" aria-live="polite"></div>
 
-      <aside class="psplus-explainer" aria-label="Cómo funcionan los planes">
+      <aside class="psplus-explainer reveal" aria-label="Cómo funcionan los planes">
         <div><b>Essential</b><span>Juegos mensuales que puedes añadir a tu biblioteca mientras mantengas la suscripción.</span></div>
         <div><b>Extra</b><span>Incluye Essential y añade el catálogo de juegos de PS4 y PS5.</span></div>
         <div><b>Premium</b><span>Incluye los dos planes anteriores y suma clásicos, pruebas y otras ventajas.</span></div>
@@ -118,7 +124,7 @@
     <div class="footer-inner"><span>© 2026 Final Secreto</span></div>
   </footer>
 
-  <script src="/js/main.js?v=20260729-7"></script>
-  <script src="/js/playstation-plus.js?v=20260729-1"></script>
+  <script src="/js/main.js?v=20260729-8"></script>
+  <script src="/js/playstation-plus.js?v=20260729-2"></script>
 </body>
 </html>

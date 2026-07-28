@@ -103,7 +103,7 @@
     const values = financial.map(item => item[metric]);
     const rawMax = Math.max(...values);
     const max = metric === "margin" ? 70 : Math.ceil(rawMax / 10) * 10;
-    const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, "aria-hidden": "true" });
+    const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}` });
     grid(svg, width, height, margin, max, metric === "margin" ? 7 : max / 10, metric === "margin" ? "%" : "");
     const plotWidth = width - margin.left - margin.right;
     const slot = plotWidth / financial.length;
@@ -147,7 +147,7 @@
     const max = Math.ceil(Math.max(...values) / 5) * 5 || 5;
     const plotWidth = width - margin.left - margin.right;
     const rowHeight = (height - margin.top - margin.bottom) / games.length;
-    const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, "aria-hidden": "true" });
+    const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}` });
 
     for (let index = 0; index <= 5; index += 1) {
       const x = margin.left + plotWidth * index / 5;
@@ -220,7 +220,7 @@
     const allValues = selected.flatMap(item => item.values);
     const min = Math.max(0, Math.floor(Math.min(...allValues) - 2));
     const max = Math.ceil(Math.max(...allValues) + 1);
-    const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, "aria-hidden": "true" });
+    const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}` });
     const plotWidth = width - margin.left - margin.right;
     const plotHeight = height - margin.top - margin.bottom;
 

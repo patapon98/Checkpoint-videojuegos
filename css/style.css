@@ -769,7 +769,7 @@ html.calendar-booting .calendar-tools{visibility:hidden}
   font-size:.82rem;
   font-weight:600;
 }
-.article-hero .article-meta b{color:#fff}
+.article-hero .article-meta b{margin-left:.26em;color:#fff}
 .article-hero .article-meta span{display:inline-flex;align-items:center}
 .article-hero .article-meta span+span::before{
   content:"";

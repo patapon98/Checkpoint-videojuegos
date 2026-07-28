@@ -66,9 +66,15 @@ Al publicar una reseña nueva:
 3. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
 4. Añade la reseña a los listados y secciones correspondientes.
 5. Revisa metadatos, URL canónica y datos estructurados.
-6. Actualiza el sitemap cuando se cree una URL nueva.
+6. Comprueba que la automatización de GitHub ha incorporado la URL nueva y actualizado las fechas en `sitemap.xml`.
 7. Comprueba escritorio, móvil, Chromium y Firefox.
 8. Actualiza la caché de los recursos modificados cuando corresponda.
+
+### Sitemap automático
+
+El flujo `.github/workflows/update-sitemap.yml` se activa con cada `push` que añada o modifique una reseña individual o el archivo `resenas.html`. Ejecuta `scripts/generate-sitemap.mjs`, lee las URL canónicas de las páginas públicas, excluye las páginas con `noindex`, calcula `lastmod` desde el historial de Git y guarda `sitemap.xml` solo cuando exista un cambio real.
+
+Si se publica directamente en `main`, la automatización añadirá un segundo commit con el sitemap actualizado y Cloudflare desplegará ese estado. Si se trabaja en una rama, el commit automático quedará incluido en la misma PR. No edites manualmente el sitemap al publicar una reseña, salvo para reparar un fallo de la automatización.
 
 ## Si algo sale mal
 

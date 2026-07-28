@@ -61,7 +61,7 @@ jobs:
 
       - name: Regenerar sitemap
         if: steps.changes.outputs.changed == 'true'
-        run: SITEMAP_DATE="$(node -p "require('./data/playstation-plus.json').updatedAt")" node scripts/generate-sitemap.mjs
+        run: SITEMAP_PSPLUS_DATE="$(node -p "require('./data/playstation-plus.json').updatedAt")" node scripts/generate-sitemap.mjs
 
       - name: Validar datos y archivos
         if: steps.changes.outputs.changed == 'true'

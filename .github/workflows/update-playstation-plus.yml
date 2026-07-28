@@ -50,7 +50,7 @@ jobs:
           git fetch origin "$branch"
           git checkout -B "$branch" "origin/$branch"
           git merge --no-edit origin/main
-          node scripts/update-ps-plus.mjs
+          node scripts/run-ps-plus-update.mjs
 
           if git diff --quiet; then
             echo "La PR existente ya contiene todos los datos oficiales disponibles."
@@ -65,7 +65,7 @@ jobs:
         if: steps.existing.outputs.found != 'true'
         id: changes
         run: |
-          node scripts/update-ps-plus.mjs
+          node scripts/run-ps-plus-update.mjs
           if git diff --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else

@@ -313,11 +313,46 @@ html[data-theme="dark"] .capcom-results-page {
 
 .chart-controls {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  align-items: flex-end;
 }
 
-.chart-controls button,
+.chart-select-control {
+  display: grid;
+  gap: 5px;
+  color: var(--ink-soft);
+  font-size: .66rem;
+  font-weight: 800;
+}
+
+.chart-select-control span {
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.chart-select-control select {
+  min-width: 190px;
+  padding: 9px 34px 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.chart-select-control select:hover {
+  border-color: var(--capcom-blue);
+}
+
+.chart-select-control select:focus-visible {
+  border-color: var(--capcom-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--capcom-blue) 18%, transparent);
+}
+
 .title-picker button {
   appearance: none;
   padding: 8px 11px;
@@ -332,14 +367,12 @@ html[data-theme="dark"] .capcom-results-page {
   transition: border-color .2s, color .2s, background .2s, transform .2s;
 }
 
-.chart-controls button:hover,
 .title-picker button:hover {
   border-color: var(--capcom-blue);
   color: var(--ink);
   transform: translateY(-1px);
 }
 
-.chart-controls button.is-active,
 .title-picker button.is-active {
   border-color: var(--capcom-blue);
   background: var(--capcom-blue);
@@ -459,11 +492,6 @@ html[data-theme="dark"] .capcom-results-page {
   line-height: 1.4;
   box-shadow: 0 12px 32px -15px rgba(0, 0, 0, .65);
   pointer-events: none;
-  transform: translate(-50%, calc(-100% - 10px));
-}
-
-.chart-tooltip[data-placement="below"] {
-  transform: translate(-50%, 10px);
 }
 
 .chart-tooltip b {
@@ -737,7 +765,6 @@ html[data-theme="dark"] .capcom-results-page {
   line-height: 1.35;
   box-shadow: 0 12px 30px -14px rgba(0, 0, 0, .7);
   pointer-events: none;
-  transform: translate(-50%, -115%);
 }
 
 .breakdown-tooltip b {
@@ -862,9 +889,13 @@ html[data-theme="dark"] .capcom-results-page {
     width: 100%;
   }
 
-  .chart-controls button {
-    flex: 1;
-    white-space: nowrap;
+  .chart-select-control,
+  .chart-select-control select {
+    width: 100%;
+  }
+
+  .chart-select-control select {
+    min-width: 0;
   }
 
   .interactive-chart {
@@ -904,7 +935,7 @@ html[data-theme="dark"] .capcom-results-page {
   .chart-line,
   .chart-point,
   .segment,
-  .chart-controls button,
+  .chart-select-control select,
   .title-picker button {
     transition: none;
   }

@@ -80,12 +80,14 @@ Al publicar una reseña nueva:
 
 1. Crea o actualiza la página individual.
 2. Conserva la identidad visual específica del juego en modo claro y oscuro.
-3. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
-4. Añade la reseña a los listados y secciones correspondientes.
-5. Revisa metadatos, URL canónica y datos estructurados.
-6. Comprueba que la automatización de GitHub ha incorporado la URL nueva y actualizado las fechas en `sitemap.xml`.
-7. Comprueba escritorio, móvil, Chromium y Firefox.
-8. Actualiza la caché de los recursos modificados cuando corresponda.
+3. Incluye el bloque «Hitpoints» con exactamente estos campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego».
+4. Contrasta la fecha, el estudio y todas las plataformas con fuentes oficiales. Usa el tiempo real del autor cuando exista o una estimación externa marcada con «Aprox.» cuando no se conozca.
+5. Añade el bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
+6. Añade la reseña a los listados y secciones correspondientes.
+7. Revisa metadatos, URL canónica y datos estructurados. Las plataformas de `VideoGame` deben coincidir con las de «Hitpoints».
+8. Comprueba que la automatización de GitHub ha incorporado la URL nueva y actualizado las fechas en `sitemap.xml`.
+9. Comprueba escritorio, móvil, Chromium y Firefox.
+10. Actualiza la caché de los recursos modificados cuando corresponda.
 
 ### Sitemap automático
 

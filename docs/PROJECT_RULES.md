@@ -123,6 +123,9 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No permitir texto cortado ni scroll horizontal accidental en móvil.
 - Mantener el modo oscuro y los colores particulares de cada reseña.
 - Toda reseña individual debe incluir un bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos y coherentes con el análisis.
+- El bloque «Hitpoints» de toda reseña debe contener exactamente estos cuatro campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego». No sustituirlos por la nota, el género, la dificultad u otros datos.
+- «Fecha de lanzamiento» debe indicar la fecha comercial del juego, «Desarrollador» el estudio responsable y «Plataformas» todas las plataformas en las que se publicó, no solo aquella en la que se realizó la reseña.
+- «Tiempo de juego» debe reflejar el tiempo real del autor cuando se conozca. Si no se dispone de él, usar una estimación contrastada con HowLongToBeat u otra fuente solvente y anteponer «Aprox.» para distinguirla de una medición propia.
 - Revisar tanto la portada como las páginas individuales cuando compartan componentes o estilos.
 - Evitar soluciones vinculadas a identificadores concretos cuando la regla deba aplicarse también al contenido futuro.
 

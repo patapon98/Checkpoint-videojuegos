@@ -258,3 +258,33 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
 .news-page #newsArchive .news-flip-back{
   transform:rotateY(180deg) translateZ(0);
 }
+
+
+/* Carrusel de noticias recientes en la página Noticias, solo en móvil */
+.news-mobile-carousel,
+.news-mobile-viewport,
+.news-mobile-track{display:contents}
+.news-mobile-controls{display:none}
+@media(max-width:700px){
+  .news-view-toggle{display:none}
+  .news-mobile-carousel{display:block;min-width:0}
+  .news-mobile-viewport{position:relative;display:block;overflow:hidden;border-radius:22px;touch-action:pan-y}
+  .news-mobile-track{
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns:100%;
+    gap:18px;
+    align-items:stretch;
+    transition:transform .55s cubic-bezier(.22,1,.36,1);
+    will-change:transform
+  }
+  .news-mobile-track>.news-archive-card{height:100%}
+  .news-mobile-controls{display:flex;justify-content:center}
+  .news-mobile-carousel.has-single-slide .news-mobile-controls{display:none}
+  .news-page #newsArchive.is-grid,
+  .news-page #newsArchive.is-list{display:grid;grid-template-columns:1fr;gap:18px}
+  .news-page #newsArchive>.news-featured{grid-column:1}
+}
+@media(prefers-reduced-motion:reduce){
+  .news-mobile-track{transition:none}
+}

@@ -439,30 +439,47 @@
     }, { passive: true });
     refreshLayout();
 
-    const swipeHintKey = "finalsecreto:seen-carousel-hint-v2";
-    let seenSwipeHint = true;
+    const swipeHintKey = "finalsecreto:seen-carousel-hint-v3";
+    let seenSwipeHint = false;
     try {
       seenSwipeHint = sessionStorage.getItem(swipeHintKey) === "1";
     } catch (e) {}
     if (mobileQuery.matches && !reducedMotionQuery.matches && !seenSwipeHint) {
       const arrow = carousel.querySelector("[data-news-swipe-hint]");
+      let hintStarted = false;
       const triggerSwipeHint = () => {
+        if (hintStarted) return;
+        hintStarted = true;
+
+        /* Reinicia las clases para que la animación arranque incluso tras un render previo. */
+        track.classList.remove("peek-nudge");
+        arrow?.classList.remove("show");
+        void track.offsetWidth;
+
+        const completeSwipeHint = event => {
+          if (event.animationName !== "news-carousel-peek") return;
+          track.classList.remove("peek-nudge");
+          try { sessionStorage.setItem(swipeHintKey, "1"); } catch (e) {}
+        };
+        track.addEventListener("animationend", completeSwipeHint, { once: true });
         track.classList.add("peek-nudge");
-        track.addEventListener("animationend", () => track.classList.remove("peek-nudge"), { once: true });
+
         if (arrow) {
           arrow.classList.add("show");
           arrow.addEventListener("animationend", () => arrow.classList.remove("show"), { once: true });
         }
-        try { sessionStorage.setItem(swipeHintKey, "1"); } catch (e) {}
       };
-      if ("IntersectionObserver" in window) {
+
+      if ("IntersectionObserver" in window && arrow) {
         const hintObserver = new IntersectionObserver(entries => {
-          if (entries.some(entry => entry.isIntersecting)) {
-            hintObserver.disconnect();
-            triggerSwipeHint();
-          }
-        }, { threshold: 0.25, rootMargin: "0px 0px -8% 0px" });
-        hintObserver.observe(carousel);
+          const arrowIsVisible = entries.some(entry =>
+            entry.isIntersecting && entry.intersectionRatio >= 0.9
+          );
+          if (!arrowIsVisible) return;
+          hintObserver.disconnect();
+          requestAnimationFrame(() => requestAnimationFrame(triggerSwipeHint));
+        }, { threshold: [0.9], rootMargin: "-10% 0px -10% 0px" });
+        hintObserver.observe(arrow);
       } else {
         triggerSwipeHint();
       }

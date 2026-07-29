@@ -3,13 +3,80 @@
   margin-bottom:48px;
 }
 
+.home-game-hubs-toolbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin:26px 0 12px;
+}
+
+.home-game-hubs-toolbar p{
+  margin:0;
+  color:var(--muted);
+  font-size:.78rem;
+  font-weight:650;
+}
+
+.home-game-hubs-controls{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.home-game-hubs-control{
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  background:var(--card);
+  color:var(--ink);
+  font:700 1rem/1 var(--sans);
+  cursor:pointer;
+  transition:transform .2s ease,border-color .2s ease,color .2s ease,opacity .2s ease;
+}
+
+.home-game-hubs-control:hover:not(:disabled){
+  transform:translateY(-2px);
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+.home-game-hubs-control:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+}
+
+.home-game-hubs-control:disabled{
+  opacity:.32;
+  cursor:default;
+}
+
+.home-game-hubs-slider{
+  position:relative;
+}
+
 .home-game-hubs-grid{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-flow:column;
+  grid-auto-columns:calc((100% - 44px)/3);
   gap:22px;
+  overflow-x:auto;
+  overscroll-behavior-inline:contain;
+  padding:6px 2px 18px;
+  scroll-behavior:smooth;
+  scroll-snap-type:x mandatory;
+  scrollbar-width:none;
+}
+
+.home-game-hubs-grid::-webkit-scrollbar{
+  display:none;
 }
 
 .home-game-hub-card{
+  --hub-accent:var(--accent);
   min-width:0;
   display:flex;
   flex-direction:column;
@@ -20,18 +87,19 @@
   color:var(--ink);
   text-decoration:none;
   box-shadow:0 16px 38px -34px rgba(20,18,24,.65);
+  scroll-snap-align:start;
   transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
 }
 
 .home-game-hub-card:hover{
   transform:translateY(-5px);
-  border-color:color-mix(in srgb,var(--accent) 48%,var(--line));
+  border-color:color-mix(in srgb,var(--hub-accent) 58%,var(--line));
   box-shadow:0 24px 44px -30px rgba(20,18,24,.72);
 }
 
 .home-game-hub-card:focus-visible{
-  outline:3px solid var(--accent);
-  outline-offset:4px;
+  outline:3px solid var(--hub-accent);
+  outline-offset:3px;
 }
 
 .home-game-hub-art{
@@ -66,9 +134,9 @@
   left:14px;
   bottom:13px;
   padding:6px 10px;
-  border:1px solid rgba(255,255,255,.25);
+  border:1px solid color-mix(in srgb,var(--hub-accent) 65%,rgba(255,255,255,.28));
   border-radius:999px;
-  background:rgba(14,13,18,.68);
+  background:rgba(14,13,18,.72);
   color:#fff;
   font-size:.67rem;
   font-weight:800;
@@ -96,7 +164,7 @@
 }
 
 .home-game-hub-meta time{
-  color:var(--accent);
+  color:var(--hub-accent);
 }
 
 .home-game-hub-meta span::before{
@@ -141,21 +209,24 @@
 }
 
 .home-game-hub-footer span{
-  color:var(--accent);
+  color:var(--hub-accent);
   font-size:.76rem;
   font-weight:800;
   text-align:right;
 }
 
+.home-game-hubs-progress{
+  min-height:18px;
+  color:var(--muted);
+  font-size:.7rem;
+  font-weight:750;
+  text-align:center;
+}
+
 @media(max-width:900px){
   .home-game-hubs-grid{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-
-  .home-game-hub-card:last-child{
-    grid-column:1/-1;
-    width:calc(50% - 11px);
-    justify-self:center;
+    grid-auto-columns:calc((100% - 18px)/2);
+    gap:18px;
   }
 }
 
@@ -164,15 +235,26 @@
     margin-bottom:48px;
   }
 
-  .home-game-hubs-grid{
-    grid-template-columns:1fr;
-    gap:16px;
+  .home-game-hubs-toolbar{
+    margin-top:22px;
   }
 
-  .home-game-hub-card:last-child{
-    grid-column:auto;
-    width:auto;
-    justify-self:stretch;
+  .home-game-hubs-toolbar p{
+    max-width:58%;
+    line-height:1.35;
+  }
+
+  .home-game-hubs-control{
+    width:40px;
+    height:40px;
+  }
+
+  .home-game-hubs-grid{
+    grid-auto-columns:88%;
+    gap:14px;
+    margin-right:-24px;
+    padding-right:24px;
+    scroll-padding-inline:0;
   }
 
   .home-game-hub-art{
@@ -189,8 +271,13 @@
 }
 
 @media(prefers-reduced-motion:reduce){
+  .home-game-hubs-grid{
+    scroll-behavior:auto;
+  }
+
   .home-game-hub-card,
-  .home-game-hub-art img{
+  .home-game-hub-art img,
+  .home-game-hubs-control{
     transition:none;
   }
 

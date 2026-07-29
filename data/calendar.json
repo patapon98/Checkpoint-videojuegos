@@ -687,7 +687,7 @@
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": true
       },
       "store": {
         "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
@@ -701,11 +701,11 @@
       "priority": 55,
       "source": {
         "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
-        "official": true,
+        "official": false,
         "host": "www.nintendo.com",
-        "checkedAt": "2026-07-27"
+        "checkedAt": null
       },
-      "legacy": false
+      "legacy": true
     },
     {
       "id": "duskfade",
@@ -1041,11 +1041,11 @@
       "priority": 40,
       "source": {
         "url": "https://en.bandainamcoent.eu/captain-tsubasa/captain-tsubasa-2-world-fighters",
-        "official": true,
+        "official": false,
         "host": "en.bandainamcoent.eu",
-        "checkedAt": "2026-07-27"
+        "checkedAt": null
       },
-      "legacy": false
+      "legacy": true
     },
     {
       "id": "elden-ring-tarnished-edition",
@@ -1062,7 +1062,7 @@
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": true
       },
       "store": {
         "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition",
@@ -1076,11 +1076,11 @@
       "priority": 55,
       "source": {
         "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition",
-        "official": true,
+        "official": false,
         "host": "en.bandainamcoent.eu",
-        "checkedAt": "2026-07-27"
+        "checkedAt": null
       },
-      "legacy": false
+      "legacy": true
     },
     {
       "id": "the-blood-of-dawnwalker",
@@ -1185,7 +1185,7 @@
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": true
       },
       "store": {
         "url": "https://www.valheimgame.com/news/valheim-has-a-release-date-/",
@@ -1202,11 +1202,11 @@
       "priority": 70,
       "source": {
         "url": "https://www.valheimgame.com/news/valheim-has-a-release-date-/",
-        "official": true,
+        "official": false,
         "host": "www.valheimgame.com",
-        "checkedAt": "2026-07-27"
+        "checkedAt": null
       },
-      "legacy": false
+      "legacy": true
     },
     {
       "id": "marvel-s-wolverine",
@@ -1327,7 +1327,7 @@
     {
       "id": "dune-awakening",
       "title": "Dune: Awakening",
-      "headingHtml": "Dune: Awakening <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/12701-buy-dune-awakening-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Dune: Awakening en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a> <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "headingHtml": "Dune: Awakening <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/12701-buy-dune-awakening-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Dune: Awakening en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a><span class=\"tag-dlc\">Nueva plataforma</span>",
       "date": "2026-09-22",
       "platformKeys": [
         "xbox",

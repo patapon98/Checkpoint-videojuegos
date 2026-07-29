@@ -18,6 +18,7 @@ const DATA_FILE = path.join(ROOT, "data", "calendar.json");
 const CALENDAR_FILE = path.join(ROOT, "calendario.html");
 const HOME_FILE = path.join(ROOT, "index.html");
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
+const MAIN_ASSET_VERSION = "20260729-8";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
@@ -25,6 +26,10 @@ const trailerIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 
 
 function displayMonthLabel(key) {
   return monthLabel(key).replace(" de ", " ");
+}
+
+function updateMainAssetVersion(html) {
+  return html.replace(/js\/main\.js\?v=[^"']+/, `js/main.js?v=${MAIN_ASSET_VERSION}`);
 }
 
 function linkAttributes(link, fallbackTitle, fallbackAria) {
@@ -148,6 +153,7 @@ calendarHtml = replaceElementInner(calendarHtml, "releases", renderCalendarRelea
 calendarHtml = replaceMonthOptions(calendarHtml, visible);
 calendarHtml = updateCalendarNote(calendarHtml);
 calendarHtml = updateCountdown(calendarHtml, resolveCountdown(data, TODAY));
+calendarHtml = updateMainAssetVersion(calendarHtml);
 await writeFile(CALENDAR_FILE, calendarHtml, "utf8");
 
 let homeHtml = await readFile(HOME_FILE, "utf8");
@@ -155,6 +161,7 @@ const homeReleases = selectHomeReleases(data, TODAY);
 homeHtml = replaceElementInner(homeHtml, "releases", `\n        ${homeReleases.map((release) => renderRelease(release, { reveal: false, home: true })).join("\n        ")}\n      `);
 homeHtml = updateCountdown(homeHtml, resolveCountdown(data, TODAY));
 homeHtml = homeHtml.replace(/(<h2 class="section-title" data-i18n="cal_title">)Calendario \d{4}(<\/h2>)/, `$1Calendario ${TODAY.slice(0, 4)}$2`);
+homeHtml = updateMainAssetVersion(homeHtml);
 await writeFile(HOME_FILE, homeHtml, "utf8");
 
 console.log(`Calendario generado con ${visible.length} lanzamientos visibles y ${homeReleases.length} en portada.`);

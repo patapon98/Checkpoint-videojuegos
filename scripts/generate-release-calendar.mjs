@@ -1,0 +1,156 @@
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import {
+  addMonths,
+  attributes,
+  elementById,
+  escapeHtml,
+  monthKey,
+  monthLabel,
+  releasePriority,
+  replaceElementInner,
+  resolveCountdown,
+  selectHomeReleases,
+  shortMonth,
+  spanishLongDate,
+  todayMadrid
+} from "./calendar-utils.mjs";
+
+const ROOT = process.cwd();
+const DATA_FILE = path.join(ROOT, "data", "calendar.json");
+const CALENDAR_FILE = path.join(ROOT, "calendario.html");
+const HOME_FILE = path.join(ROOT, "index.html");
+const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
+
+const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
+const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
+
+function linkAttributes(link, fallbackTitle, fallbackAria) {
+  if (!link?.url) return "";
+  return [
+    `href="${escapeHtml(link.url)}"`,
+    'target="_blank"',
+    'rel="noopener noreferrer"',
+    `title="${escapeHtml(link.title || fallbackTitle)}"`,
+    `aria-label="${escapeHtml(link.ariaLabel || fallbackAria)}"`
+  ].join(" ");
+}
+
+function headingHtml(release) {
+  if (release.headingHtml) return release.headingHtml;
+  let html = escapeHtml(release.title);
+  if (release.tag) html += ` <span class="tag-dlc">${escapeHtml(release.tag)}</span>`;
+  return html;
+}
+
+function badgeFor(release, { home = false } = {}) {
+  if (release.date <= TODAY) return { class: "hype hype-out", text: "Ya disponible" };
+  if (release.badge) return release.badge;
+  if (home && release.tag) return { class: "hype hype-mid", text: release.tag };
+  return null;
+}
+
+function renderRelease(release, { reveal = true, home = false } = {}) {
+  const image = release.image || {};
+  const store = release.store;
+  const badge = badgeFor(release, { home });
+  const dataAttributes = [
+    `data-release-id="${escapeHtml(release.id)}"`,
+    `data-release-date="${escapeHtml(release.date)}"`,
+    `data-release-month="${escapeHtml(monthKey(release.date))}"`,
+    `data-plat="${escapeHtml((release.platformKeys || []).join(" "))}"`
+  ];
+  if (image.gridArt) dataAttributes.push(`data-grid-art="${escapeHtml(image.gridArt)}"`);
+  if (image.poster) dataAttributes.push(`data-poster="${escapeHtml(image.poster)}"`);
+
+  const imageClass = image.className ? ` class="${escapeHtml(image.className)}"` : "";
+  const storeLink = store?.url
+    ? `<a class="wish" ${linkAttributes(store, "Ver ficha oficial", `Ver ficha oficial de ${release.title}`)}>${wishIcon}</a>`
+    : "";
+  const badgeHtml = badge ? `<span class="${escapeHtml(badge.class)}">${escapeHtml(badge.text)}</span>` : "";
+  return `<div class="release${reveal ? " reveal" : ""}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(image.src || "")}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</div></div>${badgeHtml}</div>`;
+}
+
+function monthSuffix(kind) {
+  if (kind === "past") return ' <small style="opacity:.6;font-weight:600">· ya disponibles</small>';
+  if (kind === "future-current") return ' <small style="opacity:.6;font-weight:600">· por venir</small>';
+  return "";
+}
+
+function visibleReleases() {
+  const currentMonth = monthKey(TODAY);
+  const start = addMonths(currentMonth, -(data.settings?.archiveMonths ?? 1));
+  return data.releases
+    .filter((release) => monthKey(release.date) >= start)
+    .sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title, "es"));
+}
+
+function renderCalendarReleases(releases) {
+  const groups = new Map();
+  for (const release of releases) {
+    const key = monthKey(release.date);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(release);
+  }
+  const currentMonth = monthKey(TODAY);
+  const chunks = [];
+  for (const [key, monthReleases] of groups) {
+    const past = monthReleases.filter((release) => release.date <= TODAY);
+    const future = monthReleases.filter((release) => release.date > TODAY);
+    if (past.length) {
+      chunks.push(`<div class="month-label reveal" data-month="${key}">${monthLabel(key)}${monthSuffix("past")}</div>`);
+      chunks.push(...past.map((release) => renderRelease(release)));
+    }
+    if (future.length) {
+      const kind = key === currentMonth && past.length ? "future-current" : "future";
+      chunks.push(`<div class="month-label reveal" data-month="${key}">${monthLabel(key)}${monthSuffix(kind)}</div>`);
+      chunks.push(...future.map((release) => renderRelease(release)));
+    }
+  }
+  return `\n    ${chunks.join("\n    ")}\n  `;
+}
+
+function replaceMonthOptions(html, releases) {
+  const keys = [...new Set(releases.map((release) => monthKey(release.date)))];
+  const options = [
+    '<option value="all">Todos los meses</option>',
+    ...keys.map((key) => `<option value="${key}">${monthLabel(key)}</option>`)
+  ].join("\n        ");
+  const pattern = /(<select\b[^>]*\bid=["']monthFilter["'][^>]*>)[\s\S]*?(<\/select>)/i;
+  if (!pattern.test(html)) throw new Error("No se encontró #monthFilter.");
+  return html.replace(pattern, `$1\n        ${options}\n      $2`);
+}
+
+function updateCalendarNote(html) {
+  const note = `Calendario actualizado a ${spanishLongDate(data.updatedAt)}. No se incluyen títulos sin fecha exacta anunciada. El icono en la carátula enlaza directamente a Steam, PlayStation Store o la ficha oficial del juego, según corresponda.`;
+  const pattern = /Calendario actualizado a [^<]+\. No se incluyen títulos sin fecha exacta anunciada\. El icono en la carátula enlaza directamente a Steam, PlayStation Store o la ficha oficial del juego, según corresponda\./;
+  if (!pattern.test(html)) throw new Error("No se encontró la nota de actualización del calendario.");
+  return html.replace(pattern, note);
+}
+
+function updateCountdown(html, release) {
+  if (!release) return html;
+  const blockPattern = /<div class="countdown(?: reveal)?"[^>]*>[\s\S]*?<div class="cd-units">[\s\S]*?<\/div>\s*<\/div>/;
+  const match = blockPattern.exec(html);
+  if (!match) throw new Error("No se encontró el bloque de cuenta atrás.");
+  const classes = match[0].startsWith('<div class="countdown reveal"') ? "countdown reveal" : "countdown";
+  const replacement = `<div class="${classes}" data-countdown-date="${release.date}" data-countdown-title="${escapeHtml(release.title)}"><div class="cd-label"><b>${escapeHtml(release.title)}</b><span>${spanishLongDate(release.date)} · ${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</span></div><div class="cd-units"><div class="cd-unit"><b id="cd-d">—</b><span>Días</span></div><div class="cd-unit"><b id="cd-h">—</b><span>Horas</span></div><div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div><div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div></div></div>`;
+  return html.slice(0, match.index) + replacement + html.slice(match.index + match[0].length);
+}
+
+let calendarHtml = await readFile(CALENDAR_FILE, "utf8");
+const visible = visibleReleases();
+calendarHtml = replaceElementInner(calendarHtml, "releases", renderCalendarReleases(visible));
+calendarHtml = replaceMonthOptions(calendarHtml, visible);
+calendarHtml = updateCalendarNote(calendarHtml);
+calendarHtml = updateCountdown(calendarHtml, resolveCountdown(data, TODAY));
+await writeFile(CALENDAR_FILE, calendarHtml, "utf8");
+
+let homeHtml = await readFile(HOME_FILE, "utf8");
+const homeReleases = selectHomeReleases(data, TODAY);
+homeHtml = replaceElementInner(homeHtml, "releases", `\n        ${homeReleases.map((release) => renderRelease(release, { reveal: false, home: true })).join("\n        ")}\n      `);
+homeHtml = updateCountdown(homeHtml, resolveCountdown(data, TODAY));
+homeHtml = homeHtml.replace(/(<h2 class="section-title" data-i18n="cal_title">)Calendario \d{4}(<\/h2>)/, `$1Calendario ${TODAY.slice(0, 4)}$2`);
+await writeFile(HOME_FILE, homeHtml, "utf8");
+
+console.log(`Calendario generado con ${visible.length} lanzamientos visibles y ${homeReleases.length} en portada.`);

@@ -1,6 +1,7 @@
 name: Finalizar nuevas fichas vivas
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - agent/mejora-ficha-laufey

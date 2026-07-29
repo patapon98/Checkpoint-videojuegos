@@ -27,3 +27,11 @@ Estas reglas se aplican a todas las páginas situadas en `juegos/` y a sus archi
 - `og:image`, `twitter:image`, los datos estructurados y la imagen inicial escrita en el HTML deben utilizar el mismo arte promocional limpio declarado en `heroImage`.
 - El texto alternativo de la cabecera debe identificarla como arte promocional del juego, no como una captura si no lo es.
 - Toda modificación de la cabecera debe actualizar simultáneamente el JSON, el HTML y los metadatos sociales.
+
+## Visibilidad en portada
+
+- La portada puede mostrar hasta tres fichas en el bloque «Juegos en seguimiento». La selección es editorial y no debe convertirse en un listado de todas las fichas existentes.
+- Cada tarjeta debe enlazar directamente a la ficha y mostrar su estado, fecha de lanzamiento y fecha real de última actualización.
+- La tarjeta editorial superior puede destacar una ficha cuando haya una novedad sustancial, como una fecha, un tráiler importante, reservas o nueva información confirmada. Debe identificarse como «Ficha actualizada».
+- No se debe modificar `updatedAt` ni presentar una ficha como actualizada si su contenido no ha cambiado de forma real.
+- El bloque debe conservar enlaces rastreables en el HTML, funcionar sin carrusel y adaptarse a una sola columna en móvil.

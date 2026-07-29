@@ -18,7 +18,7 @@ const DATA_FILE = path.join(ROOT, "data", "calendar.json");
 const CALENDAR_FILE = path.join(ROOT, "calendario.html");
 const HOME_FILE = path.join(ROOT, "index.html");
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
-const MAIN_ASSET_VERSION = "20260729-8";
+const MAIN_ASSET_VERSION = "20260729-9";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
@@ -49,8 +49,22 @@ function headingHtml(release) {
   return html.replace(/<\/(a|span)>(?=<(?:a|span)\b)/g, "</$1> ");
 }
 
+function optimizedImageSource(release, image) {
+  const source = image?.src || "";
+  let host = "";
+  try { host = new URL(source).hostname.toLowerCase(); }
+  catch { return source; }
+
+  const appId = /store\.steampowered\.com\/app\/(\d+)/i.exec(release.store?.url || "")?.[1];
+  if (appId && host.endsWith(".blob.core.windows.net")) {
+    return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/header.jpg`;
+  }
+  return source;
+}
+
 function badgeFor(release, { home = false } = {}) {
-  if (release.date <= TODAY) return { class: "hype hype-out", text: "Ya disponible" };
+  if (release.date === TODAY) return { class: "hype hype-today hype-max", text: "Sale hoy" };
+  if (release.date < TODAY) return { class: "hype hype-out", text: "Ya disponible" };
   if (release.badge) return release.badge;
   if (home && release.tag) return { class: "hype hype-mid", text: release.tag };
   return null;
@@ -60,16 +74,20 @@ function renderRelease(release, { reveal = true, home = false } = {}) {
   const image = release.image || {};
   const store = release.store;
   const badge = badgeFor(release, { home });
+  const isToday = release.date === TODAY;
+  const state = isToday ? "today" : (release.date < TODAY ? "available" : "upcoming");
   const dataAttributes = [
     `data-release-id="${escapeHtml(release.id)}"`,
     `data-release-date="${escapeHtml(release.date)}"`,
     `data-release-month="${escapeHtml(monthKey(release.date))}"`,
+    `data-release-state="${state}"`,
     `data-plat="${escapeHtml((release.platformKeys || []).join(" "))}"`
   ];
   if (image.gridArt) dataAttributes.push(`data-grid-art="${escapeHtml(image.gridArt)}"`);
   if (image.poster) dataAttributes.push(`data-poster="${escapeHtml(image.poster)}"`);
 
   const imageClass = image.className ? ` class="${escapeHtml(image.className)}"` : "";
+  const imageSource = optimizedImageSource(release, image);
   const storeLink = store?.url
     ? `<a class="wish" ${linkAttributes(store, "Ver ficha oficial", `Ver ficha oficial de ${release.title}`)}>${wishIcon}</a>`
     : "";
@@ -77,11 +95,13 @@ function renderRelease(release, { reveal = true, home = false } = {}) {
     ? `<a class="trailer" href="${escapeHtml(release.trailer)}" target="_blank" rel="noopener noreferrer" title="Ver el tráiler oficial en YouTube" aria-label="Ver el tráiler oficial de ${escapeHtml(release.title)} en YouTube">${trailerIcon}</a>`
     : "";
   const badgeHtml = badge ? `<span class="${escapeHtml(badge.class)}">${escapeHtml(badge.text)}</span>` : "";
-  return `<div class="release${reveal ? " reveal" : ""}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(image.src || "")}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${trailerLink}${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</div></div>${badgeHtml}</div>`;
+  const releaseClasses = `release${reveal ? " reveal" : ""}${isToday ? " release-today" : ""}`;
+  return `<div class="${releaseClasses}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(imageSource)}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${trailerLink}${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</div></div>${badgeHtml}</div>`;
 }
 
 function monthSuffix(kind) {
   if (kind === "past") return ' <small style="opacity:.6;font-weight:600">· ya disponibles</small>';
+  if (kind === "today") return ' <small style="opacity:.82;font-weight:700">· lanzamiento hoy</small>';
   if (kind === "future-current") return ' <small style="opacity:.6;font-weight:600">· por venir</small>';
   return "";
 }
@@ -104,16 +124,17 @@ function renderCalendarReleases(releases) {
   const currentMonth = monthKey(TODAY);
   const chunks = [];
   for (const [key, monthReleases] of groups) {
-    const past = monthReleases.filter((release) => release.date <= TODAY);
-    const future = monthReleases.filter((release) => release.date > TODAY);
+    const past = monthReleases.filter((release) => release.date < TODAY);
+    const active = monthReleases.filter((release) => release.date >= TODAY);
     if (past.length) {
       chunks.push(`<div class="month-label reveal" data-month="${key}">${displayMonthLabel(key)}${monthSuffix("past")}</div>`);
       chunks.push(...past.map((release) => renderRelease(release)));
     }
-    if (future.length) {
-      const kind = key === currentMonth && past.length ? "future-current" : "future";
+    if (active.length) {
+      const hasToday = active.some((release) => release.date === TODAY);
+      const kind = hasToday ? "today" : (key === currentMonth && past.length ? "future-current" : "future");
       chunks.push(`<div class="month-label reveal" data-month="${key}">${displayMonthLabel(key)}${monthSuffix(kind)}</div>`);
-      chunks.push(...future.map((release) => renderRelease(release)));
+      chunks.push(...active.map((release) => renderRelease(release)));
     }
   }
   return `\n    ${chunks.join("\n    ")}\n  `;

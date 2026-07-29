@@ -1,0 +1,31 @@
+name: Validar interfaz de Laufey
+
+on:
+  push:
+    branches:
+      - agent/mejora-ficha-laufey
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Comprobar JavaScript y datos
+        run: |
+          node --check js/game-hub.js
+          node -e "const fs=require('fs'); const data=JSON.parse(fs.readFileSync('data/game-hubs/god-of-war-laufey.json','utf8')); if(!data.context||data.gallery.length<2) throw new Error('Datos incompletos');"
+      - name: Comprobar estructura de la ficha
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const html=fs.readFileSync('juegos/god-of-war-laufey.html','utf8');
+          const required=['id="updatedAt"','id="gameContext"','id="gameGallery"','class="game-section-nav"','>Lanzamiento<'];
+          for(const token of required){if(!html.includes(token)) throw new Error(`Falta ${token}`)}
+          if(html.includes('Lanzamiento en España')) throw new Error('Sigue apareciendo Lanzamiento en España');
+          NODE

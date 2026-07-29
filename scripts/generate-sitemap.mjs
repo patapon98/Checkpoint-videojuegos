@@ -93,6 +93,6 @@ pages.sort((a, b) => {
 });
 
 const entries = pages.map(({ loc, lastmod }) => ["  <url>", `    <loc>${escapeXml(loc)}</loc>`, `    <lastmod>${lastmod}</lastmod>`, "  </url>"].join("\n"));
-const sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/sitemap/0.9">', ...entries, "</urlset>", ""].join("\n");
+const sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', ...entries, "</urlset>", ""].join("\n");
 await writeFile(OUTPUT, sitemap, "utf8");
 console.log(`sitemap.xml generado con ${pages.length} URLs.`);

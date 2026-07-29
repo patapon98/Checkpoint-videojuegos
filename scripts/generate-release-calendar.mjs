@@ -10,6 +10,8 @@ import {
   selectHomeReleases,
   shortMonth,
   sourceHost,
+  sortPlatformKeys,
+  sortPlatformsHtml,
   spanishLongDate,
   todayMadrid
 } from "./calendar-utils.mjs";
@@ -23,6 +25,7 @@ const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const MAIN_ASSET_VERSION = "20260730-2";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
+const PLATFORM_ORDER = data.settings?.platformOrder;
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
 const trailerIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>';
 
@@ -88,12 +91,14 @@ function renderRelease(release, { reveal = true, home = false } = {}) {
   const badge = badgeFor(release, { home });
   const isToday = release.date === TODAY;
   const state = isToday ? "today" : (release.date < TODAY ? "available" : "upcoming");
+  const platformKeys = sortPlatformKeys(release.platformKeys || [], PLATFORM_ORDER);
+  const platformsHtml = sortPlatformsHtml(release.platformsHtml || escapeHtml(platformKeys.join(" · ")), PLATFORM_ORDER);
   const dataAttributes = [
     `data-release-id="${escapeHtml(release.id)}"`,
     `data-release-date="${escapeHtml(release.date)}"`,
     `data-release-month="${escapeHtml(monthKey(release.date))}"`,
     `data-release-state="${state}"`,
-    `data-plat="${escapeHtml((release.platformKeys || []).join(" "))}"`
+    `data-plat="${escapeHtml(platformKeys.join(" "))}"`
   ];
   if (image.gridArt) dataAttributes.push(`data-grid-art="${escapeHtml(image.gridArt)}"`);
   if (image.poster) dataAttributes.push(`data-poster="${escapeHtml(image.poster)}"`);
@@ -108,7 +113,7 @@ function renderRelease(release, { reveal = true, home = false } = {}) {
     : "";
   const badgeHtml = badge ? `<span class="${escapeHtml(badge.class)}">${escapeHtml(badge.text)}</span>` : "";
   const releaseClasses = `release${reveal ? " reveal" : ""}${isToday ? " release-today" : ""}`;
-  return `<div class="${releaseClasses}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(imageSource)}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${trailerLink}${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</div></div>${badgeHtml}</div>`;
+  return `<div class="${releaseClasses}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(imageSource)}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${trailerLink}${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${platformsHtml}</div></div>${badgeHtml}</div>`;
 }
 
 function monthSuffix(kind) {
@@ -197,7 +202,8 @@ function updateCountdown(html, release) {
   if (!release) return html;
   const element = countdownElement(html);
   const classes = /\breveal\b/.test(element.openTag) ? "countdown reveal" : "countdown";
-  const platforms = release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "));
+  const platformKeys = sortPlatformKeys(release.platformKeys || [], PLATFORM_ORDER);
+  const platforms = sortPlatformsHtml(release.platformsHtml || escapeHtml(platformKeys.join(" · ")), PLATFORM_ORDER);
   const replacement = `<div class="${classes}" data-countdown-date="${release.date}" data-countdown-title="${escapeHtml(release.title)}"><div class="cd-label"><b>${escapeHtml(release.title)}</b><span>${spanishLongDate(release.date)} · ${platforms}</span></div><div class="cd-units"><div class="cd-unit"><b id="cd-d">—</b><span>Días</span></div><div class="cd-unit"><b id="cd-h">—</b><span>Horas</span></div><div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div><div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div></div></div>`;
   return html.slice(0, element.start) + replacement + html.slice(element.end);
 }

@@ -42,15 +42,34 @@
     });
   }
 
-  function decorateNewsCards() {
-    const byNewsId = new Map();
-    games.forEach((game) => {
-      (game.newsIds || []).forEach((id) => byNewsId.set(id, game));
-    });
+  function newsItem(id) {
+    return (window.FINALSECRETO_NEWS || []).find((item) => item.id === id) || null;
+  }
 
+  function gameForNews(id) {
+    const exact = games.find((game) => (game.newsIds || []).includes(id));
+    if (exact) return exact;
+
+    const item = newsItem(id);
+    if (!item) return null;
+    const haystack = [
+      item.id,
+      item.title?.es,
+      item.summary?.es,
+      item.why?.es,
+      item.ticker?.keyword?.es,
+      item.ticker?.copy?.es
+    ].filter(Boolean).join(' ').toLocaleLowerCase('es');
+
+    return games.find((game) =>
+      (game.terms || []).some((term) => haystack.includes(String(term).toLocaleLowerCase('es')))
+    ) || null;
+  }
+
+  function decorateNewsCards() {
     document.querySelectorAll('.news-home-flip[data-news-id], .news-archive-card[id]').forEach((card) => {
       const id = card.dataset.newsId || card.id;
-      const game = byNewsId.get(id);
+      const game = gameForNews(id);
       if (!game) return;
 
       card.querySelectorAll('.news-sources').forEach((sources) => {

@@ -95,7 +95,7 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - Cada vídeo necesita título, etiqueta, fecha de publicación e identificador correctos.
 - Los vídeos se presentan mediante el slider común de multimedia. Muestra un vídeo por pasada, conserva navegación por arrastre y sitúa flechas y puntos abajo a la derecha. Cuando solo existe un vídeo, no debe mostrar controles inútiles.
 - Los controles de galería y multimedia deben quedar posicionados dentro de su propio contenedor. Nunca pueden aparecer sobre la cabecera ni sobre otra sección.
-- No se aceptan marcos, lienzos o bandas blancas incorporadas en la propia imagen. Para automatizar la selección, inspecciona el 4 % exterior de los cuatro lados y descarta el recurso cuando una zona casi blanca o uniforme ocupe la mayor parte del perímetro sin formar parte de la escena.
+- No se aceptan marcos, lienzos o bandas blancas incorporadas en la propia imagen. Para automatizar la selección, inspecciona el 4 % exterior de los cuatro lados y descarta el recurso cuando una zona casi blanca o uniforme ocupe la mayor parte del perímetro sin formar parte de la escena. Si un CDN añade relleno al solicitar más tamaño que el nativo, pide la resolución nativa en lugar de ampliar el lienzo.
 - Los contenedores de galería y tarjetas usan un fondo oscuro neutro como protección, pero no deben utilizarse para ocultar una mala elección de imagen. La solución prioritaria es seleccionar una alternativa limpia y a sangre.
 
 ## Fichas relacionadas

@@ -81,5 +81,23 @@
     "laufey",
     "faye"
   ],
-  "updatedAt": "2026-07-30"
+  "updatedAt": "2026-07-30",
+  "seo": {
+    "title": "God of War Laufey: fecha, historia y todo lo confirmado",
+    "description": "Ficha actualizada de God of War Laufey con fecha de lanzamiento, historia, plataformas, tráiler, imágenes oficiales, datos confirmados y noticias relacionadas.",
+    "ogDescription": "Toda la información confirmada sobre la nueva aventura de Faye, reunida y actualizada en una sola página.",
+    "heroTitleHtml": "God of War <em>Laufey</em>",
+    "heroImageAlt": "Arte promocional oficial de God of War Laufey"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Ficha editorial revisada",
+      "description": "Se revisaron la fecha de lanzamiento, las plataformas, el material oficial y los datos pendientes de confirmación."
+    }
+  ],
+  "relatedGameIds": [
+    "control-resonant",
+    "onimusha-way-of-the-sword"
+  ]
 }

@@ -102,5 +102,23 @@
     "onimusha way of the sword",
     "miyamoto musashi"
   ],
-  "updatedAt": "2026-07-30"
+  "updatedAt": "2026-07-30",
+  "seo": {
+    "title": "Onimusha: Way of the Sword: fecha y todo lo confirmado",
+    "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, plataformas, historia, demo, tráileres, imágenes, reservas y datos confirmados.",
+    "ogDescription": "Fecha, plataformas, historia, demo y toda la información confirmada sobre Onimusha: Way of the Sword.",
+    "heroTitleHtml": "Onimusha: <em>Way of the Sword</em>",
+    "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Galería y datos de lanzamiento revisados",
+      "description": "Se sustituyeron recursos promocionales por capturas del juego y se comprobaron la fecha, las plataformas y la demo disponible."
+    }
+  ],
+  "relatedGameIds": [
+    "control-resonant",
+    "god-of-war-laufey"
+  ]
 }

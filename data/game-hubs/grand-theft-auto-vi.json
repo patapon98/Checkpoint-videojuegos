@@ -44,8 +44,15 @@
       "type": "youtube",
       "videoId": "VQRLujxTm3c",
       "title": "Grand Theft Auto VI Trailer 2",
-      "label": "Tráiler oficial",
+      "label": "Tráiler 2",
       "publishedAt": "2025-05-06"
+    },
+    {
+      "type": "youtube",
+      "videoId": "QdBZY2fkU-0",
+      "title": "Grand Theft Auto VI Trailer 1",
+      "label": "Tráiler 1",
+      "publishedAt": "2023-12-04"
     }
   ],
   "premise": "Jason Duval y Lucia Caminos quedan atrapados en una conspiración criminal que se extiende por el estado de Leonida después de que un golpe sencillo salga mal. Para sobrevivir tendrán que confiar el uno en el otro mientras recorren Vice City y sus alrededores.",
@@ -130,7 +137,7 @@
     {
       "date": "2026-07-30",
       "title": "Precios, ediciones y datos de compra verificados",
-      "description": "Se añadieron los precios españoles, el contenido de cada edición, las condiciones de GTA+ y más datos confirmados sobre la campaña."
+      "description": "Se añadieron los precios españoles, el contenido de cada edición, las condiciones de GTA+ y el primer tráiler oficial junto al segundo."
     }
   ],
   "relatedGameIds": [

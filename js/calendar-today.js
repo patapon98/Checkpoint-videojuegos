@@ -7,7 +7,7 @@
     const styles=document.createElement('link');
     styles.id='calendarTodayStyles';
     styles.rel='stylesheet';
-    styles.href=new URL('../css/calendar-today.css?v=20260729-1',current?.src||location.href).href;
+    styles.href=new URL('../css/calendar-today.css?v=20260729-2',current?.src||location.href).href;
     document.head.append(styles);
   }
 

@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: "17 8 * * *"
   workflow_dispatch:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - scripts/fetch-onimusha-rawg-candidates.mjs
-      - .github/workflows/update-playstation-plus.yml
 
 permissions:
   contents: write
@@ -19,35 +13,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  rawg-preview:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Descargar la rama
-        uses: actions/checkout@v4
-
-      - name: Preparar Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Descargar candidatas de RAWG
-        env:
-          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
-        run: node scripts/fetch-onimusha-rawg-candidates.mjs
-
-      - name: Guardar artefacto privado
-        uses: actions/upload-artifact@v4
-        with:
-          name: onimusha-rawg-candidates
-          path: |
-            assets/game-hubs/onimusha-way-of-the-sword/rawg-candidates
-            data/game-hubs/onimusha-rawg-candidates.json
-          if-no-files-found: error
-          retention-days: 1
-
   update:
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Descargar main

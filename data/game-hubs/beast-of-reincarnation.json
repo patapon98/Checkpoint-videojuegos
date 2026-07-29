@@ -15,25 +15,41 @@
   "officialUrl": "https://www.beastofreincarnation.com/",
   "storeUrl": "https://store.playstation.com/en-us/product/UB1599-PPSA29343_00-AIBOUSIEA0000000",
   "trailerUrl": "https://www.youtube.com/watch?v=zqxdVtJ24ms",
-  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-07-en-23feb2026?%241600px%24=",
+  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-07-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
+  "theme": {
+    "accent": "#8fb77b",
+    "accentSoft": "rgba(143,183,123,.16)"
+  },
   "gallery": [
     {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-01-en-23feb2026?%241600px%24=",
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-01-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
       "alt": "Emma y Koo observan una cascada en Beast of Reincarnation"
     },
     {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-02-en-23feb2026?%241600px%24=",
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-02-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
       "alt": "Emma se enfrenta a varias criaturas en Beast of Reincarnation"
     },
     {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-03-en-23feb2026?%241600px%24=",
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-03-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
       "alt": "Emma combate contra una gran criatura en Beast of Reincarnation"
     },
     {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-04-en-23feb2026?%241600px%24=",
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-04-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
       "alt": "Emma y Koo recorren el Japón posapocalíptico de Beast of Reincarnation"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-05-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Emma y Koo atraviesan un arroyo en Beast of Reincarnation"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-06-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Emma huye de una criatura en Beast of Reincarnation"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-07-en-23feb2026?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Emma y Koo combaten juntos en Beast of Reincarnation"
     }
   ],
   "media": [
@@ -47,19 +63,41 @@
   ],
   "premise": "En el Japón del año 4026, Emma vive apartada de la sociedad porque nació afectada por la plaga. Su encuentro con Koo, un perro considerado una amenaza para ese mundo, inicia un viaje para derrotar a las grandes Bestias y absorber sus poderes.",
   "context": "El proyecto muestra una faceta poco habitual de Game Freak fuera de Pokémon. Su sistema combina la acción con espada de Emma y órdenes para Koo que ralentizan el tiempo y añaden decisiones propias de un RPG por turnos.",
+  "spotlight": {
+    "kicker": "El núcleo del juego",
+    "title": "Cómo funciona la pareja formada por Emma y Koo",
+    "intro": "La propuesta no consiste simplemente en llevar una espada junto a un compañero controlado por la máquina. Las acciones de Emma alimentan las técnicas de Koo y obligan a alternar reflejos con decisiones pausadas.",
+    "items": [
+      {
+        "title": "Acción con Emma",
+        "value": "Tiempo real",
+        "description": "Emma combate con espada, obtiene puntos al ejecutar paradas precisas y utiliza su cabello convertido en enredaderas para desplazarse y atacar desde posiciones elevadas."
+      },
+      {
+        "title": "Órdenes para Koo",
+        "value": "Tiempo ralentizado",
+        "description": "El menú de comandos puede abrirse durante el combate y ralentiza la acción mientras se elige una técnica. Los puntos conseguidos por Emma determinan qué habilidades puede usar Koo."
+      },
+      {
+        "title": "Personalización",
+        "value": "Varios estilos",
+        "description": "Árboles de habilidades, equipo y piedras espirituales permiten preparar configuraciones orientadas al combate agresivo, el sigilo o los ataques a distancia."
+      }
+    ]
+  },
   "confirmed": [
-    "Se lanzará el 4 de agosto de 2026 para PS5, Xbox Series X|S y PC.",
-    "Game Freak desarrolla el juego y Fictions se encarga de su publicación.",
-    "La aventura es para un jugador y está ambientada en un Japón posapocalíptico.",
-    "Emma lucha en tiempo real mientras el jugador activa las técnicas de Koo mediante órdenes.",
-    "Los bloqueos precisos de Emma generan puntos para utilizar las habilidades de Koo.",
-    "El equipo se puede personalizar con árboles de habilidades, equipamiento y piedras espirituales."
+    "La historia comienza en una de las pocas colonias habitables del Japón del año 4026.",
+    "Emma es una Sealer capaz de absorber la plaga de los malefacts y manipular su cabello vegetal para atravesar obstáculos o ejecutar ataques desde arriba.",
+    "La plaga transforma el escenario en tiempo real. Llanuras y páramos pueden convertirse en bosques y hacer aparecer nuevos enemigos.",
+    "El viaje lleva a Emma y Koo por distintas regiones para derrotar Bestias, capturar sus poderes y acercarse a la Beast of Reincarnation.",
+    "La aventura permite jugar sin conexión y la versión de PS5 utiliza vibración, gatillos adaptativos y mejoras para PS5 Pro."
   ],
   "pending": [
     "No se conoce la duración aproximada de la historia.",
+    "Game Freak no ha aclarado si el mundo será completamente abierto o estará dividido en grandes regiones.",
+    "No se han detallado las opciones de dificultad ni las ayudas de accesibilidad.",
     "Faltan por concretarse los modos de rendimiento y resolución de cada plataforma.",
     "No se ha publicado el tamaño de instalación definitivo.",
-    "Los requisitos finales de la versión para PC todavía deben comprobarse.",
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
@@ -94,8 +132,8 @@
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Ficha publicada antes del lanzamiento",
-      "description": "Se comprobaron la fecha, las plataformas, el sistema de combate, las reservas y el material oficial disponible."
+      "title": "Combate, exploración y galería revisados",
+      "description": "Se eliminó información repetida, se amplió el funcionamiento de Emma y Koo y se sustituyeron las miniaturas por siete capturas oficiales en alta resolución."
     }
   ],
   "relatedGameIds": [

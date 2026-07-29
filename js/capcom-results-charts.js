@@ -82,8 +82,21 @@
     const visibleRight = scrollLeft + container.clientWidth - edge;
     const visibleTop = scrollTop + edge;
     const visibleBottom = scrollTop + container.clientHeight - edge;
-    const tooltipWidth = tooltip.offsetWidth;
-    const tooltipHeight = tooltip.offsetHeight;
+    const availableWidth = Math.max(1, visibleRight - visibleLeft);
+
+    // Measure from a neutral position with an intrinsic width. Otherwise an
+    // absolutely positioned tooltip near the right edge can shrink to one
+    // character per line before its final coordinates are calculated.
+    tooltip.style.left = "0px";
+    tooltip.style.top = "0px";
+    tooltip.style.width = "max-content";
+    tooltip.style.maxWidth = `${Math.min(220, availableWidth)}px`;
+    tooltip.style.whiteSpace = "normal";
+    tooltip.style.overflowWrap = "normal";
+    tooltip.style.wordBreak = "normal";
+
+    const tooltipWidth = Math.min(tooltip.getBoundingClientRect().width, availableWidth);
+    const tooltipHeight = tooltip.getBoundingClientRect().height;
     const centeredLeft = targetLeft + targetBox.width / 2 - tooltipWidth / 2;
     const maxLeft = Math.max(visibleLeft, visibleRight - tooltipWidth);
     const aboveTop = targetTop - tooltipHeight - gap;

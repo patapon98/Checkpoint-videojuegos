@@ -9,6 +9,7 @@ const REQUESTS_FILE = path.join(ROOT, "data", "rawg-image-requests.json");
 const API_KEY = String(process.env.RAWG_API_KEY || "").trim();
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
+const originalImages = new Map(data.releases.map((release) => [release.id, structuredClone(release.image || {})]));
 
 let requestData = { requests: [] };
 try {
@@ -36,6 +37,7 @@ for (const request of requestData.requests || []) {
     delete release.image.rawgId;
     delete release.image.rawgSlug;
     delete release.image.rawgPage;
+    delete release.image.rawgImageType;
   }
 }
 
@@ -52,21 +54,28 @@ if (!API_KEY) {
 
 const changes = [];
 const errors = [];
+const warnings = [];
 for (const release of pending) {
   try {
     if (await resolveRawgImage(release, { apiKey: API_KEY })) changes.push(release.title);
   } catch (error) {
+    if (/RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)) {
+      release.image = structuredClone(originalImages.get(release.id) || {});
+      warnings.push(`${release.title}: RAWG identifica la ficha, pero todavía no ofrece imágenes; se conserva la anterior`);
+      continue;
+    }
     errors.push(`${release.id || release.title}: ${error.message}`);
   }
 }
 
+for (const warning of warnings) console.warn(`ADVERTENCIA: ${warning}`);
 if (errors.length) {
   console.error(errors.map((error) => `ERROR: ${error}`).join("\n"));
   process.exit(1);
 }
 
 if (!changes.length) {
-  console.log(`RAWG comprobado para ${pending.length} imágenes; no hay cambios.`);
+  console.log(`RAWG comprobado para ${pending.length} imágenes; no hay sustituciones disponibles.`);
   process.exit(0);
 }
 

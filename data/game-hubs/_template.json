@@ -1,0 +1,70 @@
+{
+  "id": "slug-del-juego",
+  "title": "Título del juego",
+  "subtitle": "Resumen editorial breve de la ficha",
+  "status": "Anunciado",
+  "releaseDate": "AAAA-MM-DD",
+  "platforms": [
+    "PS5"
+  ],
+  "developer": "Desarrolladora",
+  "publisher": "Editora",
+  "genre": "Género",
+  "officialUrl": "https://example.com/ficha-oficial",
+  "storeUrl": "https://example.com/tienda",
+  "trailerUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+  "heroImage": "https://example.com/arte-promocional-limpio.jpg",
+  "heroImageKind": "promotional-key-art",
+  "heroImageHasEmbeddedText": false,
+  "gallery": [
+    {
+      "src": "https://example.com/captura-1.jpg",
+      "alt": "Descripción precisa de la captura"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "VIDEO_ID",
+      "title": "Tráiler oficial del juego",
+      "label": "Tráiler oficial",
+      "publishedAt": "AAAA-MM-DD"
+    }
+  ],
+  "premise": "Premisa contrastada y redactada por Final Secreto.",
+  "context": "Contexto editorial útil que explique por qué importa el juego.",
+  "confirmed": [
+    "Dato confirmado con una fuente primaria."
+  ],
+  "pending": [
+    "Dato relevante todavía no confirmado."
+  ],
+  "sources": [
+    {
+      "label": "Fuente oficial",
+      "url": "https://example.com/fuente",
+      "type": "Información oficial"
+    }
+  ],
+  "newsTerms": [
+    "título del juego"
+  ],
+  "seo": {
+    "title": "Título del juego: fecha y todo lo confirmado",
+    "description": "Descripción única de la ficha para buscadores.",
+    "ogDescription": "Descripción breve para compartir la ficha.",
+    "heroTitleHtml": "Título del <em>juego</em>",
+    "heroImageAlt": "Arte promocional oficial de Título del juego"
+  },
+  "changes": [
+    {
+      "date": "AAAA-MM-DD",
+      "title": "Ficha publicada",
+      "description": "Se creó la ficha con la información oficial disponible en esta fecha."
+    }
+  ],
+  "relatedGameIds": [
+    "otra-ficha-relacionada"
+  ],
+  "updatedAt": "AAAA-MM-DD"
+}

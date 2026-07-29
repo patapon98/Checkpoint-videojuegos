@@ -27,7 +27,7 @@ function renderPage(month,months,index,data){
   <meta name="description" content="${escapeHtml(description)}"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="${canonical}">
   <meta property="og:type" content="website"><meta property="og:site_name" content="Final Secreto"><meta property="og:title" content="Juegos de PlayStation Plus de ${escapeHtml(month.label)} | Final Secreto"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=20260729-6"><link rel="stylesheet" href="/css/brand-logo.css"><link rel="stylesheet" href="/css/playstation-plus.css?v=20260729-2">
+  <link rel="stylesheet" href="/css/style.css?v=20260729-6"><link rel="stylesheet" href="/css/brand-logo.css"><link rel="stylesheet" href="/css/playstation-plus.css?v=20260729-3">
   <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme;}catch(e){}})();</script><script type="application/ld+json">${escapeJson(structured)}</script>
 </head>
 <body class="psplus-page psplus-month-page" data-psplus-month="${escapeHtml(month.id)}">

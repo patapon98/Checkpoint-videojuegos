@@ -2213,12 +2213,18 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "src": "https://pgfableweqzl6jpbr734gosa.blob.core.windows.net/blobpgfablewe-qzl6jpbr734go/uploads/massive_holland_hero_16x9_b28c45c830.png",
+        "src": "https://media.rawg.io/media/games/705/7052ebf19b7b57ada5eeb21dea59f0e7.jpg",
         "alt": "Fable",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "provider": "rawg",
+        "query": "Fable",
+        "rawgId": 471026,
+        "rawgSlug": "fable2020",
+        "rawgPage": "https://rawg.io/games/fable2020",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/2769570/",

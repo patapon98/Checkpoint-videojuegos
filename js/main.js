@@ -22,7 +22,7 @@
   load('home-analysis-links.js?v=20260728-1');
   load('calendar-today.js?v=20260729-2',()=>{
     load('calendar-countdown-prepare.js?v=20260729-1',()=>{
-      load('main-core.js?v=20260729-6',()=>{
+      load('main-core.js?v=20260730-1',()=>{
         load('calendar-countdown.js?v=20260729-1');
         load('review-lightbox-fixes.js?v=20260729-1');
         if(!document.body.classList.contains('calendar-page')) return;

@@ -6,6 +6,8 @@ import {
   monthKey,
   selectHomeReleases,
   sourceHost,
+  sortPlatformKeys,
+  sortPlatformsHtml,
   todayMadrid,
   topLevelDivs,
   attributes
@@ -47,6 +49,11 @@ if (!Array.isArray(data.releases) || !data.releases.length) fail("No hay lanzami
 
 const ids = new Set();
 const allowedPlatforms = new Set(data.settings?.allowedPlatforms || []);
+const requiredPlatformOrder = ["ps5", "ps4", "xbox", "pc", "switch"];
+const platformOrder = data.settings?.platformOrder;
+if (JSON.stringify(platformOrder) !== JSON.stringify(requiredPlatformOrder)) {
+  fail("settings.platformOrder debe mantener la prioridad PS5, PS4, Xbox, PC y Switch.");
+}
 for (const release of data.releases || []) {
   if (!release.id) fail(`Un lanzamiento no tiene id: ${release.title || "sin título"}.`);
   else if (ids.has(release.id)) fail(`ID duplicado: ${release.id}.`);
@@ -116,6 +123,12 @@ for (const block of topLevelDivs(calendarRoot.inner)) {
   }
 
   if (release) {
+    const expectedPlatformKeys = sortPlatformKeys(release.platformKeys || [], platformOrder).join(" ");
+    if (attrs["data-plat"] !== expectedPlatformKeys) fail(`${id}: data-plat no respeta el orden canónico de plataformas.`);
+    const expectedPlatformsHtml = sortPlatformsHtml(release.platformsHtml || "", platformOrder);
+    if (!block.outer.includes(`<div class="platforms">${expectedPlatformsHtml}</div>`)) {
+      fail(`${id}: la tarjeta generada no respeta el orden visible de plataformas.`);
+    }
     const imageHost = sourceHost(release.image?.src || "");
     const steamApp = /store\.steampowered\.com\/app\/(\d+)/i.exec(release.store?.url || "")?.[1];
     if (steamApp && imageHost.endsWith(".blob.core.windows.net")) {

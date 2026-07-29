@@ -152,6 +152,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 ## 8. Calendario de lanzamientos
 
 - Todo cambio relacionado con lanzamientos debe aplicar obligatoriamente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](CALENDAR_UPDATE_CHECKLIST.md).
+- En las tarjetas del calendario, las plataformas deben aparecer siempre con esta prioridad: PS5, Xbox, PC y Switch. Si una ficha incluye PS4, se coloca inmediatamente después de PS5. El orden debe derivarse de la configuración central y aplicarse también a futuras entradas.
 - La actualización debe contemplar siempre la fuente central, el calendario completo, la portada y la cuenta atrás cuando corresponda.
 - La vigilancia editorial puede incorporar de forma autónoma novedades relevantes y verificadas mediante ramas `bot/calendar-*`. Solo se admiten fechas exactas, ediciones inequívocas, plataformas confirmadas, imágenes oficiales estables y evidencia estructurada de la fuente.
 - El mantenimiento diario puede mover automáticamente lanzamientos a «Ya disponible», plegar o retirar del render meses antiguos, reordenar fichas y aplicar cambios verificables mediante fuentes oficiales. Los datos históricos permanecen en `data/calendar.json`.

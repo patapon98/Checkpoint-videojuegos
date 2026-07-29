@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29",
+  "updatedAt": "2026-07-30",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -17,6 +17,13 @@
       "xbox",
       "switch",
       "pc"
+    ],
+    "platformOrder": [
+      "ps5",
+      "ps4",
+      "xbox",
+      "pc",
+      "switch"
     ]
   },
   "releases": [

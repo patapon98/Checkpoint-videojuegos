@@ -137,14 +137,34 @@ function updateCalendarNote(html) {
   return html.replace(pattern, note);
 }
 
+function balancedDivAt(html, start) {
+  const opening = /^<div\b[^>]*>/i.exec(html.slice(start));
+  if (!opening) throw new Error("No se encontró un bloque div válido.");
+  const tags = /<\/?div\b[^>]*>/gi;
+  tags.lastIndex = start + opening[0].length;
+  let depth = 1;
+  let match;
+  while ((match = tags.exec(html))) {
+    depth += /^<\/div/i.test(match[0]) ? -1 : 1;
+    if (depth === 0) return { start, end: tags.lastIndex, openTag: opening[0] };
+  }
+  throw new Error("El bloque de cuenta atrás no está cerrado correctamente.");
+}
+
+function countdownElement(html) {
+  const pattern = /<div\b(?=[^>]*\bclass=["'][^"']*\bcountdown\b[^"']*["'])[^>]*>/i;
+  const opening = pattern.exec(html);
+  if (!opening) throw new Error("No se encontró el bloque de cuenta atrás.");
+  return balancedDivAt(html, opening.index);
+}
+
 function updateCountdown(html, release) {
   if (!release) return html;
-  const blockPattern = /<div class="countdown(?: reveal)?"[^>]*>[\s\S]*?<div class="cd-units">[\s\S]*?<\/div>\s*<\/div>/;
-  const match = blockPattern.exec(html);
-  if (!match) throw new Error("No se encontró el bloque de cuenta atrás.");
-  const classes = match[0].startsWith('<div class="countdown reveal"') ? "countdown reveal" : "countdown";
-  const replacement = `<div class="${classes}" data-countdown-date="${release.date}" data-countdown-title="${escapeHtml(release.title)}"><div class="cd-label"><b>${escapeHtml(release.title)}</b><span>${spanishLongDate(release.date)} · ${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</span></div><div class="cd-units"><div class="cd-unit"><b id="cd-d">—</b><span>Días</span></div><div class="cd-unit"><b id="cd-h">—</b><span>Horas</span></div><div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div><div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div></div></div>`;
-  return html.slice(0, match.index) + replacement + html.slice(match.index + match[0].length);
+  const element = countdownElement(html);
+  const classes = /\breveal\b/.test(element.openTag) ? "countdown reveal" : "countdown";
+  const platforms = release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "));
+  const replacement = `<div class="${classes}" data-countdown-date="${release.date}" data-countdown-title="${escapeHtml(release.title)}"><div class="cd-label"><b>${escapeHtml(release.title)}</b><span>${spanishLongDate(release.date)} · ${platforms}</span></div><div class="cd-units"><div class="cd-unit"><b id="cd-d">—</b><span>Días</span></div><div class="cd-unit"><b id="cd-h">—</b><span>Horas</span></div><div class="cd-unit"><b id="cd-m">—</b><span>Min</span></div><div class="cd-unit"><b id="cd-s">—</b><span>Seg</span></div></div></div>`;
+  return html.slice(0, element.start) + replacement + html.slice(element.end);
 }
 
 let calendarHtml = await readFile(CALENDAR_FILE, "utf8");

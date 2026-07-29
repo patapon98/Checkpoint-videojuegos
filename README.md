@@ -6,6 +6,10 @@ Blog de videojuegos: reseñas, calendario de lanzamientos y noticias.
 - Hosting: Cloudflare Workers (assets estáticos)
 - Despliegue: automático con cada push a `main` (Cloudflare Workers Builds)
 
+## Secretos del repositorio
+
+- `RAWG_API_KEY`: clave usada exclusivamente por GitHub Actions para resolver imágenes del calendario desde RAWG. No debe escribirse en archivos públicos ni en el JavaScript del sitio.
+
 ## Documentación
 
 - Reglas permanentes del proyecto: [`docs/PROJECT_RULES.md`](docs/PROJECT_RULES.md)

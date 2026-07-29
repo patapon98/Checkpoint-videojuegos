@@ -20,19 +20,19 @@
   "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://media.rawg.io/media/resize/1280/-/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
+      "src": "https://media.rawg.io/media/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
       "alt": "Dylan Faden en una zona alterada de Manhattan en CONTROL Resonant"
     },
     {
-      "src": "https://media.rawg.io/media/resize/1280/-/screenshots/169/169ace563987496b5510382259a76eab.jpg",
+      "src": "https://media.rawg.io/media/screenshots/169/169ace563987496b5510382259a76eab.jpg",
       "alt": "Dylan utilizando el Aberrante durante un combate de CONTROL Resonant"
     },
     {
-      "src": "https://media.rawg.io/media/resize/1280/-/screenshots/e8b/e8bad477f0fa4d7bd28be50dd61b5c79.jpg",
+      "src": "https://media.rawg.io/media/screenshots/e8b/e8bad477f0fa4d7bd28be50dd61b5c79.jpg",
       "alt": "Anomalía paranormal en una calle de Manhattan en CONTROL Resonant"
     },
     {
-      "src": "https://media.rawg.io/media/resize/1280/-/screenshots/5b8/5b812f73e4c5df28630747c52f57170b.jpg",
+      "src": "https://media.rawg.io/media/screenshots/5b8/5b812f73e4c5df28630747c52f57170b.jpg",
       "alt": "Escenario urbano deformado por la resonancia en CONTROL Resonant"
     }
   ],
@@ -120,5 +120,9 @@
   "relatedGameIds": [
     "onimusha-way-of-the-sword",
     "god-of-war-laufey"
-  ]
+  ],
+  "theme": {
+    "accent": "#e45757",
+    "accentSoft": "rgba(228,87,87,.16)"
+  }
 }

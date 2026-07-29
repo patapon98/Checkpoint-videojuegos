@@ -1,0 +1,155 @@
+{
+  "id": "marvel-tokon-fighting-souls",
+  "title": "MARVEL Tōkon: Fighting Souls",
+  "subtitle": "El juego de lucha 4 contra 4 de Arc System Works, con su plantel, sus modos, su fecha y las novedades previas al lanzamiento.",
+  "status": "Reservas abiertas",
+  "releaseDate": "2026-08-06",
+  "platforms": [
+    "PS5",
+    "PC"
+  ],
+  "developer": "Arc System Works",
+  "publisher": "Sony Interactive Entertainment",
+  "genre": "Lucha por equipos",
+  "officialUrl": "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
+  "storeUrl": "https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000",
+  "trailerUrl": "https://www.youtube.com/watch?v=DV9Oq_X22Ak",
+  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
+  "heroImageKind": "official-screenshot",
+  "heroImageHasEmbeddedText": false,
+  "theme": {
+    "accent": "#ff6268",
+    "accentSoft": "rgba(255,98,104,.16)"
+  },
+  "gallery": [
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Carnage ataca a Spider-Man en MARVEL Tōkon: Fighting Souls"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-green-goblin-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Primer plano de Green Goblin en MARVEL Tōkon: Fighting Souls"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Black-Panther-Fighting-screenshot-10-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Black Panther y Storm combaten en MARVEL Tōkon: Fighting Souls"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Captain-America-Fighting-screenshot-12-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Captain America e Iron Man atacan juntos en MARVEL Tōkon: Fighting Souls"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Hulk-Fighting-screenshot-08-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Hulk golpea a Magik en MARVEL Tōkon: Fighting Souls"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-PS5-Screenshot-Fighting-01-04feb26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Magik, Danger, Doctor Doom y Storm combaten en MARVEL Tōkon: Fighting Souls"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-doom-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Doctor Doom aparece rodeado de robots en MARVEL Tōkon: Fighting Souls"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "DV9Oq_X22Ak",
+      "title": "MARVEL Tōkon: Fighting Souls, tráiler de presentación",
+      "label": "Tráiler oficial",
+      "publishedAt": "2025-06-04"
+    },
+    {
+      "type": "youtube",
+      "videoId": "EE955NDdmj8",
+      "title": "MARVEL Tōkon: Fighting Souls, vídeo de apertura",
+      "label": "Vídeo oficial",
+      "publishedAt": "2026-07-27"
+    }
+  ],
+  "premise": "Arc System Works reúne a veinte héroes y villanos de Marvel en combates por equipos de cuatro personajes. El jugador forma su grupo, combina asistencias y cambios de luchador y recorre escenarios inspirados en lugares reconocibles del universo Marvel.",
+  "context": "El estudio responsable de Guilty Gear y Dragon Ball FighterZ intenta ampliar el formato clásico de lucha por equipos con enfrentamientos 4 contra 4. El sistema ofrece controles tradicionales y entradas simplificadas para acercarse tanto a veteranos como a nuevos jugadores.",
+  "spotlight": {
+    "kicker": "Lo que define la propuesta",
+    "title": "Plantel, modos y juego cruzado",
+    "intro": "La información oficial ya permite dibujar una ficha bastante más completa que la de un simple juego de lucha competitivo. Hay historia para un jugador, combate local, juego cruzado y un sistema de equipos con reglas propias.",
+    "items": [
+      {
+        "title": "Plantel de lanzamiento",
+        "value": "20 personajes",
+        "description": "Los cinco equipos son Fighting Avengers, Unbreakable X-Men, Amazing Guardians, Knights of Doom y Samurai Outriders, con cuatro luchadores en cada uno."
+      },
+      {
+        "title": "PS5 y PC",
+        "value": "Cross-play confirmado",
+        "description": "PlayStation confirma juego cruzado entre ambas versiones. En PS5 solo hace falta PlayStation Plus para los modos en línea, no para el contenido offline."
+      },
+      {
+        "title": "Más que partidas online",
+        "value": "Historia y juego local",
+        "description": "Incluye Episode Mode, Versus local o contra la CPU, tutorial interactivo, entrenamiento, clasificatorias, partidas casuales y vestíbulos para 64 participantes."
+      }
+    ]
+  },
+  "confirmed": [
+    "Cada combate enfrenta a dos jugadores, cada uno al mando de un equipo de cuatro personajes.",
+    "Los dos primeros luchadores están disponibles al comenzar. Los otros dos se incorporan al ejecutar una transición de escenario, un wall bounce concreto o al perder una ronda.",
+    "El plantel completo incluye Captain America, Iron Man, Hulk, Black Panther, Storm, Magik, Wolverine, Danger, Spider-Man, Ms. Marvel, Star-Lord, Peni Parker, Doctor Doom, Magneto, Green Goblin, Carnage, Ghost Rider, Blade, Loki y Deadpool.",
+    "Episode Mode cuenta una historia original de Marvel con presentación entre cómic y manga. Sanzigen produjo la apertura y las secuencias cinematográficas.",
+    "El juego ofrece voces en diez idiomas, incluido español, y texto en dieciséis.",
+    "El pase del primer año añadirá cuatro personajes y un escenario. Phoenix Cyclops será el primero y el traje Battle Reborn de Wolverine llegará gratis el 1 de septiembre."
+  ],
+  "pending": [
+    "Faltan por anunciar los otros tres personajes y el escenario del pase del primer año.",
+    "No se conocen las fechas de lanzamiento de Phoenix Cyclops ni del resto del contenido del pase.",
+    "Faltan por comprobarse los requisitos finales de la versión para PC.",
+    "No se conoce el tamaño de instalación definitivo.",
+    "La fecha del embargo de análisis no se ha anunciado."
+  ],
+  "sources": [
+    {
+      "label": "PlayStation",
+      "url": "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
+      "type": "Ficha oficial"
+    },
+    {
+      "label": "PlayStation Store",
+      "url": "https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000",
+      "type": "Ediciones y reservas"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/02/12/marvel-tokon-fighting-souls-arrives-on-ps5-pc-august-6/",
+      "type": "Fecha y plataformas"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/07/23/phoenix-cyclops-revealed-as-marvel-tokon-fighting-souls-first-year-1-dlc-character/",
+      "type": "Contenido posterior al lanzamiento"
+    }
+  ],
+  "newsTerms": [
+    "marvel tōkon",
+    "marvel tokon",
+    "fighting souls"
+  ],
+  "seo": {
+    "title": "MARVEL Tōkon: fecha, personajes y todo lo confirmado",
+    "description": "Ficha actualizada de MARVEL Tōkon: Fighting Souls con fecha, plataformas, personajes, modos, tráiler, imágenes y contenido del primer año.",
+    "ogDescription": "Fecha, plantel, modos y todo lo confirmado sobre el juego de lucha 4 contra 4 de Arc System Works.",
+    "heroTitleHtml": "MARVEL Tōkon: <em>Fighting Souls</em>",
+    "heroImageAlt": "Captura oficial de MARVEL Tōkon: Fighting Souls con Carnage y Spider-Man"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Plantel, modos y cross-play revisados",
+      "description": "Se sustituyeron las imágenes comprimidas por siete capturas oficiales a resolución nativa, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."
+    }
+  ],
+  "relatedGameIds": [
+    "beast-of-reincarnation",
+    "control-resonant"
+  ],
+  "updatedAt": "2026-07-30"
+}

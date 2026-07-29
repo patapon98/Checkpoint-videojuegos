@@ -66,5 +66,21 @@
   "relatedGameIds": [
     "otra-ficha-relacionada"
   ],
-  "updatedAt": "AAAA-MM-DD"
+  "updatedAt": "AAAA-MM-DD",
+  "theme": {
+    "accent": "#d8aa4d",
+    "accentSoft": "rgba(216,170,77,.14)"
+  },
+  "spotlight": {
+    "kicker": "Enfoque editorial del bloque",
+    "title": "Título del bloque de claves",
+    "intro": "Introducción breve que explique por qué estos datos importan.",
+    "items": [
+      {
+        "title": "Clave",
+        "value": "Dato destacado",
+        "description": "Explicación concreta y no redundante."
+      }
+    ]
+  }
 }

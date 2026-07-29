@@ -99,5 +99,9 @@
   "relatedGameIds": [
     "control-resonant",
     "onimusha-way-of-the-sword"
-  ]
+  ],
+  "theme": {
+    "accent": "#77b9cc",
+    "accentSoft": "rgba(119,185,204,.16)"
+  }
 }

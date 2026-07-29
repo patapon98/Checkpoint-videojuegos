@@ -54,7 +54,7 @@ for (const file of jsonFiles) {
 
   expect(validDate(data.releaseDate), `${label}: releaseDate debe usar AAAA-MM-DD`);
   expect(validDate(data.updatedAt), `${label}: updatedAt debe usar AAAA-MM-DD`);
-  expect(data.heroImageKind === 'promotional-key-art', `${label}: heroImageKind debe ser promotional-key-art`);
+  expect(['promotional-key-art', 'official-screenshot'].includes(data.heroImageKind), `${label}: heroImageKind debe ser promotional-key-art u official-screenshot`);
   expect(data.heroImageHasEmbeddedText === false, `${label}: la cabecera debe declarar heroImageHasEmbeddedText: false`);
 
   const seo = data.seo || {};

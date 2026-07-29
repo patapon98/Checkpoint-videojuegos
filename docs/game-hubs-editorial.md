@@ -74,8 +74,8 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - La imagen debe estar limpia. No puede llevar el logotipo del juego, el título, fechas, llamadas a la acción, clasificación por edades, marcas de agua, interfaz ni otros textos incrustados.
 - El título y los metadatos pertenecen al HTML de Final Secreto y nunca deben formar parte de la imagen.
 - La cabecera es un recurso independiente de la galería. No se reutiliza automáticamente la primera captura como fondo.
-- En el JSON deben declararse `heroImageKind: "promotional-key-art"` y `heroImageHasEmbeddedText: false`.
-- `seo.heroImageAlt` debe identificarla como arte promocional del juego.
+- En el JSON debe declararse `heroImageKind: "promotional-key-art"` cuando sea arte promocional y `heroImageKind: "official-screenshot"` cuando sea una captura oficial elegida por su composición; en ambos casos, `heroImageHasEmbeddedText` debe ser `false`.
+- `seo.heroImageAlt` debe describir la escena y no asumir que todo recurso es arte promocional.
 - Antes de publicar, hay que comprobar visualmente el recurso desplegado en escritorio y móvil. No basta con revisar la URL o el nombre del archivo.
 - Deben ajustarse `background-position` y el degradado cuando la composición lo requiera, sin ocultar al personaje o elemento principal.
 - Cada ficha define `theme.accent` y `theme.accentSoft` a partir del color principal asociado al juego. Estos colores sustituyen el acento genérico en botones, enlaces, etiquetas y bloques editoriales, también en modo oscuro.
@@ -93,6 +93,10 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - Cuando se combinen recursos oficiales y RAWG, el crédito debe indicar con precisión ambas procedencias.
 - Las imágenes promocionales con texto pueden utilizarse excepcionalmente dentro de la galería si aportan información real, pero nunca como cabecera.
 - Cada vídeo necesita título, etiqueta, fecha de publicación e identificador correctos.
+- Los vídeos se presentan mediante el slider común de multimedia. Muestra un vídeo por pasada, conserva navegación por arrastre y sitúa flechas y puntos abajo a la derecha. Cuando solo existe un vídeo, no debe mostrar controles inútiles.
+- Los controles de galería y multimedia deben quedar posicionados dentro de su propio contenedor. Nunca pueden aparecer sobre la cabecera ni sobre otra sección.
+- No se aceptan marcos, lienzos o bandas blancas incorporadas en la propia imagen. Para automatizar la selección, inspecciona el 4 % exterior de los cuatro lados y descarta el recurso cuando una zona casi blanca o uniforme ocupe la mayor parte del perímetro sin formar parte de la escena. Si un CDN añade relleno al solicitar más tamaño que el nativo, pide la resolución nativa en lugar de ampliar el lienzo.
+- Los contenedores de galería y tarjetas usan un fondo oscuro neutro como protección, pero no deben utilizarse para ocultar una mala elección de imagen. La solución prioritaria es seleccionar una alternativa limpia y a sangre.
 
 ## Fichas relacionadas
 
@@ -109,6 +113,7 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - La tarjeta editorial superior puede destacar una ficha cuando haya una novedad sustancial, como una fecha, un tráiler importante, reservas o nueva información confirmada. Debe identificarse como «Ficha actualizada».
 - No se debe modificar `updatedAt` ni presentar una ficha como actualizada si su contenido no ha cambiado de forma real.
 - El bloque debe conservar enlaces rastreables en el HTML inicial, permitir desplazamiento horizontal aunque falle JavaScript y mostrar una pista visual de la siguiente tarjeta en móvil.
+- El slider reutiliza el comportamiento de las noticias recientes: tres fichas por pasada en escritorio, dos en tableta y una con pista visual en móvil. Flechas y puntos se colocan debajo, alineados a la derecha.
 - Debe existir separación visual suficiente entre este bloque y el encabezado de «Análisis».
 
 ## Validación obligatoria

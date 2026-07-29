@@ -120,5 +120,9 @@
   "relatedGameIds": [
     "control-resonant",
     "god-of-war-laufey"
-  ]
+  ],
+  "theme": {
+    "accent": "#d16b4f",
+    "accentSoft": "rgba(209,107,79,.16)"
+  }
 }

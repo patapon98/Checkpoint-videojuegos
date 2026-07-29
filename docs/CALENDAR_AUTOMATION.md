@@ -12,6 +12,7 @@ La referencia temporal del calendario es siempre **España peninsular**, mediant
 - `css/calendar-today.css` contiene el tratamiento visual de «Sale hoy» y respeta `prefers-reduced-motion`.
 - `scripts/update-release-calendar.mjs` revisa únicamente las fuentes que autorizan expresamente una actualización automática.
 - `scripts/validate-release-calendar.mjs` ejecuta los controles deterministas de la checklist.
+- `scripts/validate-calendar-today.mjs` simula una fecha real del calendario y comprueba que la ficha permanece activa, muestra «Sale hoy» y conserva el mismo estado en la portada cuando corresponde.
 - `scripts/validate-calendar-change.mjs` compara los cambios editoriales con `main` y valida fuentes, evidencia, imágenes y alcance.
 - `.github/workflows/update-release-calendar.yml` ejecuta el mantenimiento diario y publica en `main` cuando existe un cambio real.
 - `.github/workflows/validate-release-calendar.yml` genera y valida las ramas editoriales automáticas.

@@ -58,6 +58,7 @@ for (let index = 1; index < (data.releases || []).length; index += 1) {
   if (previous.date > current.date) fail(`El JSON no está ordenado: ${previous.title} aparece antes que ${current.title}.`);
 }
 
+const releasesById = new Map(data.releases.map((release) => [release.id, release]));
 const calendarRoot = elementById(calendarHtml, "releases");
 const renderedIds = [];
 let currentMonth = "";
@@ -66,11 +67,36 @@ for (const block of topLevelDivs(calendarRoot.inner)) {
   const classes = String(attrs.class || "").split(/\s+/);
   if (classes.includes("month-label")) currentMonth = attrs["data-month"] || "";
   if (!classes.includes("release")) continue;
-  if (!classes.includes("reveal")) fail(`${attrs["data-release-id"] || "Una ficha"} no tiene la clase reveal.`);
-  if (!attrs["data-release-id"]) fail("Una ficha renderizada no declara data-release-id.");
-  else renderedIds.push(attrs["data-release-id"]);
-  if (!attrs["data-release-date"]) fail(`${attrs["data-release-id"]}: falta data-release-date.`);
-  if (currentMonth && monthKey(attrs["data-release-date"] || "") !== currentMonth) fail(`${attrs["data-release-id"]}: está en un mes incorrecto.`);
+
+  const id = attrs["data-release-id"] || "";
+  const release = releasesById.get(id);
+  const date = attrs["data-release-date"] || "";
+  if (!classes.includes("reveal")) fail(`${id || "Una ficha"} no tiene la clase reveal.`);
+  if (!id) fail("Una ficha renderizada no declara data-release-id.");
+  else renderedIds.push(id);
+  if (!date) fail(`${id}: falta data-release-date.`);
+  if (currentMonth && monthKey(date) !== currentMonth) fail(`${id}: está en un mes incorrecto.`);
+
+  const expectedState = date === TODAY ? "today" : (date < TODAY ? "available" : "upcoming");
+  if (attrs["data-release-state"] !== expectedState) fail(`${id}: data-release-state no coincide con la fecha en Europe/Madrid.`);
+  if (date === TODAY) {
+    if (!classes.includes("release-today")) fail(`${id}: un lanzamiento de hoy debe llevar release-today.`);
+    if (!/class="[^"]*\bhype-today\b[^"]*"[^>]*>Sale hoy<\/span>/.test(block.outer)) fail(`${id}: falta la etiqueta «Sale hoy».`);
+  } else if (classes.includes("release-today")) {
+    fail(`${id}: release-today solo puede usarse durante su fecha de lanzamiento.`);
+  }
+  if (date < TODAY && !/class="[^"]*\bhype-out\b[^"]*"[^>]*>Ya disponible<\/span>/.test(block.outer)) {
+    fail(`${id}: un lanzamiento pasado debe figurar como «Ya disponible».`);
+  }
+
+  if (release) {
+    const imageHost = sourceHost(release.image?.src || "");
+    const steamApp = /store\.steampowered\.com\/app\/(\d+)/i.exec(release.store?.url || "")?.[1];
+    if (steamApp && imageHost.endsWith(".blob.core.windows.net")) {
+      const expected = `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${steamApp}/header.jpg`;
+      if (!block.outer.includes(`src="${expected}"`)) fail(`${id}: la imagen lenta de Azure no se ha sustituido por la copia optimizada de Steam.`);
+    }
+  }
 }
 
 const visibleIds = new Set(renderedIds);

@@ -16,6 +16,8 @@ Estas reglas se aplican a todas las páginas situadas en `juegos/` y a sus archi
 
 - La galería debe reunir imágenes distintas, nítidas y representativas. No se permiten duplicados ni variantes prácticamente idénticas.
 - Las capturas deben mostrarse completas, sin deformaciones ni recortes accidentales, y poder ampliarse.
+- No se permiten pantallas negras, fotogramas de transición, imágenes rotas ni recursos promocionales de calidad inferior cuando existen capturas del juego adecuadas.
+- Si RAWG reúne una galería completa y funcional, se puede utilizar directamente sin mezclarla con fotogramas de tráiler.
 - Si se utilizan imágenes de RAWG, la ficha debe incluir una atribución visible y enlazada a RAWG.
 - Cuando se combinen recursos oficiales y RAWG, el crédito debe indicar con precisión ambas procedencias.
 - Las imágenes promocionales con texto pueden utilizarse excepcionalmente dentro de la galería si aportan información real, pero nunca como cabecera.

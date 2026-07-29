@@ -11,14 +11,14 @@ La referencia temporal del calendario es siempre **España peninsular**, mediant
 - `js/calendar-today.js` mantiene el estado del día sincronizado en el navegador mediante `Europe/Madrid`, incluso si la página permanece abierta durante el cambio de fecha.
 - `css/calendar-today.css` contiene el tratamiento visual de «Sale hoy», la atribución de fuentes visuales y el soporte de `prefers-reduced-motion`.
 - `scripts/rawg-images.mjs` selecciona una ficha inequívoca de RAWG y normaliza sus metadatos.
-- `scripts/resolve-rawg-calendar-images.mjs` obtiene las imágenes solicitadas usando el secreto `RAWG_API_KEY`.
+- `scripts/resolve-rawg-calendar-images.mjs` obtiene las imágenes solicitadas mediante una clave temporal enmascarada o, opcionalmente, el secreto `RAWG_API_KEY` del repositorio.
 - `scripts/update-release-calendar.mjs` revisa únicamente las fuentes que autorizan expresamente una actualización automática.
 - `scripts/validate-release-calendar.mjs` ejecuta los controles deterministas de la checklist.
 - `scripts/validate-calendar-today.mjs` simula una fecha real del calendario y comprueba que la ficha permanece activa, muestra «Sale hoy» y conserva el mismo estado en la portada cuando corresponde.
 - `scripts/validate-rawg-images.mjs` prueba la selección de RAWG con datos simulados, sin usar una clave real ni depender de la red.
 - `scripts/validate-calendar-change.mjs` compara los cambios editoriales con `main` y valida fuentes, evidencia, imágenes y alcance.
 - `.github/workflows/update-release-calendar.yml` ejecuta el mantenimiento diario y publica en `main` cuando existe un cambio real.
-- `.github/workflows/validate-release-calendar.yml` genera y valida las ramas editoriales automáticas.
+- `.github/workflows/validate-release-calendar.yml` resuelve las imágenes solicitadas, genera las páginas y valida las ramas editoriales automáticas.
 - `.github/workflows/auto-merge-release-calendar.yml` fusiona las ramas `bot/calendar-*` cuando el commit validado sigue siendo la cabecera de la PR y solo se han modificado los archivos autorizados.
 
 ## Mantenimiento diario de GitHub
@@ -27,7 +27,7 @@ GitHub Actions ejecuta una revisión diaria con `TZ=Europe/Madrid`. El proceso:
 
 1. Descarga la última versión de `main`.
 2. Comprueba la sintaxis de los scripts.
-3. Resuelve las imágenes marcadas con `image.provider: "rawg"` mediante el secreto del repositorio.
+3. Comprueba las imágenes RAWG que ya estén resueltas. Si excepcionalmente llega una solicitud pendiente a `main`, puede resolverla mediante el secreto opcional `RAWG_API_KEY`.
 4. Revisa únicamente las fuentes oficiales configuradas para actualización automática.
 5. No usa Steam ni RAWG para corregir fechas.
 6. Solo sustituye una imagen mediante Steam cuando la entrada declara `source.autoImageUpdate: true` y el nombre coincide exactamente.
@@ -45,15 +45,24 @@ Si no cambia ningún dato ni estado temporal, el workflow termina sin crear un c
 
 ## Imágenes mediante RAWG
 
-La clave nunca se escribe en HTML, JavaScript público, documentación ni `data/calendar.json`. Debe guardarse en GitHub como secreto del repositorio con el nombre exacto `RAWG_API_KEY`.
+RAWG se utiliza solo como proveedor visual. El título, la edición, la fecha, las plataformas y cualquier otro dato editorial deben seguir verificándose en una fuente oficial.
 
-Las entradas nuevas que quieran utilizar RAWG declaran inicialmente:
+La tarea programada de descubrimiento conserva la clave autorizada fuera del repositorio. Cuando crea una PR automática que contiene una imagen pendiente, añade la clave mediante un comentario HTML temporal y oculto en la descripción de la PR. El workflow:
+
+1. Lee la clave antes de ejecutar el resolutor.
+2. La enmascara en los registros de GitHub Actions.
+3. Elimina inmediatamente el comentario de la descripción de la PR.
+4. Guarda únicamente el identificador de la ficha, el slug, la URL pública de RAWG y la atribución.
+
+La clave no se escribe en `data/calendar.json`, HTML, JavaScript público, scripts, documentación ni commits. El secreto de repositorio `RAWG_API_KEY` queda como mecanismo opcional de respaldo, no como una acción manual necesaria para el funcionamiento habitual.
+
+Las entradas nuevas que quieran utilizar RAWG deben conservar también una imagen oficial HTTPS como respaldo:
 
 ```json
 "image": {
   "provider": "rawg",
   "query": "Título exacto del juego",
-  "src": "",
+  "src": "https://fuente-oficial.example/imagen.jpg",
   "alt": "Título exacto del juego",
   "className": "",
   "gridArt": "",
@@ -62,9 +71,11 @@ Las entradas nuevas que quieran utilizar RAWG declaran inicialmente:
 }
 ```
 
-El workflow busca exclusivamente coincidencias exactas. Si hay varias, prioriza la misma fecha y las plataformas compatibles. Cuando la selección siga siendo ambigua, la PR se bloquea y debe añadirse `image.rawgId` manualmente. Tras resolverla, el JSON conserva `rawgId`, `rawgSlug`, `rawgPage` y la URL pública de la imagen.
+El workflow busca exclusivamente coincidencias exactas. Si hay varias, prioriza la misma fecha y las plataformas compatibles. Cuando la selección siga siendo ambigua, la PR se bloquea y debe añadirse `image.rawgId` después de confirmar inequívocamente la ficha correcta.
 
-RAWG se utiliza solo como proveedor visual. El título, la fecha, las plataformas y cualquier otro dato editorial deben seguir verificándose en una fuente oficial. Las páginas que muestran una imagen alojada por RAWG incluyen automáticamente un enlace de atribución conforme a sus condiciones de uso.
+Si la ficha seleccionada tiene `background_image`, se utiliza ese recurso. Si no lo tiene, el resolutor prueba las capturas asociadas a la ficha. Si RAWG todavía no ofrece ninguna imagen, conserva el recurso oficial de respaldo y continúa con el resto de la actualización. Esa ausencia no bloquea el calendario ni sustituye la imagen por un recurso incorrecto.
+
+Tras resolver una imagen, el JSON conserva `rawgId`, `rawgSlug`, `rawgPage`, `rawgImageType` y la URL pública. Las páginas que muestran una imagen alojada por RAWG incluyen automáticamente un enlace de atribución.
 
 ## Descubrimiento editorial
 
@@ -77,8 +88,9 @@ La tarea programada de vigilancia:
 3. Descarta rumores, ventanas aproximadas, títulos sin fecha exacta y lanzamientos demasiado pequeños para el enfoque de Final Secreto.
 4. Crea o actualiza una rama `bot/calendar-*`.
 5. Modifica únicamente `data/calendar.json`.
-6. Abre una PR. GitHub resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones.
-7. La PR se fusiona automáticamente cuando el workflow termina correctamente.
+6. Abre una PR e incorpora la credencial temporal solo cuando existe una imagen RAWG pendiente.
+7. GitHub resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones.
+8. La PR se fusiona automáticamente cuando el resultado es seguro.
 
 La vigilancia no puede editar scripts, estilos, noticias, reseñas ni otros documentos. Cualquier intento queda bloqueado por el workflow de alcance.
 
@@ -90,7 +102,7 @@ Una entrada editorial automática debe incluir al menos:
 - `title` y `headingHtml`.
 - `date` en formato `AAAA-MM-DD`, interpretada como fecha civil de España peninsular.
 - `platformKeys` y `platformsHtml`.
-- Imagen HTTPS o una solicitud RAWG con `image.provider: "rawg"`.
+- Imagen oficial HTTPS de respaldo y, preferentemente, una solicitud RAWG mediante `image.provider: "rawg"`.
 - Ficha oficial o enlace de tienda.
 - Tráiler oficial cuando exista.
 - Prioridad y etiqueta editorial coherentes.
@@ -128,7 +140,8 @@ Cuando una imagen alojada en Azure Blob resulta especialmente pesada o lenta y l
 
 - Si falla una fuente concreta, el workflow conserva los datos anteriores y continúa con las demás fichas.
 - Si RAWG no encuentra una coincidencia exacta o devuelve varias fichas indistinguibles, la actualización se detiene sin publicar datos incorrectos.
-- Si falta `RAWG_API_KEY` y existe una imagen pendiente de RAWG, la validación falla expresamente.
+- Si RAWG identifica la ficha pero todavía no dispone de imágenes, se conserva el respaldo oficial y la actualización continúa.
+- Si falta una clave temporal y existe una imagen RAWG sin resolver, la validación falla antes de publicar cambios incompletos.
 - Si la checklist falla, no se publica ningún cambio.
 - Si aparecen archivos fuera del alcance permitido, el workflow se detiene.
 - Si una rama automática avanza después de una validación, el workflow de fusión espera la validación del nuevo commit.

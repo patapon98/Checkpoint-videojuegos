@@ -13,6 +13,7 @@ on:
       - "scripts/calendar-utils.mjs"
       - "scripts/update-release-calendar.mjs"
       - "scripts/generate-release-calendar.mjs"
+      - "scripts/repair-calendar-countdown.mjs"
       - "scripts/validate-release-calendar.mjs"
       - "scripts/validate-calendar-change.mjs"
       - ".github/workflows/update-release-calendar.yml"
@@ -56,6 +57,7 @@ jobs:
           node --check scripts/calendar-utils.mjs
           node --check scripts/update-release-calendar.mjs
           node --check scripts/generate-release-calendar.mjs
+          node --check scripts/repair-calendar-countdown.mjs
           node --check scripts/validate-release-calendar.mjs
           node --check scripts/validate-calendar-change.mjs
           node --check js/calendar-countdown-prepare.js
@@ -67,6 +69,7 @@ jobs:
         run: |
           node scripts/update-release-calendar.mjs
           node scripts/generate-release-calendar.mjs
+          node scripts/repair-calendar-countdown.mjs
           node scripts/validate-release-calendar.mjs
           git diff --check
           git checkout -- data/calendar.json calendario.html index.html
@@ -75,7 +78,9 @@ jobs:
         run: node scripts/validate-calendar-change.mjs
 
       - name: Generar calendario y portada
-        run: node scripts/generate-release-calendar.mjs
+        run: |
+          node scripts/generate-release-calendar.mjs
+          node scripts/repair-calendar-countdown.mjs
 
       - name: Aplicar checklist automática
         run: |

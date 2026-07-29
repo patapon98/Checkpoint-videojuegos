@@ -102,5 +102,23 @@
     "dylan faden",
     "el aberrante"
   ],
-  "updatedAt": "2026-07-30"
+  "updatedAt": "2026-07-30",
+  "seo": {
+    "title": "CONTROL Resonant: fecha, historia y todo lo confirmado",
+    "description": "Ficha actualizada de CONTROL Resonant con fecha de lanzamiento, historia, plataformas, tráileres, imágenes, reservas y toda la información confirmada.",
+    "ogDescription": "Fecha, plataformas, historia, gameplay y toda la información confirmada sobre CONTROL Resonant.",
+    "heroTitleHtml": "CONTROL <em>Resonant</em>",
+    "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Cabecera y galería revisadas",
+      "description": "Se incorporó arte promocional limpio, se renovaron las capturas y se comprobaron las plataformas y reservas confirmadas."
+    }
+  ],
+  "relatedGameIds": [
+    "onimusha-way-of-the-sword",
+    "god-of-war-laufey"
+  ]
 }

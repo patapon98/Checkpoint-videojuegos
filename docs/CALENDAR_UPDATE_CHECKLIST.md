@@ -1,13 +1,23 @@
 # Checklist de actualización del calendario
 
-Esta lista debe completarse antes de abrir una PR y repetirse antes de que el usuario la fusione.
+Esta lista se aplica tanto a cambios manuales como a las actualizaciones automáticas. Los controles que pueden comprobarse de forma determinista están implementados en `scripts/validate-release-calendar.mjs`. Las altas y cambios editoriales automáticos añaden además la validación de `scripts/validate-calendar-change.mjs`.
 
 ## 1. Flujo de trabajo
+
+### Cambios manuales
 
 - Consultar primero la versión más reciente de `main`.
 - Trabajar en una rama nueva creada desde el `main` actualizado.
 - No modificar directamente `main` ni hacer merge. La decisión de fusionar corresponde al usuario.
 - Incorporar únicamente los lanzamientos aprobados por el usuario.
+
+### Cambios automáticos autorizados
+
+- El mantenimiento determinista puede publicar directamente en `main` únicamente cuando se limita a `data/calendar.json`, `calendario.html` e `index.html` y supera toda la checklist automática.
+- Se considera mantenimiento determinista el cambio de estado a «Ya disponible», el archivo de meses pasados, el orden cronológico, la selección de portada, la cuenta atrás y una fecha o imagen que pueda confirmarse de forma inequívoca mediante una API o ficha oficial.
+- Los anuncios nuevos y los cambios editoriales deben partir de una rama `bot/calendar-*` y modificar solo `data/calendar.json`. GitHub genera las páginas, valida las fuentes y fusiona la PR automáticamente si el resultado es correcto.
+- Ninguna automatización puede inferir fechas aproximadas, relevancia, plataformas o ediciones a partir de rumores, agregadores o coincidencias ambiguas.
+- Una PR automática que altere scripts, estilos, reglas, reseñas, noticias u otros archivos debe bloquearse y requerir revisión manual.
 
 ## 2. Fuente y datos
 
@@ -17,16 +27,19 @@ Esta lista debe completarse antes de abrir una PR y repetirse antes de que el us
 - Confirmar que el nombre corresponde a la edición o versión exacta anunciada.
 - Mantener el orden cronológico dentro del mes.
 - Si se añade o elimina un mes, actualizar también el selector mensual y su orden.
+- Las altas y modificaciones automáticas deben declarar `source.official`, `source.url`, `source.checkedAt` y `source.evidence`. La evidencia debe repetir de forma estructurada el título exacto, la fecha exacta y las plataformas confirmadas.
+- No eliminar automáticamente entradas históricas. Los retrasos cambian la fecha y las cancelaciones deben conservarse o revisarse manualmente con una explicación explícita.
 
 ## 3. Imagen
 
 - Priorizar imágenes oficiales de la editora, fabricante de plataforma o canal oficial.
-- No usar RAWG, agregadores u otras fuentes de terceros cuando exista una imagen oficial estable.
+- No usar RAWG, agregadores, YouTube u otras fuentes de terceros cuando exista una imagen oficial estable.
 - Evitar imágenes móviles, previews comprimidas y parámetros como `output=preview`.
 - Evitar miniaturas con rótulos añadidos como `4K`, `tráiler`, `gameplay`, fechas superpuestas o marcas editoriales.
-- Evitar Steam como fuente de imagen salvo que no exista una alternativa estable.
+- Evitar Steam como fuente de imagen salvo que no exista una alternativa estable. En la verificación automática de fichas heredadas, la imagen oficial de Steam puede sustituir temporalmente a una imagen de agregador.
 - Comprobar nitidez, relación de aspecto y recorte en portada, lista y cuadrícula.
 - Confirmar que la URL carga sin autenticación, hotlink bloqueado o respuesta intermitente.
+- Una entrada automática nueva nunca puede usar RAWG o una miniatura de YouTube.
 
 ## 4. Ficha completa
 
@@ -37,6 +50,7 @@ Esta lista debe completarse antes de abrir una PR y repetirse antes de que el us
 - Tráiler oficial añadido cuando exista.
 - Texto alternativo de imagen correcto y útil.
 - Enlaces externos con los atributos de seguridad y accesibilidad usados por el resto del sitio.
+- Cada entrada debe tener un identificador estable y único para que los cambios de fecha no creen duplicados.
 
 ## 5. Interfaz y comportamiento
 
@@ -48,22 +62,31 @@ Esta lista debe completarse antes de abrir una PR y repetirse antes de que el us
 - Revisar escritorio y móvil, incluido el scroll horizontal.
 - Revisar modo claro y modo oscuro.
 - Revisar al menos Chromium y Firefox cuando se modifiquen estructura, estilos o animaciones.
+- El mantenimiento rutinario no debe modificar estructura ni estilos. Si una actualización automática provoca ese tipo de diff, debe bloquearse.
 
 ## 6. Calendario de la portada
 
 - Comprobar siempre si los cambios alteran los próximos lanzamientos o los títulos destacados de la portada.
-- Cuando corresponda, actualizar también `#calendario #releases` en la portada, no solo la página `/calendario`.
+- La portada debe generarse desde los mismos datos que `/calendario`, nunca desde una lista paralela.
 - Mantener sincronizados título, fecha, plataformas, imagen, enlace y etiqueta entre portada y calendario completo.
 - Revisar visualmente las imágenes de portada para descartar desenfoque, recortes malos, rótulos añadidos o fuentes inestables.
 - Confirmar que el orden de los destacados de portada sigue siendo editorialmente coherente después de añadir, mover o retirar lanzamientos.
-- Si cambia el lanzamiento usado como cuenta atrás, actualizar y probar el contador tanto en la portada como en el calendario completo.
+- La cuenta atrás debe resolverse desde los datos estructurados y mantenerse sincronizada en la portada y el calendario completo.
 
-## 7. Cierre de la actualización
+## 7. Archivo y paso del tiempo
 
-- Actualizar el texto `Calendario actualizado a ...` con la fecha real de la revisión.
+- Las fichas cuya fecha ya ha pasado deben mostrarse automáticamente como «Ya disponible».
+- El mes actual puede dividirse en un bloque de lanzamientos ya disponibles y otro de próximos lanzamientos.
+- Los meses anteriores deben quedar plegados en la interfaz. Los meses anteriores al margen de archivo configurado dejan de renderizarse, pero permanecen en `data/calendar.json`.
+- El selector de mes, la búsqueda, los filtros y el contador deben seguir encontrando correctamente los meses históricos que todavía se muestran.
+- La tarea diaria debe ser idempotente. Si no cambia ningún dato ni estado temporal, no debe crear un commit.
+
+## 8. Cierre de la actualización
+
+- Actualizar el texto `Calendario actualizado a ...` con la fecha real de la revisión que haya cambiado datos o estado.
 - Incrementar las versiones de caché de todos los scripts y estilos modificados que usen parámetros de versión.
-- Revisar el diff completo de la rama contra el `main` más reciente.
-- Abrir una PR, preferiblemente en borrador, con resumen de cambios, fuentes oficiales y elementos descartados.
-- Comprobar visualmente el despliegue de prueba o la vista previa disponible.
+- Revisar el diff completo contra el `main` más reciente.
+- En cambios manuales, abrir una PR, preferiblemente en borrador, con resumen, fuentes oficiales y elementos descartados.
+- Comprobar visualmente el despliegue de prueba o la vista previa disponible cuando cambie la interfaz o se incorporen imágenes nuevas.
 - Confirmar que la rama no se ha quedado atrás respecto a `main` antes de entregar.
-- No hacer merge. Entregar la PR al usuario para su revisión y decisión final.
+- Los cambios manuales no se fusionan sin decisión del usuario. Las ramas automáticas `bot/calendar-*` quedan expresamente autorizadas para fusionarse solo después de superar los workflows de generación, alcance y validación.

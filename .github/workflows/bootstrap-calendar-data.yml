@@ -57,3 +57,5 @@ jobs:
           git add data/calendar.json calendario.html index.html
           git commit -m "Migra el calendario a datos estructurados"
           git push origin HEAD:agent/automatic-release-calendar
+
+# Workflow temporal de bootstrap. Se elimina antes del merge.

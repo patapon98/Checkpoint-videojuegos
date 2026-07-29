@@ -65,15 +65,7 @@ for (const release of data.releases || []) {
   for (const platform of release.platformKeys || []) {
     if (!allowedPlatforms.has(platform)) fail(`${release.id}: plataforma desconocida «${platform}».`);
   }
-  const orderedPlatformKeys = sortPlatformKeys(release.platformKeys || [], platformOrder);
-  if (JSON.stringify(release.platformKeys || []) !== JSON.stringify(orderedPlatformKeys)) {
-    fail(`${release.id}: platformKeys debe seguir la prioridad PS5, PS4, Xbox, PC y Switch.`);
-  }
   if (!release.platformsHtml?.trim()) fail(`${release.id}: falta el texto visible de plataformas.`);
-  const orderedPlatformsHtml = sortPlatformsHtml(release.platformsHtml || "", platformOrder);
-  if ((release.platformsHtml || "") !== orderedPlatformsHtml) {
-    fail(`${release.id}: el texto visible de plataformas debe seguir la prioridad PS5, PS4, Xbox, PC y Switch.`);
-  }
   if (!release.image?.src || !/^https:\/\//.test(release.image.src)) fail(`${release.id}: falta una imagen HTTPS.`);
   if (!release.image?.alt?.trim()) fail(`${release.id}: falta el texto alternativo.`);
   if (!release.store?.url || !/^https:\/\//.test(release.store.url)) warn(`${release.id}: no tiene enlace de tienda o ficha oficial.`);

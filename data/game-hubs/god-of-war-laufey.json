@@ -4,20 +4,43 @@
   "subtitle": "Todo lo confirmado sobre la nueva aventura de Faye",
   "status": "Anunciado",
   "releaseDate": "2027-02-16",
-  "platforms": ["PS5"],
+  "platforms": [
+    "PS5"
+  ],
   "developer": "Santa Monica Studio",
   "publisher": "Sony Interactive Entertainment",
   "genre": "Acción y aventura",
   "officialUrl": "https://www.playstation.com/es-es/games/god-of-war-laufey/",
   "storeUrl": "https://store.playstation.com/es-es/concept/10009461",
   "trailerUrl": "https://www.youtube.com/watch?v=HLMX2w3cwuE",
-  "rawg": {
-    "slug": "god-of-war-laufey",
-    "id": null,
-    "updatedAt": null,
-    "backgroundImage": "",
-    "screenshots": []
-  },
+  "heroImage": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2715/d6da00e85166c72dc55aad6c3062524da9bfd74e8786718d.jpg",
+  "gallery": [
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/3804460f7e26cb8a6538d97c1cfefe846f47c3d6.jpg",
+      "alt": "Captura oficial de God of War Laufey con Faye en el Todotiempo"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/1fb563c849f5f555690a331bbbb89f01cec7e5d0.jpg",
+      "alt": "Faye durante una escena de God of War Laufey"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/11e4fd90abbd12235bf8c02eb2e0df777aab1d80.jpg",
+      "alt": "Dos deidades del Todotiempo en God of War Laufey"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/bf2289b94400a3f16dee48e8f1d68f5a21de76f4.jpg",
+      "alt": "Faye frente a una criatura gigantesca en God of War Laufey"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "HLMX2w3cwuE",
+      "title": "Tráiler oficial de God of War Laufey",
+      "label": "Tráiler de anuncio",
+      "publishedAt": "2026-06-03"
+    }
+  ],
   "premise": "Tras su muerte, Laufey despierta en el Todotiempo y descubre que los planes que dejó preparados para proteger a Kratos y Atreus están en peligro. Para salvarlos deberá abrirse paso por un más allá donde deidades de distintas mitologías compiten por el poder.",
   "confirmed": [
     "Faye, también conocida como Laufey, es la protagonista.",

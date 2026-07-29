@@ -144,7 +144,17 @@
   function monthName(monthKey){
     const [year,month]=monthKey.split('-').map(Number);
     if(!year||!month) return '';
-    return new Intl.DateTimeFormat('es-ES',{month:'long'}).format(new Date(year,month-1,1));
+    return new Intl.DateTimeFormat('es-ES',{month:'long',timeZone:'Europe/Madrid'}).format(new Date(Date.UTC(year,month-1,2)));
+  }
+
+  function currentMonthMadrid(){
+    const parts=new Intl.DateTimeFormat('en-CA',{
+      timeZone:'Europe/Madrid',
+      year:'numeric',
+      month:'2-digit'
+    }).formatToParts(new Date());
+    const values=Object.fromEntries(parts.map(part=>[part.type,part.value]));
+    return `${values.year}-${values.month}`;
   }
 
   const months=[];
@@ -205,8 +215,7 @@
   });
 
   /* ---------- Meses ya pasados, plegados ---------- */
-  const now=new Date();
-  const currentMonth=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  const currentMonth=currentMonthMadrid();
   const past=months.filter(entry=>entry.month<currentMonth);
 
   if(past.length){

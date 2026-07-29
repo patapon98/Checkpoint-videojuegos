@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Europe/Madrid
+      RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
     steps:
       - name: Descargar main
         uses: actions/checkout@v4
@@ -40,14 +41,23 @@ jobs:
       - name: Comprobar sintaxis
         run: |
           node --check scripts/calendar-utils.mjs
+          node --check scripts/rawg-images.mjs
+          node --check scripts/resolve-rawg-calendar-images.mjs
+          node --check scripts/validate-rawg-images.mjs
           node --check scripts/update-release-calendar.mjs
           node --check scripts/generate-release-calendar.mjs
           node --check scripts/validate-release-calendar.mjs
+          node --check scripts/validate-calendar-today.mjs
+          node --check js/calendar-today.js
+          node --check js/calendar-mosaic.js
           node --check js/calendar-countdown-prepare.js
           node --check js/calendar-countdown.js
           node --check js/main.js
 
-      - name: Verificar fechas e imágenes oficiales
+      - name: Resolver imágenes configuradas con RAWG
+        run: node scripts/resolve-rawg-calendar-images.mjs
+
+      - name: Verificar fechas y otras imágenes autorizadas
         run: node scripts/update-release-calendar.mjs
 
       - name: Regenerar calendario y portada

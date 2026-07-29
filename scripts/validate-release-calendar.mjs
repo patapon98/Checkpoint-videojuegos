@@ -22,6 +22,26 @@ const warnings = [];
 const fail = (message) => errors.push(message);
 const warn = (message) => warnings.push(message);
 
+function isRawgHost(url = "") {
+  const host = sourceHost(url);
+  return host === "media.rawg.io" || host.endsWith(".rawg.io");
+}
+
+function validRawgImage(image = {}) {
+  return image.provider === "rawg"
+    && Number(image.rawgId) > 0
+    && Boolean(image.rawgSlug)
+    && /^https:\/\/rawg\.io\/games\//.test(image.rawgPage || "")
+    && isRawgHost(image.src);
+}
+
+function requireRawgAttribution(html, label) {
+  if (!/(?:https?:)?\/\/media\.rawg\.io\//.test(html)) return;
+  if (!/class="rawg-attribution"/.test(html) || !/href="https:\/\/rawg\.io\/?"/.test(html)) {
+    fail(`${label}: usa imágenes de RAWG pero no incluye la atribución enlazada obligatoria.`);
+  }
+}
+
 if (!/^20\d{2}-\d{2}-\d{2}$/.test(data.updatedAt || "")) fail("updatedAt no es una fecha ISO.");
 if (!Array.isArray(data.releases) || !data.releases.length) fail("No hay lanzamientos en data/calendar.json.");
 
@@ -43,12 +63,18 @@ for (const release of data.releases || []) {
   if (!release.image?.alt?.trim()) fail(`${release.id}: falta el texto alternativo.`);
   if (!release.store?.url || !/^https:\/\//.test(release.store.url)) warn(`${release.id}: no tiene enlace de tienda o ficha oficial.`);
 
+  if (release.image?.provider === "rawg" && !validRawgImage(release.image)) {
+    fail(`${release.id}: una imagen RAWG debe declarar rawgId, rawgSlug, rawgPage y una URL de media.rawg.io.`);
+  }
+
   if (!release.legacy) {
     if (!release.source?.official) fail(`${release.id}: una entrada nueva debe estar verificada en una fuente oficial.`);
     if (!release.source?.url || !/^https:\/\//.test(release.source.url)) fail(`${release.id}: falta la URL oficial de verificación.`);
-    if (isThirdPartyImage(release.image.src)) fail(`${release.id}: una entrada nueva no puede usar RAWG, YouTube u otro agregador como imagen.`);
-  } else {
-    if (isThirdPartyImage(release.image?.src)) warn(`${release.id}: conserva una imagen heredada de terceros pendiente de sustitución automática.`);
+    if (isThirdPartyImage(release.image.src) && !validRawgImage(release.image)) {
+      fail(`${release.id}: una imagen externa nueva solo puede proceder de RAWG con metadatos completos; YouTube y otros agregadores no están permitidos.`);
+    }
+  } else if (isThirdPartyImage(release.image?.src)) {
+    warn(`${release.id}: conserva una imagen heredada de terceros pendiente de normalización.`);
   }
 }
 
@@ -58,6 +84,7 @@ for (let index = 1; index < (data.releases || []).length; index += 1) {
   if (previous.date > current.date) fail(`El JSON no está ordenado: ${previous.title} aparece antes que ${current.title}.`);
 }
 
+const releasesById = new Map(data.releases.map((release) => [release.id, release]));
 const calendarRoot = elementById(calendarHtml, "releases");
 const renderedIds = [];
 let currentMonth = "";
@@ -66,11 +93,36 @@ for (const block of topLevelDivs(calendarRoot.inner)) {
   const classes = String(attrs.class || "").split(/\s+/);
   if (classes.includes("month-label")) currentMonth = attrs["data-month"] || "";
   if (!classes.includes("release")) continue;
-  if (!classes.includes("reveal")) fail(`${attrs["data-release-id"] || "Una ficha"} no tiene la clase reveal.`);
-  if (!attrs["data-release-id"]) fail("Una ficha renderizada no declara data-release-id.");
-  else renderedIds.push(attrs["data-release-id"]);
-  if (!attrs["data-release-date"]) fail(`${attrs["data-release-id"]}: falta data-release-date.`);
-  if (currentMonth && monthKey(attrs["data-release-date"] || "") !== currentMonth) fail(`${attrs["data-release-id"]}: está en un mes incorrecto.`);
+
+  const id = attrs["data-release-id"] || "";
+  const release = releasesById.get(id);
+  const date = attrs["data-release-date"] || "";
+  if (!classes.includes("reveal")) fail(`${id || "Una ficha"} no tiene la clase reveal.`);
+  if (!id) fail("Una ficha renderizada no declara data-release-id.");
+  else renderedIds.push(id);
+  if (!date) fail(`${id}: falta data-release-date.`);
+  if (currentMonth && monthKey(date) !== currentMonth) fail(`${id}: está en un mes incorrecto.`);
+
+  const expectedState = date === TODAY ? "today" : (date < TODAY ? "available" : "upcoming");
+  if (attrs["data-release-state"] !== expectedState) fail(`${id}: data-release-state no coincide con la fecha en Europe/Madrid.`);
+  if (date === TODAY) {
+    if (!classes.includes("release-today")) fail(`${id}: un lanzamiento de hoy debe llevar release-today.`);
+    if (!/class="[^"]*\bhype-today\b[^"]*"[^>]*>Sale hoy<\/span>/.test(block.outer)) fail(`${id}: falta la etiqueta «Sale hoy».`);
+  } else if (classes.includes("release-today")) {
+    fail(`${id}: release-today solo puede usarse durante su fecha de lanzamiento.`);
+  }
+  if (date < TODAY && !/class="[^"]*\bhype-out\b[^"]*"[^>]*>Ya disponible<\/span>/.test(block.outer)) {
+    fail(`${id}: un lanzamiento pasado debe figurar como «Ya disponible».`);
+  }
+
+  if (release) {
+    const imageHost = sourceHost(release.image?.src || "");
+    const steamApp = /store\.steampowered\.com\/app\/(\d+)/i.exec(release.store?.url || "")?.[1];
+    if (steamApp && imageHost.endsWith(".blob.core.windows.net")) {
+      const expected = `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${steamApp}/header.jpg`;
+      if (!block.outer.includes(`src="${expected}"`)) fail(`${id}: la imagen lenta de Azure no se ha sustituido por la copia optimizada de Steam.`);
+    }
+  }
 }
 
 const visibleIds = new Set(renderedIds);
@@ -88,6 +140,9 @@ for (const id of homeIds) {
   if (!homeHtml.includes(`data-release-id="${id}"`)) fail(`${id}: falta en el calendario de portada.`);
 }
 if ((homeHtml.match(/data-release-id=/g) || []).length < homeIds.length) fail("La portada contiene menos fichas de las previstas.");
+
+requireRawgAttribution(calendarHtml, "Calendario completo");
+requireRawgAttribution(homeHtml, "Calendario de portada");
 
 const calendarCountdown = /class="countdown reveal"[^>]*data-countdown-date="(20\d{2}-\d{2}-\d{2})"/.exec(calendarHtml)?.[1];
 const homeCountdown = /class="countdown"[^>]*data-countdown-date="(20\d{2}-\d{2}-\d{2})"/.exec(homeHtml)?.[1];

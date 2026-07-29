@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;0,9..144,750&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/game-hub.css?v=20260730-2">
+<link rel="stylesheet" href="/css/game-hub.css?v=20260730-3">
 <script>(function(){try{var s=localStorage.getItem('finalsecreto-theme');var t=s||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);document.documentElement.style.colorScheme=t}catch(e){}})();</script>
 <script type="application/ld+json" id="gameStructuredData">{"@context":"https://schema.org","@type":"VideoGame","name":"God of War Laufey","url":"https://finalsecreto.com/juegos/god-of-war-laufey","image":"https://image.api.playstation.com/vulcan/ap/rnd/202605/2715/d6da00e85166c72dc55aad6c3062524da9bfd74e8786718d.jpg","datePublished":"2027-02-16","gamePlatform":"PlayStation 5","genre":["Acción","Aventura"],"publisher":{"@type":"Organization","name":"Sony Interactive Entertainment"},"author":{"@type":"Organization","name":"Santa Monica Studio"},"trailer":{"@type":"VideoObject","name":"Tráiler oficial de God of War Laufey","thumbnailUrl":"https://i.ytimg.com/vi/HLMX2w3cwuE/maxresdefault.jpg","uploadDate":"2026-06-03","embedUrl":"https://www.youtube.com/embed/HLMX2w3cwuE"}}</script>
 </head>
@@ -52,15 +52,16 @@
   </section>
 
   <div class="game-nav-shell">
-    <nav class="wrap game-section-nav" aria-label="Navegación de la ficha">
+    <nav class="game-section-nav" aria-label="Navegación de la ficha">
       <a href="#resumen">Resumen</a><a href="#confirmado">Confirmado</a><a href="#multimedia">Multimedia</a><a href="#galeria">Galería</a><a href="#noticias">Noticias</a><a href="#fuentes">Fuentes</a>
     </nav>
   </div>
 
   <div class="wrap game-layout">
     <div class="game-main-column">
+      <p class="game-last-update"><span>Última actualización</span><time id="updatedAt" datetime="2026-07-30">30 de julio de 2026</time></p>
       <section class="game-countdown reveal" aria-labelledby="countdownTitle">
-        <div><span class="game-kicker">Lanzamiento en España</span><h2 id="countdownTitle">16 de febrero de 2027</h2><p id="countdownText">Calculando el tiempo restante…</p></div>
+        <div><span class="game-kicker">Lanzamiento</span><h2 id="countdownTitle">16 de febrero de 2027</h2><p id="countdownText">Calculando el tiempo restante…</p></div>
         <div class="countdown-grid" id="countdownGrid" aria-label="Cuenta atrás"><div><strong id="days">—</strong><span>días</span></div><div><strong id="hours">—</strong><span>horas</span></div><div><strong id="minutes">—</strong><span>minutos</span></div></div>
       </section>
 
@@ -68,6 +69,7 @@
         <div class="section-heading"><span class="game-kicker">En dos minutos</span><h2>Lo esencial</h2></div>
         <p class="game-lead" id="gamePremise"></p>
         <div class="game-facts" id="gameFacts"></div>
+        <p class="game-context-note" id="gameContext"></p>
       </section>
 
       <section id="confirmado" class="game-section reveal">
@@ -81,7 +83,7 @@
       </section>
 
       <section id="galeria" class="game-section reveal">
-        <div class="section-heading"><span class="game-kicker">Imágenes oficiales</span><h2>Galería</h2><p>Capturas y materiales publicados por PlayStation y Santa Monica Studio.</p></div>
+        <div class="section-heading"><span class="game-kicker">Imágenes oficiales</span><h2>Galería</h2><p>Desliza para recorrer las capturas y pulsa sobre una imagen para ampliarla.</p></div>
         <div class="game-gallery" id="gameGallery"><div class="gallery-placeholder">Cargando galería oficial…</div></div>
       </section>
 
@@ -91,14 +93,13 @@
       </section>
 
       <section id="fuentes" class="game-section reveal">
-        <div class="section-heading"><span class="game-kicker">Transparencia</span><h2>Fuentes y última revisión</h2></div>
+        <div class="section-heading"><span class="game-kicker">Transparencia</span><h2>Fuentes</h2><p>Enlaces oficiales y referencias utilizadas para mantener la ficha al día.</p></div>
         <div class="source-list" id="sourceList"></div>
-        <p class="game-updated">Última revisión editorial: <time id="updatedAt">30 de julio de 2026</time>. La información editorial se contrasta antes de incorporarse a la ficha.</p>
       </section>
     </div>
 
     <aside class="game-side-column" aria-label="Información rápida">
-      <div class="game-side-card reveal"><span class="game-kicker">Estado actual</span><h2>Ficha de seguimiento</h2><dl id="quickFacts"></dl><a class="game-source-link" href="https://www.playstation.com/es-es/games/god-of-war-laufey/" target="_blank" rel="noopener noreferrer">Consultar ficha oficial ↗</a></div>
+      <div class="game-side-card reveal"><span class="game-kicker">Datos del juego</span><h2>Ficha de seguimiento</h2><dl id="quickFacts"></dl><a class="game-source-link" href="https://www.playstation.com/es-es/games/god-of-war-laufey/" target="_blank" rel="noopener noreferrer">Consultar ficha oficial ↗</a></div>
       <div class="game-side-card reveal"><span class="game-kicker">Por qué volver</span><p>La fecha, los vídeos, las imágenes, las dudas pendientes y las noticias relacionadas se reúnen aquí para que puedas comprobar rápidamente qué ha cambiado.</p></div>
     </aside>
   </div>
@@ -106,6 +107,6 @@
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span></div></footer>
 <script src="/js/main.js?v=20260730-1"></script>
 <script src="/js/news-data.js?v=20260728-6"></script>
-<script src="/js/game-hub.js?v=20260730-2"></script>
+<script src="/js/game-hub.js?v=20260730-3"></script>
 </body>
 </html>

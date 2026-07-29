@@ -9,6 +9,7 @@ import {
   resolveCountdown,
   selectHomeReleases,
   shortMonth,
+  sourceHost,
   spanishLongDate,
   todayMadrid
 } from "./calendar-utils.mjs";
@@ -18,7 +19,7 @@ const DATA_FILE = path.join(ROOT, "data", "calendar.json");
 const CALENDAR_FILE = path.join(ROOT, "calendario.html");
 const HOME_FILE = path.join(ROOT, "index.html");
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
-const MAIN_ASSET_VERSION = "20260729-9";
+const MAIN_ASSET_VERSION = "20260729-10";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
@@ -60,6 +61,16 @@ function optimizedImageSource(release, image) {
     return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appId}/header.jpg`;
   }
   return source;
+}
+
+function usesRawgImage(release) {
+  const host = sourceHost(optimizedImageSource(release, release.image || {}));
+  return host === "media.rawg.io" || host.endsWith(".rawg.io");
+}
+
+function rawgAttribution(releases) {
+  if (!releases.some(usesRawgImage)) return "";
+  return '<p class="rawg-attribution">Algunas imágenes de juegos proceden de <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a>.</p>';
 }
 
 function badgeFor(release, { home = false } = {}) {
@@ -137,6 +148,8 @@ function renderCalendarReleases(releases) {
       chunks.push(...active.map((release) => renderRelease(release)));
     }
   }
+  const attribution = rawgAttribution(releases);
+  if (attribution) chunks.push(attribution);
   return `\n    ${chunks.join("\n    ")}\n  `;
 }
 
@@ -199,7 +212,10 @@ await writeFile(CALENDAR_FILE, calendarHtml, "utf8");
 
 let homeHtml = await readFile(HOME_FILE, "utf8");
 const homeReleases = selectHomeReleases(data, TODAY);
-homeHtml = replaceElementInner(homeHtml, "releases", `\n        ${homeReleases.map((release) => renderRelease(release, { reveal: false, home: true })).join("\n        ")}\n      `);
+const homeChunks = homeReleases.map((release) => renderRelease(release, { reveal: false, home: true }));
+const homeAttribution = rawgAttribution(homeReleases);
+if (homeAttribution) homeChunks.push(homeAttribution);
+homeHtml = replaceElementInner(homeHtml, "releases", `\n        ${homeChunks.join("\n        ")}\n      `);
 homeHtml = updateCountdown(homeHtml, resolveCountdown(data, TODAY));
 homeHtml = homeHtml.replace(/(<h2 class="section-title" data-i18n="cal_title">)Calendario \d{4}(<\/h2>)/, `$1Calendario ${TODAY.slice(0, 4)}$2`);
 homeHtml = updateMainAssetVersion(homeHtml);

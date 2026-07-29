@@ -6,7 +6,8 @@ Estas instrucciones se aplican a todo el repositorio de Final Secreto.
 
 1. Antes de analizar, proponer o modificar cualquier elemento del proyecto, lee íntegramente [`docs/PROJECT_RULES.md`](docs/PROJECT_RULES.md).
 2. Si el trabajo crea, modifica, revisa o publica contenido, lee también íntegramente [`COMO-PUBLICAR.md`](COMO-PUBLICAR.md) y aplica sus comprobaciones.
-3. Si el trabajo afecta al calendario de lanzamientos, lee además íntegramente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md).
+3. Si el trabajo crea o modifica un artículo individual, lee además íntegramente [`docs/EDITORIAL_DEPTH.md`](docs/EDITORIAL_DEPTH.md) y aplica sus criterios de interpretación y cierre.
+4. Si el trabajo afecta al calendario de lanzamientos, lee además íntegramente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md).
 
 No actúes basándote únicamente en el resumen de una conversación o en una versión recordada de estos documentos. Consulta siempre los archivos vigentes en la rama de trabajo.
 

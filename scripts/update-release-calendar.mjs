@@ -69,7 +69,7 @@ function dateFromOfficialHtml(html) {
   return exact.length === 1 ? exact[0] : null;
 }
 
-async function verifySteam(release, appId) {
+async function updateImageFromSteam(release, appId) {
   const response = await fetch(`https://store.steampowered.com/api/appdetails?appids=${appId}&l=english&cc=es`, {
     headers: { "user-agent": "FinalSecreto-CalendarUpdater/1.0" }
   });
@@ -77,19 +77,16 @@ async function verifySteam(release, appId) {
   const payload = await response.json();
   const official = payload?.[appId]?.data;
   if (!official) throw new Error("Steam no devolvió una ficha válida");
+  if (!official.header_image || !isThirdPartyImage(release.image?.src)) return;
 
-  // Steam puede mostrar la fecha del juego base, de otra edición o de otra región.
-  // Nunca se usa para modificar fechas del calendario.
-  if (release.source?.autoImageUpdate === true && official.header_image && isThirdPartyImage(release.image?.src)) {
-    const expected = normalize(release.image?.alt || release.title);
-    const received = normalize(official.name);
-    if (expected !== received) throw new Error(`la imagen parece corresponder a «${official.name}»`);
-    changes.push(`${release.title}: imagen heredada sustituida por Steam`);
-    release.image.src = official.header_image;
-    release.image.alt = official.name;
-    release.image.className = "";
-    release.image.legacy = false;
-  }
+  const expected = normalize(release.image?.alt || release.title);
+  const received = normalize(official.name);
+  if (expected !== received) throw new Error(`la imagen parece corresponder a «${official.name}»`);
+  changes.push(`${release.title}: imagen heredada sustituida por Steam`);
+  release.image.src = official.header_image;
+  release.image.alt = official.name;
+  release.image.className = "";
+  release.image.legacy = false;
 }
 
 async function verifyOfficialPage(release) {
@@ -101,8 +98,8 @@ async function verifyOfficialPage(release) {
     throw new Error("el título no aparece de forma inequívoca en la página");
   }
 
-  // Una fecha solo puede cambiar automáticamente cuando la entrada lo autoriza de
-  // forma explícita y la página oficial ofrece una única fecha estructurada.
+  // Las fechas se interpretan como fechas civiles de España peninsular. Nunca se
+  // derivan de timestamps UTC ni de la fecha de otra edición o región en Steam.
   if (release.source.autoDateUpdate !== true) return;
   const date = dateFromOfficialHtml(html);
   if (date && date !== release.date) {
@@ -113,11 +110,16 @@ async function verifyOfficialPage(release) {
 
 for (const release of data.releases) {
   if (release.source?.autoUpdate === false) continue;
-  const steamUrl = release.store?.url || release.source?.url || "";
-  const appId = /store\.steampowered\.com\/app\/(\d+)/i.exec(steamUrl)?.[1];
   try {
-    if (appId) await verifySteam(release, appId);
-    else await verifyOfficialPage(release);
+    if (release.source?.official && release.source?.url) await verifyOfficialPage(release);
+
+    // Steam solo se consulta cuando una entrada autoriza expresamente sustituir
+    // su imagen. Nunca se consulta para cambiar fechas.
+    if (release.source?.autoImageUpdate === true) {
+      const steamUrl = release.store?.url || "";
+      const appId = /store\.steampowered\.com\/app\/(\d+)/i.exec(steamUrl)?.[1];
+      if (appId) await updateImageFromSteam(release, appId);
+    }
   } catch (error) {
     console.warn(`No se pudo verificar ${release.title}: ${error.message}`);
   }

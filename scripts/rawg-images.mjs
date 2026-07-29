@@ -84,6 +84,20 @@ function rawgUrl(pathname, apiKey, params = {}) {
   return url;
 }
 
+async function resolveRawgImageUrl(game, apiKey, fetchImpl) {
+  if (/^https:\/\//.test(game.background_image || "")) {
+    return { url: game.background_image, type: "background" };
+  }
+
+  const screenshots = await fetchRawgJson(
+    rawgUrl(`games/${game.id}/screenshots`, apiKey, { page_size: 10 }),
+    fetchImpl
+  );
+  const screenshot = (screenshots.results || []).find((item) => /^https:\/\//.test(item?.image || ""));
+  if (!screenshot) throw new Error("RAWG no ofrece imagen principal ni capturas HTTPS para esta ficha");
+  return { url: screenshot.image, type: "screenshot" };
+}
+
 export async function resolveRawgImage(release, { apiKey, fetchImpl = globalThis.fetch } = {}) {
   if (!isRawgProvider(release.image)) return false;
   if (!apiKey) throw new Error("RAWG_API_KEY no está configurada");
@@ -105,12 +119,13 @@ export async function resolveRawgImage(release, { apiKey, fetchImpl = globalThis
   if (normalizeRawgTitle(game.name) !== normalizeRawgTitle(release.image.query || release.title)) {
     throw new Error(`la ficha RAWG corresponde a «${game.name}»`);
   }
-  if (!/^https:\/\//.test(game.background_image || "")) throw new Error("RAWG no ofrece una imagen HTTPS para esta ficha");
-  const imageHost = sourceHost(game.background_image);
+  if (!game.slug) throw new Error("RAWG no devolvió un slug estable");
+
+  const resolved = await resolveRawgImageUrl(game, apiKey, fetchImpl);
+  const imageHost = sourceHost(resolved.url);
   if (!(imageHost === "media.rawg.io" || imageHost.endsWith(".rawg.io"))) {
     throw new Error(`RAWG devolvió una imagen desde un dominio inesperado: ${imageHost || "desconocido"}`);
   }
-  if (!game.slug) throw new Error("RAWG no devolvió un slug estable");
 
   const next = {
     ...release.image,
@@ -118,7 +133,8 @@ export async function resolveRawgImage(release, { apiKey, fetchImpl = globalThis
     rawgId: Number(game.id),
     rawgSlug: game.slug,
     rawgPage: `https://rawg.io/games/${game.slug}`,
-    src: game.background_image,
+    rawgImageType: resolved.type,
+    src: resolved.url,
     alt: release.image.alt || release.title,
     className: release.image.className || "",
     legacy: false

@@ -1,165 +1,125 @@
-# Reglas permanentes de Final Secreto
+# Final Secreto · Reglas del proyecto
 
-Este documento reúne las decisiones editoriales, visuales y técnicas que deben respetarse en cualquier cambio del proyecto. Las listas operativas específicas, como la del calendario, complementan estas reglas.
+Estas normas forman parte del comportamiento esperado del proyecto. Antes de realizar cualquier cambio, deben leerse junto con `AGENTS.md` y, cuando corresponda, con las guías específicas enlazadas desde ese archivo.
 
-## 1. Identidad y enfoque
+## Flujo de trabajo
 
-- El nombre oficial es **Final Secreto** y debe escribirse siempre separado.
-- El dominio oficial es **finalsecreto.com**.
-- No usar Moderloder en textos, interfaz, metadatos, SEO o referencias públicas, salvo cuando sea imprescindible explicar el historial del proyecto.
-- El sitio y sus contenidos se publican únicamente en español. No añadir traducciones al inglés ni nuevas estructuras de internacionalización.
-- Final Secreto no pretende competir como medio generalista. Sus pilares son la selección editorial, un calendario realmente útil, las reseñas propias y el análisis de industria.
-- Prestar especial atención a la propiedad, el formato físico, el acceso y la preservación de videojuegos.
+- Partir siempre de la versión más reciente de `main`.
+- Los asistentes deben trabajar en una rama y abrir una PR. No deben hacer merge salvo autorización excepcional y expresa para esa intervención concreta.
+- El usuario puede publicar correcciones pequeñas directamente en `main`; para cambios amplios conviene utilizar una rama y una vista previa.
+- Antes de entregar, revisar el diff completo, validar la vista previa y comprobar los flujos automáticos afectados.
+- No borrar, sobrescribir ni revertir trabajo ajeno para resolver un conflicto. Hay que identificar primero el estado actual y adaptar el cambio.
 
-### Títulos SEO
+## SEO y metadatos
 
+- Cada página pública debe tener un `<title>` y una descripción únicos y coherentes con su contenido.
 - La portada puede mantener la marca en el título SEO.
-- Las páginas principales de sección pueden usar el sufijo `| Final Secreto` cuando el título sea corto y no provoque truncamientos.
-- Las reseñas y noticias individuales no deben añadir `| Final Secreto` a `<title>` ni a `og:title`. Todo el espacio debe dedicarse al título específico del contenido.
-- La marca debe seguir identificándose mediante `og:site_name`, el editor de los datos estructurados, el dominio y la cabecera del sitio.
-- Esta regla se aplica también a toda nueva reseña o noticia individual.
+- Las páginas individuales deben usar canonical absoluta y coherente con su URL pública.
+- `og:title`, `og:description`, `og:url`, `og:image`, `twitter:card` y `twitter:image` deben describir la página concreta, no la portada genérica.
+- Los datos estructurados deben coincidir con lo que ve el usuario. No se deben declarar plataformas, fechas, notas o entidades distintas de las mostradas en el contenido.
+- Las páginas que no deban indexarse deben declararlo expresamente; las demás deben conservar `index,follow` y, cuando proceda, `max-image-preview:large`.
+- Las URLs públicas nuevas deben incorporarse al sitemap mediante la automatización existente. No mantener un sitemap paralelo manual.
 
-## 2. Flujo obligatorio para asistentes
+## Artículos de análisis
 
-- Consultar siempre la versión más reciente de `main` antes de analizar, proponer o aplicar cambios.
-- Trabajar en una rama nueva y abrir una PR, preferiblemente en borrador.
-- No modificar directamente `main` ni hacer merge. La decisión de fusionar corresponde al usuario.
-- Solo se puede omitir este flujo cuando el usuario autorice de forma expresa una excepción concreta. La excepción no modifica la regla general para trabajos futuros.
-- La automatización de PlayStation Plus definida en `.github/workflows/update-playstation-plus.yml` es una excepción permanente y expresamente autorizada. Puede escribir directamente en `main` únicamente datos oficiales de PlayStation Plus, páginas mensuales generadas, documentación derivada y sitemap, siempre después de superar sus validaciones automáticas.
-- La automatización del calendario de lanzamientos definida en `.github/workflows/update-release-calendar.yml` es otra excepción permanente y expresamente autorizada. Puede publicar directamente mantenimiento determinista de `data/calendar.json`, `calendario.html` e `index.html` después de superar la checklist automática. Las altas y cambios editoriales deben pasar por ramas `bot/calendar-*`, generación controlada, validación de fuentes y fusión automática limitada a esos tres archivos.
-- Revisar el diff completo y comprobar la vista previa o el despliegue de prueba antes de entregar.
-- Los cambios directos que haga el propio usuario mediante Replit, GitHub Desktop u otras herramientas quedan fuera de esta restricción.
+- La idea central y su relevancia deben entenderse desde el inicio.
+- Separar hechos, datos, interpretación editorial y opinión. Las inferencias deben estar apoyadas por evidencia y redactadas como tales.
+- Contrastar las cifras con fuentes primarias y revisar varios medios solventes para obtener contexto.
+- Cada cifra debe incluir la métrica, unidad, periodo y fecha de corte necesarios para interpretarla.
+- Distinguir claramente cifras del periodo, acumuladas, distribuidas o estimadas.
+- No comparar magnitudes incompatibles dentro de la misma escala sin explicarlo y sin una representación visual que evite conclusiones engañosas.
+- Los títulos y subtítulos deben ser informativos, específicos y coherentes con el contenido de la sección.
+- Los enlaces a fuentes deben ser directos, legibles y próximos a la afirmación que respaldan.
 
-## 3. Criterios editoriales generales
+## Cifras y unidades
 
-- Escribir para un lector interesado en videojuegos, pero no asumir que conoce todos los juegos, sagas, estudios o antecedentes.
-- Explicar brevemente un término o referencia la primera vez que aparezca cuando sea necesario para entender la información.
-- Evitar los dos puntos en el texto visible. Se permiten cuando sean necesarios en horas, URLs, código, metadatos y títulos oficiales.
-- No usar el punto y coma en el cuerpo editorial ni en otros textos visibles. Sustituirlo por punto o coma, salvo cuando forme parte de una cita literal, código, estilos, una URL, una entidad HTML o un dato técnico que deba conservarse.
-- Usar titulares factuales, claros y sin exageraciones.
-- Distinguir expresamente entre hechos confirmados, información periodística y rumores.
-- Priorizar fuentes oficiales y añadir medios solventes cuando aporten contexto o contraste.
-- No publicar rumores débiles, polémicas menores de redes sociales, parches, skins, tráileres rutinarios o noticias demasiado pequeñas.
-- No presentar una inferencia como un hecho confirmado.
-- En artículos extensos, escribir los títulos de videojuegos en *cursiva* y usar **negritas** selectivas para cifras, hechos y conclusiones que ayuden a escanear el texto; no aplicar énfasis de forma indiscriminada.
+- Usar la misma unidad para magnitudes comparables dentro de una visualización.
+- Si una cifra se transforma, redondea o normaliza, explicarlo en la metodología.
+- No mezclar porcentajes con valores absolutos dentro de la misma escala.
+- Las fechas, monedas y separadores decimales deben seguir la convención española, salvo que reproducir el formato original sea imprescindible para evitar ambigüedad.
+- Evitar una precisión aparente mayor que la de la fuente.
 
-### Artículos de análisis
+## Gráficos e infografías
 
-- Antes de redactar, revisar íntegramente las fuentes primarias y consultar la cobertura de varios medios solventes para detectar contexto, antecedentes y posibles errores de interpretación. Las cifras y los hechos deben proceder de la fuente original cuando esté disponible.
-- Definir antes de escribir cuál es la idea central del artículo y por qué importa. No limitarse a reorganizar un comunicado corporativo.
-- Abrir los artículos complejos con unas claves breves que permitan comprender la conclusión principal antes de entrar en los detalles.
-- Organizar la información de forma progresiva. Primero se explica el periodo, concepto o contexto necesario. Después se presentan los datos y, finalmente, su interpretación.
-- Cada sección debe responder a una pregunta concreta. No agrupar bajo un mismo encabezado dimensiones diferentes, como formato, plataforma y territorio.
-- No asumir conocimientos previos. Las siglas y los conceptos especializados deben explicarse la primera vez. Una vez definidos, pueden alternarse de forma natural la denominación completa y la abreviatura para evitar repeticiones.
-- Separar con claridad los resultados de toda la empresa y los de una división, los ingresos y las copias vendidas, los datos de un periodo y las cifras acumuladas, y los hechos publicados por la fuente y la interpretación editorial de Final Secreto.
-- Si una empresa utiliza un término potencialmente ambiguo, explicar qué incluye exactamente en ese documento. No trasladar su terminología corporativa al artículo sin aclararla.
-- No generalizar una conclusión a toda la industria a partir de los datos de una sola empresa, plataforma, trimestre o territorio. Se puede relacionar con debates más amplios, pero indicando los límites de la comparación.
-- Incorporar enlaces internos cuando aporten contexto real a la lectura. La relación debe explicarse en el texto y no añadirse como una referencia aislada.
-- La publicación de una pieza nueva no la convierte automáticamente en «Esencial» ni debe desplazar otra más importante. La prioridad se decide por relevancia editorial, no solo por recencia.
+- Un gráfico debe aportar una relación que sea más clara visualmente que en texto.
+- Título, escala, orden, unidades, leyenda, `tooltips` y nota metodológica deben actualizarse juntos cuando cambie la vista o el filtro.
+- Los `tooltips` deben mantenerse dentro del viewport, incluidas barras superiores, puntos extremos y tamaños móviles.
+- Las interacciones deben funcionar con ratón, teclado y pantalla táctil.
+- Las animaciones deben respetar `prefers-reduced-motion`.
+- Debe existir una alternativa textual accesible para la información esencial del gráfico.
+- Los colores no pueden ser el único recurso para comunicar una diferencia importante.
+- No utilizar escalas truncadas o proporciones visuales que exageren cambios sin una indicación clara.
 
-### Cifras y unidades
+## Imágenes en artículos
 
-- En información financiera o cuantitativa, indicar siempre las fechas exactas del periodo y explicar qué significa el trimestre fiscal antes de analizarlo.
-- Cuando una cifra se refiera al número de videojuegos comercializados, escribir «copias vendidas» o «unidades», no «ventas» a secas. Reservar «ventas» para contextos monetarios o generales en los que no pueda confundirse con ingresos.
-- Mantener la misma unidad y el mismo criterio dentro de cada comparación.
-- Escribir «millones» en la primera mención y en las frases principales. Usar «mill.» en gráficos, tablas, etiquetas y repeticiones donde mejore la legibilidad.
-- Cuando se utilice una moneda poco familiar para el público español, conservar la cifra original y añadir una equivalencia aproximada en euros junto a las cantidades principales. Indicar la fecha o referencia del tipo de cambio y no repetir la conversión en cada aparición.
-- En información financiera, diferenciar siempre ingresos, beneficio operativo y margen. Añadir un glosario breve junto al gráfico cuando los conceptos puedan resultar desconocidos.
+- Comprobar la imagen desplegada, no solo el nombre o la URL del recurso.
+- Ajustar encuadre, resolución, texto alternativo y procedencia.
+- Evitar recortes que oculten el sujeto principal o texto incrustado importante.
+- No utilizar una imagen decorativa como evidencia de un dato.
+- Las leyendas deben explicar qué se ve y acreditar la fuente cuando sea necesario.
+- Revisar el resultado en escritorio y móvil, modo claro y oscuro.
 
-### Gráficos e infografías
+## Noticias
 
-- Todo gráfico debe indicar claramente en el título o subtítulo la métrica, la unidad y el periodo representados.
-- Añadir junto a cada visualización la fuente, la fecha de corte y una nota metodológica cuando sea necesaria para interpretarla correctamente.
-- No mostrar simultáneamente datos de un periodo y cifras acumuladas como si fueran comparables. Pueden compartir un componente si aparecen como estados excluyentes y, al cambiar de vista, se actualizan el título, el orden, la escala, las unidades, los *tooltips* y la explicación metodológica.
-- No presentar repartos que se solapan como si fueran partes de un único total. Cada visualización debe mantener una unidad, un periodo y un criterio comparables.
-- Cuando un control sustituya completamente una representación por otra, usar preferentemente un desplegable compacto. Mantener botones cuando permitan activar varias series simultáneamente.
-- Evitar repetir de forma visible una tabla que reproduzca exactamente el gráfico. Conservar una alternativa accesible mediante texto, semántica o datos no redundantes.
-- Los *tooltips* deben calcular los límites superior, inferior y laterales del gráfico. Deben comprobarse expresamente las barras superiores, los puntos extremos y las visualizaciones cercanas a los bordes.
-- Toda interacción debe funcionar con ratón, teclado y pantalla táctil.
-- Las animaciones deben ayudar a entender la aparición o el cambio de los datos y respetar `prefers-reduced-motion`.
-- Validar los gráficos en el despliegue real, tanto en escritorio como en móvil. Comprobar cambios de vista, escalas, textos, desbordamientos y caché.
+- La categoría, fecha, insignias, titular, resumen y reverso ampliado deben derivarse de los datos compartidos.
+- Toda tarjeta con `article.url` debe mostrar «Leer noticia completa» en el anverso y el reverso.
+- El enlace debe derivarse de los datos compartidos, nunca de una lista manual de identificadores.
+- La insignia «ESENCIAL» debe conservar el mismo diseño en portada y Noticias.
+- Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
+- Al añadir una noticia, comprobar portada, página de Noticias, ticker, enlaces y anclas.
 
-### Imágenes en artículos
+## Reseñas
 
-- Comprobar las imágenes en la página desplegada, no solo mediante la existencia del archivo.
-- Evitar recortes accidentales, deformaciones, fondos añadidos, marcos negros o zonas importantes fuera del encuadre.
-- Ajustar `object-fit`, `object-position` y el contenedor según la composición de cada imagen. Si el recurso no funciona correctamente, sustituirlo por otro adecuado.
-- Toda imagen debe tener procedencia clara, resolución suficiente y texto alternativo descriptivo.
+- Cada reseña debe tener una página individual, una identidad visual específica y una cabecera cinematográfica legible.
+- La banda «Hitpoints» debe incluir exactamente, y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego».
+- Fecha, estudio y plataformas deben contrastarse con fuentes oficiales.
+- Usar el tiempo real del autor cuando exista o una estimación externa marcada con «Aprox.» cuando no se conozca.
+- Añadir «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos respaldados por el análisis.
+- Las imágenes interiores deben poder ampliarse con ratón, teclado y pantalla táctil. El visor debe cerrar mediante botón, clic exterior y Escape.
+- Los pies de imagen deben estar centrados.
+- Los datos estructurados `VideoGame` deben coincidir con los «Hitpoints».
+- Al publicar una reseña, añadirla a los listados correspondientes y comprobar que la automatización actualiza el sitemap.
 
-## 4. Categorías de noticias
+## Portada
 
-| Categoría | Uso principal |
-|---|---|
-| Juegos | Información sobre títulos concretos cuando el núcleo no sea su fecha de lanzamiento |
-| Lanzamientos | Fechas, ventanas, adelantos, retrasos o cambios de lanzamiento |
-| Plataformas | PlayStation, Xbox, Nintendo, Steam y cambios en servicios o ecosistemas |
-| Industria | Empresas, adquisiciones, despidos, cierres, estrategia, regulación y propiedad |
-
-- Cada noticia debe tener una única categoría principal según el núcleo de la información.
-- Los colores y estilos deben derivarse automáticamente de la categoría, sin excepciones manuales por tarjeta.
-
-## 5. Tarjetas de noticias
-
-- Los controles «Ampliar» y «Volver» deben ocupar exactamente la misma posición, abajo a la derecha.
-- Las tarjetas sin «Relevante» o «Última hora» deben reservar el espacio de la insignia para mantener la alineación vertical.
-- Mostrar la fecha exacta y el tiempo relativo, por ejemplo «Hace 2 días».
-- No usar «Actualizado» como sustituto de la fecha de publicación.
-- Mantener la misma tipografía, tamaño y color para las fechas del anverso y el reverso.
-- Separar suficientemente el cuerpo de texto, las fuentes y «Leer análisis completo».
-- Si una cara no tiene contenido interno adicional, la rueda del ratón debe desplazar la página. Si existe scroll interno, al alcanzar su límite debe continuar el scroll de la página.
-- Las animaciones de aparición y volteo deben ser fluidas en Chromium y Firefox.
-- La solución debe aplicarse a las clases y componentes genéricos para que las tarjetas futuras hereden el comportamiento.
-- La noticia destacada debe diferenciarse visualmente sin generar una altura excesiva ni grandes huecos vacíos.
-- Usar «Relevante» y «Última hora» con moderación y solo cuando estén justificadas.
-- «Última hora» no se asigna manualmente. Se muestra automáticamente solo si la noticia tiene prioridad alta (`important: true`) y un `publishedAt` ISO 8601 de hace menos de 24 horas; al cumplirse las 24 horas debe desaparecer, incluso con la página abierta. Las noticias sin hora confirmada no llevan esta insignia.
-- Toda nueva noticia debe declarar `ticker.keyword` y `ticker.copy`. `ticker.keyword` será la palabra o nombre propio más importante de la noticia —por ejemplo, Xbox, PlayStation, God of War Laufey o Fallout— y el componente la mostrará siempre en negrita naranja.
-- El ticker debe mostrar automáticamente y en orden las cuatro noticias más recientes; nunca se mantiene mediante una selección manual de identificadores.
-- Las noticias con página individual deben declarar `article.url`. Ese dato alimenta tanto el botón blanco «Leer noticia completa» como el archivo cronológico situado al final de Noticias.
-- Toda tarjeta de portada asociada a una noticia con `article.url` debe mostrar «Leer noticia completa» en el anverso y el reverso. El enlace debe derivarse de los datos compartidos, nunca de una lista manual de identificadores.
-- El rojo queda reservado para la acción «Ver tráiler»; «Leer noticia completa» debe usar el tratamiento blanco.
-- «ESENCIAL» debe conservar el mismo diseño en la portada y en Noticias.
-
-## 6. Interfaz permanente
-
-- El menú sticky de portada debe mostrar «Actualidad», «Calendario» y «Reseñas».
+- El menú sticky de portada debe mostrar «Actualidad», «Próximos lanzamientos», «Fichas» y «Últimas reseñas», siguiendo el orden de las secciones y enlazando a sus anclas reales.
 - La tarjeta superior de la portada es un bloque editorial de «Novedades», no una reseña fija. Puede destacar una noticia, un artículo o una reseña reciente según su relevancia. Su etiqueta, imagen, título, resumen y enlace deben describir el tipo de contenido seleccionado, y no debe conservar elementos propios de una reseña, como la nota, cuando destaque otra clase de pieza.
 - La portada debe incluir un bloque compacto «Juegos en seguimiento» con un máximo de tres fichas vivas seleccionadas editorialmente. La tarjeta superior también puede destacar una ficha cuando haya recibido una actualización relevante; debe identificarse como «Ficha actualizada» y enlazar directamente a ella.
-- No permitir texto cortado ni scroll horizontal accidental en móvil.
-- Mantener el modo oscuro y los colores particulares de cada reseña.
+- Cada tarjeta del bloque debe mostrar estado, lanzamiento y fecha real de actualización, y enlazar directamente a la ficha. La implementación debe ser rastreable en HTML, sin carrusel y con una sola columna en móvil. Las reglas completas están en `docs/GAME_HUBS.md`.
 - Todo bloque visible nuevo añadido a portada, noticias, calendario, reseñas o páginas especiales debe incorporar desde su primera versión la animación de aparición existente mediante `reveal`, `stagger` o un comportamiento equivalente. Los bloques creados dinámicamente deben registrarse en el observador o ejecutar una transición equivalente después de insertarse. Siempre se debe respetar `prefers-reduced-motion`.
-- Las reseñas individuales deben mantener una composición editorial común: cabecera cinematográfica con el título y los metadatos sobre la imagen principal, «Hitpoints» en una banda técnica, columna de lectura contenida y primer párrafo tratado como entradilla. El sistema debe conservar los colores propios de cada juego, funcionar en modo claro y oscuro y no copiar la identidad visual de otro medio.
-- Los pies de las imágenes del cuerpo de las reseñas deben aparecer centrados. Las imágenes interiores deben poder ampliarse mediante clic, toque o teclado en un visor accesible; el visor debe cerrarse con un control visible, al pulsar fuera o mediante la tecla Escape. La imagen principal de cabecera queda fuera de este comportamiento.
-- Toda reseña individual debe incluir un bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos y coherentes con el análisis.
-- El bloque «Hitpoints» de toda reseña debe contener exactamente estos cuatro campos y en este orden: «Fecha de lanzamiento», «Desarrollador», «Plataformas» y «Tiempo de juego». No sustituirlos por la nota, el género, la dificultad u otros datos.
-- «Fecha de lanzamiento» debe indicar la fecha comercial del juego, «Desarrollador» el estudio responsable y «Plataformas» todas las plataformas en las que se publicó, no solo aquella en la que se realizó la reseña.
-- «Tiempo de juego» debe reflejar el tiempo real del autor cuando se conozca. Si no se dispone de él, usar una estimación contrastada con HowLongToBeat u otra fuente solvente y anteponer «Aprox.» para distinguirla de una medición propia.
+
+## Accesibilidad e interacción
+
+- Todos los controles interactivos deben tener nombre accesible y estado perceptible.
+- Los elementos activables deben mostrar `focus-visible`.
+- Los enlaces deben conservar semántica de enlace y los botones, semántica de botón.
+- Las imágenes informativas necesitan texto alternativo; las decorativas deben declararse como tales.
+- Las interacciones no deben depender únicamente de `hover`.
+- Revisar navegación por teclado, Escape, flechas y orden de foco cuando exista un diálogo o carrusel.
+- Respetar `prefers-reduced-motion`.
+
+## Validación visual y técnica
+
 - Revisar tanto la portada como las páginas individuales cuando compartan componentes o estilos.
-- Evitar soluciones vinculadas a identificadores concretos cuando la regla deba aplicarse también al contenido futuro.
+- Comprobar escritorio y móvil, modo claro y oscuro, Chromium y Firefox.
+- Revisar desbordamiento horizontal, recortes, saltos de layout, caché, enlaces e imágenes rotas.
+- Actualizar los parámetros de versión de CSS o JavaScript cuando sea necesario evitar una copia antigua en caché.
+- Si hay automatizaciones asociadas, comprobar sus ejecuciones y logs antes de entregar.
+- No considerar terminada una tarea solo porque el archivo fuente sea válido: debe revisarse el resultado desplegado.
 
-## 7. Reglas técnicas
+## Calendario
 
-- Centralizar los datos y comportamientos reutilizables.
-- No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.
-- No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
-- El sitemap se genera con `scripts/generate-sitemap.mjs`. Al publicar una reseña, la automatización de GitHub debe incorporar su URL canónica y actualizar `lastmod`; no mantener a mano una lista paralela de reseñas.
-- Las páginas mensuales de PlayStation Plus se generan desde `data/playstation-plus.json` mediante `scripts/generate-ps-plus-pages.mjs`. No deben editarse manualmente ni mantener datos duplicados fuera del archivo central.
 - El calendario completo, la selección de portada, la cuenta atrás, las fechas, plataformas, imágenes, etiquetas y tráilers deben derivarse de `data/calendar.json` mediante `scripts/generate-release-calendar.mjs`. No mantener listas paralelas en el HTML o en scripts de corrección por título.
-- Actualizar las versiones de caché de todos los recursos modificados que se carguen con parámetros de versión.
-- Revisar escritorio y móvil, modo claro y oscuro, Chromium y Firefox cuando el cambio afecte a la interfaz.
-- Comprobar sintaxis, enlaces, accesibilidad básica y ausencia de huecos invisibles.
-- No introducir dependencias, servicios externos o cambios de arquitectura sin una razón clara y sin informar al usuario.
+- Cada actualización debe seguir `docs/CALENDAR_UPDATE_CHECKLIST.md`.
+- Las fechas deben contrastarse con fuentes oficiales y marcarse como pendientes cuando no estén confirmadas.
+- Los filtros, vistas y agrupaciones deben seguir funcionando después de cualquier cambio de datos.
+- Revisar portada y calendario completo, incluido móvil, animaciones y caché.
 
-## 8. Calendario de lanzamientos
+## Automatizaciones de contenido
 
-- Todo cambio relacionado con lanzamientos debe aplicar obligatoriamente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](CALENDAR_UPDATE_CHECKLIST.md).
+- La actualización diaria de calendario puede modificar únicamente datos verificables y la representación derivada de esos datos.
 - La actualización debe contemplar siempre la fuente central, el calendario completo, la portada y la cuenta atrás cuando corresponda.
-- La vigilancia editorial puede incorporar de forma autónoma novedades relevantes y verificadas mediante ramas `bot/calendar-*`. Solo se admiten fechas exactas, ediciones inequívocas, plataformas confirmadas, imágenes oficiales estables y evidencia estructurada de la fuente.
 - El mantenimiento diario puede mover automáticamente lanzamientos a «Ya disponible», plegar o retirar del render meses antiguos, reordenar fichas y aplicar cambios verificables mediante fuentes oficiales. Los datos históricos permanecen en `data/calendar.json`.
-- Los juegos de PlayStation Plus se mantienen en su página específica y no se mezclan con los lanzamientos comerciales del calendario general.
-
-## 9. Prioridad y mantenimiento
-
-1. La petición más reciente y explícita del usuario prevalece.
-2. Las checklists específicas prevalecen dentro de su ámbito.
-3. Después se aplican estas reglas generales.
-4. Si una nueva decisión cambia una regla permanente, este documento debe actualizarse en la misma PR o cambio autorizado.
+- Las automatizaciones no deben inventar fechas, plataformas, titulares o atribuciones.
+- Toda automatización debe poder ejecutarse más de una vez sin producir duplicados ni cambios falsos.
+- Si una automatización crea un commit en una rama, ese commit debe quedar dentro de la misma PR.

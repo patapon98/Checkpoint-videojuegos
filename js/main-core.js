@@ -37,7 +37,7 @@ const i18n = {
     home_nav_label:"En esta portada",home_nav_reviews:"Últimas reseñas",home_nav_calendar:"Próximos lanzamientos",home_nav_games:"Fichas",home_nav_news:"Actualidad",home_nav_newsletter:"Newsletter",
     hero_kicker:"Blog de videojuegos",
     hero_title:'La actualidad del <em>videojuego</em>, sin perder el tiempo.',
-    hero_sub:"Noticias relevantes, grandes lanzamientos, análisis y reseñas con un toque único, escogidos personalmente para no hacerte perder el tiempo.",
+    hero_sub:"Noticias relevantes, calendario de grandes lanzamientos, análisis y reseñas con un toque único, escogidos personalmente para no hacerte perder el tiempo. Todo en un mismo lugar.",
     hero_cta1:"Ver la actualidad",hero_cta2:"Ver lanzamientos",
     hero_card_tag:"Reseña destacada",
     hero_card_sub:"Terror y acción combinados en uno de los mejores RE jamás hechos.",

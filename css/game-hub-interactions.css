@@ -1,0 +1,32 @@
+.game-hub-page{overflow-x:clip}
+#gameHub{overflow:visible}
+
+.game-nav-shell{
+  position:sticky;
+  top:max(8px,env(safe-area-inset-top));
+  z-index:45;
+  width:100%;
+  height:auto;
+  min-height:56px;
+  margin-bottom:-56px;
+  padding:0 14px;
+  align-items:flex-start
+}
+
+.game-section-nav{
+  box-shadow:0 14px 38px -22px rgba(0,0,0,.78)
+}
+
+.game-section-nav a:focus-visible{
+  outline:3px solid color-mix(in srgb,var(--game-gold) 42%,transparent);
+  outline-offset:2px
+}
+
+@media(max-width:640px){
+  .game-nav-shell{
+    top:max(6px,env(safe-area-inset-top));
+    min-height:52px;
+    margin-bottom:-52px;
+    padding:0 9px
+  }
+}

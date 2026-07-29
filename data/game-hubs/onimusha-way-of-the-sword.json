@@ -1,0 +1,103 @@
+{
+  "id": "onimusha-way-of-the-sword",
+  "title": "Onimusha: Way of the Sword",
+  "subtitle": "Fecha, plataformas y toda la información del regreso de Onimusha",
+  "status": "Reservas abiertas",
+  "releaseDate": "2026-09-04",
+  "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Nintendo Switch 2"
+  ],
+  "developer": "Capcom",
+  "publisher": "Capcom",
+  "genre": "Acción y combates con espada",
+  "officialUrl": "https://www.capcom-games.com/onimusha/ws/",
+  "storeUrl": "https://store.playstation.com/es-es/product/UP0102-PPSA27836_00-0000000000000001",
+  "trailerUrl": "https://www.youtube.com/watch?v=LNq35HHUtNc",
+  "heroImage": "https://blog.playstation.com/tachyon/2026/06/1d8c87b7a3739efaeae001ec21dc89c6a99a03c2.jpg?crop_strategy=smart&resize=1088%2C612",
+  "gallery": [
+    {
+      "src": "https://blog.playstation.com/tachyon/2026/06/1d8c87b7a3739efaeae001ec21dc89c6a99a03c2.jpg?crop_strategy=smart&resize=1088%2C612",
+      "alt": "Miyamoto Musashi en el arte oficial de Onimusha: Way of the Sword"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/a62f28d19093960bf3735d73c7f3e5fa2a9fc404.jpg",
+      "alt": "Miyamoto Musashi combatiendo contra los Genma"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/12c62f5b16fc4939b16f3f083300bf2f51ff3c0b.jpg",
+      "alt": "Combate con espada en Onimusha: Way of the Sword"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/9a415520d26a0d46e8d7eb63c11e1cff6e252ef1.jpg",
+      "alt": "Un escenario de Kioto corrompido por el miasma"
+    },
+    {
+      "src": "https://blog.playstation.com/uploads/2026/06/60b84d6c068ce85ea88b33b37e4a871a837cc08c.jpg",
+      "alt": "Musashi frente a un enemigo formidable"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "LNq35HHUtNc",
+      "title": "Tráiler de historia de Onimusha: Way of the Sword",
+      "label": "Tráiler oficial",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "dAcB-foyNv0",
+      "title": "Vídeo oficial de la demo de Onimusha: Way of the Sword",
+      "label": "Demo",
+      "publishedAt": "2026-06-02"
+    }
+  ],
+  "premise": "Miyamoto Musashi llega al Kioto del periodo Edo para demostrar su dominio de la espada, pero acaba ligado al guantelete Oni y obligado a enfrentarse a los Genma que han invadido una capital deformada por el miasma.",
+  "context": "Es la primera entrega completamente nueva de Onimusha en más de veinte años. Capcom ha utilizado al legendario actor Toshiro Mifune como modelo facial para esta versión de Miyamoto Musashi.",
+  "confirmed": [
+    "Su lanzamiento mundial está fijado para el 4 de septiembre de 2026.",
+    "Llegará a PS5, Xbox Series X|S, PC y Nintendo Switch 2.",
+    "Miyamoto Musashi es el protagonista y porta el guantelete Oni.",
+    "La aventura transcurre en una versión oscura del Kioto del periodo Edo.",
+    "El combate gira alrededor de bloqueos, paradas, desvíos, ataques Issen y poderes Oni.",
+    "Existe una demo jugable que permite probar las primeras técnicas de combate."
+  ],
+  "pending": [
+    "Requisitos definitivos de la versión para PC.",
+    "Tamaño de instalación en cada plataforma.",
+    "Modos de rendimiento y resolución definitivos.",
+    "Fecha del embargo de análisis.",
+    "Plan de contenidos posteriores al lanzamiento."
+  ],
+  "sources": [
+    {
+      "label": "Capcom",
+      "url": "https://www.capcom.co.jp/ir/news/html/260702.html",
+      "type": "Fecha de lanzamiento actualizada"
+    },
+    {
+      "label": "Web oficial de Onimusha",
+      "url": "https://www.capcom-games.com/onimusha/ws/",
+      "type": "Información oficial"
+    },
+    {
+      "label": "PlayStation España",
+      "url": "https://www.playstation.com/es-es/games/onimusha-way-of-the-sword/",
+      "type": "Ficha y reservas"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/06/02/onimusha-way-of-the-sword-out-september-25-on-ps5-demo-out-today/",
+      "type": "Jugabilidad y multimedia"
+    }
+  ],
+  "newsTerms": [
+    "onimusha: way of the sword",
+    "onimusha way of the sword",
+    "miyamoto musashi"
+  ],
+  "updatedAt": "2026-07-30"
+}

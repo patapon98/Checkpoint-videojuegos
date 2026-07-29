@@ -39,7 +39,17 @@ function isNoIndex(html) {
   return [...html.matchAll(/<meta\b[^>]*>/gi)].map(([tag]) => attributes(tag)).some((attrs) => attrs.name?.toLowerCase() === "robots" && attrs.content?.toLowerCase().split(/[\s,]+/).includes("noindex"));
 }
 
-function lastModified(file) {
+function editorialDate(html, file) {
+  if (!file.startsWith("juegos/")) return "";
+  const updatedTag = [...html.matchAll(/<time\b[^>]*>/gi)]
+    .map(([tag]) => attributes(tag))
+    .find((attrs) => attrs.id === "updatedAt");
+  return /^\d{4}-\d{2}-\d{2}$/.test(updatedTag?.datetime || "") ? updatedTag.datetime : "";
+}
+
+function lastModified(file, html) {
+  const declaredDate = editorialDate(html, file);
+  if (declaredDate) return declaredDate;
   if (DATE_OVERRIDE) return DATE_OVERRIDE;
   if (PSPLUS_DATE_OVERRIDE && (file === "playstation-plus.html" || file.startsWith("playstation-plus/"))) return PSPLUS_DATE_OVERRIDE;
   try {
@@ -70,7 +80,7 @@ const pages = [];
 for (const file of (await walk()).filter((file) => PUBLIC_PAGE.test(file)).sort()) {
   const html = await readFile(path.join(ROOT, file), "utf8");
   if (isNoIndex(html)) continue;
-  pages.push({ file, loc: canonicalFrom(html, file), lastmod: lastModified(file) });
+  pages.push({ file, loc: canonicalFrom(html, file), lastmod: lastModified(file, html) });
 }
 
 const duplicates = pages.filter((page, index) => pages.findIndex((candidate) => candidate.loc === page.loc) !== index);

@@ -16,27 +16,25 @@
   "officialUrl": "https://www.capcom-games.com/onimusha/ws/",
   "storeUrl": "https://store.playstation.com/es-es/product/UP0102-PPSA27836_00-0000000000000001",
   "trailerUrl": "https://www.youtube.com/watch?v=LNq35HHUtNc",
-  "heroImage": "https://blog.playstation.com/tachyon/2026/06/1d8c87b7a3739efaeae001ec21dc89c6a99a03c2.jpg?crop_strategy=smart&resize=1088%2C612",
+  "heroImage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/90eada3290f1fd9e93073d1c2ff01e8fcae18aff/library_hero_2x.jpg",
+  "heroImageKind": "promotional-key-art",
+  "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://blog.playstation.com/tachyon/2026/06/1d8c87b7a3739efaeae001ec21dc89c6a99a03c2.jpg?crop_strategy=smart&resize=1088%2C612",
-      "alt": "Miyamoto Musashi en el arte oficial de Onimusha: Way of the Sword"
+      "src": "https://media.rawg.io/media/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
+      "alt": "Miyamoto Musashi combate contra los Genma en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/a62f28d19093960bf3735d73c7f3e5fa2a9fc404.jpg",
-      "alt": "Miyamoto Musashi combatiendo contra los Genma"
+      "src": "https://media.rawg.io/media/screenshots/a34/a3444739430f1b440bbef6d493a62585.jpg",
+      "alt": "Escena de combate de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/12c62f5b16fc4939b16f3f083300bf2f51ff3c0b.jpg",
-      "alt": "Combate con espada en Onimusha: Way of the Sword"
+      "src": "https://media.rawg.io/media/screenshots/184/18431ea009b07288111a9fb3743a2830.jpg",
+      "alt": "Miyamoto Musashi durante una secuencia de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/9a415520d26a0d46e8d7eb63c11e1cff6e252ef1.jpg",
-      "alt": "Un escenario de Kioto corrompido por el miasma"
-    },
-    {
-      "src": "https://blog.playstation.com/uploads/2026/06/60b84d6c068ce85ea88b33b37e4a871a837cc08c.jpg",
-      "alt": "Musashi frente a un enemigo formidable"
+      "src": "https://media.rawg.io/media/screenshots/bb8/bb82117127b5839995ea4c7186354190.jpg",
+      "alt": "Escenario sobrenatural de Onimusha: Way of the Sword"
     }
   ],
   "media": [
@@ -89,9 +87,14 @@
       "type": "Ficha y reservas"
     },
     {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/06/02/onimusha-way-of-the-sword-out-september-25-on-ps5-demo-out-today/",
-      "type": "Jugabilidad y multimedia"
+      "label": "RAWG",
+      "url": "https://rawg.io/games/onimusha-way-of-the-sword/screenshots",
+      "type": "Capturas de la galería"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/",
+      "type": "Arte promocional de la cabecera"
     }
   ],
   "newsTerms": [

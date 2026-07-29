@@ -9,8 +9,9 @@
     const selectLink = (hash) => {
       nav.querySelectorAll('a[href^="#"]').forEach((item) => {
         const active = item.getAttribute('href') === hash;
-        item.classList.toggle('is-jump-target', active);
+        item.classList.toggle('active', active);
         if (active) item.setAttribute('aria-current', 'location');
+        else item.removeAttribute('aria-current');
       });
     };
 

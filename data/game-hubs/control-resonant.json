@@ -1,0 +1,103 @@
+{
+  "id": "control-resonant",
+  "title": "CONTROL Resonant",
+  "subtitle": "Fecha, plataformas y toda la información de la secuela de Control",
+  "status": "Reservas abiertas",
+  "releaseDate": "2026-09-24",
+  "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+  ],
+  "developer": "Remedy Entertainment",
+  "publisher": "Remedy Entertainment",
+  "genre": "Acción, aventura y RPG",
+  "officialUrl": "https://www.remedygames.com/games/control-2",
+  "storeUrl": "https://store.playstation.com/es-es/concept/10017682",
+  "trailerUrl": "https://www.youtube.com/watch?v=JZuJlSGpgQo",
+  "heroImage": "https://blog.playstation.com/tachyon/2026/06/135d0ebe1e1ae2548ff2def7fb0870108116192d.jpg?crop_strategy=smart&resize=1088%2C612",
+  "gallery": [
+    {
+      "src": "https://blog.playstation.com/tachyon/2026/06/135d0ebe1e1ae2548ff2def7fb0870108116192d.jpg?crop_strategy=smart&resize=1088%2C612",
+      "alt": "Dylan Faden con el Aberrante en el arte oficial de CONTROL Resonant"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/64630b03551142e3347ae3da/6a1fd01b38356c082cad0b67_CTRL_R_Preorder_Combat_20.jpg",
+      "alt": "Dylan Faden utilizando sus poderes paranormales en Manhattan"
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/64630b03551142e3347ae3da/6a1fd8132b48ed1533f6ad23_CONTROL_Resonant_main.jpg",
+      "alt": "Arte principal oficial de CONTROL Resonant"
+    },
+    {
+      "src": "https://blog.ja.playstation.com/tachyon/sites/7/2026/03/b3ce6ae0e86f75b5ca0837e6e7649bea108266f2.jpg?crop_strategy=smart&resize=1088%2C612",
+      "alt": "Combate en una zona deformada de Manhattan"
+    },
+    {
+      "src": "https://blog.ja.playstation.com/tachyon/sites/7/2026/05/b288c101e487098d5901072fa7f56e9af714681b.jpg?crop_strategy=smart&resize=1088%2C612",
+      "alt": "Dylan explorando una anomalía paranormal en CONTROL Resonant"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "JZuJlSGpgQo",
+      "title": "Tráiler de historia de CONTROL Resonant",
+      "label": "Tráiler oficial",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "RJTBoQhWaC0",
+      "title": "Presentación oficial de la jugabilidad de CONTROL Resonant",
+      "label": "Gameplay",
+      "publishedAt": "2026-02-13"
+    }
+  ],
+  "premise": "Tras años de cautiverio en la Agencia Federal de Control, Dylan Faden es enviado a una Manhattan deformada por fuerzas paranormales. Mientras intenta contener una nueva resonancia cósmica, deberá dominar sus poderes y encontrar a su hermana desaparecida, Jesse.",
+  "context": "Remedy plantea la secuela como una aventura de acción y RPG más abierta, formada por grandes zonas de Manhattan. Dylan es el único personaje jugable y el Aberrante sustituye las armas de fuego tradicionales por un arma cuerpo a cuerpo capaz de cambiar de forma.",
+  "confirmed": [
+    "Se lanzará mundialmente el 24 de septiembre de 2026.",
+    "Llegará de lanzamiento a PS5, Xbox Series X|S y PC; la versión para Mac llegará más adelante en 2026.",
+    "Dylan Faden es el único personaje jugable.",
+    "La historia transcurre en una Manhattan alterada por fuerzas paranormales.",
+    "El Aberrante puede transformarse en distintas armas cuerpo a cuerpo.",
+    "Remedy Entertainment desarrolla y publica el juego."
+  ],
+  "pending": [
+    "Fecha exacta de la versión para Mac.",
+    "Requisitos definitivos de la versión para PC.",
+    "Tamaño de instalación en cada plataforma.",
+    "Fecha del embargo de análisis.",
+    "Plan de contenidos posteriores al lanzamiento."
+  ],
+  "sources": [
+    {
+      "label": "Remedy Entertainment",
+      "url": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+      "type": "Fecha y plataformas"
+    },
+    {
+      "label": "Web oficial de Remedy",
+      "url": "https://www.remedygames.com/games/control-2",
+      "type": "Ficha oficial"
+    },
+    {
+      "label": "PlayStation España",
+      "url": "https://www.playstation.com/es-es/games/control-resonant/",
+      "type": "Ficha y reservas"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/06/02/control-resonant-launches-september-24-on-ps5/",
+      "type": "Historia y multimedia"
+    }
+  ],
+  "newsTerms": [
+    "control resonant",
+    "control: resonant",
+    "dylan faden",
+    "el aberrante"
+  ],
+  "updatedAt": "2026-07-30"
+}

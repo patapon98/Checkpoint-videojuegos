@@ -1570,6 +1570,64 @@
       "trailer": "https://www.youtube.com/watch?v=x6dV4NB8Ms8"
     },
     {
+      "id": "rayman-legends-retold",
+      "title": "Rayman Legends Retold",
+      "headingHtml": "Rayman Legends Retold <span class=\"tag-dlc\">Remake</span>",
+      "date": "2026-10-01",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Rayman Legends Retold",
+        "src": "https://media.rawg.io/media/screenshots/3c6/3c6655e5fa82e245a9f0be20d8d7ac89.jpg",
+        "alt": "Rayman Legends Retold",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1018059,
+        "rawgSlug": "rayman-legends-retold",
+        "rawgPage": "https://rawg.io/games/rayman-legends-retold",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://www.ubisoft.com/en-us/games/rayman-legends-retold",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Rayman Legends Retold"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.ubisoft.com/en-us/games/rayman-legends-retold",
+        "official": true,
+        "host": "www.ubisoft.com",
+        "checkedAt": "2026-07-30",
+        "evidence": {
+          "title": "Rayman Legends Retold",
+          "releaseDate": "2026-10-01",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=2_7BQ9hLGkk"
+    },
+    {
       "id": "ace-combat-8-wings-of-theve",
       "title": "Ace Combat 8: Wings of Theve",
       "headingHtml": "Ace Combat 8: Wings of Theve",

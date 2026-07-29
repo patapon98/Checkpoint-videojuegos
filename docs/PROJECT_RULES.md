@@ -153,8 +153,10 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 
 - Todo cambio relacionado con lanzamientos debe aplicar obligatoriamente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](CALENDAR_UPDATE_CHECKLIST.md).
 - La actualización debe contemplar siempre la fuente central, el calendario completo, la portada y la cuenta atrás cuando corresponda.
-- La vigilancia editorial puede incorporar de forma autónoma novedades relevantes y verificadas mediante ramas `bot/calendar-*`. Solo se admiten fechas exactas, ediciones inequívocas, plataformas confirmadas, imágenes oficiales estables y evidencia estructurada de la fuente.
-- El mantenimiento diario puede mover automáticamente lanzamientos a «Ya disponible», plegar o retirar del render meses antiguos, reordenar fichas y aplicar cambios verificables mediante fuentes oficiales. Los datos históricos permanecen en `data/calendar.json`.
+- La vigilancia editorial mantiene el calendario de forma autónoma mediante ramas `bot/calendar-*`. Puede dar de alta juegos relevantes, corregir o mover fechas, incorporar plataformas o ediciones confirmadas y ajustar etiquetas, prioridad, selección de portada y cuenta atrás cuando la evidencia oficial y el criterio editorial sean inequívocos. No necesita aprobación previa para esos cambios.
+- Solo se admiten fechas exactas, ediciones inequívocas, plataformas confirmadas, imágenes estables y evidencia estructurada de una fuente oficial. Una entrada heredada que reciba cualquier cambio material debe migrar en ese mismo cambio a `legacy: false` y completar toda la procedencia exigida.
+- El mantenimiento temporal se ejecuta cerca del cambio de día de España peninsular y puede mover automáticamente lanzamientos a «Sale hoy» o «Ya disponible», plegar o retirar del render meses antiguos, reordenar fichas y regenerar portada y cuenta atrás. Estos estados temporales se derivan de los datos y nunca se mantienen a mano. Los datos históricos permanecen en `data/calendar.json`.
+- Las cancelaciones, contradicciones entre fuentes oficiales y coincidencias ambiguas deben bloquear la edición automática y requerir revisión.
 - Los juegos de PlayStation Plus se mantienen en su página específica y no se mezclan con los lanzamientos comerciales del calendario general.
 
 ## 9. Prioridad y mantenimiento

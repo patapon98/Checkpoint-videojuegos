@@ -17,6 +17,7 @@ on:
       - "scripts/update-release-calendar.mjs"
       - "scripts/generate-release-calendar.mjs"
       - "scripts/validate-release-calendar.mjs"
+      - "scripts/validate-calendar-today.mjs"
       - "scripts/validate-calendar-change.mjs"
       - ".github/workflows/update-release-calendar.yml"
       - ".github/workflows/validate-release-calendar.yml"
@@ -62,12 +63,16 @@ jobs:
           node --check scripts/update-release-calendar.mjs
           node --check scripts/generate-release-calendar.mjs
           node --check scripts/validate-release-calendar.mjs
+          node --check scripts/validate-calendar-today.mjs
           node --check scripts/validate-calendar-change.mjs
           node --check js/calendar-today.js
           node --check js/calendar-mosaic.js
           node --check js/calendar-countdown-prepare.js
           node --check js/calendar-countdown.js
           node --check js/main.js
+
+      - name: Probar el estado Sale hoy
+        run: node scripts/validate-calendar-today.mjs
 
       - name: Probar el mantenimiento diario contra fuentes oficiales
         if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')

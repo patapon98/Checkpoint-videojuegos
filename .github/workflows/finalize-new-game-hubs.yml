@@ -1,0 +1,62 @@
+name: Finalizar nuevas fichas vivas
+
+on:
+  push:
+    branches:
+      - agent/mejora-ficha-laufey
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-new-game-hubs
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar la rama
+        uses: actions/checkout@v4
+        with:
+          ref: agent/mejora-ficha-laufey
+          fetch-depth: 0
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Aplicar ajustes compartidos
+        run: node scripts/finalize-new-game-hubs.mjs
+
+      - name: Validar JavaScript y datos
+        run: |
+          node --check js/game-hub.js
+          node --check js/game-hub-interactions.js
+          node --check js/game-hub-links.js
+          node -e "const fs=require('fs'); for(const name of ['god-of-war-laufey','onimusha-way-of-the-sword','control-resonant']){const data=JSON.parse(fs.readFileSync('data/game-hubs/'+name+'.json','utf8')); if(!data.title||!data.releaseDate||!Array.isArray(data.gallery)||!data.gallery.length||!Array.isArray(data.newsTerms)) throw new Error('Ficha incompleta: '+name)} JSON.parse(fs.readFileSync('data/game-hubs/index.json','utf8'));"
+
+      - name: Regenerar sitemap
+        run: node scripts/generate-sitemap.mjs
+
+      - name: Comprobar páginas
+        run: |
+          grep -q 'data-game-id="god-of-war-laufey"' juegos/god-of-war-laufey.html
+          grep -q 'data-game-id="onimusha-way-of-the-sword"' juegos/onimusha-way-of-the-sword.html
+          grep -q 'data-game-id="control-resonant"' juegos/control-resonant.html
+          grep -q 'https://finalsecreto.com/juegos/onimusha-way-of-the-sword' sitemap.xml
+          grep -q 'https://finalsecreto.com/juegos/control-resonant' sitemap.xml
+          ! grep -R 'is-jump-target' js/game-hub-interactions.js css/game-hub-interactions.css
+
+      - name: Guardar resultado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No hay cambios que guardar."
+          else
+            git commit -m "Finaliza las fichas de Onimusha y CONTROL Resonant"
+            git push origin HEAD:agent/mejora-ficha-laufey
+          fi

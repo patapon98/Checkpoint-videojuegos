@@ -14,7 +14,7 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 ### Cambios automáticos autorizados
 
 - El mantenimiento determinista puede publicar directamente en `main` únicamente cuando se limita a `data/calendar.json`, `calendario.html` e `index.html` y supera toda la checklist automática.
-- Se considera mantenimiento determinista el cambio de estado a «Ya disponible», el archivo de meses pasados, el orden cronológico, la selección de portada, la cuenta atrás y una fecha o imagen que pueda confirmarse de forma inequívoca mediante una API o ficha oficial.
+- Se considera mantenimiento determinista el cambio de estado a «Sale hoy» o «Ya disponible», el archivo de meses pasados, el orden cronológico, la selección de portada, la cuenta atrás y una fecha o imagen que pueda confirmarse de forma inequívoca mediante una API o ficha oficial.
 - Los anuncios nuevos y los cambios editoriales deben partir de una rama `bot/calendar-*` y modificar solo `data/calendar.json`. GitHub genera las páginas, valida las fuentes y fusiona la PR automáticamente si el resultado es correcto.
 - Ninguna automatización puede inferir fechas aproximadas, relevancia, plataformas o ediciones a partir de rumores, agregadores o coincidencias ambiguas.
 - Una PR automática que altere scripts, estilos, reglas, reseñas, noticias u otros archivos debe bloquearse y requerir revisión manual.
@@ -36,9 +36,9 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 - No usar RAWG, agregadores, YouTube u otras fuentes de terceros cuando exista una imagen oficial estable.
 - Evitar imágenes móviles, previews comprimidas y parámetros como `output=preview`.
 - Evitar miniaturas con rótulos añadidos como `4K`, `tráiler`, `gameplay`, fechas superpuestas o marcas editoriales.
-- Evitar Steam como fuente de imagen salvo que no exista una alternativa estable. En la verificación automática de fichas heredadas, la imagen oficial de Steam puede sustituir temporalmente a una imagen de agregador.
+- Evitar Steam como fuente de imagen salvo que no exista una alternativa estable. En la verificación automática de fichas heredadas, la imagen oficial de Steam puede sustituir temporalmente a una imagen de agregador o a un alojamiento especialmente lento cuando la ficha coincida de forma inequívoca.
 - Comprobar nitidez, relación de aspecto y recorte en portada, lista y cuadrícula.
-- Confirmar que la URL carga sin autenticación, hotlink bloqueado o respuesta intermitente.
+- Confirmar que la URL carga sin autenticación, hotlink bloqueado, redirecciones costosas o respuesta intermitente.
 - Una entrada automática nueva nunca puede usar RAWG o una miniatura de YouTube.
 
 ## 4. Ficha completa
@@ -62,6 +62,8 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 - Revisar escritorio y móvil, incluido el scroll horizontal.
 - Revisar modo claro y modo oscuro.
 - Revisar al menos Chromium y Firefox cuando se modifiquen estructura, estilos o animaciones.
+- El lanzamiento cuya fecha coincide con el día actual en `Europe/Madrid` debe permanecer en el bloque activo, mostrar «Sale hoy» y llevar el tratamiento visual especial en lista y cuadrícula.
+- El halo y la etiqueta de «Sale hoy» deben seguir siendo legibles en móvil, modo claro y modo oscuro, y deben respetar `prefers-reduced-motion`.
 - El mantenimiento rutinario no debe modificar estructura ni estilos. Si una actualización automática provoca ese tipo de diff, debe bloquearse.
 
 ## 6. Calendario de la portada
@@ -72,14 +74,17 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 - Revisar visualmente las imágenes de portada para descartar desenfoque, recortes malos, rótulos añadidos o fuentes inestables.
 - Confirmar que el orden de los destacados de portada sigue siendo editorialmente coherente después de añadir, mover o retirar lanzamientos.
 - La cuenta atrás debe resolverse desde los datos estructurados y mantenerse sincronizada en la portada y el calendario completo.
+- Si un lanzamiento de portada sale hoy, debe heredar «Sale hoy» y el tratamiento visual correspondiente sin depender de una lista manual.
 
 ## 7. Archivo y paso del tiempo
 
-- Las fichas cuya fecha ya ha pasado deben mostrarse automáticamente como «Ya disponible».
-- El mes actual puede dividirse en un bloque de lanzamientos ya disponibles y otro de próximos lanzamientos.
-- Los meses anteriores deben quedar plegados en la interfaz. Los meses anteriores al margen de archivo configurado dejan de renderizarse, pero permanecen en `data/calendar.json`.
+- Las fichas cuya fecha coincide con el día actual deben mostrarse como «Sale hoy» durante toda la fecha civil de España peninsular.
+- Solo a partir del día siguiente deben mostrarse como «Ya disponible».
+- El mes actual puede dividirse en un bloque de lanzamientos ya disponibles y otro de lanzamientos activos o próximos.
+- Los meses anteriores deben quedar plegados en la interfaz según `Europe/Madrid`. Los meses anteriores al margen de archivo configurado dejan de renderizarse, pero permanecen en `data/calendar.json`.
 - El selector de mes, la búsqueda, los filtros y el contador deben seguir encontrando correctamente los meses históricos que todavía se muestran.
 - La tarea diaria debe ser idempotente. Si no cambia ningún dato ni estado temporal, no debe crear un commit.
+- El estado visible debe corregirse también con la página abierta cuando cambia el día en España peninsular.
 
 ## 8. Cierre de la actualización
 

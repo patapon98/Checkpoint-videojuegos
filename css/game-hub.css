@@ -115,9 +115,9 @@
 .game-gallery-lightbox{
   position:fixed;
   inset:0;
-  width:100%;
+  width:auto;
   max-width:none;
-  height:100dvh;
+  height:auto;
   max-height:none;
   margin:0;
   padding:0;
@@ -136,7 +136,7 @@
   justify-items:center;
   gap:12px;
   width:min(1200px,calc(100vw - 120px));
-  height:100dvh;
+  height:100%;
   margin:0 auto;
   padding:58px 24px 52px;
   box-sizing:border-box
@@ -339,7 +339,7 @@
   .game-gallery-zoom-hint{right:9px;bottom:9px;padding:7px 9px}
   .game-gallery-controls{grid-template-columns:1fr;gap:8px}
   .game-gallery-thumb{flex-basis:72px}
-  .game-gallery-lightbox-frame{width:100%;height:100dvh;padding:58px 12px 66px}
+  .game-gallery-lightbox-frame{width:100%;height:100%;padding:58px 12px 66px}
   .game-gallery-lightbox-image{max-height:100%}
   .game-gallery-lightbox-nav{top:auto;bottom:17px;width:44px;height:44px;border-radius:50%;transform:none}
   .game-gallery-lightbox-prev{left:17px}

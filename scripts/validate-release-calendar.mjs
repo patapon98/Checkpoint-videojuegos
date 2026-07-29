@@ -78,6 +78,27 @@ for (const release of data.releases || []) {
   }
 }
 
+const settings = data.settings || {};
+if (!Number.isInteger(settings.archiveMonths) || settings.archiveMonths < 0) {
+  fail("settings.archiveMonths debe ser un entero igual o superior a cero.");
+}
+if (!Number.isInteger(settings.homeLimit) || settings.homeLimit < 1) {
+  fail("settings.homeLimit debe ser un entero positivo.");
+}
+if (!settings.countdownId || !ids.has(settings.countdownId)) {
+  fail(`settings.countdownId referencia una entrada inexistente: ${settings.countdownId || "sin id"}.`);
+}
+if (!Array.isArray(settings.homePinnedIds)) {
+  fail("settings.homePinnedIds debe ser una lista.");
+} else {
+  const pinnedIds = new Set();
+  for (const id of settings.homePinnedIds) {
+    if (pinnedIds.has(id)) fail(`settings.homePinnedIds contiene un ID duplicado: ${id}.`);
+    else pinnedIds.add(id);
+    if (!ids.has(id)) fail(`settings.homePinnedIds referencia una entrada inexistente: ${id}.`);
+  }
+}
+
 for (let index = 1; index < (data.releases || []).length; index += 1) {
   const previous = data.releases[index - 1];
   const current = data.releases[index];

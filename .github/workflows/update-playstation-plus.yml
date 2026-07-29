@@ -1,0 +1,77 @@
+name: Actualizar PlayStation Plus
+
+on:
+  schedule:
+    - cron: "17 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-playstation-plus-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sincronizar main
+        run: git pull --ff-only origin main
+
+      - name: Configurar Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Comprobar sintaxis
+        run: |
+          node --check scripts/update-ps-plus.mjs
+          node --check scripts/run-ps-plus-update.mjs
+          node --check scripts/generate-ps-plus-pages.mjs
+          node --check scripts/generate-sitemap.mjs
+          node --check js/playstation-plus.js
+          node --check js/playstation-plus-month.js
+          node --check js/calendar-psplus-entry.js
+
+      - name: Buscar novedades oficiales
+        id: changes
+        run: |
+          node scripts/run-ps-plus-update.mjs
+          if git diff --quiet -- data/playstation-plus.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generar páginas mensuales
+        if: steps.changes.outputs.changed == 'true'
+        run: node scripts/generate-ps-plus-pages.mjs
+
+      - name: Regenerar sitemap
+        if: steps.changes.outputs.changed == 'true'
+        run: SITEMAP_PSPLUS_DATE="$(node -p "require('./data/playstation-plus.json').updatedAt")" node scripts/generate-sitemap.mjs
+
+      - name: Validar datos y archivos
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.groups)) throw new Error(`Mes incompleto ${month.id}`);}'
+          git diff --check
+
+      - name: Publicar en main
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git add data/playstation-plus.json playstation-plus sitemap.xml
+          git commit -m "Actualiza PlayStation Plus"
+          git push origin HEAD:main

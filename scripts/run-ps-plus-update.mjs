@@ -1,0 +1,68 @@
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+const file = path.join(process.cwd(), "data", "playstation-plus.json");
+const feedUrl = "https://blog.playstation.com/tag/playstation-plus/feed/";
+const originalText = await readFile(file, "utf8");
+const original = JSON.parse(originalText);
+const originalIds = new Set(original.months.map((month) => month.id));
+const now = new Date();
+const currentId = `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
+const monthNumbers = new Map([
+  ["january", 1], ["february", 2], ["march", 3], ["april", 4],
+  ["may", 5], ["june", 6], ["july", 7], ["august", 8],
+  ["september", 9], ["october", 10], ["november", 11], ["december", 12]
+]);
+
+function targetId(item) {
+  const title = item.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]
+    ?.replaceAll("<![CDATA[", "")
+    .replaceAll("]]>", "") || "";
+  const monthName = title.match(/for\s+(January|February|March|April|May|June|July|August|September|October|November|December)\b/i)?.[1];
+  const publishedText = item.match(/<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i)?.[1] || "";
+  const published = new Date(publishedText);
+  if (!monthName || Number.isNaN(published.getTime())) return null;
+
+  const month = monthNumbers.get(monthName.toLowerCase());
+  let year = published.getUTCFullYear();
+  if (published.getUTCMonth() + 1 === 12 && month === 1) year += 1;
+  return `${year}-${String(month).padStart(2, "0")}`;
+}
+
+const nativeFetch = globalThis.fetch;
+globalThis.fetch = async (input, init) => {
+  const response = await nativeFetch(input, init);
+  if (String(input) !== feedUrl) return response;
+
+  const xml = await response.text();
+  const filteredItems = [...xml.matchAll(/<item>[\s\S]*?<\/item>/gi)]
+    .map(([item]) => item)
+    .filter((item) => {
+      const id = targetId(item);
+      return id && (originalIds.has(id) || id >= currentId);
+    });
+  const filteredXml = xml.replace(/<item>[\s\S]*?<\/item>/gi, "").replace("</channel>", `${filteredItems.join("\n")}\n</channel>`);
+  return new Response(filteredXml, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: response.headers
+  });
+};
+
+try {
+  await import("./update-ps-plus.mjs");
+} finally {
+  globalThis.fetch = nativeFetch;
+}
+
+const updated = JSON.parse(await readFile(file, "utf8"));
+updated.months = updated.months.filter((month) => originalIds.has(month.id) || month.id >= currentId);
+
+const comparable = (data) => JSON.stringify({ ...data, updatedAt: "" });
+if (comparable(updated) === comparable(original)) {
+  await writeFile(file, originalText, "utf8");
+  console.log("No hay novedades oficiales vigentes.");
+} else {
+  updated.updatedAt = now.toISOString().slice(0, 10);
+  await writeFile(file, JSON.stringify(updated, null, 2) + "\n", "utf8");
+}

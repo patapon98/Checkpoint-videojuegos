@@ -25,6 +25,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Trabajar en una rama nueva y abrir una PR, preferiblemente en borrador.
 - No modificar directamente `main` ni hacer merge. La decisión de fusionar corresponde al usuario.
 - Solo se puede omitir este flujo cuando el usuario autorice de forma expresa una excepción concreta. La excepción no modifica la regla general para trabajos futuros.
+- La automatización de PlayStation Plus definida en `.github/workflows/update-playstation-plus.yml` es una excepción permanente y expresamente autorizada. Puede escribir directamente en `main` únicamente datos oficiales de PlayStation Plus, páginas mensuales generadas, documentación derivada y sitemap, siempre después de superar sus validaciones automáticas.
 - Revisar el diff completo y comprobar la vista previa o el despliegue de prueba antes de entregar.
 - Los cambios directos que haga el propio usuario mediante Replit, GitHub Desktop u otras herramientas quedan fuera de esta restricción.
 
@@ -40,6 +41,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No publicar rumores débiles, polémicas menores de redes sociales, parches, skins, tráileres rutinarios o noticias demasiado pequeñas.
 - No presentar una inferencia como un hecho confirmado.
 - En artículos extensos, escribir los títulos de videojuegos en *cursiva* y usar **negritas** selectivas para cifras, hechos y conclusiones que ayuden a escanear el texto; no aplicar énfasis de forma indiscriminada.
+
 ### Artículos de análisis
 
 - Antes de redactar, revisar íntegramente las fuentes primarias y consultar la cobertura de varios medios solventes para detectar contexto, antecedentes y posibles errores de interpretación. Las cifras y los hechos deben proceder de la fuente original cuando esté disponible.
@@ -122,6 +124,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - La tarjeta superior de la portada es un bloque editorial de «Novedades», no una reseña fija. Puede destacar una noticia, un artículo o una reseña reciente según su relevancia. Su etiqueta, imagen, título, resumen y enlace deben describir el tipo de contenido seleccionado, y no debe conservar elementos propios de una reseña, como la nota, cuando destaque otra clase de pieza.
 - No permitir texto cortado ni scroll horizontal accidental en móvil.
 - Mantener el modo oscuro y los colores particulares de cada reseña.
+- Todo bloque visible nuevo añadido a portada, noticias, calendario, reseñas o páginas especiales debe incorporar desde su primera versión la animación de aparición existente mediante `reveal`, `stagger` o un comportamiento equivalente. Los bloques creados dinámicamente deben registrarse en el observador o ejecutar una transición equivalente después de insertarse. Siempre se debe respetar `prefers-reduced-motion`.
 - Las reseñas individuales deben mantener una composición editorial común: cabecera cinematográfica con el título y los metadatos sobre la imagen principal, «Hitpoints» en una banda técnica, columna de lectura contenida y primer párrafo tratado como entradilla. El sistema debe conservar los colores propios de cada juego, funcionar en modo claro y oscuro y no copiar la identidad visual de otro medio.
 - Los pies de las imágenes del cuerpo de las reseñas deben aparecer centrados. Las imágenes interiores deben poder ampliarse mediante clic, toque o teclado en un visor accesible; el visor debe cerrarse con un control visible, al pulsar fuera o mediante la tecla Escape. La imagen principal de cabecera queda fuera de este comportamiento.
 - Toda reseña individual debe incluir un bloque «Lo mejor / Lo peor» inmediatamente antes del desglose de puntuación, con puntos concretos y coherentes con el análisis.
@@ -137,6 +140,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.
 - No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
 - El sitemap se genera con `scripts/generate-sitemap.mjs`. Al publicar una reseña, la automatización de GitHub debe incorporar su URL canónica y actualizar `lastmod`; no mantener a mano una lista paralela de reseñas.
+- Las páginas mensuales de PlayStation Plus se generan desde `data/playstation-plus.json` mediante `scripts/generate-ps-plus-pages.mjs`. No deben editarse manualmente ni mantener datos duplicados fuera del archivo central.
 - Actualizar las versiones de caché de todos los recursos modificados que se carguen con parámetros de versión.
 - Revisar escritorio y móvil, modo claro y oscuro, Chromium y Firefox cuando el cambio afecte a la interfaz.
 - Comprobar sintaxis, enlaces, accesibilidad básica y ausencia de huecos invisibles.
@@ -147,6 +151,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - Todo cambio relacionado con lanzamientos debe aplicar obligatoriamente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](CALENDAR_UPDATE_CHECKLIST.md).
 - La actualización debe contemplar el calendario completo y el calendario de portada cuando corresponda.
 - La tarea de vigilancia detecta y propone novedades. La incorporación a la web comienza después de la aprobación del usuario.
+- Los juegos de PlayStation Plus se mantienen en su página específica y no se mezclan con los lanzamientos comerciales del calendario general.
 
 ## 9. Prioridad y mantenimiento
 

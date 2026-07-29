@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">PlayStation Plus</title>
+  <desc id="desc">Símbolo amarillo de PlayStation Plus con cuadrado, triángulo, círculo y equis</desc>
+  <g fill="#ffc400">
+    <rect x="22" y="3" width="20" height="58" rx="5"/>
+    <rect x="3" y="22" width="58" height="20" rx="5"/>
+  </g>
+  <g fill="none" stroke="#1f1f22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="9.5" y="27.5" width="9" height="9" rx=".5"/>
+    <path d="M32 9.5 38 19H26Z"/>
+    <circle cx="50" cy="32" r="5"/>
+    <path d="m27.5 47.5 9 9m0-9-9 9"/>
+  </g>
+</svg>

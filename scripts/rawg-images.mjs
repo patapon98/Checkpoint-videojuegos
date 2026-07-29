@@ -22,6 +22,16 @@ export function isRawgProvider(image = {}) {
   return image.provider === "rawg";
 }
 
+export function isResolvedRawgImage(image = {}) {
+  const host = sourceHost(image.src || "");
+  return isRawgProvider(image)
+    && Number(image.rawgId) > 0
+    && Boolean(image.rawgSlug)
+    && /^https:\/\/rawg\.io\/games\//.test(image.rawgPage || "")
+    && /^https:\/\//.test(image.src || "")
+    && (host === "media.rawg.io" || host.endsWith(".rawg.io"));
+}
+
 function platformScore(release, game) {
   const received = new Set((game.platforms || []).map((entry) => entry?.platform?.slug).filter(Boolean));
   let score = 0;

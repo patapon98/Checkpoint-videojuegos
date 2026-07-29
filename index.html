@@ -280,15 +280,9 @@
         que se actualizan a medida que sabemos más.
       </p>
 
-      <div class="home-game-hubs-toolbar">
-        <p>Hasta nueve fichas, ordenadas por actualización</p>
-        <div class="home-game-hubs-controls" aria-label="Controles del carrusel de fichas">
-          <button class="home-game-hubs-control" type="button" data-game-hubs-prev aria-label="Fichas anteriores">←</button>
-          <button class="home-game-hubs-control" type="button" data-game-hubs-next aria-label="Fichas siguientes">→</button>
-        </div>
-      </div>
       <div class="home-game-hubs-slider" data-game-hubs-slider>
-        <div class="home-game-hubs-grid stagger" data-game-hubs-track tabindex="0" aria-label="Últimas fichas de juego">
+        <div class="home-game-hubs-viewport" data-game-hubs-viewport tabindex="0" aria-label="Últimas fichas de juego">
+          <div class="home-game-hubs-grid stagger" data-game-hubs-track aria-label="Últimas fichas de juego">
 
         <a
           class="home-game-hub-card"
@@ -329,7 +323,7 @@
         >
           <div class="home-game-hub-art">
             <img
-              src="https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-07-en-23feb2026?wid=2400&amp;hei=1350&amp;fmt=webp&amp;qlt=90"
+              src="https://xboxwire.thesourcemediaassets.com/sites/2/2026/01/BoR_EmmaAndKoo-15d7ac693b1d73a4b600.jpg"
               alt="Arte promocional oficial de Beast of Reincarnation con Emma y Koo"
               loading="lazy"
               decoding="async"
@@ -360,7 +354,7 @@
         >
           <div class="home-game-hub-art">
             <img
-              src="https://gmedia.playstation.com/is/image/SIEPDC/mtfs-hero-desktop-02-en-19may26?wid=2400&amp;hei=1350&amp;fmt=webp&amp;qlt=90"
+              src="https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&amp;hei=1350&amp;fmt=webp&amp;qlt=90"
               alt="Arte promocional oficial de MARVEL Tōkon: Fighting Souls"
               loading="lazy"
               decoding="async"
@@ -475,8 +469,16 @@
             </div>
           </div>
         </a>
+          </div>
+          <span class="home-game-hubs-swipe-hint" data-game-hubs-swipe-hint aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
         </div>
-        <div class="home-game-hubs-progress" data-game-hubs-progress aria-live="polite"></div>
+        <div class="home-game-hubs-controls" aria-label="Controles del carrusel de fichas">
+          <button class="home-game-hubs-control" type="button" data-game-hubs-prev aria-label="Fichas anteriores" disabled>←</button>
+          <div class="home-game-hubs-dots" data-game-hubs-dots></div>
+          <button class="home-game-hubs-control" type="button" data-game-hubs-next aria-label="Fichas siguientes">→</button>
+        </div>
       </div>
     </section>
 
@@ -582,6 +584,6 @@
     <script src="js/wish-icons.js?v=20260727-5"></script>
     <script src="js/news-data.js?v=20260728-6"></script>
     <script src="js/news.js?v=20260728-5"></script>
-      <script src="/js/home-game-hubs.js?v=20260730-2"></script>
+      <script src="/js/home-game-hubs.js?v=20260730-3"></script>
   </body>
 </html>

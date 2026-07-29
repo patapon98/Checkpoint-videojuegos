@@ -14,6 +14,9 @@ on:
       - "js/calendar-countdown-prepare.js"
       - "js/calendar-countdown.js"
       - "scripts/calendar-utils.mjs"
+      - "scripts/rawg-images.mjs"
+      - "scripts/resolve-rawg-calendar-images.mjs"
+      - "scripts/validate-rawg-images.mjs"
       - "scripts/update-release-calendar.mjs"
       - "scripts/generate-release-calendar.mjs"
       - "scripts/validate-release-calendar.mjs"
@@ -42,6 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Europe/Madrid
+      RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
     steps:
       - name: Descargar la rama de la PR
         uses: actions/checkout@v4
@@ -60,6 +64,9 @@ jobs:
       - name: Comprobar sintaxis
         run: |
           node --check scripts/calendar-utils.mjs
+          node --check scripts/rawg-images.mjs
+          node --check scripts/resolve-rawg-calendar-images.mjs
+          node --check scripts/validate-rawg-images.mjs
           node --check scripts/update-release-calendar.mjs
           node --check scripts/generate-release-calendar.mjs
           node --check scripts/validate-release-calendar.mjs
@@ -74,6 +81,9 @@ jobs:
       - name: Probar el estado Sale hoy
         run: node scripts/validate-calendar-today.mjs
 
+      - name: Probar la selección de imágenes RAWG
+        run: node scripts/validate-rawg-images.mjs
+
       - name: Probar el mantenimiento diario contra fuentes oficiales
         if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
@@ -82,6 +92,9 @@ jobs:
           node scripts/validate-release-calendar.mjs
           git diff --check
           git checkout -- data/calendar.json calendario.html index.html
+
+      - name: Resolver imágenes RAWG solicitadas
+        run: node scripts/resolve-rawg-calendar-images.mjs
 
       - name: Verificar cambios editoriales y fuentes
         run: node scripts/validate-calendar-change.mjs
@@ -105,28 +118,28 @@ jobs:
             exit 1
           fi
 
-      - name: Guardar páginas generadas en la rama automática
+      - name: Guardar datos y páginas generadas en la rama automática
         if: startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
-          if git diff --quiet -- calendario.html index.html; then
-            echo "Las salidas generadas ya están sincronizadas."
+          if git diff --quiet -- data/calendar.json calendario.html index.html; then
+            echo "Los datos y las salidas generadas ya están sincronizados."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add calendario.html index.html
+          git add data/calendar.json calendario.html index.html
           git commit -m "Genera el calendario desde los datos verificados"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
 
-      - name: Guardar páginas generadas en la rama manual
+      - name: Guardar datos y páginas generadas en la rama manual
         if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
-          if git diff --quiet -- calendario.html index.html; then
-            echo "Las salidas generadas ya están sincronizadas."
+          if git diff --quiet -- data/calendar.json calendario.html index.html; then
+            echo "Los datos y las salidas generadas ya están sincronizados."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add calendario.html index.html
-          git commit -m "Sincroniza las salidas generadas del calendario"
+          git add data/calendar.json calendario.html index.html
+          git commit -m "Sincroniza los datos y las salidas del calendario"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}

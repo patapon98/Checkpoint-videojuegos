@@ -123,6 +123,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 
 - El menú sticky de portada debe mostrar «Actualidad», «Calendario» y «Reseñas».
 - La tarjeta superior de la portada es un bloque editorial de «Novedades», no una reseña fija. Puede destacar una noticia, un artículo o una reseña reciente según su relevancia. Su etiqueta, imagen, título, resumen y enlace deben describir el tipo de contenido seleccionado, y no debe conservar elementos propios de una reseña, como la nota, cuando destaque otra clase de pieza.
+- La portada debe incluir un bloque compacto «Juegos en seguimiento» con un máximo de tres fichas vivas seleccionadas editorialmente. La tarjeta superior también puede destacar una ficha cuando haya recibido una actualización relevante; debe identificarse como «Ficha actualizada» y enlazar directamente a ella.
 - No permitir texto cortado ni scroll horizontal accidental en móvil.
 - Mantener el modo oscuro y los colores particulares de cada reseña.
 - Todo bloque visible nuevo añadido a portada, noticias, calendario, reseñas o páginas especiales debe incorporar desde su primera versión la animación de aparición existente mediante `reveal`, `stagger` o un comportamiento equivalente. Los bloques creados dinámicamente deben registrarse en el observador o ejecutar una transición equivalente después de insertarse. Siempre se debe respetar `prefers-reduced-motion`.

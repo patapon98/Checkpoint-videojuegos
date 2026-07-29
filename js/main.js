@@ -18,7 +18,7 @@
         if(!document.body.classList.contains('calendar-page')) return;
         load('calendar-psplus-entry.js?v=20260729-2');
         load('calendar-gcal.js',()=>{
-          load('calendar-mosaic.js',()=>load('calendar-view.js?v=20260729-1'));
+          load('calendar-mosaic.js?v=20260729-1',()=>load('calendar-view.js?v=20260729-1'));
         });
       });
     });

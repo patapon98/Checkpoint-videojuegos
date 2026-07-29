@@ -41,7 +41,7 @@
     const facts = [
       ['Lanzamiento', formatDate(data.releaseDate)],
       ['Género', data.genre],
-      ['Plataforma', data.platforms.join(' · ')],
+      ['Plataformas', data.platforms.join(' · ')],
       ['Desarrolladora', data.developer]
     ];
 
@@ -52,7 +52,7 @@
     document.querySelector('#quickFacts').innerHTML = [
       ['Fecha de lanzamiento', formatDate(data.releaseDate)],
       ['Género', data.genre],
-      ['Plataforma', data.platforms.join(' · ')],
+      ['Plataformas', data.platforms.join(' · ')],
       ['Desarrolladora', data.developer],
       ['Editora', data.publisher]
     ].map(([label, value]) =>
@@ -66,6 +66,21 @@
     ).join('');
     document.querySelector('#pendingList').innerHTML = data.pending.map((item) =>
       `<li>${escapeHtml(item)}</li>`
+    ).join('');
+  }
+
+  function renderChanges(data) {
+    const container = document.querySelector('#gameChangeList');
+    if (!container) return;
+
+    const changes = Array.isArray(data.changes) ? data.changes : [];
+    if (!changes.length) {
+      container.innerHTML = '<li class="game-change-item"><div><h3>Sin cambios registrados</h3><p>La ficha conserva su primera versión editorial.</p></div></li>';
+      return;
+    }
+
+    container.innerHTML = changes.map((item) =>
+      `<li class="game-change-item"><time datetime="${escapeHtml(item.date)}">${escapeHtml(formatDate(item.date))}</time><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div></li>`
     ).join('');
   }
 
@@ -482,6 +497,7 @@
 
       renderFacts(data);
       renderLists(data);
+      renderChanges(data);
       renderMedia(data, news);
       renderGallery(data);
       renderSources(data);

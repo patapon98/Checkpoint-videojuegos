@@ -153,6 +153,8 @@
 
   .home-game-hub-card:last-child{
     grid-column:1/-1;
+    width:calc(50% - 11px);
+    justify-self:center;
   }
 }
 
@@ -164,6 +166,8 @@
 
   .home-game-hub-card:last-child{
     grid-column:auto;
+    width:auto;
+    justify-self:stretch;
   }
 
   .home-game-hub-art{

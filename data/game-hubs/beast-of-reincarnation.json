@@ -1,0 +1,106 @@
+{
+  "id": "beast-of-reincarnation",
+  "title": "Beast of Reincarnation",
+  "subtitle": "La aventura de Emma y Koo en el Japón del año 4026, con su combate híbrido, su fecha y toda la información oficial.",
+  "status": "Reservas abiertas",
+  "releaseDate": "2026-08-04",
+  "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+  ],
+  "developer": "Game Freak",
+  "publisher": "Fictions",
+  "genre": "RPG de acción",
+  "officialUrl": "https://www.beastofreincarnation.com/",
+  "storeUrl": "https://store.playstation.com/en-us/product/UB1599-PPSA29343_00-AIBOUSIEA0000000",
+  "trailerUrl": "https://www.youtube.com/watch?v=zqxdVtJ24ms",
+  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-07-en-23feb2026?%241600px%24=",
+  "heroImageKind": "promotional-key-art",
+  "heroImageHasEmbeddedText": false,
+  "gallery": [
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-01-en-23feb2026?%241600px%24=",
+      "alt": "Emma y Koo observan una cascada en Beast of Reincarnation"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-02-en-23feb2026?%241600px%24=",
+      "alt": "Emma se enfrenta a varias criaturas en Beast of Reincarnation"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-03-en-23feb2026?%241600px%24=",
+      "alt": "Emma combate contra una gran criatura en Beast of Reincarnation"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/beast-of-reincarnation-screenshot-04-en-23feb2026?%241600px%24=",
+      "alt": "Emma y Koo recorren el Japón posapocalíptico de Beast of Reincarnation"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "zqxdVtJ24ms",
+      "title": "Beast of Reincarnation, tráiler con fecha de lanzamiento",
+      "label": "Tráiler oficial",
+      "publishedAt": "2026-02-12"
+    }
+  ],
+  "premise": "En el Japón del año 4026, Emma vive apartada de la sociedad porque nació afectada por la plaga. Su encuentro con Koo, un perro considerado una amenaza para ese mundo, inicia un viaje para derrotar a las grandes Bestias y absorber sus poderes.",
+  "context": "El proyecto muestra una faceta poco habitual de Game Freak fuera de Pokémon. Su sistema combina la acción con espada de Emma y órdenes para Koo que ralentizan el tiempo y añaden decisiones propias de un RPG por turnos.",
+  "confirmed": [
+    "Se lanzará el 4 de agosto de 2026 para PS5, Xbox Series X|S y PC.",
+    "Game Freak desarrolla el juego y Fictions se encarga de su publicación.",
+    "La aventura es para un jugador y está ambientada en un Japón posapocalíptico.",
+    "Emma lucha en tiempo real mientras el jugador activa las técnicas de Koo mediante órdenes.",
+    "Los bloqueos precisos de Emma generan puntos para utilizar las habilidades de Koo.",
+    "El equipo se puede personalizar con árboles de habilidades, equipamiento y piedras espirituales."
+  ],
+  "pending": [
+    "No se conoce la duración aproximada de la historia.",
+    "Faltan por concretarse los modos de rendimiento y resolución de cada plataforma.",
+    "No se ha publicado el tamaño de instalación definitivo.",
+    "Los requisitos finales de la versión para PC todavía deben comprobarse.",
+    "La fecha del embargo de análisis no se ha anunciado."
+  ],
+  "sources": [
+    {
+      "label": "Beast of Reincarnation",
+      "url": "https://www.beastofreincarnation.com/",
+      "type": "Web oficial"
+    },
+    {
+      "label": "PlayStation",
+      "url": "https://www.playstation.com/en-us/games/beast-of-reincarnation/",
+      "type": "Ficha y reservas"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/02/12/beast-of-reincarnation-launches-on-ps5-august-4-2026/",
+      "type": "Fecha y jugabilidad"
+    }
+  ],
+  "newsTerms": [
+    "beast of reincarnation",
+    "emma y koo",
+    "game freak"
+  ],
+  "seo": {
+    "title": "Beast of Reincarnation: fecha y todo lo confirmado",
+    "description": "Ficha actualizada de Beast of Reincarnation con fecha, plataformas, historia, combate, tráiler, imágenes oficiales y datos pendientes.",
+    "ogDescription": "Todo lo confirmado sobre la aventura de Emma y Koo, el nuevo RPG de acción de Game Freak.",
+    "heroTitleHtml": "Beast of <em>Reincarnation</em>",
+    "heroImageAlt": "Arte promocional oficial de Beast of Reincarnation con Emma y Koo"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Ficha publicada antes del lanzamiento",
+      "description": "Se comprobaron la fecha, las plataformas, el sistema de combate, las reservas y el material oficial disponible."
+    }
+  ],
+  "relatedGameIds": [
+    "onimusha-way-of-the-sword",
+    "grand-theft-auto-vi"
+  ],
+  "updatedAt": "2026-07-30"
+}

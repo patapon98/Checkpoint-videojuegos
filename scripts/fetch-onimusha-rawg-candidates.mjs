@@ -68,3 +68,5 @@ for (let index = 0; index < unique.length; index += 1) {
 
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
 console.log(`Descargadas ${manifest.candidates.length} imágenes candidatas de RAWG.`);
+
+// Actualización intencionada para disparar el workflow temporal de revisión.

@@ -12,6 +12,22 @@
   box-shadow:0 10px 24px -22px rgba(8,7,14,.7);
 }
 
+/* El contenido de las tarjetas destacadas ocupa todo el ancho disponible:
+   título, plataformas y acceso a la ficha comparten así el mismo eje izquierdo. */
+#releases.view-grid .release[data-tier="1"],
+#releases.view-grid .release[data-tier="2"]{
+  align-items:stretch;
+}
+
+#releases.view-grid .release[data-tier="1"] .release-art+div,
+#releases.view-grid .release[data-tier="2"] .release-art+div{
+  align-self:stretch;
+  width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  text-align:left;
+}
+
 /* Destacados: un máximo ocupa la fila completa; los "high" se adaptan
    al número de tarjetas del mes para evitar huecos visuales. */
 #releases.view-grid .release[data-tier="1"]{

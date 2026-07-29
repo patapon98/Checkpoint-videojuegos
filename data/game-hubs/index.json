@@ -44,6 +44,50 @@
         "dylan faden",
         "el aberrante"
       ]
+    },
+    {
+      "id": "grand-theft-auto-vi",
+      "title": "Grand Theft Auto VI",
+      "url": "/juegos/grand-theft-auto-vi",
+      "releaseIds": [
+        "grand-theft-auto-vi"
+      ],
+      "newsIds": [
+        "gta-vi-codigos-japon"
+      ],
+      "terms": [
+        "grand theft auto vi",
+        "gta vi",
+        "gta-vi"
+      ]
+    },
+    {
+      "id": "beast-of-reincarnation",
+      "title": "Beast of Reincarnation",
+      "url": "/juegos/beast-of-reincarnation",
+      "releaseIds": [
+        "beast-of-reincarnation"
+      ],
+      "newsIds": [],
+      "terms": [
+        "beast of reincarnation",
+        "emma y koo",
+        "game freak"
+      ]
+    },
+    {
+      "id": "marvel-tokon-fighting-souls",
+      "title": "MARVEL Tōkon: Fighting Souls",
+      "url": "/juegos/marvel-tokon-fighting-souls",
+      "releaseIds": [
+        "marvel-tokon-fighting-souls"
+      ],
+      "newsIds": [],
+      "terms": [
+        "marvel tōkon",
+        "marvel tokon",
+        "fighting souls"
+      ]
     }
   ]
 }

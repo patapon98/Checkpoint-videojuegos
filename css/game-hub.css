@@ -45,7 +45,7 @@
 .game-section-nav a:hover{color:var(--text)}
 .game-section-nav a.active{background:var(--game-gold-soft);color:var(--text)}
 
-.game-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,350px);gap:44px;padding-top:70px;padding-bottom:40px}
+.game-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,350px);gap:44px;padding-top:70px;padding-bottom:24px}
 .game-main-column{min-width:0}
 .game-last-update{display:flex;align-items:center;gap:9px;margin:0 0 18px;color:var(--muted);font-size:.78rem}
 .game-last-update span{font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--text)}
@@ -58,7 +58,7 @@
 .countdown-grid strong{display:block;font-family:Fraunces,serif;font-size:1.55rem}
 .countdown-grid span{color:var(--muted);font-size:.7rem}
 
-.game-section{padding-top:72px;scroll-margin-top:84px}
+.game-section{padding-top:52px;scroll-margin-top:84px}
 .section-heading{max-width:720px}
 .section-heading h2{margin:7px 0 8px;font-size:clamp(2rem,4vw,3.2rem);line-height:1.02;letter-spacing:-.035em}
 .section-heading p{margin:0;color:var(--muted);line-height:1.6}
@@ -239,8 +239,8 @@
 .game-change-item p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.55}
 
 .game-related-section{
-  padding-top:76px;
-  padding-bottom:94px
+  padding-top:52px;
+  padding-bottom:76px
 }
 .related-game-grid{
   display:grid;
@@ -352,7 +352,7 @@
   .related-news-card{grid-template-columns:1fr auto}
   .related-news-date{grid-column:1/-1}
   .game-facts{grid-template-columns:1fr 1fr}
-  .game-section{padding-top:56px;scroll-margin-top:76px}
+  .game-section{padding-top:42px;scroll-margin-top:76px}
 }
 
 @media(prefers-reduced-motion:reduce){

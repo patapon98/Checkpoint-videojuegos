@@ -74,8 +74,8 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - La imagen debe estar limpia. No puede llevar el logotipo del juego, el título, fechas, llamadas a la acción, clasificación por edades, marcas de agua, interfaz ni otros textos incrustados.
 - El título y los metadatos pertenecen al HTML de Final Secreto y nunca deben formar parte de la imagen.
 - La cabecera es un recurso independiente de la galería. No se reutiliza automáticamente la primera captura como fondo.
-- En el JSON deben declararse `heroImageKind: "promotional-key-art"` y `heroImageHasEmbeddedText: false`.
-- `seo.heroImageAlt` debe identificarla como arte promocional del juego.
+- En el JSON debe declararse `heroImageKind: "promotional-key-art"` cuando sea arte promocional y `heroImageKind: "official-screenshot"` cuando sea una captura oficial elegida por su composición; en ambos casos, `heroImageHasEmbeddedText` debe ser `false`.
+- `seo.heroImageAlt` debe describir la escena y no asumir que todo recurso es arte promocional.
 - Antes de publicar, hay que comprobar visualmente el recurso desplegado en escritorio y móvil. No basta con revisar la URL o el nombre del archivo.
 - Deben ajustarse `background-position` y el degradado cuando la composición lo requiera, sin ocultar al personaje o elemento principal.
 - Cada ficha define `theme.accent` y `theme.accentSoft` a partir del color principal asociado al juego. Estos colores sustituyen el acento genérico en botones, enlaces, etiquetas y bloques editoriales, también en modo oscuro.

@@ -2,6 +2,33 @@ import crypto from "node:crypto";
 
 const MONTH_SHORT = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
 
+const DEFAULT_PLATFORM_ORDER = ["ps5", "ps4", "xbox", "pc", "switch"];
+
+function visiblePlatformKey(value = "") {
+  const text = String(value).replace(/<[^>]*>/g, " ").trim().toLowerCase();
+  if (/^ps5\b/.test(text)) return "ps5";
+  if (/^ps4\b/.test(text)) return "ps4";
+  if (/^xbox\b/.test(text)) return "xbox";
+  if (/^pc\b/.test(text)) return "pc";
+  if (/^switch\b/.test(text)) return "switch";
+  return "";
+}
+
+export function sortPlatformKeys(platforms = [], order = DEFAULT_PLATFORM_ORDER) {
+  const ranks = new Map(order.map((platform, index) => [platform, index]));
+  return [...platforms].sort((a, b) => (ranks.get(a) ?? Number.MAX_SAFE_INTEGER) - (ranks.get(b) ?? Number.MAX_SAFE_INTEGER));
+}
+
+export function sortPlatformsHtml(platformsHtml = "", order = DEFAULT_PLATFORM_ORDER) {
+  const ranks = new Map(order.map((platform, index) => [platform, index]));
+  return String(platformsHtml)
+    .split(/\s*·\s*/)
+    .map((platform) => platform.trim())
+    .filter(Boolean)
+    .sort((a, b) => (ranks.get(visiblePlatformKey(a)) ?? Number.MAX_SAFE_INTEGER) - (ranks.get(visiblePlatformKey(b)) ?? Number.MAX_SAFE_INTEGER))
+    .join(" · ");
+}
+
 export function decodeHtml(value = "") {
   return String(value)
     .replaceAll("&amp;", "&")

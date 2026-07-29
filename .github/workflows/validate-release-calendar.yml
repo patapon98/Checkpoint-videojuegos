@@ -1,0 +1,102 @@
+name: Validar calendario de lanzamientos
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - "data/calendar.json"
+      - "calendario.html"
+      - "index.html"
+      - "js/main.js"
+      - "js/calendar-countdown-prepare.js"
+      - "js/calendar-countdown.js"
+      - "scripts/calendar-utils.mjs"
+      - "scripts/update-release-calendar.mjs"
+      - "scripts/generate-release-calendar.mjs"
+      - "scripts/validate-release-calendar.mjs"
+      - "scripts/validate-calendar-change.mjs"
+      - ".github/workflows/update-release-calendar.yml"
+      - ".github/workflows/validate-release-calendar.yml"
+      - ".github/workflows/auto-merge-release-calendar.yml"
+      - ".github/workflows/update-playstation-plus.yml"
+      - "docs/CALENDAR_UPDATE_CHECKLIST.md"
+      - "docs/CALENDAR_AUTOMATION.md"
+      - "docs/PROJECT_RULES.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: validate-calendar-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar la rama de la PR
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Obtener main
+        run: git fetch origin main
+
+      - name: Comprobar sintaxis
+        run: |
+          node --check scripts/calendar-utils.mjs
+          node --check scripts/update-release-calendar.mjs
+          node --check scripts/generate-release-calendar.mjs
+          node --check scripts/validate-release-calendar.mjs
+          node --check scripts/validate-calendar-change.mjs
+          node --check js/calendar-countdown-prepare.js
+          node --check js/calendar-countdown.js
+          node --check js/main.js
+
+      - name: Verificar cambios editoriales y fuentes
+        run: node scripts/validate-calendar-change.mjs
+
+      - name: Generar calendario y portada
+        run: node scripts/generate-release-calendar.mjs
+
+      - name: Aplicar checklist automática
+        run: |
+          node scripts/validate-release-calendar.mjs
+          git diff --check
+
+      - name: Limitar las ramas automáticas a datos y salidas generadas
+        if: startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        run: |
+          files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/calendar\.json|calendario\.html|index\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "Una rama automática ha modificado archivos no autorizados:"
+            echo "$invalid"
+            exit 1
+          fi
+
+      - name: Guardar páginas generadas en la rama automática
+        if: startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        run: |
+          if git diff --quiet -- calendario.html index.html; then
+            echo "Las salidas generadas ya están sincronizadas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calendario.html index.html
+          git commit -m "Genera el calendario desde los datos verificados"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+
+      - name: Exigir salidas sincronizadas en ramas manuales
+        if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        run: git diff --exit-code -- calendario.html index.html

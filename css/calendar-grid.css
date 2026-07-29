@@ -262,3 +262,46 @@
   #releases.view-grid .month-secondary-label{margin-top:2px}
   #releases.view-grid .release[data-tier="3"]{min-height:62px}
 }
+
+/* Rendimiento: en móviles táctiles evitamos animar cada fila y no pintamos
+   las tarjetas que todavía quedan lejos del viewport. */
+@media(max-width:700px) and (hover:none) and (pointer:coarse){
+  body.calendar-page header{
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+    background:var(--bg);
+  }
+
+  .calendar-page #releases .release.reveal,
+  .calendar-page #releases .month-label.reveal{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+
+  .calendar-page #releases .release{
+    content-visibility:auto;
+    contain-intrinsic-size:auto 82px;
+  }
+
+  .calendar-page #releases.view-grid .release[data-tier="1"]{
+    contain-intrinsic-size:auto 170px;
+  }
+
+  .calendar-page #releases.view-grid .release[data-tier="2"]{
+    contain-intrinsic-size:auto 148px;
+  }
+
+  .calendar-page #releases.view-grid .release[data-tier="3"]{
+    contain-intrinsic-size:auto 62px;
+  }
+
+  .calendar-page #releases .release:hover{
+    transform:none;
+  }
+
+  .calendar-page #releases.view-grid .release>.grid-store-cta{
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+  }
+}

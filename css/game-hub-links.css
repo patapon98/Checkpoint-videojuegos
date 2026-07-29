@@ -1,7 +1,9 @@
 .release.has-game-hub{cursor:pointer;transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease}
 .release.has-game-hub:hover{border-color:color-mix(in srgb,var(--accent) 48%,var(--line));box-shadow:0 16px 32px -28px rgba(0,0,0,.7)}
-.release.has-game-hub:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 34%,transparent);outline-offset:3px}
-.release.has-game-hub h4::after{content:"  ↗";color:var(--accent);font-size:.78em;font-weight:800}
+.release-game-hub-link{display:inline-flex;width:max-content;margin-top:7px;color:var(--accent);font-size:.74rem;font-weight:800;text-decoration:none}
+.release-game-hub-link::after{content:" →"}
+.release-game-hub-link:hover{text-decoration:underline;text-underline-offset:3px}
+.release-game-hub-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .news-sources .news-game-hub-link{display:inline-flex;align-items:center;justify-content:center;padding:5px 10px;border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line));border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.73rem;font-weight:800;line-height:1.1;text-decoration:none;white-space:nowrap;transition:transform .2s ease,border-color .2s ease,background .2s ease}
 .news-sources .news-game-hub-link:hover{transform:translateY(-1px);border-color:var(--accent);background:color-mix(in srgb,var(--accent-soft) 78%,var(--card));color:var(--accent)}
 .news-sources .news-game-hub-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}

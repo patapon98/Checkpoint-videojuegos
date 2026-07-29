@@ -2,11 +2,13 @@
 
 El calendario utiliza `data/calendar.json` como única fuente de datos. `calendario.html` y la selección de lanzamientos de `index.html` son salidas generadas y no deben editarse manualmente para cambiar títulos, fechas, plataformas, imágenes, etiquetas o tráilers.
 
+La referencia temporal del calendario es siempre **España peninsular**, mediante la zona IANA `Europe/Madrid`. La ubicación actual del usuario, la zona UTC del servidor y los cambios entre horario de invierno y verano no alteran cuándo un lanzamiento pasa a «Ya disponible».
+
 ## Componentes
 
 - `data/calendar.json` contiene todos los lanzamientos y su procedencia.
 - `scripts/generate-release-calendar.mjs` genera el calendario completo, el calendario de portada y la cuenta atrás.
-- `scripts/update-release-calendar.mjs` revisa fichas oficiales compatibles y aplica cambios inequívocos de fecha o imagen.
+- `scripts/update-release-calendar.mjs` revisa únicamente las fuentes que autorizan expresamente una actualización automática.
 - `scripts/validate-release-calendar.mjs` ejecuta los controles deterministas de la checklist.
 - `scripts/validate-calendar-change.mjs` compara los cambios editoriales con `main` y valida fuentes, evidencia, imágenes y alcance.
 - `.github/workflows/update-release-calendar.yml` ejecuta el mantenimiento diario y publica en `main` cuando existe un cambio real.
@@ -15,19 +17,21 @@ El calendario utiliza `data/calendar.json` como única fuente de datos. `calenda
 
 ## Mantenimiento diario de GitHub
 
-GitHub Actions ejecuta una revisión diaria. El proceso:
+GitHub Actions ejecuta una revisión diaria con `TZ=Europe/Madrid`. El proceso:
 
 1. Descarga la última versión de `main`.
 2. Comprueba la sintaxis de los scripts.
-3. Consulta fichas oficiales y APIs compatibles.
-4. Actualiza solo fechas o imágenes que puedan verificarse sin ambigüedad.
-5. Recalcula el estado temporal del calendario.
-6. Marca como «Ya disponible» los lanzamientos cuya fecha ya ha pasado.
-7. Divide el mes actual entre lanzamientos pasados y próximos cuando sea necesario.
-8. Mantiene un margen de archivo visible y conserva el resto de meses en el JSON.
-9. Regenera la portada y la cuenta atrás desde los mismos datos.
-10. Ejecuta la checklist automática.
-11. Publica en `main` únicamente si el diff se limita a `data/calendar.json`, `calendario.html` e `index.html`.
+3. Revisa únicamente las fuentes oficiales configuradas para actualización automática.
+4. No usa Steam para corregir fechas.
+5. Solo sustituye una imagen mediante Steam cuando la entrada declara `source.autoImageUpdate: true` y el nombre coincide exactamente.
+6. Solo cambia una fecha cuando la entrada declara `source.autoDateUpdate: true` y una página oficial ofrece una única fecha estructurada e inequívoca.
+7. Recalcula el estado temporal del calendario con la fecha civil de España peninsular.
+8. Marca como «Ya disponible» los lanzamientos cuya fecha ya ha pasado.
+9. Divide el mes actual entre lanzamientos pasados y próximos cuando sea necesario.
+10. Mantiene un margen de archivo visible y conserva el resto de meses en el JSON.
+11. Regenera la portada y la cuenta atrás desde los mismos datos.
+12. Ejecuta la checklist automática.
+13. Publica en `main` únicamente si el diff se limita a `data/calendar.json`, `calendario.html` e `index.html`.
 
 Si no cambia ningún dato ni estado temporal, el workflow termina sin crear un commit.
 
@@ -53,7 +57,7 @@ Una entrada editorial automática debe incluir al menos:
 
 - `id` estable y único.
 - `title` y `headingHtml`.
-- `date` en formato `AAAA-MM-DD`.
+- `date` en formato `AAAA-MM-DD`, interpretada como fecha civil de España peninsular.
 - `platformKeys` y `platformsHtml`.
 - Imagen oficial HTTPS con texto alternativo.
 - Ficha oficial o enlace de tienda.
@@ -82,9 +86,9 @@ Las cancelaciones no se eliminan automáticamente. Requieren una revisión edito
 
 ## Imágenes heredadas
 
-Algunas entradas anteriores a esta automatización conservan imágenes de RAWG u otras fuentes. Están marcadas como `legacy: true` y generan advertencias, no fallos, para permitir una migración progresiva. Cuando una ficha oficial compatible ofrece una imagen estable, el mantenimiento diario sustituye la imagen heredada.
+Algunas entradas anteriores a esta automatización conservan imágenes de RAWG u otras fuentes. Están marcadas como `legacy: true` y generan advertencias, no fallos, para permitir una migración progresiva.
 
-Las entradas nuevas no pueden utilizar RAWG, miniaturas de YouTube ni otros agregadores.
+No se sustituyen en bloque. Cada migración automática debe autorizarse por entrada mediante `source.autoImageUpdate: true`. Las entradas nuevas no pueden utilizar RAWG, miniaturas de YouTube ni otros agregadores.
 
 ## Recuperación ante fallos
 

@@ -3,11 +3,20 @@
   let games = [];
   let scheduled = false;
 
-  function makeLink(game) {
+  function makeNewsLink(game) {
     const link = document.createElement('a');
     link.className = 'news-game-hub-link';
     link.href = game.url;
     link.textContent = 'Consultar ficha';
+    link.setAttribute('aria-label', `Consultar la ficha de ${game.title}`);
+    return link;
+  }
+
+  function makeReleaseLink(game) {
+    const link = document.createElement('a');
+    link.className = 'release-game-hub-link';
+    link.href = game.url;
+    link.textContent = 'Ver ficha';
     link.setAttribute('aria-label', `Consultar la ficha de ${game.title}`);
     return link;
   }
@@ -24,10 +33,12 @@
       card.dataset.gameHubBound = 'true';
       card.dataset.gameHubUrl = game.url;
       card.classList.add('has-game-hub');
-      card.setAttribute('role', 'link');
-      card.setAttribute('tabindex', '0');
-      card.setAttribute('aria-label', `Consultar la ficha de ${game.title}`);
       card.title = `Consultar la ficha de ${game.title}`;
+
+      const details = card.querySelector('.platforms')?.parentElement;
+      if (details && !details.querySelector('.release-game-hub-link')) {
+        details.appendChild(makeReleaseLink(game));
+      }
     });
   }
 
@@ -44,7 +55,7 @@
 
       card.querySelectorAll('.news-sources').forEach((sources) => {
         if (sources.querySelector('.news-game-hub-link')) return;
-        sources.appendChild(makeLink(game));
+        sources.appendChild(makeNewsLink(game));
       });
     });
   }
@@ -64,13 +75,6 @@
   document.addEventListener('click', (event) => {
     const card = event.target.closest('.release[data-game-hub-url]');
     if (!card || event.target.closest('a,button,input,select,textarea,label')) return;
-    window.location.assign(card.dataset.gameHubUrl);
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key !== 'Enter') return;
-    const card = event.target.closest('.release[data-game-hub-url]');
-    if (!card || event.target !== card) return;
     window.location.assign(card.dataset.gameHubUrl);
   });
 

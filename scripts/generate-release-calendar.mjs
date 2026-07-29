@@ -2,12 +2,9 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import {
   addMonths,
-  attributes,
-  elementById,
   escapeHtml,
   monthKey,
   monthLabel,
-  releasePriority,
   replaceElementInner,
   resolveCountdown,
   selectHomeReleases,
@@ -24,6 +21,11 @@ const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
+const trailerIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>';
+
+function displayMonthLabel(key) {
+  return monthLabel(key).replace(" de ", " ");
+}
 
 function linkAttributes(link, fallbackTitle, fallbackAria) {
   if (!link?.url) return "";
@@ -37,10 +39,9 @@ function linkAttributes(link, fallbackTitle, fallbackAria) {
 }
 
 function headingHtml(release) {
-  if (release.headingHtml) return release.headingHtml;
-  let html = escapeHtml(release.title);
-  if (release.tag) html += ` <span class="tag-dlc">${escapeHtml(release.tag)}</span>`;
-  return html;
+  let html = release.headingHtml || escapeHtml(release.title);
+  if (!release.headingHtml && release.tag) html += ` <span class="tag-dlc">${escapeHtml(release.tag)}</span>`;
+  return html.replace(/<\/(a|span)>(?=<(?:a|span)\b)/g, "</$1> ");
 }
 
 function badgeFor(release, { home = false } = {}) {
@@ -67,8 +68,11 @@ function renderRelease(release, { reveal = true, home = false } = {}) {
   const storeLink = store?.url
     ? `<a class="wish" ${linkAttributes(store, "Ver ficha oficial", `Ver ficha oficial de ${release.title}`)}>${wishIcon}</a>`
     : "";
+  const trailerLink = release.trailer
+    ? `<a class="trailer" href="${escapeHtml(release.trailer)}" target="_blank" rel="noopener noreferrer" title="Ver el tráiler oficial en YouTube" aria-label="Ver el tráiler oficial de ${escapeHtml(release.title)} en YouTube">${trailerIcon}</a>`
+    : "";
   const badgeHtml = badge ? `<span class="${escapeHtml(badge.class)}">${escapeHtml(badge.text)}</span>` : "";
-  return `<div class="release${reveal ? " reveal" : ""}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(image.src || "")}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</div></div>${badgeHtml}</div>`;
+  return `<div class="release${reveal ? " reveal" : ""}" ${dataAttributes.join(" ")}><div class="release-art"><img${imageClass} src="${escapeHtml(image.src || "")}" alt="${escapeHtml(image.alt || release.title)}" loading="lazy" decoding="async"><div class="rdate"><b>${Number(release.date.slice(8, 10))}</b><span>${shortMonth(release.date)}</span></div>${trailerLink}${storeLink}</div><div><h4>${headingHtml(release)}</h4><div class="platforms">${release.platformsHtml || escapeHtml((release.platformKeys || []).join(" · "))}</div></div>${badgeHtml}</div>`;
 }
 
 function monthSuffix(kind) {
@@ -98,12 +102,12 @@ function renderCalendarReleases(releases) {
     const past = monthReleases.filter((release) => release.date <= TODAY);
     const future = monthReleases.filter((release) => release.date > TODAY);
     if (past.length) {
-      chunks.push(`<div class="month-label reveal" data-month="${key}">${monthLabel(key)}${monthSuffix("past")}</div>`);
+      chunks.push(`<div class="month-label reveal" data-month="${key}">${displayMonthLabel(key)}${monthSuffix("past")}</div>`);
       chunks.push(...past.map((release) => renderRelease(release)));
     }
     if (future.length) {
       const kind = key === currentMonth && past.length ? "future-current" : "future";
-      chunks.push(`<div class="month-label reveal" data-month="${key}">${monthLabel(key)}${monthSuffix(kind)}</div>`);
+      chunks.push(`<div class="month-label reveal" data-month="${key}">${displayMonthLabel(key)}${monthSuffix(kind)}</div>`);
       chunks.push(...future.map((release) => renderRelease(release)));
     }
   }
@@ -114,7 +118,7 @@ function replaceMonthOptions(html, releases) {
   const keys = [...new Set(releases.map((release) => monthKey(release.date)))];
   const options = [
     '<option value="all">Todos los meses</option>',
-    ...keys.map((key) => `<option value="${key}">${monthLabel(key)}</option>`)
+    ...keys.map((key) => `<option value="${key}">${displayMonthLabel(key)}</option>`)
   ].join("\n        ");
   const pattern = /(<select\b[^>]*\bid=["']monthFilter["'][^>]*>)[\s\S]*?(<\/select>)/i;
   if (!pattern.test(html)) throw new Error("No se encontró #monthFilter.");

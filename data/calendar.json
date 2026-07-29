@@ -1,0 +1,2193 @@
+{
+  "updatedAt": "2026-07-29",
+  "region": "España y Europa",
+  "settings": {
+    "archiveMonths": 1,
+    "homeLimit": 5,
+    "countdownId": "grand-theft-auto-vi",
+    "homePinnedIds": [
+      "halo-campaign-evolved",
+      "beast-of-reincarnation",
+      "resonance-a-plague-tale-legacy",
+      "star-wars-zero-company"
+    ],
+    "allowedPlatforms": [
+      "ps5",
+      "ps4",
+      "xbox",
+      "switch",
+      "pc"
+    ]
+  },
+  "releases": [
+    {
+      "id": "gothic-1-remake",
+      "title": "Gothic 1 Remake",
+      "headingHtml": "Gothic 1 Remake <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/6518-buy-gothic-1-remake-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Gothic 1 Remake en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-06-05",
+      "platformKeys": [
+        "pc",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "PC · PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
+        "alt": "Gothic 1 Remake",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1297900/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/6518-buy-gothic-1-remake-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Gothic 1 Remake en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/1297900/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "dave-the-diver",
+      "title": "Dave the Diver",
+      "headingHtml": "Dave the Diver <span class=\"tag-dlc\">DLC</span><a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/22948-buy-dave-the-diver-in-the-jungle-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Dave the Diver - In the Jungle en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-06-18",
+      "platformKeys": [
+        "switch",
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "Switch 2 · Switch · PS5 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/1ee/1eec43616e3ff00a674124d746926b23.jpg",
+        "alt": "Dave the Diver - In the Jungle",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4394810/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/22948-buy-dave-the-diver-in-the-jungle-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Dave the Diver - In the Jungle en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": "DLC",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/4394810/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "the-adventures-of-elliot",
+      "title": "The Adventures of Elliot",
+      "headingHtml": "The Adventures of Elliot <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/21786-buy-the-adventures-of-elliot-the-millennium-tales-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar The Adventures of Elliot: The Millennium Tales en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-06-18",
+      "platformKeys": [
+        "switch",
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "Switch 2 · PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/a7a/a7aed08ad87bacbc7b6b7bec1aba4094.jpg",
+        "alt": "The Adventures of Elliot: The Millennium Tales",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3483510/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/21786-buy-the-adventures-of-elliot-the-millennium-tales-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar The Adventures of Elliot: The Millennium Tales en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/3483510/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "deltarune-chapter-5",
+      "title": "Deltarune: Chapter 5",
+      "headingHtml": "Deltarune: Chapter 5",
+      "date": "2026-06-24",
+      "platformKeys": [
+        "switch",
+        "ps5",
+        "ps4",
+        "pc"
+      ],
+      "platformsHtml": "Switch 2 · Switch · PS5 · PS4 · PC",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671210/capsule_231x87.jpg",
+        "alt": "Deltarune: Chapter 5",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1671210/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/1671210/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "star-fox",
+      "title": "Star Fox",
+      "headingHtml": "Star Fox <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/22460-buy-star-fox-switch-2-nintendo-eshop/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Star Fox en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-06-25",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2 (exclusivo)",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/bac/bacf2182d40d3785051a2161f7a3aa84.jpg",
+        "alt": "Star Fox",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": null,
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/22460-buy-star-fox-switch-2-nintendo-eshop/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Star Fox en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "",
+        "official": false,
+        "host": "",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "doom-the-dark-ages",
+      "title": "DOOM: The Dark Ages | Revelations",
+      "headingHtml": "DOOM: The Dark Ages | Revelations <span class=\"tag-dlc\">DLC</span>",
+      "date": "2026-07-07",
+      "platformKeys": [
+        "xbox",
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "Xbox Series X|S · PC · PS5",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3469450/706ca083d5768e3a6d01765b2c8974c10b1d771e/capsule_616x353.jpg",
+        "alt": "DOOM: The Dark Ages | Revelations",
+        "className": "",
+        "gridArt": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3469450/706ca083d5768e3a6d01765b2c8974c10b1d771e/capsule_616x353_2x.jpg",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3469450/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "DLC",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/3469450/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "ac-black-flag-resynced",
+      "title": "AC Black Flag Resynced",
+      "headingHtml": "<a href=\"/resenas/ac-black-flag-resynced\">AC Black Flag Resynced</a><a class=\"tag-review\" href=\"/resenas/ac-black-flag-resynced\">Leer reseña</a>",
+      "date": "2026-07-09",
+      "platformKeys": [
+        "xbox",
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "Xbox Series X|S · PC · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/990/99088f6f170459244defd7afd9fce096.jpg",
+        "alt": "Assassin's Creed Black Flag Resynced",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3751950/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": {
+        "url": "/resenas/ac-black-flag-resynced",
+        "title": "",
+        "ariaLabel": ""
+      },
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/3751950/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "granblue-fantasy-relink",
+      "title": "Granblue Fantasy: Relink",
+      "headingHtml": "Granblue Fantasy: Relink <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2026-07-09",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PS4 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/5bc/5bc67f772f5086976cf3af2dd967dd68.jpg",
+        "alt": "Granblue Fantasy: Relink - Endless Ragnarok",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3839790/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/3839790/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "denshattack",
+      "title": "Denshattack!",
+      "headingHtml": "Denshattack!",
+      "date": "2026-07-15",
+      "platformKeys": [
+        "xbox",
+        "ps5",
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "Xbox Series X|S · PS5 · Switch 2 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/4c8/4c87922955d0494dda7ce812a8ee4c6d.jpg",
+        "alt": "Denshattack!",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2524850/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/2524850/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "splatoon-raiders",
+      "title": "Splatoon Raiders",
+      "headingHtml": "Splatoon Raiders <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19573-buy-splatoon-raiders-switch-2-nintendo-eshop/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Splatoon Raiders en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-07-23",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2 (exclusivo)",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/818/8186b959ba7c061024ec3f4ad23e4496.jpg",
+        "alt": "Splatoon Raiders",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": null,
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/19573-buy-splatoon-raiders-switch-2-nintendo-eshop/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Splatoon Raiders en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-out",
+        "text": "Ya disponible"
+      },
+      "priority": 20,
+      "source": {
+        "url": "",
+        "official": false,
+        "host": "",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "halo-campaign-evolved",
+      "title": "Halo: Campaign Evolved",
+      "headingHtml": "Halo: Campaign Evolved",
+      "date": "2026-07-28",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/c44/c445c015eb08b156eed3f047f9718508.jpg",
+        "alt": "Halo: Campaign Evolved",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2806050/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2806050/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "mistfall-hunter",
+      "title": "Mistfall Hunter",
+      "headingHtml": "Mistfall Hunter",
+      "date": "2026-07-29",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · PC · Xbox Series X|S",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3282300/1b967379a7c6230e7755af6f7e997ac714aad67e/capsule_231x87_alt_assets_5.jpg",
+        "alt": "Mistfall Hunter",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3282300/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/3282300/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "the-relic-first-guardian",
+      "title": "The Relic: First Guardian",
+      "headingHtml": "The Relic: First Guardian <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/21459-buy-the-relic-first-guardian-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar The Relic: First Guardian en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-07-31",
+      "platformKeys": [
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "PC · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/e9d/e9dbd4487f5f699101a683e398321e12.jpg",
+        "alt": "The Relic: First Guardian",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2827820/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/21459-buy-the-relic-first-guardian-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar The Relic: First Guardian en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/2827820/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "beast-of-reincarnation",
+      "title": "Beast of Reincarnation",
+      "headingHtml": "Beast of Reincarnation",
+      "date": "2026-08-04",
+      "platformKeys": [
+        "xbox",
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "Xbox Series X|S · PS5 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/bf4/bf449e2f579f618cc43ffebf0ac3a472.jpg",
+        "alt": "Beast of Reincarnation",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2001760/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2001760/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "big-walk",
+      "title": "Big Walk",
+      "headingHtml": "Big Walk",
+      "date": "2026-08-04",
+      "platformKeys": [
+        "switch",
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "Switch 2 · PC · PS5",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/capsule_231x87.jpg",
+        "alt": "Big Walk",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1478500/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/1478500/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "marvel-tokon-fighting-souls",
+      "title": "Marvel Tōkon: Fighting Souls",
+      "headingHtml": "Marvel Tōkon: Fighting Souls <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/22521-buy-marvel-tokon-fighting-souls-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Marvel Tōkon: Fighting Souls en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-06",
+      "platformKeys": [
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "PC · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/4ba/4ba7897954c31431c9b38cf18b9e9fdf.jpeg",
+        "alt": "Marvel Tōkon: Fighting Souls",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3787240/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/22521-buy-marvel-tokon-fighting-souls-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Marvel Tōkon: Fighting Souls en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/3787240/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "oblivion-remastered-switch-2",
+      "title": "The Elder Scrolls IV: Oblivion Remastered",
+      "headingHtml": "The Elder Scrolls IV: Oblivion Remastered <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-08-11",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/theelderscrollsivoblivionremastered/16x9_TheElderScrollsIVOblivionRemastered_image1600w.jpg",
+        "alt": "The Elder Scrolls IV: Oblivion Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
+        "title": "Ver en Nintendo",
+        "ariaLabel": "Ver en Nintendo: The Elder Scrolls IV: Oblivion Remastered"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-07-27"
+      },
+      "legacy": false
+    },
+    {
+      "id": "duskfade",
+      "title": "Duskfade",
+      "headingHtml": "Duskfade <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19137-buy-duskfade-pc-game-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Duskfade en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-13",
+      "platformKeys": [
+        "ps5",
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Switch 2 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/547/54778745a12121bf55bd1a46813018d6.jpeg",
+        "alt": "Duskfade",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2542020/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/19137-buy-duskfade-pc-game-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Duskfade en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/2542020/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "mafia-the-old-country",
+      "title": "Mafia: The Old Country",
+      "headingHtml": "Mafia: The Old Country <span class=\"tag-dlc\">DLC</span><a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/22848-buy-mafia-the-old-country-man-of-honor-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Mafia: The Old Country - Man of Honor en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-14",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · PC · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/747/7471aaa7e49ed46fa3d4f69594bb9380.jpg",
+        "alt": "Mafia: The Old Country - Man of Honor",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4492700/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/22848-buy-mafia-the-old-country-man-of-honor-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Mafia: The Old Country - Man of Honor en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": "DLC",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/4492700/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "the-sinking-city-2",
+      "title": "The Sinking City 2",
+      "headingHtml": "The Sinking City 2 <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/16095-buy-the-sinking-city-2-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar The Sinking City 2 en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-18",
+      "platformKeys": [
+        "pc",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "PC · PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/8f5/8f55c6c590a4eb8d97facbadfd8f605e.jpg",
+        "alt": "The Sinking City 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2825860/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/16095-buy-the-sinking-city-2-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar The Sinking City 2 en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/2825860/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "mortal-shell-ii",
+      "title": "Mortal Shell II",
+      "headingHtml": "Mortal Shell II <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19499-buy-mortal-shell-ii-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Mortal Shell II en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-20",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/c86/c8696c763ec825c6e4d49efbf2635a26.jpg",
+        "alt": "Mortal Shell II",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2584270/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/19499-buy-mortal-shell-ii-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Mortal Shell II en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/2584270/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "mgs-master-collection-vol-2",
+      "title": "MGS: Master Collection Vol. 2",
+      "headingHtml": "MGS: Master Collection Vol. 2 <span class=\"tag-dlc\">Recopilatorio</span>",
+      "date": "2026-08-27",
+      "platformKeys": [
+        "pc",
+        "xbox",
+        "switch",
+        "ps5"
+      ],
+      "platformsHtml": "PC · Xbox Series X|S · Switch 2 · PS5",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3859630/a535e2d0ad9f9483ca1c01b68d4df708e4e673f8/capsule_231x87.jpg",
+        "alt": "Metal Gear Solid: Master Collection Vol. 2",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3859630/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Recopilatorio",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/3859630/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "resonance-a-plague-tale-legacy",
+      "title": "Resonance: A Plague Tale Legacy",
+      "headingHtml": "Resonance: A Plague Tale Legacy <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19517-buy-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Resonance: A Plague Tale Legacy en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-27",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/5c3/5c3db4df4bbff72b83626a7328bdaf20.jpg",
+        "alt": "Resonance: A Plague Tale Legacy",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2713000/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/19517-buy-resonance-a-plague-tale-legacy-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Resonance: A Plague Tale Legacy en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2713000/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "star-wars-zero-company",
+      "title": "Star Wars Zero Company",
+      "headingHtml": "Star Wars Zero Company <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19161-buy-star-wars-zero-company-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Star Wars Zero Company en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-08-27",
+      "platformKeys": [
+        "xbox",
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "Xbox Series X|S · PC · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/faa/faa8c8ddde9c4ce33e5d6df5311378d3.jpg",
+        "alt": "Star Wars Zero Company",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2075800/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/19161-buy-star-wars-zero-company-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Star Wars Zero Company en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2075800/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "captain-tsubasa-2-world-fighters",
+      "title": "Captain Tsubasa 2: World Fighters",
+      "headingHtml": "Captain Tsubasa 2: World Fighters",
+      "date": "2026-08-28",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch · PC",
+      "image": {
+        "src": "https://i.ytimg.com/vi/c6yniKaV6io/maxresdefault.jpg",
+        "alt": "Captain Tsubasa 2: World Fighters",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://en.bandainamcoent.eu/captain-tsubasa/captain-tsubasa-2-world-fighters",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver ficha oficial: Captain Tsubasa 2: World Fighters"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://en.bandainamcoent.eu/captain-tsubasa/captain-tsubasa-2-world-fighters",
+        "official": true,
+        "host": "en.bandainamcoent.eu",
+        "checkedAt": "2026-07-27"
+      },
+      "legacy": false
+    },
+    {
+      "id": "elden-ring-tarnished-edition",
+      "title": "Elden Ring: Tarnished Edition",
+      "headingHtml": "Elden Ring: Tarnished Edition <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-08-28",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring-tarnished-edition/00-product-page/ERTE-Header-Mobile-2.png?twic=v1/cover=1920x1080/quality=100",
+        "alt": "Elden Ring: Tarnished Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver ficha oficial: Elden Ring: Tarnished Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition",
+        "official": true,
+        "host": "en.bandainamcoent.eu",
+        "checkedAt": "2026-07-27"
+      },
+      "legacy": false
+    },
+    {
+      "id": "the-blood-of-dawnwalker",
+      "title": "The Blood of Dawnwalker",
+      "headingHtml": "The Blood of Dawnwalker <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/15628-buy-the-blood-of-dawnwalker-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar The Blood of Dawnwalker en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-09-03",
+      "platformKeys": [
+        "pc",
+        "xbox",
+        "ps5"
+      ],
+      "platformsHtml": "PC · Xbox Series X|S · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/319/319d18680fd0233e0ff724f234c97d17.jpg",
+        "alt": "The Blood of Dawnwalker",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3751260/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/15628-buy-the-blood-of-dawnwalker-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar The Blood of Dawnwalker en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/3751260/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "onimusha-way-of-the-sword",
+      "title": "Onimusha: Way of the Sword",
+      "headingHtml": "Onimusha: Way of the Sword",
+      "date": "2026-09-04",
+      "platformKeys": [
+        "switch",
+        "pc",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "Switch 2 · PC · PS5 · Xbox Series X",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
+        "alt": "Onimusha: Way of the Sword",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2638890/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2638890/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "valheim-1-0",
+      "title": "Valheim 1.0",
+      "headingHtml": "Valheim 1.0",
+      "date": "2026-09-09",
+      "platformKeys": [
+        "pc",
+        "xbox",
+        "ps5",
+        "switch"
+      ],
+      "platformsHtml": "PC · Xbox · PS5 · Switch 2",
+      "image": {
+        "src": "https://img2.storyblok.com/fit-in/1920x1080/f/157036/6001x3323/1f79e49ebe/deep-north-art-2.jpg",
+        "alt": "Valheim 1.0",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.valheimgame.com/news/valheim-has-a-release-date-/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver anuncio oficial: Valheim 1.0"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.valheimgame.com/news/valheim-has-a-release-date-/",
+        "official": true,
+        "host": "www.valheimgame.com",
+        "checkedAt": "2026-07-27"
+      },
+      "legacy": false
+    },
+    {
+      "id": "marvel-s-wolverine",
+      "title": "Marvel's Wolverine",
+      "headingHtml": "Marvel's Wolverine <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/13543-buy-marvel-s-wolverine-playstation-5-playstation-store/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Marvel's Wolverine en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-09-15",
+      "platformKeys": [
+        "ps5"
+      ],
+      "platformsHtml": "PS5 (exclusivo)",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/28d/28d61be51ec0411e24c28f71122dcaaf.jpeg",
+        "alt": "Marvel's Wolverine",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/en-us/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+        "title": "Wishlist en PlayStation Store",
+        "ariaLabel": "Wishlist en PlayStation Store: Marvel's Wolverine"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/13543-buy-marvel-s-wolverine-playstation-5-playstation-store/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Marvel's Wolverine en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.playstation.com/en-us/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+        "official": false,
+        "host": "store.playstation.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "fire-emblem-fortune-s-weave",
+      "title": "Fire Emblem: Fortune's Weave",
+      "headingHtml": "Fire Emblem: Fortune's Weave",
+      "date": "2026-09-17",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000126929/7908bfebb4781ae8079c74c071cd53bd7641ecf43e21085696af6bf5fd7e9885",
+        "alt": "Fire Emblem: Fortune's Weave",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": null,
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "",
+        "official": false,
+        "host": "",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "trails-in-the-sky-2nd-chapter",
+      "title": "Trails in the Sky 2nd Chapter",
+      "headingHtml": "Trails in the Sky 2nd Chapter",
+      "date": "2026-09-17",
+      "platformKeys": [
+        "switch",
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "Switch 2 · PS5 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/2be/2be279f15824d0dfdb1c1499569e4e6f.jpg",
+        "alt": "Trails in the Sky 2nd Chapter",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4225980/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/4225980/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "dune-awakening",
+      "title": "Dune: Awakening",
+      "headingHtml": "Dune: Awakening <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/12701-buy-dune-awakening-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Dune: Awakening en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a> <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-09-22",
+      "platformKeys": [
+        "xbox",
+        "ps5"
+      ],
+      "platformsHtml": "Xbox Series X|S · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/593/593c074cdf1ea15b8c9a2513676020e6.jpg",
+        "alt": "Dune: Awakening",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": null,
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/12701-buy-dune-awakening-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Dune: Awakening en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "",
+        "official": false,
+        "host": "",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "control-resonant",
+      "title": "Control Resonant",
+      "headingHtml": "Control Resonant",
+      "date": "2026-09-24",
+      "platformKeys": [
+        "pc",
+        "xbox",
+        "ps5"
+      ],
+      "platformsHtml": "PC · Xbox Series X|S · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/5b8/5b812f73e4c5df28630747c52f57170b.jpg",
+        "alt": "Control Resonant",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3669870/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/3669870/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "silent-hill-townfall",
+      "title": "Silent Hill: Townfall",
+      "headingHtml": "Silent Hill: Townfall <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/13086-buy-silent-hill-townfall-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Silent Hill: Townfall en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
+      "date": "2026-09-24",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/8ff/8ff55788736c59fcb7b814d862c2ae6f.jpeg",
+        "alt": "Silent Hill: Townfall",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1636440/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": {
+        "url": "https://www.instant-gaming.com/en/13086-buy-silent-hill-townfall-pc-steam/?igr=gamer-942821",
+        "title": "Comprar en Instant Gaming y ayudar a sostener el proyecto",
+        "ariaLabel": "Comprar Silent Hill: Townfall en Instant Gaming. Este enlace ayuda a sostener el proyecto"
+      },
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/1636440/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "ea-sports-fc-27",
+      "title": "EA Sports FC 27",
+      "headingHtml": "EA Sports FC 27",
+      "date": "2026-09-25",
+      "platformKeys": [
+        "pc",
+        "switch",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "Switch 2 · PC · PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/b2e806003c348d3348774cddb10e5b31cd787ecf/capsule_231x87.jpg",
+        "alt": "EA Sports FC 27",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4080220/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/4080220/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "minecraft-dungeons-ii",
+      "title": "Minecraft Dungeons II",
+      "headingHtml": "Minecraft Dungeons II",
+      "date": "2026-09-29",
+      "platformKeys": [
+        "pc",
+        "ps5",
+        "xbox",
+        "switch"
+      ],
+      "platformsHtml": "PC · PS5 · Xbox Series X|S · Switch 2",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/a189cb1a47d619baeb962ede3362330f81f24e5f/capsule_231x87.jpg",
+        "alt": "Minecraft Dungeons II",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1912410/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/1912410/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "ace-combat-8-wings-of-theve",
+      "title": "Ace Combat 8: Wings of Theve",
+      "headingHtml": "Ace Combat 8: Wings of Theve",
+      "date": "2026-10-02",
+      "platformKeys": [
+        "xbox",
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "Xbox Series X|S · PC · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/f9e/f9ef6161a0fc80e9f588077e3c3206b0.jpg",
+        "alt": "Ace Combat 8: Wings of Theve",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2288340/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2288340/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "gears-of-war-e-day",
+      "title": "Gears of War: E-Day",
+      "headingHtml": "Gears of War: E-Day",
+      "date": "2026-10-06",
+      "platformKeys": [
+        "pc",
+        "xbox"
+      ],
+      "platformsHtml": "PC · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/cb8/cb88356feb27fba1102659e7a09c222a.jpg",
+        "alt": "Gears of War: E-Day",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3010850/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/3010850/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "star-wars-galactic-racer",
+      "title": "Star Wars: Galactic Racer",
+      "headingHtml": "Star Wars: Galactic Racer",
+      "date": "2026-10-06",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · PC · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/553/5536c25da9711a39a5c4d752361de551.jpg",
+        "alt": "Star Wars: Galactic Racer",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4078430/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/4078430/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "kingdom-hearts-collection-i-iii",
+      "title": "Kingdom Hearts Collection [I~III]",
+      "headingHtml": "Kingdom Hearts Collection [I~III] <span class=\"tag-dlc\">Recopilatorio</span>",
+      "date": "2026-10-08",
+      "platformKeys": [
+        "switch",
+        "xbox",
+        "ps5"
+      ],
+      "platformsHtml": "Switch 2 · Xbox Series X|S · PS5",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2552430/capsule_231x87.jpg",
+        "alt": "Kingdom Hearts Collection",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": null,
+      "affiliate": null,
+      "review": null,
+      "tag": "Recopilatorio",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "",
+        "official": false,
+        "host": "",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "dragon-s-dogma-2-dark-arisen",
+      "title": "Dragon's Dogma 2: Dark Arisen",
+      "headingHtml": "Dragon's Dogma 2: Dark Arisen <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2026-10-09",
+      "platformKeys": [
+        "pc",
+        "ps5",
+        "switch",
+        "xbox"
+      ],
+      "platformsHtml": "PC · PS5 · Switch 2 · Xbox Series X|S",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2593290/a435e9998c19a773d933eebdbe7c76ed161adef9/capsule_231x87.jpg",
+        "alt": "Dragon's Dogma 2: Dark Arisen",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2593290/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/2593290/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "planet-zoo-2",
+      "title": "Planet Zoo 2",
+      "headingHtml": "Planet Zoo 2",
+      "date": "2026-10-13",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/d4ea06b2e49dbf8c9b3b2f96540613de960b48e1/capsule_231x87.jpg",
+        "alt": "Planet Zoo 2",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3219030/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 20,
+      "source": {
+        "url": "https://store.steampowered.com/app/3219030/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "castlevania-belmont-s-curse",
+      "title": "Castlevania: Belmont's Curse",
+      "headingHtml": "Castlevania: Belmont's Curse",
+      "date": "2026-10-15",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · PC · Xbox Series X|S <small style=\"opacity:.6\">(Switch más adelante)</small>",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/429/42928697eb80feb13e6087170a10565a.jpeg",
+        "alt": "Castlevania: Belmont's Curse",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4231820/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/4231820/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "final-fantasy-resonance",
+      "title": "Final Fantasy Resonance",
+      "headingHtml": "Final Fantasy Resonance",
+      "date": "2026-10-22",
+      "platformKeys": [
+        "pc",
+        "switch",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "PC · Switch 2 · PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/e79/e79f71ca3e876b54f4ca02c0a5d03aa2.jpg",
+        "alt": "Final Fantasy Resonance",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3259780/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/3259780/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "call-of-duty-modern-warfare-4",
+      "title": "Call of Duty: Modern Warfare 4",
+      "headingHtml": "Call of Duty: Modern Warfare 4",
+      "date": "2026-10-23",
+      "platformKeys": [
+        "switch",
+        "pc",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "Switch 2 · PC · PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/a93/a9304d97c8f264da59566a0f5e0a2181.jpeg",
+        "alt": "Call of Duty: Modern Warfare 4",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4435490/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://store.steampowered.com/app/4435490/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "phantom-blade-zero",
+      "title": "Phantom Blade Zero",
+      "headingHtml": "Phantom Blade Zero",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "pc",
+        "ps5"
+      ],
+      "platformsHtml": "PC · PS5",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/25f/25f536a977488f12ef8a6d013e50fda1.jpg",
+        "alt": "Phantom Blade Zero",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4115450/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/4115450/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "godzilla-destroy-all-monsters-melee",
+      "title": "Godzilla: Destroy All Monsters Melee",
+      "headingHtml": "Godzilla: Destroy All Monsters Melee <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-11-03",
+      "platformKeys": [
+        "ps5",
+        "switch",
+        "pc",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · Switch 2 · PC · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/995/995f03d8e40be0790dee6ae024e42811.jpg",
+        "alt": "Godzilla: Destroy All Monsters Melee Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4251460/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/4251460/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "metaphor-refantazio",
+      "title": "Metaphor: ReFantazio",
+      "headingHtml": "Metaphor: ReFantazio <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-12",
+      "platformKeys": [
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/2cd/2cd2467a32aaaed0bdeb192c2831cfe0.jpg",
+        "alt": "Metaphor: ReFantazio",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2679460/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/2679460/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "grand-theft-auto-vi",
+      "title": "Grand Theft Auto VI",
+      "headingHtml": "Grand Theft Auto VI",
+      "date": "2026-11-19",
+      "platformKeys": [
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg",
+        "alt": "Grand Theft Auto VI",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://www.rockstargames.com/VI",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver ficha oficial de Grand Theft Auto VI"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-max",
+        "text": "El evento del año"
+      },
+      "priority": 100,
+      "source": {
+        "url": "https://www.rockstargames.com/VI",
+        "official": false,
+        "host": "www.rockstargames.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "tomb-raider-legacy-of-atlantis",
+      "title": "Tomb Raider: Legacy of Atlantis",
+      "headingHtml": "Tomb Raider: Legacy of Atlantis",
+      "date": "2027-02-12",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · PC",
+      "image": {
+        "src": "https://gmedia.playstation.com/is/image/SIEPDC/Tomb-Raider-LoA-hero-desktop-01-en-27may26",
+        "alt": "Tomb Raider: Legacy of Atlantis",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3558670/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/3558670/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "god-of-war-laufey",
+      "title": "God of War Laufey",
+      "headingHtml": "God of War Laufey",
+      "date": "2027-02-16",
+      "platformKeys": [
+        "ps5"
+      ],
+      "platformsHtml": "PS5 (exclusivo)",
+      "image": {
+        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2715/d6da00e85166c72dc55aad6c3062524da9bfd74e8786718d.jpg?thumb=true&w=420",
+        "alt": "God of War Laufey",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.playstation.com/en-us/concept/10009461",
+        "title": "Wishlist en PlayStation Store",
+        "ariaLabel": "Wishlist en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.playstation.com/en-us/concept/10009461",
+        "official": false,
+        "host": "store.playstation.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "persona-4-revival",
+      "title": "Persona 4 Revival",
+      "headingHtml": "Persona 4 Revival",
+      "date": "2027-02-18",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://www.sega.co.jp/en/release/images/260608_4/260608_5_01.jpg",
+        "alt": "Persona 4 Revival",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2963950/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2963950/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    },
+    {
+      "id": "fable",
+      "title": "Fable",
+      "headingHtml": "Fable",
+      "date": "2027-02-23",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://pgfableweqzl6jpbr734gosa.blob.core.windows.net/blobpgfablewe-qzl6jpbr734go/uploads/massive_holland_hero_16x9_b28c45c830.png",
+        "alt": "Fable",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2769570/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2769570/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true
+    }
+  ],
+  "renderState": "b62a73067084"
+}

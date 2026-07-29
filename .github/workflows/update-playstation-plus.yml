@@ -14,8 +14,6 @@ on:
 permissions:
   contents: write
 
-actions:
-
 concurrency:
   group: finalsecreto-content-main
   cancel-in-progress: false

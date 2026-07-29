@@ -49,6 +49,7 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 
 - Fecha visible correcta.
 - Plataformas visibles y `data-plat` coherentes.
+- Mostrar siempre las plataformas en este orden: PS5, Xbox, PC y Switch. Si aparece PS4, situarla inmediatamente después de PS5. Verificar tanto los datos como la tarjeta generada.
 - Enlace de tienda o ficha oficial válido y correspondiente a la edición correcta.
 - Etiqueta editorial centralizada y no duplicada en la línea de plataformas.
 - Tráiler oficial añadido cuando exista.

@@ -39,3 +39,5 @@ await writeFile(
 );
 
 console.log(`Encontradas ${urls.length} imágenes de RAWG.`);
+
+// Ejecución puntual solicitada para completar la galería de la ficha.

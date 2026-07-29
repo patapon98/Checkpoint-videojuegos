@@ -1570,6 +1570,60 @@
       "trailer": "https://www.youtube.com/watch?v=x6dV4NB8Ms8"
     },
     {
+      "id": "rayman-legends-retold",
+      "title": "Rayman Legends Retold",
+      "headingHtml": "Rayman Legends Retold <span class=\"tag-dlc\">Remake</span>",
+      "date": "2026-10-01",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Rayman Legends Retold",
+        "src": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/37BUvdQKohf8lt6X0qCS7o/ae014f6251662c22425d9db533397506/RaymanLegendsRetold_Keyart.jpg",
+        "alt": "Rayman Legends Retold",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.ubisoft.com/en-us/games/rayman-legends-retold",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Rayman Legends Retold"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://news.ubisoft.com/en-us/article/2WxMvhIp4tEdeBz8HELI15/rayman-legends-retold-launching-october-1",
+        "official": true,
+        "host": "news.ubisoft.com",
+        "checkedAt": "2026-07-30",
+        "evidence": {
+          "title": "Rayman Legends Retold",
+          "releaseDate": "2026-10-01",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=2_7BQ9hLGkk"
+    },
+    {
       "id": "ace-combat-8-wings-of-theve",
       "title": "Ace Combat 8: Wings of Theve",
       "headingHtml": "Ace Combat 8: Wings of Theve",

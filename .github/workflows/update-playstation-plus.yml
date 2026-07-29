@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-playstation-plus-main
+  group: finalsecreto-content-main
   cancel-in-progress: false
 
 jobs:

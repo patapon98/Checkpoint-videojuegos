@@ -43,6 +43,8 @@ jobs:
           node --check scripts/update-release-calendar.mjs
           node --check scripts/generate-release-calendar.mjs
           node --check scripts/validate-release-calendar.mjs
+          node --check js/calendar-today.js
+          node --check js/calendar-mosaic.js
           node --check js/calendar-countdown-prepare.js
           node --check js/calendar-countdown.js
           node --check js/main.js

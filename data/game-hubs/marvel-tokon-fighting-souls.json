@@ -14,8 +14,8 @@
   "officialUrl": "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
   "storeUrl": "https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000",
   "trailerUrl": "https://www.youtube.com/watch?v=DV9Oq_X22Ak",
-  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-hero-desktop-02-en-19may26?wid=2400&hei=1350&fmt=webp&qlt=90",
-  "heroImageKind": "promotional-key-art",
+  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
+  "heroImageKind": "official-screenshot",
   "heroImageHasEmbeddedText": false,
   "theme": {
     "accent": "#ff6268",
@@ -138,13 +138,13 @@
     "description": "Ficha actualizada de MARVEL Tōkon: Fighting Souls con fecha, plataformas, personajes, modos, tráiler, imágenes y contenido del primer año.",
     "ogDescription": "Fecha, plantel, modos y todo lo confirmado sobre el juego de lucha 4 contra 4 de Arc System Works.",
     "heroTitleHtml": "MARVEL Tōkon: <em>Fighting Souls</em>",
-    "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls"
+    "heroImageAlt": "Captura oficial de MARVEL Tōkon: Fighting Souls con Carnage y Spider-Man"
   },
   "changes": [
     {
       "date": "2026-07-30",
       "title": "Plantel, modos y cross-play revisados",
-      "description": "Se incorporaron el plantel completo, el juego cruzado, más modos, el contenido del primer año y siete capturas oficiales en alta resolución."
+      "description": "Se sustituyeron las imágenes comprimidas por siete capturas oficiales de 2400 × 1350, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."
     }
   ],
   "relatedGameIds": [

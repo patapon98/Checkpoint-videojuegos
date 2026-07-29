@@ -15,7 +15,7 @@
     const second=cards[1];
     const step=second?second.offsetLeft-first.offsetLeft:first.offsetWidth;
     const gap=Math.max(0,step-first.offsetWidth);
-    const visible=Math.max(1,Math.floor((viewport.clientWidth+gap*.5)/step));
+    const visible=Math.max(1,Math.floor((viewport.clientWidth+gap+1)/step));
     const maximum=Math.max(0,cards.length-visible);
     const current=Math.min(maximum,Math.max(0,Math.round(viewport.scrollLeft/step)));
     return{step,visible,maximum,current};

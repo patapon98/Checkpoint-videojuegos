@@ -74,6 +74,10 @@ Comprueba la categoría, la fecha, las fuentes, el reverso ampliado, las insigni
 
 Toda actualización debe seguir [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md). La checklist cubre el calendario completo, la portada, las fechas, plataformas, imágenes, enlaces, tráileres, filtros, vistas, animaciones, móvil, caché y validación final.
 
+### Fichas vivas de juegos
+
+Cuando se pida «haz la ficha de X juego», sigue el flujo completo de [`docs/GAME_HUBS.md`](docs/GAME_HUBS.md). Parte de `data/game-hubs/_template.json`, registra la ficha en el índice central, escribe el contenido crítico en el HTML inicial, añade historial y fichas relacionadas, y ejecuta `node scripts/validate-game-hubs.mjs` antes de revisar la vista previa.
+
 ### Reseñas
 
 Al publicar una reseña nueva:

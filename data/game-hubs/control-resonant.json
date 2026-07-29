@@ -120,5 +120,9 @@
   "relatedGameIds": [
     "onimusha-way-of-the-sword",
     "god-of-war-laufey"
-  ]
+  ],
+  "theme": {
+    "accent": "#e45757",
+    "accentSoft": "rgba(228,87,87,.16)"
+  }
 }

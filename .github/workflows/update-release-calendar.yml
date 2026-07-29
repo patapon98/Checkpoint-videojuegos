@@ -2,7 +2,8 @@ name: Actualizar calendario de lanzamientos
 
 on:
   schedule:
-    - cron: "47 7 * * *"
+    # Una de estas dos pasadas cae poco después de medianoche en Madrid tanto con CET como con CEST.
+    - cron: "17 22,23 * * *"
   workflow_dispatch:
 
 permissions:

@@ -14,9 +14,10 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 ### Cambios automáticos autorizados
 
 - El mantenimiento determinista puede publicar directamente en `main` únicamente cuando se limita a `data/calendar.json`, `calendario.html` e `index.html` y supera toda la checklist automática.
-- Se considera mantenimiento determinista el cambio de estado a «Sale hoy» o «Ya disponible», el archivo de meses pasados, el orden cronológico, la selección de portada, la cuenta atrás y una imagen que pueda confirmarse de forma inequívoca mediante RAWG, una API autorizada o una ficha oficial.
-- Los anuncios nuevos y los cambios editoriales deben partir de una rama `bot/calendar-*` y modificar solo `data/calendar.json`. GitHub resuelve las imágenes solicitadas, genera las páginas, valida las fuentes y fusiona la PR automáticamente si el resultado es correcto.
-- Ninguna automatización puede inferir fechas aproximadas, relevancia, plataformas o ediciones a partir de rumores, agregadores o coincidencias ambiguas.
+- Se considera mantenimiento determinista el cambio de estado a «Sale hoy» o «Ya disponible», el archivo de meses pasados, el orden cronológico, la selección de portada, la cuenta atrás y una imagen que pueda confirmarse de forma inequívoca mediante RAWG, una API autorizada o una ficha oficial. Debe ejecutarse cerca del cambio de día de España peninsular y ser idempotente.
+- Los anuncios nuevos y los cambios editoriales deben partir de una rama `bot/calendar-*` y modificar solo `data/calendar.json`. La vigilancia puede añadir juegos, corregir o mover fechas, incorporar plataformas o ediciones y ajustar etiquetas, prioridad, selección de portada o cuenta atrás sin aprobación previa cuando la fuente oficial y el criterio editorial sean inequívocos.
+- GitHub resuelve las imágenes solicitadas, genera las páginas, valida las fuentes y fusiona la PR automáticamente si el resultado es correcto.
+- La automatización puede decidir la relevancia con los criterios de Final Secreto, pero no puede inferir fechas, plataformas ni ediciones a partir de rumores, agregadores, ventanas aproximadas o coincidencias ambiguas.
 - RAWG se utiliza únicamente como proveedor visual. Nunca sustituye la verificación oficial de título, fecha, plataformas o región.
 - Una PR automática que altere scripts, estilos, reglas, reseñas, noticias u otros archivos debe bloquearse y requerir revisión manual.
 
@@ -29,7 +30,10 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 - Mantener el orden cronológico dentro del mes.
 - Si se añade o elimina un mes, actualizar también el selector mensual y su orden.
 - Las altas y modificaciones automáticas deben declarar `source.official`, `source.url`, `source.checkedAt` y `source.evidence`. La evidencia debe repetir de forma estructurada el título exacto, la fecha exacta y las plataformas confirmadas.
-- No eliminar automáticamente entradas históricas. Los retrasos cambian la fecha y las cancelaciones deben conservarse o revisarse manualmente con una explicación explícita.
+- Cualquier entrada heredada que cambie de título, fecha, plataformas, imagen, ficha, tráiler, etiqueta, insignia o prioridad debe migrar a `legacy: false` y completar en ese mismo cambio toda la procedencia oficial.
+- Las etiquetas deben describir una condición objetiva ya utilizada por el calendario, como DLC, expansión, remake, remaster, edición o nueva plataforma. No inventar categorías ni añadir etiquetas de relleno.
+- La prioridad, `settings.homePinnedIds` y `settings.countdownId` pueden ajustarse cuando una incorporación o cambio oficial altere claramente la selección editorial. Todos los identificadores deben existir, ser estables y no repetirse.
+- No eliminar automáticamente entradas históricas. Los retrasos cambian la fecha y las cancelaciones deben conservarse y bloquear la actualización hasta una revisión editorial explícita.
 
 ## 3. Imagen
 
@@ -90,7 +94,8 @@ Esta lista se aplica tanto a cambios manuales como a las actualizaciones automá
 - El mes actual puede dividirse en un bloque de lanzamientos ya disponibles y otro de lanzamientos activos o próximos.
 - Los meses anteriores deben quedar plegados en la interfaz según `Europe/Madrid`. Los meses anteriores al margen de archivo configurado dejan de renderizarse, pero permanecen en `data/calendar.json`.
 - El selector de mes, la búsqueda, los filtros y el contador deben seguir encontrando correctamente los meses históricos que todavía se muestran.
-- La tarea diaria debe ser idempotente. Si no cambia ningún dato ni estado temporal, no debe crear un commit.
+- La tarea temporal debe ejecutarse cerca de medianoche tanto con horario CET como CEST y ser idempotente. Si no cambia ningún dato ni estado temporal, no debe crear un commit.
+- «Sale hoy», «Ya disponible», los grupos del mes, la selección de portada y la cuenta atrás deben derivarse automáticamente del JSON. La vigilancia editorial no los mantiene mediante parches manuales en HTML.
 - El estado visible debe corregirse también con la página abierta cuando cambia el día en España peninsular.
 
 ## 8. Cierre de la actualización

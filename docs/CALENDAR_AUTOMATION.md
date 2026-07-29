@@ -21,9 +21,9 @@ La referencia temporal del calendario es siempre **España peninsular**, mediant
 - `.github/workflows/validate-release-calendar.yml` resuelve las imágenes solicitadas, genera las páginas y valida las ramas editoriales automáticas.
 - `.github/workflows/auto-merge-release-calendar.yml` fusiona las ramas `bot/calendar-*` cuando el commit validado sigue siendo la cabecera de la PR y solo se han modificado los archivos autorizados.
 
-## Mantenimiento diario de GitHub
+## Mantenimiento temporal de GitHub
 
-GitHub Actions ejecuta una revisión diaria con `TZ=Europe/Madrid`. El proceso:
+GitHub Actions ejecuta dos pasadas UTC con `TZ=Europe/Madrid`, a las 22:17 y 23:17 UTC. Así una de ellas cae poco después de medianoche tanto con horario CEST como CET, sin depender de una conversión fija que quede desfasada con el cambio estacional. El proceso:
 
 1. Descarga la última versión de `main`.
 2. Comprueba la sintaxis de los scripts.
@@ -41,7 +41,7 @@ GitHub Actions ejecuta una revisión diaria con `TZ=Europe/Madrid`. El proceso:
 14. Ejecuta la checklist automática.
 15. Publica en `main` únicamente si el diff se limita a `data/calendar.json`, `calendario.html` e `index.html`.
 
-Si no cambia ningún dato ni estado temporal, el workflow termina sin crear un commit. El script del navegador comprueba la fecha de Madrid cada minuto y al recuperar el foco. De este modo, el estado visible cambia correctamente aunque el workflow diario todavía no se haya ejecutado.
+Si no cambia ningún dato ni estado temporal, el workflow termina sin crear un commit. La segunda pasada actúa como comprobación idempotente y no genera ruido. El script del navegador comprueba la fecha de Madrid cada minuto y al recuperar el foco. De este modo, el estado visible cambia correctamente aunque GitHub Actions todavía no haya terminado.
 
 ## Imágenes mediante RAWG
 
@@ -83,20 +83,22 @@ No existe una fuente oficial única que reúna todos los lanzamientos relevantes
 
 La tarea programada de vigilancia:
 
-1. Revisa anuncios oficiales y contrasta la relevancia editorial.
-2. Consulta primero `main` y `data/calendar.json` para evitar duplicados.
-3. Descarta rumores, ventanas aproximadas, títulos sin fecha exacta y lanzamientos demasiado pequeños para el enfoque de Final Secreto.
-4. Crea o actualiza una rama `bot/calendar-*`.
-5. Modifica únicamente `data/calendar.json`.
-6. Abre una PR e incorpora la credencial temporal solo cuando existe una imagen RAWG pendiente.
-7. GitHub resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones.
-8. La PR se fusiona automáticamente cuando el resultado es seguro.
+1. Revisa anuncios oficiales y aplica los criterios de relevancia de Final Secreto.
+2. Consulta primero `main`, `data/calendar.json` y las PR `bot/calendar-*` abiertas para evitar duplicados y trabajar sobre el estado vigente.
+3. Detecta altas, fechas nuevas, adelantos, retrasos, correcciones, plataformas o ediciones adicionales y cambios objetivos que afecten a etiquetas, prioridad, portada o cuenta atrás.
+4. Descarta rumores, ventanas aproximadas, títulos sin fecha exacta y lanzamientos demasiado pequeños para el enfoque de Final Secreto.
+5. Mantiene el identificador estable de una entrada existente. Si cambia materialmente una entrada heredada, la migra a `legacy: false` y completa toda la evidencia oficial.
+6. Crea o actualiza una rama `bot/calendar-*` y modifica únicamente `data/calendar.json`.
+7. No espera aprobación previa cuando el cambio oficial y la decisión editorial son inequívocos. Las cancelaciones, contradicciones y coincidencias ambiguas se bloquean para revisión.
+8. Abre una PR e incorpora la credencial temporal solo cuando existe una imagen RAWG pendiente.
+9. GitHub resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones.
+10. La PR se fusiona automáticamente cuando el resultado es seguro y no se notifica si no hubo cambios o todo terminó correctamente.
 
 La vigilancia no puede editar scripts, estilos, noticias, reseñas ni otros documentos. Cualquier intento queda bloqueado por el workflow de alcance.
 
-## Campos obligatorios para una entrada nueva
+## Campos obligatorios para altas y cambios materiales
 
-Una entrada editorial automática debe incluir al menos:
+Una entrada nueva o una entrada heredada modificada por la vigilancia automática debe incluir al menos:
 
 - `id` estable y único.
 - `title` y `headingHtml`.
@@ -105,7 +107,7 @@ Una entrada editorial automática debe incluir al menos:
 - Imagen oficial HTTPS de respaldo y, preferentemente, una solicitud RAWG mediante `image.provider: "rawg"`.
 - Ficha oficial o enlace de tienda.
 - Tráiler oficial cuando exista.
-- Prioridad y etiqueta editorial coherentes.
+- Prioridad y etiqueta editorial coherentes. Las etiquetas describen condiciones objetivas ya contempladas por el calendario y no se usan como relleno.
 - `legacy: false`.
 - `source.official: true`.
 - `source.url` y `source.checkedAt`.
@@ -113,7 +115,9 @@ Una entrada editorial automática debe incluir al menos:
 - `source.evidence.releaseDate`.
 - `source.evidence.platforms`.
 
-La evidencia estructurada no sustituye la URL oficial. Sirve para que el workflow pueda detectar contradicciones internas antes de fusionar.
+La evidencia estructurada no sustituye la URL oficial. Sirve para que el workflow pueda detectar contradicciones internas antes de fusionar. Si el cambio altera claramente qué juegos deben destacar, la misma PR puede actualizar `settings.homePinnedIds` y `settings.countdownId`; el validador exige que sus identificadores existan y no estén repetidos.
+
+«Sale hoy», «Ya disponible», el archivo de meses, el orden visible, la portada y la cuenta atrás se recalculan desde el JSON. La vigilancia editorial no edita esos estados directamente en los HTML generados.
 
 ## Archivo y estados
 

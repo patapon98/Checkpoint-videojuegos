@@ -15,6 +15,35 @@
         "laufey",
         "faye"
       ]
+    },
+    {
+      "id": "onimusha-way-of-the-sword",
+      "title": "Onimusha: Way of the Sword",
+      "url": "/juegos/onimusha-way-of-the-sword",
+      "releaseIds": [
+        "onimusha-way-of-the-sword"
+      ],
+      "newsIds": [],
+      "terms": [
+        "onimusha: way of the sword",
+        "onimusha way of the sword",
+        "miyamoto musashi"
+      ]
+    },
+    {
+      "id": "control-resonant",
+      "title": "CONTROL Resonant",
+      "url": "/juegos/control-resonant",
+      "releaseIds": [
+        "control-resonant"
+      ],
+      "newsIds": [],
+      "terms": [
+        "control resonant",
+        "control: resonant",
+        "dylan faden",
+        "el aberrante"
+      ]
     }
   ]
 }

@@ -7,7 +7,10 @@ on:
       - "data/calendar.json"
       - "calendario.html"
       - "index.html"
+      - "css/calendar-today.css"
       - "js/main.js"
+      - "js/calendar-today.js"
+      - "js/calendar-mosaic.js"
       - "js/calendar-countdown-prepare.js"
       - "js/calendar-countdown.js"
       - "scripts/calendar-utils.mjs"
@@ -60,6 +63,8 @@ jobs:
           node --check scripts/generate-release-calendar.mjs
           node --check scripts/validate-release-calendar.mjs
           node --check scripts/validate-calendar-change.mjs
+          node --check js/calendar-today.js
+          node --check js/calendar-mosaic.js
           node --check js/calendar-countdown-prepare.js
           node --check js/calendar-countdown.js
           node --check js/main.js

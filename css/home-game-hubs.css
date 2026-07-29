@@ -1,5 +1,6 @@
 .home-game-hubs{
   position:relative;
+  margin-bottom:clamp(68px,7vw,104px);
 }
 
 .home-game-hubs-grid{
@@ -159,6 +160,10 @@
 }
 
 @media(max-width:640px){
+  .home-game-hubs{
+    margin-bottom:54px;
+  }
+
   .home-game-hubs-grid{
     grid-template-columns:1fr;
     gap:16px;

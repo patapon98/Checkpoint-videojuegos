@@ -21,20 +21,20 @@
   "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://media.rawg.io/media/resize/1280/-/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
+      "src": "https://media.rawg.io/media/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
       "alt": "Miyamoto Musashi combate contra los Genma en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257371677/ed87d60648455aea3b1daa9aadfa2bf8c37328e8/movie_full.jpg",
-      "alt": "Escena promocional de combate de Onimusha: Way of the Sword"
+      "src": "https://media.rawg.io/media/screenshots/a34/a3444739430f1b440bbef6d493a62585.jpg",
+      "alt": "Escena de combate de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257300165/7c4532291731b327f5575f200d0e3ed20f9306e9/movie_full.jpg",
+      "src": "https://media.rawg.io/media/screenshots/184/18431ea009b07288111a9fb3743a2830.jpg",
       "alt": "Miyamoto Musashi durante una secuencia de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257185697/96667f8c1d361cc26af99bf5f3caf973b2ff0b28/movie_full.jpg",
-      "alt": "Escenario del Kioto sobrenatural de Onimusha: Way of the Sword"
+      "src": "https://media.rawg.io/media/screenshots/bb8/bb82117127b5839995ea4c7186354190.jpg",
+      "alt": "Escenario sobrenatural de Onimusha: Way of the Sword"
     }
   ],
   "media": [
@@ -89,12 +89,12 @@
     {
       "label": "RAWG",
       "url": "https://rawg.io/games/onimusha-way-of-the-sword/screenshots",
-      "type": "Captura de la galería"
+      "type": "Capturas de la galería"
     },
     {
       "label": "Steam",
       "url": "https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/",
-      "type": "Arte y recursos promocionales"
+      "type": "Arte promocional de la cabecera"
     }
   ],
   "newsTerms": [

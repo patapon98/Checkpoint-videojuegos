@@ -1584,12 +1584,16 @@
       "image": {
         "provider": "rawg",
         "query": "Rayman Legends Retold",
-        "src": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/37BUvdQKohf8lt6X0qCS7o/ae014f6251662c22425d9db533397506/RaymanLegendsRetold_Keyart.jpg",
+        "src": "https://media.rawg.io/media/screenshots/3c6/3c6655e5fa82e245a9f0be20d8d7ac89.jpg",
         "alt": "Rayman Legends Retold",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1018059,
+        "rawgSlug": "rayman-legends-retold",
+        "rawgPage": "https://rawg.io/games/rayman-legends-retold",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.ubisoft.com/en-us/games/rayman-legends-retold",

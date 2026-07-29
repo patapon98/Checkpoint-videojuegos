@@ -16,27 +16,27 @@
   "officialUrl": "https://www.capcom-games.com/onimusha/ws/",
   "storeUrl": "https://store.playstation.com/es-es/product/UP0102-PPSA27836_00-0000000000000001",
   "trailerUrl": "https://www.youtube.com/watch?v=LNq35HHUtNc",
-  "heroImage": "https://blog.playstation.com/tachyon/2026/06/1d8c87b7a3739efaeae001ec21dc89c6a99a03c2.jpg?crop_strategy=smart&resize=1088%2C612",
+  "heroImage": "https://cdn.capcom-unity.com/2026/06/OWotS-Feature-1024x576.jpg",
   "gallery": [
     {
-      "src": "https://blog.playstation.com/tachyon/2026/06/1d8c87b7a3739efaeae001ec21dc89c6a99a03c2.jpg?crop_strategy=smart&resize=1088%2C612",
-      "alt": "Miyamoto Musashi en el arte oficial de Onimusha: Way of the Sword"
+      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-Feature-1024x576.jpg",
+      "alt": "Miyamoto Musashi en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/a62f28d19093960bf3735d73c7f3e5fa2a9fc404.jpg",
-      "alt": "Miyamoto Musashi combatiendo contra los Genma"
+      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-bluegreenherb-Final-1024x576.jpg",
+      "alt": "Musashi junto a un espejo espiritual en la demo de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/12c62f5b16fc4939b16f3f083300bf2f51ff3c0b.jpg",
-      "alt": "Combate con espada en Onimusha: Way of the Sword"
+      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-vagrantpistol-final-1024x576.jpg",
+      "alt": "Sasaki Ganryu preparado para combatir en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/9a415520d26a0d46e8d7eb63c11e1cff6e252ef1.jpg",
-      "alt": "Un escenario de Kioto corrompido por el miasma"
+      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-OguzhanSivri_-Final-1024x576.jpg",
+      "alt": "Musashi ante el templo Kiyomizu-dera en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/60b84d6c068ce85ea88b33b37e4a871a837cc08c.jpg",
-      "alt": "Musashi frente a un enemigo formidable"
+      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-virtual_koda-Final-1024x768.jpg",
+      "alt": "Primer plano de Musashi absorbiendo almas con la visión Oni"
     }
   ],
   "media": [
@@ -89,9 +89,9 @@
       "type": "Ficha y reservas"
     },
     {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/06/02/onimusha-way-of-the-sword-out-september-25-on-ps5-demo-out-today/",
-      "type": "Jugabilidad y multimedia"
+      "label": "Capcom Snapshots",
+      "url": "https://news.capcomusa.com/2026/06/19/capcom-snapshots-onimusha-way-of-the-sword-demo/",
+      "type": "Galería alojada por Capcom"
     }
   ],
   "newsTerms": [

@@ -1,0 +1,42 @@
+name: Finalizar enlaces de la ficha de Laufey
+
+on:
+  push:
+    branches:
+      - agent/mejora-ficha-laufey
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar la rama
+        uses: actions/checkout@v4
+        with:
+          ref: agent/mejora-ficha-laufey
+          fetch-depth: 0
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Aplicar versiones de caché
+        run: node scripts/finalize-laufey-links.mjs
+
+      - name: Validar JavaScript y datos
+        run: |
+          node --check js/game-hub.js
+          node --check js/game-hub-links.js
+          node --check js/main.js
+          node -e "JSON.parse(require('fs').readFileSync('data/game-hubs/god-of-war-laufey.json','utf8')); JSON.parse(require('fs').readFileSync('data/game-hubs/index.json','utf8'))"
+
+      - name: Guardar el resultado
+        run: |
+          git config user.name "final-secreto-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Actualiza caché y valida los enlaces de fichas"
+          git push origin agent/mejora-ficha-laufey

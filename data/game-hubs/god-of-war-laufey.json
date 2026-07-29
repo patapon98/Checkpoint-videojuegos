@@ -1,0 +1,54 @@
+{
+  "id": "god-of-war-laufey",
+  "title": "God of War Laufey",
+  "subtitle": "Todo lo confirmado sobre la nueva aventura de Faye",
+  "status": "Anunciado",
+  "releaseDate": "2027-02-16",
+  "platforms": ["PS5"],
+  "developer": "Santa Monica Studio",
+  "publisher": "Sony Interactive Entertainment",
+  "genre": "Acción y aventura",
+  "officialUrl": "https://www.playstation.com/es-es/games/god-of-war-laufey/",
+  "storeUrl": "https://store.playstation.com/es-es/concept/10009461",
+  "trailerUrl": "https://www.youtube.com/watch?v=HLMX2w3cwuE",
+  "rawg": {
+    "slug": "god-of-war-laufey",
+    "id": null,
+    "updatedAt": null,
+    "backgroundImage": "",
+    "screenshots": []
+  },
+  "premise": "Tras su muerte, Laufey despierta en el Todotiempo y descubre que los planes que dejó preparados para proteger a Kratos y Atreus están en peligro. Para salvarlos deberá abrirse paso por un más allá donde deidades de distintas mitologías compiten por el poder.",
+  "confirmed": [
+    "Faye, también conocida como Laufey, es la protagonista.",
+    "La historia comienza después de su funeral.",
+    "El juego transcurre en el Todotiempo, el más allá de los dioses.",
+    "Su combate se apoya en la velocidad, el control y la precisión de Faye.",
+    "Se lanzará en exclusiva para PlayStation 5 el 16 de febrero de 2027."
+  ],
+  "pending": [
+    "Precio y ediciones disponibles.",
+    "Apertura de reservas.",
+    "Duración aproximada.",
+    "Modos gráficos y funciones específicas de PS5.",
+    "Clasificación por edades definitiva."
+  ],
+  "sources": [
+    {
+      "label": "PlayStation España",
+      "url": "https://www.playstation.com/es-es/games/god-of-war-laufey/",
+      "type": "Ficha oficial"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.es.playstation.com/2026/06/03/primer-vistazo-a-god-of-war-laufey/",
+      "type": "Presentación oficial"
+    },
+    {
+      "label": "PlayStation Store",
+      "url": "https://store.playstation.com/es-es/concept/10009461",
+      "type": "Lista de deseos"
+    }
+  ],
+  "updatedAt": "2026-07-30"
+}

@@ -22,6 +22,26 @@ const warnings = [];
 const fail = (message) => errors.push(message);
 const warn = (message) => warnings.push(message);
 
+function isRawgHost(url = "") {
+  const host = sourceHost(url);
+  return host === "media.rawg.io" || host.endsWith(".rawg.io");
+}
+
+function validRawgImage(image = {}) {
+  return image.provider === "rawg"
+    && Number(image.rawgId) > 0
+    && Boolean(image.rawgSlug)
+    && /^https:\/\/rawg\.io\/games\//.test(image.rawgPage || "")
+    && isRawgHost(image.src);
+}
+
+function requireRawgAttribution(html, label) {
+  if (!/(?:https?:)?\/\/media\.rawg\.io\//.test(html)) return;
+  if (!/class="rawg-attribution"/.test(html) || !/href="https:\/\/rawg\.io\/?"/.test(html)) {
+    fail(`${label}: usa imágenes de RAWG pero no incluye la atribución enlazada obligatoria.`);
+  }
+}
+
 if (!/^20\d{2}-\d{2}-\d{2}$/.test(data.updatedAt || "")) fail("updatedAt no es una fecha ISO.");
 if (!Array.isArray(data.releases) || !data.releases.length) fail("No hay lanzamientos en data/calendar.json.");
 
@@ -43,12 +63,18 @@ for (const release of data.releases || []) {
   if (!release.image?.alt?.trim()) fail(`${release.id}: falta el texto alternativo.`);
   if (!release.store?.url || !/^https:\/\//.test(release.store.url)) warn(`${release.id}: no tiene enlace de tienda o ficha oficial.`);
 
+  if (release.image?.provider === "rawg" && !validRawgImage(release.image)) {
+    fail(`${release.id}: una imagen RAWG debe declarar rawgId, rawgSlug, rawgPage y una URL de media.rawg.io.`);
+  }
+
   if (!release.legacy) {
     if (!release.source?.official) fail(`${release.id}: una entrada nueva debe estar verificada en una fuente oficial.`);
     if (!release.source?.url || !/^https:\/\//.test(release.source.url)) fail(`${release.id}: falta la URL oficial de verificación.`);
-    if (isThirdPartyImage(release.image.src)) fail(`${release.id}: una entrada nueva no puede usar RAWG, YouTube u otro agregador como imagen.`);
-  } else {
-    if (isThirdPartyImage(release.image?.src)) warn(`${release.id}: conserva una imagen heredada de terceros pendiente de sustitución automática.`);
+    if (isThirdPartyImage(release.image.src) && !validRawgImage(release.image)) {
+      fail(`${release.id}: una imagen externa nueva solo puede proceder de RAWG con metadatos completos; YouTube y otros agregadores no están permitidos.`);
+    }
+  } else if (isThirdPartyImage(release.image?.src)) {
+    warn(`${release.id}: conserva una imagen heredada de terceros pendiente de normalización.`);
   }
 }
 
@@ -114,6 +140,9 @@ for (const id of homeIds) {
   if (!homeHtml.includes(`data-release-id="${id}"`)) fail(`${id}: falta en el calendario de portada.`);
 }
 if ((homeHtml.match(/data-release-id=/g) || []).length < homeIds.length) fail("La portada contiene menos fichas de las previstas.");
+
+requireRawgAttribution(calendarHtml, "Calendario completo");
+requireRawgAttribution(homeHtml, "Calendario de portada");
 
 const calendarCountdown = /class="countdown reveal"[^>]*data-countdown-date="(20\d{2}-\d{2}-\d{2})"/.exec(calendarHtml)?.[1];
 const homeCountdown = /class="countdown"[^>]*data-countdown-date="(20\d{2}-\d{2}-\d{2})"/.exec(homeHtml)?.[1];

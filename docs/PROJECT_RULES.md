@@ -26,6 +26,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No modificar directamente `main` ni hacer merge. La decisión de fusionar corresponde al usuario.
 - Solo se puede omitir este flujo cuando el usuario autorice de forma expresa una excepción concreta. La excepción no modifica la regla general para trabajos futuros.
 - La automatización de PlayStation Plus definida en `.github/workflows/update-playstation-plus.yml` es una excepción permanente y expresamente autorizada. Puede escribir directamente en `main` únicamente datos oficiales de PlayStation Plus, páginas mensuales generadas, documentación derivada y sitemap, siempre después de superar sus validaciones automáticas.
+- La automatización del calendario de lanzamientos definida en `.github/workflows/update-release-calendar.yml` es otra excepción permanente y expresamente autorizada. Puede publicar directamente mantenimiento determinista de `data/calendar.json`, `calendario.html` e `index.html` después de superar la checklist automática. Las altas y cambios editoriales deben pasar por ramas `bot/calendar-*`, generación controlada, validación de fuentes y fusión automática limitada a esos tres archivos.
 - Revisar el diff completo y comprobar la vista previa o el despliegue de prueba antes de entregar.
 - Los cambios directos que haga el propio usuario mediante Replit, GitHub Desktop u otras herramientas quedan fuera de esta restricción.
 
@@ -141,6 +142,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
 - El sitemap se genera con `scripts/generate-sitemap.mjs`. Al publicar una reseña, la automatización de GitHub debe incorporar su URL canónica y actualizar `lastmod`; no mantener a mano una lista paralela de reseñas.
 - Las páginas mensuales de PlayStation Plus se generan desde `data/playstation-plus.json` mediante `scripts/generate-ps-plus-pages.mjs`. No deben editarse manualmente ni mantener datos duplicados fuera del archivo central.
+- El calendario completo, la selección de portada, la cuenta atrás, las fechas, plataformas, imágenes, etiquetas y tráilers deben derivarse de `data/calendar.json` mediante `scripts/generate-release-calendar.mjs`. No mantener listas paralelas en el HTML o en scripts de corrección por título.
 - Actualizar las versiones de caché de todos los recursos modificados que se carguen con parámetros de versión.
 - Revisar escritorio y móvil, modo claro y oscuro, Chromium y Firefox cuando el cambio afecte a la interfaz.
 - Comprobar sintaxis, enlaces, accesibilidad básica y ausencia de huecos invisibles.
@@ -149,8 +151,9 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 ## 8. Calendario de lanzamientos
 
 - Todo cambio relacionado con lanzamientos debe aplicar obligatoriamente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](CALENDAR_UPDATE_CHECKLIST.md).
-- La actualización debe contemplar el calendario completo y el calendario de portada cuando corresponda.
-- La tarea de vigilancia detecta y propone novedades. La incorporación a la web comienza después de la aprobación del usuario.
+- La actualización debe contemplar siempre la fuente central, el calendario completo, la portada y la cuenta atrás cuando corresponda.
+- La vigilancia editorial puede incorporar de forma autónoma novedades relevantes y verificadas mediante ramas `bot/calendar-*`. Solo se admiten fechas exactas, ediciones inequívocas, plataformas confirmadas, imágenes oficiales estables y evidencia estructurada de la fuente.
+- El mantenimiento diario puede mover automáticamente lanzamientos a «Ya disponible», plegar o retirar del render meses antiguos, reordenar fichas y aplicar cambios verificables mediante fuentes oficiales. Los datos históricos permanecen en `data/calendar.json`.
 - Los juegos de PlayStation Plus se mantienen en su página específica y no se mezclan con los lanzamientos comerciales del calendario general.
 
 ## 9. Prioridad y mantenimiento

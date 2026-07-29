@@ -1,0 +1,82 @@
+name: Actualizar calendario de lanzamientos
+
+on:
+  schedule:
+    - cron: "47 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalsecreto-content-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Madrid
+    steps:
+      - name: Descargar main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sincronizar main
+        run: git pull --ff-only origin main
+
+      - name: Configurar Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Comprobar sintaxis
+        run: |
+          node --check scripts/calendar-utils.mjs
+          node --check scripts/update-release-calendar.mjs
+          node --check scripts/generate-release-calendar.mjs
+          node --check scripts/validate-release-calendar.mjs
+          node --check js/calendar-countdown-prepare.js
+          node --check js/calendar-countdown.js
+          node --check js/main.js
+
+      - name: Verificar fechas e imágenes oficiales
+        run: node scripts/update-release-calendar.mjs
+
+      - name: Regenerar calendario y portada
+        run: node scripts/generate-release-calendar.mjs
+
+      - name: Aplicar checklist automática
+        run: |
+          node scripts/validate-release-calendar.mjs
+          git diff --check
+
+      - name: Comprobar alcance del cambio
+        id: changes
+        run: |
+          changed="$(git diff --name-only)"
+          if [ -z "$changed" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          invalid="$(printf '%s\n' "$changed" | grep -Ev '^(data/calendar\.json|calendario\.html|index\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "El mantenimiento automático intentó modificar archivos no autorizados:"
+            echo "$invalid"
+            exit 1
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publicar en main
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git add data/calendar.json calendario.html index.html
+          git commit -m "Actualiza el calendario de lanzamientos"
+          git push origin HEAD:main

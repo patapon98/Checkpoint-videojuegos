@@ -29,6 +29,15 @@ function normalized(value = "") {
     .trim();
 }
 
+function isRawgImage(image = {}) {
+  const host = sourceHost(image.src || "");
+  return image.provider === "rawg"
+    && Number(image.rawgId) > 0
+    && Boolean(image.rawgSlug)
+    && /^https:\/\/rawg\.io\/games\//.test(image.rawgPage || "")
+    && (host === "media.rawg.io" || host.endsWith(".rawg.io"));
+}
+
 function materiallyChanged(before, after) {
   if (!before) return true;
   const fields = ["title", "date", "platformKeys", "platformsHtml", "image", "store", "trailer", "tag", "badge", "priority"];
@@ -62,7 +71,7 @@ for (const release of changed) {
   const evidence = source.evidence || {};
 
   if (release.legacy) errors.push(`${prefix}: un alta o cambio editorial automático no puede marcarse como heredado.`);
-  if (!source.official) errors.push(`${prefix}: la fuente debe declararse oficial.`);
+  if (!source.official) errors.push(`${prefix}: la fuente de fecha y plataformas debe declararse oficial.`);
   if (!/^https:\/\//.test(source.url || "")) errors.push(`${prefix}: falta la URL oficial HTTPS.`);
   if (!/^20\d{2}-\d{2}-\d{2}$/.test(source.checkedAt || "")) errors.push(`${prefix}: falta source.checkedAt en ISO.`);
   if (source.checkedAt && Math.abs((new Date(`${TODAY}T00:00:00Z`) - new Date(`${source.checkedAt}T00:00:00Z`)) / 864e5) > 14) {
@@ -74,8 +83,13 @@ for (const release of changed) {
     if (!evidencedPlatforms.has(platform)) errors.push(`${prefix}: la evidencia no confirma la plataforma «${platform}».`);
   }
   if (!evidence.title || normalized(evidence.title) !== normalized(release.title)) errors.push(`${prefix}: la evidencia no identifica exactamente el título.`);
-  if (isThirdPartyImage(release.image?.src)) errors.push(`${prefix}: la imagen no puede proceder de RAWG, YouTube u otro agregador.`);
-  if (!/^https:\/\//.test(release.image?.src || "")) errors.push(`${prefix}: falta una imagen oficial HTTPS.`);
+  if (isThirdPartyImage(release.image?.src) && !isRawgImage(release.image)) {
+    errors.push(`${prefix}: una imagen externa nueva solo puede proceder de RAWG con rawgId, rawgSlug y rawgPage; YouTube y otros agregadores no están permitidos.`);
+  }
+  if (release.image?.provider === "rawg" && !isRawgImage(release.image)) {
+    errors.push(`${prefix}: los metadatos RAWG de la imagen están incompletos o no corresponden a media.rawg.io.`);
+  }
+  if (!/^https:\/\//.test(release.image?.src || "")) errors.push(`${prefix}: falta una imagen HTTPS.`);
   if (!/^https:\/\//.test(release.store?.url || "")) errors.push(`${prefix}: falta una ficha oficial o tienda válida.`);
 
   const sourceResponse = source.url ? await fetchChecked(source.url, `${prefix}: fuente oficial`) : null;
@@ -90,7 +104,8 @@ for (const release of changed) {
       }
     }
   }
-  if (release.image?.src) await fetchChecked(release.image.src, `${prefix}: imagen oficial`);
+  if (release.image?.src) await fetchChecked(release.image.src, `${prefix}: imagen`);
+  if (release.image?.rawgPage) await fetchChecked(release.image.rawgPage, `${prefix}: atribución RAWG`);
   if (release.store?.url && release.store.url !== source.url) await fetchChecked(release.store.url, `${prefix}: ficha de tienda`);
 }
 

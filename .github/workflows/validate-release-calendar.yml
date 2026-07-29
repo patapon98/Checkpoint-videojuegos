@@ -111,6 +111,15 @@ jobs:
           git commit -m "Genera el calendario desde los datos verificados"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
 
-      - name: Exigir salidas sincronizadas en ramas manuales
+      - name: Guardar páginas generadas en la rama manual
         if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
-        run: git diff --exit-code -- calendario.html index.html
+        run: |
+          if git diff --quiet -- calendario.html index.html; then
+            echo "Las salidas generadas ya están sincronizadas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calendario.html index.html
+          git commit -m "Sincroniza las salidas generadas del calendario"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}

@@ -361,3 +361,51 @@
   .game-btn,.related-news-card,.related-game-card,.related-game-art img,.game-gallery-track,.game-gallery-thumb,.game-gallery-arrow,.game-gallery-zoom-hint{transition:none}
   .game-gallery-lightbox[open]{animation:none}
 }
+
+
+/* ---------- Bloque editorial de claves ---------- */
+.game-spotlight-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-top:27px
+}
+
+.game-spotlight-card{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  padding:21px;
+  border:1px solid color-mix(in srgb,var(--game-gold) 30%,var(--border));
+  border-radius:18px;
+  background:linear-gradient(150deg,var(--card),color-mix(in srgb,var(--game-gold) 9%,var(--card)))
+}
+
+.game-spotlight-card>span{
+  color:var(--muted);
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-transform:uppercase
+}
+
+.game-spotlight-card>strong{
+  margin:8px 0 12px;
+  color:var(--game-gold);
+  font-family:Fraunces,serif;
+  font-size:clamp(1.35rem,2.5vw,2rem);
+  line-height:1.05
+}
+
+.game-spotlight-card>p{
+  margin:0;
+  color:var(--muted);
+  font-size:.86rem;
+  line-height:1.58
+}
+
+@media(max-width:900px){
+  .game-spotlight-grid{
+    grid-template-columns:1fr
+  }
+}

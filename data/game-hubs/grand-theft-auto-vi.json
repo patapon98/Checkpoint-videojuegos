@@ -17,6 +17,10 @@
   "heroImage": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_03_landscape.0419q._86ukpt.jpg?akim=1&imdensity=1&imwidth=3840",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
+  "theme": {
+    "accent": "#f28ab8",
+    "accentSoft": "rgba(242,138,184,.16)"
+  },
   "gallery": [
     {
       "src": "https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_01.07m377xeb6jhq.jpg?akim=1&imdensity=1&imwidth=3840",
@@ -46,20 +50,42 @@
   ],
   "premise": "Jason Duval y Lucia Caminos quedan atrapados en una conspiración criminal que se extiende por el estado de Leonida después de que un golpe sencillo salga mal. Para sobrevivir tendrán que confiar el uno en el otro mientras recorren Vice City y sus alrededores.",
   "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha.",
+  "spotlight": {
+    "kicker": "La pregunta más discutida",
+    "title": "Precio y ediciones de Grand Theft Auto VI",
+    "intro": "El debate sobre si GTA VI normalizaría los juegos de 100 euros ya tiene una respuesta oficial en España. La edición estándar se mantiene en el escalón habitual de los grandes lanzamientos actuales y los 100 euros quedan para la edición superior.",
+    "items": [
+      {
+        "title": "Edición estándar",
+        "value": "79,99 €",
+        "description": "Incluye el juego y el pack de reserva Vintage Vice City. En PS5, la promoción suma un mes de GTA+ que pasa a renovarse automáticamente si no se cancela."
+      },
+      {
+        "title": "Ultimate Edition",
+        "value": "99,99 €",
+        "description": "Añade la mejora Ultimate con vehículos, armas, ropa, peinados, tatuajes y otros extras repartidos por la historia de Jason y Lucia."
+      },
+      {
+        "title": "Mejora Ultimate",
+        "value": "20 €",
+        "description": "Xbox permite comprar la mejora por separado. El precio total coincide con la Ultimate Edition si primero se adquiere la edición estándar."
+      }
+    ]
+  },
   "confirmed": [
-    "Su lanzamiento está fijado para el 19 de noviembre de 2026.",
-    "Llegará primero a PS5 y Xbox Series X|S.",
     "Jason Duval y Lucia Caminos son los dos protagonistas.",
-    "La historia transcurre en Vice City y otras zonas del estado de Leonida.",
-    "Rockstar ha abierto las reservas y ha presentado una Ultimate Edition.",
-    "La web oficial reúne tráilers, personajes, localizaciones y setenta capturas del juego."
+    "La campaña anunciada es una experiencia para un jugador centrada en la conspiración criminal que recorre Leonida.",
+    "Además de Vice City, Rockstar ha presentado Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y el parque nacional Mount Kalaga.",
+    "La ficha de PlayStation marca compatibilidad con juego offline, Uso a distancia, funciones de DualSense y mejoras para PS5 Pro.",
+    "Las reservas incluyen el pack Vintage Vice City. La promoción de PS5 añade un mes de GTA+ con renovación automática posterior."
   ],
   "pending": [
     "Una versión para PC no ha sido anunciada oficialmente.",
-    "Rockstar todavía no ha detallado todos los sistemas jugables.",
+    "Rockstar todavía no ha detallado el alcance de los sistemas jugables ni un posible modo en línea.",
     "Faltan por concretarse los modos de rendimiento y resolución de cada consola.",
     "No se conoce el tamaño de instalación definitivo.",
-    "La clasificación por edades definitiva para España sigue pendiente."
+    "No se ha aclarado cómo será la edición física española ni si todas las versiones incluirán disco.",
+    "La clasificación PEGI definitiva para España sigue pendiente."
   ],
   "sources": [
     {
@@ -76,6 +102,16 @@
       "label": "Rockstar Support",
       "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
       "type": "Ediciones y plataformas"
+    },
+    {
+      "label": "PlayStation Store España",
+      "url": "https://store.playstation.com/es-es/concept/10000730",
+      "type": "Precios y contenido de las ediciones"
+    },
+    {
+      "label": "Xbox España",
+      "url": "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn",
+      "type": "Precios y mejora Ultimate"
     }
   ],
   "newsTerms": [
@@ -93,8 +129,8 @@
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Ficha publicada con las reservas abiertas",
-      "description": "Se comprobaron la nueva fecha, las plataformas, las ediciones, la historia y el material oficial disponible."
+      "title": "Precios, ediciones y datos de compra verificados",
+      "description": "Se añadieron los precios españoles, el contenido de cada edición, las condiciones de GTA+ y más datos confirmados sobre la campaña."
     }
   ],
   "relatedGameIds": [

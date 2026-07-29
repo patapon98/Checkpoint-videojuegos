@@ -16,27 +16,25 @@
   "officialUrl": "https://www.capcom-games.com/onimusha/ws/",
   "storeUrl": "https://store.playstation.com/es-es/product/UP0102-PPSA27836_00-0000000000000001",
   "trailerUrl": "https://www.youtube.com/watch?v=LNq35HHUtNc",
-  "heroImage": "https://cdn.capcom-unity.com/2026/06/OWotS-Feature-1024x576.jpg",
+  "heroImage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/90eada3290f1fd9e93073d1c2ff01e8fcae18aff/library_hero_2x.jpg",
+  "heroImageKind": "promotional-key-art",
+  "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-Feature-1024x576.jpg",
-      "alt": "Miyamoto Musashi en Onimusha: Way of the Sword"
+      "src": "https://media.rawg.io/media/resize/1280/-/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
+      "alt": "Miyamoto Musashi combate contra los Genma en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-bluegreenherb-Final-1024x576.jpg",
-      "alt": "Musashi junto a un espejo espiritual en la demo de Onimusha: Way of the Sword"
+      "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257371677/ed87d60648455aea3b1daa9aadfa2bf8c37328e8/movie_full.jpg",
+      "alt": "Escena promocional de combate de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-vagrantpistol-final-1024x576.jpg",
-      "alt": "Sasaki Ganryu preparado para combatir en Onimusha: Way of the Sword"
+      "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257300165/7c4532291731b327f5575f200d0e3ed20f9306e9/movie_full.jpg",
+      "alt": "Miyamoto Musashi durante una secuencia de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-OguzhanSivri_-Final-1024x576.jpg",
-      "alt": "Musashi ante el templo Kiyomizu-dera en Onimusha: Way of the Sword"
-    },
-    {
-      "src": "https://cdn.capcom-unity.com/2026/06/OWotS-virtual_koda-Final-1024x768.jpg",
-      "alt": "Primer plano de Musashi absorbiendo almas con la visión Oni"
+      "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257185697/96667f8c1d361cc26af99bf5f3caf973b2ff0b28/movie_full.jpg",
+      "alt": "Escenario del Kioto sobrenatural de Onimusha: Way of the Sword"
     }
   ],
   "media": [
@@ -89,9 +87,14 @@
       "type": "Ficha y reservas"
     },
     {
-      "label": "Capcom Snapshots",
-      "url": "https://news.capcomusa.com/2026/06/19/capcom-snapshots-onimusha-way-of-the-sword-demo/",
-      "type": "Galería alojada por Capcom"
+      "label": "RAWG",
+      "url": "https://rawg.io/games/onimusha-way-of-the-sword/screenshots",
+      "type": "Captura de la galería"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/",
+      "type": "Arte y recursos promocionales"
     }
   ],
   "newsTerms": [

@@ -1,12 +1,15 @@
 (() => {
-  const gameId = document.body.dataset.gameId;
+  const body = document.body;
+  const gameId = body.dataset.gameId;
   const dataUrl = `/data/game-hubs/${gameId}.json`;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   const formatDate = (value) => new Intl.DateTimeFormat('es-ES', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'
   }).format(new Date(`${value}T12:00:00`));
+
   const text = (value = '') => String(value);
   const escapeHtml = (value = '') => text(value).replace(/[&<>"']/g, (char) => ({
     '&': '&amp;',
@@ -16,8 +19,11 @@
     "'": '&#039;'
   }[char]));
 
-  function relatedNews() {
-    const terms = ['god of war laufey', 'laufey', 'faye'];
+  function relatedNews(data = {}) {
+    const terms = (Array.isArray(data.newsTerms) && data.newsTerms.length ? data.newsTerms : [data.title])
+      .filter(Boolean)
+      .map((term) => text(term).toLocaleLowerCase('es'));
+
     return (window.FINALSECRETO_NEWS || []).filter((item) => {
       const haystack = [
         item.id,
@@ -26,7 +32,7 @@
         item.why?.es,
         item.ticker?.keyword?.es,
         item.ticker?.copy?.es
-      ].filter(Boolean).join(' ').toLowerCase();
+      ].filter(Boolean).join(' ').toLocaleLowerCase('es');
       return terms.some((term) => haystack.includes(term));
     }).sort((a, b) => new Date(b.updated || b.date) - new Date(a.updated || a.date));
   }
@@ -38,6 +44,7 @@
       ['Plataforma', data.platforms.join(' · ')],
       ['Desarrolladora', data.developer]
     ];
+
     document.querySelector('#gameFacts').innerHTML = facts.map(([label, value]) =>
       `<div class="game-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`
     ).join('');
@@ -62,7 +69,7 @@
     ).join('');
   }
 
-  function createGalleryLightbox(images, initialIndex = 0) {
+  function createGalleryLightbox(images) {
     const dialog = document.createElement('dialog');
     dialog.className = 'game-gallery-lightbox';
     dialog.setAttribute('aria-label', 'Imagen ampliada de la galería');
@@ -80,7 +87,7 @@
     const image = dialog.querySelector('.game-gallery-lightbox-image');
     const caption = dialog.querySelector('.game-gallery-lightbox-caption');
     const count = dialog.querySelector('.game-gallery-lightbox-count');
-    let current = initialIndex;
+    let current = 0;
 
     const show = (index) => {
       current = (index + images.length) % images.length;
@@ -92,25 +99,28 @@
     };
 
     const close = () => {
-      if (dialog.open) dialog.close();
+      if (dialog.open && typeof dialog.close === 'function') dialog.close();
+      else dialog.removeAttribute('open');
     };
 
     dialog.querySelector('.game-gallery-lightbox-close').addEventListener('click', close);
     dialog.querySelector('.game-gallery-lightbox-prev').addEventListener('click', () => show(current - 1));
     dialog.querySelector('.game-gallery-lightbox-next').addEventListener('click', () => show(current + 1));
+
     dialog.addEventListener('click', (event) => {
       if (event.target === dialog) close();
     });
+
     dialog.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowLeft') {
         event.preventDefault();
         show(current - 1);
-      }
-      if (event.key === 'ArrowRight') {
+      } else if (event.key === 'ArrowRight') {
         event.preventDefault();
         show(current + 1);
       }
     });
+
     dialog.addEventListener('close', () => document.body.classList.remove('game-lightbox-open'));
 
     return {
@@ -182,16 +192,19 @@
       track.classList.remove('is-dragging');
       track.style.transform = `translate3d(-${current * 100}%,0,0)`;
       counter.textContent = `${current + 1} / ${images.length}`;
+
       slides.forEach((slide, slideIndex) => {
         const active = slideIndex === current;
         slide.setAttribute('aria-hidden', String(!active));
         slide.tabIndex = active ? 0 : -1;
       });
+
       thumbs.forEach((thumb, thumbIndex) => {
         const active = thumbIndex === current;
         thumb.classList.toggle('active', active);
         thumb.setAttribute('aria-pressed', String(active));
       });
+
       if (scrollThumb) {
         const thumb = thumbs[current];
         const targetLeft = thumb.offsetLeft - (thumb.parentElement.clientWidth - thumb.offsetWidth) / 2;
@@ -219,7 +232,6 @@
         startedAt: performance.now(),
         axis: null
       };
-      try { viewport.setPointerCapture(event.pointerId); } catch {}
     });
 
     viewport.addEventListener('pointermove', (event) => {
@@ -247,9 +259,6 @@
       if (!pointer || event.pointerId !== pointer.id) return;
       const state = pointer;
       pointer = null;
-      try {
-        if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
-      } catch {}
 
       if (state.axis !== 'x') return;
       const deltaX = event.clientX - state.x;
@@ -284,6 +293,7 @@
     const container = document.querySelector('#gameMedia');
     const media = [];
     const seen = new Set();
+
     const addVideo = (entry) => {
       const id = youtubeId(entry.videoId || entry.url || '');
       if (!id || seen.has(id)) return;
@@ -338,6 +348,7 @@
     document.querySelector('#sourceList').innerHTML = data.sources.map((source) =>
       `<a class="source-item" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(source.label)}</strong><span>${escapeHtml(source.type)} ↗</span></a>`
     ).join('');
+
     const updated = document.querySelector('#updatedAt');
     updated.textContent = formatDate(data.updatedAt);
     updated.setAttribute('datetime', data.updatedAt);
@@ -349,6 +360,7 @@
       container.innerHTML = '<div class="gallery-placeholder">Todavía no hay noticias relacionadas publicadas.</div>';
       return;
     }
+
     container.innerHTML = news.map((item) => {
       const href = `/noticias.html#${encodeURIComponent(item.id)}`;
       return `<a class="related-news-card" href="${href}"><time class="related-news-date" datetime="${escapeHtml(item.date)}">${escapeHtml(formatDate(item.date))}</time><div><h3>${escapeHtml(item.title.es)}</h3><p>${escapeHtml(item.summary.es)}</p></div><span class="related-news-arrow" aria-hidden="true">→</span></a>`;
@@ -357,6 +369,7 @@
 
   function startCountdown(releaseDate) {
     const target = new Date(`${releaseDate}T00:00:00+01:00`).getTime();
+
     const update = () => {
       const distance = target - Date.now();
       if (distance <= 0) {
@@ -366,6 +379,7 @@
         });
         return;
       }
+
       const days = Math.floor(distance / 86400000);
       const hours = Math.floor((distance % 86400000) / 3600000);
       const minutes = Math.floor((distance % 3600000) / 60000);
@@ -374,6 +388,7 @@
       document.querySelector('#minutes').textContent = minutes;
       document.querySelector('#countdownText').textContent = `Quedan ${days} días para el lanzamiento`;
     };
+
     update();
     window.setInterval(update, 60000);
   }
@@ -385,9 +400,11 @@
     if (!nav || !links.length || !sections.length) return;
 
     let activeId = '';
+
     const setActive = (id) => {
       if (id === activeId) return;
       activeId = id;
+
       links.forEach((link) => {
         const active = link.getAttribute('href') === `#${id}`;
         link.classList.toggle('active', active);
@@ -404,15 +421,6 @@
       });
     };
 
-    links.forEach((link) => link.addEventListener('click', (event) => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
-      history.replaceState(null, '', link.getAttribute('href'));
-      setActive(target.id);
-    }));
-
     let frame = 0;
     const update = () => {
       const activationLine = nav.getBoundingClientRect().bottom + 28;
@@ -426,6 +434,7 @@
       setActive(active);
       frame = 0;
     };
+
     const requestUpdate = () => {
       if (!frame) frame = requestAnimationFrame(update);
     };
@@ -441,12 +450,14 @@
       nodes.forEach((node) => node.classList.add('visible'));
       return;
     }
+
     const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       }
     }), { threshold: 0.08 });
+
     nodes.forEach((node) => observer.observe(node));
   }
 
@@ -458,15 +469,17 @@
       return response.json();
     })
     .then((data) => {
-      const news = relatedNews();
+      const news = relatedNews(data);
       document.querySelector('#gameStatus').textContent = data.status;
       document.querySelector('#gamePremise').textContent = data.premise;
       document.querySelector('#gameContext').textContent = data.context || '';
       document.querySelector('#wishlistButton').href = data.storeUrl;
+
       if (data.heroImage) {
         const hero = document.querySelector('#heroMedia');
         hero.style.backgroundImage = `linear-gradient(135deg, rgba(12,13,16,.2), rgba(12,13,16,.06)), url("${data.heroImage.replace(/"/g, '%22')}")`;
       }
+
       renderFacts(data);
       renderLists(data);
       renderMedia(data, news);
@@ -477,10 +490,9 @@
     })
     .catch(() => {
       document.querySelector('#gamePremise').textContent = 'No ha sido posible cargar la información actualizada. Consulta de nuevo en unos minutos.';
-      const news = relatedNews();
-      renderNews(news);
-      renderMedia({ title: 'God of War Laufey', media: [] }, news);
-      startCountdown('2027-02-16');
+      renderNews([]);
+      renderMedia({ title: body.dataset.gameTitle || 'el juego', media: [] }, []);
+      startCountdown(body.dataset.releaseDate || '2027-02-16');
     })
     .finally(activateReveal);
 })();

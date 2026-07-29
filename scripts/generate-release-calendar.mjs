@@ -19,7 +19,7 @@ const DATA_FILE = path.join(ROOT, "data", "calendar.json");
 const CALENDAR_FILE = path.join(ROOT, "calendario.html");
 const HOME_FILE = path.join(ROOT, "index.html");
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
-const MAIN_ASSET_VERSION = "20260730-2";
+// Bump this value whenever js/main.js changes so generated pages invalidate cache.\nconst MAIN_ASSET_VERSION = "20260730-2";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';

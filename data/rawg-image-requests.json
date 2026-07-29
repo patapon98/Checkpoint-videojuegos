@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "id": "mistfall-hunter",
+      "query": "Mistfall Hunter"
+    },
+    {
+      "id": "fable",
+      "query": "Fable"
+    }
+  ]
+}

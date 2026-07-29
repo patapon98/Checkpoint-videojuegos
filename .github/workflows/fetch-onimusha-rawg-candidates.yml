@@ -2,11 +2,18 @@ name: Preparar imágenes RAWG de Onimusha
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - scripts/fetch-onimusha-rawg-candidates.mjs
+      - .github/workflows/fetch-onimusha-rawg-candidates.yml
   push:
     branches:
       - agent/fix-psplus-and-game-hub-images
     paths:
       - scripts/fetch-onimusha-rawg-candidates.mjs
+      - .github/workflows/fetch-onimusha-rawg-candidates.yml
 
 permissions:
   contents: write

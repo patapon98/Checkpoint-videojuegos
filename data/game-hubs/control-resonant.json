@@ -15,7 +15,9 @@
   "officialUrl": "https://www.remedygames.com/games/control-2",
   "storeUrl": "https://store.playstation.com/es-es/concept/10017682",
   "trailerUrl": "https://www.youtube.com/watch?v=JZuJlSGpgQo",
-  "heroImage": "https://media.rawg.io/media/resize/1280/-/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
+  "heroImage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/6800d1c970b28815caa97e694ce811ca090f82e2/library_hero_2x.jpg",
+  "heroImageKind": "promotional-key-art",
+  "heroImageHasEmbeddedText": false,
   "gallery": [
     {
       "src": "https://media.rawg.io/media/resize/1280/-/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
@@ -87,6 +89,11 @@
       "label": "RAWG",
       "url": "https://rawg.io/games/control-resonant/screenshots",
       "type": "Capturas de la galería"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+      "type": "Arte promocional de cabecera"
     }
   ],
   "newsTerms": [

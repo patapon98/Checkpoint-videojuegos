@@ -54,9 +54,18 @@
       if (!game) return;
 
       card.querySelectorAll('.news-sources').forEach((sources) => {
-        if (sources.querySelector('.news-game-hub-link')) return;
-        sources.appendChild(makeNewsLink(game));
+        if (!sources.querySelector('.news-game-hub-link')) {
+          sources.appendChild(makeNewsLink(game));
+        }
       });
+
+      const back = card.querySelector('.news-home-flip-back');
+      if (back && !back.querySelector('.news-game-hub-link')) {
+        const link = makeNewsLink(game);
+        link.classList.add('news-game-hub-link-back');
+        const flipButton = back.querySelector('[data-home-flip]');
+        back.insertBefore(link, flipButton || null);
+      }
     });
   }
 

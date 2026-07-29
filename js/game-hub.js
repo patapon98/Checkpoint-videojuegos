@@ -308,7 +308,7 @@
     const container = document.querySelector('#gameMedia');
     const media = [];
     const seen = new Set();
-
+  
     const addVideo = (entry) => {
       const id = youtubeId(entry.videoId || entry.url || '');
       if (!id || seen.has(id)) return;
@@ -320,7 +320,7 @@
         publishedAt: entry.publishedAt || ''
       });
     };
-
+  
     (data.media || []).forEach(addVideo);
     news.forEach((item) => {
       if (!item.trailer?.url) return;
@@ -331,14 +331,14 @@
         publishedAt: item.date
       });
     });
-
+  
     if (!media.length) {
       container.innerHTML = '<div class="gallery-placeholder">Todavía no hay vídeos oficiales disponibles.</div>';
       return;
     }
-
-    container.innerHTML = media.map((item) => `
-      <article class="game-media-card">
+  
+    const cards = media.map((item, index) => `
+      <article class="game-media-card game-media-slide" aria-hidden="${index > 0}">
         <div class="game-media-frame">
           <iframe
             src="https://www.youtube-nocookie.com/embed/${escapeHtml(item.id)}?rel=0"
@@ -357,6 +357,108 @@
           <a href="https://www.youtube.com/watch?v=${escapeHtml(item.id)}" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
         </div>
       </article>`).join('');
+  
+    container.innerHTML = `
+      <div class="game-media-slider${media.length === 1 ? ' is-single' : ''}" data-media-slider>
+        <div class="game-media-viewport">
+          <div class="game-media-track">${cards}</div>
+        </div>
+        ${media.length > 1 ? `
+          <div class="game-media-controls" aria-label="Controles del carrusel de vídeos">
+            <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
+            <div class="game-media-dots" data-media-dots></div>
+            <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+          </div>` : ''}
+      </div>`;
+  
+    if (media.length === 1) return;
+  
+    const slider = container.querySelector('[data-media-slider]');
+    const viewport = slider.querySelector('.game-media-viewport');
+    const track = slider.querySelector('.game-media-track');
+    const slides = [...slider.querySelectorAll('.game-media-slide')];
+    const previous = slider.querySelector('[data-media-prev]');
+    const next = slider.querySelector('[data-media-next]');
+    const dots = slider.querySelector('[data-media-dots]');
+    let current = 0;
+    let pointer = null;
+  
+    const setTrackPosition = (offset, dragOffset = 0) => {
+      track.style.transform = `translate3d(${Math.round(-offset + dragOffset)}px,0,0)`;
+    };
+  
+    const show = (index) => {
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      track.classList.remove('is-dragging');
+      setTrackPosition(slides[current]?.offsetLeft || 0);
+      slides.forEach((slide, slideIndex) => {
+        const hidden = slideIndex !== current;
+        slide.setAttribute('aria-hidden', String(hidden));
+        slide.inert = hidden;
+      });
+      [...dots.querySelectorAll('[data-media-page]')].forEach((dot, dotIndex) => {
+        const active = dotIndex === current;
+        dot.classList.toggle('on', active);
+        dot.setAttribute('aria-pressed', String(active));
+      });
+      previous.disabled = current === 0;
+      next.disabled = current === slides.length - 1;
+    };
+  
+    dots.innerHTML = slides.map((_, index) =>
+      `<button type="button" data-media-page="${index}" aria-label="Mostrar vídeo ${index + 1} de ${slides.length}" aria-pressed="${index === 0}"></button>`
+    ).join('');
+  
+    previous.addEventListener('click', () => show(current - 1));
+    next.addEventListener('click', () => show(current + 1));
+    dots.addEventListener('click', (event) => {
+      const dot = event.target.closest('[data-media-page]');
+      if (dot) show(Number(dot.dataset.mediaPage));
+    });
+  
+    viewport.addEventListener('pointerdown', (event) => {
+      if (!event.isPrimary || event.button !== 0 || event.target.closest('iframe,a,button')) return;
+      pointer = {
+        id: event.pointerId,
+        x: event.clientX,
+        y: event.clientY,
+        startedAt: performance.now(),
+        baseOffset: slides[current]?.offsetLeft || 0,
+        axis: null
+      };
+    });
+  
+    viewport.addEventListener('pointermove', (event) => {
+      if (!pointer || event.pointerId !== pointer.id) return;
+      const deltaX = event.clientX - pointer.x;
+      const deltaY = event.clientY - pointer.y;
+      if (!pointer.axis) {
+        if (Math.max(Math.abs(deltaX), Math.abs(deltaY)) < 8) return;
+        pointer.axis = Math.abs(deltaX) > Math.abs(deltaY) * 1.08 ? 'x' : 'y';
+      }
+      if (pointer.axis !== 'x') return;
+      event.preventDefault();
+      track.classList.add('is-dragging');
+      const atEdge = (current === 0 && deltaX > 0) || (current === slides.length - 1 && deltaX < 0);
+      setTrackPosition(pointer.baseOffset, deltaX * (atEdge ? 0.28 : 1));
+    }, { passive: false });
+  
+    const finishPointer = (event, cancelled) => {
+      if (!pointer || event.pointerId !== pointer.id) return;
+      const state = pointer;
+      pointer = null;
+      if (state.axis !== 'x') return;
+      const deltaX = event.clientX - state.x;
+      const elapsed = Math.max(1, performance.now() - state.startedAt);
+      const advance = !cancelled && (Math.abs(deltaX) >= Math.min(90, viewport.clientWidth * 0.18) || Math.abs(deltaX / elapsed) >= 0.5);
+      void track.offsetWidth;
+      show(advance ? current + (deltaX < 0 ? 1 : -1) : current);
+    };
+  
+    viewport.addEventListener('pointerup', (event) => finishPointer(event, false));
+    viewport.addEventListener('pointercancel', (event) => finishPointer(event, true));
+    window.addEventListener('resize', () => show(current), { passive: true });
+    show(0);
   }
 
   function renderSources(data) {

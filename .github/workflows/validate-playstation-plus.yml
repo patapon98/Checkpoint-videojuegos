@@ -17,6 +17,7 @@ on:
       - "scripts/run-ps-plus-update.mjs"
       - "scripts/generate-ps-plus-pages.mjs"
       - "scripts/generate-sitemap.mjs"
+      - "scripts/scrape-onimusha-rawg-page.mjs"
       - "sitemap.xml"
       - "docs/PLAYSTATION_PLUS_UPDATE.md"
       - "docs/PROJECT_RULES.md"
@@ -40,6 +41,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Leer capturas públicas de RAWG
+        run: |
+          node scripts/scrape-onimusha-rawg-page.mjs
+          cat data/game-hubs/onimusha-rawg-page-images.json
 
       - name: Comprobar sintaxis JavaScript
         run: |

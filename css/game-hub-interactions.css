@@ -22,11 +22,6 @@
   outline-offset:2px
 }
 
-.game-section-nav a.is-jump-target{
-  color:#17130b;
-  background:var(--game-gold)
-}
-
 @media(max-width:640px){
   .game-nav-shell{
     top:max(6px,env(safe-area-inset-top));

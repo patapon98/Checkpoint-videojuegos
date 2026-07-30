@@ -352,7 +352,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
 .article-banner .big-ring{z-index:2}
 .article-banner.has-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.35));z-index:1}
 .article-body figure{margin:34px 0}
-.article-body figure img{width:100%;border-radius:16px;display:block;box-shadow:0 16px 40px -20px rgba(22,21,26,.35)}
+.article-body figure img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 16px 40px -20px rgba(22,21,26,.35)}
 .article-body figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:10px;text-align:center}
 
 /* ---------- Slider de imágenes ---------- */

@@ -54,7 +54,7 @@ jobs:
 
       - name: Comprobar los datos
         run: |
-          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.games)) throw new Error("Mes inválido"); for(const game of month.games){if(!game.title) throw new Error("Juego sin título");}}'
+          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.groups)) throw new Error(`Mes incompleto ${month.id}`); for(const group of month.groups){if(!group.id||!group.label) throw new Error(`Grupo incompleto en ${month.id}`); if(!Array.isArray(group.games)){if(!group.pending) throw new Error(`El grupo ${group.id} de ${month.id} no tiene juegos ni aviso de pendiente`); continue;} for(const game of group.games){if(!game.title) throw new Error(`Juego sin título en ${group.id} de ${month.id}`);}}}'
 
       - name: Probar el actualizador oficial
         run: |
@@ -66,9 +66,12 @@ jobs:
           node scripts/generate-ps-plus-pages.mjs
           git diff --exit-code -- playstation-plus
 
-      - name: Establecer fecha del sitemap
-        run: echo "SITEMAP_DATE=$(date -u +%Y-%m-%d)" >> $GITHUB_ENV
-
+      # Sin SITEMAP_DATE a proposito. Ese override aplica la misma fecha a todas
+      # las URLs, asi que el sitemap regenerado no coincide con el commiteado,
+      # que usa la fecha del ultimo commit de cada archivo. Da igual que la
+      # fecha sea fija o la del dia en CI: mientras se fuerce, el paso falla.
+      # Sin el override el generador lee las fechas de git (necesita
+      # fetch-depth: 0), que es justo lo que hace update-sitemap.yml al guardar.
       - name: Regenerar y comparar el sitemap
         run: |
           node scripts/generate-sitemap.mjs

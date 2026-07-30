@@ -88,9 +88,9 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - Las capturas deben mostrarse completas, sin deformaciones ni recortes accidentales, y poder ampliarse.
 - El visor ampliado debe centrar la imagen horizontal y verticalmente en el viewport. Debe funcionar con ratón, teclado y pantalla táctil, y cerrarse mediante botón, clic exterior y Escape.
 - No se permiten pantallas negras, fotogramas de transición, imágenes rotas ni recursos promocionales de calidad inferior cuando existen capturas adecuadas.
-- Si RAWG reúne una galería completa y funcional, se puede utilizar directamente sin mezclarla con fotogramas de tráiler.
-- Si se utilizan imágenes de RAWG, la ficha debe incluir una atribución visible y enlazada a RAWG.
-- Cuando se combinen recursos oficiales y RAWG, el crédito debe indicar con precisión ambas procedencias.
+- Utiliza capturas publicadas por la desarrolladora, la editora o una tienda oficial. RAWG no debe emplearse como fuente ni aparecer en el texto visible de la ficha.
+- Conserva la URL de procedencia en `sources` y comprueba que el CDN entrega el archivo original, no una miniatura ampliada.
+- Cuando una ficha antigua se actualice, migra también su galería y sus bloques editoriales al estándar vigente; no mantengas excepciones heredadas por haber sido creada antes.
 - Las imágenes promocionales con texto pueden utilizarse excepcionalmente dentro de la galería si aportan información real, pero nunca como cabecera.
 - Cada vídeo necesita título, etiqueta, fecha de publicación e identificador correctos.
 - Los vídeos se presentan mediante el slider común de multimedia. Muestra un vídeo por pasada, conserva navegación por arrastre y sitúa flechas y puntos abajo a la derecha. Cuando solo existe un vídeo, no debe mostrar controles inútiles.
@@ -129,7 +129,8 @@ La validación comprueba, entre otras cosas:
 - correspondencia entre índice, JSON y HTML;
 - campos obligatorios, fechas y relaciones;
 - ausencia de duplicados en la galería;
-- atribución de RAWG cuando corresponda;
+- presencia y sincronización del bloque editorial `spotlight`;
+- uso exclusivo de fuentes oficiales para las imágenes;
 - contenido SEO crítico presente en el HTML inicial;
 - historial y enlaces relacionados sincronizados;
 - metadatos y datos estructurados coherentes.

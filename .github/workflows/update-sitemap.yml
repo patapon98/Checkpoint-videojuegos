@@ -3,8 +3,12 @@ name: Actualizar sitemap
 on:
   push:
     paths:
+      - "index.html"
       - "resenas.html"
       - "resenas/*.html"
+      - "juegos.html"
+      - "juegos/*.html"
+  workflow_dispatch:
 
 permissions:
   contents: write

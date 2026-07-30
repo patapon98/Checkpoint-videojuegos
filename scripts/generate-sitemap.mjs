@@ -5,7 +5,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const SITE_ORIGIN = "https://finalsecreto.com";
 const OUTPUT = path.join(ROOT, "sitemap.xml");
-const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|playstation-plus|sobre-mi|contacto)\.html$|^(?:noticias|resenas|playstation-plus|juegos)\/[^/]+\.html$/;
+const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|juegos|playstation-plus|sobre-mi|contacto)\.html$|^(?:noticias|resenas|playstation-plus|juegos)\/[^/]+\.html$/;
 const DATE_OVERRIDE = process.env.SITEMAP_DATE;
 const PSPLUS_DATE_OVERRIDE = process.env.SITEMAP_PSPLUS_DATE;
 

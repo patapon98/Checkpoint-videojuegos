@@ -110,7 +110,7 @@ jobs:
           esac
 
           files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|sitemap\.xml)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|juegos\.html|sitemap\.xml)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'La PR automática contiene archivos no autorizados antes de descargarla:'
             echo "$invalid"
@@ -152,10 +152,10 @@ jobs:
       - name: Guardar HTML y sitemap generados en la rama manual
         if: ${{ !startsWith(env.HEAD_REF, 'bot/game-hubs-') }}
         run: |
-          if ! git diff --quiet -- juegos sitemap.xml; then
+          if ! git diff --quiet -- juegos juegos.html sitemap.xml; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add juegos sitemap.xml
+            git add juegos juegos.html sitemap.xml
             git commit -m 'Sincroniza fichas y señales SEO'
             git push origin "HEAD:$HEAD_REF"
           else
@@ -171,7 +171,7 @@ jobs:
         if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         run: |
           files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|sitemap\.xml)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|juegos\.html|sitemap\.xml)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'Una rama automática ha modificado archivos no autorizados:'
             echo "$invalid"
@@ -182,10 +182,10 @@ jobs:
         if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         id: automatic_head
         run: |
-          if ! git diff --quiet -- juegos sitemap.xml; then
+          if ! git diff --quiet -- juegos juegos.html sitemap.xml; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add juegos sitemap.xml
+            git add juegos juegos.html sitemap.xml
             git commit -m 'Sincroniza fichas y señales SEO verificadas'
             git push origin "HEAD:$HEAD_REF"
           else
@@ -236,7 +236,7 @@ jobs:
           fi
 
           files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|sitemap\.xml)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|juegos\.html|sitemap\.xml)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'La PR automática contiene archivos no autorizados:'
             echo "$invalid"

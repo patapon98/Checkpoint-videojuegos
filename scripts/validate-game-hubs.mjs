@@ -17,6 +17,11 @@ const escapeHtml = (value = '') => text(value).replace(/[&<>"']/g, (character) =
   '"': '&quot;',
   "'": '&#039;'
 }[character]));
+const escapeText = (value = '') => text(value).replace(/[&<>]/g, (character) => ({
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;'
+}[character]));
 const escapeRegex = (value = '') => text(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const validDate = (value) => /^\d{4}-\d{2}-\d{2}$/.test(text(value)) && !Number.isNaN(Date.parse(`${value}T12:00:00Z`));
 const formatDate = (value) => new Intl.DateTimeFormat('es-ES', {
@@ -162,9 +167,9 @@ for (const [id, data] of games) {
     expect(html.includes(escapeHtml(value)), `${label}: el HTML inicial no contiene «${value}»`);
   }
 
-  expect(html.includes(`Fecha, plataformas y datos de ${escapeHtml(data.title)}`), `${label}: falta el encabezado SEO del resumen`);
-  expect(html.includes(`Qué sabemos de ${escapeHtml(data.title)}`), `${label}: falta el encabezado SEO de confirmados`);
-  expect(html.includes(`Últimos cambios en ${escapeHtml(data.title)}`), `${label}: falta el historial de cambios`);
+  expect(html.includes(`Fecha, plataformas y datos de ${escapeText(data.title)}`), `${label}: falta el encabezado SEO del resumen`);
+  expect(html.includes(`Qué sabemos de ${escapeText(data.title)}`), `${label}: falta el encabezado SEO de confirmados`);
+  expect(html.includes(`Últimos cambios en ${escapeText(data.title)}`), `${label}: falta el historial de cambios`);
   expect(!/<(?:p|div|ul|dl)[^>]+id="(?:gamePremise|gameFacts|gameContext|confirmedList|pendingList|sourceList|quickFacts)"[^>]*>\s*<\/(?:p|div|ul|dl)>/.test(html), `${label}: hay contenedores SEO críticos vacíos`);
 
   for (const relatedId of data.relatedGameIds) {

@@ -49,13 +49,18 @@
       `<div class="game-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`
     ).join('');
 
-    document.querySelector('#quickFacts').innerHTML = [
+    const quickFacts = [
       ['Fecha de lanzamiento', formatDate(data.releaseDate)],
       ['Género', data.genre],
-      ['Plataformas', data.platforms.join(' · ')],
+      ['Plataformas', data.platforms.join(' · ')]
+    ];
+    if (data.price) quickFacts.push(['Precio', data.price]);
+    quickFacts.push(
       ['Desarrolladora', data.developer],
       ['Editora', data.publisher]
-    ].map(([label, value]) =>
+    );
+
+    document.querySelector('#quickFacts').innerHTML = quickFacts.map(([label, value]) =>
       `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`
     ).join('');
   }

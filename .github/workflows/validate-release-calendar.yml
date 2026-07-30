@@ -25,7 +25,6 @@ on:
       - "scripts/validate-calendar-change.mjs"
       - ".github/workflows/update-release-calendar.yml"
       - ".github/workflows/validate-release-calendar.yml"
-      - ".github/workflows/auto-merge-release-calendar.yml"
       - ".github/workflows/update-playstation-plus.yml"
       - "docs/CALENDAR_UPDATE_CHECKLIST.md"
       - "docs/CALENDAR_AUTOMATION.md"
@@ -146,19 +145,73 @@ jobs:
             exit 1
           fi
 
-      - name: Guardar datos y páginas generadas en la rama automática
-        if: startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+      - name: Preparar la cabecera final de la rama automática
+        if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        id: automatic_head
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
-          if git diff --quiet -- data/calendar.json calendario.html index.html; then
+          if ! git diff --quiet -- data/calendar.json calendario.html index.html; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/calendar.json calendario.html index.html
+            git commit -m "Genera el calendario desde los datos verificados"
+            git push origin "HEAD:$HEAD_REF"
+          else
             echo "Los datos y las salidas generadas ya están sincronizados."
-            exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/calendar.json calendario.html index.html
-          git commit -m "Genera el calendario desde los datos verificados"
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "El árbol de trabajo no quedó limpio después de generar el calendario."
+            git status --short
+            exit 1
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      - name: Fusionar el resultado final verificado
+        if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          EXPECTED_SHA: ${{ steps.automatic_head.outputs.sha }}
+        run: |
+          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          remote_sha="$(printf '%s' "$pr" | jq -r .head.sha)"
+
+          if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
+            echo "La PR no está abierta, lista y basada en main."
+            exit 1
+          fi
+          case "$head_ref" in
+            bot/calendar-*) ;;
+            *)
+              echo "La rama ya no pertenece a la automatización del calendario."
+              exit 1
+              ;;
+          esac
+          if [ "$remote_sha" != "$EXPECTED_SHA" ]; then
+            echo "La cabecera remota cambió después de la validación."
+            echo "Esperada: $EXPECTED_SHA"
+            echo "Remota:   $remote_sha"
+            exit 1
+          fi
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/calendar\.json|calendario\.html|index\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "La PR automática contiene archivos no autorizados:"
+            echo "$invalid"
+            exit 1
+          fi
+
+          gh pr merge "$PR_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --squash \
+            --delete-branch \
+            --match-head-commit "$EXPECTED_SHA"
       - name: Guardar datos y páginas generadas en la rama manual
         if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         run: |

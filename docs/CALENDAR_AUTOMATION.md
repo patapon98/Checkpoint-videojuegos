@@ -18,8 +18,7 @@ La referencia temporal del calendario es siempre **España peninsular**, mediant
 - `scripts/validate-rawg-images.mjs` prueba la selección de RAWG con datos simulados, sin usar una clave real ni depender de la red.
 - `scripts/validate-calendar-change.mjs` compara los cambios editoriales con `main` y valida fuentes, evidencia, imágenes y alcance.
 - `.github/workflows/update-release-calendar.yml` ejecuta el mantenimiento diario y publica en `main` cuando existe un cambio real.
-- `.github/workflows/validate-release-calendar.yml` resuelve las imágenes solicitadas, genera las páginas y valida las ramas editoriales automáticas.
-- `.github/workflows/auto-merge-release-calendar.yml` fusiona las ramas `bot/calendar-*` cuando el commit validado sigue siendo la cabecera de la PR y solo se han modificado los archivos autorizados.
+- `.github/workflows/validate-release-calendar.yml` resuelve las imágenes solicitadas, genera las páginas, valida el resultado final y fusiona las ramas editoriales automáticas cuando la cabecera remota coincide exactamente con el commit comprobado.
 
 ## Mantenimiento temporal de GitHub
 
@@ -91,8 +90,11 @@ La tarea programada de vigilancia:
 6. Crea o actualiza una rama `bot/calendar-*` y modifica únicamente `data/calendar.json`.
 7. No espera aprobación previa cuando el cambio oficial y la decisión editorial son inequívocos. Las cancelaciones, contradicciones y coincidencias ambiguas se bloquean para revisión.
 8. Abre una PR e incorpora la credencial temporal solo cuando existe una imagen RAWG pendiente.
-9. GitHub resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones.
-10. La PR se fusiona automáticamente cuando el resultado es seguro y no se notifica si no hubo cambios o todo terminó correctamente.
+9. GitHub resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones en la misma ejecución.
+10. Si la generación cambia el JSON o los HTML, GitHub guarda primero ese resultado en la rama y obtiene su SHA final.
+11. Antes de fusionar, GitHub vuelve a consultar la PR y exige que siga abierta, no sea borrador, apunte a `main`, conserve una rama `bot/calendar-*`, solo modifique los tres archivos autorizados y mantenga exactamente el SHA verificado.
+12. La misma ejecución fusiona ese commit con `--match-head-commit` y elimina la rama. No depende de que un segundo workflow apruebe o valide el commit generado.
+13. No se notifica si no hubo cambios o todo terminó correctamente.
 
 La vigilancia no puede editar scripts, estilos, noticias, reseñas ni otros documentos. Cualquier intento queda bloqueado por el workflow de alcance.
 
@@ -148,7 +150,7 @@ Cuando una imagen alojada en Azure Blob resulta especialmente pesada o lenta y l
 - Si falta una clave temporal y existe una imagen RAWG sin resolver, la validación falla antes de publicar cambios incompletos.
 - Si la checklist falla, no se publica ningún cambio.
 - Si aparecen archivos fuera del alcance permitido, el workflow se detiene.
-- Si una rama automática avanza después de una validación, el workflow de fusión espera la validación del nuevo commit.
+- Si la cabecera remota cambia después de calcular el SHA final, la fusión se detiene. Nunca se fusiona un commit distinto del que acaba de validar la ejecución.
 - Todos los cambios quedan registrados en Git y pueden revertirse mediante el commit correspondiente.
 
 ## Cambios de arquitectura

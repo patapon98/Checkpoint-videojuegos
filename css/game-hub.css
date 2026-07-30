@@ -314,8 +314,8 @@
 .game-side-card dl{margin:0;display:grid;gap:13px}
 .game-side-card dl div{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--border);padding-bottom:12px}
 .game-side-card dl div:last-child{border-bottom:0;padding-bottom:0}
-.game-side-card dt{color:var(--muted);font-size:.82rem}
-.game-side-card dd{margin:0;text-align:right;font-weight:700;font-size:.86rem}
+.game-side-card dt{flex:1 1 auto;min-width:0;color:var(--muted);font-size:.82rem}
+.game-side-card dd{flex:0 1 62%;min-width:0;margin:0;text-align:right;font-weight:700;font-size:.86rem;overflow-wrap:anywhere}
 .game-source-link{display:inline-flex;margin-top:18px;color:var(--game-gold);font-weight:700;text-decoration:none}
 
 .game-hub-page .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
@@ -381,7 +381,7 @@
 /* ---------- Bloque editorial de claves ---------- */
 .game-spotlight-grid{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));
   gap:12px;
   margin-top:27px
 }
@@ -397,26 +397,33 @@
 }
 
 .game-spotlight-card>span{
+  max-width:100%;
   color:var(--muted);
   font-size:.7rem;
   font-weight:800;
   letter-spacing:.07em;
+  overflow-wrap:anywhere;
   text-transform:uppercase
 }
 
 .game-spotlight-card>strong{
+  max-width:100%;
   margin:8px 0 12px;
   color:var(--game-gold);
   font-family:Fraunces,serif;
-  font-size:clamp(1.35rem,2.5vw,2rem);
-  line-height:1.05
+  font-size:clamp(1.25rem,1.7vw,1.8rem);
+  hyphens:auto;
+  line-height:1.08;
+  overflow-wrap:anywhere
 }
 
 .game-spotlight-card>p{
+  max-width:100%;
   margin:0;
   color:var(--muted);
   font-size:.86rem;
-  line-height:1.58
+  line-height:1.58;
+  overflow-wrap:anywhere
 }
 
 @media(max-width:900px){

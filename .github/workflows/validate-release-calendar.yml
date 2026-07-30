@@ -25,7 +25,6 @@ on:
       - "scripts/validate-calendar-change.mjs"
       - ".github/workflows/update-release-calendar.yml"
       - ".github/workflows/validate-release-calendar.yml"
-      - ".github/workflows/auto-merge-release-calendar.yml"
       - ".github/workflows/update-playstation-plus.yml"
       - "docs/CALENDAR_UPDATE_CHECKLIST.md"
       - "docs/CALENDAR_AUTOMATION.md"

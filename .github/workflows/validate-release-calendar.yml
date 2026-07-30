@@ -56,7 +56,11 @@ permissions:
 
 concurrency:
   group: validate-calendar-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  # Solo se cancela la validación de las ramas manuales, donde interesa quedarse
+  # con la última. En las automáticas no, porque la ejecución empuja el commit
+  # generado y la cancelación puede llegar justo mientras fusiona, dejando la
+  # PR abierta sin que nadie la retome.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   dispatch:
@@ -265,12 +269,25 @@ jobs:
           PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
           EXPECTED_SHA: ${{ steps.automatic_head.outputs.sha }}
         run: |
-          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          # El paso anterior acaba de empujar el commit generado, y la ficha de
+          # la PR tarda unos segundos en reflejarlo. Si se lee de inmediato
+          # devuelve la cabecera anterior y la fusión se aborta sin motivo, asi
+          # que se espera a que la API se ponga al dia antes de decidir.
+          remote_sha=""
+          for attempt in $(seq 1 15); do
+            pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+            remote_sha="$(printf '%s' "$pr" | jq -r .head.sha)"
+            if [ "$remote_sha" = "$EXPECTED_SHA" ]; then
+              break
+            fi
+            echo "Intento $attempt: la PR todavía apunta a $remote_sha, esperando a que refleje $EXPECTED_SHA."
+            sleep 4
+          done
+
           state="$(printf '%s' "$pr" | jq -r .state)"
           draft="$(printf '%s' "$pr" | jq -r .draft)"
           base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
           head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
-          remote_sha="$(printf '%s' "$pr" | jq -r .head.sha)"
 
           if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
             echo "La PR no está abierta, lista y basada en main."

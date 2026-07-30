@@ -30,3 +30,11 @@ jobs:
           node-version: 20
       - name: Comprobar fichas vivas
         run: node scripts/validate-game-hubs.mjs
+
+      # La galeria, el multimedia y las noticias van escritas en el HTML para
+      # que se indexen sin JavaScript. Si alguien cambia el JSON y no vuelve a
+      # generarlas, el HTML se queda obsoleto y aqui salta.
+      - name: Comprobar que el HTML coincide con los datos
+        run: |
+          node scripts/render-game-hubs.mjs
+          git diff --exit-code -- juegos

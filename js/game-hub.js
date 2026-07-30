@@ -594,6 +594,7 @@
       const news = relatedNews(data);
       document.querySelector('#gameStatus').textContent = data.status;
       document.querySelector('#gamePremise').textContent = data.premise;
+      document.querySelector('#gameOverview').textContent = data.overview || '';
       document.querySelector('#gameContext').textContent = data.context || '';
       document.querySelector('#wishlistButton').href = data.storeUrl;
 

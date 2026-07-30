@@ -67,7 +67,15 @@
 .section-heading h2{margin:7px 0 8px;font-size:clamp(2rem,4vw,3.2rem);line-height:1.02;letter-spacing:-.035em}
 .section-heading p{margin:0;color:var(--muted);line-height:1.6}
 .game-lead{margin:24px 0 0;font-family:Fraunces,serif;font-size:clamp(1.35rem,2.5vw,2.05rem);line-height:1.4;color:var(--text)}
+/* Parrafo de apoyo entre el titular grande y las tarjetas de datos. Va en
+   cuerpo normal para dar un respiro de lectura antes de los datos. */
+.game-overview{margin:22px 0 0;max-width:760px;color:var(--muted);font-size:1.02rem;line-height:1.7}
 .game-context-note{margin:20px 0 0;padding:20px 22px;border-left:3px solid var(--game-gold);background:var(--game-gold-soft);border-radius:0 12px 12px 0;color:var(--muted);line-height:1.65}
+/* Nota de cierre de la ficha. Antes vivia en la columna lateral, donde chocaba
+   al desplazarse con la tarjeta de datos, que es sticky. */
+.game-return-note{padding-top:44px}
+.game-return-note>span{margin-bottom:10px}
+.game-return-note p{margin:0;padding:22px 24px;border-radius:18px;background:var(--card);border:1px solid var(--border);color:var(--muted);line-height:1.65;max-width:760px}
 .game-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:26px}
 .game-fact{padding:16px;border:1px solid var(--border);border-radius:15px;background:var(--card)}
 .game-fact span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em}

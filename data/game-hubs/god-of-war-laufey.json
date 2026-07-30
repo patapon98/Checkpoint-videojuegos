@@ -1,7 +1,7 @@
 {
   "id": "god-of-war-laufey",
   "title": "God of War Laufey",
-  "subtitle": "Todo lo confirmado sobre la nueva aventura de Faye",
+  "subtitle": "Historia, combate, personajes y todo lo confirmado sobre la aventura de Faye",
   "status": "Anunciado",
   "releaseDate": "2027-02-16",
   "platforms": [
@@ -18,57 +18,100 @@
   "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/3804460f7e26cb8a6538d97c1cfefe846f47c3d6.jpg",
-      "alt": "Captura oficial de God of War Laufey con Faye en el Todotiempo"
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-wm-screenshot-magic-test-en-30may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Faye utiliza magia dorada en God of War Laufey"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/1fb563c849f5f555690a331bbbb89f01cec7e5d0.jpg",
-      "alt": "Faye durante una escena de God of War Laufey"
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-wm-screenshot-leviathan-en-30may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Faye contempla una criatura colosal en God of War Laufey"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/11e4fd90abbd12235bf8c02eb2e0df777aab1d80.jpg",
-      "alt": "Dos deidades del Todotiempo en God of War Laufey"
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-wm-screenshot-battle-en-30may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Faye combate contra Begtse en God of War Laufey"
     },
     {
-      "src": "https://blog.playstation.com/uploads/2026/06/bf2289b94400a3f16dee48e8f1d68f5a21de76f4.jpg",
-      "alt": "Faye frente a una criatura gigantesca en God of War Laufey"
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-wm-screenshot-funeral-en-30may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Kratos y Atreus durante el funeral de Faye en God of War Laufey"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-wm-screenshot-environment-en-30may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Ruinas del Todotiempo en God of War Laufey"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-faye-everywhen-arrival-02-screenshot-en-19may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Faye despierta en un bosque del Todotiempo en God of War Laufey"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-laufey-gods-screenshot-en-26may26?wid=1920&hei=1080&fmt=webp&qlt=92",
+      "alt": "Dos deidades de distintas mitologías en God of War Laufey"
     }
   ],
   "media": [
     {
       "type": "youtube",
       "videoId": "HLMX2w3cwuE",
-      "title": "Tráiler oficial de God of War Laufey",
-      "label": "Tráiler de anuncio",
+      "title": "Presentación oficial de jugabilidad de God of War Laufey",
+      "label": "Gameplay Reveal",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "uKMCqyeBWmU",
+      "title": "El reparto de God of War Laufey",
+      "label": "Reparto",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "jm43XdyL9gc",
+      "title": "Cory Barlog entrevista al director de God of War Laufey",
+      "label": "Entrevista",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "szwYBVY7FsU",
+      "title": "Presentación de Faye en God of War Laufey",
+      "label": "Personaje",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "zBtqK0g1k74",
+      "title": "Primer vistazo al combate de God of War Laufey",
+      "label": "Combate",
       "publishedAt": "2026-06-03"
     }
   ],
-  "premise": "Tras su muerte, Laufey despierta en el Todotiempo y descubre que los planes que dejó preparados para proteger a Kratos y Atreus están en peligro. Para salvarlos deberá abrirse paso por un más allá donde deidades de distintas mitologías compiten por el poder.",
-  "context": "La entrega amplía por primera vez la historia de Faye como protagonista y está concebida como el enlace narrativo hacia el siguiente juego de la saga, que recuperará a Kratos.",
+  "premise": "Tras su funeral, Faye despierta en el Todotiempo y descubre que los planes que dejó preparados para proteger a Kratos y Atreus están en peligro. Para salvarlos deberá abrirse paso por un lugar donde dioses y criaturas de distintas mitologías compiten por el poder.",
+  "context": "Es la siguiente entrega principal de God of War, pero su historia puede jugarse de forma independiente. Santa Monica Studio combina la movilidad de la etapa griega con la construcción de mundo de la saga nórdica y sitúa a Faye en el centro del combate.",
   "confirmed": [
-    "Faye, también conocida como Laufey, es la protagonista.",
-    "La historia comienza después de su funeral.",
-    "El juego transcurre en el Todotiempo, el más allá de los dioses.",
-    "Su combate se apoya en la velocidad, el control y la precisión de Faye.",
-    "Se lanzará en exclusiva para PlayStation 5 el 16 de febrero de 2027."
+    "Faye despierta después de su funeral y trata de proteger a Kratos y Atreus, aunque hacerlo pone en riesgo los planes que había preparado.",
+    "El Todotiempo es el lugar de origen y destino final de la magia; reúne dioses y criaturas de distintas mitologías, como Sekhmet y Begtse.",
+    "Phranque, un cubo cósmico con la voz de Jack Quaid, y Rue, una cinta guardiana interpretada por Perlina Lau, acompañan a Faye.",
+    "Deborah Ann Woll vuelve a interpretar a Faye.",
+    "El combate combina movilidad en suelo y aire, una espada legendaria y un ritmo más ágil que el de Kratos.",
+    "Faye puede separar las almas de los enemigos, golpearlas y lanzarlas contra otros objetivos.",
+    "La historia está planteada como una aventura independiente y puede jugarse sin conocer las entregas anteriores."
   ],
   "pending": [
-    "Precio y ediciones disponibles.",
-    "Apertura de reservas.",
-    "Duración aproximada.",
+    "Precio, ediciones y apertura de reservas.",
+    "Duración aproximada de la campaña.",
+    "Estructura exacta del mundo y alcance de la exploración.",
+    "Niveles de dificultad y opciones de accesibilidad.",
     "Modos gráficos y funciones específicas de PS5.",
     "Clasificación por edades definitiva."
   ],
   "sources": [
     {
-      "label": "PlayStation España",
-      "url": "https://www.playstation.com/es-es/games/god-of-war-laufey/",
-      "type": "Ficha oficial"
+      "label": "PlayStation",
+      "url": "https://www.playstation.com/en-us/games/god-of-war-laufey/",
+      "type": "Ficha, preguntas frecuentes e imágenes oficiales"
     },
     {
       "label": "PlayStation Blog",
-      "url": "https://blog.es.playstation.com/2026/06/03/primer-vistazo-a-god-of-war-laufey/",
-      "type": "Presentación oficial"
+      "url": "https://blog.playstation.com/2026/06/02/first-look-at-god-of-war-laufey/",
+      "type": "Historia, personajes y combate"
     },
     {
       "label": "PlayStation Store",
@@ -83,17 +126,17 @@
   ],
   "updatedAt": "2026-07-30",
   "seo": {
-    "title": "God of War Laufey: fecha, historia y todo lo confirmado",
-    "description": "Ficha actualizada de God of War Laufey con fecha de lanzamiento, historia, plataformas, tráiler, imágenes oficiales, datos confirmados y noticias relacionadas.",
-    "ogDescription": "Toda la información confirmada sobre la nueva aventura de Faye, reunida y actualizada en una sola página.",
+    "title": "God of War Laufey: historia, combate y todo lo confirmado",
+    "description": "Ficha actualizada de God of War Laufey con fecha, historia, personajes, combate, vídeos, imágenes oficiales y toda la información confirmada.",
+    "ogDescription": "Historia, personajes, combate y toda la información confirmada sobre la aventura de Faye.",
     "heroTitleHtml": "God of War <em>Laufey</em>",
     "heroImageAlt": "Arte promocional oficial de God of War Laufey"
   },
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Ficha editorial revisada",
-      "description": "Se revisaron la fecha de lanzamiento, las plataformas, el material oficial y los datos pendientes de confirmación."
+      "title": "Ficha ampliada con personajes, combate y cinco vídeos",
+      "description": "Se eliminó información no confirmada, se añadieron las revelaciones oficiales sobre el Todotiempo, los compañeros y el poder del alma, y se renovó la galería con siete imágenes en alta resolución."
     }
   ],
   "relatedGameIds": [
@@ -103,5 +146,32 @@
   "theme": {
     "accent": "#77b9cc",
     "accentSoft": "rgba(119,185,204,.16)"
+  },
+  "spotlight": {
+    "kicker": "Qué cambia en la saga",
+    "title": "Una protagonista y un combate realmente distintos",
+    "intro": "Faye no replica el repertorio de Kratos: su movilidad, su espada y la manipulación de almas definen una propuesta propia.",
+    "items": [
+      {
+        "title": "Movilidad",
+        "value": "Suelo y aire",
+        "description": "El combate enlaza ataques y desplazamientos con fluidez tanto en tierra como en el aire."
+      },
+      {
+        "title": "Habilidad central",
+        "value": "Poder del alma",
+        "description": "Faye puede separar almas, atacarlas y lanzarlas contra otros enemigos para alterar los enfrentamientos."
+      },
+      {
+        "title": "Compañeros",
+        "value": "Phranque y Rue",
+        "description": "Un cubo cósmico y una cinta encantada acompañan a Faye y amplían sus opciones durante la aventura."
+      },
+      {
+        "title": "Punto de entrada",
+        "value": "Historia independiente",
+        "description": "La web oficial confirma que puede disfrutarse sin haber jugado las entregas anteriores."
+      }
+    ]
   }
 }

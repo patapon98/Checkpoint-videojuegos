@@ -4,6 +4,12 @@
   const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
   let latestExpiryTimer = null;
   const homeDetails = {
+  "xbox-plan-crecimiento-fy27": {
+    es: [
+      "Sharma organiza el nuevo ejercicio alrededor de cuatro áreas. Core reforzará la plataforma con la consola como centro. Content buscará convertir los juegos con más éxito en franquicias globales. Creation se concentrará en Minecraft y Connection ampliará los mundos conocidos a nuevas experiencias y formatos.",
+      "El objetivo inmediato es recuperar jugadores e ingresos durante el ejercicio fiscal que termina en junio de 2027. Para 2028 y 2029, Xbox espera que esas inversiones aceleren el negocio. Su meta posterior es sostener un crecimiento de dos dígitos en jugadores y participación antes de 2030."
+    ]
+  },
     "xbox-resultados-junio-2026": {
       es: [
         "Microsoft reúne dentro de contenidos y servicios de Xbox las ventas de juegos, el contenido adicional, Game Pass, la nube y la publicidad. La caída del 10% indica que el retroceso no se concentró únicamente en la venta de consolas.",

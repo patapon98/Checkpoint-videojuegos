@@ -1,6 +1,41 @@
 // Taxonomía editorial: «Lanzamientos» cubre fechas, ventanas, adelantos y retrasos; «Juegos», el resto de noticias centradas en títulos concretos.
 window.FINALSECRETO_NEWS = [
   {
+    id: "xbox-plan-crecimiento-fy27",
+    important: true,
+    emphasis: { es: ["volver al crecimiento de jugadores e ingresos antes de julio de 2027", "la consola seguirá liderando la plataforma", "Minecraft se convertirá en el principal espacio de creación de la compañía"] },
+    category: { es: "Industria" },
+    date: "2026-07-30",
+    publishedAt: "2026-07-30T22:10:13Z",
+    featured: false,
+    ticker: {
+      keyword: { es: "Xbox" },
+      copy: { es: "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027" }
+    },
+    tone: "xbox",
+    title: {
+      es: "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027"
+    },
+    summary: {
+      es: "Según un memorando interno obtenido por The Verge, Asha Sharma quiere volver al crecimiento de jugadores e ingresos antes de julio de 2027. El plan establece que la consola seguirá liderando la plataforma y que Minecraft se convertirá en el principal espacio de creación de la compañía."
+    },
+    why: {
+      es: "La hoja de ruta concreta cómo Xbox pretende responder a la caída de ingresos, los despidos y la salida de varios estudios. También concentra la inversión en la plataforma principal, las grandes franquicias, Minecraft y la expansión de sus mundos fuera de los juegos."
+    },
+    sources: [
+      {
+        label: "The Verge",
+        type: { es: "Memorando interno y contexto" },
+        url: "https://www.theverge.com/games/973520/xbox-ceo-memo-one-year-growth"
+      },
+      {
+        label: "Xbox Wire",
+        type: { es: "Plan oficial de reestructuración" },
+        url: "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
+      }
+    ]
+  },
+  {
     id: "xbox-resultados-junio-2026",
     important: true,
     emphasis: { es: ["los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual", "Los ingresos por hardware bajaron un 13%", "el conjunto de Microsoft alcanzó 90.007 millones de dólares"] },

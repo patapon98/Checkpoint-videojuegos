@@ -18,7 +18,7 @@ La referencia temporal del calendario es siempre **España peninsular**, mediant
 - `scripts/validate-rawg-images.mjs` prueba la selección de RAWG con datos simulados, sin usar una clave real ni depender de la red.
 - `scripts/validate-calendar-change.mjs` compara los cambios editoriales con `main` y valida fuentes, evidencia, imágenes y alcance.
 - `.github/workflows/update-release-calendar.yml` ejecuta el mantenimiento diario y publica en `main` cuando existe un cambio real.
-- `.github/workflows/validate-release-calendar.yml` mantiene la validación ordinaria de las PR manuales y procesa las ramas `bot/calendar-*` mediante `pull_request_target` desde la versión confiable de `main`. Antes de descargar una rama automática comprueba por API su origen, nombre, estado, base y archivos; después resuelve las imágenes, genera las páginas, valida el resultado final y solo fusiona cuando la cabecera remota coincide exactamente con el commit comprobado.
+- `.github/workflows/validate-release-calendar.yml` mantiene la validación ordinaria de las PR manuales. Cada diez minutos, una ejecución programada desde `main` localiza las ramas `bot/calendar-*` abiertas y lanza explícitamente una ejecución `workflow_dispatch`, el evento que GitHub permite iniciar mediante `GITHUB_TOKEN` sin aprobación manual. Antes de descargar una rama automática comprueba por API su origen, nombre, estado, base y archivos; después resuelve las imágenes, genera las páginas, valida el resultado final y solo fusiona cuando la cabecera remota coincide exactamente con el commit comprobado.
 
 ## Mantenimiento temporal de GitHub
 
@@ -90,8 +90,8 @@ La tarea programada de vigilancia:
 6. Crea o actualiza una rama `bot/calendar-*` y modifica únicamente `data/calendar.json`.
 7. No espera aprobación previa cuando el cambio oficial y la decisión editorial son inequívocos. Las cancelaciones, contradicciones y coincidencias ambiguas se bloquean para revisión.
 8. Abre una PR e incorpora la credencial temporal solo cuando existe una imagen RAWG pendiente.
-9. GitHub inicia la automatización desde el workflow confiable de `main` mediante `pull_request_target`, evitando que las PR creadas por `GITHUB_TOKEN` queden pendientes de aprobación manual.
-10. Antes de descargar la rama, exige que sea interna, se llame `bot/calendar-*`, esté abierta, no sea borrador, apunte a `main` y solo contenga los archivos autorizados.
+9. Una ejecución programada en `main` revisa cada diez minutos las PR automáticas abiertas y lanza `workflow_dispatch` para cada rama `bot/calendar-*`. Esto evita depender de los eventos `pull_request`, que GitHub retiene, y de `pull_request_target`, que GitHub puede no generar cuando la actualización procede de `GITHUB_TOKEN`.
+10. La ejecución despachada recibe el número y la rama esperados. Antes de descargarla, exige que siga siendo interna, se llame `bot/calendar-*`, esté abierta, no sea borrador, apunte a `main`, coincida con la rama solicitada y solo contenga los archivos autorizados.
 11. Después resuelve las imágenes solicitadas, genera las páginas y ejecuta las validaciones en la misma ejecución.
 12. Si la generación cambia el JSON o los HTML, GitHub guarda primero ese resultado en la rama y obtiene su SHA final.
 13. Antes de fusionar, GitHub vuelve a consultar la PR y exige que siga abierta, no sea borrador, apunte a `main`, conserve una rama `bot/calendar-*`, solo modifique los tres archivos autorizados y mantenga exactamente el SHA verificado.

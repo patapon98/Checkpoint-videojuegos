@@ -1,7 +1,7 @@
 {
   "id": "onimusha-way-of-the-sword",
   "title": "Onimusha: Way of the Sword",
-  "subtitle": "Fecha, plataformas y toda la información del regreso de Onimusha",
+  "subtitle": "Historia, combate, demo, precios y toda la información de la nueva entrega",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-04",
   "platforms": [
@@ -21,28 +21,44 @@
   "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://media.rawg.io/media/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
-      "alt": "Miyamoto Musashi combate contra los Genma en Onimusha: Way of the Sword"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/40e49fbd098140a69e897dcce736cba5eae8662f/ss_40e49fbd098140a69e897dcce736cba5eae8662f.1920x1080.jpg",
+      "alt": "Miyamoto Musashi combate contra un grupo de Genma en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://media.rawg.io/media/screenshots/a34/a3444739430f1b440bbef6d493a62585.jpg",
-      "alt": "Escena de combate de Onimusha: Way of the Sword"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/8be802aef40ce301104a3ff5d3c6462913d57807/ss_8be802aef40ce301104a3ff5d3c6462913d57807.1920x1080.jpg",
+      "alt": "Musashi golpea a un gran enemigo en Onimusha: Way of the Sword"
     },
     {
-      "src": "https://media.rawg.io/media/screenshots/184/18431ea009b07288111a9fb3743a2830.jpg",
-      "alt": "Miyamoto Musashi durante una secuencia de Onimusha: Way of the Sword"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/b8d1f33e7777aa1d1a0a2b9af5e84fb52e1f2e1c/ss_b8d1f33e7777aa1d1a0a2b9af5e84fb52e1f2e1c.1920x1080.jpg",
+      "alt": "Musashi desvía un ataque durante un combate de Onimusha: Way of the Sword"
     },
     {
-      "src": "https://media.rawg.io/media/screenshots/bb8/bb82117127b5839995ea4c7186354190.jpg",
-      "alt": "Escenario sobrenatural de Onimusha: Way of the Sword"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/4ee71e56889c1dc82b55e013d6bbe7f2cd2d1027/ss_4ee71e56889c1dc82b55e013d6bbe7f2cd2d1027.1920x1080.jpg",
+      "alt": "Miyamoto Musashi con el guantelete Oni en Onimusha: Way of the Sword"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/faa6433a23818f7684f5c4220708d60e4e71dc13/ss_faa6433a23818f7684f5c4220708d60e4e71dc13.1920x1080.jpg",
+      "alt": "Sasaki Ganryu empuña su espada en Onimusha: Way of the Sword"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/ca28a3116080d0d6ab309545d08171d1b4cc7dc5/ss_ca28a3116080d0d6ab309545d08171d1b4cc7dc5.1920x1080.jpg",
+      "alt": "Una criatura Genma de Onimusha: Way of the Sword"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/38db13c961be5bb407a0c42387e7c111886ced5f/ss_38db13c961be5bb407a0c42387e7c111886ced5f.1920x1080.jpg",
+      "alt": "Uno de los personajes de Onimusha: Way of the Sword en Kioto"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/609dd99944f8928f8a8bd35bb08a6695f7e1fdca/ss_609dd99944f8928f8a8bd35bb08a6695f7e1fdca.1920x1080.jpg",
+      "alt": "Templo Kiyomizu-dera recreado en Onimusha: Way of the Sword"
     }
   ],
   "media": [
     {
       "type": "youtube",
       "videoId": "LNq35HHUtNc",
-      "title": "Tráiler de historia de Onimusha: Way of the Sword",
-      "label": "Tráiler oficial",
+      "title": "Tráiler de historia y fecha de Onimusha: Way of the Sword",
+      "label": "Historia y lanzamiento",
       "publishedAt": "2026-06-02"
     },
     {
@@ -51,22 +67,31 @@
       "title": "Vídeo oficial de la demo de Onimusha: Way of the Sword",
       "label": "Demo",
       "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "W9Ct29FeMak",
+      "title": "Primer tráiler de protagonista de Onimusha: Way of the Sword",
+      "label": "Miyamoto Musashi",
+      "publishedAt": "2025-02-12"
     }
   ],
   "premise": "Miyamoto Musashi llega al Kioto del periodo Edo para demostrar su dominio de la espada, pero acaba ligado al guantelete Oni y obligado a enfrentarse a los Genma que han invadido una capital deformada por el miasma.",
-  "context": "Es la primera entrega completamente nueva de Onimusha en más de veinte años. Capcom ha utilizado al legendario actor Toshiro Mifune como modelo facial para esta versión de Miyamoto Musashi.",
+  "context": "Es una nueva entrega independiente y la primera aventura completamente nueva de Onimusha en más de veinte años; no hace falta conocer los juegos anteriores. Capcom utiliza al actor Toshiro Mifune como modelo facial de Miyamoto Musashi.",
   "confirmed": [
-    "Su lanzamiento mundial está fijado para el 4 de septiembre de 2026.",
-    "Llegará a PS5, Xbox Series X|S, PC y Nintendo Switch 2.",
-    "Miyamoto Musashi es el protagonista y porta el guantelete Oni.",
-    "La aventura transcurre en una versión oscura del Kioto del periodo Edo.",
-    "El combate gira alrededor de bloqueos, paradas, desvíos, ataques Issen y poderes Oni.",
-    "Existe una demo jugable que permite probar las primeras técnicas de combate."
+    "Es una nueva entrega independiente protagonizada por Miyamoto Musashi, cuyo rostro se basa en el actor Toshiro Mifune.",
+    "La aventura transcurre en un Kioto del periodo Edo deformado por la Malicia y ocupado por los Genma.",
+    "El combate gira alrededor de paradas, desvíos, ataques Issen, absorción de almas y armamento Oni.",
+    "Fuerza Oni y Agilidad Oni amplían el repertorio, mientras el Combo reflejo premia responder en el momento preciso.",
+    "La demo dura unos 30 minutos e incluye Kiyomizu-dera y el combate contra Sasaki Ganryu; su progreso no se transfiere.",
+    "Tener datos guardados de la demo desbloquea el amuleto Kubi Akari en el juego completo.",
+    "En PC exige 16 GB de RAM y 50 GB en SSD; Capcom recomienda una RTX 2060 Super o RX 6600 para 1080p reescalado a 60 fps con ajustes medios."
   ],
   "pending": [
-    "Requisitos definitivos de la versión para PC.",
-    "Tamaño de instalación en cada plataforma.",
-    "Modos de rendimiento y resolución definitivos.",
+    "Modos de resolución y rendimiento definitivos en consolas.",
+    "Tamaño de instalación en PS5, Xbox Series X|S y Nintendo Switch 2.",
+    "Opciones de accesibilidad completas.",
+    "Contenido exacto de las ediciones físicas.",
     "Fecha del embargo de análisis.",
     "Plan de contenidos posteriores al lanzamiento."
   ],
@@ -79,22 +104,27 @@
     {
       "label": "Web oficial de Onimusha",
       "url": "https://www.capcom-games.com/onimusha/ws/",
-      "type": "Información oficial"
+      "type": "Historia, personajes y ediciones"
     },
     {
-      "label": "PlayStation España",
-      "url": "https://www.playstation.com/es-es/games/onimusha-way-of-the-sword/",
-      "type": "Ficha y reservas"
+      "label": "Guía de acción oficial",
+      "url": "https://www.capcom-games.com/onimusha/ws/es/action",
+      "type": "Sistemas de combate"
     },
     {
-      "label": "RAWG",
-      "url": "https://rawg.io/games/onimusha-way-of-the-sword/screenshots",
-      "type": "Capturas de la galería"
+      "label": "Página oficial de la demo",
+      "url": "https://www.capcom-games.com/onimusha/ws/es/demo",
+      "type": "Contenido y recompensa de la demo"
     },
     {
       "label": "Steam",
       "url": "https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/",
-      "type": "Arte promocional de la cabecera"
+      "type": "Precios, requisitos e imágenes oficiales"
+    },
+    {
+      "label": "Xbox España",
+      "url": "https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB",
+      "type": "Precios de las ediciones en consola"
     }
   ],
   "newsTerms": [
@@ -104,17 +134,17 @@
   ],
   "updatedAt": "2026-07-30",
   "seo": {
-    "title": "Onimusha: Way of the Sword: fecha y todo lo confirmado",
-    "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, plataformas, historia, demo, tráileres, imágenes, reservas y datos confirmados.",
-    "ogDescription": "Fecha, plataformas, historia, demo y toda la información confirmada sobre Onimusha: Way of the Sword.",
+    "title": "Onimusha: Way of the Sword: precios, demo y combate",
+    "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, precios, demo, combate, requisitos, tráileres, imágenes oficiales y datos confirmados.",
+    "ogDescription": "Precios, demo, combate y toda la información confirmada sobre Onimusha: Way of the Sword.",
     "heroTitleHtml": "Onimusha: <em>Way of the Sword</em>",
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Galería y datos de lanzamiento revisados",
-      "description": "Se sustituyeron recursos promocionales por capturas del juego y se comprobaron la fecha, las plataformas y la demo disponible."
+      "title": "Ficha ampliada con demo, precios y galería oficial",
+      "description": "Se aclaró que es una entrega independiente, se añadieron sistemas de combate, ediciones, precios y requisitos, y se sustituyó la galería por ocho capturas oficiales en alta resolución."
     }
   ],
   "relatedGameIds": [
@@ -124,5 +154,32 @@
   "theme": {
     "accent": "#d16b4f",
     "accentSoft": "rgba(209,107,79,.16)"
+  },
+  "spotlight": {
+    "kicker": "Lo más útil antes de reservar",
+    "title": "Demo, precios y tres ediciones",
+    "intro": "La demo permite probar el núcleo del combate antes de comprar y las tres ediciones digitales ya tienen precio en PC, PS5 y Xbox Series.",
+    "items": [
+      {
+        "title": "Demo",
+        "value": "≈ 30 minutos",
+        "description": "Incluye paradas, desvíos, Issen y armamento Oni; el progreso no se conserva, pero el guardado desbloquea el amuleto Kubi Akari."
+      },
+      {
+        "title": "Estándar",
+        "value": "69,99 € en PC",
+        "description": "La edición base cuesta 79,99 € en PS5 y Xbox Series X|S."
+      },
+      {
+        "title": "Deluxe",
+        "value": "79,99 € en PC",
+        "description": "Sube a 89,99 € en PS5 y Xbox Series e incorpora contenido digital adicional."
+      },
+      {
+        "title": "Premium Deluxe",
+        "value": "89,99 € en PC",
+        "description": "Cuesta 99,99 € en PS5 y Xbox Series y añade más aspectos, armas cosméticas y la banda sonora digital."
+      }
+    ]
   }
 }

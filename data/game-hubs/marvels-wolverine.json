@@ -1,0 +1,172 @@
+{
+  "id": "marvels-wolverine",
+  "title": "Marvel's Wolverine",
+  "subtitle": "La historia de Logan, su combate, sus personajes y todo lo confirmado antes del lanzamiento.",
+  "status": "Reservas abiertas",
+  "releaseDate": "2026-09-15",
+  "platforms": [
+    "PS5"
+  ],
+  "developer": "Insomniac Games",
+  "publisher": "Sony Interactive Entertainment",
+  "genre": "Acción y aventura narrativa",
+  "officialUrl": "https://www.playstation.com/es-es/games/marvels-wolverine/",
+  "storeUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+  "trailerUrl": "https://www.youtube.com/watch?v=3Z42tBfBLJY",
+  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-06-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
+  "heroImageKind": "official-screenshot",
+  "heroImageHasEmbeddedText": false,
+  "theme": {
+    "accent": "#f0c84b",
+    "accentSoft": "rgba(240,200,75,.18)"
+  },
+  "gallery": [
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-09-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Sabretooth ruge entre las llamas en Marvel's Wolverine"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-07-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Wolverine parte el arma de un Reaver mientras Jean Grey combate al fondo"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-08-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Jean Grey utiliza sus poderes telequinéticos en Marvel's Wolverine"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-10-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Logan extiende sus garras de adamantium en Marvel's Wolverine"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-01-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Wolverine ataca con sus garras a un Reaver"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-02-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Wolverine combate contra un enemigo robótico"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-03-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Primer plano de Wolverine con el traje amarillo y las garras extendidas"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-04-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Primer plano de Logan durante un combate"
+    },
+    {
+      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-05-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
+      "alt": "Logan entra en un bar con sombrero y camisa de cuadros"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "3Z42tBfBLJY",
+      "title": "Marvel's Wolverine, tráiler de la historia",
+      "label": "Tráiler oficial",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "type": "youtube",
+      "videoId": "OiBo_NgYI5Q",
+      "title": "Marvel's Wolverine, presentación ampliada de la jugabilidad",
+      "label": "Gameplay",
+      "publishedAt": "2026-06-02"
+    },
+    {
+      "type": "youtube",
+      "videoId": "rJrqHyojaa4",
+      "title": "Marvel's Wolverine, tráiler Ain't No Hero",
+      "label": "Tráiler oficial",
+      "publishedAt": "2025-09-24"
+    }
+  ],
+  "premise": "Tres años después de abandonar el Equipo X, Logan vuelve a unirse al grupo de mutantes cuando Bolivar Trask y sus Reavers comienzan a capturar a los suyos. Su búsqueda lo lleva a colaborar con Jean Grey y a enfrentarse tanto a viejos enemigos como a un pasado que todavía no comprende.",
+  "context": "Insomniac plantea una historia original, independiente y más violenta que sus juegos de Spider-Man. No es un mundo abierto. La aventura recorre Canadá, Tokio y Madripur mientras combina combate directo, acecho y secuencias narrativas centradas en la identidad de Logan.",
+  "spotlight": {
+    "kicker": "El núcleo del combate",
+    "title": "Garras, técnicas y adaptaciones",
+    "intro": "La propuesta busca que Wolverine ataque con rapidez, aguante el castigo y convierta la presión constante en nuevas oportunidades ofensivas.",
+    "items": [
+      {
+        "title": "Técnicas",
+        "value": "Movimientos intercambiables",
+        "description": "Ataques especiales como Tornado Spin y Bull Rush permiten modificar el ritmo del combate y abrir oportunidades de remate."
+      },
+      {
+        "title": "Furia",
+        "value": "Impulso agresivo",
+        "description": "Mantener la iniciativa alimenta la furia de Logan y refuerza un estilo que premia avanzar y encadenar ataques."
+      },
+      {
+        "title": "Acecho y remates",
+        "value": "Varias aproximaciones",
+        "description": "Logan puede seguir rastros, emboscar desde arriba y ejecutar golpes críticos solo o junto a aliados como Jean Grey."
+      }
+    ]
+  },
+  "confirmed": [
+    "Es una aventura para un jugador con una historia original. No utiliza una estructura de mundo abierto.",
+    "Logan puede combinar técnicas intercambiables, adaptaciones, ataques rápidos, acecho y emboscadas.",
+    "Jean Grey participa en el combate con poderes telequinéticos y puede intervenir en golpes críticos conjuntos.",
+    "Bolivar Trask dirige la persecución de los mutantes mediante los Reavers. También aparecen Omega Red, Mystique, Sabretooth, Deathstrike y La Mano.",
+    "El viaje incluye la naturaleza de Canadá, las calles de Tokio y los distritos de la isla de Madripur.",
+    "Está construido para PS5, ofrece mejoras para PS5 Pro y llegará con opciones de accesibilidad para necesidades visuales, auditivas, cognitivas y motoras."
+  ],
+  "pending": [
+    "No se conoce la duración aproximada de la historia.",
+    "Insomniac no ha detallado los modos concretos de resolución y rendimiento.",
+    "Faltan por revelarse todos los jefes y personajes de la campaña.",
+    "No se ha publicado el tamaño de instalación definitivo.",
+    "No se conoce el plan de contenidos posteriores al lanzamiento.",
+    "La fecha del embargo de análisis no se ha anunciado."
+  ],
+  "sources": [
+    {
+      "label": "PlayStation España",
+      "url": "https://www.playstation.com/es-es/games/marvels-wolverine/",
+      "type": "Ficha, historia, jugabilidad e imágenes oficiales"
+    },
+    {
+      "label": "PlayStation Store España",
+      "url": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "type": "Precio, ediciones, reserva y accesibilidad"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/06/02/marvels-wolverine-new-gameplay-story-details-from-state-of-play/",
+      "type": "Combate, personajes y fecha"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/",
+      "type": "Tráiler de historia y nuevos personajes"
+    }
+  ],
+  "newsTerms": [
+    "marvel's wolverine",
+    "marvels wolverine",
+    "marvel wolverine",
+    "wolverine"
+  ],
+  "seo": {
+    "title": "Marvel's Wolverine: fecha, combate y todo lo confirmado",
+    "description": "Ficha actualizada de Marvel's Wolverine con fecha, precio, historia, combate, personajes, tráileres, imágenes oficiales y datos pendientes.",
+    "ogDescription": "Fecha, historia, combate y todo lo confirmado sobre Marvel's Wolverine para PS5.",
+    "heroTitleHtml": "Marvel's <em>Wolverine</em>",
+    "heroImageAlt": "Captura oficial de Marvel's Wolverine con Logan saltando hacia un enemigo"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Ficha publicada con la información oficial más reciente",
+      "description": "Se reunieron la fecha, el precio español, la historia, el combate, los personajes, tres vídeos y nueve capturas oficiales sin marcos añadidos."
+    }
+  ],
+  "relatedGameIds": [
+    "marvel-tokon-fighting-souls",
+    "god-of-war-laufey"
+  ],
+  "updatedAt": "2026-07-30",
+  "price": "Desde 79,99 € en PS5"
+}

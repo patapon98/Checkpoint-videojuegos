@@ -66,9 +66,12 @@ jobs:
           node scripts/generate-ps-plus-pages.mjs
           git diff --exit-code -- playstation-plus
 
+      # Sin SITEMAP_DATE a proposito. Ese override fija la misma fecha en todas
+      # las URLs y congela el resultado, asi que deja de coincidir con el
+      # sitemap commiteado en cuanto cambia el dia. Sin el, el generador usa la
+      # fecha del ultimo commit de cada archivo (necesita fetch-depth: 0), que
+      # es justo lo que hace update-sitemap.yml al guardar el sitemap.
       - name: Regenerar y comparar el sitemap
-        env:
-          SITEMAP_DATE: "2026-07-29"
         run: |
           node scripts/generate-sitemap.mjs
           git diff --exit-code -- sitemap.xml

@@ -232,8 +232,12 @@ const shortDate = (value) =>
 function indexCard(data) {
   const accent = data.theme?.accent || "var(--accent)";
   const alt = data.seo?.heroImageAlt || `Imagen de ${data.title}`;
+  // Texto que usa el buscador. Va en el marcado para filtrar por los datos de
+  // la ficha y no por lo que se ve, que deja fuera genero, estudio y editora.
+  const search = [data.title, data.genre, data.developer, data.publisher, data.status, ...data.platforms, data.subtitle]
+    .filter(Boolean).join(" ").toLocaleLowerCase("es");
   return `
-        <a class="home-game-hub-card" href="/juegos/${escapeHtml(data.id)}" aria-label="Consultar la ficha de ${escapeHtml(data.title)}" style="--hub-accent:${escapeHtml(accent)}">
+        <a class="home-game-hub-card" href="/juegos/${escapeHtml(data.id)}" aria-label="Consultar la ficha de ${escapeHtml(data.title)}" data-search="${escapeHtml(search)}" style="--hub-accent:${escapeHtml(accent)}">
           <div class="home-game-hub-art">
             <img src="${escapeHtml(data.heroImage)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
             <span class="home-game-hub-status">${escapeHtml(data.status)}</span>

@@ -33,7 +33,7 @@ themeMedia.addEventListener?.('change',event=>{
 /* ---------- i18n (solo en la home) ---------- */
 const i18n = {
   es:{
-    nav_reviews:"Reseñas",nav_calendar:"Calendario",nav_news:"Noticias",nav_sub:"Suscríbete",
+    nav_reviews:"Reseñas",nav_calendar:"Calendario",nav_games:"Juegos",nav_news:"Noticias",nav_sub:"Suscríbete",
     home_nav_label:"En esta portada",home_nav_reviews:"Últimas reseñas",home_nav_calendar:"Próximos lanzamientos",home_nav_games:"Fichas",home_nav_news:"Actualidad",home_nav_newsletter:"Newsletter",
     hero_kicker:"Blog de videojuegos",
     hero_title:'La actualidad del <em>videojuego</em>, sin perder el tiempo.',
@@ -69,7 +69,7 @@ const i18n = {
     foot2:"Noticias · Calendario · Reseñas · Contacto"
   },
   en:{
-    nav_reviews:"Reviews",nav_calendar:"Calendar",nav_news:"News",nav_sub:"Subscribe",
+    nav_reviews:"Reviews",nav_calendar:"Calendar",nav_games:"Games",nav_news:"News",nav_sub:"Subscribe",
     home_nav_label:"On this page",home_nav_reviews:"Latest reviews",home_nav_calendar:"Upcoming releases",home_nav_games:"Game hubs",home_nav_news:"News",home_nav_newsletter:"Newsletter",
     hero_kicker:"Video game blog",
     hero_title:'Video game news, <em>without wasting your time.</em>',

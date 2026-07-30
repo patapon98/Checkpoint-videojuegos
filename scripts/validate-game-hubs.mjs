@@ -60,6 +60,13 @@ for (const file of jsonFiles) {
   const seo = data.seo || {};
   ['title', 'description', 'ogDescription', 'heroTitleHtml', 'heroImageAlt'].forEach((key) => requireString(seo, key, `${label} > seo`));
 
+  const spotlight = data.spotlight || {};
+  ['kicker', 'title', 'intro'].forEach((key) => requireString(spotlight, key, `${label} > spotlight`));
+  expect(Array.isArray(spotlight.items) && spotlight.items.length >= 3, `${label}: spotlight.items debe contener al menos tres elementos`);
+  for (const [position, item] of (spotlight.items || []).entries()) {
+    ['title', 'value', 'description'].forEach((key) => requireString(item || {}, key, `${label} > spotlight.items[${position}]`));
+  }
+
   const galleryUrls = new Set();
   for (const [position, image] of (data.gallery || []).entries()) {
     expect(image && typeof image.src === 'string' && image.src, `${label}: gallery[${position}] necesita src`);
@@ -72,8 +79,9 @@ for (const file of jsonFiles) {
     ['label', 'url', 'type'].forEach((key) => requireString(source || {}, key, `${label} > sources[${position}]`));
   }
 
-  const usesRawg = (data.gallery || []).some((image) => image.src.includes('rawg.io'));
-  expect(!usesRawg || data.sources.some((source) => /rawg/i.test(source.label)), `${label}: las capturas de RAWG requieren una fuente visible de atribución`);
+  const usesRawg = (data.gallery || []).some((image) => image.src.includes('rawg.io'))
+    || (data.sources || []).some((source) => /rawg/i.test(`${source.label} ${source.url} ${source.type}`));
+  expect(!usesRawg, `${label}: usa recursos o texto visible de RAWG; selecciona material oficial de la desarrolladora, editora o tienda`);
 
   for (const [position, change] of (data.changes || []).entries()) {
     ['date', 'title', 'description'].forEach((key) => requireString(change || {}, key, `${label} > changes[${position}]`));
@@ -119,6 +127,10 @@ for (const [id, data] of games) {
   const staticValues = [
     data.premise,
     data.context,
+    data.spotlight.kicker,
+    data.spotlight.title,
+    data.spotlight.intro,
+    ...data.spotlight.items.flatMap((item) => [item.title, item.value, item.description]),
     ...data.confirmed,
     ...data.pending,
     ...data.sources.map((source) => source.label),

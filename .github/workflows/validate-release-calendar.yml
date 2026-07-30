@@ -203,7 +203,7 @@ jobs:
         run: node scripts/validate-rawg-images.mjs
 
       - name: Probar el mantenimiento diario contra fuentes oficiales
-        if: !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
+        if: ${{ !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-') }}
         run: |
           node scripts/update-release-calendar.mjs
           node scripts/generate-release-calendar.mjs
@@ -304,7 +304,7 @@ jobs:
             --delete-branch \
             --match-head-commit "$EXPECTED_SHA"
       - name: Guardar datos y páginas generadas en la rama manual
-        if: !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
+        if: ${{ !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-') }}
         run: |
           if git diff --quiet -- data/calendar.json calendario.html index.html; then
             echo "Los datos y las salidas generadas ya están sincronizados."

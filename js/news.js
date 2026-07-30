@@ -4,6 +4,30 @@
   const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
   let latestExpiryTimer = null;
   const homeDetails = {
+    "xbox-resultados-junio-2026": {
+      es: [
+        "Microsoft reúne dentro de contenidos y servicios de Xbox las ventas de juegos, el contenido adicional, Game Pass, la nube y la publicidad. La caída del 10% indica que el retroceso no se concentró únicamente en la venta de consolas.",
+        "El hardware también bajó un 13% interanual. El contraste es especialmente relevante porque Microsoft cerró el trimestre con 90.007 millones de dólares de ingresos totales mientras Xbox atravesaba una reestructuración con miles de despidos."
+      ]
+    },
+    "double-fine-despidos-independencia": {
+      es: [
+        "Double Fine es el estudio responsable de Psychonauts. Recuperó su independencia después de que Microsoft acordara separarlo de Xbox durante la reestructuración anunciada en julio.",
+        "El estudio mantiene su nombre, su catálogo y su propiedad intelectual, pero vuelve a asumir directamente sus costes. Tim Schafer vinculó los 23 despidos con la necesidad de reducir la empresa a un tamaño sostenible y proteger su continuidad."
+      ]
+    },
+    "capcom-resultados-ventas-junio-2026": {
+      es: [
+        "Las 23,81 millones de copias corresponden únicamente al periodo comprendido entre abril y junio de 2026. No deben confundirse con las ventas históricas acumuladas que Capcom también publica para cada saga.",
+        "PRAGMATA aportó 2,51 millones de unidades como principal novedad. Los otros 21,26 millones procedieron de juegos publicados antes del ejercicio actual, con Resident Evil, Monster Hunter y Devil May Cry sosteniendo gran parte del negocio."
+      ]
+    },
+    "xbox-caida-global-juegos-fisicos": {
+      es: [
+        "La interrupción se prolongó durante casi 20 horas y afectó al inicio de sesión, las bibliotecas, Game Pass, las compras y el arranque de juegos. El error 0x87e107df apareció también en algunas instalaciones realizadas desde disco.",
+        "El episodio no demuestra que todos los discos de Xbox dependan siempre de internet, pero sí que determinadas licencias y configuraciones necesitan validaciones remotas. Durante la caída, poseer el soporte físico no bastó para garantizar el acceso."
+      ]
+    },
     "playstation-fin-formato-fisico": {
       es: [
         "La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.",
@@ -263,10 +287,10 @@
             ${updated}
           </div>
           <h3>${escapeHTML(text(item.title, lang))}</h3>
-          <p>${escapeHTML(text(item.summary, lang))}</p>
+          <p>${emphasizedHTML(item.summary, item, lang)}</p>
           <div class="news-why">
             <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-            <span>${escapeHTML(text(item.why, lang))}</span>
+            <span>${emphasizedHTML(item.why, item, lang)}</span>
           </div>
           ${sourceLinks(item, lang, false)}
           ${homeFlipButton(item, lang, false)}
@@ -285,10 +309,10 @@
           ${relativeDate(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
-        <p>${escapeHTML(text(item.summary, lang))}</p>
+        <p>${emphasizedHTML(item.summary, item, lang)}</p>
         <div class="news-brief-why">
           <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-          ${escapeHTML(text(item.why, lang))}
+          ${emphasizedHTML(item.why, item, lang)}
         </div>
         ${sourceLinks(item, lang, true)}
         ${homeFlipButton(item, lang, false)}
@@ -550,10 +574,10 @@
             </span>
           </div>
           <h2>${escapeHTML(text(item.title, lang))}</h2>
-          <p>${escapeHTML(text(item.summary, lang))}</p>
+          <p>${emphasizedHTML(item.summary, item, lang)}</p>
           <div class="news-why">
             <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-            <span>${escapeHTML(text(item.why, lang))}</span>
+            <span>${emphasizedHTML(item.why, item, lang)}</span>
           </div>
           ${sourceLinks(item, lang, false)}
         </div>

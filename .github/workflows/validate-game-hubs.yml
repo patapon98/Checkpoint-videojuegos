@@ -6,6 +6,7 @@ on:
     paths:
       - 'data/game-hubs/**'
       - 'juegos/**'
+      - 'sitemap.xml'
       - 'scripts/validate-game-hubs.mjs'
       - 'scripts/validate-game-hub-change.mjs'
       - 'scripts/render-game-hubs.mjs'
@@ -18,6 +19,7 @@ on:
     paths:
       - 'data/game-hubs/*.json'
       - 'juegos/*.html'
+      - 'sitemap.xml'
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
@@ -108,7 +110,7 @@ jobs:
           esac
 
           files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|sitemap\.xml)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'La PR automática contiene archivos no autorizados antes de descargarla:'
             echo "$invalid"
@@ -139,7 +141,7 @@ jobs:
         if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         run: node scripts/validate-game-hub-change.mjs
 
-      - name: Regenerar el HTML desde los datos
+      - name: Regenerar HTML, metadatos y sitemap
         run: node scripts/render-game-hubs.mjs
 
       - name: Comprobar fichas vivas y SEO
@@ -147,33 +149,47 @@ jobs:
           node scripts/validate-game-hubs.mjs
           git diff --check
 
-      - name: Exigir que las ramas manuales incluyan el HTML generado
+      - name: Guardar HTML y sitemap generados en la rama manual
         if: ${{ !startsWith(env.HEAD_REF, 'bot/game-hubs-') }}
-        run: git diff --exit-code -- juegos
+        run: |
+          if ! git diff --quiet -- juegos sitemap.xml; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add juegos sitemap.xml
+            git commit -m 'Sincroniza fichas y señales SEO'
+            git push origin "HEAD:$HEAD_REF"
+          else
+            echo 'El HTML, los metadatos y el sitemap ya están sincronizados.'
+          fi
+          if [ -n "$(git status --porcelain)" ]; then
+            echo 'El árbol de trabajo no quedó limpio después de generar las fichas.'
+            git status --short
+            exit 1
+          fi
 
       - name: Limitar el alcance de las ramas automáticas
         if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         run: |
           files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|sitemap\.xml)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'Una rama automática ha modificado archivos no autorizados:'
             echo "$invalid"
             exit 1
           fi
 
-      - name: Guardar el HTML generado en la rama automática
+      - name: Guardar HTML y sitemap generados en la rama automática
         if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         id: automatic_head
         run: |
-          if ! git diff --quiet -- juegos; then
+          if ! git diff --quiet -- juegos sitemap.xml; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add juegos
-            git commit -m 'Regenera las fichas desde datos verificados'
+            git add juegos sitemap.xml
+            git commit -m 'Sincroniza fichas y señales SEO verificadas'
             git push origin "HEAD:$HEAD_REF"
           else
-            echo 'El HTML de las fichas ya está sincronizado.'
+            echo 'El HTML, los metadatos y el sitemap ya están sincronizados.'
           fi
           if [ -n "$(git status --porcelain)" ]; then
             echo 'El árbol de trabajo no quedó limpio después de generar las fichas.'
@@ -220,7 +236,7 @@ jobs:
           fi
 
           files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|sitemap\.xml)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'La PR automática contiene archivos no autorizados:'
             echo "$invalid"

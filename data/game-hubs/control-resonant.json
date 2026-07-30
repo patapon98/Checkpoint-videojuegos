@@ -1,7 +1,7 @@
 {
   "id": "control-resonant",
   "title": "CONTROL Resonant",
-  "subtitle": "Historia, combate, precio y toda la información de la secuela de Control",
+  "subtitle": "Historia, combate y toda la información de la secuela de Control",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-24",
   "platforms": [
@@ -121,17 +121,17 @@
   ],
   "updatedAt": "2026-07-30",
   "seo": {
-    "title": "CONTROL Resonant: precio, combate y todo lo confirmado",
-    "description": "Ficha actualizada de CONTROL Resonant con fecha, precio, historia, combate, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
-    "ogDescription": "Precio, historia, combate cuerpo a cuerpo y toda la información confirmada sobre CONTROL Resonant.",
+    "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
+    "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
+    "ogDescription": "Historia, combate cuerpo a cuerpo y toda la información confirmada sobre CONTROL Resonant.",
     "heroTitleHtml": "CONTROL <em>Resonant</em>",
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Ficha ampliada con precio, combate y galería oficial",
-      "description": "Se eliminaron datos redundantes, se añadieron las mecánicas reveladas, precios y requisitos de PC, y se sustituyó la galería por ocho capturas oficiales en alta resolución."
+      "title": "Ficha ampliada con combate, progresión y galería oficial",
+      "description": "Se eliminaron datos redundantes, se añadieron las mecánicas reveladas, el precio y los requisitos de PC, y se sustituyó la galería por ocho capturas oficiales en alta resolución."
     }
   ],
   "relatedGameIds": [
@@ -161,12 +161,8 @@
         "title": "Progresión",
         "value": "Habilidades y configuraciones",
         "description": "Los Resonantes otorgan nuevas capacidades y la progresión permite construir configuraciones adaptadas a cada estilo."
-      },
-      {
-        "title": "Precio en PC",
-        "value": "Desde 59,99 €",
-        "description": "La edición estándar cuesta 59,99 € en Steam; la Digital Deluxe, con extras digitales y una misión AWE, cuesta 69,99 €."
       }
     ]
-  }
+  },
+  "price": "Desde 59,99 € en PC"
 }

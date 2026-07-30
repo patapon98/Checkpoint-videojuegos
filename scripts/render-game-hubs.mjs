@@ -359,6 +359,7 @@ function indexStructuredData(html, games) {
   }));
 
   return html.slice(0, from) + JSON.stringify(graph) + html.slice(end);
+}
 function replaceClassElement(html, tagName, className, replacement) {
   const pattern = new RegExp(`<${tagName}\\b(?=[^>]*\\bclass="[^"]*\\b${escapeRegex(className)}\\b[^"]*")[^>]*>[\\s\\S]*?</${tagName}>`, "i");
   if (!pattern.test(html)) throw new Error(`No se encontró .${className}`);

@@ -1,7 +1,7 @@
 {
   "id": "control-resonant",
   "title": "CONTROL Resonant",
-  "subtitle": "Fecha, plataformas y toda la información de la secuela de Control",
+  "subtitle": "Historia, combate, precio y toda la información de la secuela de Control",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-24",
   "platforms": [
@@ -20,20 +20,36 @@
   "heroImageHasEmbeddedText": false,
   "gallery": [
     {
-      "src": "https://media.rawg.io/media/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
-      "alt": "Dylan Faden en una zona alterada de Manhattan en CONTROL Resonant"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/422f3eed36d3033c4b0f4fde485c29b980e49454/ss_422f3eed36d3033c4b0f4fde485c29b980e49454.1920x1080.jpg",
+      "alt": "Dylan Faden combate entre una resonancia roja en CONTROL Resonant"
     },
     {
-      "src": "https://media.rawg.io/media/screenshots/169/169ace563987496b5510382259a76eab.jpg",
-      "alt": "Dylan utilizando el Aberrante durante un combate de CONTROL Resonant"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/75b1cde9947eea89eed52cf8f6471683f2e666a9/ss_75b1cde9947eea89eed52cf8f6471683f2e666a9.1920x1080.jpg",
+      "alt": "Dylan y Jesse Faden en una escena de CONTROL Resonant"
     },
     {
-      "src": "https://media.rawg.io/media/screenshots/e8b/e8bad477f0fa4d7bd28be50dd61b5c79.jpg",
-      "alt": "Anomalía paranormal en una calle de Manhattan en CONTROL Resonant"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/08b6018c06d5125a39ff34a395e0dcfdede8bde8/ss_08b6018c06d5125a39ff34a395e0dcfdede8bde8.1920x1080.jpg",
+      "alt": "Dylan altera la gravedad durante un combate de CONTROL Resonant"
     },
     {
-      "src": "https://media.rawg.io/media/screenshots/5b8/5b812f73e4c5df28630747c52f57170b.jpg",
-      "alt": "Escenario urbano deformado por la resonancia en CONTROL Resonant"
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/062a27d1b18679df1ecd4faf90af2c3f52e41dc1/ss_062a27d1b18679df1ecd4faf90af2c3f52e41dc1.1920x1080.jpg",
+      "alt": "Caverna paranormal con una gran esfera en CONTROL Resonant"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/36eb4c588274f15ea0d958af6db8b2283602cb55/ss_36eb4c588274f15ea0d958af6db8b2283602cb55.1920x1080.jpg",
+      "alt": "Combate telequinético en una calle de Manhattan en CONTROL Resonant"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/8148794f365c4ffa8191559b28a5636650ff5676/ss_8148794f365c4ffa8191559b28a5636650ff5676.1920x1080.jpg",
+      "alt": "Monolito suspendido sobre un escenario alterado de CONTROL Resonant"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/9e5a502390d8e7afefab61e5f3bfeb8fe9e9a699/ss_9e5a502390d8e7afefab61e5f3bfeb8fe9e9a699.1920x1080.jpg",
+      "alt": "Dylan se enfrenta por el aire a una criatura de CONTROL Resonant"
+    },
+    {
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f/ss_1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f.1920x1080.jpg",
+      "alt": "Distrito de Manhattan deformado por fuerzas paranormales en CONTROL Resonant"
     }
   ],
   "media": [
@@ -53,19 +69,20 @@
     }
   ],
   "premise": "Tras años de cautiverio en la Agencia Federal de Control, Dylan Faden es enviado a una Manhattan deformada por fuerzas paranormales. Mientras intenta contener una nueva resonancia cósmica, deberá dominar sus poderes y encontrar a su hermana desaparecida, Jesse.",
-  "context": "Remedy plantea la secuela como una aventura de acción y RPG más abierta, formada por grandes zonas de Manhattan. Dylan es el único personaje jugable y el Aberrante sustituye las armas de fuego tradicionales por un arma cuerpo a cuerpo capaz de cambiar de forma.",
+  "context": "Remedy transforma la secuela en un RPG de acción centrado en el cuerpo a cuerpo. No es un mundo abierto: Manhattan se divide en grandes zonas diferenciadas con actividades secundarias, encuentros ocultos y libertad para explorar.",
   "confirmed": [
-    "Se lanzará mundialmente el 24 de septiembre de 2026.",
-    "Llegará de lanzamiento a PS5, Xbox Series X|S y PC; la versión para Mac llegará más adelante en 2026.",
-    "Dylan Faden es el único personaje jugable.",
-    "La historia transcurre en una Manhattan alterada por fuerzas paranormales.",
-    "El Aberrante puede transformarse en distintas armas cuerpo a cuerpo.",
-    "Remedy Entertainment desarrolla y publica el juego."
+    "Dylan Faden es el único personaje jugable; Jesse ha desaparecido y Zoe De Vera actúa como su enlace con la Agencia.",
+    "Manhattan se organiza en grandes zonas diferenciadas con actividades secundarias, rutas alternativas y encuentros ocultos.",
+    "Reach y Shift permiten atraer objetos o enemigos y desplazarse con rapidez; las anomalías gravitatorias amplían la movilidad.",
+    "El Aberrante adopta cuatro formas confirmadas: martillo, espadas, guadaña y puños.",
+    "Las habilidades, mejoras y configuraciones permiten especializar el combate; derrotar a los Resonantes desbloquea nuevas capacidades.",
+    "En PC exige 16 GB de RAM y 100 GB de espacio; Remedy recomienda una RTX 3070 o RX 6800 XT, o equivalentes."
   ],
   "pending": [
     "Fecha exacta de la versión para Mac.",
-    "Requisitos definitivos de la versión para PC.",
-    "Tamaño de instalación en cada plataforma.",
+    "Modos de resolución y rendimiento en consolas.",
+    "Tamaño de instalación en PS5 y Xbox Series X|S.",
+    "Opciones de accesibilidad definitivas.",
     "Fecha del embargo de análisis.",
     "Plan de contenidos posteriores al lanzamiento."
   ],
@@ -73,27 +90,27 @@
     {
       "label": "Remedy Entertainment",
       "url": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
-      "type": "Fecha y plataformas"
+      "type": "Lanzamiento, reservas e historia"
+    },
+    {
+      "label": "Remedy Entertainment",
+      "url": "https://www.remedygames.com/article/remedy-entertainment-unveils-new-gameplay-details-for-control-resonant",
+      "type": "Combate y progresión"
+    },
+    {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/02/12/new-gameplay-details-on-control-resonants-supernatural-action/",
+      "type": "Estructura, habilidades y enemigos"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+      "type": "Precios, requisitos e imágenes oficiales"
     },
     {
       "label": "Web oficial de Remedy",
       "url": "https://www.remedygames.com/games/control-2",
       "type": "Ficha oficial"
-    },
-    {
-      "label": "PlayStation España",
-      "url": "https://www.playstation.com/es-es/games/control-resonant/",
-      "type": "Ficha y reservas"
-    },
-    {
-      "label": "RAWG",
-      "url": "https://rawg.io/games/control-resonant/screenshots",
-      "type": "Capturas de la galería"
-    },
-    {
-      "label": "Steam",
-      "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
-      "type": "Arte promocional de cabecera"
     }
   ],
   "newsTerms": [
@@ -104,17 +121,17 @@
   ],
   "updatedAt": "2026-07-30",
   "seo": {
-    "title": "CONTROL Resonant: fecha, historia y todo lo confirmado",
-    "description": "Ficha actualizada de CONTROL Resonant con fecha de lanzamiento, historia, plataformas, tráileres, imágenes, reservas y toda la información confirmada.",
-    "ogDescription": "Fecha, plataformas, historia, gameplay y toda la información confirmada sobre CONTROL Resonant.",
+    "title": "CONTROL Resonant: precio, combate y todo lo confirmado",
+    "description": "Ficha actualizada de CONTROL Resonant con fecha, precio, historia, combate, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
+    "ogDescription": "Precio, historia, combate cuerpo a cuerpo y toda la información confirmada sobre CONTROL Resonant.",
     "heroTitleHtml": "CONTROL <em>Resonant</em>",
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Cabecera y galería revisadas",
-      "description": "Se incorporó arte promocional limpio, se renovaron las capturas y se comprobaron las plataformas y reservas confirmadas."
+      "title": "Ficha ampliada con precio, combate y galería oficial",
+      "description": "Se eliminaron datos redundantes, se añadieron las mecánicas reveladas, precios y requisitos de PC, y se sustituyó la galería por ocho capturas oficiales en alta resolución."
     }
   ],
   "relatedGameIds": [
@@ -124,5 +141,32 @@
   "theme": {
     "accent": "#e45757",
     "accentSoft": "rgba(228,87,87,.16)"
+  },
+  "spotlight": {
+    "kicker": "Lo que cambia respecto a Control",
+    "title": "Combate cuerpo a cuerpo, RPG y Manhattan por zonas",
+    "intro": "La secuela cambia de protagonista, estructura y sistema de combate. Estas son las diferencias que más afectan a cómo se juega.",
+    "items": [
+      {
+        "title": "Estructura",
+        "value": "Grandes zonas",
+        "description": "Manhattan no es un mundo abierto continuo, sino un conjunto de distritos amplios con rutas y encuentros opcionales."
+      },
+      {
+        "title": "Aberrante",
+        "value": "4 formas confirmadas",
+        "description": "Martillo, espadas, guadaña y puños sustituyen el arsenal de fuego tradicional y pueden combinarse en combate."
+      },
+      {
+        "title": "Progresión",
+        "value": "Habilidades y configuraciones",
+        "description": "Los Resonantes otorgan nuevas capacidades y la progresión permite construir configuraciones adaptadas a cada estilo."
+      },
+      {
+        "title": "Precio en PC",
+        "value": "Desde 59,99 €",
+        "description": "La edición estándar cuesta 59,99 € en Steam; la Digital Deluxe, con extras digitales y una misión AWE, cuesta 69,99 €."
+      }
+    ]
   }
 }

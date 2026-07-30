@@ -10,10 +10,12 @@ const errors = [];
 
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const text = (value = '') => String(value);
-const escapeHtml = (value = '') => text(value).replace(/[&<>]/g, (character) => ({
+const escapeHtml = (value = '') => text(value).replace(/[&<>"']/g, (character) => ({
   '&': '&amp;',
   '<': '&lt;',
-  '>': '&gt;'
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#039;'
 }[character]));
 const escapeRegex = (value = '') => text(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const validDate = (value) => /^\d{4}-\d{2}-\d{2}$/.test(text(value)) && !Number.isNaN(Date.parse(`${value}T12:00:00Z`));

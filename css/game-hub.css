@@ -21,7 +21,11 @@
   overflow:hidden
 }
 .game-hero-media{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.02);animation:game-hero-enter 1.15s cubic-bezier(.2,.8,.2,1) both}
-.game-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,10,13,.05) 0%,rgba(9,10,13,.2) 28%,rgba(9,10,13,.82) 100%);z-index:0}
+/* Dos capas. La horizontal oscurece la columna del texto y deja limpio el arte
+   de la derecha, que es donde suele estar el personaje. Hace falta porque hay
+   cabeceras de fondo claro, como el amarillo de Wolverine o el beige de MARVEL
+   Tokon, donde el texto blanco de arriba se volvia ilegible. */
+.game-hero-overlay{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(9,10,13,.85) 0%,rgba(9,10,13,.6) 38%,rgba(9,10,13,.15) 64%,rgba(9,10,13,0) 80%),linear-gradient(180deg,rgba(9,10,13,.25) 0%,rgba(9,10,13,.3) 28%,rgba(9,10,13,.85) 100%)}
 .game-hero-content{position:relative;z-index:1;padding-top:55px;padding-bottom:55px}
 .game-back{display:inline-flex;color:rgba(255,255,255,.78);text-decoration:none;font-weight:700;font-size:.82rem;margin-bottom:32px}
 .game-back:hover{color:#fff}

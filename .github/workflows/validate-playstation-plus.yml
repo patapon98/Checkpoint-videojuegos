@@ -54,7 +54,7 @@ jobs:
 
       - name: Comprobar los datos
         run: |
-          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.groups)) throw new Error(`Mes incompleto ${month.id}`); for(const group of month.groups){if(!group.id||!group.label||!Array.isArray(group.games)) throw new Error(`Grupo incompleto en ${month.id}`); for(const game of group.games){if(!game.title) throw new Error(`Juego sin título en ${month.id}`);}}}'
+          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.groups)) throw new Error(`Mes incompleto ${month.id}`); for(const group of month.groups){if(!group.id||!group.label) throw new Error(`Grupo incompleto en ${month.id}`); if(!Array.isArray(group.games)){if(!group.pending) throw new Error(`El grupo ${group.id} de ${month.id} no tiene juegos ni aviso de pendiente`); continue;} for(const game of group.games){if(!game.title) throw new Error(`Juego sin título en ${group.id} de ${month.id}`);}}}'
 
       - name: Probar el actualizador oficial
         run: |

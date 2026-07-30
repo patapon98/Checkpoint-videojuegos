@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = join(root, 'data', 'game-hubs');
 const gamesDir = join(root, 'juegos');
+const sitemapPath = join(root, 'sitemap.xml');
 const errors = [];
 
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
@@ -14,7 +15,13 @@ const escapeHtml = (value = '') => text(value).replace(/[&<>]/g, (character) => 
   '<': '&lt;',
   '>': '&gt;'
 }[character]));
+const escapeRegex = (value = '') => text(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const validDate = (value) => /^\d{4}-\d{2}-\d{2}$/.test(text(value)) && !Number.isNaN(Date.parse(`${value}T12:00:00Z`));
+const formatDate = (value) => new Intl.DateTimeFormat('es-ES', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+}).format(new Date(`${value}T12:00:00`));
 const expect = (condition, message) => {
   if (!condition) errors.push(message);
 };
@@ -28,6 +35,8 @@ const requireArray = (data, key, label) => {
 const indexPath = join(dataDir, 'index.json');
 const registry = readJson(indexPath);
 expect(Array.isArray(registry.games), 'data/game-hubs/index.json: games debe ser un array');
+expect(existsSync(sitemapPath), 'sitemap.xml: no existe');
+const sitemap = existsSync(sitemapPath) ? readFileSync(sitemapPath, 'utf8') : '';
 
 const jsonFiles = readdirSync(dataDir)
   .filter((name) => name.endsWith('.json') && name !== 'index.json' && !name.startsWith('_'));
@@ -118,12 +127,20 @@ for (const [id, data] of games) {
 
   const html = readFileSync(htmlPath, 'utf8');
   const canonical = `https://finalsecreto.com/juegos/${id}`;
+  const platforms = data.platforms.join(' · ');
   expect(html.includes(`data-game-id="${id}"`), `${label}: data-game-id no coincide`);
+  expect(html.includes(`data-game-title="${escapeHtml(data.title)}"`), `${label}: data-game-title no coincide`);
+  expect(html.includes(`data-release-date="${data.releaseDate}"`), `${label}: data-release-date no coincide`);
   expect(html.includes(`<link rel="canonical" href="${canonical}">`), `${label}: canonical ausente o incorrecta`);
   expect(html.includes(`<title>${escapeHtml(data.seo.title)}</title>`), `${label}: title no coincide con seo.title`);
   expect(html.includes(`content="${escapeHtml(data.seo.description)}"`), `${label}: description no coincide con seo.description`);
-  expect(html.includes(`<h1>${data.seo.heroTitleHtml}</h1>`), `${label}: H1 no coincide con seo.heroTitleHtml`);
   expect(html.includes(`property="article:modified_time" content="${data.updatedAt}"`), `${label}: falta article:modified_time`);
+  expect(html.includes(`property="og:image" content="${escapeHtml(data.heroImage)}"`), `${label}: og:image no coincide con heroImage`);
+  expect(html.includes(`<h1>${data.seo.heroTitleHtml}</h1>`), `${label}: H1 no coincide con seo.heroTitleHtml`);
+  expect(html.includes(`<span class="game-status" id="gameStatus">${escapeHtml(data.status)}</span>`), `${label}: estado visible no coincide`);
+  expect(html.includes(`<span>${escapeHtml(platforms)}</span></div>`), `${label}: plataformas del hero no coinciden`);
+  expect(html.includes(`<time id="updatedAt" datetime="${data.updatedAt}">${escapeHtml(formatDate(data.updatedAt))}</time>`), `${label}: fecha visible de actualización no coincide`);
+  expect(html.includes(`<h2 id="countdownTitle">${escapeHtml(formatDate(data.releaseDate))}</h2>`), `${label}: fecha visible de lanzamiento no coincide`);
 
   const staticValues = [
     data.premise,
@@ -136,7 +153,7 @@ for (const [id, data] of games) {
     ...data.spotlight.items.flatMap((item) => [item.title, item.value, item.description]),
     ...data.confirmed,
     ...data.pending,
-    ...data.sources.map((source) => source.label),
+    ...data.sources.flatMap((source) => [source.label, source.url, source.type]),
     ...data.changes.flatMap((change) => [change.title, change.description])
   ];
   for (const value of staticValues) {
@@ -166,12 +183,21 @@ for (const [id, data] of games) {
       expect(webPage?.url === canonical, `${label}: WebPage.url no coincide con la canonical`);
       expect(videoGame?.name === data.title, `${label}: VideoGame.name no coincide con title`);
       expect(videoGame?.description === data.premise, `${label}: VideoGame.description no coincide con premise`);
+      expect(videoGame?.datePublished === data.releaseDate, `${label}: VideoGame.datePublished no coincide con releaseDate`);
       expect(videoGame?.dateModified === data.updatedAt, `${label}: VideoGame.dateModified no coincide con updatedAt`);
+      expect(videoGame?.image === data.heroImage, `${label}: VideoGame.image no coincide con heroImage`);
+      expect(JSON.stringify(videoGame?.gamePlatform || []) === JSON.stringify(data.platforms), `${label}: VideoGame.gamePlatform no coincide con platforms`);
+      const schemaTrailerIds = (videoGame?.trailer || []).map((item) => text(item.embedUrl).split('/').pop()).filter(Boolean);
+      const dataTrailerIds = (data.media || []).map((item) => item.videoId).filter(Boolean);
+      expect(JSON.stringify(schemaTrailerIds) === JSON.stringify(dataTrailerIds), `${label}: los VideoObject no coinciden con media`);
       expect(Array.isArray(breadcrumbs?.itemListElement) && breadcrumbs.itemListElement.length >= 2, `${label}: BreadcrumbList incompleto`);
     } catch (error) {
       errors.push(`${label}: JSON-LD inválido (${error.message})`);
     }
   }
+
+  const sitemapEntry = new RegExp(`<url>\\s*<loc>${escapeRegex(canonical)}</loc>[\\s\\S]*?<lastmod>${escapeRegex(data.updatedAt)}</lastmod>[\\s\\S]*?</url>`, 'i');
+  expect(sitemapEntry.test(sitemap), `sitemap.xml: ${canonical} no tiene lastmod ${data.updatedAt}`);
 }
 
 if (errors.length) {
@@ -180,4 +206,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Fichas validadas: ${games.size}. JSON, HTML inicial, SEO, cambios y enlazado interno están sincronizados.`);
+console.log(`Fichas validadas: ${games.size}. JSON, HTML inicial, metadatos, JSON-LD, sitemap, cambios y enlazado interno están sincronizados.`);

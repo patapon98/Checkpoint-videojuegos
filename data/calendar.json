@@ -1948,6 +1948,56 @@
       "trailer": "https://www.youtube.com/watch?v=HJKj6H4dChA"
     },
     {
+      "id": "stupid-never-dies",
+      "title": "Stupid Never Dies",
+      "headingHtml": "Stupid Never Dies",
+      "date": "2026-10-21",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3486530/06dd6216ce7739d9d5be7479c748b93c027cfb7c/header.jpg",
+        "alt": "Stupid Never Dies",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "provider": "rawg",
+        "query": "Stupid Never Dies"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3486530/Stupid_Never_Dies/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Stupid Never Dies a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://www.gptrack50.com/en/news/releasedateannouncement-en/",
+        "official": true,
+        "host": "www.gptrack50.com",
+        "checkedAt": "2026-07-30",
+        "evidence": {
+          "title": "Stupid Never Dies",
+          "releaseDate": "2026-10-21",
+          "platforms": [
+            "ps5",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=U_iwVrIIo6E"
+    },
+    {
       "id": "final-fantasy-resonance",
       "title": "Final Fantasy Resonance",
       "headingHtml": "Final Fantasy Resonance",

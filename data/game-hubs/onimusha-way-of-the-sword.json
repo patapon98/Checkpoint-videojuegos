@@ -1,7 +1,7 @@
 {
   "id": "onimusha-way-of-the-sword",
   "title": "Onimusha: Way of the Sword",
-  "subtitle": "Historia, combate, demo, precios y toda la información de la nueva entrega",
+  "subtitle": "Historia, combate, demo y toda la información de la nueva entrega",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-04",
   "platforms": [
@@ -134,16 +134,16 @@
   ],
   "updatedAt": "2026-07-30",
   "seo": {
-    "title": "Onimusha: Way of the Sword: precios, demo y combate",
-    "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, precios, demo, combate, requisitos, tráileres, imágenes oficiales y datos confirmados.",
-    "ogDescription": "Precios, demo, combate y toda la información confirmada sobre Onimusha: Way of the Sword.",
+    "title": "Onimusha: Way of the Sword: demo, combate y todo lo confirmado",
+    "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, demo, combate, precios, requisitos, tráileres, imágenes oficiales y datos confirmados.",
+    "ogDescription": "Demo, combate y toda la información confirmada sobre Onimusha: Way of the Sword.",
     "heroTitleHtml": "Onimusha: <em>Way of the Sword</em>",
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
     {
       "date": "2026-07-30",
-      "title": "Ficha ampliada con demo, precios y galería oficial",
+      "title": "Ficha ampliada con demo, combate y galería oficial",
       "description": "Se aclaró que es una entrega independiente, se añadieron sistemas de combate, ediciones, precios y requisitos, y se sustituyó la galería por ocho capturas oficiales en alta resolución."
     }
   ],
@@ -156,30 +156,31 @@
     "accentSoft": "rgba(209,107,79,.16)"
   },
   "spotlight": {
-    "kicker": "Lo más útil antes de reservar",
-    "title": "Demo, precios y tres ediciones",
-    "intro": "La demo permite probar el núcleo del combate antes de comprar y las tres ediciones digitales ya tienen precio en PC, PS5 y Xbox Series.",
+    "kicker": "Cómo se juega",
+    "title": "Espadas, reflejos y poder Oni",
+    "intro": "La demo deja claro que el combate premia leer al enemigo, responder en el momento preciso y alternar técnicas humanas con poderes sobrenaturales.",
     "items": [
+      {
+        "title": "Defensa",
+        "value": "Parar y desviar",
+        "description": "Bloquear en el momento adecuado abre huecos, desvía ataques y prepara la respuesta de Musashi."
+      },
+      {
+        "title": "Golpe decisivo",
+        "value": "Issen",
+        "description": "El ataque característico recompensa la precisión y permite rematar a los Genma con un contraataque fulminante."
+      },
+      {
+        "title": "Poder Oni",
+        "value": "Fuerza y agilidad",
+        "description": "Las habilidades Oni amplían el repertorio con nuevas respuestas ofensivas y opciones de movilidad."
+      },
       {
         "title": "Demo",
         "value": "≈ 30 minutos",
-        "description": "Incluye paradas, desvíos, Issen y armamento Oni; el progreso no se conserva, pero el guardado desbloquea el amuleto Kubi Akari."
-      },
-      {
-        "title": "Estándar",
-        "value": "69,99 € en PC",
-        "description": "La edición base cuesta 79,99 € en PS5 y Xbox Series X|S."
-      },
-      {
-        "title": "Deluxe",
-        "value": "79,99 € en PC",
-        "description": "Sube a 89,99 € en PS5 y Xbox Series e incorpora contenido digital adicional."
-      },
-      {
-        "title": "Premium Deluxe",
-        "value": "89,99 € en PC",
-        "description": "Cuesta 99,99 € en PS5 y Xbox Series y añade más aspectos, armas cosméticas y la banda sonora digital."
+        "description": "Permite probar el núcleo del combate y desbloquea el amuleto Kubi Akari mediante sus datos guardados."
       }
     ]
-  }
+  },
+  "price": "Desde 69,99 € (PC) · 79,99 € (PS5/Xbox)"
 }

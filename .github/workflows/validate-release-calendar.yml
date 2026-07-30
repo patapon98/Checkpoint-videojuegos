@@ -29,6 +29,13 @@ on:
       - "docs/CALENDAR_UPDATE_CHECKLIST.md"
       - "docs/CALENDAR_AUTOMATION.md"
       - "docs/PROJECT_RULES.md"
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
+    paths:
+      - "data/calendar.json"
+      - "calendario.html"
+      - "index.html"
   workflow_dispatch:
 
 permissions:
@@ -41,12 +48,57 @@ concurrency:
 
 jobs:
   validate:
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        (
+          (github.event_name == 'pull_request_target' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')) ||
+          (github.event_name == 'pull_request' && !startsWith(github.event.pull_request.head.ref, 'bot/calendar-'))
+        )
+      )
     runs-on: ubuntu-latest
     env:
       TZ: Europe/Madrid
       RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
     steps:
+      - name: Comprobar la PR automática antes de descargarla
+        if: github.event_name == 'pull_request_target'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
+
+          if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
+            echo "La PR automática no está abierta, lista y basada en main."
+            exit 1
+          fi
+          if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
+            echo "La PR automática no procede del repositorio principal."
+            exit 1
+          fi
+          case "$head_ref" in
+            bot/calendar-*) ;;
+            *)
+              echo "La rama no pertenece a la automatización del calendario."
+              exit 1
+              ;;
+          esac
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/calendar\.json|calendario\.html|index\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "La PR automática contiene archivos no autorizados antes de descargarla:"
+            echo "$invalid"
+            exit 1
+          fi
+
       - name: Descargar la rama de la PR
         uses: actions/checkout@v4
         with:
@@ -62,7 +114,7 @@ jobs:
         run: git fetch origin main
 
       - name: Cargar y retirar una clave RAWG temporal
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' || github.event_name == 'pull_request_target'
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
           GH_TOKEN: ${{ github.token }}
@@ -112,7 +164,7 @@ jobs:
         run: node scripts/validate-rawg-images.mjs
 
       - name: Probar el mantenimiento diario contra fuentes oficiales
-        if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
           node scripts/update-release-calendar.mjs
           node scripts/generate-release-calendar.mjs
@@ -146,7 +198,7 @@ jobs:
           fi
 
       - name: Preparar la cabecera final de la rama automática
-        if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name != 'workflow_dispatch' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         id: automatic_head
         env:
           HEAD_REF: ${{ github.event.pull_request.head.ref }}
@@ -168,7 +220,7 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Fusionar el resultado final verificado
-        if: github.event_name == 'pull_request' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name != 'workflow_dispatch' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -213,7 +265,7 @@ jobs:
             --delete-branch \
             --match-head-commit "$EXPECTED_SHA"
       - name: Guardar datos y páginas generadas en la rama manual
-        if: github.event_name != 'pull_request' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
           if git diff --quiet -- data/calendar.json calendario.html index.html; then
             echo "Los datos y las salidas generadas ya están sincronizados."

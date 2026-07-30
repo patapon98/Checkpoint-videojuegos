@@ -46,6 +46,13 @@
   "media": [
     {
       "type": "youtube",
+      "videoId": "cmawSe1PkPg",
+      "title": "Gears of War: E-Day, presentación oficial del multijugador",
+      "label": "Multijugador",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "type": "youtube",
       "videoId": "dFk4bL3a8I8",
       "title": "Gears of War: E-Day, presentación oficial de la jugabilidad",
       "label": "Gameplay",
@@ -144,6 +151,11 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Publicado el tráiler oficial del multijugador",
+      "description": "Xbox y The Coalition mostraron Horde Siege y Versus en una presentación oficial centrada en el multijugador."
+    },
     {
       "date": "2026-07-30",
       "title": "Ficha publicada tras el Xbox Games Showcase",

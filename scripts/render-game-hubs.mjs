@@ -179,9 +179,14 @@ function mediaMarkup(data, news) {
         </div>
         ${media.length > 1 ? `
           <div class="game-media-controls" aria-label="Controles del carrusel de vídeos">
-            <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
-            <div class="game-media-dots" data-media-dots></div>
-            <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+            <p class="game-media-counter" data-media-counter aria-live="polite">Vídeo <b data-media-current>1</b> de <b>${media.length}</b></p>
+            <div class="game-media-nav">
+              <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
+              <div class="game-media-dots" data-media-dots>${media.map((_, index) =>
+                `<button type="button" data-media-page="${index}"${index === 0 ? ' class="on"' : ""} aria-label="Mostrar vídeo ${index + 1} de ${media.length}" aria-pressed="${index === 0}"></button>`
+              ).join("")}</div>
+              <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+            </div>
           </div>` : ""}
       </div>`;
 }

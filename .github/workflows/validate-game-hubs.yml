@@ -2,39 +2,233 @@ name: Valida fichas de juego
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - 'data/game-hubs/**'
       - 'juegos/**'
       - 'scripts/validate-game-hubs.mjs'
+      - 'scripts/validate-game-hub-change.mjs'
+      - 'scripts/render-game-hubs.mjs'
       - '.github/workflows/validate-game-hubs.yml'
-  push:
+      - 'docs/GAME_HUB_AUTOMATION.md'
+      - 'docs/PROJECT_RULES.md'
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
     paths:
-      - 'data/game-hubs/**'
-      - 'juegos/**'
-      - 'scripts/validate-game-hubs.mjs'
-      - '.github/workflows/validate-game-hubs.yml'
+      - 'data/game-hubs/*.json'
+      - 'juegos/*.html'
+  schedule:
+    - cron: '*/10 * * * *'
   workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Número de PR automática que debe procesarse'
+        required: false
+        type: string
+      head_ref:
+        description: 'Rama automática esperada'
+        required: false
+        type: string
 
 permissions:
-  contents: read
+  actions: write
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: validate-game-hubs-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  validate:
+  dispatch:
+    if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
-      - name: Descargar repositorio
+      - name: Lanzar la validación de las PR automáticas abiertas
+        run: |
+          gh api --paginate "repos/$GITHUB_REPOSITORY/pulls?state=open&base=main&per_page=100" \
+            --jq '.[] | select(.draft == false and (.head.ref | startswith("bot/game-hubs-")) and .head.repo.full_name == env.GITHUB_REPOSITORY) | [.number, .head.ref] | @tsv' |
+          while IFS=$'\t' read -r number head_ref; do
+            gh workflow run validate-game-hubs.yml \
+              --repo "$GITHUB_REPOSITORY" \
+              --ref main \
+              -f "pr_number=$number" \
+              -f "head_ref=$head_ref"
+          done
+
+  validate:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        (
+          (github.event_name == 'pull_request_target' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/game-hubs-')) ||
+          (github.event_name == 'pull_request' && !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/game-hubs-'))
+        )
+      )
+    runs-on: ubuntu-latest
+    env:
+      HEAD_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.ref_name }}
+    steps:
+      - name: Comprobar la PR automática antes de descargarla
+        if: github.event_name == 'pull_request_target' || (github.event_name == 'workflow_dispatch' && inputs.pr_number != '')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+          REQUESTED_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref }}
+        run: |
+          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
+
+          if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
+            echo 'La PR automática no está abierta, lista y basada en main.'
+            exit 1
+          fi
+          if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
+            echo 'La PR automática no procede del repositorio principal.'
+            exit 1
+          fi
+          if [ "$head_ref" != "$REQUESTED_REF" ]; then
+            echo 'La rama solicitada ya no coincide con la cabecera de la PR.'
+            exit 1
+          fi
+          case "$head_ref" in
+            bot/game-hubs-*) ;;
+            *)
+              echo 'La rama no pertenece a la automatización de fichas.'
+              exit 1
+              ;;
+          esac
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo 'La PR automática contiene archivos no autorizados antes de descargarla:'
+            echo "$invalid"
+            exit 1
+          fi
+
+      - name: Descargar la rama
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.ref_name }}
+          fetch-depth: 0
+
       - name: Preparar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Comprobar fichas vivas
-        run: node scripts/validate-game-hubs.mjs
+          node-version: 22
 
-      # La galeria, el multimedia y las noticias van escritas en el HTML para
-      # que se indexen sin JavaScript. Si alguien cambia el JSON y no vuelve a
-      # generarlas, el HTML se queda obsoleto y aqui salta.
-      - name: Comprobar que el HTML coincide con los datos
+      - name: Obtener main
+        run: git fetch origin main
+
+      - name: Comprobar sintaxis
         run: |
-          node scripts/render-game-hubs.mjs
-          git diff --exit-code -- juegos
+          node --check scripts/validate-game-hubs.mjs
+          node --check scripts/validate-game-hub-change.mjs
+          node --check scripts/render-game-hubs.mjs
+
+      - name: Verificar fuentes, alcance y actualización incremental
+        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
+        run: node scripts/validate-game-hub-change.mjs
+
+      - name: Regenerar el HTML desde los datos
+        run: node scripts/render-game-hubs.mjs
+
+      - name: Comprobar fichas vivas y SEO
+        run: |
+          node scripts/validate-game-hubs.mjs
+          git diff --check
+
+      - name: Exigir que las ramas manuales incluyan el HTML generado
+        if: ${{ !startsWith(env.HEAD_REF, 'bot/game-hubs-') }}
+        run: git diff --exit-code -- juegos
+
+      - name: Limitar el alcance de las ramas automáticas
+        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
+        run: |
+          files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo 'Una rama automática ha modificado archivos no autorizados:'
+            echo "$invalid"
+            exit 1
+          fi
+
+      - name: Guardar el HTML generado en la rama automática
+        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
+        id: automatic_head
+        run: |
+          if ! git diff --quiet -- juegos; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add juegos
+            git commit -m 'Regenera las fichas desde datos verificados'
+            git push origin "HEAD:$HEAD_REF"
+          else
+            echo 'El HTML de las fichas ya está sincronizado.'
+          fi
+          if [ -n "$(git status --porcelain)" ]; then
+            echo 'El árbol de trabajo no quedó limpio después de generar las fichas.'
+            git status --short
+            exit 1
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Fusionar el resultado final verificado
+        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+          EXPECTED_SHA: ${{ steps.automatic_head.outputs.sha }}
+        run: |
+          remote_sha=''
+          for attempt in $(seq 1 15); do
+            pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+            remote_sha="$(printf '%s' "$pr" | jq -r .head.sha)"
+            if [ "$remote_sha" = "$EXPECTED_SHA" ]; then
+              break
+            fi
+            echo "Intento $attempt: la PR todavía apunta a $remote_sha, esperando $EXPECTED_SHA."
+            sleep 4
+          done
+
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
+
+          if [ "$state" != 'open' ] || [ "$draft" != 'false' ] || [ "$base_ref" != 'main' ]; then
+            echo 'La PR no está abierta, lista y basada en main.'
+            exit 1
+          fi
+          if [ "$head_repo" != "$GITHUB_REPOSITORY" ] || [ "$head_ref" != "$HEAD_REF" ]; then
+            echo 'La procedencia o la rama de la PR cambió después de la validación.'
+            exit 1
+          fi
+          if [ "$remote_sha" != "$EXPECTED_SHA" ]; then
+            echo 'La cabecera remota cambió después de la validación.'
+            exit 1
+          fi
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo 'La PR automática contiene archivos no autorizados:'
+            echo "$invalid"
+            exit 1
+          fi
+
+          gh pr merge "$PR_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --squash \
+            --delete-branch \
+            --match-head-commit "$EXPECTED_SHA"

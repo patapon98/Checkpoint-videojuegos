@@ -1,15 +1,3 @@
-/**
- * Vuelca en el HTML de las fichas de juego las secciones que hasta ahora solo
- * se construian en el navegador: galeria, multimedia y noticias relacionadas.
- *
- * El objetivo es que ese contenido exista en el codigo fuente y los buscadores
- * lo vean sin depender de JavaScript. game-hub.js sigue repintando lo mismo al
- * cargar, asi que el marcado generado aqui replica sus plantillas para que el
- * DOM resultante sea equivalente y no haya salto visual.
- *
- * Es el mismo patron que ya usaban los datos, los listados y las fuentes.
- */
-
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -18,19 +6,21 @@ const HUBS_DIR = path.join(ROOT, "data", "game-hubs");
 const PAGES_DIR = path.join(ROOT, "juegos");
 const INDEX_PAGE = path.join(ROOT, "juegos.html");
 const NEWS_FILE = path.join(ROOT, "js", "news-data.js");
-const SITE_ORIGIN = "https://finalsecreto.com";
+const SITEMAP_FILE = path.join(ROOT, "sitemap.xml");
 const IGNORED = new Set(["_template.json", "index.json"]);
+const SITE_URL = "https://finalsecreto.com";
 
 const text = (value = "") => String(value);
-
-const escapeHtml = (value = "") =>
-  text(value).replace(/[&<>"']/g, (char) => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#039;"
-  }[char]));
+const escapeHtml = (value = "") => text(value).replace(/[&<>"']/g, (char) => ({
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&#039;"
+}[char]));
+const escapeAttribute = escapeHtml;
+const escapeRegex = (value = "") => text(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const safeJson = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
 
 const formatDate = (value) =>
   new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "long", year: "numeric" })
@@ -50,7 +40,6 @@ function youtubeId(value = "") {
   }
 }
 
-/** Lee window.FINALSECRETO_NEWS sin navegador. */
 async function loadNews() {
   const source = await readFile(NEWS_FILE, "utf8");
   const shim = {};
@@ -58,7 +47,6 @@ async function loadNews() {
   return Array.isArray(shim.FINALSECRETO_NEWS) ? shim.FINALSECRETO_NEWS : [];
 }
 
-/** Mismo filtrado que relatedNews() en game-hub.js. */
 function relatedNews(data, allNews) {
   const terms = (Array.isArray(data.newsTerms) && data.newsTerms.length ? data.newsTerms : [data.title])
     .filter(Boolean)
@@ -98,7 +86,7 @@ function galleryMarkup(data) {
               ${images.map((item, index) => `
                 <button class="game-gallery-slide" type="button" data-gallery-open="${index}"
                         aria-label="Ampliar imagen ${index + 1} de ${images.length}">
-                  <img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt)}"
+                  <img src="${escapeAttribute(item.src)}" alt="${escapeAttribute(item.alt)}"
                        loading="${index ? "lazy" : "eager"}" decoding="async">
                   <span class="game-gallery-zoom-hint" aria-hidden="true">⌕ Ampliar</span>
                 </button>`).join("")}
@@ -113,17 +101,16 @@ function galleryMarkup(data) {
               <button class="game-gallery-thumb${index === 0 ? " active" : ""}" type="button"
                       data-gallery-thumb="${index}" aria-label="Mostrar imagen ${index + 1}"
                       aria-pressed="${index === 0}">
-                <img src="${escapeHtml(item.src)}" alt="" loading="lazy" decoding="async">
+                <img src="${escapeAttribute(item.src)}" alt="" loading="lazy" decoding="async">
               </button>`).join("")}
           </div>
         </div>
       </div>`;
 }
 
-function mediaMarkup(data, news) {
+function mediaEntries(data, news) {
   const media = [];
   const seen = new Set();
-
   const addVideo = (entry) => {
     const id = youtubeId(entry.videoId || entry.url || "");
     if (!id || seen.has(id)) return;
@@ -135,7 +122,6 @@ function mediaMarkup(data, news) {
       publishedAt: entry.publishedAt || ""
     });
   };
-
   (data.media || []).forEach(addVideo);
   news.forEach((item) => {
     if (!item.trailer?.url) return;
@@ -146,7 +132,11 @@ function mediaMarkup(data, news) {
       publishedAt: item.date
     });
   });
+  return media;
+}
 
+function mediaMarkup(data, news) {
+  const media = mediaEntries(data, news);
   if (!media.length) {
     return '<div class="gallery-placeholder">Todavía no hay vídeos oficiales disponibles.</div>';
   }
@@ -155,8 +145,8 @@ function mediaMarkup(data, news) {
       <article class="game-media-card game-media-slide" aria-hidden="${index > 0}">
         <div class="game-media-frame">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/${escapeHtml(item.id)}?rel=0"
-            title="${escapeHtml(item.title)}"
+            src="https://www.youtube-nocookie.com/embed/${escapeAttribute(item.id)}?rel=0"
+            title="${escapeAttribute(item.title)}"
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -166,9 +156,9 @@ function mediaMarkup(data, news) {
           <div>
             <span class="game-kicker">${escapeHtml(item.label)}</span>
             <h3>${escapeHtml(item.title)}</h3>
-            ${item.publishedAt ? `<time datetime="${escapeHtml(item.publishedAt)}">${escapeHtml(formatDate(item.publishedAt))}</time>` : ""}
+            ${item.publishedAt ? `<time datetime="${escapeAttribute(item.publishedAt)}">${escapeHtml(formatDate(item.publishedAt))}</time>` : ""}
           </div>
-          <a href="https://www.youtube.com/watch?v=${escapeHtml(item.id)}" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+          <a href="https://www.youtube.com/watch?v=${escapeAttribute(item.id)}" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
         </div>
       </article>`).join("");
 
@@ -197,22 +187,117 @@ function newsMarkup(news) {
   }
   return news.map((item) => {
     const href = `/noticias.html#${encodeURIComponent(item.id)}`;
-    return `<a class="related-news-card" href="${href}"><time class="related-news-date" datetime="${escapeHtml(item.date)}">${escapeHtml(formatDate(item.date))}</time><div><h3>${escapeHtml(item.title.es)}</h3><p>${escapeHtml(item.summary.es)}</p></div><span class="related-news-arrow" aria-hidden="true">→</span></a>`;
+    return `<a class="related-news-card" href="${href}"><time class="related-news-date" datetime="${escapeAttribute(item.date)}">${escapeHtml(formatDate(item.date))}</time><div><h3>${escapeHtml(item.title.es)}</h3><p>${escapeHtml(item.summary.es)}</p></div><span class="related-news-arrow" aria-hidden="true">→</span></a>`;
   }).join("");
 }
 
-/**
- * Sustituye el contenido de un <div id="..."> concreto. Se cuentan los div
- * anidados para encontrar el cierre correcto, porque el contenido generado
- * lleva varios niveles dentro.
- */
-function replaceInner(html, id, inner) {
-  const open = new RegExp(`<div\\b[^>]*\\bid="${id}"[^>]*>`);
+function factsMarkup(data) {
+  return [
+    ["Lanzamiento", formatDate(data.releaseDate)],
+    ["Género", data.genre],
+    ["Plataformas", (data.platforms || []).join(" · ")],
+    ["Desarrolladora", data.developer]
+  ].map(([label, value]) => `<div class="game-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("");
+}
+
+function quickFactsMarkup(data) {
+  const facts = [
+    ["Fecha de lanzamiento", formatDate(data.releaseDate)],
+    ["Género", data.genre],
+    ["Plataformas", (data.platforms || []).join(" · ")]
+  ];
+  if (data.price) facts.push(["Precio", data.price]);
+  facts.push(["Desarrolladora", data.developer], ["Editora", data.publisher]);
+  return facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("");
+}
+
+function listMarkup(items) {
+  return (items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+}
+
+function changesMarkup(data) {
+  const changes = Array.isArray(data.changes) ? data.changes : [];
+  if (!changes.length) {
+    return '<li class="game-change-item"><div><h3>Sin cambios registrados</h3><p>La ficha conserva su primera versión editorial.</p></div></li>';
+  }
+  return changes.map((item) => `<li class="game-change-item"><time datetime="${escapeAttribute(item.date)}">${escapeHtml(formatDate(item.date))}</time><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p></div></li>`).join("");
+}
+
+function sourcesMarkup(data) {
+  return (data.sources || []).map((source) => `<a class="source-item" href="${escapeAttribute(source.url)}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(source.label)}</strong><span>${escapeHtml(source.type)} ↗</span></a>`).join("");
+}
+
+function structuredData(data) {
+  const canonical = `${SITE_URL}/juegos/${data.id}`;
+  const trailers = (data.media || []).map((entry) => ({
+    id: youtubeId(entry.videoId || entry.url || ""),
+    title: entry.title || `Vídeo oficial de ${data.title}`,
+    publishedAt: entry.publishedAt || ""
+  })).filter((entry) => entry.id).map((entry) => ({
+    "@type": "VideoObject",
+    name: entry.title,
+    thumbnailUrl: `https://i.ytimg.com/vi/${entry.id}/maxresdefault.jpg`,
+    ...(entry.publishedAt ? { uploadDate: entry.publishedAt } : {}),
+    embedUrl: `https://www.youtube.com/embed/${entry.id}`
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${canonical}#webpage`,
+        url: canonical,
+        name: data.seo.title,
+        description: data.seo.description,
+        dateModified: data.updatedAt,
+        inLanguage: "es",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": `${SITE_URL}/#website`,
+          url: `${SITE_URL}/`,
+          name: "Final Secreto"
+        },
+        mainEntity: { "@id": `${canonical}#game` },
+        author: { "@type": "Organization", name: "Final Secreto" }
+      },
+      {
+        "@type": "VideoGame",
+        "@id": `${canonical}#game`,
+        name: data.title,
+        url: canonical,
+        description: data.premise,
+        image: data.heroImage,
+        datePublished: data.releaseDate,
+        dateModified: data.updatedAt,
+        gamePlatform: data.platforms || [],
+        genre: data.genre,
+        publisher: { "@type": "Organization", name: data.publisher },
+        creator: { "@type": "Organization", name: data.developer },
+        sameAs: data.officialUrl,
+        mainEntityOfPage: { "@id": `${canonical}#webpage` },
+        ...(trailers.length ? { trailer: trailers } : {})
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumbs`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Portada", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "Calendario", item: `${SITE_URL}/calendario` },
+          { "@type": "ListItem", position: 3, name: data.title, item: canonical }
+        ]
+      }
+    ]
+  };
+}
+
+function replaceElementInner(html, id, inner) {
+  const open = new RegExp(`<([a-z][\\w:-]*)\\b[^>]*\\bid="${escapeRegex(id)}"[^>]*>`, "i");
   const match = open.exec(html);
   if (!match) throw new Error(`No se encontró el contenedor #${id}`);
-
+  const tagName = match[1];
   const start = match.index + match[0].length;
-  const tag = /<\/?div\b/gi;
+  const tag = new RegExp(`</?${escapeRegex(tagName)}\\b`, "gi");
   tag.lastIndex = start;
   let depth = 1;
   let found;
@@ -269,15 +354,121 @@ function indexStructuredData(html, games) {
   graph.mainEntity.itemListElement = games.map((data, index) => ({
     "@type": "ListItem",
     position: index + 1,
-    url: `${SITE_ORIGIN}/juegos/${data.id}`,
+    url: `${SITE_URL}/juegos/${data.id}`,
     name: data.title
   }));
 
   return html.slice(0, from) + JSON.stringify(graph) + html.slice(end);
+function replaceClassElement(html, tagName, className, replacement) {
+  const pattern = new RegExp(`<${tagName}\\b(?=[^>]*\\bclass="[^"]*\\b${escapeRegex(className)}\\b[^"]*")[^>]*>[\\s\\S]*?</${tagName}>`, "i");
+  if (!pattern.test(html)) throw new Error(`No se encontró .${className}`);
+  return html.replace(pattern, replacement);
+}
+
+function replaceAttributeInTag(tag, attribute, value) {
+  const pattern = new RegExp(`\\s${escapeRegex(attribute)}="[^"]*"`, "i");
+  const encoded = escapeAttribute(value);
+  if (pattern.test(tag)) return tag.replace(pattern, ` ${attribute}="${encoded}"`);
+  return tag.replace(/>$/, ` ${attribute}="${encoded}">`);
+}
+
+function replaceElementAttribute(html, id, attribute, value) {
+  const pattern = new RegExp(`<([a-z][\\w:-]*)\\b(?=[^>]*\\bid="${escapeRegex(id)}")[^>]*>`, "i");
+  if (!pattern.test(html)) throw new Error(`No se encontró #${id} para actualizar ${attribute}`);
+  return html.replace(pattern, (tag) => replaceAttributeInTag(tag, attribute, value));
+}
+
+function replaceClassElementAttribute(html, tagName, className, attribute, value) {
+  const pattern = new RegExp(`<${tagName}\\b(?=[^>]*\\bclass="[^"]*\\b${escapeRegex(className)}\\b[^"]*")[^>]*>`, "i");
+  if (!pattern.test(html)) throw new Error(`No se encontró .${className} para actualizar ${attribute}`);
+  return html.replace(pattern, (tag) => replaceAttributeInTag(tag, attribute, value));
+}
+
+function replaceMeta(html, key, value) {
+  const pattern = new RegExp(`<meta\\b(?=[^>]*(?:name|property)="${escapeRegex(key)}")[^>]*>`, "i");
+  if (!pattern.test(html)) throw new Error(`No se encontró la meta ${key}`);
+  return html.replace(pattern, (tag) => replaceAttributeInTag(tag, "content", value));
+}
+
+function replaceTitle(html, value) {
+  if (!/<title>[\s\S]*?<\/title>/i.test(html)) throw new Error("No se encontró <title>");
+  return html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(value)}</title>`);
+}
+
+function replaceStructuredData(html, data) {
+  const pattern = /<script type="application\/ld\+json" id="gameStructuredData">[\s\S]*?<\/script>/i;
+  if (!pattern.test(html)) throw new Error("No se encontraron los datos estructurados de la ficha");
+  return html.replace(pattern, `<script type="application/ld+json" id="gameStructuredData">${safeJson(structuredData(data))}</script>`);
+}
+
+function updateBody(html, data) {
+  const pattern = /<body\b[^>]*>/i;
+  if (!pattern.test(html)) throw new Error("No se encontró <body>");
+  return html.replace(pattern, (tag) => {
+    let updated = replaceAttributeInTag(tag, "data-game-id", data.id);
+    updated = replaceAttributeInTag(updated, "data-game-title", data.title);
+    updated = replaceAttributeInTag(updated, "data-release-date", data.releaseDate);
+    return replaceAttributeInTag(updated, "style", `--game-gold:${data.theme.accent};--game-gold-soft:${data.theme.accentSoft}`);
+  });
+}
+
+function updateStaticHtml(html, data, news) {
+  const platforms = (data.platforms || []).join(" · ");
+  html = replaceTitle(html, data.seo.title);
+  html = replaceMeta(html, "description", data.seo.description);
+  html = replaceMeta(html, "article:modified_time", data.updatedAt);
+  html = replaceMeta(html, "og:title", data.seo.title);
+  html = replaceMeta(html, "og:description", data.seo.ogDescription);
+  html = replaceMeta(html, "og:image", data.heroImage);
+  html = replaceMeta(html, "twitter:image", data.heroImage);
+  html = replaceStructuredData(html, data);
+  html = updateBody(html, data);
+
+  html = replaceElementAttribute(html, "heroMedia", "aria-label", data.seo.heroImageAlt);
+  html = replaceElementAttribute(html, "heroMedia", "style", `background-image:linear-gradient(135deg,rgba(12,13,16,.2),rgba(12,13,16,.06)),url('${data.heroImage}')`);
+  html = replaceClassElement(html, "div", "game-eyebrow", `<div class="game-eyebrow"><span class="game-status" id="gameStatus">${escapeHtml(data.status)}</span><span>Ficha viva</span><span>${escapeHtml(platforms)}</span></div>`);
+  html = html.replace(/(<section class="game-hero[\s\S]*?<h1>)[\s\S]*?(<\/h1>)/i, `$1${data.seo.heroTitleHtml}$2`);
+  html = replaceClassElement(html, "p", "game-deck", `<p class="game-deck">${escapeHtml(data.subtitle)}</p>`);
+  html = replaceElementAttribute(html, "wishlistButton", "href", data.storeUrl || data.officialUrl);
+
+  html = replaceElementInner(html, "updatedAt", escapeHtml(formatDate(data.updatedAt)));
+  html = replaceElementAttribute(html, "updatedAt", "datetime", data.updatedAt);
+  html = replaceElementInner(html, "countdownTitle", escapeHtml(formatDate(data.releaseDate)));
+  html = replaceElementInner(html, "gamePremise", escapeHtml(data.premise));
+  html = replaceElementInner(html, "gameOverview", escapeHtml(data.overview));
+  html = replaceElementInner(html, "gameFacts", factsMarkup(data));
+  html = replaceElementInner(html, "gameContext", escapeHtml(data.context));
+  html = replaceElementInner(html, "confirmedList", listMarkup(data.confirmed));
+  html = replaceElementInner(html, "pendingList", listMarkup(data.pending));
+  html = replaceElementInner(html, "gameChangeList", changesMarkup(data));
+  html = replaceElementInner(html, "gameMedia", mediaMarkup(data, news));
+  html = replaceElementInner(html, "gameGallery", galleryMarkup(data));
+  html = replaceElementInner(html, "relatedNews", newsMarkup(news));
+  html = replaceElementInner(html, "sourceList", sourcesMarkup(data));
+  html = replaceElementInner(html, "quickFacts", quickFactsMarkup(data));
+  html = replaceClassElementAttribute(html, "a", "game-source-link", "href", data.officialUrl);
+  return html;
+}
+
+function updateSitemap(sitemap, games) {
+  let output = sitemap;
+  for (const data of games) {
+    const loc = `${SITE_URL}/juegos/${data.id}`;
+    const block = new RegExp(`(<url>\\s*<loc>${escapeRegex(loc)}</loc>[\\s\\S]*?<lastmod>)([^<]*)(</lastmod>[\\s\\S]*?</url>)`, "i");
+    if (block.test(output)) {
+      output = output.replace(block, `$1${data.updatedAt}$3`);
+      continue;
+    }
+    const entry = `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${data.updatedAt}</lastmod>\n  </url>\n`;
+    if (!output.includes("</urlset>")) throw new Error("sitemap.xml no contiene </urlset>");
+    output = output.replace("</urlset>", `${entry}</urlset>`);
+  }
+  return output;
 }
 
 const allNews = await loadNews();
 const files = (await readdir(HUBS_DIR)).filter((file) => file.endsWith(".json") && !IGNORED.has(file));
+const games = [];
 let changed = 0;
 const games = [];
 
@@ -287,11 +478,7 @@ for (const file of files.sort()) {
   const pagePath = path.join(PAGES_DIR, `${data.id}.html`);
   const original = await readFile(pagePath, "utf8");
   const news = relatedNews(data, allNews);
-
-  let html = original;
-  html = replaceInner(html, "gameGallery", galleryMarkup(data));
-  html = replaceInner(html, "gameMedia", mediaMarkup(data, news));
-  html = replaceInner(html, "relatedNews", newsMarkup(news));
+  const html = updateStaticHtml(original, data, news);
 
   if (html !== original) {
     await writeFile(pagePath, html, "utf8");
@@ -310,4 +497,8 @@ if (indexHtml !== indexOriginal) {
   console.log(`juegos.html actualizado con ${ordered.length} fichas.`);
 }
 
-console.log(`Fichas actualizadas: ${changed} de ${files.length}.`);
+const originalSitemap = await readFile(SITEMAP_FILE, "utf8");
+const sitemap = updateSitemap(originalSitemap, games);
+if (sitemap !== originalSitemap) await writeFile(SITEMAP_FILE, sitemap, "utf8");
+
+console.log(`Fichas actualizadas: ${changed} de ${files.length}. Sitemap ${sitemap === originalSitemap ? "sin cambios" : "sincronizado"}.`);

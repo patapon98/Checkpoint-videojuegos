@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,650;0,9..144,750&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/game-hub.css?v=20260730-11">
+<link rel="stylesheet" href="/css/game-hub.css?v=20260730-12">
 <link rel="stylesheet" href="/css/game-hub-interactions.css?v=20260730-2">
 <script>(function(){try{var s=localStorage.getItem('finalsecreto-theme');var t=s||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);document.documentElement.style.colorScheme=t}catch(e){}})();</script>
 <script type="application/ld+json" id="gameStructuredData">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://finalsecreto.com/juegos/control-resonant#webpage","url":"https://finalsecreto.com/juegos/control-resonant","name":"CONTROL Resonant: combate, historia y todo lo confirmado","description":"Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.","dateModified":"2026-07-30","inLanguage":"es","isPartOf":{"@type":"WebSite","@id":"https://finalsecreto.com/#website","url":"https://finalsecreto.com/","name":"Final Secreto"},"mainEntity":{"@id":"https://finalsecreto.com/juegos/control-resonant#game"},"author":{"@type":"Organization","name":"Final Secreto"}},{"@type":"VideoGame","@id":"https://finalsecreto.com/juegos/control-resonant#game","name":"CONTROL Resonant","url":"https://finalsecreto.com/juegos/control-resonant","description":"Tras años de cautiverio en la Agencia Federal de Control, Dylan Faden es enviado a una Manhattan deformada por fuerzas paranormales. Mientras intenta contener una nueva resonancia cósmica, deberá dominar sus poderes y encontrar a su hermana desaparecida, Jesse.","image":"https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/6800d1c970b28815caa97e694ce811ca090f82e2/library_hero_2x.jpg","datePublished":"2026-09-24","dateModified":"2026-07-30","gamePlatform":["PS5","Xbox Series X|S","PC"],"genre":"Acción, aventura y RPG","publisher":{"@type":"Organization","name":"Remedy Entertainment"},"creator":{"@type":"Organization","name":"Remedy Entertainment"},"sameAs":"https://www.remedygames.com/games/control-2","mainEntityOfPage":{"@id":"https://finalsecreto.com/juegos/control-resonant#webpage"},"trailer":[{"@type":"VideoObject","name":"Tráiler de historia de CONTROL Resonant","thumbnailUrl":"https://i.ytimg.com/vi/JZuJlSGpgQo/maxresdefault.jpg","uploadDate":"2026-06-02","embedUrl":"https://www.youtube.com/embed/JZuJlSGpgQo"},{"@type":"VideoObject","name":"Presentación oficial de la jugabilidad de CONTROL Resonant","thumbnailUrl":"https://i.ytimg.com/vi/RJTBoQhWaC0/maxresdefault.jpg","uploadDate":"2026-02-13","embedUrl":"https://www.youtube.com/embed/RJTBoQhWaC0"}]},{"@type":"BreadcrumbList","@id":"https://finalsecreto.com/juegos/control-resonant#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada","item":"https://finalsecreto.com/"},{"@type":"ListItem","position":2,"name":"Calendario","item":"https://finalsecreto.com/calendario"},{"@type":"ListItem","position":3,"name":"CONTROL Resonant","item":"https://finalsecreto.com/juegos/control-resonant"}]}]}</script>
@@ -141,9 +141,12 @@
         </div>
         
           <div class="game-media-controls" aria-label="Controles del carrusel de vídeos">
-            <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
-            <div class="game-media-dots" data-media-dots></div>
-            <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+            <p class="game-media-counter" data-media-counter aria-live="polite">Vídeo <b data-media-current>1</b> de <b>2</b></p>
+            <div class="game-media-nav">
+              <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
+              <div class="game-media-dots" data-media-dots><button type="button" data-media-page="0" class="on" aria-label="Mostrar vídeo 1 de 2" aria-pressed="true"></button><button type="button" data-media-page="1" aria-label="Mostrar vídeo 2 de 2" aria-pressed="false"></button></div>
+              <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+            </div>
           </div>
       </div></div>
       </section>
@@ -286,7 +289,7 @@
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span></div></footer>
 <script src="/js/main.js?v=20260730-1"></script>
 <script src="/js/news-data.js?v=20260728-6"></script>
-<script src="/js/game-hub.js?v=20260730-8"></script>
+<script src="/js/game-hub.js?v=20260730-9"></script>
 <script src="/js/game-hub-interactions.js?v=20260730-2"></script>
 </body>
 </html>

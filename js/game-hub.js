@@ -370,9 +370,14 @@
         </div>
         ${media.length > 1 ? `
           <div class="game-media-controls" aria-label="Controles del carrusel de vídeos">
-            <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
-            <div class="game-media-dots" data-media-dots></div>
-            <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+            <p class="game-media-counter" data-media-counter aria-live="polite">Vídeo <b data-media-current>1</b> de <b>${media.length}</b></p>
+            <div class="game-media-nav">
+              <button type="button" data-media-prev aria-label="Vídeo anterior" disabled>←</button>
+              <div class="game-media-dots" data-media-dots>${media.map((_, index) =>
+                `<button type="button" data-media-page="${index}"${index === 0 ? ' class="on"' : ''} aria-label="Mostrar vídeo ${index + 1} de ${media.length}" aria-pressed="${index === 0}"></button>`
+              ).join('')}</div>
+              <button type="button" data-media-next aria-label="Vídeo siguiente">→</button>
+            </div>
           </div>` : ''}
       </div>`;
   
@@ -385,6 +390,7 @@
     const previous = slider.querySelector('[data-media-prev]');
     const next = slider.querySelector('[data-media-next]');
     const dots = slider.querySelector('[data-media-dots]');
+    const counter = slider.querySelector('[data-media-current]');
     let current = 0;
     let pointer = null;
   
@@ -406,14 +412,11 @@
         dot.classList.toggle('on', active);
         dot.setAttribute('aria-pressed', String(active));
       });
+      if (counter) counter.textContent = String(current + 1);
       previous.disabled = current === 0;
       next.disabled = current === slides.length - 1;
     };
-  
-    dots.innerHTML = slides.map((_, index) =>
-      `<button type="button" data-media-page="${index}" aria-label="Mostrar vídeo ${index + 1} de ${slides.length}" aria-pressed="${index === 0}"></button>`
-    ).join('');
-  
+
     previous.addEventListener('click', () => show(current - 1));
     next.addEventListener('click', () => show(current + 1));
     dots.addEventListener('click', (event) => {

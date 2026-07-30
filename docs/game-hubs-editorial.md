@@ -36,7 +36,8 @@ El JSON es la referencia editorial. El HTML inicial debe reflejarlo literalmente
 - Separa con claridad `confirmed` y `pending`.
 - `premise` debe explicar el juego; `context` debe explicar por qué importa. Ambos textos deben ser originales de Final Secreto.
 - No repitas en `confirmed` la fecha, plataformas, desarrolladora o editora cuando esos datos ya aparecen en el resumen y los datos rápidos. Reserva esa lista para características, sistemas y contenido que aporten información nueva.
-- Utiliza `spotlight` para el tema que más condiciona la compra o mejor define al juego, como precio y ediciones, estructura jugable, plantel o modos. Mantén el mismo bloque visual entre fichas aunque cambie su enfoque editorial.
+- Utiliza `spotlight` para el tema que mejor define al juego, como estructura jugable, combate, plantel o modos. Mantén el mismo bloque visual entre fichas aunque cambie su enfoque editorial.
+- Si el precio es solo un dato de compra, guárdalo en el campo opcional `price` y muéstralo de forma sintética en «Datos del juego». Resérvalo para `spotlight` únicamente cuando exista una discusión editorial relevante sobre su política de precios, como ocurre en GTA VI.
 - `updatedAt` solo cambia cuando la ficha recibe una modificación editorial real.
 - Cada modificación real añade una entrada a `changes` con fecha, título breve y descripción concreta. El historial registra cambios de la ficha, no inventa acontecimientos del juego.
 - `newsTerms` debe contener únicamente términos suficientemente específicos para evitar noticias no relacionadas.
@@ -86,6 +87,7 @@ No se debe repetir el nombre del juego de forma mecánica en todos los párrafos
 - No existe un límite fijo de cuatro imágenes. Incluye las capturas oficiales que aporten variedad real, sin alargar la galería con relleno.
 - Comprueba las dimensiones efectivas que recibe el navegador. Para cabeceras y capturas horizontales se recomienda un mínimo real de 1600 píxeles de ancho; no basta con que la URL contenga una etiqueta de alta resolución.
 - Las capturas deben mostrarse completas, sin deformaciones ni recortes accidentales, y poder ampliarse.
+- Los valores de las tarjetas de `spotlight` deben adaptarse al ancho disponible: usa una cuadrícula flexible, tipografía fluida y corte seguro de palabras largas. Comprueba especialmente zoom de navegador, escritorio estrecho y móvil.
 - El visor ampliado debe centrar la imagen horizontal y verticalmente en el viewport. Debe funcionar con ratón, teclado y pantalla táctil, y cerrarse mediante botón, clic exterior y Escape.
 - No se permiten pantallas negras, fotogramas de transición, imágenes rotas ni recursos promocionales de calidad inferior cuando existen capturas adecuadas.
 - Utiliza capturas publicadas por la desarrolladora, la editora o una tienda oficial. RAWG no debe emplearse como fuente ni aparecer en el texto visible de la ficha.

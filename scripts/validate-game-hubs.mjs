@@ -49,7 +49,7 @@ for (const file of jsonFiles) {
   expect(!games.has(data.id), `${label}: id duplicado`);
   games.set(data.id, data);
 
-  ['id', 'title', 'subtitle', 'status', 'releaseDate', 'developer', 'publisher', 'genre', 'officialUrl', 'storeUrl', 'heroImage', 'premise', 'context', 'updatedAt'].forEach((key) => requireString(data, key, label));
+  ['id', 'title', 'subtitle', 'status', 'releaseDate', 'developer', 'publisher', 'genre', 'officialUrl', 'storeUrl', 'heroImage', 'premise', 'overview', 'context', 'updatedAt'].forEach((key) => requireString(data, key, label));
   ['platforms', 'gallery', 'media', 'confirmed', 'pending', 'sources', 'newsTerms', 'changes', 'relatedGameIds'].forEach((key) => requireArray(data, key, label));
   if (Object.hasOwn(data, 'price')) requireString(data, 'price', label);
 
@@ -127,6 +127,7 @@ for (const [id, data] of games) {
 
   const staticValues = [
     data.premise,
+    data.overview,
     data.context,
     data.spotlight.kicker,
     data.spotlight.title,

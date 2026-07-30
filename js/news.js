@@ -263,10 +263,10 @@
             ${updated}
           </div>
           <h3>${escapeHTML(text(item.title, lang))}</h3>
-          <p>${escapeHTML(text(item.summary, lang))}</p>
+          <p>${emphasizedHTML(item.summary, item, lang)}</p>
           <div class="news-why">
             <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-            <span>${escapeHTML(text(item.why, lang))}</span>
+            <span>${emphasizedHTML(item.why, item, lang)}</span>
           </div>
           ${sourceLinks(item, lang, false)}
           ${homeFlipButton(item, lang, false)}
@@ -285,10 +285,10 @@
           ${relativeDate(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
-        <p>${escapeHTML(text(item.summary, lang))}</p>
+        <p>${emphasizedHTML(item.summary, item, lang)}</p>
         <div class="news-brief-why">
           <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-          ${escapeHTML(text(item.why, lang))}
+          ${emphasizedHTML(item.why, item, lang)}
         </div>
         ${sourceLinks(item, lang, true)}
         ${homeFlipButton(item, lang, false)}
@@ -550,10 +550,10 @@
             </span>
           </div>
           <h2>${escapeHTML(text(item.title, lang))}</h2>
-          <p>${escapeHTML(text(item.summary, lang))}</p>
+          <p>${emphasizedHTML(item.summary, item, lang)}</p>
           <div class="news-why">
             <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-            <span>${escapeHTML(text(item.why, lang))}</span>
+            <span>${emphasizedHTML(item.why, item, lang)}</span>
           </div>
           ${sourceLinks(item, lang, false)}
         </div>

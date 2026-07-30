@@ -14,8 +14,8 @@
   "officialUrl": "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
   "storeUrl": "https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000",
   "trailerUrl": "https://www.youtube.com/watch?v=DV9Oq_X22Ak",
-  "heroImage": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
-  "heroImageKind": "official-screenshot",
+  "heroImage": "/img/juegos/marvel-tokon-fighting-souls.jpg",
+  "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
   "theme": {
     "accent": "#ff6268",
@@ -138,7 +138,7 @@
     "description": "Ficha actualizada de MARVEL Tōkon: Fighting Souls con fecha, plataformas, personajes, modos, tráiler, imágenes y contenido del primer año.",
     "ogDescription": "Fecha, plantel, modos y todo lo confirmado sobre el juego de lucha 4 contra 4 de Arc System Works.",
     "heroTitleHtml": "MARVEL Tōkon: <em>Fighting Souls</em>",
-    "heroImageAlt": "Captura oficial de MARVEL Tōkon: Fighting Souls con Carnage y Spider-Man"
+    "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
     {

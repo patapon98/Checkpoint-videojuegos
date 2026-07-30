@@ -1,0 +1,42 @@
+name: Corregir énfasis de noticias
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fix-news-emphasis-temp.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.ref == 'refs/heads/bot/news-2026-07-30-1620-xbox-double-fine'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bot/news-2026-07-30-1620-xbox-double-fine
+      - name: Corregir fragmentos exactos
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('js/news-data.js')
+          text = path.read_text(encoding='utf-8')
+          text = text.replace(
+              'emphasis: { es: ["los ingresos de contenidos y servicios de Xbox cayeron un 10%", "el hardware retrocedió un 13%", "Microsoft alcanzó 90.007 millones de dólares de ingresos"] },',
+              'emphasis: { es: ["los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual", "Los ingresos por hardware bajaron un 13%", "el conjunto de Microsoft alcanzó 90.007 millones de dólares"] },'
+          )
+          text = text.replace(
+              'emphasis: { es: ["23 empleados", "tres semanas después de recuperar su independencia", "necesaria para garantizar la supervivencia del estudio"] },',
+              'emphasis: { es: ["ha reducido su plantilla en 23 personas", "tres semanas después de abandonar Xbox y volver a ser independiente", "garantizar su supervivencia"] },'
+          )
+          path.write_text(text, encoding='utf-8')
+      - name: Validar y limpiar
+        run: |
+          node --check js/news-data.js
+          git rm .github/workflows/fix-news-emphasis-temp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/news-data.js
+          git commit -m "Corrige la negrita de Xbox y Double Fine"
+          git push origin HEAD:bot/news-2026-07-30-1620-xbox-double-fine

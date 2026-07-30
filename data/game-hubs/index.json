@@ -1,6 +1,38 @@
 {
   "games": [
     {
+      "id": "marvels-wolverine",
+      "title": "Marvel's Wolverine",
+      "url": "/juegos/marvels-wolverine",
+      "releaseIds": [
+        "marvel-s-wolverine"
+      ],
+      "newsIds": [
+        "marvel-wolverine-fecha"
+      ],
+      "terms": [
+        "marvel's wolverine",
+        "marvels wolverine",
+        "marvel wolverine",
+        "wolverine"
+      ]
+    },
+    {
+      "id": "gears-of-war-e-day",
+      "title": "Gears of War: E-Day",
+      "url": "/juegos/gears-of-war-e-day",
+      "releaseIds": [
+        "gears-of-war-e-day"
+      ],
+      "newsIds": [],
+      "terms": [
+        "gears of war: e-day",
+        "gears of war e-day",
+        "gears e-day",
+        "gears eday"
+      ]
+    },
+    {
       "id": "god-of-war-laufey",
       "title": "God of War Laufey",
       "url": "/juegos/god-of-war-laufey",

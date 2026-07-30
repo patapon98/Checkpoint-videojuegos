@@ -36,25 +36,55 @@ on:
       - "data/calendar.json"
       - "calendario.html"
       - "index.html"
+  schedule:
+    - cron: "*/10 * * * *"
   workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Número de PR automática que debe procesarse"
+        required: false
+        type: string
+      head_ref:
+        description: "Rama automática esperada"
+        required: false
+        type: string
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
 concurrency:
-  group: validate-calendar-${{ github.event.pull_request.number || github.ref }}
+  group: validate-calendar-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
+  dispatch:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Lanzar la validación de las PR automáticas abiertas
+        run: |
+          gh api --paginate "repos/$GITHUB_REPOSITORY/pulls?state=open&base=main&per_page=100" \
+            --jq '.[] | select(.draft == false and (.head.ref | startswith("bot/calendar-")) and .head.repo.full_name == env.GITHUB_REPOSITORY) | [.number, .head.ref] | @tsv' |
+          while IFS=$'\t' read -r number head_ref; do
+            gh workflow run validate-release-calendar.yml \
+              --repo "$GITHUB_REPOSITORY" \
+              --ref main \
+              -f "pr_number=$number" \
+              -f "head_ref=$head_ref"
+          done
+
   validate:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (
         github.event.pull_request.head.repo.full_name == github.repository &&
         (
-          (github.event_name == 'pull_request_target' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')) ||
-          (github.event_name == 'pull_request' && !startsWith(github.event.pull_request.head.ref, 'bot/calendar-'))
+          (github.event_name == 'pull_request_target' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')) ||
+          (github.event_name == 'pull_request' && !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-'))
         )
       )
     runs-on: ubuntu-latest
@@ -63,10 +93,11 @@ jobs:
       RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
     steps:
       - name: Comprobar la PR automática antes de descargarla
-        if: github.event_name == 'pull_request_target'
+        if: github.event_name == 'pull_request_target' || (github.event_name == 'workflow_dispatch' && inputs.pr_number != '')
         env:
           GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+          REQUESTED_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref }}
         run: |
           pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
           state="$(printf '%s' "$pr" | jq -r .state)"
@@ -81,6 +112,10 @@ jobs:
           fi
           if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
             echo "La PR automática no procede del repositorio principal."
+            exit 1
+          fi
+          if [ "$head_ref" != "$REQUESTED_REF" ]; then
+            echo "La rama solicitada ya no coincide con la cabecera de la PR."
             exit 1
           fi
           case "$head_ref" in
@@ -102,7 +137,7 @@ jobs:
       - name: Descargar la rama de la PR
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+          ref: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.ref_name }}
           fetch-depth: 0
 
       - name: Preparar Node
@@ -114,12 +149,16 @@ jobs:
         run: git fetch origin main
 
       - name: Cargar y retirar una clave RAWG temporal
-        if: github.event_name == 'pull_request' || github.event_name == 'pull_request_target'
+        if: github.event_name == 'pull_request' || github.event_name == 'pull_request_target' || (github.event_name == 'workflow_dispatch' && inputs.pr_number != '')
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
           GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
         run: |
+          if [ -z "$PR_BODY" ] && [ -n "$PR_NUMBER" ]; then
+            PR_BODY="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq '.body // ""')"
+            export PR_BODY
+          fi
           python - <<'PY'
           import os, pathlib, re
           body = os.environ.get("PR_BODY", "")
@@ -164,7 +203,7 @@ jobs:
         run: node scripts/validate-rawg-images.mjs
 
       - name: Probar el mantenimiento diario contra fuentes oficiales
-        if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name == 'workflow_dispatch' || !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
           node scripts/update-release-calendar.mjs
           node scripts/generate-release-calendar.mjs
@@ -187,7 +226,7 @@ jobs:
           git diff --check
 
       - name: Limitar las ramas automáticas a datos y salidas generadas
-        if: startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
           files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
           invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/calendar\.json|calendario\.html|index\.html)$' || true)"
@@ -198,10 +237,10 @@ jobs:
           fi
 
       - name: Preparar la cabecera final de la rama automática
-        if: github.event_name != 'workflow_dispatch' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name != 'workflow_dispatch' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
         id: automatic_head
         env:
-          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          HEAD_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref }}
         run: |
           if ! git diff --quiet -- data/calendar.json calendario.html index.html; then
             git config user.name "github-actions[bot]"
@@ -220,10 +259,10 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Fusionar el resultado final verificado
-        if: github.event_name != 'workflow_dispatch' && startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name != 'workflow_dispatch' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
         env:
           GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
           EXPECTED_SHA: ${{ steps.automatic_head.outputs.sha }}
         run: |
           pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
@@ -265,7 +304,7 @@ jobs:
             --delete-branch \
             --match-head-commit "$EXPECTED_SHA"
       - name: Guardar datos y páginas generadas en la rama manual
-        if: github.event_name == 'workflow_dispatch' || !startsWith(github.event.pull_request.head.ref, 'bot/calendar-')
+        if: github.event_name == 'workflow_dispatch' || !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/calendar-')
         run: |
           if git diff --quiet -- data/calendar.json calendario.html index.html; then
             echo "Los datos y las salidas generadas ya están sincronizados."

@@ -1,0 +1,127 @@
+name: Añadir plan de crecimiento de Xbox
+
+on:
+  push:
+    paths:
+      - ".github/workflows/add-xbox-growth-plan-temp.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/bot/news-2026-07-31-0805-xbox-plan-crecimiento'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bot/news-2026-07-31-0805-xbox-plan-crecimiento
+      - name: Añadir noticia y ampliación
+        shell: python
+        run: |
+          from pathlib import Path
+
+          data_path = Path('js/news-data.js')
+          data = data_path.read_text(encoding='utf-8')
+          marker = 'window.FINALSECRETO_NEWS = [\n'
+          if marker not in data:
+              raise SystemExit('No se encontró el inicio de FINALSECRETO_NEWS')
+          if 'xbox-plan-crecimiento-fy27' in data:
+              raise SystemExit('La noticia ya existe')
+
+          entry = '''window.FINALSECRETO_NEWS = [
+            {
+              id: "xbox-plan-crecimiento-fy27",
+              important: true,
+              emphasis: { es: ["volver al crecimiento de jugadores e ingresos antes de julio de 2027", "la consola seguirá liderando la plataforma", "Minecraft se convertirá en el principal espacio de creación de la compañía"] },
+              category: { es: "Industria" },
+              date: "2026-07-30",
+              publishedAt: "2026-07-30T22:10:13Z",
+              featured: false,
+              ticker: {
+                keyword: { es: "Xbox" },
+                copy: { es: "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027" }
+              },
+              tone: "xbox",
+              title: {
+                es: "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027"
+              },
+              summary: {
+                es: "Según un memorando interno obtenido por The Verge, Asha Sharma quiere volver al crecimiento de jugadores e ingresos antes de julio de 2027. El plan establece que la consola seguirá liderando la plataforma y que Minecraft se convertirá en el principal espacio de creación de la compañía."
+              },
+              why: {
+                es: "La hoja de ruta concreta cómo Xbox pretende responder a la caída de ingresos, los despidos y la salida de varios estudios. También concentra la inversión en la plataforma principal, las grandes franquicias, Minecraft y la expansión de sus mundos fuera de los juegos."
+              },
+              sources: [
+                {
+                  label: "The Verge",
+                  type: { es: "Memorando interno y contexto" },
+                  url: "https://www.theverge.com/games/973520/xbox-ceo-memo-one-year-growth"
+                },
+                {
+                  label: "Xbox Wire",
+                  type: { es: "Plan oficial de reestructuración" },
+                  url: "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
+                }
+              ]
+            },
+          '''
+          data = data.replace(marker, entry, 1)
+          data_path.write_text(data, encoding='utf-8')
+
+          news_path = Path('js/news.js')
+          news = news_path.read_text(encoding='utf-8')
+          details_marker = '  const homeDetails = {\n'
+          if details_marker not in news:
+              raise SystemExit('No se encontró homeDetails')
+          details = '''  const homeDetails = {
+            "xbox-plan-crecimiento-fy27": {
+              es: [
+                "Sharma organiza el nuevo ejercicio alrededor de cuatro áreas. Core reforzará la plataforma con la consola como centro. Content buscará convertir los juegos con más éxito en franquicias globales. Creation se concentrará en Minecraft y Connection ampliará los mundos conocidos a nuevas experiencias y formatos.",
+                "El objetivo inmediato es recuperar jugadores e ingresos durante el ejercicio fiscal que termina en junio de 2027. Para 2028 y 2029, Xbox espera que esas inversiones aceleren el negocio. Su meta posterior es sostener un crecimiento de dos dígitos en jugadores y participación antes de 2030."
+              ]
+            },
+          '''
+          news = news.replace(details_marker, details, 1)
+          news_path.write_text(news, encoding='utf-8')
+
+          for html_name in ('index.html', 'noticias.html'):
+              html_path = Path(html_name)
+              html = html_path.read_text(encoding='utf-8')
+              html = html.replace('js/news-data.js?v=20260728-6', 'js/news-data.js?v=20260731-1')
+              html = html.replace('js/news.js?v=20260728-5', 'js/news.js?v=20260731-1')
+              html_path.write_text(html, encoding='utf-8')
+      - name: Validar cambios
+        run: |
+          node --check js/news-data.js
+          node --check js/news.js
+          python - <<'PY'
+          from pathlib import Path
+          data = Path('js/news-data.js').read_text(encoding='utf-8')
+          news = Path('js/news.js').read_text(encoding='utf-8')
+          summary = 'Según un memorando interno obtenido por The Verge, Asha Sharma quiere volver al crecimiento de jugadores e ingresos antes de julio de 2027. El plan establece que la consola seguirá liderando la plataforma y que Minecraft se convertirá en el principal espacio de creación de la compañía.'
+          why = 'La hoja de ruta concreta cómo Xbox pretende responder a la caída de ingresos, los despidos y la salida de varios estudios. También concentra la inversión en la plataforma principal, las grandes franquicias, Minecraft y la expansión de sus mundos fuera de los juegos.'
+          phrases = [
+              'volver al crecimiento de jugadores e ingresos antes de julio de 2027',
+              'la consola seguirá liderando la plataforma',
+              'Minecraft se convertirá en el principal espacio de creación de la compañía'
+          ]
+          assert data.count('id: "xbox-plan-crecimiento-fy27"') == 1
+          assert data.count('https://www.theverge.com/games/973520/xbox-ceo-memo-one-year-growth') == 1
+          assert all(p in summary or p in why for p in phrases)
+          assert news.count('"xbox-plan-crecimiento-fy27"') == 1
+          assert 'Core reforzará la plataforma con la consola como centro' in news
+          assert summary not in news and why not in news
+          for name in ('index.html', 'noticias.html'):
+              html = Path(name).read_text(encoding='utf-8')
+              assert 'js/news-data.js?v=20260731-1' in html
+              assert 'js/news.js?v=20260731-1' in html
+          PY
+      - name: Guardar y limpiar
+        run: |
+          git rm .github/workflows/add-xbox-growth-plan-temp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/news-data.js js/news.js index.html noticias.html
+          git commit -m "Añade el plan de crecimiento de Xbox"
+          git push origin HEAD:bot/news-2026-07-31-0805-xbox-plan-crecimiento

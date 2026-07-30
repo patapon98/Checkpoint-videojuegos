@@ -68,7 +68,7 @@
   ],
   "premise": "Catorce años antes del primer Gears of War, Marcus Fenix y Dominic Santiago regresan de las Guerras del Péndulo justo cuando la Horda Locust emerge bajo la ciudad de Kalona. Junto a Mags Carter y Lucas Reyes forman el escuadrón Bravo y atraviesan los tres primeros días de una guerra que nadie comprende todavía.",
   "context": "E-Day no es un spin-off ni Gears 6. Es una nueva entrega principal que vuelve al origen de la saga y reconstruye desde cero personajes, enemigos, armas, animaciones y escenarios en Unreal Engine 5. The Coalition recupera el terror del primer contacto con los Locust sin abandonar el combate de cobertura.",
-  "overview": "Más allá de la campaña, Horde Siege admite doce jugadores y el modo Versus apuesta por partidas competitivas de cuatro contra cuatro. Llegará el primer día a Game Pass Ultimate y es Xbox Play Anywhere, con resolución 4K y hasta 60 FPS en campaña y multijugador si la pantalla lo permite.",
+  "overview": "La saga vuelve a su punto de partida, y lo hace con una campaña que admite cooperativo y un multijugador que crece en número de jugadores y en tamaño de los mapas.",
   "spotlight": {
     "kicker": "La nueva escala de Gears",
     "title": "Campaña cooperativa, movimiento y multijugador",
@@ -92,13 +92,13 @@
     ]
   },
   "confirmed": [
-    "La campaña sigue al escuadrón Bravo durante los tres primeros días del Día de la Emergencia sin abandonar su punto de vista.",
-    "Marcus, Dom, Mags Carter y Lucas Reyes son personajes jugables desde el inicio.",
-    "Las zonas de combate alternan calles estrechas con distritos abiertos, tejados, rutas de flanqueo y coberturas que se deterioran.",
-    "Regresan los agujeros de emergencia y armas como Gnasher y Longshot. También debutan Gut Puncher e Incinerator, y la historia muestra el origen del Lancer con motosierra.",
-    "Horde Siege admite doce jugadores y Versus utiliza modos y mapas competitivos 4 contra 4.",
-    "Llegará el primer día a Game Pass Ultimate, Xbox Series X|S, Xbox en PC, Steam y juego en la nube. También es Xbox Play Anywhere.",
-    "La ficha oficial promete resolución 4K y hasta 60 FPS en campaña y multijugador con una pantalla compatible."
+    "La campaña no abandona en ningún momento el punto de vista del escuadrón Bravo.",
+    "Marcus, Dom, Mags Carter y Lucas Reyes son jugables desde el inicio.",
+    "Los escenarios alternan calles estrechas con distritos abiertos y coberturas que se deterioran.",
+    "Vuelven los agujeros de emergencia, el Gnasher y el Longshot. Debutan Gut Puncher e Incinerator, y se muestra el origen del Lancer con motosierra.",
+    "Horde Siege admite doce jugadores. Versus es competitivo de cuatro contra cuatro.",
+    "Sale el primer día en Game Pass Ultimate, Xbox Series X|S, Xbox en PC, Steam y nube. Es Xbox Play Anywhere.",
+    "La ficha oficial promete 4K y hasta 60 FPS con una pantalla compatible."
   ],
   "pending": [
     "No se han publicado los requisitos definitivos de la versión para PC.",

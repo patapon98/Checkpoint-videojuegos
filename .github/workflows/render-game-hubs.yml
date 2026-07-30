@@ -1,0 +1,45 @@
+name: Renderizar fichas de juego
+
+on:
+  push:
+    paths:
+      - "data/game-hubs/*.json"
+      - "js/news-data.js"
+      - "scripts/render-game-hubs.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: game-hubs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Volcar galería, multimedia y noticias al HTML
+        run: node scripts/render-game-hubs.mjs
+
+      - name: Guardar las fichas actualizadas
+        shell: bash
+        run: |
+          if git diff --quiet -- juegos; then
+            echo "Las fichas ya están al día."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add juegos
+          git commit -m "Renderiza las secciones dinamicas de las fichas de juego"
+          git push

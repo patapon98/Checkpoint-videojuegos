@@ -1958,14 +1958,18 @@
       ],
       "platformsHtml": "PS5 · PC",
       "image": {
-        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3486530/06dd6216ce7739d9d5be7479c748b93c027cfb7c/header.jpg",
+        "src": "https://media.rawg.io/media/games/41c/41c5448f15d06825947791da15489f92.jpg",
         "alt": "Stupid Never Dies",
         "className": "",
         "gridArt": "",
         "poster": "",
         "legacy": false,
         "provider": "rawg",
-        "query": "Stupid Never Dies"
+        "query": "Stupid Never Dies",
+        "rawgId": 1019334,
+        "rawgSlug": "stupid-never-dies",
+        "rawgPage": "https://rawg.io/games/stupid-never-dies",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/3486530/Stupid_Never_Dies/",

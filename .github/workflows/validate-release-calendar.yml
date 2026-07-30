@@ -55,7 +55,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: validate-calendar-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
+  group: validate-calendar-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:

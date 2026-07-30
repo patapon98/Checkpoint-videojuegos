@@ -51,6 +51,7 @@ for (const file of jsonFiles) {
 
   ['id', 'title', 'subtitle', 'status', 'releaseDate', 'developer', 'publisher', 'genre', 'officialUrl', 'storeUrl', 'heroImage', 'premise', 'context', 'updatedAt'].forEach((key) => requireString(data, key, label));
   ['platforms', 'gallery', 'media', 'confirmed', 'pending', 'sources', 'newsTerms', 'changes', 'relatedGameIds'].forEach((key) => requireArray(data, key, label));
+  if (Object.hasOwn(data, 'price')) requireString(data, 'price', label);
 
   expect(validDate(data.releaseDate), `${label}: releaseDate debe usar AAAA-MM-DD`);
   expect(validDate(data.updatedAt), `${label}: updatedAt debe usar AAAA-MM-DD`);
@@ -130,6 +131,7 @@ for (const [id, data] of games) {
     data.spotlight.kicker,
     data.spotlight.title,
     data.spotlight.intro,
+    ...(data.price ? [data.price] : []),
     ...data.spotlight.items.flatMap((item) => [item.title, item.value, item.description]),
     ...data.confirmed,
     ...data.pending,

@@ -6,7 +6,15 @@ const ROOT = process.cwd();
 const SITE_ORIGIN = "https://finalsecreto.com";
 const OUTPUT = path.join(ROOT, "sitemap.xml");
 const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|playstation-plus|sobre-mi|contacto)\.html$|^(?:noticias|resenas|playstation-plus|juegos)\/[^/]+\.html$/;
-const DATE_OVERRIDE = process.env.SITEMAP_DATE;
+const DATE_OVERRIDE = process.env.SITEMAP_DATE || (() => {
+  try {
+    // Fecha del último commit en el repositorio en formato YYYY-MM-DD
+    return execFileSync("git", ["log", "-1", "--format=%cs"], { cwd: ROOT, encoding: "utf8" }).trim();
+  } catch {
+    // Si git no está disponible, usar la fecha actual en UTC
+    return new Date().toISOString().slice(0, 10);
+  }
+})();
 const PSPLUS_DATE_OVERRIDE = process.env.SITEMAP_PSPLUS_DATE;
 
 async function walk(directory = ROOT) {

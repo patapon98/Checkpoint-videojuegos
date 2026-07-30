@@ -1,0 +1,158 @@
+{
+  "id": "gears-of-war-e-day",
+  "title": "Gears of War: E-Day",
+  "subtitle": "La caída de Kalona, el origen del escuadrón Bravo y todo lo confirmado sobre la campaña y el multijugador.",
+  "status": "Reservas abiertas",
+  "releaseDate": "2026-10-06",
+  "platforms": [
+    "Xbox Series X|S",
+    "PC"
+  ],
+  "developer": "The Coalition",
+  "publisher": "Xbox Game Studios",
+  "genre": "Shooter de cobertura en tercera persona",
+  "officialUrl": "https://www.xbox.com/es-es/games/gears-of-war-eday",
+  "storeUrl": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ",
+  "trailerUrl": "https://www.youtube.com/watch?v=dFk4bL3a8I8",
+  "heroImage": "https://cms-assets.xboxservices.com/assets/ab/ca/abca46ea-0f10-412e-b38c-77cd92abc21b.jpg?n=8388488888_Highlight-Feature-1084_1_1920x720.jpg",
+  "heroImageKind": "official-screenshot",
+  "heroImageHasEmbeddedText": false,
+  "theme": {
+    "accent": "#d35b4d",
+    "accentSoft": "rgba(211,91,77,.17)"
+  },
+  "gallery": [
+    {
+      "src": "https://cms-assets.xboxservices.com/assets/09/f3/09f30724-2086-43e7-8e54-6e9f5391e385.jpg?n=8388488888_Highlight-Feature-1084_2_1920x720.jpg",
+      "alt": "Los faros de un vehículo iluminan a un Boomer Locust en Gears of War: E-Day"
+    },
+    {
+      "src": "https://cms-assets.xboxservices.com/assets/ba/bd/babd627d-5349-47e9-bd43-431ecdaa617f.jpg?n=8388488888_Highlight-Feature-1084_3_1920x720.jpg",
+      "alt": "El escuadrón Bravo se enfrenta a la Horda Locust en una calle de Kalona"
+    },
+    {
+      "src": "https://cms-assets.xboxservices.com/assets/b6/5b/b65b071d-99a3-4693-a256-311593d55283.jpg?n=8388488888_Highlight-Feature-1084_4_1920x720.jpg",
+      "alt": "Marcus salta contra un Boomer Locust mientras Dom avanza tras él"
+    },
+    {
+      "src": "https://cms-assets.xboxservices.com/assets/ba/3c/ba3c735c-d0cc-4463-88bb-d7e3d8e07b75.jpg?n=8388488888_Highlight-Feature-1084_5_1920x720.jpg",
+      "alt": "Una tienda de electrónica abandonada durante el Día de la Emergencia"
+    },
+    {
+      "src": "https://cms-assets.xboxservices.com/assets/72/97/7297eebb-7bfd-4868-8afd-50f62bfe3ef2.jpg?n=8388488888_Image-1084_Details-intro_1920x720.jpg",
+      "alt": "Marcus y Dom avanzan entre las ruinas de Kalona en Gears of War: E-Day"
+    }
+  ],
+  "media": [
+    {
+      "type": "youtube",
+      "videoId": "dFk4bL3a8I8",
+      "title": "Gears of War: E-Day, presentación oficial de la jugabilidad",
+      "label": "Gameplay",
+      "publishedAt": "2026-06-07"
+    },
+    {
+      "type": "youtube",
+      "videoId": "8oNgaiTx3js",
+      "title": "Gears of War: E-Day, tecnología de la versión para PC",
+      "label": "Vídeo técnico",
+      "publishedAt": "2026-07-14"
+    },
+    {
+      "type": "youtube",
+      "videoId": "SZVXsNVCGGY",
+      "title": "Gears of War: E-Day, tráiler de presentación",
+      "label": "Tráiler oficial",
+      "publishedAt": "2024-06-09"
+    }
+  ],
+  "premise": "Catorce años antes del primer Gears of War, Marcus Fenix y Dominic Santiago regresan de las Guerras del Péndulo justo cuando la Horda Locust emerge bajo la ciudad de Kalona. Junto a Mags Carter y Lucas Reyes forman el escuadrón Bravo y atraviesan los tres primeros días de una guerra que nadie comprende todavía.",
+  "context": "E-Day no es un spin-off ni Gears 6. Es una nueva entrega principal que vuelve al origen de la saga y reconstruye desde cero personajes, enemigos, armas, animaciones y escenarios en Unreal Engine 5. La Coalition recupera el terror del primer contacto con los Locust sin abandonar el combate de cobertura.",
+  "spotlight": {
+    "kicker": "La nueva escala de Gears",
+    "title": "Campaña cooperativa, movimiento y multijugador",
+    "intro": "La base sigue siendo reconocible, pero el número de jugadores, la movilidad y el tamaño de los espacios cambian la forma de abordar cada enfrentamiento.",
+    "items": [
+      {
+        "title": "Campaña",
+        "value": "Hasta 4 jugadores",
+        "description": "Toda la historia puede jugarse en solitario, con cuatro participantes en línea o con dos jugadores a pantalla dividida en consola."
+      },
+      {
+        "title": "Movimiento",
+        "value": "Saltos y deslizamientos",
+        "description": "Las coberturas admiten más alturas y formas. Saltar, deslizarse y buscar rutas elevadas amplía las opciones para flanquear."
+      },
+      {
+        "title": "Horde Siege",
+        "value": "12 jugadores",
+        "description": "Tres escuadrones defienden Kalona en mapas urbanos más grandes, mientras Versus recupera los enfrentamientos competitivos 4 contra 4."
+      }
+    ]
+  },
+  "confirmed": [
+    "La campaña sigue al escuadrón Bravo durante los tres primeros días del Día de la Emergencia sin abandonar su punto de vista.",
+    "Marcus, Dom, Mags Carter y Lucas Reyes son personajes jugables desde el inicio.",
+    "Las zonas de combate alternan calles estrechas con distritos abiertos, tejados, rutas de flanqueo y coberturas que se deterioran.",
+    "Regresan los agujeros de emergencia y armas como Gnasher y Longshot. También debutan Gut Puncher e Incinerator, y la historia muestra el origen del Lancer con motosierra.",
+    "Horde Siege admite doce jugadores y Versus utiliza modos y mapas competitivos 4 contra 4.",
+    "Llegará el primer día a Game Pass Ultimate, Xbox Series X|S, Xbox en PC, Steam y juego en la nube. También es Xbox Play Anywhere.",
+    "La ficha oficial promete resolución 4K y hasta 60 FPS en campaña y multijugador con una pantalla compatible."
+  ],
+  "pending": [
+    "No se han publicado los requisitos definitivos de la versión para PC.",
+    "Faltan por detallar los modos de resolución y rendimiento de cada consola.",
+    "No se conoce la lista completa de mapas y variantes multijugador.",
+    "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.",
+    "No se ha publicado el tamaño de instalación definitivo.",
+    "La fecha del embargo de análisis no se ha anunciado."
+  ],
+  "sources": [
+    {
+      "label": "Xbox España",
+      "url": "https://www.xbox.com/es-es/games/gears-of-war-eday",
+      "type": "Ficha, fecha, plataformas, modos e imágenes oficiales"
+    },
+    {
+      "label": "Microsoft Store España",
+      "url": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ",
+      "type": "Precio, ediciones, reserva y Game Pass"
+    },
+    {
+      "label": "Xbox Wire",
+      "url": "https://news.xbox.com/en-us/2026/06/07/gears-of-war-eday-direct-xbox-games-showcase-2026/",
+      "type": "Campaña, combate, personajes y multijugador"
+    },
+    {
+      "label": "Xbox Wire",
+      "url": "https://news.xbox.com/en-us/2026/07/14/gears-of-war-e-day-pc-nvidia/",
+      "type": "Tecnología y versión para PC"
+    }
+  ],
+  "newsTerms": [
+    "gears of war: e-day",
+    "gears of war e-day",
+    "gears e-day",
+    "gears eday"
+  ],
+  "seo": {
+    "title": "Gears of War: E-Day: fecha, campaña y todo lo confirmado",
+    "description": "Ficha actualizada de Gears of War: E-Day con fecha, precio, campaña, cooperativo, multijugador, vídeos, imágenes oficiales y datos pendientes.",
+    "ogDescription": "Fecha, campaña, cooperativo y todo lo confirmado sobre Gears of War: E-Day.",
+    "heroTitleHtml": "Gears of War: <em>E-Day</em>",
+    "heroImageAlt": "Captura oficial de Gears of War: E-Day con Marcus ante una gran criatura Locust"
+  },
+  "changes": [
+    {
+      "date": "2026-07-30",
+      "title": "Ficha publicada tras el Xbox Games Showcase",
+      "description": "Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."
+    }
+  ],
+  "relatedGameIds": [
+    "control-resonant",
+    "grand-theft-auto-vi"
+  ],
+  "updatedAt": "2026-07-30",
+  "price": "Desde 69,99 € en Xbox y PC"
+}

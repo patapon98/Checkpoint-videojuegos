@@ -16,7 +16,9 @@ import path from "node:path";
 const ROOT = process.cwd();
 const HUBS_DIR = path.join(ROOT, "data", "game-hubs");
 const PAGES_DIR = path.join(ROOT, "juegos");
+const INDEX_PAGE = path.join(ROOT, "juegos.html");
 const NEWS_FILE = path.join(ROOT, "js", "news-data.js");
+const SITE_ORIGIN = "https://finalsecreto.com";
 const IGNORED = new Set(["_template.json", "index.json"]);
 
 const text = (value = "") => String(value);
@@ -216,12 +218,63 @@ function replaceInner(html, id, inner) {
   throw new Error(`El contenedor #${id} no está bien cerrado`);
 }
 
+const shortDate = (value) =>
+  new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "short", year: "numeric" })
+    .format(new Date(`${value}T12:00:00`))
+    .replace(".", "");
+
+/** Tarjeta del indice, con las mismas clases que las de la portada. */
+function indexCard(data) {
+  const accent = data.theme?.accent || "var(--accent)";
+  const alt = data.seo?.heroImageAlt || `Imagen de ${data.title}`;
+  return `
+        <a class="home-game-hub-card" href="/juegos/${escapeHtml(data.id)}" aria-label="Consultar la ficha de ${escapeHtml(data.title)}" style="--hub-accent:${escapeHtml(accent)}">
+          <div class="home-game-hub-art">
+            <img src="${escapeHtml(data.heroImage)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
+            <span class="home-game-hub-status">${escapeHtml(data.status)}</span>
+          </div>
+          <div class="home-game-hub-body">
+            <div class="home-game-hub-meta">
+              <time datetime="${escapeHtml(data.releaseDate)}">${escapeHtml(shortDate(data.releaseDate))}</time>
+              <span>${escapeHtml(data.platforms.join(" · "))}</span>
+            </div>
+            <h3>${escapeHtml(data.title)}</h3>
+            <p>${escapeHtml(data.subtitle)}</p>
+            <div class="home-game-hub-footer">
+              <small>Actualizada el ${escapeHtml(shortDate(data.updatedAt))}</small>
+              <span>Ver ficha completa →</span>
+            </div>
+          </div>
+        </a>`;
+}
+
+/** Rehace el ItemList del indice para que refleje las fichas publicadas. */
+function indexStructuredData(html, games) {
+  const open = '<script type="application/ld+json" id="gamesIndexStructuredData">';
+  const start = html.indexOf(open);
+  if (start === -1) throw new Error("juegos.html no declara gamesIndexStructuredData");
+  const from = start + open.length;
+  const end = html.indexOf("</script>", from);
+  const graph = JSON.parse(html.slice(from, end));
+
+  graph.mainEntity.itemListElement = games.map((data, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: `${SITE_ORIGIN}/juegos/${data.id}`,
+    name: data.title
+  }));
+
+  return html.slice(0, from) + JSON.stringify(graph) + html.slice(end);
+}
+
 const allNews = await loadNews();
 const files = (await readdir(HUBS_DIR)).filter((file) => file.endsWith(".json") && !IGNORED.has(file));
 let changed = 0;
+const games = [];
 
 for (const file of files.sort()) {
   const data = JSON.parse(await readFile(path.join(HUBS_DIR, file), "utf8"));
+  games.push(data);
   const pagePath = path.join(PAGES_DIR, `${data.id}.html`);
   const original = await readFile(pagePath, "utf8");
   const news = relatedNews(data, allNews);
@@ -236,6 +289,16 @@ for (const file of files.sort()) {
     changed++;
   }
   console.log(`${data.id}: ${(data.gallery || []).length} imágenes, ${(data.media || []).length} vídeos, ${news.length} noticias`);
+}
+
+// Indice de fichas, ordenado por fecha de lanzamiento mas cercana primero.
+const ordered = [...games].sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
+const indexOriginal = await readFile(INDEX_PAGE, "utf8");
+let indexHtml = replaceInner(indexOriginal, "gamesIndexGrid", ordered.map(indexCard).join("") + "\n      ");
+indexHtml = indexStructuredData(indexHtml, ordered);
+if (indexHtml !== indexOriginal) {
+  await writeFile(INDEX_PAGE, indexHtml, "utf8");
+  console.log(`juegos.html actualizado con ${ordered.length} fichas.`);
 }
 
 console.log(`Fichas actualizadas: ${changed} de ${files.length}.`);

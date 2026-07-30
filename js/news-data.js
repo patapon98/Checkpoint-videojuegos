@@ -3,7 +3,7 @@ window.FINALSECRETO_NEWS = [
   {
     id: "xbox-resultados-junio-2026",
     important: true,
-    emphasis: { es: ["los ingresos de contenidos y servicios de Xbox cayeron un 10%", "el hardware retrocedió un 13%", "Microsoft alcanzó 90.007 millones de dólares de ingresos"] },
+    emphasis: { es: ["los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual", "Los ingresos por hardware bajaron un 13%", "el conjunto de Microsoft alcanzó 90.007 millones de dólares"] },
     category: { es: "Industria" },
     date: "2026-07-29",
     featured: false,
@@ -41,7 +41,7 @@ window.FINALSECRETO_NEWS = [
   },
   {
     id: "double-fine-despidos-independencia",
-    emphasis: { es: ["23 empleados", "tres semanas después de recuperar su independencia", "necesaria para garantizar la supervivencia del estudio"] },
+    emphasis: { es: ["ha reducido su plantilla en 23 personas", "tres semanas después de abandonar Xbox y volver a ser independiente", "garantizar su supervivencia"] },
     category: { es: "Industria" },
     date: "2026-07-28",
     featured: false,

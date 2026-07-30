@@ -54,7 +54,7 @@ jobs:
 
       - name: Comprobar los datos
         run: |
-          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.groups)) throw new Error(`Mes incompleto ${month.id}`);}'
+          node -e 'const fs=require("fs"); const data=JSON.parse(fs.readFileSync("data/playstation-plus.json","utf8")); if(!Array.isArray(data.months)||!data.months.length) throw new Error("No hay meses"); for(const month of data.months){if(!month.id||!month.label||!Array.isArray(month.games)) throw new Error("Mes inválido"); for(const game of month.games){if(!game.title) throw new Error("Juego sin título");}}'
 
       - name: Probar el actualizador oficial
         run: |
@@ -66,9 +66,10 @@ jobs:
           node scripts/generate-ps-plus-pages.mjs
           git diff --exit-code -- playstation-plus
 
+      - name: Establecer fecha del sitemap
+        run: echo "SITEMAP_DATE=$(date -u +%Y-%m-%d)" >> $GITHUB_ENV
+
       - name: Regenerar y comparar el sitemap
-        env:
-          SITEMAP_DATE: "2026-07-29"
         run: |
           node scripts/generate-sitemap.mjs
           git diff --exit-code -- sitemap.xml

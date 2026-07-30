@@ -112,6 +112,7 @@ for (const file of changedFiles) {
   const htmlMatch = file.match(htmlPattern);
   if (jsonMatch) continue;
   if (htmlMatch && ids.has(htmlMatch[1])) continue;
+  if (file === 'sitemap.xml') continue;
   fail(`Archivo no autorizado en una rama automática: ${file}`);
 }
 

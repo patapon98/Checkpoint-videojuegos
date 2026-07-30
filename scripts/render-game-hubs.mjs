@@ -470,7 +470,6 @@ const allNews = await loadNews();
 const files = (await readdir(HUBS_DIR)).filter((file) => file.endsWith(".json") && !IGNORED.has(file));
 const games = [];
 let changed = 0;
-const games = [];
 
 for (const file of files.sort()) {
   const data = JSON.parse(await readFile(path.join(HUBS_DIR, file), "utf8"));
@@ -490,7 +489,7 @@ for (const file of files.sort()) {
 // Indice de fichas, ordenado por fecha de lanzamiento mas cercana primero.
 const ordered = [...games].sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
 const indexOriginal = await readFile(INDEX_PAGE, "utf8");
-let indexHtml = replaceInner(indexOriginal, "gamesIndexGrid", ordered.map(indexCard).join("") + "\n      ");
+let indexHtml = replaceElementInner(indexOriginal, "gamesIndexGrid", ordered.map(indexCard).join("") + "\n      ");
 indexHtml = indexStructuredData(indexHtml, ordered);
 if (indexHtml !== indexOriginal) {
   await writeFile(INDEX_PAGE, indexHtml, "utf8");

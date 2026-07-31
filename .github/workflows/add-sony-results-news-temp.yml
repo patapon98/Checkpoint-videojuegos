@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - ".github/workflows/add-sony-results-news-temp.yml"
+      - ".github/sony-results-trigger.txt"
 
 permissions:
   contents: write
@@ -111,11 +112,9 @@ jobs:
           grep -q 'el beneficio operativo de PlayStation aumentó un 37%' js/news-data.js
           grep -q 'las ventas del segmento se mantuvieron prácticamente planas' js/news-data.js
           grep -q 'PlayStation alcanzó un récord de 125 millones de usuarios activos mensuales en junio' js/news-data.js
-          git rm .github/workflows/add-sony-results-news-temp.yml
+          git rm .github/workflows/add-sony-results-news-temp.yml .github/sony-results-trigger.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add js/news-data.js js/news.js index.html noticias.html
           git commit -m "Añade los resultados trimestrales de PlayStation"
           git push origin HEAD:bot/news-2026-07-31-2359-sony-resultados-playstation
-
-# trigger

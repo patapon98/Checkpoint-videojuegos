@@ -1,0 +1,120 @@
+name: Actualizar compra de Electronic Arts
+
+on:
+  push:
+    paths:
+      - ".github/workflows/update-ea-news-temp.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/bot/news-2026-07-31-1957-ea-cierre-compra'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bot/news-2026-07-31-1957-ea-cierre-compra
+      - name: Actualizar noticia y reverso
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          data_path = Path('js/news-data.js')
+          data = data_path.read_text(encoding='utf-8')
+          replacement = '''  {
+    id: "ea-compra-autorizacion-ue",
+    important: true,
+    emphasis: { es: ["ha recibido todas las autorizaciones regulatorias necesarias", "prevé cerrar la operación el 4 de agosto de 2026", "PIF pasará a controlar mayoritariamente una de las mayores editoras de videojuegos"] },
+    category: { es: "Industria" },
+    date: "2026-07-31",
+    updated: "2026-07-31",
+    featured: false,
+    ticker: {
+      keyword: { es: "Electronic Arts" },
+      copy: { es: "Electronic Arts recibe la última autorización europea y prevé cerrar su compra el 4 de agosto" }
+    },
+    tone: "industry",
+    title: {
+      es: "Electronic Arts recibe la última autorización europea y prevé cerrar su compra el 4 de agosto"
+    },
+    summary: {
+      es: "El consorcio encabezado por el fondo soberano saudí PIF ha recibido todas las autorizaciones regulatorias necesarias para comprar Electronic Arts por 55.000 millones de dólares. EA prevé cerrar la operación el 4 de agosto de 2026 y abandonar los mercados bursátiles."
+    },
+    why: {
+      es: "La aprobación bajo las reglas europeas sobre subvenciones extranjeras elimina el último obstáculo regulatorio anunciado. PIF pasará a controlar mayoritariamente una de las mayores editoras de videojuegos, mientras la operación incorpora alrededor de 20.000 millones de dólares de deuda."
+    },
+    sources: [
+      {
+        label: "Electronic Arts",
+        type: { es: "Anuncio oficial de la operación" },
+        url: "https://www.ea.com/news/ea-announces-agreement-to-be-acquired"
+      },
+      {
+        label: "Comisión Europea",
+        type: { es: "Expediente oficial" },
+        url: "https://competition-cases.ec.europa.eu/cases/M.12213"
+      },
+      {
+        label: "Reuters",
+        type: { es: "Autorización final y fecha de cierre" },
+        url: "https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/"
+      }
+    ]
+  },
+'''
+          pattern = re.compile(r'  \{\n    id: "ea-compra-autorizacion-ue",.*?\n  \},\n(?=  \{\n    id: "xbox-nube-gratis-anuncios")', re.S)
+          data, count = pattern.subn(replacement, data, count=1)
+          if count != 1:
+              raise SystemExit(f'No se pudo sustituir la entrada de EA: {count}')
+          data_path.write_text(data, encoding='utf-8')
+
+          news_path = Path('js/news.js')
+          news = news_path.read_text(encoding='utf-8')
+          detail_replacement = '''    "ea-compra-autorizacion-ue": {
+      es: [
+        "La Comisión Europea ya había autorizado la compra bajo sus reglas de competencia. La segunda revisión examinó si las aportaciones públicas recibidas por el consorcio podían concederle una ventaja indebida dentro del mercado europeo.",
+        "La operación valora EA en 55.000 millones de dólares y combina unos 36.000 millones de capital con cerca de 20.000 millones de deuda. Tras el cierre previsto para el 4 de agosto, las acciones de EA dejarán de cotizar y Andrew Wilson continuará como consejero delegado."
+      ]
+    },
+'''
+          detail_pattern = re.compile(r'    "ea-compra-autorizacion-ue": \{.*?\n    \},\n(?=    "xbox-nube-gratis-anuncios")', re.S)
+          news, count = detail_pattern.subn(detail_replacement, news, count=1)
+          if count != 1:
+              raise SystemExit(f'No se pudo sustituir homeDetails de EA: {count}')
+          news_path.write_text(news, encoding='utf-8')
+
+          for html_name in ('index.html', 'noticias.html'):
+              path = Path(html_name)
+              html = path.read_text(encoding='utf-8')
+              html = html.replace('js/news-data.js?v=20260731-1', 'js/news-data.js?v=20260731-2')
+              html = html.replace('js/news.js?v=20260731-1', 'js/news.js?v=20260731-2')
+              path.write_text(html, encoding='utf-8')
+      - name: Validar y guardar
+        run: |
+          node --check js/news-data.js
+          node --check js/news.js
+          python - <<'PY'
+          from pathlib import Path
+          data = Path('js/news-data.js').read_text(encoding='utf-8')
+          news = Path('js/news.js').read_text(encoding='utf-8')
+          assert data.count('id: "ea-compra-autorizacion-ue"') == 1
+          assert 'ha recibido todas las autorizaciones regulatorias necesarias' in data
+          assert 'prevé cerrar la operación el 4 de agosto de 2026' in data
+          assert 'PIF pasará a controlar mayoritariamente una de las mayores editoras de videojuegos' in data
+          assert data.count('https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/') == 1
+          assert 'La segunda revisión examinó' in news
+          assert '[text(item.summary, lang), text(item.why, lang)]' in news
+          for name in ('index.html', 'noticias.html'):
+              html = Path(name).read_text(encoding='utf-8')
+              assert 'js/news-data.js?v=20260731-2' in html
+              assert 'js/news.js?v=20260731-2' in html
+          PY
+          git rm .github/workflows/update-ea-news-temp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/news-data.js js/news.js index.html noticias.html
+          git commit -m "Actualiza el cierre de la compra de Electronic Arts"
+          git push origin HEAD:bot/news-2026-07-31-1957-ea-cierre-compra

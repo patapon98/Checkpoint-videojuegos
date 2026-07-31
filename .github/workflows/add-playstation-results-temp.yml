@@ -107,11 +107,11 @@ jobs:
           node --check js/news.js
           test "$(grep -c 'id: \"playstation-resultados-abril-junio-2026\"' js/news-data.js)" -eq 1
           test "$(grep -c '\"playstation-resultados-abril-junio-2026\":' js/news.js)" -eq 1
-          git rm .github/workflows/add-playstation-results-temp.yml
+          git rm .github/workflows/add-playstation-results-temp.yml .github/workflows/apply-playstation-results-pr-temp.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add js/news-data.js js/news.js index.html noticias.html
           git commit -m "Añade los resultados trimestrales de PlayStation"
           git push origin HEAD:bot/news-2026-08-01-0012-playstation-resultados
 
-# trigger 2
+# ejecutar de nuevo

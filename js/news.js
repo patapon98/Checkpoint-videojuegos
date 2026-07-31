@@ -4,6 +4,12 @@
   const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
   let latestExpiryTimer = null;
   const homeDetails = {
+    "ea-autorizacion-final-compra-2026": {
+      es: [
+        "El consorcio está formado por el fondo soberano saudí PIF, la firma de inversión Silver Lake y Affinity Partners. Los accionistas recibirán 210 dólares por acción en una de las mayores compras financiadas de una empresa de videojuegos.",
+        "La autorización bajo el Reglamento europeo sobre subvenciones extranjeras era el último gran obstáculo regulatorio. Una vez completada la operación, EA dejará el mercado bursátil y el consorcio asumirá el control de franquicias como EA Sports FC, Battlefield, Apex Legends y Los Sims."
+      ]
+    },
   "xbox-plan-crecimiento-fy27": {
     es: [
       "Sharma organiza el nuevo ejercicio alrededor de cuatro áreas. Core reforzará la plataforma con la consola como centro. Content buscará convertir los juegos con más éxito en franquicias globales. Creation se concentrará en Minecraft y Connection ampliará los mundos conocidos a nuevas experiencias y formatos.",

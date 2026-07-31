@@ -1,0 +1,115 @@
+name: Preparar noticia de resultados de PlayStation
+
+on:
+  push:
+    paths:
+      - ".github/workflows/add-playstation-results-temp.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/bot/news-2026-08-01-0012-playstation-resultados'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bot/news-2026-08-01-0012-playstation-resultados
+      - name: Añadir noticia y ampliación de portada
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          news_id = 'playstation-resultados-abril-junio-2026'
+          data_path = Path('js/news-data.js')
+          data = data_path.read_text(encoding='utf-8')
+          if f'id: "{news_id}"' in data:
+              raise SystemExit('La noticia ya existe')
+
+          entry = '''  {
+            id: "playstation-resultados-abril-junio-2026",
+            important: true,
+            emphasis: { es: ["el beneficio operativo de PlayStation aumentó un 37%", "alcanzó 202.000 millones de yenes", "125 millones de usuarios activos mensuales"] },
+            category: { es: "Industria" },
+            date: "2026-07-31",
+            featured: false,
+            ticker: {
+              keyword: { es: "PlayStation" },
+              copy: { es: "El beneficio operativo de PlayStation creció un 37% pese a la caída del hardware" }
+            },
+            tone: "playstation",
+            title: {
+              es: "El beneficio operativo de PlayStation creció un 37% pese a la caída del hardware"
+            },
+            summary: {
+              es: "Entre abril y junio de 2026, el beneficio operativo de PlayStation aumentó un 37% y alcanzó 202.000 millones de yenes. Sony registró 125 millones de usuarios activos mensuales, mientras las ventas de PS5 bajaron hasta 1,6 millones de unidades."
+            },
+            why: {
+              es: "La división mejora su rentabilidad aunque vende menos consolas y el tiempo total de juego retrocede un 4%. Sony ha elevado su previsión anual para el negocio de videojuegos y servicios de red."
+            },
+            sources: [
+              {
+                label: "Sony Group",
+                type: { es: "Resultados oficiales del primer trimestre fiscal" },
+                url: "https://www.sony.com/en/SonyInfo/IR/library/presen/er/"
+              },
+              {
+                label: "Reuters",
+                type: { es: "Resultados, previsiones y ventas de PS5" },
+                url: "https://www.reuters.com/world/asia-pacific/sony-posts-40-rise-q1-profit-beating-estimates-2026-07-31/"
+              }
+            ]
+          },
+'''
+          marker = 'window.FINALSECRETO_NEWS = [\n'
+          if marker not in data:
+              raise SystemExit('No se encontró FINALSECRETO_NEWS')
+          data = data.replace(marker, marker + entry, 1)
+          data_path.write_text(data, encoding='utf-8')
+
+          news_path = Path('js/news.js')
+          news = news_path.read_text(encoding='utf-8')
+          if f'"{news_id}":' in news:
+              raise SystemExit('La ampliación ya existe')
+          details = '''    "playstation-resultados-abril-junio-2026": {
+              es: [
+                "Los ingresos del segmento se mantuvieron prácticamente planos. El crecimiento del beneficio procedió de una combinación más favorable de software y servicios, control de costes y efectos del tipo de cambio, no de un aumento en la venta de consolas.",
+                "Sony vendió 1,6 millones de PS5 frente a 2,4 millones un año antes. La base mensual alcanzó un récord de 125 millones de cuentas, pero el tiempo total de juego cayó un 4%, una señal de que el alcance de la plataforma y la intensidad de uso no evolucionaron en la misma dirección."
+              ]
+            },
+'''
+          marker = '  const homeDetails = {\n'
+          if marker not in news:
+              raise SystemExit('No se encontró homeDetails')
+          news = news.replace(marker, marker + details, 1)
+          news_path.write_text(news, encoding='utf-8')
+
+          for html_name in ('index.html', 'noticias.html'):
+              path = Path(html_name)
+              html = path.read_text(encoding='utf-8')
+              html = re.sub(r'(/js/news-data\.js\?v=)[^"\']+', r'\g<1>20260801-1', html)
+              html = re.sub(r'(/js/news\.js\?v=)[^"\']+', r'\g<1>20260801-1', html)
+              path.write_text(html, encoding='utf-8')
+
+          summary = "Entre abril y junio de 2026, el beneficio operativo de PlayStation aumentó un 37% y alcanzó 202.000 millones de yenes. Sony registró 125 millones de usuarios activos mensuales, mientras las ventas de PS5 bajaron hasta 1,6 millones de unidades."
+          why = "La división mejora su rentabilidad aunque vende menos consolas y el tiempo total de juego retrocede un 4%. Sony ha elevado su previsión anual para el negocio de videojuegos y servicios de red."
+          emphasis = [
+              "el beneficio operativo de PlayStation aumentó un 37%",
+              "alcanzó 202.000 millones de yenes",
+              "125 millones de usuarios activos mensuales",
+          ]
+          assert all(fragment in summary or fragment in why for fragment in emphasis)
+      - name: Validar y publicar en la rama
+        run: |
+          node --check js/news-data.js
+          node --check js/news.js
+          test "$(grep -c 'id: \"playstation-resultados-abril-junio-2026\"' js/news-data.js)" -eq 1
+          test "$(grep -c '\"playstation-resultados-abril-junio-2026\":' js/news.js)" -eq 1
+          git rm .github/workflows/add-playstation-results-temp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/news-data.js js/news.js index.html noticias.html
+          git commit -m "Añade los resultados trimestrales de PlayStation"
+          git push origin HEAD:bot/news-2026-08-01-0012-playstation-resultados

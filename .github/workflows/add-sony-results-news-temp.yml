@@ -1,0 +1,119 @@
+name: Preparar noticia de resultados de PlayStation
+
+on:
+  push:
+    paths:
+      - ".github/workflows/add-sony-results-news-temp.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/bot/news-2026-07-31-2359-sony-resultados-playstation'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: bot/news-2026-07-31-2359-sony-resultados-playstation
+      - name: Añadir noticia y ampliación de portada
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          data_path = Path('js/news-data.js')
+          data = data_path.read_text(encoding='utf-8')
+          news_id = 'sony-resultados-playstation-junio-2026'
+          if f'id: "{news_id}"' in data:
+              raise SystemExit('La noticia ya existe')
+
+          entry = '''  {
+            id: "sony-resultados-playstation-junio-2026",
+            important: true,
+            emphasis: { es: ["el beneficio operativo de PlayStation aumentó un 37%", "las ventas del segmento se mantuvieron prácticamente planas", "PlayStation alcanzó un récord de 125 millones de usuarios activos mensuales en junio"] },
+            category: { es: "Industria" },
+            date: "2026-07-31",
+            publishedAt: "2026-07-31T03:00:00Z",
+            featured: false,
+            ticker: {
+              keyword: { es: "PlayStation" },
+              copy: { es: "PlayStation eleva su beneficio operativo un 37% pese a vender menos consolas" }
+            },
+            tone: "playstation",
+            title: {
+              es: "PlayStation eleva su beneficio operativo un 37% pese a vender menos consolas"
+            },
+            summary: {
+              es: "Entre el 1 de abril y el 30 de junio de 2026, el beneficio operativo de PlayStation aumentó un 37% hasta 202.000 millones de yenes. Las ventas del segmento se mantuvieron prácticamente planas en 937.100 millones, mientras descendieron las ventas de hardware y de juegos de terceros."
+            },
+            why: {
+              es: "PlayStation alcanzó un récord de 125 millones de usuarios activos mensuales en junio, aunque el tiempo total de juego bajó un 4%. Sony elevó además su previsión anual para la división, apoyada por el tipo de cambio, devoluciones arancelarias y menores costes."
+            },
+            sources: [
+              {
+                label: "Sony",
+                type: { es: "Resultados oficiales del primer trimestre fiscal" },
+                url: "https://www.sony.com/en/SonyInfo/IR/library/presen/er/pdf/26q1_sonypre.pdf"
+              },
+              {
+                label: "Reuters",
+                type: { es: "Contexto financiero" },
+                url: "https://www.reuters.com/world/asia-pacific/sony-posts-40-rise-q1-profit-beating-estimates-2026-07-31/"
+              }
+            ]
+          },
+'''
+          marker = 'window.FINALSECRETO_NEWS = [\n'
+          if marker not in data:
+              raise SystemExit('No se encontró el inicio de FINALSECRETO_NEWS')
+          data = data.replace(marker, marker + entry, 1)
+          data_path.write_text(data, encoding='utf-8')
+
+          news_path = Path('js/news.js')
+          news = news_path.read_text(encoding='utf-8')
+          if f'"{news_id}":' in news:
+              raise SystemExit('La ampliación ya existe')
+          details = '''    "sony-resultados-playstation-junio-2026": {
+              es: [
+                "El crecimiento del beneficio no procedió de vender más consolas. Sony atribuye la mejora principalmente al efecto favorable de las divisas y a devoluciones de aranceles en Estados Unidos, mientras las ventas de hardware disminuyeron por un menor número de PS5 comercializadas.",
+                "La compañía revisó al alza su previsión anual de la división de juegos. Ahora espera 4,54 billones de yenes de ingresos y 660.000 millones de beneficio operativo, aunque reconoce que ha ajustado su calendario de lanzamientos propios y que sigue invirtiendo en la próxima generación de hardware."
+              ]
+            },
+'''
+          home_marker = '  const homeDetails = {\n'
+          if home_marker not in news:
+              raise SystemExit('No se encontró homeDetails')
+          news = news.replace(home_marker, home_marker + details, 1)
+          news_path.write_text(news, encoding='utf-8')
+
+          for html_name in ('index.html', 'noticias.html'):
+              path = Path(html_name)
+              html = path.read_text(encoding='utf-8')
+              html = re.sub(r'(/js/news-data\.js\?v=)[^"\']+', r'\g<1>20260731-2', html)
+              html = re.sub(r'(/js/news\.js\?v=)[^"\']+', r'\g<1>20260731-2', html)
+              path.write_text(html, encoding='utf-8')
+
+          summary = "Entre el 1 de abril y el 30 de junio de 2026, el beneficio operativo de PlayStation aumentó un 37% hasta 202.000 millones de yenes. Las ventas del segmento se mantuvieron prácticamente planas en 937.100 millones, mientras descendieron las ventas de hardware y de juegos de terceros."
+          why = "PlayStation alcanzó un récord de 125 millones de usuarios activos mensuales en junio, aunque el tiempo total de juego bajó un 4%. Sony elevó además su previsión anual para la división, apoyada por el tipo de cambio, devoluciones arancelarias y menores costes."
+          emphasis = [
+              "el beneficio operativo de PlayStation aumentó un 37%",
+              "las ventas del segmento se mantuvieron prácticamente planas",
+              "PlayStation alcanzó un récord de 125 millones de usuarios activos mensuales en junio",
+          ]
+          assert all(fragment in summary or fragment in why for fragment in emphasis)
+      - name: Validar y publicar en la rama
+        run: |
+          node --check js/news-data.js
+          node --check js/news.js
+          test "$(grep -c 'id: \"sony-resultados-playstation-junio-2026\"' js/news-data.js)" -eq 1
+          test "$(grep -c '\"sony-resultados-playstation-junio-2026\":' js/news.js)" -eq 1
+          grep -q 'el beneficio operativo de PlayStation aumentó un 37%' js/news-data.js
+          grep -q 'las ventas del segmento se mantuvieron prácticamente planas' js/news-data.js
+          grep -q 'PlayStation alcanzó un récord de 125 millones de usuarios activos mensuales en junio' js/news-data.js
+          git rm .github/workflows/add-sony-results-news-temp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/news-data.js js/news.js index.html noticias.html
+          git commit -m "Añade los resultados trimestrales de PlayStation"
+          git push origin HEAD:bot/news-2026-07-31-2359-sony-resultados-playstation

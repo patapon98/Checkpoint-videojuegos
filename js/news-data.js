@@ -1,6 +1,40 @@
 // Taxonomía editorial: «Lanzamientos» cubre fechas, ventanas, adelantos y retrasos; «Juegos», el resto de noticias centradas en títulos concretos.
 window.FINALSECRETO_NEWS = [
   {
+    id: "ea-autorizacion-final-compra-2026",
+    important: true,
+    emphasis: { es: ["ha recibido todas las autorizaciones regulatorias necesarias", "prevé cerrar la operación el 4 de agosto de 2026", "Electronic Arts dejará de cotizar y pasará a ser una compañía privada"] },
+    category: { es: "Industria" },
+    date: "2026-07-31",
+    featured: false,
+    ticker: {
+      keyword: { es: "Electronic Arts" },
+      copy: { es: "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares" }
+    },
+    tone: "industry",
+    title: {
+      es: "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+    },
+    summary: {
+      es: "Electronic Arts comunicó que ha recibido todas las autorizaciones regulatorias necesarias y prevé cerrar la operación el 4 de agosto de 2026. La compra por PIF, Silver Lake y Affinity Partners está valorada en unos 55.000 millones de dólares."
+    },
+    why: {
+      es: "Electronic Arts dejará de cotizar y pasará a ser una compañía privada controlada por el consorcio comprador. El cambio de propiedad afecta a una de las mayores editoras del sector, responsable de EA Sports FC, Battlefield, Apex Legends y Los Sims."
+    },
+    sources: [
+      {
+        label: "Electronic Arts",
+        type: { es: "Anuncio oficial de la operación" },
+        url: "https://www.ea.com/news/ea-announces-agreement-to-be-acquired?isLocalized=true"
+      },
+      {
+        label: "Reuters",
+        type: { es: "Autorización final y fecha prevista de cierre" },
+        url: "https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/"
+      }
+    ]
+  },
+  {
     id: "xbox-plan-crecimiento-fy27",
     important: true,
     emphasis: { es: ["volver al crecimiento de jugadores e ingresos antes de julio de 2027", "la consola seguirá liderando la plataforma", "Minecraft se convertirá en el principal espacio de creación de la compañía"] },

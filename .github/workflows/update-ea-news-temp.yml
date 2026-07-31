@@ -118,3 +118,5 @@ jobs:
           git add js/news-data.js js/news.js index.html noticias.html
           git commit -m "Actualiza el cierre de la compra de Electronic Arts"
           git push origin HEAD:bot/news-2026-07-31-1957-ea-cierre-compra
+
+# Segundo intento tras abrir la PR.

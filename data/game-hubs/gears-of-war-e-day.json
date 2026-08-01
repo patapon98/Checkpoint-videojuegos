@@ -99,6 +99,7 @@
     ]
   },
   "confirmed": [
+    "La beta abierta se celebrará del 6 al 10 de agosto de 2026; las reservas dan acceso anticipado y Xbox avisa de que las horas y la disponibilidad por plataforma se concretarán por separado.",
     "La campaña no abandona en ningún momento el punto de vista del escuadrón Bravo.",
     "Marcus, Dom, Mags Carter y Lucas Reyes son jugables desde el inicio.",
     "Los escenarios alternan calles estrechas con distritos abiertos y coberturas que se deterioran.",
@@ -152,6 +153,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-01",
+      "title": "Fechas de la beta abierta confirmadas",
+      "description": "Xbox concreta que la beta abierta de Gears of War: E-Day se celebrará del 6 al 10 de agosto de 2026 y que las reservas incluyen acceso anticipado.",
+      "sourceUrls": [
+        "https://www.xbox.com/en-US/games/gears-of-war-eday/"
+      ]
+    },
+    {
       "date": "2026-07-30",
       "title": "Publicado el tráiler oficial del multijugador",
       "description": "Xbox y The Coalition mostraron Horde Siege y Versus en una presentación oficial centrada en el multijugador."
@@ -166,6 +175,6 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-08-01",
   "price": "Desde 69,99 € en Xbox y PC"
 }

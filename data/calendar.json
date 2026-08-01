@@ -1793,6 +1793,58 @@
       "trailer": "https://www.youtube.com/watch?v=EwVzrXv5FU0"
     },
     {
+      "id": "clive-barkers-hellraiser-revival",
+      "title": "Clive Barker's Hellraiser: Revival",
+      "headingHtml": "Clive Barker's Hellraiser: Revival",
+      "date": "2026-10-08",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Clive Barker's Hellraiser: Revival",
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551980/header.jpg",
+        "alt": "Clive Barker's Hellraiser: Revival",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://saber.games/hellraiserrevival/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Clive Barker's Hellraiser: Revival"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://saber.games/hellraiserrevival/",
+        "official": true,
+        "host": "saber.games",
+        "checkedAt": "2026-08-01",
+        "evidence": {
+          "title": "Clive Barker's Hellraiser: Revival",
+          "releaseDate": "2026-10-08",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ZwReVQZhIkY"
+    },
+    {
       "id": "kingdom-hearts-collection-i-iii",
       "title": "Kingdom Hearts Collection [I~III]",
       "headingHtml": "Kingdom Hearts Collection [I~III] <span class=\"tag-dlc\">Recopilatorio</span>",

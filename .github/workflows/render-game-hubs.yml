@@ -6,8 +6,12 @@ on:
       - "data/game-hubs/*.json"
       - "scripts/render-game-hubs.mjs"
       - "scripts/render-game-hub-pc-requirements.mjs"
+      - "scripts/render-game-hub-editions.mjs"
       - "scripts/validate-game-hub-pc-requirements.mjs"
+      - "scripts/validate-game-hub-editions.mjs"
+      - "scripts/migrate-game-hub-commerce-v1.mjs"
       - "css/game-hub-pc-requirements.css"
+      - "css/game-hub-editions.css"
   workflow_dispatch:
 
 permissions:
@@ -29,22 +33,27 @@ jobs:
         with:
           node-version: 22
 
-      - name: Volcar datos, multimedia y requisitos al HTML
+      - name: Migrar datos comerciales y técnicos
+        run: node scripts/migrate-game-hub-commerce-v1.mjs
+
+      - name: Volcar datos, multimedia, requisitos y ediciones al HTML
         run: |
           node scripts/render-game-hubs.mjs
           node scripts/render-game-hub-pc-requirements.mjs
+          node scripts/render-game-hub-editions.mjs
           node scripts/validate-game-hub-pc-requirements.mjs
+          node scripts/validate-game-hub-editions.mjs
 
       - name: Guardar las fichas actualizadas
         shell: bash
         run: |
-          if git diff --quiet -- juegos juegos.html; then
+          if git diff --quiet -- data/game-hubs juegos juegos.html; then
             echo "Las fichas ya están al día."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add juegos juegos.html
-          git commit -m "Renderiza las secciones dinámicas de las fichas de juego"
+          git add data/game-hubs juegos juegos.html
+          git commit -m "Sincroniza requisitos, ediciones y precios de las fichas"
           git push

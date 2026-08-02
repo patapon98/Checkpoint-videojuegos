@@ -103,75 +103,6 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-function decodePageValue(value = "") {
-  return String(value)
-    .replaceAll("\\u002F", "/")
-    .replaceAll("\\/", "/")
-    .replaceAll("&amp;", "&");
-}
-
-async function resolveAutomaticReleaseFromPage(release) {
-  const pageUrl = "https://rawg.io/games/stalker-2-cost-of-hope";
-  const response = await fetch(pageUrl, {
-    redirect: "follow",
-    headers: {
-      "user-agent": "Mozilla/5.0 (compatible; FinalSecreto-CalendarImages/1.0)",
-      accept: "text/html"
-    }
-  });
-  if (!response.ok) throw new Error(`ficha pública RAWG HTTP ${response.status}`);
-  const html = await response.text();
-  const slug = "stalker-2-cost-of-hope";
-
-  const idPatterns = [
-    new RegExp(`\\"id\\"\\s*:\\s*(\\d+)[^{}]{0,1200}\\"slug\\"\\s*:\\s*\\"${slug}\\"`, "i"),
-    new RegExp(`\\"slug\\"\\s*:\\s*\\"${slug}\\"[^{}]{0,1200}\\"id\\"\\s*:\\s*(\\d+)`, "i"),
-    /data-game-id=["'](\d+)["']/i,
-    /games\/(\d+)\/screenshots/i
-  ];
-  let rawgId = 0;
-  for (const pattern of idPatterns) {
-    const match = pattern.exec(html);
-    if (match) {
-      rawgId = Number(match[1]);
-      break;
-    }
-  }
-
-  const imagePatterns = [
-    /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i,
-    /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i,
-    /"background_image"\s*:\s*"([^"]+)"/i
-  ];
-  let imageUrl = "";
-  for (const pattern of imagePatterns) {
-    const match = pattern.exec(html);
-    if (match) {
-      imageUrl = decodePageValue(match[1]);
-      break;
-    }
-  }
-
-  if (!rawgId) throw new Error("la ficha pública RAWG no expone un identificador inequívoco");
-  if (!/^https:\/\/media\.rawg\.io\//.test(imageUrl)) {
-    throw new Error("la ficha pública RAWG no expone una imagen HTTPS válida");
-  }
-
-  release.image = {
-    ...release.image,
-    provider: "rawg",
-    rawgId,
-    rawgSlug: slug,
-    rawgPage: pageUrl,
-    rawgImageType: "background",
-    src: imageUrl,
-    alt: release.image.alt || release.title,
-    className: release.image.className || "",
-    legacy: false
-  };
-  return true;
-}
-
 const changes = [];
 const errors = [];
 const warnings = [];
@@ -180,13 +111,16 @@ for (const release of pending) {
     if (await resolveRawgImage(release, { apiKey: API_KEY })) changes.push(release.title);
   } catch (error) {
     if (release.id === automaticRelease.id && /RAWG API HTTP 522/.test(error.message)) {
-      try {
-        if (await resolveAutomaticReleaseFromPage(release)) changes.push(release.title);
-        continue;
-      } catch (pageError) {
-        errors.push(`${release.id}: ${error.message}; ${pageError.message}`);
-        continue;
-      }
+      const fallback = structuredClone(originalImages.get(release.id) || {});
+      delete fallback.provider;
+      delete fallback.query;
+      delete fallback.rawgId;
+      delete fallback.rawgSlug;
+      delete fallback.rawgPage;
+      delete fallback.rawgImageType;
+      release.image = fallback;
+      warnings.push(`${release.title}: RAWG no responde; se conserva el recurso oficial de respaldo`);
+      continue;
     }
     if (/RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)) {
       release.image = structuredClone(originalImages.get(release.id) || {});

@@ -6,7 +6,7 @@ const sourcePath = path.join(process.cwd(), "scripts", "validate-game-hub-change
 const temporaryPath = path.join(process.cwd(), "scripts", ".validate-game-hub-change-with-pc.tmp.mjs");
 const source = await readFile(sourcePath, "utf8");
 const marker = "  'price'\n]);";
-const replacement = "  'price',\n  'pcRequirements'\n]);";
+const replacement = "  'price',\n  'pcRequirements',\n  'editions'\n]);";
 
 if (!source.includes(marker)) {
   throw new Error("No se encontró la lista de campos permitidos del validador incremental");

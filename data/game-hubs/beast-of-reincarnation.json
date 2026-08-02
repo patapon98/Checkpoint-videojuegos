@@ -86,6 +86,73 @@
       }
     ]
   },
+  "pcRequirements": {
+    "sourceUrl": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
+    "minimum": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 10/11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Intel Core i5-8400 o AMD Ryzen 5 3600"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "NVIDIA GeForce GTX 1070 (8 GB) o AMD Radeon RX 580 (8 GB)"
+      },
+      {
+        "label": "DirectX",
+        "value": "Versión 12"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "45 GB disponibles en SSD"
+      },
+      {
+        "label": "Rendimiento objetivo",
+        "value": "1080p, calidad baja y 40 FPS con DLSS o FSR 1 en modo Rendimiento"
+      }
+    ],
+    "recommended": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Intel Core i7-12700K o AMD Ryzen 7 5800X"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "NVIDIA GeForce RTX 3060 (12 GB) o AMD Radeon RX 6700 XT (12 GB)"
+      },
+      {
+        "label": "DirectX",
+        "value": "Versión 12"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "45 GB disponibles en SSD"
+      },
+      {
+        "label": "Rendimiento objetivo",
+        "value": "1080p, calidad media y 60 FPS con DLSS o FSR 3 en modo Rendimiento"
+      }
+    ],
+    "notes": [
+      "Steam exige un procesador y un sistema operativo de 64 bits en ambas configuraciones.",
+      "El uso de SSD es obligatorio tanto en los requisitos mínimos como en los recomendados."
+    ]
+  },
   "confirmed": [
     "La historia arranca en una de las pocas colonias habitables del Japón de 4026.",
     "Emma es una Sealer. Absorbe la plaga de los malefacts y usa su cabello vegetal para escalar y atacar desde arriba.",
@@ -94,9 +161,7 @@
     "Tres dificultades. Story Mode amplía la ventana de parada y reduce el daño enemigo.",
     "Se puede jugar sin conexión. En PS5 usa vibración, gatillos adaptativos y mejoras de PS5 Pro.",
     "En España, la edición estándar cuesta 54,99 € en PS5 y la Digital Deluxe 64,99 €. La reserva incluye una piel de Shiba marrón para Koo y 30.000 de ámbar.",
-    "La Digital Deluxe añade las pieles de Shiba negra y marrón, el sombrero Oni y la espada Osa Mayor para Emma, 100.000 de ámbar y varias plántulas.",
-    "En PC exige SSD y 45 GB libres. El mínimo oficial pide 16 GB de RAM, Intel Core i5-8400 o Ryzen 5 3600 y GTX 1070 de 8 GB o RX 580 de 8 GB para 1080p bajo a 40 FPS con escalado.",
-    "La configuración recomendada para 1080p medio a 60 FPS pide 16 GB de RAM, Intel Core i7-12700K o Ryzen 7 5800X y RTX 3060 de 12 GB o RX 6700 XT de 12 GB."
+    "La Digital Deluxe añade las pieles de Shiba negra y marrón, el sombrero Oni y la espada Osa Mayor para Emma, 100.000 de ámbar y varias plántulas."
   ],
   "pending": [
     "No se conoce la duración aproximada de la historia.",
@@ -150,6 +215,14 @@
     "heroImageAlt": "Arte promocional oficial de Beast of Reincarnation con Emma y Koo en el bosque"
   },
   "changes": [
+    {
+      "date": "2026-08-03",
+      "title": "Requisitos de PC trasladados a una sección propia",
+      "description": "La ficha separa las configuraciones mínimas y recomendadas en un bloque técnico específico y elimina su repetición dentro de los datos generales.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/"
+      ]
+    },
     {
       "date": "2026-08-03",
       "title": "Precios, ediciones y requisitos de PC confirmados",

@@ -121,18 +121,24 @@ jobs:
         run: |
           node --check scripts/validate-game-hubs.mjs
           node --check scripts/validate-game-hub-change.mjs
+          node --check scripts/validate-game-hub-change-with-pc.mjs
           node --check scripts/render-game-hubs.mjs
+          node --check scripts/render-game-hub-pc-requirements.mjs
+          node --check scripts/validate-game-hub-pc-requirements.mjs
 
       - name: Verificar fuentes, alcance y actualización incremental
         if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
-        run: node scripts/validate-game-hub-change.mjs
+        run: node scripts/validate-game-hub-change-with-pc.mjs
 
-      - name: Regenerar HTML, metadatos y sitemap
-        run: node scripts/render-game-hubs.mjs
+      - name: Regenerar HTML, metadatos, requisitos y sitemap
+        run: |
+          node scripts/render-game-hubs.mjs
+          node scripts/render-game-hub-pc-requirements.mjs
 
-      - name: Comprobar fichas vivas y SEO
+      - name: Comprobar fichas vivas, requisitos y SEO
         run: |
           node scripts/validate-game-hubs.mjs
+          node scripts/validate-game-hub-pc-requirements.mjs
           git diff --check
 
       - name: Limitar el alcance de las ramas automáticas
@@ -152,10 +158,10 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add juegos juegos.html sitemap.xml
-            git commit -m 'Sincroniza fichas y señales SEO verificadas'
+            git commit -m 'Sincroniza fichas, requisitos y señales SEO verificadas'
             git push origin "HEAD:$HEAD_REF"
           else
-            echo 'El HTML, los metadatos y el sitemap ya están sincronizados.'
+            echo 'El HTML, los requisitos, los metadatos y el sitemap ya están sincronizados.'
           fi
           if [ -n "$(git status --porcelain)" ]; then
             echo 'El árbol de trabajo no quedó limpio después de generar las fichas.'

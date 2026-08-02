@@ -1,22 +1,6 @@
 name: Validar Noticias automáticas
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - 'js/news-data.js'
-      - 'js/news-core.js'
-      - 'js/news.js'
-      - 'index.html'
-      - 'noticias.html'
-      - 'juegos/**'
-      - 'scripts/migrate-news-source.mjs'
-      - 'scripts/render-news.mjs'
-      - 'scripts/validate-news.mjs'
-      - 'scripts/validate-news-change.mjs'
-      - '.github/workflows/validate-news.yml'
-      - '.github/workflows/render-game-hubs.yml'
-      - 'docs/NEWS_AUTOMATION.md'
   pull_request_target:
     types: [opened, synchronize, reopened, ready_for_review]
     branches: [main]
@@ -46,7 +30,7 @@ permissions:
 
 concurrency:
   group: validate-news-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: false
 
 jobs:
   dispatch:
@@ -71,11 +55,9 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (
+        github.event_name == 'pull_request_target' &&
         github.event.pull_request.head.repo.full_name == github.repository &&
-        (
-          (github.event_name == 'pull_request_target' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/news-')) ||
-          (github.event_name == 'pull_request' && !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/news-'))
-        )
+        startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/news-')
       )
     runs-on: ubuntu-latest
     env:
@@ -132,19 +114,13 @@ jobs:
 
       - name: Comprobar sintaxis
         run: |
-          node --check scripts/migrate-news-source.mjs
           node --check scripts/render-news.mjs
           node --check scripts/validate-news.mjs
           node --check scripts/validate-news-change.mjs
           node --check scripts/render-game-hubs.mjs
           node --check scripts/validate-game-hubs.mjs
 
-      - name: Normalizar la fuente editorial
-        if: ${{ !startsWith(env.HEAD_REF, 'bot/news-') }}
-        run: node scripts/migrate-news-source.mjs
-
       - name: Verificar la adición automática
-        if: startsWith(env.HEAD_REF, 'bot/news-')
         run: node scripts/validate-news-change.mjs
 
       - name: Generar caché y noticias relacionadas
@@ -158,26 +134,7 @@ jobs:
           node scripts/validate-game-hubs.mjs
           git diff --check
 
-      - name: Guardar la migración y las salidas de una rama manual
-        if: ${{ !startsWith(env.HEAD_REF, 'bot/news-') }}
-        run: |
-          if ! git diff --quiet -- js/news-data.js js/news-core.js js/news.js index.html noticias.html juegos juegos.html; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add -- js/news-data.js js/news-core.js js/news.js index.html noticias.html juegos juegos.html
-            git commit -m 'Normaliza Noticias y genera sus salidas'
-            git push origin "HEAD:$HEAD_REF"
-          else
-            echo 'La fuente y las salidas de Noticias ya están sincronizadas.'
-          fi
-          if [ -n "$(git status --porcelain)" ]; then
-            echo 'El árbol de trabajo no quedó limpio.'
-            git status --short
-            exit 1
-          fi
-
       - name: Limitar el alcance de las ramas automáticas
-        if: startsWith(env.HEAD_REF, 'bot/news-')
         run: |
           files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
           invalid="$(printf '%s\n' "$files" | grep -Ev '^(js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
@@ -188,7 +145,6 @@ jobs:
           fi
 
       - name: Guardar las salidas generadas en la rama automática
-        if: startsWith(env.HEAD_REF, 'bot/news-')
         id: automatic_head
         run: |
           if ! git diff --quiet -- index.html noticias.html juegos juegos.html; then
@@ -208,7 +164,6 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Fusionar el resultado final verificado
-        if: startsWith(env.HEAD_REF, 'bot/news-')
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}

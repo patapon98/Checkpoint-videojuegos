@@ -1,18 +1,6 @@
 name: Valida fichas de juego
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - 'data/game-hubs/**'
-      - 'juegos/**'
-      - 'sitemap.xml'
-      - 'scripts/validate-game-hubs.mjs'
-      - 'scripts/validate-game-hub-change.mjs'
-      - 'scripts/render-game-hubs.mjs'
-      - '.github/workflows/validate-game-hubs.yml'
-      - 'docs/GAME_HUB_AUTOMATION.md'
-      - 'docs/PROJECT_RULES.md'
   pull_request_target:
     types: [opened, synchronize, reopened, ready_for_review]
     branches: [main]
@@ -40,7 +28,7 @@ permissions:
 
 concurrency:
   group: validate-game-hubs-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: false
 
 jobs:
   dispatch:
@@ -65,11 +53,9 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (
+        github.event_name == 'pull_request_target' &&
         github.event.pull_request.head.repo.full_name == github.repository &&
-        (
-          (github.event_name == 'pull_request_target' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/game-hubs-')) ||
-          (github.event_name == 'pull_request' && !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/game-hubs-'))
-        )
+        startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/game-hubs-')
       )
     runs-on: ubuntu-latest
     env:
@@ -149,26 +135,7 @@ jobs:
           node scripts/validate-game-hubs.mjs
           git diff --check
 
-      - name: Guardar HTML y sitemap generados en la rama manual
-        if: ${{ !startsWith(env.HEAD_REF, 'bot/game-hubs-') }}
-        run: |
-          if ! git diff --quiet -- juegos juegos.html sitemap.xml; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add juegos juegos.html sitemap.xml
-            git commit -m 'Sincroniza fichas y señales SEO'
-            git push origin "HEAD:$HEAD_REF"
-          else
-            echo 'El HTML, los metadatos y el sitemap ya están sincronizados.'
-          fi
-          if [ -n "$(git status --porcelain)" ]; then
-            echo 'El árbol de trabajo no quedó limpio después de generar las fichas.'
-            git status --short
-            exit 1
-          fi
-
       - name: Limitar el alcance de las ramas automáticas
-        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         run: |
           files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
           invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/game-hubs/[a-z0-9-]+\.json|juegos/[a-z0-9-]+\.html|juegos\.html|sitemap\.xml)$' || true)"
@@ -179,7 +146,6 @@ jobs:
           fi
 
       - name: Guardar HTML y sitemap generados en la rama automática
-        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         id: automatic_head
         run: |
           if ! git diff --quiet -- juegos juegos.html sitemap.xml; then
@@ -199,7 +165,6 @@ jobs:
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Fusionar el resultado final verificado
-        if: startsWith(env.HEAD_REF, 'bot/game-hubs-')
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}

@@ -103,6 +103,53 @@ if (!API_KEY) {
   process.exit(1);
 }
 
+async function resolveAutomaticReleaseBySlug(release) {
+  const gameUrl = new URL("games/stalker-2-cost-of-hope", "https://api.rawg.io/api/");
+  gameUrl.searchParams.set("key", API_KEY);
+  const gameResponse = await fetch(gameUrl, {
+    redirect: "follow",
+    headers: { "user-agent": "FinalSecreto-CalendarImages/1.0" }
+  });
+  if (!gameResponse.ok) throw new Error(`RAWG API directa HTTP ${gameResponse.status}`);
+  const game = await gameResponse.json();
+  if (!Number(game.id) || game.slug !== "stalker-2-cost-of-hope") {
+    throw new Error("RAWG no devolvió la ficha inequívoca de Cost of Hope");
+  }
+
+  let imageUrl = /^https:\/\//.test(game.background_image || "") ? game.background_image : "";
+  let imageType = "background";
+  if (!imageUrl) {
+    const screenshotsUrl = new URL(`games/${game.id}/screenshots`, "https://api.rawg.io/api/");
+    screenshotsUrl.searchParams.set("key", API_KEY);
+    screenshotsUrl.searchParams.set("page_size", "10");
+    const screenshotsResponse = await fetch(screenshotsUrl, {
+      redirect: "follow",
+      headers: { "user-agent": "FinalSecreto-CalendarImages/1.0" }
+    });
+    if (!screenshotsResponse.ok) throw new Error(`RAWG API de capturas HTTP ${screenshotsResponse.status}`);
+    const screenshots = await screenshotsResponse.json();
+    imageUrl = (screenshots.results || []).find((item) => /^https:\/\//.test(item?.image || ""))?.image || "";
+    imageType = "screenshot";
+  }
+  if (!/^https:\/\/media\.rawg\.io\//.test(imageUrl)) {
+    throw new Error("RAWG no ofrece una imagen HTTPS válida para Cost of Hope");
+  }
+
+  release.image = {
+    ...release.image,
+    provider: "rawg",
+    rawgId: Number(game.id),
+    rawgSlug: game.slug,
+    rawgPage: `https://rawg.io/games/${game.slug}`,
+    rawgImageType: imageType,
+    src: imageUrl,
+    alt: release.image.alt || release.title,
+    className: release.image.className || "",
+    legacy: false
+  };
+  return true;
+}
+
 const changes = [];
 const errors = [];
 const warnings = [];
@@ -110,6 +157,15 @@ for (const release of pending) {
   try {
     if (await resolveRawgImage(release, { apiKey: API_KEY })) changes.push(release.title);
   } catch (error) {
+    if (release.id === automaticRelease.id && /RAWG API HTTP 522/.test(error.message)) {
+      try {
+        if (await resolveAutomaticReleaseBySlug(release)) changes.push(release.title);
+        continue;
+      } catch (directError) {
+        errors.push(`${release.id}: ${error.message}; ${directError.message}`);
+        continue;
+      }
+    }
     if (/RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)) {
       release.image = structuredClone(originalImages.get(release.id) || {});
       warnings.push(`${release.title}: RAWG identifica la ficha, pero todavía no ofrece imágenes; se conserva la anterior`);

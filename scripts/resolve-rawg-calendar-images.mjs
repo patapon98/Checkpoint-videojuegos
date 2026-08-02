@@ -141,14 +141,13 @@ async function resolveAutomaticReleaseFromPage(release) {
   const imagePatterns = [
     /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i,
     /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i,
-    /\\"background_image\\"\s*:\s*\\"([^"']+)\\"/i,
-    /https:\\/\\/media\.rawg\.io\\/media\\/[^"'<> ]+/i
+    /"background_image"\s*:\s*"([^"]+)"/i
   ];
   let imageUrl = "";
   for (const pattern of imagePatterns) {
     const match = pattern.exec(html);
     if (match) {
-      imageUrl = decodePageValue(match[1] || match[0]);
+      imageUrl = decodePageValue(match[1]);
       break;
     }
   }

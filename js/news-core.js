@@ -3,94 +3,6 @@
   const locale = { es: "es-ES", en: "en-GB" };
   const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
   let latestExpiryTimer = null;
-  const homeDetails = {
-    "ea-autorizacion-final-compra-2026": {
-      es: [
-        "El consorcio está formado por el fondo soberano saudí PIF, la firma de inversión Silver Lake y Affinity Partners. Los accionistas recibirán 210 dólares por acción en una de las mayores compras financiadas de una empresa de videojuegos.",
-        "La autorización bajo el Reglamento europeo sobre subvenciones extranjeras era el último gran obstáculo regulatorio. Una vez completada la operación, EA dejará el mercado bursátil y el consorcio asumirá el control de franquicias como EA Sports FC, Battlefield, Apex Legends y Los Sims."
-      ]
-    },
-  "xbox-plan-crecimiento-fy27": {
-    es: [
-      "Sharma organiza el nuevo ejercicio alrededor de cuatro áreas. Core reforzará la plataforma con la consola como centro. Content buscará convertir los juegos con más éxito en franquicias globales. Creation se concentrará en Minecraft y Connection ampliará los mundos conocidos a nuevas experiencias y formatos.",
-      "El objetivo inmediato es recuperar jugadores e ingresos durante el ejercicio fiscal que termina en junio de 2027. Para 2028 y 2029, Xbox espera que esas inversiones aceleren el negocio. Su meta posterior es sostener un crecimiento de dos dígitos en jugadores y participación antes de 2030."
-    ]
-  },
-    "xbox-resultados-junio-2026": {
-      es: [
-        "Microsoft reúne dentro de contenidos y servicios de Xbox las ventas de juegos, el contenido adicional, Game Pass, la nube y la publicidad. La caída del 10% indica que el retroceso no se concentró únicamente en la venta de consolas.",
-        "El hardware también bajó un 13% interanual. El contraste es especialmente relevante porque Microsoft cerró el trimestre con 90.007 millones de dólares de ingresos totales mientras Xbox atravesaba una reestructuración con miles de despidos."
-      ]
-    },
-    "double-fine-despidos-independencia": {
-      es: [
-        "Double Fine es el estudio responsable de Psychonauts. Recuperó su independencia después de que Microsoft acordara separarlo de Xbox durante la reestructuración anunciada en julio.",
-        "El estudio mantiene su nombre, su catálogo y su propiedad intelectual, pero vuelve a asumir directamente sus costes. Tim Schafer vinculó los 23 despidos con la necesidad de reducir la empresa a un tamaño sostenible y proteger su continuidad."
-      ]
-    },
-    "capcom-resultados-ventas-junio-2026": {
-      es: [
-        "Las 23,81 millones de copias corresponden únicamente al periodo comprendido entre abril y junio de 2026. No deben confundirse con las ventas históricas acumuladas que Capcom también publica para cada saga.",
-        "PRAGMATA aportó 2,51 millones de unidades como principal novedad. Los otros 21,26 millones procedieron de juegos publicados antes del ejercicio actual, con Resident Evil, Monster Hunter y Devil May Cry sosteniendo gran parte del negocio."
-      ]
-    },
-    "xbox-caida-global-juegos-fisicos": {
-      es: [
-        "La interrupción se prolongó durante casi 20 horas y afectó al inicio de sesión, las bibliotecas, Game Pass, las compras y el arranque de juegos. El error 0x87e107df apareció también en algunas instalaciones realizadas desde disco.",
-        "El episodio no demuestra que todos los discos de Xbox dependan siempre de internet, pero sí que determinadas licencias y configuraciones necesitan validaciones remotas. Durante la caída, poseer el soporte físico no bastó para garantizar el acceso."
-      ]
-    },
-    "playstation-fin-formato-fisico": {
-      es: [
-        "La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.",
-        "Los lanzamientos posteriores dependerán de PlayStation Store: no podrán prestarse ni revenderse como un disco y quedarán más expuestos al cierre de servidores, la retirada de licencias o cambios de precio."
-      ],
-      en: [
-        "The measure will only affect new games released from January 2028. Titles launched before that date may continue to be manufactured and sold on disc, so the change will not immediately remove the existing physical catalogue.",
-        "Later releases will depend on PlayStation Store: they cannot be lent or resold like a disc and will be more exposed to server closures, licence withdrawals and price changes."
-      ]
-    },
-    "god-of-war-laufey-fecha": {
-      es: [
-        "God of War Laufey llegará en exclusiva a PS5 el 16 de febrero de 2027 y estará centrado en Faye, ampliando su historia antes de los acontecimientos vividos junto a Kratos y Atreus.",
-        "Cory Barlog también ha confirmado que la entrega posterior recuperará a Kratos como protagonista y conectará directamente con Laufey. El anuncio ordena la continuidad narrativa de los próximos dos juegos."
-      ],
-      en: [
-        "God of War Laufey will launch exclusively on PS5 on February 16, 2027 and will focus on Faye, expanding her story before the events experienced alongside Kratos and Atreus.",
-        "Cory Barlog has also confirmed that the following instalment will bring Kratos back as protagonist and connect directly with Laufey. The announcement establishes the narrative order of the next two games."
-      ]
-    },
-    "ea-compra-autorizacion-ue": {
-      es: [
-        "La Comisión Europea ha autorizado la adquisición de Electronic Arts bajo el Reglamento de concentraciones tras concluir que el cambio de propiedad no plantea problemas de competencia.",
-        "La autorización no cierra todavía la operación. Bruselas mantiene una revisión separada sobre subvenciones extranjeras; si también la supera, EA pasará a ser una compañía privada dentro de una compra valorada en 55.000 millones de dólares."
-      ],
-      en: [
-        "The European Commission has cleared the acquisition of Electronic Arts under the EU Merger Regulation after concluding that the ownership change raises no competition concerns.",
-        "The clearance does not complete the deal. Brussels is conducting a separate foreign-subsidies review; if that is also cleared, EA will become a private company in a transaction valued at $55 billion."
-      ]
-    },
-    "xbox-nube-gratis-anuncios": {
-      es: [
-        "La prueba permite a Xbox Insiders retransmitir una selección de juegos que ya poseen sin pagar por el acceso a la nube. Los anuncios se muestran antes de comenzar y cada sesión tiene un límite de una hora.",
-        "Microsoft presenta el sistema como una forma opcional de reducir el coste de entrada. De momento no existe confirmación de que la prueba vaya a convertirse en un nivel comercial permanente."
-      ],
-      en: [
-        "The test lets Xbox Insiders stream selected games they already own without paying for cloud access. Ads play before the session begins and each session is limited to one hour.",
-        "Microsoft presents the system as an optional way to lower the cost of entry. There is currently no confirmation that the test will become a permanent commercial tier."
-      ]
-    },
-    "amazon-luna-prime-video": {
-      es: [
-        "Amazon ha añadido una pestaña de juegos dentro de Prime Video para los miembros de Prime que utilizan Fire TV en Estados Unidos y Reino Unido. Pueden iniciar juegos de Luna con un mando o con el teléfono, sin descargas ni pagos adicionales.",
-        "El cambio integra el juego en el mismo espacio donde Amazon distribuye películas, series y deportes. La compañía promete ampliar dispositivos, países y catálogo, pero España y Japón no forman parte del despliegue inicial."
-      ],
-      en: [
-        "Amazon has added a games tab inside Prime Video for Prime members using Fire TV in the US and UK. They can launch Luna games with a controller or phone, without downloads or additional payments.",
-        "The change integrates gaming into the same space where Amazon distributes films, series and sports. The company plans to expand devices, countries and the catalogue, but Spain and Japan are not part of the initial rollout."
-      ]
-    }
-  };
 
   function text(value, lang) {
     if (typeof value === "string") return value;
@@ -255,7 +167,7 @@
   }
 
   function homeBack(item, lang, compact) {
-    const paragraphs = homeDetails[item.id]?.[lang] || [text(item.summary, lang), text(item.why, lang)];
+    const paragraphs = item.homeDetails?.[lang] || [text(item.summary, lang), text(item.why, lang)];
     return `
       <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}" aria-hidden="true" inert>
         <div class="news-home-back-meta">

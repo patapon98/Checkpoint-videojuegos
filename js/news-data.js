@@ -1,716 +1,1206 @@
-// Taxonomía editorial: «Lanzamientos» cubre fechas, ventanas, adelantos y retrasos; «Juegos», el resto de noticias centradas en títulos concretos.
+// Fuente estructurada única para portada, Noticias y ticker.
 window.FINALSECRETO_NEWS = [
   {
-    id: "ea-autorizacion-final-compra-2026",
-    important: true,
-    emphasis: { es: ["ha recibido todas las autorizaciones regulatorias necesarias", "prevé cerrar la operación el 4 de agosto de 2026", "Electronic Arts dejará de cotizar y pasará a ser una compañía privada"] },
-    category: { es: "Industria" },
-    date: "2026-07-31",
-    featured: false,
-    ticker: {
-      keyword: { es: "Electronic Arts" },
-      copy: { es: "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares" }
+    "id": "ea-autorizacion-final-compra-2026",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha recibido todas las autorizaciones regulatorias necesarias",
+        "prevé cerrar la operación el 4 de agosto de 2026",
+        "Electronic Arts dejará de cotizar y pasará a ser una compañía privada"
+      ]
     },
-    tone: "industry",
-    title: {
-      es: "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+    "category": {
+      "es": "Industria"
     },
-    summary: {
-      es: "Electronic Arts comunicó que ha recibido todas las autorizaciones regulatorias necesarias y prevé cerrar la operación el 4 de agosto de 2026. La compra por PIF, Silver Lake y Affinity Partners está valorada en unos 55.000 millones de dólares."
+    "date": "2026-07-31",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Electronic Arts"
+      },
+      "copy": {
+        "es": "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+      }
     },
-    why: {
-      es: "Electronic Arts dejará de cotizar y pasará a ser una compañía privada controlada por el consorcio comprador. El cambio de propiedad afecta a una de las mayores editoras del sector, responsable de EA Sports FC, Battlefield, Apex Legends y Los Sims."
+    "tone": "industry",
+    "title": {
+      "es": "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
     },
-    sources: [
+    "summary": {
+      "es": "Electronic Arts comunicó que ha recibido todas las autorizaciones regulatorias necesarias y prevé cerrar la operación el 4 de agosto de 2026. La compra por PIF, Silver Lake y Affinity Partners está valorada en unos 55.000 millones de dólares."
+    },
+    "why": {
+      "es": "Electronic Arts dejará de cotizar y pasará a ser una compañía privada controlada por el consorcio comprador. El cambio de propiedad afecta a una de las mayores editoras del sector, responsable de EA Sports FC, Battlefield, Apex Legends y Los Sims."
+    },
+    "sources": [
       {
-        label: "Electronic Arts",
-        type: { es: "Anuncio oficial de la operación" },
-        url: "https://www.ea.com/news/ea-announces-agreement-to-be-acquired?isLocalized=true"
+        "label": "Electronic Arts",
+        "type": {
+          "es": "Anuncio oficial de la operación"
+        },
+        "url": "https://www.ea.com/news/ea-announces-agreement-to-be-acquired?isLocalized=true"
       },
       {
-        label: "Reuters",
-        type: { es: "Autorización final y fecha prevista de cierre" },
-        url: "https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/"
+        "label": "Reuters",
+        "type": {
+          "es": "Autorización final y fecha prevista de cierre"
+        },
+        "url": "https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El consorcio está formado por el fondo soberano saudí PIF, la firma de inversión Silver Lake y Affinity Partners. Los accionistas recibirán 210 dólares por acción en una de las mayores compras financiadas de una empresa de videojuegos.",
+        "La autorización bajo el Reglamento europeo sobre subvenciones extranjeras era el último gran obstáculo regulatorio. Una vez completada la operación, EA dejará el mercado bursátil y el consorcio asumirá el control de franquicias como EA Sports FC, Battlefield, Apex Legends y Los Sims."
+      ]
+    }
+  },
+  {
+    "id": "playstation-resultados-abril-junio-2026",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "el beneficio operativo de PlayStation aumentó un 37%",
+        "alcanzó 202.000 millones de yenes",
+        "125 millones de usuarios activos mensuales"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-07-31",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "PlayStation"
+      },
+      "copy": {
+        "es": "El beneficio operativo de PlayStation creció un 37% pese a la caída del hardware"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "El beneficio operativo de PlayStation creció un 37% pese a la caída del hardware"
+    },
+    "summary": {
+      "es": "Entre abril y junio de 2026, el beneficio operativo de PlayStation aumentó un 37% y alcanzó 202.000 millones de yenes. Sony registró 125 millones de usuarios activos mensuales, mientras las ventas de PS5 bajaron hasta 1,6 millones de unidades."
+    },
+    "why": {
+      "es": "La división mejora su rentabilidad aunque vende menos consolas y el tiempo total de juego retrocede un 4%. Sony ha elevado su previsión anual para el negocio de videojuegos y servicios de red."
+    },
+    "sources": [
+      {
+        "label": "Sony Group",
+        "type": {
+          "es": "Resultados oficiales del primer trimestre fiscal"
+        },
+        "url": "https://www.sony.com/en/SonyInfo/IR/library/presen/er/"
+      },
+      {
+        "label": "Reuters",
+        "type": {
+          "es": "Resultados, previsiones y ventas de PS5"
+        },
+        "url": "https://www.reuters.com/world/asia-pacific/sony-posts-40-rise-q1-profit-beating-estimates-2026-07-31/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Los ingresos del segmento se mantuvieron prácticamente planos. El crecimiento del beneficio procedió de una combinación más favorable de software y servicios, control de costes y efectos del tipo de cambio, no de un aumento en la venta de consolas.",
+        "Sony vendió 1,6 millones de PS5 frente a 2,4 millones un año antes. La base mensual alcanzó un récord de 125 millones de cuentas, pero el tiempo total de juego cayó un 4%, una señal de que el alcance de la plataforma y la intensidad de uso no evolucionaron en la misma dirección."
+      ]
+    }
+  },
+  {
+    "id": "xbox-plan-crecimiento-fy27",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "volver al crecimiento de jugadores e ingresos antes de julio de 2027",
+        "la consola seguirá liderando la plataforma",
+        "Minecraft se convertirá en el principal espacio de creación de la compañía"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-07-30",
+    "publishedAt": "2026-07-30T22:10:13Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027"
+      }
+    },
+    "tone": "xbox",
+    "title": {
+      "es": "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027"
+    },
+    "summary": {
+      "es": "Según un memorando interno obtenido por The Verge, Asha Sharma quiere volver al crecimiento de jugadores e ingresos antes de julio de 2027. El plan establece que la consola seguirá liderando la plataforma y que Minecraft se convertirá en el principal espacio de creación de la compañía."
+    },
+    "why": {
+      "es": "La hoja de ruta concreta cómo Xbox pretende responder a la caída de ingresos, los despidos y la salida de varios estudios. También concentra la inversión en la plataforma principal, las grandes franquicias, Minecraft y la expansión de sus mundos fuera de los juegos."
+    },
+    "sources": [
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Memorando interno y contexto"
+        },
+        "url": "https://www.theverge.com/games/973520/xbox-ceo-memo-one-year-growth"
+      },
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Plan oficial de reestructuración"
+        },
+        "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Sharma organiza el nuevo ejercicio alrededor de cuatro áreas. Core reforzará la plataforma con la consola como centro. Content buscará convertir los juegos con más éxito en franquicias globales. Creation se concentrará en Minecraft y Connection ampliará los mundos conocidos a nuevas experiencias y formatos.",
+        "El objetivo inmediato es recuperar jugadores e ingresos durante el ejercicio fiscal que termina en junio de 2027. Para 2028 y 2029, Xbox espera que esas inversiones aceleren el negocio. Su meta posterior es sostener un crecimiento de dos dígitos en jugadores y participación antes de 2030."
+      ]
+    }
+  },
+  {
+    "id": "xbox-resultados-junio-2026",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual",
+        "Los ingresos por hardware bajaron un 13%",
+        "el conjunto de Microsoft alcanzó 90.007 millones de dólares"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-07-29",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Los ingresos de contenidos y servicios de Xbox cayeron un 10% entre abril y junio"
+      }
+    },
+    "tone": "xbox",
+    "title": {
+      "es": "Los ingresos de contenidos y servicios de Xbox cayeron un 10% entre abril y junio"
+    },
+    "summary": {
+      "es": "Microsoft comunicó que los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual durante el trimestre terminado el 30 de junio de 2026. Los ingresos por hardware bajaron un 13%, mientras el conjunto de Microsoft alcanzó 90.007 millones de dólares."
+    },
+    "why": {
+      "es": "El retroceso afecta al negocio que reúne juegos, contenido, Game Pass, suscripciones, nube y publicidad. Aporta contexto económico directo a la reestructuración de Xbox y muestra que la debilidad no se limita a la venta de consolas."
+    },
+    "sources": [
+      {
+        "label": "Microsoft",
+        "type": {
+          "es": "Resultados oficiales"
+        },
+        "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+      },
+      {
+        "label": "Microsoft",
+        "type": {
+          "es": "Métricas oficiales"
+        },
+        "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/metrics"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto sobre Xbox"
+        },
+        "url": "https://www.theverge.com/tech/972738/xbox-revenue-microsoft-earnings-q4-2026"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Microsoft reúne dentro de contenidos y servicios de Xbox las ventas de juegos, el contenido adicional, Game Pass, la nube y la publicidad. La caída del 10% indica que el retroceso no se concentró únicamente en la venta de consolas.",
+        "El hardware también bajó un 13% interanual. El contraste es especialmente relevante porque Microsoft cerró el trimestre con 90.007 millones de dólares de ingresos totales mientras Xbox atravesaba una reestructuración con miles de despidos."
+      ]
+    }
+  },
+  {
+    "id": "double-fine-despidos-independencia",
+    "emphasis": {
+      "es": [
+        "ha reducido su plantilla en 23 personas",
+        "tres semanas después de abandonar Xbox y volver a ser independiente",
+        "garantizar su supervivencia"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-07-28",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Double Fine"
+      },
+      "copy": {
+        "es": "Double Fine despide a 23 empleados tras recuperar su independencia de Xbox"
+      }
+    },
+    "tone": "industry",
+    "title": {
+      "es": "Double Fine despide a 23 empleados tras recuperar su independencia de Xbox"
+    },
+    "summary": {
+      "es": "El estudio de Psychonauts ha reducido su plantilla en 23 personas, tres semanas después de abandonar Xbox y volver a ser independiente. Tim Schafer explicó que la medida era necesaria para ajustar el tamaño de la empresa y garantizar su supervivencia."
+    },
+    "why": {
+      "es": "Los recortes muestran el coste inmediato de la transición acordada durante la reestructuración de Xbox. Double Fine conservó su propiedad intelectual y su catálogo, pero también recuperó la responsabilidad de financiar y sostener su actividad."
+    },
+    "sources": [
+      {
+        "label": "Double Fine",
+        "type": {
+          "es": "Comunicado oficial sobre su independencia"
+        },
+        "url": "https://www.doublefine.com/news/independence-day"
+      },
+      {
+        "label": "PC Gamer",
+        "type": {
+          "es": "Declaración de Tim Schafer y despidos"
+        },
+        "url": "https://www.pcgamer.com/gaming-industry/only-the-survival-of-our-studio-would-make-us-consider-such-a-painful-action-tim-schafer-announces-double-fine-layoffs-just-3-weeks-after-xbox-cut-it-loose/"
+      },
+      {
+        "label": "GamesRadar+",
+        "type": {
+          "es": "Contexto"
+        },
+        "url": "https://www.gamesradar.com/games/after-escaping-xbox-double-fine-lays-off-23-people-as-tim-schafer-says-only-the-survival-of-our-studio-would-ever-make-us-consider-such-a-painful-action/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Double Fine es el estudio responsable de Psychonauts. Recuperó su independencia después de que Microsoft acordara separarlo de Xbox durante la reestructuración anunciada en julio.",
+        "El estudio mantiene su nombre, su catálogo y su propiedad intelectual, pero vuelve a asumir directamente sus costes. Tim Schafer vinculó los 23 despidos con la necesidad de reducir la empresa a un tamaño sostenible y proteger su continuidad."
+      ]
+    }
+  },
+  {
+    "id": "capcom-resultados-ventas-junio-2026",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "del 1 de abril al 30 de junio de 2026",
+        "21,26 millones correspondieron a juegos publicados antes de abril",
+        "PRAGMATA vendió 2,51 millones"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-07-28",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Capcom"
+      },
+      "copy": {
+        "es": "Capcom vendió 23,81 millones de juegos entre abril y junio y 21,26 millones eran títulos anteriores"
+      }
+    },
+    "article": {
+      "url": "/noticias/ventas-capcom-resultados-junio-2026"
+    },
+    "tone": "industry",
+    "title": {
+      "es": "Capcom vendió 23,81 millones de juegos entre abril y junio, impulsada por títulos anteriores"
+    },
+    "summary": {
+      "es": "Durante su primer trimestre fiscal, del 1 de abril al 30 de junio de 2026, la editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA vendió 2,51 millones, mientras que 21,26 millones correspondieron a juegos publicados antes del ejercicio actual."
+    },
+    "why": {
+      "es": "El informe muestra cómo Resident Evil, Monster Hunter y Devil May Cry sostienen el negocio de Capcom, pero exige distinguir las ventas del trimestre de los acumulados históricos."
+    },
+    "sources": [
+      {
+        "label": "Capcom",
+        "type": {
+          "es": "Resultados oficiales"
+        },
+        "url": "https://www.capcom.co.jp/ir/english/data/pdf/result/2026/1st/result_2026_1st_01.pdf"
+      },
+      {
+        "label": "Capcom",
+        "type": {
+          "es": "Presentación con ventas por juego"
+        },
+        "url": "https://www.capcom.co.jp/ir/english/data/pdf/explanation/2026/1st/explanation_2026_1st_01.pdf"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Las 23,81 millones de copias corresponden únicamente al periodo comprendido entre abril y junio de 2026. No deben confundirse con las ventas históricas acumuladas que Capcom también publica para cada saga.",
+        "PRAGMATA aportó 2,51 millones de unidades como principal novedad. Los otros 21,26 millones procedieron de juegos publicados antes del ejercicio actual, con Resident Evil, Monster Hunter y Devil May Cry sosteniendo gran parte del negocio."
+      ]
+    }
+  },
+  {
+    "id": "xbox-caida-global-juegos-fisicos",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "algunos juegos instalados desde disco",
+        "error 0x87e107df",
+        "tener el disco no garantizó poder jugar"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-07-27",
+    "publishedAt": "2026-07-27T03:00:00Z",
+    "updated": "2026-07-28",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox sufrió una caída global que llegó a bloquear algunos juegos en disco"
+      }
+    },
+    "tone": "xbox",
+    "title": {
+      "es": "Una caída global de Xbox llegó a bloquear algunos juegos en disco"
+    },
+    "summary": {
+      "es": "Una interrupción de casi 20 horas impidió iniciar sesión, consultar bibliotecas, usar Game Pass, comprar y ejecutar juegos. Algunos juegos instalados desde disco tampoco arrancaron y mostraron el error 0x87e107df."
+    },
+    "why": {
+      "es": "La incidencia expuso la dependencia de los servidores para validar licencias. Durante la caída, tener el disco no garantizó poder jugar, una limitación relevante para la propiedad y la preservación."
+    },
+    "sources": [
+      {
+        "label": "Estado de Xbox",
+        "type": {
+          "es": "Fuente oficial"
+        },
+        "url": "https://support.xbox.com/xbox-live-status"
+      },
+      {
+        "label": "VGC",
+        "type": {
+          "es": "Declaración de Xbox Support"
+        },
+        "url": "https://www.videogameschronicle.com/news/xbox-says-its-aware-of-major-outages-when-signing-in-and-launching-games-and-is-working-to-mitigate-the-issue/"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Impacto en juegos físicos y restablecimiento"
+        },
+        "url": "https://www.theverge.com/games/971545/xbox-outage-disc-physical-games"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La interrupción se prolongó durante casi 20 horas y afectó al inicio de sesión, las bibliotecas, Game Pass, las compras y el arranque de juegos. El error 0x87e107df apareció también en algunas instalaciones realizadas desde disco.",
+        "El episodio no demuestra que todos los discos de Xbox dependan siempre de internet, pero sí que determinadas licencias y configuraciones necesitan validaciones remotas. Durante la caída, poseer el soporte físico no bastó para garantizar el acceso."
+      ]
+    }
+  },
+  {
+    "id": "god-of-war-laufey-fecha",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "en exclusiva a PS5 el 16 de febrero de 2027",
+        "recuperará a Kratos como protagonista",
+        "próximas dos entregas"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos",
+      "en": "Releases"
+    },
+    "date": "2026-07-25",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "God of War Laufey"
+      },
+      "copy": {
+        "es": "God of War Laufey llegará a PS5 el 16 de febrero de 2027"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "God of War Laufey llegará el 16 de febrero de 2027 y prepara el regreso de Kratos",
+      "en": "God of War Laufey arrives February 16, 2027 and sets up Kratos's return"
+    },
+    "summary": {
+      "es": "Sony ha fijado el lanzamiento de God of War Laufey para PS5. Cory Barlog también ha confirmado que el siguiente juego de la saga volverá a estar protagonizado por Kratos y conectará directamente con la historia de Faye.",
+      "en": "Sony has dated God of War Laufey for PS5. Cory Barlog also confirmed that the following game in the series will once again star Kratos and connect directly to Faye's story."
+    },
+    "why": {
+      "es": "No es solo la fecha de uno de los grandes exclusivos de 2027. Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
+      "en": "This is more than a date for one of 2027's major exclusives. Santa Monica Studio has clarified how the next two God of War games will connect."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=HLMX2w3cwuE",
+      "label": {
+        "es": "Ver tráiler",
+        "en": "Watch trailer"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation",
+        "type": {
+          "es": "Anuncio oficial",
+          "en": "Official announcement"
+        },
+        "url": "https://x.com/PlayStation/status/2080831588317773861"
+      },
+      {
+        "label": "VGC",
+        "type": {
+          "es": "Información",
+          "en": "Reporting"
+        },
+        "url": "https://www.videogameschronicle.com/news/playstation-confirms-god-of-war-laufey-release-date-and-return-of-kratos-in-next-game/"
+      },
+      {
+        "label": "Gematsu",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.gematsu.com/2026/07/god-of-war-laufey-launches-february-16-2027"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "God of War Laufey llegará en exclusiva a PS5 el 16 de febrero de 2027 y estará centrado en Faye, ampliando su historia antes de los acontecimientos vividos junto a Kratos y Atreus.",
+        "Cory Barlog también ha confirmado que la entrega posterior recuperará a Kratos como protagonista y conectará directamente con Laufey. El anuncio ordena la continuidad narrativa de los próximos dos juegos."
+      ],
+      "en": [
+        "God of War Laufey will launch exclusively on PS5 on February 16, 2027 and will focus on Faye, expanding her story before the events experienced alongside Kratos and Atreus.",
+        "Cory Barlog has also confirmed that the following instalment will bring Kratos back as protagonist and connect directly with Laufey. The announcement establishes the narrative order of the next two games."
+      ]
+    }
+  },
+  {
+    "id": "gta-vi-codigos-japon",
+    "emphasis": {
+      "es": [
+        "un código de descarga y no un disco",
+        "validez de 170 días",
+        "podría perder su utilidad"
+      ]
+    },
+    "category": {
+      "es": "Plataformas",
+      "en": "Platforms"
+    },
+    "date": "2026-07-25",
+    "featured": false,
+    "home": false,
+    "ticker": {
+      "keyword": {
+        "es": "GTA VI"
+      },
+      "copy": {
+        "es": "GTA VI para PS5 en Japón incluirá códigos que caducan 170 días después del lanzamiento"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "Los códigos japoneses de GTA VI para PS5 caducarán 170 días después del lanzamiento",
+      "en": "Japanese GTA VI PS5 codes will expire 170 days after launch"
+    },
+    "summary": {
+      "es": "Las cajas japonesas de GTA VI para PS5 incluirán un código de descarga, no un disco. Rockstar indica que esos códigos caducarán 170 días después de su emisión, fechada el 19 de noviembre de 2026.",
+      "en": "Japanese boxed copies of GTA VI for PS5 will contain a download code rather than a disc. Rockstar says those codes expire 170 days after issuance on November 19, 2026."
+    },
+    "why": {
+      "es": "Aunque es una restricción regional, muestra una de las limitaciones prácticas de sustituir el disco por un código dentro de una caja.",
+      "en": "Although this is a regional restriction, it demonstrates one practical limitation of replacing a disc with a code inside a box."
+    },
+    "sources": [
+      {
+        "label": "Rockstar Support",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+      },
+      {
+        "label": "VGC",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.videogameschronicle.com/news/gta-6-download-codes-expire-only-170-days-after-launch-in-japan/"
       }
     ]
   },
   {
-    id: "xbox-plan-crecimiento-fy27",
-    important: true,
-    emphasis: { es: ["volver al crecimiento de jugadores e ingresos antes de julio de 2027", "la consola seguirá liderando la plataforma", "Minecraft se convertirá en el principal espacio de creación de la compañía"] },
-    category: { es: "Industria" },
-    date: "2026-07-30",
-    publishedAt: "2026-07-30T22:10:13Z",
-    featured: false,
-    ticker: {
-      keyword: { es: "Xbox" },
-      copy: { es: "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027" }
+    "id": "tomb-raider-catalyst-2028",
+    "emphasis": {
+      "es": [
+        "el responsable de Amazon Games situó Tomb Raider: Catalyst en 2028",
+        "la propia compañía evitó confirmar el cambio",
+        "no debe considerarse todavía una fecha oficial"
+      ]
     },
-    tone: "xbox",
-    title: {
-      es: "Xbox fija cuatro prioridades y busca volver al crecimiento antes de julio de 2027"
+    "category": {
+      "es": "Lanzamientos",
+      "en": "Releases"
     },
-    summary: {
-      es: "Según un memorando interno obtenido por The Verge, Asha Sharma quiere volver al crecimiento de jugadores e ingresos antes de julio de 2027. El plan establece que la consola seguirá liderando la plataforma y que Minecraft se convertirá en el principal espacio de creación de la compañía."
+    "date": "2026-07-24",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Tomb Raider: Catalyst"
+      },
+      "copy": {
+        "es": "Tomb Raider: Catalyst apunta a 2028, aunque Amazon no confirma el retraso"
+      }
     },
-    why: {
-      es: "La hoja de ruta concreta cómo Xbox pretende responder a la caída de ingresos, los despidos y la salida de varios estudios. También concentra la inversión en la plataforma principal, las grandes franquicias, Minecraft y la expansión de sus mundos fuera de los juegos."
+    "tone": "industry",
+    "title": {
+      "es": "Amazon apunta a 2028 para Tomb Raider: Catalyst, pero evita confirmar el retraso",
+      "en": "Amazon points to 2028 for Tomb Raider: Catalyst but stops short of confirming a delay"
     },
-    sources: [
+    "summary": {
+      "es": "Jeff Gattis, responsable de Amazon Games, situó el nuevo Tomb Raider en 2028 durante una entrevista. Después, la compañía aseguró que no tenía novedades sobre su fecha y que el desarrollo avanza bien.",
+      "en": "Amazon Games head Jeff Gattis placed the new Tomb Raider in 2028 during an interview. The company later said it had no timing update and that development was progressing well."
+    },
+    "why": {
+      "es": "La ventana anunciada de 2027 queda en duda, pero la respuesta posterior de Amazon impide tratar 2028 como una fecha definitiva.",
+      "en": "The announced 2027 window is now in doubt, but Amazon's follow-up response means 2028 should not be treated as final."
+    },
+    "sources": [
       {
-        label: "The Verge",
-        type: { es: "Memorando interno y contexto" },
-        url: "https://www.theverge.com/games/973520/xbox-ceo-memo-one-year-growth"
+        "label": "Gematsu",
+        "type": {
+          "es": "Declaración y respuesta oficial",
+          "en": "Statement and official response"
+        },
+        "url": "https://www.gematsu.com/2026/07/tomb-raider-catalyst-amazon-games-boss-suggests-2028-delay-but-publisher-says-no-updates"
       },
       {
-        label: "Xbox Wire",
-        type: { es: "Plan oficial de reestructuración" },
-        url: "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
+        "label": "PC Gamer",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.pcgamer.com/games/action/tomb-raider-catalyst-delayed-to-2028/"
       }
     ]
   },
   {
-    id: "xbox-resultados-junio-2026",
-    important: true,
-    emphasis: { es: ["los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual", "Los ingresos por hardware bajaron un 13%", "el conjunto de Microsoft alcanzó 90.007 millones de dólares"] },
-    category: { es: "Industria" },
-    date: "2026-07-29",
-    featured: false,
-    ticker: {
-      keyword: { es: "Xbox" },
-      copy: { es: "Los ingresos de contenidos y servicios de Xbox cayeron un 10% entre abril y junio" }
+    "id": "ea-compra-autorizacion-ue",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "55.000 millones de dólares",
+        "no plantea problemas de competencia",
+        "revisión separada sobre subvenciones extranjeras"
+      ]
     },
-    tone: "xbox",
-    title: {
-      es: "Los ingresos de contenidos y servicios de Xbox cayeron un 10% entre abril y junio"
+    "category": {
+      "es": "Industria",
+      "en": "Industry"
     },
-    summary: {
-      es: "Microsoft comunicó que los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual durante el trimestre terminado el 30 de junio de 2026. Los ingresos por hardware bajaron un 13%, mientras el conjunto de Microsoft alcanzó 90.007 millones de dólares."
+    "date": "2026-07-23",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Electronic Arts"
+      },
+      "copy": {
+        "es": "Electronic Arts supera el control europeo de competencia para su compra"
+      }
     },
-    why: {
-      es: "El retroceso afecta al negocio que reúne juegos, contenido, Game Pass, suscripciones, nube y publicidad. Aporta contexto económico directo a la reestructuración de Xbox y muestra que la debilidad no se limita a la venta de consolas."
+    "tone": "industry",
+    "title": {
+      "es": "La UE autoriza bajo sus reglas de competencia la compra de Electronic Arts por 55.000 millones de dólares",
+      "en": "The EU clears the $55 billion Electronic Arts acquisition under its merger rules"
     },
-    sources: [
+    "summary": {
+      "es": "La Comisión Europea considera que la adquisición de EA por el consorcio formado por PIF, Silver Lake y Affinity Partners no plantea problemas de competencia. La operación todavía espera una revisión europea separada sobre subvenciones extranjeras.",
+      "en": "The European Commission says EA's acquisition by the consortium formed by PIF, Silver Lake and Affinity Partners raises no competition concerns. The deal still faces a separate EU foreign-subsidies review."
+    },
+    "why": {
+      "es": "Es un paso decisivo para que una de las mayores editoras del mundo pase a manos privadas y quede controlada mayoritariamente por el fondo soberano saudí.",
+      "en": "It is a decisive step toward taking one of the world's largest publishers private under majority Saudi sovereign-wealth-fund control."
+    },
+    "sources": [
       {
-        label: "Microsoft",
-        type: { es: "Resultados oficiales" },
-        url: "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+        "label": "Comisión Europea",
+        "type": {
+          "es": "Expediente oficial",
+          "en": "Official case"
+        },
+        "url": "https://competition-cases.ec.europa.eu/cases/M.12213"
       },
       {
-        label: "Microsoft",
-        type: { es: "Métricas oficiales" },
-        url: "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/metrics"
+        "label": "Reuters",
+        "type": {
+          "es": "Información",
+          "en": "Reporting"
+        },
+        "url": "https://www.reuters.com/legal/litigation/saudi-pifs-55-billion-ea-deal-approved-under-eu-merger-rules-2026-07-23/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La Comisión Europea ha autorizado la adquisición de Electronic Arts bajo el Reglamento de concentraciones tras concluir que el cambio de propiedad no plantea problemas de competencia.",
+        "La autorización no cierra todavía la operación. Bruselas mantiene una revisión separada sobre subvenciones extranjeras; si también la supera, EA pasará a ser una compañía privada dentro de una compra valorada en 55.000 millones de dólares."
+      ],
+      "en": [
+        "The European Commission has cleared the acquisition of Electronic Arts under the EU Merger Regulation after concluding that the ownership change raises no competition concerns.",
+        "The clearance does not complete the deal. Brussels is conducting a separate foreign-subsidies review; if that is also cleared, EA will become a private company in a transaction valued at $55 billion."
+      ]
+    }
+  },
+  {
+    "id": "xbox-nube-gratis-anuncios",
+    "emphasis": {
+      "es": [
+        "sin pagar por el acceso a la nube",
+        "límite de una hora",
+        "no se interrumpe con publicidad"
+      ]
+    },
+    "category": {
+      "es": "Plataformas",
+      "en": "Platforms"
+    },
+    "date": "2026-07-23",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox prueba el juego en la nube gratuito con anuncios"
+      }
+    },
+    "tone": "xbox",
+    "title": {
+      "es": "Xbox prueba el juego en la nube gratuito con anuncios",
+      "en": "Xbox tests free ad-supported cloud gaming"
+    },
+    "summary": {
+      "es": "Xbox Insiders pueden retransmitir gratuitamente una selección de juegos que ya poseen después de ver anuncios. Las sesiones duran un máximo de una hora y la publicidad aparece antes de jugar, sin interrumpir la partida.",
+      "en": "Xbox Insiders can stream selected games they already own for free after watching ads. Sessions are limited to one hour and ads play before gameplay rather than interrupting it."
+    },
+    "why": {
+      "es": "Microsoft está probando una nueva puerta de entrada a Xbox Cloud Gaming que reduce el coste de acceso y abre otra vía de monetización al margen de Game Pass.",
+      "en": "Microsoft is testing a new entry point to Xbox Cloud Gaming that lowers access costs and creates a monetisation route outside Game Pass."
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
       },
       {
-        label: "The Verge",
-        type: { es: "Contexto sobre Xbox" },
-        url: "https://www.theverge.com/tech/972738/xbox-revenue-microsoft-earnings-q4-2026"
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.theverge.com/games/969969/xbox-testing-ad-supported-streaming"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La prueba permite a Xbox Insiders retransmitir una selección de juegos que ya poseen sin pagar por el acceso a la nube. Los anuncios se muestran antes de comenzar y cada sesión tiene un límite de una hora.",
+        "Microsoft presenta el sistema como una forma opcional de reducir el coste de entrada. De momento no existe confirmación de que la prueba vaya a convertirse en un nivel comercial permanente."
+      ],
+      "en": [
+        "The test lets Xbox Insiders stream selected games they already own without paying for cloud access. Ads play before the session begins and each session is limited to one hour.",
+        "Microsoft presents the system as an optional way to lower the cost of entry. There is currently no confirmation that the test will become a permanent commercial tier."
+      ]
+    }
+  },
+  {
+    "id": "amazon-luna-prime-video",
+    "emphasis": {
+      "es": [
+        "sin descargas ni pagos adicionales",
+        "España y Japón no forman parte del despliegue inicial"
+      ]
+    },
+    "category": {
+      "es": "Plataformas",
+      "en": "Platforms"
+    },
+    "date": "2026-07-23",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "Amazon integra Luna dentro de Prime Video en Estados Unidos y Reino Unido",
+      "en": "Amazon integrates Luna into Prime Video in the US and UK"
+    },
+    "summary": {
+      "es": "Los miembros de Prime con Fire TV ya pueden abrir juegos de Luna desde una nueva pestaña de Prime Video, sin descargas ni compras adicionales. El despliegue inicial se limita a Estados Unidos y Reino Unido.",
+      "en": "Prime members with Fire TV can now launch Luna games from a new Prime Video tab without downloads or additional purchases. The initial rollout is limited to the US and UK."
+    },
+    "why": {
+      "es": "Amazon deja de presentar Luna como un servicio aislado y convierte el juego en una capa integrada dentro de su principal plataforma audiovisual.",
+      "en": "Amazon is moving Luna beyond a standalone service and turning gaming into an integrated layer of its main video platform."
+    },
+    "sources": [
+      {
+        "label": "Amazon Game Studios",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://www.amazongamestudios.com/en-us/news/articles/primevideo-and-luna"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.theverge.com/streaming/970099/amazon-prime-video-luna-gaming"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Amazon ha añadido una pestaña de juegos dentro de Prime Video para los miembros de Prime que utilizan Fire TV en Estados Unidos y Reino Unido. Pueden iniciar juegos de Luna con un mando o con el teléfono, sin descargas ni pagos adicionales.",
+        "El cambio integra el juego en el mismo espacio donde Amazon distribuye películas, series y deportes. La compañía promete ampliar dispositivos, países y catálogo, pero España y Japón no forman parte del despliegue inicial."
+      ],
+      "en": [
+        "Amazon has added a games tab inside Prime Video for Prime members using Fire TV in the US and UK. They can launch Luna games with a controller or phone, without downloads or additional payments.",
+        "The change integrates gaming into the same space where Amazon distributes films, series and sports. The company plans to expand devices, countries and the catalogue, but Spain and Japan are not part of the initial rollout."
+      ]
+    }
+  },
+  {
+    "id": "marvel-wolverine-fecha",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "15 de septiembre de 2026",
+        "uno de los principales exclusivos de PS5"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos",
+      "en": "Releases"
+    },
+    "date": "2026-07-23",
+    "featured": false,
+    "tone": "wolverine",
+    "title": {
+      "es": "Marvel's Wolverine fija su lanzamiento para el 15 de septiembre",
+      "en": "Marvel's Wolverine sets a September 15 release date"
+    },
+    "summary": {
+      "es": "Insomniac ha publicado un nuevo tráiler centrado en la historia y ha abierto las reservas del juego, que llegará en exclusiva a PS5.",
+      "en": "Insomniac has released a new story-focused trailer and opened pre-orders for the PS5 exclusive."
+    },
+    "why": {
+      "es": "Es uno de los grandes lanzamientos de PlayStation para 2026 y ya tiene una fecha definitiva.",
+      "en": "It is one of PlayStation's biggest 2026 releases and now has a firm date."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=3Z42tBfBLJY",
+      "label": {
+        "es": "Ver tráiler",
+        "en": "Watch trailer"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
       }
     ]
   },
   {
-    id: "double-fine-despidos-independencia",
-    emphasis: { es: ["ha reducido su plantilla en 23 personas", "tres semanas después de abandonar Xbox y volver a ser independiente", "garantizar su supervivencia"] },
-    category: { es: "Industria" },
-    date: "2026-07-28",
-    featured: false,
-    ticker: {
-      keyword: { es: "Double Fine" },
-      copy: { es: "Double Fine despide a 23 empleados tras recuperar su independencia de Xbox" }
+    "id": "halo-campaign-evolved-lanzamiento",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "también a PS5",
+        "juego cruzado y cooperativo online para hasta cuatro personas",
+        "priorizando el alcance comercial"
+      ]
     },
-    tone: "industry",
-    title: {
-      es: "Double Fine despide a 23 empleados tras recuperar su independencia de Xbox"
+    "category": {
+      "es": "Lanzamientos",
+      "en": "Releases"
     },
-    summary: {
-      es: "El estudio de Psychonauts ha reducido su plantilla en 23 personas, tres semanas después de abandonar Xbox y volver a ser independiente. Tim Schafer explicó que la medida era necesaria para ajustar el tamaño de la empresa y garantizar su supervivencia."
+    "date": "2026-07-23",
+    "featured": false,
+    "tone": "halo",
+    "title": {
+      "es": "Halo: Campaign Evolved llega el 28 de julio también a PS5",
+      "en": "Halo: Campaign Evolved launches July 28, including on PS5"
     },
-    why: {
-      es: "Los recortes muestran el coste inmediato de la transición acordada durante la reestructuración de Xbox. Double Fine conservó su propiedad intelectual y su catálogo, pero también recuperó la responsabilidad de financiar y sostener su actividad."
+    "summary": {
+      "es": "El remake de la primera campaña de Halo se estrena en Xbox Series, PC, nube y PlayStation 5, con juego cruzado y hasta cuatro jugadores en cooperativo online.",
+      "en": "The remake of Halo's first campaign launches on Xbox Series, PC, cloud and PlayStation 5, with cross-play and four-player online co-op."
     },
-    sources: [
+    "why": {
+      "es": "La llegada simultánea a PlayStation confirma hasta qué punto Xbox está ampliando el alcance de sus franquicias históricas.",
+      "en": "Its simultaneous PlayStation release shows how far Xbox is expanding the reach of its historic franchises."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=5KhzCSeZxAU",
+      "label": {
+        "es": "Ver tráiler",
+        "en": "Watch trailer"
+      }
+    },
+    "sources": [
       {
-        label: "Double Fine",
-        type: { es: "Comunicado oficial sobre su independencia" },
-        url: "https://www.doublefine.com/news/independence-day"
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://news.xbox.com/en-us/2026/07/23/halo-campaign-evolved-early-access-launch-xbox/"
       },
       {
-        label: "PC Gamer",
-        type: { es: "Declaración de Tim Schafer y despidos" },
-        url: "https://www.pcgamer.com/gaming-industry/only-the-survival-of-our-studio-would-make-us-consider-such-a-painful-action-tim-schafer-announces-double-fine-layoffs-just-3-weeks-after-xbox-cut-it-loose/"
-      },
-      {
-        label: "GamesRadar+",
-        type: { es: "Contexto" },
-        url: "https://www.gamesradar.com/games/after-escaping-xbox-double-fine-lays-off-23-people-as-tim-schafer-says-only-the-survival-of-our-studio-would-ever-make-us-consider-such-a-painful-action/"
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
       }
     ]
   },
   {
-    id: "capcom-resultados-ventas-junio-2026",
-    important: true,
-    emphasis: { es: ["del 1 de abril al 30 de junio de 2026", "21,26 millones correspondieron a juegos publicados antes de abril", "PRAGMATA vendió 2,51 millones"] },
-    category: { es: "Industria" },
-    date: "2026-07-28",
-    featured: false,
-    ticker: {
-      keyword: { es: "Capcom" },
-      copy: { es: "Capcom vendió 23,81 millones de juegos entre abril y junio y 21,26 millones eran títulos anteriores" }
+    "id": "xbox-retrocompatibilidad-pc",
+    "emphasis": {
+      "es": [
+        "sin comprar otra copia",
+        "trasladar su catálogo histórico a PC",
+        "mejorar su conservación"
+      ]
     },
-    article: {
-      url: "/noticias/ventas-capcom-resultados-junio-2026"
+    "category": {
+      "es": "Plataformas",
+      "en": "Platforms"
     },
-    tone: "industry",
-    title: {
-      es: "Capcom vendió 23,81 millones de juegos entre abril y junio, impulsada por títulos anteriores"
+    "date": "2026-07-22",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox estrena la retrocompatibilidad de sus clásicos en PC"
+      }
     },
-    summary: {
-      es: "Durante su primer trimestre fiscal, del 1 de abril al 30 de junio de 2026, la editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA vendió 2,51 millones, mientras que 21,26 millones correspondieron a juegos publicados antes del ejercicio actual."
+    "tone": "xbox",
+    "title": {
+      "es": "Xbox lleva su retrocompatibilidad a PC con cuatro clásicos",
+      "en": "Xbox brings backward compatibility to PC with four classics"
     },
-    why: {
-      es: "El informe muestra cómo Resident Evil, Monster Hunter y Devil May Cry sostienen el negocio de Capcom, pero exige distinguir las ventas del trimestre de los acumulados históricos."
+    "summary": {
+      "es": "Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy ya pueden jugarse en Windows 11. Las licencias digitales compradas en consola se trasladan a PC mediante Xbox Play Anywhere.",
+      "en": "Blinx, Conker: Live & Reloaded, Crimson Skies and Fuzion Frenzy are now playable on Windows 11. Digital console licenses carry over to PC through Xbox Play Anywhere."
     },
-    sources: [
+    "why": {
+      "es": "Es el inicio de un programa más amplio que puede abrir el catálogo histórico de Xbox al PC y mejorar su conservación.",
+      "en": "It starts a wider effort that could open Xbox's back catalogue to PC and improve preservation."
+    },
+    "sources": [
       {
-        label: "Capcom",
-        type: { es: "Resultados oficiales" },
-        url: "https://www.capcom.co.jp/ir/english/data/pdf/result/2026/1st/result_2026_1st_01.pdf"
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://news.xbox.com/en-us/2026/07/22/xbox-backward-compatibility-on-pc/"
       },
       {
-        label: "Capcom",
-        type: { es: "Presentación con ventas por juego" },
-        url: "https://www.capcom.co.jp/ir/english/data/pdf/explanation/2026/1st/explanation_2026_1st_01.pdf"
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.theverge.com/news/969117/microsoft-xbox-games-pc-backward-compatibility"
       }
     ]
   },
   {
-    id: "xbox-caida-global-juegos-fisicos",
-    important: true,
-    emphasis: { es: ["algunos juegos instalados desde disco", "error 0x87e107df", "tener el disco no garantizó poder jugar"] },
-    category: { es: "Plataformas" },
-    date: "2026-07-27",
-    publishedAt: "2026-07-27T03:00:00Z",
-    updated: "2026-07-28",
-    featured: false,
-    ticker: {
-      keyword: { es: "Xbox" },
-      copy: { es: "Xbox sufrió una caída global que llegó a bloquear algunos juegos en disco" }
+    "id": "bethesda-futuro-fallout",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "remasterizaciones de Fallout 3 y Fallout: New Vegas",
+        "vuelta de Obsidian a la franquicia",
+        "sin título, fecha ni plataformas anunciadas"
+      ]
     },
-    tone: "xbox",
-    title: {
-      es: "Una caída global de Xbox llegó a bloquear algunos juegos en disco"
+    "category": {
+      "es": "Juegos",
+      "en": "Games"
     },
-    summary: {
-      es: "Una interrupción de casi 20 horas impidió iniciar sesión, consultar bibliotecas, usar Game Pass, comprar y ejecutar juegos. Algunos juegos instalados desde disco tampoco arrancaron y mostraron el error 0x87e107df."
+    "date": "2026-07-17",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Fallout"
+      },
+      "copy": {
+        "es": "Fallout confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian"
+      }
     },
-    why: {
-      es: "La incidencia expuso la dependencia de los servidores para validar licencias. Durante la caída, tener el disco no garantizó poder jugar, una limitación relevante para la propiedad y la preservación."
+    "tone": "xbox",
+    "title": {
+      "es": "Bethesda confirma dos remasterizaciones de Fallout y un nuevo proyecto de Obsidian",
+      "en": "Bethesda confirms two Fallout remasters and a new Obsidian project"
     },
-    sources: [
+    "summary": {
+      "es": "Bethesda trabaja en remasterizaciones de Fallout 3 y Fallout: New Vegas. Además, Obsidian desarrolla un nuevo proyecto de la saga y Fallout 5 ya está en preproducción, aunque ninguno tiene fecha.",
+      "en": "Bethesda is working on Fallout 3 and Fallout: New Vegas remasters. Obsidian is also developing a new project in the series, while Fallout 5 is now in pre-production, with no release dates announced."
+    },
+    "why": {
+      "es": "Es la hoja de ruta más concreta de Fallout en años y devuelve a Obsidian a la franquicia en la que creó New Vegas.",
+      "en": "It is Fallout's most concrete roadmap in years and brings Obsidian back to the franchise where it made New Vegas."
+    },
+    "sources": [
       {
-        label: "Estado de Xbox",
-        type: { es: "Fuente oficial" },
-        url: "https://support.xbox.com/xbox-live-status"
+        "label": "Bethesda Game Studios",
+        "type": {
+          "es": "Comunicado oficial",
+          "en": "Official statement"
+        },
+        "url": "https://bethesda.net/article/7wrffyXajE4BmCLJVpOkcN/a-note-from-bethesda-game-studios"
       },
       {
-        label: "VGC",
-        type: { es: "Declaración de Xbox Support" },
-        url: "https://www.videogameschronicle.com/news/xbox-says-its-aware-of-major-outages-when-signing-in-and-launching-games-and-is-working-to-mitigate-the-issue/"
-      },
-      {
-        label: "The Verge",
-        type: { es: "Impacto en juegos físicos y restablecimiento" },
-        url: "https://www.theverge.com/games/971545/xbox-outage-disc-physical-games"
+        "label": "PC Gamer",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.pcgamer.com/games/fallout/bethesda-confirms-fallout-3-and-new-vegas-remasters-makes-obsidian-collaboration-official-and-says-fallout-5-is-in-pre-production/"
       }
     ]
   },
   {
-    id: "playstation-fin-formato-fisico",
-    emphasis: { es: ["juegos nuevos publicados desde enero de 2028","no podrán prestarse ni revenderse como un disco","propiedad, la reventa, la preservación"] },
-    category: { es: "Plataformas", en: "Platforms" },
-    date: "2026-07-01",
-    updated: "2026-07-25",
-    featured: true,
-    ticker: {
-      keyword: { es: "PlayStation" },
-      copy: { es: "PlayStation dejará de producir discos para nuevos juegos en 2028" }
+    "id": "xbox-reestructuracion-despidos",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "3.200 puestos",
+        "1.600 salidas inmediatas",
+        "no ha cancelado ningún proyecto first-party anunciado"
+      ]
     },
-    article: {
-      url: "/noticias/playstation-fin-formato-fisico"
+    "category": {
+      "es": "Industria",
+      "en": "Industry"
     },
-    tone: "playstation",
-    title: {
-      es: "PlayStation dejará de producir discos para sus nuevos juegos en 2028",
-      en: "PlayStation will stop producing discs for new games in 2028"
+    "date": "2026-07-06",
+    "updated": "2026-07-15",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox recortará 3.200 empleos durante su reestructuración"
+      }
     },
-    summary: {
-      es: "Sony ha confirmado que los juegos lanzados a partir de enero de 2028 se distribuirán únicamente en formato digital. Los títulos publicados antes de esa fecha no se ven afectados.",
-      en: "Sony has confirmed that games released from January 2028 onward will be distributed digitally only. Titles released before then will not be affected."
+    "tone": "industry",
+    "title": {
+      "es": "Xbox recortará 3.200 empleos en su mayor reestructuración",
+      "en": "Xbox will cut 3,200 jobs in its biggest restructuring"
     },
-    why: {
-      es: "Es un cambio de modelo que afecta a la propiedad, la reventa, la preservación y el papel de las tiendas físicas.",
-      en: "It changes ownership, resale, preservation and the role of physical retailers."
+    "summary": {
+      "es": "Microsoft prevé reducir alrededor del 20% de la plantilla de Xbox durante su año fiscal 2027. La operación incluye 1.600 salidas inmediatas y cambios de propiedad en varios estudios.",
+      "en": "Microsoft plans to reduce Xbox's workforce by roughly 20 percent during fiscal 2027. The move includes 1,600 immediate departures and ownership changes at several studios."
     },
-    sources: [
+    "why": {
+      "es": "El alcance de los recortes altera la capacidad de producción de Xbox y evidencia la presión económica sobre los grandes estudios.",
+      "en": "The scale of the cuts changes Xbox's production capacity and highlights the financial pressure on major studios."
+    },
+    "sources": [
       {
-        label: "PlayStation Blog",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/"
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Comunicado oficial",
+          "en": "Official statement"
+        },
+        "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
       },
       {
-        label: "Reuters",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.reuters.com/world/asia-pacific/sony-end-discs-new-playstation-releases-gaming-shifts-online-2026-07-01/"
+        "label": "Reuters",
+        "type": {
+          "es": "Información",
+          "en": "Reporting"
+        },
+        "url": "https://www.reuters.com/business/world-at-work/microsoft-joins-ai-driven-tech-layoff-wave-with-4800-job-cuts-2026-07-06/"
       },
       {
-        label: "The Verge",
-        type: { es: "Análisis", en: "Analysis" },
-        url: "https://www.theverge.com/games/960476/playstation-physical-games-discs-stop-production-preservation-retail-stores"
+        "label": "Game Developer",
+        "type": {
+          "es": "Testimonios",
+          "en": "Developer accounts"
+        },
+        "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
       }
     ]
   },
   {
-    id: "bethesda-futuro-fallout",
-    important: true,
-    emphasis: { es: ["remasterizaciones de Fallout 3 y Fallout: New Vegas","vuelta de Obsidian a la franquicia","sin título, fecha ni plataformas anunciadas"] },
-    category: { es: "Juegos", en: "Games" },
-    date: "2026-07-17",
-    featured: false,
-    ticker: {
-      keyword: { es: "Fallout" },
-      copy: { es: "Fallout confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian" }
+    "id": "playstation-fin-formato-fisico",
+    "emphasis": {
+      "es": [
+        "juegos nuevos publicados desde enero de 2028",
+        "no podrán prestarse ni revenderse como un disco",
+        "propiedad, la reventa, la preservación"
+      ]
     },
-    tone: "xbox",
-    title: {
-      es: "Bethesda confirma dos remasterizaciones de Fallout y un nuevo proyecto de Obsidian",
-      en: "Bethesda confirms two Fallout remasters and a new Obsidian project"
+    "category": {
+      "es": "Plataformas",
+      "en": "Platforms"
     },
-    summary: {
-      es: "Bethesda trabaja en remasterizaciones de Fallout 3 y Fallout: New Vegas. Además, Obsidian desarrolla un nuevo proyecto de la saga y Fallout 5 ya está en preproducción, aunque ninguno tiene fecha.",
-      en: "Bethesda is working on Fallout 3 and Fallout: New Vegas remasters. Obsidian is also developing a new project in the series, while Fallout 5 is now in pre-production, with no release dates announced."
+    "date": "2026-07-01",
+    "updated": "2026-07-25",
+    "featured": true,
+    "ticker": {
+      "keyword": {
+        "es": "PlayStation"
+      },
+      "copy": {
+        "es": "PlayStation dejará de producir discos para nuevos juegos en 2028"
+      }
     },
-    why: {
-      es: "Es la hoja de ruta más concreta de Fallout en años y devuelve a Obsidian a la franquicia en la que creó New Vegas.",
-      en: "It is Fallout's most concrete roadmap in years and brings Obsidian back to the franchise where it made New Vegas."
+    "article": {
+      "url": "/noticias/playstation-fin-formato-fisico"
     },
-    sources: [
+    "tone": "playstation",
+    "title": {
+      "es": "PlayStation dejará de producir discos para sus nuevos juegos en 2028",
+      "en": "PlayStation will stop producing discs for new games in 2028"
+    },
+    "summary": {
+      "es": "Sony ha confirmado que los juegos lanzados a partir de enero de 2028 se distribuirán únicamente en formato digital. Los títulos publicados antes de esa fecha no se ven afectados.",
+      "en": "Sony has confirmed that games released from January 2028 onward will be distributed digitally only. Titles released before then will not be affected."
+    },
+    "why": {
+      "es": "Es un cambio de modelo que afecta a la propiedad, la reventa, la preservación y el papel de las tiendas físicas.",
+      "en": "It changes ownership, resale, preservation and the role of physical retailers."
+    },
+    "sources": [
       {
-        label: "Bethesda Game Studios",
-        type: { es: "Comunicado oficial", en: "Official statement" },
-        url: "https://bethesda.net/article/7wrffyXajE4BmCLJVpOkcN/a-note-from-bethesda-game-studios"
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/"
       },
       {
-        label: "PC Gamer",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.pcgamer.com/games/fallout/bethesda-confirms-fallout-3-and-new-vegas-remasters-makes-obsidian-collaboration-official-and-says-fallout-5-is-in-pre-production/"
+        "label": "Reuters",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.reuters.com/world/asia-pacific/sony-end-discs-new-playstation-releases-gaming-shifts-online-2026-07-01/"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Análisis",
+          "en": "Analysis"
+        },
+        "url": "https://www.theverge.com/games/960476/playstation-physical-games-discs-stop-production-preservation-retail-stores"
       }
-    ]
+    ],
+    "homeDetails": {
+      "es": [
+        "La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.",
+        "Los lanzamientos posteriores dependerán de PlayStation Store: no podrán prestarse ni revenderse como un disco y quedarán más expuestos al cierre de servidores, la retirada de licencias o cambios de precio."
+      ],
+      "en": [
+        "The measure will only affect new games released from January 2028. Titles launched before that date may continue to be manufactured and sold on disc, so the change will not immediately remove the existing physical catalogue.",
+        "Later releases will depend on PlayStation Store: they cannot be lent or resold like a disc and will be more exposed to server closures, licence withdrawals and price changes."
+      ]
+    }
   },
   {
-    id: "tomb-raider-catalyst-2028",
-    emphasis: { es: ["el responsable de Amazon Games situó Tomb Raider: Catalyst en 2028","la propia compañía evitó confirmar el cambio","no debe considerarse todavía una fecha oficial"] },
-    category: { es: "Lanzamientos", en: "Releases" },
-    date: "2026-07-24",
-    featured: false,
-    ticker: {
-      keyword: { es: "Tomb Raider: Catalyst" },
-      copy: { es: "Tomb Raider: Catalyst apunta a 2028, aunque Amazon no confirma el retraso" }
+    "id": "elden-ring-switch-2-fecha",
+    "emphasis": {
+      "es": [
+        "Elden Ring, Shadow of the Erdtree y contenido adicional",
+        "prueba técnica y comercial para Switch 2"
+      ]
     },
-    tone: "industry",
-    title: {
-      es: "Amazon apunta a 2028 para Tomb Raider: Catalyst, pero evita confirmar el retraso",
-      en: "Amazon points to 2028 for Tomb Raider: Catalyst but stops short of confirming a delay"
+    "category": {
+      "es": "Lanzamientos",
+      "en": "Releases"
     },
-    summary: {
-      es: "Jeff Gattis, responsable de Amazon Games, situó el nuevo Tomb Raider en 2028 durante una entrevista. Después, la compañía aseguró que no tenía novedades sobre su fecha y que el desarrollo avanza bien.",
-      en: "Amazon Games head Jeff Gattis placed the new Tomb Raider in 2028 during an interview. The company later said it had no timing update and that development was progressing well."
+    "date": "2026-06-05",
+    "featured": false,
+    "tone": "nintendo",
+    "title": {
+      "es": "Elden Ring llegará a Switch 2 el 28 de agosto",
+      "en": "Elden Ring comes to Switch 2 on August 28"
     },
-    why: {
-      es: "La ventana anunciada de 2027 queda en duda, pero la respuesta posterior de Amazon impide tratar 2028 como una fecha definitiva.",
-      en: "The announced 2027 window is now in doubt, but Amazon's follow-up response means 2028 should not be treated as final."
+    "summary": {
+      "es": "Tarnished Edition incluirá el juego base, Shadow of the Erdtree y contenido adicional. El estreno coincide con el lanzamiento del nuevo Tarnished Pack en el resto de plataformas.",
+      "en": "Tarnished Edition includes the base game, Shadow of the Erdtree and additional content. It launches alongside the new Tarnished Pack on other platforms."
     },
-    sources: [
-      {
-        label: "Gematsu",
-        type: { es: "Declaración y respuesta oficial", en: "Statement and official response" },
-        url: "https://www.gematsu.com/2026/07/tomb-raider-catalyst-amazon-games-boss-suggests-2028-delay-but-publisher-says-no-updates"
-      },
-      {
-        label: "PC Gamer",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.pcgamer.com/games/action/tomb-raider-catalyst-delayed-to-2028/"
+    "why": {
+      "es": "Es una de las pruebas técnicas y comerciales más importantes para el catálogo third-party de Switch 2.",
+      "en": "It is one of the most important technical and commercial tests for Switch 2's third-party catalogue."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=pMeYxev9PZM",
+      "label": {
+        "es": "Ver tráiler",
+        "en": "Watch trailer"
       }
-    ]
-  },
-  {
-    id: "xbox-retrocompatibilidad-pc",
-    emphasis: { es: ["sin comprar otra copia","trasladar su catálogo histórico a PC","mejorar su conservación"] },
-    category: { es: "Plataformas", en: "Platforms" },
-    date: "2026-07-22",
-    featured: false,
-    ticker: {
-      keyword: { es: "Xbox" },
-      copy: { es: "Xbox estrena la retrocompatibilidad de sus clásicos en PC" }
     },
-    tone: "xbox",
-    title: {
-      es: "Xbox lleva su retrocompatibilidad a PC con cuatro clásicos",
-      en: "Xbox brings backward compatibility to PC with four classics"
-    },
-    summary: {
-      es: "Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy ya pueden jugarse en Windows 11. Las licencias digitales compradas en consola se trasladan a PC mediante Xbox Play Anywhere.",
-      en: "Blinx, Conker: Live & Reloaded, Crimson Skies and Fuzion Frenzy are now playable on Windows 11. Digital console licenses carry over to PC through Xbox Play Anywhere."
-    },
-    why: {
-      es: "Es el inicio de un programa más amplio que puede abrir el catálogo histórico de Xbox al PC y mejorar su conservación.",
-      en: "It starts a wider effort that could open Xbox's back catalogue to PC and improve preservation."
-    },
-    sources: [
+    "sources": [
       {
-        label: "Xbox Wire",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://news.xbox.com/en-us/2026/07/22/xbox-backward-compatibility-on-pc/"
+        "label": "Nintendo",
+        "type": {
+          "es": "Ficha oficial",
+          "en": "Official listing"
+        },
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/ELDEN-RING-Tarnished-Edition-2791969.html"
       },
       {
-        label: "The Verge",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.theverge.com/news/969117/microsoft-xbox-games-pc-backward-compatibility"
-      }
-    ]
-  },
-  {
-    id: "god-of-war-laufey-fecha",
-    important: true,
-    emphasis: { es: ["en exclusiva a PS5 el 16 de febrero de 2027","recuperará a Kratos como protagonista","próximas dos entregas"] },
-    category: { es: "Lanzamientos", en: "Releases" },
-    date: "2026-07-25",
-    featured: false,
-    ticker: {
-      keyword: { es: "God of War Laufey" },
-      copy: { es: "God of War Laufey llegará a PS5 el 16 de febrero de 2027" }
-    },
-    tone: "playstation",
-    title: {
-      es: "God of War Laufey llegará el 16 de febrero de 2027 y prepara el regreso de Kratos",
-      en: "God of War Laufey arrives February 16, 2027 and sets up Kratos's return"
-    },
-    summary: {
-      es: "Sony ha fijado el lanzamiento de God of War Laufey para PS5. Cory Barlog también ha confirmado que el siguiente juego de la saga volverá a estar protagonizado por Kratos y conectará directamente con la historia de Faye.",
-      en: "Sony has dated God of War Laufey for PS5. Cory Barlog also confirmed that the following game in the series will once again star Kratos and connect directly to Faye's story."
-    },
-    why: {
-      es: "No es solo la fecha de uno de los grandes exclusivos de 2027. Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
-      en: "This is more than a date for one of 2027's major exclusives. Santa Monica Studio has clarified how the next two God of War games will connect."
-    },
-    trailer: {
-      url: "https://www.youtube.com/watch?v=HLMX2w3cwuE",
-      label: { es: "Ver tráiler", en: "Watch trailer" }
-    },
-    sources: [
-      {
-        label: "PlayStation",
-        type: { es: "Anuncio oficial", en: "Official announcement" },
-        url: "https://x.com/PlayStation/status/2080831588317773861"
-      },
-      {
-        label: "VGC",
-        type: { es: "Información", en: "Reporting" },
-        url: "https://www.videogameschronicle.com/news/playstation-confirms-god-of-war-laufey-release-date-and-return-of-kratos-in-next-game/"
-      },
-      {
-        label: "Gematsu",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.gematsu.com/2026/07/god-of-war-laufey-launches-february-16-2027"
-      }
-    ]
-  },
-  {
-    id: "gta-vi-codigos-japon",
-    emphasis: { es: ["un código de descarga y no un disco","validez de 170 días","podría perder su utilidad"] },
-    category: { es: "Plataformas", en: "Platforms" },
-    date: "2026-07-25",
-    featured: false,
-    home: false,
-    ticker: {
-      keyword: { es: "GTA VI" },
-      copy: { es: "GTA VI para PS5 en Japón incluirá códigos que caducan 170 días después del lanzamiento" }
-    },
-    tone: "playstation",
-    title: {
-      es: "Los códigos japoneses de GTA VI para PS5 caducarán 170 días después del lanzamiento",
-      en: "Japanese GTA VI PS5 codes will expire 170 days after launch"
-    },
-    summary: {
-      es: "Las cajas japonesas de GTA VI para PS5 incluirán un código de descarga, no un disco. Rockstar indica que esos códigos caducarán 170 días después de su emisión, fechada el 19 de noviembre de 2026.",
-      en: "Japanese boxed copies of GTA VI for PS5 will contain a download code rather than a disc. Rockstar says those codes expire 170 days after issuance on November 19, 2026."
-    },
-    why: {
-      es: "Aunque es una restricción regional, muestra una de las limitaciones prácticas de sustituir el disco por un código dentro de una caja.",
-      en: "Although this is a regional restriction, it demonstrates one practical limitation of replacing a disc with a code inside a box."
-    },
-    sources: [
-      {
-        label: "Rockstar Support",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
-      },
-      {
-        label: "VGC",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.videogameschronicle.com/news/gta-6-download-codes-expire-only-170-days-after-launch-in-japan/"
-      }
-    ]
-  },
-  {
-    id: "ea-compra-autorizacion-ue",
-    important: true,
-    emphasis: { es: ["55.000 millones de dólares","no plantea problemas de competencia","revisión separada sobre subvenciones extranjeras"] },
-    category: { es: "Industria", en: "Industry" },
-    date: "2026-07-23",
-    featured: false,
-    ticker: {
-      keyword: { es: "Electronic Arts" },
-      copy: { es: "Electronic Arts supera el control europeo de competencia para su compra" }
-    },
-    tone: "industry",
-    title: {
-      es: "La UE autoriza bajo sus reglas de competencia la compra de Electronic Arts por 55.000 millones de dólares",
-      en: "The EU clears the $55 billion Electronic Arts acquisition under its merger rules"
-    },
-    summary: {
-      es: "La Comisión Europea considera que la adquisición de EA por el consorcio formado por PIF, Silver Lake y Affinity Partners no plantea problemas de competencia. La operación todavía espera una revisión europea separada sobre subvenciones extranjeras.",
-      en: "The European Commission says EA's acquisition by the consortium formed by PIF, Silver Lake and Affinity Partners raises no competition concerns. The deal still faces a separate EU foreign-subsidies review."
-    },
-    why: {
-      es: "Es un paso decisivo para que una de las mayores editoras del mundo pase a manos privadas y quede controlada mayoritariamente por el fondo soberano saudí.",
-      en: "It is a decisive step toward taking one of the world's largest publishers private under majority Saudi sovereign-wealth-fund control."
-    },
-    sources: [
-      {
-        label: "Comisión Europea",
-        type: { es: "Expediente oficial", en: "Official case" },
-        url: "https://competition-cases.ec.europa.eu/cases/M.12213"
-      },
-      {
-        label: "Reuters",
-        type: { es: "Información", en: "Reporting" },
-        url: "https://www.reuters.com/legal/litigation/saudi-pifs-55-billion-ea-deal-approved-under-eu-merger-rules-2026-07-23/"
-      }
-    ]
-  },
-  {
-    id: "xbox-nube-gratis-anuncios",
-    emphasis: { es: ["sin pagar por el acceso a la nube","límite de una hora","no se interrumpe con publicidad"] },
-    category: { es: "Plataformas", en: "Platforms" },
-    date: "2026-07-23",
-    featured: false,
-    ticker: {
-      keyword: { es: "Xbox" },
-      copy: { es: "Xbox prueba el juego en la nube gratuito con anuncios" }
-    },
-    tone: "xbox",
-    title: {
-      es: "Xbox prueba el juego en la nube gratuito con anuncios",
-      en: "Xbox tests free ad-supported cloud gaming"
-    },
-    summary: {
-      es: "Xbox Insiders pueden retransmitir gratuitamente una selección de juegos que ya poseen después de ver anuncios. Las sesiones duran un máximo de una hora y la publicidad aparece antes de jugar, sin interrumpir la partida.",
-      en: "Xbox Insiders can stream selected games they already own for free after watching ads. Sessions are limited to one hour and ads play before gameplay rather than interrupting it."
-    },
-    why: {
-      es: "Microsoft está probando una nueva puerta de entrada a Xbox Cloud Gaming que reduce el coste de acceso y abre otra vía de monetización al margen de Game Pass.",
-      en: "Microsoft is testing a new entry point to Xbox Cloud Gaming that lowers access costs and creates a monetisation route outside Game Pass."
-    },
-    sources: [
-      {
-        label: "Xbox Wire",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
-      },
-      {
-        label: "The Verge",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.theverge.com/games/969969/xbox-testing-ad-supported-streaming"
-      }
-    ]
-  },
-  {
-    id: "amazon-luna-prime-video",
-    emphasis: { es: ["sin descargas ni pagos adicionales","España y Japón no forman parte del despliegue inicial"] },
-    category: { es: "Plataformas", en: "Platforms" },
-    date: "2026-07-23",
-    featured: false,
-    tone: "industry",
-    title: {
-      es: "Amazon integra Luna dentro de Prime Video en Estados Unidos y Reino Unido",
-      en: "Amazon integrates Luna into Prime Video in the US and UK"
-    },
-    summary: {
-      es: "Los miembros de Prime con Fire TV ya pueden abrir juegos de Luna desde una nueva pestaña de Prime Video, sin descargas ni compras adicionales. El despliegue inicial se limita a Estados Unidos y Reino Unido.",
-      en: "Prime members with Fire TV can now launch Luna games from a new Prime Video tab without downloads or additional purchases. The initial rollout is limited to the US and UK."
-    },
-    why: {
-      es: "Amazon deja de presentar Luna como un servicio aislado y convierte el juego en una capa integrada dentro de su principal plataforma audiovisual.",
-      en: "Amazon is moving Luna beyond a standalone service and turning gaming into an integrated layer of its main video platform."
-    },
-    sources: [
-      {
-        label: "Amazon Game Studios",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://www.amazongamestudios.com/en-us/news/articles/primevideo-and-luna"
-      },
-      {
-        label: "The Verge",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.theverge.com/streaming/970099/amazon-prime-video-luna-gaming"
-      }
-    ]
-  },
-  {
-    id: "marvel-wolverine-fecha",
-    important: true,
-    emphasis: { es: ["15 de septiembre de 2026","uno de los principales exclusivos de PS5"] },
-    category: { es: "Lanzamientos", en: "Releases" },
-    date: "2026-07-23",
-    featured: false,
-    tone: "wolverine",
-    title: {
-      es: "Marvel's Wolverine fija su lanzamiento para el 15 de septiembre",
-      en: "Marvel's Wolverine sets a September 15 release date"
-    },
-    summary: {
-      es: "Insomniac ha publicado un nuevo tráiler centrado en la historia y ha abierto las reservas del juego, que llegará en exclusiva a PS5.",
-      en: "Insomniac has released a new story-focused trailer and opened pre-orders for the PS5 exclusive."
-    },
-    why: {
-      es: "Es uno de los grandes lanzamientos de PlayStation para 2026 y ya tiene una fecha definitiva.",
-      en: "It is one of PlayStation's biggest 2026 releases and now has a firm date."
-    },
-    trailer: {
-      url: "https://www.youtube.com/watch?v=3Z42tBfBLJY",
-      label: { es: "Ver tráiler", en: "Watch trailer" }
-    },
-    sources: [
-      {
-        label: "PlayStation Blog",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
-      }
-    ]
-  },
-  {
-    id: "xbox-reestructuracion-despidos",
-    important: true,
-    emphasis: { es: ["3.200 puestos","1.600 salidas inmediatas","no ha cancelado ningún proyecto first-party anunciado"] },
-    category: { es: "Industria", en: "Industry" },
-    date: "2026-07-06",
-    updated: "2026-07-15",
-    featured: false,
-    ticker: {
-      keyword: { es: "Xbox" },
-      copy: { es: "Xbox recortará 3.200 empleos durante su reestructuración" }
-    },
-    tone: "industry",
-    title: {
-      es: "Xbox recortará 3.200 empleos en su mayor reestructuración",
-      en: "Xbox will cut 3,200 jobs in its biggest restructuring"
-    },
-    summary: {
-      es: "Microsoft prevé reducir alrededor del 20% de la plantilla de Xbox durante su año fiscal 2027. La operación incluye 1.600 salidas inmediatas y cambios de propiedad en varios estudios.",
-      en: "Microsoft plans to reduce Xbox's workforce by roughly 20 percent during fiscal 2027. The move includes 1,600 immediate departures and ownership changes at several studios."
-    },
-    why: {
-      es: "El alcance de los recortes altera la capacidad de producción de Xbox y evidencia la presión económica sobre los grandes estudios.",
-      en: "The scale of the cuts changes Xbox's production capacity and highlights the financial pressure on major studios."
-    },
-    sources: [
-      {
-        label: "Xbox Wire",
-        type: { es: "Comunicado oficial", en: "Official statement" },
-        url: "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
-      },
-      {
-        label: "Reuters",
-        type: { es: "Información", en: "Reporting" },
-        url: "https://www.reuters.com/business/world-at-work/microsoft-joins-ai-driven-tech-layoff-wave-with-4800-job-cuts-2026-07-06/"
-      },
-      {
-        label: "Game Developer",
-        type: { es: "Testimonios", en: "Developer accounts" },
-        url: "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
-      }
-    ]
-  },
-  {
-    id: "halo-campaign-evolved-lanzamiento",
-    important: true,
-    emphasis: { es: ["también a PS5","juego cruzado y cooperativo online para hasta cuatro personas","priorizando el alcance comercial"] },
-    category: { es: "Lanzamientos", en: "Releases" },
-    date: "2026-07-23",
-    featured: false,
-    tone: "halo",
-    title: {
-      es: "Halo: Campaign Evolved llega el 28 de julio también a PS5",
-      en: "Halo: Campaign Evolved launches July 28, including on PS5"
-    },
-    summary: {
-      es: "El remake de la primera campaña de Halo se estrena en Xbox Series, PC, nube y PlayStation 5, con juego cruzado y hasta cuatro jugadores en cooperativo online.",
-      en: "The remake of Halo's first campaign launches on Xbox Series, PC, cloud and PlayStation 5, with cross-play and four-player online co-op."
-    },
-    why: {
-      es: "La llegada simultánea a PlayStation confirma hasta qué punto Xbox está ampliando el alcance de sus franquicias históricas.",
-      en: "Its simultaneous PlayStation release shows how far Xbox is expanding the reach of its historic franchises."
-    },
-    trailer: {
-      url: "https://www.youtube.com/watch?v=5KhzCSeZxAU",
-      label: { es: "Ver tráiler", en: "Watch trailer" }
-    },
-    sources: [
-      {
-        label: "Xbox Wire",
-        type: { es: "Fuente oficial", en: "Official source" },
-        url: "https://news.xbox.com/en-us/2026/07/23/halo-campaign-evolved-early-access-launch-xbox/"
-      },
-      {
-        label: "PlayStation Blog",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
-      }
-    ]
-  },
-  {
-    id: "elden-ring-switch-2-fecha",
-    emphasis: { es: ["Elden Ring, Shadow of the Erdtree y contenido adicional","prueba técnica y comercial para Switch 2"] },
-    category: { es: "Lanzamientos", en: "Releases" },
-    date: "2026-06-05",
-    featured: false,
-    tone: "nintendo",
-    title: {
-      es: "Elden Ring llegará a Switch 2 el 28 de agosto",
-      en: "Elden Ring comes to Switch 2 on August 28"
-    },
-    summary: {
-      es: "Tarnished Edition incluirá el juego base, Shadow of the Erdtree y contenido adicional. El estreno coincide con el lanzamiento del nuevo Tarnished Pack en el resto de plataformas.",
-      en: "Tarnished Edition includes the base game, Shadow of the Erdtree and additional content. It launches alongside the new Tarnished Pack on other platforms."
-    },
-    why: {
-      es: "Es una de las pruebas técnicas y comerciales más importantes para el catálogo third-party de Switch 2.",
-      en: "It is one of the most important technical and commercial tests for Switch 2's third-party catalogue."
-    },
-    trailer: {
-      url: "https://www.youtube.com/watch?v=pMeYxev9PZM",
-      label: { es: "Ver tráiler", en: "Watch trailer" }
-    },
-    sources: [
-      {
-        label: "Nintendo",
-        type: { es: "Ficha oficial", en: "Official listing" },
-        url: "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/ELDEN-RING-Tarnished-Edition-2791969.html"
-      },
-      {
-        label: "GamesRadar+",
-        type: { es: "Contexto", en: "Context" },
-        url: "https://www.gamesradar.com/games/action-rpg/new-elden-ring-dlc-and-nintendo-switch-2-tarnished-edition-finally-get-a-release-date/"
+        "label": "GamesRadar+",
+        "type": {
+          "es": "Contexto",
+          "en": "Context"
+        },
+        "url": "https://www.gamesradar.com/games/action-rpg/new-elden-ring-dlc-and-nintendo-switch-2-tarnished-edition-finally-get-a-release-date/"
       }
     ]
   }

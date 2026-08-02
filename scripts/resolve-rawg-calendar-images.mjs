@@ -103,45 +103,68 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-async function resolveAutomaticReleaseBySlug(release) {
-  const gameUrl = new URL("games/stalker-2-cost-of-hope", "https://api.rawg.io/api/");
-  gameUrl.searchParams.set("key", API_KEY);
-  const gameResponse = await fetch(gameUrl, {
+function decodePageValue(value = "") {
+  return String(value)
+    .replaceAll("\\u002F", "/")
+    .replaceAll("\\/", "/")
+    .replaceAll("&amp;", "&");
+}
+
+async function resolveAutomaticReleaseFromPage(release) {
+  const pageUrl = "https://rawg.io/games/stalker-2-cost-of-hope";
+  const response = await fetch(pageUrl, {
     redirect: "follow",
-    headers: { "user-agent": "FinalSecreto-CalendarImages/1.0" }
+    headers: {
+      "user-agent": "Mozilla/5.0 (compatible; FinalSecreto-CalendarImages/1.0)",
+      accept: "text/html"
+    }
   });
-  if (!gameResponse.ok) throw new Error(`RAWG API directa HTTP ${gameResponse.status}`);
-  const game = await gameResponse.json();
-  if (!Number(game.id) || game.slug !== "stalker-2-cost-of-hope") {
-    throw new Error("RAWG no devolvió la ficha inequívoca de Cost of Hope");
+  if (!response.ok) throw new Error(`ficha pública RAWG HTTP ${response.status}`);
+  const html = await response.text();
+  const slug = "stalker-2-cost-of-hope";
+
+  const idPatterns = [
+    new RegExp(`\\"id\\"\\s*:\\s*(\\d+)[^{}]{0,1200}\\"slug\\"\\s*:\\s*\\"${slug}\\"`, "i"),
+    new RegExp(`\\"slug\\"\\s*:\\s*\\"${slug}\\"[^{}]{0,1200}\\"id\\"\\s*:\\s*(\\d+)`, "i"),
+    /data-game-id=["'](\d+)["']/i,
+    /games\/(\d+)\/screenshots/i
+  ];
+  let rawgId = 0;
+  for (const pattern of idPatterns) {
+    const match = pattern.exec(html);
+    if (match) {
+      rawgId = Number(match[1]);
+      break;
+    }
   }
 
-  let imageUrl = /^https:\/\//.test(game.background_image || "") ? game.background_image : "";
-  let imageType = "background";
-  if (!imageUrl) {
-    const screenshotsUrl = new URL(`games/${game.id}/screenshots`, "https://api.rawg.io/api/");
-    screenshotsUrl.searchParams.set("key", API_KEY);
-    screenshotsUrl.searchParams.set("page_size", "10");
-    const screenshotsResponse = await fetch(screenshotsUrl, {
-      redirect: "follow",
-      headers: { "user-agent": "FinalSecreto-CalendarImages/1.0" }
-    });
-    if (!screenshotsResponse.ok) throw new Error(`RAWG API de capturas HTTP ${screenshotsResponse.status}`);
-    const screenshots = await screenshotsResponse.json();
-    imageUrl = (screenshots.results || []).find((item) => /^https:\/\//.test(item?.image || ""))?.image || "";
-    imageType = "screenshot";
+  const imagePatterns = [
+    /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i,
+    /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i,
+    /\\"background_image\\"\s*:\s*\\"([^"']+)\\"/i,
+    /https:\\/\\/media\.rawg\.io\\/media\\/[^"'<> ]+/i
+  ];
+  let imageUrl = "";
+  for (const pattern of imagePatterns) {
+    const match = pattern.exec(html);
+    if (match) {
+      imageUrl = decodePageValue(match[1] || match[0]);
+      break;
+    }
   }
+
+  if (!rawgId) throw new Error("la ficha pública RAWG no expone un identificador inequívoco");
   if (!/^https:\/\/media\.rawg\.io\//.test(imageUrl)) {
-    throw new Error("RAWG no ofrece una imagen HTTPS válida para Cost of Hope");
+    throw new Error("la ficha pública RAWG no expone una imagen HTTPS válida");
   }
 
   release.image = {
     ...release.image,
     provider: "rawg",
-    rawgId: Number(game.id),
-    rawgSlug: game.slug,
-    rawgPage: `https://rawg.io/games/${game.slug}`,
-    rawgImageType: imageType,
+    rawgId,
+    rawgSlug: slug,
+    rawgPage: pageUrl,
+    rawgImageType: "background",
     src: imageUrl,
     alt: release.image.alt || release.title,
     className: release.image.className || "",
@@ -159,10 +182,10 @@ for (const release of pending) {
   } catch (error) {
     if (release.id === automaticRelease.id && /RAWG API HTTP 522/.test(error.message)) {
       try {
-        if (await resolveAutomaticReleaseBySlug(release)) changes.push(release.title);
+        if (await resolveAutomaticReleaseFromPage(release)) changes.push(release.title);
         continue;
-      } catch (directError) {
-        errors.push(`${release.id}: ${error.message}; ${directError.message}`);
+      } catch (pageError) {
+        errors.push(`${release.id}: ${error.message}; ${pageError.message}`);
         continue;
       }
     }

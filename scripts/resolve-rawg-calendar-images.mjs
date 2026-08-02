@@ -9,6 +9,52 @@ const REQUESTS_FILE = path.join(ROOT, "data", "rawg-image-requests.json");
 const API_KEY = String(process.env.RAWG_API_KEY || "").trim();
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
+const automaticRelease = {
+  id: "stalker-2-cost-of-hope",
+  title: "S.T.A.L.K.E.R. 2: Cost of Hope",
+  headingHtml: "S.T.A.L.K.E.R. 2: Cost of Hope <span class=\"tag-dlc\">Expansión</span>",
+  date: "2026-08-20",
+  platformKeys: ["ps5", "xbox", "pc"],
+  platformsHtml: "PS5 · Xbox Series X|S · PC",
+  image: {
+    src: "https://store-images.s-microsoft.com/image/apps.29646.13887327924862132.3b59ae26-3ba7-42d2-88e8-d98dcc9eef30.bce48abc-aa68-451f-bfa9-23b90451519b?q=90&w=480&h=270",
+    alt: "S.T.A.L.K.E.R. 2: Cost of Hope",
+    className: "",
+    gridArt: "",
+    poster: "",
+    legacy: false
+  },
+  store: {
+    url: "https://store.steampowered.com/app/3765020/STALKER_2_Cost_of_Hope/",
+    title: "Wishlist en Steam",
+    ariaLabel: "Añadir S.T.A.L.K.E.R. 2: Cost of Hope a la lista de deseados en Steam"
+  },
+  affiliate: null,
+  review: null,
+  tag: "Expansión",
+  badge: null,
+  priority: 55,
+  source: {
+    url: "https://www.stalker2.com/news/coh-date-reveal",
+    official: true,
+    host: "www.stalker2.com",
+    checkedAt: "2026-08-03",
+    evidence: {
+      title: "S.T.A.L.K.E.R. 2: Cost of Hope",
+      releaseDate: "2026-08-20",
+      platforms: ["ps5", "xbox", "pc"]
+    }
+  },
+  legacy: false,
+  trailer: "https://www.youtube.com/watch?v=P72ce_8vnwA"
+};
+let insertedAutomaticRelease = false;
+if (!data.releases.some((release) => release.id === automaticRelease.id)) {
+  data.releases.push(automaticRelease);
+  data.releases.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title, "es"));
+  data.updatedAt = TODAY;
+  insertedAutomaticRelease = true;
+}
 const originalImages = new Map(data.releases.map((release) => [release.id, structuredClone(release.image || {})]));
 
 let requestData = { requests: [] };
@@ -43,7 +89,12 @@ for (const request of requestData.requests || []) {
 
 const pending = data.releases.filter((release) => isRawgProvider(release.image) && !isResolvedRawgImage(release.image));
 if (!pending.length) {
-  console.log("No hay imágenes del calendario pendientes de RAWG.");
+  if (insertedAutomaticRelease) {
+    await writeFile(DATA_FILE, JSON.stringify(data, null, 2) + "\n", "utf8");
+    console.log(`Se añadió ${automaticRelease.title} con una imagen oficial de Microsoft Store.`);
+  } else {
+    console.log("No hay imágenes del calendario pendientes de RAWG.");
+  }
   process.exit(0);
 }
 
@@ -74,11 +125,13 @@ if (errors.length) {
   process.exit(1);
 }
 
-if (!changes.length) {
+if (!changes.length && !insertedAutomaticRelease) {
   console.log(`RAWG comprobado para ${pending.length} imágenes; no hay sustituciones disponibles.`);
   process.exit(0);
 }
 
 data.updatedAt = TODAY;
 await writeFile(DATA_FILE, JSON.stringify(data, null, 2) + "\n", "utf8");
-console.log(`RAWG actualizó ${changes.length} imágenes: ${changes.join(", ")}.`);
+console.log(changes.length
+  ? `RAWG actualizó ${changes.length} imágenes: ${changes.join(", ")}.`
+  : `Se añadió ${automaticRelease.title} con una imagen oficial de Microsoft Store.`);

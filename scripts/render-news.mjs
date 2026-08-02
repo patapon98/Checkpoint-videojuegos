@@ -16,8 +16,8 @@ function updateScriptVersion(html, scriptPath) {
 
 for (const page of PAGES) {
   const original = await readFile(page, "utf8");
-  let output = updateScriptVersion(original, "/js/news-data.js");
-  output = updateScriptVersion(output, "/js/news.js");
+  let output = updateScriptVersion(original, "js/news-data.js");
+  output = updateScriptVersion(output, "js/news.js");
   if (output !== original) await writeFile(page, output);
 }
 

@@ -9,54 +9,6 @@ const REQUESTS_FILE = path.join(ROOT, "data", "rawg-image-requests.json");
 const API_KEY = String(process.env.RAWG_API_KEY || "").trim();
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
-const automaticRelease = {
-  id: "stalker-2-cost-of-hope",
-  title: "S.T.A.L.K.E.R. 2: Cost of Hope",
-  headingHtml: "S.T.A.L.K.E.R. 2: Cost of Hope <span class=\"tag-dlc\">Expansión</span>",
-  date: "2026-08-20",
-  platformKeys: ["ps5", "xbox", "pc"],
-  platformsHtml: "PS5 · Xbox Series X|S · PC",
-  image: {
-    provider: "rawg",
-    query: "S.T.A.L.K.E.R. 2: Cost of Hope",
-    src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3765020/518ac9999d93e450764a3d85b148c47cc80fffb7/header.jpg?t=1785157413",
-    alt: "S.T.A.L.K.E.R. 2: Cost of Hope",
-    className: "",
-    gridArt: "",
-    poster: "",
-    legacy: false
-  },
-  store: {
-    url: "https://store.steampowered.com/app/3765020/STALKER_2_Cost_of_Hope/",
-    title: "Wishlist en Steam",
-    ariaLabel: "Añadir S.T.A.L.K.E.R. 2: Cost of Hope a la lista de deseados en Steam"
-  },
-  affiliate: null,
-  review: null,
-  tag: "Expansión",
-  badge: null,
-  priority: 55,
-  source: {
-    url: "https://www.stalker2.com/news/coh-date-reveal",
-    official: true,
-    host: "www.stalker2.com",
-    checkedAt: "2026-08-03",
-    evidence: {
-      title: "S.T.A.L.K.E.R. 2: Cost of Hope",
-      releaseDate: "2026-08-20",
-      platforms: ["ps5", "xbox", "pc"]
-    }
-  },
-  legacy: false,
-  trailer: "https://www.youtube.com/watch?v=P72ce_8vnwA"
-};
-let insertedAutomaticRelease = false;
-if (!data.releases.some((release) => release.id === automaticRelease.id)) {
-  data.releases.push(automaticRelease);
-  data.releases.sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title, "es"));
-  data.updatedAt = TODAY;
-  insertedAutomaticRelease = true;
-}
 const originalImages = new Map(data.releases.map((release) => [release.id, structuredClone(release.image || {})]));
 
 let requestData = { requests: [] };
@@ -91,9 +43,6 @@ for (const request of requestData.requests || []) {
 
 const pending = data.releases.filter((release) => isRawgProvider(release.image) && !isResolvedRawgImage(release.image));
 if (!pending.length) {
-  if (insertedAutomaticRelease) {
-    await writeFile(DATA_FILE, JSON.stringify(data, null, 2) + "\n", "utf8");
-  }
   console.log("No hay imágenes del calendario pendientes de RAWG.");
   process.exit(0);
 }
@@ -110,18 +59,6 @@ for (const release of pending) {
   try {
     if (await resolveRawgImage(release, { apiKey: API_KEY })) changes.push(release.title);
   } catch (error) {
-    if (release.id === automaticRelease.id && /RAWG API HTTP 522/.test(error.message)) {
-      const fallback = structuredClone(originalImages.get(release.id) || {});
-      delete fallback.provider;
-      delete fallback.query;
-      delete fallback.rawgId;
-      delete fallback.rawgSlug;
-      delete fallback.rawgPage;
-      delete fallback.rawgImageType;
-      release.image = fallback;
-      warnings.push(`${release.title}: RAWG no responde; se conserva el recurso oficial de respaldo`);
-      continue;
-    }
     if (/RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)) {
       release.image = structuredClone(originalImages.get(release.id) || {});
       warnings.push(`${release.title}: RAWG identifica la ficha, pero todavía no ofrece imágenes; se conserva la anterior`);
@@ -137,13 +74,11 @@ if (errors.length) {
   process.exit(1);
 }
 
-if (!changes.length && !insertedAutomaticRelease) {
+if (!changes.length) {
   console.log(`RAWG comprobado para ${pending.length} imágenes; no hay sustituciones disponibles.`);
   process.exit(0);
 }
 
 data.updatedAt = TODAY;
 await writeFile(DATA_FILE, JSON.stringify(data, null, 2) + "\n", "utf8");
-console.log(changes.length
-  ? `RAWG actualizó ${changes.length} imágenes: ${changes.join(", ")}.`
-  : `Se añadió ${automaticRelease.title} con su imagen oficial de respaldo.`);
+console.log(`RAWG actualizó ${changes.length} imágenes: ${changes.join(", ")}.`);

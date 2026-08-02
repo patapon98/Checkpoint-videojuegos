@@ -9,20 +9,6 @@ const REQUESTS_FILE = path.join(ROOT, "data", "rawg-image-requests.json");
 const API_KEY = String(process.env.RAWG_API_KEY || "").trim();
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
-const costOfHope = data.releases.find((release) => release.id === "stalker-2-cost-of-hope");
-if (costOfHope && !isResolvedRawgImage(costOfHope.image)) {
-  costOfHope.image = {
-    ...(costOfHope.image || {}),
-    provider: "rawg",
-    query: "S.T.A.L.K.E.R. 2: Cost of Hope",
-    src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3765020/518ac9999d93e450764a3d85b148c47cc80fffb7/header.jpg?t=1785157413",
-    alt: "S.T.A.L.K.E.R. 2: Cost of Hope",
-    className: "",
-    gridArt: "",
-    poster: "",
-    legacy: false
-  };
-}
 const originalImages = new Map(data.releases.map((release) => [release.id, structuredClone(release.image || {})]));
 
 let requestData = { requests: [] };

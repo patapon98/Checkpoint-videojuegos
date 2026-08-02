@@ -19,7 +19,7 @@ const automaticRelease = {
   image: {
     provider: "rawg",
     query: "S.T.A.L.K.E.R. 2: Cost of Hope",
-    src: "https://www.sega.jp/upload_files/co/topics/2026/07/260728_3_01.jpg",
+    src: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3765020/518ac9999d93e450764a3d85b148c47cc80fffb7/header.jpg?t=1785157413",
     alt: "S.T.A.L.K.E.R. 2: Cost of Hope",
     className: "",
     gridArt: "",
@@ -37,9 +37,9 @@ const automaticRelease = {
   badge: null,
   priority: 55,
   source: {
-    url: "https://www.sega.jp/topics/detail/260728_3/",
+    url: "https://www.stalker2.com/news/coh-date-reveal",
     official: true,
-    host: "www.sega.jp",
+    host: "www.stalker2.com",
     checkedAt: "2026-08-03",
     evidence: {
       title: "S.T.A.L.K.E.R. 2: Cost of Hope",

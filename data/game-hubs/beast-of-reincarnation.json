@@ -13,7 +13,7 @@
   "publisher": "Fictions",
   "genre": "RPG de acción",
   "officialUrl": "https://www.beastofreincarnation.com/",
-  "storeUrl": "https://store.playstation.com/en-us/product/UB1599-PPSA29343_00-AIBOUSIEA0000000",
+  "storeUrl": "https://store.playstation.com/es-es/concept/10014719",
   "trailerUrl": "https://www.youtube.com/watch?v=zqxdVtJ24ms",
   "heroImage": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/01/BoR_EmmaAndKoo-15d7ac693b1d73a4b600.jpg",
   "heroImageKind": "promotional-key-art",
@@ -92,14 +92,17 @@
     "La plaga transforma el escenario en tiempo real y hace aparecer enemigos nuevos.",
     "Emma y Koo recorren varias regiones derrotando Bestias y capturando sus poderes.",
     "Tres dificultades. Story Mode amplía la ventana de parada y reduce el daño enemigo.",
-    "Se puede jugar sin conexión. En PS5 usa vibración, gatillos adaptativos y mejoras de PS5 Pro."
+    "Se puede jugar sin conexión. En PS5 usa vibración, gatillos adaptativos y mejoras de PS5 Pro.",
+    "En España, la edición estándar cuesta 54,99 € en PS5 y la Digital Deluxe 64,99 €. La reserva incluye una piel de Shiba marrón para Koo y 30.000 de ámbar.",
+    "La Digital Deluxe añade las pieles de Shiba negra y marrón, el sombrero Oni y la espada Osa Mayor para Emma, 100.000 de ámbar y varias plántulas.",
+    "En PC exige SSD y 45 GB libres. El mínimo oficial pide 16 GB de RAM, Intel Core i5-8400 o Ryzen 5 3600 y GTX 1070 de 8 GB o RX 580 de 8 GB para 1080p bajo a 40 FPS con escalado.",
+    "La configuración recomendada para 1080p medio a 60 FPS pide 16 GB de RAM, Intel Core i7-12700K o Ryzen 7 5800X y RTX 3060 de 12 GB o RX 6700 XT de 12 GB."
   ],
   "pending": [
     "No se conoce la duración aproximada de la historia.",
     "Game Freak no ha aclarado si el mundo será completamente abierto o estará dividido en grandes regiones.",
     "No se han detallado todas las ayudas de accesibilidad.",
     "Faltan por concretarse los modos de rendimiento y resolución de cada plataforma.",
-    "No se ha publicado el tamaño de instalación definitivo.",
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
@@ -109,9 +112,19 @@
       "type": "Web oficial"
     },
     {
-      "label": "PlayStation",
-      "url": "https://www.playstation.com/en-us/games/beast-of-reincarnation/",
-      "type": "Ficha y reservas"
+      "label": "PlayStation España",
+      "url": "https://store.playstation.com/es-es/concept/10014719",
+      "type": "Precios, ediciones, reserva y funciones de PS5"
+    },
+    {
+      "label": "Xbox España",
+      "url": "https://www.xbox.com/es-es/games/beast-of-reincarnation",
+      "type": "Ediciones, contenido de reserva, plataformas y Game Pass"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
+      "type": "Requisitos oficiales para PC, almacenamiento y funciones"
     },
     {
       "label": "PlayStation Blog",
@@ -138,6 +151,16 @@
   },
   "changes": [
     {
+      "date": "2026-08-03",
+      "title": "Precios, ediciones y requisitos de PC confirmados",
+      "description": "Las tiendas oficiales detallan los precios españoles, el contenido de la edición Digital Deluxe y de la reserva, además de los requisitos mínimos y recomendados para PC.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/concept/10014719",
+        "https://www.xbox.com/es-es/games/beast-of-reincarnation",
+        "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/"
+      ]
+    },
+    {
       "date": "2026-07-30",
       "title": "Combate, exploración y galería revisados",
       "description": "Se eliminó información repetida, se amplió el funcionamiento de Emma y Koo, se confirmaron los tres niveles de dificultad y se eligió el arte principal más representativo."
@@ -147,5 +170,6 @@
     "onimusha-way-of-the-sword",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-07-30"
+  "updatedAt": "2026-08-03",
+  "price": "Desde 54,99 € en PS5"
 }

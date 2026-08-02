@@ -5,6 +5,9 @@ on:
     paths:
       - "data/game-hubs/*.json"
       - "scripts/render-game-hubs.mjs"
+      - "scripts/render-game-hub-pc-requirements.mjs"
+      - "scripts/validate-game-hub-pc-requirements.mjs"
+      - "css/game-hub-pc-requirements.css"
   workflow_dispatch:
 
 permissions:
@@ -26,8 +29,11 @@ jobs:
         with:
           node-version: 22
 
-      - name: Volcar galería, multimedia y noticias al HTML
-        run: node scripts/render-game-hubs.mjs
+      - name: Volcar datos, multimedia y requisitos al HTML
+        run: |
+          node scripts/render-game-hubs.mjs
+          node scripts/render-game-hub-pc-requirements.mjs
+          node scripts/validate-game-hub-pc-requirements.mjs
 
       - name: Guardar las fichas actualizadas
         shell: bash
@@ -40,5 +46,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add juegos juegos.html
-          git commit -m "Renderiza las secciones dinamicas de las fichas de juego"
+          git commit -m "Renderiza las secciones dinámicas de las fichas de juego"
           git push

@@ -1,0 +1,94 @@
+.game-pc-requirements-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+  margin-top:27px
+}
+
+.game-pc-requirements-card{
+  min-width:0;
+  padding:22px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--card)
+}
+
+.game-pc-requirements-card-recommended{
+  border-color:color-mix(in srgb,var(--game-gold) 42%,var(--border));
+  background:linear-gradient(150deg,var(--card),color-mix(in srgb,var(--game-gold) 7%,var(--card)))
+}
+
+.game-pc-requirements-label{
+  display:block;
+  color:var(--game-gold);
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase
+}
+
+.game-pc-requirements-card h3{
+  margin:7px 0 18px;
+  font-size:1.55rem
+}
+
+.game-pc-requirements-card dl{
+  display:grid;
+  gap:0;
+  margin:0
+}
+
+.game-pc-requirement-row{
+  display:grid;
+  grid-template-columns:minmax(105px,.72fr) minmax(0,1.28fr);
+  gap:18px;
+  padding:12px 0;
+  border-top:1px solid var(--border)
+}
+
+.game-pc-requirement-row:first-child{
+  padding-top:0;
+  border-top:0
+}
+
+.game-pc-requirement-row:last-child{padding-bottom:0}
+.game-pc-requirement-row dt{color:var(--muted);font-size:.8rem}
+.game-pc-requirement-row dd{min-width:0;margin:0;font-size:.86rem;font-weight:700;line-height:1.45;overflow-wrap:anywhere}
+
+.game-pc-requirements-notes{
+  display:grid;
+  gap:9px;
+  margin:15px 0 0;
+  padding:17px 20px 17px 40px;
+  border:1px solid color-mix(in srgb,var(--game-gold) 28%,var(--border));
+  border-radius:15px;
+  background:var(--game-gold-soft);
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.55
+}
+
+.game-pc-requirements-source{
+  display:inline-flex;
+  margin-top:15px;
+  color:var(--game-gold);
+  font-size:.84rem;
+  font-weight:800;
+  text-decoration:none
+}
+
+.game-pc-requirements-empty{
+  margin-top:25px;
+  padding:21px 22px;
+  border:1px dashed color-mix(in srgb,var(--game-gold) 42%,var(--border));
+  border-radius:18px;
+  background:color-mix(in srgb,var(--game-gold) 6%,var(--card))
+}
+
+.game-pc-requirements-empty strong{display:block;margin-bottom:7px}
+.game-pc-requirements-empty p{margin:0;color:var(--muted);line-height:1.6}
+
+@media(max-width:720px){
+  .game-pc-requirements-grid{grid-template-columns:1fr}
+  .game-pc-requirement-row{grid-template-columns:1fr;gap:5px}
+}

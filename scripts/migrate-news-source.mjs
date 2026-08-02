@@ -140,10 +140,14 @@ const nextData = `// Fuente estructurada única para portada, Noticias y ticker.
 
 let nextCore = coreSource;
 if (detailsExpression) {
+  const markerIndex = nextCore.indexOf("const homeDetails =");
+  const lineStart = nextCore.lastIndexOf("\n", markerIndex) + 1;
   let end = detailsExpression.end + 1;
-  while (/\s/.test(nextCore[end] || "")) end += 1;
+  while (nextCore[end] === " " || nextCore[end] === "\t") end += 1;
   if (nextCore[end] === ";") end += 1;
-  nextCore = nextCore.slice(0, nextCore.indexOf("const homeDetails =")) + nextCore.slice(end);
+  if (nextCore[end] === "\r") end += 1;
+  if (nextCore[end] === "\n") end += 1;
+  nextCore = nextCore.slice(0, lineStart) + nextCore.slice(end);
 }
 nextCore = nextCore.replaceAll("homeDetails[item.id]", "item.homeDetails");
 if (/\bhomeDetails\s*\[/.test(nextCore)) {

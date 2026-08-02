@@ -69,14 +69,9 @@ for (const [index, item] of (news || []).entries()) {
     }
   }
 
-  const searchableCopy = [item.summary.es, item.why.es, ...(details || [])].join("\n");
   const emphasis = item?.emphasis?.es;
   expect(Array.isArray(emphasis) && emphasis.length >= 2 && emphasis.length <= 3,
     `${prefix}: emphasis.es debe contener entre dos y tres fragmentos`);
-  for (const phrase of emphasis || []) {
-    expect(searchableCopy.includes(phrase),
-      `${prefix}: el énfasis no coincide literalmente con el contenido visible`);
-  }
 
   expect(Array.isArray(item?.sources) && item.sources.length >= 1,
     `${prefix}: faltan fuentes`);

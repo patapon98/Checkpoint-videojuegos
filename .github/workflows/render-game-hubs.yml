@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "data/game-hubs/*.json"
-      - "js/news-data.js"
       - "scripts/render-game-hubs.mjs"
   workflow_dispatch:
 

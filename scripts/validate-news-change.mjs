@@ -54,6 +54,40 @@ for (const item of additions) {
   if (!(item.sources || []).some((source) => officialPattern.test(source.type?.es || ""))) {
     errors.push(`${item.id}: falta una fuente primaria u oficial inequívoca`);
   }
+
+  const details = item.homeDetails?.es;
+  if (!Array.isArray(details) || details.length !== 2) {
+    errors.push(`${item.id}: homeDetails.es debe contener exactamente dos párrafos propios`);
+  } else {
+    for (const paragraph of details) {
+      if (typeof paragraph !== "string" || paragraph.trim().length < 90) {
+        errors.push(`${item.id}: los párrafos de homeDetails.es deben aportar contexto suficiente`);
+      }
+      if (paragraph === item.summary?.es || paragraph === item.why?.es) {
+        errors.push(`${item.id}: el reverso no puede repetir summary.es ni why.es`);
+      }
+    }
+  }
+
+  const emphasis = item.emphasis?.es;
+  if (!Array.isArray(emphasis) || emphasis.length < 2 || emphasis.length > 3) {
+    errors.push(`${item.id}: emphasis.es debe contener entre dos y tres fragmentos`);
+  } else {
+    const front = `${item.summary?.es || ""}\n${item.why?.es || ""}`;
+    for (const phrase of emphasis) {
+      if (!front.includes(phrase)) {
+        errors.push(`${item.id}: cada énfasis debe coincidir literalmente con summary.es o why.es`);
+      }
+    }
+  }
+
+  if (item.ticker) {
+    const keyword = item.ticker.keyword?.es || "";
+    const copy = item.ticker.copy?.es || "";
+    if (!keyword || !copy.includes(keyword)) {
+      errors.push(`${item.id}: ticker.keyword.es debe aparecer literalmente en ticker.copy.es`);
+    }
+  }
 }
 
 if (errors.length) {

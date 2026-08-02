@@ -952,6 +952,53 @@
       "trailer": "https://www.youtube.com/watch?v=XZZnbmS47VQ"
     },
     {
+      "id": "stalker-2-cost-of-hope",
+      "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
+      "headingHtml": "S.T.A.L.K.E.R. 2: Cost of Hope <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2026-08-20",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://store-images.s-microsoft.com/image/apps.29646.13887327924862132.3b59ae26-3ba7-42d2-88e8-d98dcc9eef30.bce48abc-aa68-451f-bfa9-23b90451519b?q=90&w=480&h=270",
+        "alt": "S.T.A.L.K.E.R. 2: Cost of Hope",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3765020/STALKER_2_Cost_of_Hope/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir S.T.A.L.K.E.R. 2: Cost of Hope a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.stalker2.com/news/coh-date-reveal",
+        "official": true,
+        "host": "www.stalker2.com",
+        "checkedAt": "2026-08-03",
+        "evidence": {
+          "title": "S.T.A.L.K.E.R. 2: Cost of Hope",
+          "releaseDate": "2026-08-20",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=P72ce_8vnwA"
+    },
+    {
       "id": "mgs-master-collection-vol-2",
       "title": "MGS: Master Collection Vol. 2",
       "headingHtml": "MGS: Master Collection Vol. 2 <span class=\"tag-dlc\">Recopilatorio</span>",

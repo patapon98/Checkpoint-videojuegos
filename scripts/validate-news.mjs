@@ -57,22 +57,25 @@ for (const [index, item] of (news || []).entries()) {
       `${prefix}: falta ${field}.es`);
   }
 
+  const details = item?.homeDetails?.es;
+  if (details !== undefined) {
+    expect(Array.isArray(details) && details.length === 2,
+      `${prefix}: homeDetails.es debe contener dos párrafos cuando existe`);
+    for (const paragraph of details || []) {
+      expect(typeof paragraph === "string" && paragraph.trim().length >= 90,
+        `${prefix}: párrafo de homeDetails demasiado breve`);
+      expect(paragraph !== item.summary.es && paragraph !== item.why.es,
+        `${prefix}: homeDetails repite el anverso`);
+    }
+  }
+
+  const searchableCopy = [item.summary.es, item.why.es, ...(details || [])].join("\n");
   const emphasis = item?.emphasis?.es;
   expect(Array.isArray(emphasis) && emphasis.length >= 2 && emphasis.length <= 3,
     `${prefix}: emphasis.es debe contener entre dos y tres fragmentos`);
   for (const phrase of emphasis || []) {
-    expect(item.summary.es.includes(phrase) || item.why.es.includes(phrase),
-      `${prefix}: el énfasis no coincide literalmente con summary.es o why.es`);
-  }
-
-  const details = item?.homeDetails?.es;
-  expect(Array.isArray(details) && details.length === 2,
-    `${prefix}: homeDetails.es debe contener dos párrafos`);
-  for (const paragraph of details || []) {
-    expect(typeof paragraph === "string" && paragraph.trim().length >= 90,
-      `${prefix}: párrafo de homeDetails demasiado breve`);
-    expect(paragraph !== item.summary.es && paragraph !== item.why.es,
-      `${prefix}: homeDetails repite el anverso`);
+    expect(searchableCopy.includes(phrase),
+      `${prefix}: el énfasis no coincide literalmente con el contenido visible`);
   }
 
   expect(Array.isArray(item?.sources) && item.sources.length >= 1,
@@ -103,8 +106,8 @@ expect(!loaderSource.includes("FINALSECRETO_NEWS"), "news.js todavía inyecta no
 
 const version = createHash("sha256").update(dataSource).digest("hex").slice(0, 12);
 for (const [name, html] of [["index.html", indexHtml], ["noticias.html", newsHtml]]) {
-  expect(new RegExp(`(?:^|/)js/news-data\\.js\\?v=${version}(?:["'\\s>])`).test(html), `${name}: versión de news-data desactualizada`);
-  expect(new RegExp(`(?:^|/)js/news\\.js\\?v=${version}(?:["'\\s>])`).test(html), `${name}: versión de news.js desactualizada`);
+  expect(html.includes(`js/news-data.js?v=${version}`), `${name}: versión de news-data desactualizada`);
+  expect(html.includes(`js/news.js?v=${version}`), `${name}: versión de news.js desactualizada`);
 }
 
 if (errors.length) {

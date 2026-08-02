@@ -103,8 +103,8 @@ expect(!loaderSource.includes("FINALSECRETO_NEWS"), "news.js todavía inyecta no
 
 const version = createHash("sha256").update(dataSource).digest("hex").slice(0, 12);
 for (const [name, html] of [["index.html", indexHtml], ["noticias.html", newsHtml]]) {
-  expect(html.includes(`/js/news-data.js?v=${version}`), `${name}: versión de news-data desactualizada`);
-  expect(html.includes(`/js/news.js?v=${version}`), `${name}: versión de news.js desactualizada`);
+  expect(new RegExp(`(?:^|/)js/news-data\\.js\\?v=${version}(?:["'\\s>])`).test(html), `${name}: versión de news-data desactualizada`);
+  expect(new RegExp(`(?:^|/)js/news\\.js\\?v=${version}(?:["'\\s>])`).test(html), `${name}: versión de news.js desactualizada`);
 }
 
 if (errors.length) {

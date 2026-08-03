@@ -8,7 +8,7 @@ on:
 permissions:
   actions: write
   contents: read
-  pull-requests: read
+  pull-requests: write
 
 concurrency:
   group: dispatch-calendar-bot-${{ github.event.workflow_run.id }}
@@ -26,7 +26,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
     steps:
-      - name: Verificar y lanzar la validación protegida
+      - name: Verificar la PR automática
+        id: verify
         run: |
           pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
           state="$(printf '%s' "$pr" | jq -r .state)"
@@ -37,6 +38,7 @@ jobs:
 
           if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
             echo "La PR automática ya no está abierta, lista y basada en main."
+            echo "eligible=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
@@ -59,8 +61,65 @@ jobs:
             exit 1
           fi
 
+          echo "eligible=true" >> "$GITHUB_OUTPUT"
+          echo "head_ref=$head_ref" >> "$GITHUB_OUTPUT"
+
+      - name: Registrar ejecuciones anteriores
+        if: steps.verify.outputs.eligible == 'true'
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/actions/workflows/validate-release-calendar.yml/runs?event=workflow_dispatch&per_page=30" \
+            --jq '.workflow_runs[].id' | sort -n > /tmp/calendar-runs-before.txt
+
+      - name: Lanzar la validación protegida
+        if: steps.verify.outputs.eligible == 'true'
+        run: |
           gh workflow run validate-release-calendar.yml \
             --repo "$GITHUB_REPOSITORY" \
             --ref main \
             -f "pr_number=$PR_NUMBER" \
-            -f "head_ref=$head_ref"
+            -f "head_ref=${{ steps.verify.outputs.head_ref }}"
+
+      - name: Localizar la ejecución protegida
+        if: steps.verify.outputs.eligible == 'true'
+        id: locate
+        run: |
+          run_id=""
+          for attempt in $(seq 1 30); do
+            gh api "repos/$GITHUB_REPOSITORY/actions/workflows/validate-release-calendar.yml/runs?event=workflow_dispatch&per_page=30" \
+              --jq '.workflow_runs[].id' | sort -n > /tmp/calendar-runs-after.txt
+            run_id="$(comm -13 /tmp/calendar-runs-before.txt /tmp/calendar-runs-after.txt | tail -n 1)"
+            if [ -n "$run_id" ]; then break; fi
+            sleep 2
+          done
+          if [ -z "$run_id" ]; then
+            echo "No se pudo localizar la ejecución protegida recién creada."
+            exit 1
+          fi
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+          echo "Ejecución protegida: $run_id"
+
+      - name: Esperar el resultado protegido
+        if: steps.verify.outputs.eligible == 'true'
+        id: protected
+        continue-on-error: true
+        run: gh run watch "${{ steps.locate.outputs.run_id }}" --repo "$GITHUB_REPOSITORY" --exit-status --interval 5
+
+      - name: Publicar diagnóstico si falla
+        if: steps.verify.outputs.eligible == 'true' && steps.protected.outcome == 'failure'
+        run: |
+          run_id="${{ steps.locate.outputs.run_id }}"
+          gh run view "$run_id" --repo "$GITHUB_REPOSITORY" --log-failed > /tmp/calendar-failure.log 2>&1 || true
+          tail -c 12000 /tmp/calendar-failure.log > /tmp/calendar-failure-tail.log
+          {
+            echo "## Automatización del calendario bloqueada"
+            echo
+            echo "La validación protegida no ha podido completar esta PR. Último registro de error:"
+            echo
+            echo '```text'
+            cat /tmp/calendar-failure-tail.log
+            echo '```'
+            echo
+            echo "Ejecución: https://github.com/$GITHUB_REPOSITORY/actions/runs/$run_id"
+          } > /tmp/calendar-comment.md
+          gh pr comment "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file /tmp/calendar-comment.md
+          exit 1

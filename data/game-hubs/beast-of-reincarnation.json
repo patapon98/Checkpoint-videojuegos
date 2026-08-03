@@ -2,7 +2,7 @@
   "id": "beast-of-reincarnation",
   "title": "Beast of Reincarnation",
   "subtitle": "La aventura de Emma y Koo en el Japón del año 4026, con su combate híbrido, su fecha y toda la información oficial.",
-  "status": "Reservas abiertas",
+  "status": "Disponible",
   "releaseDate": "2026-08-04",
   "platforms": [
     "PS5",
@@ -89,64 +89,22 @@
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
     "minimum": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 10/11 de 64 bits"
-      },
-      {
-        "label": "Procesador",
-        "value": "Intel Core i5-8400 o AMD Ryzen 5 3600"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce GTX 1070 (8 GB) o AMD Radeon RX 580 (8 GB)"
-      },
-      {
-        "label": "DirectX",
-        "value": "Versión 12"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "45 GB disponibles en SSD"
-      },
-      {
-        "label": "Rendimiento objetivo",
-        "value": "1080p, calidad baja y 40 FPS con DLSS o FSR 1 en modo Rendimiento"
-      }
+      { "label": "Sistema operativo", "value": "Windows 10/11 de 64 bits" },
+      { "label": "Procesador", "value": "Intel Core i5-8400 o AMD Ryzen 5 3600" },
+      { "label": "Memoria", "value": "16 GB de RAM" },
+      { "label": "Tarjeta gráfica", "value": "NVIDIA GeForce GTX 1070 (8 GB) o AMD Radeon RX 580 (8 GB)" },
+      { "label": "DirectX", "value": "Versión 12" },
+      { "label": "Almacenamiento", "value": "45 GB disponibles en SSD" },
+      { "label": "Rendimiento objetivo", "value": "1080p, calidad baja y 40 FPS con DLSS o FSR 1 en modo Rendimiento" }
     ],
     "recommended": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 11 de 64 bits"
-      },
-      {
-        "label": "Procesador",
-        "value": "Intel Core i7-12700K o AMD Ryzen 7 5800X"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 3060 (12 GB) o AMD Radeon RX 6700 XT (12 GB)"
-      },
-      {
-        "label": "DirectX",
-        "value": "Versión 12"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "45 GB disponibles en SSD"
-      },
-      {
-        "label": "Rendimiento objetivo",
-        "value": "1080p, calidad media y 60 FPS con DLSS o FSR 3 en modo Rendimiento"
-      }
+      { "label": "Sistema operativo", "value": "Windows 11 de 64 bits" },
+      { "label": "Procesador", "value": "Intel Core i7-12700K o AMD Ryzen 7 5800X" },
+      { "label": "Memoria", "value": "16 GB de RAM" },
+      { "label": "Tarjeta gráfica", "value": "NVIDIA GeForce RTX 3060 (12 GB) o AMD Radeon RX 6700 XT (12 GB)" },
+      { "label": "DirectX", "value": "Versión 12" },
+      { "label": "Almacenamiento", "value": "45 GB disponibles en SSD" },
+      { "label": "Rendimiento objetivo", "value": "1080p, calidad media y 60 FPS con DLSS o FSR 3 en modo Rendimiento" }
     ],
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits en ambas configuraciones.",
@@ -169,36 +127,12 @@
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
-    {
-      "label": "Beast of Reincarnation",
-      "url": "https://www.beastofreincarnation.com/",
-      "type": "Web oficial"
-    },
-    {
-      "label": "PlayStation España",
-      "url": "https://store.playstation.com/es-es/concept/10014719",
-      "type": "Precios, ediciones, reserva y funciones de PS5"
-    },
-    {
-      "label": "Xbox España",
-      "url": "https://www.xbox.com/es-es/games/beast-of-reincarnation",
-      "type": "Ediciones, contenido de reserva, plataformas y Game Pass"
-    },
-    {
-      "label": "Steam",
-      "url": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/",
-      "type": "Requisitos oficiales para PC, almacenamiento y funciones"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/02/12/beast-of-reincarnation-launches-on-ps5-august-4-2026/",
-      "type": "Fecha y jugabilidad"
-    },
-    {
-      "label": "Xbox Wire",
-      "url": "https://news.xbox.com/en-us/2026/01/22/beast-of-reincarnation-game-freak-developer-direct/",
-      "type": "Sistemas, dificultad y arte oficial"
-    }
+    { "label": "Beast of Reincarnation", "url": "https://www.beastofreincarnation.com/", "type": "Web oficial" },
+    { "label": "PlayStation España", "url": "https://store.playstation.com/es-es/concept/10014719", "type": "Precios, ediciones, reserva y funciones de PS5" },
+    { "label": "Xbox España", "url": "https://www.xbox.com/es-es/games/beast-of-reincarnation", "type": "Ediciones, contenido de reserva, plataformas y Game Pass" },
+    { "label": "Steam", "url": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/", "type": "Requisitos oficiales para PC, almacenamiento y funciones" },
+    { "label": "PlayStation Blog", "url": "https://blog.playstation.com/2026/02/12/beast-of-reincarnation-launches-on-ps5-august-4-2026/", "type": "Fecha y jugabilidad" },
+    { "label": "Xbox Wire", "url": "https://news.xbox.com/en-us/2026/01/22/beast-of-reincarnation-game-freak-developer-direct/", "type": "Sistemas, dificultad y arte oficial" }
   ],
   "newsTerms": [
     "beast of reincarnation",
@@ -214,20 +148,25 @@
   },
   "changes": [
     {
-      "date": "2026-08-03",
-      "title": "Ediciones y precios trasladados a una sección propia",
-      "description": "La ficha separa el contenido de la edición estándar, la Digital Deluxe y la reserva del bloque general de información confirmada.",
+      "date": "2026-08-04",
+      "title": "Beast of Reincarnation ya está disponible",
+      "description": "La ficha deja de mostrar el juego como reserva y refleja su lanzamiento oficial del 4 de agosto de 2026 en PS5, Xbox Series X|S y PC.",
       "sourceUrls": [
+        "https://www.xbox.com/es-es/games/beast-of-reincarnation",
         "https://store.playstation.com/es-es/concept/10014719"
       ]
     },
     {
       "date": "2026-08-03",
+      "title": "Ediciones y precios trasladados a una sección propia",
+      "description": "La ficha separa el contenido de la edición estándar, la Digital Deluxe y la reserva del bloque general de información confirmada.",
+      "sourceUrls": ["https://store.playstation.com/es-es/concept/10014719"]
+    },
+    {
+      "date": "2026-08-03",
       "title": "Requisitos de PC trasladados a una sección propia",
       "description": "La ficha separa las configuraciones mínimas y recomendadas en un bloque técnico específico y elimina su repetición dentro de los datos generales.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/"
-      ]
+      "sourceUrls": ["https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/"]
     },
     {
       "date": "2026-08-03",
@@ -249,7 +188,7 @@
     "onimusha-way-of-the-sword",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-04",
   "price": "Desde 54,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/concept/10014719",
@@ -257,24 +196,12 @@
     "items": [
       {
         "name": "Edición estándar",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "54,99 €"
-          }
-        ],
-        "includes": [
-          "Beast of Reincarnation"
-        ]
+        "prices": [{ "platform": "PS5", "value": "54,99 €" }],
+        "includes": ["Beast of Reincarnation"]
       },
       {
         "name": "Digital Deluxe Edition",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "64,99 €"
-          }
-        ],
+        "prices": [{ "platform": "PS5", "value": "64,99 €" }],
         "includes": [
           "Juego base",
           "Pieles de Shiba negra y marrón para Koo",
@@ -288,8 +215,6 @@
       "Piel de Shiba marrón para Koo",
       "30.000 de ámbar"
     ],
-    "notes": [
-      "Los precios mostrados corresponden a PlayStation Store España."
-    ]
+    "notes": ["Los precios mostrados corresponden a PlayStation Store España."]
   }
 }

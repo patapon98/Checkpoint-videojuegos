@@ -22,6 +22,11 @@ function officialFallback(image = {}) {
   return fallback;
 }
 
+function isTemporaryRawgFailure(message = "") {
+  return /RAWG API HTTP (?:429|5\d\d)/i.test(message)
+    || /fetch failed|network|timeout|timed out|socket/i.test(message);
+}
+
 let requestData = { requests: [] };
 try {
   requestData = JSON.parse(await readFile(REQUESTS_FILE, "utf8"));
@@ -72,11 +77,15 @@ for (const release of pending) {
     if (await resolveRawgImage(release, { apiKey: API_KEY })) changes.push(release.title);
   } catch (error) {
     const canUseOfficialFallback = /RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)
-      || /RAWG no encontró una coincidencia exacta/.test(error.message);
+      || /RAWG no encontró una coincidencia exacta/.test(error.message)
+      || isTemporaryRawgFailure(error.message);
     if (canUseOfficialFallback) {
       release.image = officialFallback(originalImages.get(release.id) || release.image);
       fallbacks.push(release.title);
-      warnings.push(`${release.title}: RAWG no ofrece una imagen utilizable; se conserva el recurso oficial de respaldo`);
+      const reason = isTemporaryRawgFailure(error.message)
+        ? `RAWG no está disponible temporalmente (${error.message})`
+        : "RAWG no ofrece una imagen utilizable";
+      warnings.push(`${release.title}: ${reason}; se conserva el recurso oficial de respaldo`);
       continue;
     }
     errors.push(`${release.id || release.title}: ${error.message}`);

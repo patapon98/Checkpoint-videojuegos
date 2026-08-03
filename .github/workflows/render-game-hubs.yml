@@ -9,7 +9,6 @@ on:
       - "scripts/render-game-hub-editions.mjs"
       - "scripts/validate-game-hub-pc-requirements.mjs"
       - "scripts/validate-game-hub-editions.mjs"
-      - "scripts/migrate-game-hub-commerce-v1.mjs"
       - "css/game-hub-pc-requirements.css"
       - "css/game-hub-editions.css"
   workflow_dispatch:
@@ -33,9 +32,6 @@ jobs:
         with:
           node-version: 22
 
-      - name: Migrar datos comerciales y técnicos
-        run: node scripts/migrate-game-hub-commerce-v1.mjs
-
       - name: Volcar datos, multimedia, requisitos y ediciones al HTML
         run: |
           node scripts/render-game-hubs.mjs
@@ -47,13 +43,13 @@ jobs:
       - name: Guardar las fichas actualizadas
         shell: bash
         run: |
-          if git diff --quiet -- data/game-hubs juegos juegos.html; then
+          if git diff --quiet -- juegos juegos.html; then
             echo "Las fichas ya están al día."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/game-hubs juegos juegos.html
-          git commit -m "Sincroniza requisitos, ediciones y precios de las fichas"
+          git add juegos juegos.html
+          git commit -m "Renderiza las secciones dinámicas de las fichas de juego"
           git push

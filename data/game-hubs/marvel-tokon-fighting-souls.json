@@ -103,8 +103,6 @@
   "pending": [
     "Faltan por anunciar los otros tres personajes y el escenario del pase del primer año.",
     "No se conocen las fechas de lanzamiento de Phoenix Cyclops ni del resto del contenido del pase.",
-    "Faltan por comprobarse los requisitos finales de la versión para PC.",
-    "No se conoce el tamaño de instalación definitivo.",
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
@@ -143,6 +141,15 @@
   },
   "changes": [
     {
+      "date": "2026-08-03",
+      "title": "Requisitos de PC y ediciones oficiales añadidos",
+      "description": "La ficha incorpora las configuraciones mínimas y recomendadas de Steam y compara las ediciones Standard, Digital Deluxe y Ultimate con sus precios y contenidos.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
+        "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/"
+      ]
+    },
+    {
       "date": "2026-07-30",
       "title": "Plantel, modos y cross-play revisados",
       "description": "Se sustituyeron las imágenes comprimidas por siete capturas oficiales a resolución nativa, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."
@@ -152,5 +159,112 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-07-30"
+  "updatedAt": "2026-08-03",
+  "pcRequirements": {
+    "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
+    "minimum": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Intel Core i5-8400 o AMD Ryzen 5 1600X"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "NVIDIA GeForce RTX 2060 (6 GB) o AMD Radeon RX 6600 XT (8 GB)"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "27 GB disponibles"
+      }
+    ],
+    "recommended": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Intel Core i7-8700 o AMD Ryzen 5 3600X"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "NVIDIA GeForce RTX 3070 (8 GB) o AMD Radeon RX 7600 XT (16 GB)"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "27 GB disponibles"
+      }
+    ],
+    "notes": [
+      "Steam exige un procesador y un sistema operativo de 64 bits.",
+      "La versión para PC utiliza Easy Anti-Cheat a nivel de kernel."
+    ]
+  },
+  "editions": {
+    "sourceUrl": "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/",
+    "region": "España",
+    "items": [
+      {
+        "name": "Standard Edition",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "69,99 €"
+          }
+        ],
+        "includes": [
+          "MARVEL Tōkon: Fighting Souls"
+        ]
+      },
+      {
+        "name": "Digital Deluxe Edition",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "94,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base",
+          "Pase de personajes y escenarios del año 1: cuatro personajes, un escenario y poses para la pantalla de resultados",
+          "Howard el Pato como avatar de sala",
+          "Cosmo como mascota de sala"
+        ]
+      },
+      {
+        "name": "Ultimate Edition",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "109,99 €"
+          }
+        ],
+        "includes": [
+          "Todo el contenido de la Digital Deluxe Edition",
+          "Cinco trajes: Spider-Man, Storm, Iron Man, Capitán América y Doctor Doom",
+          "Color cromático animado para los veinte personajes de lanzamiento"
+        ]
+      }
+    ],
+    "preorderBonuses": [
+      "Guantelete del Infinito como equipamiento de sala",
+      "Baby Groot como mascota de sala",
+      "Tabla de surf cósmica como vehículo de sala"
+    ],
+    "notes": [
+      "Las ediciones especiales también están anunciadas para PC; los precios mostrados corresponden a PlayStation Store España."
+    ]
+  },
+  "price": "Desde 69,99 € en PS5"
 }

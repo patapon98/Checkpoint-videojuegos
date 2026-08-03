@@ -159,9 +159,7 @@
     "La plaga transforma el escenario en tiempo real y hace aparecer enemigos nuevos.",
     "Emma y Koo recorren varias regiones derrotando Bestias y capturando sus poderes.",
     "Tres dificultades. Story Mode amplía la ventana de parada y reduce el daño enemigo.",
-    "Se puede jugar sin conexión. En PS5 usa vibración, gatillos adaptativos y mejoras de PS5 Pro.",
-    "En España, la edición estándar cuesta 54,99 € en PS5 y la Digital Deluxe 64,99 €. La reserva incluye una piel de Shiba marrón para Koo y 30.000 de ámbar.",
-    "La Digital Deluxe añade las pieles de Shiba negra y marrón, el sombrero Oni y la espada Osa Mayor para Emma, 100.000 de ámbar y varias plántulas."
+    "Se puede jugar sin conexión. En PS5 usa vibración, gatillos adaptativos y mejoras de PS5 Pro."
   ],
   "pending": [
     "No se conoce la duración aproximada de la historia.",
@@ -217,6 +215,14 @@
   "changes": [
     {
       "date": "2026-08-03",
+      "title": "Ediciones y precios trasladados a una sección propia",
+      "description": "La ficha separa el contenido de la edición estándar, la Digital Deluxe y la reserva del bloque general de información confirmada.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/concept/10014719"
+      ]
+    },
+    {
+      "date": "2026-08-03",
       "title": "Requisitos de PC trasladados a una sección propia",
       "description": "La ficha separa las configuraciones mínimas y recomendadas en un bloque técnico específico y elimina su repetición dentro de los datos generales.",
       "sourceUrls": [
@@ -244,5 +250,46 @@
     "grand-theft-auto-vi"
   ],
   "updatedAt": "2026-08-03",
-  "price": "Desde 54,99 € en PS5"
+  "price": "Desde 54,99 € en PS5",
+  "editions": {
+    "sourceUrl": "https://store.playstation.com/es-es/concept/10014719",
+    "region": "España",
+    "items": [
+      {
+        "name": "Edición estándar",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "54,99 €"
+          }
+        ],
+        "includes": [
+          "Beast of Reincarnation"
+        ]
+      },
+      {
+        "name": "Digital Deluxe Edition",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "64,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base",
+          "Pieles de Shiba negra y marrón para Koo",
+          "Sombrero Oni y espada Osa Mayor para Emma",
+          "100.000 de ámbar",
+          "Varias plántulas"
+        ]
+      }
+    ],
+    "preorderBonuses": [
+      "Piel de Shiba marrón para Koo",
+      "30.000 de ámbar"
+    ],
+    "notes": [
+      "Los precios mostrados corresponden a PlayStation Store España."
+    ]
+  }
 }

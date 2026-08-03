@@ -59,24 +59,24 @@
   "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha.",
   "overview": "Rockstar ha dosificado la información durante meses, así que conviene separar bien lo que ya está confirmado de lo que todavía se da por hecho sin anuncio oficial.",
   "spotlight": {
-    "kicker": "La pregunta más discutida",
-    "title": "Precio y ediciones de Grand Theft Auto VI",
-    "intro": "El debate sobre si GTA VI normalizaría los juegos de 100 euros ya tiene una respuesta oficial en España. La edición estándar se mantiene en el escalón habitual de los grandes lanzamientos actuales y los 100 euros quedan para la edición superior.",
+    "kicker": "El núcleo de la aventura",
+    "title": "Jason, Lucia y el estado de Leonida",
+    "intro": "Rockstar ha confirmado una campaña para un jugador protagonizada por una pareja atrapada en una conspiración que se extiende mucho más allá de Vice City.",
     "items": [
       {
-        "title": "Edición estándar",
-        "value": "79,99 €",
-        "description": "Incluye el juego y el pack de reserva Vintage Vice City. En PS5, la promoción suma un mes de GTA+ que pasa a renovarse automáticamente si no se cancela."
+        "title": "Protagonistas",
+        "value": "Jason y Lucia",
+        "description": "Los dos dependen el uno del otro después de que un golpe sencillo salga mal y los arrastre al lado más oscuro de Leonida."
       },
       {
-        "title": "Ultimate Edition",
-        "value": "99,99 €",
-        "description": "Añade la mejora Ultimate con vehículos, armas, ropa, peinados, tatuajes y otros extras repartidos por la historia de Jason y Lucia."
+        "title": "Escenario",
+        "value": "Vice City y Leonida",
+        "description": "La aventura recorre Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y el parque nacional Mount Kalaga."
       },
       {
-        "title": "Mejora Ultimate",
-        "value": "20 €",
-        "description": "Xbox permite comprar la mejora por separado. El precio total coincide con la Ultimate Edition si primero se adquiere la edición estándar."
+        "title": "Formato anunciado",
+        "value": "Campaña para un jugador",
+        "description": "La información oficial publicada hasta ahora se centra en la historia de Jason y Lucia; el posible componente en línea sigue sin detallarse."
       }
     ]
   },
@@ -84,8 +84,7 @@
     "Jason Duval y Lucia Caminos son los protagonistas.",
     "La campaña anunciada es una experiencia para un jugador.",
     "Rockstar ha presentado Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y el parque nacional Mount Kalaga.",
-    "La ficha de PlayStation confirma juego sin conexión, Uso a distancia, DualSense y mejoras de PS5 Pro.",
-    "Las reservas incluyen el pack Vintage Vice City. En PS5 añaden un mes de GTA+ con renovación automática."
+    "La ficha de PlayStation confirma juego sin conexión, Uso a distancia, DualSense y mejoras de PS5 Pro."
   ],
   "pending": [
     "Una versión para PC no ha sido anunciada oficialmente.",
@@ -136,6 +135,15 @@
   },
   "changes": [
     {
+      "date": "2026-08-03",
+      "title": "Ediciones y precios trasladados a una sección propia",
+      "description": "La ficha compara Standard y Ultimate, reúne las bonificaciones de reserva y reserva el bloque de claves para la historia y el mundo de Leonida.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
+        "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+      ]
+    },
+    {
       "date": "2026-07-30",
       "title": "Precios, ediciones y datos de compra verificados",
       "description": "Se añadieron los precios españoles, el contenido de cada edición, las condiciones de GTA+ y el primer tráiler oficial junto al segundo."
@@ -145,5 +153,45 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-07-30"
+  "updatedAt": "2026-08-03",
+  "editions": {
+    "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
+    "region": "España",
+    "items": [
+      {
+        "name": "Standard Edition",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "79,99 €"
+          }
+        ],
+        "includes": [
+          "Grand Theft Auto VI"
+        ]
+      },
+      {
+        "name": "Ultimate Edition",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "99,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base y Ultimate Edition Upgrade",
+          "Vehículos, armas, ropa, peinados y tatuajes exclusivos para la campaña",
+          "Acceso a Rideout Customs, Sara's, Stock 305, Electric Fang Tattoo y One-Eyed Willie's",
+          "Encargos y colecciones adicionales repartidos por Leonida"
+        ]
+      }
+    ],
+    "preorderBonuses": [
+      "Pack Vintage Vice City",
+      "Un mes de GTA+ en PS5"
+    ],
+    "notes": [
+      "El mes de GTA+ se renueva automáticamente al precio habitual si no se cancela."
+    ]
+  }
 }

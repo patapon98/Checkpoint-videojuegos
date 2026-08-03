@@ -109,11 +109,9 @@
     "La ficha oficial promete 4K y hasta 60 FPS con una pantalla compatible."
   ],
   "pending": [
-    "No se han publicado los requisitos definitivos de la versión para PC.",
     "Faltan por detallar los modos de resolución y rendimiento de cada consola.",
     "No se conoce la lista completa de mapas y variantes multijugador.",
     "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.",
-    "No se ha publicado el tamaño de instalación definitivo.",
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
@@ -153,6 +151,15 @@
   },
   "changes": [
     {
+      "date": "2026-08-03",
+      "title": "Requisitos de PC y ediciones oficiales añadidos",
+      "description": "Steam publica las configuraciones mínimas y recomendadas, mientras Xbox detalla la edición estándar, la Premium y su mejora independiente.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
+        "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day/9N4PT8HGCDHQ/0010"
+      ]
+    },
+    {
       "date": "2026-08-01",
       "title": "Fechas de la beta abierta confirmadas",
       "description": "Xbox concreta que la beta abierta de Gears of War: E-Day se celebrará del 6 al 10 de agosto de 2026 y que las reservas incluyen acceso anticipado.",
@@ -175,6 +182,136 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-01",
-  "price": "Desde 69,99 € en Xbox y PC"
+  "updatedAt": "2026-08-03",
+  "price": "Desde 69,99 € en Xbox y PC",
+  "pcRequirements": {
+    "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
+    "minimum": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 10 de 64 bits, versión 22H 19045.7291"
+      },
+      {
+        "label": "Procesador",
+        "value": "AMD Ryzen 5 2600X, Intel Core i7-6850K o Intel Core i5-10400"
+      },
+      {
+        "label": "Memoria",
+        "value": "12 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "RTX 5050, RTX 2060, RX 6600, RX 9060 o Intel Arc A580"
+      },
+      {
+        "label": "DirectX",
+        "value": "Versión 12"
+      },
+      {
+        "label": "Red",
+        "value": "Conexión a Internet de banda ancha"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "130 GB disponibles en SSD"
+      },
+      {
+        "label": "Tarjeta de sonido",
+        "value": "Dispositivo de audio compatible con Windows"
+      }
+    ],
+    "recommended": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 11 de 64 bits, versión 25H2 o posterior"
+      },
+      {
+        "label": "Procesador",
+        "value": "AMD Ryzen 5 5600 o Intel Core i5-11600K"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "RTX 5060, RTX 3060 Ti, RX 6700 XT, RX 9060 XT o Intel Arc B580"
+      },
+      {
+        "label": "DirectX",
+        "value": "Versión 12"
+      },
+      {
+        "label": "Red",
+        "value": "Conexión a Internet de banda ancha"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "130 GB disponibles en SSD"
+      },
+      {
+        "label": "Tarjeta de sonido",
+        "value": "Dispositivo de audio compatible con Windows"
+      }
+    ],
+    "notes": [
+      "Steam exige un procesador y un sistema operativo de 64 bits.",
+      "El uso de SSD es obligatorio en ambas configuraciones."
+    ]
+  },
+  "editions": {
+    "sourceUrl": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day/9N4PT8HGCDHQ/0010",
+    "region": "España",
+    "items": [
+      {
+        "name": "Edición estándar",
+        "prices": [
+          {
+            "platform": "Xbox y PC",
+            "value": "69,99 €"
+          }
+        ],
+        "includes": [
+          "Gears of War: E-Day"
+        ]
+      },
+      {
+        "name": "Premium Edition",
+        "prices": [
+          {
+            "platform": "Xbox y PC",
+            "value": "99,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base",
+          "Hasta cinco días de acceso anticipado",
+          "Pack de armas características de Bravo Squad",
+          "Cinco packs de personalización de temporada",
+          "1000 de Hierro"
+        ]
+      },
+      {
+        "name": "Actualización Premium",
+        "kind": "Mejora",
+        "prices": [
+          {
+            "platform": "Xbox y PC",
+            "value": "30,00 €"
+          }
+        ],
+        "includes": [
+          "Contenido de la Premium Edition para quienes ya tengan el juego base o una suscripción compatible de Game Pass"
+        ]
+      }
+    ],
+    "preorderBonuses": [
+      "Aspecto de personaje Exfil Dom",
+      "Conjunto de aspectos de armas Exfil",
+      "Acceso anticipado a la beta multijugador"
+    ],
+    "notes": [
+      "La Premium Edition está disponible por separado o como mejora del juego base."
+    ]
+  }
 }

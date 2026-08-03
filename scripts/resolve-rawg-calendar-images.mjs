@@ -11,6 +11,17 @@ const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const originalImages = new Map(data.releases.map((release) => [release.id, structuredClone(release.image || {})]));
 
+function officialFallback(image = {}) {
+  const fallback = structuredClone(image || {});
+  delete fallback.provider;
+  delete fallback.query;
+  delete fallback.rawgId;
+  delete fallback.rawgSlug;
+  delete fallback.rawgPage;
+  delete fallback.rawgImageType;
+  return fallback;
+}
+
 let requestData = { requests: [] };
 try {
   requestData = JSON.parse(await readFile(REQUESTS_FILE, "utf8"));
@@ -53,15 +64,19 @@ if (!API_KEY) {
 }
 
 const changes = [];
+const fallbacks = [];
 const errors = [];
 const warnings = [];
 for (const release of pending) {
   try {
     if (await resolveRawgImage(release, { apiKey: API_KEY })) changes.push(release.title);
   } catch (error) {
-    if (/RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)) {
-      release.image = structuredClone(originalImages.get(release.id) || {});
-      warnings.push(`${release.title}: RAWG identifica la ficha, pero todavía no ofrece imágenes; se conserva la anterior`);
+    const canUseOfficialFallback = /RAWG no ofrece imagen principal ni capturas HTTPS/.test(error.message)
+      || /RAWG no encontró una coincidencia exacta/.test(error.message);
+    if (canUseOfficialFallback) {
+      release.image = officialFallback(originalImages.get(release.id) || release.image);
+      fallbacks.push(release.title);
+      warnings.push(`${release.title}: RAWG no ofrece una imagen utilizable; se conserva el recurso oficial de respaldo`);
       continue;
     }
     errors.push(`${release.id || release.title}: ${error.message}`);
@@ -74,11 +89,12 @@ if (errors.length) {
   process.exit(1);
 }
 
-if (!changes.length) {
+if (!changes.length && !fallbacks.length) {
   console.log(`RAWG comprobado para ${pending.length} imágenes; no hay sustituciones disponibles.`);
   process.exit(0);
 }
 
 data.updatedAt = TODAY;
 await writeFile(DATA_FILE, JSON.stringify(data, null, 2) + "\n", "utf8");
-console.log(`RAWG actualizó ${changes.length} imágenes: ${changes.join(", ")}.`);
+if (changes.length) console.log(`RAWG actualizó ${changes.length} imágenes: ${changes.join(", ")}.`);
+if (fallbacks.length) console.log(`Se conservaron ${fallbacks.length} imágenes oficiales de respaldo: ${fallbacks.join(", ")}.`);

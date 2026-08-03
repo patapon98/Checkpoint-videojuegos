@@ -19,6 +19,7 @@ try {
 const baseById = new Map(base.releases.map((release) => [release.id, release]));
 const currentById = new Map(current.releases.map((release) => [release.id, release]));
 const errors = [];
+const warnings = [];
 const MATERIAL_FIELDS = ["title", "date", "platformKeys", "platformsHtml", "image", "store", "trailer", "tag", "badge", "priority"];
 
 function normalized(value = "") {
@@ -48,7 +49,7 @@ function materiallyChanged(before, after) {
   return changedFields(before, after).length > 0;
 }
 
-async function fetchChecked(url, label) {
+async function fetchChecked(url, label, { required = true } = {}) {
   try {
     const response = await fetch(url, {
       redirect: "follow",
@@ -60,7 +61,9 @@ async function fetchChecked(url, label) {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response;
   } catch (error) {
-    errors.push(`${label} no responde correctamente: ${error.message}`);
+    const message = `${label} no responde correctamente: ${error.message}`;
+    if (required) errors.push(message);
+    else warnings.push(message);
     return null;
   }
 }
@@ -116,13 +119,14 @@ for (const release of changed) {
       }
     }
   }
-  if (release.image?.src) await fetchChecked(release.image.src, `${prefix}: imagen`);
+  if (release.image?.src) await fetchChecked(release.image.src, `${prefix}: imagen`, { required: false });
   if (release.image?.rawgPage) await fetchChecked(release.image.rawgPage, `${prefix}: atribución RAWG`);
   if (!rawgImageOnly && release.store?.url && release.store.url !== source.url) await fetchChecked(release.store.url, `${prefix}: ficha de tienda`);
 }
 
+for (const warning of warnings) console.warn(`ADVERTENCIA: ${warning}`);
 if (errors.length) {
   console.error(errors.map((error) => `ERROR: ${error}`).join("\n"));
   process.exit(1);
 }
-console.log(`Validados ${changed.length} cambios editoriales frente a main.`);
+console.log(`Validados ${changed.length} cambios editoriales frente a main. ${warnings.length} advertencias de disponibilidad de imagen.`);

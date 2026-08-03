@@ -1,0 +1,66 @@
+name: Despachar calendario automático
+
+on:
+  workflow_run:
+    workflows: ["Validar calendario de lanzamientos"]
+    types: [completed]
+
+permissions:
+  actions: write
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: dispatch-calendar-bot-${{ github.event.workflow_run.id }}
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    if: >-
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'skipped' &&
+      startsWith(github.event.workflow_run.head_branch, 'bot/calendar-') &&
+      github.event.workflow_run.pull_requests[0].number != null
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
+    steps:
+      - name: Verificar y lanzar la validación protegida
+        run: |
+          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
+
+          if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
+            echo "La PR automática ya no está abierta, lista y basada en main."
+            exit 0
+          fi
+          if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
+            echo "La PR automática no procede del repositorio principal."
+            exit 1
+          fi
+          case "$head_ref" in
+            bot/calendar-*) ;;
+            *)
+              echo "La rama no pertenece a la automatización del calendario."
+              exit 1
+              ;;
+          esac
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/calendar\.json|calendario\.html|index\.html)$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "La PR automática contiene archivos no autorizados:"
+            echo "$invalid"
+            exit 1
+          fi
+
+          gh workflow run validate-release-calendar.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref main \
+            -f "pr_number=$PR_NUMBER" \
+            -f "head_ref=$head_ref"

@@ -76,8 +76,7 @@
     "Manhattan se divide en grandes zonas con actividades secundarias y rutas alternativas.",
     "Reach atrae objetos y enemigos, Shift permite desplazarse rápido y las anomalías gravitatorias amplían la movilidad.",
     "El Aberrante adopta cuatro formas: martillo, espadas, guadaña y puños.",
-    "Derrotar a los Resonantes desbloquea capacidades con las que especializar el combate.",
-    "En PC pide 16 GB de RAM y 100 GB. Remedy recomienda una RTX 3070 o una RX 6800 XT."
+    "Derrotar a los Resonantes desbloquea capacidades con las que especializar el combate."
   ],
   "pending": [
     "Fecha exacta de la versión para Mac.",
@@ -120,7 +119,7 @@
     "dylan faden",
     "el aberrante"
   ],
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-08-03",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -129,6 +128,15 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {
+      "date": "2026-08-03",
+      "title": "Requisitos de PC y ediciones trasladados a secciones propias",
+      "description": "La ficha añade las configuraciones de Steam y compara la edición estándar con la Digital Deluxe y sus bonificaciones.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+        "https://store.playstation.com/es-es/concept/10017682"
+      ]
+    },
     {
       "date": "2026-07-30",
       "title": "Ficha ampliada con combate, progresión y galería oficial",
@@ -165,5 +173,100 @@
       }
     ]
   },
-  "price": "Desde 59,99 € en PC"
+  "price": "Desde 59,99 € en PC",
+  "pcRequirements": {
+    "sourceUrl": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+    "minimum": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 10 u 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Intel Core i5-8500 o equivalente de AMD"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "GeForce GTX 1070 o Radeon RX 5600 XT (6 GB)"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "100 GB disponibles"
+      }
+    ],
+    "recommended": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 10 u 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "AMD Ryzen 7 3700X o equivalente de Intel"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "GeForce RTX 3070 o Radeon RX 6700 XT (8 GB)"
+      },
+      {
+        "label": "Almacenamiento",
+        "value": "100 GB disponibles"
+      }
+    ],
+    "notes": [
+      "Steam exige un procesador y un sistema operativo de 64 bits.",
+      "La tarjeta de sonido todavía figura como pendiente en la ficha oficial."
+    ]
+  },
+  "editions": {
+    "sourceUrl": "https://store.playstation.com/es-es/concept/10017682",
+    "region": "España",
+    "items": [
+      {
+        "name": "Edición estándar",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "59,99 €"
+          }
+        ],
+        "includes": [
+          "CONTROL Resonant"
+        ]
+      },
+      {
+        "name": "Edición Digital Deluxe",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "69,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base",
+          "Acceso anticipado de 48 horas",
+          "Atuendo de misión de SMA",
+          "Artefacto sin activar: cartera",
+          "Paquete de recursos inicial",
+          "Libro de arte digital",
+          "Banda sonora original"
+        ]
+      }
+    ],
+    "preorderBonuses": [
+      "Atuendo Corrupción del Siseo",
+      "Atuendo Ocultista",
+      "Artefacto Herramienta de carterista"
+    ],
+    "notes": [
+      "Los precios mostrados corresponden a PlayStation Store España."
+    ]
+  }
 }

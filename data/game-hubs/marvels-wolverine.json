@@ -159,6 +159,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-03",
+      "title": "Ediciones y precios añadidos a una sección propia",
+      "description": "La ficha compara la edición estándar, la Digital Deluxe y la mejora independiente con sus contenidos y precios españoles.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE"
+      ]
+    },
+    {
       "date": "2026-07-30",
       "title": "Ficha publicada con la información oficial más reciente",
       "description": "Se reunieron la fecha, el precio español, la historia, el combate, los personajes, tres vídeos y nueve capturas oficiales sin marcos añadidos."
@@ -168,6 +176,56 @@
     "marvel-tokon-fighting-souls",
     "god-of-war-laufey"
   ],
-  "updatedAt": "2026-07-30",
-  "price": "Desde 79,99 € en PS5"
+  "updatedAt": "2026-08-03",
+  "price": "Desde 79,99 € en PS5",
+  "editions": {
+    "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+    "region": "España",
+    "items": [
+      {
+        "name": "Edición estándar",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "79,99 €"
+          }
+        ],
+        "includes": [
+          "Marvel: Lobezno"
+        ]
+      },
+      {
+        "name": "Edición Digital Deluxe",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "89,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base",
+          "Cinco trajes exclusivos",
+          "Cinco garras exclusivas",
+          "Cuatro puntos de técnica",
+          "Desbloqueo anticipado del traje clásico marrón y las garras reflectantes",
+          "Cuatro avatares para PlayStation"
+        ]
+      },
+      {
+        "name": "Mejora Digital Deluxe",
+        "kind": "Mejora",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "10,00 €"
+          }
+        ],
+        "includes": [
+          "Todo el contenido adicional de la Digital Deluxe para quienes ya tengan la edición estándar"
+        ]
+      }
+    ],
+    "preorderBonuses": [],
+    "notes": []
+  }
 }

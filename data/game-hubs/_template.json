@@ -5,7 +5,8 @@
   "status": "Anunciado",
   "releaseDate": "AAAA-MM-DD",
   "platforms": [
-    "PS5"
+    "PS5",
+    "PC"
   ],
   "developer": "Desarrolladora",
   "publisher": "Editora",
@@ -33,6 +34,85 @@
   ],
   "premise": "Premisa contrastada y redactada por Final Secreto.",
   "context": "Contexto editorial útil que explique por qué importa el juego.",
+  "pcRequirements": {
+    "sourceUrl": "https://store.steampowered.com/app/000000/Titulo_del_juego/",
+    "minimum": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Procesador mínimo oficial"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "Tarjeta gráfica mínima oficial"
+      }
+    ],
+    "recommended": [
+      {
+        "label": "Sistema operativo",
+        "value": "Windows 11 de 64 bits"
+      },
+      {
+        "label": "Procesador",
+        "value": "Procesador recomendado oficial"
+      },
+      {
+        "label": "Memoria",
+        "value": "16 GB de RAM"
+      },
+      {
+        "label": "Tarjeta gráfica",
+        "value": "Tarjeta gráfica recomendada oficial"
+      }
+    ],
+    "notes": [
+      "Añadir únicamente aclaraciones publicadas por una fuente oficial."
+    ]
+  },
+  "editions": {
+    "sourceUrl": "https://example.com/tienda-oficial",
+    "region": "España",
+    "items": [
+      {
+        "name": "Edición estándar",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "79,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base"
+        ]
+      },
+      {
+        "name": "Edición Deluxe",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "89,99 €"
+          }
+        ],
+        "includes": [
+          "Juego base",
+          "Contenido adicional confirmado"
+        ]
+      }
+    ],
+    "preorderBonuses": [
+      "Bonificación oficial por reserva"
+    ],
+    "notes": [
+      "Indicar el mercado al que corresponden los precios."
+    ]
+  },
   "confirmed": [
     "Dato confirmado con una fuente primaria."
   ],

@@ -118,20 +118,28 @@ jobs:
           node --check scripts/validate-news.mjs
           node --check scripts/validate-news-change.mjs
           node --check scripts/render-game-hubs.mjs
+          node --check scripts/render-game-hub-pc-requirements.mjs
+          node --check scripts/render-game-hub-editions.mjs
           node --check scripts/validate-game-hubs.mjs
+          node --check scripts/validate-game-hub-pc-requirements.mjs
+          node --check scripts/validate-game-hub-editions.mjs
 
       - name: Verificar la adición automática
         run: node scripts/validate-news-change.mjs
 
-      - name: Generar caché y noticias relacionadas
+      - name: Generar caché, noticias relacionadas, requisitos y ediciones
         run: |
           node scripts/render-news.mjs
           node scripts/render-game-hubs.mjs
+          node scripts/render-game-hub-pc-requirements.mjs
+          node scripts/render-game-hub-editions.mjs
 
       - name: Validar contenido y salidas
         run: |
           node scripts/validate-news.mjs
           node scripts/validate-game-hubs.mjs
+          node scripts/validate-game-hub-pc-requirements.mjs
+          node scripts/validate-game-hub-editions.mjs
           git diff --check
 
       - name: Limitar el alcance de las ramas automáticas
@@ -151,10 +159,10 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add -- index.html noticias.html juegos juegos.html
-            git commit -m 'Genera las tarjetas y relaciones de Noticias'
+            git commit -m 'Genera las tarjetas, relaciones y secciones de las fichas'
             git push origin "HEAD:$HEAD_REF"
           else
-            echo 'Las salidas de Noticias ya están sincronizadas.'
+            echo 'Las salidas de Noticias y las fichas ya están sincronizadas.'
           fi
           if [ -n "$(git status --porcelain)" ]; then
             echo 'El árbol de trabajo no quedó limpio.'

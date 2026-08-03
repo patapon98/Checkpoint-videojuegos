@@ -6,8 +6,11 @@ on:
       - "data/game-hubs/*.json"
       - "scripts/render-game-hubs.mjs"
       - "scripts/render-game-hub-pc-requirements.mjs"
+      - "scripts/render-game-hub-editions.mjs"
       - "scripts/validate-game-hub-pc-requirements.mjs"
+      - "scripts/validate-game-hub-editions.mjs"
       - "css/game-hub-pc-requirements.css"
+      - "css/game-hub-editions.css"
   workflow_dispatch:
 
 permissions:
@@ -29,11 +32,13 @@ jobs:
         with:
           node-version: 22
 
-      - name: Volcar datos, multimedia y requisitos al HTML
+      - name: Volcar datos, multimedia, requisitos y ediciones al HTML
         run: |
           node scripts/render-game-hubs.mjs
           node scripts/render-game-hub-pc-requirements.mjs
+          node scripts/render-game-hub-editions.mjs
           node scripts/validate-game-hub-pc-requirements.mjs
+          node scripts/validate-game-hub-editions.mjs
 
       - name: Guardar las fichas actualizadas
         shell: bash

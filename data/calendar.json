@@ -907,6 +907,53 @@
       "trailer": "https://www.youtube.com/watch?v=JrELQ7n5K3M"
     },
     {
+      "id": "nioh-3-hell-rising",
+      "title": "Nioh 3: Hell Rising",
+      "headingHtml": "Nioh 3: Hell Rising <span class=\"tag-dlc\">DLC</span>",
+      "date": "2026-08-19",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Nioh 3: Hell Rising",
+        "src": "https://www.koeitecmoamerica.com/wp-content/uploads/2026/07/DLC1_01_%E3%80%8C%E6%85%B6%E5%AE%89%E5%9C%B0%E7%8D%84%E5%A4%89%E3%80%8D%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC3_%E3%83%AD%E3%83%89%E3%83%AA%E3%82%B4-scaled.jpg",
+        "alt": "Nioh 3: Hell Rising",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://teamninja-studio.com/nioh3/us/dlc/",
+        "title": "Ver detalles oficiales",
+        "ariaLabel": "Ver los detalles oficiales de Nioh 3: Hell Rising"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "DLC",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.koeitecmoamerica.com/news/travel-to-the-keian-era-with-hell-rising-the-first-dlc-for-nioh-3-coming-aug-19-2026/",
+        "official": true,
+        "host": "www.koeitecmoamerica.com",
+        "checkedAt": "2026-08-03",
+        "evidence": {
+          "title": "Nioh 3: Hell Rising",
+          "releaseDate": "2026-08-19",
+          "platforms": [
+            "ps5",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=kbaQTQsoIVc"
+    },
+    {
       "id": "mortal-shell-ii",
       "title": "Mortal Shell II",
       "headingHtml": "Mortal Shell II <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19499-buy-mortal-shell-ii-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Mortal Shell II en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
@@ -1249,6 +1296,60 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=yZB9Pj1P5XE"
+    },
+    {
+      "id": "speedrunners-2-king-of-speed",
+      "title": "SpeedRunners 2: King of Speed",
+      "headingHtml": "SpeedRunners 2: King of Speed",
+      "date": "2026-09-03",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "SpeedRunners 2: King of Speed",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3183760/6c227ae4c5d0c9d44c38b4cac5915682be0b1ddb/header.jpg?t=1785510635",
+        "alt": "SpeedRunners 2: King of Speed",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3183760/SpeedRunners_2_King_of_Speed/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir SpeedRunners 2: King of Speed a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://www.speedrunners.com/",
+        "official": true,
+        "host": "www.speedrunners.com",
+        "checkedAt": "2026-08-03",
+        "evidence": {
+          "title": "SpeedRunners 2: King of Speed",
+          "releaseDate": "2026-09-03",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ySTLls_VV_I"
     },
     {
       "id": "onimusha-way-of-the-sword",

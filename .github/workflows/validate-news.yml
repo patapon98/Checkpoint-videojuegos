@@ -5,6 +5,7 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
     branches: [main]
     paths:
+      - 'data/news-inbox/*.json'
       - 'js/news-data.js'
       - 'index.html'
       - 'noticias.html'
@@ -91,7 +92,7 @@ jobs:
           esac
 
           files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/news-inbox/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|data/news-archive/[0-9]{4}/[0-9]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'La PR automática contiene archivos no autorizados antes de descargarla:'
             echo "$invalid"
@@ -114,6 +115,7 @@ jobs:
 
       - name: Comprobar sintaxis
         run: |
+          node --check scripts/import-news-candidates.mjs
           node --check scripts/render-news.mjs
           node --check scripts/validate-news.mjs
           node --check scripts/validate-news-change.mjs
@@ -123,6 +125,14 @@ jobs:
           node --check scripts/validate-game-hubs.mjs
           node --check scripts/validate-game-hub-pc-requirements.mjs
           node --check scripts/validate-game-hub-editions.mjs
+
+      - name: Importar las candidatas de la bandeja
+        run: |
+          if find data/news-inbox -maxdepth 1 -type f -name '*.json' -print -quit | grep -q .; then
+            node scripts/import-news-candidates.mjs
+          else
+            echo 'La PR ya contiene las candidatas importadas y archivadas.'
+          fi
 
       - name: Verificar la adición automática
         run: node scripts/validate-news-change.mjs
@@ -145,24 +155,24 @@ jobs:
       - name: Limitar el alcance de las ramas automáticas
         run: |
           files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/news-inbox/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|data/news-archive/[0-9]{4}/[0-9]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'Una rama automática ha modificado archivos no autorizados:'
             echo "$invalid"
             exit 1
           fi
 
-      - name: Guardar las salidas generadas en la rama automática
+      - name: Guardar la importación y las salidas generadas
         id: automatic_head
         run: |
-          if ! git diff --quiet -- index.html noticias.html juegos juegos.html; then
+          if ! git diff --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add -- index.html noticias.html juegos juegos.html
-            git commit -m 'Genera las tarjetas, relaciones y secciones de las fichas'
+            git add -- js/news-data.js data/news-inbox data/news-archive index.html noticias.html juegos juegos.html
+            git commit -m 'Importa las noticias y genera sus superficies derivadas'
             git push origin "HEAD:$HEAD_REF"
           else
-            echo 'Las salidas de Noticias y las fichas ya están sincronizadas.'
+            echo 'La importación y las salidas ya están sincronizadas.'
           fi
           if [ -n "$(git status --porcelain)" ]; then
             echo 'El árbol de trabajo no quedó limpio.'
@@ -206,7 +216,7 @@ jobs:
           fi
 
           files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/news-archive/[0-9]{4}/[0-9]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
           if [ -n "$invalid" ]; then
             echo 'La PR final contiene archivos no autorizados:'
             echo "$invalid"

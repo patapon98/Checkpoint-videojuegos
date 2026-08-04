@@ -139,6 +139,8 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 ## 7. Reglas técnicas
 
 - Centralizar los datos y comportamientos reutilizables.
+- La fuente de verdad de Noticias es `data/news/`, con un JSON independiente por noticia. `data/news-index.json` se genera automáticamente y los clientes lo cargan con `fetch()`. No crear ni editar `js/news-data.js`.
+- Una entrega automática de Noticias solo puede añadir uno o dos JSON nuevos en `data/news/`. El workflow único valida la PR y, después del push a `main`, genera el índice, la caché, la portada, Noticias y las relaciones con fichas. No usar bandejas, importadores, movimientos, reintentos programados, `workflow_dispatch`, comprobaciones de SHA ni auto-merge.
 - No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.
 - No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
 - El sitemap se genera con `scripts/generate-sitemap.mjs`. Al publicar una reseña, la automatización de GitHub debe incorporar su URL canónica y actualizar `lastmod`; no mantener a mano una lista paralela de reseñas.

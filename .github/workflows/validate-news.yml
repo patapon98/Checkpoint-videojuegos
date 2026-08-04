@@ -1,108 +1,53 @@
-name: Validar Noticias automáticas
+name: Pipeline de Noticias
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened, ready_for_review]
+  pull_request:
     branches: [main]
     paths:
-      - 'data/news-inbox/*.json'
-      - 'js/news-data.js'
+      - 'data/news/*.json'
+      - 'data/news-index.json'
+      - 'scripts/build-news-index.mjs'
+      - 'scripts/render-news.mjs'
+      - 'scripts/render-game-hubs.mjs'
+      - 'scripts/validate-news.mjs'
+      - 'scripts/validate-news-change.mjs'
+      - 'js/news-core.js'
+      - 'js/news.js'
+      - 'js/game-hub.js'
       - 'index.html'
       - 'noticias.html'
       - 'juegos/*.html'
       - 'juegos.html'
-  schedule:
-    - cron: '*/10 * * * *'
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: 'Número de PR automática que debe procesarse'
-        required: false
-        type: string
-      head_ref:
-        description: 'Rama automática esperada'
-        required: false
-        type: string
+      - 'docs/NEWS_AUTOMATION.md'
+      - '.github/workflows/validate-news.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'data/news/*.json'
+      - 'scripts/build-news-index.mjs'
+      - 'scripts/render-news.mjs'
+      - 'scripts/render-game-hubs.mjs'
+      - 'scripts/validate-news.mjs'
+      - 'js/news-core.js'
+      - 'js/news.js'
+      - 'js/game-hub.js'
+      - '.github/workflows/validate-news.yml'
 
 permissions:
-  actions: write
-  contents: write
-  pull-requests: write
+  contents: read
 
 concurrency:
-  group: validate-news-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
+  group: news-pipeline-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  dispatch:
-    if: github.event_name == 'schedule'
-    runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ github.token }}
-    steps:
-      - name: Lanzar la validación de las PR automáticas abiertas
-        run: |
-          gh api --paginate "repos/$GITHUB_REPOSITORY/pulls?state=open&base=main&per_page=100" \
-            --jq '.[] | select(.draft == false and (.head.ref | startswith("bot/news-")) and .head.repo.full_name == env.GITHUB_REPOSITORY) | [.number, .head.ref] | @tsv' |
-          while IFS=$'\t' read -r number head_ref; do
-            gh workflow run validate-news.yml \
-              --repo "$GITHUB_REPOSITORY" \
-              --ref main \
-              -f "pr_number=$number" \
-              -f "head_ref=$head_ref"
-          done
-
   validate:
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      (
-        github.event_name == 'pull_request_target' &&
-        github.event.pull_request.head.repo.full_name == github.repository &&
-        startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/news-')
-      )
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    env:
-      HEAD_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.ref_name }}
     steps:
-      - name: Comprobar la PR automática antes de descargarla
-        if: github.event_name == 'pull_request_target' || (github.event_name == 'workflow_dispatch' && inputs.pr_number != '')
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
-          REQUESTED_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref }}
-        run: |
-          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
-          state="$(printf '%s' "$pr" | jq -r .state)"
-          draft="$(printf '%s' "$pr" | jq -r .draft)"
-          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
-          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
-          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
-
-          if [ "$state" != 'open' ] || [ "$draft" != 'false' ] || [ "$base_ref" != 'main' ]; then
-            echo 'La PR automática no está abierta, lista y basada en main.'
-            exit 1
-          fi
-          if [ "$head_repo" != "$GITHUB_REPOSITORY" ] || [ "$head_ref" != "$REQUESTED_REF" ]; then
-            echo 'La procedencia o la rama solicitada no coincide.'
-            exit 1
-          fi
-          case "$head_ref" in
-            bot/news-*) ;;
-            *) echo 'La rama no pertenece a la automatización de Noticias.'; exit 1 ;;
-          esac
-
-          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/news-inbox/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|data/news-archive/[0-9]{4}/[0-9]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
-          if [ -n "$invalid" ]; then
-            echo 'La PR automática contiene archivos no autorizados antes de descargarla:'
-            echo "$invalid"
-            exit 1
-          fi
-
-      - name: Descargar la rama
+      - name: Descargar el repositorio
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.ref_name }}
           fetch-depth: 0
 
       - name: Preparar Node.js
@@ -110,12 +55,12 @@ jobs:
         with:
           node-version: 22
 
-      - name: Obtener main
+      - name: Obtener main para validar la PR
         run: git fetch origin main
 
       - name: Comprobar sintaxis
         run: |
-          node --check scripts/import-news-candidates.mjs
+          node --check scripts/build-news-index.mjs
           node --check scripts/render-news.mjs
           node --check scripts/validate-news.mjs
           node --check scripts/validate-news-change.mjs
@@ -126,25 +71,20 @@ jobs:
           node --check scripts/validate-game-hub-pc-requirements.mjs
           node --check scripts/validate-game-hub-editions.mjs
 
-      - name: Importar las candidatas de la bandeja
-        run: |
-          if find data/news-inbox -maxdepth 1 -type f -name '*.json' -print -quit | grep -q .; then
-            node scripts/import-news-candidates.mjs
-          else
-            echo 'La PR ya contiene las candidatas importadas y archivadas.'
-          fi
-
-      - name: Verificar la adición automática
+      - name: Limitar las entregas automáticas
+        env:
+          GITHUB_HEAD_REF: ${{ github.head_ref }}
         run: node scripts/validate-news-change.mjs
 
-      - name: Generar caché, noticias relacionadas, requisitos y ediciones
+      - name: Generar el índice y las superficies de Noticias
         run: |
+          node scripts/build-news-index.mjs
           node scripts/render-news.mjs
           node scripts/render-game-hubs.mjs
           node scripts/render-game-hub-pc-requirements.mjs
           node scripts/render-game-hub-editions.mjs
 
-      - name: Validar contenido y salidas
+      - name: Ejecutar todas las validaciones
         run: |
           node scripts/validate-news.mjs
           node scripts/validate-game-hubs.mjs
@@ -152,75 +92,59 @@ jobs:
           node scripts/validate-game-hub-editions.mjs
           git diff --check
 
-      - name: Limitar el alcance de las ramas automáticas
+  generate:
+    if: github.event_name == 'push'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Comprobar sintaxis
         run: |
-          files="$({ git diff --name-only origin/main...HEAD; git diff --name-only; } | sort -u)"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/news-inbox/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|data/news-archive/[0-9]{4}/[0-9]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
-          if [ -n "$invalid" ]; then
-            echo 'Una rama automática ha modificado archivos no autorizados:'
-            echo "$invalid"
-            exit 1
-          fi
+          node --check scripts/build-news-index.mjs
+          node --check scripts/render-news.mjs
+          node --check scripts/validate-news.mjs
+          node --check scripts/render-game-hubs.mjs
+          node --check scripts/validate-game-hubs.mjs
+          node --check scripts/render-game-hub-pc-requirements.mjs
+          node --check scripts/render-game-hub-editions.mjs
+          node --check scripts/validate-game-hub-pc-requirements.mjs
+          node --check scripts/validate-game-hub-editions.mjs
 
-      - name: Guardar la importación y las salidas generadas
-        id: automatic_head
+      - name: Generar el índice y las superficies de Noticias
         run: |
-          if ! git diff --quiet; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add -- js/news-data.js data/news-inbox data/news-archive index.html noticias.html juegos juegos.html
-            git commit -m 'Importa las noticias y genera sus superficies derivadas'
-            git push origin "HEAD:$HEAD_REF"
-          else
-            echo 'La importación y las salidas ya están sincronizadas.'
-          fi
-          if [ -n "$(git status --porcelain)" ]; then
-            echo 'El árbol de trabajo no quedó limpio.'
-            git status --short
-            exit 1
-          fi
-          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          node scripts/build-news-index.mjs
+          node scripts/render-news.mjs
+          node scripts/render-game-hubs.mjs
+          node scripts/render-game-hub-pc-requirements.mjs
+          node scripts/render-game-hub-editions.mjs
 
-      - name: Fusionar el resultado final verificado
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
-          EXPECTED_SHA: ${{ steps.automatic_head.outputs.sha }}
+      - name: Ejecutar todas las validaciones
         run: |
-          remote_sha=''
-          for attempt in $(seq 1 15); do
-            pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
-            remote_sha="$(printf '%s' "$pr" | jq -r .head.sha)"
-            if [ "$remote_sha" = "$EXPECTED_SHA" ]; then break; fi
-            echo "Intento $attempt: la PR apunta a $remote_sha, esperando $EXPECTED_SHA."
-            sleep 4
-          done
+          node scripts/validate-news.mjs
+          node scripts/validate-game-hubs.mjs
+          node scripts/validate-game-hub-pc-requirements.mjs
+          node scripts/validate-game-hub-editions.mjs
+          git diff --check
 
-          state="$(printf '%s' "$pr" | jq -r .state)"
-          draft="$(printf '%s' "$pr" | jq -r .draft)"
-          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
-          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
-          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
-
-          if [ "$state" != 'open' ] || [ "$draft" != 'false' ] || [ "$base_ref" != 'main' ]; then
-            echo 'La PR no está abierta, lista y basada en main.'
-            exit 1
+      - name: Guardar únicamente archivos generados
+        run: |
+          git add -- data/news-index.json index.html noticias.html juegos juegos.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo 'Las salidas de Noticias ya están sincronizadas.'
+            exit 0
           fi
-          if [ "$head_repo" != "$GITHUB_REPOSITORY" ] || [ "$head_ref" != "$HEAD_REF" ]; then
-            echo 'La procedencia o la rama cambió después de la validación.'
-            exit 1
-          fi
-          if [ "$remote_sha" != "$EXPECTED_SHA" ]; then
-            echo 'La cabecera remota cambió después de la validación.'
-            exit 1
-          fi
-
-          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
-          invalid="$(printf '%s\n' "$files" | grep -Ev '^(data/news-archive/[0-9]{4}/[0-9]{2}/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+\.json|js/news-data\.js|index\.html|noticias\.html|juegos/[a-z0-9-]+\.html|juegos\.html)$' || true)"
-          if [ -n "$invalid" ]; then
-            echo 'La PR final contiene archivos no autorizados:'
-            echo "$invalid"
-            exit 1
-          fi
-
-          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --squash --delete-branch --match-head-commit "$EXPECTED_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Genera las superficies derivadas de Noticias'
+          git push origin HEAD:main

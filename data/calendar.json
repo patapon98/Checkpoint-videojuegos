@@ -2531,6 +2531,60 @@
       "trailer": null
     },
     {
+      "id": "attack-on-titan-3",
+      "title": "Attack on Titan 3",
+      "headingHtml": "Attack on Titan 3",
+      "date": "2026-12-10",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://www.koeitecmoamerica.com/attackontitan3/assets/img/kv_movie_fallback.BHEsq6NU_VQVPF.jpeg?v=bd02145f",
+        "alt": "Attack on Titan 3",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "provider": "rawg",
+        "query": "Attack on Titan 3"
+      },
+      "store": {
+        "url": "https://www.koeitecmoamerica.com/attackontitan3/us/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Attack on Titan 3"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.koeitecmoamerica.com/attackontitan3/us/",
+        "official": true,
+        "host": "www.koeitecmoamerica.com",
+        "checkedAt": "2026-08-04",
+        "evidence": {
+          "title": "Attack on Titan 3",
+          "releaseDate": "2026-12-10",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=bdYFIXnI2pc"
+    },
+    {
       "id": "tomb-raider-legacy-of-atlantis",
       "title": "Tomb Raider: Legacy of Atlantis",
       "headingHtml": "Tomb Raider: Legacy of Atlantis",

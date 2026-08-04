@@ -1,0 +1,63 @@
+{
+  "id": "xbox-resultados-junio-2026",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual",
+      "Los ingresos por hardware bajaron un 13%",
+      "el conjunto de Microsoft alcanzó 90.007 millones de dólares"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-07-29",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Los ingresos de contenidos y servicios de Xbox cayeron un 10% entre abril y junio"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Los ingresos de contenidos y servicios de Xbox cayeron un 10% entre abril y junio"
+  },
+  "summary": {
+    "es": "Microsoft comunicó que los ingresos de contenidos y servicios de Xbox descendieron un 10% interanual durante el trimestre terminado el 30 de junio de 2026. Los ingresos por hardware bajaron un 13%, mientras el conjunto de Microsoft alcanzó 90.007 millones de dólares."
+  },
+  "why": {
+    "es": "El retroceso afecta al negocio que reúne juegos, contenido, Game Pass, suscripciones, nube y publicidad. Aporta contexto económico directo a la reestructuración de Xbox y muestra que la debilidad no se limita a la venta de consolas."
+  },
+  "sources": [
+    {
+      "label": "Microsoft",
+      "type": {
+        "es": "Resultados oficiales"
+      },
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+    },
+    {
+      "label": "Microsoft",
+      "type": {
+        "es": "Métricas oficiales"
+      },
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/metrics"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto sobre Xbox"
+      },
+      "url": "https://www.theverge.com/tech/972738/xbox-revenue-microsoft-earnings-q4-2026"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Microsoft reúne dentro de contenidos y servicios de Xbox las ventas de juegos, el contenido adicional, Game Pass, la nube y la publicidad. La caída del 10% indica que el retroceso no se concentró únicamente en la venta de consolas.",
+      "El hardware también bajó un 13% interanual. El contraste es especialmente relevante porque Microsoft cerró el trimestre con 90.007 millones de dólares de ingresos totales mientras Xbox atravesaba una reestructuración con miles de despidos."
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "playstation-fin-formato-fisico",
+  "emphasis": {
+    "es": [
+      "juegos nuevos publicados desde enero de 2028",
+      "no podrán prestarse ni revenderse como un disco",
+      "propiedad, la reventa, la preservación"
+    ]
+  },
+  "category": {
+    "es": "Plataformas",
+    "en": "Platforms"
+  },
+  "date": "2026-07-01",
+  "updated": "2026-07-25",
+  "featured": true,
+  "ticker": {
+    "keyword": {
+      "es": "PlayStation"
+    },
+    "copy": {
+      "es": "PlayStation dejará de producir discos para nuevos juegos en 2028"
+    }
+  },
+  "article": {
+    "url": "/noticias/playstation-fin-formato-fisico"
+  },
+  "tone": "playstation",
+  "title": {
+    "es": "PlayStation dejará de producir discos para sus nuevos juegos en 2028",
+    "en": "PlayStation will stop producing discs for new games in 2028"
+  },
+  "summary": {
+    "es": "Sony ha confirmado que los juegos lanzados a partir de enero de 2028 se distribuirán únicamente en formato digital. Los títulos publicados antes de esa fecha no se ven afectados.",
+    "en": "Sony has confirmed that games released from January 2028 onward will be distributed digitally only. Titles released before then will not be affected."
+  },
+  "why": {
+    "es": "Es un cambio de modelo que afecta a la propiedad, la reventa, la preservación y el papel de las tiendas físicas.",
+    "en": "It changes ownership, resale, preservation and the role of physical retailers."
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/"
+    },
+    {
+      "label": "Reuters",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.reuters.com/world/asia-pacific/sony-end-discs-new-playstation-releases-gaming-shifts-online-2026-07-01/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Análisis",
+        "en": "Analysis"
+      },
+      "url": "https://www.theverge.com/games/960476/playstation-physical-games-discs-stop-production-preservation-retail-stores"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La medida solo afectará a los juegos nuevos publicados desde enero de 2028. Los títulos estrenados antes de esa fecha podrán seguir fabricándose y vendiéndose en disco, por lo que el corte no elimina de inmediato todo el catálogo físico existente.",
+      "Los lanzamientos posteriores dependerán de PlayStation Store: no podrán prestarse ni revenderse como un disco y quedarán más expuestos al cierre de servidores, la retirada de licencias o cambios de precio."
+    ],
+    "en": [
+      "The measure will only affect new games released from January 2028. Titles launched before that date may continue to be manufactured and sold on disc, so the change will not immediately remove the existing physical catalogue.",
+      "Later releases will depend on PlayStation Store: they cannot be lent or resold like a disc and will be more exposed to server closures, licence withdrawals and price changes."
+    ]
+  }
+}

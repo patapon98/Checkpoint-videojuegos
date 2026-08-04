@@ -1,0 +1,65 @@
+{
+  "id": "xbox-nube-gratis-anuncios",
+  "emphasis": {
+    "es": [
+      "sin pagar por el acceso a la nube",
+      "límite de una hora",
+      "no se interrumpe con publicidad"
+    ]
+  },
+  "category": {
+    "es": "Plataformas",
+    "en": "Platforms"
+  },
+  "date": "2026-07-23",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox prueba el juego en la nube gratuito con anuncios"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox prueba el juego en la nube gratuito con anuncios",
+    "en": "Xbox tests free ad-supported cloud gaming"
+  },
+  "summary": {
+    "es": "Xbox Insiders pueden retransmitir gratuitamente una selección de juegos que ya poseen después de ver anuncios. Las sesiones duran un máximo de una hora y la publicidad aparece antes de jugar, sin interrumpir la partida.",
+    "en": "Xbox Insiders can stream selected games they already own for free after watching ads. Sessions are limited to one hour and ads play before gameplay rather than interrupting it."
+  },
+  "why": {
+    "es": "Microsoft está probando una nueva puerta de entrada a Xbox Cloud Gaming que reduce el coste de acceso y abre otra vía de monetización al margen de Game Pass.",
+    "en": "Microsoft is testing a new entry point to Xbox Cloud Gaming that lowers access costs and creates a monetisation route outside Game Pass."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.theverge.com/games/969969/xbox-testing-ad-supported-streaming"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La prueba permite a Xbox Insiders retransmitir una selección de juegos que ya poseen sin pagar por el acceso a la nube. Los anuncios se muestran antes de comenzar y cada sesión tiene un límite de una hora.",
+      "Microsoft presenta el sistema como una forma opcional de reducir el coste de entrada. De momento no existe confirmación de que la prueba vaya a convertirse en un nivel comercial permanente."
+    ],
+    "en": [
+      "The test lets Xbox Insiders stream selected games they already own without paying for cloud access. Ads play before the session begins and each session is limited to one hour.",
+      "Microsoft presents the system as an optional way to lower the cost of entry. There is currently no confirmation that the test will become a permanent commercial tier."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "ea-autorizacion-final-compra-2026",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha recibido todas las autorizaciones regulatorias necesarias",
+      "prevé cerrar la operación el 4 de agosto de 2026",
+      "Electronic Arts dejará de cotizar y pasará a ser una compañía privada"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-07-31",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Electronic Arts"
+    },
+    "copy": {
+      "es": "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+  },
+  "summary": {
+    "es": "Electronic Arts comunicó que ha recibido todas las autorizaciones regulatorias necesarias y prevé cerrar la operación el 4 de agosto de 2026. La compra por PIF, Silver Lake y Affinity Partners está valorada en unos 55.000 millones de dólares."
+  },
+  "why": {
+    "es": "Electronic Arts dejará de cotizar y pasará a ser una compañía privada controlada por el consorcio comprador. El cambio de propiedad afecta a una de las mayores editoras del sector, responsable de EA Sports FC, Battlefield, Apex Legends y Los Sims."
+  },
+  "sources": [
+    {
+      "label": "Electronic Arts",
+      "type": {
+        "es": "Anuncio oficial de la operación"
+      },
+      "url": "https://www.ea.com/news/ea-announces-agreement-to-be-acquired?isLocalized=true"
+    },
+    {
+      "label": "Reuters",
+      "type": {
+        "es": "Autorización final y fecha prevista de cierre"
+      },
+      "url": "https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El consorcio está formado por el fondo soberano saudí PIF, la firma de inversión Silver Lake y Affinity Partners. Los accionistas recibirán 210 dólares por acción en una de las mayores compras financiadas de una empresa de videojuegos.",
+      "La autorización bajo el Reglamento europeo sobre subvenciones extranjeras era el último gran obstáculo regulatorio. Una vez completada la operación, EA dejará el mercado bursátil y el consorcio asumirá el control de franquicias como EA Sports FC, Battlefield, Apex Legends y Los Sims."
+    ]
+  }
+}

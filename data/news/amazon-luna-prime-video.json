@@ -1,0 +1,56 @@
+{
+  "id": "amazon-luna-prime-video",
+  "emphasis": {
+    "es": [
+      "sin descargas ni pagos adicionales",
+      "España y Japón no forman parte del despliegue inicial"
+    ]
+  },
+  "category": {
+    "es": "Plataformas",
+    "en": "Platforms"
+  },
+  "date": "2026-07-23",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Amazon integra Luna dentro de Prime Video en Estados Unidos y Reino Unido",
+    "en": "Amazon integrates Luna into Prime Video in the US and UK"
+  },
+  "summary": {
+    "es": "Los miembros de Prime con Fire TV ya pueden abrir juegos de Luna desde una nueva pestaña de Prime Video, sin descargas ni compras adicionales. El despliegue inicial se limita a Estados Unidos y Reino Unido.",
+    "en": "Prime members with Fire TV can now launch Luna games from a new Prime Video tab without downloads or additional purchases. The initial rollout is limited to the US and UK."
+  },
+  "why": {
+    "es": "Amazon deja de presentar Luna como un servicio aislado y convierte el juego en una capa integrada dentro de su principal plataforma audiovisual.",
+    "en": "Amazon is moving Luna beyond a standalone service and turning gaming into an integrated layer of its main video platform."
+  },
+  "sources": [
+    {
+      "label": "Amazon Game Studios",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://www.amazongamestudios.com/en-us/news/articles/primevideo-and-luna"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.theverge.com/streaming/970099/amazon-prime-video-luna-gaming"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Amazon ha añadido una pestaña de juegos dentro de Prime Video para los miembros de Prime que utilizan Fire TV en Estados Unidos y Reino Unido. Pueden iniciar juegos de Luna con un mando o con el teléfono, sin descargas ni pagos adicionales.",
+      "El cambio integra el juego en el mismo espacio donde Amazon distribuye películas, series y deportes. La compañía promete ampliar dispositivos, países y catálogo, pero España y Japón no forman parte del despliegue inicial."
+    ],
+    "en": [
+      "Amazon has added a games tab inside Prime Video for Prime members using Fire TV in the US and UK. They can launch Luna games with a controller or phone, without downloads or additional payments.",
+      "The change integrates gaming into the same space where Amazon distributes films, series and sports. The company plans to expand devices, countries and the catalogue, but Spain and Japan are not part of the initial rollout."
+    ]
+  }
+}

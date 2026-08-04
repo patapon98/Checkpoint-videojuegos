@@ -1,0 +1,65 @@
+{
+  "id": "xbox-caida-global-juegos-fisicos",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "algunos juegos instalados desde disco",
+      "error 0x87e107df",
+      "tener el disco no garantizó poder jugar"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-07-27",
+  "publishedAt": "2026-07-27T03:00:00Z",
+  "updated": "2026-07-28",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox sufrió una caída global que llegó a bloquear algunos juegos en disco"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Una caída global de Xbox llegó a bloquear algunos juegos en disco"
+  },
+  "summary": {
+    "es": "Una interrupción de casi 20 horas impidió iniciar sesión, consultar bibliotecas, usar Game Pass, comprar y ejecutar juegos. Algunos juegos instalados desde disco tampoco arrancaron y mostraron el error 0x87e107df."
+  },
+  "why": {
+    "es": "La incidencia expuso la dependencia de los servidores para validar licencias. Durante la caída, tener el disco no garantizó poder jugar, una limitación relevante para la propiedad y la preservación."
+  },
+  "sources": [
+    {
+      "label": "Estado de Xbox",
+      "type": {
+        "es": "Fuente oficial"
+      },
+      "url": "https://support.xbox.com/xbox-live-status"
+    },
+    {
+      "label": "VGC",
+      "type": {
+        "es": "Declaración de Xbox Support"
+      },
+      "url": "https://www.videogameschronicle.com/news/xbox-says-its-aware-of-major-outages-when-signing-in-and-launching-games-and-is-working-to-mitigate-the-issue/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Impacto en juegos físicos y restablecimiento"
+      },
+      "url": "https://www.theverge.com/games/971545/xbox-outage-disc-physical-games"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La interrupción se prolongó durante casi 20 horas y afectó al inicio de sesión, las bibliotecas, Game Pass, las compras y el arranque de juegos. El error 0x87e107df apareció también en algunas instalaciones realizadas desde disco.",
+      "El episodio no demuestra que todos los discos de Xbox dependan siempre de internet, pero sí que determinadas licencias y configuraciones necesitan validaciones remotas. Durante la caída, poseer el soporte físico no bastó para garantizar el acceso."
+    ]
+  }
+}

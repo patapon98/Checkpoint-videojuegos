@@ -1,0 +1,65 @@
+{
+  "id": "xbox-reestructuracion-despidos",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "3.200 puestos",
+      "1.600 salidas inmediatas",
+      "no ha cancelado ningún proyecto first-party anunciado"
+    ]
+  },
+  "category": {
+    "es": "Industria",
+    "en": "Industry"
+  },
+  "date": "2026-07-06",
+  "updated": "2026-07-15",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox recortará 3.200 empleos durante su reestructuración"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Xbox recortará 3.200 empleos en su mayor reestructuración",
+    "en": "Xbox will cut 3,200 jobs in its biggest restructuring"
+  },
+  "summary": {
+    "es": "Microsoft prevé reducir alrededor del 20% de la plantilla de Xbox durante su año fiscal 2027. La operación incluye 1.600 salidas inmediatas y cambios de propiedad en varios estudios.",
+    "en": "Microsoft plans to reduce Xbox's workforce by roughly 20 percent during fiscal 2027. The move includes 1,600 immediate departures and ownership changes at several studios."
+  },
+  "why": {
+    "es": "El alcance de los recortes altera la capacidad de producción de Xbox y evidencia la presión económica sobre los grandes estudios.",
+    "en": "The scale of the cuts changes Xbox's production capacity and highlights the financial pressure on major studios."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Comunicado oficial",
+        "en": "Official statement"
+      },
+      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
+    },
+    {
+      "label": "Reuters",
+      "type": {
+        "es": "Información",
+        "en": "Reporting"
+      },
+      "url": "https://www.reuters.com/business/world-at-work/microsoft-joins-ai-driven-tech-layoff-wave-with-4800-job-cuts-2026-07-06/"
+    },
+    {
+      "label": "Game Developer",
+      "type": {
+        "es": "Testimonios",
+        "en": "Developer accounts"
+      },
+      "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
+    }
+  ]
+}

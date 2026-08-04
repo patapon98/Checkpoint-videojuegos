@@ -1,0 +1,46 @@
+{
+  "id": "marvel-wolverine-fecha",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "15 de septiembre de 2026",
+      "uno de los principales exclusivos de PS5"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos",
+    "en": "Releases"
+  },
+  "date": "2026-07-23",
+  "featured": false,
+  "tone": "wolverine",
+  "title": {
+    "es": "Marvel's Wolverine fija su lanzamiento para el 15 de septiembre",
+    "en": "Marvel's Wolverine sets a September 15 release date"
+  },
+  "summary": {
+    "es": "Insomniac ha publicado un nuevo tráiler centrado en la historia y ha abierto las reservas del juego, que llegará en exclusiva a PS5.",
+    "en": "Insomniac has released a new story-focused trailer and opened pre-orders for the PS5 exclusive."
+  },
+  "why": {
+    "es": "Es uno de los grandes lanzamientos de PlayStation para 2026 y ya tiene una fecha definitiva.",
+    "en": "It is one of PlayStation's biggest 2026 releases and now has a firm date."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=3Z42tBfBLJY",
+    "label": {
+      "es": "Ver tráiler",
+      "en": "Watch trailer"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "halo-campaign-evolved-lanzamiento",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "también a PS5",
+      "juego cruzado y cooperativo online para hasta cuatro personas",
+      "priorizando el alcance comercial"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos",
+    "en": "Releases"
+  },
+  "date": "2026-07-23",
+  "featured": false,
+  "tone": "halo",
+  "title": {
+    "es": "Halo: Campaign Evolved llega el 28 de julio también a PS5",
+    "en": "Halo: Campaign Evolved launches July 28, including on PS5"
+  },
+  "summary": {
+    "es": "El remake de la primera campaña de Halo se estrena en Xbox Series, PC, nube y PlayStation 5, con juego cruzado y hasta cuatro jugadores en cooperativo online.",
+    "en": "The remake of Halo's first campaign launches on Xbox Series, PC, cloud and PlayStation 5, with cross-play and four-player online co-op."
+  },
+  "why": {
+    "es": "La llegada simultánea a PlayStation confirma hasta qué punto Xbox está ampliando el alcance de sus franquicias históricas.",
+    "en": "Its simultaneous PlayStation release shows how far Xbox is expanding the reach of its historic franchises."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=5KhzCSeZxAU",
+    "label": {
+      "es": "Ver tráiler",
+      "en": "Watch trailer"
+    }
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://news.xbox.com/en-us/2026/07/23/halo-campaign-evolved-early-access-launch-xbox/"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
+    }
+  ]
+}

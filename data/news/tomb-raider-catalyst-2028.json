@@ -1,0 +1,55 @@
+{
+  "id": "tomb-raider-catalyst-2028",
+  "emphasis": {
+    "es": [
+      "el responsable de Amazon Games situó Tomb Raider: Catalyst en 2028",
+      "la propia compañía evitó confirmar el cambio",
+      "no debe considerarse todavía una fecha oficial"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos",
+    "en": "Releases"
+  },
+  "date": "2026-07-24",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Tomb Raider: Catalyst"
+    },
+    "copy": {
+      "es": "Tomb Raider: Catalyst apunta a 2028, aunque Amazon no confirma el retraso"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Amazon apunta a 2028 para Tomb Raider: Catalyst, pero evita confirmar el retraso",
+    "en": "Amazon points to 2028 for Tomb Raider: Catalyst but stops short of confirming a delay"
+  },
+  "summary": {
+    "es": "Jeff Gattis, responsable de Amazon Games, situó el nuevo Tomb Raider en 2028 durante una entrevista. Después, la compañía aseguró que no tenía novedades sobre su fecha y que el desarrollo avanza bien.",
+    "en": "Amazon Games head Jeff Gattis placed the new Tomb Raider in 2028 during an interview. The company later said it had no timing update and that development was progressing well."
+  },
+  "why": {
+    "es": "La ventana anunciada de 2027 queda en duda, pero la respuesta posterior de Amazon impide tratar 2028 como una fecha definitiva.",
+    "en": "The announced 2027 window is now in doubt, but Amazon's follow-up response means 2028 should not be treated as final."
+  },
+  "sources": [
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Declaración y respuesta oficial",
+        "en": "Statement and official response"
+      },
+      "url": "https://www.gematsu.com/2026/07/tomb-raider-catalyst-amazon-games-boss-suggests-2028-delay-but-publisher-says-no-updates"
+    },
+    {
+      "label": "PC Gamer",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.pcgamer.com/games/action/tomb-raider-catalyst-delayed-to-2028/"
+    }
+  ]
+}

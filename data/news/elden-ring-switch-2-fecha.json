@@ -1,0 +1,53 @@
+{
+  "id": "elden-ring-switch-2-fecha",
+  "emphasis": {
+    "es": [
+      "Elden Ring, Shadow of the Erdtree y contenido adicional",
+      "prueba técnica y comercial para Switch 2"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos",
+    "en": "Releases"
+  },
+  "date": "2026-06-05",
+  "featured": false,
+  "tone": "nintendo",
+  "title": {
+    "es": "Elden Ring llegará a Switch 2 el 28 de agosto",
+    "en": "Elden Ring comes to Switch 2 on August 28"
+  },
+  "summary": {
+    "es": "Tarnished Edition incluirá el juego base, Shadow of the Erdtree y contenido adicional. El estreno coincide con el lanzamiento del nuevo Tarnished Pack en el resto de plataformas.",
+    "en": "Tarnished Edition includes the base game, Shadow of the Erdtree and additional content. It launches alongside the new Tarnished Pack on other platforms."
+  },
+  "why": {
+    "es": "Es una de las pruebas técnicas y comerciales más importantes para el catálogo third-party de Switch 2.",
+    "en": "It is one of the most important technical and commercial tests for Switch 2's third-party catalogue."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=pMeYxev9PZM",
+    "label": {
+      "es": "Ver tráiler",
+      "en": "Watch trailer"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo",
+      "type": {
+        "es": "Ficha oficial",
+        "en": "Official listing"
+      },
+      "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/ELDEN-RING-Tarnished-Edition-2791969.html"
+    },
+    {
+      "label": "GamesRadar+",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.gamesradar.com/games/action-rpg/new-elden-ring-dlc-and-nintendo-switch-2-tarnished-edition-finally-get-a-release-date/"
+    }
+  ]
+}

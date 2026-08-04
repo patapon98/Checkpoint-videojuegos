@@ -1,0 +1,54 @@
+{
+  "id": "nioh-3-hell-rising-agosto-2026",
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-07-28",
+  "featured": false,
+  "tone": "release",
+  "title": {
+    "es": "Nioh 3: Hell Rising llegará el 19 de agosto con una nueva región y armas"
+  },
+  "summary": {
+    "es": "Koei Tecmo y Team NINJA lanzarán Nioh 3: Hell Rising el 19 de agosto de 2026 para PS5 y PC. La primera expansión añade una nueva región ambientada en el Edo de 1651, las armas hoko y escudo y un tráiler oficial."
+  },
+  "why": {
+    "es": "El contenido incorpora una dificultad superior a Shogun’s Journey, nuevos sistemas de progresión y batallas configurables mediante los Hundred Demon Realms Picture Scrolls. Es una ampliación sustancial del RPG de acción publicado en febrero."
+  },
+  "homeDetails": {
+    "es": [
+      "La historia transporta a Takechiyo hasta un Edo futuro devastado por el Crisol, donde yokai, rebeldes humanos y alquimistas extranjeros se disputan la ciudad. Yagyu Jubei y el enviado español Rodrigo participan en una nueva trama vinculada a las Piedras Espirituales.",
+      "La expansión suma hoko y escudo para los estilos samurái y ninja, además de nuevos espíritus guardianes, habilidades, artes marciales, ninjutsu, magia onmyo y gracias. La dificultad Enlightened One’s Journey eleva los límites de nivel y equipo y añade más núcleos de alma."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "el 19 de agosto de 2026",
+      "una nueva región ambientada en el Edo de 1651",
+      "una dificultad superior a Shogun’s Journey"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Team NINJA",
+      "type": {
+        "es": "Página oficial de la expansión"
+      },
+      "url": "https://teamninja-studio.com/nioh3/us/dlc/"
+    },
+    {
+      "label": "Team NINJA",
+      "type": {
+        "es": "Tráiler oficial de presentación"
+      },
+      "url": "https://www.youtube.com/watch?v=Jdf8lO9m0B0"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Fecha, plataformas y contexto del anuncio"
+      },
+      "url": "https://www.gematsu.com/2026/07/nioh-3-dlc-hell-rising-launches-august-19"
+    }
+  ]
+}

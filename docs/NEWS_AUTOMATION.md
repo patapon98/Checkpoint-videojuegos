@@ -1,6 +1,8 @@
 # Automatización editorial de Noticias
 
-La vigilancia automática mantiene las tarjetas de Noticias de Final Secreto. Una entrada válida en `js/news-data.js` alimenta simultáneamente:
+La vigilancia automática mantiene las tarjetas de Noticias de Final Secreto sin editar directamente el archivo editorial grande desde ChatGPT. El bot entrega una o dos candidatas pequeñas en `data/news-inbox/` y GitHub las valida, importa y archiva.
+
+Una entrada incorporada a `js/news-data.js` alimenta simultáneamente:
 
 - la noticia destacada y las tarjetas recientes de la portada,
 - el reverso ampliado de cada tarjeta,
@@ -11,11 +13,32 @@ La vigilancia automática mantiene las tarjetas de Noticias de Final Secreto. Un
 
 Las páginas individuales dentro de `noticias/` quedan fuera de la publicación automática. Una rama `bot/news-*` no puede crear `article.url` ni modificar artículos.
 
-## Fuente estructurada única
+## Bandeja de entrada
 
-`js/news-data.js` es la única fuente editorial. Cada entrada contiene tanto el anverso como el reverso de la tarjeta mediante `homeDetails`. El motor `js/news-core.js` solo interpreta estos datos y `js/news.js` se limita a cargarlo.
+Cada noticia automática se entrega como un archivo JSON nuevo:
 
-Una noticia nueva debe incluir:
+`data/news-inbox/AAAA-MM-DD-slug.json`
+
+El archivo contiene directamente el objeto completo de la noticia. No incluye un contenedor adicional ni instrucciones para modificar otros archivos. Una PR puede añadir uno o, como máximo, dos JSON.
+
+La automatización externa solo debe crear estos archivos. No debe editar `js/news-data.js`, HTML, scripts, estilos, sitemap ni datos ya publicados.
+
+El workflow protegido ejecuta `scripts/import-news-candidates.mjs`, que:
+
+1. comprueba el nombre y la sintaxis de cada JSON,
+2. bloquea identificadores existentes o repetidos,
+3. exige `featured: false` y rechaza `article.url`,
+4. inserta las candidatas al comienzo de `window.FINALSECRETO_NEWS` sin reformatear las entradas existentes,
+5. mueve cada JSON a `data/news-archive/AAAA/MM/`,
+6. entrega el resultado a las validaciones editoriales ya existentes.
+
+El archivo histórico conserva exactamente el objeto recibido por la automatización y permite auditar o reconstruir cada incorporación.
+
+## Fuente estructurada publicada
+
+`js/news-data.js` sigue siendo la fuente editorial consumida por la web. Cada entrada contiene tanto el anverso como el reverso de la tarjeta mediante `homeDetails`. El motor `js/news-core.js` solo interpreta estos datos y `js/news.js` se limita a cargarlo.
+
+Una noticia candidata debe incluir:
 
 - `id` único en kebab-case,
 - `category.es`, usando `Juegos`, `Lanzamientos`, `Plataformas` o `Industria`,
@@ -24,7 +47,7 @@ Una noticia nueva debe incluir:
 - `tone`, `title.es`, `summary.es` y `why.es`,
 - `homeDetails.es` con exactamente dos párrafos que aporten contexto nuevo,
 - `emphasis.es` con dos o tres fragmentos literales del anverso,
-- `sources` con URL HTTPS, etiqueta y tipo,
+- `sources` con URL HTTPS, etiqueta y `type.es`,
 - `ticker` cuando la relevancia justifique aparecer entre las cuatro últimas.
 
 `important: true` se reserva para prioridad alta. Junto con `publishedAt`, activa «Última hora» durante 24 horas. Una rama automática nunca puede cambiar la noticia `featured`.
@@ -50,31 +73,35 @@ Cuando existe una noticia inequívoca:
 
 1. Consultar el `main` más reciente, el historial y las PR abiertas `bot/news-*`.
 2. Crear una rama `bot/news-AAAA-MM-DD-HHMM-slug` desde `main`.
-3. Añadir una o dos entradas nuevas modificando exclusivamente `js/news-data.js`.
+3. Añadir uno o dos JSON nuevos exclusivamente en `data/news-inbox/`.
 4. Abrir una PR no borrador contra `main`.
-5. El workflow de Noticias comprueba fuentes, estructura, fechas, categorías, énfasis, reversos, duplicados y alcance.
-6. El workflow actualiza automáticamente las versiones de caché de portada y Noticias.
-7. El workflow regenera las noticias relacionadas de las fichas de juego.
-8. El workflow guarda únicamente las salidas derivadas autorizadas.
-9. Comprueba de nuevo la lista de archivos y el SHA exacto de la cabecera.
-10. Fusiona mediante squash y elimina la rama sin depender del Auto-merge nativo de GitHub.
+5. El workflow comprueba procedencia, rama y archivos antes de descargarla.
+6. El importador incorpora las candidatas a `js/news-data.js` y las archiva.
+7. Las validaciones comprueban fuentes, estructura, fechas, categorías, énfasis, reversos, duplicados y alcance.
+8. El workflow actualiza las versiones de caché de portada y Noticias.
+9. Regenera las noticias relacionadas y las secciones derivadas de las fichas de juego.
+10. Guarda únicamente la importación, el archivo histórico y las salidas derivadas autorizadas.
+11. Comprueba de nuevo la lista de archivos y el SHA exacto de la cabecera.
+12. Fusiona mediante squash y elimina la rama sin depender del Auto-merge nativo de GitHub.
 
 Las ramas automáticas pueden añadir como máximo dos noticias recientes por PR. No pueden eliminar ni reescribir noticias existentes, cambiar la destacada, crear artículos, editar estilos o modificar scripts. Una actualización material de una noticia ya publicada requiere revisión humana.
 
 ## Archivos autorizados
 
-El bot modifica inicialmente solo:
+El bot añade inicialmente solo:
 
-- `js/news-data.js`.
+- `data/news-inbox/AAAA-MM-DD-slug.json`.
 
-El workflow puede derivar y guardar:
+El workflow puede transformar y guardar:
 
+- `js/news-data.js`,
+- `data/news-archive/AAAA/MM/AAAA-MM-DD-slug.json`,
 - `index.html`,
 - `noticias.html`,
 - `juegos.html`,
 - `juegos/*.html` cuando cambien las noticias relacionadas.
 
-Cualquier otro archivo bloquea la fusión automática.
+El JSON de entrada desaparece de la bandeja al quedar archivado. Cualquier otro archivo bloquea la fusión automática.
 
 ## Casos que deben bloquearse
 
@@ -85,7 +112,8 @@ No se publica y se solicita revisión cuando:
 - no puede distinguirse entre hecho, información periodística y rumor,
 - la novedad pretende reemplazar la destacada,
 - requiere actualizar una noticia existente,
-- necesita una página individual, un cambio de diseño o un script nuevo,
+- necesita una página individual o un cambio de diseño,
+- el JSON está mal formado, repite un identificador o no cumple el esquema,
 - el diff contiene archivos no autorizados,
 - GitHub no puede validar o fusionar el commit exacto con seguridad.
 

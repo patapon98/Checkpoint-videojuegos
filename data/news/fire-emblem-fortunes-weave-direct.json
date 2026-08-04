@@ -1,0 +1,61 @@
+{
+  "id": "fire-emblem-fortunes-weave-direct",
+  "emphasis": {
+    "es": [
+      "cuatro historias que pueden jugarse en paralelo",
+      "usar viajes temporales para cambiar el destino de sus protagonistas",
+      "amplía su estructura más allá de los combates tácticos tradicionales"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-04",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Fire Emblem"
+    },
+    "copy": {
+      "es": "Fire Emblem: Fortune's Weave detalla cuatro rutas, viajes temporales y preparación entre batallas"
+    }
+  },
+  "tone": "nintendo",
+  "title": {
+    "es": "Fire Emblem: Fortune's Weave detalla sus cuatro rutas, los viajes temporales y la preparación entre batallas"
+  },
+  "summary": {
+    "es": "Nintendo ha presentado cuatro historias que pueden jugarse en paralelo y permiten usar viajes temporales para cambiar el destino de sus protagonistas. El juego llegará el 17 de septiembre en exclusiva para Nintendo Switch 2."
+  },
+  "why": {
+    "es": "La exploración de Dagsion, el reclutamiento, los entrenamientos, las mazmorras y un sistema de clases más amplio confirman que Fortune's Weave amplía su estructura más allá de los combates tácticos tradicionales."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=_RaZiSBaJfU",
+    "label": {
+      "es": "Ver presentación"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo",
+      "type": {
+        "es": "Anuncio oficial y resumen de la presentación"
+      },
+      "url": "https://www.nintendo.com/us/whatsnew/fire-emblem-fortunes-weave-direct-threads-together-strategic-combat-with-a-story-of-gods-and-heroes-only-on-nintendo-switch-2/"
+    },
+    {
+      "label": "Nintendo Direct",
+      "type": {
+        "es": "Presentación oficial completa"
+      },
+      "url": "https://www.nintendo.com/us/nintendo-direct/8-4-2026/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La historia comienza cinco años después de los Juegos Heroicos, cuando el dios demonio Balor amenaza con destruir el Imperio de Dagda. El jugador puede volver al pasado y asumir el papel de Cai, Dietrich, Theodora o Leda. Cada elección abre una ruta distinta y el progreso de las cuatro se conserva por separado.",
+      "Entre enfrentamientos se puede recorrer la capital, mejorar armas, entrenar habilidades, superar exámenes para obtener nuevas clases, reclutar aliados y aceptar misiones con límite de tiempo. Fuera de la ciudad hay un mapa por el que avanza el tiempo, escaramuzas y mazmorras con combates por turnos diferentes a las batallas principales."
+    ]
+  }
+}

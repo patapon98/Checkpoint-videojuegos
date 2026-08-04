@@ -68,7 +68,7 @@ Antes de entregar o publicar un artículo de análisis:
 
 ### Noticias
 
-Comprueba la categoría, la fecha, las fuentes, el reverso ampliado, las insignias y el comportamiento en portada y en la página de Noticias. Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
+Cada noticia se guarda como un JSON independiente en `data/news/`. No edites `data/news-index.json` ni mantengas un archivo JavaScript paralelo. Comprueba la categoría, la fecha, la fuente oficial, el reverso ampliado, el ticker, las insignias y el comportamiento en portada, Noticias y las fichas relacionadas. Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
 
 ### Calendario
 

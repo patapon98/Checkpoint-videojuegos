@@ -2,6 +2,10 @@
   const body = document.body;
   const gameId = body.dataset.gameId;
   const dataUrl = `/data/game-hubs/${gameId}.json`;
+  const scriptUrl = new URL(document.currentScript?.src || location.href, location.href);
+  const newsUrl = new URL('/data/news-index.json', location.href);
+  const newsVersion = scriptUrl.searchParams.get('v');
+  if (newsVersion) newsUrl.searchParams.set('v', newsVersion);
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const formatDate = (value) => new Intl.DateTimeFormat('es-ES', {
@@ -19,12 +23,12 @@
     "'": '&#039;'
   }[char]));
 
-  function relatedNews(data = {}) {
+  function relatedNews(data = {}, allNews = []) {
     const terms = (Array.isArray(data.newsTerms) && data.newsTerms.length ? data.newsTerms : [data.title])
       .filter(Boolean)
       .map((term) => text(term).toLocaleLowerCase('es'));
 
-    return (window.FINALSECRETO_NEWS || []).filter((item) => {
+    return allNews.filter((item) => {
       const haystack = [
         item.id,
         item.title?.es,
@@ -588,13 +592,17 @@
 
   activateSectionNavigation();
 
-  fetch(dataUrl)
-    .then((response) => {
-      if (!response.ok) throw new Error('No se pudieron cargar los datos');
-      return response.json();
+  Promise.all([
+    fetch(dataUrl),
+    fetch(newsUrl, { credentials: 'same-origin' }).catch(() => null)
+  ])
+    .then(async ([gameResponse, newsResponse]) => {
+      if (!gameResponse.ok) throw new Error('No se pudieron cargar los datos del juego');
+      const allNews = newsResponse?.ok ? await newsResponse.json() : [];
+      return [await gameResponse.json(), allNews];
     })
-    .then((data) => {
-      const news = relatedNews(data);
+    .then(([data, allNews]) => {
+      const news = relatedNews(data, Array.isArray(allNews) ? allNews : []);
       document.querySelector('#gameStatus').textContent = data.status;
       document.querySelector('#gamePremise').textContent = data.premise;
       document.querySelector('#gameOverview').textContent = data.overview || '';

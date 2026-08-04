@@ -1,0 +1,55 @@
+{
+  "id": "xbox-retrocompatibilidad-pc",
+  "emphasis": {
+    "es": [
+      "sin comprar otra copia",
+      "trasladar su catálogo histórico a PC",
+      "mejorar su conservación"
+    ]
+  },
+  "category": {
+    "es": "Plataformas",
+    "en": "Platforms"
+  },
+  "date": "2026-07-22",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox estrena la retrocompatibilidad de sus clásicos en PC"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox lleva su retrocompatibilidad a PC con cuatro clásicos",
+    "en": "Xbox brings backward compatibility to PC with four classics"
+  },
+  "summary": {
+    "es": "Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy ya pueden jugarse en Windows 11. Las licencias digitales compradas en consola se trasladan a PC mediante Xbox Play Anywhere.",
+    "en": "Blinx, Conker: Live & Reloaded, Crimson Skies and Fuzion Frenzy are now playable on Windows 11. Digital console licenses carry over to PC through Xbox Play Anywhere."
+  },
+  "why": {
+    "es": "Es el inicio de un programa más amplio que puede abrir el catálogo histórico de Xbox al PC y mejorar su conservación.",
+    "en": "It starts a wider effort that could open Xbox's back catalogue to PC and improve preservation."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://news.xbox.com/en-us/2026/07/22/xbox-backward-compatibility-on-pc/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.theverge.com/news/969117/microsoft-xbox-games-pc-backward-compatibility"
+    }
+  ]
+}

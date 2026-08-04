@@ -1,0 +1,62 @@
+{
+  "id": "double-fine-despidos-independencia",
+  "emphasis": {
+    "es": [
+      "ha reducido su plantilla en 23 personas",
+      "tres semanas después de abandonar Xbox y volver a ser independiente",
+      "garantizar su supervivencia"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-07-28",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Double Fine"
+    },
+    "copy": {
+      "es": "Double Fine despide a 23 empleados tras recuperar su independencia de Xbox"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Double Fine despide a 23 empleados tras recuperar su independencia de Xbox"
+  },
+  "summary": {
+    "es": "El estudio de Psychonauts ha reducido su plantilla en 23 personas, tres semanas después de abandonar Xbox y volver a ser independiente. Tim Schafer explicó que la medida era necesaria para ajustar el tamaño de la empresa y garantizar su supervivencia."
+  },
+  "why": {
+    "es": "Los recortes muestran el coste inmediato de la transición acordada durante la reestructuración de Xbox. Double Fine conservó su propiedad intelectual y su catálogo, pero también recuperó la responsabilidad de financiar y sostener su actividad."
+  },
+  "sources": [
+    {
+      "label": "Double Fine",
+      "type": {
+        "es": "Comunicado oficial sobre su independencia"
+      },
+      "url": "https://www.doublefine.com/news/independence-day"
+    },
+    {
+      "label": "PC Gamer",
+      "type": {
+        "es": "Declaración de Tim Schafer y despidos"
+      },
+      "url": "https://www.pcgamer.com/gaming-industry/only-the-survival-of-our-studio-would-make-us-consider-such-a-painful-action-tim-schafer-announces-double-fine-layoffs-just-3-weeks-after-xbox-cut-it-loose/"
+    },
+    {
+      "label": "GamesRadar+",
+      "type": {
+        "es": "Contexto"
+      },
+      "url": "https://www.gamesradar.com/games/after-escaping-xbox-double-fine-lays-off-23-people-as-tim-schafer-says-only-the-survival-of-our-studio-would-ever-make-us-consider-such-a-painful-action/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Double Fine es el estudio responsable de Psychonauts. Recuperó su independencia después de que Microsoft acordara separarlo de Xbox durante la reestructuración anunciada en julio.",
+      "El estudio mantiene su nombre, su catálogo y su propiedad intelectual, pero vuelve a asumir directamente sus costes. Tim Schafer vinculó los 23 despidos con la necesidad de reducir la empresa a un tamaño sostenible y proteger su continuidad."
+    ]
+  }
+}

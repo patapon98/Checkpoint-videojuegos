@@ -1,0 +1,56 @@
+{
+  "id": "gta-vi-codigos-japon",
+  "emphasis": {
+    "es": [
+      "un código de descarga y no un disco",
+      "validez de 170 días",
+      "podría perder su utilidad"
+    ]
+  },
+  "category": {
+    "es": "Plataformas",
+    "en": "Platforms"
+  },
+  "date": "2026-07-25",
+  "featured": false,
+  "home": false,
+  "ticker": {
+    "keyword": {
+      "es": "GTA VI"
+    },
+    "copy": {
+      "es": "GTA VI para PS5 en Japón incluirá códigos que caducan 170 días después del lanzamiento"
+    }
+  },
+  "tone": "playstation",
+  "title": {
+    "es": "Los códigos japoneses de GTA VI para PS5 caducarán 170 días después del lanzamiento",
+    "en": "Japanese GTA VI PS5 codes will expire 170 days after launch"
+  },
+  "summary": {
+    "es": "Las cajas japonesas de GTA VI para PS5 incluirán un código de descarga, no un disco. Rockstar indica que esos códigos caducarán 170 días después de su emisión, fechada el 19 de noviembre de 2026.",
+    "en": "Japanese boxed copies of GTA VI for PS5 will contain a download code rather than a disc. Rockstar says those codes expire 170 days after issuance on November 19, 2026."
+  },
+  "why": {
+    "es": "Aunque es una restricción regional, muestra una de las limitaciones prácticas de sustituir el disco por un código dentro de una caja.",
+    "en": "Although this is a regional restriction, it demonstrates one practical limitation of replacing a disc with a code inside a box."
+  },
+  "sources": [
+    {
+      "label": "Rockstar Support",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+    },
+    {
+      "label": "VGC",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.videogameschronicle.com/news/gta-6-download-codes-expire-only-170-days-after-launch-in-japan/"
+    }
+  ]
+}

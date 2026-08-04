@@ -5,7 +5,7 @@ const ROOT = process.cwd();
 const HUBS_DIR = path.join(ROOT, "data", "game-hubs");
 const PAGES_DIR = path.join(ROOT, "juegos");
 const INDEX_PAGE = path.join(ROOT, "juegos.html");
-const NEWS_FILE = path.join(ROOT, "js", "news-data.js");
+const NEWS_FILE = path.join(ROOT, "data", "news-index.json");
 const SITEMAP_FILE = path.join(ROOT, "sitemap.xml");
 const IGNORED = new Set(["_template.json", "index.json"]);
 const SITE_URL = "https://finalsecreto.com";
@@ -41,10 +41,8 @@ function youtubeId(value = "") {
 }
 
 async function loadNews() {
-  const source = await readFile(NEWS_FILE, "utf8");
-  const shim = {};
-  new Function("window", source)(shim);
-  return Array.isArray(shim.FINALSECRETO_NEWS) ? shim.FINALSECRETO_NEWS : [];
+  const news = JSON.parse(await readFile(NEWS_FILE, "utf8"));
+  return Array.isArray(news) ? news : [];
 }
 
 function relatedNews(data, allNews) {
@@ -198,6 +196,14 @@ function factsMarkup(data) {
     ["Plataformas", (data.platforms || []).join(" · ")],
     ["Desarrolladora", data.developer]
   ].map(([label, value]) => `<div class="game-fact"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("");
+}
+
+function spotlightMarkup(data) {
+  const spotlight = data.spotlight;
+  const cards = spotlight.items.map((item) =>
+    `<article class="game-spotlight-card"><span>${escapeHtml(item.title)}</span><strong>${escapeHtml(item.value)}</strong><p>${escapeHtml(item.description)}</p></article>`
+  ).join("");
+  return `<div class="section-heading"><span class="game-kicker">${escapeHtml(spotlight.kicker)}</span><h2>${escapeHtml(spotlight.title)}</h2><p>${escapeHtml(spotlight.intro)}</p></div><div class="game-spotlight-grid">${cards}</div>`;
 }
 
 function quickFactsMarkup(data) {
@@ -439,6 +445,7 @@ function updateStaticHtml(html, data, news) {
   html = replaceElementInner(html, "gameOverview", escapeHtml(data.overview));
   html = replaceElementInner(html, "gameFacts", factsMarkup(data));
   html = replaceElementInner(html, "gameContext", escapeHtml(data.context));
+  html = replaceElementInner(html, "claves", spotlightMarkup(data));
   html = replaceElementInner(html, "confirmedList", listMarkup(data.confirmed));
   html = replaceElementInner(html, "pendingList", listMarkup(data.pending));
   html = replaceElementInner(html, "gameChangeList", changesMarkup(data));

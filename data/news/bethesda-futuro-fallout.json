@@ -1,0 +1,56 @@
+{
+  "id": "bethesda-futuro-fallout",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "remasterizaciones de Fallout 3 y Fallout: New Vegas",
+      "vuelta de Obsidian a la franquicia",
+      "sin título, fecha ni plataformas anunciadas"
+    ]
+  },
+  "category": {
+    "es": "Juegos",
+    "en": "Games"
+  },
+  "date": "2026-07-17",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Fallout"
+    },
+    "copy": {
+      "es": "Fallout confirma remasterizaciones de Fallout 3 y New Vegas y un nuevo proyecto de Obsidian"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Bethesda confirma dos remasterizaciones de Fallout y un nuevo proyecto de Obsidian",
+    "en": "Bethesda confirms two Fallout remasters and a new Obsidian project"
+  },
+  "summary": {
+    "es": "Bethesda trabaja en remasterizaciones de Fallout 3 y Fallout: New Vegas. Además, Obsidian desarrolla un nuevo proyecto de la saga y Fallout 5 ya está en preproducción, aunque ninguno tiene fecha.",
+    "en": "Bethesda is working on Fallout 3 and Fallout: New Vegas remasters. Obsidian is also developing a new project in the series, while Fallout 5 is now in pre-production, with no release dates announced."
+  },
+  "why": {
+    "es": "Es la hoja de ruta más concreta de Fallout en años y devuelve a Obsidian a la franquicia en la que creó New Vegas.",
+    "en": "It is Fallout's most concrete roadmap in years and brings Obsidian back to the franchise where it made New Vegas."
+  },
+  "sources": [
+    {
+      "label": "Bethesda Game Studios",
+      "type": {
+        "es": "Comunicado oficial",
+        "en": "Official statement"
+      },
+      "url": "https://bethesda.net/article/7wrffyXajE4BmCLJVpOkcN/a-note-from-bethesda-game-studios"
+    },
+    {
+      "label": "PC Gamer",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.pcgamer.com/games/fallout/bethesda-confirms-fallout-3-and-new-vegas-remasters-makes-obsidian-collaboration-official-and-says-fallout-5-is-in-pre-production/"
+    }
+  ]
+}

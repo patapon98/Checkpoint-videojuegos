@@ -1,0 +1,59 @@
+{
+  "id": "capcom-resultados-ventas-junio-2026",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "del 1 de abril al 30 de junio de 2026",
+      "21,26 millones correspondieron a juegos publicados antes de abril",
+      "PRAGMATA vendió 2,51 millones"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-07-28",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Capcom"
+    },
+    "copy": {
+      "es": "Capcom vendió 23,81 millones de juegos entre abril y junio y 21,26 millones eran títulos anteriores"
+    }
+  },
+  "article": {
+    "url": "/noticias/ventas-capcom-resultados-junio-2026"
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Capcom vendió 23,81 millones de juegos entre abril y junio, impulsada por títulos anteriores"
+  },
+  "summary": {
+    "es": "Durante su primer trimestre fiscal, del 1 de abril al 30 de junio de 2026, la editora elevó sus ingresos un 54,7% y su beneficio operativo un 66,9%. PRAGMATA vendió 2,51 millones, mientras que 21,26 millones correspondieron a juegos publicados antes del ejercicio actual."
+  },
+  "why": {
+    "es": "El informe muestra cómo Resident Evil, Monster Hunter y Devil May Cry sostienen el negocio de Capcom, pero exige distinguir las ventas del trimestre de los acumulados históricos."
+  },
+  "sources": [
+    {
+      "label": "Capcom",
+      "type": {
+        "es": "Resultados oficiales"
+      },
+      "url": "https://www.capcom.co.jp/ir/english/data/pdf/result/2026/1st/result_2026_1st_01.pdf"
+    },
+    {
+      "label": "Capcom",
+      "type": {
+        "es": "Presentación con ventas por juego"
+      },
+      "url": "https://www.capcom.co.jp/ir/english/data/pdf/explanation/2026/1st/explanation_2026_1st_01.pdf"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Las 23,81 millones de copias corresponden únicamente al periodo comprendido entre abril y junio de 2026. No deben confundirse con las ventas históricas acumuladas que Capcom también publica para cada saga.",
+      "PRAGMATA aportó 2,51 millones de unidades como principal novedad. Los otros 21,26 millones procedieron de juegos publicados antes del ejercicio actual, con Resident Evil, Monster Hunter y Devil May Cry sosteniendo gran parte del negocio."
+    ]
+  }
+}

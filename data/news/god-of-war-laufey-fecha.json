@@ -1,0 +1,81 @@
+{
+  "id": "god-of-war-laufey-fecha",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "en exclusiva a PS5 el 16 de febrero de 2027",
+      "recuperará a Kratos como protagonista",
+      "próximas dos entregas"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos",
+    "en": "Releases"
+  },
+  "date": "2026-07-25",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "God of War Laufey"
+    },
+    "copy": {
+      "es": "God of War Laufey llegará a PS5 el 16 de febrero de 2027"
+    }
+  },
+  "tone": "playstation",
+  "title": {
+    "es": "God of War Laufey llegará el 16 de febrero de 2027 y prepara el regreso de Kratos",
+    "en": "God of War Laufey arrives February 16, 2027 and sets up Kratos's return"
+  },
+  "summary": {
+    "es": "Sony ha fijado el lanzamiento de God of War Laufey para PS5. Cory Barlog también ha confirmado que el siguiente juego de la saga volverá a estar protagonizado por Kratos y conectará directamente con la historia de Faye.",
+    "en": "Sony has dated God of War Laufey for PS5. Cory Barlog also confirmed that the following game in the series will once again star Kratos and connect directly to Faye's story."
+  },
+  "why": {
+    "es": "No es solo la fecha de uno de los grandes exclusivos de 2027. Santa Monica Studio acaba de aclarar cómo se enlazarán las próximas dos entregas de God of War.",
+    "en": "This is more than a date for one of 2027's major exclusives. Santa Monica Studio has clarified how the next two God of War games will connect."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=HLMX2w3cwuE",
+    "label": {
+      "es": "Ver tráiler",
+      "en": "Watch trailer"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation",
+      "type": {
+        "es": "Anuncio oficial",
+        "en": "Official announcement"
+      },
+      "url": "https://x.com/PlayStation/status/2080831588317773861"
+    },
+    {
+      "label": "VGC",
+      "type": {
+        "es": "Información",
+        "en": "Reporting"
+      },
+      "url": "https://www.videogameschronicle.com/news/playstation-confirms-god-of-war-laufey-release-date-and-return-of-kratos-in-next-game/"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto",
+        "en": "Context"
+      },
+      "url": "https://www.gematsu.com/2026/07/god-of-war-laufey-launches-february-16-2027"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "God of War Laufey llegará en exclusiva a PS5 el 16 de febrero de 2027 y estará centrado en Faye, ampliando su historia antes de los acontecimientos vividos junto a Kratos y Atreus.",
+      "Cory Barlog también ha confirmado que la entrega posterior recuperará a Kratos como protagonista y conectará directamente con Laufey. El anuncio ordena la continuidad narrativa de los próximos dos juegos."
+    ],
+    "en": [
+      "God of War Laufey will launch exclusively on PS5 on February 16, 2027 and will focus on Faye, expanding her story before the events experienced alongside Kratos and Atreus.",
+      "Cory Barlog has also confirmed that the following instalment will bring Kratos back as protagonist and connect directly with Laufey. The announcement establishes the narrative order of the next two games."
+    ]
+  }
+}

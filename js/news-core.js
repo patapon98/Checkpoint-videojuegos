@@ -1,5 +1,12 @@
-(function () {
-  const news = Array.isArray(window.FINALSECRETO_NEWS) ? window.FINALSECRETO_NEWS : [];
+(async function () {
+  const scriptUrl = new URL(document.currentScript?.src || location.href, location.href);
+  const dataUrl = new URL("/data/news-index.json", location.href);
+  const version = scriptUrl.searchParams.get("v");
+  if (version) dataUrl.searchParams.set("v", version);
+  const response = await fetch(dataUrl, { credentials: "same-origin" });
+  if (!response.ok) throw new Error(`No se pudo cargar Noticias (${response.status}).`);
+  const news = await response.json();
+  if (!Array.isArray(news)) throw new Error("data/news-index.json no contiene un array.");
   const locale = { es: "es-ES", en: "en-GB" };
   const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
   let latestExpiryTimer = null;
@@ -587,4 +594,6 @@
 
   window.renderNews = renderNews;
   renderNews(document.documentElement.lang);
-})();
+})().catch((error) => {
+  console.error("No se pudo iniciar Noticias.", error);
+});

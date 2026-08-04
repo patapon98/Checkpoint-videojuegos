@@ -1,5 +1,4 @@
-// Fuente estructurada única para portada, Noticias y ticker.
-window.FINALSECRETO_NEWS = [
+[
   {
     "id": "ea-autorizacion-final-compra-2026",
     "important": true,
@@ -1204,4 +1203,4 @@ window.FINALSECRETO_NEWS = [
       }
     ]
   }
-];
+]

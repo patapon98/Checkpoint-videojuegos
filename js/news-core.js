@@ -3,10 +3,11 @@
   const dataUrl = new URL("/data/news-index.json", location.href);
   const version = scriptUrl.searchParams.get("v");
   if (version) dataUrl.searchParams.set("v", version);
-  const response = await fetch(dataUrl, { credentials: "same-origin" });
+  const response = await fetch(dataUrl, { credentials: "same-origin", cache: "no-cache" });
   if (!response.ok) throw new Error(`No se pudo cargar Noticias (${response.status}).`);
   const news = await response.json();
   if (!Array.isArray(news)) throw new Error("data/news-index.json no contiene un array.");
+  window.finalSecretoNews = news;
   const locale = { es: "es-ES", en: "en-GB" };
   const LATEST_WINDOW_MS = 24 * 60 * 60 * 1000;
   let latestExpiryTimer = null;
@@ -92,6 +93,12 @@
     return `<time class="news-relative-time" datetime="${escapeHTML(item.publishedAt || item.date)}" title="${escapeHTML(exact)}">${escapeHTML(label)}</time>`;
   }
 
+  function updatedLabel(item, lang) {
+    if (!item.updated) return "";
+    const label = lang === "en" ? "Updated" : "Actualizada";
+    return `<time class="news-updated" datetime="${escapeHTML(item.updated)}">${label} ${escapeHTML(formatDate(item.updated, lang))}</time>`;
+  }
+
   /* Solo las noticias con tráiler propio (anuncios, fechas, lanzamientos) lo incluyen. */
   function trailerLink(item, lang) {
     if (!item.trailer?.url) return "";
@@ -117,6 +124,36 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
       </a>`).join("");
     return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}</div>`;
+  }
+
+  function versionHistory(item, lang) {
+    const versions = Array.isArray(item.versionHistory) ? item.versionHistory : [];
+    if (!versions.length) return "";
+    const count = versions.length;
+    const countLabel = lang === "en"
+      ? `${count} previous version${count === 1 ? "" : "s"}`
+      : `${count} versión${count === 1 ? "" : "es"} anterior${count === 1 ? "" : "es"}`;
+
+    return `
+      <details class="news-version-history">
+        <summary>
+          <span>${lang === "en" ? "Version history" : "Historial de versiones"}</span>
+          <small>${countLabel}</small>
+        </summary>
+        <div class="news-version-list">
+          ${versions.map(version => `
+            <article class="news-version-entry">
+              <time datetime="${escapeHTML(version.date)}">${escapeHTML(formatDate(version.date, lang))}</time>
+              <h4>${escapeHTML(text(version.title, lang))}</h4>
+              <p>${escapeHTML(text(version.summary, lang))}</p>
+              <div class="news-version-context">
+                <b>${lang === "en" ? "Why it mattered" : "Por qué importaba"}</b>
+                <span>${escapeHTML(text(version.why, lang))}</span>
+              </div>
+              ${sourceLinks(version, lang, true)}
+            </article>`).join("")}
+        </div>
+      </details>`;
   }
 
   function latestExpiry(item) {
@@ -175,15 +212,18 @@
 
   function homeBack(item, lang, compact) {
     const paragraphs = item.homeDetails?.[lang] || [text(item.summary, lang), text(item.why, lang)];
+    const history = versionHistory(item, lang);
     return `
-      <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}" aria-hidden="true" inert>
+      <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}${history ? " has-history" : ""}" aria-hidden="true" inert>
         <div class="news-home-back-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
           ${importanceBadge(item, lang)}
           ${relativeDate(item, lang)}
+          ${updatedLabel(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <div class="news-home-expanded-copy">${paragraphs.map(paragraph => `<p>${emphasizedHTML(paragraph, item, lang)}</p>`).join("")}</div>
+        ${history}
         ${homeFlipButton(item, lang, true)}
       </section>`;
   }
@@ -200,9 +240,6 @@
   }
 
   function featuredCard(item, lang) {
-    const updated = item.updated
-      ? `<span>${lang === "en" ? "Updated" : "Actualizado"} ${formatDate(item.updated, lang)}</span>`
-      : "";
     const front = `
       <section class="news-home-flip-face news-home-flip-front news-lead news-tone-${escapeHTML(item.tone)}" aria-hidden="false">
         <div class="news-lead-signal" aria-hidden="true">
@@ -215,7 +252,7 @@
             ${latestBadge(item, lang)}
             ${importanceBadge(item, lang)}
             ${relativeDate(item, lang)}
-            ${updated}
+            ${updatedLabel(item, lang)}
           </div>
           <h3>${escapeHTML(text(item.title, lang))}</h3>
           <p>${emphasizedHTML(item.summary, item, lang)}</p>
@@ -238,6 +275,7 @@
           ${latestBadge(item, lang)}
           ${importanceBadge(item, lang)}
           ${relativeDate(item, lang)}
+          ${updatedLabel(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <p>${emphasizedHTML(item.summary, item, lang)}</p>
@@ -502,6 +540,7 @@
             <span class="news-card-date">
               ${published}
               ${relativeDate(item, lang)}
+              ${updatedLabel(item, lang)}
             </span>
           </div>
           <h2>${escapeHTML(text(item.title, lang))}</h2>
@@ -516,7 +555,9 @@
   }
 
   function newsTimestamp(item) {
-    const value = item.publishedAt || `${item.date}T12:00:00Z`;
+    const value = item.updated
+      ? `${item.updated}T12:00:00Z`
+      : item.publishedAt || `${item.date}T12:00:00Z`;
     const timestamp = Date.parse(value);
     return Number.isFinite(timestamp) ? timestamp : 0;
   }
@@ -594,6 +635,7 @@
 
   window.renderNews = renderNews;
   renderNews(document.documentElement.lang);
+  window.dispatchEvent(new CustomEvent("finalsecreto:news-ready", { detail: { news } }));
 })().catch((error) => {
   console.error("No se pudo iniciar Noticias.", error);
 });

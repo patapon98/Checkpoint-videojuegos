@@ -115,6 +115,16 @@
       </a>`;
   }
 
+  function articleLink(item, lang) {
+    if (!item.article?.url) return "";
+    const label = lang === "en" ? "Read full story" : "Leer noticia completa";
+    return `
+      <a class="news-article-link" href="${escapeHTML(item.article.url)}" data-news-article-link>
+        <span>${label}</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>`;
+  }
+
   function sourceLinks(item, lang, compact) {
     const label = lang === "en" ? "Sources:" : "Fuentes:";
     const links = item.sources.map(source => `
@@ -123,40 +133,7 @@
         <span>${escapeHTML(source.label)}</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
       </a>`).join("");
-    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}</div>`;
-  }
-
-  function versionHistory(item, lang) {
-    const versions = Array.isArray(item.versionHistory) ? item.versionHistory : [];
-    if (!versions.length) return "";
-    const count = versions.length;
-    const countLabel = lang === "en"
-      ? `${count} previous version${count === 1 ? "" : "s"}`
-      : `${count} versión${count === 1 ? "" : "es"} anterior${count === 1 ? "" : "es"}`;
-
-    return `
-      <details class="news-version-history">
-        <summary>
-          <span>${lang === "en" ? "Version history" : "Historial de versiones"}</span>
-          <small>${countLabel}</small>
-        </summary>
-        <div class="news-version-list">
-          ${versions.map(version => `
-            <article class="news-version-entry">
-              <time datetime="${escapeHTML(version.date)}">${escapeHTML(formatDate(version.date, lang))}</time>
-              <h4>${escapeHTML(text(version.title, lang))}</h4>
-              <p>${escapeHTML(text(version.summary, lang))}</p>
-              <div class="news-version-context">
-                <b>${lang === "en" ? "Why it mattered" : "Por qué importaba"}</b>
-                <span>${escapeHTML(text(version.why, lang))}</span>
-              </div>
-              <div class="news-version-details">
-                ${(version.homeDetails?.[lang] || []).map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("")}
-              </div>
-              ${sourceLinks(version, lang, true)}
-            </article>`).join("")}
-        </div>
-      </details>`;
+    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}${articleLink(item, lang)}</div>`;
   }
 
   function latestExpiry(item) {
@@ -215,9 +192,8 @@
 
   function homeBack(item, lang, compact) {
     const paragraphs = item.homeDetails?.[lang] || [text(item.summary, lang), text(item.why, lang)];
-    const history = versionHistory(item, lang);
     return `
-      <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}${history ? " has-history" : ""}" aria-hidden="true" inert>
+      <section class="news-home-flip-face news-home-flip-back${compact ? " compact" : ""}" aria-hidden="true" inert>
         <div class="news-home-back-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
           ${importanceBadge(item, lang)}
@@ -226,8 +202,10 @@
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <div class="news-home-expanded-copy">${paragraphs.map(paragraph => `<p>${emphasizedHTML(paragraph, item, lang)}</p>`).join("")}</div>
-        ${history}
-        ${homeFlipButton(item, lang, true)}
+        <div class="news-home-back-actions">
+          ${articleLink(item, lang)}
+          ${homeFlipButton(item, lang, true)}
+        </div>
       </section>`;
   }
 

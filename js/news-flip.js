@@ -44,54 +44,6 @@
         : '';
     }
 
-    function formatDate(value){
-      return new Intl.DateTimeFormat('es-ES',{
-        day:'numeric',
-        month:'short',
-        year:'numeric',
-        timeZone:'UTC'
-      }).format(new Date(value+'T12:00:00Z'));
-    }
-
-    function versionSources(version){
-      const links=(version.sources||[]).map(source=>`
-        <a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer"
-           aria-label="${escapeHTML(source.type?.es||'Fuente')}. ${escapeHTML(source.label)}">
-          <span>${escapeHTML(source.label)}</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
-        </a>`).join('');
-      return `<div class="news-sources compact"><b>Fuentes:</b>${links}</div>`;
-    }
-
-    function versionHistory(item){
-      const versions=Array.isArray(item.versionHistory)?item.versionHistory:[];
-      if(!versions.length) return '';
-      const count=versions.length;
-      return `
-        <details class="news-version-history">
-          <summary>
-            <span>Historial de versiones</span>
-            <small>${count} versión${count===1?'':'es'} anterior${count===1?'':'es'}</small>
-          </summary>
-          <div class="news-version-list">
-            ${versions.map(version=>`
-              <article class="news-version-entry">
-                <time datetime="${escapeHTML(version.date)}">Versión del ${escapeHTML(formatDate(version.date))}</time>
-                <h3>${escapeHTML(version.title?.es||'')}</h3>
-                <p>${escapeHTML(version.summary?.es||'')}</p>
-                <div class="news-version-context">
-                  <b>Por qué importaba</b>
-                  <span>${escapeHTML(version.why?.es||'')}</span>
-                </div>
-                <div class="news-version-details">
-                  ${(version.homeDetails?.es||[]).map(paragraph=>`<p>${escapeHTML(paragraph)}</p>`).join('')}
-                </div>
-                ${versionSources(version)}
-              </article>`).join('')}
-          </div>
-        </details>`;
-    }
-
     const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const revealObserver=!reducedMotion&&'IntersectionObserver' in window
       ? new IntersectionObserver(entries=>{
@@ -168,8 +120,7 @@
             ${importanceBadge(item)}
             <span class="news-back-date news-card-date">${date?.innerHTML||''}</span>
           </div>
-          <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${emphasizedHTML(text,item)}</p>`).join('')}</div>
-          ${versionHistory(item)}`;
+          <div class="news-expanded-copy">${paragraphs.map(text=>`<p>${emphasizedHTML(text,item)}</p>`).join('')}</div>`;
 
         const footer=document.createElement('div');
         footer.className='news-back-footer';

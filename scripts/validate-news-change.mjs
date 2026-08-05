@@ -44,6 +44,7 @@ function validateCurrent(item, filename, { isAddition = false } = {}) {
   }
   if (isAddition && item.featured !== false) errors.push(`${item.id}: featured debe ser false`);
   if (isAddition && item.article?.url) errors.push(`${item.id}: una rama automática no puede crear artículos individuales`);
+  if (item.versionHistory !== undefined) errors.push(`${item.id}: versionHistory ya no forma parte del esquema`);
   if (!(item.sources || []).some((source) => officialPattern.test(source.type?.es || ""))) {
     errors.push(`${item.id}: falta una fuente primaria u oficial inequívoca`);
   }
@@ -74,8 +75,8 @@ function validateCurrent(item, filename, { isAddition = false } = {}) {
 for (const filename of additions) {
   const item = JSON.parse(await readFile(filename, "utf8"));
   validateCurrent(item, filename, { isAddition: true });
-  if (item.updated !== undefined || item.versionHistory !== undefined) {
-    errors.push(`${item.id}: una noticia nueva no puede empezar con updated ni versionHistory`);
+  if (item.updated !== undefined) {
+    errors.push(`${item.id}: una noticia nueva no puede empezar con updated`);
   }
 }
 
@@ -83,7 +84,7 @@ const structuralFields = [
   "id", "date", "publishedAt", "category", "tone", "featured",
   "important", "home", "article", "trailer"
 ];
-const snapshotFields = ["title", "summary", "why", "homeDetails", "sources"];
+const editableFields = ["title", "summary", "why", "homeDetails", "sources", "emphasis", "ticker"];
 
 for (const filename of updates) {
   const item = JSON.parse(await readFile(filename, "utf8"));
@@ -101,25 +102,7 @@ for (const filename of updates) {
     errors.push(`${item.id}: updated debe avanzar respecto a la versión publicada`);
   }
 
-  const previousHistory = Array.isArray(previous.versionHistory) ? previous.versionHistory : [];
-  const currentHistory = Array.isArray(item.versionHistory) ? item.versionHistory : [];
-  if (currentHistory.length !== previousHistory.length + 1) {
-    errors.push(`${item.id}: versionHistory debe añadir exactamente una instantánea`);
-  } else {
-    if (!isDeepStrictEqual(currentHistory.slice(0, -1), previousHistory)) {
-      errors.push(`${item.id}: no se puede modificar el historial ya publicado`);
-    }
-    const expectedSnapshot = Object.fromEntries([
-      ["date", previousEffectiveDate],
-      ...snapshotFields.map((field) => [field, previous[field]])
-    ]);
-    if (!isDeepStrictEqual(currentHistory.at(-1), expectedSnapshot)) {
-      errors.push(`${item.id}: la nueva instantánea no coincide exactamente con la versión sustituida`);
-    }
-  }
-
-  const visibleFields = [...snapshotFields, "emphasis", "ticker"];
-  if (visibleFields.every((field) => isDeepStrictEqual(item[field], previous[field]))) {
+  if (editableFields.every((field) => isDeepStrictEqual(item[field], previous[field]))) {
     errors.push(`${item.id}: la actualización no modifica ningún contenido editorial visible`);
   }
 }

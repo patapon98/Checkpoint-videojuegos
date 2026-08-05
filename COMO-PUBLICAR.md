@@ -68,7 +68,7 @@ Antes de entregar o publicar un artículo de análisis:
 
 ### Noticias
 
-Cada noticia se guarda como un JSON independiente en `data/news/`. No edites `data/news-index.json` ni mantengas un archivo JavaScript paralelo. Comprueba la categoría, la fecha, la fuente oficial, el reverso ampliado, el ticker, las insignias y el comportamiento en portada, Noticias y las fichas relacionadas. Cuando una noticia cambie de estado, actualiza su mismo JSON, conserva su identificador y añade `updated` y una instantánea exacta en `versionHistory`; comprueba el historial desplegable en ambas superficies. Las tarjetas nuevas y actualizadas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
+Cada noticia se guarda como un JSON independiente en `data/news/`. No edites `data/news-index.json` ni mantengas un archivo JavaScript paralelo. Comprueba la categoría, la fecha, la fuente oficial, el reverso ampliado, el ticker, las insignias y el comportamiento en portada, Noticias y las fichas relacionadas. Cuando una noticia cambie de estado, actualiza su mismo JSON, conserva su identificador y fecha original, y añade `updated`. La tarjeta mostrará que fue actualizada sin conservar un historial de versiones. Las tarjetas nuevas y actualizadas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
 
 ### Calendario
 

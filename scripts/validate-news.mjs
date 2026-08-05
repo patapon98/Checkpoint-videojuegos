@@ -114,47 +114,7 @@ for (const [index, item] of (news || []).entries()) {
     itemSourceUrls.add(source.url);
   }
 
-  const versions = item?.versionHistory;
-  if (versions !== undefined) {
-    expect(Boolean(item?.updated), `${prefix}: versionHistory requiere updated`);
-    expect(Array.isArray(versions) && versions.length >= 1,
-      `${prefix}: versionHistory debe contener al menos una versión`);
-  }
-  if (Array.isArray(versions)) {
-    let previousVersionDate = "";
-    for (const [versionIndex, version] of versions.entries()) {
-      const versionPrefix = `${prefix}, versión ${versionIndex + 1}`;
-      expect(isDate(version?.date), `${versionPrefix}: fecha inválida`);
-      expect(version.date >= item.date, `${versionPrefix}: la fecha precede a la publicación`);
-      expect(!item.updated || version.date < item.updated, `${versionPrefix}: la fecha no precede a updated`);
-      expect(!previousVersionDate || version.date > previousVersionDate,
-        `${versionPrefix}: el historial no está en orden cronológico`);
-      previousVersionDate = version.date;
-
-      for (const field of ["title", "summary", "why"]) {
-        expect(typeof version?.[field]?.es === "string" && version[field].es.trim().length >= 20,
-          `${versionPrefix}: falta ${field}.es`);
-      }
-      const versionDetails = version?.homeDetails?.es;
-      expect(Array.isArray(versionDetails) && versionDetails.length === 2,
-        `${versionPrefix}: homeDetails.es debe contener dos párrafos`);
-      for (const paragraph of versionDetails || []) {
-        expect(typeof paragraph === "string" && paragraph.trim().length >= 90,
-          `${versionPrefix}: párrafo de homeDetails demasiado breve`);
-      }
-
-      expect(Array.isArray(version?.sources) && version.sources.length >= 1,
-        `${versionPrefix}: faltan fuentes`);
-      const versionSourceUrls = new Set();
-      for (const source of version?.sources || []) {
-        expect(typeof source.label === "string" && source.label.trim(), `${versionPrefix}: fuente sin etiqueta`);
-        expect(typeof source.type?.es === "string" && source.type.es.trim(), `${versionPrefix}: fuente sin tipo`);
-        expect(/^https:\/\//.test(source.url || ""), `${versionPrefix}: la fuente no usa HTTPS`);
-        expect(!versionSourceUrls.has(source.url), `${versionPrefix}: URL de fuente duplicada`);
-        versionSourceUrls.add(source.url);
-      }
-    }
-  }
+  expect(item?.versionHistory === undefined, `${prefix}: versionHistory ya no forma parte del esquema`);
 
   expect(typeof item.featured === "boolean", `${prefix}: featured debe ser booleano`);
   if (item.featured) featuredCount += 1;
@@ -167,6 +127,8 @@ expect(!coreSource.includes("FINALSECRETO_NEWS"), "news-core.js todavía depende
 expect(coreSource.includes("/data/news-index.json"), "news-core.js no carga el índice JSON");
 expect(coreSource.includes("finalsecreto:news-ready"), "news-core.js no anuncia que los datos están listos");
 expect(!loaderSource.includes("FINALSECRETO_NEWS"), "news.js todavía inyecta noticias");
+expect(coreSource.includes("data-news-article-link"), "news-core.js no genera Leer noticia completa desde article.url");
+expect(coreSource.includes("news-home-back-actions"), "news-core.js no muestra Leer noticia completa en el reverso de portada");
 for (const [name, source] of [["news-flip.js", flipSource], ["news-grid.js", gridSource], ["news-article-links.js", articleLinksSource]]) {
   expect(!source.includes("FINALSECRETO_NEWS"), `${name} todavía depende de la variable global antigua`);
   expect(source.includes("finalsecreto:news-ready"), `${name} no espera la carga asíncrona de Noticias`);

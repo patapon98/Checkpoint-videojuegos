@@ -34,11 +34,14 @@ const sourceNews = await Promise.all(sourceFiles.map(async (filename) => ({
 const gamePages = (await readdir("juegos"))
   .filter((file) => file.endsWith(".html"))
   .map((file) => `juegos/${file}`);
-const [dataSource, coreSource, loaderSource, gameHubSource, indexHtml, newsHtml, ...gameHtml] = await Promise.all([
+const [dataSource, coreSource, loaderSource, gameHubSource, flipSource, gridSource, articleLinksSource, indexHtml, newsHtml, ...gameHtml] = await Promise.all([
   readFile("data/news-index.json", "utf8"),
   readFile("js/news-core.js", "utf8"),
   readFile("js/news.js", "utf8"),
   readFile("js/game-hub.js", "utf8"),
+  readFile("js/news-flip.js", "utf8"),
+  readFile("js/news-grid.js", "utf8"),
+  readFile("js/news-article-links.js", "utf8"),
   readFile("index.html", "utf8"),
   readFile("noticias.html", "utf8"),
   ...gamePages.map((page) => readFile(page, "utf8"))
@@ -67,6 +70,10 @@ for (const [index, item] of (news || []).entries()) {
 
   expect(allowedCategories.has(item?.category?.es), `${prefix}: categoría inválida`);
   expect(isDate(item?.date), `${prefix}: fecha inválida`);
+  if (item?.updated !== undefined) {
+    expect(isDate(item.updated), `${prefix}: updated inválido`);
+    expect(item.updated > item.date, `${prefix}: updated debe ser posterior a date`);
+  }
   if (item?.publishedAt) {
     expect(!Number.isNaN(Date.parse(item.publishedAt)), `${prefix}: publishedAt inválido`);
     expect(item.publishedAt.startsWith(item.date), `${prefix}: publishedAt no coincide con date`);
@@ -107,6 +114,8 @@ for (const [index, item] of (news || []).entries()) {
     itemSourceUrls.add(source.url);
   }
 
+  expect(item?.versionHistory === undefined, `${prefix}: versionHistory ya no forma parte del esquema`);
+
   expect(typeof item.featured === "boolean", `${prefix}: featured debe ser booleano`);
   if (item.featured) featuredCount += 1;
   if (item.important !== undefined) expect(typeof item.important === "boolean", `${prefix}: important debe ser booleano`);
@@ -116,7 +125,14 @@ for (const [index, item] of (news || []).entries()) {
 expect(featuredCount <= 1, "Solo puede existir una noticia featured");
 expect(!coreSource.includes("FINALSECRETO_NEWS"), "news-core.js todavía depende de la variable global antigua");
 expect(coreSource.includes("/data/news-index.json"), "news-core.js no carga el índice JSON");
+expect(coreSource.includes("finalsecreto:news-ready"), "news-core.js no anuncia que los datos están listos");
 expect(!loaderSource.includes("FINALSECRETO_NEWS"), "news.js todavía inyecta noticias");
+expect(coreSource.includes("data-news-article-link"), "news-core.js no genera Leer noticia completa desde article.url");
+expect(coreSource.includes("news-home-back-actions"), "news-core.js no muestra Leer noticia completa en el reverso de portada");
+for (const [name, source] of [["news-flip.js", flipSource], ["news-grid.js", gridSource], ["news-article-links.js", articleLinksSource]]) {
+  expect(!source.includes("FINALSECRETO_NEWS"), `${name} todavía depende de la variable global antigua`);
+  expect(source.includes("finalsecreto:news-ready"), `${name} no espera la carga asíncrona de Noticias`);
+}
 expect(gameHubSource.includes("/data/news-index.json"), "game-hub.js no carga el índice JSON");
 expect(!gameHubSource.includes("FINALSECRETO_NEWS"), "game-hub.js todavía depende de la variable global antigua");
 
@@ -138,4 +154,3 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(`Noticias válidas: ${news.length} fuentes individuales y un índice sincronizado.`);
-

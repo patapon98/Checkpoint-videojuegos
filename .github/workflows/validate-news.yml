@@ -13,7 +13,12 @@ on:
       - 'scripts/validate-news-change.mjs'
       - 'js/news-core.js'
       - 'js/news.js'
+      - 'js/news-flip.js'
+      - 'js/news-grid.js'
+      - 'js/news-article-links.js'
       - 'js/game-hub.js'
+      - 'css/news.css'
+      - 'css/news-grid.css'
       - 'index.html'
       - 'noticias.html'
       - 'juegos/*.html'
@@ -30,7 +35,12 @@ on:
       - 'scripts/validate-news.mjs'
       - 'js/news-core.js'
       - 'js/news.js'
+      - 'js/news-flip.js'
+      - 'js/news-grid.js'
+      - 'js/news-article-links.js'
       - 'js/game-hub.js'
+      - 'css/news.css'
+      - 'css/news-grid.css'
       - '.github/workflows/validate-news.yml'
 
 permissions:
@@ -70,6 +80,10 @@ jobs:
           node --check scripts/validate-game-hubs.mjs
           node --check scripts/validate-game-hub-pc-requirements.mjs
           node --check scripts/validate-game-hub-editions.mjs
+          node --check js/news-core.js
+          node --check js/news-flip.js
+          node --check js/news-grid.js
+          node --check js/news-article-links.js
 
       - name: Limitar las entregas automáticas
         env:
@@ -120,6 +134,10 @@ jobs:
           node --check scripts/render-game-hub-editions.mjs
           node --check scripts/validate-game-hub-pc-requirements.mjs
           node --check scripts/validate-game-hub-editions.mjs
+          node --check js/news-core.js
+          node --check js/news-flip.js
+          node --check js/news-grid.js
+          node --check js/news-article-links.js
 
       - name: Generar el índice y las superficies de Noticias
         run: |

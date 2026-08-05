@@ -1,10 +1,14 @@
 (function(){
+  let started=false;
+
+  function start(news){
+  if(started) return;
+  started=true;
   const archive=document.getElementById('newsArchive');
   const filters=document.getElementById('newsFilters');
   const toggle=document.getElementById('newsViewToggle');
   const results=document.getElementById('newsResults');
   const tools=document.querySelector('.news-tools');
-  const news=Array.isArray(window.FINALSECRETO_NEWS)?window.FINALSECRETO_NEWS:[];
   if(!archive||!filters||!toggle) return;
 
   const desktopPageSize=10;
@@ -500,4 +504,10 @@
   observer.observe(archive,{childList:true,subtree:false});
   apply({syncHash:true});
   settleHashTarget();
+  }
+
+  if(Array.isArray(window.finalSecretoNews)) start(window.finalSecretoNews);
+  else window.addEventListener('finalsecreto:news-ready',event=>{
+    start(Array.isArray(event.detail?.news)?event.detail.news:[]);
+  },{once:true});
 })();

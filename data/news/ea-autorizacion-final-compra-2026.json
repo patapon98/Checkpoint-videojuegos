@@ -3,54 +3,55 @@
   "important": true,
   "emphasis": {
     "es": [
-      "ha recibido todas las autorizaciones regulatorias necesarias",
-      "prevé cerrar la operación el 4 de agosto de 2026",
-      "Electronic Arts dejará de cotizar y pasará a ser una compañía privada"
+      "se completó el 4 de agosto de 2026",
+      "210 dólares en efectivo por acción",
+      "ha dejado de cotizar en Nasdaq"
     ]
   },
   "category": {
     "es": "Industria"
   },
   "date": "2026-07-31",
+  "updated": "2026-08-04",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "Electronic Arts"
     },
     "copy": {
-      "es": "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+      "es": "Electronic Arts completa su venta por 55.000 millones de dólares y deja de cotizar"
     }
   },
   "tone": "industry",
   "title": {
-    "es": "Electronic Arts recibe la autorización final para completar su compra por 55.000 millones de dólares"
+    "es": "Electronic Arts completa su venta por 55.000 millones de dólares y deja de cotizar"
   },
   "summary": {
-    "es": "Electronic Arts comunicó que ha recibido todas las autorizaciones regulatorias necesarias y prevé cerrar la operación el 4 de agosto de 2026. La compra por PIF, Silver Lake y Affinity Partners está valorada en unos 55.000 millones de dólares."
+    "es": "Electronic Arts confirmó que su adquisición por PIF, Silver Lake y Affinity Partners se completó el 4 de agosto de 2026. Los accionistas recibirán 210 dólares en efectivo por acción y la compañía ha dejado de cotizar en Nasdaq."
   },
   "why": {
-    "es": "Electronic Arts dejará de cotizar y pasará a ser una compañía privada controlada por el consorcio comprador. El cambio de propiedad afecta a una de las mayores editoras del sector, responsable de EA Sports FC, Battlefield, Apex Legends y Los Sims."
+    "es": "EA pasa a ser una empresa privada controlada por el consorcio comprador. El cambio de propiedad concentra bajo capital privado una de las mayores editoras del sector, responsable de EA Sports FC, Battlefield, Apex Legends y Los Sims."
   },
   "sources": [
     {
       "label": "Electronic Arts",
       "type": {
-        "es": "Anuncio oficial de la operación"
+        "es": "Confirmación oficial del cierre"
       },
-      "url": "https://www.ea.com/news/ea-announces-agreement-to-be-acquired?isLocalized=true"
+      "url": "https://www.ea.com/news/ea-announces-completion-of-acquisition"
     },
     {
-      "label": "Reuters",
+      "label": "Electronic Arts",
       "type": {
-        "es": "Autorización final y fecha prevista de cierre"
+        "es": "Anuncio original y valoración de la compra"
       },
-      "url": "https://www.reuters.com/legal/transactional/saudi-pifs-55-billion-ea-deal-gets-eu-approval-under-subsidy-rules-2026-07-31/"
+      "url": "https://www.ea.com/news/ea-announces-agreement-to-be-acquired?isLocalized=true"
     }
   ],
   "homeDetails": {
     "es": [
-      "El consorcio está formado por el fondo soberano saudí PIF, la firma de inversión Silver Lake y Affinity Partners. Los accionistas recibirán 210 dólares por acción en una de las mayores compras financiadas de una empresa de videojuegos.",
-      "La autorización bajo el Reglamento europeo sobre subvenciones extranjeras era el último gran obstáculo regulatorio. Una vez completada la operación, EA dejará el mercado bursátil y el consorcio asumirá el control de franquicias como EA Sports FC, Battlefield, Apex Legends y Los Sims."
+      "El consorcio está formado por el fondo soberano saudí PIF, la firma de inversión Silver Lake y Affinity Partners. La operación, anunciada originalmente el 29 de septiembre de 2025 y aprobada por los accionistas el 22 de diciembre, está valorada en unos 55.000 millones de dólares.",
+      "Andrew Wilson figura en el comunicado de cierre como presidente y consejero delegado de Electronic Arts. La compañía inicia esta etapa como empresa privada, mientras sus acciones dejan de negociarse y serán excluidas del Nasdaq."
     ]
   }
 }

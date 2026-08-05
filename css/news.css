@@ -21,6 +21,8 @@
 .news-lead-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(30px,5vw,58px)}
 .news-meta{display:flex;align-items:center;flex-wrap:wrap;gap:9px 14px;color:var(--ink-soft);font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
 .news-category{color:var(--accent);font-weight:800}
+.news-updated{display:inline-flex;align-items:center;width:max-content;padding:4px 8px;border:1px solid color-mix(in srgb,#2563eb 32%,var(--line));border-radius:999px;background:color-mix(in srgb,#2563eb 9%,var(--card));color:#1d4ed8;font-size:.64rem;font-weight:800;line-height:1;letter-spacing:.045em;text-transform:uppercase;white-space:nowrap}
+html[data-theme="dark"] .news-updated{border-color:rgba(96,165,250,.38);background:rgba(59,130,246,.13);color:#93c5fd}
 .news-latest{display:inline-flex;align-items:center;gap:7px;width:max-content;padding:4px 9px;border:1px solid rgba(220,38,38,.3);border-radius:99px;background:rgba(220,38,38,.1);color:#d92323;font-size:.64rem;font-weight:850;letter-spacing:.08em;line-height:1}
 .news-latest i{width:7px;height:7px;border-radius:50%;background:#e32121;box-shadow:0 0 0 0 rgba(227,33,33,.55);animation:news-pulse 2.2s ease-out infinite}
 @keyframes news-pulse{0%{box-shadow:0 0 0 0 rgba(227,33,33,.55)}70%,100%{box-shadow:0 0 0 7px rgba(227,33,33,0)}}
@@ -92,6 +94,9 @@ html[data-theme="dark"] .news-sources .news-trailer:hover{color:#fff;border-colo
 .news-home-flip-button svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .news-home-flip-back .news-home-flip-button{margin-top:auto;padding-top:7px}
 .news-home-flip-brief .news-home-flip-button{margin-top:13px}
+.news-home-back-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;width:100%;margin-top:auto;padding-top:18px}
+.news-home-back-actions .news-article-link{margin-right:auto}
+.news-home-back-actions .news-home-flip-button{margin-top:0}
 
 /* Página de actualidad */
 .news-page .article-hero{padding-bottom:42px}
@@ -122,7 +127,7 @@ html[data-theme="dark"] .news-sources .news-trailer:hover{color:#fff;border-colo
 .news-back-heading{max-width:850px}
 .news-expanded-copy{display:grid;gap:15px;max-width:860px;margin-top:6px;color:var(--ink-soft);font-size:.98rem;line-height:1.72}
 .news-expanded-copy p{margin:0}
-.news-back-footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:auto;padding-top:24px}
+.news-back-footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;width:100%;margin-top:auto;padding-top:24px}
 .news-back-footer .news-sources{margin-top:0}
 .news-back-footer .news-flip-button{flex:none;margin-top:0}
 
@@ -155,6 +160,7 @@ html[data-theme="dark"] .news-brief:hover{box-shadow:0 18px 38px -25px rgba(0,0,
   .news-home-actions .btn{width:100%;text-align:center}
   .news-flip-face{padding:22px 19px}
   .news-expanded-copy{font-size:.92rem;line-height:1.62}
+  .news-home-back-actions{align-items:flex-end;flex-wrap:wrap}
 }
 
 @media(prefers-reduced-motion:reduce){
@@ -232,7 +238,7 @@ html[data-theme="dark"] .news-important{color:#ffb84d;background:rgba(255,159,28
 
 
 /* Artículo individual: acción blanca; el rojo queda reservado al tráiler. */
-.news-sources .news-article-link{
+.news-article-link{
   display:inline-flex;
   align-items:center;
   gap:7px;
@@ -249,18 +255,18 @@ html[data-theme="dark"] .news-important{color:#ffb84d;background:rgba(255,159,28
   box-shadow:0 5px 14px -11px rgba(0,0,0,.7);
   transition:transform .2s,border-color .2s,box-shadow .2s;
 }
-.news-sources .news-article-link:hover{
+.news-article-link:hover{
   color:#17151c;
   border-color:color-mix(in srgb,var(--ink) 42%,var(--line));
   background:#fff;
   transform:translateY(-1px);
   box-shadow:0 8px 18px -12px rgba(0,0,0,.8);
 }
-.news-sources .news-article-link:focus-visible{
+.news-article-link:focus-visible{
   outline:2px solid var(--accent);
   outline-offset:2px;
 }
-.news-sources .news-article-link svg{
+.news-article-link svg{
   width:15px;
   height:15px;
   fill:none;

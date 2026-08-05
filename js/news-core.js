@@ -150,6 +150,9 @@
                 <b>${lang === "en" ? "Why it mattered" : "Por qué importaba"}</b>
                 <span>${escapeHTML(text(version.why, lang))}</span>
               </div>
+              <div class="news-version-details">
+                ${(version.homeDetails?.[lang] || []).map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("")}
+              </div>
               ${sourceLinks(version, lang, true)}
             </article>`).join("")}
         </div>

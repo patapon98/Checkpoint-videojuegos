@@ -709,9 +709,7 @@
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false,
-        "provider": "rawg",
-        "query": "Lies of P: Complete Edition"
+        "legacy": false
       },
       "store": {
         "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/Lies-of-P-Complete-Edition-3109443.html",
@@ -881,9 +879,7 @@
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false,
-        "provider": "rawg",
-        "query": "Hell Let Loose: Vietnam"
+        "legacy": false
       },
       "store": {
         "url": "https://www.hellletloose.com/game/hll-vietnam",

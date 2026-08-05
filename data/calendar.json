@@ -695,6 +695,51 @@
       "trailer": "https://www.youtube.com/watch?v=jJlwK8ODXM4"
     },
     {
+      "id": "lies-of-p-complete-edition-switch-2",
+      "title": "Lies of P: Complete Edition",
+      "headingHtml": "Lies of P: Complete Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-08-05",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://images.ctfassets.net/pkeegl0voupm/37znq0ZPQoTraZ28J98w1v/e6f0fc722540c4403f4c5fbd0f309da8/lopce_bnr.jpg",
+        "alt": "Lies of P: Complete Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "provider": "rawg",
+        "query": "Lies of P: Complete Edition"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/Lies-of-P-Complete-Edition-3109443.html",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Lies of P: Complete Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/Lies-of-P-Complete-Edition-3109443.html",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-08-05",
+        "evidence": {
+          "title": "Lies of P: Complete Edition",
+          "releaseDate": "2026-08-05",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "marvel-tokon-fighting-souls",
       "title": "Marvel Tōkon: Fighting Souls",
       "headingHtml": "Marvel Tōkon: Fighting Souls <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/22521-buy-marvel-tokon-fighting-souls-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Marvel Tōkon: Fighting Souls en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
@@ -818,6 +863,58 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=hPV20ncmotY"
+    },
+    {
+      "id": "hell-let-loose-vietnam",
+      "title": "Hell Let Loose: Vietnam",
+      "headingHtml": "Hell Let Loose: Vietnam",
+      "date": "2026-08-13",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://26630753.fs1.hubspotusercontent-eu1.net/hubfs/26630753/Def%20Brief%20website%20HLLV.png",
+        "alt": "Hell Let Loose: Vietnam",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "provider": "rawg",
+        "query": "Hell Let Loose: Vietnam"
+      },
+      "store": {
+        "url": "https://www.hellletloose.com/game/hll-vietnam",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Hell Let Loose: Vietnam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://www.hellletloose.com/blog/hell-let-loose-vietnam-release-date-update",
+        "official": true,
+        "host": "www.hellletloose.com",
+        "checkedAt": "2026-08-05",
+        "evidence": {
+          "title": "Hell Let Loose: Vietnam",
+          "releaseDate": "2026-08-13",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
     },
     {
       "id": "mafia-the-old-country",

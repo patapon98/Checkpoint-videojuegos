@@ -116,6 +116,9 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - El ticker debe mostrar automáticamente y en orden las cuatro noticias más recientes; nunca se mantiene mediante una selección manual de identificadores.
 - Las noticias con página individual deben declarar `article.url`. Ese dato alimenta tanto el botón blanco «Leer noticia completa» como el archivo cronológico situado al final de Noticias.
 - Toda tarjeta de portada asociada a una noticia con `article.url` debe mostrar «Leer noticia completa» en el anverso y el reverso. El enlace debe derivarse de los datos compartidos, nunca de una lista manual de identificadores.
+- Una actualización material de una noticia debe conservar la `date` original, declarar la fecha más reciente en `updated` y archivar la versión sustituida dentro de `versionHistory`. Cada instantánea debe guardar título, resumen, relevancia, ampliación y fuentes suficientes para reconstruir lo que leyó el público.
+- Las noticias con `versionHistory` deben mostrar una señal discreta de «Actualizada» en el anverso y un historial desplegable en el reverso. La misma estructura debe funcionar en portada y Noticias mediante el renderizador compartido.
+- `updated` puede devolver una noticia a las posiciones recientes y al ticker cuando el cambio sea material. No reactiva «Última hora», que continúa dependiendo exclusivamente de `important` y `publishedAt`.
 - El rojo queda reservado para la acción «Ver tráiler»; «Leer noticia completa» debe usar el tratamiento blanco.
 - «ESENCIAL» debe conservar el mismo diseño en la portada y en Noticias.
 
@@ -140,7 +143,8 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 
 - Centralizar los datos y comportamientos reutilizables.
 - La fuente de verdad de Noticias es `data/news/`, con un JSON independiente por noticia. `data/news-index.json` se genera automáticamente y los clientes lo cargan con `fetch()`. No crear ni editar `js/news-data.js`.
-- Una entrega automática de Noticias solo puede añadir uno o dos JSON nuevos en `data/news/`. El workflow único valida la PR y, después del push a `main`, genera el índice, la caché, la portada, Noticias y las relaciones con fichas. No usar bandejas, importadores, movimientos, reintentos programados, `workflow_dispatch`, comprobaciones de SHA ni auto-merge.
+- El reverso, los enlaces a artículos, el historial de versiones y los metadatos de las tarjetas deben generarse desde `js/news-core.js`. No recuperar variables globales de datos ni scripts que mantengan copias editoriales por identificador.
+- Una entrega automática de Noticias puede añadir uno o dos JSON nuevos o actualizar exactamente uno existente en `data/news/`, sin mezclar ambos modos. Toda actualización debe conservar los campos estructurales, avanzar `updated` y añadir a `versionHistory` una instantánea íntegra de la versión sustituida. El workflow único valida la PR y, después del push a `main`, genera el índice, la caché, la portada, Noticias y las relaciones con fichas. No usar bandejas, importadores, movimientos, reintentos programados, `workflow_dispatch`, comprobaciones de SHA ni auto-merge.
 - No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.
 - No duplicar manualmente reglas que puedan derivarse de los datos, las categorías o las clases comunes.
 - El sitemap se genera con `scripts/generate-sitemap.mjs`. Al publicar una reseña, la automatización de GitHub debe incorporar su URL canónica y actualizar `lastmod`; no mantener a mano una lista paralela de reseñas.

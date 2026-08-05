@@ -70,6 +70,8 @@ Antes de entregar o publicar un artículo de análisis:
 
 Cada noticia se guarda como un JSON independiente en `data/news/`. No edites `data/news-index.json` ni mantengas un archivo JavaScript paralelo. Comprueba la categoría, la fecha, la fuente oficial, el reverso ampliado, el ticker, las insignias y el comportamiento en portada, Noticias y las fichas relacionadas. Las tarjetas nuevas deben heredar las reglas generales sin ajustes ligados a identificadores concretos.
 
+Para actualizar una noticia ya publicada, conserva su `id`, su archivo y su `date`. Antes de sustituir el texto, copia en `versionHistory` el título, el resumen, la relevancia, los dos párrafos de `homeDetails` y las fuentes de la versión anterior. Añade o cambia `updated`, actualiza los datos vigentes y comprueba que «Actualizada» y el historial desplegable aparecen tanto en portada como en Noticias. Una actualización material puede recuperar posición reciente y volver al ticker, pero no recibe «Última hora» sin un `publishedAt` nuevo.
+
 ### Calendario
 
 Toda actualización debe seguir [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md). La checklist cubre el calendario completo, la portada, las fechas, plataformas, imágenes, enlaces, tráileres, filtros, vistas, animaciones, móvil, caché y validación final.

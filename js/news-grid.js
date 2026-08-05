@@ -4,7 +4,6 @@
   const toggle=document.getElementById('newsViewToggle');
   const results=document.getElementById('newsResults');
   const tools=document.querySelector('.news-tools');
-  const news=Array.isArray(window.FINALSECRETO_NEWS)?window.FINALSECRETO_NEWS:[];
   if(!archive||!filters||!toggle) return;
 
   const desktopPageSize=10;
@@ -69,13 +68,11 @@
 
   function prepareCards(){
     archive.querySelectorAll('.news-archive-card').forEach(card=>{
-      const item=news.find(entry=>entry.id===card.id);
-      if(!item) return;
-      const category=item.category?.es||'';
+      const category=card.dataset.category||'';
       card.dataset.category=category;
       card.classList.remove('news-category-games','news-category-platforms','news-category-industry','news-category-releases','news-featured');
       card.classList.add(`news-category-${categoryClass(category)}`);
-      if(item.featured) card.classList.add('news-featured');
+      if(card.dataset.featured==='true') card.classList.add('news-featured');
     });
   }
 

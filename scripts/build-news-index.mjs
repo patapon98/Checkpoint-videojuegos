@@ -6,7 +6,9 @@ const INDEX_PATH = "data/news-index.json";
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function timestamp(item) {
-  const value = Date.parse(item.publishedAt || `${item.date}T12:00:00Z`);
+  const value = Date.parse(item.updated
+    ? `${item.updated}T12:00:00Z`
+    : item.publishedAt || `${item.date}T12:00:00Z`);
   return Number.isFinite(value) ? value : 0;
 }
 
@@ -62,4 +64,3 @@ try {
 }
 if (output !== current) await writeFile(INDEX_PATH, output, "utf8");
 console.log(`Índice de Noticias generado con ${entries.length} entradas.`);
-

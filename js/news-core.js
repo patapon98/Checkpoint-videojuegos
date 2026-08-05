@@ -113,10 +113,56 @@
     const links = item.sources.map(source => `
       <a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer"
          aria-label="${escapeHTML(text(source.type, lang))}. ${escapeHTML(source.label)}">
-        <span>${escapeHTML(source.label)}</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
-      </a>`).join("");
-    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}</div>`;
+         <span>${escapeHTML(source.label)}</span>
+         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg>
+       </a>`).join("");
+    return `<div class="news-sources${compact ? " compact" : ""}"><b>${label}</b>${links}${trailerLink(item, lang)}${articleLink(item, lang)}</div>`;
+  }
+
+  function articleLink(item, lang) {
+    if (!item.article?.url) return "";
+    const label = lang === "en" ? "Read full story" : "Leer noticia completa";
+    return `
+      <a class="news-article-link" href="${escapeHTML(item.article.url)}">
+        <span>${label}</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>`;
+  }
+
+  function updatedLabel(item, lang) {
+    if (!item.updated) return "";
+    const label = lang === "en" ? "Updated" : "Actualizada";
+    return `<time class="news-updated" datetime="${escapeHTML(item.updated)}">${label} ${escapeHTML(formatDate(item.updated, lang))}</time>`;
+  }
+
+  function versionHistory(item, lang) {
+    const versions = Array.isArray(item.versionHistory) ? item.versionHistory : [];
+    if (!versions.length) return "";
+    const count = versions.length;
+    const countLabel = lang === "en"
+      ? `${count} previous version${count === 1 ? "" : "s"}`
+      : `${count} versión${count === 1 ? "" : "es"} anterior${count === 1 ? "" : "es"}`;
+    const heading = lang === "en" ? "Version history" : "Historial de versiones";
+    const contextLabel = lang === "en" ? "Why it mattered" : "Por qué importaba";
+
+    return `
+      <details class="news-version-history">
+        <summary><span>${heading}</span><small>${countLabel}</small></summary>
+        <div class="news-version-list">
+          ${versions.map(version => {
+            const paragraphs = version.homeDetails?.[lang] || [text(version.summary, lang), text(version.why, lang)];
+            return `
+              <article class="news-version-entry">
+                <time datetime="${escapeHTML(version.date)}">${escapeHTML(formatDate(version.date, lang))}</time>
+                <h4>${escapeHTML(text(version.title, lang))}</h4>
+                <p>${escapeHTML(text(version.summary, lang))}</p>
+                <div class="news-version-context"><b>${contextLabel}</b><span>${escapeHTML(text(version.why, lang))}</span></div>
+                <div class="news-version-details">${paragraphs.map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("")}</div>
+                ${sourceLinks(version, lang, true)}
+              </article>`;
+          }).join("")}
+        </div>
+      </details>`;
   }
 
   function latestExpiry(item) {
@@ -181,9 +227,11 @@
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
           ${importanceBadge(item, lang)}
           ${relativeDate(item, lang)}
+          ${updatedLabel(item, lang)}
         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <div class="news-home-expanded-copy">${paragraphs.map(paragraph => `<p>${emphasizedHTML(paragraph, item, lang)}</p>`).join("")}</div>
+        ${versionHistory(item, lang)}
         ${homeFlipButton(item, lang, true)}
       </section>`;
   }
@@ -200,9 +248,6 @@
   }
 
   function featuredCard(item, lang) {
-    const updated = item.updated
-      ? `<span>${lang === "en" ? "Updated" : "Actualizado"} ${formatDate(item.updated, lang)}</span>`
-      : "";
     const front = `
       <section class="news-home-flip-face news-home-flip-front news-lead news-tone-${escapeHTML(item.tone)}" aria-hidden="false">
         <div class="news-lead-signal" aria-hidden="true">
@@ -212,10 +257,10 @@
         <div class="news-lead-copy">
           <div class="news-meta">
             <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
-            ${latestBadge(item, lang)}
-            ${importanceBadge(item, lang)}
-            ${relativeDate(item, lang)}
-            ${updated}
+             ${latestBadge(item, lang)}
+             ${importanceBadge(item, lang)}
+             ${relativeDate(item, lang)}
+             ${updatedLabel(item, lang)}
           </div>
           <h3>${escapeHTML(text(item.title, lang))}</h3>
           <p>${emphasizedHTML(item.summary, item, lang)}</p>
@@ -235,10 +280,11 @@
       <section class="news-home-flip-face news-home-flip-front news-brief" aria-hidden="false">
         <div class="news-meta">
           <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
-          ${latestBadge(item, lang)}
-          ${importanceBadge(item, lang)}
-          ${relativeDate(item, lang)}
-        </div>
+           ${latestBadge(item, lang)}
+           ${importanceBadge(item, lang)}
+           ${relativeDate(item, lang)}
+           ${updatedLabel(item, lang)}
+         </div>
         <h3>${escapeHTML(text(item.title, lang))}</h3>
         <p>${emphasizedHTML(item.summary, item, lang)}</p>
         <div class="news-brief-why">
@@ -488,35 +534,123 @@
     });
   }
 
+  function archiveFlipButton(item, lang, back) {
+    const title = text(item.title, lang);
+    const label = back
+      ? (lang === "en" ? "Back to summary" : "Volver al resumen")
+      : (lang === "en" ? "Read more" : "Ampliar noticia");
+    const aria = back
+      ? (lang === "en" ? `Return to the summary of ${title}` : `Volver al resumen de ${title}`)
+      : (lang === "en" ? `Show more information about ${title}` : `Mostrar más información sobre ${title}`);
+    return `
+      <button class="news-flip-button" type="button" data-archive-flip aria-expanded="${back ? "true" : "false"}"
+              aria-label="${escapeHTML(aria)}">
+        <span>${label}</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v6h6"/></svg>
+      </button>`;
+  }
+
+  function setArchiveFlip(card, flipped, moveFocus) {
+    const front = card.querySelector(".news-flip-front");
+    const back = card.querySelector(".news-flip-back");
+    card.classList.toggle("is-flipped", flipped);
+    front?.setAttribute("aria-hidden", String(flipped));
+    back?.setAttribute("aria-hidden", String(!flipped));
+    if (front) front.inert = flipped;
+    if (back) back.inert = !flipped;
+    front?.querySelector("[data-archive-flip]")?.setAttribute("aria-expanded", String(flipped));
+    back?.querySelector("[data-archive-flip]")?.setAttribute("aria-expanded", String(flipped));
+    if (moveFocus) {
+      card.querySelector(flipped ? ".news-flip-back [data-archive-flip]" : ".news-flip-front [data-archive-flip]")
+        ?.focus({ preventScroll: true });
+    }
+  }
+
+  function bindArchiveFlips(archive) {
+    if (archive.dataset.flipBound === "true") return;
+    archive.dataset.flipBound = "true";
+    archive.addEventListener("click", event => {
+      const button = event.target.closest("[data-archive-flip]");
+      const card = button?.closest(".news-archive-card");
+      if (!card) return;
+      setArchiveFlip(card, !card.classList.contains("is-flipped"), true);
+    });
+    archive.addEventListener("keydown", event => {
+      if (event.key !== "Escape") return;
+      const card = event.target.closest(".news-archive-card.is-flipped");
+      if (!card) return;
+      setArchiveFlip(card, false, true);
+    });
+  }
+
   function archiveCard(item, lang) {
     const published = `<time class="news-published-date" datetime="${escapeHTML(item.date)}">${escapeHTML(formatDate(item.date, lang))}</time>`;
     const archiveBadges = `${latestBadge(item, lang)}${importanceBadge(item, lang)}`;
+    const paragraphs = item.homeDetails?.[lang] || [text(item.summary, lang), text(item.why, lang)];
+    const featuredClass = item.featured ? " news-featured" : "";
     return `
-      <article class="news-archive-card reveal" id="${escapeHTML(item.id)}">
-        <div class="news-archive-date${archiveBadges ? " has-badges" : ""}">
-          ${archiveBadges}
-        </div>
-        <div class="news-archive-body">
-          <div class="news-card-heading">
-            <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
-            <span class="news-card-date">
-              ${published}
-              ${relativeDate(item, lang)}
-            </span>
-          </div>
-          <h2>${escapeHTML(text(item.title, lang))}</h2>
-          <p>${emphasizedHTML(item.summary, item, lang)}</p>
-          <div class="news-why">
-            <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
-            <span>${emphasizedHTML(item.why, item, lang)}</span>
-          </div>
-          ${sourceLinks(item, lang, false)}
+      <article class="news-archive-card reveal news-category-${categoryKey(item)}${featuredClass}" id="${escapeHTML(item.id)}"
+               data-category="${escapeHTML(item.category?.es || "")}" data-featured="${String(Boolean(item.featured))}">
+        <div class="news-flip-inner">
+          <section class="news-flip-face news-flip-front" aria-hidden="false" aria-label="${lang === "en" ? "Story summary" : "Resumen de la noticia"}">
+            <div class="news-archive-date${archiveBadges ? " has-badges" : ""}">
+              ${archiveBadges}
+            </div>
+            <div class="news-archive-body">
+              <div class="news-card-heading">
+                <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+                <span class="news-card-date">
+                  ${published}
+                  ${relativeDate(item, lang)}
+                  ${updatedLabel(item, lang)}
+                </span>
+              </div>
+              <h2>${escapeHTML(text(item.title, lang))}</h2>
+              <p>${emphasizedHTML(item.summary, item, lang)}</p>
+              <div class="news-why">
+                <b>${lang === "en" ? "Why it matters" : "Por qué importa"}</b>
+                <span>${emphasizedHTML(item.why, item, lang)}</span>
+              </div>
+              ${sourceLinks(item, lang, false)}
+              ${archiveFlipButton(item, lang, false)}
+            </div>
+          </section>
+          <section class="news-flip-face news-flip-back" aria-hidden="true" inert>
+            <div class="news-back-meta">
+              <span class="news-category">${escapeHTML(text(item.category, lang))}</span>
+              ${importanceBadge(item, lang)}
+              <span class="news-card-date">${published}${updatedLabel(item, lang)}</span>
+            </div>
+            <div class="news-expanded-copy">${paragraphs.map(paragraph => `<p>${emphasizedHTML(paragraph, item, lang)}</p>`).join("")}</div>
+            ${versionHistory(item, lang)}
+            ${archiveFlipButton(item, lang, true)}
+          </section>
         </div>
       </article>`;
   }
 
+  function renderArticleArchive(lang) {
+    const list = document.getElementById("newsArticleArchiveList");
+    if (!list) return;
+    const articles = news
+      .filter(item => item.article?.url)
+      .sort((a, b) => newsTimestamp(b) - newsTimestamp(a));
+
+    list.innerHTML = articles.map(item => `
+      <a class="news-article-archive-item" href="${escapeHTML(item.article.url)}">
+        <span class="news-article-archive-meta">${escapeHTML(text(item.category, lang))} · ${escapeHTML(formatDate(item.date, lang))}</span>
+        <strong>${escapeHTML(text(item.title, lang))}</strong>
+        <span class="news-article-archive-cta">${lang === "en" ? "Read full story" : "Leer noticia completa"} <span aria-hidden="true">→</span></span>
+      </a>`).join("");
+
+    const section = list.closest(".news-article-archive");
+    if (section) section.hidden = articles.length === 0;
+  }
+
   function newsTimestamp(item) {
-    const value = item.publishedAt || `${item.date}T12:00:00Z`;
+    const value = item.updated
+      ? `${item.updated}T12:00:00Z`
+      : item.publishedAt || `${item.date}T12:00:00Z`;
     const timestamp = Date.parse(value);
     return Number.isFinite(timestamp) ? timestamp : 0;
   }
@@ -537,7 +671,7 @@
     const featured = news.find(item => item.featured) || news[0];
     const rest = news
       .filter(item => item !== featured && item.home !== false)
-      .sort((a, b) => b.date.localeCompare(a.date));
+      .sort((a, b) => newsTimestamp(b) - newsTimestamp(a));
 
     const home = document.getElementById("newsHome");
     if (home && featured) {
@@ -569,12 +703,14 @@
 
     const archive = document.getElementById("newsArchive");
     if (archive) {
+      bindArchiveFlips(archive);
       const ordered = [...news].sort((a, b) => {
         if (a.featured !== b.featured) return a.featured ? -1 : 1;
-        return b.date.localeCompare(a.date);
+        return newsTimestamp(b) - newsTimestamp(a);
       });
       archive.innerHTML = ordered.map(item => archiveCard(item, selectedLang)).join("");
     }
+    renderArticleArchive(selectedLang);
 
     const ticker = document.getElementById("ticker");
     if (ticker) {

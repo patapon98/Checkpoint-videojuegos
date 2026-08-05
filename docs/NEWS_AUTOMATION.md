@@ -33,9 +33,11 @@ Cada archivo contiene directamente el objeto completo de la noticia. Debe inclui
 
 `important: true` se reserva para prioridad alta. Junto con `publishedAt`, activa «Última hora» durante 24 horas. Una rama automática nunca puede cambiar la noticia `featured`.
 
+Cuando una novedad sustituya materialmente el estado descrito por una noticia ya publicada, se actualiza ese mismo JSON en lugar de crear un duplicado. Debe conservar `id`, `date`, categoría, prioridad y cualquier `article.url`, declarar la fecha nueva en `updated` y añadir a `versionHistory` una instantánea exacta de la versión sustituida con título, resumen, relevancia, `homeDetails` y fuentes. El historial anterior nunca se reescribe.
+
 ## Criterio editorial
 
-Se publican únicamente novedades nuevas, verificadas y de relevancia amplia:
+Se publican únicamente novedades nuevas o actualizaciones materiales, verificadas y de relevancia amplia:
 
 - grandes decisiones estratégicas o empresariales,
 - adquisiciones, cierres, despidos o reestructuraciones importantes,
@@ -52,23 +54,23 @@ La automatización diaria de ChatGPT se limita a:
 
 1. consultar el `main` más reciente, el historial y las PR abiertas `bot/news-*`,
 2. crear una rama `bot/news-AAAA-MM-DD-HHMM-slug`,
-3. añadir uno o dos JSON nuevos exclusivamente en `data/news/`,
+3. añadir uno o dos JSON nuevos o actualizar exactamente uno ya existente, siempre dentro de `data/news/`,
 4. abrir una PR contra `main`.
 
 El único workflow de Noticias, `.github/workflows/validate-news.yml`, actúa en dos momentos:
 
-- En la PR valida que una rama automática solo añada uno o dos JSON, comprueba duplicados, recencia, fuente oficial, estructura editorial y genera todas las salidas en el entorno de comprobación.
+- En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno, comprueba duplicados, recencia, fuente oficial, estructura editorial e integridad del historial, y genera todas las salidas en el entorno de comprobación.
 - Tras el `push` a `main` genera `data/news-index.json`, actualiza la caché de portada y Noticias, renderiza las noticias relacionadas, ejecuta todas las validaciones y hace un commit únicamente si cambió algún archivo generado.
 
 No hay bandeja de entrada, archivo histórico separado, importador, movimientos de archivos, reintentos programados, ejecución manual, comprobaciones de SHA ni fusión automática.
 
 ## Archivos autorizados
 
-La automatización externa añade inicialmente solo:
+La automatización externa modifica inicialmente solo:
 
 - `data/news/slug-de-la-noticia.json`.
 
-Una PR automática puede contener una o dos altas. No puede eliminar ni reescribir noticias existentes, cambiar la destacada, crear artículos, editar estilos, modificar scripts ni incorporar salidas generadas.
+Una PR automática puede contener una o dos altas, o una actualización material de una noticia existente. No puede mezclar ambos modos, eliminar noticias, cambiar la destacada, alterar campos estructurales de una noticia actualizada, crear artículos, editar estilos, modificar scripts ni incorporar salidas generadas.
 
 El workflow puede guardar después del merge:
 
@@ -87,10 +89,9 @@ No se publica y se solicita revisión cuando:
 - falta una fuente primaria u oficial inequívoca,
 - no puede distinguirse entre hecho, información periodística y rumor,
 - la novedad pretende reemplazar la destacada,
-- requiere actualizar una noticia existente,
+- una actualización no puede preservar íntegramente la versión anterior o contradice su historial,
 - necesita una página individual o un cambio de diseño,
 - el JSON está mal formado, repite un identificador o no cumple el esquema,
 - una PR automática contiene más de dos noticias o cualquier otro archivo.
 
 Si no hay novedades suficientemente importantes, no se modifica el repositorio ni se notifica.
-

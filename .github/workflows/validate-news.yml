@@ -13,7 +13,10 @@ on:
       - 'scripts/validate-news-change.mjs'
       - 'js/news-core.js'
       - 'js/news.js'
+      - 'js/news-grid.js'
       - 'js/game-hub.js'
+      - 'css/news.css'
+      - 'css/news-grid.css'
       - 'index.html'
       - 'noticias.html'
       - 'juegos/*.html'
@@ -30,7 +33,10 @@ on:
       - 'scripts/validate-news.mjs'
       - 'js/news-core.js'
       - 'js/news.js'
+      - 'js/news-grid.js'
       - 'js/game-hub.js'
+      - 'css/news.css'
+      - 'css/news-grid.css'
       - '.github/workflows/validate-news.yml'
 
 permissions:

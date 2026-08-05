@@ -11,17 +11,20 @@ const versionSources = await Promise.all([
   "js/game-hub.js"
 ].map((file) => readFile(file, "utf8")));
 const version = createHash("sha256").update(versionSources.join("\n")).digest("hex").slice(0, 12);
+const newsStylesheet = await readFile("css/news.css", "utf8");
+const newsStylesheetVersion = createHash("sha256").update(newsStylesheet).digest("hex").slice(0, 12);
 
-function updateScriptVersion(html, scriptPath) {
-  const escaped = scriptPath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function updateResourceVersion(html, resourcePath, resourceVersion) {
+  const escaped = resourcePath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`(${escaped})(?:\\?v=[^"'\\s>]+)?`, "g");
-  if (!pattern.test(html)) throw new Error(`No se encontró ${scriptPath}`);
-  return html.replace(pattern, `$1?v=${version}`);
+  if (!pattern.test(html)) throw new Error(`No se encontró ${resourcePath}`);
+  return html.replace(pattern, `$1?v=${resourceVersion}`);
 }
 
 for (const page of NEWS_PAGES) {
   const original = await readFile(page, "utf8");
-  const output = updateScriptVersion(original, "js/news.js");
+  let output = updateResourceVersion(original, "js/news.js", version);
+  output = updateResourceVersion(output, "css/news.css", newsStylesheetVersion);
   if (output !== original) await writeFile(page, output);
 }
 
@@ -30,8 +33,9 @@ const gamePages = (await readdir("juegos"))
   .map((file) => `juegos/${file}`);
 for (const page of gamePages) {
   const original = await readFile(page, "utf8");
-  const output = updateScriptVersion(original, "/js/game-hub.js");
+  const output = updateResourceVersion(original, "/js/game-hub.js", version);
   if (output !== original) await writeFile(page, output);
 }
 
 console.log(`Versión de Noticias: ${version}`);
+console.log(`Versión de estilos de Noticias: ${newsStylesheetVersion}`);

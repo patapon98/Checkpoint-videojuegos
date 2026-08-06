@@ -1,0 +1,49 @@
+{
+  "id": "peak-parche-1-65-a",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "reduce los problemas de objetos que desaparecían",
+      "mejora la ayuda entre jugadores",
+      "de 21 a 42 los mapas incluidos"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-07-23",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "PEAK"
+    },
+    "copy": {
+      "es": "PEAK mejora la estabilidad y amplía de 21 a 42 los mapas incluidos"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "PEAK corrige sus principales fallos y amplía de 21 a 42 los mapas incluidos"
+  },
+  "summary": {
+    "es": "La versión 1.65.a de PEAK reduce los problemas de objetos que desaparecían al sacarlos junto a una pared, mejora la ayuda entre jugadores y eleva de 21 a 42 los mapas incluidos en la compilación."
+  },
+  "why": {
+    "es": "La actualización no añade todavía el último bioma, pero refuerza la estabilidad del cooperativo y amplía la variedad disponible mientras Aggro Crab y Landfall continúan trabajando en ese contenido final."
+  },
+  "sources": [
+    {
+      "label": "PEAK en Steam",
+      "type": {
+        "es": "Notas oficiales de la versión 1.65.a"
+      },
+      "url": "https://steamcommunity.com/app/3527290/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Entre las correcciones principales, el parche evita la mayoría de los casos en los que un objeto podía atravesar una pared y desaparecer. También reduce los fallos de Helping Hand, impide que un golpe contra la pared agote rápidamente la resistencia y corrige problemas del chat de voz y de las reconexiones.",
+      "La versión optimiza numerosos modelos, especialmente en Roots, recupera los ríos de lava que no aparecían en The Kiln y mejora la aleatoriedad de los mapas. La compilación pasa de 21 a 42 mapas, mientras el equipo mantiene en desarrollo el último bioma de PEAK."
+    ]
+  }
+}

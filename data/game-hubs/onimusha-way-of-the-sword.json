@@ -15,7 +15,7 @@
   "genre": "Acción y combates con espada",
   "officialUrl": "https://www.capcom-games.com/onimusha/ws/",
   "storeUrl": "https://store.playstation.com/es-es/product/UP0102-PPSA27836_00-0000000000000001",
-  "trailerUrl": "https://www.youtube.com/watch?v=LNq35HHUtNc",
+  "trailerUrl": "https://www.youtube.com/watch?v=Nx2jzXMFzdo",
   "heroImage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/90eada3290f1fd9e93073d1c2ff01e8fcae18aff/library_hero_2x.jpg",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
@@ -30,6 +30,7 @@
     {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/609dd99944f8928f8a8bd35bb08a6695f7e1fdca/ss_609dd99944f8928f8a8bd35bb08a6695f7e1fdca.1920x1080.jpg","alt":"Templo Kiyomizu-dera recreado en Onimusha: Way of the Sword"}
   ],
   "media": [
+    {"type":"youtube","videoId":"Nx2jzXMFzdo","title":"Nuevo tráiler de Onimusha: Way of the Sword","label":"Nuevo tráiler","publishedAt":"2026-08-07"},
     {"type":"youtube","videoId":"LNq35HHUtNc","title":"Tráiler de historia y fecha de Onimusha: Way of the Sword","label":"Historia y lanzamiento","publishedAt":"2026-06-02"},
     {"type":"youtube","videoId":"dAcB-foyNv0","title":"Vídeo oficial de la demo de Onimusha: Way of the Sword","label":"Demo","publishedAt":"2026-06-02"},
     {"type":"youtube","videoId":"W9Ct29FeMak","title":"Primer tráiler de protagonista de Onimusha: Way of the Sword","label":"Miyamoto Musashi","publishedAt":"2025-02-12"}
@@ -59,6 +60,7 @@
     {"label":"Web oficial de Onimusha","url":"https://www.capcom-games.com/onimusha/ws/","type":"Historia, personajes y ediciones"},
     {"label":"Guía de acción oficial","url":"https://www.capcom-games.com/onimusha/ws/es/action","type":"Sistemas de combate"},
     {"label":"Página oficial de la demo","url":"https://www.capcom-games.com/onimusha/ws/es/demo","type":"Contenido y recompensa de la demo"},
+    {"label":"Capcom en YouTube","url":"https://youtu.be/Nx2jzXMFzdo","type":"Nuevo tráiler oficial"},
     {"label":"GAME Watch","url":"https://game.watch.impress.co.jp/docs/interview/2050681.html","type":"Duración estimada de la campaña y contenido secundario"},
     {"label":"Wccftech","url":"https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/","type":"Estimación de unas 20 horas para la primera partida"},
     {"label":"Steam","url":"https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","type":"Precios, requisitos e imágenes oficiales"},
@@ -74,7 +76,7 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
-    {"date":"2026-08-07","title":"Duración aproximada de la aventura","description":"Capcom estima unas 20 horas para una primera partida y alrededor de 20–30 horas al completar misiones secundarias y contenido adicional.","sourceUrls":["https://game.watch.impress.co.jp/docs/interview/2050681.html","https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/"]},
+    {"date":"2026-08-07","title":"Nuevo tráiler y duración aproximada de la aventura","description":"Se añade el nuevo tráiler oficial y la estimación de Capcom: unas 20 horas para una primera partida y alrededor de 20–30 horas con misiones secundarias y contenido adicional.","sourceUrls":["https://youtu.be/Nx2jzXMFzdo","https://game.watch.impress.co.jp/docs/interview/2050681.html","https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/"]},
     {"date":"2026-08-03","title":"Requisitos de PC y ediciones trasladados a secciones propias","description":"La ficha compara las tres ediciones y separa los requisitos mínimos y recomendados del bloque general de información confirmada.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB/0010"]},
     {"date":"2026-07-30","title":"Ficha ampliada con demo, combate y galería oficial","description":"Se aclaró que es una entrega independiente, se añadieron sistemas de combate, ediciones, precios y requisitos, y se sustituyó la galería por ocho capturas oficiales en alta resolución."}
   ],

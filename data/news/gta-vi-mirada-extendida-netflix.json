@@ -1,0 +1,57 @@
+{
+  "id": "gta-vi-mirada-extendida-netflix",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "se estrenará el 27 de agosto de 2026",
+      "Netflix la ofrecerá primero a las 21:00 en España",
+      "después llegará a YouTube y la web de Rockstar"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-06",
+  "publishedAt": "2026-08-06T12:20:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "GTA VI"
+    },
+    "copy": {
+      "es": "Rockstar mostrará una mirada extendida de GTA VI el 27 de agosto, primero en Netflix"
+    }
+  },
+  "tone": "rockstar",
+  "title": {
+    "es": "GTA VI tendrá una presentación extendida el 27 de agosto y se verá primero en Netflix"
+  },
+  "summary": {
+    "es": "Rockstar Games ha anunciado Grand Theft Auto VI: Una mirada extendida para el 27 de agosto de 2026. La presentación se estrenará primero en Netflix a las 21:00, hora peninsular española, y llegará seis horas después a YouTube y a la web oficial de Rockstar."
+  },
+  "why": {
+    "es": "Será la primera presentación extensa de GTA VI desde el segundo tráiler y puede ofrecer la visión más clara hasta ahora de su jugabilidad, su mundo y los sistemas que sostendrán la aventura de Jason y Lucia."
+  },
+  "sources": [
+    {
+      "label": "Rockstar Games",
+      "type": {
+        "es": "Anuncio oficial"
+      },
+      "url": "https://x.com/RockstarGames/status/2085335127287030232"
+    },
+    {
+      "label": "Netflix España",
+      "type": {
+        "es": "Ficha oficial del estreno"
+      },
+      "url": "https://www.netflix.com/es/title/83035795"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Rockstar no ha llamado al vídeo Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay. El título oficial es Grand Theft Auto VI: Una mirada extendida, una fórmula que apunta a una presentación más amplia que un tráiler convencional.",
+      "El estreno anticipado en Netflix es una colaboración poco habitual para una presentación de videojuegos. En España podrá verse allí el jueves 27 de agosto a las 21:00. La publicación abierta en YouTube y en la web de Rockstar está prevista para las 03:00 del viernes 28 de agosto."
+    ]
+  }
+}

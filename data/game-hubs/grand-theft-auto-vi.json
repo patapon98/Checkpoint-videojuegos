@@ -2,7 +2,7 @@
   "id": "grand-theft-auto-vi",
   "title": "Grand Theft Auto VI",
   "subtitle": "Todo lo confirmado sobre el regreso a Vice City, su historia, sus ediciones y el material oficial publicado por Rockstar.",
-  "status": "Reservas abiertas",
+  "status": "Presentación extendida el 27 de agosto",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PS5",
@@ -56,37 +56,41 @@
     }
   ],
   "premise": "Jason Duval y Lucia Caminos quedan atrapados en una conspiración criminal que se extiende por el estado de Leonida después de que un golpe sencillo salga mal. Para sobrevivir tendrán que confiar el uno en el otro mientras recorren Vice City y sus alrededores.",
-  "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha.",
+  "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha. La próxima gran presentación oficial será Grand Theft Auto VI: Una mirada extendida, el 27 de agosto de 2026.",
   "overview": "Rockstar ha dosificado la información durante meses, así que conviene separar bien lo que ya está confirmado de lo que todavía se da por hecho sin anuncio oficial.",
   "spotlight": {
-    "kicker": "El núcleo de la aventura",
-    "title": "Jason, Lucia y el estado de Leonida",
-    "intro": "Rockstar ha confirmado una campaña para un jugador protagonizada por una pareja atrapada en una conspiración que se extiende mucho más allá de Vice City.",
+    "kicker": "Próxima presentación oficial",
+    "title": "Una mirada extendida el 27 de agosto",
+    "intro": "Rockstar mostrará una presentación extensa de GTA VI que se estrenará primero en Netflix y llegará después a YouTube y a su web oficial.",
     "items": [
       {
-        "title": "Protagonistas",
-        "value": "Jason y Lucia",
-        "description": "Los dos dependen el uno del otro después de que un golpe sencillo salga mal y los arrastre al lado más oscuro de Leonida."
+        "title": "Fecha y hora en España",
+        "value": "27 de agosto · 21:00",
+        "description": "Netflix ofrecerá el estreno anticipado el jueves 27 de agosto a las 21:00, hora peninsular española."
       },
       {
-        "title": "Escenario",
-        "value": "Vice City y Leonida",
-        "description": "La aventura recorre Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y el parque nacional Mount Kalaga."
+        "title": "Publicación abierta",
+        "value": "28 de agosto · 03:00",
+        "description": "La presentación llegará seis horas después a YouTube y a la web oficial de Rockstar."
       },
       {
         "title": "Formato anunciado",
-        "value": "Campaña para un jugador",
-        "description": "La información oficial publicada hasta ahora se centra en la historia de Jason y Lucia; el posible componente en línea sigue sin detallarse."
+        "value": "Una mirada extendida",
+        "description": "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay."
       }
     ]
   },
   "confirmed": [
+    "Grand Theft Auto VI: Una mirada extendida se estrenará el 27 de agosto de 2026.",
+    "Netflix ofrecerá la presentación primero, a las 21:00 en la España peninsular.",
+    "La versión abierta llegará a YouTube y a la web de Rockstar a las 03:00 del 28 de agosto en España.",
     "Jason Duval y Lucia Caminos son los protagonistas.",
     "La campaña anunciada es una experiencia para un jugador.",
     "Rockstar ha presentado Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y el parque nacional Mount Kalaga.",
     "La ficha de PlayStation confirma juego sin conexión, Uso a distancia, DualSense y mejoras de PS5 Pro."
   ],
   "pending": [
+    "Rockstar no ha detallado todavía el contenido exacto de la presentación del 27 de agosto.",
     "Una versión para PC no ha sido anunciada oficialmente.",
     "Rockstar todavía no ha detallado el alcance de los sistemas jugables ni un posible modo en línea.",
     "Faltan por concretarse los modos de rendimiento y resolución de cada consola.",
@@ -99,6 +103,16 @@
       "label": "Rockstar Games",
       "url": "https://www.rockstargames.com/VI",
       "type": "Ficha oficial"
+    },
+    {
+      "label": "Rockstar Games en X",
+      "url": "https://x.com/RockstarGames/status/2085335127287030232",
+      "type": "Anuncio de la presentación extendida"
+    },
+    {
+      "label": "Netflix España",
+      "url": "https://www.netflix.com/es/title/83035795",
+      "type": "Ficha oficial del estreno"
     },
     {
       "label": "Rockstar Games Media",
@@ -127,13 +141,22 @@
     "gta-vi"
   ],
   "seo": {
-    "title": "GTA VI: fecha, plataformas y todo lo confirmado",
-    "description": "Ficha actualizada de GTA VI con fecha de lanzamiento, plataformas, protagonistas, ediciones, tráiler, imágenes oficiales y noticias relacionadas.",
-    "ogDescription": "Fecha, plataformas, historia y todo lo confirmado sobre GTA VI, reunido y actualizado en una sola ficha.",
+    "title": "GTA VI: fecha, presentación de agosto y todo lo confirmado",
+    "description": "Ficha actualizada de GTA VI con fecha de lanzamiento, presentación del 27 de agosto en Netflix, plataformas, protagonistas, ediciones, tráileres e imágenes oficiales.",
+    "ogDescription": "Fecha, presentación de agosto, plataformas, historia y todo lo confirmado sobre GTA VI, reunido y actualizado en una sola ficha.",
     "heroTitleHtml": "Grand Theft Auto <em>VI</em>",
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-06",
+      "title": "Rockstar anuncia una mirada extendida para el 27 de agosto",
+      "description": "La presentación se estrenará primero en Netflix a las 21:00 en España y llegará seis horas después a YouTube y a la web de Rockstar.",
+      "sourceUrls": [
+        "https://x.com/RockstarGames/status/2085335127287030232",
+        "https://www.netflix.com/es/title/83035795"
+      ]
+    },
     {
       "date": "2026-08-03",
       "title": "Ediciones y precios trasladados a una sección propia",
@@ -153,7 +176,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-06",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

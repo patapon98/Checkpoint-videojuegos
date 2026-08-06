@@ -1259,6 +1259,62 @@
     }
   },
   {
+    "id": "peak-actualizacion-final",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "su última gran actualización de contenido",
+        "un último bioma que alternará con Caldera y The Kiln",
+        "llegará más adelante en 2026"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-06-16",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "PEAK"
+      },
+      "copy": {
+        "es": "PEAK prepara su actualización final con un último bioma para 2026"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "PEAK prepara su actualización final con un último bioma para 2026"
+    },
+    "summary": {
+      "es": "Aggro Crab y Landfall trabajan en su última gran actualización de contenido para PEAK. Incluirá un último bioma que alternará con Caldera y The Kiln y llegará más adelante en 2026."
+    },
+    "why": {
+      "es": "El nuevo entorno cerrará la expansión prevista del juego, que no seguirá un modelo de servicio permanente. Los dos estudios reducirán después su dedicación a PEAK para concentrarse en sus propios proyectos."
+    },
+    "sources": [
+      {
+        "label": "PEAK en Steam",
+        "type": {
+          "es": "Anuncio oficial del último bioma"
+        },
+        "url": "https://steamcommunity.com/app/3527290/allnews/"
+      },
+      {
+        "label": "Landfall",
+        "type": {
+          "es": "FAQ oficial sobre los planes de desarrollo"
+        },
+        "url": "https://landfall.se/peak-faq"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El equipo presentó el contenido durante el primer aniversario de PEAK y mostró como adelanto una nueva pieza de equipaje. El bioma todavía necesita más trabajo y los desarrolladores no han anunciado un mes ni un día de lanzamiento.",
+        "Landfall explica que PEAK se concibió como un juego terminado y no como un servicio en evolución indefinida. Las actualizaciones posteriores al estreno son contenido adicional de un pequeño equipo compartido con Aggro Crab, cuyos integrantes acabarán regresando a los proyectos de sus respectivos estudios."
+      ]
+    }
+  },
+  {
     "id": "elden-ring-switch-2-fecha",
     "emphasis": {
       "es": [

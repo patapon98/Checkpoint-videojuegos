@@ -4,12 +4,7 @@
   "subtitle": "Historia, combate, duración y toda la información de la nueva entrega",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-04",
-  "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC",
-    "Nintendo Switch 2"
-  ],
+  "platforms": ["PS5", "Xbox Series X|S", "PC", "Nintendo Switch 2"],
   "developer": "Capcom",
   "publisher": "Capcom",
   "genre": "Acción y combates con espada",
@@ -96,22 +91,14 @@
   "price": "Desde 69,99 € (PC) · 79,99 € (PS5/Xbox)",
   "pcRequirements": {
     "sourceUrl":"https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/",
-    "minimum":[
-      {"label":"Sistema operativo","value":"Windows 11 de 64 bits"},{"label":"Procesador","value":"Intel Core i5-8400 o AMD Ryzen 3 3100"},{"label":"Memoria","value":"16 GB de RAM"},{"label":"Tarjeta gráfica","value":"GeForce GTX 1660 (6 GB) o Radeon RX 5500 XT (8 GB)"},{"label":"DirectX","value":"Versión 12"},{"label":"Almacenamiento","value":"50 GB disponibles en SSD"},{"label":"Rendimiento objetivo","value":"1080p, calidad baja y 30 FPS con reescalado"}
-    ],
-    "recommended":[
-      {"label":"Sistema operativo","value":"Windows 11 de 64 bits"},{"label":"Procesador","value":"Intel Core i5-10400 o AMD Ryzen 5 3600"},{"label":"Memoria","value":"16 GB de RAM"},{"label":"Tarjeta gráfica","value":"GeForce RTX 2060 Super (8 GB) o Radeon RX 6600 (8 GB)"},{"label":"DirectX","value":"Versión 12"},{"label":"Almacenamiento","value":"50 GB disponibles en SSD"},{"label":"Rendimiento objetivo","value":"1080p, calidad media y 60 FPS con reescalado"}
-    ],
+    "minimum":[{"label":"Sistema operativo","value":"Windows 11 de 64 bits"},{"label":"Procesador","value":"Intel Core i5-8400 o AMD Ryzen 3 3100"},{"label":"Memoria","value":"16 GB de RAM"},{"label":"Tarjeta gráfica","value":"GeForce GTX 1660 (6 GB) o Radeon RX 5500 XT (8 GB)"},{"label":"DirectX","value":"Versión 12"},{"label":"Almacenamiento","value":"50 GB disponibles en SSD"},{"label":"Rendimiento objetivo","value":"1080p, calidad baja y 30 FPS con reescalado"}],
+    "recommended":[{"label":"Sistema operativo","value":"Windows 11 de 64 bits"},{"label":"Procesador","value":"Intel Core i5-10400 o AMD Ryzen 5 3600"},{"label":"Memoria","value":"16 GB de RAM"},{"label":"Tarjeta gráfica","value":"GeForce RTX 2060 Super (8 GB) o Radeon RX 6600 (8 GB)"},{"label":"DirectX","value":"Versión 12"},{"label":"Almacenamiento","value":"50 GB disponibles en SSD"},{"label":"Rendimiento objetivo","value":"1080p, calidad media y 60 FPS con reescalado"}],
     "notes":["Steam exige un procesador y un sistema operativo de 64 bits.","El SSD es obligatorio y las estimaciones utilizan NVIDIA DLSS o AMD FSR."]
   },
   "editions": {
     "sourceUrl":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB/0010",
     "region":"España",
-    "items":[
-      {"name":"Edición estándar","prices":[{"platform":"PS5 / Xbox","value":"79,99 €"},{"platform":"PC","value":"69,99 €"}],"includes":["Juego base"]},
-      {"name":"Deluxe Edition","prices":[{"platform":"PS5 / Xbox","value":"89,99 €"},{"platform":"PC","value":"79,99 €"}],"includes":["Juego base","Tres amuletos","Cuatro aspectos de espada","Armadura roja para Musashi","Guantelete Oni Loto carmesí"]},
-      {"name":"Premium Deluxe Edition","prices":[{"platform":"PS5 / Xbox","value":"99,99 €"},{"platform":"PC","value":"89,99 €"}],"includes":["Todo el contenido de la Deluxe Edition","Tres haori para Musashi","Tres atuendos para Okuni","Tres atuendos para la Dama Oni","Mini banda sonora digital dentro del juego"]}
-    ],
+    "items":[{"name":"Edición estándar","prices":[{"platform":"PS5 / Xbox","value":"79,99 €"},{"platform":"PC","value":"69,99 €"}],"includes":["Juego base"]},{"name":"Deluxe Edition","prices":[{"platform":"PS5 / Xbox","value":"89,99 €"},{"platform":"PC","value":"79,99 €"}],"includes":["Juego base","Tres amuletos","Cuatro aspectos de espada","Armadura roja para Musashi","Guantelete Oni Loto carmesí"]},{"name":"Premium Deluxe Edition","prices":[{"platform":"PS5 / Xbox","value":"99,99 €"},{"platform":"PC","value":"89,99 €"}],"includes":["Todo el contenido de la Deluxe Edition","Tres haori para Musashi","Tres atuendos para Okuni","Tres atuendos para la Dama Oni","Mini banda sonora digital dentro del juego"]}],
     "preorderBonuses":["Amuleto Komainu","Aspecto de espada Maldición sellada"],
     "notes":["Las ediciones Deluxe y Premium Deluxe amplían la bonificación de reserva con el amuleto Mono blanco y el aspecto León blanco."]
   }

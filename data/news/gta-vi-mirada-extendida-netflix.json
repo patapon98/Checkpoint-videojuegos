@@ -9,11 +9,11 @@
     ]
   },
   "category": {
-    "es": "Actualidad"
+    "es": "Juegos"
   },
   "date": "2026-08-06",
   "publishedAt": "2026-08-06T12:20:00Z",
-  "featured": true,
+  "featured": false,
   "ticker": {
     "keyword": {
       "es": "GTA VI"

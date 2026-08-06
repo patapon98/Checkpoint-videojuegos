@@ -4,12 +4,7 @@
   "subtitle": "Historia, combate, duración y toda la información de la nueva entrega",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-04",
-  "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC",
-    "Nintendo Switch 2"
-  ],
+  "platforms": ["PS5", "Xbox Series X|S", "PC", "Nintendo Switch 2"],
   "developer": "Capcom",
   "publisher": "Capcom",
   "genre": "Acción y combates con espada",

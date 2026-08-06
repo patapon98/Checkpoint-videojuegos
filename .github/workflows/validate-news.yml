@@ -44,7 +44,7 @@ on:
       - '.github/workflows/validate-news.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: news-pipeline-${{ github.ref }}
@@ -55,9 +55,10 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - name: Descargar el repositorio
+      - name: Descargar la rama del PR
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Preparar Node.js
@@ -105,6 +106,19 @@ jobs:
           node scripts/validate-game-hub-pc-requirements.mjs
           node scripts/validate-game-hub-editions.mjs
           git diff --check
+
+      - name: Guardar las superficies para la preview
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git add -- data/news-index.json index.html noticias.html juegos juegos.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo 'La preview ya contiene las superficies generadas.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Genera las superficies de Noticias para la preview'
+          git push origin HEAD:${{ github.head_ref }}
 
   generate:
     if: github.event_name == 'push'

@@ -1,5 +1,55 @@
 [
   {
+    "id": "nintendo-switch2-tomodachi-resultados-2026",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "Switch 2 alcanza 23,68 millones de consolas distribuidas",
+        "sumó 3,82 millones entre abril y junio de 2026",
+        "Tomodachi Life: Living the Dream supera los 8 millones vendidos al consumidor"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-08-06",
+    "publishedAt": "2026-08-06T09:47:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Nintendo"
+      },
+      "copy": {
+        "es": "Switch 2 supera los 23,68 millones y Tomodachi Life rebasa los 8 millones"
+      }
+    },
+    "tone": "nintendo",
+    "title": {
+      "es": "Switch 2 supera los 23,68 millones y Tomodachi Life ya vende más de 8 millones"
+    },
+    "summary": {
+      "es": "Nintendo distribuyó 3,82 millones de Switch 2 entre abril y junio de 2026, elevando el total acumulado de la consola a 23,68 millones. Tomodachi Life: Living the Dream, por su parte, ya ha superado los 8 millones de copias vendidas al consumidor en todo el mundo."
+    },
+    "why": {
+      "es": "Switch 2 mantiene un ritmo sólido durante su segundo año, mientras que Tomodachi Life confirma que el regreso de la saga se ha convertido en uno de los mayores éxitos recientes de Nintendo."
+    },
+    "sources": [
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Resultados financieros y documento explicativo"
+        },
+        "url": "https://www.nintendo.co.jp/ir/en/finance/earnings/index.html"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El software de Switch 2 vendió 9,46 millones de unidades durante el trimestre, un 9,2% más interanual. Las ventas trimestrales de hardware bajaron un 34,4% frente al trimestre de lanzamiento, una comparación especialmente exigente por el estreno de la consola.",
+        "Nintendo registra 7,94 millones de unidades de Tomodachi Life distribuidas hasta el 30 de junio, mientras que la cifra superior a 8 millones corresponde a ventas estimadas al consumidor hasta el 5 de agosto. Son métricas distintas: sell-in frente a sell-through."
+      ]
+    }
+  },
+  {
     "id": "ea-autorizacion-final-compra-2026",
     "important": true,
     "emphasis": {

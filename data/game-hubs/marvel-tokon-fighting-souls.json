@@ -1,8 +1,8 @@
 {
   "id": "marvel-tokon-fighting-souls",
   "title": "MARVEL Tōkon: Fighting Souls",
-  "subtitle": "El juego de lucha 4 contra 4 de Arc System Works, con su plantel, sus modos, su fecha y las novedades previas al lanzamiento.",
-  "status": "Reservas abiertas",
+  "subtitle": "El juego de lucha 4 contra 4 de Arc System Works, con su plantel, sus modos, su lanzamiento y el contenido confirmado para después del estreno.",
+  "status": "Disponible",
   "releaseDate": "2026-08-06",
   "platforms": [
     "PS5",
@@ -141,6 +141,15 @@
   },
   "changes": [
     {
+      "date": "2026-08-06",
+      "title": "MARVEL Tōkon: Fighting Souls ya está disponible",
+      "description": "El juego se ha lanzado oficialmente el 6 de agosto de 2026 en PS5 y PC, una vez alcanzada la hora de desbloqueo indicada por PlayStation para Europa.",
+      "sourceUrls": [
+        "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
+        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
+      ]
+    },
+    {
       "date": "2026-08-03",
       "title": "Requisitos de PC y ediciones oficiales añadidos",
       "description": "La ficha incorpora las configuraciones mínimas y recomendadas de Steam y compara las ediciones Standard, Digital Deluxe y Ultimate con sus precios y contenidos.",
@@ -159,7 +168,7 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-06",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [

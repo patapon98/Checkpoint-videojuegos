@@ -3,41 +3,42 @@
   "important": false,
   "emphasis": {
     "es": [
-      "recibirá una última gran actualización de contenido",
-      "un último bioma que alternará con Caldera y The Kiln",
-      "llegará durante 2026"
+      "llegará el 11 de agosto",
+      "GLOOM y THE CITADEL",
+      "rotarán con Caldera y The Kiln"
     ]
   },
   "category": {
     "es": "Juegos"
   },
   "date": "2026-08-07",
+  "updated": "2026-08-08",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "PEAK"
     },
     "copy": {
-      "es": "PEAK cerrará sus grandes actualizaciones con un último bioma en 2026"
+      "es": "PEAK estrenará GLOOM y THE CITADEL en su última gran actualización el 11 de agosto"
     }
   },
   "tone": "games",
   "title": {
-    "es": "PEAK cerrará sus grandes actualizaciones con un último bioma en 2026"
+    "es": "PEAK estrenará GLOOM y THE CITADEL en su última gran actualización el 11 de agosto"
   },
   "summary": {
-    "es": "Aggro Crab y Landfall han confirmado que PEAK recibirá una última gran actualización de contenido. Incorporará un último bioma que alternará con Caldera y The Kiln y llegará durante 2026."
+    "es": "Aggro Crab y Landfall han anunciado que la última gran actualización de PEAK llegará el 11 de agosto. Añadirá dos variantes de bioma, GLOOM y THE CITADEL, que rotarán con Caldera y The Kiln."
   },
   "why": {
-    "es": "El nuevo entorno cerrará la expansión prevista del juego, que no está planteado como un servicio permanente. Después, los dos estudios reducirán su dedicación a PEAK para concentrarse en otros proyectos."
+    "es": "The Final Ascent cerrará la etapa de grandes ampliaciones de PEAK con una alternativa completa para el tramo final de la ascensión. El juego seguirá recibiendo correcciones y mantenimiento después de esta actualización."
   },
   "sources": [
     {
-      "label": "PEAK en Steam",
+      "label": "PEAK",
       "type": {
-        "es": "Anuncio oficial del último bioma"
+        "es": "Anuncio oficial de The Final Ascent"
       },
-      "url": "https://steamcommunity.com/app/3527290/allnews/"
+      "url": "https://x.com/i/status/2085410739309662590"
     },
     {
       "label": "Landfall",
@@ -49,8 +50,8 @@
   ],
   "homeDetails": {
     "es": [
-      "Los desarrolladores detallaron el plan durante el primer aniversario de PEAK, celebrado el 16 de junio, y mostraron como adelanto una nueva pieza de equipaje. El bioma todavía necesita más trabajo y no tiene un mes ni un día de lanzamiento confirmados.",
-      "Landfall y Aggro Crab han explicado que PEAK se concibió como un juego terminado y no como un servicio en evolución indefinida. Las ampliaciones posteriores al estreno son contenido adicional creado por un equipo pequeño que terminará regresando a los proyectos de ambos estudios."
+      "La actualización presenta GLOOM y THE CITADEL como las nuevas variantes del cierre de cada expedición. El propio equipo explica que sustituirán por rotación a Caldera y The Kiln, ampliando las posibilidades del tramo final sin eliminar los escenarios actuales.",
+      "Los desarrolladores la describen como la última Major Update de PEAK. Eso no significa que el juego quede abandonado tras el 11 de agosto, ya que el equipo ha confirmado que seguirá trabajando en correcciones, mantenimiento y ajustes de optimización."
     ]
   }
 }

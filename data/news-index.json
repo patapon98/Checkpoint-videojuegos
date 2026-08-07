@@ -1,12 +1,12 @@
 [
   {
-    "id": "peak-actualizacion-final",
-    "important": false,
+    "id": "phantom-blade-zero-trailer-reservas-agosto",
+    "important": true,
     "emphasis": {
       "es": [
-        "recibirá una última gran actualización de contenido",
-        "un último bioma que alternará con Caldera y The Kiln",
-        "llegará durante 2026"
+        "un nuevo tráiler de 11 minutos",
+        "abrirá sus reservas al mismo tiempo",
+        "12 de agosto a las 04:00 en España peninsular"
       ]
     },
     "category": {
@@ -16,29 +16,92 @@
     "featured": false,
     "ticker": {
       "keyword": {
+        "es": "Phantom Blade Zero"
+      },
+      "copy": {
+        "es": "Phantom Blade Zero mostrará 11 minutos de nuevo metraje y abrirá reservas el 12 de agosto"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "Phantom Blade Zero mostrará un tráiler de 11 minutos y abrirá reservas el 12 de agosto"
+    },
+    "summary": {
+      "es": "S-GAME ha anunciado un nuevo tráiler de 11 minutos de Phantom Blade Zero y abrirá sus reservas al mismo tiempo. La emisión será el 11 de agosto a las 19:00 PT, es decir, el 12 de agosto a las 04:00 en España peninsular."
+    },
+    "why": {
+      "es": "Será uno de los mayores adelantos del juego antes de su lanzamiento y debería mostrar nuevo metraje jugable. La apertura de reservas también permitirá conocer las ediciones y bonificaciones comerciales previstas por S-GAME."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc",
+      "label": {
+        "es": "Ver teaser"
+      }
+    },
+    "sources": [
+      {
+        "label": "IGN",
+        "type": {
+          "es": "Teaser oficial de reservas"
+        },
+        "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc"
+      },
+      {
+        "label": "PlayStation",
+        "type": {
+          "es": "Ficha oficial del juego"
+        },
+        "url": "https://www.playstation.com/en-hk/ps5/games/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El teaser fija la publicación del nuevo vídeo para el 11 de agosto a las 19:00 en la costa oeste de Estados Unidos y el 12 de agosto a las 10:00 en Pekín. La equivalencia para España peninsular es el 12 de agosto a las 04:00.",
+        "S-GAME había adelantado que la campaña de reservas llegaría acompañada de nuevo material del juego. Este vídeo de 11 minutos será una oportunidad para ver una muestra mucho más extensa que los teasers recientes antes del estreno de Phantom Blade Zero."
+      ]
+    }
+  },
+  {
+    "id": "peak-actualizacion-final",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "llegará el 11 de agosto",
+        "GLOOM y THE CITADEL",
+        "rotarán con Caldera y The Kiln"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-07",
+    "updated": "2026-08-08",
+    "featured": false,
+    "ticker": {
+      "keyword": {
         "es": "PEAK"
       },
       "copy": {
-        "es": "PEAK cerrará sus grandes actualizaciones con un último bioma en 2026"
+        "es": "PEAK estrenará GLOOM y THE CITADEL en su última gran actualización el 11 de agosto"
       }
     },
     "tone": "games",
     "title": {
-      "es": "PEAK cerrará sus grandes actualizaciones con un último bioma en 2026"
+      "es": "PEAK estrenará GLOOM y THE CITADEL en su última gran actualización el 11 de agosto"
     },
     "summary": {
-      "es": "Aggro Crab y Landfall han confirmado que PEAK recibirá una última gran actualización de contenido. Incorporará un último bioma que alternará con Caldera y The Kiln y llegará durante 2026."
+      "es": "Aggro Crab y Landfall han anunciado que la última gran actualización de PEAK llegará el 11 de agosto. Añadirá dos variantes de bioma, GLOOM y THE CITADEL, que rotarán con Caldera y The Kiln."
     },
     "why": {
-      "es": "El nuevo entorno cerrará la expansión prevista del juego, que no está planteado como un servicio permanente. Después, los dos estudios reducirán su dedicación a PEAK para concentrarse en otros proyectos."
+      "es": "The Final Ascent cerrará la etapa de grandes ampliaciones de PEAK con una alternativa completa para el tramo final de la ascensión. El juego seguirá recibiendo correcciones y mantenimiento después de esta actualización."
     },
     "sources": [
       {
-        "label": "PEAK en Steam",
+        "label": "PEAK",
         "type": {
-          "es": "Anuncio oficial del último bioma"
+          "es": "Anuncio oficial de The Final Ascent"
         },
-        "url": "https://steamcommunity.com/app/3527290/allnews/"
+        "url": "https://x.com/i/status/2085410739309662590"
       },
       {
         "label": "Landfall",
@@ -50,8 +113,8 @@
     ],
     "homeDetails": {
       "es": [
-        "Los desarrolladores detallaron el plan durante el primer aniversario de PEAK, celebrado el 16 de junio, y mostraron como adelanto una nueva pieza de equipaje. El bioma todavía necesita más trabajo y no tiene un mes ni un día de lanzamiento confirmados.",
-        "Landfall y Aggro Crab han explicado que PEAK se concibió como un juego terminado y no como un servicio en evolución indefinida. Las ampliaciones posteriores al estreno son contenido adicional creado por un equipo pequeño que terminará regresando a los proyectos de ambos estudios."
+        "La actualización presenta GLOOM y THE CITADEL como las nuevas variantes del cierre de cada expedición. El propio equipo explica que sustituirán por rotación a Caldera y The Kiln, ampliando las posibilidades del tramo final sin eliminar los escenarios actuales.",
+        "Los desarrolladores la describen como la última Major Update de PEAK. Eso no significa que el juego quede abandonado tras el 11 de agosto, ya que el equipo ha confirmado que seguirá trabajando en correcciones, mantenimiento y ajustes de optimización."
       ]
     }
   },

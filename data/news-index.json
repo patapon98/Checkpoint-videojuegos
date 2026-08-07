@@ -1,5 +1,61 @@
 [
   {
+    "id": "peak-actualizacion-final",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "recibirá una última gran actualización de contenido",
+        "un último bioma que alternará con Caldera y The Kiln",
+        "llegará durante 2026"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-07",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "PEAK"
+      },
+      "copy": {
+        "es": "PEAK cerrará sus grandes actualizaciones con un último bioma en 2026"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "PEAK cerrará sus grandes actualizaciones con un último bioma en 2026"
+    },
+    "summary": {
+      "es": "Aggro Crab y Landfall han confirmado que PEAK recibirá una última gran actualización de contenido. Incorporará un último bioma que alternará con Caldera y The Kiln y llegará durante 2026."
+    },
+    "why": {
+      "es": "El nuevo entorno cerrará la expansión prevista del juego, que no está planteado como un servicio permanente. Después, los dos estudios reducirán su dedicación a PEAK para concentrarse en otros proyectos."
+    },
+    "sources": [
+      {
+        "label": "PEAK en Steam",
+        "type": {
+          "es": "Anuncio oficial del último bioma"
+        },
+        "url": "https://steamcommunity.com/app/3527290/allnews/"
+      },
+      {
+        "label": "Landfall",
+        "type": {
+          "es": "FAQ oficial sobre los planes de desarrollo"
+        },
+        "url": "https://landfall.se/peak-faq"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Los desarrolladores detallaron el plan durante el primer aniversario de PEAK, celebrado el 16 de junio, y mostraron como adelanto una nueva pieza de equipaje. El bioma todavía necesita más trabajo y no tiene un mes ni un día de lanzamiento confirmados.",
+        "Landfall y Aggro Crab han explicado que PEAK se concibió como un juego terminado y no como un servicio en evolución indefinida. Las ampliaciones posteriores al estreno son contenido adicional creado por un equipo pequeño que terminará regresando a los proyectos de ambos estudios."
+      ]
+    }
+  },
+  {
     "id": "gta-vi-mirada-extendida-netflix",
     "important": true,
     "emphasis": {

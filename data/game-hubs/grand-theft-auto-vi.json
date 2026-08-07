@@ -95,7 +95,6 @@
     "Rockstar todavía no ha detallado el alcance de los sistemas jugables ni un posible modo en línea.",
     "Faltan por concretarse los modos de rendimiento y resolución de cada consola.",
     "No se conoce el tamaño de instalación definitivo.",
-    "No se ha aclarado cómo será la edición física española ni si todas las versiones incluirán disco.",
     "La clasificación PEGI definitiva para España sigue pendiente."
   ],
   "sources": [
@@ -149,6 +148,15 @@
   },
   "changes": [
     {
+      "date": "2026-08-08",
+      "title": "Rockstar aclara el formato físico y la precarga",
+      "description": "La versión física de GTA VI incluirá un código de descarga en lugar de disco y podrá utilizarse para iniciar la precarga desde el 12 de noviembre; Rockstar incluye España entre los mercados admitidos.",
+      "sourceUrls": [
+        "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
+        "https://support.rockstargames.com/articles/46YkMi4rHxYXMeIHtZiKaE/grand-theft-auto-vi-pre-order-details"
+      ]
+    },
+    {
       "date": "2026-08-06",
       "title": "Rockstar anuncia una mirada extendida para el 27 de agosto",
       "description": "La presentación se estrenará primero en Netflix a las 21:00 en España y llegará seis horas después a YouTube y a la web de Rockstar.",
@@ -176,7 +184,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-06",
+  "updatedAt": "2026-08-08",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",
@@ -214,7 +222,8 @@
       "Un mes de GTA+ en PS5"
     ],
     "notes": [
-      "El mes de GTA+ se renueva automáticamente al precio habitual si no se cancela."
+      "El mes de GTA+ se renueva automáticamente al precio habitual si no se cancela.",
+      "La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga."
     ]
   }
 }

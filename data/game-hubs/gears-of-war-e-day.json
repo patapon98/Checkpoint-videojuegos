@@ -99,7 +99,7 @@
     ]
   },
   "confirmed": [
-    "La beta abierta se celebrará del 6 al 10 de agosto de 2026; las reservas dan acceso anticipado y Xbox avisa de que las horas y la disponibilidad por plataforma se concretarán por separado.",
+    "La beta multijugador se desarrolla en dos fines de semana. El acceso anticipado del primero va del 6 al 10 de agosto de 2026 para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
     "La campaña no abandona en ningún momento el punto de vista del escuadrón Bravo.",
     "Marcus, Dom, Mags Carter y Lucas Reyes son jugables desde el inicio.",
     "Los escenarios alternan calles estrechas con distritos abiertos y coberturas que se deterioran.",
@@ -109,6 +109,7 @@
     "La ficha oficial promete 4K y hasta 60 FPS con una pantalla compatible."
   ],
   "pending": [
+    "Xbox todavía no ha publicado en la ficha oficial consultada las fechas exactas del segundo fin de semana de la beta multijugador.",
     "Faltan por detallar los modos de resolución y rendimiento de cada consola.",
     "No se conoce la lista completa de mapas y variantes multijugador.",
     "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.",
@@ -124,6 +125,11 @@
       "label": "Microsoft Store España",
       "url": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ",
       "type": "Precio, ediciones, reserva y Game Pass"
+    },
+    {
+      "label": "Xbox Store",
+      "url": "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
+      "type": "Calendario y acceso de la beta multijugador"
     },
     {
       "label": "Xbox Wire",
@@ -150,6 +156,15 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-08-07",
+      "title": "Aclarado el acceso anticipado de la beta multijugador",
+      "description": "Xbox confirma que la beta se reparte en dos fines de semana y que el periodo del 6 al 10 de agosto corresponde al acceso anticipado para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
+      "sourceUrls": [
+        "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
+      ]
+    },
     {
       "date": "2026-08-03",
       "title": "Requisitos de PC y ediciones oficiales añadidos",
@@ -182,7 +197,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-07",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

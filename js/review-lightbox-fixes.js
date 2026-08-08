@@ -37,8 +37,8 @@
       display:block;
       width:auto;
       height:auto;
-      max-width:min(94vw,1600px);
-      max-height:calc(100dvh - 150px);
+      max-width:min(80vw,1320px);
+      max-height:min(72dvh,820px);
       margin:0;
       object-fit:contain;
       pointer-events:auto;
@@ -70,8 +70,8 @@
     @media(max-width:700px){
       .review-lightbox{padding:60px 12px 20px}
       .review-lightbox-image{
-        max-width:100%;
-        max-height:calc(100dvh - 130px);
+        max-width:94vw;
+        max-height:72dvh;
       }
       .review-lightbox-caption{width:min(92vw,760px)}
     }

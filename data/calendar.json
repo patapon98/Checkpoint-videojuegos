@@ -2425,6 +2425,49 @@
       "trailer": "https://www.youtube.com/watch?v=jLbst85USN8"
     },
     {
+      "id": "minecraft-switch-2",
+      "title": "Minecraft",
+      "headingHtml": "Minecraft <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-27",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://assets.nintendo.com/image/upload/q_auto%3Abest/f_auto/c_fill%2Cw_813/dpr_2.0/ncom/en_US/articles/2026/minecraft-for-nintendo-switch-2-arrives-oct-27/Minecraft_Titan_BaseGameBedrock_1920x1080",
+        "alt": "Minecraft para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/whatsnew/minecraft-for-nintendo-switch-2-arrives-oct-27/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Minecraft para Nintendo Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/whatsnew/minecraft-for-nintendo-switch-2-arrives-oct-27/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-08-08",
+        "evidence": {
+          "title": "Minecraft",
+          "releaseDate": "2026-10-27",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=pBL7nJLH8ro"
+    },
+    {
       "id": "phantom-blade-zero",
       "title": "Phantom Blade Zero",
       "headingHtml": "Phantom Blade Zero",

@@ -18,8 +18,10 @@
   };
 
   loadStyle('../css/game-hub-links.css?v=20260730-1');
+  loadStyle('../css/return-shortcut.css?v=20260808-1');
   load('game-hub-links.js?v=20260730-1');
   load('home-analysis-links.js?v=20260728-1');
+  load('return-shortcut.js?v=20260808-1');
   load('calendar-today.js?v=20260729-2',()=>{
     load('calendar-countdown-prepare.js?v=20260729-1',()=>{
       load('main-core.js?v=20260730-1',()=>{

@@ -40,6 +40,11 @@ function isRawgImage(image = {}) {
     && (host === "media.rawg.io" || host.endsWith(".rawg.io"));
 }
 
+function isSelfHostedImage(image = {}) {
+  const host = sourceHost(image.src || "");
+  return host === "finalsecreto.com" || host === "www.finalsecreto.com";
+}
+
 function changedFields(before, after) {
   if (!before) return [...MATERIAL_FIELDS];
   return MATERIAL_FIELDS.filter((field) => JSON.stringify(before[field] ?? null) !== JSON.stringify(after[field] ?? null));
@@ -76,11 +81,11 @@ for (const release of changed) {
   const prefix = release.id || release.title || "Entrada sin identificar";
   const before = baseById.get(release.id);
   const fields = changedFields(before, release);
-  const rawgImageOnly = Boolean(before) && fields.length === 1 && fields[0] === "image" && isRawgImage(release.image);
+  const imageOnly = Boolean(before) && fields.length === 1 && fields[0] === "image" && (isRawgImage(release.image) || isSelfHostedImage(release.image));
   const source = release.source || {};
   const evidence = source.evidence || {};
 
-  if (!rawgImageOnly) {
+  if (!imageOnly) {
     if (release.legacy) errors.push(`${prefix}: un alta o cambio editorial automático no puede marcarse como heredado.`);
     if (!source.official) errors.push(`${prefix}: la fuente de fecha y plataformas debe declararse oficial.`);
     if (!/^https:\/\//.test(source.url || "")) errors.push(`${prefix}: falta la URL oficial HTTPS.`);
@@ -103,9 +108,9 @@ for (const release of changed) {
     errors.push(`${prefix}: los metadatos RAWG de la imagen están incompletos o no corresponden a media.rawg.io.`);
   }
   if (!/^https:\/\//.test(release.image?.src || "")) errors.push(`${prefix}: falta una imagen HTTPS.`);
-  if (!rawgImageOnly && !/^https:\/\//.test(release.store?.url || "")) errors.push(`${prefix}: falta una ficha oficial o tienda válida.`);
+  if (!imageOnly && !/^https:\/\//.test(release.store?.url || "")) errors.push(`${prefix}: falta una ficha oficial o tienda válida.`);
 
-  if (!rawgImageOnly) {
+  if (!imageOnly) {
     const sourceResponse = source.url ? await fetchChecked(source.url, `${prefix}: fuente oficial`) : null;
     if (sourceResponse) {
       const type = sourceResponse.headers.get("content-type") || "";
@@ -121,7 +126,7 @@ for (const release of changed) {
   }
   if (release.image?.src) await fetchChecked(release.image.src, `${prefix}: imagen`, { required: false });
   if (release.image?.rawgPage) await fetchChecked(release.image.rawgPage, `${prefix}: atribución RAWG`);
-  if (!rawgImageOnly && release.store?.url && release.store.url !== source.url) await fetchChecked(release.store.url, `${prefix}: ficha de tienda`);
+  if (!imageOnly && release.store?.url && release.store.url !== source.url) await fetchChecked(release.store.url, `${prefix}: ficha de tienda`);
 }
 
 for (const warning of warnings) console.warn(`ADVERTENCIA: ${warning}`);

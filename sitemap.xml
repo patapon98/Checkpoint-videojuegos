@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://finalsecreto.com/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/noticias</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://finalsecreto.com/resenas</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/resenas/ac-black-flag-resynced</loc>
@@ -71,6 +71,10 @@
   <url>
     <loc>https://finalsecreto.com/resenas/creature-kitchen</loc>
     <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://finalsecreto.com/resenas/gurei</loc>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/resenas/jackal</loc>

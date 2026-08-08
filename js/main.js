@@ -17,6 +17,13 @@
     document.head.appendChild(link);
   };
 
+  if(!document.querySelector('link[rel="manifest"]')){
+    const manifest=document.createElement('link');
+    manifest.rel='manifest';
+    manifest.href='/manifest.webmanifest';
+    document.head.appendChild(manifest);
+  }
+
   loadStyle('../css/game-hub-links.css?v=20260730-1');
   loadStyle('../css/return-shortcut.css?v=20260808-1');
   load('game-hub-links.js?v=20260730-1');

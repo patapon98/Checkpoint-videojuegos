@@ -205,6 +205,7 @@ h2.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);f
 .art-20{background:linear-gradient(135deg,#1b1026,#7a4bb5)}
 .art-21{background:linear-gradient(135deg,#4a0f1c,#ef476f)}
 .art-22{background:linear-gradient(135deg,#2e2415,#a9762f)}
+.art-23{background:linear-gradient(135deg,#0b1f1c,#2dd4c4)}
 
 .ring{position:absolute;top:14px;right:14px;width:52px;height:52px}
 .ring svg{transform:rotate(-90deg)}

@@ -1,0 +1,62 @@
+{
+  "id": "phantom-blade-zero-trailer-reservas-agosto",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "un nuevo tráiler de 11 minutos",
+      "abrirá sus reservas al mismo tiempo",
+      "12 de agosto a las 04:00 en España peninsular"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-07",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Phantom Blade Zero"
+    },
+    "copy": {
+      "es": "Phantom Blade Zero mostrará 11 minutos de nuevo metraje y abrirá reservas el 12 de agosto"
+    }
+  },
+  "tone": "playstation",
+  "title": {
+    "es": "Phantom Blade Zero mostrará un tráiler de 11 minutos y abrirá reservas el 12 de agosto"
+  },
+  "summary": {
+    "es": "S-GAME ha anunciado un nuevo tráiler de 11 minutos de Phantom Blade Zero y abrirá sus reservas al mismo tiempo. La emisión será el 11 de agosto a las 19:00 PT, es decir, el 12 de agosto a las 04:00 en España peninsular."
+  },
+  "why": {
+    "es": "Será uno de los mayores adelantos del juego antes de su lanzamiento y debería mostrar nuevo metraje jugable. La apertura de reservas también permitirá conocer las ediciones y bonificaciones comerciales previstas por S-GAME."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc",
+    "label": {
+      "es": "Ver teaser"
+    }
+  },
+  "sources": [
+    {
+      "label": "IGN",
+      "type": {
+        "es": "Teaser oficial de reservas"
+      },
+      "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc"
+    },
+    {
+      "label": "PlayStation",
+      "type": {
+        "es": "Ficha oficial del juego"
+      },
+      "url": "https://www.playstation.com/en-hk/ps5/games/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El teaser fija la publicación del nuevo vídeo para el 11 de agosto a las 19:00 en la costa oeste de Estados Unidos y el 12 de agosto a las 10:00 en Pekín. La equivalencia para España peninsular es el 12 de agosto a las 04:00.",
+      "S-GAME había adelantado que la campaña de reservas llegaría acompañada de nuevo material del juego. Este vídeo de 11 minutos será una oportunidad para ver una muestra mucho más extensa que los teasers recientes antes del estreno de Phantom Blade Zero."
+    ]
+  }
+}

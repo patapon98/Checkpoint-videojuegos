@@ -46,7 +46,7 @@
     .review-lightbox-caption{
       position:absolute;
       left:50%;
-      bottom:0;
+      bottom:-18px;
       width:min(760px,90vw);
       max-width:none;
       margin:0;
@@ -73,7 +73,10 @@
         max-width:94vw;
         max-height:72dvh;
       }
-      .review-lightbox-caption{width:min(92vw,760px)}
+      .review-lightbox-caption{
+        width:min(92vw,760px);
+        bottom:-8px;
+      }
     }
   `;
   document.head.appendChild(style);

@@ -1,0 +1,17 @@
+@media (max-width: 900px) {
+  body.home-page .home-section-nav.wrap {
+    display: none;
+  }
+
+  body.home-page .hero {
+    padding-bottom: 12px;
+  }
+
+  body.home-page #noticias {
+    padding-top: 24px;
+  }
+
+  body.home-page section[id] {
+    scroll-margin-top: 118px;
+  }
+}

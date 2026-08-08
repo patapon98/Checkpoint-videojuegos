@@ -33,7 +33,7 @@
     load('calendar-countdown-prepare.js?v=20260729-1',()=>{
       load('main-core.js?v=20260730-1',()=>{
         load('calendar-countdown.js?v=20260729-1');
-        load('review-lightbox-fixes.js?v=20260808-2');
+        load('review-lightbox-fixes.js?v=20260808-3');
         if(!document.body.classList.contains('calendar-page')) return;
         load('calendar-psplus-entry.js?v=20260729-2');
         load('calendar-gcal.js',()=>{

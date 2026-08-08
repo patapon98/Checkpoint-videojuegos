@@ -26,6 +26,7 @@
 
   loadStyle('../css/game-hub-links.css?v=20260730-1');
   loadStyle('../css/return-shortcut.css?v=20260808-1');
+  if(document.body.classList.contains('home-page')) loadStyle('../css/home-mobile-nav.css?v=20260808-1');
   load('game-hub-links.js?v=20260730-1');
   load('home-analysis-links.js?v=20260728-1');
   load('return-shortcut.js?v=20260808-1');

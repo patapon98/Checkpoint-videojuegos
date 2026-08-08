@@ -25,6 +25,12 @@ const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const MAIN_ASSET_VERSION = "20260730-2";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
+const FIRE_EMBLEM_LOCAL_IMAGE = "/img_calendario/fire%20emblem%20fortune%27s%20weave.png";
+const fireEmblemFortunesWeave = data.releases.find((release) => release.id === "fire-emblem-fortune-s-weave");
+if (fireEmblemFortunesWeave?.image?.src !== FIRE_EMBLEM_LOCAL_IMAGE) {
+  fireEmblemFortunesWeave.image.src = FIRE_EMBLEM_LOCAL_IMAGE;
+  await writeFile(DATA_FILE, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+}
 const PLATFORM_ORDER = data.settings?.platformOrder;
 const wishIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
 const trailerIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>';

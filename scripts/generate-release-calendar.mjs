@@ -25,7 +25,7 @@ const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 const MAIN_ASSET_VERSION = "20260730-2";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
-const FIRE_EMBLEM_LOCAL_IMAGE = "/img_calendario/fire%20emblem%20fortune%27s%20weave.png";
+const FIRE_EMBLEM_LOCAL_IMAGE = "https://finalsecreto.com/img_calendario/fire%20emblem%20fortune%27s%20weave.png";
 const fireEmblemFortunesWeave = data.releases.find((release) => release.id === "fire-emblem-fortune-s-weave");
 if (fireEmblemFortunesWeave?.image?.src !== FIRE_EMBLEM_LOCAL_IMAGE) {
   fireEmblemFortunesWeave.image.src = FIRE_EMBLEM_LOCAL_IMAGE;

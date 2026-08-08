@@ -2434,8 +2434,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Minecraft",
         "src": "https://assets.nintendo.com/image/upload/q_auto%3Abest/f_auto/c_fill%2Cw_813/dpr_2.0/ncom/en_US/articles/2026/minecraft-for-nintendo-switch-2-arrives-oct-27/Minecraft_Titan_BaseGameBedrock_1920x1080",
         "alt": "Minecraft para Nintendo Switch 2",
         "className": "",

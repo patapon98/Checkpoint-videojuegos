@@ -8,6 +8,11 @@
 .gitattributes
 .gitignore
 
+# Automatización, instrucciones internas y generadores
+.github
+scripts
+AGENTS.md
+
 # Configuración de despliegue y del entorno de desarrollo
 .assetsignore
 wrangler.jsonc
@@ -21,3 +26,5 @@ attached_assets
 docs
 COMO-PUBLICAR.md
 README.md
+
+data/game-hubs/_template.json

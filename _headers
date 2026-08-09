@@ -1,0 +1,9 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+# Las URLs de vista previa de Workers no deben aparecer en buscadores.
+https://:version.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex, nofollow

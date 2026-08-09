@@ -98,9 +98,9 @@ Al publicar una reseña nueva:
 
 ### Sitemap automático
 
-El flujo `.github/workflows/update-sitemap.yml` se activa con cada `push` que añada o modifique una reseña individual o el archivo `resenas.html`. Ejecuta `scripts/generate-sitemap.mjs`, lee las URL canónicas de las páginas públicas, excluye las páginas con `noindex`, calcula `lastmod` desde el historial de Git y guarda `sitemap.xml` solo cuando exista un cambio real.
+El flujo `.github/workflows/update-sitemap.yml` se activa con cada `push` que añada o modifique una página pública cubierta por el generador, incluidas portada, Noticias, Reseñas, Calendario, fichas de juegos, PlayStation Plus, Sobre mí, Contacto y Privacidad. Ejecuta `scripts/generate-sitemap.mjs`, lee las URL canónicas, excluye las páginas con `noindex`, calcula `lastmod` desde el historial de Git o desde la fecha editorial de las fichas y guarda `sitemap.xml` solo cuando existe un cambio real.
 
-Si se publica directamente en `main`, la automatización añadirá un segundo commit con el sitemap actualizado y Cloudflare desplegará ese estado. Si se trabaja en una rama, el commit automático quedará incluido en la misma PR. No edites manualmente el sitemap al publicar una reseña, salvo para reparar un fallo de la automatización.
+Si se publica directamente en `main`, la automatización puede añadir un segundo commit con el sitemap actualizado y Cloudflare desplegará ese estado. Si se trabaja en una rama, el commit automático quedará incluido en la misma PR. No edites manualmente el sitemap salvo para reparar un fallo de la automatización.
 
 ## Si algo sale mal
 

@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/contact.css?v=20260810-1">
 <script>
 (function(){
   try{
@@ -132,9 +132,13 @@
         </div>
 
         <label class="contact-consent">
-          <input type="checkbox" required>
-          <span>Acepto que estos datos se utilicen únicamente para gestionar y responder este mensaje.</span>
+          <input type="checkbox" name="consentimiento_privacidad" value="sí" required>
+          <span>Consiento el tratamiento de mis datos para gestionar y responder este mensaje. He leído la <a href="/privacidad">política de privacidad</a>.</span>
         </label>
+
+        <div class="contact-data-summary" aria-label="Información básica sobre protección de datos">
+          <p><b>Responsable</b> Alex Blanco · <b>Finalidad</b> gestionar y responder tu mensaje · <b>Base jurídica</b> consentimiento · <b>Proveedor</b> FormSubmit · <b>Derechos</b> acceso, rectificación, supresión y demás derechos indicados en la <a href="/privacidad">política de privacidad</a>.</p>
+        </div>
 
         <button class="contact-submit" type="submit">
           <span>Enviar mensaje</span>
@@ -142,7 +146,7 @@
         </button>
       </form>
 
-      <p class="contact-privacy">El envío se procesa mediante FormSubmit, un servicio externo de formularios. No incluyas contraseñas, datos bancarios ni otra información sensible.</p>
+      <p class="contact-privacy">El envío se procesa mediante <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener noreferrer">FormSubmit</a>, un servicio externo de formularios. No incluyas contraseñas, datos bancarios ni otra información sensible.</p>
     </div>
   </section>
 
@@ -161,6 +165,7 @@
 <footer>
   <div class="footer-inner">
     <span>© 2026 Final Secreto</span>
+    <a href="/privacidad">Privacidad</a>
   </div>
 </footer>
 

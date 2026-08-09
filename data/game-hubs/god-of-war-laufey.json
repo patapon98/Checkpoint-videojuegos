@@ -3,7 +3,7 @@
   "title": "God of War Laufey",
   "subtitle": "Historia, combate, personajes y todo lo confirmado sobre la aventura de Faye",
   "status": "Anunciado",
-  "releaseDate": "2027-02-16",
+  "releaseDate": "2027-02-15",
   "platforms": [
     "PS5"
   ],
@@ -125,7 +125,7 @@
     "laufey",
     "faye"
   ],
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-08-10",
   "seo": {
     "title": "God of War Laufey: historia, combate y todo lo confirmado",
     "description": "Ficha actualizada de God of War Laufey con fecha, historia, personajes, combate, vídeos, imágenes oficiales y toda la información confirmada.",
@@ -134,6 +134,14 @@
     "heroImageAlt": "Arte promocional oficial de God of War Laufey"
   },
   "changes": [
+    {
+      "date": "2026-08-10",
+      "title": "Fecha de lanzamiento fijada en el 15 de febrero de 2027",
+      "description": "La ficha adopta el 15 de febrero de 2027 como fecha de lanzamiento, de acuerdo con la fecha mostrada por PlayStation Store España.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/concept/10009461"
+      ]
+    },
     {
       "date": "2026-07-30",
       "title": "Ficha ampliada con personajes, combate y cinco vídeos",

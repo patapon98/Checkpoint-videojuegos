@@ -358,6 +358,62 @@
     }
   },
   {
+    "id": "palworld-online-mmorpg-movil",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "un nuevo MMORPG de supervivencia para iOS y Android",
+        "llegará en 2026",
+        "mundo abierto compartido"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-03",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Palworld Online"
+      },
+      "copy": {
+        "es": "Palworld Online llevará la captura, la supervivencia y la construcción a un MMORPG para móviles en 2026"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Palworld Online llevará la saga al móvil con un MMORPG previsto para 2026"
+    },
+    "summary": {
+      "es": "Garena ha anunciado Palworld Online, un nuevo MMORPG de supervivencia para iOS y Android desarrollado bajo licencia oficial de Pocketpair. El juego llegará en 2026 con un mundo abierto compartido, captura de Pals, construcción y actividades cooperativas y competitivas."
+    },
+    "why": {
+      "es": "El proyecto amplía una de las propiedades nuevas más populares de los últimos años con una entrega independiente para móviles. No es un port del Palworld original: Garena prepara un entorno persistente, una ambientación narrativa propia y sistemas adaptados a pantallas táctiles."
+    },
+    "sources": [
+      {
+        "label": "Garena",
+        "type": {
+          "es": "Anuncio oficial del juego"
+        },
+        "url": "https://www.garena.sg/news/7UPUTA"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto sobre el anuncio"
+        },
+        "url": "https://www.theverge.com/games/974450/palworld-online-mobile-mmo"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Garena desarrollará y publicará Palworld Online con la licencia oficial de Pocketpair. Su mundo interconectado permitirá formar grupos, levantar asentamientos compartidos, automatizar la producción con Pals y participar tanto en encuentros cooperativos contra el entorno como en combates entre jugadores.",
+        "La nueva entrega incorporará una ambientación y relatos secundarios creados específicamente para esta versión. Garena también promete una interfaz táctil simplificada y controles opcionales de un toque para gestionar bases, construcciones y criaturas, aunque todavía no ha anunciado una fecha concreta de estreno."
+      ]
+    }
+  },
+  {
     "id": "ea-autorizacion-final-compra-2026",
     "important": true,
     "emphasis": {

@@ -15,6 +15,7 @@ on:
       - "playstation-plus/*.html"
       - "sobre-mi.html"
       - "contacto.html"
+      - "privacidad.html"
   workflow_dispatch:
 
 permissions:

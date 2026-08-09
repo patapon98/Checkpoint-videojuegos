@@ -3,7 +3,7 @@
   "title": "Marvel's Wolverine",
   "subtitle": "La historia de Logan, su combate, sus personajes y todo lo confirmado antes del lanzamiento.",
   "status": "Reservas abiertas",
-  "releaseDate": "2026-09-14",
+  "releaseDate": "2026-09-15",
   "platforms": [
     "PS5"
   ],
@@ -159,6 +159,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-10",
+      "title": "Fecha de lanzamiento corregida al 15 de septiembre",
+      "description": "La ficha vuelve a situar Marvel's Wolverine el 15 de septiembre de 2026, fecha comunicada oficialmente por PlayStation para el lanzamiento.",
+      "sourceUrls": [
+        "https://blog.playstation.com/2026/06/02/marvels-wolverine-new-gameplay-story-details-from-state-of-play/"
+      ]
+    },
+    {
       "date": "2026-08-09",
       "title": "PlayStation España fija el lanzamiento el 14 de septiembre",
       "description": "La ficha oficial y la PlayStation Store españolas sitúan Marvel's Wolverine el 14 de septiembre de 2026; se corrige la fecha de la ficha, que figuraba como 15 de septiembre.",
@@ -185,7 +193,7 @@
     "marvel-tokon-fighting-souls",
     "god-of-war-laufey"
   ],
-  "updatedAt": "2026-08-09",
+  "updatedAt": "2026-08-10",
   "price": "Desde 79,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",

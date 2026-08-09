@@ -296,6 +296,68 @@
     }
   },
   {
+    "id": "minecraft-switch-2-fecha-vibrant-visuals",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "llegará a Nintendo Switch 2 el 27 de octubre",
+        "Vibrant Visuals será la experiencia gráfica predeterminada",
+        "una vía de actualización digital"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-08-05",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Minecraft"
+      },
+      "copy": {
+        "es": "Minecraft llegará a Switch 2 el 27 de octubre con Vibrant Visuals"
+      }
+    },
+    "tone": "nintendo",
+    "title": {
+      "es": "Minecraft llegará a Nintendo Switch 2 el 27 de octubre con Vibrant Visuals"
+    },
+    "summary": {
+      "es": "Mojang ha confirmado que Minecraft llegará a Nintendo Switch 2 el 27 de octubre. La versión nativa aprovechará el nuevo hardware y Vibrant Visuals será la experiencia gráfica predeterminada, con iluminación y sombras mejoradas."
+    },
+    "why": {
+      "es": "La adaptación corrige una de las principales limitaciones técnicas de Minecraft en la consola de Nintendo. Los propietarios de la versión de Switch tendrán acceso a una vía de actualización digital, aunque Mojang todavía no ha detallado su precio ni sus condiciones."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=pBL7nJLH8ro",
+      "label": {
+        "es": "Ver anuncio oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Minecraft",
+        "type": {
+          "es": "Anuncio oficial de fecha y características"
+        },
+        "url": "https://www.minecraft.net/en-us/article/minecraft-for-nintendo-switch-2-release-date"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Anuncio oficial para Nintendo Switch 2"
+        },
+        "url": "https://www.nintendo.com/us/whatsnew/minecraft-for-nintendo-switch-2-arrives-oct-27/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Vibrant Visuals añadirá iluminación mejorada, sombras y otros cambios visuales a la edición de Switch 2. También será compatible con contenido admitido del Marketplace, aunque no estará disponible en pantalla dividida ni en determinados mundos y complementos.",
+        "El paquete exclusivo Super Mario Mash-Up recibirá una actualización para aprovechar el nuevo acabado gráfico. Mojang confirma que los compradores de Minecraft en la primera Switch podrán pasar a la nueva versión mediante una actualización digital, cuyos detalles se comunicarán más adelante."
+      ]
+    }
+  },
+  {
     "id": "ea-autorizacion-final-compra-2026",
     "important": true,
     "emphasis": {

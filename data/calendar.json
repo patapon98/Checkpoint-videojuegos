@@ -1344,6 +1344,58 @@
       "trailer": "https://www.youtube.com/watch?v=pMeYxev9PZM"
     },
     {
+      "id": "moonlighter-2-the-endless-vault",
+      "title": "Moonlighter 2: The Endless Vault",
+      "headingHtml": "Moonlighter 2: The Endless Vault",
+      "date": "2026-09-02",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000118041/e041fa4c0f398cc8dd3674fd0d1e5ce47d1f396f16f6c898f51cb84774724b5a",
+        "alt": "Moonlighter 2: The Endless Vault",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/moonlighter-2-the-endless-vault-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Moonlighter 2: The Endless Vault"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 40,
+      "source": {
+        "url": "https://x.com/DigitalSunGames/status/2084988916570927276",
+        "official": true,
+        "host": "x.com",
+        "checkedAt": "2026-08-09",
+        "evidence": {
+          "title": "Moonlighter 2: The Endless Vault",
+          "releaseDate": "2026-09-02",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=iEP6z2x78TI"
+    },
+    {
       "id": "speedrunners-2-king-of-speed",
       "title": "SpeedRunners 2: King of Speed",
       "headingHtml": "SpeedRunners 2: King of Speed",

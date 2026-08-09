@@ -25,6 +25,7 @@ on:
       - 'juegos.html'
       - 'docs/NEWS_AUTOMATION.md'
       - '.github/workflows/validate-news.yml'
+      - 'serve.py'
   push:
     branches: [main]
     paths:
@@ -42,9 +43,10 @@ on:
       - 'css/news.css'
       - 'css/news-grid.css'
       - '.github/workflows/validate-news.yml'
+      - 'serve.py'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: news-pipeline-${{ github.ref }}
@@ -85,6 +87,7 @@ jobs:
           node --check js/news-flip.js
           node --check js/news-grid.js
           node --check js/news-article-links.js
+          python -m py_compile serve.py
 
       - name: Limitar las entregas automáticas
         env:
@@ -106,19 +109,6 @@ jobs:
           node scripts/validate-game-hub-pc-requirements.mjs
           node scripts/validate-game-hub-editions.mjs
           git diff --check
-
-      - name: Guardar las superficies para la preview
-        if: github.event.pull_request.head.repo.full_name == github.repository
-        run: |
-          git add -- data/news-index.json index.html noticias.html juegos juegos.html sitemap.xml
-          if git diff --cached --quiet; then
-            echo 'La preview ya contiene las superficies generadas.'
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Genera las superficies de Noticias para la preview'
-          git push origin HEAD:${{ github.head_ref }}
 
   generate:
     if: github.event_name == 'push'
@@ -152,6 +142,7 @@ jobs:
           node --check js/news-flip.js
           node --check js/news-grid.js
           node --check js/news-article-links.js
+          python -m py_compile serve.py
 
       - name: Generar el índice y las superficies de Noticias
         run: |

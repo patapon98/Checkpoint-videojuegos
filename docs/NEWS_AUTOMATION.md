@@ -64,8 +64,10 @@ La automatización diaria de ChatGPT se limita a:
 
 El único workflow de Noticias, `.github/workflows/validate-news.yml`, actúa en dos momentos:
 
-- En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno. Comprueba duplicados, recencia, fuente oficial y estructura editorial, y genera todas las salidas en el entorno de comprobación.
+- En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno. Comprueba duplicados, recencia, fuente oficial y estructura editorial, y genera todas las salidas únicamente dentro del entorno de comprobación. No hace commits adicionales en la rama del PR.
 - Tras el `push` a `main` genera `data/news-index.json`, actualiza la caché de portada y Noticias, renderiza las noticias relacionadas, ejecuta todas las validaciones y hace un commit únicamente si cambió algún archivo generado.
+
+La `Commit Preview URL` no necesita que esos archivos generados estén versionados en la rama. `serve.py` ejecuta los mismos generadores al arrancar el entorno de preview, de modo que portada, Noticias, ticker y relacionadas reflejan el JSON de la rama sin ensuciar el diff del PR.
 
 No hay bandeja de entrada, archivo histórico separado, importador, movimientos de archivos, reintentos programados, ejecución manual, comprobaciones de SHA ni fusión automática.
 
@@ -97,6 +99,6 @@ No se publica y se solicita revisión cuando:
 - una actualización no puede conservar el identificador, la fecha original o la estructura de la tarjeta,
 - necesita una página individual o un cambio de diseño,
 - el JSON está mal formado, repite un identificador o no cumple el esquema,
-- una PR automática contiene más de dos noticias o cualquier otro archivo.
+- una PR automática contiene más de dos noticias o cualquier otro archivo editorial no autorizado.
 
 Si no hay novedades suficientemente importantes, no se modifica el repositorio ni se notifica.

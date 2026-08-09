@@ -4,10 +4,17 @@ on:
   push:
     paths:
       - "index.html"
+      - "noticias.html"
+      - "noticias/*.html"
       - "resenas.html"
       - "resenas/*.html"
+      - "calendario.html"
       - "juegos.html"
       - "juegos/*.html"
+      - "playstation-plus.html"
+      - "playstation-plus/*.html"
+      - "sobre-mi.html"
+      - "contacto.html"
   workflow_dispatch:
 
 permissions:

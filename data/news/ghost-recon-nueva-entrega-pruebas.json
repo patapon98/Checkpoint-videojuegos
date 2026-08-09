@@ -1,0 +1,70 @@
+{
+  "id": "ghost-recon-nueva-entrega-pruebas",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "lleva varios años desarrollando la próxima entrega de Ghost Recon",
+      "está listo para iniciar pruebas cerradas",
+      "no ha anunciado título, fecha ni gameplay"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-06",
+  "publishedAt": "2026-08-06T16:00:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Ghost Recon"
+    },
+    "copy": {
+      "es": "Ghost Recon confirma una nueva entrega y abre el registro para sus pruebas cerradas"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Ubisoft confirma una nueva entrega de Ghost Recon y abre el registro para sus pruebas cerradas"
+  },
+  "summary": {
+    "es": "Ubisoft ha confirmado que lleva varios años desarrollando la próxima entrega de Ghost Recon y que el proyecto está listo para iniciar pruebas cerradas. El nuevo Insider Program permitirá a jugadores seleccionados probar versiones anticipadas y enviar sus comentarios al equipo."
+  },
+  "why": {
+    "es": "La saga no recibe una entrega principal desde Breakpoint en 2019. Ubisoft no ha anunciado título, fecha ni gameplay, pero el inicio de las pruebas confirma que el proyecto ha alcanzado una fase jugable y mantiene el combate táctico y las operaciones a gran escala como pilares."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=TlZ2kEN-M1c",
+    "label": {
+      "es": "Ver presentación oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Presentación oficial del 25.º aniversario"
+      },
+      "url": "https://www.youtube.com/watch?v=TlZ2kEN-M1c"
+    },
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Programa oficial de pruebas cerradas"
+      },
+      "url": "https://store.ubisoft.com/tom-clancy-ghost-recon?addinfo=&bi=&ucid=UWB-276557"
+    },
+    {
+      "label": "VGC",
+      "type": {
+        "es": "Contexto sobre el anuncio"
+      },
+      "url": "https://www.videogameschronicle.com/news/ubisoft-launches-ghost-recon-insider-program-for-players-to-help-with-closed-tests-on-its-next-game/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Durante la presentación por el 25.º aniversario, la productora Irina-Gabriela Popa explicó que el equipo lleva años construyendo el próximo capítulo. Ubisoft busca una experiencia nueva que conserve la acción táctica, las operaciones de gran escala y la narrativa militar de la saga.",
+      "El Insider Program dará acceso anticipado a pruebas cerradas para que participantes seleccionados ayuden a equilibrar, optimizar y ajustar el juego. La compañía todavía no ha revelado su nombre, ventana de lanzamiento ni una demostración pública de su jugabilidad."
+    ]
+  }
+}

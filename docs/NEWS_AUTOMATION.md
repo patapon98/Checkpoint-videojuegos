@@ -67,7 +67,7 @@ El único workflow de Noticias, `.github/workflows/validate-news.yml`, actúa en
 - En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno. Comprueba duplicados, recencia, fuente oficial y estructura editorial, y genera todas las salidas únicamente dentro del entorno de comprobación. No hace commits adicionales en la rama del PR.
 - Tras el `push` a `main` genera `data/news-index.json`, actualiza la caché de portada y Noticias, renderiza las noticias relacionadas, ejecuta todas las validaciones y hace un commit únicamente si cambió algún archivo generado.
 
-La `Commit Preview URL` no necesita que esos archivos generados estén versionados en la rama. `serve.py` ejecuta los mismos generadores al arrancar el entorno de preview, de modo que portada, Noticias, ticker y relacionadas reflejan el JSON de la rama sin ensuciar el diff del PR.
+Cloudflare ejecuta `scripts/build-cloudflare-preview.mjs` mediante `wrangler.jsonc` antes de cada despliegue. Ese build regenera temporalmente `data/news-index.json`, portada, Noticias, ticker y noticias relacionadas en el entorno de compilación. Así la `Commit Preview URL` refleja el JSON de la rama sin añadir archivos generados al diff. `serve.py` conserva el mismo comportamiento para previews locales/Replit.
 
 No hay bandeja de entrada, archivo histórico separado, importador, movimientos de archivos, reintentos programados, ejecución manual, comprobaciones de SHA ni fusión automática.
 

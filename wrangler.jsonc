@@ -3,6 +3,9 @@
   // El "name" debe coincidir con el nombre del Worker en el panel de Cloudflare.
   "name": "finalsecreto",
   "compatibility_date": "2026-07-01",
+  "build": {
+    "command": "node scripts/build-cloudflare-preview.mjs"
+  },
   "assets": {
     "directory": "./",
     "html_handling": "auto-trailing-slash",

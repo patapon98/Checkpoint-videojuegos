@@ -40,6 +40,10 @@
 
 .contact-consent{display:flex;align-items:flex-start;gap:10px;color:var(--ink-soft);font-size:.75rem;line-height:1.5;cursor:pointer}
 .contact-consent input{width:17px;height:17px;flex:0 0 auto;margin-top:2px;accent-color:var(--accent)}
+.contact-consent a,.contact-data-summary a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.contact-data-summary{margin-top:-3px;padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:color-mix(in srgb,var(--accent-soft) 34%,var(--card));color:var(--ink-soft)}
+.contact-data-summary p{font-size:.69rem;line-height:1.6}
+.contact-data-summary b{color:var(--ink);font-weight:800}
 
 .contact-submit{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:49px;padding:0 22px;border:0;border-radius:99px;background:var(--button-bg);color:var(--button-ink);font-family:var(--sans);font-size:.88rem;font-weight:800;cursor:pointer;transition:background .2s ease,transform .2s ease,box-shadow .2s ease}
 .contact-submit:hover{background:var(--accent);transform:translateY(-2px);box-shadow:0 14px 28px -18px rgba(228,87,46,.72)}

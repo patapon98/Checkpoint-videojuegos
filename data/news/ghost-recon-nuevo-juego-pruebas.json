@@ -1,0 +1,63 @@
+{
+  "id": "ghost-recon-nuevo-juego-pruebas",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "el próximo capítulo de Ghost Recon",
+      "está preparado para entrar en pruebas cerradas",
+      "acción táctica, operaciones a gran escala y narrativa militar creíble"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-06",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Ghost Recon"
+    },
+    "copy": {
+      "es": "Ghost Recon prepara su próximo juego y abre el registro para las pruebas cerradas"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Ubisoft confirma el próximo Ghost Recon y prepara sus primeras pruebas cerradas"
+  },
+  "summary": {
+    "es": "Ubisoft ha confirmado que lleva varios años desarrollando el próximo capítulo de Ghost Recon y que el proyecto ya está preparado para entrar en pruebas cerradas. Los jugadores pueden registrarse en el programa Insider para optar a participar y enviar comentarios al equipo."
+  },
+  "why": {
+    "es": "La saga regresará con una entrega que pretende conservar sus pilares de acción táctica, operaciones a gran escala y narrativa militar creíble. Es la primera confirmación directa de un nuevo Ghost Recon desde la cancelación de Frontline en 2022."
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Presentación oficial del 25.º aniversario"
+      },
+      "url": "https://www.youtube.com/watch?v=TlZ2kEN-M1c"
+    },
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Registro oficial del programa Insider"
+      },
+      "url": "https://store.ubisoft.com/us/tom-clancy-ghost-recon?lang=en_US"
+    },
+    {
+      "label": "GamesRadar+",
+      "type": {
+        "es": "Contexto sobre la confirmación y las pruebas"
+      },
+      "url": "https://www.gamesradar.com/games/tom-clancy-s/new-ghost-recon-game-officially-confirmed-by-ubisoft-after-years-of-development-and-you-can-put-it-to-the-test-soon/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La productora Irina-Gabriela Popa explicó durante la presentación del 25.º aniversario que Ubisoft lleva varios años construyendo este nuevo capítulo. El estudio todavía no ha comunicado el título, las plataformas, la fecha ni el calendario de las primeras sesiones de prueba.",
+      "El programa Insider permitirá a grupos seleccionados acceder anticipadamente a versiones cerradas y trasladar sus impresiones sobre equilibrio y funcionamiento. Ubisoft afirma que busca una experiencia nueva, pero fiel a la acción táctica, las operaciones amplias, el relato militar y la unidad Ghost."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "supermassive-games-despidos-75-empleados",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "la salida de hasta 75 empleados",
+      "necesaria para garantizar la sostenibilidad de la compañía",
+      "la tercera gran reducción de plantilla anunciada por Supermassive Games en tres años"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-08-11",
+  "publishedAt": "2026-08-11T11:43:27Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Supermassive"
+    },
+    "copy": {
+      "es": "Supermassive inicia un proceso que puede afectar a 75 empleados"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Supermassive Games plantea despedir hasta a 75 empleados"
+  },
+  "summary": {
+    "es": "Supermassive Games ha iniciado un proceso de consulta sobre despidos que podría terminar con la salida de hasta 75 empleados. El estudio considera la medida necesaria para garantizar la sostenibilidad de la compañía y promete apoyo a las personas afectadas."
+  },
+  "why": {
+    "es": "El ajuste supone la tercera gran reducción de plantilla anunciada por Supermassive Games en tres años. El estudio de Until Dawn y The Dark Pictures vuelve a recortar su estructura apenas tres meses después del lanzamiento de Directive 8020."
+  },
+  "sources": [
+    {
+      "label": "Supermassive Games",
+      "type": {
+        "es": "Comunicado oficial sobre el proceso de despidos"
+      },
+      "url": "https://twitter.com/SuperMGames/status/2087142850936885520"
+    },
+    {
+      "label": "Game Developer",
+      "type": {
+        "es": "Contexto sobre las reducciones de plantilla anteriores"
+      },
+      "url": "https://www.gamedeveloper.com/business/supermassive-games-begins-third-round-of-layoffs-in-three-years"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La compañía ha abierto una consulta de redundancia, por lo que la cifra de 75 puestos representa el máximo previsto y no un recuento definitivo. Supermassive no ha detallado qué equipos o proyectos quedarían afectados.",
+      "El estudio británico ya eliminó alrededor de 90 puestos en 2024 y otros 36 en 2025. Esta nueva ronda llega después de publicar Directive 8020 en mayo y prolonga una reestructuración que atraviesa tres años consecutivos."
+    ]
+  }
+}

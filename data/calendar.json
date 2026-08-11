@@ -2139,37 +2139,54 @@
     },
     {
       "id": "kingdom-hearts-collection-i-iii",
-      "title": "Kingdom Hearts Collection [I~III]",
-      "headingHtml": "Kingdom Hearts Collection [I~III] <span class=\"tag-dlc\">Recopilatorio</span>",
+      "title": "KINGDOM HEARTS Collection [I~III]",
+      "headingHtml": "KINGDOM HEARTS Collection [I~III] <span class=\"tag-dlc\">Recopilatorio</span>",
       "date": "2026-10-08",
       "platformKeys": [
-        "switch",
+        "ps5",
         "xbox",
-        "ps5"
+        "pc",
+        "switch"
       ],
-      "platformsHtml": "Switch 2 · Xbox Series X|S · PS5",
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
       "image": {
+        "provider": "rawg",
+        "query": "KINGDOM HEARTS Collection [I~III]",
         "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2552430/capsule_231x87.jpg",
-        "alt": "Kingdom Hearts Collection",
+        "alt": "KINGDOM HEARTS Collection [I~III]",
         "className": "fit-contain",
         "gridArt": "",
         "poster": "",
-        "legacy": true
+        "legacy": false
       },
-      "store": null,
+      "store": {
+        "url": "https://press.na.square-enix.com/KINGDOM-HEARTS-Collection-IIII",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de KINGDOM HEARTS Collection [I~III]"
+      },
       "affiliate": null,
       "review": null,
       "tag": "Recopilatorio",
       "badge": null,
       "priority": 55,
       "source": {
-        "url": "",
-        "official": false,
-        "host": "",
-        "checkedAt": null
+        "url": "https://press.na.square-enix.com/SQUARE-ENIX-UNVEILS-NEW-KINGDOM-HEARTS-ANNOUNCEMENTS-DURING-NINTENDO-D",
+        "official": true,
+        "host": "press.na.square-enix.com",
+        "checkedAt": "2026-08-11",
+        "evidence": {
+          "title": "KINGDOM HEARTS Collection [I~III]",
+          "releaseDate": "2026-10-08",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
       },
-      "legacy": true,
-      "trailer": "https://www.youtube.com/watch?v=ldMqRmTwy80"
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=gc8z23S8a-A"
     },
     {
       "id": "dragon-s-dogma-2-dark-arisen",

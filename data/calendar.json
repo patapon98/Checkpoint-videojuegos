@@ -2150,8 +2150,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "KINGDOM HEARTS Collection [I~III]",
         "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2552430/capsule_231x87.jpg",
         "alt": "KINGDOM HEARTS Collection [I~III]",
         "className": "fit-contain",

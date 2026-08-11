@@ -64,9 +64,14 @@
     }).format(new Date(value + "T12:00:00Z"));
   }
 
+  function siteDateValue(item) {
+    return item.addedAt || item.publishedAt || `${item.date}T00:00:00Z`;
+  }
+
   function relativeDate(item, lang) {
-    const hasTime = Boolean(item.publishedAt);
-    const published = new Date(hasTime ? item.publishedAt : item.date + "T12:00:00Z");
+    const value = siteDateValue(item);
+    const hasTime = Boolean(item.addedAt || item.publishedAt);
+    const published = new Date(value);
     const now = new Date();
     const exact = new Intl.DateTimeFormat(locale[lang] || locale.es, {
       day: "numeric",
@@ -90,7 +95,7 @@
       else if (days === 1) label = lang === "en" ? "Yesterday" : "Ayer";
       else label = lang === "en" ? `${days} days ago` : `Hace ${days} días`;
     }
-    return `<time class="news-relative-time" datetime="${escapeHTML(item.publishedAt || item.date)}" title="${escapeHTML(exact)}">${escapeHTML(label)}</time>`;
+    return `<time class="news-relative-time" datetime="${escapeHTML(value)}" title="${escapeHTML(exact)}">${escapeHTML(label)}</time>`;
   }
 
   function updatedLabel(item, lang) {
@@ -536,10 +541,7 @@
   }
 
   function newsTimestamp(item) {
-    const value = item.updated
-      ? `${item.updated}T12:00:00Z`
-      : item.publishedAt || `${item.date}T12:00:00Z`;
-    const timestamp = Date.parse(value);
+    const timestamp = Date.parse(siteDateValue(item));
     return Number.isFinite(timestamp) ? timestamp : 0;
   }
 
@@ -559,12 +561,12 @@
     const featured = news.find(item => item.featured) || news[0];
     const rest = news
       .filter(item => item !== featured && item.home !== false)
-      .sort((a, b) => b.date.localeCompare(a.date));
+      .sort((a, b) => newsTimestamp(b) - newsTimestamp(a));
 
     const home = document.getElementById("newsHome");
     if (home && featured) {
       bindHomeFlips(home);
-      const recent = rest.slice(0, 4);
+      const recent = rest.slice(0, 6);
       home.innerHTML = `
         ${featuredCard(featured, selectedLang)}
         <div class="news-brief-carousel" data-news-carousel>
@@ -593,7 +595,7 @@
     if (archive) {
       const ordered = [...news].sort((a, b) => {
         if (a.featured !== b.featured) return a.featured ? -1 : 1;
-        return b.date.localeCompare(a.date);
+        return newsTimestamp(b) - newsTimestamp(a);
       });
       archive.innerHTML = ordered.map(item => archiveCard(item, selectedLang)).join("");
     }

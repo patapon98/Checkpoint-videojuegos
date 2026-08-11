@@ -1,0 +1,56 @@
+{
+  "id": "webtoon-compra-ri-games-100-millones",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha acordado adquirir el 60 % de RI Games Holdings",
+      "aproximadamente 100 millones de dólares",
+      "desarrollar y lanzar varios juegos durante los próximos cuatro años"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-08-11",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "WEBTOON"
+    },
+    "copy": {
+      "es": "WEBTOON acuerda comprar el 60 % de RI Games por unos 100 millones de dólares"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "WEBTOON acuerda comprar el 60 % de RI Games por unos 100 millones de dólares"
+  },
+  "summary": {
+    "es": "WEBTOON Entertainment ha acordado adquirir el 60 % de RI Games Holdings por aproximadamente 100 millones de dólares. La operación le dará el control de los estudios GrayGames y Offbeat y una vía directa para convertir sus webcómics en videojuegos."
+  },
+  "why": {
+    "es": "Las compañías planean desarrollar y lanzar varios juegos durante los próximos cuatro años, basados en obras como Overgeared, Doom Breaker y Omniscient Reader. El primer proyecto será un MMORPG de acción de Overgeared publicado por Nexon."
+  },
+  "sources": [
+    {
+      "label": "WEBTOON Entertainment",
+      "type": {
+        "es": "Comunicado oficial de la operación"
+      },
+      "url": "https://www.businesswire.com/news/home/20260810320102/en/WEBTOON-Expands-Global-IP-Business-with-Strategic-Investment-in-RI-Games-Holdings-Inc."
+    },
+    {
+      "label": "Korea JoongAng Daily",
+      "type": {
+        "es": "Contexto empresarial y de la cartera de juegos"
+      },
+      "url": "https://www.koreajoongangdaily.com/business/webtoon-entertainment-to-acquire-60-stake-in-game-developer-for-100-million/12819149"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El acuerdo se ejecutará en dos fases y está sujeto a las condiciones habituales de cierre. WEBTOON financiará la compra con efectivo disponible y contempla mecanismos ligados al rendimiento para el 40 % restante de RI Games.",
+      "La cartera inicial reúne adaptaciones de Overgeared, Doom Breaker y Omniscient Reader, obras con audiencias globales ya consolidadas. El MMORPG de Overgeared tiene previsto estrenarse mundialmente este año junto a su adaptación al anime."
+    ]
+  }
+}

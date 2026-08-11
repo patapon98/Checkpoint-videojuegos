@@ -158,6 +158,14 @@
   "changes": [
     {
       "date": "2026-08-10",
+      "title": "Corregidos los requisitos de GPU publicados en Steam",
+      "description": "La ficha restaura Intel Arc A580 en mínimos e Intel Arc B580 en recomendados, que siguen formando parte de las configuraciones publicadas para PC. También se retira la aclaración sobre ray tracing porque no aparece como requisito explícito en la tabla oficial.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
+      ]
+    },
+    {
+      "date": "2026-08-10",
       "title": "Steam actualiza los requisitos de GPU y confirma Easy Anti-Cheat",
       "description": "La ficha sincroniza los requisitos oficiales de PC. Steam elimina las GPU Intel que figuraban anteriormente, exige una GPU compatible con ray tracing por hardware y declara el uso de Easy Anti-Cheat.",
       "sourceUrls": [
@@ -224,7 +232,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600 o AMD Radeon RX 9060"
+        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600, AMD Radeon RX 9060 o Intel Arc A580"
       },
       {
         "label": "DirectX",
@@ -258,7 +266,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT o AMD Radeon RX 9060 XT"
+        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT, AMD Radeon RX 9060 XT o Intel Arc B580"
       },
       {
         "label": "DirectX",
@@ -280,7 +288,6 @@
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
       "El uso de SSD es obligatorio en ambas configuraciones.",
-      "Los requisitos mínimos exigen una GPU compatible con ray tracing por hardware.",
       "Steam declara el uso de Easy Anti-Cheat."
     ]
   },

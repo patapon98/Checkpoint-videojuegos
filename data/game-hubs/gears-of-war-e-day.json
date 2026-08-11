@@ -157,6 +157,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-10",
+      "title": "Steam actualiza los requisitos de GPU y confirma Easy Anti-Cheat",
+      "description": "La ficha sincroniza los requisitos oficiales de PC. Steam elimina las GPU Intel que figuraban anteriormente, exige una GPU compatible con ray tracing por hardware y declara el uso de Easy Anti-Cheat.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
+      ]
+    },
+    {
       "date": "2026-08-07",
       "title": "Aclarado el acceso anticipado de la beta multijugador",
       "description": "Xbox confirma que la beta se reparte en dos fines de semana y que el periodo del 6 al 10 de agosto corresponde al acceso anticipado para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
@@ -197,7 +205,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-07",
+  "updatedAt": "2026-08-10",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
@@ -216,7 +224,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "RTX 5050, RTX 2060, RX 6600, RX 9060 o Intel Arc A580"
+        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600 o AMD Radeon RX 9060"
       },
       {
         "label": "DirectX",
@@ -250,7 +258,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "RTX 5060, RTX 3060 Ti, RX 6700 XT, RX 9060 XT o Intel Arc B580"
+        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT o AMD Radeon RX 9060 XT"
       },
       {
         "label": "DirectX",
@@ -271,7 +279,9 @@
     ],
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
-      "El uso de SSD es obligatorio en ambas configuraciones."
+      "El uso de SSD es obligatorio en ambas configuraciones.",
+      "Los requisitos mínimos exigen una GPU compatible con ray tracing por hardware.",
+      "Steam declara el uso de Easy Anti-Cheat."
     ]
   },
   "editions": {

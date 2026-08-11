@@ -37,13 +37,17 @@ const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
 
 function validateCurrent(item, filename, { isAddition = false } = {}) {
   if (filename !== `data/news/${item.id}.json`) errors.push(`${filename}: el nombre debe coincidir con el id`);
-  const effectiveDate = item.updated || item.publishedAt || `${item.date}T12:00:00Z`;
+  const effectiveDate = item.updated || item.addedAt || item.publishedAt || `${item.date}T00:00:00Z`;
   const effectiveTime = Date.parse(effectiveDate);
   if (!Number.isFinite(effectiveTime) || effectiveTime < sevenDaysAgo) {
     errors.push(`${item.id}: la noticia o actualización no es suficientemente reciente`);
   }
   if (isAddition && item.featured !== false) errors.push(`${item.id}: featured debe ser false`);
   if (isAddition && item.article?.url) errors.push(`${item.id}: una rama automática no puede crear artículos individuales`);
+  if (isAddition && !item.addedAt) errors.push(`${item.id}: una noticia nueva debe incluir addedAt`);
+  if (item.addedAt !== undefined && !Number.isFinite(Date.parse(item.addedAt))) {
+    errors.push(`${item.id}: addedAt debe ser una fecha y hora ISO válida`);
+  }
   if (item.versionHistory !== undefined) errors.push(`${item.id}: versionHistory ya no forma parte del esquema`);
   if (!(item.sources || []).some((source) => officialPattern.test(source.type?.es || ""))) {
     errors.push(`${item.id}: falta una fuente primaria u oficial inequívoca`);
@@ -81,7 +85,7 @@ for (const filename of additions) {
 }
 
 const structuralFields = [
-  "id", "date", "publishedAt", "category", "tone", "featured",
+  "id", "date", "publishedAt", "addedAt", "category", "tone", "featured",
   "important", "home", "article", "trailer"
 ];
 const editableFields = ["title", "summary", "why", "homeDetails", "sources", "emphasis", "ticker"];

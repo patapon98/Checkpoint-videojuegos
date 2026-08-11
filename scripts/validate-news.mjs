@@ -22,6 +22,10 @@ function stable(value) {
   return value;
 }
 
+function siteTimestamp(item) {
+  return Date.parse(item?.addedAt || item?.publishedAt || `${item?.date}T00:00:00Z`);
+}
+
 const sourceFiles = (await readdir("data/news", { withFileTypes: true }))
   .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
   .map((entry) => entry.name)
@@ -78,9 +82,13 @@ for (const [index, item] of (news || []).entries()) {
     expect(!Number.isNaN(Date.parse(item.publishedAt)), `${prefix}: publishedAt inválido`);
     expect(item.publishedAt.startsWith(item.date), `${prefix}: publishedAt no coincide con date`);
   }
+  if (item?.addedAt !== undefined) {
+    expect(!Number.isNaN(Date.parse(item.addedAt)), `${prefix}: addedAt inválido`);
+  }
 
-  const time = Date.parse(item?.publishedAt || `${item?.date}T12:00:00Z`);
-  expect(time <= previousTime, `${prefix}: orden cronológico incorrecto`);
+  const time = siteTimestamp(item);
+  expect(Number.isFinite(time), `${prefix}: no tiene una fecha válida para ordenar`);
+  expect(time <= previousTime, `${prefix}: orden por entrada en la web incorrecto`);
   previousTime = time;
 
   for (const field of ["title", "summary", "why"]) {
@@ -126,6 +134,8 @@ expect(featuredCount <= 1, "Solo puede existir una noticia featured");
 expect(!coreSource.includes("FINALSECRETO_NEWS"), "news-core.js todavía depende de la variable global antigua");
 expect(coreSource.includes("/data/news-index.json"), "news-core.js no carga el índice JSON");
 expect(coreSource.includes("finalsecreto:news-ready"), "news-core.js no anuncia que los datos están listos");
+expect(coreSource.includes("addedAt"), "news-core.js no usa addedAt para la recencia de la web");
+expect(coreSource.includes("rest.slice(0, 6)"), "news-core.js no muestra seis noticias recientes en portada");
 expect(!loaderSource.includes("FINALSECRETO_NEWS"), "news.js todavía inyecta noticias");
 expect(coreSource.includes("data-news-article-link"), "news-core.js no genera Leer noticia completa desde article.url");
 expect(coreSource.includes("news-home-back-actions"), "news-core.js no muestra Leer noticia completa en el reverso de portada");

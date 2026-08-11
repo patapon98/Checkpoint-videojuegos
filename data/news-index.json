@@ -1,5 +1,61 @@
 [
   {
+    "id": "webtoon-compra-ri-games-100-millones",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha acordado adquirir el 60 % de RI Games Holdings",
+        "aproximadamente 100 millones de dólares",
+        "desarrollar y lanzar varios juegos durante los próximos cuatro años"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-08-11",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "WEBTOON"
+      },
+      "copy": {
+        "es": "WEBTOON acuerda comprar el 60 % de RI Games por unos 100 millones de dólares"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "WEBTOON acuerda comprar el 60 % de RI Games por unos 100 millones de dólares"
+    },
+    "summary": {
+      "es": "WEBTOON Entertainment ha acordado adquirir el 60 % de RI Games Holdings por aproximadamente 100 millones de dólares. La operación le dará el control de los estudios GrayGames y Offbeat y una vía directa para convertir sus webcómics en videojuegos."
+    },
+    "why": {
+      "es": "Las compañías planean desarrollar y lanzar varios juegos durante los próximos cuatro años, basados en obras como Overgeared, Doom Breaker y Omniscient Reader. El primer proyecto será un MMORPG de acción de Overgeared publicado por Nexon."
+    },
+    "sources": [
+      {
+        "label": "WEBTOON Entertainment",
+        "type": {
+          "es": "Comunicado oficial de la operación"
+        },
+        "url": "https://www.businesswire.com/news/home/20260810320102/en/WEBTOON-Expands-Global-IP-Business-with-Strategic-Investment-in-RI-Games-Holdings-Inc."
+      },
+      {
+        "label": "Korea JoongAng Daily",
+        "type": {
+          "es": "Contexto empresarial y de la cartera de juegos"
+        },
+        "url": "https://www.koreajoongangdaily.com/business/webtoon-entertainment-to-acquire-60-stake-in-game-developer-for-100-million/12819149"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El acuerdo se ejecutará en dos fases y está sujeto a las condiciones habituales de cierre. WEBTOON financiará la compra con efectivo disponible y contempla mecanismos ligados al rendimiento para el 40 % restante de RI Games.",
+        "La cartera inicial reúne adaptaciones de Overgeared, Doom Breaker y Omniscient Reader, obras con audiencias globales ya consolidadas. El MMORPG de Overgeared tiene previsto estrenarse mundialmente este año junto a su adaptación al anime."
+      ]
+    }
+  },
+  {
     "id": "grounded-2-ps5-into-the-abyss",
     "important": false,
     "emphasis": {
@@ -52,6 +108,63 @@
       "es": [
         "Grounded 2 continuará en acceso anticipado también en PS5. La versión del 11 de agosto se suma a Xbox Series X|S, Xbox en PC y Steam; Obsidian seguirá ampliando Brookhollow Park con nuevas áreas, criaturas y sistemas mientras avanza el desarrollo.",
         "Into the Abyss abre por primera vez el estanque para explorarlo tanto en la superficie como bajo el agua. Añade trajes de buceo para alcanzar mayores profundidades, nuevas amenazas y el Toe-biter, un vehículo anfibio capaz de desplazarse por tierra y agua."
+      ]
+    }
+  },
+  {
+    "id": "supermassive-games-despidos-75-empleados",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "la salida de hasta 75 empleados",
+        "necesaria para garantizar la sostenibilidad de la compañía",
+        "la tercera gran reducción de plantilla anunciada por Supermassive Games en tres años"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-08-11",
+    "publishedAt": "2026-08-11T11:43:27Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Supermassive"
+      },
+      "copy": {
+        "es": "Supermassive inicia un proceso que puede afectar a 75 empleados"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Supermassive Games plantea despedir hasta a 75 empleados"
+    },
+    "summary": {
+      "es": "Supermassive Games ha iniciado un proceso de consulta sobre despidos que podría terminar con la salida de hasta 75 empleados. El estudio considera la medida necesaria para garantizar la sostenibilidad de la compañía y promete apoyo a las personas afectadas."
+    },
+    "why": {
+      "es": "El ajuste supone la tercera gran reducción de plantilla anunciada por Supermassive Games en tres años. El estudio de Until Dawn y The Dark Pictures vuelve a recortar su estructura apenas tres meses después del lanzamiento de Directive 8020."
+    },
+    "sources": [
+      {
+        "label": "Supermassive Games",
+        "type": {
+          "es": "Comunicado oficial sobre el proceso de despidos"
+        },
+        "url": "https://twitter.com/SuperMGames/status/2087142850936885520"
+      },
+      {
+        "label": "Game Developer",
+        "type": {
+          "es": "Contexto sobre las reducciones de plantilla anteriores"
+        },
+        "url": "https://www.gamedeveloper.com/business/supermassive-games-begins-third-round-of-layoffs-in-three-years"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La compañía ha abierto una consulta de redundancia, por lo que la cifra de 75 puestos representa el máximo previsto y no un recuento definitivo. Supermassive no ha detallado qué equipos o proyectos quedarían afectados.",
+        "El estudio británico ya eliminó alrededor de 90 puestos en 2024 y otros 36 en 2025. Esta nueva ronda llega después de publicar Directive 8020 en mayo y prolonga una reestructuración que atraviesa tres años consecutivos."
       ]
     }
   },

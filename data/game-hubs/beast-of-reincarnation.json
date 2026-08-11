@@ -112,7 +112,7 @@
     ]
   },
   "confirmed": [
-    "Game Freak prepara una serie de actualizaciones poslanza. El siguiente parche, previsto dentro de una semana desde el 5 de agosto, contempla ajustes de cámara, texto más grande, mejoras progresivas del ritmo narrativo, el modo Rendimiento como ajuste predeterminado y correcciones de errores.",
+    "El parche v1.0.7 ya está disponible en PC: ajusta la cámara y el tamaño del texto, limita a una vez al día ciertas conversaciones de afinidad, permite reasignar el botón de interacción, modifica el ajuste predeterminado de las cinemáticas y rebalancea jefes en todas las dificultades.",
     "La historia arranca en una de las pocas colonias habitables del Japón de 4026.",
     "Emma es una Sealer. Absorbe la plaga de los malefacts y usa su cabello vegetal para escalar y atacar desde arriba.",
     "La plaga transforma el escenario en tiempo real y hace aparecer enemigos nuevos.",
@@ -130,6 +130,7 @@
   "sources": [
     { "label": "Beast of Reincarnation", "url": "https://www.beastofreincarnation.com/", "type": "Web oficial" },
     { "label": "Game Freak", "url": "https://x.com/GAMEFREAK_info/status/2084899001086922900", "type": "Plan oficial de actualizaciones poslanza" },
+    { "label": "Steam News", "url": "https://store.steampowered.com/news/app/2001760/view/714534951362495289?l=english", "type": "Notas oficiales del parche v1.0.7 para PC" },
     { "label": "PlayStation España", "url": "https://store.playstation.com/es-es/concept/10014719", "type": "Precios, ediciones, reserva y funciones de PS5" },
     { "label": "Xbox España", "url": "https://www.xbox.com/es-es/games/beast-of-reincarnation", "type": "Ediciones, contenido de reserva, plataformas y Game Pass" },
     { "label": "Steam", "url": "https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/", "type": "Requisitos oficiales para PC, almacenamiento y funciones" },
@@ -149,6 +150,14 @@
     "heroImageAlt": "Arte promocional oficial de Beast of Reincarnation con Emma y Koo en el bosque"
   },
   "changes": [
+    {
+      "date": "2026-08-11",
+      "title": "Publicado el parche v1.0.7 para PC",
+      "description": "Game Freak actualiza la versión de PC con ajustes de cámara y texto, cambios en conversaciones de afinidad, reasignación del botón de interacción, rebalanceo de jefes y correcciones de errores.",
+      "sourceUrls": [
+        "https://store.steampowered.com/news/app/2001760/view/714534951362495289?l=english"
+      ]
+    },
     {
       "date": "2026-08-07",
       "title": "Game Freak detalla el próximo parche poslanza",
@@ -198,7 +207,7 @@
     "onimusha-way-of-the-sword",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-07",
+  "updatedAt": "2026-08-11",
   "price": "Desde 54,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/concept/10014719",

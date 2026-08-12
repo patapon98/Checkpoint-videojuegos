@@ -6,6 +6,9 @@
   if(!monthId||!filters||!groupsRoot||!status)return;
 
   const tierNames={essential:'Essential',extra:'Extra',premium:'Premium'};
+  const imageFallbacks={
+    'Onimusha: Dawn of Dreams':'https://images.launchbox-app.com/ad7677bb-42d1-48d2-958f-f4298c3a8d0b.jpg'
+  };
   const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let month=null;
   let activeFilter='all';
@@ -24,10 +27,15 @@
     const media=element('div','psplus-card-media');
     const image=document.createElement('img');
     image.src=game.image;
-    image.alt=`Imagen oficial de ${game.title}`;
+    image.alt=`Imagen de ${game.title}`;
     image.loading='lazy';
     image.decoding='async';
     image.addEventListener('error',()=>{
+      const fallback=imageFallbacks[game.title];
+      if(fallback&&image.src!==fallback){
+        image.src=fallback;
+        return;
+      }
       image.remove();
       media.classList.add('image-missing');
       media.setAttribute('aria-label',`No se pudo cargar la imagen de ${game.title}`);

@@ -89,6 +89,7 @@ const structuralFields = [
   "important", "home", "article", "trailer"
 ];
 const editableFields = ["title", "summary", "why", "homeDetails", "sources", "emphasis", "ticker"];
+const substantiveFields = editableFields.filter((field) => field !== "sources");
 
 for (const filename of updates) {
   const item = JSON.parse(await readFile(filename, "utf8"));
@@ -101,13 +102,33 @@ for (const filename of updates) {
     }
   }
 
-  const previousEffectiveDate = previous.updated || previous.date;
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(item.updated || "") || item.updated <= previousEffectiveDate) {
-    errors.push(`${item.id}: updated debe avanzar respecto a la versión publicada`);
+  const changedEditableFields = editableFields.filter((field) => !isDeepStrictEqual(item[field], previous[field]));
+  if (!changedEditableFields.length) {
+    errors.push(`${item.id}: la actualización no modifica ningún contenido editorial`);
   }
 
-  if (editableFields.every((field) => isDeepStrictEqual(item[field], previous[field]))) {
-    errors.push(`${item.id}: la actualización no modifica ningún contenido editorial visible`);
+  const isSourceCorrection = changedEditableFields.length === 1 && changedEditableFields[0] === "sources";
+  const isSubstantiveUpdate = substantiveFields.some((field) => changedEditableFields.includes(field));
+  if (!isSourceCorrection && !isSubstantiveUpdate) {
+    errors.push(`${item.id}: la actualización no encaja como evolución sustancial ni como corrección de fuentes`);
+  }
+
+  const updatedIsValid = /^\d{4}-\d{2}-\d{2}$/.test(item.updated || "");
+  if (!updatedIsValid) {
+    errors.push(`${item.id}: updated debe ser una fecha ISO válida`);
+  } else if (previous.updated) {
+    if (item.updated <= previous.updated) errors.push(`${item.id}: updated debe avanzar respecto a la actualización anterior`);
+  } else if (item.updated < previous.date) {
+    errors.push(`${item.id}: updated no puede ser anterior a la fecha original`);
+  }
+
+  if (isSourceCorrection) {
+    const previousHadOfficial = (previous.sources || []).some((source) => officialPattern.test(source.type?.es || ""));
+    const currentHasOfficial = (item.sources || []).some((source) => officialPattern.test(source.type?.es || ""));
+    if (!currentHasOfficial) errors.push(`${item.id}: una corrección de fuentes debe dejar al menos una fuente oficial inequívoca`);
+    if (previousHadOfficial && isDeepStrictEqual(item.sources, previous.sources)) {
+      errors.push(`${item.id}: la corrección de fuentes no introduce ningún cambio real`);
+    }
   }
 }
 

@@ -1,5 +1,55 @@
 [
   {
+    "id": "ghost-of-yotei-complete-edition",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "Echoes of Sekigahara, una expansión narrativa centrada en el pasado de Atsu",
+        "Most Wanted, un nuevo modo individual con estructura roguelike",
+        "Los propietarios actuales podrán actualizar por 14,99 €"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-12",
+    "addedAt": "2026-08-12T17:05:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Ghost of Yōtei"
+      },
+      "copy": {
+        "es": "Ghost of Yōtei tendrá Complete Edition el 1 de octubre con Echoes of Sekigahara y Most Wanted"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "Ghost of Yōtei anuncia una expansión narrativa y un modo roguelike"
+    },
+    "summary": {
+      "es": "Ghost of Yōtei recibirá el 1 de octubre una Complete Edition que incorpora Echoes of Sekigahara, una expansión narrativa centrada en el pasado de Atsu, y Most Wanted, un nuevo modo individual con estructura roguelike."
+    },
+    "why": {
+      "es": "Los propietarios actuales podrán actualizar por 14,99 €. Además, todos los jugadores recibirán una actualización gratuita con un modo de contemplación de los paisajes de Ezo y mejoras de calidad de vida."
+    },
+    "sources": [
+      {
+        "label": "MeriStation",
+        "type": {
+          "es": "Información sobre el anuncio oficial de Sucker Punch"
+        },
+        "url": "https://as.com/meristation/noticias/ghost-of-yotei-complete-edition-es-oficial-asi-es-la-nueva-expansion-y-modo-de-juego-roguelike-f202608-n/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Echoes of Sekigahara llevará a Atsu a una nueva región integrada en el mapa original y alternará escenas del presente con recuerdos de su pasado, incluida la batalla de Sekigahara. Se añadirán también música para el modo Watanabe, cosméticos de Nueva Partida+ y nuevos trofeos.",
+        "Most Wanted propone aceptar recompensas que abren incursiones donde derrotar enemigos concede ventajas y permite desbloquear personajes adicionales, cada uno especializado en un estilo de combate. La actualización gratuita añadirá además nuevas opciones de presentación y ajustes de calidad de vida."
+      ]
+    }
+  },
+  {
     "id": "supermassive-games-despidos-75-empleados",
     "important": true,
     "emphasis": {

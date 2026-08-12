@@ -93,9 +93,19 @@ globalThis.fetch = async (input, init) => {
   });
 };
 
+const nativeExit = process.exit;
+const noopSignal = Symbol("ps-plus-noop");
+process.exit = (code = 0) => {
+  if (code === 0) throw noopSignal;
+  return nativeExit(code);
+};
+
 try {
   await import("./update-ps-plus.mjs");
+} catch (error) {
+  if (error !== noopSignal) throw error;
 } finally {
+  process.exit = nativeExit;
   globalThis.fetch = nativeFetch;
 }
 

@@ -157,6 +157,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-13",
+      "title": "Steam vuelve a revisar las GPU mínimas y recomendadas",
+      "description": "La ficha oficial de Steam ya no incluye Intel Arc A580 ni Intel Arc B580 y exige expresamente una GPU compatible con ray tracing por hardware en la configuración mínima. La ficha se sincroniza con la tabla oficial vigente.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
+      ]
+    },
+    {
       "date": "2026-08-10",
       "title": "Corregidos los requisitos de GPU publicados en Steam",
       "description": "La ficha restaura Intel Arc A580 en mínimos e Intel Arc B580 en recomendados, que siguen formando parte de las configuraciones publicadas para PC. También se retira la aclaración sobre ray tracing porque no aparece como requisito explícito en la tabla oficial.",
@@ -213,7 +221,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-10",
+  "updatedAt": "2026-08-13",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
@@ -232,7 +240,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600, AMD Radeon RX 9060 o Intel Arc A580"
+        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600 o AMD Radeon RX 9060"
       },
       {
         "label": "DirectX",
@@ -266,7 +274,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT, AMD Radeon RX 9060 XT o Intel Arc B580"
+        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT o AMD Radeon RX 9060 XT"
       },
       {
         "label": "DirectX",
@@ -288,6 +296,7 @@
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
       "El uso de SSD es obligatorio en ambas configuraciones.",
+      "Steam exige una GPU compatible con ray tracing por hardware en la configuración mínima.",
       "Steam declara el uso de Easy Anti-Cheat."
     ]
   },

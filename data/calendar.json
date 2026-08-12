@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -782,42 +782,6 @@
       "trailer": "https://www.youtube.com/watch?v=DV9Oq_X22Ak"
     },
     {
-      "id": "oblivion-remastered-switch-2",
-      "title": "The Elder Scrolls IV: Oblivion Remastered",
-      "headingHtml": "The Elder Scrolls IV: Oblivion Remastered <span class=\"tag-dlc\">Nueva plataforma</span>",
-      "date": "2026-08-11",
-      "platformKeys": [
-        "switch"
-      ],
-      "platformsHtml": "Switch 2",
-      "image": {
-        "src": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/theelderscrollsivoblivionremastered/16x9_TheElderScrollsIVOblivionRemastered_image1600w.jpg",
-        "alt": "The Elder Scrolls IV: Oblivion Remastered",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": true
-      },
-      "store": {
-        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
-        "title": "Ver en Nintendo",
-        "ariaLabel": "Ver en Nintendo: The Elder Scrolls IV: Oblivion Remastered"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Nueva plataforma",
-      "badge": null,
-      "priority": 55,
-      "source": {
-        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
-        "official": false,
-        "host": "www.nintendo.com",
-        "checkedAt": null
-      },
-      "legacy": true,
-      "trailer": "https://www.youtube.com/watch?v=kk5cymSWmqo"
-    },
-    {
       "id": "grounded-2-ps5",
       "title": "Grounded 2",
       "headingHtml": "Grounded 2 <span class=\"tag-dlc\">Nueva plataforma</span>",
@@ -859,6 +823,42 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=63fCwf6GfMM"
+    },
+    {
+      "id": "oblivion-remastered-switch-2",
+      "title": "The Elder Scrolls IV: Oblivion Remastered",
+      "headingHtml": "The Elder Scrolls IV: Oblivion Remastered <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-08-11",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/theelderscrollsivoblivionremastered/16x9_TheElderScrollsIVOblivionRemastered_image1600w.jpg",
+        "alt": "The Elder Scrolls IV: Oblivion Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
+        "title": "Ver en Nintendo",
+        "ariaLabel": "Ver en Nintendo: The Elder Scrolls IV: Oblivion Remastered"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch-2/The-Elder-Scrolls-IV-Oblivion-Remastered-3131244.html",
+        "official": false,
+        "host": "www.nintendo.com",
+        "checkedAt": null
+      },
+      "legacy": true,
+      "trailer": "https://www.youtube.com/watch?v=kk5cymSWmqo"
     },
     {
       "id": "duskfade",
@@ -2998,5 +2998,5 @@
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
     }
   ],
-  "renderState": "f7544c534642"
+  "renderState": "284a56ce9b94"
 }

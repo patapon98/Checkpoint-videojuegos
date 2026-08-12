@@ -818,6 +818,51 @@
       "trailer": "https://www.youtube.com/watch?v=kk5cymSWmqo"
     },
     {
+      "id": "grounded-2-ps5",
+      "title": "Grounded 2",
+      "headingHtml": "Grounded 2 <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-08-11",
+      "platformKeys": [
+        "ps5"
+      ],
+      "platformsHtml": "PS5",
+      "image": {
+        "provider": "rawg",
+        "query": "Grounded 2",
+        "src": "https://d1079ywfijtdjs.cloudfront.net/grounded2/news-grounded2-bayou.jpg",
+        "alt": "Grounded 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/es-es/concept/10016651",
+        "title": "Ver ficha en PlayStation Store",
+        "ariaLabel": "Ver la ficha de Grounded 2 en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://grounded2.obsidian.net/news/grounded-2/grounded-2-is-coming-to-playstation-5",
+        "official": true,
+        "host": "grounded2.obsidian.net",
+        "checkedAt": "2026-08-12",
+        "evidence": {
+          "title": "Grounded 2",
+          "releaseDate": "2026-08-11",
+          "platforms": [
+            "ps5"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=63fCwf6GfMM"
+    },
+    {
       "id": "duskfade",
       "title": "Duskfade",
       "headingHtml": "Duskfade <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/19137-buy-duskfade-pc-game-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Duskfade en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",

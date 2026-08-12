@@ -7,7 +7,10 @@
 
   const tierNames={essential:'Essential',extra:'Extra',premium:'Premium'};
   const imageFallbacks={
-    'Onimusha: Dawn of Dreams':'https://images.launchbox-app.com/ad7677bb-42d1-48d2-958f-f4298c3a8d0b.jpg'
+    'Onimusha: Dawn of Dreams':'https://images.alphacoders.com/675/675954.jpg'
+  };
+  const sourceOverrides={
+    'Onimusha: Dawn of Dreams':'https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/'
   };
   const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let month=null;
@@ -51,7 +54,7 @@
     const footer=element('div','psplus-card-footer');
     footer.appendChild(element('span','psplus-date',game.available));
     const source=element('a','psplus-card-source','Fuente ↗');
-    source.href=game.source;
+    source.href=sourceOverrides[game.title]||game.source;
     source.target='_blank';
     source.rel='noopener noreferrer';
     source.setAttribute('aria-label',`Abrir la fuente oficial de ${game.title}`);

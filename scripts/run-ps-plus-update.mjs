@@ -29,6 +29,50 @@ function targetId(item) {
   return `${year}-${String(month).padStart(2, "0")}`;
 }
 
+function decodeEntities(value = "") {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&#8217;", "’")
+    .replaceAll("&#039;", "'")
+    .replaceAll("&quot;", "\"");
+}
+
+async function completeMissingImages(data) {
+  const cache = new Map();
+  for (const month of data.months) {
+    for (const group of month.groups || []) {
+      for (const game of group.games || []) {
+        if (game.image?.trim()) continue;
+        if (!/^https:\/\/blog\.playstation\.com\//i.test(game.source || "")) {
+          throw new Error(`${game.title} no tiene imagen y su fuente no permite recuperarla automáticamente`);
+        }
+
+        let html = cache.get(game.source);
+        if (!html) {
+          const response = await nativeFetch(game.source, {
+            headers: { "user-agent": "FinalSecreto-PlayStationPlusUpdater/1.0" },
+            redirect: "follow"
+          });
+          if (!response.ok) throw new Error(`${game.source} respondió con HTTP ${response.status}`);
+          html = await response.text();
+          cache.set(game.source, html);
+        }
+
+        const decoded = decodeEntities(html);
+        const titleIndex = decoded.toLowerCase().indexOf(game.title.toLowerCase());
+        if (titleIndex < 0) throw new Error(`No se encontró ${game.title} en su fuente oficial para recuperar la imagen`);
+
+        const images = [...decoded.matchAll(/https:\/\/blog\.playstation\.com\/uploads\/[^"'<>\s]+/gi)]
+          .map((match) => ({ url: match[0], index: match.index ?? 0 }))
+          .filter((item, index, list) => list.findIndex((candidate) => candidate.url === item.url) === index);
+        const nearest = images.sort((a, b) => Math.abs(a.index - titleIndex) - Math.abs(b.index - titleIndex))[0];
+        if (!nearest) throw new Error(`No se encontró una imagen oficial para ${game.title}`);
+        game.image = nearest.url.replaceAll("&amp;", "&");
+      }
+    }
+  }
+}
+
 const nativeFetch = globalThis.fetch;
 globalThis.fetch = async (input, init) => {
   const response = await nativeFetch(input, init);
@@ -49,14 +93,33 @@ globalThis.fetch = async (input, init) => {
   });
 };
 
+const nativeExit = process.exit;
+const noopSignal = Symbol("ps-plus-noop");
+process.exit = (code = 0) => {
+  if (code === 0) throw noopSignal;
+  return nativeExit(code);
+};
+
 try {
   await import("./update-ps-plus.mjs");
+} catch (error) {
+  if (error !== noopSignal) throw error;
 } finally {
+  process.exit = nativeExit;
   globalThis.fetch = nativeFetch;
 }
 
 const updated = JSON.parse(await readFile(file, "utf8"));
 updated.months = updated.months.filter((month) => originalIds.has(month.id) || month.id >= currentId);
+await completeMissingImages(updated);
+
+for (const month of updated.months) {
+  for (const group of month.groups || []) {
+    for (const game of group.games || []) {
+      if (!game.image?.trim()) throw new Error(`${game.title} sigue sin una imagen válida`);
+    }
+  }
+}
 
 const comparable = (data) => JSON.stringify({ ...data, updatedAt: "" });
 if (comparable(updated) === comparable(original)) {

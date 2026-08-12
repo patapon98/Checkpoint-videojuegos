@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29",
+  "updatedAt": "2026-08-12",
   "region": "España y Europa",
   "months": [
     {
@@ -7,7 +7,7 @@
       "label": "Agosto 2026",
       "availability": "Del 4 al 31 de agosto",
       "headline": "PlayStation Plus en agosto de 2026",
-      "source": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/",
+      "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/",
       "groups": [
         {
           "id": "essential",
@@ -43,14 +43,88 @@
         {
           "id": "extra",
           "label": "Extra",
-          "access": "Catálogo de juegos",
-          "pending": "Sony todavía no ha anunciado el catálogo de agosto. Esta sección se completará cuando se publique la información oficial."
+          "access": "También disponible para Premium",
+          "games": [
+            {
+              "title": "Helldivers 2",
+              "platforms": ["PS5"],
+              "available": "Desde el 12 de agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/e4bad0641f217b8b0904283d1bc086925dfa3ef5.jpg",
+              "summary": "Shooter cooperativo de Arrowhead para cuatro jugadores que se incorpora al catálogo junto a la actualización gratuita Devoid of Liberty.",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Kingdom Come: Deliverance II",
+              "platforms": ["PS5"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/ffbba90f4530cf2c6fce6af83355f7e9f3560ebe.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Vampire Survivors",
+              "platforms": ["PS5", "PS4"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/ac1960704a33a1095ac5ee6d4d9fdf6d2f811757.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Hell is Us",
+              "platforms": ["PS5"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/bfb1f7cefe70ba45af7ec3e5c3540c0feb38f4ab.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Umamusume Pretty Derby – Party Dash",
+              "platforms": ["PS4"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/eac7a04a7a5202a80c4543f58655d74c4c890fca.jpeg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Two Point Museum",
+              "platforms": ["PS5"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/1016ba5865fe892a4bd223bd00796ecdcd95c572.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Metro Exodus",
+              "platforms": ["PS5", "PS4"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/85bf2ddc20d5548d734cef7d43a57ac116c0be00.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Dying Light 2",
+              "platforms": ["PS5", "PS4"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/39d870645bd99e8479a87dbe2e6e9539c635e0bd.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            }
+          ]
         },
         {
           "id": "premium",
           "label": "Premium",
           "access": "Clásicos y ventajas adicionales",
-          "pending": "Los clásicos y añadidos de Premium para agosto todavía no se han anunciado oficialmente."
+          "games": [
+            {
+              "title": "Disney’s Atlantis: The Lost Empire",
+              "platforms": ["PS5", "PS4"],
+              "available": "Añadidos en agosto",
+              "image": "https://blog.playstation.com/uploads/2026/08/5851d0acfd973c7619ba07fb5c719dd07917afde.jpg",
+              "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Onimusha: Dawn of Dreams",
+              "platforms": ["PS5", "PS4"],
+              "available": "Agosto de 2026",
+              "image": "https://blog.playstation.com/uploads/2026/08/6bd36d21a61c90258c5ce3fee470a7df0e88a168.jpg",
+              "summary": "El clásico de acción de Capcom para PS2 se incorpora al catálogo de clásicos de PlayStation Plus Premium.",
+              "source": "https://blog.playstation.com/2026/06/02/state-of-play-june-2026-all-announcements-trailers/"
+            }
+          ]
         }
       ]
     },

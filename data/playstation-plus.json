@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29",
+  "updatedAt": "2026-08-12",
   "region": "España y Europa",
   "months": [
     {
@@ -43,8 +43,18 @@
         {
           "id": "extra",
           "label": "Extra",
-          "access": "Catálogo de juegos",
-          "pending": "Sony todavía no ha anunciado el catálogo de agosto. Esta sección se completará cuando se publique la información oficial."
+          "access": "También disponible para Premium",
+          "games": [
+            {
+              "title": "Helldivers 2",
+              "platforms": ["PS5"],
+              "available": "Desde el 12 de agosto",
+              "image": "https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-machinery-of-oppression-homepage-hero-desktop-01-29jan26?wid=1200&hei=675&fmt=webp&qlt=90",
+              "summary": "Shooter cooperativo de Arrowhead para cuatro jugadores que se incorpora al catálogo junto a la actualización gratuita Devoid of Liberty.",
+              "source": "https://blog.playstation.com/2026/08/12/helldivers-2-joins-playstation-plus-game-catalog-today-devoid-of-liberty-update-out-now/"
+            }
+          ],
+          "pending": "Sony todavía no ha anunciado el resto del catálogo de agosto. Esta sección se completará cuando se publique la alineación mensual oficial."
         },
         {
           "id": "premium",

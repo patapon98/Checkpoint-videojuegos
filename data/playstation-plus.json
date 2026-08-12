@@ -16,10 +16,7 @@
           "games": [
             {
               "title": "Dying Light 2 Stay Human: Reloaded Edition",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "4–31 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/07/5cdc2119766ef3e9f79921f669ad0f5f4a4e5349.jpg",
               "summary": "Acción y supervivencia en una ciudad posapocalíptica que puede recorrerse en solitario o en cooperativo.",
@@ -27,9 +24,7 @@
             },
             {
               "title": "Big Walk",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "4–31 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/07/62653875e39800fd0931ab582a4a082c767d64ab.jpg",
               "summary": "Una aventura cooperativa centrada en hablar, orientarse y resolver desafíos con amigos.",
@@ -37,9 +32,7 @@
             },
             {
               "title": "Signalis",
-              "platforms": [
-                "PS4"
-              ],
+              "platforms": ["PS4"],
               "available": "4–31 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/07/dca788f5daab1fb265812d328fa0bfe84b63db14.jpg",
               "summary": "Terror de supervivencia psicológico con estética retrofuturista, puzles y una atmósfera opresiva.",
@@ -54,9 +47,7 @@
           "games": [
             {
               "title": "Helldivers 2",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Desde el 12 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/e4bad0641f217b8b0904283d1bc086925dfa3ef5.jpg",
               "summary": "Shooter cooperativo de Arrowhead para cuatro jugadores que se incorpora al catálogo junto a la actualización gratuita Devoid of Liberty.",
@@ -64,66 +55,49 @@
             },
             {
               "title": "Kingdom Come: Deliverance II",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/ffbba90f4530cf2c6fce6af83355f7e9f3560ebe.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
             },
             {
               "title": "Vampire Survivors",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/ac1960704a33a1095ac5ee6d4d9fdf6d2f811757.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
             },
             {
               "title": "Hell is Us",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/bfb1f7cefe70ba45af7ec3e5c3540c0feb38f4ab.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
             },
             {
               "title": "Umamusume Pretty Derby – Party Dash",
-              "platforms": [
-                "PS4"
-              ],
+              "platforms": ["PS4"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/eac7a04a7a5202a80c4543f58655d74c4c890fca.jpeg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
             },
             {
               "title": "Two Point Museum",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/1016ba5865fe892a4bd223bd00796ecdcd95c572.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
             },
             {
               "title": "Metro Exodus",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/85bf2ddc20d5548d734cef7d43a57ac116c0be00.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
             },
             {
               "title": "Dying Light 2",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/39d870645bd99e8479a87dbe2e6e9539c635e0bd.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
@@ -137,13 +111,18 @@
           "games": [
             {
               "title": "Disney’s Atlantis: The Lost Empire",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "Añadidos en agosto",
               "image": "https://blog.playstation.com/uploads/2026/08/5851d0acfd973c7619ba07fb5c719dd07917afde.jpg",
               "source": "https://blog.playstation.com/2026/08/12/playstation-plus-game-catalog-for-august-helldivers-2-kingdom-come-deliverance-ii-vampire-survivors-hell-is-us-and-more/"
+            },
+            {
+              "title": "Onimusha: Dawn of Dreams",
+              "platforms": ["PS5", "PS4"],
+              "available": "Agosto de 2026",
+              "image": "",
+              "summary": "El clásico de acción de Capcom para PS2 se incorpora al catálogo de clásicos de PlayStation Plus Premium.",
+              "source": "https://blog.playstation.com/2026/06/02/state-of-play-june-2026-all-announcements-trailers/"
             }
           ]
         }
@@ -163,10 +142,7 @@
           "games": [
             {
               "title": "Call of Duty: Modern Warfare III – Cross-Gen Bundle",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "7 de julio–3 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/07/ccf0a4447756fee9ba12ee9bd19916e480d3fa5e.jpg",
               "summary": "Campaña, multijugador y modo Zombis en el paquete intergeneracional del shooter de Activision.",
@@ -174,10 +150,7 @@
             },
             {
               "title": "For the King II",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "7 de julio–3 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/07/2fc6da856c5b7554f5f7a0a0d0fd5d1b4220fa4d.jpg",
               "summary": "Rol táctico con estructura de juego de mesa y partidas cooperativas para hasta cuatro jugadores.",
@@ -185,10 +158,7 @@
             },
             {
               "title": "CrossCode",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "7 de julio–3 de agosto",
               "image": "https://blog.playstation.com/uploads/2026/07/9d2e7957da760fb32462004b112bce5b2e3147bb.jpg",
               "summary": "Un RPG de acción con estética de 16 bits, combate veloz y puzles de mazmorra.",
@@ -203,9 +173,7 @@
           "games": [
             {
               "title": "Avatar: Frontiers of Pandora",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/726aab05578f54b5abf6473f8bee26466d05780a.jpg",
               "summary": "Aventura de acción en mundo abierto ambientada en la frontera occidental de Pandora.",
@@ -213,9 +181,7 @@
             },
             {
               "title": "Rise of the Ronin",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/8db364ea489bc9de8561cddd787648db5e0e8981.jpg",
               "summary": "RPG de acción en mundo abierto de Team Ninja situado en el Japón del siglo XIX.",
@@ -223,9 +189,7 @@
             },
             {
               "title": "Firefighting Simulator: Ignite",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/10cf944ea315bac79c7841323acb220bdc944d99.jpg",
               "summary": "Simulación cooperativa de emergencias con incendios dinámicos y rescates en equipo.",
@@ -233,10 +197,7 @@
             },
             {
               "title": "Mighty Morphin Power Rangers: Rita’s Rewind",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/528f7750110a022a8f03ddf661806bc8e92ee26a.jpg",
               "summary": "Beat ’em up de desplazamiento lateral inspirado en la serie clásica de los Power Rangers.",
@@ -244,9 +205,7 @@
             },
             {
               "title": "Dying Light",
-              "platforms": [
-                "PS4"
-              ],
+              "platforms": ["PS4"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/30b4e73b8580070dbb17d37cceaea942b41be0ea.jpg",
               "summary": "Acción de supervivencia en primera persona con parkour, combate y juego cooperativo.",
@@ -254,9 +213,7 @@
             },
             {
               "title": "Citizen Sleeper 2: Starward Vector",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/8a2d2b888ab51e8e05a4bc06cf98da5a9640c352.jpg",
               "summary": "RPG narrativo de ciencia ficción basado en decisiones, contratos y tiradas de dados.",
@@ -264,9 +221,7 @@
             },
             {
               "title": "Snow Bros. Wonderland",
-              "platforms": [
-                "PS5"
-              ],
+              "platforms": ["PS5"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/069d263548e5c6f369dd9b63f0dce992e7577fde.jpg",
               "summary": "El arcade clásico regresa con perspectiva isométrica, acción cooperativa y escenarios en 3D.",
@@ -281,10 +236,7 @@
           "games": [
             {
               "title": "Psi-Ops: The Mindgate Conspiracy",
-              "platforms": [
-                "PS5",
-                "PS4"
-              ],
+              "platforms": ["PS5", "PS4"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/f40ab68d4c43399801e2d0c5a46d2bd2fa8b3895.jpg",
               "summary": "Clásico de acción de PS2 basado en poderes psíquicos, sigilo y manipulación del entorno.",
@@ -292,9 +244,7 @@
             },
             {
               "title": "Indigo Prophecy",
-              "platforms": [
-                "PS4"
-              ],
+              "platforms": ["PS4"],
               "available": "Desde el 21 de julio",
               "image": "https://blog.playstation.com/uploads/2026/07/e1afd8dbbbf76fd7526a7b65d0602e5f5652861b.png",
               "summary": "El thriller sobrenatural de Quantic Dream, conocido en Europa como Fahrenheit.",

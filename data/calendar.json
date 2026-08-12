@@ -827,8 +827,6 @@
       ],
       "platformsHtml": "PS5",
       "image": {
-        "provider": "rawg",
-        "query": "Grounded 2",
         "src": "https://d1079ywfijtdjs.cloudfront.net/grounded2/news-grounded2-bayou.jpg",
         "alt": "Grounded 2",
         "className": "",

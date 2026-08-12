@@ -3,33 +3,34 @@
   "important": true,
   "emphasis": {
     "es": [
-      "un nuevo tráiler de 11 minutos",
-      "abrirá sus reservas al mismo tiempo",
-      "12 de agosto a las 04:00 en España peninsular"
+      "ya se puede reservar en PS5",
+      "confirma a Donnie Yen como Mó Yuan, padre de Soul",
+      "un State of Play dedicado con casi 20 minutos de gameplay inédito"
     ]
   },
   "category": {
     "es": "Juegos"
   },
   "date": "2026-08-07",
+  "updated": "2026-08-12",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "Phantom Blade Zero"
     },
     "copy": {
-      "es": "Phantom Blade Zero mostrará 11 minutos de nuevo metraje y abrirá reservas el 12 de agosto"
+      "es": "Phantom Blade Zero abre reservas y tendrá un State of Play de casi 20 minutos el 18 de agosto"
     }
   },
   "tone": "playstation",
   "title": {
-    "es": "Phantom Blade Zero mostrará un tráiler de 11 minutos y abrirá reservas el 12 de agosto"
+    "es": "Phantom Blade Zero abre reservas y anuncia un State of Play de casi 20 minutos"
   },
   "summary": {
-    "es": "S-GAME ha anunciado un nuevo tráiler de 11 minutos de Phantom Blade Zero y abrirá sus reservas al mismo tiempo. La emisión será el 11 de agosto a las 19:00 PT, es decir, el 12 de agosto a las 04:00 en España peninsular."
+    "es": "Phantom Blade Zero ya se puede reservar en PS5 y S-GAME ha publicado su nuevo tráiler extendido. El vídeo muestra combates sobre un carro en marcha, el reencuentro con The Hunt y confirma a Donnie Yen como Mó Yuan, padre de Soul."
   },
   "why": {
-    "es": "Será uno de los mayores adelantos del juego antes de su lanzamiento y debería mostrar nuevo metraje jugable. La apertura de reservas también permitirá conocer las ediciones y bonificaciones comerciales previstas por S-GAME."
+    "es": "PlayStation emitirá el 18 de agosto un State of Play dedicado con casi 20 minutos de gameplay inédito. La presentación profundizará en los sistemas de combate, las configuraciones del personaje y nuevos protagonistas antes del lanzamiento del 29 de octubre."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc",
@@ -39,24 +40,24 @@
   },
   "sources": [
     {
-      "label": "IGN",
+      "label": "PlayStation Blog",
       "type": {
-        "es": "Teaser oficial de reservas"
+        "es": "Anuncio oficial del State of Play y las reservas"
       },
-      "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc"
+      "url": "https://blog.playstation.com/2026/08/11/watch-the-phantom-blade-zero-gameplay-deep-dive-state-of-play-on-august-17-pre-orders-live-today/"
     },
     {
       "label": "PlayStation",
       "type": {
-        "es": "Ficha oficial del juego"
+        "es": "Ficha oficial con la reserva y sus incentivos"
       },
-      "url": "https://www.playstation.com/en-hk/ps5/games/"
+      "url": "https://www.playstation.com/en-us/games/phantom-blade-zero/"
     }
   ],
   "homeDetails": {
     "es": [
-      "El teaser fija la publicación del nuevo vídeo para el 11 de agosto a las 19:00 en la costa oeste de Estados Unidos y el 12 de agosto a las 10:00 en Pekín. La equivalencia para España peninsular es el 12 de agosto a las 04:00.",
-      "S-GAME había adelantado que la campaña de reservas llegaría acompañada de nuevo material del juego. Este vídeo de 11 minutos será una oportunidad para ver una muestra mucho más extensa que los teasers recientes antes del estreno de Phantom Blade Zero."
+      "Donnie Yen asesora el proyecto desde 2023 para trasladar al combate su experiencia en artes marciales y cine de acción. Además interpreta mediante captura facial y de movimiento a Mó Yuan, el padre del protagonista Soul.",
+      "La reserva anticipada permite desbloquear antes el accesorio Treasure Basin y el atuendo Legacy, aunque ambos podrán obtenerse jugando. El State of Play se emitirá el 18 de agosto a las 04:00 en España peninsular y a las 11:00 en Japón."
     ]
   }
 }

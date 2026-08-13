@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-08-14",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -906,6 +906,55 @@
       "trailer": "https://www.youtube.com/watch?v=hPV20ncmotY"
     },
     {
+      "id": "madden-nfl-27",
+      "title": "EA SPORTS Madden NFL 27",
+      "headingHtml": "EA SPORTS Madden NFL 27",
+      "date": "2026-08-13",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://drop-assets.ea.com/images/7HDHF1JEUeSevxbwSsmTzL/a24d5c6efad06f21a1b5c6831cb05e8f/EAS_Madden27_DLX_KeyArt_RGB_16x9_3840x2160.jpg?im=AspectCrop%3D%2816%2C9%29%2CxPosition%3D0.5%2CyPosition%3D0.5",
+        "alt": "EA SPORTS Madden NFL 27",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.ea.com/games/madden-nfl/madden-nfl-27/buy",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de EA SPORTS Madden NFL 27"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.ea.com/games/madden-nfl/news/welcome-to-madden-27",
+        "official": true,
+        "host": "www.ea.com",
+        "checkedAt": "2026-08-13",
+        "evidence": {
+          "title": "EA SPORTS Madden NFL 27",
+          "releaseDate": "2026-08-13",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "hell-let-loose-vietnam",
       "title": "Hell Let Loose: Vietnam",
       "headingHtml": "Hell Let Loose: Vietnam",
@@ -949,55 +998,6 @@
             "ps5",
             "xbox",
             "pc"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": null
-    },
-    {
-      "id": "madden-nfl-27",
-      "title": "EA SPORTS Madden NFL 27",
-      "headingHtml": "EA SPORTS Madden NFL 27",
-      "date": "2026-08-13",
-      "platformKeys": [
-        "ps5",
-        "xbox",
-        "pc",
-        "switch"
-      ],
-      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
-      "image": {
-        "src": "https://drop-assets.ea.com/images/7HDHF1JEUeSevxbwSsmTzL/a24d5c6efad06f21a1b5c6831cb05e8f/EAS_Madden27_DLX_KeyArt_RGB_16x9_3840x2160.jpg?im=AspectCrop%3D%2816%2C9%29%2CxPosition%3D0.5%2CyPosition%3D0.5",
-        "alt": "EA SPORTS Madden NFL 27",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://www.ea.com/games/madden-nfl/madden-nfl-27/buy",
-        "title": "Ver ficha oficial",
-        "ariaLabel": "Ver la ficha oficial de EA SPORTS Madden NFL 27"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": null,
-      "badge": null,
-      "priority": 55,
-      "source": {
-        "url": "https://www.ea.com/games/madden-nfl/news/welcome-to-madden-27",
-        "official": true,
-        "host": "www.ea.com",
-        "checkedAt": "2026-08-13",
-        "evidence": {
-          "title": "EA SPORTS Madden NFL 27",
-          "releaseDate": "2026-08-13",
-          "platforms": [
-            "ps5",
-            "xbox",
-            "pc",
-            "switch"
           ]
         }
       },
@@ -3047,5 +3047,5 @@
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
     }
   ],
-  "renderState": "284a56ce9b94"
+  "renderState": "6be891af6dd0"
 }

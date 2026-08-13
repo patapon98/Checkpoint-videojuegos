@@ -1,0 +1,64 @@
+{
+  "id": "amazon-games-deja-mmo-lost-ark-throne-liberty",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "dejará de operar Lost Ark y Throne and Liberty en Occidente",
+      "Smilegate tomará el control de Lost Ark a comienzos de 2027",
+      "Amazon completa así su retirada de la operación de grandes MMO"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-08-12",
+  "addedAt": "2026-08-13T09:04:57Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Amazon Game Studios"
+    },
+    "copy": {
+      "es": "Amazon Game Studios cede la operación occidental de Lost Ark y Throne and Liberty"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Amazon dejará de operar Lost Ark y Throne and Liberty en Occidente"
+  },
+  "summary": {
+    "es": "Amazon Game Studios dejará de operar Lost Ark y Throne and Liberty en Occidente. FirstSpark Games y NC asumirán Throne and Liberty en el cuarto trimestre de 2026, mientras que Smilegate tomará el control de Lost Ark a comienzos de 2027."
+  },
+  "why": {
+    "es": "Amazon completa así su retirada de la operación de grandes MMO tras fijar también el cierre de New World: Aeternum para el 31 de enero de 2027. Los dos juegos transferidos seguirán activos con sus estudios originales al frente."
+  },
+  "sources": [
+    {
+      "label": "Lost Ark",
+      "type": {
+        "es": "Comunicado oficial sobre el traspaso a Smilegate"
+      },
+      "url": "https://www.playlostark.com/en-us/news/articles/lost-ark-in-the-west"
+    },
+    {
+      "label": "Throne and Liberty",
+      "type": {
+        "es": "Comunicado oficial sobre el traspaso a FirstSpark Games y NC"
+      },
+      "url": "https://www.playthroneandliberty.com/en-gb/news/articles/throne-and-liberty-in-the-west"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto sobre la retirada de Amazon de los MMO"
+      },
+      "url": "https://www.theverge.com/tech/979070/amazon-mmo-throne-and-liberty-lost-ark-live-operations"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Lost Ark mantendrá los personajes, el progreso, el inventario y las monedas cuando Smilegate asuma el servicio. La transferencia de datos será automática salvo que el jugador solicite quedar fuera, aunque no se conservarán el correo interno, el historial de chat ni determinados textos personales.",
+      "Throne and Liberty pasará a manos de FirstSpark Games y NC sin cambiar las cuentas, los personajes, el inventario, las plataformas ni las regiones. Tras la migración, los usuarios deberán aceptar las nuevas condiciones de NC y algunas actualizaciones mayores podrían aplazarse hasta completar el traspaso."
+    ]
+  }
+}

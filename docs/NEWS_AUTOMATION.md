@@ -69,16 +69,22 @@ La automatización diaria de ChatGPT se limita a:
 1. consultar el `main` más reciente y las PR abiertas `bot/news-*`,
 2. crear una rama `bot/news-AAAA-MM-DD-HHMM-slug`,
 3. añadir uno o dos JSON nuevos en `data/news/` o actualizar exactamente uno ya existente,
-4. abrir una PR contra `main`.
+4. abrir una PR lista para revisión contra `main`.
 
-El único workflow de Noticias, `.github/workflows/validate-news.yml`, actúa en dos momentos:
+A partir de ese momento GitHub completa el proceso sin intervención manual:
 
-- En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno. Comprueba duplicados, recencia, fuente oficial, `addedAt` y estructura editorial. En ACTUALIZACIÓN distingue entre evolución sustancial y corrección de fuentes. Genera todas las salidas únicamente dentro del entorno de comprobación y no hace commits adicionales en la rama del PR.
-- Tras el `push` a `main` genera `data/news-index.json`, actualiza la caché de portada y Noticias, renderiza las noticias relacionadas, ejecuta todas las validaciones y hace un commit únicamente si cambió algún archivo generado.
+1. `.github/workflows/dispatch-news-bot.yml` detecta la PR `bot/news-*` y lanza la validación protegida desde la versión de `validate-news.yml` existente en `main`.
+2. La ejecución protegida vuelve a consultar la PR y exige que siga abierta, no sea borrador, apunte a `main`, proceda del repositorio principal y contenga exclusivamente JSON con ruta válida dentro de `data/news/`.
+3. Se descarga la cabecera exacta de la PR, se compara contra el `main` actual, se ejecuta `validate-news-change.mjs`, se generan temporalmente todas las superficies y se pasan las validaciones de Noticias y fichas de juego.
+4. Antes de fusionar se vuelve a comprobar el SHA de cabecera y la lista de archivos. Si no han cambiado, GitHub realiza `squash merge` y elimina la rama.
+5. Un barrido programado cada diez minutos vuelve a procesar las PR `bot/news-*` abiertas y no borrador para recuperar ejecuciones perdidas o interrumpidas.
+6. Tras el `push` a `main`, el mismo pipeline genera `data/news-index.json`, portada, Noticias, noticias relacionadas y sitemap, y guarda únicamente las salidas derivadas que hayan cambiado.
+
+Las PR manuales que no usan el prefijo `bot/news-*` continúan validándose sin fusión automática. La autorización de merge automático queda limitada por tanto al canal automático de tarjetas y nunca se extiende a cambios de diseño, scripts, artículos o cualquier otro archivo del repositorio.
 
 Cloudflare ejecuta `scripts/build-cloudflare-preview.mjs` mediante `wrangler.jsonc` antes de cada despliegue. Ese build regenera temporalmente `data/news-index.json`, portada, Noticias, ticker y noticias relacionadas en el entorno de compilación. Así la `Commit Preview URL` refleja el JSON de la rama sin añadir archivos generados al diff. `serve.py` conserva el mismo comportamiento para previews locales/Replit.
 
-No hay bandeja de entrada, archivo histórico separado, importador, movimientos de archivos, reintentos programados, ejecución manual, comprobaciones de SHA ni fusión automática.
+No hay bandeja de entrada, archivo histórico separado, importador ni movimientos de archivos. La comprobación de SHA y la fusión automática existen únicamente como barrera de seguridad para las ramas `bot/news-*` que superan la validación protegida.
 
 ## Archivos autorizados
 
@@ -110,6 +116,7 @@ No se publica y se solicita revisión cuando:
 - una supuesta corrección de fuentes intenta modificar además contenido editorial sin que exista una evolución sustancial,
 - necesita una página individual o un cambio de diseño,
 - el JSON está mal formado, repite un identificador o no cumple el esquema,
-- una PR automática contiene más de dos noticias o cualquier otro archivo editorial no autorizado.
+- una PR automática contiene más de dos noticias o cualquier otro archivo editorial no autorizado,
+- la rama, el SHA o la lista de archivos cambian después de la validación protegida.
 
-Si no hay novedades suficientemente importantes, no se modifica el repositorio ni se notifica.
+Cuando una validación protegida falla, la PR permanece abierta y el despachador publica el diagnóstico de GitHub Actions en la propia conversación. Si no hay novedades suficientemente importantes, no se modifica el repositorio ni se notifica.

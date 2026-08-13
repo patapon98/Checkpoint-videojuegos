@@ -36,12 +36,16 @@ Cada archivo contiene directamente el objeto completo de la noticia. Debe inclui
 
 La portada muestra las seis tarjetas recientes no destacadas: dos por página en escritorio, para un total de tres páginas. En móvil se mantiene una tarjeta por página y el gesto de deslizamiento.
 
-Cuando una noticia publicada cambia de estado, se actualiza su mismo JSON y se conserva la URL y el identificador. La versión nueva debe añadir:
+## Modo ACTUALIZACIÓN
 
-- `updated` con una fecha posterior a la versión vigente,
-- título, resumen, contexto, ampliación, énfasis, ticker y fuentes adaptados al nuevo hecho.
+Una PR de ACTUALIZACIÓN modifica exactamente un JSON ya existente y nunca crea una noticia duplicada. Puede responder a dos causas:
 
-La tarjeta conserva `addedAt`, la fecha original y el resto de campos estructurales. Muestra una señal discreta con la fecha de actualización, pero una actualización no vuelve a colocar la tarjeta como si fuese un alta nueva. No se crea ni se conserva `versionHistory`.
+1. **Evolución sustancial:** aparece un hecho oficial nuevo que cambia de forma material el estado de la historia. En este caso pueden actualizarse título, resumen, explicación, ampliación, énfasis, ticker y fuentes según sea necesario.
+2. **Corrección o refuerzo editorial de fuentes:** se localiza una fuente primaria u oficial que faltaba, sustituye una fuente secundaria o mejora de forma inequívoca la verificación de una tarjeta ya publicada. En este caso la automatización puede modificar exclusivamente `sources` y `updated`; no debe reescribir el resto de la noticia si los hechos no han cambiado.
+
+En ambos casos se conserva el mismo archivo, `id`, `date`, `publishedAt`, `addedAt`, categoría, tono, `important`, `featured`, `home`, `article`, `trailer` y los demás campos estructurales. `updated` debe reflejar la fecha de la actualización y avanzar respecto a la versión publicada. No se crea ni se conserva `versionHistory`.
+
+La corrección de fuentes no cuenta como una noticia nueva, no altera el orden de recencia y no reactiva «Última hora». Su objetivo es endurecer la trazabilidad editorial sin obligar a crear una tarjeta duplicada ni bloquear el flujo automático.
 
 `important: true` se reserva para prioridad alta. Junto con `publishedAt`, activa «Última hora» durante 24 horas desde la publicación original confirmada; `addedAt` no altera esa insignia. Una rama automática nunca puede cambiar la noticia `featured`.
 
@@ -69,7 +73,7 @@ La automatización diaria de ChatGPT se limita a:
 
 El único workflow de Noticias, `.github/workflows/validate-news.yml`, actúa en dos momentos:
 
-- En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno. Comprueba duplicados, recencia, fuente oficial, `addedAt` y estructura editorial, y genera todas las salidas únicamente dentro del entorno de comprobación. No hace commits adicionales en la rama del PR.
+- En la PR valida que una rama automática solo añada uno o dos JSON o actualice exactamente uno. Comprueba duplicados, recencia, fuente oficial, `addedAt` y estructura editorial. En ACTUALIZACIÓN distingue entre evolución sustancial y corrección de fuentes. Genera todas las salidas únicamente dentro del entorno de comprobación y no hace commits adicionales en la rama del PR.
 - Tras el `push` a `main` genera `data/news-index.json`, actualiza la caché de portada y Noticias, renderiza las noticias relacionadas, ejecuta todas las validaciones y hace un commit únicamente si cambió algún archivo generado.
 
 Cloudflare ejecuta `scripts/build-cloudflare-preview.mjs` mediante `wrangler.jsonc` antes de cada despliegue. Ese build regenera temporalmente `data/news-index.json`, portada, Noticias, ticker y noticias relacionadas en el entorno de compilación. Así la `Commit Preview URL` refleja el JSON de la rama sin añadir archivos generados al diff. `serve.py` conserva el mismo comportamiento para previews locales/Replit.
@@ -98,11 +102,12 @@ El workflow puede guardar después del merge:
 No se publica y se solicita revisión cuando:
 
 - las fuentes fiables se contradicen,
-- falta una fuente primaria u oficial inequívoca,
+- falta una fuente primaria u oficial inequívoca y no puede localizarse una,
 - no puede distinguirse entre hecho, información periodística y rumor,
 - una alta automática no incluye un `addedAt` válido,
 - la novedad pretende reemplazar la destacada,
 - una actualización no puede conservar el identificador, `addedAt`, la fecha original o la estructura de la tarjeta,
+- una supuesta corrección de fuentes intenta modificar además contenido editorial sin que exista una evolución sustancial,
 - necesita una página individual o un cambio de diseño,
 - el JSON está mal formado, repite un identificador o no cumple el esquema,
 - una PR automática contiene más de dos noticias o cualquier otro archivo editorial no autorizado.

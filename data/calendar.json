@@ -968,8 +968,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "EA SPORTS Madden NFL 27",
         "src": "https://drop-assets.ea.com/images/7HDHF1JEUeSevxbwSsmTzL/a24d5c6efad06f21a1b5c6831cb05e8f/EAS_Madden27_DLX_KeyArt_RGB_16x9_3840x2160.jpg?im=AspectCrop%3D%2816%2C9%29%2CxPosition%3D0.5%2CyPosition%3D0.5",
         "alt": "EA SPORTS Madden NFL 27",
         "className": "",

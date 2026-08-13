@@ -1,0 +1,58 @@
+{
+  "id": "arc-raiders-16-3-millones-frozen-trail",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha superado los 16,3 millones de copias vendidas",
+      "Frozen Trail llegará en octubre",
+      "ha generado más de 88.000 millones de yenes desde su lanzamiento"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-13",
+  "publishedAt": "2026-08-13T06:30:00Z",
+  "addedAt": "2026-08-13T12:09:30Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "ARC Raiders"
+    },
+    "copy": {
+      "es": "ARC Raiders supera 16,3 millones de copias y anuncia Frozen Trail para octubre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "ARC Raiders supera los 16,3 millones de copias vendidas"
+  },
+  "summary": {
+    "es": "ARC Raiders ha superado los 16,3 millones de copias vendidas tras sumar otras 800.000 unidades durante el segundo trimestre de 2026. Nexon también ha confirmado que Frozen Trail llegará en octubre como la mayor actualización del juego desde su estreno."
+  },
+  "why": {
+    "es": "El título de Embark Studios ha generado más de 88.000 millones de yenes desde su lanzamiento y aportó aproximadamente el 15 % de los ingresos trimestrales de Nexon. La compañía reconoce que el ritmo de ventas se está normalizando nueve meses después del estreno."
+  },
+  "sources": [
+    {
+      "label": "Nexon",
+      "type": {
+        "es": "Resultados oficiales del segundo trimestre de 2026"
+      },
+      "url": "https://pdf.irpocket.com/C3659/xoA3/tx0r/AreA/FfKR.pdf"
+    },
+    {
+      "label": "Inven Global",
+      "type": {
+        "es": "Contexto sobre los resultados y el rendimiento de ARC Raiders"
+      },
+      "url": "https://www.invenglobal.com/articles/24741/nexon-reports-q2-earnings-driven-by-maplestory-and-arc-raiders"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Las ventas acumuladas avanzaron desde los 15,5 millones registrados al cierre de marzo hasta superar los 16,3 millones durante el segundo trimestre. ARC Raiders siguió siendo uno de los principales motores internacionales de Nexon, aunque su contribución empieza a estabilizarse tras el fuerte impulso del lanzamiento.",
+      "Frozen Trail será la mayor incorporación de contenido desde el estreno de octubre de 2025. Nexon no ha detallado todavía sus sistemas o escenarios, pero la sitúa como la principal iniciativa para sostener el juego mientras Embark trabaja también en dos proyectos nuevos que siguen en una fase temprana."
+    ]
+  }
+}

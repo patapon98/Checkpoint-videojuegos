@@ -1,0 +1,70 @@
+{
+  "id": "precognition-sam-barlow-primavera-2028",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el nuevo juego de terror y ciencia ficción de Sam Barlow",
+      "desarrollado junto al cineasta Brandon Cronenberg",
+      "Llegará en primavera de 2028"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-12",
+  "addedAt": "2026-08-13T17:55:40Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Precognition"
+    },
+    "copy": {
+      "es": "Precognition, lo nuevo de Sam Barlow y Brandon Cronenberg, llegará en primavera de 2028"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Precognition, lo nuevo de Sam Barlow, llegará en primavera de 2028"
+  },
+  "summary": {
+    "es": "Kinetic Publishing ha presentado Precognition, el nuevo juego de terror y ciencia ficción de Sam Barlow, creador de Her Story e Immortality, desarrollado junto al cineasta Brandon Cronenberg. Llegará en primavera de 2028 a PS5, Xbox Series X|S, Nintendo Switch 2 y PC."
+  },
+  "why": {
+    "es": "El proyecto combina secuencias de imagen real con una narrativa no lineal basada en decisiones. Su protagonista puede observar el futuro, pero cada detalle que decide recordar altera los acontecimientos posteriores y abre nuevas posibilidades."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=kR78s95FONk",
+    "label": {
+      "es": "Ver presentación oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de Kinetic Publishing"
+      },
+      "url": "https://blog.playstation.com/2026/08/12/kinetic-publishing-showcase-recap-5-new-indie-games-coming-to-ps5/"
+    },
+    {
+      "label": "Kinetic Publishing",
+      "type": {
+        "es": "Presentación oficial de Half Mermaid"
+      },
+      "url": "https://www.youtube.com/watch?v=kR78s95FONk"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto sobre el catálogo de Kinetic Publishing"
+      },
+      "url": "https://www.theverge.com/games/977985/kinetic-publishing-showcase-sam-barlow-precognition"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Diana recibe un implante experimental que le permite contemplar momentos de su propio futuro. El jugador examinará esas visiones a través de distintas décadas y elegirá qué información conserva en el presente, sabiendo que fijar un recuerdo cambia la línea temporal que acaba de observar.",
+      "Half Mermaid plantea una evolución de la estructura de Her Story e Immortality: mantiene las escenas filmadas y la investigación libre, pero las conecta con un sistema de causa y efecto. Kinetic Publishing confirmó su lanzamiento simultáneo en las cuatro plataformas durante la primavera de 2028."
+    ]
+  }
+}

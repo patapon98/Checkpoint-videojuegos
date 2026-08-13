@@ -956,6 +956,55 @@
       "trailer": null
     },
     {
+      "id": "madden-nfl-27",
+      "title": "EA SPORTS Madden NFL 27",
+      "headingHtml": "EA SPORTS Madden NFL 27",
+      "date": "2026-08-13",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://drop-assets.ea.com/images/7HDHF1JEUeSevxbwSsmTzL/a24d5c6efad06f21a1b5c6831cb05e8f/EAS_Madden27_DLX_KeyArt_RGB_16x9_3840x2160.jpg?im=AspectCrop%3D%2816%2C9%29%2CxPosition%3D0.5%2CyPosition%3D0.5",
+        "alt": "EA SPORTS Madden NFL 27",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.ea.com/games/madden-nfl/madden-nfl-27/buy",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de EA SPORTS Madden NFL 27"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.ea.com/games/madden-nfl/news/welcome-to-madden-27",
+        "official": true,
+        "host": "www.ea.com",
+        "checkedAt": "2026-08-13",
+        "evidence": {
+          "title": "EA SPORTS Madden NFL 27",
+          "releaseDate": "2026-08-13",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "mafia-the-old-country",
       "title": "Mafia: The Old Country",
       "headingHtml": "Mafia: The Old Country <span class=\"tag-dlc\">DLC</span><a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/22848-buy-mafia-the-old-country-man-of-honor-pc-steam/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Mafia: The Old Country - Man of Honor en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",

@@ -122,6 +122,63 @@
     }
   },
   {
+    "id": "helldivers-2-playstation-plus-devoid-liberty",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "ya está incluido en el catálogo de PlayStation Plus Extra y Premium",
+        "abre el frente del Vacío contra los Illuminate",
+        "nuevos objetivos, criaturas mutadas y pelotones de la SEAF"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-08-12",
+    "addedAt": "2026-08-12T14:55:11Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Helldivers 2"
+      },
+      "copy": {
+        "es": "Helldivers 2 entra en PS Plus Extra y Premium junto a Devoid of Liberty"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "Helldivers 2 entra en PS Plus Extra y Premium con Devoid of Liberty"
+    },
+    "summary": {
+      "es": "Helldivers 2 ya está incluido en el catálogo de PlayStation Plus Extra y Premium. Su incorporación coincide con el estreno gratuito de Devoid of Liberty, una actualización que abre el frente del Vacío contra los Illuminate."
+    },
+    "why": {
+      "es": "El acceso mediante la suscripción amplía la audiencia del cooperativo mientras Arrowhead añade nuevos objetivos, criaturas mutadas y pelotones de la SEAF que combaten y prestan apoyo médico durante las operaciones."
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Anuncio oficial de PlayStation Plus y la actualización"
+        },
+        "url": "https://blog.playstation.com/2026/08/12/helldivers-2-joins-playstation-plus-game-catalog-today-devoid-of-liberty-update-out-now/"
+      },
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Presentación oficial de Arrowhead sobre Devoid of Liberty"
+        },
+        "url": "https://news.xbox.com/en-us/2026/08/12/helldivers-2-devoid-of-liberty-update-xbox/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Devoid of Liberty lleva las operaciones hacia planetas alterados por el Vacío. Las misiones incluyen destruir agujas y portales Illuminate, infiltrarse en sus estructuras, reunir datos y abrir zonas de extracción secundarias.",
+        "La actualización incorpora al Wretch y al Crusher como amenazas mutadas, eleva la progresión hasta 300 rangos y permite solicitar pelotones de la SEAF con fusileros, especialistas y sanitarios que acompañan al escuadrón."
+      ]
+    }
+  },
+  {
     "id": "supermassive-games-despidos-75-empleados",
     "important": true,
     "emphasis": {

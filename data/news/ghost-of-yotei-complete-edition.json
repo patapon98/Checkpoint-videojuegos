@@ -12,6 +12,7 @@
     "es": "Juegos"
   },
   "date": "2026-08-12",
+  "updated": "2026-08-13",
   "addedAt": "2026-08-12T17:05:00Z",
   "featured": false,
   "ticker": {
@@ -34,9 +35,16 @@
   },
   "sources": [
     {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de Ghost of Yōtei Complete Edition"
+      },
+      "url": "https://blog.playstation.com/2026/08/12/ghost-of-yotei-complete-edition-comes-to-ps5-october-1/"
+    },
+    {
       "label": "MeriStation",
       "type": {
-        "es": "Información sobre el anuncio oficial de Sucker Punch"
+        "es": "Contexto sobre el anuncio de Sucker Punch"
       },
       "url": "https://as.com/meristation/noticias/ghost-of-yotei-complete-edition-es-oficial-asi-es-la-nueva-expansion-y-modo-de-juego-roguelike-f202608-n/"
     }

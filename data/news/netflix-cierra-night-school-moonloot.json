@@ -1,0 +1,64 @@
+{
+  "id": "netflix-cierra-night-school-moonloot",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha cerrado Night School Studio",
+      "propone cerrar Moonloot",
+      "también eliminará puestos adicionales dentro de su división de videojuegos"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-08-13",
+  "addedAt": "2026-08-14T23:56:02Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Netflix"
+    },
+    "copy": {
+      "es": "Netflix cierra Night School Studio y plantea cerrar Moonloot"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Netflix cierra Night School Studio y plantea cerrar Moonloot"
+  },
+  "summary": {
+    "es": "Netflix ha cerrado Night School Studio, creador de Oxenfree, y propone cerrar Moonloot, su equipo de Helsinki. La compañía también eliminará puestos adicionales dentro de su división de videojuegos, aunque no ha detallado cuántos."
+  },
+  "why": {
+    "es": "El ajuste reduce de nuevo la producción interna de Netflix Games. Night School fue el primer estudio adquirido por la compañía en 2021 y su cierre llega seis semanas después de lanzar Unhinged, mientras Netflix concentra su estrategia en juegos infantiles, sociales, narrativos y de alcance general."
+  },
+  "sources": [
+    {
+      "label": "Game File",
+      "type": {
+        "es": "Declaraciones oficiales de Netflix sobre los cierres y la reorganización"
+      },
+      "url": "https://www.gamefile.news/p/netflix-closes-night-school-moonloot"
+    },
+    {
+      "label": "Los Angeles Times",
+      "type": {
+        "es": "Confirmación de Netflix y contexto sobre Night School y Moonloot"
+      },
+      "url": "https://www.latimes.com/entertainment-arts/business/story/2026-08-14/la-fi-hi-netflix-gaming-layoffs"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto sobre la nueva estrategia de Netflix Games"
+      },
+      "url": "https://www.theverge.com/games/979855/netflix-shut-down-night-school-studio-moonloot-games"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Night School desarrolló Oxenfree, Afterparty y Oxenfree II: Lost Signals antes y después de que Netflix lo comprara en 2021. Su último proyecto, el juego de terror en la nube Unhinged, se estrenó el 30 de junio, apenas seis semanas antes del cierre.",
+      "Moonloot fue fundado en Helsinki en 2022 y no llegó a publicar ningún juego. Netflix mantiene Next Games como estudio interno y afirma que reorganizará la división alrededor de juegos infantiles, experiencias sociales, propuestas narrativas y títulos con atractivo general."
+    ]
+  }
+}

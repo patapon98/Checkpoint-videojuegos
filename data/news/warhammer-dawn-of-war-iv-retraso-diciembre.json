@@ -1,0 +1,57 @@
+{
+  "id": "warhammer-dawn-of-war-iv-retraso-diciembre",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "retrasa su lanzamiento del 17 de septiembre al 3 de diciembre de 2026",
+      "optimizar el rendimiento, corregir errores y aplicar más pulido",
+      "Commander Edition comenzará el 30 de noviembre"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-12",
+  "addedAt": "2026-08-14T17:58:51Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Dawn of War IV"
+    },
+    "copy": {
+      "es": "Dawn of War IV retrasa su lanzamiento al 3 de diciembre"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Warhammer 40,000: Dawn of War IV retrasa su lanzamiento al 3 de diciembre"
+  },
+  "summary": {
+    "es": "Warhammer 40,000: Dawn of War IV retrasa su lanzamiento del 17 de septiembre al 3 de diciembre de 2026. La Commander Edition comenzará el 30 de noviembre con sus tres días de acceso anticipado."
+  },
+  "why": {
+    "es": "KING Art utilizará el tiempo adicional para optimizar el rendimiento, corregir errores y aplicar más pulido. El cambio también desplaza el contenido del primer año, incluido el regreso del modo Crusade y las dos expansiones de campaña."
+  },
+  "sources": [
+    {
+      "label": "Dawn of War IV en Steam",
+      "type": {
+        "es": "Comunicado oficial sobre el retraso"
+      },
+      "url": "https://store.steampowered.com/news/app/2272360/view/692017587063620174"
+    },
+    {
+      "label": "PC Gamer",
+      "type": {
+        "es": "Contexto sobre la nueva fecha y la hoja de ruta"
+      },
+      "url": "https://www.pcgamer.com/games/strategy/dawn-of-war-4-has-been-delayed-we-saw-an-opportunity-to-further-enhance-dawn-of-war-4-and-deliver-the-quality-of-experience-weve-always-envisioned/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El nuevo calendario mantiene los tres días de acceso anticipado de la Commander Edition: sus compradores podrán entrar el 30 de noviembre, mientras que la edición estándar se desbloqueará el 3 de diciembre en PC.",
+      "KING Art seguirá publicando informes de batalla, demostraciones y análisis de desarrollo durante la espera. Las actualizaciones gratuitas y el modo Crusade comenzarán en 2027, seguidos por las campañas Blood Ravens Prologue y Aftermath."
+    ]
+  }
+}

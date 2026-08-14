@@ -21,6 +21,7 @@ const currentById = new Map(current.releases.map((release) => [release.id, relea
 const errors = [];
 const warnings = [];
 const MATERIAL_FIELDS = ["title", "date", "platformKeys", "platformsHtml", "image", "store", "trailer", "tag", "badge", "priority"];
+const RESTRICTED_HTTP_STATUSES = new Set([401, 403, 429]);
 
 function normalized(value = "") {
   return String(value)
@@ -63,7 +64,12 @@ async function fetchChecked(url, label, { required = true } = {}) {
         "accept-language": "es-ES,es;q=0.9,en;q=0.7"
       }
     });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    if (!response.ok) {
+      const message = `${label} no responde correctamente: HTTP ${response.status}`;
+      if (required && !RESTRICTED_HTTP_STATUSES.has(response.status)) errors.push(message);
+      else warnings.push(message);
+      return null;
+    }
     return response;
   } catch (error) {
     const message = `${label} no responde correctamente: ${error.message}`;

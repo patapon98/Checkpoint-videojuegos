@@ -1,0 +1,63 @@
+{
+  "id": "disney-dreamlight-valley-keepsake-sea",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "su cuarta expansión",
+      "prevista para 2026",
+      "la llegada de un personaje más"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-14",
+  "addedAt": "2026-08-15T21:00:11Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "The Keepsake Sea"
+    },
+    "copy": {
+      "es": "The Keepsake Sea será la cuarta expansión de Disney Dreamlight Valley y llegará en 2026"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Disney Dreamlight Valley anuncia su cuarta expansión, The Keepsake Sea"
+  },
+  "summary": {
+    "es": "Disney Dreamlight Valley ha presentado The Keepsake Sea, su cuarta expansión, prevista para 2026. El primer adelanto muestra una nueva aventura y anticipa la llegada de un personaje más."
+  },
+  "why": {
+    "es": "La revelación fija el próximo gran contenido de Disney Dreamlight Valley para este año. Gameloft todavía no ha concretado la fecha ni ha detallado las nuevas zonas, pero ampliará la información antes del lanzamiento."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=WxsKvpJkst4",
+    "label": {
+      "es": "Ver adelanto oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "D23",
+      "type": {
+        "es": "Anuncio oficial de la expansión"
+      },
+      "url": "https://d23.com/your-dream-your-valley-disney-dreamlight-valley-at-d23-the-ultimate-disney-fan-event/"
+    },
+    {
+      "label": "Disney Dreamlight Valley",
+      "type": {
+        "es": "Adelanto oficial"
+      },
+      "url": "https://www.youtube.com/watch?v=WxsKvpJkst4"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El anuncio se realizó durante el panel de Disney Dreamlight Valley en D23. El vídeo de The Keepsake Sea ofrece un primer vistazo a una aventura inédita y confirma que será el cuarto paquete de expansión del juego.",
+      "La hoja de ruta presentada en el evento también reserva para 2026 la llegada gratuita de Oogie Boogie durante Halloween y de Lilo en la última actualización del año, aunque Disney todavía no ha detallado el contenido completo ni la fecha exacta de la expansión."
+    ]
+  }
+}

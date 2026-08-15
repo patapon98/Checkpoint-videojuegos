@@ -192,14 +192,16 @@ for (const relativePath of jsonFiles) {
     }
 
     const hosts = officialHosts(before);
+    const registeredSourceUrls = new Set((after.sources || []).map((item) => item?.url).filter(Boolean));
     for (const sourceUrl of change.sourceUrls || []) {
       const host = relationHost(sourceUrl);
       const youtube = host === 'youtube.com' || host.endsWith('.youtube.com') || host === 'youtu.be';
       const official = host && relatedHost(host, hosts);
       const trustedEditorial = host && trustedEditorialHost(host);
+      const registeredSource = registeredSourceUrls.has(sourceUrl);
       if (!isHttps(sourceUrl)) fail(`${relativePath}: sourceUrls solo admite HTTPS (${sourceUrl})`);
-      if (!host || (!youtube && !official && !trustedEditorial)) {
-        fail(`${relativePath}: la fuente no pertenece a un dominio oficial verificado ni a un medio editorial admitido (${sourceUrl})`);
+      if (!host || (!youtube && !official && !trustedEditorial && !registeredSource)) {
+        fail(`${relativePath}: la fuente debe ser oficial, un medio editorial admitido o estar registrada expresamente en sources (${sourceUrl})`);
       }
       if (/reddit\.com|rawg\.io|x\.com|twitter\.com/i.test(sourceUrl)) {
         fail(`${relativePath}: sourceUrls no puede usar redes sociales, Reddit ni RAWG (${sourceUrl})`);
@@ -248,6 +250,9 @@ for (const relativePath of jsonFiles) {
 
   for (const source of after.sources || []) {
     if (!source || !isHttps(source.url)) fail(`${relativePath}: todas las fuentes deben usar HTTPS`);
+    if (/reddit\.com|rawg\.io|x\.com|twitter\.com/i.test(source?.url || '')) {
+      fail(`${relativePath}: sources no puede usar redes sociales, Reddit ni RAWG (${source?.url})`);
+    }
   }
 
   if (changedKeys.length === 2 && changedKeys.includes('changes') && changedKeys.includes('updatedAt')) {

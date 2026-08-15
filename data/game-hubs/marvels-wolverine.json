@@ -107,6 +107,9 @@
     ]
   },
   "confirmed": [
+    "El modo Rendimiento de la PS5 base funciona a 60 FPS con ray tracing y es el modo predeterminado, según Insomniac.",
+    "Wolverine es el único personaje jugable durante la campaña; otros personajes pueden intervenir como aliados.",
+    "La edición física será plenamente jugable desde el disco, aunque Insomniac recomienda instalar la actualización del día uno para recibir el pulido y las correcciones más recientes.",
     "Aventura para un jugador con historia original y sin estructura de mundo abierto.",
     "Logan combina técnicas intercambiables, adaptaciones, acecho y emboscadas.",
     "Jean Grey interviene en combate con telequinesis y en golpes críticos conjuntos.",
@@ -116,7 +119,7 @@
   ],
   "pending": [
     "No se conoce la duración aproximada de la historia.",
-    "Insomniac no ha detallado los modos concretos de resolución y rendimiento.",
+    "Insomniac no ha detallado la resolución del modo Rendimiento ni el resto de modos gráficos.",
     "Faltan por revelarse todos los jefes y personajes de la campaña.",
     "No se ha publicado el tamaño de instalación definitivo.",
     "No se conoce el plan de contenidos posteriores al lanzamiento.",
@@ -142,6 +145,21 @@
       "label": "PlayStation Blog",
       "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/",
       "type": "Tráiler de historia y nuevos personajes"
+    },
+    {
+      "label": "TechRadar",
+      "url": "https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation",
+      "type": "Declaraciones directas de Insomniac sobre 60 FPS y ray tracing"
+    },
+    {
+      "label": "GamesRadar+",
+      "url": "https://www.gamesradar.com/games/action/wolverine-is-our-only-playable-character-insomniac-wont-repeat-spider-mans-worst-sections-in-marvels-wolverine/",
+      "type": "Declaraciones directas de Insomniac sobre el personaje jugable"
+    },
+    {
+      "label": "TechRadar",
+      "url": "https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good",
+      "type": "Declaraciones directas de Insomniac sobre la edición física y el parche del día uno"
     }
   ],
   "newsTerms": [
@@ -158,6 +176,16 @@
     "heroImageAlt": "Arte promocional oficial de Marvel's Wolverine con Logan mostrando las garras sobre un fondo amarillo"
   },
   "changes": [
+    {
+      "date": "2026-08-16",
+      "title": "Insomniac confirma 60 FPS con ray tracing y nuevos detalles de lanzamiento",
+      "description": "El modo Rendimiento de PS5 funcionará a 60 FPS con ray tracing y será el predeterminado; Logan será el único personaje jugable y la edición física podrá completarse desde el disco, aunque el estudio recomienda instalar el parche del día uno.",
+      "sourceUrls": [
+        "https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation",
+        "https://www.gamesradar.com/games/action/wolverine-is-our-only-playable-character-insomniac-wont-repeat-spider-mans-worst-sections-in-marvels-wolverine/",
+        "https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good"
+      ]
+    },
     {
       "date": "2026-08-10",
       "title": "Fecha de lanzamiento corregida al 15 de septiembre",
@@ -193,7 +221,7 @@
     "marvel-tokon-fighting-souls",
     "god-of-war-laufey"
   ],
-  "updatedAt": "2026-08-10",
+  "updatedAt": "2026-08-16",
   "price": "Desde 79,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",

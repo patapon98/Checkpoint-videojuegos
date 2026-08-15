@@ -54,6 +54,13 @@
   "media": [
     {
       "type": "youtube",
+      "videoId": "funfFAMMBBs",
+      "title": "MARVEL Tōkon: Fighting Souls, tráiler de lanzamiento",
+      "label": "Tráiler de lanzamiento",
+      "publishedAt": "2026-08-06"
+    },
+    {
+      "type": "youtube",
       "videoId": "DV9Oq_X22Ak",
       "title": "MARVEL Tōkon: Fighting Souls, tráiler de presentación",
       "label": "Tráiler oficial",
@@ -93,6 +100,7 @@
     ]
   },
   "confirmed": [
+    "La versión de PS5 está mejorada para PS5 Pro y utiliza PlayStation Spectral Super Resolution (PSSR) para ofrecer una imagen 4K más nítida mediante escalado por IA.",
     "Dos jugadores, cada uno al mando de un equipo de cuatro personajes.",
     "Empiezan dos luchadores. Los otros dos entran con una transición de escenario, un wall bounce concreto o al perder una ronda.",
     "El plantel incluye a Captain America, Iron Man, Hulk, Black Panther, Storm, Magik, Wolverine, Danger, Spider-Man, Ms. Marvel, Star-Lord, Peni Parker, Doctor Doom, Magneto, Green Goblin, Carnage, Ghost Rider, Blade, Loki y Deadpool.",
@@ -125,6 +133,11 @@
       "label": "PlayStation Blog",
       "url": "https://blog.playstation.com/2026/07/23/phoenix-cyclops-revealed-as-marvel-tokon-fighting-souls-first-year-1-dlc-character/",
       "type": "Contenido posterior al lanzamiento"
+    },
+    {
+      "label": "PlayStation España",
+      "url": "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/",
+      "type": "PS5 Pro, PSSR, complementos y precios españoles"
     }
   ],
   "newsTerms": [
@@ -140,6 +153,14 @@
     "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
+    {
+      "date": "2026-08-16",
+      "title": "PS5 Pro, tráiler de lanzamiento y complementos oficiales añadidos",
+      "description": "PlayStation confirma mejoras para PS5 Pro con PSSR; la ficha incorpora el tráiler de lanzamiento y añade los precios españoles de la mejora Standard–Ultimate y del pase de personajes y escenarios del Año 1.",
+      "sourceUrls": [
+        "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/"
+      ]
+    },
     {
       "date": "2026-08-06",
       "title": "MARVEL Tōkon: Fighting Souls ya está disponible",
@@ -168,7 +189,7 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-08-06",
+  "updatedAt": "2026-08-16",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [
@@ -264,6 +285,34 @@
           "Cinco trajes: Spider-Man, Storm, Iron Man, Capitán América y Doctor Doom",
           "Color cromático animado para los veinte personajes de lanzamiento"
         ]
+      },
+      {
+        "name": "Mejora Standard – Ultimate Edition",
+        "kind": "Mejora",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "40,00 €"
+          }
+        ],
+        "includes": [
+          "Contenido adicional de Ultimate Edition para propietarios de la edición Standard"
+        ]
+      },
+      {
+        "name": "Pase de personajes y escenarios del año 1",
+        "kind": "Pase de temporada",
+        "prices": [
+          {
+            "platform": "PS5",
+            "value": "34,99 €"
+          }
+        ],
+        "includes": [
+          "Cuatro personajes adicionales",
+          "Un escenario adicional",
+          "Conjunto de poses para la pantalla de resultados"
+        ]
       }
     ],
     "preorderBonuses": [
@@ -272,7 +321,9 @@
       "Tabla de surf cósmica como vehículo de sala"
     ],
     "notes": [
-      "Las ediciones especiales también están anunciadas para PC; los precios mostrados corresponden a PlayStation Store España."
+      "Las ediciones especiales también están anunciadas para PC; los precios mostrados corresponden a PlayStation Store España.",
+      "PlayStation indica que los extras asociados a la reserva están disponibles hasta el 5 de agosto de 2027.",
+      "La mejora Deluxe – Ultimate figura actualmente como no disponible en PlayStation Store España."
     ]
   },
   "price": "Desde 69,99 € en PS5"

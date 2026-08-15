@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15",
+  "updatedAt": "2026-08-16",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -2928,49 +2928,6 @@
       "trailer": "https://www.youtube.com/watch?v=VQRLujxTm3c"
     },
     {
-      "id": "xenoblade-chronicles-3-switch-2-edition",
-      "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition",
-      "headingHtml": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition <span class=\"tag-dlc\">Nueva plataforma</span>",
-      "date": "2026-12-03",
-      "platformKeys": [
-        "switch"
-      ],
-      "platformsHtml": "Switch 2",
-      "image": {
-        "src": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000122696/f9c705e8b4990d25cd97239bbf8efc941fdcb39730e6fcb193b72eb3bfe38b73",
-        "alt": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-nintendo-switch-2-edition-switch-2/",
-        "title": "Ver ficha oficial",
-        "ariaLabel": "Ver la ficha oficial de Xenoblade Chronicles 3 – Nintendo Switch 2 Edition"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Nueva plataforma",
-      "badge": null,
-      "priority": 55,
-      "source": {
-        "url": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-nintendo-switch-2-edition-switch-2/",
-        "official": true,
-        "host": "www.nintendo.com",
-        "checkedAt": "2026-07-30",
-        "evidence": {
-          "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition",
-          "releaseDate": "2026-12-03",
-          "platforms": [
-            "switch"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": null
-    },
-    {
       "id": "warhammer-40000-dawn-of-war-iv",
       "title": "Warhammer 40,000: Dawn of War IV",
       "headingHtml": "Warhammer 40,000: Dawn of War IV",
@@ -3015,6 +2972,49 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=L2Q4k3v1wko"
+    },
+    {
+      "id": "xenoblade-chronicles-3-switch-2-edition",
+      "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition",
+      "headingHtml": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-12-03",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000122696/f9c705e8b4990d25cd97239bbf8efc941fdcb39730e6fcb193b72eb3bfe38b73",
+        "alt": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-nintendo-switch-2-edition-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Xenoblade Chronicles 3 – Nintendo Switch 2 Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-nintendo-switch-2-edition-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-07-30",
+        "evidence": {
+          "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition",
+          "releaseDate": "2026-12-03",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
     },
     {
       "id": "attack-on-titan-3",
@@ -3238,5 +3238,5 @@
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
     }
   ],
-  "renderState": "f0deeb98fff8"
+  "renderState": "c6536cf7a96c"
 }

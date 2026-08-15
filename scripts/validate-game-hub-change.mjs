@@ -18,6 +18,7 @@ const trustedEditorialHosts = new Set([
   'theverge.com',
   'videogameschronicle.com'
 ]);
+const prohibitedSourceHosts = new Set(['x.com', 'twitter.com', 'reddit.com', 'rawg.io']);
 
 const fail = (message) => errors.push(message);
 const stable = (value) => JSON.stringify(value);
@@ -58,6 +59,10 @@ function relatedHost(candidate, allowed) {
 
 function trustedEditorialHost(candidate) {
   return [...trustedEditorialHosts].some((host) => candidate === host || candidate.endsWith(`.${host}`));
+}
+
+function prohibitedSourceHost(candidate) {
+  return [...prohibitedSourceHosts].some((host) => candidate === host || candidate.endsWith(`.${host}`));
 }
 
 function officialHosts(data) {
@@ -163,33 +168,23 @@ for (const relativePath of jsonFiles) {
   const allKeys = new Set([...Object.keys(before), ...Object.keys(after)]);
   const changedKeys = [...allKeys].filter((key) => stable(before[key]) !== stable(after[key]));
   const forbidden = changedKeys.filter((key) => !allowedFields.has(key));
-  if (forbidden.length) {
-    fail(`${relativePath}: campos editoriales o estructurales no autorizados (${forbidden.join(', ')})`);
-  }
+  if (forbidden.length) fail(`${relativePath}: campos editoriales o estructurales no autorizados (${forbidden.join(', ')})`);
 
   if (after.id !== id || before.id !== id) fail(`${relativePath}: el id es inmutable y debe coincidir con el archivo`);
   if (after.updatedAt === before.updatedAt) fail(`${relativePath}: updatedAt debe cambiar`);
   if (!validDate(after.updatedAt)) fail(`${relativePath}: updatedAt debe usar AAAA-MM-DD`);
-  if (after.updatedAt !== madridToday) {
-    fail(`${relativePath}: updatedAt debe coincidir con la fecha actual en Europe/Madrid (${madridToday})`);
-  }
+  if (after.updatedAt !== madridToday) fail(`${relativePath}: updatedAt debe coincidir con la fecha actual en Europe/Madrid (${madridToday})`);
   if (!validDate(after.releaseDate)) fail(`${relativePath}: releaseDate debe usar AAAA-MM-DD`);
 
   const newChanges = requireAppendOnly(`${relativePath} > changes`, before.changes, after.changes);
   if (newChanges.length !== 1) fail(`${relativePath}: cada actualización debe añadir exactamente una entrada a changes`);
   if (newChanges.length === 1) {
     const change = newChanges[0];
-    if (stable(after.changes[0]) !== stable(change)) {
-      fail(`${relativePath}: la nueva entrada de changes debe ocupar la primera posición`);
-    }
-    if (!validDate(change.date) || change.date !== after.updatedAt) {
-      fail(`${relativePath}: la fecha del nuevo cambio debe coincidir con updatedAt`);
-    }
+    if (stable(after.changes[0]) !== stable(change)) fail(`${relativePath}: la nueva entrada de changes debe ocupar la primera posición`);
+    if (!validDate(change.date) || change.date !== after.updatedAt) fail(`${relativePath}: la fecha del nuevo cambio debe coincidir con updatedAt`);
     if (typeof change.title !== 'string' || !change.title.trim()) fail(`${relativePath}: el cambio necesita title`);
     if (typeof change.description !== 'string' || !change.description.trim()) fail(`${relativePath}: el cambio necesita description`);
-    if (!Array.isArray(change.sourceUrls) || change.sourceUrls.length < 1 || change.sourceUrls.length > 4) {
-      fail(`${relativePath}: el nuevo cambio debe incluir entre una y cuatro sourceUrls verificadas`);
-    }
+    if (!Array.isArray(change.sourceUrls) || change.sourceUrls.length < 1 || change.sourceUrls.length > 4) fail(`${relativePath}: el nuevo cambio debe incluir entre una y cuatro sourceUrls verificadas`);
 
     const hosts = officialHosts(before);
     const registeredSourceUrls = new Set((after.sources || []).map((item) => item?.url).filter(Boolean));
@@ -200,12 +195,8 @@ for (const relativePath of jsonFiles) {
       const trustedEditorial = host && trustedEditorialHost(host);
       const registeredSource = registeredSourceUrls.has(sourceUrl);
       if (!isHttps(sourceUrl)) fail(`${relativePath}: sourceUrls solo admite HTTPS (${sourceUrl})`);
-      if (!host || (!youtube && !official && !trustedEditorial && !registeredSource)) {
-        fail(`${relativePath}: la fuente debe ser oficial, un medio editorial admitido o estar registrada expresamente en sources (${sourceUrl})`);
-      }
-      if (/reddit\.com|rawg\.io|x\.com|twitter\.com/i.test(sourceUrl)) {
-        fail(`${relativePath}: sourceUrls no puede usar redes sociales, Reddit ni RAWG (${sourceUrl})`);
-      }
+      if (!host || (!youtube && !official && !trustedEditorial && !registeredSource)) fail(`${relativePath}: la fuente debe ser oficial, un medio editorial admitido o estar registrada expresamente en sources (${sourceUrl})`);
+      if (host && prohibitedSourceHost(host)) fail(`${relativePath}: sourceUrls no puede usar redes sociales, Reddit ni RAWG (${sourceUrl})`);
     }
   }
 
@@ -217,9 +208,7 @@ for (const relativePath of jsonFiles) {
     if (!image || !isHttps(image.src) || !host) fail(`${relativePath}: cada imagen nueva necesita una URL HTTPS válida`);
     if (typeof image?.alt !== 'string' || image.alt.trim().length < 12) fail(`${relativePath}: cada imagen nueva necesita un alt descriptivo`);
     if (!relatedHost(host, knownHosts)) fail(`${relativePath}: la imagen nueva no usa un alojamiento oficial ya verificado (${image?.src})`);
-    if (/rawg\.io|ytimg\.com|youtube\.com|output=preview|\/maxresdefault\./i.test(image?.src || '')) {
-      fail(`${relativePath}: la imagen nueva usa una fuente o miniatura prohibida (${image?.src})`);
-    }
+    if (/rawg\.io|ytimg\.com|youtube\.com|output=preview|\/maxresdefault\./i.test(image?.src || '')) fail(`${relativePath}: la imagen nueva usa una fuente o miniatura prohibida (${image?.src})`);
   }
 
   const addedMedia = requireAppendOnly(`${relativePath} > media`, before.media, after.media);
@@ -239,25 +228,20 @@ for (const relativePath of jsonFiles) {
 
   const removedPending = removedItems(before.pending, after.pending);
   const addedPending = addedItems(before.pending, after.pending);
-  if (removedPending.length > 5 || addedPending.length > 5) {
-    fail(`${relativePath}: pending cambia en exceso para una actualización automática`);
-  }
+  if (removedPending.length > 5 || addedPending.length > 5) fail(`${relativePath}: pending cambia en exceso para una actualización automática`);
 
   ensureUnique(after.platforms || [], `${relativePath} > platforms`);
   ensureUnique((after.gallery || []).map((item) => item.src), `${relativePath} > gallery`);
   ensureUnique((after.media || []).map((item) => item.videoId), `${relativePath} > media`);
   ensureUnique((after.sources || []).map((item) => item.url), `${relativePath} > sources`);
 
-  for (const source of after.sources || []) {
-    if (!source || !isHttps(source.url)) fail(`${relativePath}: todas las fuentes deben usar HTTPS`);
-    if (/reddit\.com|rawg\.io|x\.com|twitter\.com/i.test(source?.url || '')) {
-      fail(`${relativePath}: sources no puede usar redes sociales, Reddit ni RAWG (${source?.url})`);
-    }
+  for (const source of addedSources) {
+    const host = relationHost(source?.url);
+    if (!source || !isHttps(source.url)) fail(`${relativePath}: todas las fuentes nuevas deben usar HTTPS`);
+    if (host && prohibitedSourceHost(host)) fail(`${relativePath}: sources no puede añadir redes sociales, Reddit ni RAWG (${source?.url})`);
   }
 
-  if (changedKeys.length === 2 && changedKeys.includes('changes') && changedKeys.includes('updatedAt')) {
-    fail(`${relativePath}: no se puede registrar una actualización vacía sin modificar información de la ficha`);
-  }
+  if (changedKeys.length === 2 && changedKeys.includes('changes') && changedKeys.includes('updatedAt')) fail(`${relativePath}: no se puede registrar una actualización vacía sin modificar información de la ficha`);
 }
 
 if (errors.length) {

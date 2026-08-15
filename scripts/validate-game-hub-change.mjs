@@ -7,6 +7,17 @@ const errors = [];
 const automaticPrefix = 'bot/game-hubs-';
 const headRef = process.env.HEAD_REF || process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF_NAME || '';
 const automatic = headRef.startsWith(automaticPrefix);
+const trustedEditorialHosts = new Set([
+  'automaton-media.com',
+  'eurogamer.net',
+  'famitsu.com',
+  'gamesindustry.biz',
+  'gamesradar.com',
+  'ign.com',
+  'techradar.com',
+  'theverge.com',
+  'videogameschronicle.com'
+]);
 
 const fail = (message) => errors.push(message);
 const stable = (value) => JSON.stringify(value);
@@ -43,6 +54,10 @@ function relatedHost(candidate, allowed) {
   return allowed.some((host) => candidate === host
     || candidate.endsWith(`.${host}`)
     || host.endsWith(`.${candidate}`));
+}
+
+function trustedEditorialHost(candidate) {
+  return [...trustedEditorialHosts].some((host) => candidate === host || candidate.endsWith(`.${host}`));
 }
 
 function officialHosts(data) {
@@ -173,16 +188,18 @@ for (const relativePath of jsonFiles) {
     if (typeof change.title !== 'string' || !change.title.trim()) fail(`${relativePath}: el cambio necesita title`);
     if (typeof change.description !== 'string' || !change.description.trim()) fail(`${relativePath}: el cambio necesita description`);
     if (!Array.isArray(change.sourceUrls) || change.sourceUrls.length < 1 || change.sourceUrls.length > 4) {
-      fail(`${relativePath}: el nuevo cambio debe incluir entre una y cuatro sourceUrls oficiales`);
+      fail(`${relativePath}: el nuevo cambio debe incluir entre una y cuatro sourceUrls verificadas`);
     }
 
     const hosts = officialHosts(before);
     for (const sourceUrl of change.sourceUrls || []) {
       const host = relationHost(sourceUrl);
       const youtube = host === 'youtube.com' || host.endsWith('.youtube.com') || host === 'youtu.be';
+      const official = host && relatedHost(host, hosts);
+      const trustedEditorial = host && trustedEditorialHost(host);
       if (!isHttps(sourceUrl)) fail(`${relativePath}: sourceUrls solo admite HTTPS (${sourceUrl})`);
-      if (!host || (!youtube && !relatedHost(host, hosts))) {
-        fail(`${relativePath}: la fuente no pertenece a un dominio oficial ya verificado (${sourceUrl})`);
+      if (!host || (!youtube && !official && !trustedEditorial)) {
+        fail(`${relativePath}: la fuente no pertenece a un dominio oficial verificado ni a un medio editorial admitido (${sourceUrl})`);
       }
       if (/reddit\.com|rawg\.io|x\.com|twitter\.com/i.test(sourceUrl)) {
         fail(`${relativePath}: sourceUrls no puede usar redes sociales, Reddit ni RAWG (${sourceUrl})`);
@@ -244,4 +261,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Actualización automática validada: ${jsonFiles.length} ficha${jsonFiles.length === 1 ? '' : 's'}, fuentes oficiales y alcance restringido.`);
+console.log(`Actualización automática validada: ${jsonFiles.length} ficha${jsonFiles.length === 1 ? '' : 's'}, fuentes verificadas y alcance restringido.`);

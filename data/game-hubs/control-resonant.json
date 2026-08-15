@@ -55,6 +55,27 @@
   "media": [
     {
       "type": "youtube",
+      "videoId": "xAHVb2KpnYQ",
+      "title": "CONTROL Resonant: Stepping Into a New World",
+      "label": "Diario de desarrollo",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "type": "youtube",
+      "videoId": "SXRxroxfPJ8",
+      "title": "CONTROL Resonant: Take CONTROL Trailer",
+      "label": "Tráiler oficial",
+      "publishedAt": "2026-06-08"
+    },
+    {
+      "type": "youtube",
+      "videoId": "NvncU_SQO5Y",
+      "title": "CONTROL Resonant: Paranatural Manhattan Trailer",
+      "label": "Tráiler oficial",
+      "publishedAt": "2026-06-06"
+    },
+    {
+      "type": "youtube",
       "videoId": "JZuJlSGpgQo",
       "title": "Tráiler de historia de CONTROL Resonant",
       "label": "Tráiler oficial",
@@ -72,6 +93,9 @@
   "context": "Remedy transforma la secuela en un RPG de acción centrado en el cuerpo a cuerpo. No es un mundo abierto: Manhattan se divide en grandes zonas diferenciadas con actividades secundarias, encuentros ocultos y libertad para explorar.",
   "overview": "Una secuela que no repite la fórmula del original. Cambia de protagonista, de estructura y de sistema de combate, y se acerca más al rol de lo que lo hacía Control.",
   "confirmed": [
+    "Emily Pope regresa como codirectora interina de la Agencia Federal de Control; las zonas de Manhattan incluyen misiones secundarias con Objetos Alterados, combates contra jefes y puzles.",
+    "Remedy afirma que CONTROL Resonant tiene las opciones de personalización del protagonista más profundas de cualquier juego que haya desarrollado hasta la fecha.",
+    "El lanzamiento incluye voces completas en español de España, japonés y chino simplificado, además de inglés, francés, alemán, italiano y portugués de Brasil.",
     "Dylan Faden es el único personaje jugable. Jesse ha desaparecido y Zoe De Vera es su enlace con la Agencia.",
     "Manhattan se divide en grandes zonas con actividades secundarias y rutas alternativas.",
     "Reach atrae objetos y enemigos, Shift permite desplazarse rápido y las anomalías gravitatorias amplían la movilidad.",
@@ -87,6 +111,26 @@
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
+    {
+      "label": "Remedy Entertainment: Stepping Into a New World",
+      "url": "https://www.youtube.com/watch?v=xAHVb2KpnYQ",
+      "type": "Diario de desarrollo y personalización"
+    },
+    {
+      "label": "Remedy Entertainment: Take CONTROL",
+      "url": "https://www.youtube.com/watch?v=SXRxroxfPJ8",
+      "type": "Tráiler oficial de combate y exploración"
+    },
+    {
+      "label": "Remedy Entertainment: Paranatural Manhattan",
+      "url": "https://www.youtube.com/watch?v=NvncU_SQO5Y",
+      "type": "Tráiler oficial, zonas y estructura de Manhattan"
+    },
+    {
+      "label": "Remedy Entertainment en Bilibili",
+      "url": "https://www.bilibili.com/video/BV1kR7m6QE3r/",
+      "type": "Plataformas y doblaje chino oficial"
+    },
     {
       "label": "Remedy Entertainment",
       "url": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
@@ -105,7 +149,7 @@
     {
       "label": "Steam",
       "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
-      "type": "Precios, requisitos e imágenes oficiales"
+      "type": "Precios, requisitos, idiomas e imágenes oficiales"
     },
     {
       "label": "Web oficial de Remedy",
@@ -119,7 +163,7 @@
     "dylan faden",
     "el aberrante"
   ],
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-15",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -128,6 +172,17 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {
+      "date": "2026-08-15",
+      "title": "Nuevos tráileres, personalización y doblajes confirmados",
+      "description": "La ficha incorpora los tráileres Paranatural Manhattan y Take CONTROL, el diario de desarrollo Stepping Into a New World, nuevos detalles sobre las actividades de Manhattan y la personalización de Dylan, y los idiomas con doblaje completo confirmados para el lanzamiento.",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=xAHVb2KpnYQ",
+        "https://www.youtube.com/watch?v=SXRxroxfPJ8",
+        "https://www.youtube.com/watch?v=NvncU_SQO5Y",
+        "https://store.steampowered.com/app/3669870/CONTROL_Resonant/"
+      ]
+    },
     {
       "date": "2026-08-03",
       "title": "Requisitos de PC y ediciones trasladados a secciones propias",

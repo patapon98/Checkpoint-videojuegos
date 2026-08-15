@@ -1240,8 +1240,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Aliens: Fireteam Elite 2",
         "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3448650/9b3d808b5a39c572dc13ced8024e8085bd306805/header.jpg?t=1786644343",
         "alt": "Aliens: Fireteam Elite 2",
         "className": "",
@@ -1291,8 +1289,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S",
       "image": {
-        "provider": "rawg",
-        "query": "Once Human",
         "src": "https://r.res.easebar.com/pic/20260710/583c3d57-a9c6-4691-8a10-2bf30c8d36aa.png",
         "alt": "Once Human para consolas",
         "className": "",
@@ -2469,8 +2465,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Valor Mortis",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2828710/084d2f8938429f6c634fccc18b5156b9d05365d8/header_alt_assets_2.jpg?t=1781288698",
         "alt": "Valor Mortis",
         "className": "",

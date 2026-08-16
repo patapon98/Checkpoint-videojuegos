@@ -99,6 +99,7 @@
     ]
   },
   "confirmed": [
+    "El segundo fin de semana de la beta multijugador es abierto y se celebra del 13 al 17 de agosto de 2026.",
     "La beta multijugador se desarrolla en dos fines de semana. El acceso anticipado del primero va del 6 al 10 de agosto de 2026 para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
     "La campaña no abandona en ningún momento el punto de vista del escuadrón Bravo.",
     "Marcus, Dom, Mags Carter y Lucas Reyes son jugables desde el inicio.",
@@ -109,13 +110,17 @@
     "La ficha oficial promete 4K y hasta 60 FPS con una pantalla compatible."
   ],
   "pending": [
-    "Xbox todavía no ha publicado en la ficha oficial consultada las fechas exactas del segundo fin de semana de la beta multijugador.",
     "Faltan por detallar los modos de resolución y rendimiento de cada consola.",
     "No se conoce la lista completa de mapas y variantes multijugador.",
     "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.",
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
+    {
+      "label": "Windows Central",
+      "url": "https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter",
+      "type": "Calendario completo de los dos fines de semana de la beta"
+    },
     {
       "label": "Xbox España",
       "url": "https://www.xbox.com/es-es/games/gears-of-war-eday",
@@ -156,6 +161,15 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-08-16",
+      "title": "La beta abierta continúa del 13 al 17 de agosto",
+      "description": "El segundo fin de semana de la beta multijugador ya es abierto y se celebra del 13 al 17 de agosto de 2026, resolviendo la fecha que seguía pendiente en la ficha.",
+      "sourceUrls": [
+        "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
+        "https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter"
+      ]
+    },
     {
       "date": "2026-08-10",
       "title": "Corregidos los requisitos de GPU publicados en Steam",
@@ -213,7 +227,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-10",
+  "updatedAt": "2026-08-16",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

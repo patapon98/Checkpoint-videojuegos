@@ -2374,6 +2374,51 @@
       "trailer": "https://www.youtube.com/watch?v=gc8z23S8a-A"
     },
     {
+      "id": "once-upon-a-katamari-switch-2",
+      "title": "Once Upon A KATAMARI",
+      "headingHtml": "Once Upon A KATAMARI <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-08",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/cmd55lac04qjt06lcuxy7bcdx",
+        "alt": "Once Upon A KATAMARI para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "provider": "rawg",
+        "query": "Once Upon A KATAMARI"
+      },
+      "store": {
+        "url": "https://www.bandainamcoent.com/news/once-upon-a-katamari-rolls-onto-nintendo-switch-2-with-the-new-rolling-live-highlights-dlc-in-october",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Once Upon A KATAMARI para Nintendo Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.bandainamcoent.com/news/once-upon-a-katamari-rolls-onto-nintendo-switch-2-with-the-new-rolling-live-highlights-dlc-in-october",
+        "official": true,
+        "host": "www.bandainamcoent.com",
+        "checkedAt": "2026-08-16",
+        "evidence": {
+          "title": "Once Upon A KATAMARI",
+          "releaseDate": "2026-10-08",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=GCD9jqnn-WY"
+    },
+    {
       "id": "dragon-s-dogma-2-dark-arisen",
       "title": "Dragon's Dogma 2: Dark Arisen",
       "headingHtml": "Dragon's Dogma 2: Dark Arisen <span class=\"tag-dlc\">Expansión</span>",

@@ -62,7 +62,7 @@
     {"label":"Xbox España","url":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB","type":"Precios de las ediciones en consola"}
   ],
   "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-08-07",
+  "updatedAt": "2026-08-16",
   "seo": {
     "title": "Onimusha: Way of the Sword: duración, demo y todo lo confirmado",
     "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.",
@@ -71,6 +71,7 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
+    {"date":"2026-08-16","title":"Steam concreta DLSS 4.5, FSR 3.1 y el DRM de PC","description":"La ficha técnica de PC especifica que la superresolución admite NVIDIA DLSS 4.5 y AMD FSR 3.1; las estimaciones de rendimiento publicadas se calcularon con DLSS 4.0 y FSR 3.1. Steam también declara Denuvo Anti-tamper con un límite de activación en cinco equipos distintos por día.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/"]},
     {"date":"2026-08-07","title":"Nuevo tráiler y duración aproximada de la aventura","description":"Se añade el nuevo tráiler oficial y la estimación de Capcom: unas 20 horas para una primera partida y alrededor de 20–30 horas con misiones secundarias y contenido adicional.","sourceUrls":["https://youtu.be/Nx2jzXMFzdo","https://game.watch.impress.co.jp/docs/interview/2050681.html","https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/"]},
     {"date":"2026-08-03","title":"Requisitos de PC y ediciones trasladados a secciones propias","description":"La ficha compara las tres ediciones y separa los requisitos mínimos y recomendados del bloque general de información confirmada.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB/0010"]},
     {"date":"2026-07-30","title":"Ficha ampliada con demo, combate y galería oficial","description":"Se aclaró que es una entrega independiente, se añadieron sistemas de combate, ediciones, precios y requisitos, y se sustituyó la galería por ocho capturas oficiales en alta resolución."}
@@ -93,7 +94,7 @@
     "sourceUrl":"https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/",
     "minimum":[{"label":"Sistema operativo","value":"Windows 11 de 64 bits"},{"label":"Procesador","value":"Intel Core i5-8400 o AMD Ryzen 3 3100"},{"label":"Memoria","value":"16 GB de RAM"},{"label":"Tarjeta gráfica","value":"GeForce GTX 1660 (6 GB) o Radeon RX 5500 XT (8 GB)"},{"label":"DirectX","value":"Versión 12"},{"label":"Almacenamiento","value":"50 GB disponibles en SSD"},{"label":"Rendimiento objetivo","value":"1080p, calidad baja y 30 FPS con reescalado"}],
     "recommended":[{"label":"Sistema operativo","value":"Windows 11 de 64 bits"},{"label":"Procesador","value":"Intel Core i5-10400 o AMD Ryzen 5 3600"},{"label":"Memoria","value":"16 GB de RAM"},{"label":"Tarjeta gráfica","value":"GeForce RTX 2060 Super (8 GB) o Radeon RX 6600 (8 GB)"},{"label":"DirectX","value":"Versión 12"},{"label":"Almacenamiento","value":"50 GB disponibles en SSD"},{"label":"Rendimiento objetivo","value":"1080p, calidad media y 60 FPS con reescalado"}],
-    "notes":["Steam exige un procesador y un sistema operativo de 64 bits.","El SSD es obligatorio y las estimaciones utilizan NVIDIA DLSS o AMD FSR."]
+    "notes":["Steam exige un procesador y un sistema operativo de 64 bits.","El SSD es obligatorio.","La superresolución admite NVIDIA DLSS 4.5 y AMD FSR 3.1; las estimaciones de rendimiento publicadas se calcularon con DLSS 4.0 y FSR 3.1.","Steam declara Denuvo Anti-tamper con un límite de activación en cinco equipos distintos por día."]
   },
   "editions": {
     "sourceUrl":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB/0010",

@@ -107,6 +107,9 @@
     ]
   },
   "confirmed": [
+    "New Game Plus estará disponible desde el lanzamiento y permitirá conservar progresión, equipo y trajes desbloqueados; además incluirá adaptaciones exclusivas para esa modalidad.",
+    "Mission Replay permitirá repetir misiones ya completadas para volver a jugarlas o recoger coleccionables pendientes.",
+    "Las Nightmare Doors son actividades secundarias narrativas con pruebas centradas en los recuerdos y traumas de Logan.",
     "El modo Rendimiento de la PS5 base funciona a 60 FPS con ray tracing y es el modo predeterminado, según Insomniac.",
     "Wolverine es el único personaje jugable durante la campaña; otros personajes pueden intervenir como aliados.",
     "La edición física será plenamente jugable desde el disco, aunque Insomniac recomienda instalar la actualización del día uno para recibir el pulido y las correcciones más recientes.",
@@ -160,6 +163,11 @@
       "label": "TechRadar",
       "url": "https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good",
       "type": "Declaraciones directas de Insomniac sobre la edición física y el parche del día uno"
+    },
+    {
+      "label": "TechRadar",
+      "url": "https://www.techradar.com/gaming/marvels-wolverine-confirmed-to-have-new-game-plus-at-launch-and-features-a-side-activity-called-nightmare-doors-where-players-confront-logans-nightmares-to-uncover-his-past",
+      "type": "Declaraciones directas de Insomniac sobre New Game Plus, Mission Replay y Nightmare Doors"
     }
   ],
   "newsTerms": [
@@ -176,6 +184,14 @@
     "heroImageAlt": "Arte promocional oficial de Marvel's Wolverine con Logan mostrando las garras sobre un fondo amarillo"
   },
   "changes": [
+    {
+      "date": "2026-08-16",
+      "title": "New Game Plus, repetición de misiones y Nightmare Doors confirmados",
+      "description": "Insomniac confirma New Game Plus desde el lanzamiento con progresión conservada y adaptaciones exclusivas, Mission Replay para repetir misiones y las Nightmare Doors como actividades secundarias narrativas centradas en el pasado de Logan.",
+      "sourceUrls": [
+        "https://www.techradar.com/gaming/marvels-wolverine-confirmed-to-have-new-game-plus-at-launch-and-features-a-side-activity-called-nightmare-doors-where-players-confront-logans-nightmares-to-uncover-his-past"
+      ]
+    },
     {
       "date": "2026-08-15",
       "title": "Insomniac confirma 60 FPS con ray tracing y nuevos detalles de lanzamiento",
@@ -221,7 +237,7 @@
     "marvel-tokon-fighting-souls",
     "god-of-war-laufey"
   ],
-  "updatedAt": "2026-08-15",
+  "updatedAt": "2026-08-16",
   "price": "Desde 79,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",

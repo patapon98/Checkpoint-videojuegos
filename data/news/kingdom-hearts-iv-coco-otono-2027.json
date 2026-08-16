@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "llegará en otoño de 2027",
-      "Coco será uno de sus mundos de Disney y Pixar",
-      "Disney prepara además una serie animada de Kingdom Hearts"
+      "una versión ampliada de cuatro minutos del tráiler",
+      "un mundo de Paper Mickey Mouse",
+      "Mickey será jugable por primera vez"
     ]
   },
   "category": {
@@ -14,32 +14,40 @@
   "date": "2026-08-15",
   "publishedAt": "2026-08-15T06:56:31Z",
   "addedAt": "2026-08-15T09:56:00Z",
+  "updated": "2026-08-16",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "Kingdom Hearts IV"
     },
     "copy": {
-      "es": "Kingdom Hearts IV llegará en otoño de 2027 y confirma el mundo de Coco"
+      "es": "Kingdom Hearts IV revela un mundo de Paper Mickey Mouse y confirma a Mickey jugable"
     }
   },
   "tone": "games",
   "title": {
-    "es": "Kingdom Hearts IV llegará en otoño de 2027 y confirma el mundo de Coco"
+    "es": "Kingdom Hearts IV revela un mundo de Paper Mickey Mouse con Mickey jugable"
   },
   "summary": {
-    "es": "Kingdom Hearts IV llegará en otoño de 2027 y ha confirmado que Coco será uno de sus mundos de Disney y Pixar. El nuevo tráiler mostrado en D23 lleva a Sora a la Tierra de los Muertos."
+    "es": "El panel de D23 ha mostrado una versión ampliada de cuatro minutos del tráiler de Kingdom Hearts IV. Además de profundizar en el mundo de Coco, ha revelado un mundo de Paper Mickey Mouse y confirma que Mickey será jugable por primera vez en este escenario de cuento."
   },
   "why": {
-    "es": "El anuncio fija por fin una ventana de lanzamiento para la cuarta entrega principal, prevista para PS5, Xbox Series X|S, Nintendo Switch 2 y PC. Disney prepara además una serie animada de Kingdom Hearts con Tetsuya Nomura implicado en el proyecto."
+    "es": "Mickey podrá atravesar grietas, transformarse en avión y resolver puzles con mecánicas propias. Maléfica tendrá un papel importante en la historia, mientras el lanzamiento se mantiene para finales de 2027 en PS5, Xbox Series X|S, Nintendo Switch 2 y PC."
   },
   "sources": [
     {
-      "label": "Disney D23",
+      "label": "Disney",
       "type": {
-        "es": "Presentación y cobertura oficial del evento D23 donde se mostró el anuncio"
+        "es": "Panel oficial de Kingdom Hearts emitido desde D23"
       },
-      "url": "https://video.disney.com/watch/d23-the-ultimate-disney-fan-event-august-2026-63d747dd2f51cdeb74251fcd"
+      "url": "https://www.youtube.com/live/wJV343OqrRk"
+    },
+    {
+      "label": "The Walt Disney Company",
+      "type": {
+        "es": "Cobertura oficial del anuncio de Kingdom Hearts IV en D23"
+      },
+      "url": "https://thewaltdisneycompany.com/news/d23-2026-disney-entertainment-showcase/"
     },
     {
       "label": "Square Enix",
@@ -51,15 +59,15 @@
     {
       "label": "Reuters",
       "type": {
-        "es": "Contexto sobre los anuncios de Kingdom Hearts realizados en D23"
+        "es": "Detalles del panel y contexto del anuncio"
       },
-      "url": "https://www.reuters.com/business/media-telecom/disney-reveals-marvels-new-x-men-cast-frozen-3-d23-fan-event-2026-08-15/"
+      "url": "https://www.reuters.com/lifestyle/disney-square-enix-preview-kingdom-hearts-4-video-game-fan-convention-2026-08-16/"
     }
   ],
   "homeDetails": {
     "es": [
-      "El metraje presentado en D23 supone la primera confirmación de un mundo de Disney o Pixar para esta entrega. Sora aparece recorriendo la Tierra de los Muertos de Coco, con escenarios, personajes y enemigos adaptados al estilo visual de la película.",
-      "Square Enix ya había confirmado en junio que el juego llegará a Nintendo Switch 2, PlayStation 5, Xbox Series X|S, Steam, Microsoft Store y Epic Games Store. En paralelo, Disney ha anunciado una serie animada basada en Kingdom Hearts, todavía sin título ni fecha de estreno."
+      "La presentación extendida recupera a Donald, Goofy, el rey Mickey, Hades y Maléfica, además de personajes originales de la saga. Square Enix señaló que Maléfica tendrá un peso destacado en la historia y enseñó más escenas de la Tierra de los Muertos de Coco.",
+      "El segmento de Paper Mickey Mouse cambia el formato habitual por un escenario de cuento: Mickey atraviesa grietas en las paredes, adopta la forma de un avión y resuelve puzles. Tetsuya Nomura apareció por sorpresa y explicó que el equipo elige mundos de Disney capaces de aportar mecánicas propias."
     ]
   }
 }

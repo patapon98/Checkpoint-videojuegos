@@ -4,11 +4,7 @@
   "subtitle": "Historia, combate y toda la información de la secuela de Control",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-24",
-  "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC"
-  ],
+  "platforms": ["PS5", "Xbox Series X|S", "PC"],
   "developer": "Remedy Entertainment",
   "publisher": "Remedy Entertainment",
   "genre": "Acción, aventura y RPG",
@@ -19,80 +15,27 @@
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
   "gallery": [
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/422f3eed36d3033c4b0f4fde485c29b980e49454/ss_422f3eed36d3033c4b0f4fde485c29b980e49454.1920x1080.jpg",
-      "alt": "Dylan Faden combate entre una resonancia roja en CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/75b1cde9947eea89eed52cf8f6471683f2e666a9/ss_75b1cde9947eea89eed52cf8f6471683f2e666a9.1920x1080.jpg",
-      "alt": "Dylan y Jesse Faden en una escena de CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/08b6018c06d5125a39ff34a395e0dcfdede8bde8/ss_08b6018c06d5125a39ff34a395e0dcfdede8bde8.1920x1080.jpg",
-      "alt": "Dylan altera la gravedad durante un combate de CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/062a27d1b18679df1ecd4faf90af2c3f52e41dc1/ss_062a27d1b18679df1ecd4faf90af2c3f52e41dc1.1920x1080.jpg",
-      "alt": "Caverna paranormal con una gran esfera en CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/36eb4c588274f15ea0d958af6db8b2283602cb55/ss_36eb4c588274f15ea0d958af6db8b2283602cb55.1920x1080.jpg",
-      "alt": "Combate telequinético en una calle de Manhattan en CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/8148794f365c4ffa8191559b28a5636650ff5676/ss_8148794f365c4ffa8191559b28a5636650ff5676.1920x1080.jpg",
-      "alt": "Monolito suspendido sobre un escenario alterado de CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/9e5a502390d8e7afefab61e5f3bfeb8fe9e9a699/ss_9e5a502390d8e7afefab61e5f3bfeb8fe9e9a699.1920x1080.jpg",
-      "alt": "Dylan se enfrenta por el aire a una criatura de CONTROL Resonant"
-    },
-    {
-      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f/ss_1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f.1920x1080.jpg",
-      "alt": "Distrito de Manhattan deformado por fuerzas paranormales en CONTROL Resonant"
-    }
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/422f3eed36d3033c4b0f4fde485c29b980e49454/ss_422f3eed36d3033c4b0f4fde485c29b980e49454.1920x1080.jpg","alt":"Dylan Faden combate entre una resonancia roja en CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/75b1cde9947eea89eed52cf8f6471683f2e666a9/ss_75b1cde9947eea89eed52cf8f6471683f2e666a9.1920x1080.jpg","alt":"Dylan y Jesse Faden en una escena de CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/08b6018c06d5125a39ff34a395e0dcfdede8bde8/ss_08b6018c06d5125a39ff34a395e0dcfdede8bde8.1920x1080.jpg","alt":"Dylan altera la gravedad durante un combate de CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/062a27d1b18679df1ecd4faf90af2c3f52e41dc1/ss_062a27d1b18679df1ecd4faf90af2c3f52e41dc1.1920x1080.jpg","alt":"Caverna paranormal con una gran esfera en CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/36eb4c588274f15ea0d958af6db8b2283602cb55/ss_36eb4c588274f15ea0d958af6db8b2283602cb55.1920x1080.jpg","alt":"Combate telequinético en una calle de Manhattan en CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/8148794f365c4ffa8191559b28a5636650ff5676/ss_8148794f365c4ffa8191559b28a5636650ff5676.1920x1080.jpg","alt":"Monolito suspendido sobre un escenario alterado de CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/9e5a502390d8e7afefab61e5f3bfeb8fe9e9a699/ss_9e5a502390d8e7afefab61e5f3bfeb8fe9e9a699.1920x1080.jpg","alt":"Dylan se enfrenta por el aire a una criatura de CONTROL Resonant"},
+    {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f/ss_1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f.1920x1080.jpg","alt":"Distrito de Manhattan deformado por fuerzas paranormales en CONTROL Resonant"}
   ],
   "media": [
-    {
-      "type": "youtube",
-      "videoId": "xAHVb2KpnYQ",
-      "title": "CONTROL Resonant: Stepping Into a New World",
-      "label": "Diario de desarrollo",
-      "publishedAt": "2026-07-23"
-    },
-    {
-      "type": "youtube",
-      "videoId": "SXRxroxfPJ8",
-      "title": "CONTROL Resonant: Take CONTROL Trailer",
-      "label": "Tráiler oficial",
-      "publishedAt": "2026-06-08"
-    },
-    {
-      "type": "youtube",
-      "videoId": "NvncU_SQO5Y",
-      "title": "CONTROL Resonant: Paranatural Manhattan Trailer",
-      "label": "Tráiler oficial",
-      "publishedAt": "2026-06-06"
-    },
-    {
-      "type": "youtube",
-      "videoId": "JZuJlSGpgQo",
-      "title": "Tráiler de historia de CONTROL Resonant",
-      "label": "Tráiler oficial",
-      "publishedAt": "2026-06-02"
-    },
-    {
-      "type": "youtube",
-      "videoId": "RJTBoQhWaC0",
-      "title": "Presentación oficial de la jugabilidad de CONTROL Resonant",
-      "label": "Gameplay",
-      "publishedAt": "2026-02-13"
-    }
+    {"type":"youtube","videoId":"xAHVb2KpnYQ","title":"CONTROL Resonant: Stepping Into a New World","label":"Diario de desarrollo","publishedAt":"2026-07-23"},
+    {"type":"youtube","videoId":"SXRxroxfPJ8","title":"CONTROL Resonant: Take CONTROL Trailer","label":"Tráiler oficial","publishedAt":"2026-06-08"},
+    {"type":"youtube","videoId":"NvncU_SQO5Y","title":"CONTROL Resonant: Paranatural Manhattan Trailer","label":"Tráiler oficial","publishedAt":"2026-06-06"},
+    {"type":"youtube","videoId":"JZuJlSGpgQo","title":"Tráiler de historia de CONTROL Resonant","label":"Tráiler oficial","publishedAt":"2026-06-02"},
+    {"type":"youtube","videoId":"RJTBoQhWaC0","title":"Presentación oficial de la jugabilidad de CONTROL Resonant","label":"Gameplay","publishedAt":"2026-02-13"}
   ],
   "premise": "Tras años de cautiverio en la Agencia Federal de Control, Dylan Faden es enviado a una Manhattan deformada por fuerzas paranormales. Mientras intenta contener una nueva resonancia cósmica, deberá dominar sus poderes y encontrar a su hermana desaparecida, Jesse.",
   "context": "Remedy transforma la secuela en un RPG de acción centrado en el cuerpo a cuerpo. No es un mundo abierto: Manhattan se divide en grandes zonas diferenciadas con actividades secundarias, encuentros ocultos y libertad para explorar.",
   "overview": "Una secuela que no repite la fórmula del original. Cambia de protagonista, de estructura y de sistema de combate, y se acerca más al rol de lo que lo hacía Control.",
   "confirmed": [
+    "PlayStation detalla nueve funciones de accesibilidad: controles de volumen y audio mono; subtítulos básicos y grandes; reasignación avanzada del mando, sensibilidad e inversión de joystick; dificultad ajustable con asistencias y pausa durante juego o cinemáticas offline.",
     "Emily Pope regresa como directora interina de la Agencia Federal de Control; las zonas de Manhattan incluyen misiones secundarias con Objetos Alterados, combates contra jefes y puzles.",
     "Remedy afirma que CONTROL Resonant tiene las opciones de personalización del protagonista más profundas de cualquier juego que haya desarrollado hasta la fecha.",
     "El lanzamiento incluye voces completas en español de España, japonés y chino simplificado, además de inglés, francés, alemán, italiano y portugués de Brasil.",
@@ -106,64 +49,23 @@
     "Fecha exacta de la versión para Mac.",
     "Modos de resolución y rendimiento en consolas.",
     "Tamaño de instalación en PS5 y Xbox Series X|S.",
-    "Opciones de accesibilidad definitivas.",
     "Fecha del embargo de análisis.",
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
-    {
-      "label": "Remedy Entertainment: Stepping Into a New World",
-      "url": "https://www.youtube.com/watch?v=xAHVb2KpnYQ",
-      "type": "Diario de desarrollo y personalización"
-    },
-    {
-      "label": "Remedy Entertainment: Take CONTROL",
-      "url": "https://www.youtube.com/watch?v=SXRxroxfPJ8",
-      "type": "Tráiler oficial de combate y exploración"
-    },
-    {
-      "label": "Remedy Entertainment: Paranatural Manhattan",
-      "url": "https://www.youtube.com/watch?v=NvncU_SQO5Y",
-      "type": "Tráiler oficial, zonas y estructura de Manhattan"
-    },
-    {
-      "label": "Remedy Entertainment en Bilibili",
-      "url": "https://www.bilibili.com/video/BV1kR7m6QE3r/",
-      "type": "Plataformas y doblaje chino oficial"
-    },
-    {
-      "label": "Remedy Entertainment",
-      "url": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
-      "type": "Lanzamiento, reservas e historia"
-    },
-    {
-      "label": "Remedy Entertainment",
-      "url": "https://www.remedygames.com/article/remedy-entertainment-unveils-new-gameplay-details-for-control-resonant",
-      "type": "Combate y progresión"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/02/12/new-gameplay-details-on-control-resonants-supernatural-action/",
-      "type": "Estructura, habilidades y enemigos"
-    },
-    {
-      "label": "Steam",
-      "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
-      "type": "Precios, requisitos e imágenes oficiales"
-    },
-    {
-      "label": "Web oficial de Remedy",
-      "url": "https://www.remedygames.com/games/control-2",
-      "type": "Ficha oficial"
-    }
+    {"label":"Remedy Entertainment: Stepping Into a New World","url":"https://www.youtube.com/watch?v=xAHVb2KpnYQ","type":"Diario de desarrollo y personalización"},
+    {"label":"Remedy Entertainment: Take CONTROL","url":"https://www.youtube.com/watch?v=SXRxroxfPJ8","type":"Tráiler oficial de combate y exploración"},
+    {"label":"Remedy Entertainment: Paranatural Manhattan","url":"https://www.youtube.com/watch?v=NvncU_SQO5Y","type":"Tráiler oficial, zonas y estructura de Manhattan"},
+    {"label":"Remedy Entertainment en Bilibili","url":"https://www.bilibili.com/video/BV1kR7m6QE3r/","type":"Plataformas y doblaje chino oficial"},
+    {"label":"Remedy Entertainment","url":"https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24","type":"Lanzamiento, reservas e historia"},
+    {"label":"Remedy Entertainment","url":"https://www.remedygames.com/article/remedy-entertainment-unveils-new-gameplay-details-for-control-resonant","type":"Combate y progresión"},
+    {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/02/12/new-gameplay-details-on-control-resonants-supernatural-action/","type":"Estructura, habilidades y enemigos"},
+    {"label":"Steam","url":"https://store.steampowered.com/app/3669870/CONTROL_Resonant/","type":"Precios, requisitos e imágenes oficiales"},
+    {"label":"Web oficial de Remedy","url":"https://www.remedygames.com/games/control-2","type":"Ficha oficial"},
+    {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
-  "newsTerms": [
-    "control resonant",
-    "control: resonant",
-    "dylan faden",
-    "el aberrante"
-  ],
-  "updatedAt": "2026-08-15",
+  "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
+  "updatedAt": "2026-08-16",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -172,156 +74,50 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
-    {
-      "date": "2026-08-15",
-      "title": "Nuevos tráileres, personalización y doblajes confirmados",
-      "description": "La ficha incorpora los tráileres Paranatural Manhattan y Take CONTROL, el diario de desarrollo Stepping Into a New World, nuevos detalles sobre las actividades de Manhattan y la personalización de Dylan, y los idiomas con doblaje completo confirmados para el lanzamiento.",
-      "sourceUrls": [
-        "https://www.youtube.com/watch?v=xAHVb2KpnYQ",
-        "https://www.youtube.com/watch?v=SXRxroxfPJ8",
-        "https://www.youtube.com/watch?v=NvncU_SQO5Y",
-        "https://store.steampowered.com/app/3669870/CONTROL_Resonant/"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "title": "Requisitos de PC y ediciones trasladados a secciones propias",
-      "description": "La ficha añade las configuraciones de Steam y compara la edición estándar con la Digital Deluxe y sus bonificaciones.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
-        "https://store.playstation.com/es-es/concept/10017682"
-      ]
-    },
-    {
-      "date": "2026-07-30",
-      "title": "Ficha ampliada con combate, progresión y galería oficial",
-      "description": "Se eliminaron datos redundantes, se añadieron las mecánicas reveladas, el precio y los requisitos de PC, y se sustituyó la galería por ocho capturas oficiales en alta resolución."
-    }
+    {"date":"2026-08-16","title":"PlayStation detalla las funciones de accesibilidad","description":"La PlayStation Store española enumera nueve funciones de accesibilidad para CONTROL Resonant, entre ellas audio mono, subtítulos grandes, reasignación avanzada del mando, ajustes de joystick, dificultad configurable con asistencias y pausa durante el juego o las cinemáticas offline.","sourceUrls":["https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648"]},
+    {"date":"2026-08-15","title":"Nuevos tráileres, personalización y doblajes confirmados","description":"La ficha incorpora los tráileres Paranatural Manhattan y Take CONTROL, el diario de desarrollo Stepping Into a New World, nuevos detalles sobre las actividades de Manhattan y la personalización de Dylan, y los idiomas con doblaje completo confirmados para el lanzamiento.","sourceUrls":["https://www.youtube.com/watch?v=xAHVb2KpnYQ","https://www.youtube.com/watch?v=SXRxroxfPJ8","https://www.youtube.com/watch?v=NvncU_SQO5Y","https://store.steampowered.com/app/3669870/CONTROL_Resonant/"]},
+    {"date":"2026-08-03","title":"Requisitos de PC y ediciones trasladados a secciones propias","description":"La ficha añade las configuraciones de Steam y compara la edición estándar con la Digital Deluxe y sus bonificaciones.","sourceUrls":["https://store.steampowered.com/app/3669870/CONTROL_Resonant/","https://store.playstation.com/es-es/concept/10017682"]},
+    {"date":"2026-07-30","title":"Ficha ampliada con combate, progresión y galería oficial","description":"Se eliminaron datos redundantes, se añadieron las mecánicas reveladas, el precio y los requisitos de PC, y se sustituyó la galería por ocho capturas oficiales en alta resolución."}
   ],
-  "relatedGameIds": [
-    "onimusha-way-of-the-sword",
-    "god-of-war-laufey"
-  ],
-  "theme": {
-    "accent": "#e45757",
-    "accentSoft": "rgba(228,87,87,.16)"
-  },
+  "relatedGameIds": ["onimusha-way-of-the-sword","god-of-war-laufey"],
+  "theme": {"accent":"#e45757","accentSoft":"rgba(228,87,87,.16)"},
   "spotlight": {
     "kicker": "Lo que cambia respecto a Control",
     "title": "Combate cuerpo a cuerpo, RPG y Manhattan por zonas",
     "intro": "La secuela cambia de protagonista, estructura y sistema de combate. Estas son las diferencias que más afectan a cómo se juega.",
     "items": [
-      {
-        "title": "Estructura",
-        "value": "Grandes zonas",
-        "description": "Manhattan no es un mundo abierto continuo, sino un conjunto de distritos amplios con rutas y encuentros opcionales."
-      },
-      {
-        "title": "Aberrante",
-        "value": "4 formas confirmadas",
-        "description": "Martillo, espadas, guadaña y puños sustituyen el arsenal de fuego tradicional y pueden combinarse en combate."
-      },
-      {
-        "title": "Progresión",
-        "value": "Habilidades y configuraciones",
-        "description": "Los Resonantes otorgan nuevas capacidades y la progresión permite construir configuraciones adaptadas a cada estilo."
-      }
+      {"title":"Estructura","value":"Grandes zonas","description":"Manhattan no es un mundo abierto continuo, sino un conjunto de distritos amplios con rutas y encuentros opcionales."},
+      {"title":"Aberrante","value":"4 formas confirmadas","description":"Martillo, espadas, guadaña y puños sustituyen el arsenal de fuego tradicional y pueden combinarse en combate."},
+      {"title":"Progresión","value":"Habilidades y configuraciones","description":"Los Resonantes otorgan nuevas capacidades y la progresión permite construir configuraciones adaptadas a cada estilo."}
     ]
   },
   "price": "Desde 59,99 € en PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
     "minimum": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 10 u 11 de 64 bits"
-      },
-      {
-        "label": "Procesador",
-        "value": "Intel Core i5-8500 o equivalente de AMD"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "GeForce GTX 1070 o Radeon RX 5600 XT (6 GB)"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "100 GB disponibles"
-      }
+      {"label":"Sistema operativo","value":"Windows 10 u 11 de 64 bits"},
+      {"label":"Procesador","value":"Intel Core i5-8500 o equivalente de AMD"},
+      {"label":"Memoria","value":"16 GB de RAM"},
+      {"label":"Tarjeta gráfica","value":"GeForce GTX 1070 o Radeon RX 5600 XT (6 GB)"},
+      {"label":"Almacenamiento","value":"100 GB disponibles"}
     ],
     "recommended": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 10 u 11 de 64 bits"
-      },
-      {
-        "label": "Procesador",
-        "value": "AMD Ryzen 7 3700X o equivalente de Intel"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "GeForce RTX 3070 o Radeon RX 6700 XT (8 GB)"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "100 GB disponibles"
-      }
+      {"label":"Sistema operativo","value":"Windows 10 u 11 de 64 bits"},
+      {"label":"Procesador","value":"AMD Ryzen 7 3700X o equivalente de Intel"},
+      {"label":"Memoria","value":"16 GB de RAM"},
+      {"label":"Tarjeta gráfica","value":"GeForce RTX 3070 o Radeon RX 6700 XT (8 GB)"},
+      {"label":"Almacenamiento","value":"100 GB disponibles"}
     ],
-    "notes": [
-      "Steam exige un procesador y un sistema operativo de 64 bits.",
-      "La tarjeta de sonido todavía figura como pendiente en la ficha oficial."
-    ]
+    "notes": ["Steam exige un procesador y un sistema operativo de 64 bits.","La tarjeta de sonido todavía figura como pendiente en la ficha oficial."]
   },
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/concept/10017682",
     "region": "España",
     "items": [
-      {
-        "name": "Edición estándar",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "59,99 €"
-          }
-        ],
-        "includes": [
-          "CONTROL Resonant"
-        ]
-      },
-      {
-        "name": "Edición Digital Deluxe",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "69,99 €"
-          }
-        ],
-        "includes": [
-          "Juego base",
-          "Acceso anticipado de 48 horas",
-          "Atuendo de misión de SMA",
-          "Artefacto sin activar: cartera",
-          "Paquete de recursos inicial",
-          "Libro de arte digital",
-          "Banda sonora original"
-        ]
-      }
+      {"name":"Edición estándar","prices":[{"platform":"PS5","value":"59,99 €"}],"includes":["CONTROL Resonant"]},
+      {"name":"Edición Digital Deluxe","prices":[{"platform":"PS5","value":"69,99 €"}],"includes":["Juego base","Acceso anticipado de 48 horas","Atuendo de misión de SMA","Artefacto sin activar: cartera","Paquete de recursos inicial","Libro de arte digital","Banda sonora original"]}
     ],
-    "preorderBonuses": [
-      "Atuendo Corrupción del Siseo",
-      "Atuendo Ocultista",
-      "Artefacto Herramienta de carterista"
-    ],
-    "notes": [
-      "Los precios mostrados corresponden a PlayStation Store España."
-    ]
+    "preorderBonuses": ["Atuendo Corrupción del Siseo","Atuendo Ocultista","Artefacto Herramienta de carterista"],
+    "notes": ["Los precios mostrados corresponden a PlayStation Store España."]
   }
 }

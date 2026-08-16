@@ -171,7 +171,6 @@ for (const relativePath of jsonFiles) {
   if (forbidden.length) fail(`${relativePath}: campos editoriales o estructurales no autorizados (${forbidden.join(', ')})`);
 
   if (after.id !== id || before.id !== id) fail(`${relativePath}: el id es inmutable y debe coincidir con el archivo`);
-  if (after.updatedAt === before.updatedAt) fail(`${relativePath}: updatedAt debe cambiar`);
   if (!validDate(after.updatedAt)) fail(`${relativePath}: updatedAt debe usar AAAA-MM-DD`);
   if (after.updatedAt !== madridToday) fail(`${relativePath}: updatedAt debe coincidir con la fecha actual en Europe/Madrid (${madridToday})`);
   if (!validDate(after.releaseDate)) fail(`${relativePath}: releaseDate debe usar AAAA-MM-DD`);

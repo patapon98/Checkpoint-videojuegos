@@ -83,7 +83,7 @@ Cuando se pida «haz la ficha de X juego», sigue el flujo completo de [`docs/GA
 Al publicar una reseña nueva:
 
 1. Crea o actualiza la página individual.
-2. Conserva la identidad visual específica del juego en modo claro y oscuro.
+2. Conserva la identidad visual específica del juego en modo claro y oscuro. La paleta debe salir de su arte, interfaz o temática y no reutilizar un color genérico por defecto si no encaja con el juego.
 3. Comprueba que la cabecera cinematográfica mantiene el título, los metadatos y la nota legibles sobre la imagen, sin recortes problemáticos en escritorio ni móvil.
 4. Verifica que la banda «Hitpoints», la entradilla y las imágenes anchas respetan la jerarquía común y no provocan desbordamiento horizontal.
 5. Comprueba que todos los pies de imagen están centrados y que las imágenes interiores se amplían con ratón, pantalla táctil y teclado. Prueba también el cierre mediante botón, clic exterior y Escape.
@@ -95,6 +95,7 @@ Al publicar una reseña nueva:
 11. Comprueba que la automatización de GitHub ha incorporado la URL nueva y actualizado las fechas en `sitemap.xml`.
 12. Comprueba escritorio, móvil, Chromium y Firefox.
 13. Actualiza la caché de los recursos modificados cuando corresponda.
+14. Evita nombres propios de personas ajenas a la autoría dentro del cuerpo de la reseña. Si una anécdota los contiene, anonimízalos sin alterar el sentido del texto.
 
 ### Sitemap automático
 

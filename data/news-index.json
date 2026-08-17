@@ -1,5 +1,69 @@
 [
   {
+    "id": "stalker-2-update-2-0-back-to-the-zone",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "su mayor revisión desde el lanzamiento",
+        "llegará gratis el 20 de agosto",
+        "revisa la inteligencia artificial de A-Life"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-15",
+    "addedAt": "2026-08-17T15:04:49Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Update 2.0"
+      },
+      "copy": {
+        "es": "Update 2.0 renovará S.T.A.L.K.E.R. 2 el 20 de agosto junto a Cost of Hope"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "S.T.A.L.K.E.R. 2 detalla su gran Update 2.0 para el 20 de agosto"
+    },
+    "summary": {
+      "es": "S.T.A.L.K.E.R. 2: Heart of Chornobyl ha detallado Back to the Zone, su mayor revisión desde el lanzamiento. La Update 2.0 llegará gratis el 20 de agosto para todos los jugadores, el mismo día que la expansión Cost of Hope."
+    },
+    "why": {
+      "es": "La actualización renueva la iluminación y los paisajes, revisa la inteligencia artificial de A-Life e incorpora niebla dinámica, dificultad personalizable, prismáticos, cuatro armas y más opciones para crear mods. El conjunto busca que la Zona resulte menos predecible y más legible tanto para nuevos jugadores como para quienes regresen."
+    },
+    "sources": [
+      {
+        "label": "GSC Game World",
+        "type": {
+          "es": "Presentación oficial de la Update 2.0"
+        },
+        "url": "https://www.stalker2.com/news/back-to-the-zone-2-0-update"
+      },
+      {
+        "label": "GSC Game World",
+        "type": {
+          "es": "Anuncio oficial de Cost of Hope y su fecha de lanzamiento"
+        },
+        "url": "https://www.stalker2.com/news/coh-date-reveal"
+      },
+      {
+        "label": "PC Gamer",
+        "type": {
+          "es": "Contexto sobre las mejoras visuales, A-Life y jugabilidad"
+        },
+        "url": "https://www.pcgamer.com/games/fps/stalker-2s-imminent-free-update-aims-to-make-the-sequel-more-atmospheric-and-less-relentlessly-hostile-the-zone-isnt-one-constant-gunfight/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Back to the Zone amplía los comportamientos de personajes y mutantes mediante A-Life, ajusta la frecuencia y el contexto de los encuentros y añade niebla que modifica la visibilidad y la percepción sonora durante la exploración.",
+        "La revisión también incorpora prismáticos para reconocer el terreno, cuatro armas nuevas, miras adicionales y una dificultad configurable. Zone Kit recibe herramientas de guion, audio y localización para ampliar las posibilidades de los mods."
+      ]
+    }
+  },
+  {
     "id": "war-in-the-north-legacy-edition-regreso",
     "important": false,
     "emphasis": {

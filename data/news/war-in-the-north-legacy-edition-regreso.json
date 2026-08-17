@@ -1,0 +1,64 @@
+{
+  "id": "war-in-the-north-legacy-edition-regreso",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ha regresado como Legacy Edition",
+      "las versiones europeas de Switch y Switch 2 llegan el 18 de agosto",
+      "publicará más clásicos de El Señor de los Anillos"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-08-11",
+  "addedAt": "2026-08-17T06:05:01Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "War in the North"
+    },
+    "copy": {
+      "es": "War in the North regresa a plataformas actuales y Aspyr prepara más clásicos"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "War in the North regresa a plataformas actuales y abre la puerta a más clásicos"
+  },
+  "summary": {
+    "es": "The Lord of the Rings: War in the North ha regresado como Legacy Edition tras permanecer años fuera de las tiendas digitales. Aspyr lo ha lanzado en PS5, Xbox Series X|S y PC; las versiones europeas de Switch y Switch 2 llegan el 18 de agosto."
+  },
+  "why": {
+    "es": "La recuperación devuelve al mercado un RPG cooperativo de 2011 que había quedado atrapado entre hardware antiguo y licencias caducadas. Aspyr adelanta además que publicará más clásicos de El Señor de los Anillos, aunque todavía no ha anunciado cuáles."
+  },
+  "sources": [
+    {
+      "label": "Aspyr",
+      "type": {
+        "es": "Comunicado oficial de lanzamiento"
+      },
+      "url": "https://www.gamespress.com/Aspyr-Announces-The-Lord-of-the-Rings-War-in-the-North-Legacy-Edition-"
+    },
+    {
+      "label": "Steam",
+      "type": {
+        "es": "Ficha oficial de la edición para PC"
+      },
+      "url": "https://store.steampowered.com/app/2523770/The_Lord_of_the_Rings_War_in_the_North__Legacy_Edition/"
+    },
+    {
+      "label": "GamesRadar+",
+      "type": {
+        "es": "Contexto sobre la retirada anterior y las mejoras de Legacy Edition"
+      },
+      "url": "https://www.gamesradar.com/games/action-rpg/15-years-later-delisted-lord-of-the-rings-action-rpg-resurfaces-with-a-remastered-version-on-ps5-switch-2-xbox-series-x-and-pc/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La Legacy Edition recupera la campaña cooperativa para tres jugadores e incorpora intercambio de personaje en solitario, guardado automático, interfaz revisada y mejoras en el sistema de fijación de objetivos.",
+      "El original de Snowblind Studios desapareció de las tiendas digitales en 2019 y nunca recibió versiones nativas para las consolas actuales. El regreso vuelve a hacerlo comprable y jugable sin depender de hardware de PS3 o Xbox 360."
+    ]
+  }
+}

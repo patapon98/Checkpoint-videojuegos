@@ -1,3 +1,6 @@
+/* Evita que el contenido estático antiguo del destacado se vea antes del override de portada. */
+.home-page #heroCard[href="/juegos/god-of-war-laufey"]{visibility:hidden}
+
 .news-home-flip-featured{position:relative;isolation:isolate;overflow:hidden;border-radius:26px;box-shadow:0 24px 56px -38px color-mix(in srgb,var(--home-news-a) 66%,transparent)}
 .news-home-flip-featured::after{content:"";position:absolute;inset:0;z-index:5;border:2px solid color-mix(in srgb,var(--home-news-a) 42%,var(--line));border-radius:inherit;pointer-events:none}
 .news-home-flip-featured::before{content:"Destacada";position:absolute;top:22px;right:-48px;left:auto;z-index:6;width:180px;padding:6px 0;text-align:center;transform:rotate(45deg);transform-origin:center;background:linear-gradient(120deg,var(--home-news-b),var(--home-news-a));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 6px 14px -6px rgba(0,0,0,.45);pointer-events:none}

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://finalsecreto.com/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-17</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/noticias</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-17</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/noticias/playstation-fin-formato-fisico</loc>
@@ -133,8 +133,12 @@
     <lastmod>2026-07-30</lastmod>
   </url>
   <url>
+    <loc>https://finalsecreto.com/resenas/scritchy-scratchy</loc>
+    <lastmod>2026-08-18</lastmod>
+  </url>
+  <url>
     <loc>https://finalsecreto.com/calendario</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-17</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/playstation-plus</loc>
@@ -162,6 +166,6 @@
   </url>
   <url>
     <loc>https://finalsecreto.com/juegos</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-16</lastmod>
   </url>
 </urlset>

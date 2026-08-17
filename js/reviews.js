@@ -14,6 +14,24 @@
 
   if (!grid || !filters || !search || !sort) return;
 
+  if (!grid.querySelector('a[href="/resenas/scritchy-scratchy"]')) {
+    grid.insertAdjacentHTML('afterbegin', `
+      <a class="card" data-tilt data-plat="pc" href="/resenas/scritchy-scratchy">
+        <div class="card-art art-24">
+          <img src="img/scritchy%20scratch/portada.png" alt="Scritchy Scratchy" loading="lazy">
+          <div class="date-pill"><b>17</b><span>Ago 26</span></div>
+          <div class="ring" style="--target:40"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">68</span></div>
+        </div>
+        <div class="card-body">
+          <div class="meta">Incremental · PC / macOS / iOS / Android</div>
+          <h3>Scritchy Scratchy</h3>
+          <p>Un rasca y gana incremental con boletos distintos, prestigio adictivo y suficiente variedad para destacar dentro del género.</p>
+          <span class="read"><u>Leer reseña</u></span>
+        </div>
+      </a>
+    `);
+  }
+
   const PER_PAGE = 9;
   const cards = [...grid.querySelectorAll('.card')];
   let activePlatform = 'all';

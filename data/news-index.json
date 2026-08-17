@@ -1,5 +1,454 @@
 [
   {
+    "id": "war-in-the-north-legacy-edition-regreso",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "ha regresado como Legacy Edition",
+        "las versiones europeas de Switch y Switch 2 llegan el 18 de agosto",
+        "publicará más clásicos de El Señor de los Anillos"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-08-11",
+    "addedAt": "2026-08-17T06:05:01Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "War in the North"
+      },
+      "copy": {
+        "es": "War in the North regresa a plataformas actuales y Aspyr prepara más clásicos"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "War in the North regresa a plataformas actuales y abre la puerta a más clásicos"
+    },
+    "summary": {
+      "es": "The Lord of the Rings: War in the North ha regresado como Legacy Edition tras permanecer años fuera de las tiendas digitales. Aspyr lo ha lanzado en PS5, Xbox Series X|S y PC; las versiones europeas de Switch y Switch 2 llegan el 18 de agosto."
+    },
+    "why": {
+      "es": "La recuperación devuelve al mercado un RPG cooperativo de 2011 que había quedado atrapado entre hardware antiguo y licencias caducadas. Aspyr adelanta además que publicará más clásicos de El Señor de los Anillos, aunque todavía no ha anunciado cuáles."
+    },
+    "sources": [
+      {
+        "label": "Aspyr",
+        "type": {
+          "es": "Comunicado oficial de lanzamiento"
+        },
+        "url": "https://www.gamespress.com/Aspyr-Announces-The-Lord-of-the-Rings-War-in-the-North-Legacy-Edition-"
+      },
+      {
+        "label": "Steam",
+        "type": {
+          "es": "Ficha oficial de la edición para PC"
+        },
+        "url": "https://store.steampowered.com/app/2523770/The_Lord_of_the_Rings_War_in_the_North__Legacy_Edition/"
+      },
+      {
+        "label": "GamesRadar+",
+        "type": {
+          "es": "Contexto sobre la retirada anterior y las mejoras de Legacy Edition"
+        },
+        "url": "https://www.gamesradar.com/games/action-rpg/15-years-later-delisted-lord-of-the-rings-action-rpg-resurfaces-with-a-remastered-version-on-ps5-switch-2-xbox-series-x-and-pc/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La Legacy Edition recupera la campaña cooperativa para tres jugadores e incorpora intercambio de personaje en solitario, guardado automático, interfaz revisada y mejoras en el sistema de fijación de objetivos.",
+        "El original de Snowblind Studios desapareció de las tiendas digitales en 2019 y nunca recibió versiones nativas para las consolas actuales. El regreso vuelve a hacerlo comprable y jugable sin depender de hardware de PS3 o Xbox 360."
+      ]
+    }
+  },
+  {
+    "id": "disney-dreamlight-valley-keepsake-sea",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "su cuarta expansión",
+        "prevista para 2026",
+        "la llegada de un personaje más"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-08-14",
+    "addedAt": "2026-08-15T21:00:11Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "The Keepsake Sea"
+      },
+      "copy": {
+        "es": "The Keepsake Sea será la cuarta expansión de Disney Dreamlight Valley y llegará en 2026"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Disney Dreamlight Valley anuncia su cuarta expansión, The Keepsake Sea"
+    },
+    "summary": {
+      "es": "Disney Dreamlight Valley ha presentado The Keepsake Sea, su cuarta expansión, prevista para 2026. El primer adelanto muestra una nueva aventura y anticipa la llegada de un personaje más."
+    },
+    "why": {
+      "es": "La revelación fija el próximo gran contenido de Disney Dreamlight Valley para este año. Gameloft todavía no ha concretado la fecha ni ha detallado las nuevas zonas, pero ampliará la información antes del lanzamiento."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=WxsKvpJkst4",
+      "label": {
+        "es": "Ver adelanto oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "D23",
+        "type": {
+          "es": "Anuncio oficial de la expansión"
+        },
+        "url": "https://d23.com/your-dream-your-valley-disney-dreamlight-valley-at-d23-the-ultimate-disney-fan-event/"
+      },
+      {
+        "label": "Disney Dreamlight Valley",
+        "type": {
+          "es": "Adelanto oficial"
+        },
+        "url": "https://www.youtube.com/watch?v=WxsKvpJkst4"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El anuncio se realizó durante el panel de Disney Dreamlight Valley en D23. El vídeo de The Keepsake Sea ofrece un primer vistazo a una aventura inédita y confirma que será el cuarto paquete de expansión del juego.",
+        "La hoja de ruta presentada en el evento también reserva para 2026 la llegada gratuita de Oogie Boogie durante Halloween y de Lilo en la última actualización del año, aunque Disney todavía no ha detallado el contenido completo ni la fecha exacta de la expansión."
+      ]
+    }
+  },
+  {
+    "id": "kingdom-hearts-iv-coco-otono-2027",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "una versión ampliada de cuatro minutos del tráiler",
+        "un mundo de Paper Mickey Mouse",
+        "Mickey será jugable por primera vez"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-08-15",
+    "publishedAt": "2026-08-15T06:56:31Z",
+    "addedAt": "2026-08-15T09:56:00Z",
+    "updated": "2026-08-16",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Kingdom Hearts IV"
+      },
+      "copy": {
+        "es": "Kingdom Hearts IV revela un mundo de Paper Mickey Mouse y confirma a Mickey jugable"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Kingdom Hearts IV revela un mundo de Paper Mickey Mouse con Mickey jugable"
+    },
+    "summary": {
+      "es": "El panel de D23 ha mostrado una versión ampliada de cuatro minutos del tráiler de Kingdom Hearts IV. Además de profundizar en el mundo de Coco, ha revelado un mundo de Paper Mickey Mouse y confirma que Mickey será jugable por primera vez en este escenario de cuento."
+    },
+    "why": {
+      "es": "Mickey podrá atravesar grietas, transformarse en avión y resolver puzles con mecánicas propias. Maléfica tendrá un papel importante en la historia, mientras el lanzamiento se mantiene para finales de 2027 en PS5, Xbox Series X|S, Nintendo Switch 2 y PC."
+    },
+    "sources": [
+      {
+        "label": "Disney",
+        "type": {
+          "es": "Panel oficial de Kingdom Hearts emitido desde D23"
+        },
+        "url": "https://www.youtube.com/live/wJV343OqrRk"
+      },
+      {
+        "label": "The Walt Disney Company",
+        "type": {
+          "es": "Cobertura oficial del anuncio de Kingdom Hearts IV en D23"
+        },
+        "url": "https://thewaltdisneycompany.com/news/d23-2026-disney-entertainment-showcase/"
+      },
+      {
+        "label": "Square Enix",
+        "type": {
+          "es": "Ficha corporativa oficial de Kingdom Hearts IV y plataformas confirmadas"
+        },
+        "url": "https://www.jp.square-enix.com/company/ja/news/files/59ec5be22c0dc48f878aa922b653f390.pdf"
+      },
+      {
+        "label": "Reuters",
+        "type": {
+          "es": "Detalles del panel y contexto del anuncio"
+        },
+        "url": "https://www.reuters.com/lifestyle/disney-square-enix-preview-kingdom-hearts-4-video-game-fan-convention-2026-08-16/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La presentación extendida recupera a Donald, Goofy, el rey Mickey, Hades y Maléfica, además de personajes originales de la saga. Square Enix señaló que Maléfica tendrá un peso destacado en la historia y enseñó más escenas de la Tierra de los Muertos de Coco.",
+        "El segmento de Paper Mickey Mouse cambia el formato habitual por un escenario de cuento: Mickey atraviesa grietas en las paredes, adopta la forma de un avión y resuelve puzles. Tetsuya Nomura apareció por sorpresa y explicó que el equipo elige mundos de Disney capaces de aportar mecánicas propias."
+      ]
+    }
+  },
+  {
+    "id": "netflix-cierra-night-school-moonloot",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha cerrado Night School Studio",
+        "propone cerrar Moonloot",
+        "también eliminará puestos adicionales dentro de su división de videojuegos"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-08-13",
+    "addedAt": "2026-08-14T23:56:02Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Netflix"
+      },
+      "copy": {
+        "es": "Netflix cierra Night School Studio y plantea cerrar Moonloot"
+      }
+    },
+    "tone": "industry",
+    "title": {
+      "es": "Netflix cierra Night School Studio y plantea cerrar Moonloot"
+    },
+    "summary": {
+      "es": "Netflix ha cerrado Night School Studio, creador de Oxenfree, y propone cerrar Moonloot, su equipo de Helsinki. La compañía también eliminará puestos adicionales dentro de su división de videojuegos, aunque no ha detallado cuántos."
+    },
+    "why": {
+      "es": "El ajuste reduce de nuevo la producción interna de Netflix Games. Night School fue el primer estudio adquirido por la compañía en 2021 y su cierre llega seis semanas después de lanzar Unhinged, mientras Netflix concentra su estrategia en juegos infantiles, sociales, narrativos y de alcance general."
+    },
+    "sources": [
+      {
+        "label": "Game File",
+        "type": {
+          "es": "Declaraciones oficiales de Netflix sobre los cierres y la reorganización"
+        },
+        "url": "https://www.gamefile.news/p/netflix-closes-night-school-moonloot"
+      },
+      {
+        "label": "Los Angeles Times",
+        "type": {
+          "es": "Confirmación de Netflix y contexto sobre Night School y Moonloot"
+        },
+        "url": "https://www.latimes.com/entertainment-arts/business/story/2026-08-14/la-fi-hi-netflix-gaming-layoffs"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto sobre la nueva estrategia de Netflix Games"
+        },
+        "url": "https://www.theverge.com/games/979855/netflix-shut-down-night-school-studio-moonloot-games"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Night School desarrolló Oxenfree, Afterparty y Oxenfree II: Lost Signals antes y después de que Netflix lo comprara en 2021. Su último proyecto, el juego de terror en la nube Unhinged, se estrenó el 30 de junio, apenas seis semanas antes del cierre.",
+        "Moonloot fue fundado en Helsinki en 2022 y no llegó a publicar ningún juego. Netflix mantiene Next Games como estudio interno y afirma que reorganizará la división alrededor de juegos infantiles, experiencias sociales, propuestas narrativas y títulos con atractivo general."
+      ]
+    }
+  },
+  {
+    "id": "warhammer-dawn-of-war-iv-retraso-diciembre",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "retrasa su lanzamiento del 17 de septiembre al 3 de diciembre de 2026",
+        "optimizar el rendimiento, corregir errores y aplicar más pulido",
+        "Commander Edition comenzará el 30 de noviembre"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-08-12",
+    "addedAt": "2026-08-14T17:58:51Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Dawn of War IV"
+      },
+      "copy": {
+        "es": "Dawn of War IV retrasa su lanzamiento al 3 de diciembre"
+      }
+    },
+    "tone": "industry",
+    "title": {
+      "es": "Warhammer 40,000: Dawn of War IV retrasa su lanzamiento al 3 de diciembre"
+    },
+    "summary": {
+      "es": "Warhammer 40,000: Dawn of War IV retrasa su lanzamiento del 17 de septiembre al 3 de diciembre de 2026. La Commander Edition comenzará el 30 de noviembre con sus tres días de acceso anticipado."
+    },
+    "why": {
+      "es": "KING Art utilizará el tiempo adicional para optimizar el rendimiento, corregir errores y aplicar más pulido. El cambio también desplaza el contenido del primer año, incluido el regreso del modo Crusade y las dos expansiones de campaña."
+    },
+    "sources": [
+      {
+        "label": "Dawn of War IV en Steam",
+        "type": {
+          "es": "Comunicado oficial sobre el retraso"
+        },
+        "url": "https://store.steampowered.com/news/app/2272360/view/692017587063620174"
+      },
+      {
+        "label": "PC Gamer",
+        "type": {
+          "es": "Contexto sobre la nueva fecha y la hoja de ruta"
+        },
+        "url": "https://www.pcgamer.com/games/strategy/dawn-of-war-4-has-been-delayed-we-saw-an-opportunity-to-further-enhance-dawn-of-war-4-and-deliver-the-quality-of-experience-weve-always-envisioned/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El nuevo calendario mantiene los tres días de acceso anticipado de la Commander Edition: sus compradores podrán entrar el 30 de noviembre, mientras que la edición estándar se desbloqueará el 3 de diciembre en PC.",
+        "KING Art seguirá publicando informes de batalla, demostraciones y análisis de desarrollo durante la espera. Las actualizaciones gratuitas y el modo Crusade comenzarán en 2027, seguidos por las campañas Blood Ravens Prologue y Aftermath."
+      ]
+    }
+  },
+  {
+    "id": "precognition-sam-barlow-primavera-2028",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "el nuevo juego de terror y ciencia ficción de Sam Barlow",
+        "desarrollado junto al cineasta Brandon Cronenberg",
+        "Llegará en primavera de 2028"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-12",
+    "addedAt": "2026-08-13T17:55:40Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Precognition"
+      },
+      "copy": {
+        "es": "Precognition, lo nuevo de Sam Barlow y Brandon Cronenberg, llegará en primavera de 2028"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Precognition, lo nuevo de Sam Barlow, llegará en primavera de 2028"
+    },
+    "summary": {
+      "es": "Kinetic Publishing ha presentado Precognition, el nuevo juego de terror y ciencia ficción de Sam Barlow, creador de Her Story e Immortality, desarrollado junto al cineasta Brandon Cronenberg. Llegará en primavera de 2028 a PS5, Xbox Series X|S, Nintendo Switch 2 y PC."
+    },
+    "why": {
+      "es": "El proyecto combina secuencias de imagen real con una narrativa no lineal basada en decisiones. Su protagonista puede observar el futuro, pero cada detalle que decide recordar altera los acontecimientos posteriores y abre nuevas posibilidades."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=kR78s95FONk",
+      "label": {
+        "es": "Ver presentación oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Anuncio oficial de Kinetic Publishing"
+        },
+        "url": "https://blog.playstation.com/2026/08/12/kinetic-publishing-showcase-recap-5-new-indie-games-coming-to-ps5/"
+      },
+      {
+        "label": "Kinetic Publishing",
+        "type": {
+          "es": "Presentación oficial de Half Mermaid"
+        },
+        "url": "https://www.youtube.com/watch?v=kR78s95FONk"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto sobre el catálogo de Kinetic Publishing"
+        },
+        "url": "https://www.theverge.com/games/977985/kinetic-publishing-showcase-sam-barlow-precognition"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Diana recibe un implante experimental que le permite contemplar momentos de su propio futuro. El jugador examinará esas visiones a través de distintas décadas y elegirá qué información conserva en el presente, sabiendo que fijar un recuerdo cambia la línea temporal que acaba de observar.",
+        "Half Mermaid plantea una evolución de la estructura de Her Story e Immortality: mantiene las escenas filmadas y la investigación libre, pero las conecta con un sistema de causa y efecto. Kinetic Publishing confirmó su lanzamiento simultáneo en las cuatro plataformas durante la primavera de 2028."
+      ]
+    }
+  },
+  {
+    "id": "arc-raiders-16-3-millones-frozen-trail",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha superado los 16,3 millones de copias vendidas",
+        "Frozen Trail llegará en octubre",
+        "ha generado más de 88.000 millones de yenes desde su lanzamiento"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-13",
+    "publishedAt": "2026-08-13T06:30:00Z",
+    "addedAt": "2026-08-13T12:09:30Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "ARC Raiders"
+      },
+      "copy": {
+        "es": "ARC Raiders supera 16,3 millones de copias y anuncia Frozen Trail para octubre"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "ARC Raiders supera los 16,3 millones de copias vendidas"
+    },
+    "summary": {
+      "es": "ARC Raiders ha superado los 16,3 millones de copias vendidas tras sumar otras 800.000 unidades durante el segundo trimestre de 2026. Nexon también ha confirmado que Frozen Trail llegará en octubre como la mayor actualización del juego desde su estreno."
+    },
+    "why": {
+      "es": "El título de Embark Studios ha generado más de 88.000 millones de yenes desde su lanzamiento y aportó aproximadamente el 15 % de los ingresos trimestrales de Nexon. La compañía reconoce que el ritmo de ventas se está normalizando nueve meses después del estreno."
+    },
+    "sources": [
+      {
+        "label": "Nexon",
+        "type": {
+          "es": "Resultados oficiales del segundo trimestre de 2026"
+        },
+        "url": "https://pdf.irpocket.com/C3659/xoA3/tx0r/AreA/FfKR.pdf"
+      },
+      {
+        "label": "Inven Global",
+        "type": {
+          "es": "Contexto sobre los resultados y el rendimiento de ARC Raiders"
+        },
+        "url": "https://www.invenglobal.com/articles/24741/nexon-reports-q2-earnings-driven-by-maplestory-and-arc-raiders"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Las ventas acumuladas avanzaron desde los 15,5 millones registrados al cierre de marzo hasta superar los 16,3 millones durante el segundo trimestre. ARC Raiders siguió siendo uno de los principales motores internacionales de Nexon, aunque su contribución empieza a estabilizarse tras el fuerte impulso del lanzamiento.",
+        "Frozen Trail será la mayor incorporación de contenido desde el estreno de octubre de 2025. Nexon no ha detallado todavía sus sistemas o escenarios, pero la sitúa como la principal iniciativa para sostener el juego mientras Embark trabaja también en dos proyectos nuevos que siguen en una fase temprana."
+      ]
+    }
+  },
+  {
     "id": "amazon-games-deja-mmo-lost-ark-throne-liberty",
     "important": true,
     "emphasis": {

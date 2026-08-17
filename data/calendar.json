@@ -1722,6 +1722,49 @@
       "trailer": "https://www.youtube.com/watch?v=_rpyWOiHkAg"
     },
     {
+      "id": "my-hero-academia-alls-justice-switch-2",
+      "title": "MY HERO ACADEMIA: ALL’S JUSTICE",
+      "headingHtml": "MY HERO ACADEMIA: ALL’S JUSTICE <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-09-04",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/cmcjomhot4oqd07lixt72a9z2",
+        "alt": "MY HERO ACADEMIA: ALL’S JUSTICE para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.bandainamcoent.com/news/my-hero-academia-alls-justice-smashes-onto-nintendo-switch-2-this-september",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de MY HERO ACADEMIA: ALL’S JUSTICE para Nintendo Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.bandainamcoent.com/news/my-hero-academia-alls-justice-smashes-onto-nintendo-switch-2-this-september",
+        "official": true,
+        "host": "www.bandainamcoent.com",
+        "checkedAt": "2026-08-17",
+        "evidence": {
+          "title": "MY HERO ACADEMIA: ALL’S JUSTICE",
+          "releaseDate": "2026-09-04",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "valheim-1-0",
       "title": "Valheim 1.0",
       "headingHtml": "Valheim 1.0",
@@ -2586,6 +2629,57 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=HJKj6H4dChA"
+    },
+    {
+      "id": "tales-of-eternia-remastered",
+      "title": "Tales of Eternia Remastered",
+      "headingHtml": "Tales of Eternia Remastered <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "src": "https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/cmq05h9usc60d07kb8wpg4vmc",
+        "alt": "Tales of Eternia Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.bandainamcoent.com/news/tales-of-eternia-remastered-coming-this-october-2026",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Tales of Eternia Remastered"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.bandainamcoent.com/news/tales-of-eternia-remastered-coming-this-october-2026",
+        "official": true,
+        "host": "www.bandainamcoent.com",
+        "checkedAt": "2026-08-17",
+        "evidence": {
+          "title": "Tales of Eternia Remastered",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
     },
     {
       "id": "stupid-never-dies",

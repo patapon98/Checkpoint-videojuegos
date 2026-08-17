@@ -18,7 +18,7 @@
     grid.insertAdjacentHTML('afterbegin', `
       <a class="card" data-tilt data-plat="pc" href="/resenas/scritchy-scratchy">
         <div class="card-art art-24">
-          <img src="img/scritchy-scratchy/captura-4.webp" alt="Scritchy Scratchy" loading="lazy">
+          <img src="img/scritchy%20scratch/portada.png" alt="Scritchy Scratchy" loading="lazy">
           <div class="date-pill"><b>17</b><span>Ago 26</span></div>
           <div class="ring" style="--target:40"><svg width="52" height="52"><circle cx="26" cy="26" r="24"/><circle class="track" cx="26" cy="26" r="20"/><circle class="bar" cx="26" cy="26" r="20"/></svg><span class="num">68</span></div>
         </div>

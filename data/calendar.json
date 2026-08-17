@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17",
+  "updatedAt": "2026-08-18",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -1680,48 +1680,6 @@
       "trailer": "https://www.youtube.com/watch?v=yZB9Pj1P5XE"
     },
     {
-      "id": "onimusha-way-of-the-sword",
-      "title": "Onimusha: Way of the Sword",
-      "headingHtml": "Onimusha: Way of the Sword",
-      "date": "2026-09-04",
-      "platformKeys": [
-        "switch",
-        "pc",
-        "ps5",
-        "xbox"
-      ],
-      "platformsHtml": "Switch 2 · PC · PS5 · Xbox Series X",
-      "image": {
-        "src": "https://media.rawg.io/media/resize/420/-/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
-        "alt": "Onimusha: Way of the Sword",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": true
-      },
-      "store": {
-        "url": "https://store.steampowered.com/app/2638890/",
-        "title": "Wishlist en Steam",
-        "ariaLabel": "Wishlist en Steam"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": null,
-      "badge": {
-        "class": "hype hype-high",
-        "text": "Hype alto"
-      },
-      "priority": 70,
-      "source": {
-        "url": "https://store.steampowered.com/app/2638890/",
-        "official": false,
-        "host": "store.steampowered.com",
-        "checkedAt": null
-      },
-      "legacy": true,
-      "trailer": "https://www.youtube.com/watch?v=_rpyWOiHkAg"
-    },
-    {
       "id": "my-hero-academia-alls-justice-switch-2",
       "title": "MY HERO ACADEMIA: ALL’S JUSTICE",
       "headingHtml": "MY HERO ACADEMIA: ALL’S JUSTICE <span class=\"tag-dlc\">Nueva plataforma</span>",
@@ -1763,6 +1721,48 @@
       },
       "legacy": false,
       "trailer": null
+    },
+    {
+      "id": "onimusha-way-of-the-sword",
+      "title": "Onimusha: Way of the Sword",
+      "headingHtml": "Onimusha: Way of the Sword",
+      "date": "2026-09-04",
+      "platformKeys": [
+        "switch",
+        "pc",
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "Switch 2 · PC · PS5 · Xbox Series X",
+      "image": {
+        "src": "https://media.rawg.io/media/resize/420/-/screenshots/965/9653d36f42d6a7a360c99963253384ff.jpg",
+        "alt": "Onimusha: Way of the Sword",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": true
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2638890/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Wishlist en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://store.steampowered.com/app/2638890/",
+        "official": false,
+        "host": "store.steampowered.com",
+        "checkedAt": null
+      },
+      "legacy": true,
+      "trailer": "https://www.youtube.com/watch?v=_rpyWOiHkAg"
     },
     {
       "id": "valheim-1-0",
@@ -3375,5 +3375,5 @@
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
     }
   ],
-  "renderState": "84de39b54ffa"
+  "renderState": "a06df35f47e0"
 }

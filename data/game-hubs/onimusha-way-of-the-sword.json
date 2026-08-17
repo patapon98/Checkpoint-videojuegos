@@ -34,6 +34,7 @@
   "context": "Es una nueva entrega independiente y la primera aventura completamente nueva de Onimusha en más de veinte años; no hace falta conocer los juegos anteriores. Capcom utiliza al actor Toshiro Mifune como modelo facial de Miyamoto Musashi.",
   "overview": "Un regreso a los duelos que definieron la saga, con un combate que castiga la improvisación, una campaña estimada en unas 20 horas y contenido secundario capaz de ampliar la partida hacia las 30.",
   "confirmed": [
+    "Nintendo estima en 34,1 GB el tamaño de la versión de Onimusha: Way of the Sword para Nintendo Switch 2.",
     "Entrega independiente protagonizada por Miyamoto Musashi, con el rostro del actor Toshiro Mifune.",
     "Transcurre en un Kioto del periodo Edo deformado por la Malicia y ocupado por los Genma.",
     "El combate gira sobre paradas, desvíos, ataques Issen, absorción de almas y armamento Oni.",
@@ -44,13 +45,14 @@
   ],
   "pending": [
     "Modos de resolución y rendimiento definitivos en consolas.",
-    "Tamaño de instalación en PS5, Xbox Series X|S y Nintendo Switch 2.",
+    "Tamaño de instalación en PS5 y Xbox Series X|S.",
     "Opciones de accesibilidad completas.",
     "Contenido exacto de las ediciones físicas.",
     "Fecha del embargo de análisis.",
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
+    {"label":"Nintendo","url":"https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/","type":"Tamaño estimado y especificaciones de Nintendo Switch 2"},
     {"label":"Capcom","url":"https://www.capcom.co.jp/ir/news/html/260702.html","type":"Fecha de lanzamiento actualizada"},
     {"label":"Web oficial de Onimusha","url":"https://www.capcom-games.com/onimusha/ws/","type":"Historia, personajes y ediciones"},
     {"label":"Guía de acción oficial","url":"https://www.capcom-games.com/onimusha/ws/es/action","type":"Sistemas de combate"},
@@ -62,7 +64,7 @@
     {"label":"Xbox España","url":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB","type":"Precios de las ediciones en consola"}
   ],
   "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-08-16",
+  "updatedAt": "2026-08-17",
   "seo": {
     "title": "Onimusha: Way of the Sword: duración, demo y todo lo confirmado",
     "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.",
@@ -71,6 +73,7 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
+    {"date":"2026-08-17","title":"Nintendo concreta el tamaño estimado de la versión de Switch 2","description":"Nintendo publica un tamaño estimado de 34,1 GB para Onimusha: Way of the Sword en Nintendo Switch 2; la ficha mantiene pendiente únicamente el tamaño de instalación de PS5 y Xbox Series X|S.","sourceUrls":["https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/"]},
     {"date":"2026-08-16","title":"Steam concreta DLSS 4.5, FSR 3.1 y el DRM de PC","description":"La ficha técnica de PC especifica que la superresolución admite NVIDIA DLSS 4.5 y AMD FSR 3.1; las estimaciones de rendimiento publicadas se calcularon con DLSS 4.0 y FSR 3.1. Steam también declara Denuvo Anti-tamper con un límite de activación en cinco equipos distintos por día.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/"]},
     {"date":"2026-08-07","title":"Nuevo tráiler y duración aproximada de la aventura","description":"Se añade el nuevo tráiler oficial y la estimación de Capcom: unas 20 horas para una primera partida y alrededor de 20–30 horas con misiones secundarias y contenido adicional.","sourceUrls":["https://youtu.be/Nx2jzXMFzdo","https://game.watch.impress.co.jp/docs/interview/2050681.html","https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/"]},
     {"date":"2026-08-03","title":"Requisitos de PC y ediciones trasladados a secciones propias","description":"La ficha compara las tres ediciones y separa los requisitos mínimos y recomendados del bloque general de información confirmada.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB/0010"]},

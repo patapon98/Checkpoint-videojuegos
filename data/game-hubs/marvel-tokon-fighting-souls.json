@@ -100,6 +100,7 @@
     ]
   },
   "confirmed": [
+    "En PC se requiere una cuenta PlayStation y conexión a Internet para el lobby online, salas privadas, clasificatorias, partidas casuales, perfil de jugador y otras funciones en línea; los modos offline siguen disponibles sin esa conexión.",
     "La versión de PS5 está mejorada para PS5 Pro y utiliza PlayStation Spectral Super Resolution (PSSR) para ofrecer una imagen 4K más nítida mediante escalado por IA.",
     "Dos jugadores, cada uno al mando de un equipo de cuatro personajes.",
     "Empiezan dos luchadores. Los otros dos entran con una transición de escenario, un wall bounce concreto o al perder una ronda.",
@@ -138,6 +139,11 @@
       "label": "PlayStation España",
       "url": "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/",
       "type": "PS5 Pro, PSSR, complementos y precios españoles"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
+      "type": "Precios, requisitos y condiciones de la versión de PC"
     }
   ],
   "newsTerms": [
@@ -153,6 +159,14 @@
     "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
+    {
+      "date": "2026-08-18",
+      "title": "Steam confirma precios de PC y requisitos para las funciones online",
+      "description": "La ficha añade los precios europeos de Steam para las tres ediciones, la mejora Standard–Ultimate y el pase del Año 1; también recoge que las funciones online de PC requieren cuenta PlayStation y conexión a Internet y que el ajuste Ultra ofrece 4K con combates bloqueados a 60 FPS.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
+      ]
+    },
     {
       "date": "2026-08-16",
       "title": "PS5 Pro, tráiler de lanzamiento y complementos oficiales añadidos",
@@ -189,7 +203,7 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-08-16",
+  "updatedAt": "2026-08-18",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [
@@ -238,7 +252,8 @@
     ],
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
-      "La versión para PC utiliza Easy Anti-Cheat a nivel de kernel."
+      "La versión para PC utiliza Easy Anti-Cheat a nivel de kernel.",
+      "El ajuste Ultra ofrece salida 4K y mantiene los combates bloqueados a 60 FPS; el 4K requiere una pantalla compatible."
     ]
   },
   "editions": {
@@ -251,6 +266,10 @@
           {
             "platform": "PS5",
             "value": "69,99 €"
+          },
+          {
+            "platform": "PC",
+            "value": "69,99 €"
           }
         ],
         "includes": [
@@ -262,6 +281,10 @@
         "prices": [
           {
             "platform": "PS5",
+            "value": "94,99 €"
+          },
+          {
+            "platform": "PC",
             "value": "94,99 €"
           }
         ],
@@ -278,6 +301,10 @@
           {
             "platform": "PS5",
             "value": "109,99 €"
+          },
+          {
+            "platform": "PC",
+            "value": "109,99 €"
           }
         ],
         "includes": [
@@ -293,6 +320,10 @@
           {
             "platform": "PS5",
             "value": "40,00 €"
+          },
+          {
+            "platform": "PC",
+            "value": "40,00 €"
           }
         ],
         "includes": [
@@ -305,6 +336,10 @@
         "prices": [
           {
             "platform": "PS5",
+            "value": "34,99 €"
+          },
+          {
+            "platform": "PC",
             "value": "34,99 €"
           }
         ],
@@ -321,10 +356,10 @@
       "Tabla de surf cósmica como vehículo de sala"
     ],
     "notes": [
-      "Las ediciones especiales también están anunciadas para PC; los precios mostrados corresponden a PlayStation Store España.",
+      "Los precios mostrados corresponden a PlayStation Store España para PS5 y a Steam en euros para PC.",
       "PlayStation indica que los extras asociados a la reserva están disponibles hasta el 5 de agosto de 2027.",
-      "La mejora Deluxe – Ultimate figura actualmente como no disponible en PlayStation Store España."
+      "La mejora Deluxe – Ultimate figura actualmente como no disponible en PlayStation Store España; Steam la ofrece por 15,00 € en PC."
     ]
   },
-  "price": "Desde 69,99 € en PS5"
+  "price": "Desde 69,99 € en PS5 y PC"
 }

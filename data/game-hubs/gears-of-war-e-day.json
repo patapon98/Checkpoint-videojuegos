@@ -99,6 +99,7 @@
     ]
   },
   "confirmed": [
+    "El segundo fin de semana de la beta abierta finalizó el 17 de agosto de 2026; el juego completo mantiene su lanzamiento el 6 de octubre.",
     "El segundo fin de semana de la beta multijugador es abierto y se celebra del 13 al 17 de agosto de 2026.",
     "La beta multijugador se desarrolla en dos fines de semana. El acceso anticipado del primero va del 6 al 10 de agosto de 2026 para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
     "La campaña no abandona en ningún momento el punto de vista del escuadrón Bravo.",
@@ -161,6 +162,15 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-08-18",
+      "title": "Finaliza la beta abierta multijugador",
+      "description": "El segundo fin de semana de pruebas terminó el 17 de agosto. La ficha deja constancia de que la beta ya ha concluido y mantiene el lanzamiento del juego completo para el 6 de octubre de 2026.",
+      "sourceUrls": [
+        "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
+        "https://www.xbox.com/en-US/games/gears-of-war-eday/"
+      ]
+    },
     {
       "date": "2026-08-16",
       "title": "La beta abierta continúa del 13 al 17 de agosto",
@@ -227,7 +237,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-16",
+  "updatedAt": "2026-08-18",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

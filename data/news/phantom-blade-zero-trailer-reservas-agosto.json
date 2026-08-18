@@ -3,34 +3,34 @@
   "important": true,
   "emphasis": {
     "es": [
-      "ya se puede reservar en PS5",
-      "confirma a Donnie Yen como Mó Yuan, padre de Soul",
-      "un State of Play dedicado con casi 20 minutos de gameplay inédito"
+      "30 armas principales y 25 Phantom Edges",
+      "ocho mapas conectados con viaje rápido",
+      "cada derrota consume tiempo y llegar a cero supone muerte permanente"
     ]
   },
   "category": {
     "es": "Juegos"
   },
   "date": "2026-08-07",
-  "updated": "2026-08-12",
+  "updated": "2026-08-18",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "Phantom Blade Zero"
     },
     "copy": {
-      "es": "Phantom Blade Zero abre reservas y tendrá un State of Play de casi 20 minutos el 18 de agosto"
+      "es": "Phantom Blade Zero detalla sus armas, exploración y modo de muerte permanente"
     }
   },
   "tone": "playstation",
   "title": {
-    "es": "Phantom Blade Zero abre reservas y anuncia un State of Play de casi 20 minutos"
+    "es": "Phantom Blade Zero detalla su arsenal, exploración y modo de 66 días"
   },
   "summary": {
-    "es": "Phantom Blade Zero ya se puede reservar en PS5 y S-GAME ha publicado su nuevo tráiler extendido. El vídeo muestra combates sobre un carro en marcha, el reencuentro con The Hunt y confirma a Donnie Yen como Mó Yuan, padre de Soul."
+    "es": "Phantom Blade Zero ha mostrado 30 armas principales y 25 Phantom Edges en su State of Play. S-GAME también ha detallado ocho mapas conectados con viaje rápido, progresión reembolsable y tres formas de afrontar la dificultad."
   },
   "why": {
-    "es": "PlayStation emitirá el 18 de agosto un State of Play dedicado con casi 20 minutos de gameplay inédito. La presentación profundizará en los sistemas de combate, las configuraciones del personaje y nuevos protagonistas antes del lanzamiento del 29 de octubre."
+    "es": "La opción más exigente convierte los 66 días de Soul en un límite real: cada derrota consume tiempo y llegar a cero supone muerte permanente. Hellwalker, por su parte, introduce jefes que adaptan sus ataques al espacio, los errores y los hábitos del jugador."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=WnWpiwGr6xc",
@@ -39,6 +39,13 @@
     }
   },
   "sources": [
+    {
+      "label": "Phantom Blade Zero",
+      "type": {
+        "es": "Presentación oficial de jugabilidad e historia"
+      },
+      "url": "https://www.youtube.com/watch?v=csuFGspAe6s"
+    },
     {
       "label": "PlayStation Blog",
       "type": {
@@ -56,8 +63,8 @@
   ],
   "homeDetails": {
     "es": [
-      "Donnie Yen asesora el proyecto desde 2023 para trasladar al combate su experiencia en artes marciales y cine de acción. Además interpreta mediante captura facial y de movimiento a Mó Yuan, el padre del protagonista Soul.",
-      "La reserva anticipada permite desbloquear antes el accesorio Treasure Basin y el atuendo Legacy, aunque ambos podrán obtenerse jugando. El State of Play se emitirá el 18 de agosto a las 04:00 en España peninsular y a las 11:00 en Japón."
+      "Phantom Blade Zero no será un mundo abierto ni una aventura lineal. Sus ocho mapas de tinta china orientarán solo de forma aproximada por regiones hechas a mano, enlazadas en un único mundo con viaje rápido y zonas que esconden enemigos, misiones secundarias, tesoros y pistas de la historia.",
+      "Las armas desbloquean formas y técnicas propias al mejorarlas. El talismán de reforja permitirá reiniciar el nivel de una pieza, recuperar todos los materiales invertidos y destinarlos de inmediato a otra, evitando que un hallazgo nuevo quede rezagado."
     ]
   }
 }

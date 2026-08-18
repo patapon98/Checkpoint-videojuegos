@@ -119,6 +119,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 - El rojo queda reservado para la acción «Ver tráiler»; «Leer noticia completa» debe usar el tratamiento negro con texto blanco.
 - «ESENCIAL» debe conservar el mismo diseño en la portada y en Noticias.
 - Cuando una noticia cambie de estado, se actualizará la tarjeta existente sin cambiar su identificador ni crear un duplicado. Debe mantener la fecha original y mostrar una señal discreta con la fecha de actualización, tanto en portada como en Noticias. No se mostrará ni conservará un historial de versiones dentro de la tarjeta.
+- Para ordenar las tarjetas por recencia, `updated` cuenta como la fecha de actividad cuando exista. Si no existe, se usa la fecha de publicación. Esta regla afecta a las tarjetas de portada y al archivo de Noticias, pero no modifica la fecha original mostrada ni el orden cronológico del ticker.
 
 ## 6. Interfaz permanente
 

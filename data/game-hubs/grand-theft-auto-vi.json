@@ -148,6 +148,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-18",
+      "title": "Xbox España confirma precios y mejora Ultimate",
+      "description": "La ficha añade los precios oficiales de Xbox Series X|S en España: 79,99 € para la Standard Edition, 99,99 € para la Ultimate Edition y 20,00 € para la mejora Ultimate independiente.",
+      "sourceUrls": [
+        "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn"
+      ]
+    },
+    {
       "date": "2026-08-08",
       "title": "Rockstar aclara el formato físico y la precarga",
       "description": "La versión física de GTA VI incluirá un código de descarga en lugar de disco y podrá utilizarse para iniciar la precarga desde el 12 de noviembre; Rockstar incluye España entre los mercados admitidos.",
@@ -184,7 +192,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-08",
+  "updatedAt": "2026-08-18",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",
@@ -194,6 +202,10 @@
         "prices": [
           {
             "platform": "PS5",
+            "value": "79,99 €"
+          },
+          {
+            "platform": "Xbox Series X|S",
             "value": "79,99 €"
           }
         ],
@@ -207,6 +219,10 @@
           {
             "platform": "PS5",
             "value": "99,99 €"
+          },
+          {
+            "platform": "Xbox Series X|S",
+            "value": "99,99 €"
           }
         ],
         "includes": [
@@ -214,6 +230,19 @@
           "Vehículos, armas, ropa, peinados y tatuajes exclusivos para la campaña",
           "Acceso a Rideout Customs, Sara's, Stock 305, Electric Fang Tattoo y One-Eyed Willie's",
           "Encargos y colecciones adicionales repartidos por Leonida"
+        ]
+      },
+      {
+        "name": "Ultimate Edition Upgrade",
+        "kind": "Mejora",
+        "prices": [
+          {
+            "platform": "Xbox Series X|S",
+            "value": "20,00 €"
+          }
+        ],
+        "includes": [
+          "Contenido adicional de la Ultimate Edition para propietarios del juego base"
         ]
       }
     ],
@@ -223,7 +252,9 @@
     ],
     "notes": [
       "El mes de GTA+ se renueva automáticamente al precio habitual si no se cancela.",
-      "La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga."
+      "La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga.",
+      "Los precios de Xbox Series X|S y de la mejora Ultimate corresponden a Xbox España."
     ]
-  }
+  },
+  "price": "Desde 79,99 € en PS5 y Xbox Series X|S"
 }

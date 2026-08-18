@@ -545,6 +545,12 @@
     return Number.isFinite(timestamp) ? timestamp : 0;
   }
 
+  function newsActivityTimestamp(item) {
+    const value = item.updated ? `${item.updated}T00:00:00Z` : siteDateValue(item);
+    const timestamp = Date.parse(value);
+    return Number.isFinite(timestamp) ? timestamp : newsTimestamp(item);
+  }
+
   function tickerCopy(item, lang) {
     if (!item.ticker || typeof item.ticker !== "object") {
       return escapeHTML(text(item.title, lang));
@@ -561,7 +567,7 @@
     const featured = news.find(item => item.featured) || news[0];
     const rest = news
       .filter(item => item !== featured && item.home !== false)
-      .sort((a, b) => newsTimestamp(b) - newsTimestamp(a));
+      .sort((a, b) => newsActivityTimestamp(b) - newsActivityTimestamp(a));
 
     const home = document.getElementById("newsHome");
     if (home && featured) {
@@ -595,7 +601,7 @@
     if (archive) {
       const ordered = [...news].sort((a, b) => {
         if (a.featured !== b.featured) return a.featured ? -1 : 1;
-        return newsTimestamp(b) - newsTimestamp(a);
+        return newsActivityTimestamp(b) - newsActivityTimestamp(a);
       });
       archive.innerHTML = ordered.map(item => archiveCard(item, selectedLang)).join("");
     }

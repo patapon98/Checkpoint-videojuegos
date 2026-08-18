@@ -99,6 +99,7 @@
     ]
   },
   "confirmed": [
+    "La versión de PC incluye DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible, ultrawide 21:9 y 32:9, benchmark integrado y ray tracing para iluminación, reflejos y sombras.",
     "El segundo fin de semana de la beta abierta finalizó el 17 de agosto de 2026; el juego completo mantiene su lanzamiento el 6 de octubre.",
     "El segundo fin de semana de la beta multijugador es abierto y se celebra del 13 al 17 de agosto de 2026.",
     "La beta multijugador se desarrolla en dos fines de semana. El acceso anticipado del primero va del 6 al 10 de agosto de 2026 para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
@@ -146,6 +147,11 @@
       "label": "Xbox Wire",
       "url": "https://news.xbox.com/en-us/2026/07/14/gears-of-war-e-day-pc-nvidia/",
       "type": "Tecnología y versión para PC"
+    },
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
+      "type": "Requisitos y funciones técnicas oficiales de PC"
     }
   ],
   "newsTerms": [
@@ -162,6 +168,14 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-08-18",
+      "title": "Steam detalla las funciones gráficas avanzadas de PC",
+      "description": "La ficha incorpora las funciones técnicas publicadas por Steam para PC: DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation, ultrawide 21:9 y 32:9, benchmark integrado y ray tracing para iluminación, reflejos y sombras.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
+      ]
+    },
     {
       "date": "2026-08-18",
       "title": "Finaliza la beta abierta multijugador",
@@ -312,7 +326,10 @@
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
       "El uso de SSD es obligatorio en ambas configuraciones.",
-      "Steam declara el uso de Easy Anti-Cheat."
+      "Steam declara el uso de Easy Anti-Cheat.",
+      "La versión de PC admite DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible.",
+      "Admite formatos ultrawide 21:9 y 32:9 para juego y menús, además de benchmark integrado.",
+      "Steam confirma iluminación, reflejos y sombras con ray tracing por hardware."
     ]
   },
   "editions": {

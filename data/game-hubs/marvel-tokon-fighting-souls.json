@@ -154,6 +154,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-17",
+      "title": "Steam detalla el objetivo 4K y 60 FPS del modo Ultra en PC",
+      "description": "La ficha técnica añade que la versión para PC puede ofrecer imagen 4K y mantiene 60 FPS bloqueados durante los combates en el modo Ultra; Steam aclara que el 4K requiere una pantalla compatible.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
+      ]
+    },
+    {
       "date": "2026-08-16",
       "title": "PS5 Pro, tráiler de lanzamiento y complementos oficiales añadidos",
       "description": "PlayStation confirma mejoras para PS5 Pro con PSSR; la ficha incorpora el tráiler de lanzamiento y añade los precios españoles de la mejora Standard–Ultimate y del pase de personajes y escenarios del Año 1.",
@@ -189,7 +197,7 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-08-16",
+  "updatedAt": "2026-08-17",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [
@@ -238,7 +246,8 @@
     ],
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
-      "La versión para PC utiliza Easy Anti-Cheat a nivel de kernel."
+      "La versión para PC utiliza Easy Anti-Cheat a nivel de kernel.",
+      "Steam indica 60 FPS bloqueados durante los combates y salida 4K en el modo Ultra; el 4K requiere una pantalla compatible."
     ]
   },
   "editions": {

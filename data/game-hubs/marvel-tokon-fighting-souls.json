@@ -154,7 +154,7 @@
   },
   "changes": [
     {
-      "date": "2026-08-17",
+      "date": "2026-08-18",
       "title": "Steam detalla el objetivo 4K y 60 FPS del modo Ultra en PC",
       "description": "La ficha técnica añade que la versión para PC puede ofrecer imagen 4K y mantiene 60 FPS bloqueados durante los combates en el modo Ultra; Steam aclara que el 4K requiere una pantalla compatible.",
       "sourceUrls": [
@@ -197,7 +197,7 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-08-17",
+  "updatedAt": "2026-08-18",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [

@@ -148,6 +148,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-19",
+      "title": "Xbox España confirma un mes de GTA+ con la reserva",
+      "description": "La ficha amplía las bonificaciones de reserva de Xbox Series X|S: además del pack Vintage Vice City, la tienda oficial incluye un mes de GTA+, con canje dentro de los 180 días siguientes y limitado a un canje por cuenta y plataforma.",
+      "sourceUrls": [
+        "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn"
+      ]
+    },
+    {
       "date": "2026-08-18",
       "title": "Xbox España confirma precios y mejora Ultimate",
       "description": "La ficha añade los precios oficiales de Xbox Series X|S en España: 79,99 € para la Standard Edition, 99,99 € para la Ultimate Edition y 20,00 € para la mejora Ultimate independiente.",
@@ -192,7 +200,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-18",
+  "updatedAt": "2026-08-19",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",
@@ -248,10 +256,11 @@
     ],
     "preorderBonuses": [
       "Pack Vintage Vice City",
-      "Un mes de GTA+ en PS5"
+      "Un mes de GTA+ en PS5 y Xbox Series X|S"
     ],
     "notes": [
       "El mes de GTA+ se renueva automáticamente al precio habitual si no se cancela.",
+      "En Xbox Series X|S, el mes de GTA+ debe canjearse dentro de los 180 días siguientes a la reserva y está limitado a un canje por cuenta y plataforma.",
       "La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga.",
       "Los precios de Xbox Series X|S y de la mejora Ultimate corresponden a Xbox España."
     ]

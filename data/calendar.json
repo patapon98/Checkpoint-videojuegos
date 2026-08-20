@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19",
+  "updatedAt": "2026-08-20",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -1227,6 +1227,54 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=P72ce_8vnwA"
+    },
+    {
+      "id": "steins-gate-re-boot",
+      "title": "STEINS;GATE RE:BOOT",
+      "headingHtml": "STEINS;GATE RE:BOOT <span class=\"tag-dlc\">Remake</span>",
+      "date": "2026-08-20",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "provider": "rawg",
+        "query": "STEINS;GATE RE:BOOT",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/07418d40a3fdd2f403bfa506f50051f4254fa02a/header.jpg?t=1787194167",
+        "alt": "STEINS;GATE RE:BOOT para PC",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4012810/STEINSGATE_REBOOT/",
+        "title": "Ver en Steam",
+        "ariaLabel": "Ver STEINS;GATE RE:BOOT en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://steinsgate.jp/reboot/en-us/",
+        "official": true,
+        "host": "steinsgate.jp",
+        "checkedAt": "2026-08-20",
+        "evidence": {
+          "title": "STEINS;GATE RE:BOOT",
+          "releaseDate": "2026-08-20",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=2X-X5C4jG0A"
     },
     {
       "id": "aliens-fireteam-elite-2",
@@ -2947,6 +2995,55 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=ayGk_auu5tk"
+    },
+    {
+      "id": "steins-gate-re-boot-console",
+      "title": "STEINS;GATE RE:BOOT",
+      "headingHtml": "STEINS;GATE RE:BOOT <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "STEINS;GATE RE:BOOT",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4012810/07418d40a3fdd2f403bfa506f50051f4254fa02a/header.jpg?t=1787194167",
+        "alt": "STEINS;GATE RE:BOOT para PS5, Xbox Series X|S, Switch 2 y Switch",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://steinsgate.jp/reboot/en-us/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de STEINS;GATE RE:BOOT"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://steinsgate.jp/reboot/en-us/",
+        "official": true,
+        "host": "steinsgate.jp",
+        "checkedAt": "2026-08-20",
+        "evidence": {
+          "title": "STEINS;GATE RE:BOOT",
+          "releaseDate": "2026-10-29",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=2X-X5C4jG0A"
     },
     {
       "id": "godzilla-destroy-all-monsters-melee",

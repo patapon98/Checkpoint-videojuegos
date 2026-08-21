@@ -2,7 +2,7 @@
   "id": "control-resonant",
   "title": "CONTROL Resonant",
   "subtitle": "Historia, combate y toda la información de la secuela de Control",
-  "status": "Reservas abiertas",
+  "status": "Gold · reservas abiertas",
   "releaseDate": "2026-09-24",
   "platforms": ["PS5", "Xbox Series X|S", "PC"],
   "developer": "Remedy Entertainment",
@@ -35,6 +35,8 @@
   "context": "Remedy transforma la secuela en un RPG de acción centrado en el cuerpo a cuerpo. No es un mundo abierto: Manhattan se divide en grandes zonas diferenciadas con actividades secundarias, encuentros ocultos y libertad para explorar.",
   "overview": "Una secuela que no repite la fórmula del original. Cambia de protagonista, de estructura y de sistema de combate, y se acerca más al rol de lo que lo hacía Control.",
   "confirmed": [
+    "Remedy confirma que CONTROL Resonant ha alcanzado estado gold; el lanzamiento digital se mantiene el 24 de septiembre de 2026.",
+    "Las ediciones físicas para PS5 y Xbox Series X|S se lanzarán el 15 de octubre de 2026, después de la versión digital.",
     "New Game+ conserva mejoras del Aberrante, habilidades sobrenaturales desbloqueadas, Talentos, Artefactos y mejoras de salud y recursos de combate de la partida anterior.",
     "En New Game+ se desbloquean nodos de Talento adicionales, la posibilidad de equipar varias habilidades del mismo jefe Resonante y una cuarta ranura de Artefacto.",
     "New Game+ altera la dificultad y la rejugabilidad: los enemigos son más peligrosos, cambian encuentros y comportamientos de algunos Resonantes, y pueden descubrirse World Quests, encargos, coleccionables, historias secundarias y resultados de diálogo diferentes.",
@@ -56,6 +58,7 @@
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
+    {"label":"Remedy Entertainment en LinkedIn","url":"https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all","type":"Estado gold y fecha de lanzamiento de la edición física"},
     {"label":"Steam Community: anuncio oficial de New Game+","url":"https://steamcommunity.com/app/3669870/allnews/","type":"New Game+, progresión y rejugabilidad"},
     {"label":"Remedy Entertainment: Stepping Into a New World","url":"https://www.youtube.com/watch?v=xAHVb2KpnYQ","type":"Diario de desarrollo y personalización"},
     {"label":"Remedy Entertainment: Take CONTROL","url":"https://www.youtube.com/watch?v=SXRxroxfPJ8","type":"Tráiler oficial de combate y exploración"},
@@ -69,7 +72,7 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-08-16",
+  "updatedAt": "2026-08-20",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -78,6 +81,7 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {"date":"2026-08-20","title":"CONTROL Resonant alcanza estado gold y retrasa su edición física","description":"Remedy confirma que el desarrollo principal está listo para lanzamiento: la versión digital mantiene el 24 de septiembre, mientras que las copias físicas de PS5 y Xbox Series X|S pasan al 15 de octubre de 2026.","sourceUrls":["https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all"]},
     {"date":"2026-08-16","title":"New Game+ amplía la progresión y modifica los encuentros","description":"Remedy detalla que New Game+ conserva buena parte de la progresión, añade nodos de Talento y una cuarta ranura de Artefacto, permite combinar varias habilidades de un mismo Resonante y modifica enemigos, encuentros y algunos resultados de misiones y conversaciones.","sourceUrls":["https://steamcommunity.com/app/3669870/allnews/"]},
     {"date":"2026-08-16","title":"PlayStation detalla las funciones de accesibilidad","description":"La PlayStation Store española enumera nueve funciones de accesibilidad para CONTROL Resonant, entre ellas audio mono, subtítulos grandes, reasignación avanzada del mando, ajustes de joystick, dificultad configurable con asistencias y pausa durante el juego o las cinemáticas offline.","sourceUrls":["https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648"]},
     {"date":"2026-08-15","title":"Nuevos tráileres, personalización y doblajes confirmados","description":"La ficha incorpora los tráileres Paranatural Manhattan y Take CONTROL, el diario de desarrollo Stepping Into a New World, nuevos detalles sobre las actividades de Manhattan y la personalización de Dylan, y los idiomas con doblaje completo confirmados para el lanzamiento.","sourceUrls":["https://www.youtube.com/watch?v=xAHVb2KpnYQ","https://www.youtube.com/watch?v=SXRxroxfPJ8","https://www.youtube.com/watch?v=NvncU_SQO5Y","https://store.steampowered.com/app/3669870/CONTROL_Resonant/"]},

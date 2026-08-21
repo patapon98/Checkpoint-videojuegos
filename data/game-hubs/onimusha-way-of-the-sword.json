@@ -61,10 +61,11 @@
     {"label":"GAME Watch","url":"https://game.watch.impress.co.jp/docs/interview/2050681.html","type":"Duración estimada de la campaña y contenido secundario"},
     {"label":"Wccftech","url":"https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/","type":"Estimación de unas 20 horas para la primera partida"},
     {"label":"Steam","url":"https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","type":"Precios, requisitos e imágenes oficiales"},
-    {"label":"Xbox España","url":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB","type":"Precios de las ediciones en consola"}
+    {"label":"Xbox España","url":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB","type":"Precios de las ediciones en consola"},
+    {"label":"Capcom Town Store","url":"https://store.captown.capcom.com/en/blogs/news/0000033","type":"Conversión de la bonificación digital de reserva en bonificación de compra anticipada"}
   ],
   "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-08-17",
+  "updatedAt": "2026-08-20",
   "seo": {
     "title": "Onimusha: Way of the Sword: duración, demo y todo lo confirmado",
     "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.",
@@ -73,6 +74,7 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
+    {"date":"2026-08-20","title":"Capcom convierte la bonificación digital de reserva en incentivo de compra anticipada","description":"Tras adelantar el lanzamiento al 4 de septiembre, Capcom transformó la bonificación de reserva de la versión digital en una bonificación de compra anticipada disponible hasta el 26 de septiembre de 2026 a las 08:59 JST.","sourceUrls":["https://store.captown.capcom.com/en/blogs/news/0000033"]},
     {"date":"2026-08-17","title":"Nintendo concreta el tamaño estimado de la versión de Switch 2","description":"Nintendo publica un tamaño estimado de 34,1 GB para Onimusha: Way of the Sword en Nintendo Switch 2; la ficha mantiene pendiente únicamente el tamaño de instalación de PS5 y Xbox Series X|S.","sourceUrls":["https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/"]},
     {"date":"2026-08-16","title":"Steam concreta DLSS 4.5, FSR 3.1 y el DRM de PC","description":"La ficha técnica de PC especifica que la superresolución admite NVIDIA DLSS 4.5 y AMD FSR 3.1; las estimaciones de rendimiento publicadas se calcularon con DLSS 4.0 y FSR 3.1. Steam también declara Denuvo Anti-tamper con un límite de activación en cinco equipos distintos por día.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/"]},
     {"date":"2026-08-07","title":"Nuevo tráiler y duración aproximada de la aventura","description":"Se añade el nuevo tráiler oficial y la estimación de Capcom: unas 20 horas para una primera partida y alrededor de 20–30 horas con misiones secundarias y contenido adicional.","sourceUrls":["https://youtu.be/Nx2jzXMFzdo","https://game.watch.impress.co.jp/docs/interview/2050681.html","https://wccftech.com/onimusha-way-of-the-sword-interview-katana-mastery/"]},
@@ -103,7 +105,7 @@
     "sourceUrl":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB/0010",
     "region":"España",
     "items":[{"name":"Edición estándar","prices":[{"platform":"PS5 / Xbox","value":"79,99 €"},{"platform":"PC","value":"69,99 €"}],"includes":["Juego base"]},{"name":"Deluxe Edition","prices":[{"platform":"PS5 / Xbox","value":"89,99 €"},{"platform":"PC","value":"79,99 €"}],"includes":["Juego base","Tres amuletos","Cuatro aspectos de espada","Armadura roja para Musashi","Guantelete Oni Loto carmesí"]},{"name":"Premium Deluxe Edition","prices":[{"platform":"PS5 / Xbox","value":"99,99 €"},{"platform":"PC","value":"89,99 €"}],"includes":["Todo el contenido de la Deluxe Edition","Tres haori para Musashi","Tres atuendos para Okuni","Tres atuendos para la Dama Oni","Mini banda sonora digital dentro del juego"]}],
-    "preorderBonuses":["Amuleto Komainu","Aspecto de espada Maldición sellada"],
-    "notes":["Las ediciones Deluxe y Premium Deluxe amplían la bonificación de reserva con el amuleto Mono blanco y el aspecto León blanco."]
+    "preorderBonuses":[],
+    "notes":["Tras el adelanto de la fecha, Capcom convirtió la bonificación de reserva de la versión digital en una bonificación de compra anticipada disponible hasta el 26 de septiembre de 2026 a las 08:59 JST.","La edición estándar recibe el amuleto Komainu y el aspecto de espada Maldición sellada; las ediciones Deluxe y Premium Deluxe añaden el amuleto Mono blanco y el aspecto León blanco."]
   }
 }

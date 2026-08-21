@@ -25,6 +25,7 @@
     {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/609dd99944f8928f8a8bd35bb08a6695f7e1fdca/ss_609dd99944f8928f8a8bd35bb08a6695f7e1fdca.1920x1080.jpg","alt":"Templo Kiyomizu-dera recreado en Onimusha: Way of the Sword"}
   ],
   "media": [
+    {"type":"youtube","videoId":"h3a-5lvgqUs","title":"Onimusha: Way of the Sword - The Legend of the Onimusha","label":"Tráiler de lore","publishedAt":"2026-08-21"},
     {"type":"youtube","videoId":"Nx2jzXMFzdo","title":"Nuevo tráiler de Onimusha: Way of the Sword","label":"Nuevo tráiler","publishedAt":"2026-08-07"},
     {"type":"youtube","videoId":"LNq35HHUtNc","title":"Tráiler de historia y fecha de Onimusha: Way of the Sword","label":"Historia y lanzamiento","publishedAt":"2026-06-02"},
     {"type":"youtube","videoId":"dAcB-foyNv0","title":"Vídeo oficial de la demo de Onimusha: Way of the Sword","label":"Demo","publishedAt":"2026-06-02"},
@@ -52,6 +53,7 @@
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
+    {"label":"Tráiler oficial The Legend of the Onimusha","url":"https://www.youtube.com/watch?v=h3a-5lvgqUs","type":"Historia de los Oni, los Genma y el papel del Onimusha"},
     {"label":"Nintendo","url":"https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/","type":"Tamaño estimado y especificaciones de Nintendo Switch 2"},
     {"label":"Capcom","url":"https://www.capcom.co.jp/ir/news/html/260702.html","type":"Fecha de lanzamiento actualizada"},
     {"label":"Web oficial de Onimusha","url":"https://www.capcom-games.com/onimusha/ws/","type":"Historia, personajes y ediciones"},
@@ -65,7 +67,7 @@
     {"label":"Capcom Town Store","url":"https://store.captown.capcom.com/en/blogs/news/0000033","type":"Conversión de la bonificación digital de reserva en bonificación de compra anticipada"}
   ],
   "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-08-21",
   "seo": {
     "title": "Onimusha: Way of the Sword: duración, demo y todo lo confirmado",
     "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.",
@@ -74,6 +76,7 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
+    {"date":"2026-08-21","title":"Nuevo tráiler sobre la leyenda del Onimusha","description":"El nuevo tráiler The Legend of the Onimusha repasa el trasfondo de los Oni, los Genma y la figura del Onimusha antes del lanzamiento del 4 de septiembre.","sourceUrls":["https://www.youtube.com/watch?v=h3a-5lvgqUs"]},
     {"date":"2026-08-20","title":"Capcom convierte la bonificación digital de reserva en incentivo de compra anticipada","description":"Tras adelantar el lanzamiento al 4 de septiembre, Capcom transformó la bonificación de reserva de la versión digital en una bonificación de compra anticipada disponible hasta el 26 de septiembre de 2026 a las 08:59 JST.","sourceUrls":["https://store.captown.capcom.com/en/blogs/news/0000033"]},
     {"date":"2026-08-17","title":"Nintendo concreta el tamaño estimado de la versión de Switch 2","description":"Nintendo publica un tamaño estimado de 34,1 GB para Onimusha: Way of the Sword en Nintendo Switch 2; la ficha mantiene pendiente únicamente el tamaño de instalación de PS5 y Xbox Series X|S.","sourceUrls":["https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/"]},
     {"date":"2026-08-16","title":"Steam concreta DLSS 4.5, FSR 3.1 y el DRM de PC","description":"La ficha técnica de PC especifica que la superresolución admite NVIDIA DLSS 4.5 y AMD FSR 3.1; las estimaciones de rendimiento publicadas se calcularon con DLSS 4.0 y FSR 3.1. Steam también declara Denuvo Anti-tamper con un límite de activación en cinco equipos distintos por día.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/"]},

@@ -1577,6 +1577,56 @@
       "trailer": "https://www.youtube.com/watch?v=pMeYxev9PZM"
     },
     {
+      "id": "serious-sam-shatterverse",
+      "title": "Serious Sam: Shatterverse",
+      "headingHtml": "Serious Sam: Shatterverse",
+      "date": "2026-08-31",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2067210/3171c0ddcebcb0888ed8ff80469792ded64a7aa4/header.jpg?t=1786694702",
+        "alt": "Serious Sam: Shatterverse para PS5, Xbox Series X|S y PC",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2067210/Serious_Sam_Shatterverse/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Serious Sam: Shatterverse a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.serioussam.com/",
+        "official": true,
+        "host": "www.serioussam.com",
+        "checkedAt": "2026-08-21",
+        "evidence": {
+          "title": "Serious Sam: Shatterverse",
+          "releaseDate": "2026-08-31",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=kyMENfEbt7w"
+    },
+    {
       "id": "moonlighter-2-the-endless-vault",
       "title": "Moonlighter 2: The Endless Vault",
       "headingHtml": "Moonlighter 2: The Endless Vault",
@@ -1809,6 +1859,56 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=_rpyWOiHkAg"
+    },
+    {
+      "id": "halloween-the-game",
+      "title": "Halloween: The Game",
+      "headingHtml": "Halloween: The Game",
+      "date": "2026-09-08",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://a.storyblok.com/f/286129504682394/1920x1080/c21635a349/michael-sr.jpg",
+        "alt": "Halloween: The Game para PS5, Xbox Series X|S y PC",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3219630/Halloween/",
+        "title": "Precomprar en Steam",
+        "ariaLabel": "Precomprar Halloween: The Game en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://halloweengame.com/news/unleash-hell-upon-haddonfield/",
+        "official": true,
+        "host": "halloweengame.com",
+        "checkedAt": "2026-08-21",
+        "evidence": {
+          "title": "Halloween: The Game",
+          "releaseDate": "2026-09-08",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=Bua7X-ClkgY"
     },
     {
       "id": "valheim-1-0",

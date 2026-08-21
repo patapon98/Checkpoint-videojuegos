@@ -35,6 +35,9 @@
   "context": "Remedy transforma la secuela en un RPG de acción centrado en el cuerpo a cuerpo. No es un mundo abierto: Manhattan se divide en grandes zonas diferenciadas con actividades secundarias, encuentros ocultos y libertad para explorar.",
   "overview": "Una secuela que no repite la fórmula del original. Cambia de protagonista, de estructura y de sistema de combate, y se acerca más al rol de lo que lo hacía Control.",
   "confirmed": [
+    "La progresión general sube el nivel de cada zona de Manhattan en lugar de un nivel tradicional de Dylan: completar actividades otorga experiencia a la zona y cada subida concede también un punto de Talento al protagonista.",
+    "Subir el nivel de una zona desbloquea ventajas locales como más objetos de curación, cofres revelados en el mapa y actividades secundarias mediante máquinas recreativas.",
+    "Derrotar a un Resonante altera la zona: aparecen más enemigos y aumenta el nivel de muchas criaturas, por lo que Remedy plantea como decisión estratégica cuándo enfrentarse a estos jefes.",
     "Remedy confirma que CONTROL Resonant ha alcanzado estado gold; el lanzamiento digital se mantiene el 24 de septiembre de 2026.",
     "Las ediciones físicas para PS5 y Xbox Series X|S se lanzarán el 15 de octubre de 2026, después de la versión digital.",
     "New Game+ conserva mejoras del Aberrante, habilidades sobrenaturales desbloqueadas, Talentos, Artefactos y mejoras de salud y recursos de combate de la partida anterior.",
@@ -58,6 +61,7 @@
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
+    {"label":"IGN First","url":"https://www.ign.com/articles/you-dont-get-xp-but-zones-do-how-control-resonant-is-rewriting-the-action-rpg-rule-book","type":"Declaraciones de Remedy sobre progresión por zonas y consecuencias al derrotar Resonants"},
     {"label":"Remedy Entertainment en LinkedIn","url":"https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all","type":"Estado gold y fecha de lanzamiento de la edición física"},
     {"label":"Steam Community: anuncio oficial de New Game+","url":"https://steamcommunity.com/app/3669870/allnews/","type":"New Game+, progresión y rejugabilidad"},
     {"label":"Remedy Entertainment: Stepping Into a New World","url":"https://www.youtube.com/watch?v=xAHVb2KpnYQ","type":"Diario de desarrollo y personalización"},
@@ -72,7 +76,7 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-08-21",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -81,6 +85,7 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {"date":"2026-08-21","title":"Remedy detalla la progresión por zonas y sus consecuencias","description":"Las actividades otorgan experiencia a cada zona de Manhattan en lugar de subir un nivel tradicional de Dylan; los nuevos niveles desbloquean ventajas locales y puntos de Talento, mientras que derrotar Resonants aumenta después la presión y el nivel de muchos enemigos de la zona.","sourceUrls":["https://www.ign.com/articles/you-dont-get-xp-but-zones-do-how-control-resonant-is-rewriting-the-action-rpg-rule-book"]},
     {"date":"2026-08-20","title":"CONTROL Resonant alcanza estado gold y retrasa su edición física","description":"Remedy confirma que el desarrollo principal está listo para lanzamiento: la versión digital mantiene el 24 de septiembre, mientras que las copias físicas de PS5 y Xbox Series X|S pasan al 15 de octubre de 2026.","sourceUrls":["https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all"]},
     {"date":"2026-08-16","title":"New Game+ amplía la progresión y modifica los encuentros","description":"Remedy detalla que New Game+ conserva buena parte de la progresión, añade nodos de Talento y una cuarta ranura de Artefacto, permite combinar varias habilidades de un mismo Resonante y modifica enemigos, encuentros y algunos resultados de misiones y conversaciones.","sourceUrls":["https://steamcommunity.com/app/3669870/allnews/"]},
     {"date":"2026-08-16","title":"PlayStation detalla las funciones de accesibilidad","description":"La PlayStation Store española enumera nueve funciones de accesibilidad para CONTROL Resonant, entre ellas audio mono, subtítulos grandes, reasignación avanzada del mando, ajustes de joystick, dificultad configurable con asistencias y pausa durante el juego o las cinemáticas offline.","sourceUrls":["https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648"]},

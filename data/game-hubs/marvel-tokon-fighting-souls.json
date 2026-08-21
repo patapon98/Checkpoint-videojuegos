@@ -4,10 +4,7 @@
   "subtitle": "El juego de lucha 4 contra 4 de Arc System Works, con su plantel, sus modos, su lanzamiento y el contenido confirmado para después del estreno.",
   "status": "Disponible",
   "releaseDate": "2026-08-06",
-  "platforms": [
-    "PS5",
-    "PC"
-  ],
+  "platforms": ["PS5", "PC"],
   "developer": "Arc System Works",
   "publisher": "Sony Interactive Entertainment",
   "genre": "Lucha por equipos",
@@ -17,62 +14,20 @@
   "heroImage": "/img/juegos/marvel-tokon-fighting-souls.jpg",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
-  "theme": {
-    "accent": "#ff6268",
-    "accentSoft": "rgba(255,98,104,.16)"
-  },
+  "theme": {"accent":"#ff6268","accentSoft":"rgba(255,98,104,.16)"},
   "gallery": [
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Carnage ataca a Spider-Man en MARVEL Tōkon: Fighting Souls"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-green-goblin-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Primer plano de Green Goblin en MARVEL Tōkon: Fighting Souls"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Black-Panther-Fighting-screenshot-10-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92",
-      "alt": "Black Panther y Storm combaten en MARVEL Tōkon: Fighting Souls"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Captain-America-Fighting-screenshot-12-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92",
-      "alt": "Captain America e Iron Man atacan juntos en MARVEL Tōkon: Fighting Souls"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Hulk-Fighting-screenshot-08-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92",
-      "alt": "Hulk golpea a Magik en MARVEL Tōkon: Fighting Souls"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/MTFS-PS5-Screenshot-Fighting-01-04feb26?wid=1920&hei=1080&fmt=webp&qlt=92",
-      "alt": "Magik, Danger, Doctor Doom y Storm combaten en MARVEL Tōkon: Fighting Souls"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/mtfs-doom-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Doctor Doom aparece rodeado de robots en MARVEL Tōkon: Fighting Souls"
-    }
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/mtfs-carnage-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Carnage ataca a Spider-Man en MARVEL Tōkon: Fighting Souls"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/mtfs-green-goblin-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Primer plano de Green Goblin en MARVEL Tōkon: Fighting Souls"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Black-Panther-Fighting-screenshot-10-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92","alt":"Black Panther y Storm combaten en MARVEL Tōkon: Fighting Souls"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Captain-America-Fighting-screenshot-12-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92","alt":"Captain America e Iron Man atacan juntos en MARVEL Tōkon: Fighting Souls"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/MTFS-Hulk-Fighting-screenshot-08-22apr26?wid=1920&hei=1080&fmt=webp&qlt=92","alt":"Hulk golpea a Magik en MARVEL Tōkon: Fighting Souls"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/MTFS-PS5-Screenshot-Fighting-01-04feb26?wid=1920&hei=1080&fmt=webp&qlt=92","alt":"Magik, Danger, Doctor Doom y Storm combaten en MARVEL Tōkon: Fighting Souls"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/mtfs-doom-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Doctor Doom aparece rodeado de robots en MARVEL Tōkon: Fighting Souls"}
   ],
   "media": [
-    {
-      "type": "youtube",
-      "videoId": "funfFAMMBBs",
-      "title": "MARVEL Tōkon: Fighting Souls, tráiler de lanzamiento",
-      "label": "Tráiler de lanzamiento",
-      "publishedAt": "2026-08-06"
-    },
-    {
-      "type": "youtube",
-      "videoId": "DV9Oq_X22Ak",
-      "title": "MARVEL Tōkon: Fighting Souls, tráiler de presentación",
-      "label": "Tráiler oficial",
-      "publishedAt": "2025-06-04"
-    },
-    {
-      "type": "youtube",
-      "videoId": "EE955NDdmj8",
-      "title": "MARVEL Tōkon: Fighting Souls, vídeo de apertura",
-      "label": "Vídeo oficial",
-      "publishedAt": "2026-07-27"
-    }
+    {"type":"youtube","videoId":"funfFAMMBBs","title":"MARVEL Tōkon: Fighting Souls, tráiler de lanzamiento","label":"Tráiler de lanzamiento","publishedAt":"2026-08-06"},
+    {"type":"youtube","videoId":"DV9Oq_X22Ak","title":"MARVEL Tōkon: Fighting Souls, tráiler de presentación","label":"Tráiler oficial","publishedAt":"2025-06-04"},
+    {"type":"youtube","videoId":"EE955NDdmj8","title":"MARVEL Tōkon: Fighting Souls, vídeo de apertura","label":"Vídeo oficial","publishedAt":"2026-07-27"}
   ],
   "premise": "Arc System Works reúne a veinte héroes y villanos de Marvel en combates por equipos de cuatro personajes. El jugador forma su grupo, combina asistencias y cambios de luchador y recorre escenarios inspirados en lugares reconocibles del universo Marvel.",
   "context": "El estudio responsable de Guilty Gear y Dragon Ball FighterZ intenta ampliar el formato clásico de lucha por equipos con enfrentamientos 4 contra 4. El sistema ofrece controles tradicionales y entradas simplificadas para acercarse tanto a veteranos como a nuevos jugadores.",
@@ -82,21 +37,9 @@
     "title": "Plantel, modos y juego cruzado",
     "intro": "La información oficial ya permite dibujar una ficha bastante más completa que la de un simple juego de lucha competitivo. Hay historia para un jugador, combate local, juego cruzado y un sistema de equipos con reglas propias.",
     "items": [
-      {
-        "title": "Plantel de lanzamiento",
-        "value": "20 personajes",
-        "description": "Los cinco equipos son Fighting Avengers, Unbreakable X-Men, Amazing Guardians, Knights of Doom y Samurai Outriders, con cuatro luchadores en cada uno."
-      },
-      {
-        "title": "PS5 y PC",
-        "value": "Cross-play confirmado",
-        "description": "PlayStation confirma juego cruzado entre ambas versiones. En PS5 solo hace falta PlayStation Plus para los modos en línea, no para el contenido offline."
-      },
-      {
-        "title": "Más que partidas online",
-        "value": "Historia y juego local",
-        "description": "Incluye Episode Mode, Versus local o contra la CPU, tutorial interactivo, entrenamiento, clasificatorias, partidas casuales y vestíbulos para 64 participantes."
-      }
+      {"title":"Plantel de lanzamiento","value":"20 personajes","description":"Los cinco equipos son Fighting Avengers, Unbreakable X-Men, Amazing Guardians, Knights of Doom y Samurai Outriders, con cuatro luchadores en cada uno."},
+      {"title":"PS5 y PC","value":"Cross-play confirmado","description":"PlayStation confirma juego cruzado entre ambas versiones. En PS5 solo hace falta PlayStation Plus para los modos en línea, no para el contenido offline."},
+      {"title":"Más que partidas online","value":"Historia y juego local","description":"Incluye Episode Mode, Versus local o contra la CPU, tutorial interactivo, entrenamiento, clasificatorias, partidas casuales y vestíbulos para 64 participantes."}
     ]
   },
   "confirmed": [
@@ -108,7 +51,8 @@
     "El plantel incluye a Captain America, Iron Man, Hulk, Black Panther, Storm, Magik, Wolverine, Danger, Spider-Man, Ms. Marvel, Star-Lord, Peni Parker, Doctor Doom, Magneto, Green Goblin, Carnage, Ghost Rider, Blade, Loki y Deadpool.",
     "Episode Mode es una historia original de Marvel. Sanzigen firma la apertura y las cinemáticas.",
     "Voces en diez idiomas, incluido el español, y texto en dieciséis.",
-    "El pase del primer año suma cuatro personajes y un escenario. Phoenix Cyclops abre la lista."
+    "El pase del primer año suma cuatro personajes y un escenario. Phoenix Cyclops abre la lista.",
+    "La actualización del 21 de agosto mejora el matchmaking de partidas clasificatorias y casuales, corrige problemas de torneos en PS5 y de guardado y reproducción de replays, mejora el rendimiento de PC y corrige varios problemas de jugabilidad y progreso de insignias; en PC el equipo recomienda completar el calentamiento de shaders antes de jugar."
   ],
   "pending": [
     "Faltan por anunciar los otros tres personajes y el escenario del pase del primer año.",
@@ -116,42 +60,15 @@
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
-    {
-      "label": "PlayStation",
-      "url": "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
-      "type": "Ficha oficial"
-    },
-    {
-      "label": "PlayStation Store",
-      "url": "https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000",
-      "type": "Ediciones y reservas"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/02/12/marvel-tokon-fighting-souls-arrives-on-ps5-pc-august-6/",
-      "type": "Fecha y plataformas"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/07/23/phoenix-cyclops-revealed-as-marvel-tokon-fighting-souls-first-year-1-dlc-character/",
-      "type": "Contenido posterior al lanzamiento"
-    },
-    {
-      "label": "PlayStation España",
-      "url": "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/",
-      "type": "PS5 Pro, PSSR, complementos y precios españoles"
-    },
-    {
-      "label": "Steam",
-      "url": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
-      "type": "Precios, requisitos y condiciones de la versión de PC"
-    }
+    {"label":"PlayStation","url":"https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/","type":"Ficha oficial"},
+    {"label":"PlayStation Store","url":"https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000","type":"Ediciones y reservas"},
+    {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/02/12/marvel-tokon-fighting-souls-arrives-on-ps5-pc-august-6/","type":"Fecha y plataformas"},
+    {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/07/23/phoenix-cyclops-revealed-as-marvel-tokon-fighting-souls-first-year-1-dlc-character/","type":"Contenido posterior al lanzamiento"},
+    {"label":"PlayStation España","url":"https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/","type":"PS5 Pro, PSSR, complementos y precios españoles"},
+    {"label":"Steam","url":"https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/","type":"Precios, requisitos y condiciones de la versión de PC"},
+    {"label":"Discord oficial de MARVEL Tōkon","url":"https://discord.com/invite/marveltokonofficial","type":"Notas oficiales de actualizaciones y mantenimiento"}
   ],
-  "newsTerms": [
-    "marvel tōkon",
-    "marvel tokon",
-    "fighting souls"
-  ],
+  "newsTerms": ["marvel tōkon","marvel tokon","fighting souls"],
   "seo": {
     "title": "MARVEL Tōkon: fecha, personajes y todo lo confirmado",
     "description": "Ficha actualizada de MARVEL Tōkon: Fighting Souls con fecha, plataformas, personajes, modos, tráiler, imágenes y contenido del primer año.",
@@ -160,104 +77,31 @@
     "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
-    {
-      "date": "2026-08-20",
-      "title": "Steam concreta el horizonte del pase y la disponibilidad de los trajes",
-      "description": "Steam fija el 31 de diciembre de 2027 como fecha límite prevista para el contenido restante del pase del año 1 y especifica que los cinco trajes adicionales de la Ultimate Edition estarán disponibles hasta el 5 de agosto de 2027; las fechas individuales del pase, incluida la de Phoenix Cyclops, siguen sin anunciarse.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
-      ]
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Steam confirma precios de PC y requisitos para las funciones online",
-      "description": "La ficha añade los precios europeos de Steam para las tres ediciones, la mejora Standard–Ultimate y el pase del Año 1; también recoge que las funciones online de PC requieren cuenta PlayStation y conexión a Internet y que el ajuste Ultra ofrece 4K con combates bloqueados a 60 FPS.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
-      ]
-    },
-    {
-      "date": "2026-08-16",
-      "title": "PS5 Pro, tráiler de lanzamiento y complementos oficiales añadidos",
-      "description": "PlayStation confirma mejoras para PS5 Pro con PSSR; la ficha incorpora el tráiler de lanzamiento y añade los precios españoles de la mejora Standard–Ultimate y del pase de personajes y escenarios del Año 1.",
-      "sourceUrls": [
-        "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/"
-      ]
-    },
-    {
-      "date": "2026-08-06",
-      "title": "MARVEL Tōkon: Fighting Souls ya está disponible",
-      "description": "El juego se ha lanzado oficialmente el 6 de agosto de 2026 en PS5 y PC, una vez alcanzada la hora de desbloqueo indicada por PlayStation para Europa.",
-      "sourceUrls": [
-        "https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/",
-        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "title": "Requisitos de PC y ediciones oficiales añadidos",
-      "description": "La ficha incorpora las configuraciones mínimas y recomendadas de Steam y compara las ediciones Standard, Digital Deluxe y Ultimate con sus precios y contenidos.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
-        "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/"
-      ]
-    },
-    {
-      "date": "2026-07-30",
-      "title": "Plantel, modos y cross-play revisados",
-      "description": "Se sustituyeron las imágenes comprimidas por siete capturas oficiales a resolución nativa, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."
-    }
+    {"date":"2026-08-21","title":"Actualización de matchmaking, rendimiento y replays","description":"Arc System Works despliega mejoras para el matchmaking de Ranked y Casual, corrige incidencias de torneos en PS5, mejora el rendimiento de PC y soluciona problemas de replays, jugabilidad y progreso de insignias; en PC recomienda completar el calentamiento de shaders antes de jugar.","sourceUrls":["https://discord.com/invite/marveltokonofficial"]},
+    {"date":"2026-08-20","title":"Steam concreta el horizonte del pase y la disponibilidad de los trajes","description":"Steam fija el 31 de diciembre de 2027 como fecha límite prevista para el contenido restante del pase del año 1 y especifica que los cinco trajes adicionales de la Ultimate Edition estarán disponibles hasta el 5 de agosto de 2027; las fechas individuales del pase, incluida la de Phoenix Cyclops, siguen sin anunciarse.","sourceUrls":["https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"]},
+    {"date":"2026-08-18","title":"Steam confirma precios de PC y requisitos para las funciones online","description":"La ficha añade los precios europeos de Steam para las tres ediciones, la mejora Standard–Ultimate y el pase del Año 1; también recoge que las funciones online de PC requieren cuenta PlayStation y conexión a Internet y que el ajuste Ultra ofrece 4K con combates bloqueados a 60 FPS.","sourceUrls":["https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"]},
+    {"date":"2026-08-16","title":"PS5 Pro, tráiler de lanzamiento y complementos oficiales añadidos","description":"PlayStation confirma mejoras para PS5 Pro con PSSR; la ficha incorpora el tráiler de lanzamiento y añade los precios españoles de la mejora Standard–Ultimate y del pase de personajes y escenarios del Año 1.","sourceUrls":["https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/"]},
+    {"date":"2026-08-06","title":"MARVEL Tōkon: Fighting Souls ya está disponible","description":"El juego se ha lanzado oficialmente el 6 de agosto de 2026 en PS5 y PC, una vez alcanzada la hora de desbloqueo indicada por PlayStation para Europa.","sourceUrls":["https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/","https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"]},
+    {"date":"2026-08-03","title":"Requisitos de PC y ediciones oficiales añadidos","description":"La ficha incorpora las configuraciones mínimas y recomendadas de Steam y compara las ediciones Standard, Digital Deluxe y Ultimate con sus precios y contenidos.","sourceUrls":["https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/","https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/"]},
+    {"date":"2026-07-30","title":"Plantel, modos y cross-play revisados","description":"Se sustituyeron las imágenes comprimidas por siete capturas oficiales a resolución nativa, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."}
   ],
-  "relatedGameIds": [
-    "beast-of-reincarnation",
-    "control-resonant"
-  ],
-  "updatedAt": "2026-08-20",
+  "relatedGameIds": ["beast-of-reincarnation","control-resonant"],
+  "updatedAt": "2026-08-21",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 11 de 64 bits"
-      },
-      {
-        "label": "Procesador",
-        "value": "Intel Core i5-8400 o AMD Ryzen 5 1600X"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 2060 (6 GB) o AMD Radeon RX 6600 XT (8 GB)"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "27 GB disponibles"
-      }
+      {"label":"Sistema operativo","value":"Windows 11 de 64 bits"},
+      {"label":"Procesador","value":"Intel Core i5-8400 o AMD Ryzen 5 1600X"},
+      {"label":"Memoria","value":"16 GB de RAM"},
+      {"label":"Tarjeta gráfica","value":"NVIDIA GeForce RTX 2060 (6 GB) o AMD Radeon RX 6600 XT (8 GB)"},
+      {"label":"Almacenamiento","value":"27 GB disponibles"}
     ],
     "recommended": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 11 de 64 bits"
-      },
-      {
-        "label": "Procesador",
-        "value": "Intel Core i7-8700 o AMD Ryzen 5 3600X"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 3070 (8 GB) o AMD Radeon RX 7600 XT (16 GB)"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "27 GB disponibles"
-      }
+      {"label":"Sistema operativo","value":"Windows 11 de 64 bits"},
+      {"label":"Procesador","value":"Intel Core i7-8700 o AMD Ryzen 5 3600X"},
+      {"label":"Memoria","value":"16 GB de RAM"},
+      {"label":"Tarjeta gráfica","value":"NVIDIA GeForce RTX 3070 (8 GB) o AMD Radeon RX 7600 XT (16 GB)"},
+      {"label":"Almacenamiento","value":"27 GB disponibles"}
     ],
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
@@ -269,101 +113,13 @@
     "sourceUrl": "https://www.playstation.com/es-es/games/marvel-tokon-fighting-souls/",
     "region": "España",
     "items": [
-      {
-        "name": "Standard Edition",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "69,99 €"
-          },
-          {
-            "platform": "PC",
-            "value": "69,99 €"
-          }
-        ],
-        "includes": [
-          "MARVEL Tōkon: Fighting Souls"
-        ]
-      },
-      {
-        "name": "Digital Deluxe Edition",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "94,99 €"
-          },
-          {
-            "platform": "PC",
-            "value": "94,99 €"
-          }
-        ],
-        "includes": [
-          "Juego base",
-          "Pase de personajes y escenarios del año 1: cuatro personajes, un escenario y poses para la pantalla de resultados",
-          "Howard el Pato como avatar de sala",
-          "Cosmo como mascota de sala"
-        ]
-      },
-      {
-        "name": "Ultimate Edition",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "109,99 €"
-          },
-          {
-            "platform": "PC",
-            "value": "109,99 €"
-          }
-        ],
-        "includes": [
-          "Todo el contenido de la Digital Deluxe Edition",
-          "Cinco trajes: Spider-Man, Storm, Iron Man, Capitán América y Doctor Doom",
-          "Color cromático animado para los veinte personajes de lanzamiento"
-        ]
-      },
-      {
-        "name": "Mejora Standard – Ultimate Edition",
-        "kind": "Mejora",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "40,00 €"
-          },
-          {
-            "platform": "PC",
-            "value": "40,00 €"
-          }
-        ],
-        "includes": [
-          "Contenido adicional de Ultimate Edition para propietarios de la edición Standard"
-        ]
-      },
-      {
-        "name": "Pase de personajes y escenarios del año 1",
-        "kind": "Pase de temporada",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "34,99 €"
-          },
-          {
-            "platform": "PC",
-            "value": "34,99 €"
-          }
-        ],
-        "includes": [
-          "Cuatro personajes adicionales",
-          "Un escenario adicional",
-          "Conjunto de poses para la pantalla de resultados"
-        ]
-      }
+      {"name":"Standard Edition","prices":[{"platform":"PS5","value":"69,99 €"},{"platform":"PC","value":"69,99 €"}],"includes":["MARVEL Tōkon: Fighting Souls"]},
+      {"name":"Digital Deluxe Edition","prices":[{"platform":"PS5","value":"94,99 €"},{"platform":"PC","value":"94,99 €"}],"includes":["Juego base","Pase de personajes y escenarios del año 1: cuatro personajes, un escenario y poses para la pantalla de resultados","Howard el Pato como avatar de sala","Cosmo como mascota de sala"]},
+      {"name":"Ultimate Edition","prices":[{"platform":"PS5","value":"109,99 €"},{"platform":"PC","value":"109,99 €"}],"includes":["Todo el contenido de la Digital Deluxe Edition","Cinco trajes: Spider-Man, Storm, Iron Man, Capitán América y Doctor Doom","Color cromático animado para los veinte personajes de lanzamiento"]},
+      {"name":"Mejora Standard – Ultimate Edition","kind":"Mejora","prices":[{"platform":"PS5","value":"40,00 €"},{"platform":"PC","value":"40,00 €"}],"includes":["Contenido adicional de Ultimate Edition para propietarios de la edición Standard"]},
+      {"name":"Pase de personajes y escenarios del año 1","kind":"Pase de temporada","prices":[{"platform":"PS5","value":"34,99 €"},{"platform":"PC","value":"34,99 €"}],"includes":["Cuatro personajes adicionales","Un escenario adicional","Conjunto de poses para la pantalla de resultados"]}
     ],
-    "preorderBonuses": [
-      "Guantelete del Infinito como equipamiento de sala",
-      "Baby Groot como mascota de sala",
-      "Tabla de surf cósmica como vehículo de sala"
-    ],
+    "preorderBonuses": ["Guantelete del Infinito como equipamiento de sala","Baby Groot como mascota de sala","Tabla de surf cósmica como vehículo de sala"],
     "notes": [
       "Los precios mostrados corresponden a PlayStation Store España para PS5 y a Steam en euros para PC.",
       "Los cinco trajes adicionales de la Ultimate Edition están disponibles hasta el 5 de agosto de 2027.",

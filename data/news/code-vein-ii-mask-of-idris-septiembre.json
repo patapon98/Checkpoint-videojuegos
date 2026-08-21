@@ -1,0 +1,63 @@
+{
+  "id": "code-vein-ii-mask-of-idris-septiembre",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "llegará el 9 de septiembre",
+      "una campaña posjuego independiente",
+      "la actualización gratuita 2.0"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-20",
+  "addedAt": "2026-08-21T00:06:31Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Mask of Idris"
+    },
+    "copy": {
+      "es": "Mask of Idris ampliará Code Vein II el 9 de septiembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Code Vein II fecha su expansión Mask of Idris para el 9 de septiembre"
+  },
+  "summary": {
+    "es": "Mask of Idris, la primera expansión de Code Vein II, llegará el 9 de septiembre a PS5, Xbox Series X|S y PC. Bandai Namco propone una campaña posjuego independiente ambientada en el Mundo Abandonado."
+  },
+  "why": {
+    "es": "La historia incorpora como compañeros a Liv Voda y una versión alternativa de Lou MagMell, además de nuevas armas, Formae y jefes. El mismo día se publicará la actualización gratuita 2.0, que permitirá explorar el mundo posterior a la campaña junto a los compañeros."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=0dTTXNDR5VE",
+    "label": {
+      "es": "Ver adelanto oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Bandai Namco",
+      "type": {
+        "es": "Anuncio oficial de la fecha y el contenido de la expansión"
+      },
+      "url": "https://www.bandainamcoent.com/news/code-vein-ii-mask-of-idris-dlc-launching-september-9"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Presentación oficial detallada de la campaña y sus sistemas"
+      },
+      "url": "https://blog.playstation.com/2026/08/20/code-vein-ii-mask-of-idris-dlc-launches-september-9/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La campaña transcurre en el Mundo Abandonado, una grieta temporal nacida de líneas históricas alteradas. Para acceder será necesario haber alcanzado el final Luna Fraterna y completar la misión secundaria Petición de Valentin.",
+      "Liv Voda combate con una alabarda y favorece los ataques coordinados que desequilibran al enemigo. Entre las nuevas Formae figuran Grave Knocker, una patada aérea con ondas de choque, y Sword of Karma, una gran espada envuelta en las llamas de Pathos."
+    ]
+  }
+}

@@ -107,6 +107,7 @@
     ]
   },
   "confirmed": [
+    "PlayStation abrió el 19 de agosto las reservas del bundle limitado PS5 Digital Edition – Marvel's Wolverine Battle Yellow, que incluye una consola PS5 Digital Edition, un DualSense a juego y un código digital del juego; estará disponible el 15 de septiembre con un PVP europeo de 649,99 €.",
     "New Game Plus estará disponible desde el lanzamiento y permitirá conservar progresión, equipo y trajes desbloqueados; además incluirá adaptaciones exclusivas para esa modalidad.",
     "Mission Replay permitirá repetir misiones ya completadas para volver a jugarlas o recoger coleccionables pendientes.",
     "Las Nightmare Doors son actividades secundarias narrativas con pruebas centradas en los recuerdos y traumas de Logan.",
@@ -150,6 +151,11 @@
       "type": "Tráiler de historia y nuevos personajes"
     },
     {
+      "label": "PlayStation Blog",
+      "url": "https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/",
+      "type": "Bundle limitado de PS5, reservas, disponibilidad y precio europeo"
+    },
+    {
       "label": "TechRadar",
       "url": "https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation",
       "type": "Declaraciones directas de Insomniac sobre 60 FPS y ray tracing"
@@ -184,6 +190,14 @@
     "heroImageAlt": "Arte promocional oficial de Marvel's Wolverine con Logan mostrando las garras sobre un fondo amarillo"
   },
   "changes": [
+    {
+      "date": "2026-08-21",
+      "title": "Reservas abiertas para el bundle limitado de PS5 de Wolverine",
+      "description": "PlayStation abrió el 19 de agosto las reservas del bundle PS5 Digital Edition – Marvel's Wolverine Battle Yellow, con consola limitada, DualSense a juego y código digital del juego; estará disponible el 15 de septiembre y su PVP europeo es de 649,99 €.",
+      "sourceUrls": [
+        "https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/"
+      ]
+    },
     {
       "date": "2026-08-16",
       "title": "New Game Plus, repetición de misiones y Nightmare Doors confirmados",
@@ -237,7 +251,7 @@
     "marvel-tokon-fighting-souls",
     "god-of-war-laufey"
   ],
-  "updatedAt": "2026-08-16",
+  "updatedAt": "2026-08-21",
   "price": "Desde 79,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",

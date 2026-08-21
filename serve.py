@@ -4,7 +4,8 @@
 En los entornos de preview regenera primero las superficies derivadas de Noticias
 para que una rama bot/news-* pueda contener únicamente los JSON fuente y, aun
 así, la vista previa muestre portada, Noticias, ticker y relacionadas actualizados.
-Los archivos generados solo cambian en el worktree efímero de la preview.
+Los archivos generados solo cambian en el worktree efímero de la preview; la
+publicación de las superficies derivadas en main la realiza GitHub Actions.
 """
 import http.server
 import os

@@ -100,6 +100,7 @@
     ]
   },
   "confirmed": [
+    "Steam indica que el contenido restante del pase de personajes y escenarios del año 1 está previsto para quedar disponible como máximo el 31 de diciembre de 2027; las fechas individuales siguen sin anunciarse.",
     "En PC se requiere una cuenta PlayStation y conexión a Internet para el lobby online, salas privadas, clasificatorias, partidas casuales, perfil de jugador y otras funciones en línea; los modos offline siguen disponibles sin esa conexión.",
     "La versión de PS5 está mejorada para PS5 Pro y utiliza PlayStation Spectral Super Resolution (PSSR) para ofrecer una imagen 4K más nítida mediante escalado por IA.",
     "Dos jugadores, cada uno al mando de un equipo de cuatro personajes.",
@@ -160,6 +161,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-20",
+      "title": "Steam concreta el horizonte del pase y la disponibilidad de los trajes",
+      "description": "Steam fija el 31 de diciembre de 2027 como fecha límite prevista para el contenido restante del pase del año 1 y especifica que los cinco trajes adicionales de la Ultimate Edition estarán disponibles hasta el 5 de agosto de 2027; las fechas individuales del pase, incluida la de Phoenix Cyclops, siguen sin anunciarse.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"
+      ]
+    },
+    {
       "date": "2026-08-18",
       "title": "Steam confirma precios de PC y requisitos para las funciones online",
       "description": "La ficha añade los precios europeos de Steam para las tres ediciones, la mejora Standard–Ultimate y el pase del Año 1; también recoge que las funciones online de PC requieren cuenta PlayStation y conexión a Internet y que el ajuste Ultra ofrece 4K con combates bloqueados a 60 FPS.",
@@ -203,7 +212,7 @@
     "beast-of-reincarnation",
     "control-resonant"
   ],
-  "updatedAt": "2026-08-18",
+  "updatedAt": "2026-08-20",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [
@@ -357,7 +366,7 @@
     ],
     "notes": [
       "Los precios mostrados corresponden a PlayStation Store España para PS5 y a Steam en euros para PC.",
-      "PlayStation indica que los extras asociados a la reserva están disponibles hasta el 5 de agosto de 2027.",
+      "Los cinco trajes adicionales de la Ultimate Edition están disponibles hasta el 5 de agosto de 2027.",
       "La mejora Deluxe – Ultimate figura actualmente como no disponible en PlayStation Store España; Steam la ofrece por 15,00 € en PC."
     ]
   },

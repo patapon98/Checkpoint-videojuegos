@@ -1,0 +1,57 @@
+{
+  "id": "surviving-mars-feeding-the-future-septiembre",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "llegará el 8 de septiembre",
+      "amplían los sistemas de alimentación y producción",
+      "comidas que influyen en el confort y la cordura"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-19",
+  "addedAt": "2026-08-19T17:59:03Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Feeding the Future"
+    },
+    "copy": {
+      "es": "Feeding the Future ampliará Surviving Mars: Relaunched el 8 de septiembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Surviving Mars: Relaunched fija Feeding the Future para el 8 de septiembre"
+  },
+  "summary": {
+    "es": "Feeding the Future, la próxima expansión de Surviving Mars: Relaunched, llegará el 8 de septiembre a PC, PS5 y Xbox Series X|S. Paradox y Haemimont amplían los sistemas de alimentación y producción de la colonia marciana."
+  },
+  "why": {
+    "es": "El paquete añade 13 edificios, ocho manjares, nuevos rasgos y perfiles de comandante, además de leyes y tecnologías. Los colonos podrán recibir comidas que influyen en el confort y la cordura, de modo que la gestión de recursos gana una nueva capa estratégica."
+  },
+  "sources": [
+    {
+      "label": "Paradox Interactive",
+      "type": {
+        "es": "Anuncio oficial de la expansión y su fecha"
+      },
+      "url": "https://www.paradoxinteractive.com/games/surviving-mars-relaunched/add-ons/surviving-mars-relaunched-prime-mission-expansion-pass"
+    },
+    {
+      "label": "Xbox",
+      "type": {
+        "es": "Ficha oficial con plataformas y contenido"
+      },
+      "url": "https://www.xbox.com/en-US/games/store/surviving-mars-relaunched-prime-mission/9N27PP4FTML8"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Feeding the Future obliga a equilibrar calorías y grupos alimentarios, importar especias y levantar una cadena de producción local. Sus trece edificios cubren el cultivo, el procesamiento y la distribución de comida en Marte.",
+      "Las ocho nuevas delicadezas alteran el confort, la moral, la salud y la cordura de los colonos. La expansión incorpora también los rasgos Foodie, Coffee Enthusiast y Celebrity Chef, junto a los perfiles Horticulturalist y Agronomist."
+    ]
+  }
+}

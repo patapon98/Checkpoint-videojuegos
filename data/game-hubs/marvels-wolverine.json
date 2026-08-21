@@ -46,6 +46,9 @@
     ]
   },
   "confirmed": [
+    "La curación está vinculada a la Furia: Logan debe atacar para llenar el medidor y gastar esa energía en regenerar salud, en lugar de esperar una recuperación pasiva.",
+    "Las opciones de accesibilidad permiten reducir o desactivar el desmembramiento y la cantidad de sangre.",
+    "La exploración de los niveles incluye coleccionables y materiales que se utilizan para fabricar trajes.",
     "La historia no será un relato de origen: Logan ya comienza con el adamantium en los huesos, no recuerda cómo ni por qué ocurrió y el juego no explicará directamente ese proceso.",
     "La aventura es mayoritariamente lineal y viaja entre distintas localizaciones, aunque incluye áreas más abiertas en las que Logan puede escalar paredes con las garras, saltar entre tejados y trepar árboles.",
     "PlayStation abrió el 19 de agosto las reservas del bundle limitado PS5 Digital Edition – Marvel's Wolverine Battle Yellow, que incluye una consola PS5 Digital Edition, un DualSense a juego y un código digital del juego; estará disponible el 15 de septiembre con un PVP europeo de 649,99 €.",
@@ -71,6 +74,7 @@
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
+    {"label":"GameMeca","url":"https://www.gamemeca.com/en/view.php?gid=1779438","type":"Entrevista directa con Marcus Smith sobre curación, accesibilidad y exploración"},
     {"label":"GamesRadar+","url":"https://www.gamesradar.com/games/action/marvels-wolverine-wont-show-logans-origins-or-how-he-got-the-adamantium-skeleton-were-not-doing-an-origin-story/","type":"Declaraciones directas de Insomniac sobre el enfoque narrativo y el adamantium"},
     {"label":"GamesRadar+","url":"https://www.gamesradar.com/games/action/insomniac-had-to-ditch-spider-mans-open-world-for-marvels-wolverine-because-logan-is-not-somebody-who-has-a-friendly-neighborhood/","type":"Declaraciones directas de Insomniac sobre estructura y desplazamiento"},
     {"label":"PlayStation España","url":"https://www.playstation.com/es-es/games/marvels-wolverine/","type":"Ficha, historia, jugabilidad e imágenes oficiales"},
@@ -93,6 +97,7 @@
     "heroImageAlt": "Arte promocional oficial de Marvel's Wolverine con Logan mostrando las garras sobre un fondo amarillo"
   },
   "changes": [
+    {"date":"2026-08-21","title":"Insomniac detalla la curación, la accesibilidad y la fabricación de trajes","description":"Marcus Smith explica que atacar llena la Furia y permite gastar ese medidor para regenerar salud; sangre y desmembramientos pueden reducirse o desactivarse, y la exploración ofrece materiales para fabricar trajes.","sourceUrls":["https://www.gamemeca.com/en/view.php?gid=1779438"]},
     {"date":"2026-08-21","title":"Insomniac aclara la estructura y el enfoque narrativo","description":"Insomniac confirma que Marvel's Wolverine no contará el origen del adamantium de Logan: comienza la historia con él ya implantado y sin recordar cómo ocurrió. El estudio describe la aventura como mayoritariamente lineal, con áreas más abiertas donde Logan puede escalar paredes, saltar entre tejados y trepar árboles.","sourceUrls":["https://www.gamesradar.com/games/action/marvels-wolverine-wont-show-logans-origins-or-how-he-got-the-adamantium-skeleton-were-not-doing-an-origin-story/","https://www.gamesradar.com/games/action/insomniac-had-to-ditch-spider-mans-open-world-for-marvels-wolverine-because-logan-is-not-somebody-who-has-a-friendly-neighborhood/"]},
     {"date":"2026-08-21","title":"Nuevo tráiler de la Digital Deluxe Edition","description":"Marvel publica un nuevo tráiler oficial con metraje de los cinco trajes exclusivos y las cinco variantes de garras de la Digital Deluxe Edition; la ficha ya conservaba sus contenidos y precios, por lo que se añade el vídeo sin duplicar detalles comerciales.","sourceUrls":["https://www.youtube.com/watch?v=531jSjSVyDI"]},
     {"date":"2026-08-21","title":"Reservas abiertas para el bundle limitado de PS5 de Wolverine","description":"PlayStation abrió el 19 de agosto las reservas del bundle PS5 Digital Edition – Marvel's Wolverine Battle Yellow, con consola limitada, DualSense a juego y código digital del juego; estará disponible el 15 de septiembre y su PVP europeo es de 649,99 €.","sourceUrls":["https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/"]},

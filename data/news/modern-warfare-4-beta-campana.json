@@ -1,0 +1,64 @@
+{
+  "id": "modern-warfare-4-beta-campana",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "por primera vez una misión completa de campaña",
+      "cinco mapas 6v6 y seis modos",
+      "Warzone Resurgence y el mapa Zodiac"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-21",
+  "publishedAt": "2026-08-21T18:00:00Z",
+  "addedAt": "2026-08-21T18:05:58Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Modern Warfare 4"
+    },
+    "copy": {
+      "es": "Modern Warfare 4 incluye una misión de campaña en su beta"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Modern Warfare 4 estrena una misión de campaña en su beta"
+  },
+  "summary": {
+    "es": "La beta de Call of Duty: Modern Warfare 4 permite jugar por primera vez una misión completa de campaña antes del lanzamiento. Entrenched acompaña el acceso anticipado abierto en PS5, Xbox Series X|S y PC."
+  },
+  "why": {
+    "es": "La prueba incluye además cinco mapas 6v6 y seis modos, junto al escenario dinámico Kill Block y nuevos sistemas de armamento. El segundo fin de semana, abierto desde el 28 de agosto, incorporará Nintendo Switch 2, Warzone Resurgence y el mapa Zodiac."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=ZeisjLTqshg",
+    "label": {
+      "es": "Ver presentación oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Call of Duty",
+      "type": {
+        "es": "Desglose oficial del contenido y las fechas de la beta"
+      },
+      "url": "https://www.callofduty.com/blog/2026/08/call-of-duty-modern-warfare-4-next-early-access-beta-weekend-one"
+    },
+    {
+      "label": "Activision Support",
+      "type": {
+        "es": "Calendario oficial y condiciones de acceso"
+      },
+      "url": "https://support.activision.com/modern-warfare-4/articles/modern-warfare-4-open-beta"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Entrenched plantea un asalto a gran escala junto a infantería y vehículos blindados para impedir la caída de una central nuclear. Es la primera vez que una beta de Call of Duty ofrece una misión completa de la campaña antes del estreno.",
+      "El primer fin de semana permite progresar hasta el nivel 20 y probar 19 armas, cinco mapas 6v6, seis modos y Kill Block, un espacio que reconfigura su distribución cada dos rondas. La beta abierta elevará el límite al nivel 30 y sumará Warzone Resurgence en Zodiac."
+    ]
+  }
+}

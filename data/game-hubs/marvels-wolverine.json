@@ -4,9 +4,7 @@
   "subtitle": "La historia de Logan, su combate, sus personajes y todo lo confirmado antes del lanzamiento.",
   "status": "Reservas abiertas",
   "releaseDate": "2026-09-15",
-  "platforms": [
-    "PS5"
-  ],
+  "platforms": ["PS5"],
   "developer": "Insomniac Games",
   "publisher": "Sony Interactive Entertainment",
   "genre": "Acción y aventura narrativa",
@@ -16,70 +14,23 @@
   "heroImage": "/img/juegos/marvels-wolverine.jpg",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
-  "theme": {
-    "accent": "#f0c84b",
-    "accentSoft": "rgba(240,200,75,.18)"
-  },
+  "theme": {"accent":"#f0c84b","accentSoft":"rgba(240,200,75,.18)"},
   "gallery": [
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-09-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Sabretooth ruge entre las llamas en Marvel's Wolverine"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-07-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Wolverine parte el arma de un Reaver mientras Jean Grey combate al fondo"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-08-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Jean Grey utiliza sus poderes telequinéticos en Marvel's Wolverine"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-10-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Logan extiende sus garras de adamantium en Marvel's Wolverine"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-01-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Wolverine ataca con sus garras a un Reaver"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-02-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Wolverine combate contra un enemigo robótico"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-03-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Primer plano de Wolverine con el traje amarillo y las garras extendidas"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-04-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Primer plano de Logan durante un combate"
-    },
-    {
-      "src": "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-05-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90",
-      "alt": "Logan entra en un bar con sombrero y camisa de cuadros"
-    }
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-09-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Sabretooth ruge entre las llamas en Marvel's Wolverine"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-07-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Wolverine parte el arma de un Reaver mientras Jean Grey combate al fondo"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-08-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Jean Grey utiliza sus poderes telequinéticos en Marvel's Wolverine"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshot-10-en-08june26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Logan extiende sus garras de adamantium en Marvel's Wolverine"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-01-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Wolverine ataca con sus garras a un Reaver"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-02-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Wolverine combate contra un enemigo robótico"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-03-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Primer plano de Wolverine con el traje amarillo y las garras extendidas"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-04-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Primer plano de Logan durante un combate"},
+    {"src":"https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-screenshots-05-en-30sep25?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Logan entra en un bar con sombrero y camisa de cuadros"}
   ],
   "media": [
-    {
-      "type": "youtube",
-      "videoId": "3Z42tBfBLJY",
-      "title": "Marvel's Wolverine, tráiler de la historia",
-      "label": "Tráiler oficial",
-      "publishedAt": "2026-07-23"
-    },
-    {
-      "type": "youtube",
-      "videoId": "OiBo_NgYI5Q",
-      "title": "Marvel's Wolverine, presentación ampliada de la jugabilidad",
-      "label": "Gameplay",
-      "publishedAt": "2026-06-02"
-    },
-    {
-      "type": "youtube",
-      "videoId": "rJrqHyojaa4",
-      "title": "Marvel's Wolverine, tráiler Ain't No Hero",
-      "label": "Tráiler oficial",
-      "publishedAt": "2025-09-24"
-    }
+    {"type":"youtube","videoId":"531jSjSVyDI","title":"Marvel's Wolverine, tráiler de la Digital Deluxe Edition","label":"Tráiler oficial","publishedAt":"2026-08-20"},
+    {"type":"youtube","videoId":"3Z42tBfBLJY","title":"Marvel's Wolverine, tráiler de la historia","label":"Tráiler oficial","publishedAt":"2026-07-23"},
+    {"type":"youtube","videoId":"OiBo_NgYI5Q","title":"Marvel's Wolverine, presentación ampliada de la jugabilidad","label":"Gameplay","publishedAt":"2026-06-02"},
+    {"type":"youtube","videoId":"rJrqHyojaa4","title":"Marvel's Wolverine, tráiler Ain't No Hero","label":"Tráiler oficial","publishedAt":"2025-09-24"}
   ],
   "premise": "Tres años después de abandonar el Equipo X, Logan vuelve a unirse al grupo de mutantes cuando Bolivar Trask y sus Reavers comienzan a capturar a los suyos. Su búsqueda lo lleva a colaborar con Jean Grey y a enfrentarse tanto a viejos enemigos como a un pasado que todavía no comprende.",
   "context": "Insomniac plantea una historia original, independiente y más violenta que sus juegos de Spider-Man. No es un mundo abierto. La aventura recorre Canadá, Tokio y Madripur mientras combina combate directo, acecho y secuencias narrativas centradas en la identidad de Logan.",
@@ -89,21 +40,9 @@
     "title": "Garras, técnicas y adaptaciones",
     "intro": "La propuesta busca que Wolverine ataque con rapidez, aguante el castigo y convierta la presión constante en nuevas oportunidades ofensivas.",
     "items": [
-      {
-        "title": "Técnicas",
-        "value": "Movimientos intercambiables",
-        "description": "Ataques especiales como Tornado Spin y Bull Rush permiten modificar el ritmo del combate y abrir oportunidades de remate."
-      },
-      {
-        "title": "Furia",
-        "value": "Impulso agresivo",
-        "description": "Mantener la iniciativa alimenta la furia de Logan y refuerza un estilo que premia avanzar y encadenar ataques."
-      },
-      {
-        "title": "Acecho y remates",
-        "value": "Varias aproximaciones",
-        "description": "Logan puede seguir rastros, emboscar desde arriba y ejecutar golpes críticos solo o junto a aliados como Jean Grey."
-      }
+      {"title":"Técnicas","value":"Movimientos intercambiables","description":"Ataques especiales como Tornado Spin y Bull Rush permiten modificar el ritmo del combate y abrir oportunidades de remate."},
+      {"title":"Furia","value":"Impulso agresivo","description":"Mantener la iniciativa alimenta la furia de Logan y refuerza un estilo que premia avanzar y encadenar ataques."},
+      {"title":"Acecho y remates","value":"Varias aproximaciones","description":"Logan puede seguir rastros, emboscar desde arriba y ejecutar golpes críticos solo o junto a aliados como Jean Grey."}
     ]
   },
   "confirmed": [
@@ -130,58 +69,18 @@
     "La fecha del embargo de análisis no se ha anunciado."
   ],
   "sources": [
-    {
-      "label": "PlayStation España",
-      "url": "https://www.playstation.com/es-es/games/marvels-wolverine/",
-      "type": "Ficha, historia, jugabilidad e imágenes oficiales"
-    },
-    {
-      "label": "PlayStation Store España",
-      "url": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
-      "type": "Precio, ediciones, reserva y accesibilidad"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/06/02/marvels-wolverine-new-gameplay-story-details-from-state-of-play/",
-      "type": "Combate, personajes y fecha"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/",
-      "type": "Tráiler de historia y nuevos personajes"
-    },
-    {
-      "label": "PlayStation Blog",
-      "url": "https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/",
-      "type": "Bundle limitado de PS5, reservas, disponibilidad y precio europeo"
-    },
-    {
-      "label": "TechRadar",
-      "url": "https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation",
-      "type": "Declaraciones directas de Insomniac sobre 60 FPS y ray tracing"
-    },
-    {
-      "label": "GamesRadar+",
-      "url": "https://www.gamesradar.com/games/action/wolverine-is-our-only-playable-character-insomniac-wont-repeat-spider-mans-worst-sections-in-marvels-wolverine/",
-      "type": "Declaraciones directas de Insomniac sobre el personaje jugable"
-    },
-    {
-      "label": "TechRadar",
-      "url": "https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good",
-      "type": "Declaraciones directas de Insomniac sobre la edición física y el parche del día uno"
-    },
-    {
-      "label": "TechRadar",
-      "url": "https://www.techradar.com/gaming/marvels-wolverine-confirmed-to-have-new-game-plus-at-launch-and-features-a-side-activity-called-nightmare-doors-where-players-confront-logans-nightmares-to-uncover-his-past",
-      "type": "Declaraciones directas de Insomniac sobre New Game Plus, Mission Replay y Nightmare Doors"
-    }
+    {"label":"PlayStation España","url":"https://www.playstation.com/es-es/games/marvels-wolverine/","type":"Ficha, historia, jugabilidad e imágenes oficiales"},
+    {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE","type":"Precio, ediciones, reserva y accesibilidad"},
+    {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/06/02/marvels-wolverine-new-gameplay-story-details-from-state-of-play/","type":"Combate, personajes y fecha"},
+    {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/","type":"Tráiler de historia y nuevos personajes"},
+    {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/","type":"Bundle limitado de PS5, reservas, disponibilidad y precio europeo"},
+    {"label":"TechRadar","url":"https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation","type":"Declaraciones directas de Insomniac sobre 60 FPS y ray tracing"},
+    {"label":"GamesRadar+","url":"https://www.gamesradar.com/games/action/wolverine-is-our-only-playable-character-insomniac-wont-repeat-spider-mans-worst-sections-in-marvels-wolverine/","type":"Declaraciones directas de Insomniac sobre el personaje jugable"},
+    {"label":"TechRadar","url":"https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good","type":"Declaraciones directas de Insomniac sobre la edición física y el parche del día uno"},
+    {"label":"TechRadar","url":"https://www.techradar.com/gaming/marvels-wolverine-confirmed-to-have-new-game-plus-at-launch-and-features-a-side-activity-called-nightmare-doors-where-players-confront-logans-nightmares-to-uncover-his-past","type":"Declaraciones directas de Insomniac sobre New Game Plus, Mission Replay y Nightmare Doors"},
+    {"label":"Marvel Entertainment","url":"https://www.youtube.com/watch?v=531jSjSVyDI","type":"Tráiler oficial de la Digital Deluxe Edition"}
   ],
-  "newsTerms": [
-    "marvel's wolverine",
-    "marvels wolverine",
-    "marvel wolverine",
-    "wolverine"
-  ],
+  "newsTerms": ["marvel's wolverine","marvels wolverine","marvel wolverine","wolverine"],
   "seo": {
     "title": "Marvel's Wolverine: fecha, combate y todo lo confirmado",
     "description": "Ficha actualizada de Marvel's Wolverine con fecha, precio, historia, combate, personajes, tráileres, imágenes oficiales y datos pendientes.",
@@ -190,115 +89,25 @@
     "heroImageAlt": "Arte promocional oficial de Marvel's Wolverine con Logan mostrando las garras sobre un fondo amarillo"
   },
   "changes": [
-    {
-      "date": "2026-08-21",
-      "title": "Reservas abiertas para el bundle limitado de PS5 de Wolverine",
-      "description": "PlayStation abrió el 19 de agosto las reservas del bundle PS5 Digital Edition – Marvel's Wolverine Battle Yellow, con consola limitada, DualSense a juego y código digital del juego; estará disponible el 15 de septiembre y su PVP europeo es de 649,99 €.",
-      "sourceUrls": [
-        "https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/"
-      ]
-    },
-    {
-      "date": "2026-08-16",
-      "title": "New Game Plus, repetición de misiones y Nightmare Doors confirmados",
-      "description": "Insomniac confirma New Game Plus desde el lanzamiento con progresión conservada y adaptaciones exclusivas, Mission Replay para repetir misiones y las Nightmare Doors como actividades secundarias narrativas centradas en el pasado de Logan.",
-      "sourceUrls": [
-        "https://www.techradar.com/gaming/marvels-wolverine-confirmed-to-have-new-game-plus-at-launch-and-features-a-side-activity-called-nightmare-doors-where-players-confront-logans-nightmares-to-uncover-his-past"
-      ]
-    },
-    {
-      "date": "2026-08-15",
-      "title": "Insomniac confirma 60 FPS con ray tracing y nuevos detalles de lanzamiento",
-      "description": "El modo Rendimiento de PS5 funcionará a 60 FPS con ray tracing y será el predeterminado; Logan será el único personaje jugable y la edición física podrá completarse desde el disco, aunque el estudio recomienda instalar el parche del día uno.",
-      "sourceUrls": [
-        "https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation",
-        "https://www.gamesradar.com/games/action/wolverine-is-our-only-playable-character-insomniac-wont-repeat-spider-mans-worst-sections-in-marvels-wolverine/",
-        "https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good"
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "title": "Fecha de lanzamiento corregida al 15 de septiembre",
-      "description": "La ficha vuelve a situar Marvel's Wolverine el 15 de septiembre de 2026, fecha comunicada oficialmente por PlayStation para el lanzamiento.",
-      "sourceUrls": [
-        "https://blog.playstation.com/2026/06/02/marvels-wolverine-new-gameplay-story-details-from-state-of-play/"
-      ]
-    },
-    {
-      "date": "2026-08-09",
-      "title": "PlayStation España fija el lanzamiento el 14 de septiembre",
-      "description": "La ficha oficial y la PlayStation Store españolas sitúan Marvel's Wolverine el 14 de septiembre de 2026; se corrige la fecha de la ficha, que figuraba como 15 de septiembre.",
-      "sourceUrls": [
-        "https://www.playstation.com/es-es/games/marvels-wolverine/",
-        "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "title": "Ediciones y precios añadidos a una sección propia",
-      "description": "La ficha compara la edición estándar, la Digital Deluxe y la mejora independiente con sus contenidos y precios españoles.",
-      "sourceUrls": [
-        "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE"
-      ]
-    },
-    {
-      "date": "2026-07-30",
-      "title": "Ficha publicada con la información oficial más reciente",
-      "description": "Se reunieron la fecha, el precio español, la historia, el combate, los personajes, tres vídeos y nueve capturas oficiales sin marcos añadidos."
-    }
+    {"date":"2026-08-20","title":"Nuevo tráiler de la Digital Deluxe Edition","description":"Marvel publica un nuevo tráiler oficial con metraje de los cinco trajes exclusivos y las cinco variantes de garras de la Digital Deluxe Edition; la ficha ya conservaba sus contenidos y precios, por lo que se añade el vídeo sin duplicar detalles comerciales.","sourceUrls":["https://www.youtube.com/watch?v=531jSjSVyDI"]},
+    {"date":"2026-08-21","title":"Reservas abiertas para el bundle limitado de PS5 de Wolverine","description":"PlayStation abrió el 19 de agosto las reservas del bundle PS5 Digital Edition – Marvel's Wolverine Battle Yellow, con consola limitada, DualSense a juego y código digital del juego; estará disponible el 15 de septiembre y su PVP europeo es de 649,99 €.","sourceUrls":["https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/"]},
+    {"date":"2026-08-16","title":"New Game Plus, repetición de misiones y Nightmare Doors confirmados","description":"Insomniac confirma New Game Plus desde el lanzamiento con progresión conservada y adaptaciones exclusivas, Mission Replay para repetir misiones y las Nightmare Doors como actividades secundarias narrativas centradas en el pasado de Logan.","sourceUrls":["https://www.techradar.com/gaming/marvels-wolverine-confirmed-to-have-new-game-plus-at-launch-and-features-a-side-activity-called-nightmare-doors-where-players-confront-logans-nightmares-to-uncover-his-past"]},
+    {"date":"2026-08-15","title":"Insomniac confirma 60 FPS con ray tracing y nuevos detalles de lanzamiento","description":"El modo Rendimiento de PS5 funcionará a 60 FPS con ray tracing y será el predeterminado; Logan será el único personaje jugable y la edición física podrá completarse desde el disco, aunque el estudio recomienda instalar el parche del día uno.","sourceUrls":["https://www.techradar.com/gaming/marvels-wolverine-performance-mode-will-run-at-60fps-with-ray-tracing-on-ps5-insomniac-confirms-its-the-default-mode-for-the-first-time-for-us-in-one-of-our-games-its-important-for-the-presentation","https://www.gamesradar.com/games/action/wolverine-is-our-only-playable-character-insomniac-wont-repeat-spider-mans-worst-sections-in-marvels-wolverine/","https://www.techradar.com/gaming/insomniac-confirms-marvels-wolverine-is-fully-playable-on-the-disc-out-of-the-box-just-months-before-sony-ends-physical-game-production-for-good"]},
+    {"date":"2026-08-10","title":"Fecha de lanzamiento corregida al 15 de septiembre","description":"La ficha vuelve a situar Marvel's Wolverine el 15 de septiembre de 2026, fecha comunicada oficialmente por PlayStation para el lanzamiento.","sourceUrls":["https://blog.playstation.com/2026/06/02/marvels-wolverine-new-gameplay-story-details-from-state-of-play/"]},
+    {"date":"2026-08-09","title":"PlayStation España fija el lanzamiento el 14 de septiembre","description":"La ficha oficial y la PlayStation Store españolas sitúan Marvel's Wolverine el 14 de septiembre de 2026; se corrige la fecha de la ficha, que figuraba como 15 de septiembre.","sourceUrls":["https://www.playstation.com/es-es/games/marvels-wolverine/","https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE"]},
+    {"date":"2026-08-03","title":"Ediciones y precios añadidos a una sección propia","description":"La ficha compara la edición estándar, la Digital Deluxe y la mejora independiente con sus contenidos y precios españoles.","sourceUrls":["https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE"]},
+    {"date":"2026-07-30","title":"Ficha publicada con la información oficial más reciente","description":"Se reunieron la fecha, el precio español, la historia, el combate, los personajes, tres vídeos y nueve capturas oficiales sin marcos añadidos."}
   ],
-  "relatedGameIds": [
-    "marvel-tokon-fighting-souls",
-    "god-of-war-laufey"
-  ],
-  "updatedAt": "2026-08-21",
+  "relatedGameIds": ["marvel-tokon-fighting-souls","god-of-war-laufey"],
+  "updatedAt": "2026-08-20",
   "price": "Desde 79,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
     "region": "España",
     "items": [
-      {
-        "name": "Edición estándar",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "79,99 €"
-          }
-        ],
-        "includes": [
-          "Marvel: Lobezno"
-        ]
-      },
-      {
-        "name": "Edición Digital Deluxe",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "89,99 €"
-          }
-        ],
-        "includes": [
-          "Juego base",
-          "Cinco trajes exclusivos",
-          "Cinco garras exclusivas",
-          "Cuatro puntos de técnica",
-          "Desbloqueo anticipado del traje clásico marrón y las garras reflectantes",
-          "Cuatro avatares para PlayStation"
-        ]
-      },
-      {
-        "name": "Mejora Digital Deluxe",
-        "kind": "Mejora",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "10,00 €"
-          }
-        ],
-        "includes": [
-          "Todo el contenido adicional de la Digital Deluxe para quienes ya tengan la edición estándar"
-        ]
-      }
+      {"name":"Edición estándar","prices":[{"platform":"PS5","value":"79,99 €"}],"includes":["Marvel: Lobezno"]},
+      {"name":"Edición Digital Deluxe","prices":[{"platform":"PS5","value":"89,99 €"}],"includes":["Juego base","Cinco trajes exclusivos","Cinco garras exclusivas","Cuatro puntos de técnica","Desbloqueo anticipado del traje clásico marrón y las garras reflectantes","Cuatro avatares para PlayStation"]},
+      {"name":"Mejora Digital Deluxe","kind":"Mejora","prices":[{"platform":"PS5","value":"10,00 €"}],"includes":["Todo el contenido adicional de la Digital Deluxe para quienes ya tengan la edición estándar"]}
     ],
     "preorderBonuses": [],
     "notes": []

@@ -4,10 +4,7 @@
   "subtitle": "La caída de Kalona, el origen del escuadrón Bravo y todo lo confirmado sobre la campaña y el multijugador.",
   "status": "Reservas abiertas",
   "releaseDate": "2026-10-06",
-  "platforms": [
-    "Xbox Series X|S",
-    "PC"
-  ],
+  "platforms": ["Xbox Series X|S", "PC"],
   "developer": "The Coalition",
   "publisher": "Xbox Game Studios",
   "genre": "Shooter de cobertura en tercera persona",
@@ -17,87 +14,24 @@
   "heroImage": "/img/juegos/gears-of-war-e-day.jpg",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
-  "theme": {
-    "accent": "#d35b4d",
-    "accentSoft": "rgba(211,91,77,.17)"
-  },
+  "theme": {"accent": "#d35b4d", "accentSoft": "rgba(211,91,77,.17)"},
   "gallery": [
-    {
-      "src": "https://cms-assets.xboxservices.com/assets/09/f3/09f30724-2086-43e7-8e54-6e9f5391e385.jpg?n=8388488888_Highlight-Feature-1084_2_1920x720.jpg",
-      "alt": "Los faros de un vehículo iluminan a un Boomer Locust en Gears of War: E-Day"
-    },
-    {
-      "src": "https://cms-assets.xboxservices.com/assets/ba/bd/babd627d-5349-47e9-bd43-431ecdaa617f.jpg?n=8388488888_Highlight-Feature-1084_3_1920x720.jpg",
-      "alt": "El escuadrón Bravo se enfrenta a la Horda Locust en una calle de Kalona"
-    },
-    {
-      "src": "https://cms-assets.xboxservices.com/assets/b6/5b/b65b071d-99a3-4693-a256-311593d55283.jpg?n=8388488888_Highlight-Feature-1084_4_1920x720.jpg",
-      "alt": "Marcus salta contra un Boomer Locust mientras Dom avanza tras él"
-    },
-    {
-      "src": "https://cms-assets.xboxservices.com/assets/ba/3c/ba3c735c-d0cc-4463-88bb-d7e3d8e07b75.jpg?n=8388488888_Highlight-Feature-1084_5_1920x720.jpg",
-      "alt": "Una tienda de electrónica abandonada durante el Día de la Emergencia"
-    },
-    {
-      "src": "https://cms-assets.xboxservices.com/assets/72/97/7297eebb-7bfd-4868-8afd-50f62bfe3ef2.jpg?n=8388488888_Image-1084_Details-intro_1920x720.jpg",
-      "alt": "Marcus y Dom avanzan entre las ruinas de Kalona en Gears of War: E-Day"
-    }
+    {"src": "https://cms-assets.xboxservices.com/assets/09/f3/09f30724-2086-43e7-8e54-6e9f5391e385.jpg?n=8388488888_Highlight-Feature-1084_2_1920x720.jpg", "alt": "Los faros de un vehículo iluminan a un Boomer Locust en Gears of War: E-Day"},
+    {"src": "https://cms-assets.xboxservices.com/assets/ba/bd/babd627d-5349-47e9-bd43-431ecdaa617f.jpg?n=8388488888_Highlight-Feature-1084_3_1920x720.jpg", "alt": "El escuadrón Bravo se enfrenta a la Horda Locust en una calle de Kalona"},
+    {"src": "https://cms-assets.xboxservices.com/assets/b6/5b/b65b071d-99a3-4693-a256-311593d55283.jpg?n=8388488888_Highlight-Feature-1084_4_1920x720.jpg", "alt": "Marcus salta contra un Boomer Locust mientras Dom avanza tras él"},
+    {"src": "https://cms-assets.xboxservices.com/assets/ba/3c/ba3c735c-d0cc-4463-88bb-d7e3d8e07b75.jpg?n=8388488888_Highlight-Feature-1084_5_1920x720.jpg", "alt": "Una tienda de electrónica abandonada durante el Día de la Emergencia"},
+    {"src": "https://cms-assets.xboxservices.com/assets/72/97/7297eebb-7bfd-4868-8afd-50f62bfe3ef2.jpg?n=8388488888_Image-1084_Details-intro_1920x720.jpg", "alt": "Marcus y Dom avanzan entre las ruinas de Kalona en Gears of War: E-Day"}
   ],
   "media": [
-    {
-      "type": "youtube",
-      "videoId": "cmawSe1PkPg",
-      "title": "Gears of War: E-Day, presentación oficial del multijugador",
-      "label": "Multijugador",
-      "publishedAt": "2026-07-30"
-    },
-    {
-      "type": "youtube",
-      "videoId": "dFk4bL3a8I8",
-      "title": "Gears of War: E-Day, presentación oficial de la jugabilidad",
-      "label": "Gameplay",
-      "publishedAt": "2026-06-07"
-    },
-    {
-      "type": "youtube",
-      "videoId": "8oNgaiTx3js",
-      "title": "Gears of War: E-Day, tecnología de la versión para PC",
-      "label": "Vídeo técnico",
-      "publishedAt": "2026-07-14"
-    },
-    {
-      "type": "youtube",
-      "videoId": "SZVXsNVCGGY",
-      "title": "Gears of War: E-Day, tráiler de presentación",
-      "label": "Tráiler oficial",
-      "publishedAt": "2024-06-09"
-    }
+    {"type": "youtube", "videoId": "cmawSe1PkPg", "title": "Gears of War: E-Day, presentación oficial del multijugador", "label": "Multijugador", "publishedAt": "2026-07-30"},
+    {"type": "youtube", "videoId": "dFk4bL3a8I8", "title": "Gears of War: E-Day, presentación oficial de la jugabilidad", "label": "Gameplay", "publishedAt": "2026-06-07"},
+    {"type": "youtube", "videoId": "8oNgaiTx3js", "title": "Gears of War: E-Day, tecnología de la versión para PC", "label": "Vídeo técnico", "publishedAt": "2026-07-14"},
+    {"type": "youtube", "videoId": "SZVXsNVCGGY", "title": "Gears of War: E-Day, tráiler de presentación", "label": "Tráiler oficial", "publishedAt": "2024-06-09"}
   ],
   "premise": "Catorce años antes del primer Gears of War, Marcus Fenix y Dominic Santiago regresan de las Guerras del Péndulo justo cuando la Horda Locust emerge bajo la ciudad de Kalona. Junto a Mags Carter y Lucas Reyes forman el escuadrón Bravo y atraviesan los tres primeros días de una guerra que nadie comprende todavía.",
   "context": "E-Day no es un spin-off ni Gears 6. Es una nueva entrega principal que vuelve al origen de la saga y reconstruye desde cero personajes, enemigos, armas, animaciones y escenarios en Unreal Engine 5. The Coalition recupera el terror del primer contacto con los Locust sin abandonar el combate de cobertura.",
   "overview": "La saga vuelve a su punto de partida, y lo hace con una campaña que admite cooperativo y un multijugador que crece en número de jugadores y en tamaño de los mapas.",
-  "spotlight": {
-    "kicker": "La nueva escala de Gears",
-    "title": "Campaña cooperativa, movimiento y multijugador",
-    "intro": "La base sigue siendo reconocible, pero el número de jugadores, la movilidad y el tamaño de los espacios cambian la forma de abordar cada enfrentamiento.",
-    "items": [
-      {
-        "title": "Campaña",
-        "value": "Hasta 4 jugadores",
-        "description": "Toda la historia puede jugarse en solitario, con cuatro participantes en línea o con dos jugadores a pantalla dividida en consola."
-      },
-      {
-        "title": "Movimiento",
-        "value": "Saltos y deslizamientos",
-        "description": "Las coberturas admiten más alturas y formas. Saltar, deslizarse y buscar rutas elevadas amplía las opciones para flanquear."
-      },
-      {
-        "title": "Horde Siege",
-        "value": "12 jugadores",
-        "description": "Tres escuadrones defienden Kalona en mapas urbanos más grandes, mientras Versus recupera los enfrentamientos competitivos 4 contra 4."
-      }
-    ]
-  },
+  "spotlight": {"kicker": "La nueva escala de Gears", "title": "Campaña cooperativa, movimiento y multijugador", "intro": "La base sigue siendo reconocible, pero el número de jugadores, la movilidad y el tamaño de los espacios cambian la forma de abordar cada enfrentamiento.", "items": [{"title": "Campaña", "value": "Hasta 4 jugadores", "description": "Toda la historia puede jugarse en solitario, con cuatro participantes en línea o con dos jugadores a pantalla dividida en consola."}, {"title": "Movimiento", "value": "Saltos y deslizamientos", "description": "Las coberturas admiten más alturas y formas. Saltar, deslizarse y buscar rutas elevadas amplía las opciones para flanquear."}, {"title": "Horde Siege", "value": "12 jugadores", "description": "Tres escuadrones defienden Kalona en mapas urbanos más grandes, mientras Versus recupera los enfrentamientos competitivos 4 contra 4."}]},
   "confirmed": [
     "La versión de PC incluye DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible, ultrawide 21:9 y 32:9, benchmark integrado y ray tracing para iluminación, reflejos y sombras.",
     "El segundo fin de semana de la beta abierta finalizó el 17 de agosto de 2026; el juego completo mantiene su lanzamiento el 6 de octubre.",
@@ -111,331 +45,53 @@
     "Sale el primer día en Game Pass Ultimate, Xbox Series X|S, Xbox en PC, Steam y nube. Es Xbox Play Anywhere.",
     "La ficha oficial promete 4K y hasta 60 FPS con una pantalla compatible."
   ],
-  "pending": [
-    "Faltan por detallar los modos de resolución y rendimiento de cada consola.",
-    "No se conoce la lista completa de mapas y variantes multijugador.",
-    "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.",
-    "La fecha del embargo de análisis no se ha anunciado."
-  ],
+  "pending": ["Faltan por detallar los modos de resolución y rendimiento de cada consola.", "No se conoce la lista completa de mapas y variantes multijugador.", "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.", "La fecha del embargo de análisis no se ha anunciado."],
   "sources": [
-    {
-      "label": "Windows Central",
-      "url": "https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter",
-      "type": "Calendario completo de los dos fines de semana de la beta"
-    },
-    {
-      "label": "Xbox España",
-      "url": "https://www.xbox.com/es-es/games/gears-of-war-eday",
-      "type": "Ficha, fecha, plataformas, modos e imágenes oficiales"
-    },
-    {
-      "label": "Microsoft Store España",
-      "url": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ",
-      "type": "Precio, ediciones, reserva y Game Pass"
-    },
-    {
-      "label": "Xbox Store",
-      "url": "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
-      "type": "Calendario y acceso de la beta multijugador"
-    },
-    {
-      "label": "Xbox Wire",
-      "url": "https://news.xbox.com/en-us/2026/06/07/gears-of-war-eday-direct-xbox-games-showcase-2026/",
-      "type": "Campaña, combate, personajes y multijugador"
-    },
-    {
-      "label": "Xbox Wire",
-      "url": "https://news.xbox.com/en-us/2026/07/14/gears-of-war-e-day-pc-nvidia/",
-      "type": "Tecnología y versión para PC"
-    },
-    {
-      "label": "Steam",
-      "url": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
-      "type": "Requisitos y funciones técnicas oficiales de PC"
-    },
-    {
-      "label": "Xbox Game Studios EU Shop",
-      "url": "https://eu.shop.xboxgamestudios.com/products/gears-of-war-e-day-collectors-edition",
-      "type": "Collector's Edition, precio europeo, contenido y disponibilidad"
-    }
+    {"label": "Windows Central", "url": "https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter", "type": "Calendario completo de los dos fines de semana de la beta"},
+    {"label": "Xbox España", "url": "https://www.xbox.com/es-es/games/gears-of-war-eday", "type": "Ficha, fecha, plataformas, modos e imágenes oficiales"},
+    {"label": "Microsoft Store España", "url": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ", "type": "Precio, ediciones, reserva y Game Pass"},
+    {"label": "Xbox Store", "url": "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010", "type": "Calendario y acceso de la beta multijugador"},
+    {"label": "Xbox Wire", "url": "https://news.xbox.com/en-us/2026/06/07/gears-of-war-eday-direct-xbox-games-showcase-2026/", "type": "Campaña, combate, personajes y multijugador"},
+    {"label": "Xbox Wire", "url": "https://news.xbox.com/en-us/2026/07/14/gears-of-war-e-day-pc-nvidia/", "type": "Tecnología y versión para PC"},
+    {"label": "Steam", "url": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/", "type": "Requisitos y funciones técnicas oficiales de PC"},
+    {"label": "Xbox Game Studios EU Shop", "url": "https://eu.shop.xboxgamestudios.com/products/gears-of-war-e-day-collectors-edition", "type": "Collector's Edition, precio europeo, contenido y disponibilidad"}
   ],
-  "newsTerms": [
-    "gears of war: e-day",
-    "gears of war e-day",
-    "gears e-day",
-    "gears eday"
-  ],
-  "seo": {
-    "title": "Gears of War: E-Day: fecha, campaña y todo lo confirmado",
-    "description": "Ficha actualizada de Gears of War: E-Day con fecha, precio, campaña, cooperativo, multijugador, vídeos, imágenes oficiales y datos pendientes.",
-    "ogDescription": "Fecha, campaña, cooperativo y todo lo confirmado sobre Gears of War: E-Day.",
-    "heroTitleHtml": "Gears of War: <em>E-Day</em>",
-    "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
-  },
+  "newsTerms": ["gears of war: e-day", "gears of war e-day", "gears e-day", "gears eday"],
+  "seo": {"title": "Gears of War: E-Day: fecha, campaña y todo lo confirmado", "description": "Ficha actualizada de Gears of War: E-Day con fecha, precio, campaña, cooperativo, multijugador, vídeos, imágenes oficiales y datos pendientes.", "ogDescription": "Fecha, campaña, cooperativo y todo lo confirmado sobre Gears of War: E-Day.", "heroTitleHtml": "Gears of War: <em>E-Day</em>", "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"},
   "changes": [
-    {
-      "date": "2026-08-22",
-      "title": "Añadida la Collector's Edition europea",
-      "description": "La tienda oficial europea de Xbox Game Studios lista una Collector's Edition por 299,99 € con diorama de Marcus y Dom de 15 pulgadas, réplica de las chapas COG de Carlos Santiago, SteelBook, varios objetos físicos y el contenido digital de la Premium Edition. La versión Xbox incluye disco físico y la de Steam un código digital; actualmente figura agotada.",
-      "sourceUrls": [
-        "https://eu.shop.xboxgamestudios.com/products/gears-of-war-e-day-collectors-edition"
-      ]
-    },
-    {
-      "date": "2026-08-22",
-      "title": "Steam vuelve a incluir las GPU Intel Arc en los requisitos de PC",
-      "description": "La tabla actual de Steam vuelve a listar Intel Arc A580 en mínimos e Intel Arc B580 en recomendados. Se sincroniza la ficha y se elimina la nota que presentaba el ray tracing por hardware como requisito mínimo explícito de la tabla.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
-      ]
-    },
-    {
-      "date": "2026-08-20",
-      "title": "Steam vuelve a unificar los requisitos de GPU y ray tracing",
-      "description": "Las fichas inglesa y japonesa de Steam muestran ahora la misma tabla: se eliminan Intel Arc A580 y B580 de las configuraciones publicadas y se exige una GPU compatible con ray tracing por hardware en los requisitos mínimos.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
-      ]
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Steam detalla las funciones gráficas avanzadas de PC",
-      "description": "La ficha incorpora las funciones técnicas publicadas por Steam para PC: DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation, ultrawide 21:9 y 32:9, benchmark integrado y ray tracing para iluminación, reflejos y sombras.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
-      ]
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Finaliza la beta abierta multijugador",
-      "description": "El segundo fin de semana de pruebas terminó el 17 de agosto. La ficha deja constancia de que la beta ya ha concluido y mantiene el lanzamiento del juego completo para el 6 de octubre de 2026.",
-      "sourceUrls": [
-        "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
-        "https://www.xbox.com/en-US/games/gears-of-war-eday/"
-      ]
-    },
-    {
-      "date": "2026-08-16",
-      "title": "La beta abierta continúa del 13 al 17 de agosto",
-      "description": "El segundo fin de semana de la beta multijugador ya es abierto y se celebra del 13 al 17 de agosto de 2026, resolviendo la fecha que seguía pendiente en la ficha.",
-      "sourceUrls": [
-        "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
-        "https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter"
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "title": "Corregidos los requisitos de GPU publicados en Steam",
-      "description": "La ficha restaura Intel Arc A580 en mínimos e Intel Arc B580 en recomendados, que siguen formando parte de las configuraciones publicadas para PC. También se retira la aclaración sobre ray tracing porque no aparece como requisito explícito en la tabla oficial.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "title": "Steam actualiza los requisitos de GPU y confirma Easy Anti-Cheat",
-      "description": "La ficha sincroniza los requisitos oficiales de PC. Steam elimina las GPU Intel que figuraban anteriormente, exige una GPU compatible con ray tracing por hardware y declara el uso de Easy Anti-Cheat.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "title": "Aclarado el acceso anticipado de la beta multijugador",
-      "description": "Xbox confirma que la beta se reparte en dos fines de semana y que el periodo del 6 al 10 de agosto corresponde al acceso anticipado para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
-      "sourceUrls": [
-        "https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010",
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "title": "Requisitos de PC y ediciones oficiales añadidos",
-      "description": "Steam publica las configuraciones mínimas y recomendadas, mientras Xbox detalla la edición estándar, la Premium y su mejora independiente.",
-      "sourceUrls": [
-        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
-        "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day/9N4PT8HGCDHQ/0010"
-      ]
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Fechas de la beta abierta confirmadas",
-      "description": "Xbox concreta que la beta abierta de Gears of War: E-Day se celebrará del 6 al 10 de agosto de 2026 y que las reservas incluyen acceso anticipado.",
-      "sourceUrls": [
-        "https://www.xbox.com/en-US/games/gears-of-war-eday/"
-      ]
-    },
-    {
-      "date": "2026-07-30",
-      "title": "Publicado el tráiler oficial del multijugador",
-      "description": "Xbox y The Coalition mostraron Horde Siege y Versus en una presentación oficial centrada en el multijugador."
-    },
-    {
-      "date": "2026-07-30",
-      "title": "Ficha publicada tras el Xbox Games Showcase",
-      "description": "Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."
-    }
+    {"date": "2026-08-23", "title": "Añadida la Collector's Edition europea", "description": "La tienda oficial europea de Xbox Game Studios lista una Collector's Edition por 299,99 € con diorama de Marcus y Dom de 15 pulgadas, réplica de las chapas COG de Carlos Santiago, SteelBook, varios objetos físicos y el contenido digital de la Premium Edition. La versión Xbox incluye disco físico y la de Steam un código digital; actualmente figura agotada.", "sourceUrls": ["https://eu.shop.xboxgamestudios.com/products/gears-of-war-e-day-collectors-edition"]},
+    {"date": "2026-08-22", "title": "Steam vuelve a incluir las GPU Intel Arc en los requisitos de PC", "description": "La tabla actual de Steam vuelve a listar Intel Arc A580 en mínimos e Intel Arc B580 en recomendados. Se sincroniza la ficha y se elimina la nota que presentaba el ray tracing por hardware como requisito mínimo explícito de la tabla.", "sourceUrls": ["https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"]},
+    {"date": "2026-08-20", "title": "Steam vuelve a unificar los requisitos de GPU y ray tracing", "description": "Las fichas inglesa y japonesa de Steam muestran ahora la misma tabla: se eliminan Intel Arc A580 y B580 de las configuraciones publicadas y se exige una GPU compatible con ray tracing por hardware en los requisitos mínimos.", "sourceUrls": ["https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"]},
+    {"date": "2026-08-18", "title": "Steam detalla las funciones gráficas avanzadas de PC", "description": "La ficha incorpora las funciones técnicas publicadas por Steam para PC: DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation, ultrawide 21:9 y 32:9, benchmark integrado y ray tracing para iluminación, reflejos y sombras.", "sourceUrls": ["https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"]},
+    {"date": "2026-08-18", "title": "Finaliza la beta abierta multijugador", "description": "El segundo fin de semana de pruebas terminó el 17 de agosto. La ficha deja constancia de que la beta ya ha concluido y mantiene el lanzamiento del juego completo para el 6 de octubre de 2026.", "sourceUrls": ["https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010", "https://www.xbox.com/en-US/games/gears-of-war-eday/"]},
+    {"date": "2026-08-16", "title": "La beta abierta continúa del 13 al 17 de agosto", "description": "El segundo fin de semana de la beta multijugador ya es abierto y se celebra del 13 al 17 de agosto de 2026, resolviendo la fecha que seguía pendiente en la ficha.", "sourceUrls": ["https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010", "https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter"]},
+    {"date": "2026-08-10", "title": "Corregidos los requisitos de GPU publicados en Steam", "description": "La ficha restaura Intel Arc A580 en mínimos e Intel Arc B580 en recomendados, que siguen formando parte de las configuraciones publicadas para PC. También se retira la aclaración sobre ray tracing porque no aparece como requisito explícito en la tabla oficial.", "sourceUrls": ["https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"]},
+    {"date": "2026-08-10", "title": "Steam actualiza los requisitos de GPU y confirma Easy Anti-Cheat", "description": "La ficha sincroniza los requisitos oficiales de PC. Steam elimina las GPU Intel que figuraban anteriormente, exige una GPU compatible con ray tracing por hardware y declara el uso de Easy Anti-Cheat.", "sourceUrls": ["https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"]},
+    {"date": "2026-08-07", "title": "Aclarado el acceso anticipado de la beta multijugador", "description": "Xbox confirma que la beta se reparte en dos fines de semana y que el periodo del 6 al 10 de agosto corresponde al acceso anticipado para reservas y miembros de Game Pass Ultimate o PC Game Pass.", "sourceUrls": ["https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010", "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"]},
+    {"date": "2026-08-03", "title": "Requisitos de PC y ediciones oficiales añadidos", "description": "Steam publica las configuraciones mínimas y recomendadas, mientras Xbox detalla la edición estándar, la Premium y su mejora independiente.", "sourceUrls": ["https://store.steampowered.com/app/3010850/Gears_of_War_EDay/", "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day/9N4PT8HGCDHQ/0010"]},
+    {"date": "2026-08-01", "title": "Fechas de la beta abierta confirmadas", "description": "Xbox concreta que la beta abierta de Gears of War: E-Day se celebrará del 6 al 10 de agosto de 2026 y que las reservas incluyen acceso anticipado.", "sourceUrls": ["https://www.xbox.com/en-US/games/gears-of-war-eday/"]},
+    {"date": "2026-07-30", "title": "Publicado el tráiler oficial del multijugador", "description": "Xbox y The Coalition mostraron Horde Siege y Versus en una presentación oficial centrada en el multijugador."},
+    {"date": "2026-07-30", "title": "Ficha publicada tras el Xbox Games Showcase", "description": "Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
-  "relatedGameIds": [
-    "control-resonant",
-    "grand-theft-auto-vi"
-  ],
-  "updatedAt": "2026-08-22",
+  "relatedGameIds": ["control-resonant", "grand-theft-auto-vi"],
+  "updatedAt": "2026-08-23",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
-    "minimum": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 10 de 64 bits, versión 22H 19045.7291"
-      },
-      {
-        "label": "Procesador",
-        "value": "AMD Ryzen 5 2600X, Intel Core i7-6850K o Intel Core i5-10400"
-      },
-      {
-        "label": "Memoria",
-        "value": "12 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600, AMD Radeon RX 9060 o Intel Arc A580"
-      },
-      {
-        "label": "DirectX",
-        "value": "Versión 12"
-      },
-      {
-        "label": "Red",
-        "value": "Conexión a Internet de banda ancha"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "130 GB disponibles en SSD"
-      },
-      {
-        "label": "Tarjeta de sonido",
-        "value": "Dispositivo de audio compatible con Windows"
-      }
-    ],
-    "recommended": [
-      {
-        "label": "Sistema operativo",
-        "value": "Windows 11 de 64 bits, versión 25H2 o posterior"
-      },
-      {
-        "label": "Procesador",
-        "value": "AMD Ryzen 5 5600 o Intel Core i5-11600K"
-      },
-      {
-        "label": "Memoria",
-        "value": "16 GB de RAM"
-      },
-      {
-        "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT, AMD Radeon RX 9060 XT o Intel Arc B580"
-      },
-      {
-        "label": "DirectX",
-        "value": "Versión 12"
-      },
-      {
-        "label": "Red",
-        "value": "Conexión a Internet de banda ancha"
-      },
-      {
-        "label": "Almacenamiento",
-        "value": "130 GB disponibles en SSD"
-      },
-      {
-        "label": "Tarjeta de sonido",
-        "value": "Dispositivo de audio compatible con Windows"
-      }
-    ],
-    "notes": [
-      "Steam exige un procesador y un sistema operativo de 64 bits.",
-      "El uso de SSD es obligatorio en ambas configuraciones.",
-      "Steam declara el uso de Easy Anti-Cheat.",
-      "La versión de PC admite DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible.",
-      "Admite formatos ultrawide 21:9 y 32:9 para juego y menús, además de benchmark integrado.",
-      "Steam confirma iluminación, reflejos y sombras con ray tracing por hardware."
-    ]
+    "minimum": [{"label": "Sistema operativo", "value": "Windows 10 de 64 bits, versión 22H 19045.7291"}, {"label": "Procesador", "value": "AMD Ryzen 5 2600X, Intel Core i7-6850K o Intel Core i5-10400"}, {"label": "Memoria", "value": "12 GB de RAM"}, {"label": "Tarjeta gráfica", "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600, AMD Radeon RX 9060 o Intel Arc A580"}, {"label": "DirectX", "value": "Versión 12"}, {"label": "Red", "value": "Conexión a Internet de banda ancha"}, {"label": "Almacenamiento", "value": "130 GB disponibles en SSD"}, {"label": "Tarjeta de sonido", "value": "Dispositivo de audio compatible con Windows"}],
+    "recommended": [{"label": "Sistema operativo", "value": "Windows 11 de 64 bits, versión 25H2 o posterior"}, {"label": "Procesador", "value": "AMD Ryzen 5 5600 o Intel Core i5-11600K"}, {"label": "Memoria", "value": "16 GB de RAM"}, {"label": "Tarjeta gráfica", "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT, AMD Radeon RX 9060 XT o Intel Arc B580"}, {"label": "DirectX", "value": "Versión 12"}, {"label": "Red", "value": "Conexión a Internet de banda ancha"}, {"label": "Almacenamiento", "value": "130 GB disponibles en SSD"}, {"label": "Tarjeta de sonido", "value": "Dispositivo de audio compatible con Windows"}],
+    "notes": ["Steam exige un procesador y un sistema operativo de 64 bits.", "El uso de SSD es obligatorio en ambas configuraciones.", "Steam declara el uso de Easy Anti-Cheat.", "La versión de PC admite DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible.", "Admite formatos ultrawide 21:9 y 32:9 para juego y menús, además de benchmark integrado.", "Steam confirma iluminación, reflejos y sombras con ray tracing por hardware."]
   },
   "editions": {
     "sourceUrl": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day/9N4PT8HGCDHQ/0010",
     "region": "España",
     "items": [
-      {
-        "name": "Edición estándar",
-        "prices": [
-          {
-            "platform": "Xbox y PC",
-            "value": "69,99 €"
-          }
-        ],
-        "includes": [
-          "Gears of War: E-Day"
-        ]
-      },
-      {
-        "name": "Premium Edition",
-        "prices": [
-          {
-            "platform": "Xbox y PC",
-            "value": "99,99 €"
-          }
-        ],
-        "includes": [
-          "Juego base",
-          "Hasta cinco días de acceso anticipado",
-          "Pack de armas características de Bravo Squad",
-          "Cinco packs de personalización de temporada",
-          "1000 de Hierro"
-        ]
-      },
-      {
-        "name": "Actualización Premium",
-        "kind": "Mejora",
-        "prices": [
-          {
-            "platform": "Xbox y PC",
-            "value": "30,00 €"
-          }
-        ],
-        "includes": [
-          "Contenido de la Premium Edition para quienes ya tengan el juego base o una suscripción compatible de Game Pass"
-        ]
-      },
-      {
-        "name": "Collector's Edition",
-        "prices": [
-          {
-            "platform": "Xbox / Steam",
-            "value": "299,99 €"
-          }
-        ],
-        "includes": [
-          "Diorama coleccionable de Marcus Fenix y Dominic Santiago de 15 pulgadas",
-          "Réplica 1:1 de las chapas COG de Carlos Santiago en aleación de zinc y latón",
-          "Foto del juego",
-          "Litografía",
-          "Nota de agradecimiento de The Coalition",
-          "SteelBook personalizado diseñado por Luke Preece",
-          "Embalaje expositor de coleccionista",
-          "Juego base",
-          "Actualización digital Premium Edition"
-        ]
-      }
+      {"name": "Edición estándar", "prices": [{"platform": "Xbox y PC", "value": "69,99 €"}], "includes": ["Gears of War: E-Day"]},
+      {"name": "Premium Edition", "prices": [{"platform": "Xbox y PC", "value": "99,99 €"}], "includes": ["Juego base", "Hasta cinco días de acceso anticipado", "Pack de armas características de Bravo Squad", "Cinco packs de personalización de temporada", "1000 de Hierro"]},
+      {"name": "Actualización Premium", "kind": "Mejora", "prices": [{"platform": "Xbox y PC", "value": "30,00 €"}], "includes": ["Contenido de la Premium Edition para quienes ya tengan el juego base o una suscripción compatible de Game Pass"]},
+      {"name": "Collector's Edition", "prices": [{"platform": "Xbox / Steam", "value": "299,99 €"}], "includes": ["Diorama coleccionable de Marcus Fenix y Dominic Santiago de 15 pulgadas", "Réplica 1:1 de las chapas COG de Carlos Santiago en aleación de zinc y latón", "Foto del juego", "Litografía", "Nota de agradecimiento de The Coalition", "SteelBook personalizado diseñado por Luke Preece", "Embalaje expositor de coleccionista", "Juego base", "Actualización digital Premium Edition"]}
     ],
-    "preorderBonuses": [
-      "Aspecto de personaje Exfil Dom",
-      "Conjunto de aspectos de armas Exfil",
-      "Acceso anticipado a la beta multijugador"
-    ],
-    "notes": [
-      "La Premium Edition está disponible por separado o como mejora del juego base.",
-      "La Collector's Edition cuesta 299,99 € en la tienda oficial europea de Xbox Game Studios y actualmente figura agotada; se espera su envío en octubre de 2026.",
-      "La Collector's Edition entrega disco físico a los compradores de Xbox y código digital a los compradores de Steam; la tienda europea limita el envío a la UE, Reino Unido, Suiza y Noruega."
-    ]
+    "preorderBonuses": ["Aspecto de personaje Exfil Dom", "Conjunto de aspectos de armas Exfil", "Acceso anticipado a la beta multijugador"],
+    "notes": ["La Premium Edition está disponible por separado o como mejora del juego base.", "La Collector's Edition cuesta 299,99 € en la tienda oficial europea de Xbox Game Studios y actualmente figura agotada; se espera su envío en octubre de 2026.", "La Collector's Edition entrega disco físico a los compradores de Xbox y código digital a los compradores de Steam; la tienda europea limita el envío a la UE, Reino Unido, Suiza y Noruega."]
   }
 }

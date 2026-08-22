@@ -152,6 +152,11 @@
       "label": "Steam",
       "url": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
       "type": "Requisitos y funciones técnicas oficiales de PC"
+    },
+    {
+      "label": "Xbox Game Studios EU Shop",
+      "url": "https://eu.shop.xboxgamestudios.com/products/gears-of-war-e-day-collectors-edition",
+      "type": "Collector's Edition, precio europeo, contenido y disponibilidad"
     }
   ],
   "newsTerms": [
@@ -168,6 +173,14 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "Añadida la Collector's Edition europea",
+      "description": "La tienda oficial europea de Xbox Game Studios lista una Collector's Edition por 299,99 € con diorama de Marcus y Dom de 15 pulgadas, réplica de las chapas COG de Carlos Santiago, SteelBook, varios objetos físicos y el contenido digital de la Premium Edition. La versión Xbox incluye disco físico y la de Steam un código digital; actualmente figura agotada.",
+      "sourceUrls": [
+        "https://eu.shop.xboxgamestudios.com/products/gears-of-war-e-day-collectors-edition"
+      ]
+    },
     {
       "date": "2026-08-22",
       "title": "Steam vuelve a incluir las GPU Intel Arc en los requisitos de PC",
@@ -267,7 +280,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-22",
+  "updatedAt": "2026-08-23",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
@@ -392,6 +405,26 @@
         "includes": [
           "Contenido de la Premium Edition para quienes ya tengan el juego base o una suscripción compatible de Game Pass"
         ]
+      },
+      {
+        "name": "Collector's Edition",
+        "prices": [
+          {
+            "platform": "Xbox / Steam",
+            "value": "299,99 €"
+          }
+        ],
+        "includes": [
+          "Diorama coleccionable de Marcus Fenix y Dominic Santiago de 15 pulgadas",
+          "Réplica 1:1 de las chapas COG de Carlos Santiago en aleación de zinc y latón",
+          "Foto del juego",
+          "Litografía",
+          "Nota de agradecimiento de The Coalition",
+          "SteelBook personalizado diseñado por Luke Preece",
+          "Embalaje expositor de coleccionista",
+          "Juego base",
+          "Actualización digital Premium Edition"
+        ]
       }
     ],
     "preorderBonuses": [
@@ -400,7 +433,9 @@
       "Acceso anticipado a la beta multijugador"
     ],
     "notes": [
-      "La Premium Edition está disponible por separado o como mejora del juego base."
+      "La Premium Edition está disponible por separado o como mejora del juego base.",
+      "La Collector's Edition cuesta 299,99 € en la tienda oficial europea de Xbox Game Studios y actualmente figura agotada; se espera su envío en octubre de 2026.",
+      "La Collector's Edition entrega disco físico a los compradores de Xbox y código digital a los compradores de Steam; la tienda europea limita el envío a la UE, Reino Unido, Suiza y Noruega."
     ]
   }
 }

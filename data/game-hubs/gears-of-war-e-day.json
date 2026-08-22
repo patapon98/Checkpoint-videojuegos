@@ -169,6 +169,14 @@
   },
   "changes": [
     {
+      "date": "2026-08-22",
+      "title": "Steam vuelve a incluir las GPU Intel Arc en los requisitos de PC",
+      "description": "La tabla actual de Steam vuelve a listar Intel Arc A580 en mínimos e Intel Arc B580 en recomendados. Se sincroniza la ficha y se elimina la nota que presentaba el ray tracing por hardware como requisito mínimo explícito de la tabla.",
+      "sourceUrls": [
+        "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/"
+      ]
+    },
+    {
       "date": "2026-08-20",
       "title": "Steam vuelve a unificar los requisitos de GPU y ray tracing",
       "description": "Las fichas inglesa y japonesa de Steam muestran ahora la misma tabla: se eliminan Intel Arc A580 y B580 de las configuraciones publicadas y se exige una GPU compatible con ray tracing por hardware en los requisitos mínimos.",
@@ -259,7 +267,7 @@
     "control-resonant",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-08-22",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",
@@ -278,7 +286,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600 o AMD Radeon RX 9060"
+        "value": "NVIDIA GeForce RTX 5050, NVIDIA GeForce RTX 2060, AMD Radeon RX 6600, AMD Radeon RX 9060 o Intel Arc A580"
       },
       {
         "label": "DirectX",
@@ -312,7 +320,7 @@
       },
       {
         "label": "Tarjeta gráfica",
-        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT o AMD Radeon RX 9060 XT"
+        "value": "NVIDIA GeForce RTX 5060, NVIDIA GeForce RTX 3060 Ti, AMD Radeon RX 6700 XT, AMD Radeon RX 9060 XT o Intel Arc B580"
       },
       {
         "label": "DirectX",
@@ -333,7 +341,6 @@
     ],
     "notes": [
       "Steam exige un procesador y un sistema operativo de 64 bits.",
-      "Steam exige una GPU compatible con ray tracing por hardware en la configuración mínima.",
       "El uso de SSD es obligatorio en ambas configuraciones.",
       "Steam declara el uso de Easy Anti-Cheat.",
       "La versión de PC admite DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible.",

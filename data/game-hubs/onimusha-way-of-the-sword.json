@@ -35,6 +35,7 @@
   "context": "Es una nueva entrega independiente y la primera aventura completamente nueva de Onimusha en más de veinte años; no hace falta conocer los juegos anteriores. Capcom utiliza al actor Toshiro Mifune como modelo facial de Miyamoto Musashi.",
   "overview": "Un regreso a los duelos que definieron la saga, con un combate que castiga la improvisación, una campaña estimada en unas 20 horas y contenido secundario capaz de ampliar la partida hacia las 30.",
   "confirmed": [
+    "La versión de Nintendo Switch 2 funciona a 30 FPS; Capcom indica que las demás versiones alcanzan 60 FPS o más, aunque existen diferencias de calidad de imagen entre plataformas.",
     "Nintendo estima en 34,1 GB el tamaño de la versión de Onimusha: Way of the Sword para Nintendo Switch 2.",
     "Entrega independiente protagonizada por Miyamoto Musashi, con el rostro del actor Toshiro Mifune.",
     "Transcurre en un Kioto del periodo Edo deformado por la Malicia y ocupado por los Genma.",
@@ -53,6 +54,7 @@
     "Plan de contenidos posteriores al lanzamiento."
   ],
   "sources": [
+    {"label":"Famitsu","url":"https://www.famitsu.com/article/202608/83267","type":"Declaraciones directas de Capcom sobre rendimiento de Nintendo Switch 2 y otras plataformas"},
     {"label":"Tráiler oficial The Legend of the Onimusha","url":"https://www.youtube.com/watch?v=h3a-5lvgqUs","type":"Historia de los Oni, los Genma y el papel del Onimusha"},
     {"label":"Nintendo","url":"https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/","type":"Tamaño estimado y especificaciones de Nintendo Switch 2"},
     {"label":"Capcom","url":"https://www.capcom.co.jp/ir/news/html/260702.html","type":"Fecha de lanzamiento actualizada"},
@@ -67,7 +69,7 @@
     {"label":"Capcom Town Store","url":"https://store.captown.capcom.com/en/blogs/news/0000033","type":"Conversión de la bonificación digital de reserva en bonificación de compra anticipada"}
   ],
   "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-22",
   "seo": {
     "title": "Onimusha: Way of the Sword: duración, demo y todo lo confirmado",
     "description": "Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.",
@@ -76,6 +78,7 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
+    {"date":"2026-08-22","title":"Capcom concreta el rendimiento de Nintendo Switch 2","description":"Capcom confirma que Onimusha: Way of the Sword funciona a 30 FPS en Nintendo Switch 2, mientras que las demás versiones alcanzan 60 FPS o más; el estudio reconoce diferencias de calidad de imagen entre plataformas.","sourceUrls":["https://www.famitsu.com/article/202608/83267"]},
     {"date":"2026-08-21","title":"Nuevo tráiler sobre la leyenda del Onimusha","description":"El nuevo tráiler The Legend of the Onimusha repasa el trasfondo de los Oni, los Genma y la figura del Onimusha antes del lanzamiento del 4 de septiembre.","sourceUrls":["https://www.youtube.com/watch?v=h3a-5lvgqUs"]},
     {"date":"2026-08-20","title":"Capcom convierte la bonificación digital de reserva en incentivo de compra anticipada","description":"Tras adelantar el lanzamiento al 4 de septiembre, Capcom transformó la bonificación de reserva de la versión digital en una bonificación de compra anticipada disponible hasta el 26 de septiembre de 2026 a las 08:59 JST.","sourceUrls":["https://store.captown.capcom.com/en/blogs/news/0000033"]},
     {"date":"2026-08-17","title":"Nintendo concreta el tamaño estimado de la versión de Switch 2","description":"Nintendo publica un tamaño estimado de 34,1 GB para Onimusha: Way of the Sword en Nintendo Switch 2; la ficha mantiene pendiente únicamente el tamaño de instalación de PS5 y Xbox Series X|S.","sourceUrls":["https://www.nintendo.com/au/games/nintendo-switch-2/onimusha-way-of-the-sword/"]},

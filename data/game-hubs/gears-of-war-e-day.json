@@ -98,24 +98,49 @@
       }
     ]
   },
-  "confirmed": [
-    "La versión de PC incluye DLSS 4.5, AMD FSR Redstone, Frame Generation y Multi Frame Generation en hardware compatible, ultrawide 21:9 y 32:9, benchmark integrado y ray tracing para iluminación, reflejos y sombras.",
-    "El segundo fin de semana de la beta abierta finalizó el 17 de agosto de 2026; el juego completo mantiene su lanzamiento el 6 de octubre.",
-    "El segundo fin de semana de la beta multijugador es abierto y se celebra del 13 al 17 de agosto de 2026.",
-    "La beta multijugador se desarrolla en dos fines de semana. El acceso anticipado del primero va del 6 al 10 de agosto de 2026 para reservas y miembros de Game Pass Ultimate o PC Game Pass.",
-    "La campaña no abandona en ningún momento el punto de vista del escuadrón Bravo.",
-    "Marcus, Dom, Mags Carter y Lucas Reyes son jugables desde el inicio.",
-    "Los escenarios alternan calles estrechas con distritos abiertos y coberturas que se deterioran.",
-    "Vuelven los agujeros de emergencia, el Gnasher y el Longshot. Debutan Gut Puncher e Incinerator, y se muestra el origen del Lancer con motosierra.",
-    "Horde Siege admite doce jugadores. Versus es competitivo de cuatro contra cuatro.",
-    "Sale el primer día en Game Pass Ultimate, Xbox Series X|S, Xbox en PC, Steam y nube. Es Xbox Play Anywhere.",
-    "La ficha oficial promete 4K y hasta 60 FPS con una pantalla compatible."
+  "knowledgeSections": [
+    {
+      "kicker": "Campaña cooperativa",
+      "title": "El escuadrón Bravo permanece unido durante toda la historia",
+      "summary": "La campaña puede jugarse en solitario, con cuatro participantes en línea o con dos jugadores a pantalla dividida en consola.",
+      "highlights": [
+        "Marcus, Dom, Mags Carter y Lucas Reyes están disponibles desde el inicio.",
+        "La narración no abandona el punto de vista del escuadrón Bravo."
+      ]
+    },
+    {
+      "kicker": "Combate y escenarios",
+      "title": "Más movilidad sobre coberturas que pueden deteriorarse",
+      "summary": "Las calles estrechas se alternan con distritos abiertos, rutas elevadas, saltos y deslizamientos para ampliar las posibilidades de flanqueo.",
+      "highlights": [
+        "Regresan los agujeros de emergencia, el Gnasher y el Longshot.",
+        "Debutan Gut Puncher e Incinerator y se muestra el origen del Lancer con motosierra."
+      ]
+    },
+    {
+      "kicker": "Multijugador",
+      "title": "Horde Siege reúne a doce jugadores",
+      "summary": "Tres escuadrones defienden Kalona en mapas urbanos de mayor escala, mientras Versus recupera los enfrentamientos competitivos de cuatro contra cuatro.",
+      "highlights": [
+        "La beta multijugador se celebró en dos fines de semana y terminó el 17 de agosto.",
+        "La campaña y los modos competitivos comparten la nueva movilidad del juego."
+      ]
+    },
+    {
+      "kicker": "PC y ecosistema Xbox",
+      "title": "Ray tracing, escalado avanzado y Xbox Play Anywhere",
+      "summary": "La versión de PC incluye DLSS 4.5, AMD FSR Redstone, generación de fotogramas, formatos ultrapanorámicos y benchmark integrado.",
+      "highlights": [
+        "Steam exige una GPU compatible con ray tracing por hardware en los requisitos mínimos y ya no lista las Intel Arc A580 y B580.",
+        "Llega el primer día a Game Pass Ultimate y admite Xbox Play Anywhere y juego en la nube.",
+        "Xbox anuncia 4K y hasta 60 FPS con una pantalla compatible."
+      ]
+    }
   ],
-  "pending": [
-    "Faltan por detallar los modos de resolución y rendimiento de cada consola.",
-    "No se conoce la lista completa de mapas y variantes multijugador.",
-    "Xbox no ha concretado el contenido de todos los packs de personalización de temporada.",
-    "La fecha del embargo de análisis no se ha anunciado."
+  "pendingHighlights": [
+    "Modos exactos de resolución y rendimiento de cada consola.",
+    "Lista completa de mapas y variantes multijugador.",
+    "Contenido de todos los packs de personalización de temporada."
   ],
   "sources": [
     {
@@ -173,6 +198,11 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "La información esencial se reorganiza por temas",
+      "description": "La ficha sustituye las listas extensas por cuatro bloques sobre campaña, combate, multijugador y tecnología, conservando la última corrección de requisitos de Steam."
+    },
     {
       "date": "2026-08-23",
       "title": "Steam vuelve a exigir ray tracing por hardware y retira Intel Arc",

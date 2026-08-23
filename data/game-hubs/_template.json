@@ -113,11 +113,43 @@
       "Indicar el mercado al que corresponden los precios."
     ]
   },
-  "confirmed": [
-    "Dato confirmado con una fuente primaria."
+  "knowledgeSections": [
+    {
+      "kicker": "Tema principal",
+      "title": "Conclusión breve y descriptiva",
+      "summary": "Explicación sintética de lo que el lector necesita saber sobre este tema.",
+      "highlights": [
+        "Primer detalle confirmado.",
+        "Segundo detalle confirmado."
+      ]
+    },
+    {
+      "kicker": "Segundo tema",
+      "title": "Otra conclusión relevante",
+      "summary": "Resumen breve del segundo bloque temático.",
+      "highlights": [
+        "Detalle confirmado."
+      ]
+    },
+    {
+      "kicker": "Tercer tema",
+      "title": "Una tercera clave del juego",
+      "summary": "Resumen breve del tercer bloque temático.",
+      "highlights": [
+        "Detalle confirmado."
+      ]
+    },
+    {
+      "kicker": "Cuarto tema",
+      "title": "La última clave imprescindible",
+      "summary": "Resumen breve del cuarto bloque temático.",
+      "highlights": [
+        "Detalle confirmado."
+      ]
+    }
   ],
-  "pending": [
-    "Dato relevante todavía no confirmado."
+  "pendingHighlights": [
+    "Cuestión importante todavía no confirmada."
   ],
   "sources": [
     {

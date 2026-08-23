@@ -221,6 +221,32 @@ function listMarkup(items) {
   return (items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 }
 
+function hasKnowledgeSections(data) {
+  return Array.isArray(data.knowledgeSections) && data.knowledgeSections.length > 0;
+}
+
+function knowledgeMarkup(data) {
+  const cards = data.knowledgeSections.map((section, index) => `
+          <article class="knowledge-card">
+            <div class="knowledge-card-heading">
+              <span class="knowledge-index" aria-hidden="true">${String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <span class="knowledge-kicker">${escapeHtml(section.kicker)}</span>
+                <h3>${escapeHtml(section.title)}</h3>
+              </div>
+            </div>
+            <p class="knowledge-summary">${escapeHtml(section.summary)}</p>
+            <ul class="knowledge-highlights">${listMarkup(section.highlights)}</ul>
+          </article>`).join("");
+  const pending = Array.isArray(data.pendingHighlights) ? data.pendingHighlights : [];
+
+  return `
+        <div class="section-heading"><span class="game-kicker">Información verificada</span><h2>Lo esencial de ${escapeHtml(data.title)}</h2><p>La información clave, agrupada por temas para entender el juego de un vistazo.</p></div>
+        <div class="knowledge-grid" id="knowledgeSections">${cards}
+        </div>
+        ${pending.length ? `<aside class="knowledge-pending" id="pendingHighlights" aria-labelledby="pendingHighlightsTitle"><strong id="pendingHighlightsTitle">Todavía por confirmar</strong><ul>${listMarkup(pending)}</ul></aside>` : ""}`;
+}
+
 function changesMarkup(data) {
   const changes = Array.isArray(data.changes) ? data.changes : [];
   if (!changes.length) {
@@ -312,6 +338,51 @@ function replaceElementInner(html, id, inner) {
     if (depth === 0) return html.slice(0, start) + inner + html.slice(found.index);
   }
   throw new Error(`El contenedor #${id} no está bien cerrado`);
+}
+
+function elementBoundsById(html, id) {
+  const open = new RegExp(`<([a-z][\\w:-]*)\\b[^>]*\\bid="${escapeRegex(id)}"[^>]*>`, "i");
+  const match = open.exec(html);
+  if (!match) throw new Error(`No se encontró el contenedor #${id}`);
+  const tagName = match[1];
+  const tag = new RegExp(`</?${escapeRegex(tagName)}\\b`, "gi");
+  tag.lastIndex = match.index + match[0].length;
+  let depth = 1;
+  let found;
+  while ((found = tag.exec(html))) {
+    depth += found[0].startsWith("</") ? -1 : 1;
+    if (depth === 0) {
+      const closingEnd = html.indexOf(">", found.index);
+      if (closingEnd === -1) break;
+      return { start: match.index, end: closingEnd + 1 };
+    }
+  }
+  throw new Error(`El contenedor #${id} no está bien cerrado`);
+}
+
+function moveElementAfter(html, id, anchorId) {
+  const source = elementBoundsById(html, id);
+  const currentAnchor = elementBoundsById(html, anchorId);
+  if (source.start > currentAnchor.end && /^\s*$/.test(html.slice(currentAnchor.end, source.start))) {
+    return html;
+  }
+  const markup = html.slice(source.start, source.end).trim();
+  const lineStart = html.lastIndexOf("\n", source.start - 1) + 1;
+  const removalStart = /^\s*$/.test(html.slice(lineStart, source.start)) ? lineStart : source.start;
+  const withoutSource = html.slice(0, removalStart) + html.slice(source.end);
+  const anchor = elementBoundsById(withoutSource, anchorId);
+  return withoutSource.slice(0, anchor.end) + `\n\n      ${markup}` + withoutSource.slice(anchor.end);
+}
+
+function orderSectionNavigation(html) {
+  const changesPattern = /<a\s+href="#cambios"[^>]*>[\s\S]*?<\/a>/i;
+  const editionsPattern = /<a\s+href="#ediciones"[^>]*>[\s\S]*?<\/a>/i;
+  const changes = html.match(changesPattern)?.[0];
+  if (!changes || !editionsPattern.test(html)) {
+    throw new Error("La navegación de la ficha debe incluir Ediciones y Cambios");
+  }
+  const withoutChanges = html.replace(changesPattern, "");
+  return withoutChanges.replace(editionsPattern, (editions) => `${editions}${changes}`);
 }
 
 const shortDate = (value) =>
@@ -446,8 +517,14 @@ function updateStaticHtml(html, data, news) {
   html = replaceElementInner(html, "gameFacts", factsMarkup(data));
   html = replaceElementInner(html, "gameContext", escapeHtml(data.context));
   html = replaceElementInner(html, "claves", spotlightMarkup(data));
-  html = replaceElementInner(html, "confirmedList", listMarkup(data.confirmed));
-  html = replaceElementInner(html, "pendingList", listMarkup(data.pending));
+  if (hasKnowledgeSections(data)) {
+    html = replaceElementInner(html, "confirmado", knowledgeMarkup(data));
+    html = html.replace(/(<a\s+href="#confirmado">)[^<]*(<\/a>)/i, "$1Lo esencial$2");
+  } else {
+    html = replaceElementInner(html, "confirmedList", listMarkup(data.confirmed));
+    html = replaceElementInner(html, "pendingList", listMarkup(data.pending));
+    html = html.replace(/(<a\s+href="#confirmado">)[^<]*(<\/a>)/i, "$1Confirmado$2");
+  }
   html = replaceElementInner(html, "gameChangeList", changesMarkup(data));
   html = replaceElementInner(html, "gameMedia", mediaMarkup(data, news));
   html = replaceElementInner(html, "gameGallery", galleryMarkup(data));
@@ -455,6 +532,8 @@ function updateStaticHtml(html, data, news) {
   html = replaceElementInner(html, "sourceList", sourcesMarkup(data));
   html = replaceElementInner(html, "quickFacts", quickFactsMarkup(data));
   html = replaceClassElementAttribute(html, "a", "game-source-link", "href", data.officialUrl);
+  html = moveElementAfter(html, "cambios", "ediciones");
+  html = orderSectionNavigation(html);
   return html;
 }
 

@@ -33,12 +33,14 @@ El JSON es la referencia editorial. El HTML inicial debe reflejarlo literalmente
 
 - Contrasta fecha, plataformas, desarrolladora, editora, reservas, tráileres y características con fuentes primarias: web oficial, editora, desarrolladora, tienda oficial o comunicado corporativo.
 - Utiliza medios secundarios únicamente para contexto o para localizar una fuente primaria. No conviertas rumores en datos confirmados.
-- Separa con claridad `confirmed` y `pending`.
+- Organiza la información extensa mediante `knowledgeSections` y `pendingHighlights`. Todas las fichas publicadas y cualquier ficha nueva deben tener entre cuatro y seis bloques temáticos, con entre una y tres ideas por bloque y un máximo de tres incógnitas relevantes.
+- No uses los campos antiguos `confirmed` y `pending`. Tampoco uses «Por confirmar» para datos menores como el tamaño de instalación, el embargo de análisis o una enumeración completa de personajes.
 - `premise` debe explicar el juego; `context` debe explicar por qué importa. Ambos textos deben ser originales de Final Secreto.
-- No repitas en `confirmed` la fecha, plataformas, desarrolladora o editora cuando esos datos ya aparecen en el resumen y los datos rápidos. Reserva esa lista para características, sistemas y contenido que aporten información nueva.
+- No repitas en `knowledgeSections` la fecha, plataformas, desarrolladora o editora cuando esos datos ya aparecen en el resumen y los datos rápidos. Reserva los bloques para características, sistemas y contenido que aporten información nueva.
 - Utiliza `spotlight` para el tema que más condiciona la compra o mejor define al juego, como precio y ediciones, estructura jugable, plantel o modos. Mantén el mismo bloque visual entre fichas aunque cambie su enfoque editorial.
 - `updatedAt` solo cambia cuando la ficha recibe una modificación editorial real.
 - Cada modificación real añade una entrada a `changes` con fecha, título breve y descripción concreta. El historial registra cambios de la ficha, no inventa acontecimientos del juego.
+- En todas las fichas, la sección «Historial de cambios» aparece inmediatamente después de «Ediciones». La navegación interna debe reflejar el mismo orden.
 - `newsTerms` debe contener únicamente términos suficientemente específicos para evitar noticias no relacionadas.
 
 ## HTML inicial y SEO
@@ -47,7 +49,7 @@ El contenido principal no puede depender exclusivamente de JavaScript. Al abrir 
 
 - premisa y contexto;
 - fecha, género, plataformas y desarrolladora;
-- listas de confirmado y pendiente;
+- bloques temáticos de información verificada y, cuando proceda, una franja breve de cuestiones por confirmar;
 - historial de cambios;
 - fuentes visibles;
 - datos rápidos laterales;

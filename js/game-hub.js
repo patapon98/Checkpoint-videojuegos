@@ -69,13 +69,31 @@
     ).join('');
   }
 
-  function renderLists(data) {
-    document.querySelector('#confirmedList').innerHTML = data.confirmed.map((item) =>
-      `<li>${escapeHtml(item)}</li>`
-    ).join('');
-    document.querySelector('#pendingList').innerHTML = data.pending.map((item) =>
-      `<li>${escapeHtml(item)}</li>`
-    ).join('');
+  function renderKnowledge(data) {
+    const section = document.querySelector('#confirmado');
+    const knowledgeSections = Array.isArray(data.knowledgeSections) ? data.knowledgeSections : [];
+    if (!section || !knowledgeSections.length) return;
+
+    const cards = knowledgeSections.map((item, index) => `
+      <article class="knowledge-card">
+        <div class="knowledge-card-heading">
+          <span class="knowledge-index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span>
+          <div>
+            <span class="knowledge-kicker">${escapeHtml(item.kicker)}</span>
+            <h3>${escapeHtml(item.title)}</h3>
+          </div>
+        </div>
+        <p class="knowledge-summary">${escapeHtml(item.summary)}</p>
+        <ul class="knowledge-highlights">${(item.highlights || []).map((highlight) =>
+          `<li>${escapeHtml(highlight)}</li>`
+        ).join('')}</ul>
+      </article>`).join('');
+    const pending = Array.isArray(data.pendingHighlights) ? data.pendingHighlights : [];
+
+    section.innerHTML = `
+      <div class="section-heading"><span class="game-kicker">Información verificada</span><h2>Lo esencial de ${escapeHtml(data.title)}</h2><p>La información clave, agrupada por temas para entender el juego de un vistazo.</p></div>
+      <div class="knowledge-grid" id="knowledgeSections">${cards}</div>
+      ${pending.length ? `<aside class="knowledge-pending" id="pendingHighlights" aria-labelledby="pendingHighlightsTitle"><strong id="pendingHighlightsTitle">Todavía por confirmar</strong><ul>${pending.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></aside>` : ''}`;
   }
 
   function renderChanges(data) {
@@ -615,7 +633,7 @@
       }
 
       renderFacts(data);
-      renderLists(data);
+      renderKnowledge(data);
       renderChanges(data);
       renderMedia(data, news);
       renderGallery(data);
@@ -623,10 +641,8 @@
       renderNews(news);
       startCountdown(data.releaseDate);
     })
-    .catch(() => {
-      document.querySelector('#gamePremise').textContent = 'No ha sido posible cargar la información actualizada. Consulta de nuevo en unos minutos.';
-      renderNews([]);
-      renderMedia({ title: body.dataset.gameTitle || 'el juego', media: [] }, []);
+    .catch((error) => {
+      console.warn('La ficha conserva el contenido prerenderizado porque no pudo actualizarse en el navegador.', error);
       startCountdown(body.dataset.releaseDate || '2027-02-16');
     })
     .finally(activateReveal);

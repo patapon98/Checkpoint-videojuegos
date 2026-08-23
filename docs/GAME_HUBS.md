@@ -33,8 +33,8 @@ El JSON es la referencia editorial. El HTML inicial debe reflejarlo literalmente
 
 - Contrasta fecha, plataformas, desarrolladora, editora, reservas, tráileres y características con fuentes primarias: web oficial, editora, desarrolladora, tienda oficial o comunicado corporativo.
 - Utiliza medios secundarios únicamente para contexto o para localizar una fuente primaria. No conviertas rumores en datos confirmados.
-- Organiza la información extensa mediante `knowledgeSections` y `pendingHighlights`. Cada ficha migrada debe tener entre cuatro y seis bloques temáticos, con entre una y tres ideas por bloque y un máximo de tres incógnitas relevantes.
-- Las fichas todavía no migradas pueden conservar temporalmente `confirmed` y `pending`, pero cualquier reestructuración editorial debe adoptar el nuevo sistema. No uses «Por confirmar» para datos menores como el tamaño de instalación, el embargo de análisis o una enumeración completa de personajes.
+- Organiza la información extensa mediante `knowledgeSections` y `pendingHighlights`. Todas las fichas publicadas y cualquier ficha nueva deben tener entre cuatro y seis bloques temáticos, con entre una y tres ideas por bloque y un máximo de tres incógnitas relevantes.
+- No uses los campos antiguos `confirmed` y `pending`. Tampoco uses «Por confirmar» para datos menores como el tamaño de instalación, el embargo de análisis o una enumeración completa de personajes.
 - `premise` debe explicar el juego; `context` debe explicar por qué importa. Ambos textos deben ser originales de Final Secreto.
 - No repitas en `knowledgeSections` la fecha, plataformas, desarrolladora o editora cuando esos datos ya aparecen en el resumen y los datos rápidos. Reserva los bloques para características, sistemas y contenido que aporten información nueva.
 - Utiliza `spotlight` para el tema que más condiciona la compra o mejor define al juego, como precio y ediciones, estructura jugable, plantel o modos. Mantén el mismo bloque visual entre fichas aunque cambie su enfoque editorial.

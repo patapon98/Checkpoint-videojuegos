@@ -67,24 +67,20 @@ for (const file of jsonFiles) {
 
   ['id', 'title', 'subtitle', 'status', 'releaseDate', 'developer', 'publisher', 'genre', 'officialUrl', 'storeUrl', 'heroImage', 'premise', 'overview', 'context', 'updatedAt'].forEach((key) => requireString(data, key, label));
   ['platforms', 'gallery', 'media', 'sources', 'newsTerms', 'changes', 'relatedGameIds'].forEach((key) => requireArray(data, key, label));
-  const hasKnowledgeSections = Array.isArray(data.knowledgeSections) && data.knowledgeSections.length > 0;
-  if (hasKnowledgeSections) {
-    expect(data.knowledgeSections.length >= 4 && data.knowledgeSections.length <= 6, `${label}: knowledgeSections debe contener entre cuatro y seis bloques`);
-    for (const [position, section] of data.knowledgeSections.entries()) {
-      ['kicker', 'title', 'summary'].forEach((key) => requireString(section || {}, key, `${label} > knowledgeSections[${position}]`));
-      expect(Array.isArray(section?.highlights) && section.highlights.length >= 1 && section.highlights.length <= 3, `${label}: knowledgeSections[${position}].highlights debe contener entre uno y tres elementos`);
-      for (const [highlightPosition, highlight] of (section?.highlights || []).entries()) {
-        expect(typeof highlight === 'string' && highlight.trim().length > 0, `${label}: knowledgeSections[${position}].highlights[${highlightPosition}] debe ser texto`);
-      }
+  const knowledgeSections = Array.isArray(data.knowledgeSections) ? data.knowledgeSections : [];
+  expect(knowledgeSections.length >= 4 && knowledgeSections.length <= 6, `${label}: knowledgeSections debe contener entre cuatro y seis bloques`);
+  for (const [position, section] of knowledgeSections.entries()) {
+    ['kicker', 'title', 'summary'].forEach((key) => requireString(section || {}, key, `${label} > knowledgeSections[${position}]`));
+    expect(Array.isArray(section?.highlights) && section.highlights.length >= 1 && section.highlights.length <= 3, `${label}: knowledgeSections[${position}].highlights debe contener entre uno y tres elementos`);
+    for (const [highlightPosition, highlight] of (section?.highlights || []).entries()) {
+      expect(typeof highlight === 'string' && highlight.trim().length > 0, `${label}: knowledgeSections[${position}].highlights[${highlightPosition}] debe ser texto`);
     }
-    expect(Array.isArray(data.pendingHighlights), `${label}: pendingHighlights debe ser un array`);
-    expect((data.pendingHighlights || []).length <= 3, `${label}: pendingHighlights no puede superar tres elementos`);
-    for (const [position, item] of (data.pendingHighlights || []).entries()) {
-      expect(typeof item === 'string' && item.trim().length > 0, `${label}: pendingHighlights[${position}] debe ser texto`);
-    }
-  } else {
-    requireArray(data, 'confirmed', label);
-    requireArray(data, 'pending', label);
+  }
+  expect(Array.isArray(data.pendingHighlights), `${label}: pendingHighlights debe ser un array`);
+  const pendingHighlights = Array.isArray(data.pendingHighlights) ? data.pendingHighlights : [];
+  expect(pendingHighlights.length <= 3, `${label}: pendingHighlights no puede superar tres elementos`);
+  for (const [position, item] of pendingHighlights.entries()) {
+    expect(typeof item === 'string' && item.trim().length > 0, `${label}: pendingHighlights[${position}] debe ser texto`);
   }
   if (Object.hasOwn(data, 'price')) requireString(data, 'price', label);
 
@@ -154,7 +150,8 @@ for (const [id, data] of games) {
   const html = readFileSync(htmlPath, 'utf8');
   const canonical = `https://finalsecreto.com/juegos/${id}`;
   const platforms = data.platforms.join(' · ');
-  const hasKnowledgeSections = Array.isArray(data.knowledgeSections) && data.knowledgeSections.length > 0;
+  const knowledgeSections = Array.isArray(data.knowledgeSections) ? data.knowledgeSections : [];
+  const pendingHighlights = Array.isArray(data.pendingHighlights) ? data.pendingHighlights : [];
   expect(html.includes(`data-game-id="${id}"`), `${label}: data-game-id no coincide`);
   expect(html.includes(`data-game-title="${escapeHtml(data.title)}"`), `${label}: data-game-title no coincide`);
   expect(html.includes(`data-release-date="${data.releaseDate}"`), `${label}: data-release-date no coincide`);
@@ -178,10 +175,8 @@ for (const [id, data] of games) {
     data.spotlight.intro,
     ...(data.price ? [data.price] : []),
     ...data.spotlight.items.flatMap((item) => [item.title, item.value, item.description]),
-    ...(hasKnowledgeSections
-      ? data.knowledgeSections.flatMap((section) => [section.kicker, section.title, section.summary, ...section.highlights])
-      : [...data.confirmed, ...data.pending]),
-    ...(hasKnowledgeSections ? data.pendingHighlights : []),
+    ...knowledgeSections.flatMap((section) => [section.kicker, section.title, section.summary, ...(section.highlights || [])]),
+    ...pendingHighlights,
     ...data.sources.flatMap((source) => [source.label, source.url, source.type]),
     ...data.changes.flatMap((change) => [change.title, change.description])
   ];
@@ -190,9 +185,7 @@ for (const [id, data] of games) {
   }
 
   expect(html.includes(`Fecha, plataformas y datos de ${escapeText(data.title)}`), `${label}: falta el encabezado SEO del resumen`);
-  const knowledgeHeading = hasKnowledgeSections
-    ? `Lo esencial de ${escapeHtml(data.title)}`
-    : `Qué sabemos de ${escapeText(data.title)}`;
+  const knowledgeHeading = `Lo esencial de ${escapeHtml(data.title)}`;
   expect(html.includes(knowledgeHeading), `${label}: falta el encabezado SEO de información verificada`);
   expect(html.includes(`Últimos cambios en ${escapeText(data.title)}`), `${label}: falta el historial de cambios`);
   expect(!/<(?:p|div|ul|dl)[^>]+id="(?:gamePremise|gameFacts|gameContext|confirmedList|pendingList|knowledgeSections|sourceList|quickFacts)"[^>]*>\s*<\/(?:p|div|ul|dl)>/.test(html), `${label}: hay contenedores SEO críticos vacíos`);

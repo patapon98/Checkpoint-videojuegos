@@ -34,24 +34,57 @@
   "premise": "Miyamoto Musashi llega al Kioto del periodo Edo para demostrar su dominio de la espada, pero acaba ligado al guantelete Oni y obligado a enfrentarse a los Genma que han invadido una capital deformada por el miasma.",
   "context": "Es una nueva entrega independiente y la primera aventura completamente nueva de Onimusha en más de veinte años; no hace falta conocer los juegos anteriores. Capcom utiliza al actor Toshiro Mifune como modelo facial de Miyamoto Musashi.",
   "overview": "Un regreso a los duelos que definieron la saga, con un combate que castiga la improvisación, una campaña estimada en unas 20 horas y contenido secundario capaz de ampliar la partida hacia las 30.",
-  "confirmed": [
-    "La versión de Nintendo Switch 2 funciona a 30 FPS; Capcom indica que las demás versiones alcanzan 60 FPS o más, aunque existen diferencias de calidad de imagen entre plataformas.",
-    "Nintendo estima en 34,1 GB el tamaño de la versión de Onimusha: Way of the Sword para Nintendo Switch 2.",
-    "Entrega independiente protagonizada por Miyamoto Musashi, con el rostro del actor Toshiro Mifune.",
-    "Transcurre en un Kioto del periodo Edo deformado por la Malicia y ocupado por los Genma.",
-    "El combate gira sobre paradas, desvíos, ataques Issen, absorción de almas y armamento Oni.",
-    "Fuerza Oni y Agilidad Oni amplían el repertorio, y el Combo reflejo premia responder a tiempo.",
-    "La historia principal debería rondar las 20 horas en una primera partida; completar misiones secundarias y explorar más contenido puede elevar la duración hacia las 30 horas.",
-    "La demo dura unos 30 minutos, con Kiyomizu-dera y el duelo contra Sasaki Ganryu. Su progreso no se transfiere.",
-    "Conservar los datos guardados de la demo desbloquea el amuleto Kubi Akari."
+  "knowledgeSections": [
+    {
+      "kicker": "Historia y escenario",
+      "title": "Miyamoto Musashi combate en un Kioto deformado",
+      "summary": "La entrega es independiente y presenta al espadachín con el rostro del actor Toshiro Mifune.",
+      "highlights": [
+        "La historia transcurre durante el periodo Edo.",
+        "La Malicia ha transformado Kioto y los Genma ocupan sus escenarios."
+      ]
+    },
+    {
+      "kicker": "Combate",
+      "title": "Paradas, desvíos e Issen recompensan la precisión",
+      "summary": "El sistema combina defensa medida, contraataques fulminantes, absorción de almas y armamento Oni.",
+      "highlights": [
+        "Fuerza Oni y Agilidad Oni amplían el repertorio de Musashi.",
+        "El Combo reflejo premia responder en el momento adecuado."
+      ]
+    },
+    {
+      "kicker": "Duración y contenido",
+      "title": "Unas 20 horas para la historia principal",
+      "summary": "Capcom estima que una primera partida centrada en avanzar hasta el final rondará las veinte horas.",
+      "highlights": [
+        "Las misiones secundarias y la exploración pueden ampliar el recorrido hasta unas 30 horas.",
+        "La estructura mantiene escenarios definidos en lugar de plantear un mundo abierto."
+      ]
+    },
+    {
+      "kicker": "Demo",
+      "title": "Media hora de combate con una recompensa para el juego completo",
+      "summary": "La prueba recorre Kiyomizu-dera e incluye el duelo contra Sasaki Ganryu, aunque su progreso no se transfiere.",
+      "highlights": [
+        "Conservar los datos guardados desbloquea el amuleto Kubi Akari.",
+        "La demo permite probar paradas, Issen y absorción de almas."
+      ]
+    },
+    {
+      "kicker": "Rendimiento",
+      "title": "30 FPS en Switch 2 y 60 FPS o más en el resto",
+      "summary": "Capcom confirma diferencias de fluidez y calidad de imagen entre plataformas.",
+      "highlights": [
+        "La versión de Nintendo Switch 2 ocupa aproximadamente 34,1 GB.",
+        "Las resoluciones y modos gráficos concretos todavía no se han detallado por completo."
+      ]
+    }
   ],
-  "pending": [
-    "Modos de resolución y rendimiento definitivos en consolas.",
-    "Tamaño de instalación en PS5 y Xbox Series X|S.",
-    "Opciones de accesibilidad completas.",
-    "Contenido exacto de las ediciones físicas.",
-    "Fecha del embargo de análisis.",
-    "Plan de contenidos posteriores al lanzamiento."
+  "pendingHighlights": [
+    "Resoluciones y modos gráficos completos de cada consola.",
+    "Conjunto definitivo de opciones de accesibilidad.",
+    "Plan de contenido poslanzamiento."
   ],
   "sources": [
     {"label":"Famitsu","url":"https://www.famitsu.com/article/202608/83267","type":"Declaraciones directas de Capcom sobre rendimiento de Nintendo Switch 2 y otras plataformas"},
@@ -78,6 +111,11 @@
     "heroImageAlt": "Arte promocional oficial de Onimusha: Way of the Sword"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "La información esencial se reorganiza por temas",
+      "description": "La ficha sustituye las listas extensas por cinco bloques sobre historia, combate, duración, demo y rendimiento, y limita las incógnitas a tres cuestiones relevantes."
+    },
     {"date":"2026-08-23","title":"Capcom concreta el rendimiento de Nintendo Switch 2","description":"Capcom confirma que Onimusha: Way of the Sword funciona a 30 FPS en Nintendo Switch 2, mientras que las demás versiones alcanzan 60 FPS o más; el estudio reconoce diferencias de calidad de imagen entre plataformas.","sourceUrls":["https://www.famitsu.com/article/202608/83267"]},
     {"date":"2026-08-21","title":"Nuevo tráiler sobre la leyenda del Onimusha","description":"El nuevo tráiler The Legend of the Onimusha repasa el trasfondo de los Oni, los Genma y la figura del Onimusha antes del lanzamiento del 4 de septiembre.","sourceUrls":["https://www.youtube.com/watch?v=h3a-5lvgqUs"]},
     {"date":"2026-08-20","title":"Capcom convierte la bonificación digital de reserva en incentivo de compra anticipada","description":"Tras adelantar el lanzamiento al 4 de septiembre, Capcom transformó la bonificación de reserva de la versión digital en una bonificación de compra anticipada disponible hasta el 26 de septiembre de 2026 a las 08:59 JST.","sourceUrls":["https://store.captown.capcom.com/en/blogs/news/0000033"]},

@@ -34,31 +34,57 @@
   "premise": "Tras años de cautiverio en la Agencia Federal de Control, Dylan Faden es enviado a una Manhattan deformada por fuerzas paranormales. Mientras intenta contener una nueva resonancia cósmica, deberá dominar sus poderes y encontrar a su hermana desaparecida, Jesse.",
   "context": "Remedy transforma la secuela en un RPG de acción centrado en el cuerpo a cuerpo. No es un mundo abierto: Manhattan se divide en grandes zonas diferenciadas con actividades secundarias, encuentros ocultos y libertad para explorar.",
   "overview": "Una secuela que no repite la fórmula del original. Cambia de protagonista, de estructura y de sistema de combate, y se acerca más al rol de lo que lo hacía Control.",
-  "confirmed": [
-    "La progresión general sube el nivel de cada zona de Manhattan en lugar de un nivel tradicional de Dylan: completar actividades otorga experiencia a la zona y cada subida concede también un punto de Talento al protagonista.",
-    "Subir el nivel de una zona desbloquea ventajas locales como más objetos de curación, cofres revelados en el mapa y actividades secundarias mediante máquinas recreativas.",
-    "Derrotar a un Resonante altera la zona: aparecen más enemigos y aumenta el nivel de muchas criaturas, por lo que Remedy plantea como decisión estratégica cuándo enfrentarse a estos jefes.",
-    "Remedy confirma que CONTROL Resonant ha alcanzado estado gold; el lanzamiento digital se mantiene el 24 de septiembre de 2026.",
-    "Las ediciones físicas para PS5 y Xbox Series X|S se lanzarán el 15 de octubre de 2026, después de la versión digital.",
-    "New Game+ conserva mejoras del Aberrante, habilidades sobrenaturales desbloqueadas, Talentos, Artefactos y mejoras de salud y recursos de combate de la partida anterior.",
-    "En New Game+ se desbloquean nodos de Talento adicionales, la posibilidad de equipar varias habilidades del mismo jefe Resonante y una cuarta ranura de Artefacto.",
-    "New Game+ altera la dificultad y la rejugabilidad: los enemigos son más peligrosos, cambian encuentros y comportamientos de algunos Resonantes, y pueden descubrirse World Quests, encargos, coleccionables, historias secundarias y resultados de diálogo diferentes.",
-    "PlayStation detalla nueve funciones de accesibilidad: controles de volumen y audio mono; subtítulos básicos y grandes; reasignación avanzada del mando, sensibilidad e inversión de joystick; dificultad ajustable con asistencias y pausa durante juego o cinemáticas offline.",
-    "Emily Pope regresa como directora interina de la Agencia Federal de Control; las zonas de Manhattan incluyen misiones secundarias con Objetos Alterados, combates contra jefes y puzles.",
-    "Remedy afirma que CONTROL Resonant tiene las opciones de personalización del protagonista más profundas de cualquier juego que haya desarrollado hasta la fecha.",
-    "El lanzamiento incluye voces completas en español de España, japonés y chino simplificado, además de inglés, francés, alemán, italiano y portugués de Brasil.",
-    "Dylan Faden es el único personaje jugable. Jesse ha desaparecido y Zoe De Vera es su enlace con la Agencia.",
-    "Manhattan se divide en grandes zonas con actividades secundarias y rutas alternativas.",
-    "Reach atrae objetos y enemigos, Shift permite desplazarse rápido y las anomalías gravitatorias amplían la movilidad.",
-    "El Aberrante adopta cuatro formas: martillo, espadas, guadaña y puños.",
-    "Derrotar a los Resonantes desbloquea capacidades con las que especializar el combate."
+  "knowledgeSections": [
+    {
+      "kicker": "Protagonista y combate",
+      "title": "Dylan sustituye las armas de fuego por el Aberrante",
+      "summary": "Dylan Faden es el único personaje jugable y combate con un arma cuerpo a cuerpo capaz de adoptar formas de martillo, espadas, guadaña y puños.",
+      "highlights": [
+        "Reach atrae objetos y enemigos, Shift permite desplazarse rápidamente y las anomalías gravitatorias amplían la movilidad.",
+        "Derrotar Resonantes desbloquea nuevas capacidades con las que especializar el combate."
+      ]
+    },
+    {
+      "kicker": "Manhattan y progresión",
+      "title": "Las zonas suben de nivel en lugar de Dylan",
+      "summary": "Las actividades dan experiencia al distrito donde se completan. Cada nivel mejora esa zona y concede un punto de Talento al protagonista.",
+      "highlights": [
+        "Las mejoras locales pueden revelar cofres, ampliar la curación y desbloquear actividades mediante máquinas recreativas.",
+        "Derrotar a un Resonante eleva después la presión enemiga de la zona, de modo que el momento del combate importa."
+      ]
+    },
+    {
+      "kicker": "Historia y actividades",
+      "title": "Jesse ha desaparecido y la Agencia busca respuestas",
+      "summary": "Zoe De Vera actúa como enlace de Dylan con la Agencia y Emily Pope regresa como directora interina.",
+      "highlights": [
+        "Los distritos incluyen misiones secundarias, Objetos Alterados, jefes, puzles y rutas alternativas.",
+        "Remedy presenta su sistema de personalización más profundo hasta la fecha."
+      ]
+    },
+    {
+      "kicker": "New Game+",
+      "title": "La segunda partida conserva progresión y cambia encuentros",
+      "summary": "Se mantienen las mejoras del Aberrante, habilidades, Talentos, Artefactos, salud y recursos de combate obtenidos anteriormente.",
+      "highlights": [
+        "Añade nodos de Talento, una cuarta ranura de Artefacto y la posibilidad de combinar varias habilidades de un mismo Resonante.",
+        "Modifica enemigos, jefes, misiones, coleccionables y algunos resultados de diálogo."
+      ]
+    },
+    {
+      "kicker": "Accesibilidad e idiomas",
+      "title": "Dificultad ajustable y voces completas en español",
+      "summary": "Incluye asistencias de dificultad, pausa sin conexión, audio mono, subtítulos grandes y reasignación avanzada del mando.",
+      "highlights": [
+        "El doblaje completo abarca español de España, japonés, chino simplificado y otros cinco idiomas.",
+        "La sensibilidad y la inversión de los joysticks pueden configurarse."
+      ]
+    }
   ],
-  "pending": [
+  "pendingHighlights": [
     "Fecha exacta de la versión para Mac.",
     "Modos de resolución y rendimiento en consolas.",
-    "Tamaño de instalación en PS5 y Xbox Series X|S.",
-    "Fecha del embargo de análisis.",
-    "Plan de contenidos posteriores al lanzamiento."
+    "Plan de contenido poslanzamiento."
   ],
   "sources": [
     {"label":"IGN First","url":"https://www.ign.com/articles/you-dont-get-xp-but-zones-do-how-control-resonant-is-rewriting-the-action-rpg-rule-book","type":"Declaraciones de Remedy sobre progresión por zonas y consecuencias al derrotar Resonants"},
@@ -76,7 +102,7 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-23",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -85,6 +111,11 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "La información esencial se reorganiza por temas",
+      "description": "La ficha sustituye las listas extensas por cinco bloques sobre combate, progresión, historia, New Game+ y accesibilidad, y limita las incógnitas a tres cuestiones relevantes."
+    },
     {"date":"2026-08-21","title":"Remedy detalla la progresión por zonas y sus consecuencias","description":"Las actividades otorgan experiencia a cada zona de Manhattan en lugar de subir un nivel tradicional de Dylan; los nuevos niveles desbloquean ventajas locales y puntos de Talento, mientras que derrotar Resonants aumenta después la presión y el nivel de muchos enemigos de la zona.","sourceUrls":["https://www.ign.com/articles/you-dont-get-xp-but-zones-do-how-control-resonant-is-rewriting-the-action-rpg-rule-book"]},
     {"date":"2026-08-20","title":"CONTROL Resonant alcanza estado gold y retrasa su edición física","description":"Remedy confirma que el desarrollo principal está listo para lanzamiento: la versión digital mantiene el 24 de septiembre, mientras que las copias físicas de PS5 y Xbox Series X|S pasan al 15 de octubre de 2026.","sourceUrls":["https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all"]},
     {"date":"2026-08-16","title":"New Game+ amplía la progresión y modifica los encuentros","description":"Remedy detalla que New Game+ conserva buena parte de la progresión, añade nodos de Talento y una cuarta ranura de Artefacto, permite combinar varias habilidades de un mismo Resonante y modifica enemigos, encuentros y algunos resultados de misiones y conversaciones.","sourceUrls":["https://steamcommunity.com/app/3669870/allnews/"]},

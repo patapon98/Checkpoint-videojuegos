@@ -80,22 +80,48 @@
       }
     ]
   },
-  "confirmed": [
-    "Grand Theft Auto VI: Una mirada extendida se estrenará el 27 de agosto de 2026.",
-    "Netflix ofrecerá la presentación primero, a las 21:00 en la España peninsular.",
-    "La versión abierta llegará a YouTube y a la web de Rockstar a las 03:00 del 28 de agosto en España.",
-    "Jason Duval y Lucia Caminos son los protagonistas.",
-    "La campaña anunciada es una experiencia para un jugador.",
-    "Rockstar ha presentado Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia y el parque nacional Mount Kalaga.",
-    "La ficha de PlayStation confirma juego sin conexión, Uso a distancia, DualSense y mejoras de PS5 Pro."
+  "knowledgeSections": [
+    {
+      "kicker": "Protagonistas",
+      "title": "Jason y Lucia comparten el centro de la historia",
+      "summary": "Jason Duval y Lucia Caminos protagonizan una campaña presentada por Rockstar como una experiencia para un jugador.",
+      "highlights": [
+        "La relación entre ambos articula la premisa criminal mostrada hasta ahora.",
+        "La campaña puede jugarse sin conexión."
+      ]
+    },
+    {
+      "kicker": "Leonida",
+      "title": "Vice City forma parte de un territorio más amplio",
+      "summary": "Rockstar ha presentado varias áreas urbanas, costeras, industriales y naturales dentro del estado de Leonida.",
+      "highlights": [
+        "Las localizaciones confirmadas son Vice City, Leonida Keys, Grassrivers, Port Gellhorn y Ambrosia.",
+        "Mount Kalaga amplía el mapa con un parque nacional."
+      ]
+    },
+    {
+      "kicker": "Funciones de PS5",
+      "title": "Uso a distancia, DualSense y mejoras de PS5 Pro",
+      "summary": "La ficha de PlayStation confirma compatibilidad con Uso a distancia y funciones específicas del mando DualSense.",
+      "highlights": [
+        "La versión de PS5 contará con mejoras para PS5 Pro.",
+        "No requiere conexión permanente para la campaña."
+      ]
+    },
+    {
+      "kicker": "Próxima presentación",
+      "title": "La mirada extendida llegará primero a Netflix",
+      "summary": "La nueva presentación se estrenará el 27 de agosto a las 21:00 en la España peninsular y llegará seis horas después a los canales abiertos de Rockstar.",
+      "highlights": [
+        "YouTube y la web oficial la publicarán a las 03:00 del 28 de agosto en España.",
+        "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente una demostración de jugabilidad."
+      ]
+    }
   ],
-  "pending": [
-    "Rockstar no ha detallado todavía el contenido exacto de la presentación del 27 de agosto.",
-    "Una versión para PC no ha sido anunciada oficialmente.",
-    "Rockstar todavía no ha detallado el alcance de los sistemas jugables ni un posible modo en línea.",
-    "Faltan por concretarse los modos de rendimiento y resolución de cada consola.",
-    "No se conoce el tamaño de instalación definitivo.",
-    "La clasificación PEGI definitiva para España sigue pendiente."
+  "pendingHighlights": [
+    "Contenido exacto de la presentación del 27 de agosto.",
+    "Versión para PC y posible modo en línea.",
+    "Alcance de los sistemas jugables y modos gráficos de consola."
   ],
   "sources": [
     {
@@ -147,6 +173,11 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "La información esencial se reorganiza por temas",
+      "description": "La ficha sustituye las listas extensas por cuatro bloques sobre protagonistas, Leonida, funciones de PS5 y la próxima presentación, y reduce las incógnitas a tres cuestiones relevantes."
+    },
     {
       "date": "2026-08-20",
       "title": "Xbox España confirma un mes de GTA+ con la reserva",
@@ -200,7 +231,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-08-23",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

@@ -86,22 +86,48 @@
   "premise": "Tras su funeral, Faye despierta en el Todotiempo y descubre que los planes que dejó preparados para proteger a Kratos y Atreus están en peligro. Para salvarlos deberá abrirse paso por un lugar donde dioses y criaturas de distintas mitologías compiten por el poder.",
   "context": "Es la siguiente entrega principal de God of War, pero su historia puede jugarse de forma independiente. Santa Monica Studio combina la movilidad de la etapa griega con la construcción de mundo de la saga nórdica y sitúa a Faye en el centro del combate.",
   "overview": "La saga cede el protagonismo por primera vez. Faye deja de ser una figura evocada en el pasado y pasa a llevar el peso de todo un juego.",
-  "confirmed": [
-    "Faye despierta tras su funeral, y proteger a Kratos y Atreus pone en riesgo sus propios planes.",
-    "El Todotiempo es origen y destino de la magia, y reúne dioses de varias mitologías como Sekhmet y Begtse.",
-    "La acompañan Phranque, un cubo cósmico con la voz de Jack Quaid, y Rue, una cinta guardiana.",
-    "Deborah Ann Woll repite como Faye.",
-    "El combate mezcla movilidad en suelo y aire con una espada legendaria.",
-    "Faye separa las almas de los enemigos para golpearlas y lanzarlas contra otros objetivos.",
-    "Es una aventura independiente y puede jugarse sin las entregas anteriores."
+  "knowledgeSections": [
+    {
+      "kicker": "Premisa",
+      "title": "Faye despierta después de su propio funeral",
+      "summary": "Su intento de proteger a Kratos y Atreus amenaza unos planes personales que todavía no han sido explicados por completo.",
+      "highlights": [
+        "La historia es independiente y puede jugarse sin conocer las entregas anteriores.",
+        "Deborah Ann Woll vuelve a interpretar a Faye."
+      ]
+    },
+    {
+      "kicker": "El Todotiempo",
+      "title": "La magia conecta varias mitologías",
+      "summary": "El Todotiempo se presenta como origen y destino de la magia y reúne deidades procedentes de tradiciones distintas.",
+      "highlights": [
+        "Sekhmet y Begtse figuran entre los dioses confirmados.",
+        "El Todotiempo funciona a la vez como origen y destino de la magia."
+      ]
+    },
+    {
+      "kicker": "Combate",
+      "title": "Espada, movilidad aérea y manipulación de almas",
+      "summary": "Faye enlaza ataques y desplazamientos tanto en el suelo como en el aire mediante una espada legendaria.",
+      "highlights": [
+        "Puede separar las almas de los enemigos para golpearlas.",
+        "Las almas extraídas también pueden lanzarse contra otros objetivos."
+      ]
+    },
+    {
+      "kicker": "Compañeros",
+      "title": "Phranque y Rue amplían las capacidades de Faye",
+      "summary": "La acompañan un cubo cósmico llamado Phranque y una cinta guardiana llamada Rue.",
+      "highlights": [
+        "Jack Quaid presta su voz a Phranque.",
+        "Ambos compañeros intervienen durante la aventura y complementan el repertorio de la protagonista."
+      ]
+    }
   ],
-  "pending": [
+  "pendingHighlights": [
     "Precio, ediciones y apertura de reservas.",
-    "Duración aproximada de la campaña.",
-    "Estructura exacta del mundo y alcance de la exploración.",
-    "Niveles de dificultad y opciones de accesibilidad.",
-    "Modos gráficos y funciones específicas de PS5.",
-    "Clasificación por edades definitiva."
+    "Duración y estructura exacta de la campaña.",
+    "Dificultades, accesibilidad y modos gráficos de PS5."
   ],
   "sources": [
     {
@@ -125,7 +151,7 @@
     "laufey",
     "faye"
   ],
-  "updatedAt": "2026-08-15",
+  "updatedAt": "2026-08-23",
   "seo": {
     "title": "God of War Laufey: historia, combate y todo lo confirmado",
     "description": "Ficha actualizada de God of War Laufey con fecha, historia, personajes, combate, vídeos, imágenes oficiales y toda la información confirmada.",
@@ -134,6 +160,11 @@
     "heroImageAlt": "Arte promocional oficial de God of War Laufey"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "La información esencial se reorganiza por temas",
+      "description": "La ficha sustituye las listas extensas por cuatro bloques sobre premisa, mundo, combate y compañeros, y concentra las incógnitas en tres cuestiones relevantes."
+    },
     {
       "date": "2026-08-15",
       "title": "PlayStation fija el lanzamiento el 16 de febrero de 2027",

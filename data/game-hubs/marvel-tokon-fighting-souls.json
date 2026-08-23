@@ -42,22 +42,57 @@
       {"title":"Más que partidas online","value":"Historia y juego local","description":"Incluye Episode Mode, Versus local o contra la CPU, tutorial interactivo, entrenamiento, clasificatorias, partidas casuales y vestíbulos para 64 participantes."}
     ]
   },
-  "confirmed": [
-    "Steam indica que el contenido restante del pase de personajes y escenarios del año 1 está previsto para quedar disponible como máximo el 31 de diciembre de 2027; las fechas individuales siguen sin anunciarse.",
-    "En PC se requiere una cuenta PlayStation y conexión a Internet para el lobby online, salas privadas, clasificatorias, partidas casuales, perfil de jugador y otras funciones en línea; los modos offline siguen disponibles sin esa conexión.",
-    "La versión de PS5 está mejorada para PS5 Pro y utiliza PlayStation Spectral Super Resolution (PSSR) para ofrecer una imagen 4K más nítida mediante escalado por IA.",
-    "Dos jugadores, cada uno al mando de un equipo de cuatro personajes.",
-    "Empiezan dos luchadores. Los otros dos entran con una transición de escenario, un wall bounce concreto o al perder una ronda.",
-    "El plantel incluye a Captain America, Iron Man, Hulk, Black Panther, Storm, Magik, Wolverine, Danger, Spider-Man, Ms. Marvel, Star-Lord, Peni Parker, Doctor Doom, Magneto, Green Goblin, Carnage, Ghost Rider, Blade, Loki y Deadpool.",
-    "Episode Mode es una historia original de Marvel. Sanzigen firma la apertura y las cinemáticas.",
-    "Voces en diez idiomas, incluido el español, y texto en dieciséis.",
-    "El pase del primer año suma cuatro personajes y un escenario. Phoenix Cyclops abre la lista.",
-    "La actualización del 21 de agosto mejora el matchmaking de partidas clasificatorias y casuales, corrige problemas de torneos en PS5 y de guardado y reproducción de replays, mejora el rendimiento de PC y corrige varios problemas de jugabilidad y progreso de insignias; en PC el equipo recomienda completar el calentamiento de shaders antes de jugar."
+  "knowledgeSections": [
+    {
+      "kicker": "Sistema de equipos",
+      "title": "Dos luchadores empiezan y otros dos entran durante el combate",
+      "summary": "Cada jugador controla un equipo de cuatro personajes, pero la pelea comienza con dos integrantes activos.",
+      "highlights": [
+        "Los refuerzos entran mediante una transición de escenario, un rebote concreto contra la pared o al perder una ronda.",
+        "Cada competidor selecciona un equipo completo de cuatro luchadores antes de comenzar."
+      ]
+    },
+    {
+      "kicker": "Plantel",
+      "title": "Veinte personajes repartidos en cinco equipos",
+      "summary": "El reparto combina Vengadores, X-Men, Guardianes, villanos y héroes sobrenaturales de Marvel.",
+      "highlights": [
+        "Incluye a Captain America, Iron Man, Hulk, Black Panther, Storm, Magik, Wolverine, Danger, Spider-Man y Ms. Marvel.",
+        "Completan el plantel Star-Lord, Peni Parker, Doctor Doom, Magneto, Green Goblin, Carnage, Ghost Rider, Blade, Loki y Deadpool."
+      ]
+    },
+    {
+      "kicker": "Modos",
+      "title": "Historia, juego local y competición en línea",
+      "summary": "Episode Mode ofrece una historia original de Marvel con apertura y cinemáticas de Sanzigen.",
+      "highlights": [
+        "Incluye Versus local o contra la CPU, tutorial, entrenamiento, clasificatorias, casuales y vestíbulos para 64 participantes.",
+        "Cuenta con voces en diez idiomas, incluido el español, y textos en dieciséis."
+      ]
+    },
+    {
+      "kicker": "Conexión y tecnología",
+      "title": "Juego cruzado entre PS5 y PC",
+      "summary": "Las funciones online de PC requieren una cuenta PlayStation y conexión, mientras los modos sin conexión continúan disponibles sin ellas.",
+      "highlights": [
+        "En PS5 solo se necesita PlayStation Plus para los modos en línea.",
+        "PS5 Pro utiliza PSSR para ofrecer una imagen 4K más nítida mediante escalado por IA."
+      ]
+    },
+    {
+      "kicker": "Contenido del primer año",
+      "title": "Cuatro personajes y un escenario adicionales",
+      "summary": "Phoenix Cyclops es el primer personaje anunciado del pase del año 1.",
+      "highlights": [
+        "Steam sitúa el 31 de diciembre de 2027 como fecha límite prevista para publicar el contenido restante.",
+        "Las fechas individuales todavía no han sido anunciadas."
+      ]
+    }
   ],
-  "pending": [
-    "Faltan por anunciar los otros tres personajes y el escenario del pase del primer año.",
-    "No se conocen las fechas de lanzamiento de Phoenix Cyclops ni del resto del contenido del pase.",
-    "La fecha del embargo de análisis no se ha anunciado."
+  "pendingHighlights": [
+    "Identidad de los otros tres personajes del pase del año 1.",
+    "Escenario adicional incluido en el pase.",
+    "Fechas individuales de Phoenix Cyclops y del resto del contenido."
   ],
   "sources": [
     {"label":"PlayStation","url":"https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/","type":"Ficha oficial"},
@@ -77,6 +112,11 @@
     "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
+    {
+      "date": "2026-08-23",
+      "title": "La información esencial se reorganiza por temas",
+      "description": "La ficha sustituye las listas extensas por cinco bloques sobre equipos, plantel, modos, conexión y contenido del primer año, y concentra las incógnitas en el pase."
+    },
     {"date":"2026-08-21","title":"Actualización de matchmaking, rendimiento y replays","description":"Arc System Works despliega mejoras para el matchmaking de Ranked y Casual, corrige incidencias de torneos en PS5, mejora el rendimiento de PC y soluciona problemas de replays, jugabilidad y progreso de insignias; en PC recomienda completar el calentamiento de shaders antes de jugar.","sourceUrls":["https://discord.com/invite/marveltokonofficial"]},
     {"date":"2026-08-20","title":"Steam concreta el horizonte del pase y la disponibilidad de los trajes","description":"Steam fija el 31 de diciembre de 2027 como fecha límite prevista para el contenido restante del pase del año 1 y especifica que los cinco trajes adicionales de la Ultimate Edition estarán disponibles hasta el 5 de agosto de 2027; las fechas individuales del pase, incluida la de Phoenix Cyclops, siguen sin anunciarse.","sourceUrls":["https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"]},
     {"date":"2026-08-18","title":"Steam confirma precios de PC y requisitos para las funciones online","description":"La ficha añade los precios europeos de Steam para las tres ediciones, la mejora Standard–Ultimate y el pase del Año 1; también recoge que las funciones online de PC requieren cuenta PlayStation y conexión a Internet y que el ajuste Ultra ofrece 4K con combates bloqueados a 60 FPS.","sourceUrls":["https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/"]},
@@ -86,7 +126,7 @@
     {"date":"2026-07-30","title":"Plantel, modos y cross-play revisados","description":"Se sustituyeron las imágenes comprimidas por siete capturas oficiales a resolución nativa, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."}
   ],
   "relatedGameIds": ["beast-of-reincarnation","control-resonant"],
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-23",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [

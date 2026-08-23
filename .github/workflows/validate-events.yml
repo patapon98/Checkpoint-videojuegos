@@ -1,0 +1,52 @@
+name: Validar grandes eventos
+
+on:
+  pull_request:
+    paths:
+      - "data/events/**"
+      - "eventos/**"
+      - "css/event-hub.css"
+      - "css/home-event-featured.css"
+      - "js/event-hub.js"
+      - "js/home-featured.js"
+      - "scripts/render-events.mjs"
+      - "scripts/validate-events.mjs"
+      - "scripts/build-cloudflare-preview.mjs"
+      - "index.html"
+  push:
+    branches:
+      - main
+    paths:
+      - "data/events/**"
+      - "eventos/**"
+      - "css/event-hub.css"
+      - "css/home-event-featured.css"
+      - "js/event-hub.js"
+      - "js/home-featured.js"
+      - "scripts/render-events.mjs"
+      - "scripts/validate-events.mjs"
+      - "scripts/build-cloudflare-preview.mjs"
+      - "index.html"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Comprobar scripts
+        run: |
+          node --check scripts/render-events.mjs
+          node --check scripts/validate-events.mjs
+          node --check js/event-hub.js
+          node --check js/home-featured.js
+      - name: Generar y validar eventos
+        run: |
+          node scripts/render-events.mjs
+          node scripts/validate-events.mjs
+          git diff --exit-code -- eventos

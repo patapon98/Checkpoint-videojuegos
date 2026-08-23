@@ -1,5 +1,77 @@
 [
   {
+    "id": "modern-warfare-4-beta-campana",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "12 mapas 6v6",
+        "acceso anticipado desde el 16 de octubre",
+        "se desarrolla de forma nativa"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-08-21",
+    "publishedAt": "2026-08-21T18:00:00Z",
+    "addedAt": "2026-08-21T18:05:58Z",
+    "updated": "2026-08-22",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Modern Warfare 4"
+      },
+      "copy": {
+        "es": "Modern Warfare 4 tendrá 12 mapas y campaña anticipada el 16 de octubre"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Modern Warfare 4 concreta su multijugador y el acceso anticipado a la campaña"
+    },
+    "summary": {
+      "es": "Call of Duty: NEXT ha detallado el lanzamiento de Modern Warfare 4: el multijugador tendrá 12 mapas 6v6 y la campaña ofrecerá acceso anticipado desde el 16 de octubre, una semana antes del estreno general del 23 de octubre."
+    },
+    "why": {
+      "es": "La versión de Nintendo Switch 2 se desarrolla de forma nativa y supone el regreso de Call of Duty a una consola de Nintendo tras más de 13 años. La temporada 1 añadirá a Warzone los mapas Zodiac para Resurgence y Hajin para Battle Royale."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=ZeisjLTqshg",
+      "label": {
+        "es": "Ver presentación oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Call of Duty",
+        "type": {
+          "es": "Resumen oficial de los anuncios de multijugador y Warzone en NEXT"
+        },
+        "url": "https://www.callofduty.com/blog/2026/08/call-of-duty-modern-warfare-4-next-highlights-multiplayer-gameplay-systems"
+      },
+      {
+        "label": "Call of Duty",
+        "type": {
+          "es": "Guía oficial de la beta, la misión de campaña y sus fechas"
+        },
+        "url": "https://www.callofduty.com/blog/2026/08/call-of-duty-modern-warfare-4-open-beta-everything-you-need-to-know"
+      },
+      {
+        "label": "Call of Duty",
+        "type": {
+          "es": "Anuncio oficial inicial de Call of Duty: NEXT y la beta"
+        },
+        "url": "https://www.callofduty.com/blog/2026/08/call-of-duty-modern-warfare-4-next-early-access-beta-weekend-one"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El multijugador recupera el combate con los pies en el suelo e incorpora los modos Hijack, Arms Deal, Frontline e Inflation. Smartstreaks combina bajas y juego de objetivos, mientras que el sistema de prestigio permitirá elegir entre conservar las clases creadas o asumir el reinicio clásico.",
+        "La beta mantiene Entrenched, la primera misión completa de campaña jugable en una prueba de Call of Duty, junto a Kill Block y Ground War: Combat Outpost. El segundo fin de semana será abierto desde el 28 de agosto, sumará Nintendo Switch 2 y estrenará Warzone Resurgence en Zodiac."
+      ]
+    }
+  },
+  {
     "id": "code-vein-ii-mask-of-idris-septiembre",
     "important": false,
     "emphasis": {
@@ -2208,8 +2280,9 @@
     "important": true,
     "emphasis": {
       "es": [
-        "15 de septiembre de 2026",
-        "uno de los principales exclusivos de PS5"
+        "ha alcanzado el estado gold",
+        "técnicas y Adaptaciones mejorables",
+        "inhibidores de Trask"
       ]
     },
     "category": {
@@ -2217,19 +2290,34 @@
       "en": "Releases"
     },
     "date": "2026-07-23",
+    "updated": "2026-08-22",
     "featured": false,
     "tone": "wolverine",
     "title": {
-      "es": "Marvel's Wolverine fija su lanzamiento para el 15 de septiembre",
-      "en": "Marvel's Wolverine sets a September 15 release date"
+      "es": "Marvel's Wolverine alcanza el estado gold y detalla su progresión",
+      "en": "Marvel's Wolverine goes gold and details its progression"
     },
     "summary": {
-      "es": "Insomniac ha publicado un nuevo tráiler centrado en la historia y ha abierto las reservas del juego, que llegará en exclusiva a PS5.",
-      "en": "Insomniac has released a new story-focused trailer and opened pre-orders for the PS5 exclusive."
+      "es": "Insomniac confirma que Marvel's Wolverine ha alcanzado el estado gold. El hands-on oficial de PlayStation muestra técnicas y Adaptaciones mejorables, inhibidores de Trask y actividades ligadas a los recuerdos de Logan.",
+      "en": "Insomniac confirms Marvel's Wolverine has gone gold. PlayStation's official hands-on reveals upgradeable Techniques and Adaptations, Trask inhibitors, and activities tied to Logan's memories."
     },
     "why": {
-      "es": "Es uno de los grandes lanzamientos de PlayStation para 2026 y ya tiene una fecha definitiva.",
-      "en": "It is one of PlayStation's biggest 2026 releases and now has a firm date."
+      "es": "La finalización del desarrollo reduce la incertidumbre sobre el lanzamiento del 15 de septiembre y la nueva información concreta el bucle de combate, progresión y exploración de uno de los principales exclusivos de PS5.",
+      "en": "Development completion reduces uncertainty around the September 15 launch, while the new information clarifies the combat, progression, and exploration loop of one of PS5's biggest exclusives."
+    },
+    "homeDetails": {
+      "es": [
+        "El estado gold indica que Insomniac ha completado la versión destinada a fabricación y certificación. El estudio mantiene el estreno exclusivo en PS5 para el 15 de septiembre de 2026, aunque seguirá preparando correcciones y mejoras para la actualización de lanzamiento.",
+        "El reportaje oficial describe un sistema de progresión con técnicas activas y Adaptaciones pasivas que pueden mejorarse. También presenta inhibidores de Trask que anulan temporalmente las capacidades de Logan, Nightmare Doors contrarreloj y zonas con materiales y coleccionables localizables mediante sus sentidos agudizados."
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Wolverine"
+      },
+      "copy": {
+        "es": "Wolverine entra en fase gold y concreta sus sistemas de progresión y exploración"
+      }
     },
     "trailer": {
       "url": "https://www.youtube.com/watch?v=3Z42tBfBLJY",
@@ -2239,6 +2327,22 @@
       }
     },
     "sources": [
+      {
+        "label": "Insomniac Games",
+        "type": {
+          "es": "Anuncio oficial",
+          "en": "Official announcement"
+        },
+        "url": "https://x.com/insomniacgames/status/2090816322733002825"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Fuente oficial",
+          "en": "Official source"
+        },
+        "url": "https://blog.playstation.com/2026/08/13/hands-on-report-marvels-wolverine/"
+      },
       {
         "label": "PlayStation Blog",
         "type": {

@@ -1,0 +1,65 @@
+{
+  "id": "2xko-fin-desarrollo-activo-diciembre-2026",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "terminará el desarrollo activo de 2XKO",
+      "mantendrá los servidores en funcionamiento",
+      "devolverá el dinero gastado hasta el 20 de agosto"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-08-20",
+  "publishedAt": "2026-08-20T19:00:00Z",
+  "addedAt": "2026-08-23T21:03:28Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "2XKO"
+    },
+    "copy": {
+      "es": "2XKO dejará de recibir desarrollo activo al terminar 2026"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Riot terminará el desarrollo activo de 2XKO en diciembre"
+  },
+  "summary": {
+    "es": "Riot Games terminará el desarrollo activo de 2XKO al final de diciembre de 2026 porque el juego no ha retenido suficientes jugadores para ser sostenible. La compañía mantendrá los servidores en funcionamiento y el modo sin conexión no se verá afectado."
+  },
+  "why": {
+    "es": "Riot desbloqueará todos los campeones en septiembre y devolverá el dinero gastado hasta el 20 de agosto, mientras completa los contenidos ya iniciados. Lux y Samira serán los dos últimos personajes y el último parche de correcciones está previsto para diciembre."
+  },
+  "sources": [
+    {
+      "label": "Riot Games",
+      "type": {
+        "es": "Anuncio oficial del fin del desarrollo activo y hoja de ruta final"
+      },
+      "url": "https://www.riotgames.com/en/news/2xko-active-development-ends-december-2026"
+    },
+    {
+      "label": "Riot Games Support",
+      "type": {
+        "es": "Preguntas frecuentes oficiales sobre la transición y los reembolsos"
+      },
+      "url": "https://support.riotgames.com/en-us/2xko/gameplay/2xko-evergreen-transition-faq"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto sobre el lanzamiento, la retención de jugadores y el cese del desarrollo"
+      },
+      "url": "https://www.theverge.com/games/982986/riot-games-league-of-legends-fighting-game-2xko-end-development"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Riot atribuye la decisión a una trayectoria sin cambios sostenidos en retención, nuevos jugadores e interacción, incluso tras lanzar personajes y eventos competitivos. La empresa afirma que operar 2XKO cuesta sustancialmente más de lo que ingresa y que prolongar otro año el desarrollo activo no ofrecía una vía viable.",
+      "El parche 1.3.1 del 8 de septiembre retirará los pases de batalla, los KO Points, las temporadas y el modo clasificatorio, además de abrir todos los campeones. Lux llegará con esa actualización, Samira cerrará el plantel en octubre y, tras el parche final de diciembre, Riot conservará el juego en línea en PC, PS5 y Xbox Series X|S."
+    ]
+  }
+}

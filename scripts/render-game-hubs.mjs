@@ -340,6 +340,51 @@ function replaceElementInner(html, id, inner) {
   throw new Error(`El contenedor #${id} no está bien cerrado`);
 }
 
+function elementBoundsById(html, id) {
+  const open = new RegExp(`<([a-z][\\w:-]*)\\b[^>]*\\bid="${escapeRegex(id)}"[^>]*>`, "i");
+  const match = open.exec(html);
+  if (!match) throw new Error(`No se encontró el contenedor #${id}`);
+  const tagName = match[1];
+  const tag = new RegExp(`</?${escapeRegex(tagName)}\\b`, "gi");
+  tag.lastIndex = match.index + match[0].length;
+  let depth = 1;
+  let found;
+  while ((found = tag.exec(html))) {
+    depth += found[0].startsWith("</") ? -1 : 1;
+    if (depth === 0) {
+      const closingEnd = html.indexOf(">", found.index);
+      if (closingEnd === -1) break;
+      return { start: match.index, end: closingEnd + 1 };
+    }
+  }
+  throw new Error(`El contenedor #${id} no está bien cerrado`);
+}
+
+function moveElementAfter(html, id, anchorId) {
+  const source = elementBoundsById(html, id);
+  const currentAnchor = elementBoundsById(html, anchorId);
+  if (source.start > currentAnchor.end && /^\s*$/.test(html.slice(currentAnchor.end, source.start))) {
+    return html;
+  }
+  const markup = html.slice(source.start, source.end).trim();
+  const lineStart = html.lastIndexOf("\n", source.start - 1) + 1;
+  const removalStart = /^\s*$/.test(html.slice(lineStart, source.start)) ? lineStart : source.start;
+  const withoutSource = html.slice(0, removalStart) + html.slice(source.end);
+  const anchor = elementBoundsById(withoutSource, anchorId);
+  return withoutSource.slice(0, anchor.end) + `\n\n      ${markup}` + withoutSource.slice(anchor.end);
+}
+
+function orderSectionNavigation(html) {
+  const changesPattern = /<a\s+href="#cambios"[^>]*>[\s\S]*?<\/a>/i;
+  const editionsPattern = /<a\s+href="#ediciones"[^>]*>[\s\S]*?<\/a>/i;
+  const changes = html.match(changesPattern)?.[0];
+  if (!changes || !editionsPattern.test(html)) {
+    throw new Error("La navegación de la ficha debe incluir Ediciones y Cambios");
+  }
+  const withoutChanges = html.replace(changesPattern, "");
+  return withoutChanges.replace(editionsPattern, (editions) => `${editions}${changes}`);
+}
+
 const shortDate = (value) =>
   new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "short", year: "numeric" })
     .format(new Date(`${value}T12:00:00`))
@@ -487,6 +532,8 @@ function updateStaticHtml(html, data, news) {
   html = replaceElementInner(html, "sourceList", sourcesMarkup(data));
   html = replaceElementInner(html, "quickFacts", quickFactsMarkup(data));
   html = replaceClassElementAttribute(html, "a", "game-source-link", "href", data.officialUrl);
+  html = moveElementAfter(html, "cambios", "ediciones");
+  html = orderSectionNavigation(html);
   return html;
 }
 

@@ -40,6 +40,7 @@ El JSON es la referencia editorial. El HTML inicial debe reflejarlo literalmente
 - Utiliza `spotlight` para el tema que más condiciona la compra o mejor define al juego, como precio y ediciones, estructura jugable, plantel o modos. Mantén el mismo bloque visual entre fichas aunque cambie su enfoque editorial.
 - `updatedAt` solo cambia cuando la ficha recibe una modificación editorial real.
 - Cada modificación real añade una entrada a `changes` con fecha, título breve y descripción concreta. El historial registra cambios de la ficha, no inventa acontecimientos del juego.
+- En todas las fichas, la sección «Historial de cambios» aparece inmediatamente después de «Ediciones». La navegación interna debe reflejar el mismo orden.
 - `newsTerms` debe contener únicamente términos suficientemente específicos para evitar noticias no relacionadas.
 
 ## HTML inicial y SEO

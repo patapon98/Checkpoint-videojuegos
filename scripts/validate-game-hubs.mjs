@@ -197,6 +197,17 @@ for (const [id, data] of games) {
   expect(html.includes(`Últimos cambios en ${escapeText(data.title)}`), `${label}: falta el historial de cambios`);
   expect(!/<(?:p|div|ul|dl)[^>]+id="(?:gamePremise|gameFacts|gameContext|confirmedList|pendingList|knowledgeSections|sourceList|quickFacts)"[^>]*>\s*<\/(?:p|div|ul|dl)>/.test(html), `${label}: hay contenedores SEO críticos vacíos`);
 
+  const sectionIds = [...html.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map((match) => match[1]);
+  const editionsSection = sectionIds.indexOf('ediciones');
+  const changesSection = sectionIds.indexOf('cambios');
+  expect(editionsSection !== -1 && changesSection === editionsSection + 1, `${label}: el historial debe aparecer inmediatamente después de Ediciones`);
+
+  const sectionNav = html.match(/<nav\b[^>]*\bclass="[^"]*\bgame-section-nav\b[^"]*"[^>]*>([\s\S]*?)<\/nav>/i)?.[1] || '';
+  const navTargets = [...sectionNav.matchAll(/<a\b[^>]*\bhref="#([^"]+)"/g)].map((match) => match[1]);
+  const editionsNav = navTargets.indexOf('ediciones');
+  const changesNav = navTargets.indexOf('cambios');
+  expect(editionsNav !== -1 && changesNav === editionsNav + 1, `${label}: la navegación debe situar Cambios inmediatamente después de Ediciones`);
+
   for (const relatedId of data.relatedGameIds) {
     expect(games.has(relatedId), `${label}: relatedGameIds contiene una ficha inexistente (${relatedId})`);
     expect(html.includes(`href="/juegos/${relatedId}"`), `${label}: falta el enlace visible a ${relatedId}`);

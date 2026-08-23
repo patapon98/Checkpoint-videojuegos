@@ -13,6 +13,7 @@ const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, (character)
   "'": "&#039;"
 }[character]));
 const DATA_DIR = "data/events";
+const APPEARANCE_LABELS = new Set(["World Premiere", "Actualización", "Expansión", "Actuación"]);
 const archive = await readFile("eventos.html", "utf8");
 expect(archive.includes('<link rel="canonical" href="https://finalsecreto.com/eventos">'), "eventos.html: canonical incorrecta");
 expect(archive.includes('<meta property="og:image"'), "eventos.html: falta la imagen social");
@@ -46,6 +47,7 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   }
   for (const [index, item] of data.appearances.entries()) {
     ["game", "label", "summary", "sourceUrl"].forEach((key) => requiredString(item, key, `${label} > appearances[${index}]`));
+    expect(APPEARANCE_LABELS.has(item.label), `${label} > appearances[${index}]: label debe usar una categoría editorial admitida`);
     if (item.image) {
       ["imageAlt", "imagePosition", "accent"].forEach((key) => requiredString(item, key, `${label} > appearances[${index}]`));
       expect(/^#[0-9a-f]{6}$/i.test(item.accent), `${label} > appearances[${index}]: accent debe ser un color hexadecimal`);

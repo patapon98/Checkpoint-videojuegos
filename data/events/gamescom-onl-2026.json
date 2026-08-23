@@ -61,48 +61,80 @@
       "label": "Tráiler de historia",
       "summary": "La gala estrenará mundialmente un nuevo tráiler centrado en la historia de Marcus, Dom y el Día de la Emergencia.",
       "relatedUrl": "/juegos/gears-of-war-e-day",
+      "image": "https://images.igdb.com/igdb/image/upload/t_1080p/coc74f.jpg",
+      "imageAlt": "Arte promocional de Gears of War: E-Day",
+      "imagePosition": "center 28%",
+      "accent": "#e04b37",
       "sourceUrl": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"
     },
     {
       "game": "The Witcher 3: Songs of the Past",
       "label": "Expansión",
       "summary": "La nueva aventura de Geralt prevista para 2027 formará parte de la presentación.",
+      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2026%2F05%2F28%2Fthe-witcher-3-songs-of-the-past-expansion-announced-2.jpg?cbr=1&fit=max&q=90&w=1600",
+      "imageAlt": "Arte promocional de The Witcher 3: Songs of the Past",
+      "imagePosition": "center 32%",
+      "accent": "#c9a44a",
       "sourceUrl": "https://www.windowscentral.com/gaming/the-witcher-3-wild-hunt-songs-of-the-past-dlc-expansion-has-been-confirmed-to-appear-at-gamescom-2026s-opening-night-live-ceremony"
     },
     {
       "game": "Final Fantasy VII: Revelation",
       "label": "Nueva entrega",
       "summary": "La tercera parte del proyecto Final Fantasy VII Remake tendrá presencia confirmada en Opening Night Live.",
+      "image": "https://pbs.twimg.com/media/HKjE59sbYAAxFhB.jpg",
+      "imageAlt": "Arte promocional de Final Fantasy VII: Revelation",
+      "imagePosition": "center 24%",
+      "accent": "#65b9e8",
       "sourceUrl": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"
     },
     {
       "game": "Tides of Annihilation",
       "label": "Nuevo tráiler",
       "summary": "La aventura de acción inspirada en la leyenda artúrica estrenará un nuevo tráiler antes de su primera demo global jugable en Gamescom.",
+      "image": "https://writeflow-media.s3.amazonaws.com/sites/17/media/2025/10/image-16-1-k6USIk.jpg",
+      "imageAlt": "Arte promocional de Tides of Annihilation",
+      "imagePosition": "center 38%",
+      "accent": "#86a8c5",
       "sourceUrl": "https://www.gematsu.com/2026/07/tides-of-annihilation-playable-at-gamescom-2026"
     },
     {
       "game": "Metro 2039",
       "label": "Nueva presentación",
       "summary": "La siguiente entrega de Metro es uno de los juegos anunciados para la gala de Colonia.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2590240/fe629cf78a78fa48a050f4f9b4f5ea53c96a18cb/ss_fe629cf78a78fa48a050f4f9b4f5ea53c96a18cb.jpg",
+      "imageAlt": "Captura promocional de Metro 2039",
+      "imagePosition": "center 45%",
+      "accent": "#e6783d",
       "sourceUrl": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"
     },
     {
       "game": "Valor Mortis",
       "label": "Nueva información",
       "summary": "El RPG de acción de One More Level regresará durante la emisión con novedades.",
+      "image": "https://www.purepc.pl/image/news/2026/06/08_valor_mortis_poznalismy_date_premiery_gry_one_more_level_jednym_z_aktorow_glosowych_polskiego_soulslike_a_vincent_cassel_0_b.jpg",
+      "imageAlt": "Arte promocional de Valor Mortis",
+      "imagePosition": "center 34%",
+      "accent": "#c63632",
       "sourceUrl": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"
     },
     {
       "game": "Game of Thrones: War for Westeros",
       "label": "Primer gameplay",
       "summary": "El juego de estrategia en tiempo real mostrará por primera vez su jugabilidad con un nuevo tráiler.",
+      "image": "https://playside-space.sfo3.cdn.digitaloceanspaces.com/4a40f396a8df1592a7c503d9165a5de1.png",
+      "imageAlt": "Arte promocional de Game of Thrones: War for Westeros",
+      "imagePosition": "center 30%",
+      "accent": "#d5a54a",
       "sourceUrl": "https://www.westeros.org/News/Entry/17461"
     },
     {
       "game": "ANANTA",
       "label": "Nuevo vistazo",
       "summary": "El RPG de acción urbano y gratuito de Naked Rain enseñará nuevo material durante la gala.",
+      "image": "https://r.res.easebar.com/pic/20250922/3017059c-1ee0-4f3a-999e-7bf77daaaa02.jpg",
+      "imageAlt": "Arte promocional de ANANTA",
+      "imagePosition": "center 36%",
+      "accent": "#ff6f91",
       "sourceUrl": "https://gamingbolt.com/ananta-will-be-showcased-at-gamescom-opening-night-live-2026"
     },
     {

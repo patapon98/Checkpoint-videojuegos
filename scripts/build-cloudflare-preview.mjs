@@ -6,6 +6,7 @@ const commands = [
   ["node", ["scripts/render-game-hubs.mjs"]],
   ["node", ["scripts/render-game-hub-pc-requirements.mjs"]],
   ["node", ["scripts/render-game-hub-editions.mjs"]],
+  ["node", ["scripts/render-events.mjs"]],
 ];
 
 for (const [command, args] of commands) {

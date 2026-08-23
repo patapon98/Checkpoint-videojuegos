@@ -5,7 +5,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const SITE_ORIGIN = "https://finalsecreto.com";
 const OUTPUT = path.join(ROOT, "sitemap.xml");
-const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|juegos|playstation-plus|sobre-mi|contacto|privacidad)\.html$|^(?:noticias|resenas|playstation-plus|juegos)\/[^/]+\.html$/;
+const PUBLIC_PAGE = /^(?:index|noticias|resenas|calendario|juegos|eventos|playstation-plus|sobre-mi|contacto|privacidad)\.html$|^(?:noticias|resenas|playstation-plus|juegos|eventos)\/[^/]+\.html$/;
 const DATE_OVERRIDE = process.env.SITEMAP_DATE;
 const PSPLUS_DATE_OVERRIDE = process.env.SITEMAP_PSPLUS_DATE;
 
@@ -67,13 +67,14 @@ function escapeXml(value) {
 
 function pageOrder(page) {
   const pathname = new URL(page.loc).pathname;
-  const fixed = new Map([["/", 0], ["/noticias", 1], ["/resenas", 4], ["/calendario", 6], ["/playstation-plus", 7], ["/sobre-mi", 9], ["/contacto", 10], ["/privacidad", 11]]);
+  const fixed = new Map([["/", 0], ["/noticias", 1], ["/eventos", 3], ["/juegos", 5], ["/resenas", 7], ["/calendario", 9], ["/playstation-plus", 10], ["/sobre-mi", 12], ["/contacto", 13], ["/privacidad", 14]]);
   if (fixed.has(pathname)) return [fixed.get(pathname), pathname];
   if (pathname.startsWith("/noticias/")) return [2, pathname];
-  if (pathname.startsWith("/juegos/")) return [3, pathname];
-  if (pathname.startsWith("/resenas/")) return [5, pathname];
-  if (pathname.startsWith("/playstation-plus/")) return [8, pathname];
-  return [12, pathname];
+  if (pathname.startsWith("/eventos/")) return [4, pathname];
+  if (pathname.startsWith("/juegos/")) return [6, pathname];
+  if (pathname.startsWith("/resenas/")) return [8, pathname];
+  if (pathname.startsWith("/playstation-plus/")) return [11, pathname];
+  return [15, pathname];
 }
 
 const pages = [];

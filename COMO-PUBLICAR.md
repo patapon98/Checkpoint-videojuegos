@@ -78,6 +78,10 @@ Toda actualización debe seguir [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALEN
 
 Cuando se pida «haz la ficha de X juego», sigue el flujo completo de [`docs/GAME_HUBS.md`](docs/GAME_HUBS.md). Parte de `data/game-hubs/_template.json`, registra la ficha en el índice central, escribe el contenido crítico en el HTML inicial, añade historial y fichas relacionadas, y ejecuta `node scripts/validate-game-hubs.mjs` antes de revisar la vista previa.
 
+### Grandes eventos
+
+Las coberturas especiales se mantienen en `data/events/` y siguen [`docs/EVENT_HUBS.md`](docs/EVENT_HUBS.md). Tras editar sus datos, ejecuta `node scripts/render-events.mjs` y `node scripts/validate-events.mjs`. Comprueba que el evento aparece en el archivo general y que la navegación muestra «Eventos» entre «Juegos» y «Reseñas». Si el evento ocupa la destacada de portada, comprueba que el contenido inicial y la carga dinámica muestran la misma información. Antes de publicar, revisa la cuenta atrás, el horario de España peninsular, la emisión oficial, los filtros, las fuentes y la transición entre previa, directo y resumen en escritorio y móvil.
+
 ### Reseñas
 
 Al publicar una reseña nueva:
@@ -99,7 +103,7 @@ Al publicar una reseña nueva:
 
 ### Sitemap automático
 
-El flujo `.github/workflows/update-sitemap.yml` se activa con cada `push` que añada o modifique una página pública cubierta por el generador, incluidas portada, Noticias, Reseñas, Calendario, fichas de juegos, PlayStation Plus, Sobre mí, Contacto y Privacidad. Ejecuta `scripts/generate-sitemap.mjs`, lee las URL canónicas, excluye las páginas con `noindex`, calcula `lastmod` desde el historial de Git o desde la fecha editorial de las fichas y guarda `sitemap.xml` solo cuando existe un cambio real.
+El flujo `.github/workflows/update-sitemap.yml` se activa con cada `push` que añada o modifique una página pública cubierta por el generador, incluidas portada, Noticias, Reseñas, Calendario, grandes eventos, fichas de juegos, PlayStation Plus, Sobre mí, Contacto y Privacidad. Ejecuta `scripts/generate-sitemap.mjs`, lee las URL canónicas, excluye las páginas con `noindex`, calcula `lastmod` desde el historial de Git o desde la fecha editorial de las fichas y guarda `sitemap.xml` solo cuando existe un cambio real.
 
 Si se publica directamente en `main`, la automatización puede añadir un segundo commit con el sitemap actualizado y Cloudflare desplegará ese estado. Si se trabaja en una rama, el commit automático quedará incluido en la misma PR. No edites manualmente el sitemap salvo para reparar un fallo de la automatización.
 

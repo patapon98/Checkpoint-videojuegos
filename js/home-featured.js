@@ -1,19 +1,23 @@
-(function(){
+(async function(){
   const heroCard=document.getElementById('heroCard');
   if(heroCard){
-    heroCard.href='/resenas/scritchy-scratchy';
-    heroCard.setAttribute('aria-label','Leer la reseña de Scritchy Scratchy');
-    heroCard.innerHTML=`
-      <img
-        src="/img/scritchy%20scratch/portada.png"
-        alt="Imagen principal de Scritchy Scratchy"
-      />
-      <div class="tag">Nueva reseña · 68/100</div>
-      <h3>Scritchy Scratchy, rasca, gana y vuelve a empezar</h3>
-      <p>
-        Un incremental de rasca y gana muy adictivo, con boletos distintos, prestigio, automatización y una progresión que sí se hace notar.
-      </p>
-    `;
+    try{
+      const response=await fetch('/data/events/gamescom-onl-2026.json',{cache:'no-store'});
+      if(!response.ok) throw new Error('No se pudo cargar el evento destacado');
+      const event=await response.json();
+      heroCard.classList.add('event-featured');
+      heroCard.href=`/eventos/${event.id}`;
+      heroCard.setAttribute('aria-label',`Seguir ${event.title} en Final Secreto`);
+      heroCard.innerHTML=`
+        <img src="${event.heroImage}" alt="${event.heroImageAlt}" />
+        <div class="event-featured-date" aria-hidden="true"><b>${event.homeFeature.day}</b><span>${event.homeFeature.month}</span></div>
+        <div class="tag">${event.homeFeature.tag}</div>
+        <h3>${event.homeFeature.title}</h3>
+        <p>${event.homeFeature.summary}</p>
+      `;
+    }catch(error){
+      console.warn(error);
+    }
   }
 
   const latestCard=document.querySelector('#cardsGrid a[href="/resenas/gurei"]');

@@ -1,0 +1,114 @@
+{
+  "id": "gamescom-onl-2026",
+  "title": "Gamescom Opening Night Live 2026",
+  "shortTitle": "Opening Night Live 2026",
+  "kicker": "Cobertura especial",
+  "status": "Próximamente",
+  "phase": "upcoming",
+  "preShowAt": "2026-08-25T17:30:00Z",
+  "startAt": "2026-08-25T18:00:00Z",
+  "updatedAt": "2026-08-23",
+  "officialUrl": "https://www.gamescom.global/en/program/onl",
+  "organizer": "Gamescom",
+  "attendanceMode": "MixedEventAttendanceMode",
+  "location": {
+    "name": "Koelnmesse",
+    "city": "Colonia",
+    "country": "DE"
+  },
+  "streamUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik",
+  "streamYoutubeId": "Zzvzt3IjNik",
+  "heroImage": "https://img.youtube.com/vi/Zzvzt3IjNik/maxresdefault.jpg",
+  "heroImageAlt": "Imagen oficial de Gamescom Opening Night Live 2026",
+  "heroTitle": {
+    "line": "Gamescom",
+    "emphasis": "Opening Night Live 2026"
+  },
+  "dateLabel": "25 de agosto",
+  "countdownTitle": "Martes 25 de agosto",
+  "countdownTimeLabel": "20:00 en España peninsular",
+  "homeFeature": {
+    "day": "25",
+    "month": "AGO",
+    "tag": "Gran evento · 25 de agosto",
+    "title": "Gamescom ONL 2026, todos los anuncios",
+    "summary": "Sigue la gala inaugural con el horario, la emisión oficial y cada anuncio importante ordenado en una sola página."
+  },
+  "intro": "Todos los anuncios, fechas y tráilers de la gala inaugural de Gamescom, ordenados y actualizados durante la emisión.",
+  "editorialNote": "Final Secreto incorporará únicamente anuncios confirmados durante la emisión. Las predicciones y los rumores quedan fuera de esta cobertura.",
+  "schedule": [
+    {
+      "label": "Previa",
+      "value": "19:30 en España peninsular"
+    },
+    {
+      "label": "Gala",
+      "value": "20:00 en España peninsular"
+    },
+    {
+      "label": "Presentan",
+      "value": "Geoff Keighley y Sjokz"
+    }
+  ],
+  "seo": {
+    "title": "Gamescom Opening Night Live 2026, todos los anuncios",
+    "description": "Sigue Gamescom Opening Night Live 2026 con horario, emisión oficial y todos los anuncios, fechas y tráilers ordenados en directo.",
+    "ogDescription": "La cobertura en directo de Gamescom Opening Night Live 2026 con todos los anuncios importantes, sin ruido."
+  },
+  "appearances": [
+    {
+      "game": "Gears of War: E-Day",
+      "label": "Tráiler de historia",
+      "summary": "La gala estrenará mundialmente un nuevo tráiler centrado en la historia de Marcus, Dom y el Día de la Emergencia.",
+      "relatedUrl": "/juegos/gears-of-war-e-day",
+      "sourceUrl": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"
+    },
+    {
+      "game": "The Witcher 3: Songs of the Past",
+      "label": "Expansión",
+      "summary": "La nueva aventura de Geralt prevista para 2027 formará parte de la presentación.",
+      "sourceUrl": "https://www.windowscentral.com/gaming/the-witcher-3-wild-hunt-songs-of-the-past-dlc-expansion-has-been-confirmed-to-appear-at-gamescom-2026s-opening-night-live-ceremony"
+    },
+    {
+      "game": "Final Fantasy VII: Revelation",
+      "label": "Nueva entrega",
+      "summary": "La tercera parte del proyecto Final Fantasy VII Remake tendrá presencia confirmada en Opening Night Live.",
+      "sourceUrl": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"
+    },
+    {
+      "game": "Metro 2039",
+      "label": "Nueva presentación",
+      "summary": "La siguiente entrega de Metro es uno de los juegos anunciados para la gala de Colonia.",
+      "sourceUrl": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"
+    },
+    {
+      "game": "Valor Mortis",
+      "label": "Nueva información",
+      "summary": "El RPG de acción de One More Level regresará durante la emisión con novedades.",
+      "sourceUrl": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"
+    }
+  ],
+  "announcements": [],
+  "sources": [
+    {
+      "label": "Gamescom",
+      "type": "Horario, sede y emisión oficial",
+      "url": "https://www.gamescom.global/en/program/onl"
+    },
+    {
+      "label": "Gamescom en YouTube",
+      "type": "Retransmisión oficial de Opening Night Live 2026",
+      "url": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "label": "Red Bull Gaming",
+      "type": "Selección de juegos confirmados para la gala",
+      "url": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"
+    },
+    {
+      "label": "Pure Xbox",
+      "type": "Horario y presencias confirmadas",
+      "url": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"
+    }
+  ]
+}

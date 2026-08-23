@@ -9,6 +9,7 @@ Estas instrucciones se aplican a todo el repositorio de Final Secreto.
 3. Si el trabajo crea o modifica un artículo individual, lee además íntegramente [`docs/EDITORIAL_DEPTH.md`](docs/EDITORIAL_DEPTH.md) y aplica sus criterios de interpretación y cierre.
 4. Si el trabajo afecta al calendario de lanzamientos, lee además íntegramente [`docs/CALENDAR_UPDATE_CHECKLIST.md`](docs/CALENDAR_UPDATE_CHECKLIST.md).
 5. Si el trabajo crea o modifica una ficha viva de un juego, lee además íntegramente [`docs/GAME_HUBS.md`](docs/GAME_HUBS.md).
+6. Si el trabajo crea o modifica la cobertura de un gran evento, lee además íntegramente [`docs/EVENT_HUBS.md`](docs/EVENT_HUBS.md).
 
 No actúes basándote únicamente en el resumen de una conversación o en una versión recordada de estos documentos. Consulta siempre los archivos vigentes en la rama de trabajo.
 

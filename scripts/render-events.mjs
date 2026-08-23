@@ -216,7 +216,7 @@ ${filters ? `      ${filters}\n` : ""}      <div class="event-timeline">
 </main>
 
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span></div></footer>
-<script src="/js/main.js?v=20260730-2"></script>
+<script src="/js/main.js?v=20260823-1"></script>
 <script src="/js/event-hub.js?v=20260823-1"></script>
 </body>
 </html>

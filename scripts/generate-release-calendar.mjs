@@ -22,7 +22,7 @@ const CALENDAR_FILE = path.join(ROOT, "calendario.html");
 const HOME_FILE = path.join(ROOT, "index.html");
 const TODAY = process.env.CALENDAR_TODAY || todayMadrid();
 // Bump this value whenever js/main.js changes so generated pages invalidate cache.
-const MAIN_ASSET_VERSION = "20260730-2";
+const MAIN_ASSET_VERSION = "20260823-1";
 
 const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const PLATFORM_ORDER = data.settings?.platformOrder;

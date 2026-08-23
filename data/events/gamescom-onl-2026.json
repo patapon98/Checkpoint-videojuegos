@@ -39,15 +39,11 @@
   "schedule": [
     {
       "label": "Previa",
-      "value": "19:30 en España · 02:30 en Japón"
+      "value": "19:30 en España peninsular"
     },
     {
       "label": "Gala",
-      "value": "20:00 en España · 03:00 en Japón"
-    },
-    {
-      "label": "Fecha Japón",
-      "value": "Miércoles 26 de agosto"
+      "value": "20:00 en España peninsular"
     },
     {
       "label": "Presentan",

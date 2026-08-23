@@ -80,7 +80,7 @@ Cuando se pida «haz la ficha de X juego», sigue el flujo completo de [`docs/GA
 
 ### Grandes eventos
 
-Las coberturas especiales se mantienen en `data/events/` y siguen [`docs/EVENT_HUBS.md`](docs/EVENT_HUBS.md). Tras editar sus datos, ejecuta `node scripts/render-events.mjs` y `node scripts/validate-events.mjs`. Si el evento ocupa la destacada de portada, comprueba que el contenido inicial y la carga dinámica muestran la misma información. Antes de publicar, revisa la cuenta atrás, la hora local, la emisión oficial, los filtros, las fuentes y la transición entre previa, directo y resumen en escritorio y móvil.
+Las coberturas especiales se mantienen en `data/events/` y siguen [`docs/EVENT_HUBS.md`](docs/EVENT_HUBS.md). Tras editar sus datos, ejecuta `node scripts/render-events.mjs` y `node scripts/validate-events.mjs`. Comprueba que el evento aparece en el archivo general y que la navegación muestra «Eventos» entre «Juegos» y «Reseñas». Si el evento ocupa la destacada de portada, comprueba que el contenido inicial y la carga dinámica muestran la misma información. Antes de publicar, revisa la cuenta atrás, el horario de España peninsular, la emisión oficial, los filtros, las fuentes y la transición entre previa, directo y resumen en escritorio y móvil.
 
 ### Reseñas
 

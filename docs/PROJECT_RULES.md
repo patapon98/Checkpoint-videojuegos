@@ -123,6 +123,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 
 ## 6. Interfaz permanente
 
+- La navegación principal debe mantener este orden: Noticias, Calendario, Juegos, Eventos, Reseñas, Sobre mí y Contacto.
 - El menú sticky de portada debe mostrar «Actualidad», «Próximos lanzamientos», «Fichas» y «Últimas reseñas», siguiendo el orden de las secciones y enlazando a sus anclas reales.
 - La tarjeta superior de la portada es un bloque editorial de «Novedades», no una reseña fija. Puede destacar una noticia, un artículo, una reseña reciente o temporalmente un gran evento según su relevancia. Su etiqueta, imagen, título, resumen y enlace deben describir el tipo de contenido seleccionado, y no debe conservar elementos propios de una reseña, como la nota, cuando destaque otra clase de pieza.
 - La portada debe incluir un bloque compacto «Juegos en seguimiento» con un máximo de tres fichas vivas seleccionadas editorialmente. La tarjeta superior también puede destacar una ficha cuando haya recibido una actualización relevante; debe identificarse como «Ficha actualizada» y enlazar directamente a ella.
@@ -141,7 +142,7 @@ Este documento reúne las decisiones editoriales, visuales y técnicas que deben
 ## 7. Reglas técnicas
 
 - Centralizar los datos y comportamientos reutilizables.
-- La fuente de verdad de los grandes eventos es `data/events/`. Cada cobertura se genera con `scripts/render-events.mjs`, se publica bajo `/eventos/` y debe superar `scripts/validate-events.mjs`. El mismo JSON alimenta la página y, cuando corresponda, su destacada temporal en portada.
+- La fuente de verdad de los grandes eventos es `data/events/`. Cada cobertura y el archivo general de Eventos se generan con `scripts/render-events.mjs`, se publican bajo `/eventos` y deben superar `scripts/validate-events.mjs`. El mismo JSON alimenta la página, el archivo y, cuando corresponda, su destacada temporal en portada. Los horarios visibles se expresan únicamente en la hora de España peninsular.
 - La fuente de verdad de Noticias es `data/news/`, con un JSON independiente por noticia. `data/news-index.json` se genera automáticamente y los clientes lo cargan con `fetch()`. No crear ni editar `js/news-data.js`.
 - Una entrega automática de Noticias puede añadir uno o dos JSON nuevos en `data/news/` o actualizar exactamente uno existente. Una actualización debe conservar el identificador y la fecha original, añadir `updated` y sustituir el contenido desactualizado por el vigente. No se usa `versionHistory`. El workflow único valida la PR y, después del push a `main`, genera el índice, la caché, la portada, Noticias y las relaciones con fichas. No usar bandejas, importadores, movimientos, reintentos programados, `workflow_dispatch`, comprobaciones de SHA ni auto-merge.
 - No mantener copias del ticker ni palabras clave en listas manuales dentro del renderizador; deben vivir junto a cada noticia en los datos compartidos.

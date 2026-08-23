@@ -5,6 +5,7 @@ on:
     paths:
       - "data/events/**"
       - "eventos/**"
+      - "eventos.html"
       - "css/event-hub.css"
       - "css/home-event-featured.css"
       - "js/event-hub.js"
@@ -19,6 +20,7 @@ on:
     paths:
       - "data/events/**"
       - "eventos/**"
+      - "eventos.html"
       - "css/event-hub.css"
       - "css/home-event-featured.css"
       - "js/event-hub.js"

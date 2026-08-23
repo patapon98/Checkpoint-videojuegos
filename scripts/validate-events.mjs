@@ -6,6 +6,13 @@ const errors = [];
 const expect = (condition, message) => { if (!condition) errors.push(message); };
 const requiredString = (object, key, label) => expect(typeof object?.[key] === "string" && object[key].trim(), `${label}: falta ${key}`);
 const DATA_DIR = "data/events";
+const archive = await readFile("eventos.html", "utf8");
+expect(archive.includes('<link rel="canonical" href="https://finalsecreto.com/eventos">'), "eventos.html: canonical incorrecta");
+expect(archive.includes('href="/eventos" class="active"'), "eventos.html: la navegación no marca Eventos como sección activa");
+for (const page of ["index.html", "noticias.html", "calendario.html", "juegos.html", "eventos.html", "resenas.html"]) {
+  const html = await readFile(page, "utf8");
+  expect(html.indexOf('href="/juegos"') < html.indexOf('href="/eventos"') && html.indexOf('href="/eventos"') < html.indexOf('href="/resenas"'), `${page}: Eventos no está entre Juegos y Reseñas`);
+}
 
 for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".json") && !name.startsWith("_"))) {
   const data = JSON.parse(await readFile(path.join(DATA_DIR, file), "utf8"));
@@ -24,6 +31,7 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   ["name", "city", "country"].forEach((key) => requiredString(data.location, key, `${label} > location`));
   ["day", "month", "tag", "title", "summary"].forEach((key) => requiredString(data.homeFeature, key, `${label} > homeFeature`));
   expect(Array.isArray(data.schedule) && data.schedule.length >= 2, `${label}: schedule debe contener al menos dos horarios`);
+  expect((data.schedule || []).every((item) => !String(item.value).includes("Japón")), `${label}: schedule conserva horarios de Japón`);
   for (const [index, item] of (data.schedule || []).entries()) {
     ["label", "value"].forEach((key) => requiredString(item, key, `${label} > schedule[${index}]`));
   }
@@ -45,6 +53,9 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   expect(html.includes(`<link rel="canonical" href="https://finalsecreto.com/eventos/${data.id}">`), `${output}: canonical incorrecta`);
   expect(html.includes(data.seo.title), `${output}: falta el título SEO`);
   expect(html.includes(data.streamYoutubeId), `${output}: falta la emisión oficial`);
+  expect(!html.includes("Japón") && !html.includes("data-event-local-time"), `${output}: conserva horarios ajenos a España peninsular`);
+  expect(html.indexOf('href="/juegos"') < html.indexOf('href="/eventos"') && html.indexOf('href="/eventos"') < html.indexOf('href="/resenas"'), `${output}: Eventos no está entre Juegos y Reseñas`);
+  expect(archive.includes(`/eventos/${data.id}`) && archive.includes(data.title), `eventos.html: falta ${data.title}`);
   for (const item of data.appearances) {
     expect(html.includes(item.game) && html.includes(item.summary), `${output}: falta la presencia de ${item.game}`);
   }

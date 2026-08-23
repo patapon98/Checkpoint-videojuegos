@@ -4,20 +4,12 @@
 
   const target = Date.parse(countdown.dataset.eventCountdown || '');
   const status = document.querySelector('[data-event-status]');
-  const localTime = document.querySelector('[data-event-local-time]');
   const units = {
     days: countdown.querySelector('[data-event-days]'),
     hours: countdown.querySelector('[data-event-hours]'),
     minutes: countdown.querySelector('[data-event-minutes]'),
     seconds: countdown.querySelector('[data-event-seconds]')
   };
-
-  if (localTime && Number.isFinite(target)) {
-    localTime.textContent = new Intl.DateTimeFormat('es-ES', {
-      dateStyle: 'medium',
-      timeStyle: 'short'
-    }).format(new Date(target));
-  }
 
   const updateCountdown = () => {
     const remaining = Math.max(0, target - Date.now());

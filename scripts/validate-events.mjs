@@ -13,7 +13,7 @@ const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, (character)
   "'": "&#039;"
 }[character]));
 const DATA_DIR = "data/events";
-const APPEARANCE_LABELS = new Set(["World Premiere", "Actualización", "Expansión", "Actuación"]);
+const APPEARANCE_LABELS = new Set(["World Premiere", "Nuevo tráiler", "Actualización", "Expansión", "Actuación"]);
 const archive = await readFile("eventos.html", "utf8");
 expect(archive.includes('<link rel="canonical" href="https://finalsecreto.com/eventos">'), "eventos.html: canonical incorrecta");
 expect(archive.includes('<meta property="og:image"'), "eventos.html: falta la imagen social");

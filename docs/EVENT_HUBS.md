@@ -11,7 +11,7 @@ Los grandes eventos de videojuegos se cubren mediante páginas vivas generadas d
 ## Reglas editoriales
 
 - Antes de la gala, separar las presencias confirmadas de cualquier predicción. Los rumores no entran en la página.
-- Clasificar las presencias con una de estas cuatro etiquetas: `World Premiere` para estrenos o primeros vistazos, `Actualización` para novedades de juegos ya anunciados, `Expansión` para contenido adicional y `Actuación` para intervenciones musicales. El detalle concreto se explica en el resumen, no creando etiquetas nuevas.
+- Clasificar las presencias con estas etiquetas: `World Premiere` cuando se estrena el primer tráiler sustancial de un juego, incluyendo casos que solo contaban con un teaser o una cinemática; `Nuevo tráiler` cuando ya existía un tráiler completo o gameplay previo; `Actualización` cuando la presencia confirmada no implica necesariamente un tráiler; `Expansión` para contenido adicional y `Actuación` para intervenciones musicales. El detalle concreto se explica en el resumen, no creando etiquetas nuevas.
 - Durante la emisión, cada novedad debe incluir hora, tipo, titular factual, resumen y fuente.
 - Enlazar una ficha viva o noticia cuando exista y aporte contexto real.
 - No crear una noticia independiente para cada tráiler rutinario. La cronología del evento es el lugar natural para los anuncios menores.

@@ -66,6 +66,10 @@ function editionsSection(data) {
   const source = editions.sourceUrl
     ? `<a class="game-editions-source" href="${escapeAttribute(editions.sourceUrl)}" target="_blank" rel="noopener noreferrer">Consultar ediciones oficiales ↗</a>`
     : "";
+  const extras = [bonuses, notes, source]
+    .filter(Boolean)
+    .map((markup) => `\n        ${markup}`)
+    .join("");
 
   return `
       <section id="ediciones" class="game-section game-editions reveal">
@@ -74,10 +78,7 @@ function editionsSection(data) {
           <h2>Ediciones de ${escapeHtml(data.title)}</h2>
           <p>Precios y contenido de cada edición confirmada${editions.region ? ` para ${escapeHtml(editions.region)}` : ""}.</p>
         </div>
-        <div class="game-editions-grid">${editions.items.map(editionCard).join("")}</div>
-        ${bonuses}
-        ${notes}
-        ${source}
+        <div class="game-editions-grid">${editions.items.map(editionCard).join("")}</div>${extras}
       </section>
 `;
 }
@@ -90,25 +91,13 @@ function updateEditionsSection(html, data) {
   let output = removeExistingSection(html);
   output = output.replace(/\s*<a\b[^>]*href="#ediciones"[^>]*>[\s\S]*?<\/a>/gi, "");
 
-  const requirementsSection = /(<section\b[^>]*\bid="requisitos-pc"[^>]*>)/i;
-  const sourcesSection = /(<section\b[^>]*\bid="fuentes"[^>]*>)/i;
-  if (requirementsSection.test(output)) {
-    output = output.replace(requirementsSection, `${editionsSection(data)}\n      $1`);
-  } else if (sourcesSection.test(output)) {
-    output = output.replace(sourcesSection, `${editionsSection(data)}\n      $1`);
-  } else {
-    throw new Error(`${data.id}: no se encontró el punto de inserción de Ediciones`);
-  }
+  const changesSection = /(<section\b[^>]*\bid="cambios"[^>]*>)/i;
+  if (!changesSection.test(output)) throw new Error(`${data.id}: no se encontró el historial de cambios`);
+  output = output.replace(changesSection, `${editionsSection(data)}\n      $1`);
 
-  const requirementsNav = /<a\s+href="#requisitos-pc">Requisitos PC<\/a>/i;
-  const sourcesNav = /<a\s+href="#fuentes">Fuentes<\/a>/i;
-  if (requirementsNav.test(output)) {
-    output = output.replace(requirementsNav, '<a href="#ediciones">Ediciones</a><a href="#requisitos-pc">Requisitos PC</a>');
-  } else if (sourcesNav.test(output)) {
-    output = output.replace(sourcesNav, '<a href="#ediciones">Ediciones</a><a href="#fuentes">Fuentes</a>');
-  } else {
-    throw new Error(`${data.id}: no se encontró el enlace de navegación posterior a Ediciones`);
-  }
+  const changesNav = /<a\s+href="#cambios">Cambios<\/a>/i;
+  if (!changesNav.test(output)) throw new Error(`${data.id}: no se encontró el enlace de navegación a Cambios`);
+  output = output.replace(changesNav, '<a href="#ediciones">Ediciones</a><a href="#cambios">Cambios</a>');
   return output;
 }
 

@@ -25,17 +25,23 @@ function typeKey(value = "") {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "otros";
 }
 
-function appearanceMarkup(item) {
+function appearanceMarkup(item, { featured = false } = {}) {
   const links = [
     item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Ver ficha →</a>` : "",
     `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Comprobar fuente ↗</a>`
   ].filter(Boolean).join("\n            ");
-  return `<article class="event-appearance reveal">
+  const visual = featured && item.image
+    ? `<img class="event-appearance-art" src="${escapeHtml(item.image)}" alt="" loading="lazy" decoding="async" style="object-position:${escapeHtml(item.imagePosition || "center")}">`
+    : "";
+  const style = featured && item.accent ? ` style="--appearance-accent:${escapeHtml(item.accent)}"` : "";
+  return `<article class="event-appearance${featured ? " event-appearance-featured" : ""} reveal"${style}>
+          ${visual}<div class="event-appearance-body">
           <span>${escapeHtml(item.label)}</span>
           <h3>${escapeHtml(item.game)}</h3>
           <p>${escapeHtml(item.summary)}</p>
           <div class="event-appearance-links">
             ${links}
+          </div>
           </div>
         </article>`;
 }
@@ -109,7 +115,7 @@ function archivePage(events) {
 <script type="application/ld+json">${safeJson(structuredData)}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=20260729-6"><link rel="stylesheet" href="/css/brand-logo.css"><link rel="stylesheet" href="/css/event-hub.css?v=20260823-3">
+<link rel="stylesheet" href="/css/style.css?v=20260729-6"><link rel="stylesheet" href="/css/brand-logo.css"><link rel="stylesheet" href="/css/event-hub.css?v=20260823-4">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page events-index-page">
@@ -128,7 +134,7 @@ function archivePage(events) {
 function page(data) {
   const canonical = `${SITE_URL}/eventos/${data.id}`;
   const appearanceLimit = 8;
-  const featuredAppearances = data.appearances.slice(0, appearanceLimit).map(appearanceMarkup).join("\n        ");
+  const featuredAppearances = data.appearances.slice(0, appearanceLimit).map((item) => appearanceMarkup(item, { featured: true })).join("\n        ");
   const remainingAppearances = data.appearances.slice(appearanceLimit).map(appearanceMarkup).join("\n        ");
   const appearances = `<div class="event-appearances">${featuredAppearances}</div>${remainingAppearances ? `
       <details class="event-appearances-more reveal">
@@ -207,7 +213,7 @@ function page(data) {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/event-hub.css?v=20260823-3">
+<link rel="stylesheet" href="/css/event-hub.css?v=20260823-4">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page" data-event-id="${escapeHtml(data.id)}">

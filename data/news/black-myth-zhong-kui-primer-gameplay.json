@@ -1,0 +1,63 @@
+{
+  "id": "black-myth-zhong-kui-primer-gameplay",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "el primer gameplay de Black Myth: Zhong Kui",
+      "15 minutos de combate y escenas de historia",
+      "continúa sin fecha de lanzamiento"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-20",
+  "addedAt": "2026-08-23T15:06:50Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Black Myth"
+    },
+    "copy": {
+      "es": "Black Myth: Zhong Kui muestra sus primeros 15 minutos de gameplay"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Black Myth: Zhong Kui enseña su primer gameplay en un vídeo de 15 minutos"
+  },
+  "summary": {
+    "es": "Game Science ha publicado el primer gameplay de Black Myth: Zhong Kui. El vídeo reúne 15 minutos de combate y escenas de historia del segundo juego de la serie iniciada con Black Myth: Wukong."
+  },
+  "why": {
+    "es": "El adelanto sustituye las demostraciones puramente cinematográficas por el primer vistazo a la acción real, con duelos de espada, bloqueos, habilidades sobrenaturales y enfrentamientos contra jefes. El proyecto continúa sin fecha de lanzamiento y permanece en una fase temprana de desarrollo."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=oi2QgPH61JM",
+    "label": {
+      "es": "Ver gameplay oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Game Science",
+      "type": {
+        "es": "Página oficial del juego y estado del desarrollo"
+      },
+      "url": "https://gamesci.cn/zhongkui"
+    },
+    {
+      "label": "Black Myth en YouTube",
+      "type": {
+        "es": "Gameplay oficial de 15 minutos"
+      },
+      "url": "https://www.youtube.com/watch?v=oi2QgPH61JM"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La demostración sigue a un espadachín por escenarios montañosos y combina combates contra grupos de enemigos con duelos más pausados. También aparecen desvíos, ataques cargados, poderes de fuego y electricidad y la intervención de una gran criatura aliada.",
+      "Game Science advierte que las imágenes pertenecen a una versión en desarrollo y que el resultado final puede cambiar. El estudio mantiene el lanzamiento previsto para PC y las principales consolas, pero todavía no ha concretado plataformas definitivas ni una ventana de estreno."
+    ]
+  }
+}

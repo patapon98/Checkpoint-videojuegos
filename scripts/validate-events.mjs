@@ -5,9 +5,18 @@ import path from "node:path";
 const errors = [];
 const expect = (condition, message) => { if (!condition) errors.push(message); };
 const requiredString = (object, key, label) => expect(typeof object?.[key] === "string" && object[key].trim(), `${label}: falta ${key}`);
+const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, (character) => ({
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&#039;"
+}[character]));
 const DATA_DIR = "data/events";
 const archive = await readFile("eventos.html", "utf8");
 expect(archive.includes('<link rel="canonical" href="https://finalsecreto.com/eventos">'), "eventos.html: canonical incorrecta");
+expect(archive.includes('<meta property="og:image"'), "eventos.html: falta la imagen social");
+expect(archive.includes('"@type":"BreadcrumbList"'), "eventos.html: faltan las migas de pan estructuradas");
 expect(archive.includes('href="/eventos" class="active"'), "eventos.html: la navegación no marca Eventos como sección activa");
 for (const page of ["index.html", "noticias.html", "calendario.html", "juegos.html", "eventos.html", "resenas.html"]) {
   const html = await readFile(page, "utf8");
@@ -51,13 +60,14 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   const html = await readFile(output, "utf8");
   expect(html.includes(`data-event-id="${data.id}"`), `${output}: data-event-id no coincide`);
   expect(html.includes(`<link rel="canonical" href="https://finalsecreto.com/eventos/${data.id}">`), `${output}: canonical incorrecta`);
+  expect(html.includes('"@type":"BreadcrumbList"'), `${output}: faltan las migas de pan estructuradas`);
   expect(html.includes(data.seo.title), `${output}: falta el título SEO`);
   expect(html.includes(data.streamYoutubeId), `${output}: falta la emisión oficial`);
   expect(!html.includes("Japón") && !html.includes("data-event-local-time"), `${output}: conserva horarios ajenos a España peninsular`);
   expect(html.indexOf('href="/juegos"') < html.indexOf('href="/eventos"') && html.indexOf('href="/eventos"') < html.indexOf('href="/resenas"'), `${output}: Eventos no está entre Juegos y Reseñas`);
   expect(archive.includes(`/eventos/${data.id}`) && archive.includes(data.title), `eventos.html: falta ${data.title}`);
   for (const item of data.appearances) {
-    expect(html.includes(item.game) && html.includes(item.summary), `${output}: falta la presencia de ${item.game}`);
+    expect(html.includes(escapeHtml(item.game)) && html.includes(escapeHtml(item.summary)), `${output}: falta la presencia de ${item.game}`);
   }
   for (const item of data.announcements) {
     expect(html.includes(item.title) && html.includes(item.summary), `${output}: falta el anuncio ${item.title}`);

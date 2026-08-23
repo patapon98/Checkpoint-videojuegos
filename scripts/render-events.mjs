@@ -70,14 +70,27 @@ function archiveCardMarkup(data) {
 function archivePage(events) {
   const canonical = `${SITE_URL}/eventos`;
   const cards = events.map(archiveCardMarkup).join("\n      ");
+  const socialImage = events[0]?.heroImage || `${SITE_URL}/favicon-512.png`;
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    url: canonical,
-    name: "Eventos de videojuegos",
-    description: "Coberturas especiales de presentaciones y grandes eventos de videojuegos con horarios, emisiones y anuncios confirmados.",
-    inLanguage: "es",
-    hasPart: events.map((event) => ({ "@type": "WebPage", name: event.title, url: `${SITE_URL}/eventos/${event.id}` }))
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${canonical}#webpage`,
+        url: canonical,
+        name: "Eventos de videojuegos",
+        description: "Coberturas especiales de presentaciones y grandes eventos de videojuegos con horarios, emisiones y anuncios confirmados.",
+        inLanguage: "es",
+        hasPart: events.map((event) => ({ "@type": "WebPage", name: event.title, url: `${SITE_URL}/eventos/${event.id}` }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "Eventos", item: canonical }
+        ]
+      }
+    ]
   };
   return `<!DOCTYPE html>
 <html lang="es">
@@ -91,11 +104,12 @@ function archivePage(events) {
 <meta property="og:type" content="website"><meta property="og:site_name" content="Final Secreto">
 <meta property="og:title" content="Eventos de videojuegos | Final Secreto">
 <meta property="og:description" content="Todas las grandes citas del videojuego y sus anuncios importantes, reunidos en un solo lugar.">
-<meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary">
+<meta property="og:url" content="${canonical}"><meta property="og:image" content="${escapeHtml(socialImage)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Eventos de videojuegos | Final Secreto"><meta name="twitter:description" content="Todas las grandes citas del videojuego y sus anuncios importantes, reunidos en un solo lugar."><meta name="twitter:image" content="${escapeHtml(socialImage)}">
 <script type="application/ld+json">${safeJson(structuredData)}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css?v=20260729-6"><link rel="stylesheet" href="/css/brand-logo.css"><link rel="stylesheet" href="/css/event-hub.css?v=20260823-2">
+<link rel="stylesheet" href="/css/style.css?v=20260729-6"><link rel="stylesheet" href="/css/brand-logo.css"><link rel="stylesheet" href="/css/event-hub.css?v=20260823-3">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page events-index-page">
@@ -113,7 +127,16 @@ function archivePage(events) {
 
 function page(data) {
   const canonical = `${SITE_URL}/eventos/${data.id}`;
-  const appearances = data.appearances.map(appearanceMarkup).join("\n        ");
+  const appearanceLimit = 8;
+  const featuredAppearances = data.appearances.slice(0, appearanceLimit).map(appearanceMarkup).join("\n        ");
+  const remainingAppearances = data.appearances.slice(appearanceLimit).map(appearanceMarkup).join("\n        ");
+  const appearances = `<div class="event-appearances">${featuredAppearances}</div>${remainingAppearances ? `
+      <details class="event-appearances-more reveal">
+        <summary>Ver los ${data.appearances.length - appearanceLimit} confirmados restantes</summary>
+        <div class="event-appearances event-appearances-expanded">
+        ${remainingAppearances}
+        </div>
+      </details>` : ""}`;
   const announcements = data.announcements.map(announcementMarkup).join("\n        ");
   const filterTypes = [...new Set(data.announcements.map((item) => item.type))];
   const filters = filterTypes.length > 1 ? `<div class="event-filter" aria-label="Filtrar anuncios">
@@ -147,6 +170,14 @@ function page(data) {
         location: { "@type": "Place", name: data.location.name, address: { "@type": "PostalAddress", addressLocality: data.location.city, addressCountry: data.location.country } },
         organizer: { "@type": "Organization", name: data.organizer, url: data.officialUrl },
         url: canonical
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "Eventos", item: `${SITE_URL}/eventos` },
+          { "@type": "ListItem", position: 3, name: data.title, item: canonical }
+        ]
       }
     ]
   };
@@ -176,7 +207,7 @@ function page(data) {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/event-hub.css?v=20260823-2">
+<link rel="stylesheet" href="/css/event-hub.css?v=20260823-3">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page" data-event-id="${escapeHtml(data.id)}">
@@ -249,7 +280,7 @@ ${filters ? `      ${filters}\n` : ""}      <div class="event-timeline">
 
     <section class="event-section" id="confirmados">
       <div class="event-section-heading reveal"><div><span class="event-kicker">Antes de empezar</span><h2>Juegos con presencia confirmada</h2><p>Una selección inicial para saber qué buscar durante la gala, separada de cualquier rumor o predicción.</p></div><div class="event-total"><b>${data.appearances.length}</b><span>Confirmados</span></div></div>
-      <div class="event-appearances">${appearances}</div>
+      ${appearances}
     </section>
 
     <section class="event-section" id="directo">

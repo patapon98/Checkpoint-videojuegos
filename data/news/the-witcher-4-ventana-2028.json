@@ -1,0 +1,65 @@
+{
+  "id": "the-witcher-4-ventana-2028",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "apunta a una ventana de lanzamiento de 2028",
+      "más de 500 desarrolladores",
+      "el proyecto más grande y ambicioso del estudio"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-24",
+  "publishedAt": "2026-08-24T15:24:39Z",
+  "addedAt": "2026-08-24T18:06:17Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "The Witcher 4"
+    },
+    "copy": {
+      "es": "The Witcher 4 apunta a una ventana de lanzamiento de 2028"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "The Witcher 4 apunta a 2028 y descarta mostrarse en Gamescom"
+  },
+  "summary": {
+    "es": "The Witcher 4 apunta a una ventana de lanzamiento de 2028. Michał Nowakowski, co-CEO de CD Projekt, confirmó además que el RPG no se mostrará en Gamescom y que más de 500 desarrolladores trabajan actualmente en el proyecto."
+  },
+  "why": {
+    "es": "Es la primera ventana pública para la nueva saga protagonizada por Ciri. CD Projekt define el juego como el proyecto más grande y ambicioso del estudio, con un mundo abierto, combate más intenso y una historia diseñada para sostener la próxima trilogía."
+  },
+  "sources": [
+    {
+      "label": "The Witcher",
+      "type": {
+        "es": "Declaración oficial en vídeo del co-CEO de CD Projekt sobre la ventana de lanzamiento"
+      },
+      "url": "https://bsky.app/profile/thewitcher.com/post/3mttmertey22y"
+    },
+    {
+      "label": "PC Gamer",
+      "type": {
+        "es": "Transcripción directa y contexto de las declaraciones de Michał Nowakowski"
+      },
+      "url": "https://www.pcgamer.com/games/the-witcher/the-witcher-4-is-targeting-a-2028-release/"
+    },
+    {
+      "label": "The Witcher",
+      "type": {
+        "es": "Página oficial del proyecto y su nueva saga protagonizada por Ciri"
+      },
+      "url": "https://www.thewitcher.com/sg/en/witcher4"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Nowakowski explicó que el equipo todavía no está preparado para anunciar una fecha exacta y pidió paciencia mientras avanza la producción. La formulación como objetivo mantiene margen para posibles cambios, pero acota por primera vez el calendario del proyecto.",
+      "La entrega abre una nueva saga con Ciri como protagonista y se plantea como un RPG de mundo abierto. CD Projekt acudirá a Gamescom, aunque centrará su presencia inmediata en The Witcher 3: Songs of the Past y no enseñará The Witcher 4."
+    ]
+  }
+}

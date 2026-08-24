@@ -183,11 +183,11 @@
     },
     {
       "kicker": "Soporte poslanzamiento",
-      "title": "Cámara, controles y escalado ya han recibido mejoras",
-      "summary": "Los parches 1.0.7 y 1.0.8 han ajustado la cámara, el tamaño del texto, la reasignación de controles, el equilibrio de jefes y la navegación.",
+      "title": "Ultrawide y Frame Generation ya están disponibles",
+      "summary": "Los parches 1.0.7, 1.0.8 y 1.0.9 han ampliado cámara, texto, controles, escalado y opciones de presentación, además de seguir ajustando combate y navegación.",
       "highlights": [
-        "La versión de PC admite DLSS 4/4.5 y FSR4.",
-        "Frame Generation y el formato ultrapanorámico continúan previstos para futuras actualizaciones."
+        "La versión de PC admite DLSS 4/4.5, FSR4 y Frame Generation mediante DLSS o FSR, además de monitores ultrawide y super-ultrawide.",
+        "El parche 1.0.9 permite omitir una primera tanda de eventos y cinemáticas, vender amuletos y añade nuevas mejoras y correcciones de combate, curación y rendimiento."
       ]
     }
   ],
@@ -197,6 +197,11 @@
     "Modos gráficos y conjunto completo de opciones de accesibilidad."
   ],
   "sources": [
+    {
+      "label": "Fictions Support",
+      "url": "https://support.fictions.com/hc/en-us/articles/54749151147283--BOR-Patch-Notes-v1-0-9-v1-007-000",
+      "type": "Notas oficiales del parche v1.0.9 / v1.007.000"
+    },
     {
       "label": "Fictions Support",
       "url": "https://support.fictions.com/hc/en-us/articles/54430411510419--BOR-Patch-Notes-v1-0-8-v1-006-000",
@@ -256,6 +261,14 @@
     "heroImageAlt": "Arte promocional oficial de Beast of Reincarnation con Emma y Koo en el bosque"
   },
   "changes": [
+    {
+      "date": "2026-08-25",
+      "title": "El parche v1.0.9 añade ultrawide, Frame Generation y cinemáticas omitibles",
+      "description": "Fictions publica la tercera actualización de Beast of Reincarnation con soporte para monitores ultrawide y super-ultrawide, Frame Generation mediante DLSS o FSR, una primera tanda de eventos y cinemáticas omitibles, venta de amuletos y nuevos ajustes de combate, curación y rendimiento.",
+      "sourceUrls": [
+        "https://support.fictions.com/hc/en-us/articles/54749151147283--BOR-Patch-Notes-v1-0-9-v1-007-000"
+      ]
+    },
     {
       "date": "2026-08-23",
       "title": "La información esencial se reorganiza por temas",
@@ -330,7 +343,7 @@
     "onimusha-way-of-the-sword",
     "grand-theft-auto-vi"
   ],
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-25",
   "price": "Desde 54,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/concept/10014719",

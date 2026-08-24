@@ -1,0 +1,63 @@
+{
+  "id": "anno-117-hipodromo-carreras-cuadrigas",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ya está disponible en PS5, Xbox Series X|S y PC",
+      "un gran monumento por fases y carreras de cuadrigas",
+      "modo foto con cámara libre"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-20",
+  "addedAt": "2026-08-24T15:18:52Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "El Hipódromo"
+    },
+    "copy": {
+      "es": "El Hipódromo lleva las carreras de cuadrigas a Anno 117"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Anno 117 amplía Roma con El Hipódromo y sus carreras de cuadrigas"
+  },
+  "summary": {
+    "es": "El Hipódromo, la segunda expansión de Anno 117: Pax Romana, ya está disponible en PS5, Xbox Series X|S y PC. El contenido añade un gran monumento por fases y carreras de cuadrigas que generan esplendor y bonificaciones para toda la isla."
+  },
+  "why": {
+    "es": "Ubisoft acompaña el DLC con la actualización gratuita 2.0, que incorpora invitados de honor, especialistas de rareza heroica y un modo foto con cámara libre, hora del día configurable y efectos de lente."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=9oFSb6_0UNA",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Anuncio oficial del lanzamiento, los sistemas del DLC y la actualización 2.0"
+      },
+      "url": "https://news.ubisoft.com/en-us/article/1v1tntpe9T51JbYdDnDKLN/anno-117-the-hippodrome-dlc-chariot-races-await"
+    },
+    {
+      "label": "Ubisoft Store",
+      "type": {
+        "es": "Ficha oficial con fecha de lanzamiento y contenido de la expansión"
+      },
+      "url": "https://store.ubisoft.com/us/anno-117--pax-romana---the-hippodrome/6a585b515610632f4f1c2b52.html?lang=en_US"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El monumento se construye en varias etapas y desbloquea tres categorías de carreras: amateur con cuatro participantes, cuadriga clásica con seis e imperial con ocho. El jugador elige especialistas como aurigas y puede ordenarles esprints durante la competición.",
+      "El esplendor obtenido mejora los efectos del Hipódromo y permite activar ventajas de producción, caballería y necesidades ciudadanas. La actualización suma también eventos autorrepetibles y nuevos especialistas cuya aparición depende del prestigio de la provincia."
+    ]
+  }
+}

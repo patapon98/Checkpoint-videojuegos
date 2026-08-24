@@ -149,7 +149,8 @@ const allowedFields = new Set([
   'sources',
   'changes',
   'updatedAt',
-  'price'
+  'price',
+  'knowledgeSections'
 ]);
 
 for (const relativePath of jsonFiles) {
@@ -220,7 +221,7 @@ for (const relativePath of jsonFiles) {
     if (!validDate(media?.publishedAt) || media.publishedAt > after.updatedAt) fail(`${relativePath}: publishedAt del vídeo no es válido`);
   }
 
-  const addedConfirmed = requireAppendOnly(`${relativePath} > confirmed`, before.confirmed, after.confirmed);
+  const addedConfirmed = requireAppendOnly(`${relativePath} > confirmed`, before.confirmirmed, after.confirmed);
   if (addedConfirmed.length > 5) fail(`${relativePath}: no se pueden añadir más de cinco hechos confirmados por ejecución`);
   const addedSources = requireAppendOnly(`${relativePath} > sources`, before.sources, after.sources);
   if (addedSources.length > 5) fail(`${relativePath}: no se pueden añadir más de cinco fuentes por ejecución`);

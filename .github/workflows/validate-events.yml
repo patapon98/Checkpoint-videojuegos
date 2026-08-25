@@ -15,6 +15,7 @@ on:
       - "scripts/validate-events.mjs"
       - "scripts/build-cloudflare-preview.mjs"
       - "index.html"
+      - ".github/workflows/validate-events.yml"
   pull_request_target:
     types: [opened, synchronize, reopened, ready_for_review]
     branches: [main]
@@ -192,24 +193,36 @@ jobs:
         with:
           node-version: 22
 
-      - name: Regenerar y validar Eventos después del auto-merge
+      - name: Regenerar y publicar Eventos después del auto-merge
         run: |
-          git pull --ff-only origin main
-          node scripts/render-events.mjs
-          node scripts/validate-events.mjs
-          git diff --check
-
-      - name: Publicar superficies generadas después del auto-merge
-        run: |
-          git add eventos eventos.html
-          if git diff --cached --quiet; then
-            echo "No hay superficies de Eventos pendientes."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(events): regenerar cobertura"
-          git push origin main
+
+          for attempt in 1 2 3; do
+            echo "Intento $attempt de publicación de superficies"
+            git fetch origin main
+            git reset --hard origin/main
+
+            node scripts/render-events.mjs
+            node scripts/validate-events.mjs
+            git diff --check
+            git add eventos eventos.html
+
+            if git diff --cached --quiet; then
+              echo "Las superficies de Eventos ya están actualizadas."
+              exit 0
+            fi
+
+            git commit -m "chore(events): regenerar cobertura"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "main cambió durante la publicación; reintentando sobre el último main..."
+          done
+
+          echo "No se pudieron publicar las superficies de Eventos tras tres intentos."
+          exit 1
 
   generate:
     if: github.event_name == 'push'

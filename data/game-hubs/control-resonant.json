@@ -25,6 +25,7 @@
     {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f/ss_1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f.1920x1080.jpg","alt":"Distrito de Manhattan deformado por fuerzas paranormales en CONTROL Resonant"}
   ],
   "media": [
+    {"type":"youtube","videoId":"VwOJuJRCLGk","title":"CONTROL Resonant: Altered State Trailer","label":"Tráiler oficial","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"ZkctlSt4I2E","title":"CONTROL Resonant: Path Tracing & DLSS 4.5 Gameplay","label":"Vídeo técnico","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"xAHVb2KpnYQ","title":"CONTROL Resonant: Stepping Into a New World","label":"Diario de desarrollo","publishedAt":"2026-07-23"},
     {"type":"youtube","videoId":"SXRxroxfPJ8","title":"CONTROL Resonant: Take CONTROL Trailer","label":"Tráiler oficial","publishedAt":"2026-06-08"},
@@ -78,7 +79,8 @@
       "summary": "NVIDIA confirma que CONTROL Resonant se lanzará en PC con path tracing y la suite DLSS 4.5 para hardware GeForce RTX compatible.",
       "highlights": [
         "DLSS 4.5 Ray Reconstruction mejora la reconstrucción de los efectos con trazado de caminos.",
-        "Dynamic Multi Frame Generation estará disponible en hardware compatible para aumentar la tasa de imágenes."
+        "Dynamic Multi Frame Generation estará disponible en hardware compatible para aumentar la tasa de imágenes.",
+        "El juego estará disponible en GeForce NOW desde el lanzamiento digital."
       ]
     },
     {
@@ -97,6 +99,8 @@
     "Plan de contenido poslanzamiento."
   ],
   "sources": [
+    {"label":"Remedy Entertainment: Altered State","url":"https://www.youtube.com/watch?v=VwOJuJRCLGk","type":"Tráiler oficial de gamescom Opening Night Live"},
+    {"label":"Remedy Entertainment vía PR TIMES","url":"https://prtimes.jp/main/html/rd/p/000000010.000164183.html","type":"Comunicado oficial: Altered State, GeForce NOW y disponibilidad"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"Path tracing, DLSS 4.5 y vídeo técnico de PC"},
     {"label":"IGN First","url":"https://www.ign.com/articles/you-dont-get-xp-but-zones-do-how-control-resonant-is-rewriting-the-action-rpg-rule-book","type":"Declaraciones de Remedy sobre progresión por zonas y consecuencias al derrotar Resonants"},
     {"label":"Remedy Entertainment en LinkedIn","url":"https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all","type":"Estado gold y fecha de lanzamiento de la edición física"},
@@ -122,6 +126,7 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {"date":"2026-08-25","title":"Remedy publica el tráiler Altered State en Opening Night Live","description":"El nuevo tráiler oficial muestra más combate, movimiento, finishers, amenazas y jefes de CONTROL Resonant; Remedy confirma además disponibilidad en GeForce NOW desde el lanzamiento digital.","sourceUrls":["https://www.youtube.com/watch?v=VwOJuJRCLGk","https://prtimes.jp/main/html/rd/p/000000010.000164183.html"]},
     {"date":"2026-08-25","title":"NVIDIA confirma path tracing y DLSS 4.5 para PC","description":"La versión para PC se lanzará con path tracing, DLSS 4.5 Ray Reconstruction y Dynamic Multi Frame Generation en hardware GeForce RTX compatible; NVIDIA publica además un nuevo vídeo técnico con estas funciones activadas.","sourceUrls":["https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/"]},
     {
       "date": "2026-08-23",

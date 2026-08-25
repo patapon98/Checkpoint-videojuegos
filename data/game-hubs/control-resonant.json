@@ -25,6 +25,7 @@
     {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f/ss_1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f.1920x1080.jpg","alt":"Distrito de Manhattan deformado por fuerzas paranormales en CONTROL Resonant"}
   ],
   "media": [
+    {"type":"youtube","videoId":"ZkctlSt4I2E","title":"CONTROL Resonant: Path Tracing & DLSS 4.5 Gameplay","label":"Vídeo técnico","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"xAHVb2KpnYQ","title":"CONTROL Resonant: Stepping Into a New World","label":"Diario de desarrollo","publishedAt":"2026-07-23"},
     {"type":"youtube","videoId":"SXRxroxfPJ8","title":"CONTROL Resonant: Take CONTROL Trailer","label":"Tráiler oficial","publishedAt":"2026-06-08"},
     {"type":"youtube","videoId":"NvncU_SQO5Y","title":"CONTROL Resonant: Paranatural Manhattan Trailer","label":"Tráiler oficial","publishedAt":"2026-06-06"},
@@ -72,6 +73,15 @@
       ]
     },
     {
+      "kicker": "PC y tecnología gráfica",
+      "title": "Path tracing y DLSS 4.5 en GeForce RTX",
+      "summary": "NVIDIA confirma que CONTROL Resonant se lanzará en PC con path tracing y la suite DLSS 4.5 para hardware GeForce RTX compatible.",
+      "highlights": [
+        "DLSS 4.5 Ray Reconstruction mejora la reconstrucción de los efectos con trazado de caminos.",
+        "Dynamic Multi Frame Generation estará disponible en hardware compatible para aumentar la tasa de imágenes."
+      ]
+    },
+    {
       "kicker": "Accesibilidad e idiomas",
       "title": "Dificultad ajustable y voces completas en español",
       "summary": "Incluye asistencias de dificultad, pausa sin conexión, audio mono, subtítulos grandes y reasignación avanzada del mando.",
@@ -87,6 +97,7 @@
     "Plan de contenido poslanzamiento."
   ],
   "sources": [
+    {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"Path tracing, DLSS 4.5 y vídeo técnico de PC"},
     {"label":"IGN First","url":"https://www.ign.com/articles/you-dont-get-xp-but-zones-do-how-control-resonant-is-rewriting-the-action-rpg-rule-book","type":"Declaraciones de Remedy sobre progresión por zonas y consecuencias al derrotar Resonants"},
     {"label":"Remedy Entertainment en LinkedIn","url":"https://www.linkedin.com/company/remedy-entertainment-plc/posts/?feedView=all","type":"Estado gold y fecha de lanzamiento de la edición física"},
     {"label":"Steam Community: anuncio oficial de New Game+","url":"https://steamcommunity.com/app/3669870/allnews/","type":"New Game+, progresión y rejugabilidad"},
@@ -102,7 +113,7 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-25",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -111,6 +122,7 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {"date":"2026-08-25","title":"NVIDIA confirma path tracing y DLSS 4.5 para PC","description":"La versión para PC se lanzará con path tracing, DLSS 4.5 Ray Reconstruction y Dynamic Multi Frame Generation en hardware GeForce RTX compatible; NVIDIA publica además un nuevo vídeo técnico con estas funciones activadas.","sourceUrls":["https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/"]},
     {
       "date": "2026-08-23",
       "title": "La información esencial se reorganiza por temas",

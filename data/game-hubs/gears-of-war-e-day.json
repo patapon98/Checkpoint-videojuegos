@@ -56,6 +56,12 @@
       "highlights": ["Regresan los agujeros de emergencia, el Gnasher y el Longshot.","Debutan Gut Puncher e Incinerator y se muestra el origen del Lancer con motosierra."]
     },
     {
+      "kicker": "Campaña y equipamiento",
+      "title": "Supply Caches, mods de armas y equipo táctico",
+      "summary": "Los puntos de abastecimiento permiten reponer munición, cambiar el equipamiento e instalar modificaciones de armas, mientras el equipo táctico añade objetos recargables para afrontar los combates.",
+      "highlights": ["Los mods pueden alterar las armas con efectos como aumentos de daño o recargas ligadas a ejecuciones con motosierra.","El Tactical Gear incluye objetos recargables como inyectores de salud y herramientas para aturdir enemigos.","La campaña, aunque principalmente lineal, incluye misiones secundarias opcionales y zonas de Kalona que se abren a la exploración.","Regresa la recarga activa: acertar el momento acelera la recarga y fallarlo puede encasquillar el arma."]
+    },
+    {
       "kicker": "Multijugador",
       "title": "Horde Siege reúne a doce jugadores",
       "summary": "Tres escuadrones defienden Kalona en mapas urbanos de mayor escala, mientras Versus recupera los enfrentamientos competitivos de cuatro contra cuatro.",
@@ -74,6 +80,7 @@
   ],
   "pendingHighlights": ["Modos exactos de resolución y rendimiento de cada consola.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
   "sources": [
+    {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/","type":"Hands-on oficial de campaña, equipamiento, mods y misiones opcionales"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"RTX Mega Geometry, NVIDIA Reflex, DLSS 4.5 y vídeo técnico de PC"},
     {"label":"Windows Central","url":"https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter","type":"Calendario completo de los dos fines de semana de la beta"},
     {"label":"Xbox España","url":"https://www.xbox.com/es-es/games/gears-of-war-eday","type":"Ficha, fecha, plataformas, modos e imágenes oficiales"},
@@ -93,6 +100,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {"date":"2026-08-26","title":"Xbox detalla mods de armas, equipo táctico y misiones opcionales de la campaña","description":"Un hands-on oficial de Xbox confirma Supply Caches para reponer munición, cambiar el equipamiento e instalar mods de armas, Tactical Gear recargable, el regreso de la recarga activa y misiones secundarias opcionales dentro de una campaña principalmente lineal.","sourceUrls":["https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/"]},
     {"date":"2026-08-25","title":"Xbox España confirma una tarjeta regalo entre los incentivos de reserva","description":"La ficha oficial de Xbox España incluye una tarjeta regalo Xbox entre los incentivos de reserva, junto a los aspectos Exfil. El importe no se especifica; los beneficios pueden requerir un código de un solo uso y están limitados a una oferta por persona o cuenta.","sourceUrls":["https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ"]},
     {"date":"2026-08-25","title":"NVIDIA confirma RTX Mega Geometry y Reflex para PC","description":"Gears of War: E-Day debutará RTX Mega Geometry para ray tracing sobre geometría Nanite de mayor detalle y contará con NVIDIA Reflex y la suite DLSS 4.5; NVIDIA publica además un nuevo vídeo técnico desarrollado junto a The Coalition.","sourceUrls":["https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/"]},
     {"date":"2026-08-23","title":"La información esencial se reorganiza por temas","description":"La ficha sustituye las listas extensas por cuatro bloques sobre campaña, combate, multijugador y tecnología, conservando la última corrección de requisitos de Steam."},
@@ -112,7 +120,7 @@
     {"date":"2026-07-30","title":"Ficha publicada tras el Xbox Games Showcase","description":"Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
   "relatedGameIds": ["control-resonant","grand-theft-auto-vi"],
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-26",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

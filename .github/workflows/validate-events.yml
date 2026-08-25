@@ -1,7 +1,8 @@
-name: Validar grandes eventos
+name: Pipeline de grandes eventos
 
 on:
   pull_request:
+    branches: [main]
     paths:
       - "data/events/**"
       - "eventos/**"
@@ -14,41 +15,193 @@ on:
       - "scripts/validate-events.mjs"
       - "scripts/build-cloudflare-preview.mjs"
       - "index.html"
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
+    paths:
+      - "data/events/*.json"
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - "data/events/**"
-      - "eventos/**"
-      - "eventos.html"
-      - "css/event-hub.css"
-      - "css/home-event-featured.css"
-      - "js/event-hub.js"
-      - "js/home-featured.js"
       - "scripts/render-events.mjs"
       - "scripts/validate-events.mjs"
-      - "scripts/build-cloudflare-preview.mjs"
-      - "index.html"
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Número de PR automática que debe procesarse"
+        required: false
+        type: string
+      head_ref:
+        description: "Rama automática esperada"
+        required: false
+        type: string
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: events-pipeline-${{ github.event_name }}-${{ inputs.pr_number || github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   validate:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        (
+          (github.event_name == 'pull_request_target' && startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/event-')) ||
+          (github.event_name == 'pull_request' && !startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/event-'))
+        )
+      )
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Comprobar la PR automática antes de descargarla
+        if: github.event_name == 'pull_request_target' || (github.event_name == 'workflow_dispatch' && inputs.pr_number != '')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+          REQUESTED_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref }}
+        run: |
+          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
+
+          if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
+            echo "La PR automática no está abierta, lista y basada en main."
+            exit 1
+          fi
+          if [ "$head_repo" != "$GITHUB_REPOSITORY" ]; then
+            echo "La PR automática no procede del repositorio principal."
+            exit 1
+          fi
+          if [ "$head_ref" != "$REQUESTED_REF" ]; then
+            echo "La rama solicitada ya no coincide con la cabecera de la PR."
+            exit 1
+          fi
+          case "$head_ref" in
+            bot/event-*) ;;
+            *)
+              echo "La rama no pertenece a la automatización de Eventos."
+              exit 1
+              ;;
+          esac
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^data/events/[a-z0-9]+(-[a-z0-9]+)*\.json$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "La PR automática contiene archivos no autorizados:"
+            echo "$invalid"
+            exit 1
+          fi
+
+      - name: Descargar la rama del PR
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.head_ref }}
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Comprobar scripts
+
+      - name: Comprobar sintaxis
         run: |
           node --check scripts/render-events.mjs
           node --check scripts/validate-events.mjs
           node --check js/event-hub.js
           node --check js/home-featured.js
-      - name: Generar y validar eventos
+
+      - name: Generar superficies de Eventos
+        run: node scripts/render-events.mjs
+
+      - name: Validar Eventos
+        run: |
+          node scripts/validate-events.mjs
+          git diff --check
+
+      - name: Exigir superficies generadas en PR manuales
+        if: ${{ !startsWith(inputs.head_ref || github.event.pull_request.head.ref || github.head_ref, 'bot/event-') }}
+        run: git diff --exit-code -- eventos eventos.html
+
+      - name: Fusionar el resultado final verificado
+        if: startsWith(inputs.head_ref || github.event.pull_request.head.ref || github.head_ref, 'bot/event-')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+          EXPECTED_REF: ${{ inputs.head_ref || github.event.pull_request.head.ref || github.head_ref }}
+        run: |
+          expected_sha="$(git rev-parse HEAD)"
+          pr="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER")"
+          state="$(printf '%s' "$pr" | jq -r .state)"
+          draft="$(printf '%s' "$pr" | jq -r .draft)"
+          base_ref="$(printf '%s' "$pr" | jq -r .base.ref)"
+          head_ref="$(printf '%s' "$pr" | jq -r .head.ref)"
+          remote_sha="$(printf '%s' "$pr" | jq -r .head.sha)"
+          head_repo="$(printf '%s' "$pr" | jq -r .head.repo.full_name)"
+
+          if [ "$state" != "open" ] || [ "$draft" != "false" ] || [ "$base_ref" != "main" ]; then
+            echo "La PR no está abierta, lista y basada en main."
+            exit 1
+          fi
+          if [ "$head_repo" != "$GITHUB_REPOSITORY" ] || [ "$head_ref" != "$EXPECTED_REF" ]; then
+            echo "La cabecera de la PR ya no coincide con la rama automática validada."
+            exit 1
+          fi
+          if [ "$remote_sha" != "$expected_sha" ]; then
+            echo "La cabecera remota cambió después de la validación."
+            exit 1
+          fi
+
+          files="$(gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+          invalid="$(printf '%s\n' "$files" | grep -Ev '^data/events/[a-z0-9]+(-[a-z0-9]+)*\.json$' || true)"
+          if [ -n "$invalid" ]; then
+            echo "La PR automática contiene archivos no autorizados:"
+            echo "$invalid"
+            exit 1
+          fi
+
+          gh pr merge "$PR_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --squash \
+            --delete-branch \
+            --match-head-commit "$expected_sha"
+
+  generate:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerar y validar Eventos
         run: |
           node scripts/render-events.mjs
           node scripts/validate-events.mjs
-          git diff --exit-code -- eventos
+          git diff --check
+
+      - name: Publicar superficies generadas
+        run: |
+          git add eventos eventos.html
+          if git diff --cached --quiet; then
+            echo "No hay superficies de Eventos pendientes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(events): regenerar cobertura"
+          git push origin main

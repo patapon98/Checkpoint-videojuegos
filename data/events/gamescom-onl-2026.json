@@ -3,11 +3,11 @@
   "title": "Gamescom Opening Night Live 2026",
   "shortTitle": "Opening Night Live 2026",
   "kicker": "Cobertura especial",
-  "status": "Próximamente",
-  "phase": "upcoming",
+  "status": "EN DIRECTO",
+  "phase": "live",
   "preShowAt": "2026-08-25T17:30:00Z",
   "startAt": "2026-08-25T18:00:00Z",
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-26",
   "officialUrl": "https://www.gamescom.global/en/program/onl",
   "organizer": "Gamescom",
   "attendanceMode": "MixedEventAttendanceMode",
@@ -30,12 +30,12 @@
   "homeFeature": {
     "day": "25",
     "month": "AGO",
-    "tag": "Gran evento · 25 de agosto",
+    "tag": "EN DIRECTO · Gamescom ONL",
     "title": "Gamescom ONL 2026, todos los anuncios",
-    "summary": "Sigue la gala inaugural con el horario, la emisión oficial y cada anuncio importante ordenado en una sola página."
+    "summary": "Sigue la gala inaugural con la emisión oficial y cada anuncio importante ordenado en una sola página."
   },
   "intro": "Todos los anuncios, fechas y tráilers de la gala inaugural de Gamescom, ordenados y actualizados durante la emisión.",
-  "editorialNote": "Final Secreto incorporará únicamente anuncios confirmados durante la emisión. Las predicciones y los rumores quedan fuera de esta cobertura.",
+  "editorialNote": "Final Secreto incorpora únicamente anuncios confirmados durante la emisión. Las predicciones y los rumores quedan fuera de esta cobertura.",
   "schedule": [
     {
       "label": "Previa",

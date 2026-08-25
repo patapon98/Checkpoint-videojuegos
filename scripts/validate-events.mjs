@@ -55,6 +55,10 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   }
   for (const [index, item] of data.announcements.entries()) {
     ["time", "type", "title", "summary", "sourceUrl"].forEach((key) => requiredString(item, key, `${label} > announcements[${index}]`));
+    if (data.phase === "finished") {
+      requiredString(item, "trailerUrl", `${label} > announcements[${index}]`);
+      expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl || ""), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
+    }
   }
   for (const [index, item] of data.sources.entries()) {
     ["label", "type", "url"].forEach((key) => requiredString(item, key, `${label} > sources[${index}]`));
@@ -72,15 +76,22 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   expect(!html.includes("Japón") && !html.includes("data-event-local-time"), `${output}: conserva horarios ajenos a España peninsular`);
   expect(html.indexOf('href="/juegos"') < html.indexOf('href="/eventos"') && html.indexOf('href="/eventos"') < html.indexOf('href="/resenas"'), `${output}: Eventos no está entre Juegos y Reseñas`);
   expect(archive.includes(`/eventos/${data.id}`) && archive.includes(data.title), `eventos.html: falta ${data.title}`);
-  for (const item of data.appearances) {
-    expect(html.includes(escapeHtml(item.game)) && html.includes(escapeHtml(item.summary)), `${output}: falta la presencia de ${item.game}`);
+  if (data.phase !== "finished") {
+    for (const item of data.appearances) {
+      expect(html.includes(escapeHtml(item.game)) && html.includes(escapeHtml(item.summary)), `${output}: falta la presencia de ${item.game}`);
+    }
+  } else {
+    expect(!html.includes('id="confirmados"') && !html.includes('data-event-countdown='), `${output}: el resumen final conserva módulos previos a la gala`);
   }
   for (const item of data.announcements) {
-    expect(html.includes(item.title) && html.includes(item.summary), `${output}: falta el anuncio ${item.title}`);
+    expect(html.includes(escapeHtml(item.title)) && html.includes(escapeHtml(item.summary)), `${output}: falta el anuncio ${item.title}`);
   }
 
   const home = await readFile("index.html", "utf8");
+  const compactHome = home.replace(/\s+/g, " ");
   expect(home.includes(`/eventos/${data.id}`), `index.html: falta el evento destacado ${data.id}`);
+  expect(compactHome.includes(escapeHtml(data.homeFeature.tag)) && compactHome.includes(escapeHtml(data.homeFeature.title)) && compactHome.includes(escapeHtml(data.homeFeature.summary)), `index.html: la destacada inicial de ${data.id} no coincide con sus datos`);
+  expect(home.includes(data.heroImage), `index.html: la destacada inicial de ${data.id} no usa su imagen actual`);
   const homeScript = await readFile("js/home-featured.js", "utf8");
   expect(homeScript.includes(`/data/events/${data.id}.json`), `js/home-featured.js: no carga los datos de ${data.id}`);
 }

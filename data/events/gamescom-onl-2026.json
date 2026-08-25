@@ -16,9 +16,9 @@
     "city": "Colonia",
     "country": "DE"
   },
-  "streamUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik",
-  "streamYoutubeId": "Zzvzt3IjNik",
-  "heroImage": "https://img.youtube.com/vi/Zzvzt3IjNik/maxresdefault.jpg",
+  "streamUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
+  "streamYoutubeId": "qwC9EFT6EFk",
+  "heroImage": "https://img.youtube.com/vi/qwC9EFT6EFk/maxresdefault.jpg",
   "heroImageAlt": "Imagen oficial de Gamescom Opening Night Live 2026",
   "heroTitle": {
     "line": "Gamescom",
@@ -37,18 +37,9 @@
   "intro": "Todos los anuncios, fechas y tráilers de la gala inaugural de Gamescom, ordenados y actualizados durante la emisión.",
   "editorialNote": "Final Secreto incorpora únicamente anuncios confirmados durante la emisión. Las predicciones y los rumores quedan fuera de esta cobertura.",
   "schedule": [
-    {
-      "label": "Previa",
-      "value": "19:30 en España peninsular"
-    },
-    {
-      "label": "Gala",
-      "value": "20:00 en España peninsular"
-    },
-    {
-      "label": "Presentan",
-      "value": "Geoff Keighley y Sjokz"
-    }
+    {"label": "Previa", "value": "19:30 en España peninsular"},
+    {"label": "Gala", "value": "20:00 en España peninsular"},
+    {"label": "Presentan", "value": "Geoff Keighley y Sjokz"}
   ],
   "seo": {
     "title": "Gamescom Opening Night Live 2026, todos los anuncios",
@@ -137,210 +128,41 @@
       "accent": "#ff6f91",
       "sourceUrl": "https://gamingbolt.com/ananta-will-be-showcased-at-gamescom-opening-night-live-2026"
     },
-    {
-      "game": "Silent Hill: Townfall",
-      "label": "Nuevo tráiler",
-      "summary": "La entrega de terror psicológico ambientada en Escocia estrenará un nuevo avance antes de su lanzamiento.",
-      "sourceUrl": "https://www.gamespark.jp/article/2026/08/20/170954.html"
-    },
-    {
-      "game": "Showa American Story",
-      "label": "Nuevo tráiler",
-      "summary": "El RPG de acción de NEKCOM Games reaparecerá con un nuevo vídeo tras un largo periodo sin novedades.",
-      "sourceUrl": "https://automaton-media.com/articles/newsjp/20260818-460578/"
-    },
-    {
-      "game": "Warlock: Dungeons & Dragons",
-      "label": "World Premiere",
-      "summary": "Invoke Studios ofrecerá el primer vistazo completo a la jugabilidad de su aventura de acción y fantasía oscura.",
-      "sourceUrl": "https://store.steampowered.com/app/3714800/Warlock_Dungeons__Dragons/"
-    },
-    {
-      "game": "AION 2",
-      "label": "Nuevo tráiler",
-      "summary": "NC llevará su MMORPG a Opening Night Live antes del inicio del acceso anticipado global.",
-      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003033.000001868.html"
-    },
-    {
-      "game": "CINDER CITY",
-      "label": "Nuevo tráiler",
-      "summary": "El shooter en tercera persona y mundo abierto presentará un nuevo avance centrado en su ambientación.",
-      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003033.000001868.html"
-    },
-    {
-      "game": "Project Bonfire",
-      "label": "World Premiere",
-      "summary": "NC revelará el nombre definitivo, el concepto y las características principales de este proyecto todavía secreto.",
-      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003033.000001868.html"
-    },
-    {
-      "game": "DUST: Origins",
-      "label": "World Premiere",
-      "summary": "Airship Syndicate presentará oficialmente su nuevo juego de acción y ciencia ficción durante la gala.",
-      "sourceUrl": "https://doope.jp/2026/08169729.html"
-    },
-    {
-      "game": "ONTOS",
-      "label": "Nuevo tráiler",
-      "summary": "La aventura de ciencia ficción de Frictional Games, creadores de SOMA, formará parte de la emisión.",
-      "sourceUrl": "https://doope.jp/2026/08169741.html"
-    },
-    {
-      "game": "Monster Hunter Outlanders",
-      "label": "Actualización",
-      "summary": "La adaptación para móviles de Monster Hunter mostrará novedades sobre su mundo y sus cacerías.",
-      "sourceUrl": "https://www.gamersky.com/news/202608/2190366.shtml"
-    },
-    {
-      "game": "Exodus",
-      "label": "Nuevo tráiler",
-      "summary": "El RPG de ciencia ficción de Archetype Entertainment regresará con nuevo material durante Opening Night Live.",
-      "sourceUrl": "https://techora.ru/news/exodus-pokazhut-na-tseremonii-otkrytiya-gamescom-2026-08-20"
-    },
-    {
-      "game": "Path of Exile 2",
-      "label": "Actualización",
-      "summary": "Grinding Gear Games ha adelantado una nueva revelación del RPG de acción durante la emisión.",
-      "sourceUrl": "https://steamcommunity.com/app/2694490"
-    },
-    {
-      "game": "Stage Tour",
-      "label": "Nuevo tráiler",
-      "summary": "El juego musical de antiguos responsables de Guitar Hero y DJ Hero volverá a mostrarse en el escenario.",
-      "sourceUrl": "https://gamersocialclub.ca/2026/08/19/guitar-hero-spiritual-successor-stage-tour-confirmed-for-gamescom-opening-night-live/"
-    },
-    {
-      "game": "Mewgenics",
-      "label": "Actuación",
-      "summary": "La gala incluirá una interpretación en directo de música del RPG táctico de Edmund McMillen y Tyler Glaiel.",
-      "sourceUrl": "https://www.play3.de/2026/08/21/gamescom-2026-trailer-auswahl-fuer-onl-show-erklaert-es-kann-teuer-werden/"
-    },
-    {
-      "game": "Pony Island 2: Panda Circus",
-      "label": "Nuevo tráiler",
-      "summary": "El nuevo juego de Daniel Mullins, creador de Inscryption, figura entre las presencias anunciadas para la gala.",
-      "sourceUrl": "https://www.clavecd.es/pony-island-2-panda-circus-gamescom-2026-news-r/"
-    },
-    {
-      "game": "Aniimo",
-      "label": "Actualización",
-      "summary": "El RPG de captura de criaturas ha adelantado una nueva revelación para Opening Night Live sin concretar todavía su contenido.",
-      "sourceUrl": "https://dein-gamepuls.de/2026/08/14/aniimo-gamescom-2026-hands-on/"
-    }
+    {"game": "Silent Hill: Townfall", "label": "Nuevo tráiler", "summary": "La entrega de terror psicológico ambientada en Escocia estrenará un nuevo avance antes de su lanzamiento.", "sourceUrl": "https://www.gamespark.jp/article/2026/08/20/170954.html"},
+    {"game": "Showa American Story", "label": "Nuevo tráiler", "summary": "El RPG de acción de NEKCOM Games reaparecerá con un nuevo vídeo tras un largo periodo sin novedades.", "sourceUrl": "https://automaton-media.com/articles/newsjp/20260818-460578/"},
+    {"game": "Warlock: Dungeons & Dragons", "label": "World Premiere", "summary": "Invoke Studios ofrecerá el primer vistazo completo a la jugabilidad de su aventura de acción y fantasía oscura.", "sourceUrl": "https://store.steampowered.com/app/3714800/Warlock_Dungeons__Dragons/"},
+    {"game": "AION 2", "label": "Nuevo tráiler", "summary": "NC llevará su MMORPG a Opening Night Live antes del inicio del acceso anticipado global.", "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003033.000001868.html"},
+    {"game": "CINDER CITY", "label": "Nuevo tráiler", "summary": "El shooter en tercera persona y mundo abierto presentará un nuevo avance centrado en su ambientación.", "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003033.000001868.html"},
+    {"game": "Project Bonfire", "label": "World Premiere", "summary": "NC revelará el nombre definitivo, el concepto y las características principales de este proyecto todavía secreto.", "sourceUrl": "https://prtimes.jp/main/html/rd/p/000003033.000001868.html"},
+    {"game": "DUST: Origins", "label": "World Premiere", "summary": "Airship Syndicate presentará oficialmente su nuevo juego de acción y ciencia ficción durante la gala.", "sourceUrl": "https://doope.jp/2026/08169729.html"},
+    {"game": "ONTOS", "label": "Nuevo tráiler", "summary": "La aventura de ciencia ficción de Frictional Games, creadores de SOMA, formará parte de la emisión.", "sourceUrl": "https://doope.jp/2026/08169741.html"},
+    {"game": "Monster Hunter Outlanders", "label": "Actualización", "summary": "La adaptación para móviles de Monster Hunter mostrará novedades sobre su mundo y sus cacerías.", "sourceUrl": "https://www.gamersky.com/news/202608/2190366.shtml"},
+    {"game": "Exodus", "label": "Nuevo tráiler", "summary": "El RPG de ciencia ficción de Archetype Entertainment regresará con nuevo material durante Opening Night Live.", "sourceUrl": "https://techora.ru/news/exodus-pokazhut-na-tseremonii-otkrytiya-gamescom-2026-08-20"},
+    {"game": "Path of Exile 2", "label": "Actualización", "summary": "Grinding Gear Games ha adelantado una nueva revelación del RPG de acción durante la emisión.", "sourceUrl": "https://steamcommunity.com/app/2694490"},
+    {"game": "Stage Tour", "label": "Nuevo tráiler", "summary": "El juego musical de antiguos responsables de Guitar Hero y DJ Hero volverá a mostrarse en el escenario.", "sourceUrl": "https://gamersocialclub.ca/2026/08/19/guitar-hero-spiritual-successor-stage-tour-confirmed-for-gamescom-opening-night-live/"},
+    {"game": "Mewgenics", "label": "Actuación", "summary": "La gala incluirá una interpretación en directo de música del RPG táctico de Edmund McMillen y Tyler Glaiel.", "sourceUrl": "https://www.play3.de/2026/08/21/gamescom-2026-trailer-auswahl-fuer-onl-show-erklaert-es-kann-teuer-werden/"},
+    {"game": "Pony Island 2: Panda Circus", "label": "Nuevo tráiler", "summary": "El nuevo juego de Daniel Mullins, creador de Inscryption, figura entre las presencias anunciadas para la gala.", "sourceUrl": "https://www.clavecd.es/pony-island-2-panda-circus-gamescom-2026-news-r/"},
+    {"game": "Aniimo", "label": "Actualización", "summary": "El RPG de captura de criaturas ha adelantado una nueva revelación para Opening Night Live sin concretar todavía su contenido.", "sourceUrl": "https://dein-gamepuls.de/2026/08/14/aniimo-gamescom-2026-hands-on/"}
   ],
   "announcements": [
-    {
-      "time": "19:54",
-      "type": "Pre-show · World Premiere",
-      "title": "Age Twisters",
-      "summary": "Nuevo juego isométrico que permite alternar entre un anciano y un niño como parte central de su propuesta.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:53",
-      "type": "Pre-show · World Premiere",
-      "title": "Elta",
-      "summary": "Se presenta un nuevo juego de acción en tercera persona con un pequeño dragón como compañero.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:51",
-      "type": "Pre-show · World Premiere",
-      "title": "Humankind II",
-      "summary": "Amplitude presenta oficialmente la secuela de su 4X histórico tras su aparición previa en SteamDB.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:49",
-      "type": "Pre-show · World Premiere",
-      "title": "Murals",
-      "summary": "Nuevo proyecto presentado durante la previa con una dirección artística muy colorida y mecánicas relacionadas con la pintura.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:48",
-      "type": "Pre-show · World Premiere",
-      "title": "Tank Rat",
-      "summary": "La previa muestra por primera vez este nuevo juego protagonizado por un robot.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:47",
-      "type": "Pre-show · Nuevo tráiler",
-      "title": "Valor Mortis",
-      "summary": "El RPG de acción de One More Level reaparece con nuevo material durante la previa.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:47",
-      "type": "Pre-show · World Premiere",
-      "title": "Acornia",
-      "summary": "Nuevo juego de tono cozy protagonizado por animales antropomórficos presentado durante la previa.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:45",
-      "type": "Pre-show · World Premiere",
-      "title": "Perceptum",
-      "summary": "Se presenta un nuevo juego de terror con un primer tráiler centrado en su atmósfera.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:43",
-      "type": "Pre-show · World Premiere",
-      "title": "NeHa",
-      "summary": "Nuevo hack and slash presentado durante el pre-show de Opening Night Live.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:41",
-      "type": "Pre-show · Nuevo tráiler",
-      "title": "Aniimo",
-      "summary": "El RPG de captura de criaturas ya anunciado muestra nuevo material durante la previa.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:39",
-      "type": "Pre-show · World Premiere",
-      "title": "RollerCoaster Tycoon: Wonderworks",
-      "summary": "Se anuncia una nueva entrega de RollerCoaster Tycoon con lanzamiento inicial en acceso anticipado.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:38",
-      "type": "Pre-show · World Premiere",
-      "title": "Train Sim World 7",
-      "summary": "Dovetail Games anuncia una nueva entrega de su simulador ferroviario durante la previa.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "time": "19:36",
-      "type": "Pre-show · World Premiere",
-      "title": "Worms: Galactic Tactics",
-      "summary": "Team17 oficializa el nuevo spin-off táctico de Worms para 2027 y además adelanta que hay otro juego clásico de la saga en desarrollo.",
-      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    }
+    {"time": "19:54", "type": "Pre-show · World Premiere", "title": "Age Twisters", "summary": "Nuevo juego isométrico que permite alternar entre un anciano y un niño como parte central de su propuesta.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:53", "type": "Pre-show · World Premiere", "title": "Elta", "summary": "Se presenta un nuevo juego de acción en tercera persona con un pequeño dragón como compañero.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:51", "type": "Pre-show · World Premiere", "title": "Humankind II", "summary": "Amplitude presenta oficialmente la secuela de su 4X histórico tras su aparición previa en SteamDB.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:49", "type": "Pre-show · World Premiere", "title": "Murals", "summary": "Nuevo proyecto presentado durante la previa con una dirección artística muy colorida y mecánicas relacionadas con la pintura.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:48", "type": "Pre-show · World Premiere", "title": "Tank Rat", "summary": "La previa muestra por primera vez este nuevo juego protagonizado por un robot.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:47", "type": "Pre-show · Nuevo tráiler", "title": "Valor Mortis", "summary": "El RPG de acción de One More Level reaparece con nuevo material durante la previa.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:47", "type": "Pre-show · World Premiere", "title": "Acornia", "summary": "Nuevo juego de tono cozy protagonizado por animales antropomórficos presentado durante la previa.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:45", "type": "Pre-show · World Premiere", "title": "Perceptum", "summary": "Se presenta un nuevo juego de terror con un primer tráiler centrado en su atmósfera.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:43", "type": "Pre-show · World Premiere", "title": "NeHa", "summary": "Nuevo hack and slash presentado durante el pre-show de Opening Night Live.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:41", "type": "Pre-show · Nuevo tráiler", "title": "Aniimo", "summary": "El RPG de captura de criaturas ya anunciado muestra nuevo material durante la previa.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:39", "type": "Pre-show · World Premiere", "title": "RollerCoaster Tycoon: Wonderworks", "summary": "Se anuncia una nueva entrega de RollerCoaster Tycoon con lanzamiento inicial en acceso anticipado.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:38", "type": "Pre-show · World Premiere", "title": "Train Sim World 7", "summary": "Dovetail Games anuncia una nueva entrega de su simulador ferroviario durante la previa.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"time": "19:36", "type": "Pre-show · World Premiere", "title": "Worms: Galactic Tactics", "summary": "Team17 oficializa el nuevo spin-off táctico de Worms para 2027 y además adelanta que hay otro juego clásico de la saga en desarrollo.", "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"}
   ],
   "sources": [
-    {
-      "label": "Gamescom",
-      "type": "Horario, sede y emisión oficial",
-      "url": "https://www.gamescom.global/en/program/onl"
-    },
-    {
-      "label": "Gamescom en YouTube",
-      "type": "Retransmisión oficial de Opening Night Live 2026",
-      "url": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
-    },
-    {
-      "label": "Red Bull Gaming",
-      "type": "Selección de juegos confirmados para la gala",
-      "url": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"
-    },
-    {
-      "label": "Pure Xbox",
-      "type": "Horario y presencias confirmadas",
-      "url": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"
-    }
+    {"label": "Gamescom", "type": "Horario, sede y emisión oficial", "url": "https://www.gamescom.global/en/program/onl"},
+    {"label": "Gamescom en YouTube", "type": "Retransmisión oficial de Opening Night Live 2026", "url": "https://www.youtube.com/watch?v=qwC9EFT6EFk"},
+    {"label": "Red Bull Gaming", "type": "Selección de juegos confirmados para la gala", "url": "https://www.redbull.com/gb-en/gamescom-opening-night-live-2026-games"},
+    {"label": "Pure Xbox", "type": "Horario y presencias confirmadas", "url": "https://www.purexbox.com/features/gamescom-opening-night-live-date-start-times-and-what-to-expect"}
   ]
 }

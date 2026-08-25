@@ -173,6 +173,44 @@ jobs:
             --delete-branch \
             --match-head-commit "$expected_sha"
 
+  generate_after_bot_merge:
+    needs: validate
+    if: >-
+      github.event_name == 'pull_request_target' &&
+      startsWith(inputs.head_ref || github.event.pull_request.head.ref, 'bot/event-') &&
+      needs.validate.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar main ya fusionado
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerar y validar Eventos después del auto-merge
+        run: |
+          git pull --ff-only origin main
+          node scripts/render-events.mjs
+          node scripts/validate-events.mjs
+          git diff --check
+
+      - name: Publicar superficies generadas después del auto-merge
+        run: |
+          git add eventos eventos.html
+          if git diff --cached --quiet; then
+            echo "No hay superficies de Eventos pendientes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(events): regenerar cobertura"
+          git push origin main
+
   generate:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest

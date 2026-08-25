@@ -228,7 +228,99 @@
       "sourceUrl": "https://dein-gamepuls.de/2026/08/14/aniimo-gamescom-2026-hands-on/"
     }
   ],
-  "announcements": [],
+  "announcements": [
+    {
+      "time": "19:54",
+      "type": "Pre-show · World Premiere",
+      "title": "Age Twisters",
+      "summary": "Nuevo juego isométrico que permite alternar entre un anciano y un niño como parte central de su propuesta.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:53",
+      "type": "Pre-show · World Premiere",
+      "title": "Elta",
+      "summary": "Se presenta un nuevo juego de acción en tercera persona con un pequeño dragón como compañero.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:51",
+      "type": "Pre-show · World Premiere",
+      "title": "Humankind II",
+      "summary": "Amplitude presenta oficialmente la secuela de su 4X histórico tras su aparición previa en SteamDB.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:49",
+      "type": "Pre-show · World Premiere",
+      "title": "Murals",
+      "summary": "Nuevo proyecto presentado durante la previa con una dirección artística muy colorida y mecánicas relacionadas con la pintura.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:48",
+      "type": "Pre-show · World Premiere",
+      "title": "Tank Rat",
+      "summary": "La previa muestra por primera vez este nuevo juego protagonizado por un robot.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:47",
+      "type": "Pre-show · Nuevo tráiler",
+      "title": "Valor Mortis",
+      "summary": "El RPG de acción de One More Level reaparece con nuevo material durante la previa.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:47",
+      "type": "Pre-show · World Premiere",
+      "title": "Acornia",
+      "summary": "Nuevo juego de tono cozy protagonizado por animales antropomórficos presentado durante la previa.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:45",
+      "type": "Pre-show · World Premiere",
+      "title": "Perceptum",
+      "summary": "Se presenta un nuevo juego de terror con un primer tráiler centrado en su atmósfera.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:43",
+      "type": "Pre-show · World Premiere",
+      "title": "NeHa",
+      "summary": "Nuevo hack and slash presentado durante el pre-show de Opening Night Live.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:41",
+      "type": "Pre-show · Nuevo tráiler",
+      "title": "Aniimo",
+      "summary": "El RPG de captura de criaturas ya anunciado muestra nuevo material durante la previa.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:39",
+      "type": "Pre-show · World Premiere",
+      "title": "RollerCoaster Tycoon: Wonderworks",
+      "summary": "Se anuncia una nueva entrega de RollerCoaster Tycoon con lanzamiento inicial en acceso anticipado.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:38",
+      "type": "Pre-show · World Premiere",
+      "title": "Train Sim World 7",
+      "summary": "Dovetail Games anuncia una nueva entrega de su simulador ferroviario durante la previa.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    },
+    {
+      "time": "19:36",
+      "type": "Pre-show · World Premiere",
+      "title": "Worms: Galactic Tactics",
+      "summary": "Team17 oficializa el nuevo spin-off táctico de Worms para 2027 y además adelanta que hay otro juego clásico de la saga en desarrollo.",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zzvzt3IjNik"
+    }
+  ],
   "sources": [
     {
       "label": "Gamescom",

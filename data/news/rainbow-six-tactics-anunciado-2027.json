@@ -1,0 +1,64 @@
+{
+  "id": "rainbow-six-tactics-anunciado-2027",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "llevará la saga al combate táctico por turnos",
+      "se estrenará en 2027",
+      "más de 45 ubicaciones"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-25",
+  "publishedAt": "2026-08-25T18:11:00Z",
+  "addedAt": "2026-08-25T20:31:36Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Rainbow Six Tactics"
+    },
+    "copy": {
+      "es": "Rainbow Six Tactics llevará las brechas de Siege a los turnos en 2027"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Rainbow Six Tactics traslada las brechas de Siege a la estrategia por turnos"
+  },
+  "summary": {
+    "es": "Ubisoft ha anunciado Rainbow Six Tactics, una experiencia individual que llevará la saga al combate táctico por turnos. El nuevo juego se estrenará en 2027 para PS5, Xbox Series X|S y PC."
+  },
+  "why": {
+    "es": "El jugador asumirá el mando de Six y formará escuadras de cuatro entre 15 operadores, con destrucción de escenarios, asaltos sincronizados y más de 45 ubicaciones repartidas por el mundo."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=HoDIxvqQfxQ",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Anuncio oficial del juego, sus sistemas y plataformas"
+      },
+      "url": "https://news.ubisoft.com/en-us/article/5wTVuqG9AnmMI0uJwAL1rF/rainbow-six-tactics-revealed-a-turnbased-tactical-experience"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Cobertura del anuncio y confirmación de la ventana de lanzamiento"
+      },
+      "url": "https://www.gematsu.com/2026/08/tom-clancys-rainbow-six-tactics-announced-for-ps5-xbox-series-and-pc"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La campaña transcurre en paralelo a la cronología de Rainbow Six Siege y coloca al jugador al frente de la organización ante una nueva amenaza global. Las misiones incluirán rescates de rehenes, desactivación de bombas y eliminación de objetivos prioritarios.",
+      "Antes de desplegar será posible estudiar la inteligencia, elegir hasta cuatro agentes y mejorar la base, sus habilidades y el equipamiento. Sobre el terreno, el modo Breach permitirá encadenar órdenes para ejecutar entradas coordinadas y aprovechar paredes destructibles."
+    ]
+  }
+}

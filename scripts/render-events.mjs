@@ -75,21 +75,29 @@ function youtubeIdFromUrl(value = "") {
   return "";
 }
 
-function highlightMarkup(item, index) {
-  const videoId = youtubeIdFromUrl(item.trailerUrl);
-  const links = [
-    item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
-    `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente oficial ↗</a>`
-  ].filter(Boolean).join("\n              ");
-  return `<article class="event-highlight${index === 0 ? " event-highlight-lead" : ""}${index % 2 ? " event-highlight-reverse" : ""} reveal">
-          <div class="event-highlight-media">
-            <button class="event-video-facade" type="button" data-youtube-id="${escapeHtml(videoId)}" data-video-title="Tráiler de ${escapeHtml(item.title)}" aria-label="Reproducir el tráiler de ${escapeHtml(item.title)}">
+function videoFacadeMarkup(trailer, item) {
+  const videoId = youtubeIdFromUrl(trailer.url);
+  const label = trailer.label || "Ver tráiler";
+  return `<div class="event-highlight-media">
+            <button class="event-video-facade" type="button" data-youtube-id="${escapeHtml(videoId)}" data-video-title="${escapeHtml(label)} · ${escapeHtml(item.title)}" aria-label="${escapeHtml(label)} de ${escapeHtml(item.title)}">
               <img src="https://img.youtube.com/vi/${escapeHtml(videoId)}/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
               <span class="event-video-shade"></span>
               <span class="event-video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 7.2v9.6L17 12 9 7.2Z"/></svg></span>
-              <span class="event-video-label">Ver tráiler</span>
+              <span class="event-video-label">${escapeHtml(label)}</span>
             </button>
-          </div>
+          </div>`;
+}
+
+function highlightMarkup(item, index) {
+  const trailers = [
+    { url: item.trailerUrl, label: item.trailerLabel || "Ver tráiler" },
+    ...(item.extraTrailers || [])
+  ];
+  const links = [
+    item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
+    `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente ↗</a>`
+  ].filter(Boolean).join("\n              ");
+  return `<article class="event-highlight${index === 0 ? " event-highlight-lead" : ""} reveal">
           <div class="event-highlight-copy">
             <div class="event-highlight-meta"><span class="event-highlight-rank">${String(index + 1).padStart(2, "0")}</span><span>${escapeHtml(item.type)}</span></div>
             <h3>${escapeHtml(item.title)}</h3>
@@ -97,6 +105,9 @@ function highlightMarkup(item, index) {
             <div class="event-highlight-links">
               ${links}
             </div>
+          </div>
+          <div class="event-highlight-videos${trailers.length > 1 ? " event-highlight-videos-multiple" : ""}">
+            ${trailers.map((trailer) => videoFacadeMarkup(trailer, item)).join("\n            ")}
           </div>
         </article>`;
 }
@@ -252,7 +263,7 @@ function page(data) {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/event-hub.css?v=20260826-1">
+<link rel="stylesheet" href="/css/event-hub.css?v=20260826-2">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page" data-event-id="${escapeHtml(data.id)}">

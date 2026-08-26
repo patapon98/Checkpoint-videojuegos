@@ -37,21 +37,25 @@
   "intro": "Las revelaciones imprescindibles de Gamescom Opening Night Live 2026 en una selección visual, directa y ordenada por relevancia.",
   "editorialNote": "La selección prioriza grandes revelaciones, regresos, fechas y gameplays. El archivo completo de la cobertura se conserva en los datos del especial.",
   "highlights": [
+    "Nodusfall",
+    "The Witcher 3: Remastered y Songs of the Past",
     "Tom Clancy’s Rainbow Six Tactics",
-    "Nodus Fall",
+    "Heroes of Might and Magic III Remake",
+    "Afterworld",
+    "LEGO Skylines",
+    "Humankind 2",
+    "Mariachi Legends",
+    "Pony Island 2: Panda Circus",
+    "Path of Exile 2",
+    "Exodus",
+    "ANANTA",
+    "Crazy Taxi: World Tour",
+    "Onimusha: Way of the Sword",
     "Gears of War: E-Day",
     "Metro 2039",
-    "ANANTA",
+    "Final Fantasy VII Revelation",
     "SILENT HILL: Townfall",
-    "Exodus",
-    "Path of Exile 2",
-    "Heroes of Might and Magic III Remake",
-    "CONTROL Resonant",
-    "Game of Thrones: War for Westeros",
-    "The Blood of Dawnwalker",
-    "Mega Man: Dual Override",
-    "Afterworld",
-    "Tides of Annihilation"
+    "CONTROL Resonant"
   ],
   "schedule": [
     {
@@ -80,7 +84,7 @@
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk"
     },
     {
-      "game": "Nodus Fall",
+      "game": "Nodusfall",
       "label": "World Premiere",
       "summary": "HoYoverse reveló durante Opening Night Live su nueva IP de acción cooperativa en mundo abierto y fantasía oscura.",
       "sourceUrl": "https://www.youtube.com/watch?v=3chg4voancg"
@@ -105,10 +109,24 @@
     {
       "time": "20:00",
       "type": "World Premiere",
-      "title": "Nodus Fall",
+      "title": "Nodusfall",
       "summary": "HoYoverse presenta una nueva IP de acción cooperativa en mundo abierto y fantasía oscura, con combates contra grandes criaturas.",
       "sourceUrl": "https://www.youtube.com/watch?v=3chg4voancg",
       "trailerUrl": "https://www.youtube.com/watch?v=3chg4voancg"
+    },
+    {
+      "type": "Gran anuncio",
+      "title": "The Witcher 3: Remastered y Songs of the Past",
+      "summary": "The Witcher 3: Wild Hunt recibirá un remaster el 29 de septiembre de 2026 como actualización gratuita para propietarios del juego en plataformas compatibles. Además, Hearts of Stone y Blood and Wine pasan a ser gratis para quienes tengan el juego base, mientras que la nueva expansión de pago Songs of the Past llegará en 2027 con la región de Letten.",
+      "sourceUrl": "https://press.cdprojektred.com/en/news/1839/the-witcher-3-wild-hunt-remastered-announced-songs-of-the-past-gets-first-look",
+      "trailerUrl": "https://www.youtube.com/watch?v=IGk17XQ7IrQ",
+      "trailerLabel": "Tráiler del remaster",
+      "extraTrailers": [
+        {
+          "label": "Tráiler de Songs of the Past",
+          "url": "https://www.youtube.com/watch?v=SB3siHVCHpY"
+        }
+      ]
     },
     {
       "time": "20:14",
@@ -426,11 +444,39 @@
     },
     {
       "time": "21:53",
-      "type": "Nuevo tráiler",
+      "type": "Fecha de lanzamiento",
       "title": "Pony Island 2: Panda Circus",
-      "summary": "Daniel Mullins muestra un nuevo tráiler de Pony Island 2: Panda Circus durante el tramo final de la gala.",
+      "summary": "El nuevo juego de Daniel Mullins, creador de Inscryption, fija por fin su lanzamiento para el 27 de abril de 2027 y muestra un nuevo tráiler.",
       "sourceUrl": "https://www.youtube.com/watch?v=1YlDxPSQMaU",
       "trailerUrl": "https://www.youtube.com/watch?v=1YlDxPSQMaU"
+    },
+    {
+      "type": "Fecha de lanzamiento",
+      "title": "Mariachi Legends",
+      "summary": "El metroidvania de acción de Halberd Studios, ambientado en el folclore mexicano y protagonizado por el detective Pablo Cruz, confirma su lanzamiento para el 27 de abril de 2027.",
+      "sourceUrl": "https://www.gematsu.com/2026/08/mariachi-legends-delayed-to-april-27-2027",
+      "trailerUrl": "https://www.youtube.com/watch?v=S8FxDXI6Rb4"
+    },
+    {
+      "type": "Demo ampliada",
+      "title": "Onimusha: Way of the Sword",
+      "summary": "Capcom amplía la demo gratuita con una segunda misión en el Refugio Oni y el combate contra Daidara. La actualización ya está disponible y llega acompañada de un nuevo tráiler.",
+      "sourceUrl": "https://www.gematsu.com/2026/08/onimusha-way-of-the-sword-demo-now-available-for-switch-2-alongside-new-content",
+      "trailerUrl": "https://www.youtube.com/watch?v=vKHDF0TTIeE"
+    },
+    {
+      "type": "Nuevo tráiler",
+      "title": "Final Fantasy VII Revelation",
+      "summary": "Square Enix muestra a Cloud y su grupo frente a las Armas en el nuevo tráiler de la entrega que cerrará la trilogía remake en primavera de 2027.",
+      "sourceUrl": "https://www.youtube.com/watch?v=87TNASkXOWQ",
+      "trailerUrl": "https://www.youtube.com/watch?v=87TNASkXOWQ"
+    },
+    {
+      "type": "Primer vistazo multijugador",
+      "title": "Crazy Taxi: World Tour",
+      "summary": "SEGA enseña por primera vez el multijugador: varios conductores competirán por pasajeros, atajos y el control de las calles. También regresan Gena, B.D. Joe y Gus, y habrá una prueba de red cerrada en septiembre.",
+      "sourceUrl": "https://www.youtube.com/watch?v=a3mF9zwozJk",
+      "trailerUrl": "https://www.youtube.com/watch?v=a3mF9zwozJk"
     },
     {
       "time": "19:41",

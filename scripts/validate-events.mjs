@@ -54,10 +54,15 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     }
   }
   for (const [index, item] of data.announcements.entries()) {
-    ["time", "type", "title", "summary", "sourceUrl"].forEach((key) => requiredString(item, key, `${label} > announcements[${index}]`));
+    ["type", "title", "summary", "sourceUrl"].forEach((key) => requiredString(item, key, `${label} > announcements[${index}]`));
+    if (data.phase !== "finished") requiredString(item, "time", `${label} > announcements[${index}]`);
     if (data.phase === "finished") {
       requiredString(item, "trailerUrl", `${label} > announcements[${index}]`);
       expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl || ""), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
+      for (const [trailerIndex, trailer] of (item.extraTrailers || []).entries()) {
+        ["label", "url"].forEach((key) => requiredString(trailer, key, `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]`));
+        expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(trailer.url || ""), `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]: url debe enlazar a YouTube`);
+      }
     }
   }
   if (data.phase === "finished") {
@@ -91,7 +96,11 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   } else {
     expect(!html.includes('id="confirmados"') && !html.includes('data-event-countdown='), `${output}: el resumen final conserva módulos previos a la gala`);
     expect(!html.includes('class="event-filter"') && !html.includes('class="event-announcement-time"'), `${output}: el resumen final conserva filtros u horas de la cronología`);
-    expect((html.match(/data-youtube-id=/g) || []).length === data.highlights.length, `${output}: no hay un tráiler integrado por cada destacado`);
+    const expectedTrailers = data.highlights.reduce((total, title) => {
+      const item = data.announcements.find((announcement) => announcement.title === title);
+      return total + (item ? 1 + (item.extraTrailers || []).length : 0);
+    }, 0);
+    expect((html.match(/data-youtube-id=/g) || []).length === expectedTrailers, `${output}: no se han integrado todos los tráilers de los destacados`);
   }
   const visibleAnnouncements = data.phase === "finished"
     ? data.highlights.map((title) => data.announcements.find((item) => item.title === title)).filter(Boolean)

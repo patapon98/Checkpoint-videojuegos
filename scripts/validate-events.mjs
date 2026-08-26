@@ -12,6 +12,14 @@ const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, (character)
   '"': "&quot;",
   "'": "&#039;"
 }[character]));
+const youtubeIdFromUrl = (value = "") => {
+  try {
+    const url = new URL(value);
+    if (url.hostname === "youtu.be") return url.pathname.split("/").filter(Boolean)[0] || "";
+    if (url.hostname.endsWith("youtube.com")) return url.searchParams.get("v") || "";
+  } catch {}
+  return "";
+};
 const DATA_DIR = "data/events";
 const APPEARANCE_LABELS = new Set(["World Premiere", "Nuevo tráiler", "Actualización", "Expansión", "Actuación"]);
 const archive = await readFile("eventos.html", "utf8");
@@ -59,10 +67,12 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     if (data.phase === "finished") {
       requiredString(item, "trailerUrl", `${label} > announcements[${index}]`);
       expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl || ""), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
+      expect(youtubeIdFromUrl(item.trailerUrl) !== data.streamYoutubeId, `${label} > announcements[${index}]: trailerUrl no puede apuntar a la retransmisión completa`);
       if (item.archiveImage) expect(/^https:\/\//.test(item.archiveImage), `${label} > announcements[${index}]: archiveImage debe ser una URL HTTPS`);
       for (const [trailerIndex, trailer] of (item.extraTrailers || []).entries()) {
         ["label", "url"].forEach((key) => requiredString(trailer, key, `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]`));
         expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(trailer.url || ""), `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]: url debe enlazar a YouTube`);
+        expect(youtubeIdFromUrl(trailer.url) !== data.streamYoutubeId, `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]: url no puede apuntar a la retransmisión completa`);
       }
     }
   }

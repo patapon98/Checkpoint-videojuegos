@@ -1,0 +1,70 @@
+{
+  "id": "path-of-exile-2-version-1-0-diciembre",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "saldrá del acceso anticipado el 11 de diciembre",
+      "pasará a ser completamente gratuito",
+      "la clase Duelista"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-26",
+  "addedAt": "2026-08-26T02:58:10Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Path of Exile 2"
+    },
+    "copy": {
+      "es": "Path of Exile 2 lanzará su versión 1.0 gratuita el 11 de diciembre"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Path of Exile 2 fija para diciembre su lanzamiento completo y gratuito"
+  },
+  "summary": {
+    "es": "Grinding Gear Games ha anunciado que Path of Exile 2 saldrá del acceso anticipado el 11 de diciembre. Con la versión 1.0, el RPG de acción pasará a ser completamente gratuito en PS5, Xbox Series X|S y PC."
+  },
+  "why": {
+    "es": "El lanzamiento completo incorporará la clase Duelista y ampliará la campaña, el final del juego, la progresión, las habilidades, el equipo, los jefes y las zonas disponibles."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=BwYNNQJO-AE",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Grinding Gear Games",
+      "type": {
+        "es": "Anuncio oficial de la fecha, el modelo gratuito y la clase Duelista"
+      },
+      "url": "https://www.pathofexile.com/forum/view-thread/3999366"
+    },
+    {
+      "label": "Steam",
+      "type": {
+        "es": "Ficha oficial con la salida del acceso anticipado y el contenido previsto para la versión completa"
+      },
+      "url": "https://store.steampowered.com/app/2694490/Path_of_Exile_2/"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Recapitulación oficial de Gamescom y confirmación del lanzamiento en PS5"
+      },
+      "url": "https://blog.playstation.com/2026/08/25/gamescom-opening-night-live-highlights-19-games-coming-to-playstation/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La versión 1.0 cerrará una etapa de acceso anticipado iniciada en diciembre de 2024. Grinding Gear Games mantendrá el modelo free-to-play del primer juego, por lo que dejará de ser necesario adquirir uno de los paquetes de colaborador que dan acceso a la versión actual.",
+      "El Duelista debutó en Opening Night Live como especialista en espadas y será una de las incorporaciones del estreno completo. El estudio también prevé añadir dos actos, más clases y ascendencias, nuevas gemas y objetos, además de ampliar las áreas, los monstruos, los jefes y el contenido de final de juego."
+    ]
+  }
+}

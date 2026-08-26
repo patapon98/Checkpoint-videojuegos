@@ -63,6 +63,60 @@
     .toLowerCase()
     .trim();
 
+  const youtubeWatchUrl = (videoId) => `https://www.youtube.com/watch?v=${videoId}`;
+  const trailerOverrides = new Map([
+    ['Aniimo', 'liBxXm7iQT0']
+  ]);
+
+  const isTrailerLink = (link) => normalize(link.textContent).startsWith('ver trailer');
+  const isSourceLink = (link) => normalize(link.textContent).startsWith('fuente');
+
+  document.querySelectorAll('.event-announcement-links').forEach((links) => {
+    const anchors = [...links.querySelectorAll('a')];
+    if (!anchors.some(isTrailerLink)) return;
+    anchors.filter(isSourceLink).forEach((link) => link.remove());
+  });
+
+  allItems.forEach((item) => {
+    const title = item.querySelector('h3')?.textContent?.trim() || '';
+    const links = [...item.querySelectorAll('.event-all-links a')];
+    const trailerLink = links.find(isTrailerLink);
+    const overrideId = trailerOverrides.get(title);
+    if (overrideId && trailerLink) trailerLink.href = youtubeWatchUrl(overrideId);
+    links.filter(isSourceLink).forEach((link) => link.remove());
+  });
+
+  document.querySelectorAll('.event-highlight').forEach((item) => {
+    const links = item.querySelector('.event-highlight-links');
+    const facade = item.querySelector('[data-youtube-id]');
+    if (!links || !facade) return;
+
+    const title = item.querySelector('h3')?.textContent?.trim() || '';
+    const overrideId = trailerOverrides.get(title);
+    const videoId = overrideId || facade.dataset.youtubeId || '';
+    const sourceLinks = [...links.querySelectorAll('a')].filter(isSourceLink);
+
+    if (overrideId) {
+      facade.dataset.youtubeId = overrideId;
+      const image = facade.querySelector('img');
+      if (image) image.src = `https://img.youtube.com/vi/${overrideId}/maxresdefault.jpg`;
+    }
+
+    if (!/^[\w-]{11}$/.test(videoId)) {
+      sourceLinks.forEach((link) => link.remove());
+      return;
+    }
+
+    sourceLinks.forEach((link, index) => {
+      if (index > 0) {
+        link.remove();
+        return;
+      }
+      link.href = youtubeWatchUrl(videoId);
+      link.textContent = 'Ver tráiler ↗';
+    });
+  });
+
   const selectView = (view) => {
     viewButtons.forEach((button) => {
       const active = button.dataset.eventView === view;

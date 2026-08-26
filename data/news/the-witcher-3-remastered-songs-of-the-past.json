@@ -1,0 +1,70 @@
+{
+  "id": "the-witcher-3-remastered-songs-of-the-past",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "llegará el 29 de septiembre",
+      "será una mejora gratuita",
+      "nuevo reino de Letten"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-25",
+  "addedAt": "2026-08-26T09:03:48Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "The Witcher 3"
+    },
+    "copy": {
+      "es": "The Witcher 3 recibirá una remasterización gratuita el 29 de septiembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "The Witcher 3 fecha su remasterización y muestra la nueva región de Songs of the Past"
+  },
+  "summary": {
+    "es": "The Witcher 3: Wild Hunt — Remastered llegará el 29 de septiembre a PS5, Xbox Series X|S y PC. Para quienes ya tengan el juego en esas plataformas será una mejora gratuita, mientras que Switch 2 recibirá una versión nativa."
+  },
+  "why": {
+    "es": "CD Projekt también ha mostrado el nuevo reino de Letten, escenario de la expansión de pago Songs of the Past. Geralt regresará en 2027 con una cadena como arma, nuevas habilidades y enemigos inéditos."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=SB3siHVCHpY",
+    "label": {
+      "es": "Ver adelanto oficial de Songs of the Past"
+    }
+  },
+  "sources": [
+    {
+      "label": "CD Projekt Red",
+      "type": {
+        "es": "Anuncio oficial de Remastered y primer vistazo a Songs of the Past"
+      },
+      "url": "https://press.cdprojektred.com/en/news/1839/the-witcher-3-wild-hunt-remastered-announced-songs-of-the-past-gets-first-look"
+    },
+    {
+      "label": "The Witcher",
+      "type": {
+        "es": "Página oficial de la expansión y su ventana de lanzamiento"
+      },
+      "url": "https://www.thewitcher.com/en/en/songs-of-the-past"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Presentación oficial detallada de los cambios jugables y la nueva región"
+      },
+      "url": "https://news.xbox.com/en-us/2026/08/25/witcher-3-remastered-and-songs-of-the-past/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Remastered actualizará iluminación, texturas y rendimiento, pero también retocará combate, movimiento, cámara, comportamiento de monstruos y manejo de la montura. La revisión rediseña el árbol de habilidades e incorpora transfiguración, nuevos remates, efectos para las señales y un modo foto ampliado.",
+      "Songs of the Past llevará a Geralt y Jaskier a Letten, una tierra aparentemente próspera marcada por el folclore y un mal oculto. La expansión llegará en 2027 a PS5, Xbox Series X|S, PC y Switch 2; además, CD Projekt ha liberado Hearts of Stone y Blood and Wine sin coste adicional para los propietarios actuales del juego base."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "xbox-discos-derechos-digitales",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "convertir la mayoría de sus juegos físicos en un derecho digital",
+      "Xbox Play Anywhere y Xbox Cloud Gaming",
+      "las pruebas de Xbox Insider arrancarán el 31 de agosto"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-08-26",
+  "addedAt": "2026-08-26T15:11:28Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox permitirá reclamar derechos digitales para miles de juegos en disco"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox permitirá convertir miles de juegos en disco en derechos digitales"
+  },
+  "summary": {
+    "es": "Xbox permitirá convertir la mayoría de sus juegos físicos en un derecho digital: bastará con insertar un disco compatible en una Xbox One o Series X y ejecutar el título para reclamarlo. La función abarcará miles de juegos desde su primera fase."
+  },
+  "why": {
+    "es": "El derecho dará acceso a ventajas como Xbox Play Anywhere y Xbox Cloud Gaming cuando cada título las admita, mientras el disco original seguirá funcionando. La disponibilidad no será universal y las pruebas de Xbox Insider arrancarán el 31 de agosto."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio oficial de la conversión de discos compatibles en derechos digitales"
+      },
+      "url": "https://news.xbox.com/en-us/2026/08/26/your-discs-now-also-digital/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La nueva función parte de los discos de Xbox One y Xbox Series X: el usuario inserta el juego en una consola con lector, lo inicia y reclama el derecho asociado. Microsoft afirma que la mayoría de los títulos físicos de esas generaciones serán compatibles, aunque reconoce que algunos quedarán fuera al comienzo.",
+      "El cambio amplía el alcance de una compra física más allá de la consola que lee el disco. En los juegos que ya ofrecen las funciones correspondientes, el derecho reclamado permitirá continuar en otros dispositivos mediante Play Anywhere o jugar desde la nube, un paso que Xbox encuadra expresamente dentro de su estrategia de preservación y continuidad de las bibliotecas personales."
+    ]
+  }
+}

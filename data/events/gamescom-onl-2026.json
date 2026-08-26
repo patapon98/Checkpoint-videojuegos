@@ -35,27 +35,28 @@
     "summary": "Una selección visual de los anuncios esenciales de Opening Night Live 2026, con sus tráilers integrados."
   },
   "intro": "Las revelaciones imprescindibles de Gamescom Opening Night Live 2026 en una selección visual, directa y ordenada por relevancia.",
-  "editorialNote": "La selección prioriza grandes revelaciones, regresos, fechas y gameplays. El archivo completo de la cobertura se conserva en los datos del especial.",
+  "editorialNote": "La selección prioriza grandes revelaciones, regresos, fechas y gameplays. Los 60 anuncios de la gala y el pre-show también pueden consultarse desde el buscador del especial.",
   "highlights": [
     "Nodusfall",
     "The Witcher 3: Remastered y Songs of the Past",
     "Tom Clancy’s Rainbow Six Tactics",
-    "Heroes of Might and Magic III Remake",
     "Afterworld",
     "LEGO Skylines",
     "Humankind 2",
     "Mariachi Legends",
     "Pony Island 2: Panda Circus",
     "Path of Exile 2",
+    "No Law",
+    "Mega Man: Dual Override",
+    "DUST: Origins",
+    "ONTOS",
+    "Lofsong",
     "Exodus",
-    "ANANTA",
-    "Crazy Taxi: World Tour",
     "Onimusha: Way of the Sword",
     "Gears of War: E-Day",
     "Metro 2039",
     "Final Fantasy VII Revelation",
-    "SILENT HILL: Townfall",
-    "CONTROL Resonant"
+    "Heroes of Might and Magic III Remake"
   ],
   "schedule": [
     {
@@ -213,7 +214,7 @@
       "time": "20:40",
       "type": "World Premiere",
       "title": "Lofsong",
-      "summary": "Opening Night Live presenta oficialmente Lofsong con su primer tráiler.",
+      "summary": "Unrelated Studio presenta una aventura de puzles contemplativa en la que el sonido guía la exploración y permite interactuar con grandes paisajes.",
       "sourceUrl": "https://www.youtube.com/watch?v=mvwCeMfxUf4",
       "trailerUrl": "https://www.youtube.com/watch?v=mvwCeMfxUf4"
     },
@@ -294,7 +295,7 @@
       "time": "20:44",
       "type": "Nuevo gameplay",
       "title": "Mega Man: Dual Override",
-      "summary": "Capcom muestra nuevas secuencias de jugabilidad de la próxima entrega de Mega Man.",
+      "summary": "Capcom muestra por primera vez una demostración amplia de gameplay de la nueva entrega, con su acción lateral y nuevas mecánicas. Llegará en 2027.",
       "sourceUrl": "https://youtu.be/daPjH8Hhu3I",
       "trailerUrl": "https://youtu.be/daPjH8Hhu3I"
     },
@@ -308,9 +309,9 @@
     },
     {
       "time": "20:46",
-      "type": "Nuevo gameplay",
+      "type": "World Premiere",
       "title": "DUST: Origins",
-      "summary": "Airship Syndicate muestra nuevas secuencias de jugabilidad de su proyecto de acción y ciencia ficción.",
+      "summary": "Airship Syndicate revela una nueva aventura de acción isométrica y ciencia ficción, con un primer vistazo a su combate y a su mundo.",
       "sourceUrl": "https://www.youtube.com/watch?v=IhIOdUs5zlw",
       "trailerUrl": "https://www.youtube.com/watch?v=IhIOdUs5zlw"
     },
@@ -326,7 +327,7 @@
       "time": "21:50",
       "type": "Nuevo gameplay",
       "title": "ONTOS",
-      "summary": "Frictional Games presenta nuevas secuencias de jugabilidad de su aventura de ciencia ficción.",
+      "summary": "Frictional Games enseña el primer gameplay de su thriller de ciencia ficción y terror existencial ambientado en el hotel lunar Samsara. Llegará en 2027.",
       "sourceUrl": "https://youtu.be/EXRJB73BDfM",
       "trailerUrl": "https://youtu.be/EXRJB73BDfM"
     },
@@ -404,9 +405,9 @@
     },
     {
       "time": "21:46",
-      "type": "Nuevo tráiler",
+      "type": "Nuevo gameplay",
       "title": "No Law",
-      "summary": "No Law muestra un nuevo avance durante la gala.",
+      "summary": "Neon Giant muestra nuevo gameplay de su FPS cyber-noir ambientado en Port Desire, con sigilo, combate directo y decisiones que alteran la historia.",
       "sourceUrl": "https://youtu.be/ClVyqFt1IJM",
       "trailerUrl": "https://youtu.be/ClVyqFt1IJM"
     },

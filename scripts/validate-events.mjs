@@ -96,15 +96,16 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
   } else {
     expect(!html.includes('id="confirmados"') && !html.includes('data-event-countdown='), `${output}: el resumen final conserva módulos previos a la gala`);
     expect(!html.includes('class="event-filter"') && !html.includes('class="event-announcement-time"'), `${output}: el resumen final conserva filtros u horas de la cronología`);
+    expect(html.includes('data-event-search') && html.includes('data-event-view="highlights"') && html.includes('data-event-view="all"'), `${output}: falta el selector entre destacados y archivo completo`);
+    expect(html.includes('data-event-stage-filter="main"') && html.includes('data-event-stage-filter="preshow"'), `${output}: faltan los filtros de gala y pre-show`);
+    expect((html.match(/data-event-all-item/g) || []).length === data.announcements.length, `${output}: el archivo completo no contiene todos los anuncios`);
     const expectedTrailers = data.highlights.reduce((total, title) => {
       const item = data.announcements.find((announcement) => announcement.title === title);
       return total + (item ? 1 + (item.extraTrailers || []).length : 0);
     }, 0);
     expect((html.match(/data-youtube-id=/g) || []).length === expectedTrailers, `${output}: no se han integrado todos los tráilers de los destacados`);
   }
-  const visibleAnnouncements = data.phase === "finished"
-    ? data.highlights.map((title) => data.announcements.find((item) => item.title === title)).filter(Boolean)
-    : data.announcements;
+  const visibleAnnouncements = data.announcements;
   for (const item of visibleAnnouncements) {
     expect(html.includes(escapeHtml(item.title)) && html.includes(escapeHtml(item.summary)), `${output}: falta el anuncio ${item.title}`);
   }

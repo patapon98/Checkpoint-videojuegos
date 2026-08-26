@@ -59,6 +59,7 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     if (data.phase === "finished") {
       requiredString(item, "trailerUrl", `${label} > announcements[${index}]`);
       expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl || ""), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
+      if (item.archiveImage) expect(/^https:\/\//.test(item.archiveImage), `${label} > announcements[${index}]: archiveImage debe ser una URL HTTPS`);
       for (const [trailerIndex, trailer] of (item.extraTrailers || []).entries()) {
         ["label", "url"].forEach((key) => requiredString(trailer, key, `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]`));
         expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(trailer.url || ""), `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]: url debe enlazar a YouTube`);
@@ -66,7 +67,7 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     }
   }
   if (data.phase === "finished") {
-    expect(Array.isArray(data.highlights) && data.highlights.length >= 6 && data.highlights.length <= 20, `${label}: highlights debe seleccionar entre 6 y 20 anuncios`);
+    expect(Array.isArray(data.highlights) && data.highlights.length >= 6 && data.highlights.length <= 24, `${label}: highlights debe seleccionar entre 6 y 24 anuncios`);
     expect(new Set(data.highlights || []).size === (data.highlights || []).length, `${label}: highlights contiene títulos duplicados`);
     const announcementTitles = new Set(data.announcements.map((item) => item.title));
     for (const [index, title] of (data.highlights || []).entries()) {
@@ -99,6 +100,7 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     expect(html.includes('data-event-search') && html.includes('data-event-view="highlights"') && html.includes('data-event-view="all"'), `${output}: falta el selector entre destacados y archivo completo`);
     expect(html.includes('data-event-stage-filter="main"') && html.includes('data-event-stage-filter="preshow"'), `${output}: faltan los filtros de gala y pre-show`);
     expect((html.match(/data-event-all-item/g) || []).length === data.announcements.length, `${output}: el archivo completo no contiene todos los anuncios`);
+    expect((html.match(/class="event-all-art"/g) || []).length === data.announcements.length, `${output}: faltan imágenes en el archivo completo`);
     const expectedTrailers = data.highlights.reduce((total, title) => {
       const item = data.announcements.find((announcement) => announcement.title === title);
       return total + (item ? 1 + (item.extraTrailers || []).length : 0);

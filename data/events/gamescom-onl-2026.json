@@ -40,22 +40,24 @@
     "Nodusfall",
     "The Witcher 3: Remastered y Songs of the Past",
     "Tom Clancy’s Rainbow Six Tactics",
-    "Afterworld",
-    "LEGO Skylines",
-    "Humankind 2",
-    "Mariachi Legends",
     "Pony Island 2: Panda Circus",
     "Path of Exile 2",
+    "Mariachi Legends",
     "No Law",
     "Mega Man: Dual Override",
     "DUST: Origins",
     "ONTOS",
     "Lofsong",
-    "Exodus",
     "Onimusha: Way of the Sword",
     "Gears of War: E-Day",
     "Metro 2039",
     "Final Fantasy VII Revelation",
+    "Warlock: Dungeons and Dragons",
+    "CONTROL Resonant",
+    "Afterworld",
+    "LEGO Skylines",
+    "Humankind 2",
+    "Exodus",
     "Heroes of Might and Magic III Remake"
   ],
   "schedule": [
@@ -230,9 +232,10 @@
       "time": "21:43",
       "type": "World Premiere",
       "title": "Exterminauts",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4039200/6a891eeac0b69f5b218cf462a4af494815d59427/header.jpg?t=1787712028",
       "summary": "Se revela un nuevo shooter cooperativo centrado en exterminar amenazas alienígenas.",
-      "sourceUrl": "https://youtu.be/woiEqk7207w",
-      "trailerUrl": "https://youtu.be/woiEqk7207w"
+      "sourceUrl": "https://store.steampowered.com/app/4039200/Exterminauts/",
+      "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=7980s"
     },
     {
       "time": "20:46",
@@ -483,6 +486,7 @@
       "time": "19:41",
       "type": "Pre-show · Fecha de lanzamiento",
       "title": "Aniimo",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4126040/bf9b76d25ac135baf8f313d9a095e754fd2e950b/header.jpg?t=1787709930",
       "summary": "El RPG de captura de criaturas confirma su lanzamiento global para el 16 de septiembre.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=660s"
@@ -491,6 +495,7 @@
       "time": "19:47",
       "type": "Pre-show · Fecha de lanzamiento",
       "title": "Valor Mortis",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2828710/e729c7f909db5c52ea780923d9b258517162866a/header.jpg?t=1787679998",
       "summary": "El RPG de acción en primera persona fija su lanzamiento para el 13 de octubre y muestra un nuevo tráiler de historia.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=1020s"
@@ -499,6 +504,7 @@
       "time": "19:38",
       "type": "Pre-show · Fecha de lanzamiento",
       "title": "Train Sim World 7",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4678800/fbfacf45587dbb8f28446fa14bdba14ae512edb0/header.jpg?t=1787693948",
       "summary": "Dovetail Games fija el lanzamiento de Train Sim World 7 para el 15 de septiembre.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=480s"
@@ -515,6 +521,7 @@
       "time": "19:39",
       "type": "Pre-show · World Premiere",
       "title": "RollerCoaster Tycoon: Wonderworks",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4734550/c88498e7a4f1d407f5e5b5d453d5e5bf197229ec/header.jpg?t=1787679502",
       "summary": "Se anuncia una nueva entrega de RollerCoaster Tycoon que llegará a Steam en acceso anticipado.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=540s"
@@ -523,6 +530,7 @@
       "time": "19:54",
       "type": "Pre-show · World Premiere",
       "title": "Age Twisters",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2643540/f3ea463e77355d127dcf16d838e3e2fdb8d37a51/header.jpg?t=1787680853",
       "summary": "Se presenta un nuevo juego isométrico cuya mecánica central permite alternar entre un anciano y un niño.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=1440s"
@@ -531,6 +539,7 @@
       "time": "19:53",
       "type": "Pre-show · World Premiere",
       "title": "Elta: Defy All Gods",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2659410/7cefd26034c7f51e93b036dd27d4ccc619ca301c/header.jpg?t=1787682640",
       "summary": "Se revela un nuevo juego de acción protagonizado por un guerrero acompañado de un pequeño dragón.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=1380s"
@@ -539,6 +548,7 @@
       "time": "19:49",
       "type": "Pre-show · World Premiere",
       "title": "Murals",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3885720/c3ada8322a99accffa58edb8f7e1d6b5646c67c7/header.jpg?t=1787683976",
       "summary": "Dlala Studios presenta una aventura de acción inspirada en cuentos y fábulas, prevista para 2027.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=1140s"
@@ -555,6 +565,7 @@
       "time": "19:51",
       "type": "Pre-show · Nuevo tráiler",
       "title": "Humankind 2",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2581850/e4cd23b1eb93e3c26f346a4d501e67c27f9a5dec/header.jpg?t=1787688384",
       "summary": "Amplitude muestra un nuevo avance de la secuela de su juego de estrategia histórica, prevista para 2027.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=1260s"
@@ -571,6 +582,7 @@
       "time": "19:45",
       "type": "Pre-show · Ventana de lanzamiento",
       "title": "Perceptum",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4124340/b132dcdfe2dd4517e0a52fa283d801914001d317/header.jpg?t=1787702922",
       "summary": "El juego de terror en primera persona muestra un nuevo avance y confirma su lanzamiento para primavera de 2027.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=900s"
@@ -579,6 +591,7 @@
       "time": "19:43",
       "type": "Pre-show · Nuevo tráiler",
       "title": "Genigods: Nezha",
+      "archiveImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4346690/69633f8ceb1159231747715cabf582f1516b50e7/header.jpg?t=1787683392",
       "summary": "El RPG de acción inspirado en la mitología china reaparece con un nuevo tráiler.",
       "sourceUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk",
       "trailerUrl": "https://www.youtube.com/watch?v=qwC9EFT6EFk&t=780s"

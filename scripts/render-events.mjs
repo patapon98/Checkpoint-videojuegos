@@ -117,12 +117,15 @@ function completeAnnouncementMarkup(item) {
   const stage = isPreShow ? "preshow" : "main";
   const stageLabel = isPreShow ? "Pre-show" : "Gala";
   const cleanType = item.type.replace(/^Pre-show\s*·\s*/, "");
+  const videoId = youtubeIdFromUrl(item.trailerUrl);
+  const image = item.archiveImage || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
   const links = [
     item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
     item.trailerUrl ? `<a href="${escapeHtml(item.trailerUrl)}" target="_blank" rel="noopener noreferrer">Ver tráiler ↗</a>` : "",
     `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente ↗</a>`
   ].filter(Boolean).join("\n              ");
   return `<article class="event-all-item" data-event-all-item data-event-stage="${stage}">
+          <div class="event-all-art"><img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async"><span></span></div>
           <div class="event-all-meta"><span>${stageLabel}</span><strong>${escapeHtml(cleanType)}</strong></div>
           <div class="event-all-copy">
             <h3>${escapeHtml(item.title)}</h3>
@@ -289,7 +292,7 @@ function page(data) {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/event-hub.css?v=20260826-3">
+<link rel="stylesheet" href="/css/event-hub.css?v=20260826-4">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page" data-event-id="${escapeHtml(data.id)}">

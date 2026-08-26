@@ -1,0 +1,70 @@
+name: Temp ONL trailer actions
+
+on:
+  push:
+    branches:
+      - fix/onl-trailer-actions-aniimo
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.event.head_commit.message != 'fix(events): unifica acciones de tráiler'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/onl-trailer-actions-aniimo
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Apply renderer and data changes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+
+          renderer_path = Path('scripts/render-events.mjs')
+          text = renderer_path.read_text()
+
+          old = '''    item.trailerUrl ? `<a href="${escapeHtml(item.trailerUrl)}" target="_blank" rel="noopener noreferrer">Ver tráiler ↗</a>` : "",
+    `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente ↗</a>`'''
+          new = '''    item.trailerUrl ? `<a href="${escapeHtml(item.trailerUrl)}" target="_blank" rel="noopener noreferrer">Ver tráiler ↗</a>` : ""'''
+          if text.count(old) != 2:
+              raise SystemExit(f'Esperaba 2 bloques anuncio/archivo, encontrados: {text.count(old)}')
+          text = text.replace(old, new)
+
+          old_highlight = '''  const links = [
+    item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
+    `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente ↗</a>`
+  ].filter(Boolean).join("\\n              ");'''
+          new_highlight = '''  const links = [
+    item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
+    item.trailerUrl ? `<a href="${escapeHtml(item.trailerUrl)}" target="_blank" rel="noopener noreferrer">Ver tráiler ↗</a>` : ""
+  ].filter(Boolean).join("\\n              ");'''
+          if text.count(old_highlight) != 1:
+              raise SystemExit(f'Bloque highlight inesperado: {text.count(old_highlight)}')
+          text = text.replace(old_highlight, new_highlight)
+          renderer_path.write_text(text)
+
+          data_path = Path('data/events/gamescom-onl-2026.json')
+          data = json.loads(data_path.read_text())
+          aniimo = next((item for item in data['announcements'] if item['title'] == 'Aniimo'), None)
+          if not aniimo:
+              raise SystemExit('No se encontró Aniimo')
+          aniimo['trailerUrl'] = 'https://www.youtube.com/watch?v=liBxXm7iQT0'
+          data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+          PY
+
+          node --check scripts/render-events.mjs
+          node scripts/render-events.mjs
+          node scripts/validate-events.mjs
+          rm .github/workflows/onl-trailer-actions-temp.yml
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/render-events.mjs data/events/gamescom-onl-2026.json eventos eventos.html .github/workflows/onl-trailer-actions-temp.yml
+          git diff --cached --check
+          git commit -m "fix(events): unifica acciones de tráiler"
+          git push origin HEAD:fix/onl-trailer-actions-aniimo

@@ -24,6 +24,11 @@
     window.setInterval(updateCountdown, 1000);
   }
 
+  const setFilteredVisibility = (element, visible) => {
+    element.hidden = !visible;
+    element.style.display = visible ? '' : 'none';
+  };
+
   const buttons = [...document.querySelectorAll('[data-event-filter]')];
   const cards = [...document.querySelectorAll('[data-event-type]')];
   const total = document.querySelector('[data-event-visible-total]');
@@ -37,7 +42,7 @@
     let visible = 0;
     cards.forEach((card) => {
       const show = type === 'all' || card.dataset.eventType === type;
-      card.hidden = !show;
+      setFilteredVisibility(card, show);
       if (show) visible += 1;
     });
     if (total) total.textContent = String(visible);
@@ -77,7 +82,7 @@
       const matchesStage = activeStage === 'all' || item.dataset.eventStage === activeStage;
       const matchesQuery = !query || normalize(item.textContent).includes(query);
       const show = matchesStage && matchesQuery;
-      item.hidden = !show;
+      setFilteredVisibility(item, show);
       if (show) visible += 1;
     });
     if (allTotal) allTotal.textContent = String(visible);

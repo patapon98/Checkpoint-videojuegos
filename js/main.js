@@ -30,7 +30,7 @@
   load('game-hub-links.js?v=20260730-1');
   load('home-analysis-links.js?v=20260728-1');
   load('return-shortcut.js?v=20260808-1');
-  if(document.body.classList.contains('home-page')) load('home-featured.js?v=20260823-1');
+  if(document.body.classList.contains('home-page')) load('home-featured.js?v=20260826-1');
   load('calendar-today.js?v=20260729-2',()=>{
     load('calendar-countdown-prepare.js?v=20260729-1',()=>{
       load('main-core.js?v=20260730-1',()=>{

@@ -7,7 +7,7 @@
       const event=await response.json();
       heroCard.classList.add('event-featured');
       heroCard.href=`/eventos/${event.id}`;
-      heroCard.setAttribute('aria-label',`Seguir ${event.title} en Final Secreto`);
+      heroCard.setAttribute('aria-label',`${event.phase === 'finished' ? 'Repasar' : 'Seguir'} ${event.title} en Final Secreto`);
       heroCard.innerHTML=`
         <img src="${event.heroImage}" alt="${event.heroImageAlt}" />
         <div class="event-featured-date" aria-hidden="true"><b>${event.homeFeature.day}</b><span>${event.homeFeature.month}</span></div>

@@ -1,0 +1,57 @@
+{
+  "id": "xbox-series-x25-precio-fecha",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "costará 899,99 dólares",
+      "se lanzará el 13 de noviembre",
+      "una copia digital de Halo: Campaign Evolved"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-08-26",
+  "addedAt": "2026-08-26T21:12:18Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox Series X25"
+    },
+    "copy": {
+      "es": "Xbox Series X25 costará 899,99 dólares y llegará el 13 de noviembre"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox Series X25 fija su lanzamiento para el 13 de noviembre por 899,99 dólares"
+  },
+  "summary": {
+    "es": "La Xbox Series X25 Limited Edition costará 899,99 dólares y se lanzará el 13 de noviembre de 2026 en mercados seleccionados. Las reservas generales abrirán el 27 de agosto a las 7:00 PT, tras una primera fase de invitaciones."
+  },
+  "why": {
+    "es": "La consola de edición limitada tendrá 1 TB, lector de discos, diseño translúcido verde y numeración individual. El paquete incluirá el mando X25 Special Edition y una copia digital de Halo: Campaign Evolved."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire en Español",
+      "type": {
+        "es": "Anuncio oficial de precio, fecha, reservas y contenido de la colección"
+      },
+      "url": "https://news.xbox.com/es-latam/2026/08/26/las-preventas-para-la-coleccion-del-25o-aniversario-de-xbox-comienzan-hoy/"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Presentación oficial original de la consola y sus especificaciones"
+      },
+      "url": "https://news.xbox.com/en-us/2026/06/07/xbox-25th-anniversary-console-controller-x25-xbox-games-showcase-2026/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Xbox anunció la Series X25 en junio, pero había dejado pendientes el precio, el día exacto y el sistema de reservas. La nueva comunicación sitúa la apertura general el 27 de agosto, limitada a una unidad por cliente y sujeta a disponibilidad en cada mercado.",
+      "El hardware conserva las prestaciones de una Series X de 1 TB con unidad Blu-ray UHD y adopta una carcasa translúcida inspirada en la Xbox original. El mando conmemorativo también se venderá por separado y llegará antes, el 20 de octubre."
+    ]
+  }
+}

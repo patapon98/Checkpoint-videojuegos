@@ -4,10 +4,7 @@
   "subtitle": "Todo lo confirmado sobre el regreso a Vice City, su historia, sus ediciones y el material oficial publicado por Rockstar.",
   "status": "Presentación extendida el 27 de agosto",
   "releaseDate": "2026-11-19",
-  "platforms": [
-    "PS5",
-    "Xbox Series X|S"
-  ],
+  "platforms": ["PS5", "Xbox Series X|S"],
   "developer": "Rockstar Games",
   "publisher": "Rockstar Games",
   "genre": "Acción y aventura en mundo abierto",
@@ -17,43 +14,16 @@
   "heroImage": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_03_landscape.0419q._86ukpt.jpg?akim=1&imdensity=1&imwidth=3840",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
-  "theme": {
-    "accent": "#f28ab8",
-    "accentSoft": "rgba(242,138,184,.16)"
-  },
+  "theme": {"accent":"#f28ab8","accentSoft":"rgba(242,138,184,.16)"},
   "gallery": [
-    {
-      "src": "https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_01.07m377xeb6jhq.jpg?akim=1&imdensity=1&imwidth=3840",
-      "alt": "Jason Duval en una captura oficial de Grand Theft Auto VI"
-    },
-    {
-      "src": "https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_01.0a7yqvewctkfp.jpg?akim=1&imdensity=1&imwidth=3840",
-      "alt": "Lucia Caminos en una captura oficial de Grand Theft Auto VI"
-    },
-    {
-      "src": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_01.135x56yoeu.6t.jpg?akim=1&imdensity=1&imwidth=3840",
-      "alt": "Vice City al anochecer en Grand Theft Auto VI"
-    },
-    {
-      "src": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_01.0zgz7tveur6y8.jpg?akim=1&imdensity=1&imwidth=3840",
-      "alt": "Los cayos de Leonida en Grand Theft Auto VI"
-    }
+    {"src":"https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_01.07m377xeb6jhq.jpg?akim=1&imdensity=1&imwidth=3840","alt":"Jason Duval en una captura oficial de Grand Theft Auto VI"},
+    {"src":"https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_01.0a7yqvewctkfp.jpg?akim=1&imdensity=1&imwidth=3840","alt":"Lucia Caminos en una captura oficial de Grand Theft Auto VI"},
+    {"src":"https://www.rockstargames.com/VI/_next/static/media/Vice_City_01.135x56yoeu.6t.jpg?akim=1&imdensity=1&imwidth=3840","alt":"Vice City al anochecer en Grand Theft Auto VI"},
+    {"src":"https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_01.0zgz7tveur6y8.jpg?akim=1&imdensity=1&imwidth=3840","alt":"Los cayos de Leonida en Grand Theft Auto VI"}
   ],
   "media": [
-    {
-      "type": "youtube",
-      "videoId": "VQRLujxTm3c",
-      "title": "Grand Theft Auto VI Trailer 2",
-      "label": "Tráiler 2",
-      "publishedAt": "2025-05-06"
-    },
-    {
-      "type": "youtube",
-      "videoId": "QdBZY2fkU-0",
-      "title": "Grand Theft Auto VI Trailer 1",
-      "label": "Tráiler 1",
-      "publishedAt": "2023-12-04"
-    }
+    {"type":"youtube","videoId":"VQRLujxTm3c","title":"Grand Theft Auto VI Trailer 2","label":"Tráiler 2","publishedAt":"2025-05-06"},
+    {"type":"youtube","videoId":"QdBZY2fkU-0","title":"Grand Theft Auto VI Trailer 1","label":"Tráiler 1","publishedAt":"2023-12-04"}
   ],
   "premise": "Jason Duval y Lucia Caminos quedan atrapados en una conspiración criminal que se extiende por el estado de Leonida después de que un golpe sencillo salga mal. Para sobrevivir tendrán que confiar el uno en el otro mientras recorren Vice City y sus alrededores.",
   "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha. La próxima gran presentación oficial será Grand Theft Auto VI: Una mirada extendida, el 27 de agosto de 2026.",
@@ -63,21 +33,9 @@
     "title": "Una mirada extendida el 27 de agosto",
     "intro": "Rockstar mostrará una presentación extensa de GTA VI que se estrenará primero en Netflix y llegará después a YouTube y a su web oficial.",
     "items": [
-      {
-        "title": "Fecha y hora en España",
-        "value": "27 de agosto · 21:00",
-        "description": "Netflix ofrecerá el estreno anticipado el jueves 27 de agosto a las 21:00, hora peninsular española."
-      },
-      {
-        "title": "Publicación abierta",
-        "value": "28 de agosto · 03:00",
-        "description": "La presentación llegará seis horas después a YouTube y a la web oficial de Rockstar."
-      },
-      {
-        "title": "Formato anunciado",
-        "value": "Una mirada extendida",
-        "description": "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay."
-      }
+      {"title":"Fecha y hora en España","value":"27 de agosto · 21:00","description":"Netflix ofrecerá el estreno anticipado el jueves 27 de agosto a las 21:00, hora peninsular española."},
+      {"title":"Publicación abierta","value":"28 de agosto · 03:00","description":"La presentación llegará seis horas después a YouTube y a la web oficial de Rockstar."},
+      {"title":"Formato anunciado","value":"Una mirada extendida","description":"Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay."}
     ]
   },
   "knowledgeSections": [
@@ -85,86 +43,50 @@
       "kicker": "Protagonistas",
       "title": "Jason y Lucia comparten el centro de la historia",
       "summary": "Jason Duval y Lucia Caminos protagonizan una campaña presentada por Rockstar como una experiencia para un jugador.",
-      "highlights": [
-        "La relación entre ambos articula la premisa criminal mostrada hasta ahora.",
-        "La campaña puede jugarse sin conexión."
-      ]
+      "highlights": ["La relación entre ambos articula la premisa criminal mostrada hasta ahora.","La campaña puede jugarse sin conexión."]
     },
     {
       "kicker": "Leonida",
       "title": "Vice City forma parte de un territorio más amplio",
       "summary": "Rockstar ha presentado varias áreas urbanas, costeras, industriales y naturales dentro del estado de Leonida.",
+      "highlights": ["Las localizaciones confirmadas son Vice City, Leonida Keys, Grassrivers, Port Gellhorn y Ambrosia.","Mount Kalaga amplía el mapa con un parque nacional."]
+    },
+    {
+      "kicker": "Sistemas jugables",
+      "title": "El mundo reacciona y los hábitos alteran a Jason y Lucia",
+      "summary": "Rockstar confirma un mundo más reactivo y sistemas persistentes que reflejan en los protagonistas cómo come, entrena y vive el jugador.",
       "highlights": [
-        "Las localizaciones confirmadas son Vice City, Leonida Keys, Grassrivers, Port Gellhorn y Ambrosia.",
-        "Mount Kalaga amplía el mapa con un parque nacional."
+        "Llevar un rifle abiertamente por la calle provoca reacciones del entorno y Rockstar describe Leonida como más reactiva que sus mundos anteriores.",
+        "La comida modifica el peso de Jason y Lucia y el ejercicio cambia visiblemente su musculatura.",
+        "Pasar mucho tiempo sin descansar, huir de la policía o encadenar varios días de excesos también deja efectos visibles en sus rostros y cuerpos.",
+        "Durante determinados trabajos se puede alternar entre Jason y Lucia, incluso entre conducir y disparar desde el asiento del acompañante."
       ]
     },
     {
       "kicker": "Funciones de PS5",
       "title": "Uso a distancia, DualSense y mejoras de PS5 Pro",
       "summary": "La ficha de PlayStation confirma compatibilidad con Uso a distancia y funciones específicas del mando DualSense.",
-      "highlights": [
-        "La versión de PS5 contará con mejoras para PS5 Pro.",
-        "No requiere conexión permanente para la campaña."
-      ]
+      "highlights": ["La versión de PS5 contará con mejoras para PS5 Pro.","No requiere conexión permanente para la campaña."]
     },
     {
       "kicker": "Próxima presentación",
       "title": "La mirada extendida llegará primero a Netflix",
       "summary": "La nueva presentación se estrenará el 27 de agosto a las 21:00 en la España peninsular y llegará seis horas después a los canales abiertos de Rockstar.",
-      "highlights": [
-        "YouTube y la web oficial la publicarán a las 03:00 del 28 de agosto en España.",
-        "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente una demostración de jugabilidad."
-      ]
+      "highlights": ["YouTube y la web oficial la publicarán a las 03:00 del 28 de agosto en España.","Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente una demostración de jugabilidad."]
     }
   ],
-  "pendingHighlights": [
-    "Contenido exacto de la presentación del 27 de agosto.",
-    "Versión para PC y posible modo en línea.",
-    "Alcance de los sistemas jugables y modos gráficos de consola."
-  ],
+  "pendingHighlights": ["Contenido exacto de la presentación del 27 de agosto.","Versión para PC y posible modo en línea.","Alcance de los sistemas jugables y modos gráficos de consola."],
   "sources": [
-    {
-      "label": "Rockstar Games",
-      "url": "https://www.rockstargames.com/VI",
-      "type": "Ficha oficial"
-    },
-    {
-      "label": "Rockstar Games en X",
-      "url": "https://x.com/RockstarGames/status/2085335127287030232",
-      "type": "Anuncio de la presentación extendida"
-    },
-    {
-      "label": "Netflix España",
-      "url": "https://www.netflix.com/es/title/83035795",
-      "type": "Ficha oficial del estreno"
-    },
-    {
-      "label": "Rockstar Games Media",
-      "url": "https://www.rockstargames.com/VI/media",
-      "type": "Imágenes y vídeos oficiales"
-    },
-    {
-      "label": "Rockstar Support",
-      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-      "type": "Ediciones y plataformas"
-    },
-    {
-      "label": "PlayStation Store España",
-      "url": "https://store.playstation.com/es-es/concept/10000730",
-      "type": "Precios y contenido de las ediciones"
-    },
-    {
-      "label": "Xbox España",
-      "url": "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn",
-      "type": "Precios y mejora Ultimate"
-    }
+    {"label":"Dazed","url":"https://www.dazeddigital.com/life-culture/article/70859/1/gta-6-grand-theft-auto-vi-rockstar-exclusive-deep-dive-game-unparalleled-world","type":"Entrevistas directas con Rockstar y nuevos sistemas jugables"},
+    {"label":"Rockstar Games","url":"https://www.rockstargames.com/VI","type":"Ficha oficial"},
+    {"label":"Rockstar Games en X","url":"https://x.com/RockstarGames/status/2085335127287030232","type":"Anuncio de la presentación extendida"},
+    {"label":"Netflix España","url":"https://www.netflix.com/es/title/83035795","type":"Ficha oficial del estreno"},
+    {"label":"Rockstar Games Media","url":"https://www.rockstargames.com/VI/media","type":"Imágenes y vídeos oficiales"},
+    {"label":"Rockstar Support","url":"https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions","type":"Ediciones y plataformas"},
+    {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/concept/10000730","type":"Precios y contenido de las ediciones"},
+    {"label":"Xbox España","url":"https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn","type":"Precios y mejora Ultimate"}
   ],
-  "newsTerms": [
-    "grand theft auto vi",
-    "gta vi",
-    "gta-vi"
-  ],
+  "newsTerms": ["grand theft auto vi","gta vi","gta-vi"],
   "seo": {
     "title": "GTA VI: fecha, presentación de agosto y todo lo confirmado",
     "description": "Ficha actualizada de GTA VI con fecha de lanzamiento, presentación del 27 de agosto en Netflix, plataformas, protagonistas, ediciones, tráileres e imágenes oficiales.",
@@ -173,128 +95,27 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
-    {
-      "date": "2026-08-23",
-      "title": "La información esencial se reorganiza por temas",
-      "description": "La ficha sustituye las listas extensas por cuatro bloques sobre protagonistas, Leonida, funciones de PS5 y la próxima presentación, y reduce las incógnitas a tres cuestiones relevantes."
-    },
-    {
-      "date": "2026-08-20",
-      "title": "Xbox España confirma un mes de GTA+ con la reserva",
-      "description": "La bonificación de reserva de Xbox Series X|S incluye también un mes de GTA+ junto al pack Vintage Vice City; debe canjearse dentro de los 180 días siguientes a la reserva y está limitada a un canje por cuenta en cada plataforma.",
-      "sourceUrls": [
-        "https://www.xbox.com/es-ES/games/store/grand-theft-auto-vi/9NL3WWNZLZZN/0010"
-      ]
-    },
-    {
-      "date": "2026-08-18",
-      "title": "Xbox España confirma precios y mejora Ultimate",
-      "description": "La ficha añade los precios oficiales de Xbox Series X|S en España: 79,99 € para la Standard Edition, 99,99 € para la Ultimate Edition y 20,00 € para la mejora Ultimate independiente.",
-      "sourceUrls": [
-        "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn"
-      ]
-    },
-    {
-      "date": "2026-08-08",
-      "title": "Rockstar aclara el formato físico y la precarga",
-      "description": "La versión física de GTA VI incluirá un código de descarga en lugar de disco y podrá utilizarse para iniciar la precarga desde el 12 de noviembre; Rockstar incluye España entre los mercados admitidos.",
-      "sourceUrls": [
-        "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-        "https://support.rockstargames.com/articles/46YkMi4rHxYXMeIHtZiKaE/grand-theft-auto-vi-pre-order-details"
-      ]
-    },
-    {
-      "date": "2026-08-06",
-      "title": "Rockstar anuncia una mirada extendida para el 27 de agosto",
-      "description": "La presentación se estrenará primero en Netflix a las 21:00 en España y llegará seis horas después a YouTube y a la web de Rockstar.",
-      "sourceUrls": [
-        "https://x.com/RockstarGames/status/2085335127287030232",
-        "https://www.netflix.com/es/title/83035795"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "title": "Ediciones y precios trasladados a una sección propia",
-      "description": "La ficha compara Standard y Ultimate, reúne las bonificaciones de reserva y reserva el bloque de claves para la historia y el mundo de Leonida.",
-      "sourceUrls": [
-        "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
-        "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
-      ]
-    },
-    {
-      "date": "2026-07-30",
-      "title": "Precios, ediciones y datos de compra verificados",
-      "description": "Se añadieron los precios españoles, el contenido de cada edición, las condiciones de GTA+ y el primer tráiler oficial junto al segundo."
-    }
+    {"date":"2026-08-27","title":"Rockstar detalla sistemas reactivos y cambios físicos de los protagonistas","description":"Un deep dive de Dazed con entrevistas directas al equipo de Rockstar confirma que Leonida reaccionará de forma más marcada a las acciones del jugador; la comida, el ejercicio, el descanso y los excesos alterarán físicamente a Jason y Lucia, y determinadas misiones permitirán alternar sus funciones durante la acción.","sourceUrls":["https://www.dazeddigital.com/life-culture/article/70859/1/gta-6-grand-theft-auto-vi-rockstar-exclusive-deep-dive-game-unparalleled-world"]},
+    {"date":"2026-08-23","title":"La información esencial se reorganiza por temas","description":"La ficha sustituye las listas extensas por cuatro bloques sobre protagonistas, Leonida, funciones de PS5 y la próxima presentación, y reduce las incógnitas a tres cuestiones relevantes."},
+    {"date":"2026-08-20","title":"Xbox España confirma un mes de GTA+ con la reserva","description":"La bonificación de reserva de Xbox Series X|S incluye también un mes de GTA+ junto al pack Vintage Vice City; debe canjearse dentro de los 180 días siguientes a la reserva y está limitada a un canje por cuenta en cada plataforma.","sourceUrls":["https://www.xbox.com/es-ES/games/store/grand-theft-auto-vi/9NL3WWNZLZZN/0010"]},
+    {"date":"2026-08-18","title":"Xbox España confirma precios y mejora Ultimate","description":"La ficha añade los precios oficiales de Xbox Series X|S en España: 79,99 € para la Standard Edition, 99,99 € para la Ultimate Edition y 20,00 € para la mejora Ultimate independiente.","sourceUrls":["https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn"]},
+    {"date":"2026-08-08","title":"Rockstar aclara el formato físico y la precarga","description":"La versión física de GTA VI incluirá un código de descarga en lugar de disco y podrá utilizarse para iniciar la precarga desde el 12 de noviembre; Rockstar incluye España entre los mercados admitidos.","sourceUrls":["https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions","https://support.rockstargames.com/articles/46YkMi4rHxYXMeIHtZiKaE/grand-theft-auto-vi-pre-order-details"]},
+    {"date":"2026-08-06","title":"Rockstar anuncia una mirada extendida para el 27 de agosto","description":"La presentación se estrenará primero en Netflix a las 21:00 en España y llegará seis horas después a YouTube y a la web de Rockstar.","sourceUrls":["https://x.com/RockstarGames/status/2085335127287030232","https://www.netflix.com/es/title/83035795"]},
+    {"date":"2026-08-03","title":"Ediciones y precios trasladados a una sección propia","description":"La ficha compara Standard y Ultimate, reúne las bonificaciones de reserva y reserva el bloque de claves para la historia y el mundo de Leonida.","sourceUrls":["https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001","https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"]},
+    {"date":"2026-07-30","title":"Precios, ediciones y datos de compra verificados","description":"Se añadieron los precios españoles, el contenido de cada edición, las condiciones de GTA+ y el primer tráiler oficial junto al segundo."}
   ],
-  "relatedGameIds": [
-    "beast-of-reincarnation",
-    "marvel-tokon-fighting-souls"
-  ],
-  "updatedAt": "2026-08-23",
+  "relatedGameIds": ["beast-of-reincarnation","marvel-tokon-fighting-souls"],
+  "updatedAt": "2026-08-27",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",
     "items": [
-      {
-        "name": "Standard Edition",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "79,99 €"
-          },
-          {
-            "platform": "Xbox Series X|S",
-            "value": "79,99 €"
-          }
-        ],
-        "includes": [
-          "Grand Theft Auto VI"
-        ]
-      },
-      {
-        "name": "Ultimate Edition",
-        "prices": [
-          {
-            "platform": "PS5",
-            "value": "99,99 €"
-          },
-          {
-            "platform": "Xbox Series X|S",
-            "value": "99,99 €"
-          }
-        ],
-        "includes": [
-          "Juego base y Ultimate Edition Upgrade",
-          "Vehículos, armas, ropa, peinados y tatuajes exclusivos para la campaña",
-          "Acceso a Rideout Customs, Sara's, Stock 305, Electric Fang Tattoo y One-Eyed Willie's",
-          "Encargos y colecciones adicionales repartidos por Leonida"
-        ]
-      },
-      {
-        "name": "Ultimate Edition Upgrade",
-        "kind": "Mejora",
-        "prices": [
-          {
-            "platform": "Xbox Series X|S",
-            "value": "20,00 €"
-          }
-        ],
-        "includes": [
-          "Contenido adicional de la Ultimate Edition para propietarios del juego base"
-        ]
-      }
+      {"name":"Standard Edition","prices":[{"platform":"PS5","value":"79,99 €"},{"platform":"Xbox Series X|S","value":"79,99 €"}],"includes":["Grand Theft Auto VI"]},
+      {"name":"Ultimate Edition","prices":[{"platform":"PS5","value":"99,99 €"},{"platform":"Xbox Series X|S","value":"99,99 €"}],"includes":["Juego base y Ultimate Edition Upgrade","Vehículos, armas, ropa, peinados y tatuajes exclusivos para la campaña","Acceso a Rideout Customs, Sara's, Stock 305, Electric Fang Tattoo y One-Eyed Willie's","Encargos y colecciones adicionales repartidos por Leonida"]},
+      {"name":"Ultimate Edition Upgrade","kind":"Mejora","prices":[{"platform":"Xbox Series X|S","value":"20,00 €"}],"includes":["Contenido adicional de la Ultimate Edition para propietarios del juego base"]}
     ],
-    "preorderBonuses": [
-      "Pack Vintage Vice City",
-      "Un mes de GTA+ en PS5 y Xbox Series X|S"
-    ],
-    "notes": [
-      "En PS5, el mes de GTA+ se renueva automáticamente al precio habitual si no se cancela.",
-      "En Xbox Series X|S, el mes de GTA+ debe canjearse dentro de los 180 días siguientes a la reserva; está limitado a un canje por cuenta en cada plataforma y no está disponible en cuentas para menores con restricciones de contenido por edad.",
-      "La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga.",
-      "Los precios de Xbox Series X|S y de la mejora Ultimate corresponden a Xbox España."
-    ]
+    "preorderBonuses": ["Pack Vintage Vice City","Un mes de GTA+ en PS5 y Xbox Series X|S"],
+    "notes": ["En PS5, el mes de GTA+ se renueva automáticamente al precio habitual si no se cancela.","En Xbox Series X|S, el mes de GTA+ debe canjearse dentro de los 180 días siguientes a la reserva; está limitado a un canje por cuenta en cada plataforma y no está disponible en cuentas para menores con restricciones de contenido por edad.","La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga.","Los precios de Xbox Series X|S y de la mejora Ultimate corresponden a Xbox España."]
   },
   "price": "Desde 79,99 € en PS5 y Xbox Series X|S"
 }

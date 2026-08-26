@@ -30,12 +30,29 @@
   "homeFeature": {
     "day": "25",
     "month": "AGO",
-    "tag": "FINALIZADO · Gamescom ONL",
-    "title": "Gamescom ONL 2026, todos los anuncios",
-    "summary": "Repasa las principales revelaciones, fechas, gameplays y tráilers de Opening Night Live 2026, ordenados por relevancia."
+    "tag": "RESUMEN · Gamescom ONL",
+    "title": "Gamescom ONL 2026, lo más importante",
+    "summary": "Una selección visual de los anuncios esenciales de Opening Night Live 2026, con sus tráilers integrados."
   },
-  "intro": "Todos los anuncios, fechas y tráilers de Gamescom Opening Night Live 2026, con la cobertura cerrada y ordenada por relevancia editorial.",
-  "editorialNote": "Cobertura cerrada tras la emisión. Los anuncios están ordenados por relevancia editorial y conservan la hora peninsular española de su aparición.",
+  "intro": "Las revelaciones imprescindibles de Gamescom Opening Night Live 2026 en una selección visual, directa y ordenada por relevancia.",
+  "editorialNote": "La selección prioriza grandes revelaciones, regresos, fechas y gameplays. El archivo completo de la cobertura se conserva en los datos del especial.",
+  "highlights": [
+    "Tom Clancy’s Rainbow Six Tactics",
+    "Nodus Fall",
+    "Gears of War: E-Day",
+    "Metro 2039",
+    "ANANTA",
+    "SILENT HILL: Townfall",
+    "Exodus",
+    "Path of Exile 2",
+    "Heroes of Might and Magic III Remake",
+    "CONTROL Resonant",
+    "Game of Thrones: War for Westeros",
+    "The Blood of Dawnwalker",
+    "Mega Man: Dual Override",
+    "Afterworld",
+    "Tides of Annihilation"
+  ],
   "schedule": [
     {
       "label": "Previa",
@@ -51,9 +68,9 @@
     }
   ],
   "seo": {
-    "title": "Gamescom Opening Night Live 2026, todos los anuncios",
-    "description": "Todos los anuncios, fechas, gameplays y tráilers de Gamescom Opening Night Live 2026, ordenados por relevancia.",
-    "ogDescription": "Las principales revelaciones, fechas y tráilers de Gamescom Opening Night Live 2026 en una sola página."
+    "title": "Gamescom Opening Night Live 2026: los anuncios más importantes",
+    "description": "Los anuncios imprescindibles de Gamescom Opening Night Live 2026, ordenados por relevancia y con sus tráilers integrados.",
+    "ogDescription": "Lo mejor de Gamescom Opening Night Live 2026 en una selección visual con tráilers integrados."
   },
   "appearances": [
     {

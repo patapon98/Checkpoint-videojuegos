@@ -60,6 +60,14 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
       expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl || ""), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
     }
   }
+  if (data.phase === "finished") {
+    expect(Array.isArray(data.highlights) && data.highlights.length >= 6 && data.highlights.length <= 20, `${label}: highlights debe seleccionar entre 6 y 20 anuncios`);
+    expect(new Set(data.highlights || []).size === (data.highlights || []).length, `${label}: highlights contiene títulos duplicados`);
+    const announcementTitles = new Set(data.announcements.map((item) => item.title));
+    for (const [index, title] of (data.highlights || []).entries()) {
+      expect(typeof title === "string" && announcementTitles.has(title), `${label} > highlights[${index}]: el anuncio no existe`);
+    }
+  }
   for (const [index, item] of data.sources.entries()) {
     ["label", "type", "url"].forEach((key) => requiredString(item, key, `${label} > sources[${index}]`));
   }
@@ -82,8 +90,13 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     }
   } else {
     expect(!html.includes('id="confirmados"') && !html.includes('data-event-countdown='), `${output}: el resumen final conserva módulos previos a la gala`);
+    expect(!html.includes('class="event-filter"') && !html.includes('class="event-announcement-time"'), `${output}: el resumen final conserva filtros u horas de la cronología`);
+    expect((html.match(/data-youtube-id=/g) || []).length === data.highlights.length, `${output}: no hay un tráiler integrado por cada destacado`);
   }
-  for (const item of data.announcements) {
+  const visibleAnnouncements = data.phase === "finished"
+    ? data.highlights.map((title) => data.announcements.find((item) => item.title === title)).filter(Boolean)
+    : data.announcements;
+  for (const item of visibleAnnouncements) {
     expect(html.includes(escapeHtml(item.title)) && html.includes(escapeHtml(item.summary)), `${output}: falta el anuncio ${item.title}`);
   }
 

@@ -13,8 +13,8 @@ Los grandes eventos de videojuegos se cubren mediante páginas vivas generadas d
 - Antes de la gala, separar las presencias confirmadas de cualquier predicción. Los rumores no entran en la página.
 - Clasificar las presencias con estas etiquetas: `World Premiere` cuando se estrena el primer tráiler sustancial de un juego, incluyendo casos que solo contaban con un teaser o una cinemática; `Nuevo tráiler` cuando ya existía un tráiler completo o gameplay previo; `Actualización` cuando la presencia confirmada no implica necesariamente un tráiler; `Expansión` para contenido adicional y `Actuación` para intervenciones musicales. El detalle concreto se explica en el resumen, no creando etiquetas nuevas.
 - Durante la emisión, cada novedad debe incluir hora, tipo, titular factual, resumen y fuente.
-- Al finalizar la emisión, sustituir la cronología por un orden de relevancia editorial. Los anuncios principales abren el resumen y las novedades menores, junto con el pre-show, quedan al final.
-- En el resumen final, enlazar el tráiler individual de YouTube cuando esté disponible. Si el vídeo solo existe dentro de la retransmisión oficial, enlazar el momento correspondiente de la gala.
+- Al finalizar la emisión, conservar el archivo completo en `announcements`, pero sustituir la cronología pública por una selección de `highlights` ordenada de mayor a menor relevancia. El resumen final no muestra horas ni filtros propios del directo.
+- Cada elemento del resumen final debe presentar su imagen oficial y permitir reproducir dentro de la página el tráiler individual de YouTube. Si el vídeo solo existe dentro de la retransmisión oficial, usar ese fragmento como tráiler.
 - Enlazar una ficha viva o noticia cuando exista y aporte contexto real.
 - No crear una noticia independiente para cada tráiler rutinario. La cronología del evento es el lugar natural para los anuncios menores.
 - Las fechas de lanzamiento o cambios relevantes también deben trasladarse al calendario, la ficha o la noticia correspondiente.

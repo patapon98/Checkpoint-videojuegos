@@ -42,4 +42,19 @@
     });
     if (total) total.textContent = String(visible);
   }));
+
+  document.querySelectorAll('[data-youtube-id]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const videoId = button.dataset.youtubeId || '';
+      if (!/^[\w-]{11}$/.test(videoId)) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+      iframe.title = button.dataset.videoTitle || 'Tráiler oficial';
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      button.replaceWith(iframe);
+    });
+  });
 })();

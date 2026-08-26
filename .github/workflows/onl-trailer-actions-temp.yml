@@ -1,6 +1,9 @@
 name: Temp ONL trailer actions
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - fix/onl-trailer-actions-aniimo
@@ -10,7 +13,7 @@ permissions:
 
 jobs:
   apply:
-    if: github.event.head_commit.message != 'fix(events): unifica acciones de tráiler'
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

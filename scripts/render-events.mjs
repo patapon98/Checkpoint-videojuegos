@@ -112,6 +112,31 @@ function highlightMarkup(item, index) {
         </article>`;
 }
 
+function completeAnnouncementMarkup(item) {
+  const isPreShow = item.type.startsWith("Pre-show");
+  const stage = isPreShow ? "preshow" : "main";
+  const stageLabel = isPreShow ? "Pre-show" : "Gala";
+  const cleanType = item.type.replace(/^Pre-show\s*·\s*/, "");
+  const videoId = youtubeIdFromUrl(item.trailerUrl);
+  const image = item.archiveImage || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  const links = [
+    item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
+    item.trailerUrl ? `<a href="${escapeHtml(item.trailerUrl)}" target="_blank" rel="noopener noreferrer">Ver tráiler ↗</a>` : "",
+    `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente ↗</a>`
+  ].filter(Boolean).join("\n              ");
+  return `<article class="event-all-item" data-event-all-item data-event-stage="${stage}">
+          <div class="event-all-art"><img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async"><span></span></div>
+          <div class="event-all-meta"><span>${stageLabel}</span><strong>${escapeHtml(cleanType)}</strong></div>
+          <div class="event-all-copy">
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.summary)}</p>
+            <div class="event-all-links">
+              ${links}
+            </div>
+          </div>
+        </article>`;
+}
+
 function archiveCardMarkup(data) {
   return `<a class="event-archive-card reveal" href="/eventos/${escapeHtml(data.id)}">
         <div class="event-archive-art"><img src="${escapeHtml(data.heroImage)}" alt="${escapeHtml(data.heroImageAlt)}"><span>${escapeHtml(data.status)}</span></div>
@@ -194,6 +219,10 @@ function page(data) {
   const highlights = (data.highlights || []).map((title) => announcementByTitle.get(title)).filter(Boolean);
   const announcements = data.announcements.map(announcementMarkup).join("\n        ");
   const highlightAnnouncements = highlights.map(highlightMarkup).join("\n        ");
+  const completeAnnouncements = [...data.announcements]
+    .sort((a, b) => a.title.localeCompare(b.title, "es", { sensitivity: "base" }))
+    .map(completeAnnouncementMarkup)
+    .join("\n        ");
   const filterTypes = [...new Set(data.announcements.map((item) => item.type))];
   const filters = filterTypes.length > 1 ? `<div class="event-filter" aria-label="Filtrar anuncios">
         <button class="on" type="button" data-event-filter="all" aria-pressed="true">Todos</button>
@@ -263,7 +292,7 @@ function page(data) {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css?v=20260729-6">
 <link rel="stylesheet" href="/css/brand-logo.css">
-<link rel="stylesheet" href="/css/event-hub.css?v=20260826-2">
+<link rel="stylesheet" href="/css/event-hub.css?v=20260826-4">
 <script>(function(){try{var saved=localStorage.getItem('finalsecreto-theme');var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',theme);document.documentElement.style.colorScheme=theme}catch(e){}})();</script>
 </head>
 <body class="event-page" data-event-id="${escapeHtml(data.id)}">
@@ -330,8 +359,34 @@ ${isFinished ? "" : `  <div class="wrap event-countdown-wrap">
         <div><span class="event-kicker">${isFinished ? "La selección de Final Secreto" : "Cobertura en directo"}</span><h2>${isFinished ? "Lo mejor de Opening Night Live" : "Todos los anuncios de la gala"}</h2><p>${isFinished ? "Las revelaciones con más peso de la noche, ordenadas de mayor a menor relevancia y acompañadas por su tráiler." : "Las novedades aparecerán en orden conforme se confirmen durante la emisión."}</p></div>
         <div class="event-total"><b data-event-visible-total>${isFinished ? highlights.length : data.announcements.length}</b><span>${isFinished ? "Esenciales" : "Anuncios"}</span></div>
       </div>
-${isFinished ? `      <div class="event-highlights">
-        ${highlightAnnouncements}
+${isFinished ? `      <div class="event-browser reveal">
+        <div class="event-view-tabs" role="tablist" aria-label="Vista de los anuncios">
+          <button class="on" id="event-tab-highlights" type="button" role="tab" aria-selected="true" aria-controls="event-panel-highlights" data-event-view="highlights">Lo más importante <span>${highlights.length}</span></button>
+          <button id="event-tab-all" type="button" role="tab" aria-selected="false" aria-controls="event-panel-all" tabindex="-1" data-event-view="all">Todos los anuncios <span>${data.announcements.length}</span></button>
+        </div>
+        <label class="event-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+          <input type="search" aria-label="Buscar en todos los anuncios" placeholder="Buscar un juego o anuncio…" autocomplete="off" data-event-search>
+        </label>
+      </div>
+      <div id="event-panel-highlights" role="tabpanel" aria-labelledby="event-tab-highlights" data-event-panel="highlights">
+        <div class="event-highlights">
+          ${highlightAnnouncements}
+        </div>
+      </div>
+      <div id="event-panel-all" role="tabpanel" aria-labelledby="event-tab-all" data-event-panel="all" hidden>
+        <div class="event-all-toolbar">
+          <div class="event-stage-filter" role="group" aria-label="Filtrar por parte de la emisión">
+            <button class="on" type="button" data-event-stage-filter="all" aria-pressed="true">Todos</button>
+            <button type="button" data-event-stage-filter="main" aria-pressed="false">Gala</button>
+            <button type="button" data-event-stage-filter="preshow" aria-pressed="false">Pre-show</button>
+          </div>
+          <p class="event-all-count" aria-live="polite"><b data-event-all-total>${data.announcements.length}</b> resultados</p>
+        </div>
+        <div class="event-all-list">
+          ${completeAnnouncements}
+        </div>
+        <p class="event-all-empty" data-event-all-empty hidden>No hay anuncios que coincidan con esa búsqueda.</p>
       </div>` : `${filters ? `      ${filters}\n` : ""}      <div class="event-timeline">
         ${announcements || `<div class="event-live-empty reveal"><b>↻</b><div><strong>La cobertura comenzará con la gala</strong><p>Esta sección se llenará con los anuncios, fechas y tráilers confirmados durante ${escapeHtml(data.shortTitle)}.</p></div></div>`}
       </div>`}
@@ -360,7 +415,7 @@ ${isFinished ? "" : `    <section class="event-section" id="confirmados">
 
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span></div></footer>
 <script src="/js/main.js?v=20260823-1"></script>
-<script src="/js/event-hub.js?v=20260826-2"></script>
+<script src="/js/event-hub.js?v=20260826-3"></script>
 </body>
 </html>
 `;

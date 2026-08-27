@@ -1,0 +1,50 @@
+{
+  "id": "anno-117-dawn-of-the-delta-aegyptus",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "la tercera y mayor expansión",
+      "una nueva provincia, Aegyptus",
+      "noviembre de 2026"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-27",
+  "addedAt": "2026-08-27T14:58:41Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Aegyptus"
+    },
+    "copy": {
+      "es": "Aegyptus amplía Anno 117 con Dawn of the Delta en noviembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Anno 117 viajará a Aegyptus en noviembre con Dawn of the Delta"
+  },
+  "summary": {
+    "es": "Ubisoft ha anunciado Dawn of the Delta, la tercera y mayor expansión de Anno 117: Pax Romana. El contenido abrirá una nueva provincia, Aegyptus, y llegará a todas las plataformas en noviembre de 2026."
+  },
+  "why": {
+    "es": "La expansión incorporará población local, cadenas de producción, bienes, deidades, tecnologías y personajes propios. El salto a Egipto amplía de forma sustancial el mapa y los sistemas de gestión del juego."
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Anuncio oficial de la expansión, la nueva provincia y su ventana de lanzamiento"
+      },
+      "url": "https://news.ubisoft.com/en-us/article/36BjqkzwVDQCei5kVZyjWC/anno-117-pax-romana-echoes-of-kassandra-pack-cosmetic-dlc-out-september-17"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Dawn of the Delta llevará al jugador a gobernar Aegyptus, una provincia inédita dentro de Anno 117. Ubisoft la presenta como la expansión más grande del juego y confirma que el nuevo territorio tendrá habitantes, recursos y cadenas económicas propios.",
+      "La ambientación egipcia añadirá también nuevas deidades, tecnologías y personajes, por lo que no se limita a un paquete cosmético. El lanzamiento está previsto para noviembre en PS5, Xbox Series X|S y PC."
+    ]
+  }
+}

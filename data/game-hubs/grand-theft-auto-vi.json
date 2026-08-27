@@ -110,16 +110,16 @@
     },
     {
       "kicker": "Presentación extendida",
-      "title": "La mirada extendida ya se ha estrenado en Netflix",
-      "summary": "Netflix estrenó la nueva presentación el 27 de agosto a las 21:00 en la España peninsular; Rockstar la publicará seis horas después en sus canales abiertos.",
+      "title": "Combate, sigilo y actividades aparecen en la nueva presentación",
+      "summary": "La mirada extendida muestra secuencias de conducción, tiroteos desde cobertura, aproximaciones sigilosas y persecuciones con Jason y Lucia en distintas situaciones de la campaña.",
       "highlights": [
-        "YouTube y la web oficial la publicarán a las 03:00 del 28 de agosto en España.",
-        "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente una demostración de jugabilidad."
+        "El metraje oficial enseña actividades como navegación, baloncesto, buceo, carreras y paracaidismo.",
+        "Jason y Lucia aparecen actuando juntos y también separados durante distintas misiones y persecuciones.",
+        "YouTube y la web oficial publicarán la presentación a las 03:00 del 28 de agosto en España."
       ]
     }
   ],
   "pendingHighlights": [
-    "Contenido exacto de la presentación del 27 de agosto.",
     "Versión para PC y posible modo en línea.",
     "Alcance de los sistemas jugables y modos gráficos de consola."
   ],
@@ -173,6 +173,15 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-27",
+      "title": "La mirada extendida muestra combate, sigilo y actividades de Leonida",
+      "description": "El metraje oficial estrenado en Netflix concreta secuencias de conducción, tiroteos desde cobertura, aproximaciones sigilosas y persecuciones, además de actividades como navegación, baloncesto, buceo, carreras y paracaidismo.",
+      "sourceUrls": [
+        "https://www.netflix.com/es/title/83035795",
+        "https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look"
+      ]
+    },
     {
       "date": "2026-08-27",
       "title": "La presentación extendida se estrena en Netflix",

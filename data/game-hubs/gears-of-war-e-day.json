@@ -50,10 +50,10 @@
       "highlights": ["Marcus, Dom, Mags Carter y Lucas Reyes están disponibles desde el inicio.","La narración no abandona el punto de vista del escuadrón Bravo."]
     },
     {
-      "kicker": "Combate y escenarios",
-      "title": "Más movilidad sobre coberturas que pueden deteriorarse",
-      "summary": "Las calles estrechas se alternan con distritos abiertos, rutas elevadas, saltos y deslizamientos para ampliar las posibilidades de flanqueo.",
-      "highlights": ["Regresan los agujeros de emergencia, el Gnasher y el Longshot.","Debutan Gut Puncher e Incinerator y se muestra el origen del Lancer con motosierra."]
+      "kicker": "Combate y exploración",
+      "title": "Kalona combina la ruta principal con desvíos opcionales y equipo táctico",
+      "summary": "La campaña mantiene una estructura principalmente lineal, pero utiliza un folleto turístico como mapa de Kalona y permite desviarse para ayudar a otros escuadrones en misiones secundarias.",
+      "highlights": ["El Tactical Gear incluye objetos recargables con el tiempo, como un inyector de salud y proyectiles capaces de aturdir enemigos.","La recarga activa regresa: acertar el tiempo reduce la espera antes de disparar y fallar puede encasquillar el arma.","Regresan los agujeros de emergencia, el Gnasher y el Longshot; también debutan Gut Puncher e Incinerator."]
     },
     {
       "kicker": "Multijugador",
@@ -74,6 +74,7 @@
   ],
   "pendingHighlights": ["Modos exactos de resolución y rendimiento de cada consola.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
   "sources": [
+    {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/","type":"Hands-on oficial de campaña, mapa, misiones secundarias, recarga activa y Tactical Gear"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"RTX Mega Geometry, NVIDIA Reflex, DLSS 4.5 y vídeo técnico de PC"},
     {"label":"Windows Central","url":"https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter","type":"Calendario completo de los dos fines de semana de la beta"},
     {"label":"Xbox España","url":"https://www.xbox.com/es-es/games/gears-of-war-eday","type":"Ficha, fecha, plataformas, modos e imágenes oficiales"},
@@ -93,6 +94,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {"date":"2026-08-27","title":"Xbox detalla el mapa, las misiones secundarias y el Tactical Gear de la campaña","description":"El hands-on oficial de Xbox confirma que un folleto turístico funciona como mapa de Kalona, que la campaña permite desviarse a misiones secundarias opcionales y que el Tactical Gear reúne objetos reutilizables que se recargan con el tiempo. También regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.","sourceUrls":["https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/"]},
     {"date":"2026-08-25","title":"Xbox España confirma una tarjeta regalo entre los incentivos de reserva","description":"La ficha oficial de Xbox España incluye una tarjeta regalo Xbox entre los incentivos de reserva, junto a los aspectos Exfil. El importe no se especifica; los beneficios pueden requerir un código de un solo uso y están limitados a una oferta por persona o cuenta.","sourceUrls":["https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ"]},
     {"date":"2026-08-25","title":"NVIDIA confirma RTX Mega Geometry y Reflex para PC","description":"Gears of War: E-Day debutará RTX Mega Geometry para ray tracing sobre geometría Nanite de mayor detalle y contará con NVIDIA Reflex y la suite DLSS 4.5; NVIDIA publica además un nuevo vídeo técnico desarrollado junto a The Coalition.","sourceUrls":["https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/"]},
     {"date":"2026-08-23","title":"La información esencial se reorganiza por temas","description":"La ficha sustituye las listas extensas por cuatro bloques sobre campaña, combate, multijugador y tecnología, conservando la última corrección de requisitos de Steam."},
@@ -112,7 +114,7 @@
     {"date":"2026-07-30","title":"Ficha publicada tras el Xbox Games Showcase","description":"Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
   "relatedGameIds": ["control-resonant","grand-theft-auto-vi"],
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-27",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

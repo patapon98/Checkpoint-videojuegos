@@ -115,6 +115,7 @@
       "highlights": [
         "El metraje oficial enseña actividades como navegación, baloncesto, buceo, carreras y paracaidismo.",
         "Jason y Lucia aparecen actuando juntos y también separados durante distintas misiones y persecuciones.",
+        "Rockstar confirma que toda la presentación está capturada directamente de metraje in-game en PlayStation 5.",
         "YouTube y la web oficial publicarán la presentación a las 03:00 del 28 de agosto en España."
       ]
     }
@@ -128,6 +129,11 @@
       "label": "Rockstar Games",
       "url": "https://www.rockstargames.com/VI",
       "type": "Ficha oficial"
+    },
+    {
+      "label": "Rockstar Games Newswire",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+      "type": "Confirmación oficial del origen in-game del metraje en PS5"
     },
     {
       "label": "Rockstar Games en X",
@@ -173,6 +179,14 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-28",
+      "title": "Rockstar confirma que la mirada extendida está capturada íntegramente en PS5",
+      "description": "Rockstar aclara que toda la presentación extendida de Grand Theft Auto VI utiliza metraje capturado directamente del juego en PlayStation 5.",
+      "sourceUrls": [
+        "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing"
+      ]
+    },
     {
       "date": "2026-08-27",
       "title": "La mirada extendida muestra combate, sigilo y actividades de Leonida",
@@ -249,7 +263,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-08-28",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

@@ -2109,6 +2109,58 @@
       "trailer": "https://www.youtube.com/watch?v=iCKflvFn4p4"
     },
     {
+      "id": "graveyard-keeper-2",
+      "title": "Graveyard Keeper 2",
+      "headingHtml": "Graveyard Keeper 2",
+      "date": "2026-09-22",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4358690/d63c37d6289ef7c48d89c0521fb82ac51d7f5ce8/header.jpg?t=1787779426",
+        "alt": "Graveyard Keeper 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4358690/Graveyard_Keeper_2/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Graveyard Keeper 2 a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://steamcommunity.com/games/4358690/announcements/detail/703277221211538405",
+        "official": true,
+        "host": "steamcommunity.com",
+        "checkedAt": "2026-08-27",
+        "evidence": {
+          "title": "Graveyard Keeper 2",
+          "releaseDate": "2026-09-22",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=6Mn3SP3klQ0"
+    },
+    {
       "id": "control-resonant",
       "title": "Control Resonant",
       "headingHtml": "Control Resonant",
@@ -2736,6 +2788,56 @@
       "trailer": "https://www.youtube.com/watch?v=AfS0SgUlY94"
     },
     {
+      "id": "warhammer-40000-boltgun-2",
+      "title": "Warhammer 40,000: Boltgun 2",
+      "headingHtml": "Warhammer 40,000: Boltgun 2",
+      "date": "2026-10-14",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3115160/5f9bb697da7c17abcfec3205446d896a4cd561bb/header.jpg?t=1787770843",
+        "alt": "Warhammer 40,000: Boltgun 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3115160/Warhammer_40000_Boltgun_2/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Warhammer 40,000: Boltgun 2 a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.warhammer-community.com/en-gb/articles/i8yr0b1b/watch-explosive-new-trailers-for-boltgun-ii-and-deathmaster/",
+        "official": true,
+        "host": "www.warhammer-community.com",
+        "checkedAt": "2026-08-27",
+        "evidence": {
+          "title": "Warhammer 40,000: Boltgun 2",
+          "releaseDate": "2026-10-14",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=pb-1Odkp_Ks"
+    },
+    {
       "id": "castlevania-belmont-s-curse",
       "title": "Castlevania: Belmont's Curse",
       "headingHtml": "Castlevania: Belmont's Curse",
@@ -3142,6 +3244,58 @@
       "trailer": "https://www.youtube.com/watch?v=2X-X5C4jG0A"
     },
     {
+      "id": "the-wolf-among-us-remastered",
+      "title": "The Wolf Among Us Remastered",
+      "headingHtml": "The Wolf Among Us Remastered <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Xbox One · PC · Switch 2 · Switch",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3884860/80ddd096b6fdd5ab25162251bee4131c78cdf351/header.jpg?t=1787762158",
+        "alt": "The Wolf Among Us Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3884860/The_Wolf_Among_Us_Remastered/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir The Wolf Among Us Remastered a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://telltale.com/news/the-big-bad-wolf-returns/",
+        "official": true,
+        "host": "telltale.com",
+        "checkedAt": "2026-08-27",
+        "evidence": {
+          "title": "The Wolf Among Us Remastered",
+          "releaseDate": "2026-10-29",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ftyQs4bSve8"
+    },
+    {
       "id": "godzilla-destroy-all-monsters-melee",
       "title": "Godzilla: Destroy All Monsters Melee",
       "headingHtml": "Godzilla: Destroy All Monsters Melee <span class=\"tag-dlc\">Remaster</span>",
@@ -3397,6 +3551,56 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=bdYFIXnI2pc"
+    },
+    {
+      "id": "tropico-7",
+      "title": "Tropico 7",
+      "headingHtml": "Tropico 7",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1853440/cfa41f10c2e878497d77e100f9be08224eb686b9/header.jpg?t=1787766896",
+        "alt": "Tropico 7",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1853440/Tropico_7/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Tropico 7 a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/1853440/Tropico_7/",
+        "official": true,
+        "host": "store.steampowered.com",
+        "checkedAt": "2026-08-27",
+        "evidence": {
+          "title": "Tropico 7",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=6KXyO3uaFRk"
     },
     {
       "id": "tomb-raider-legacy-of-atlantis",

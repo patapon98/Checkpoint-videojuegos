@@ -10,7 +10,7 @@
   "genre": "Shooter de cobertura en tercera persona",
   "officialUrl": "https://www.xbox.com/es-es/games/gears-of-war-eday",
   "storeUrl": "https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ",
-  "trailerUrl": "https://www.youtube.com/watch?v=dFk4bL3a8I8",
+  "trailerUrl": "https://www.youtube.com/watch?v=-TW2SnAipsE",
   "heroImage": "/img/juegos/gears-of-war-e-day.jpg",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
@@ -23,6 +23,7 @@
     {"src":"https://cms-assets.xboxservices.com/assets/72/97/7297eebb-7bfd-4868-8afd-50f62bfe3ef2.jpg?n=8388488888_Image-1084_Details-intro_1920x720.jpg","alt":"Marcus y Dom avanzan entre las ruinas de Kalona en Gears of War: E-Day"}
   ],
   "media": [
+    {"type":"youtube","videoId":"-TW2SnAipsE","title":"Gears of War: E-Day - Official Story Trailer","label":"Tráiler de historia","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"_dRYPXrGzck","title":"Gears of War: E-Day - RTX Mega Geometry Developer Video","label":"Vídeo técnico","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"cmawSe1PkPg","title":"Gears of War: E-Day, presentación oficial del multijugador","label":"Multijugador","publishedAt":"2026-07-30"},
     {"type":"youtube","videoId":"dFk4bL3a8I8","title":"Gears of War: E-Day, presentación oficial de la jugabilidad","label":"Gameplay","publishedAt":"2026-06-07"},
@@ -74,6 +75,7 @@
   ],
   "pendingHighlights": ["Modos exactos de resolución y rendimiento de cada consola.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
   "sources": [
+    {"label":"Xbox - Official Story Trailer","url":"https://www.youtube.com/watch?v=-TW2SnAipsE","type":"Tráiler oficial de historia estrenado en gamescom Opening Night Live 2026"},
     {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/","type":"Hands-on oficial de campaña, mapa, misiones secundarias, recarga activa y Tactical Gear"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"RTX Mega Geometry, NVIDIA Reflex, DLSS 4.5 y vídeo técnico de PC"},
     {"label":"Windows Central","url":"https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter","type":"Calendario completo de los dos fines de semana de la beta"},
@@ -94,6 +96,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {"date":"2026-08-27","title":"Xbox publica el tráiler oficial de historia de Gears of War: E-Day","description":"El tráiler de historia estrenado en gamescom Opening Night Live muestra la irrupción de la Horda Locust en Kalona y nuevos momentos narrativos de Marcus, Dom y el escuadrón Bravo.","sourceUrls":["https://www.youtube.com/watch?v=-TW2SnAipsE"]},
     {"date":"2026-08-27","title":"Xbox detalla el mapa, las misiones secundarias y el Tactical Gear de la campaña","description":"El hands-on oficial de Xbox confirma que un folleto turístico funciona como mapa de Kalona, que la campaña permite desviarse a misiones secundarias opcionales y que el Tactical Gear reúne objetos reutilizables que se recargan con el tiempo. También regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.","sourceUrls":["https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/"]},
     {"date":"2026-08-25","title":"Xbox España confirma una tarjeta regalo entre los incentivos de reserva","description":"La ficha oficial de Xbox España incluye una tarjeta regalo Xbox entre los incentivos de reserva, junto a los aspectos Exfil. El importe no se especifica; los beneficios pueden requerir un código de un solo uso y están limitados a una oferta por persona o cuenta.","sourceUrls":["https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ"]},
     {"date":"2026-08-25","title":"NVIDIA confirma RTX Mega Geometry y Reflex para PC","description":"Gears of War: E-Day debutará RTX Mega Geometry para ray tracing sobre geometría Nanite de mayor detalle y contará con NVIDIA Reflex y la suite DLSS 4.5; NVIDIA publica además un nuevo vídeo técnico desarrollado junto a The Coalition.","sourceUrls":["https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/"]},

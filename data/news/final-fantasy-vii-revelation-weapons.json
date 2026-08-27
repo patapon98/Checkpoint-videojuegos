@@ -1,0 +1,70 @@
+{
+  "id": "final-fantasy-vii-revelation-weapons",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "la aparición de las Armas",
+      "combate submarino contra Arma Esmeralda",
+      "Tifón como nueva invocación"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-25",
+  "addedAt": "2026-08-27T06:12:02Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Final Fantasy VII Revelation"
+    },
+    "copy": {
+      "es": "Final Fantasy VII Revelation muestra las Armas y el combate submarino"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Final Fantasy VII Revelation muestra las Armas y el regreso del combate submarino"
+  },
+  "summary": {
+    "es": "Square Enix ha presentado en Gamescom un nuevo tráiler de Final Fantasy VII Revelation centrado en la aparición de las Armas, los gigantes que despiertan para proteger el planeta. El vídeo confirma un combate submarino contra Arma Esmeralda y vuelve a mostrar el viaje por el mundo a bordo del Highwind."
+  },
+  "why": {
+    "es": "El adelanto también incorpora a Tifón como nueva invocación y enseña a Cloud y sus compañeros frente a varias de estas criaturas. La conclusión de la trilogía mantiene su lanzamiento para primavera de 2027 en PS5, Nintendo Switch 2, Xbox Series X|S y PC."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=BVKub8mLFFc",
+    "label": {
+      "es": "Ver el segundo tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Comunicado oficial del tráiler y de las novedades mostradas"
+      },
+      "url": "https://press.na.square-enix.com/FACE-THE-LEGENDARY-WEAPONS-IN-FINAL-FANTASY-VII-REVELATION-NEW-TRAILER"
+    },
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Tráiler oficial Guardians of the Planet"
+      },
+      "url": "https://www.youtube.com/watch?v=BVKub8mLFFc"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Resumen oficial de Opening Night Live y ventana de lanzamiento"
+      },
+      "url": "https://blog.playstation.com/2026/08/25/gamescom-opening-night-live-highlights-19-games-coming-to-playstation/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El tráiler sitúa a las Armas como amenazas activas en distintos puntos del planeta y muestra a Arma Esmeralda emergiendo en alta mar. La secuencia lleva al grupo a un submarino de Shinra y confirma que el vehículo y los enfrentamientos bajo el agua formarán parte de esta entrega.",
+      "Entre las nuevas imágenes aparecen también Arma Última, Arma Rubí y Tifón, una invocación capaz de atacar con fuertes ráfagas de viento. El Highwind permitirá desplazarse por un mundo de gran escala mientras la historia conduce al enfrentamiento final con Sephiroth."
+    ]
+  }
+}

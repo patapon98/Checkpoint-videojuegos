@@ -2,7 +2,7 @@
   "id": "grand-theft-auto-vi",
   "title": "Grand Theft Auto VI",
   "subtitle": "Todo lo confirmado sobre el regreso a Vice City, su historia, sus ediciones y el material oficial publicado por Rockstar.",
-  "status": "Presentación extendida el 27 de agosto",
+  "status": "Presentación extendida disponible en Netflix",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PS5",
@@ -56,17 +56,17 @@
     }
   ],
   "premise": "Jason Duval y Lucia Caminos quedan atrapados en una conspiración criminal que se extiende por el estado de Leonida después de que un golpe sencillo salga mal. Para sobrevivir tendrán que confiar el uno en el otro mientras recorren Vice City y sus alrededores.",
-  "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha. La próxima gran presentación oficial será Grand Theft Auto VI: Una mirada extendida, el 27 de agosto de 2026.",
+  "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha. Grand Theft Auto VI: Una mirada extendida se estrenó el 27 de agosto de 2026 en Netflix y llegará seis horas después a YouTube y a la web oficial de Rockstar.",
   "overview": "Rockstar ha dosificado la información durante meses, así que conviene separar bien lo que ya está confirmado de lo que todavía se da por hecho sin anuncio oficial.",
   "spotlight": {
-    "kicker": "Próxima presentación oficial",
-    "title": "Una mirada extendida el 27 de agosto",
-    "intro": "Rockstar mostrará una presentación extensa de GTA VI que se estrenará primero en Netflix y llegará después a YouTube y a su web oficial.",
+    "kicker": "Presentación oficial",
+    "title": "Una mirada extendida ya está disponible en Netflix",
+    "intro": "La presentación extensa de GTA VI ya se ha estrenado en Netflix y llegará seis horas después a YouTube y a la web oficial de Rockstar.",
     "items": [
       {
-        "title": "Fecha y hora en España",
-        "value": "27 de agosto · 21:00",
-        "description": "Netflix ofrecerá el estreno anticipado el jueves 27 de agosto a las 21:00, hora peninsular española."
+        "title": "Estreno anticipado",
+        "value": "Disponible en Netflix",
+        "description": "Netflix estrenó Grand Theft Auto VI: Una mirada extendida el 27 de agosto a las 21:00, hora peninsular española."
       },
       {
         "title": "Publicación abierta",
@@ -109,9 +109,9 @@
       ]
     },
     {
-      "kicker": "Próxima presentación",
-      "title": "La mirada extendida llegará primero a Netflix",
-      "summary": "La nueva presentación se estrenará el 27 de agosto a las 21:00 en la España peninsular y llegará seis horas después a los canales abiertos de Rockstar.",
+      "kicker": "Presentación extendida",
+      "title": "La mirada extendida ya se ha estrenado en Netflix",
+      "summary": "Netflix estrenó la nueva presentación el 27 de agosto a las 21:00 en la España peninsular; Rockstar la publicará seis horas después en sus canales abiertos.",
       "highlights": [
         "YouTube y la web oficial la publicarán a las 03:00 del 28 de agosto en España.",
         "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente una demostración de jugabilidad."
@@ -174,6 +174,15 @@
   },
   "changes": [
     {
+      "date": "2026-08-27",
+      "title": "La presentación extendida se estrena en Netflix",
+      "description": "Grand Theft Auto VI: Una mirada extendida se ha estrenado en Netflix en la fecha anunciada; la publicación abierta en YouTube y la web de Rockstar sigue fijada para las 03:00 del 28 de agosto en España.",
+      "sourceUrls": [
+        "https://www.netflix.com/es/title/83035795",
+        "https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look"
+      ]
+    },
+    {
       "date": "2026-08-23",
       "title": "La información esencial se reorganiza por temas",
       "description": "La ficha sustituye las listas extensas por cuatro bloques sobre protagonistas, Leonida, funciones de PS5 y la próxima presentación, y reduce las incógnitas a tres cuestiones relevantes."
@@ -231,7 +240,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-27",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

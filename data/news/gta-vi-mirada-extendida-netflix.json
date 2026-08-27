@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "se estrenará el 27 de agosto de 2026",
-      "Netflix la ofrecerá primero a las 21:00 en España",
-      "después llegará a YouTube y la web de Rockstar"
+      "una presentación de 27 minutos capturada íntegramente a partir de imágenes del juego en PlayStation 5",
+      "la primera demostración extensa y oficial de GTA VI",
+      "el lanzamiento para el 19 de noviembre de 2026"
     ]
   },
   "category": {
@@ -13,45 +13,53 @@
   },
   "date": "2026-08-06",
   "publishedAt": "2026-08-06T12:20:00Z",
+  "updated": "2026-08-27",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "GTA VI"
     },
     "copy": {
-      "es": "Rockstar mostrará una mirada extendida de GTA VI el 27 de agosto, primero en Netflix"
+      "es": "GTA VI enseña 27 minutos de material del juego capturado en PS5"
     }
   },
   "tone": "rockstar",
   "title": {
-    "es": "GTA VI tendrá una presentación extendida el 27 de agosto y se verá primero en Netflix"
+    "es": "GTA VI muestra 27 minutos de metraje del juego capturado en PS5"
   },
   "summary": {
-    "es": "Rockstar Games ha anunciado Grand Theft Auto VI: Una mirada extendida para el 27 de agosto de 2026. La presentación se estrenará primero en Netflix a las 21:00, hora peninsular española, y llegará seis horas después a YouTube y a la web oficial de Rockstar."
+    "es": "Rockstar Games y Netflix han estrenado Grand Theft Auto VI: Una mirada extendida, una presentación de 27 minutos capturada íntegramente a partir de imágenes del juego en PlayStation 5. El vídeo sigue a Jason y Lucia por Vice City, incluida una misión que acaba en un tiroteo y una huida policial."
   },
   "why": {
-    "es": "Será la primera presentación extensa de GTA VI desde el segundo tráiler y puede ofrecer la visión más clara hasta ahora de su jugabilidad, su mundo y los sistemas que sostendrán la aventura de Jason y Lucia."
+    "es": "Es la primera demostración extensa y oficial de GTA VI y sustituye las expectativas del anuncio original por una muestra directa de su mundo, su puesta en escena y el funcionamiento de la pareja protagonista. Rockstar mantiene el lanzamiento para el 19 de noviembre de 2026 en PS5 y Xbox Series X|S."
   },
   "sources": [
     {
       "label": "Rockstar Games",
       "type": {
-        "es": "Anuncio oficial"
+        "es": "Presentación oficial y ficha del juego"
       },
-      "url": "https://x.com/RockstarGames/status/2085335127287030232"
+      "url": "https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look"
     },
     {
-      "label": "Netflix España",
+      "label": "Netflix Tudum",
       "type": {
-        "es": "Ficha oficial del estreno"
+        "es": "Confirmación oficial del metraje, la duración y las plataformas"
       },
-      "url": "https://www.netflix.com/es/title/83035795"
+      "url": "https://www.netflix.com/tudum/articles/grand-theft-auto-6-extended-first-look"
+    },
+    {
+      "label": "Netflix",
+      "type": {
+        "es": "Vídeo oficial de la presentación"
+      },
+      "url": "https://www.netflix.com/title/83035795"
     }
   ],
   "homeDetails": {
     "es": [
-      "Rockstar no ha llamado al vídeo Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay. El título oficial es Grand Theft Auto VI: Una mirada extendida, una fórmula que apunta a una presentación más amplia que un tráiler convencional.",
-      "El estreno anticipado en Netflix es una colaboración poco habitual para una presentación de videojuegos. En España podrá verse allí el jueves 27 de agosto a las 21:00. La publicación abierta en YouTube y en la web de Rockstar está prevista para las 03:00 del viernes 28 de agosto."
+      "La presentación combina escenas de historia y material del juego sin separar ambos formatos. Jason y Lucia preparan y ejecutan un trabajo para Boobie Ike, entran en un edificio tomado por narcotraficantes y escapan cuando irrumpe la policía; también se ven conducción, combate en tercera persona y remates a cámara lenta.",
+      "Fuera de la misión, el vídeo recorre apartamentos, bares, calles y la silueta de Vice City, con televisión ficticia y la sátira habitual de la serie. Netflix confirma que todo el metraje fue capturado en PS5; Rockstar publicará la presentación abierta en YouTube y su web el 28 de agosto a las 03:00 en España."
     ]
   }
 }

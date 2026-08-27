@@ -2121,8 +2121,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "Graveyard Keeper 2",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4358690/d63c37d6289ef7c48d89c0521fb82ac51d7f5ce8/header.jpg?t=1787779426",
         "alt": "Graveyard Keeper 2",
         "className": "",
@@ -2801,8 +2799,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Warhammer 40,000: Boltgun 2",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3115160/5f9bb697da7c17abcfec3205446d896a4cd561bb/header.jpg?t=1787770843",
         "alt": "Warhammer 40,000: Boltgun 2",
         "className": "",
@@ -3260,8 +3256,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · Xbox One · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "The Wolf Among Us Remastered",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3884860/80ddd096b6fdd5ab25162251bee4131c78cdf351/header.jpg?t=1787762158",
         "alt": "The Wolf Among Us Remastered",
         "className": "",
@@ -3570,8 +3564,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Tropico 7",
         "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1853440/cfa41f10c2e878497d77e100f9be08224eb686b9/header.jpg?t=1787766896",
         "alt": "Tropico 7",
         "className": "",

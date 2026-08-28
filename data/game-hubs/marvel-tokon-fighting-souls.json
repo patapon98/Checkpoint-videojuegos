@@ -25,6 +25,7 @@
     {"src":"https://gmedia.playstation.com/is/image/SIEPDC/mtfs-doom-screenshot-01-18may26?wid=2400&hei=1350&fmt=webp&qlt=90","alt":"Doctor Doom aparece rodeado de robots en MARVEL Tōkon: Fighting Souls"}
   ],
   "media": [
+    {"type":"youtube","videoId":"w9SezZowhGo","title":"MARVEL Tōkon: Fighting Souls, Wolverine Battle Reborn Suit","label":"Vídeo oficial","publishedAt":"2026-08-28"},
     {"type":"youtube","videoId":"funfFAMMBBs","title":"MARVEL Tōkon: Fighting Souls, tráiler de lanzamiento","label":"Tráiler de lanzamiento","publishedAt":"2026-08-06"},
     {"type":"youtube","videoId":"DV9Oq_X22Ak","title":"MARVEL Tōkon: Fighting Souls, tráiler de presentación","label":"Tráiler oficial","publishedAt":"2025-06-04"},
     {"type":"youtube","videoId":"EE955NDdmj8","title":"MARVEL Tōkon: Fighting Souls, vídeo de apertura","label":"Vídeo oficial","publishedAt":"2026-07-27"}
@@ -84,8 +85,9 @@
       "title": "Cuatro personajes y un escenario adicionales",
       "summary": "Phoenix Cyclops es el primer personaje anunciado del pase del año 1.",
       "highlights": [
+        "El traje Battle Reborn de Wolverine, inspirado en Marvel's Wolverine, está disponible gratis para todos los jugadores desde el 28 de agosto de 2026, cuatro días antes de la fecha anunciada inicialmente.",
         "Steam sitúa el 31 de diciembre de 2027 como fecha límite prevista para publicar el contenido restante.",
-        "Las fechas individuales todavía no han sido anunciadas."
+        "Las fechas individuales del pase todavía no han sido anunciadas."
       ]
     }
   ],
@@ -95,6 +97,7 @@
     "Fechas individuales de Phoenix Cyclops y del resto del contenido."
   ],
   "sources": [
+    {"label":"MARVEL Tōkon en Bluesky","url":"https://bsky.app/profile/did:plc:7urjtkmf3ydptzj35l47gj6d/post/3mu37rtrndt23","type":"Anuncio oficial del traje Battle Reborn"},
     {"label":"PlayStation","url":"https://www.playstation.com/en-us/games/marvel-tokon-fighting-souls/","type":"Ficha oficial"},
     {"label":"PlayStation Store","url":"https://store.playstation.com/en-us/product/JP9000-PPSA15595_00-MTFS000000000000","type":"Ediciones y reservas"},
     {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/02/12/marvel-tokon-fighting-souls-arrives-on-ps5-pc-august-6/","type":"Fecha y plataformas"},
@@ -112,6 +115,7 @@
     "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
+    {"date":"2026-08-28","title":"El traje Battle Reborn de Wolverine se adelanta y llega gratis","description":"MARVEL Tōkon adelanta del 1 de septiembre al 28 de agosto el traje Battle Reborn de Wolverine inspirado en Marvel's Wolverine. Está disponible sin coste adicional para todos los jugadores y cuenta con un nuevo vídeo oficial de presentación.","sourceUrls":["https://www.youtube.com/watch?v=w9SezZowhGo","https://bsky.app/profile/did:plc:7urjtkmf3ydptzj35l47gj6d/post/3mu37rtrndt23"]},
     {
       "date": "2026-08-23",
       "title": "La información esencial se reorganiza por temas",
@@ -126,7 +130,7 @@
     {"date":"2026-07-30","title":"Plantel, modos y cross-play revisados","description":"Se sustituyeron las imágenes comprimidas por siete capturas oficiales a resolución nativa, se eligió una cabecera sin marco blanco y se ampliaron el plantel, los modos, el juego cruzado y el contenido del primer año."}
   ],
   "relatedGameIds": ["beast-of-reincarnation","control-resonant"],
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-28",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3787240/MARVEL_Tkon_Fighting_Souls/",
     "minimum": [

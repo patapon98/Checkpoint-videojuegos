@@ -2,7 +2,7 @@
   "id": "grand-theft-auto-vi",
   "title": "Grand Theft Auto VI",
   "subtitle": "Todo lo confirmado sobre el regreso a Vice City, su historia, sus ediciones y el material oficial publicado por Rockstar.",
-  "status": "Presentación extendida disponible en Netflix",
+  "status": "Presentación extendida disponible",
   "releaseDate": "2026-11-19",
   "platforms": [
     "PS5",
@@ -13,7 +13,7 @@
   "genre": "Acción y aventura en mundo abierto",
   "officialUrl": "https://www.rockstargames.com/VI",
   "storeUrl": "https://www.rockstargames.com/VI",
-  "trailerUrl": "https://www.youtube.com/watch?v=VQRLujxTm3c",
+  "trailerUrl": "https://www.youtube.com/watch?v=tJbzMqJGH4k",
   "heroImage": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_03_landscape.0419q._86ukpt.jpg?akim=1&imdensity=1&imwidth=3840",
   "heroImageKind": "promotional-key-art",
   "heroImageHasEmbeddedText": false,
@@ -42,6 +42,13 @@
   "media": [
     {
       "type": "youtube",
+      "videoId": "tJbzMqJGH4k",
+      "title": "Grand Theft Auto VI: An Extended Look",
+      "label": "Una mirada extendida",
+      "publishedAt": "2026-08-27"
+    },
+    {
+      "type": "youtube",
       "videoId": "VQRLujxTm3c",
       "title": "Grand Theft Auto VI Trailer 2",
       "label": "Tráiler 2",
@@ -56,27 +63,27 @@
     }
   ],
   "premise": "Jason Duval y Lucia Caminos quedan atrapados en una conspiración criminal que se extiende por el estado de Leonida después de que un golpe sencillo salga mal. Para sobrevivir tendrán que confiar el uno en el otro mientras recorren Vice City y sus alrededores.",
-  "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha. Grand Theft Auto VI: Una mirada extendida se estrenó el 27 de agosto de 2026 en Netflix y llegará seis horas después a YouTube y a la web oficial de Rockstar.",
+  "context": "Es la primera entrega principal de Grand Theft Auto desde 2013 y el lanzamiento más importante del calendario de Final Secreto. Rockstar presenta Leonida como su mundo abierto más amplio y detallado hasta la fecha. Grand Theft Auto VI: Una mirada extendida ya está disponible en Netflix, YouTube y la web oficial de Rockstar.",
   "overview": "Rockstar ha dosificado la información durante meses, así que conviene separar bien lo que ya está confirmado de lo que todavía se da por hecho sin anuncio oficial.",
   "spotlight": {
     "kicker": "Presentación oficial",
-    "title": "Una mirada extendida ya está disponible en Netflix",
-    "intro": "La presentación extensa de GTA VI ya se ha estrenado en Netflix y llegará seis horas después a YouTube y a la web oficial de Rockstar.",
+    "title": "Una mirada extendida ya está disponible para todo el mundo",
+    "intro": "Rockstar ha publicado la presentación completa en su canal oficial de YouTube y en la web de GTA VI tras el estreno anticipado en Netflix.",
     "items": [
       {
-        "title": "Estreno anticipado",
-        "value": "Disponible en Netflix",
-        "description": "Netflix estrenó Grand Theft Auto VI: Una mirada extendida el 27 de agosto a las 21:00, hora peninsular española."
+        "title": "Vídeo completo",
+        "value": "Ya disponible",
+        "description": "Grand Theft Auto VI: Una mirada extendida puede verse oficialmente en YouTube, la web de Rockstar y Netflix."
       },
       {
-        "title": "Publicación abierta",
-        "value": "28 de agosto · 03:00",
-        "description": "La presentación llegará seis horas después a YouTube y a la web oficial de Rockstar."
+        "title": "Formato confirmado",
+        "value": "Metraje in-game de PS5",
+        "description": "Rockstar confirma que toda la presentación está capturada íntegramente con metraje in-game de PlayStation 5."
       },
       {
-        "title": "Formato anunciado",
-        "value": "Una mirada extendida",
-        "description": "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay."
+        "title": "Duración",
+        "value": "26 minutos",
+        "description": "La presentación ofrece un vistazo prolongado a la campaña, el mundo, el combate y las actividades de Leonida."
       }
     ]
   },
@@ -113,9 +120,10 @@
       "title": "Combate, sigilo y actividades aparecen en la nueva presentación",
       "summary": "La mirada extendida muestra secuencias de conducción, tiroteos desde cobertura, aproximaciones sigilosas y persecuciones con Jason y Lucia en distintas situaciones de la campaña.",
       "highlights": [
+        "Rockstar confirma que todo el metraje de la presentación está capturado in-game en PlayStation 5.",
         "El metraje oficial enseña actividades como navegación, baloncesto, buceo, carreras y paracaidismo.",
         "Jason y Lucia aparecen actuando juntos y también separados durante distintas misiones y persecuciones.",
-        "YouTube y la web oficial publicarán la presentación a las 03:00 del 28 de agosto en España."
+        "La presentación completa ya está disponible en YouTube y en la web oficial de Rockstar."
       ]
     }
   ],
@@ -158,6 +166,11 @@
       "label": "Xbox España",
       "url": "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn",
       "type": "Precios y mejora Ultimate"
+    },
+    {
+      "label": "Rockstar Newswire",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+      "type": "Publicación oficial de Una mirada extendida y confirmación del metraje in-game de PS5"
     }
   ],
   "newsTerms": [
@@ -173,6 +186,15 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-28",
+      "title": "Una mirada extendida ya está disponible en YouTube y la web oficial",
+      "description": "Rockstar publica para todo el mundo la presentación completa de GTA VI y confirma que sus 26 minutos están capturados íntegramente con metraje in-game de PlayStation 5.",
+      "sourceUrls": [
+        "https://www.rockstargames.com/VI/an-extended-look",
+        "https://www.youtube.com/watch?v=tJbzMqJGH4k"
+      ]
+    },
     {
       "date": "2026-08-27",
       "title": "La mirada extendida muestra combate, sigilo y actividades de Leonida",
@@ -249,7 +271,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-08-28",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

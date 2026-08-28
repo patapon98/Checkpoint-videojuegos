@@ -3,15 +3,16 @@
   "important": true,
   "emphasis": {
     "es": [
-      "demo de juego sin cortes",
-      "combina cuerpo a cuerpo, armas a distancia y magia",
-      "intensidad del combate"
+      "misión por Bowerstone",
+      "entrar en todos los edificios",
+      "comprar cualquier casa"
     ]
   },
   "category": {
     "es": "Juegos"
   },
   "date": "2026-08-28",
+  "updated": "2026-08-29",
   "addedAt": "2026-08-28T17:52:50Z",
   "featured": false,
   "ticker": {
@@ -19,18 +20,18 @@
       "es": "Fable"
     },
     "copy": {
-      "es": "Fable muestra cómo mezcla espada, armas a distancia y magia en combate"
+      "es": "Fable recorre Bowerstone y muestra combate, decisiones y compra de viviendas"
     }
   },
   "tone": "fable",
   "title": {
-    "es": "Fable muestra su sistema de combate en una demo sin cortes"
+    "es": "Fable muestra una misión por Bowerstone y amplía sus sistemas"
   },
   "summary": {
-    "es": "Playground Games ha publicado una demo de juego sin cortes centrada en el combate de Fable. Su sistema «style-weaving» combina cuerpo a cuerpo, armas a distancia y magia sin obligar al jugador a especializarse en una sola vía."
+    "es": "Xbox ha publicado nuevo metraje de una misión por Bowerstone que amplía la demostración de Fable: permite entrar en todos los edificios, comprar cualquier casa y observar cómo las decisiones y la reputación afectan a sus habitantes."
   },
   "why": {
-    "es": "Es la explicación más completa hasta ahora del sistema principal del RPG: habrá distintas configuraciones, progresión de armas y habilidades y un ajuste específico para elegir la intensidad del combate. Fable se estrenará el 23 de febrero de 2027."
+    "es": "El nuevo metraje conecta el combate «style-weaving» con la vida cotidiana y la reactividad de Albion, ofreciendo el vistazo más amplio hasta ahora a su estructura jugable. Fable llegará el 23 de febrero de 2027 y la edición Premium dará acceso desde el día 18."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=nf08TspeB6U",
@@ -39,6 +40,13 @@
     }
   },
   "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Publicación oficial de la misión y sus sistemas"
+      },
+      "url": "https://news.xbox.com/en-us/2026/08/28/fable-watch-brand-new-quest-gameplay-from-gamescom-2026/"
+    },
     {
       "label": "PlayStation Blog",
       "type": {
@@ -63,8 +71,8 @@
   ],
   "homeDetails": {
     "es": [
-      "El sistema recupera los pilares Fuerza, Habilidad y Voluntad de la trilogía original y permite alternar con fluidez entre ataques físicos, disparos y hechizos. La progresión desbloquea nuevas armas, capacidades y poderes que pueden combinarse para crear configuraciones agresivas o de control del campo de batalla.",
-      "La demostración enseña, entre otras opciones, Bola de Fuego, Relámpago, un hechizo que convierte temporalmente a un enemigo en gallina y otro que lo eleva antes de estrellarlo contra el suelo. Playground también permitirá rebajar o elevar la intensidad para priorizar la historia o exigir el dominio de todos los sistemas."
+      "La misión recorre Bowerstone, la capital rediseñada de Albion, junto a Humphry, desacreditado líder del Gremio de Héroes. El vídeo combina conversaciones, exploración y enfrentamientos para enseñar cómo una misma tarea puede presentar consecuencias y reacciones distintas según las decisiones del jugador.",
+      "Playground mantiene el sistema que enlaza Fuerza, Habilidad y Voluntad para alternar entre cuerpo a cuerpo, disparos y magia. Fuera de la batalla, todos los edificios serán accesibles y todas las viviendas podrán comprarse; la reputación del héroe influirá además en la forma en que los vecinos lo reconocen y tratan."
     ]
   }
 }

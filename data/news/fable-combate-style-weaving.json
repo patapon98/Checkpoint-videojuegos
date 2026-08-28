@@ -1,0 +1,70 @@
+{
+  "id": "fable-combate-style-weaving",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "demo de juego sin cortes",
+      "combina cuerpo a cuerpo, armas a distancia y magia",
+      "intensidad del combate"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-28",
+  "addedAt": "2026-08-28T17:52:50Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Fable"
+    },
+    "copy": {
+      "es": "Fable muestra cómo mezcla espada, armas a distancia y magia en combate"
+    }
+  },
+  "tone": "fable",
+  "title": {
+    "es": "Fable muestra su sistema de combate en una demo sin cortes"
+  },
+  "summary": {
+    "es": "Playground Games ha publicado una demo de juego sin cortes centrada en el combate de Fable. Su sistema «style-weaving» combina cuerpo a cuerpo, armas a distancia y magia sin obligar al jugador a especializarse en una sola vía."
+  },
+  "why": {
+    "es": "Es la explicación más completa hasta ahora del sistema principal del RPG: habrá distintas configuraciones, progresión de armas y habilidades y un ajuste específico para elegir la intensidad del combate. Fable se estrenará el 23 de febrero de 2027."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=nf08TspeB6U",
+    "label": {
+      "es": "Ver demo oficial de combate"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Presentación oficial de Playground Games"
+      },
+      "url": "https://blog.playstation.com/2026/08/28/a-new-look-at-fables-style-weaving-combat/"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Análisis oficial de la primera demo jugable"
+      },
+      "url": "https://news.xbox.com/en-us/2026/08/26/fable-combat-first-demo-explained/"
+    },
+    {
+      "label": "PlayStation",
+      "type": {
+        "es": "Ficha oficial de fecha, edición y características"
+      },
+      "url": "https://www.playstation.com/en-us/games/fable/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El sistema recupera los pilares Fuerza, Habilidad y Voluntad de la trilogía original y permite alternar con fluidez entre ataques físicos, disparos y hechizos. La progresión desbloquea nuevas armas, capacidades y poderes que pueden combinarse para crear configuraciones agresivas o de control del campo de batalla.",
+      "La demostración enseña, entre otras opciones, Bola de Fuego, Relámpago, un hechizo que convierte temporalmente a un enemigo en gallina y otro que lo eleva antes de estrellarlo contra el suelo. Playground también permitirá rebajar o elevar la intensidad para priorizar la historia o exigir el dominio de todos los sistemas."
+    ]
+  }
+}

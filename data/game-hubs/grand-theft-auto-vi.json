@@ -170,6 +170,11 @@
       "label": "Rockstar Newswire",
       "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
       "type": "Publicación oficial de Una mirada extendida y confirmación del metraje in-game de PS5"
+    },
+    {
+      "label": "Rockstar Newswire",
+      "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+      "type": "Nueva fecha oficial de lanzamiento"
     }
   ],
   "newsTerms": [
@@ -185,6 +190,14 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-29",
+      "title": "Rockstar retrasa GTA VI al 19 de noviembre de 2026",
+      "description": "Rockstar fija oficialmente el lanzamiento de Grand Theft Auto VI para el jueves 19 de noviembre de 2026.",
+      "sourceUrls": [
+        "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+      ]
+    },
     {
       "date": "2026-08-28",
       "title": "Una mirada extendida ya está disponible en YouTube y la web oficial",
@@ -270,7 +283,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

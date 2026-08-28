@@ -1,0 +1,69 @@
+{
+  "id": "exodus-fecha-abril-2027",
+  "emphasis": {
+    "es": [
+      "7 de abril de 2027",
+      "PS5, Xbox Series X|S y PC",
+      "Salt y Emrys"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-25",
+  "addedAt": "2026-08-28T09:04:40Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "EXODUS"
+    },
+    "copy": {
+      "es": "EXODUS llegará el 7 de abril de 2027 a consolas y PC"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "EXODUS fija su lanzamiento para el 7 de abril de 2027"
+  },
+  "summary": {
+    "es": "Archetype Entertainment ha fijado el lanzamiento de EXODUS para el 7 de abril de 2027 en PS5, Xbox Series X|S y PC. El nuevo tráiler del RPG de ciencia ficción presenta a Salt y Emrys, dos compañeros con funciones propias durante los combates."
+  },
+  "why": {
+    "es": "La fecha sustituye la ventana general de comienzos de 2027 y ordena el calendario de uno de los RPG de acción más ambiciosos del próximo año. El anuncio confirma también su distribución en Steam y Epic Games Store para PC."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=7xNEKkSTDB8",
+    "label": {
+      "es": "Ver tráiler oficial de la fecha"
+    }
+  },
+  "sources": [
+    {
+      "label": "Archetype Entertainment",
+      "type": {
+        "es": "Anuncio oficial en español de la fecha, las plataformas y los compañeros"
+      },
+      "url": "https://www.exodusgame.com/es-ES/news/exodus-launches-april-7-2027-official-release-date-trailer"
+    },
+    {
+      "label": "EXODUS",
+      "type": {
+        "es": "Tráiler oficial de la fecha de lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=7xNEKkSTDB8"
+    },
+    {
+      "label": "EXODUS Support",
+      "type": {
+        "es": "Preguntas frecuentes oficiales sobre fecha, plataformas y tiendas"
+      },
+      "url": "https://support.exodusgame.com/hc/en-us/articles/42199597587732-EXODUS-Game-FAQ"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Salt es una pulpo Esclarecida que combate dentro de un meca especializado: emplea disparos de precisión a larga distancia, maniobras evasivas y cortinas de humo capaces de desorientar a los enemigos. El tráiler también adelanta fragmentos de su pasado y su incorporación al grupo de Jun Aslan.",
+      "Emrys pertenece a los Deva, una especie Celestial definida por una conciencia plural, y ocupa una función de apoyo. Sus orbes debilitan a los adversarios y transfieren esa energía a Jun como protección, ampliando el peso táctico de los compañeros en este RPG para un jugador."
+    ]
+  }
+}

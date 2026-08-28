@@ -74,9 +74,9 @@
         "description": "La presentación llegará seis horas después a YouTube y a la web oficial de Rockstar."
       },
       {
-        "title": "Formato anunciado",
-        "value": "Una mirada extendida",
-        "description": "Rockstar no la ha denominado Tráiler 3 ni ha confirmado que sea exclusivamente un gameplay."
+        "title": "Formato confirmado",
+        "value": "Metraje in-game de PS5",
+        "description": "Rockstar confirma que toda la presentación está capturada íntegramente con metraje in-game de PlayStation 5."
       }
     ]
   },
@@ -113,6 +113,7 @@
       "title": "Combate, sigilo y actividades aparecen en la nueva presentación",
       "summary": "La mirada extendida muestra secuencias de conducción, tiroteos desde cobertura, aproximaciones sigilosas y persecuciones con Jason y Lucia en distintas situaciones de la campaña.",
       "highlights": [
+        "Rockstar confirma que todo el metraje de la presentación está capturado in-game en PlayStation 5.",
         "El metraje oficial enseña actividades como navegación, baloncesto, buceo, carreras y paracaidismo.",
         "Jason y Lucia aparecen actuando juntos y también separados durante distintas misiones y persecuciones.",
         "YouTube y la web oficial publicarán la presentación a las 03:00 del 28 de agosto en España."
@@ -158,6 +159,11 @@
       "label": "Xbox España",
       "url": "https://www.xbox.com/es-es/games/store/grand-theft-auto-vi/9nl3wwnzlzzn",
       "type": "Precios y mejora Ultimate"
+    },
+    {
+      "label": "Rockstar Newswire",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+      "type": "Confirmación del metraje in-game de PS5 de Una mirada extendida"
     }
   ],
   "newsTerms": [
@@ -173,6 +179,14 @@
     "heroImageAlt": "Arte promocional oficial de Grand Theft Auto VI con Jason y Lucia"
   },
   "changes": [
+    {
+      "date": "2026-08-28",
+      "title": "Rockstar confirma que la mirada extendida está capturada in-game en PS5",
+      "description": "Rockstar aclara que todo el metraje de Grand Theft Auto VI: Una mirada extendida fue capturado íntegramente dentro del juego en PlayStation 5, sustituyendo la anterior incertidumbre sobre el formato de la presentación.",
+      "sourceUrls": [
+        "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing"
+      ]
+    },
     {
       "date": "2026-08-27",
       "title": "La mirada extendida muestra combate, sigilo y actividades de Leonida",
@@ -249,7 +263,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-08-28",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

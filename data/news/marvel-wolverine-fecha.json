@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "ha alcanzado el estado gold",
-      "técnicas y Adaptaciones mejorables",
-      "inhibidores de Trask"
+      "Nueva Partida+",
+      "Modo Foto",
+      "más de cien opciones de accesibilidad"
     ]
   },
   "category": {
@@ -13,25 +13,25 @@
     "en": "Releases"
   },
   "date": "2026-07-23",
-  "updated": "2026-08-22",
+  "updated": "2026-08-28",
   "featured": false,
   "tone": "wolverine",
   "title": {
-    "es": "Marvel's Wolverine alcanza el estado gold y detalla su progresión",
-    "en": "Marvel's Wolverine goes gold and details its progression"
+    "es": "Marvel's Wolverine detalla sus funciones de lanzamiento y más de cien opciones de accesibilidad",
+    "en": "Marvel's Wolverine details its launch features and more than 100 accessibility options"
   },
   "summary": {
-    "es": "Insomniac confirma que Marvel's Wolverine ha alcanzado el estado gold. El hands-on oficial de PlayStation muestra técnicas y Adaptaciones mejorables, inhibidores de Trask y actividades ligadas a los recuerdos de Logan.",
-    "en": "Insomniac confirms Marvel's Wolverine has gone gold. PlayStation's official hands-on reveals upgradeable Techniques and Adaptations, Trask inhibitors, and activities tied to Logan's memories."
+    "es": "Con el desarrollo ya en fase gold, Insomniac concreta el paquete de lanzamiento de Marvel's Wolverine: Nueva Partida+, repetición de misiones, desafíos, Modo Foto y más de cien opciones de accesibilidad.",
+    "en": "With development already at gold status, Insomniac has detailed Marvel's Wolverine's launch package: New Game Plus, mission replay, challenges, Photo Mode, and more than 100 accessibility options."
   },
   "why": {
-    "es": "La finalización del desarrollo reduce la incertidumbre sobre el lanzamiento del 15 de septiembre y la nueva información concreta el bucle de combate, progresión y exploración de uno de los principales exclusivos de PS5.",
-    "en": "Development completion reduces uncertainty around the September 15 launch, while the new information clarifies the combat, progression, and exploration loop of one of PS5's biggest exclusives."
+    "es": "La actualización define qué contenido estará disponible desde el estreno del 15 de septiembre y amplía de forma sustancial las opciones para adaptar combate, navegación, imagen, audio, violencia y lenguaje en uno de los principales exclusivos de PS5.",
+    "en": "The update defines what content will be available from the September 15 launch and substantially expands the options for tailoring combat, navigation, visuals, audio, violence, and language in one of PS5's biggest exclusives."
   },
   "homeDetails": {
     "es": [
-      "El estado gold indica que Insomniac ha completado la versión destinada a fabricación y certificación. El estudio mantiene el estreno exclusivo en PS5 para el 15 de septiembre de 2026, aunque seguirá preparando correcciones y mejoras para la actualización de lanzamiento.",
-      "El reportaje oficial describe un sistema de progresión con técnicas activas y Adaptaciones pasivas que pueden mejorarse. También presenta inhibidores de Trask que anulan temporalmente las capacidades de Logan, Nightmare Doors contrarreloj y zonas con materiales y coleccionables localizables mediante sus sentidos agudizados."
+      "La cabaña de pesadillas de Logan servirá como acceso a Nueva Partida+ —con técnicas y límites de nivel exclusivos—, repetición de misiones y desafíos con puntuaciones. El Modo Foto también formará parte del estreno mediante una actualización del primer día que requiere conexión a internet y cuenta de PlayStation.",
+      "Insomniac reúne más de cien funciones de accesibilidad nuevas, recuperadas o mejoradas. Entre ellas figuran alto contraste, audiodescripción en inglés, velocidad global del juego, señales hápticas intensas y controles específicos para reducir la sangre, los desmembramientos y el lenguaje adulto."
     ]
   },
   "ticker": {
@@ -39,7 +39,7 @@
       "es": "Wolverine"
     },
     "copy": {
-      "es": "Wolverine entra en fase gold y concreta sus sistemas de progresión y exploración"
+      "es": "Wolverine confirma Modo Foto, Nueva Partida+ y más de cien opciones de accesibilidad"
     }
   },
   "trailer": {
@@ -50,6 +50,22 @@
     }
   },
   "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://blog.playstation.com/2026/08/28/marvels-wolverine-details-on-logans-mutant-abilities-game-features-and-more/"
+    },
+    {
+      "label": "Insomniac Games Support",
+      "type": {
+        "es": "Fuente oficial",
+        "en": "Official source"
+      },
+      "url": "https://support.insomniac.games/hc/en-us/articles/52228548716819-What-Accessibility-options-does-Marvel-s-Wolverine-feature"
+    },
     {
       "label": "Insomniac Games",
       "type": {

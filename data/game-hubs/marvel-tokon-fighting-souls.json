@@ -77,6 +77,7 @@
       "summary": "Las funciones online de PC requieren una cuenta PlayStation y conexión, mientras los modos sin conexión continúan disponibles sin ellas.",
       "highlights": [
         "En PS5 solo se necesita PlayStation Plus para los modos en línea.",
+        "El parche 1.003 añade Match Area a Ranked y Casual para elegir la región de búsqueda y corrige en PC el bloqueo asociado a Windows Update KB5121003.",
         "PS5 Pro utiliza PSSR para ofrecer una imagen 4K más nítida mediante escalado por IA."
       ]
     },
@@ -115,6 +116,7 @@
     "heroImageAlt": "Arte promocional oficial de MARVEL Tōkon: Fighting Souls con Tormenta, Ghost Rider, Capitán América, Spider-Man y Doctor Doom"
   },
   "changes": [
+    {"date":"2026-08-28","title":"El parche 1.003 añade selección regional y corrige un crash de PC","description":"Arc System Works publica la actualización 1.003 con Match Area para ajustar la región de búsqueda en partidas Ranked y Casual, mejoras de estabilidad de red y una corrección para el cierre de la versión de PC asociado a Windows Update KB5121003.","sourceUrls":["https://discord.com/invite/marveltokonofficial"]},
     {"date":"2026-08-28","title":"El traje Battle Reborn de Wolverine se adelanta y llega gratis","description":"MARVEL Tōkon adelanta del 1 de septiembre al 28 de agosto el traje Battle Reborn de Wolverine inspirado en Marvel's Wolverine. Está disponible sin coste adicional para todos los jugadores y cuenta con un nuevo vídeo oficial de presentación.","sourceUrls":["https://www.youtube.com/watch?v=w9SezZowhGo","https://bsky.app/profile/did:plc:7urjtkmf3ydptzj35l47gj6d/post/3mu37rtrndt23"]},
     {
       "date": "2026-08-23",

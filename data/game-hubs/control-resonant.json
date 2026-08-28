@@ -99,6 +99,7 @@
     "Plan de contenido poslanzamiento."
   ],
   "sources": [
+    {"label":"Remedy Entertainment vía PR TIMES: TGS 2026","url":"https://prtimes.jp/main/html/rd/p/000000011.000164183.html","type":"Comunicado oficial sobre la demo jugable de PS5 en Tokyo Game Show 2026"},
     {"label":"Remedy Entertainment: Altered State","url":"https://www.youtube.com/watch?v=VwOJuJRCLGk","type":"Tráiler oficial de gamescom Opening Night Live"},
     {"label":"Remedy Entertainment vía PR TIMES","url":"https://prtimes.jp/main/html/rd/p/000000010.000164183.html","type":"Comunicado oficial: Altered State, GeForce NOW y disponibilidad"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"Path tracing, DLSS 4.5 y vídeo técnico de PC"},
@@ -117,7 +118,7 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-28",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -126,6 +127,7 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {"date":"2026-08-28","title":"CONTROL Resonant tendrá una demo jugable en Tokyo Game Show 2026","description":"Remedy confirma una demo jugable de la versión de PS5 en el stand de SEGA/ATLUS de Tokyo Game Show 2026, antes del lanzamiento digital del 24 de septiembre.","sourceUrls":["https://prtimes.jp/main/html/rd/p/000000011.000164183.html"]},
     {"date":"2026-08-25","title":"Remedy publica el tráiler Altered State en Opening Night Live","description":"El nuevo tráiler oficial muestra más combate, movimiento, finishers, amenazas y jefes de CONTROL Resonant; Remedy confirma además disponibilidad en GeForce NOW desde el lanzamiento digital.","sourceUrls":["https://www.youtube.com/watch?v=VwOJuJRCLGk","https://prtimes.jp/main/html/rd/p/000000010.000164183.html"]},
     {"date":"2026-08-25","title":"NVIDIA confirma path tracing y DLSS 4.5 para PC","description":"La versión para PC se lanzará con path tracing, DLSS 4.5 Ray Reconstruction y Dynamic Multi Frame Generation en hardware GeForce RTX compatible; NVIDIA publica además un nuevo vídeo técnico con estas funciones activadas.","sourceUrls":["https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/"]},
     {

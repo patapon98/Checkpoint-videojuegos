@@ -2930,6 +2930,52 @@
       "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
     },
     {
+      "id": "star-trek-outposts-unknown",
+      "title": "Star Trek: Outposts Unknown",
+      "headingHtml": "Star Trek: Outposts Unknown",
+      "date": "2026-10-20",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3469910/8f41edd99d109dd639a5cda142d32527e40f9e66/header.jpg?t=1787766892",
+        "alt": "Star Trek: Outposts Unknown",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3469910/Star_Trek_Outposts_Unknown/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Star Trek: Outposts Unknown a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/3469910/Star_Trek_Outposts_Unknown/",
+        "official": true,
+        "host": "store.steampowered.com",
+        "checkedAt": "2026-08-28",
+        "evidence": {
+          "title": "Star Trek: Outposts Unknown",
+          "releaseDate": "2026-10-20",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=XR5jfnnUNC4"
+    },
+    {
       "id": "stupid-never-dies",
       "title": "Stupid Never Dies",
       "headingHtml": "Stupid Never Dies",
@@ -3372,6 +3418,58 @@
       "trailer": "https://www.youtube.com/watch?v=FlccMxW_0bc"
     },
     {
+      "id": "shadow-of-the-road",
+      "title": "Shadow of the Road",
+      "headingHtml": "Shadow of the Road",
+      "date": "2026-11-12",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Shadow of the Road",
+        "src": "https://media.rawg.io/media/screenshots/53d/53df3d564d8caf1fddd27118ec45e6dd.jpg",
+        "alt": "Shadow of the Road",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 382756,
+        "rawgSlug": "shadow-of-the-road",
+        "rawgPage": "https://rawg.io/games/shadow-of-the-road",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1173980/Shadow_of_the_Road/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Shadow of the Road a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/1173980/Shadow_of_the_Road/",
+        "official": true,
+        "host": "store.steampowered.com",
+        "checkedAt": "2026-08-28",
+        "evidence": {
+          "title": "Shadow of the Road",
+          "releaseDate": "2026-11-12",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=-H9o6J7V2XM"
+    },
+    {
       "id": "grand-theft-auto-vi",
       "title": "Grand Theft Auto VI",
       "headingHtml": "Grand Theft Auto VI",
@@ -3551,6 +3649,112 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=bdYFIXnI2pc"
+    },
+    {
+      "id": "stage-tour",
+      "title": "Stage Tour",
+      "headingHtml": "Stage Tour",
+      "date": "2026-12-10",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4452700/7074777401ca32c928e7702567ee08c282ff7393/header.jpg?t=1787687280",
+        "alt": "Stage Tour",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4452700/STAGE_TOUR/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Stage Tour a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://stagetour.com/",
+        "official": true,
+        "host": "stagetour.com",
+        "checkedAt": "2026-08-28",
+        "evidence": {
+          "title": "Stage Tour",
+          "releaseDate": "2026-12-10",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=xU-qK6FyUoM"
+    },
+    {
+      "id": "ananta",
+      "title": "ANANTA",
+      "headingHtml": "ANANTA",
+      "date": "2027-01-15",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "ANANTA",
+        "src": "https://media.rawg.io/media/screenshots/21f/21ffdb58671720697c5e7382b021755b.jpg",
+        "alt": "ANANTA",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 994083,
+        "rawgSlug": "ananta",
+        "rawgPage": "https://rawg.io/games/ananta",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4814120/ANANTA/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir ANANTA a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.anantagame.com/fab/",
+        "official": true,
+        "host": "www.anantagame.com",
+        "checkedAt": "2026-08-28",
+        "evidence": {
+          "title": "ANANTA",
+          "releaseDate": "2027-01-15",
+          "platforms": [
+            "ps5",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=V2hUMKyOGxY"
     },
     {
       "id": "tropico-7",
@@ -3770,6 +3974,112 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
+    },
+    {
+      "id": "road-kings",
+      "title": "Road Kings",
+      "headingHtml": "Road Kings",
+      "date": "2027-03-11",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2141130/595b8c0564da20f99b548fe8088652db08ffb1a4/header.jpg?t=1787685834",
+        "alt": "Road Kings",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2141130/Road_Kings/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Road Kings a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.focus-entmt.com/en/news/road-kings-the-next-gen-truck-simulator-releases-on-march-11-2027",
+        "official": true,
+        "host": "www.focus-entmt.com",
+        "checkedAt": "2026-08-28",
+        "evidence": {
+          "title": "Road Kings",
+          "releaseDate": "2027-03-11",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=PoYMFv8V1ag"
+    },
+    {
+      "id": "exodus",
+      "title": "EXODUS",
+      "headingHtml": "EXODUS",
+      "date": "2027-04-07",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Exodus (Archetype Entertainment)",
+        "src": "https://media.rawg.io/media/screenshots/c78/c786d190185de97aa21a0ed1ababd3d3.jpg",
+        "alt": "EXODUS",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 973389,
+        "rawgSlug": "exodus-archetype-entertainment",
+        "rawgPage": "https://rawg.io/games/exodus-archetype-entertainment",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3230960/EXODUS/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir EXODUS a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.exodusgame.com/en-US/news/exodus-launches-april-7-2027-official-release-date-trailer",
+        "official": true,
+        "host": "www.exodusgame.com",
+        "checkedAt": "2026-08-28",
+        "evidence": {
+          "title": "EXODUS",
+          "releaseDate": "2027-04-07",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=YC35xzlYrDc"
     }
   ],
   "renderState": "8f5d4f6f257d"

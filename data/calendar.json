@@ -2330,6 +2330,114 @@
       "trailer": "https://www.youtube.com/watch?v=x6dV4NB8Ms8"
     },
     {
+      "id": "the-witcher-3-wild-hunt-remastered",
+      "title": "The Witcher 3: Wild Hunt — Remastered",
+      "headingHtml": "The Witcher 3: Wild Hunt — Remastered <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-09-29",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://public.cdn.cdpr.app/common/news/974db3ceaf0e6035a922cbbd7c7770b0_q90_1920x1080.jpeg",
+        "alt": "The Witcher 3: Wild Hunt — Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.thewitcher.com/us/en/news/52017/announcing-the-witcher-3-wild-hunt-remastered",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de The Witcher 3: Wild Hunt — Remastered"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.thewitcher.com/us/en/news/52017/announcing-the-witcher-3-wild-hunt-remastered",
+        "official": true,
+        "host": "www.thewitcher.com",
+        "checkedAt": "2026-08-29",
+        "evidence": {
+          "title": "The Witcher 3: Wild Hunt — Remastered",
+          "releaseDate": "2026-09-29",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=IGk17XQ7IrQ"
+    },
+    {
+      "id": "transport-fever-3",
+      "title": "Transport Fever 3",
+      "headingHtml": "Transport Fever 3",
+      "date": "2026-09-29",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Transport Fever 3",
+        "src": "https://media.rawg.io/media/screenshots/003/003cfd6bb966df4e3e9cd97641c83bfb.jpg",
+        "alt": "Transport Fever 3",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1019727,
+        "rawgSlug": "transport-fever-3",
+        "rawgPage": "https://rawg.io/games/transport-fever-3",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3493540/Transport_Fever_3/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Transport Fever 3 a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.transportfever3.com/news/rda/",
+        "official": true,
+        "host": "www.transportfever3.com",
+        "checkedAt": "2026-08-29",
+        "evidence": {
+          "title": "Transport Fever 3",
+          "releaseDate": "2026-09-29",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=Hcgff2-44rU"
+    },
+    {
       "id": "rayman-legends-retold",
       "title": "Rayman Legends Retold",
       "headingHtml": "Rayman Legends Retold <span class=\"tag-dlc\">Remake</span>",

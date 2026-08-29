@@ -1,0 +1,63 @@
+{
+  "id": "bloodstained-the-scarlet-engagement-retraso-2027",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "retrasa su lanzamiento de 2026 a 2027",
+      "nuevas capturas del proyecto",
+      "La nueva ventana oficial sustituye el objetivo de 2026"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-26",
+  "addedAt": "2026-08-29T15:00:38Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Bloodstained"
+    },
+    "copy": {
+      "es": "Bloodstained: The Scarlet Engagement retrasa su lanzamiento a 2027"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Bloodstained: The Scarlet Engagement retrasa su lanzamiento a 2027"
+  },
+  "summary": {
+    "es": "Bloodstained: The Scarlet Engagement retrasa su lanzamiento de 2026 a 2027. El equipo ha acompañado el cambio con nuevas capturas del proyecto y promete enseñar más contenido durante los próximos meses."
+  },
+  "why": {
+    "es": "La nueva ventana oficial sustituye el objetivo de 2026 para este RPG de acción en 2.5D. El mensaje de Koji Igarashi confirma que el proyecto sigue adelante y sitúa su lanzamiento en algún momento de 2027."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=AalECUtRn04",
+    "label": {
+      "es": "Ver actualización oficial de desarrollo"
+    }
+  },
+  "sources": [
+    {
+      "label": "Bloodstained",
+      "type": {
+        "es": "Comunicado oficial sobre el retraso y la nueva ventana"
+      },
+      "url": "https://playbloodstained.com/a-development-update-from-iga/"
+    },
+    {
+      "label": "Bloodstained",
+      "type": {
+        "es": "Vídeo oficial de Koji Igarashi sobre el desarrollo"
+      },
+      "url": "https://www.youtube.com/watch?v=AalECUtRn04"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El comunicado no concreta un mes ni un trimestre dentro de 2027. El equipo aprovechará el tiempo adicional para seguir mostrando el juego y abrió esta nueva etapa con una galería de imágenes inéditas.",
+      "La actualización llega después de que el proyecto mantuviera durante meses una ventana general para 2026. El vídeo oficial de Koji Igarashi acompaña el cambio de calendario como explicación directa a la comunidad."
+    ]
+  }
+}

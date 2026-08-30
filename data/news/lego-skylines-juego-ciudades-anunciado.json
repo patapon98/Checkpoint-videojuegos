@@ -1,0 +1,63 @@
+{
+  "id": "lego-skylines-juego-ciudades-anunciado",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "un nuevo constructor de ciudades",
+      "PS5, Xbox Series X|S, Nintendo Switch 2 y PC",
+      "carreteras, electricidad, agua, alimentos y servicios"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-25",
+  "addedAt": "2026-08-30T15:12:54Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "LEGO Skylines"
+    },
+    "copy": {
+      "es": "LEGO Skylines mezcla gestión urbana y construcción con piezas en consolas y PC"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "LEGO Skylines convierte las piezas en un nuevo constructor de ciudades"
+  },
+  "summary": {
+    "es": "Paradox Interactive, Iceflake Studios y LEGO han anunciado LEGO Skylines, un nuevo constructor de ciudades que combina gestión urbana y construcción libre. Llegará a PS5, Xbox Series X|S, Nintendo Switch 2 y PC, todavía sin fecha."
+  },
+  "why": {
+    "es": "El jugador empezará con una parcela y podrá levantar una metrópolis funcional, gestionando carreteras, electricidad, agua, alimentos y servicios mientras personaliza edificios y espacios con piezas LEGO."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=8i_AqWQ9RwU",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Paradox Interactive",
+      "type": {
+        "es": "Comunicado oficial del anuncio, las plataformas y los sistemas de gestión"
+      },
+      "url": "https://www.paradoxinteractive.com/media/press-releases/press-release/build-a-city-where-everything-just-clicks-in-lego-skylines"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Resumen oficial de Gamescom y confirmación de la versión para PS5"
+      },
+      "url": "https://blog.playstation.com/2026/08/25/gamescom-opening-night-live-highlights-19-games-coming-to-playstation/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La ciudad crecerá desde una única casa hasta barrios completos. A medida que aumenten la valoración y la felicidad de sus habitantes, se desbloquearán nuevos edificios y servicios para ampliar la red urbana.",
+      "El sistema permitirá combinar museos, estadios, parques, hospitales, comercios, granjas y panaderías. La selección de parcelas, construcciones y decoraciones LEGO busca dar libertad para diseñar ciudades funcionales con una identidad propia."
+    ]
+  }
+}

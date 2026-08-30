@@ -1,0 +1,77 @@
+{
+  "id": "warlock-dungeons-dragons-primer-gameplay",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha mostrado su primer gameplay extenso",
+      "un mundo abierto de fantasía oscura",
+      "combinar conjuros, rituales, armas y elementos del entorno"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-08-25",
+  "addedAt": "2026-08-30T15:12:54Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Warlock: Dungeons & Dragons"
+    },
+    "copy": {
+      "es": "Warlock: Dungeons & Dragons convierte la magia en una caja de herramientas abierta"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Warlock: Dungeons & Dragons enseña cómo convierte la magia en un sistema abierto"
+  },
+  "summary": {
+    "es": "Warlock: Dungeons & Dragons ha mostrado su primer gameplay extenso: será una aventura de acción en tercera persona y para un jugador, ambientada en un mundo abierto de fantasía oscura. Llegará en 2027 a PS5, Xbox Series X|S y PC."
+  },
+  "why": {
+    "es": "Kaatri podrá combinar conjuros, rituales, armas y elementos del entorno para resolver combates, puzles y desplazamiento de distintas formas, sin depender de una única solución marcada."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=pNw0sh481bA",
+    "label": {
+      "es": "Ver gameplay oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Warlock: Dungeons & Dragons",
+      "type": {
+        "es": "Página oficial del primer gameplay, la protagonista y los sistemas de magia"
+      },
+      "url": "https://www.warlockthegame.com/en-US"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Presentación oficial del sistema de magia y del mundo abierto"
+      },
+      "url": "https://news.xbox.com/en-us/2026/08/28/warlock-dungeons-dragons-magic-explained/"
+    },
+    {
+      "label": "Steam",
+      "type": {
+        "es": "Ficha oficial de PC y ventana de lanzamiento"
+      },
+      "url": "https://store.steampowered.com/app/3714800/Warlock_Dungeons__Dragons/"
+    },
+    {
+      "label": "PlayStation Store",
+      "type": {
+        "es": "Ficha oficial de PS5 y ventana de lanzamiento"
+      },
+      "url": "https://store.playstation.com/es-es/concept/10014981"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El tráiler presenta a Kaatri, una guerrera veterana que pacta con la archimaga Tasha mientras busca a una persona desaparecida. Invoke Studios plantea investigaciones sin una ruta de puntos de interés prefijada, con pistas que deben interpretarse en el entorno.",
+      "El sistema permite encadenar efectos como lluvia, electricidad y metal conductor, o usar tentáculos y telequinesis para controlar grupos. La magia también sirve para explorar, alterar el clima y superar obstáculos, no solo para combatir."
+    ]
+  }
+}

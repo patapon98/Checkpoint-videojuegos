@@ -3824,12 +3824,16 @@
       "image": {
         "provider": "rawg",
         "query": "Path of Exile 2",
-        "src": "https://web.poecdn.com/public/news/2026-08-24/ONLBanners/ENFullReleaseRevealHeader.jpg",
+        "src": "https://media.rawg.io/media/games/401/4010e56adceb7db58ba42d1189796d5e.jpg",
         "alt": "Path of Exile 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 391403,
+        "rawgSlug": "path-of-exile-2",
+        "rawgPage": "https://rawg.io/games/path-of-exile-2",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/2694490/Path_of_Exile_2/",

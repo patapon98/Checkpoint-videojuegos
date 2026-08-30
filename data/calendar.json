@@ -3811,6 +3811,58 @@
       "trailer": "https://www.youtube.com/watch?v=xU-qK6FyUoM"
     },
     {
+      "id": "path-of-exile-2",
+      "title": "Path of Exile 2",
+      "headingHtml": "Path of Exile 2",
+      "date": "2026-12-11",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Path of Exile 2",
+        "src": "https://web.poecdn.com/public/news/2026-08-24/ONLBanners/ENFullReleaseRevealHeader.jpg",
+        "alt": "Path of Exile 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2694490/Path_of_Exile_2/",
+        "title": "Ver en Steam",
+        "ariaLabel": "Ver Path of Exile 2 en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.pathofexile.com/forum/view-thread/3999366",
+        "official": true,
+        "host": "www.pathofexile.com",
+        "checkedAt": "2026-08-30",
+        "evidence": {
+          "title": "Path of Exile 2",
+          "releaseDate": "2026-12-11",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=BwYNNQJO-AE"
+    },
+    {
       "id": "ananta",
       "title": "ANANTA",
       "headingHtml": "ANANTA",

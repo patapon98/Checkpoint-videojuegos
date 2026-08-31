@@ -1638,12 +1638,16 @@
       "image": {
         "provider": "rawg",
         "query": "Breathedge 2",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2412960/89b0130abb271607d102b259c425f323848ce703/header_alt_assets_0.jpg?t=1788083873",
+        "src": "https://media.rawg.io/media/screenshots/464/4647803d5a0e7380c28b177aa05df224.jpg",
         "alt": "Breathedge 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 965931,
+        "rawgSlug": "breathedge-2",
+        "rawgPage": "https://rawg.io/games/breathedge-2",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/2412960/Breathedge_2/",

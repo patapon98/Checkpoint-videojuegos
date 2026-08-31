@@ -1,0 +1,57 @@
+{
+  "id": "breathedge-2-acceso-anticipado",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ya está disponible en acceso anticipado para PC",
+      "incluye el primer gran capítulo de la historia",
+      "permanecer en desarrollo entre 16 y 20 meses"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-31",
+  "addedAt": "2026-08-31T19:14:09Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Breathedge 2"
+    },
+    "copy": {
+      "es": "Breathedge 2 abre su acceso anticipado con el primer capítulo y sus sistemas principales"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Breathedge 2 entra en acceso anticipado con el primer capítulo de su aventura espacial"
+  },
+  "summary": {
+    "es": "Breathedge 2 ya está disponible en acceso anticipado para PC a través de Steam. Esta primera versión incluye el primer gran capítulo de la historia, una zona amplia y los sistemas principales de supervivencia, exploración, fabricación, combate y misiones."
+  },
+  "why": {
+    "es": "RedRuins Softworks espera permanecer en desarrollo entre 16 y 20 meses. Las grandes actualizaciones ampliarán la historia con nuevas áreas, personajes, misiones, vehículos y construcción antes de alcanzar la versión completa."
+  },
+  "sources": [
+    {
+      "label": "Steam",
+      "type": {
+        "es": "Ficha oficial del lanzamiento, el contenido inicial y la hoja de ruta"
+      },
+      "url": "https://store.steampowered.com/app/2412960/Breathedge_2/"
+    },
+    {
+      "label": "Breathedge 2",
+      "type": {
+        "es": "Anuncio oficial de la fecha del acceso anticipado"
+      },
+      "url": "https://store.steampowered.com/news/app/2412960/view/675126551624287809"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La versión inicial permite recorrer el espacio abierto, reunir recursos, fabricar y mejorar herramientas, reparar equipos y completar misiones principales y secundarias. También incorpora combate, personajes no jugables y localizaciones opcionales dentro de su primera gran zona.",
+      "El estudio prevé continuar la campaña por capítulos gratuitos durante el acceso anticipado. Entre sus planes figuran zonas planetarias, más formas de transporte —incluidos vehículos terrestres, naves y saltos warp—, nuevas interacciones y un sistema de construcción más amplio."
+    ]
+  }
+}

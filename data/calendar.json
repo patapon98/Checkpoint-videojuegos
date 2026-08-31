@@ -1627,6 +1627,58 @@
       "trailer": "https://www.youtube.com/watch?v=kyMENfEbt7w"
     },
     {
+      "id": "breathedge-2",
+      "title": "Breathedge 2",
+      "headingHtml": "Breathedge 2",
+      "date": "2026-08-31",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Breathedge 2",
+        "src": "https://media.rawg.io/media/screenshots/464/4647803d5a0e7380c28b177aa05df224.jpg",
+        "alt": "Breathedge 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 965931,
+        "rawgSlug": "breathedge-2",
+        "rawgPage": "https://rawg.io/games/breathedge-2",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2412960/Breathedge_2/",
+        "title": "Ver en Steam",
+        "ariaLabel": "Ver Breathedge 2 en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/news/app/2412960/view/675126551624287809",
+        "official": true,
+        "host": "store.steampowered.com",
+        "checkedAt": "2026-08-31",
+        "evidence": {
+          "title": "Breathedge 2",
+          "releaseDate": "2026-08-31",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=rNbFU5bIlk8"
+    },
+    {
       "id": "moonlighter-2-the-endless-vault",
       "title": "Moonlighter 2: The Endless Vault",
       "headingHtml": "Moonlighter 2: The Endless Vault",

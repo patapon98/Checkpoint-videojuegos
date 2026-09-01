@@ -1692,12 +1692,16 @@
       "image": {
         "provider": "rawg",
         "query": "Crimson Moon",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4317690/43f965890a8f4e64917f20befc50a077036cc015/header.jpg?t=1787689904",
+        "src": "https://media.rawg.io/media/screenshots/30e/30e0c8f8f8b0922e5209b249453eb8d1.jpg",
         "alt": "Crimson Moon",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 993925,
+        "rawgSlug": "crimson-moon",
+        "rawgPage": "https://rawg.io/games/crimson-moon",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/4317690/Crimson_Moon/",
@@ -2111,8 +2115,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Aniimo",
         "src": "https://worldx-website-cdn.aniimo.com/official-website/worldx-global-stage/office/aniimo/HPCl-kqXgAAcbDa_ZuoHWNVb.jpg",
         "alt": "Aniimo",
         "className": "",

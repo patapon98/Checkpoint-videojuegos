@@ -1,0 +1,70 @@
+{
+  "id": "aniimo-lanzamiento-septiembre",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "se lanzará el 16 de septiembre en PS5, Xbox Series X|S y PC",
+      "la versión móvil llegará el 23 de septiembre",
+      "transformarse temporalmente en las criaturas capturadas"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-08-26",
+  "addedAt": "2026-09-01T17:52:48Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Aniimo"
+    },
+    "copy": {
+      "es": "Aniimo fija su lanzamiento gratuito en PC y consolas para el 16 de septiembre"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Aniimo llegará gratis a PC y consolas el 16 de septiembre"
+  },
+  "summary": {
+    "es": "Aniimo, el RPG gratuito de mundo abierto centrado en capturar criaturas, se lanzará el 16 de septiembre en PS5, Xbox Series X|S y PC. Pawprint Studio confirma además que la versión móvil llegará el 23 de septiembre."
+  },
+  "why": {
+    "es": "La aventura combina exploración, captura y combate con Twine, una mecánica que permite transformarse temporalmente en las criaturas capturadas para usar sus habilidades. También ofrecerá juego individual, cooperativo y competitivo."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=liBxXm7iQT0",
+    "label": {
+      "es": "Ver tráiler oficial de lanzamiento"
+    }
+  },
+  "sources": [
+    {
+      "label": "Aniimo",
+      "type": {
+        "es": "Anuncio oficial de las fechas del lanzamiento global"
+      },
+      "url": "https://www.aniimo.com/newslist/detail/100051"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Confirmación oficial de la fecha, la versión de PS5 y las mecánicas principales"
+      },
+      "url": "https://blog.playstation.com/2026/08/25/gamescom-opening-night-live-highlights-19-games-coming-to-playstation/"
+    },
+    {
+      "label": "Xbox",
+      "type": {
+        "es": "Ficha oficial de Xbox con la fecha y el modelo gratuito"
+      },
+      "url": "https://www.xbox.com/en-US/games/store/aniimo/9pk8phlcqdf6"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El mundo abierto de Idyll distribuye sus criaturas según el entorno, el clima, distintos fenómenos y la hora del día. La captura exige usar Aniipods y trampas, mientras que la mayoría de Aniimo puede evolucionar y aportar nuevas capacidades de desplazamiento, resolución de puzles y combate.",
+      "Entre sus modos figura Egg Heist, una actividad PvEvP para equipos de tres jugadores que mezcla búsquedas y enfrentamientos en tiempo real. Cada Pathfinder dispondrá además de una caravana y un espacio propio donde cultivar, construir decoraciones y convivir con las criaturas reunidas."
+    ]
+  }
+}

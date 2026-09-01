@@ -1679,6 +1679,62 @@
       "trailer": "https://www.youtube.com/watch?v=kyMENfEbt7w"
     },
     {
+      "id": "crimson-moon",
+      "title": "Crimson Moon",
+      "headingHtml": "Crimson Moon",
+      "date": "2026-09-01",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Crimson Moon",
+        "src": "https://media.rawg.io/media/screenshots/30e/30e0c8f8f8b0922e5209b249453eb8d1.jpg",
+        "alt": "Crimson Moon",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 993925,
+        "rawgSlug": "crimson-moon",
+        "rawgPage": "https://rawg.io/games/crimson-moon",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4317690/Crimson_Moon/",
+        "title": "Ver en Steam",
+        "ariaLabel": "Ver Crimson Moon en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.businesswire.com/news/home/20260804556920/en/Crimson-Moon-Releasing-September-1-for-%2419.99-USD-Offering-This-Falls-Best-Value-for-a-Hellish-Action-RPG-Solo-or-With-a-Friend",
+        "official": true,
+        "host": "www.businesswire.com",
+        "checkedAt": "2026-09-01",
+        "evidence": {
+          "title": "Crimson Moon",
+          "releaseDate": "2026-09-01",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=a-GJ4462oEw"
+    },
+    {
       "id": "moonlighter-2-the-endless-vault",
       "title": "Moonlighter 2: The Endless Vault",
       "headingHtml": "Moonlighter 2: The Endless Vault",
@@ -2046,6 +2102,56 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=3Z42tBfBLJY"
+    },
+    {
+      "id": "aniimo",
+      "title": "Aniimo",
+      "headingHtml": "Aniimo",
+      "date": "2026-09-16",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://worldx-website-cdn.aniimo.com/official-website/worldx-global-stage/office/aniimo/HPCl-kqXgAAcbDa_ZuoHWNVb.jpg",
+        "alt": "Aniimo",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4126040/Aniimo/",
+        "title": "Ver en Steam",
+        "ariaLabel": "Ver Aniimo en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.aniimo.com/newslist/detail/100051",
+        "official": true,
+        "host": "www.aniimo.com",
+        "checkedAt": "2026-09-01",
+        "evidence": {
+          "title": "Aniimo",
+          "releaseDate": "2026-09-16",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=LMHKfDQfDi4"
     },
     {
       "id": "fire-emblem-fortune-s-weave",

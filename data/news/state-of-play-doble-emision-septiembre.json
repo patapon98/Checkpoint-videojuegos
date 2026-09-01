@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "dos emisiones consecutivas el 3 de septiembre",
-      "nuevos anuncios y avances de estudios de todo el mundo",
-      "profundizará en próximos juegos de creadores de Japón y otros países de Asia"
+      "una presentación ampliada del mundo de Final Fantasy VII Revelation",
+      "profundizará en próximos juegos de creadores de Japón y otros países de Asia",
+      "no ha detallado la duración ni el resto de títulos"
     ]
   },
   "category": {
@@ -14,38 +14,39 @@
   "date": "2026-08-31",
   "publishedAt": "2026-08-31T12:00:10Z",
   "addedAt": "2026-09-01T03:09:02Z",
+  "updated": "2026-09-01",
   "featured": false,
   "ticker": {
     "keyword": {
-      "es": "State of Play"
+      "es": "Final Fantasy VII Revelation"
     },
     "copy": {
-      "es": "State of Play volverá el 3 de septiembre con una segunda emisión centrada en Japón y Asia"
+      "es": "Final Fantasy VII Revelation cerrará el State of Play del 3 de septiembre con una presentación ampliada"
     }
   },
   "tone": "playstation",
   "title": {
-    "es": "PlayStation anuncia un doble State of Play para el 3 de septiembre"
+    "es": "El State of Play del 3 de septiembre cerrará con Final Fantasy VII Revelation"
   },
   "summary": {
-    "es": "PlayStation emitirá dos emisiones consecutivas el 3 de septiembre a partir de las 22:00 en Japón —15:00 en España peninsular—. El State of Play global ofrecerá nuevos anuncios y avances de estudios de todo el mundo antes de dar paso a State of Play Japan."
+    "es": "PlayStation emitirá dos programas consecutivos el 3 de septiembre a partir de las 22:00 en Japón —15:00 en España peninsular—. El State of Play global cerrará con una presentación ampliada del mundo de Final Fantasy VII Revelation antes de dar paso a State of Play Japan."
   },
   "why": {
-    "es": "La segunda presentación profundizará en próximos juegos de creadores de Japón y otros países de Asia, con nuevas demostraciones de jugabilidad y anuncios. Sony no ha adelantado la duración ni los títulos que participarán en ninguno de los dos programas."
+    "es": "La segunda presentación profundizará en próximos juegos de creadores de Japón y otros países de Asia, con nuevas demostraciones de jugabilidad y anuncios. Sony confirma así el gran cierre del programa global, aunque no ha detallado la duración ni el resto de títulos."
   },
   "sources": [
     {
       "label": "PlayStation Blog",
       "type": {
-        "es": "Anuncio oficial de las dos emisiones, la fecha y el horario"
+        "es": "Anuncio oficial de las emisiones y del segmento de Final Fantasy VII Revelation"
       },
       "url": "https://blog.playstation.com/2026/08/31/state-of-play-state-of-play-japan-return-on-september-3/"
     }
   ],
   "homeDetails": {
     "es": [
-      "La retransmisión comenzará simultáneamente en los canales oficiales de PlayStation de YouTube y Twitch. El primer programa se emitirá en inglés con subtítulos en japonés; la segunda parte estará presentada por Yuki Kaji en japonés y contará con subtítulos en inglés.",
-      "PlayStation plantea las dos emisiones como programas diferenciados pero enlazados. El State of Play principal abarcará estudios internacionales, mientras que State of Play Japan reservará sus segmentos ampliados para proyectos procedentes del desarrollo japonés y asiático."
+      "La retransmisión comenzará simultáneamente en los canales oficiales de PlayStation de YouTube y Twitch. El primer programa reunirá novedades de PlayStation Studios y socios externos y concluirá con Square Enix mostrando con más detalle el mundo de Final Fantasy VII Revelation.",
+      "Después continuará State of Play Japan, presentado por Yuki Kaji y centrado en estudios de Japón y Asia. El programa global se emitirá en inglés con subtítulos en japonés; la segunda parte estará en japonés con subtítulos en inglés."
     ]
   }
 }

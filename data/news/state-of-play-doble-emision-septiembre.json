@@ -1,0 +1,51 @@
+{
+  "id": "state-of-play-doble-emision-septiembre",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "dos emisiones consecutivas el 3 de septiembre",
+      "nuevos anuncios y avances de estudios de todo el mundo",
+      "profundizará en próximos juegos de creadores de Japón y otros países de Asia"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-08-31",
+  "publishedAt": "2026-08-31T12:00:10Z",
+  "addedAt": "2026-09-01T03:09:02Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "State of Play"
+    },
+    "copy": {
+      "es": "State of Play volverá el 3 de septiembre con una segunda emisión centrada en Japón y Asia"
+    }
+  },
+  "tone": "playstation",
+  "title": {
+    "es": "PlayStation anuncia un doble State of Play para el 3 de septiembre"
+  },
+  "summary": {
+    "es": "PlayStation emitirá dos emisiones consecutivas el 3 de septiembre a partir de las 22:00 en Japón —15:00 en España peninsular—. El State of Play global ofrecerá nuevos anuncios y avances de estudios de todo el mundo antes de dar paso a State of Play Japan."
+  },
+  "why": {
+    "es": "La segunda presentación profundizará en próximos juegos de creadores de Japón y otros países de Asia, con nuevas demostraciones de jugabilidad y anuncios. Sony no ha adelantado la duración ni los títulos que participarán en ninguno de los dos programas."
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de las dos emisiones, la fecha y el horario"
+      },
+      "url": "https://blog.playstation.com/2026/08/31/state-of-play-state-of-play-japan-return-on-september-3/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La retransmisión comenzará simultáneamente en los canales oficiales de PlayStation de YouTube y Twitch. El primer programa se emitirá en inglés con subtítulos en japonés; la segunda parte estará presentada por Yuki Kaji en japonés y contará con subtítulos en inglés.",
+      "PlayStation plantea las dos emisiones como programas diferenciados pero enlazados. El State of Play principal abarcará estudios internacionales, mientras que State of Play Japan reservará sus segmentos ampliados para proyectos procedentes del desarrollo japonés y asiático."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ontos-primera-demo-puzles-multiples-soluciones",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ha mostrado su primera demo jugable",
+      "resolver un mismo puzle de varias formas",
+      "gestión limitada de recursos"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-02",
+  "addedAt": "2026-09-02T15:06:07Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "ONTOS"
+    },
+    "copy": {
+      "es": "ONTOS muestra cómo sus puzles reaccionan a soluciones y decisiones distintas"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "ONTOS muestra puzles con varias soluciones y consecuencias persistentes"
+  },
+  "summary": {
+    "es": "ONTOS, la nueva aventura de ciencia ficción de Frictional Games, ha mostrado su primera demo jugable. El escenario permite resolver un mismo puzle de varias formas, con decisiones que alteran las reacciones y consecuencias posteriores."
+  },
+  "why": {
+    "es": "La demostración también confirma exploración física, pistas opcionales y gestión limitada de recursos: herramientas como el soplete dependen de oxígeno escaso, por lo que investigar antes puede cambiar las soluciones disponibles."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Presentación oficial de la primera demo jugable y sus sistemas"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/02/ontos-preview-details-demo/"
+    },
+    {
+      "label": "Xbox",
+      "type": {
+        "es": "Ficha oficial con desarrollador, plataformas y planteamiento jugable"
+      },
+      "url": "https://www.xbox.com/en-us/games/store/ontos/9N9LG3F28FBS"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La prueba sitúa a Aditi en Samsara, un hotel lunar convertido en laboratorio. Para recuperar una llave de Crombie, cuya conciencia ha sido copiada a un servidor conectado a ratas, se puede reanimar su cuerpo, sobrescribir su mente con la copia o destruir ambas versiones y tomar el objeto.",
+      "La demo evita señalar una respuesta correcta y deja que el mundo reaccione a cada método. También permite manipular puertas, cajones y maquinaria de forma directa, consultar terminales y registros para obtener pistas y administrar consumibles antes de actuar. ONTOS llegará en 2027 a Xbox Series X|S y PC con Xbox Play Anywhere."
+    ]
+  }
+}

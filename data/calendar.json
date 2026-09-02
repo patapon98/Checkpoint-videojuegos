@@ -1884,6 +1884,54 @@
       "trailer": "https://www.youtube.com/watch?v=yZB9Pj1P5XE"
     },
     {
+      "id": "avatar-legends-the-fighting-game-xbox",
+      "title": "Avatar Legends: The Fighting Game",
+      "headingHtml": "Avatar Legends: The Fighting Game <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-09-03",
+      "platformKeys": [
+        "xbox"
+      ],
+      "platformsHtml": "Xbox Series X|S",
+      "image": {
+        "provider": "rawg",
+        "query": "Avatar Legends: The Fighting Game",
+        "src": "https://store-images.s-microsoft.com/image/apps.62829.13979240717743771.ac7e33d4-b5d1-488d-886f-492505964ce4.013dbc7f-0d62-47b4-b3c6-29f5d6170e5b?h=270&q=90&w=480",
+        "alt": "Avatar Legends: The Fighting Game",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.xbox.com/en-GB/games/store/avatar-legends-the-fighting-game/9ph2332vrwsf",
+        "title": "Ver en Xbox",
+        "ariaLabel": "Ver Avatar Legends: The Fighting Game en Xbox"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://news.xbox.com/en-us/2026/08/28/next-week-on-xbox-new-games-for-august-31-to-september-4/",
+        "official": true,
+        "host": "news.xbox.com",
+        "checkedAt": "2026-09-02",
+        "evidence": {
+          "title": "Avatar Legends: The Fighting Game",
+          "releaseDate": "2026-09-03",
+          "platforms": [
+            "xbox"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=pLSb1T1VCGw"
+    },
+    {
       "id": "my-hero-academia-alls-justice-switch-2",
       "title": "MY HERO ACADEMIA: ALL’S JUSTICE",
       "headingHtml": "MY HERO ACADEMIA: ALL’S JUSTICE <span class=\"tag-dlc\">Nueva plataforma</span>",

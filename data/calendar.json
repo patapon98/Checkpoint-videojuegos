@@ -1893,8 +1893,6 @@
       ],
       "platformsHtml": "Xbox Series X|S",
       "image": {
-        "provider": "rawg",
-        "query": "Avatar Legends: The Fighting Game",
         "src": "https://store-images.s-microsoft.com/image/apps.62829.13979240717743771.ac7e33d4-b5d1-488d-886f-492505964ce4.013dbc7f-0d62-47b4-b3c6-29f5d6170e5b?h=270&q=90&w=480",
         "alt": "Avatar Legends: The Fighting Game",
         "className": "",

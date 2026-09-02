@@ -12,6 +12,7 @@
     "es": "Juegos"
   },
   "date": "2026-09-02",
+  "updated": "2026-09-03",
   "addedAt": "2026-09-02T15:06:07Z",
   "featured": false,
   "ticker": {
@@ -19,15 +20,15 @@
       "es": "ONTOS"
     },
     "copy": {
-      "es": "ONTOS muestra cómo sus puzles reaccionan a soluciones y decisiones distintas"
+      "es": "ONTOS confirma su llegada a PS5 en 2027 tras mostrar su primera demo"
     }
   },
   "tone": "games",
   "title": {
-    "es": "ONTOS muestra puzles con varias soluciones y consecuencias persistentes"
+    "es": "ONTOS confirma su llegada a PS5 en 2027 tras mostrar su primera demo"
   },
   "summary": {
-    "es": "ONTOS, la nueva aventura de ciencia ficción de Frictional Games, ha mostrado su primera demo jugable. El escenario permite resolver un mismo puzle de varias formas, con decisiones que alteran las reacciones y consecuencias posteriores."
+    "es": "ONTOS, la nueva aventura de ciencia ficción de Frictional Games, ha mostrado su primera demo jugable y ha confirmado que también llegará a PS5 en 2027. El escenario permite resolver un mismo puzle de varias formas, con decisiones que alteran las reacciones y consecuencias posteriores."
   },
   "why": {
     "es": "La demostración también confirma exploración física, pistas opcionales y gestión limitada de recursos: herramientas como el soplete dependen de oxígeno escaso, por lo que investigar antes puede cambiar las soluciones disponibles."
@@ -46,12 +47,19 @@
         "es": "Ficha oficial con desarrollador, plataformas y planteamiento jugable"
       },
       "url": "https://www.xbox.com/en-us/games/store/ontos/9N9LG3F28FBS"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Explicación oficial del director creativo y confirmación de PS5 para 2027"
+      },
+      "url": "https://blog.playstation.com/2026/09/02/ontos-devs-on-the-centered-around-a-server-of-ratspsychological-gameplay/"
     }
   ],
   "homeDetails": {
     "es": [
       "La prueba sitúa a Aditi en Samsara, un hotel lunar convertido en laboratorio. Para recuperar una llave de Crombie, cuya conciencia ha sido copiada a un servidor conectado a ratas, se puede reanimar su cuerpo, sobrescribir su mente con la copia o destruir ambas versiones y tomar el objeto.",
-      "La demo evita señalar una respuesta correcta y deja que el mundo reaccione a cada método. También permite manipular puertas, cajones y maquinaria de forma directa, consultar terminales y registros para obtener pistas y administrar consumibles antes de actuar. ONTOS llegará en 2027 a Xbox Series X|S y PC con Xbox Play Anywhere."
+      "La demo evita señalar una respuesta correcta y deja que el mundo reaccione a cada método. También permite manipular puertas, cajones y maquinaria de forma directa, consultar terminales y registros para obtener pistas y administrar consumibles antes de actuar. ONTOS llegará en 2027 a PS5, Xbox Series X|S y PC; en el ecosistema Xbox tendrá compatibilidad con Xbox Play Anywhere."
     ]
   }
 }

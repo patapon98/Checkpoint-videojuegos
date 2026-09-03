@@ -2150,6 +2150,64 @@
       "trailer": "https://www.youtube.com/watch?v=3Z42tBfBLJY"
     },
     {
+      "id": "runescape-dragonwilds",
+      "title": "RuneScape: Dragonwilds",
+      "headingHtml": "RuneScape: Dragonwilds <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-09-15",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "RuneScape: Dragonwilds",
+        "src": "https://media.rawg.io/media/screenshots/1b0/1b0344a463f5883524dea3ae88deb252.jpg",
+        "alt": "RuneScape: Dragonwilds",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1001421,
+        "rawgSlug": "runescape-dragonwilds",
+        "rawgPage": "https://rawg.io/games/runescape-dragonwilds",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.playstation.com/concept/10017405",
+        "title": "Ver en PlayStation Store",
+        "ariaLabel": "Ver RuneScape: Dragonwilds en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://secure.runescape.com/m=news/runescape-dragonwilds-launches-september-15th-2026-on-pc-switch-2-ps5--xbox?oldschool=1",
+        "official": true,
+        "host": "secure.runescape.com",
+        "checkedAt": "2026-09-03",
+        "evidence": {
+          "title": "RuneScape: Dragonwilds",
+          "releaseDate": "2026-09-15",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=a46MLlfMt2Y"
+    },
+    {
       "id": "aniimo",
       "title": "Aniimo",
       "headingHtml": "Aniimo",

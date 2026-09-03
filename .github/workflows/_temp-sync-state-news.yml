@@ -1,0 +1,40 @@
+name: Sincronización temporal noticia State of Play
+
+on:
+  push:
+    branches: [feature/state-of-play-sep-2026]
+    paths:
+      - ".github/workflows/_temp-sync-state-news.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar la rama
+        uses: actions/checkout@v4
+        with:
+          ref: feature/state-of-play-sep-2026
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerar únicamente Noticias
+        run: |
+          node scripts/build-news-index.mjs
+          node scripts/render-news.mjs
+          node scripts/validate-news.mjs
+          git diff --check
+
+      - name: Guardar sincronización
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news-index.json noticias.html index.html
+          git commit -m "Sincronizar la noticia del State of Play"
+          git push origin HEAD:feature/state-of-play-sep-2026

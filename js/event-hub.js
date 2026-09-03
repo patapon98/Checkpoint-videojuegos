@@ -133,7 +133,8 @@
     const query = normalize(search?.value || '');
     let visible = 0;
     allItems.forEach((item) => {
-      const matchesStage = activeStage === 'all' || item.dataset.eventStage === activeStage;
+      const itemStages = (item.dataset.eventStages || item.dataset.eventStage || '').split(/\s+/).filter(Boolean);
+      const matchesStage = activeStage === 'all' || itemStages.includes(activeStage);
       const matchesQuery = !query || normalize(item.textContent).includes(query);
       const show = matchesStage && matchesQuery;
       setFilteredVisibility(item, show);

@@ -35,18 +35,21 @@ for (const page of ["index.html", "noticias.html", "calendario.html", "juegos.ht
 for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".json") && !name.startsWith("_"))) {
   const data = JSON.parse(await readFile(path.join(DATA_DIR, file), "utf8"));
   const label = `data/events/${file}`;
-  ["id", "title", "shortTitle", "kicker", "status", "phase", "preShowAt", "startAt", "updatedAt", "officialUrl", "organizer", "attendanceMode", "streamUrl", "streamYoutubeId", "heroImage", "heroImageAlt", "dateLabel", "countdownTitle", "countdownTimeLabel", "intro", "editorialNote"].forEach((key) => requiredString(data, key, label));
+  ["id", "title", "shortTitle", "kicker", "status", "phase", "startAt", "updatedAt", "officialUrl", "organizer", "attendanceMode", "streamUrl", "streamYoutubeId", "heroImage", "heroImageAlt", "dateLabel", "countdownTitle", "countdownTimeLabel", "intro", "editorialNote"].forEach((key) => requiredString(data, key, label));
   expect(file === `${data.id}.json`, `${label}: el nombre debe coincidir con id`);
   expect(["upcoming", "live", "finished"].includes(data.phase), `${label}: phase no es válido`);
-  expect(Number.isFinite(Date.parse(data.preShowAt)) && Number.isFinite(Date.parse(data.startAt)), `${label}: horarios inválidos`);
-  expect(Date.parse(data.preShowAt) < Date.parse(data.startAt), `${label}: la previa debe comenzar antes de la gala`);
+  expect(Number.isFinite(Date.parse(data.startAt)), `${label}: horario principal inválido`);
+  if (data.preShowAt) {
+    expect(Number.isFinite(Date.parse(data.preShowAt)), `${label}: horario previo inválido`);
+    expect(Date.parse(data.preShowAt) < Date.parse(data.startAt), `${label}: la previa debe comenzar antes de la emisión principal`);
+  }
   expect(/^\d{4}-\d{2}-\d{2}$/.test(data.updatedAt), `${label}: updatedAt debe usar AAAA-MM-DD`);
   expect(Array.isArray(data.appearances) && data.appearances.length > 0, `${label}: appearances debe contener presencias confirmadas`);
   expect(Array.isArray(data.announcements), `${label}: announcements debe ser un array`);
   expect(Array.isArray(data.sources) && data.sources.length >= 2, `${label}: sources debe contener al menos dos fuentes`);
   ["title", "description", "ogDescription"].forEach((key) => requiredString(data.seo, key, `${label} > seo`));
   ["line", "emphasis"].forEach((key) => requiredString(data.heroTitle, key, `${label} > heroTitle`));
-  ["name", "city", "country"].forEach((key) => requiredString(data.location, key, `${label} > location`));
+  if (data.attendanceMode !== "OnlineEventAttendanceMode") ["name", "city", "country"].forEach((key) => requiredString(data.location, key, `${label} > location`));
   ["day", "month", "tag", "title", "summary"].forEach((key) => requiredString(data.homeFeature, key, `${label} > homeFeature`));
   expect(Array.isArray(data.schedule) && data.schedule.length >= 2, `${label}: schedule debe contener al menos dos horarios`);
   expect((data.schedule || []).every((item) => !String(item.value).includes("Japón")), `${label}: schedule conserva horarios de Japón`);
@@ -65,9 +68,11 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     ["type", "title", "summary", "sourceUrl"].forEach((key) => requiredString(item, key, `${label} > announcements[${index}]`));
     if (data.phase !== "finished") requiredString(item, "time", `${label} > announcements[${index}]`);
     if (data.phase === "finished") {
-      requiredString(item, "trailerUrl", `${label} > announcements[${index}]`);
-      expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl || ""), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
-      expect(youtubeIdFromUrl(item.trailerUrl) !== data.streamYoutubeId, `${label} > announcements[${index}]: trailerUrl no puede apuntar a la retransmisión completa`);
+      expect(Boolean(item.trailerUrl || item.archiveImage), `${label} > announcements[${index}]: necesita trailerUrl o archiveImage`);
+      if (item.trailerUrl) {
+        expect(/^https:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)/.test(item.trailerUrl), `${label} > announcements[${index}]: trailerUrl debe enlazar a YouTube`);
+        expect(youtubeIdFromUrl(item.trailerUrl) !== data.streamYoutubeId, `${label} > announcements[${index}]: trailerUrl no puede apuntar a la retransmisión completa`);
+      }
       if (item.archiveImage) expect(/^https:\/\//.test(item.archiveImage), `${label} > announcements[${index}]: archiveImage debe ser una URL HTTPS`);
       for (const [trailerIndex, trailer] of (item.extraTrailers || []).entries()) {
         ["label", "url"].forEach((key) => requiredString(trailer, key, `${label} > announcements[${index}] > extraTrailers[${trailerIndex}]`));
@@ -108,7 +113,8 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     expect(!html.includes('id="confirmados"') && !html.includes('data-event-countdown='), `${output}: el resumen final conserva módulos previos a la gala`);
     expect(!html.includes('class="event-filter"') && !html.includes('class="event-announcement-time"'), `${output}: el resumen final conserva filtros u horas de la cronología`);
     expect(html.includes('data-event-search') && html.includes('data-event-view="highlights"') && html.includes('data-event-view="all"'), `${output}: falta el selector entre destacados y archivo completo`);
-    expect(html.includes('data-event-stage-filter="main"') && html.includes('data-event-stage-filter="preshow"'), `${output}: faltan los filtros de gala y pre-show`);
+    const archiveStages = Array.isArray(data.archiveStages) && data.archiveStages.length ? data.archiveStages : [{ id: "main", label: "Gala" }, { id: "preshow", label: "Pre-show" }];
+    for (const stage of archiveStages) expect(html.includes(`data-event-stage-filter="${stage.id}"`), `${output}: falta el filtro ${stage.label}`);
     expect((html.match(/data-event-all-item/g) || []).length === data.announcements.length, `${output}: el archivo completo no contiene todos los anuncios`);
     expect((html.match(/class="event-all-art"/g) || []).length === data.announcements.length, `${output}: faltan imágenes en el archivo completo`);
     const expectedTrailers = data.highlights.reduce((total, title) => {
@@ -122,13 +128,15 @@ for (const file of (await readdir(DATA_DIR)).filter((name) => name.endsWith(".js
     expect(html.includes(escapeHtml(item.title)) && html.includes(escapeHtml(item.summary)), `${output}: falta el anuncio ${item.title}`);
   }
 
-  const home = await readFile("index.html", "utf8");
-  const compactHome = home.replace(/\s+/g, " ");
-  expect(home.includes(`/eventos/${data.id}`), `index.html: falta el evento destacado ${data.id}`);
-  expect(compactHome.includes(escapeHtml(data.homeFeature.tag)) && compactHome.includes(escapeHtml(data.homeFeature.title)) && compactHome.includes(escapeHtml(data.homeFeature.summary)), `index.html: la destacada inicial de ${data.id} no coincide con sus datos`);
-  expect(home.includes(data.heroImage), `index.html: la destacada inicial de ${data.id} no usa su imagen actual`);
-  const homeScript = await readFile("js/home-featured.js", "utf8");
-  expect(homeScript.includes(`/data/events/${data.id}.json`), `js/home-featured.js: no carga los datos de ${data.id}`);
+  if (data.homeFeatured === true) {
+    const home = await readFile("index.html", "utf8");
+    const compactHome = home.replace(/\s+/g, " ");
+    expect(home.includes(`/eventos/${data.id}`), `index.html: falta el evento destacado ${data.id}`);
+    expect(compactHome.includes(escapeHtml(data.homeFeature.tag)) && compactHome.includes(escapeHtml(data.homeFeature.title)) && compactHome.includes(escapeHtml(data.homeFeature.summary)), `index.html: la destacada inicial de ${data.id} no coincide con sus datos`);
+    expect(home.includes(data.heroImage), `index.html: la destacada inicial de ${data.id} no usa su imagen actual`);
+    const homeScript = await readFile("js/home-featured.js", "utf8");
+    expect(homeScript.includes(`/data/events/${data.id}.json`), `js/home-featured.js: no carga los datos de ${data.id}`);
+  }
 }
 
 if (errors.length) {

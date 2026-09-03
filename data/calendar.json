@@ -2164,12 +2164,16 @@
       "image": {
         "provider": "rawg",
         "query": "RuneScape: Dragonwilds",
-        "src": "https://cdn.runescape.com/assets/img/external/oldschool/2026/Newsposts/2026-06-09-7AGHJL/7h19dt5ag.jpg",
+        "src": "https://media.rawg.io/media/screenshots/1b0/1b0344a463f5883524dea3ae88deb252.jpg",
         "alt": "RuneScape: Dragonwilds",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1001421,
+        "rawgSlug": "runescape-dragonwilds",
+        "rawgPage": "https://rawg.io/games/runescape-dragonwilds",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.playstation.com/concept/10017405",

@@ -1,0 +1,57 @@
+{
+  "id": "mario-kart-8-deluxe-switch2-ocho-jugadores",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "actualización gratuita",
+      "de cuatro a ocho el multijugador local",
+      "opción de 96 carreras"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-02",
+  "addedAt": "2026-09-03T02:59:06Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Mario Kart"
+    },
+    "copy": {
+      "es": "Mario Kart 8 Deluxe amplía a ocho jugadores el multijugador local en Switch 2"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Mario Kart 8 Deluxe duplica a ocho el multijugador local en Switch 2"
+  },
+  "summary": {
+    "es": "Nintendo ha publicado una actualización gratuita de Mario Kart 8 Deluxe para Switch 2 que eleva de cuatro a ocho el multijugador local a pantalla partida. La versión 4.0.0 también mejora la resolución y reduce los tiempos de carga."
+  },
+  "why": {
+    "es": "La actualización añade CameraPlay para mostrar las caras de dos a cuatro jugadores, tanto en local como en línea mediante GameChat, y una opción de 96 carreras para quienes tengan el Pase de pistas extras."
+  },
+  "sources": [
+    {
+      "label": "Nintendo España",
+      "type": {
+        "es": "Anuncio oficial de la actualización gratuita y sus mejoras para Switch 2"
+      },
+      "url": "https://www.nintendo.com/es-es/Noticias/2026/Septiembre/Ya-esta-disponible-una-actualizacion-gratuita-para-Mario-Kart-8-Deluxe-3184075.html"
+    },
+    {
+      "label": "Nintendo Support",
+      "type": {
+        "es": "Notas oficiales completas de la versión 4.0.0"
+      },
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/26098/~/how-to-update-mario-kart-8-deluxe"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El modo para cinco a ocho participantes funciona en una sola Switch 2 con suficientes mandos. Se pueden conectar hasta siete Joy-Con o mandos Pro de la primera Switch, pero una partida de ocho personas exige al menos un Joy-Con 2 o un mando Pro de Switch 2.",
+      "CameraPlay requiere una cámara USB compatible y admite entre dos y cuatro caras en partidas locales u online. Además, el parche aumenta ligeramente la velocidad de carrera, evita que Boo frene al atravesar terreno lento y permite configurar torneos de 96 carreras a quienes posean el Pase de pistas extras."
+    ]
+  }
+}

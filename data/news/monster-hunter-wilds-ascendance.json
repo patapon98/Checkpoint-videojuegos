@@ -1,0 +1,63 @@
+{
+  "id": "monster-hunter-wilds-ascendance",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "una expansión masiva para 2027",
+      "la región aérea Skybound Eyrie",
+      "potencia temporalmente las 14 armas"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-03",
+  "addedAt": "2026-09-03T17:52:08Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Monster Hunter Wilds"
+    },
+    "copy": {
+      "es": "Monster Hunter Wilds anuncia la expansión Ascendance para 2027"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Monster Hunter Wilds anuncia Ascendance, su expansión masiva para 2027"
+  },
+  "summary": {
+    "es": "Capcom ha anunciado Monster Hunter Wilds: Ascendance, una expansión masiva para 2027 con una nueva historia posterior a la campaña, la región aérea Skybound Eyrie y monstruos como Lao-Shan Lung, Araketa y Gundoraja."
+  },
+  "why": {
+    "es": "El contenido exige el juego base y alcanzar el rango 40 para entrar en Rango Maestro. Su nueva Boost Bracer potencia temporalmente las 14 armas, mientras que una demo jugable llegará a Tokyo Game Show 2026."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=SodbU0PEVH4",
+    "label": {
+      "es": "Ver el tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de Capcom con historia, monstruos y nuevas mecánicas"
+      },
+      "url": "https://blog.playstation.com/2026/09/03/monster-hunter-wilds-ascendance-reveals-new-monsters-story-details-and-gameplay/"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Resumen oficial de State of Play y confirmación de la demo de TGS"
+      },
+      "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La historia arranca con la llegada del dragón anciano Lao-Shan Lung a las Tierras Prohibidas y avanza varios años respecto al final del juego base. El equipo de expedición habrá levantado la fortaleza Madoi cuando el cielo de Wyveria revele Skybound Eyrie, una nueva zona flotante con ruinas y vida endémica inédita.",
+      "La Boost Bracer usa la eslinga para reforzar durante un tiempo las características propias de cada tipo de arma. Para acceder a la campaña será necesario completar la misión Awaking From a Dream, y Capcom llevará a Tokyo Game Show 2026 una primera prueba centrada en la caza de Araketa."
+    ]
+  }
+}

@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "la aparición de las Armas",
-      "combate submarino contra Arma Esmeralda",
-      "Tifón como nueva invocación"
+      "el 8 de abril de 2027",
+      "el sistema FITS",
+      "dos expansiones de historia"
     ]
   },
   "category": {
@@ -13,24 +13,25 @@
   },
   "date": "2026-08-25",
   "addedAt": "2026-08-27T06:12:02Z",
+  "updated": "2026-09-03",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "Final Fantasy VII Revelation"
     },
     "copy": {
-      "es": "Final Fantasy VII Revelation muestra las Armas y el combate submarino"
+      "es": "Final Fantasy VII Revelation llegará a PS5 el 8 de abril de 2027"
     }
   },
   "tone": "games",
   "title": {
-    "es": "Final Fantasy VII Revelation muestra las Armas y el regreso del combate submarino"
+    "es": "Final Fantasy VII Revelation fija el 8 de abril de 2027 para PS5"
   },
   "summary": {
-    "es": "Square Enix ha presentado en Gamescom un nuevo tráiler de Final Fantasy VII Revelation centrado en la aparición de las Armas, los gigantes que despiertan para proteger el planeta. El vídeo confirma un combate submarino contra Arma Esmeralda y vuelve a mostrar el viaje por el mundo a bordo del Highwind."
+    "es": "Square Enix lanzará Final Fantasy VII Revelation en PS5 el 8 de abril de 2027. El nuevo gameplay confirma el Highwind, el sistema FITS, el cambio dinámico de personajes y dos expansiones de historia."
   },
   "why": {
-    "es": "El adelanto también incorpora a Tifón como nueva invocación y enseña a Cloud y sus compañeros frente a varias de estas criaturas. La conclusión de la trilogía mantiene su lanzamiento para primavera de 2027 en PS5, Nintendo Switch 2, Xbox Series X|S y PC."
+    "es": "La fecha sustituye la ventana general de primavera en PS5 y el adelanto define varios sistemas centrales de la conclusión de la trilogía. Las versiones de Nintendo Switch 2, Xbox Series X|S y PC continúan anunciadas, aunque esta presentación no concreta su día de lanzamiento."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=BVKub8mLFFc",
@@ -39,6 +40,13 @@
     }
   },
   "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de Square Enix con fecha, gameplay y ediciones"
+      },
+      "url": "https://blog.playstation.com/2026/09/03/final-fantasy-vii-revelation-launches-on-ps5-april-8-2027/"
+    },
     {
       "label": "Square Enix",
       "type": {
@@ -52,19 +60,12 @@
         "es": "Tráiler oficial Guardians of the Planet"
       },
       "url": "https://www.youtube.com/watch?v=BVKub8mLFFc"
-    },
-    {
-      "label": "PlayStation Blog",
-      "type": {
-        "es": "Resumen oficial de Opening Night Live y ventana de lanzamiento"
-      },
-      "url": "https://blog.playstation.com/2026/08/25/gamescom-opening-night-live-highlights-19-games-coming-to-playstation/"
     }
   ],
   "homeDetails": {
     "es": [
-      "El tráiler sitúa a las Armas como amenazas activas en distintos puntos del planeta y muestra a Arma Esmeralda emergiendo en alta mar. La secuencia lleva al grupo a un submarino de Shinra y confirma que el vehículo y los enfrentamientos bajo el agua formarán parte de esta entrega.",
-      "Entre las nuevas imágenes aparecen también Arma Última, Arma Rubí y Tifón, una invocación capaz de atacar con fuertes ráfagas de viento. El Highwind permitirá desplazarse por un mundo de gran escala mientras la historia conduce al enfrentamiento final con Sephiroth."
+      "El nuevo adelanto enseña la exploración aérea con el Highwind, incorpora al chocobo Piko como aliado de combate y presenta FITS, un sistema de trajes con funciones similares a clases. También confirma el cambio dinámico entre miembros del grupo, el gancho de Cloud y decisiones de personaje durante algunas misiones.",
+      "La edición Premium incluirá un pase con dos expansiones de historia, además de contenido digital adicional. Las reservas de PS5 ya están abiertas y Square Enix mantiene anunciadas las versiones de Nintendo Switch 2, Xbox Series X|S y PC, pero el comunicado de esta presentación solo fija el 8 de abril para PS5."
     ]
   }
 }

@@ -23,6 +23,18 @@
   },
   "gallery": [
     {
+      "src": "https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_07.0ca326xbl~oyh.jpg?akim=1&imdensity=1&imwidth=3840",
+      "alt": "Jason Duval en una nueva captura oficial de Grand Theft Auto VI"
+    },
+    {
+      "src": "https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_09.0pd.ppokmi8-n.jpg?akim=1&imdensity=1&imwidth=3840",
+      "alt": "Lucia Caminos en una nueva captura oficial de Grand Theft Auto VI"
+    },
+    {
+      "src": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_11.09paum3g942sc.jpg?akim=1&imdensity=1&imwidth=3840",
+      "alt": "Vice City en una nueva captura oficial de Grand Theft Auto VI"
+    },
+    {
       "src": "https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_01.07m377xeb6jhq.jpg?akim=1&imdensity=1&imwidth=3840",
       "alt": "Jason Duval en una captura oficial de Grand Theft Auto VI"
     },
@@ -191,6 +203,14 @@
   },
   "changes": [
     {
+      "date": "2026-09-03",
+      "title": "Rockstar amplía la galería oficial a 99 capturas",
+      "description": "La galería oficial de GTA VI pasa de 70 a 99 capturas y añade 29 nuevas imágenes en alta resolución de Jason, Lucia, Vice City y otras escenas de Leonida. La ficha incorpora una selección de las nuevas imágenes oficiales.",
+      "sourceUrls": [
+        "https://www.rockstargames.com/VI/media"
+      ]
+    },
+    {
       "date": "2026-08-29",
       "title": "Rockstar retrasa GTA VI al 19 de noviembre de 2026",
       "description": "Rockstar fija oficialmente el lanzamiento de Grand Theft Auto VI para el jueves 19 de noviembre de 2026.",
@@ -283,7 +303,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-08-29",
+  "updatedAt": "2026-09-03",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",

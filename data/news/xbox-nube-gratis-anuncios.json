@@ -2,9 +2,9 @@
   "id": "xbox-nube-gratis-anuncios",
   "emphasis": {
     "es": [
-      "sin pagar por el acceso a la nube",
-      "límite de una hora",
-      "no se interrumpe con publicidad"
+      "15 horas para Ultimate, 10 para Premium y 5 para Essential",
+      "comprar tiempo adicional en Xbox Store",
+      "usar Xbox Cloud Gaming sin suscribirse a Game Pass"
     ]
   },
   "category": {
@@ -12,54 +12,55 @@
     "en": "Platforms"
   },
   "date": "2026-07-23",
+  "updated": "2026-09-03",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "Xbox"
     },
     "copy": {
-      "es": "Xbox prueba el juego en la nube gratuito con anuncios"
+      "es": "Xbox limitará las horas mensuales de juego en la nube incluidas con Game Pass"
     }
   },
   "tone": "xbox",
   "title": {
-    "es": "Xbox prueba el juego en la nube gratuito con anuncios",
-    "en": "Xbox tests free ad-supported cloud gaming"
+    "es": "Xbox limitará las horas de juego en la nube de Game Pass desde noviembre",
+    "en": "Xbox will cap Game Pass cloud gaming hours starting in November"
   },
   "summary": {
-    "es": "Xbox Insiders pueden retransmitir gratuitamente una selección de juegos que ya poseen después de ver anuncios. Las sesiones duran un máximo de una hora y la publicidad aparece antes de jugar, sin interrumpir la partida.",
-    "en": "Xbox Insiders can stream selected games they already own for free after watching ads. Sessions are limited to one hour and ads play before gameplay rather than interrupting it."
+    "es": "Desde noviembre, Xbox Game Pass incluirá un máximo mensual de 15 horas para Ultimate, 10 para Premium y 5 para Essential. Actualmente los suscriptores compatibles pueden jugar en la nube sin estos límites mensuales.",
+    "en": "Starting in November, Xbox Game Pass will include a monthly maximum of 15 hours for Ultimate, 10 for Premium, and 5 for Essential. Eligible subscribers can currently use cloud gaming without these monthly limits."
   },
   "why": {
-    "es": "Microsoft está probando una nueva puerta de entrada a Xbox Cloud Gaming que reduce el coste de acceso y abre otra vía de monetización al margen de Game Pass.",
-    "en": "Microsoft is testing a new entry point to Xbox Cloud Gaming that lowers access costs and creates a monetisation route outside Game Pass."
+    "es": "Al agotar las horas incluidas se podrá comprar tiempo adicional en Xbox Store. Microsoft también permitirá usar Xbox Cloud Gaming sin suscribirse a Game Pass, mediante horas de pago para retransmitir juegos compatibles que el usuario ya posea.",
+    "en": "After using the included hours, players will be able to purchase additional time through the Xbox Store. Microsoft will also let players use Xbox Cloud Gaming without a Game Pass subscription by buying hours to stream eligible games they own."
   },
   "sources": [
     {
       "label": "Xbox Wire",
       "type": {
-        "es": "Fuente oficial",
-        "en": "Official source"
+        "es": "Anuncio oficial de los límites mensuales y del acceso de pago sin Game Pass",
+        "en": "Official announcement of monthly limits and paid access without Game Pass"
       },
-      "url": "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
+      "url": "https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/"
     },
     {
-      "label": "The Verge",
+      "label": "Xbox Wire",
       "type": {
-        "es": "Contexto",
-        "en": "Context"
+        "es": "Anuncio oficial de la prueba anterior de acceso gratuito con publicidad",
+        "en": "Official announcement of the earlier free ad-supported access test"
       },
-      "url": "https://www.theverge.com/games/969969/xbox-testing-ad-supported-streaming"
+      "url": "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
     }
   ],
   "homeDetails": {
     "es": [
-      "La prueba permite a Xbox Insiders retransmitir una selección de juegos que ya poseen sin pagar por el acceso a la nube. Los anuncios se muestran antes de comenzar y cada sesión tiene un límite de una hora.",
-      "Microsoft presenta el sistema como una forma opcional de reducir el coste de entrada. De momento no existe confirmación de que la prueba vaya a convertirse en un nivel comercial permanente."
+      "Microsoft calcula que el límite afectará al 4% de los suscriptores de Game Pass. Todavía no ha detallado cuánto costarán las horas adicionales y advierte de que el tiempo disponible, las opciones de compra, las funciones y los mercados compatibles pueden variar.",
+      "La compañía justifica el cambio por el coste creciente de prestar el servicio a medida que aumentan el uso y la duración de las sesiones. El nuevo acceso sin suscripción permitirá comprar horas para juegos compatibles en propiedad y plantea un modelo distinto de la prueba gratuita con anuncios anunciada para Xbox Insiders en julio."
     ],
     "en": [
-      "The test lets Xbox Insiders stream selected games they already own without paying for cloud access. Ads play before the session begins and each session is limited to one hour.",
-      "Microsoft presents the system as an optional way to lower the cost of entry. There is currently no confirmation that the test will become a permanent commercial tier."
+      "Microsoft estimates that the limit will affect 4% of Game Pass subscribers. It has not yet detailed the price of additional hours and says available time, purchase options, features, and supported markets may vary.",
+      "The company attributes the change to the rising cost of providing the service as usage and session length increase. The new subscription-free option will let players buy hours for eligible games they own and differs from the free ad-supported Xbox Insider test announced in July."
     ]
   }
 }

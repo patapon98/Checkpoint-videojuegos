@@ -112,7 +112,7 @@ function highlightMarkup(item, index) {
         </article>`;
 }
 
-function completeAnnouncementMarkup(item) {
+function legacyCompleteAnnouncementMarkup(item) {
   const isPreShow = item.type.startsWith("Pre-show");
   const stage = isPreShow ? "preshow" : "main";
   const stageLabel = isPreShow ? "Pre-show" : "Gala";
@@ -133,6 +133,28 @@ function completeAnnouncementMarkup(item) {
             <div class="event-all-links">
               ${links}
             </div>
+          </div>
+        </article>`;
+}
+
+function completeAnnouncementMarkup(item, archiveStages) {
+  const isPreShow = item.type.startsWith("Pre-show");
+  const stages = Array.isArray(item.stages) && item.stages.length ? item.stages : [item.stage || (isPreShow ? "preshow" : "main")];
+  const stageLabels = stages.map((stage) => archiveStages.find((entry) => entry.id === stage)?.label || stage).filter(Boolean);
+  const cleanType = item.type.replace(/^Pre-show\s*·\s*/, "");
+  const videoId = youtubeIdFromUrl(item.trailerUrl);
+  const image = item.archiveImage || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  const links = [
+    item.relatedUrl ? `<a href="${escapeHtml(item.relatedUrl)}">Más información →</a>` : "",
+    item.trailerUrl ? `<a href="${escapeHtml(item.trailerUrl)}" target="_blank" rel="noopener noreferrer">Ver tráiler ↗</a>` : "",
+    `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente ↗</a>`
+  ].filter(Boolean).join("\n              ");
+  return `<article class="event-all-item" data-event-all-item data-event-stages="${escapeHtml(stages.join(" "))}">
+          <div class="event-all-art"><img src="${escapeHtml(image)}" alt="" loading="lazy" decoding="async"><span></span></div>
+          <div class="event-all-meta"><span>${escapeHtml(stageLabels.join(" · "))}</span><strong>${escapeHtml(cleanType)}</strong></div>
+          <div class="event-all-copy">
+            <h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p>
+            <div class="event-all-links">${links}</div>
           </div>
         </article>`;
 }
@@ -219,9 +241,12 @@ function page(data) {
   const highlights = (data.highlights || []).map((title) => announcementByTitle.get(title)).filter(Boolean);
   const announcements = data.announcements.map(announcementMarkup).join("\n        ");
   const highlightAnnouncements = highlights.map(highlightMarkup).join("\n        ");
+  const hasCustomArchiveStages = Array.isArray(data.archiveStages) && data.archiveStages.length > 0;
+  const archiveStages = hasCustomArchiveStages ? data.archiveStages : [{ id: "main", label: "Gala" }, { id: "preshow", label: "Pre-show" }];
+  const archiveStageButtons = archiveStages.map((stage) => `<button type="button" data-event-stage-filter="${escapeHtml(stage.id)}" aria-pressed="false">${escapeHtml(stage.label)}</button>`).join("\n            ");
   const completeAnnouncements = [...data.announcements]
     .sort((a, b) => a.title.localeCompare(b.title, "es", { sensitivity: "base" }))
-    .map(completeAnnouncementMarkup)
+    .map((item) => hasCustomArchiveStages ? completeAnnouncementMarkup(item, archiveStages) : legacyCompleteAnnouncementMarkup(item))
     .join("\n        ");
   const filterTypes = [...new Set(data.announcements.map((item) => item.type))];
   const filters = filterTypes.length > 1 ? `<div class="event-filter" aria-label="Filtrar anuncios">
@@ -252,7 +277,9 @@ function page(data) {
         eventStatus: isFinished ? "https://schema.org/EventCompleted" : "https://schema.org/EventScheduled",
         eventAttendanceMode: `https://schema.org/${data.attendanceMode}`,
         image: data.heroImage,
-        location: { "@type": "Place", name: data.location.name, address: { "@type": "PostalAddress", addressLocality: data.location.city, addressCountry: data.location.country } },
+        location: data.attendanceMode === "OnlineEventAttendanceMode"
+          ? { "@type": "VirtualLocation", url: data.streamUrl }
+          : { "@type": "Place", name: data.location.name, address: { "@type": "PostalAddress", addressLocality: data.location.city, addressCountry: data.location.country } },
         organizer: { "@type": "Organization", name: data.organizer, url: data.officialUrl },
         url: canonical
       },
@@ -328,7 +355,7 @@ function page(data) {
         <p class="event-deck">${escapeHtml(data.intro)}</p>
         <div class="event-actions">
           <a class="event-btn" href="#anuncios">${isFinished ? "Ver lo más importante" : "Seguir los anuncios"}</a>
-          <a class="event-btn event-btn-secondary" href="#directo">${isFinished ? "Ver la gala completa" : "Ver la emisión"}</a>
+          <a class="event-btn event-btn-secondary" href="#directo">${isFinished ? (hasCustomArchiveStages ? "Ver la emisión completa" : "Ver la gala completa") : "Ver la emisión"}</a>
         </div>
       </div>
       <a class="event-poster" href="${escapeHtml(data.streamUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir la emisión oficial de ${escapeHtml(data.title)} en YouTube">
@@ -356,7 +383,7 @@ ${isFinished ? "" : `  <div class="wrap event-countdown-wrap">
 
     <section class="event-section" id="anuncios">
       <div class="event-section-heading reveal">
-        <div><span class="event-kicker">${isFinished ? "La selección de Final Secreto" : "Cobertura en directo"}</span><h2>${isFinished ? "Lo mejor de Opening Night Live" : "Todos los anuncios de la gala"}</h2><p>${isFinished ? "Las revelaciones con más peso de la noche, ordenadas de mayor a menor relevancia y acompañadas por su tráiler." : "Las novedades aparecerán en orden conforme se confirmen durante la emisión."}</p></div>
+        <div><span class="event-kicker">${isFinished ? "La selección de Final Secreto" : "Cobertura en directo"}</span><h2>${isFinished ? (hasCustomArchiveStages ? `Lo mejor de ${escapeHtml(data.shortTitle)}` : "Lo mejor de Opening Night Live") : (hasCustomArchiveStages ? "Todos los anuncios de la emisión" : "Todos los anuncios de la gala")}</h2><p>${isFinished ? "Las revelaciones con más peso de la noche, ordenadas de mayor a menor relevancia y acompañadas por su tráiler." : "Las novedades aparecerán en orden conforme se confirmen durante la emisión."}</p></div>
         <div class="event-total"><b data-event-visible-total>${isFinished ? highlights.length : data.announcements.length}</b><span>${isFinished ? "Esenciales" : "Anuncios"}</span></div>
       </div>
 ${isFinished ? `      <div class="event-browser reveal">
@@ -378,8 +405,7 @@ ${isFinished ? `      <div class="event-browser reveal">
         <div class="event-all-toolbar">
           <div class="event-stage-filter" role="group" aria-label="Filtrar por parte de la emisión">
             <button class="on" type="button" data-event-stage-filter="all" aria-pressed="true">Todos</button>
-            <button type="button" data-event-stage-filter="main" aria-pressed="false">Gala</button>
-            <button type="button" data-event-stage-filter="preshow" aria-pressed="false">Pre-show</button>
+            ${archiveStageButtons}
           </div>
           <p class="event-all-count" aria-live="polite"><b data-event-all-total>${data.announcements.length}</b> resultados</p>
         </div>
@@ -388,26 +414,26 @@ ${isFinished ? `      <div class="event-browser reveal">
         </div>
         <p class="event-all-empty" data-event-all-empty hidden>No hay anuncios que coincidan con esa búsqueda.</p>
       </div>` : `${filters ? `      ${filters}\n` : ""}      <div class="event-timeline">
-        ${announcements || `<div class="event-live-empty reveal"><b>↻</b><div><strong>La cobertura comenzará con la gala</strong><p>Esta sección se llenará con los anuncios, fechas y tráilers confirmados durante ${escapeHtml(data.shortTitle)}.</p></div></div>`}
+        ${announcements || `<div class="event-live-empty reveal"><b>↻</b><div><strong>${hasCustomArchiveStages ? "La cobertura comenzará con la emisión" : "La cobertura comenzará con la gala"}</strong><p>Esta sección se llenará con los anuncios, fechas y tráilers confirmados durante ${escapeHtml(data.shortTitle)}.</p></div></div>`}
       </div>`}
     </section>
 
 ${isFinished ? "" : `    <section class="event-section" id="confirmados">
-      <div class="event-section-heading reveal"><div><span class="event-kicker">Antes de empezar</span><h2>Juegos con presencia confirmada</h2><p>Una selección inicial para saber qué buscar durante la gala, separada de cualquier rumor o predicción.</p></div><div class="event-total"><b>${data.appearances.length}</b><span>Confirmados</span></div></div>
+      <div class="event-section-heading reveal"><div><span class="event-kicker">Antes de empezar</span><h2>Juegos con presencia confirmada</h2><p>${hasCustomArchiveStages ? "Una selección inicial para saber qué buscar durante la emisión, separada de cualquier rumor o predicción." : "Una selección inicial para saber qué buscar durante la gala, separada de cualquier rumor o predicción."}</p></div><div class="event-total"><b>${data.appearances.length}</b><span>Confirmados</span></div></div>
       ${appearances}
     </section>
 `}
 
     <section class="event-section" id="directo">
-      <div class="event-section-heading reveal"><div><span class="event-kicker">Retransmisión oficial</span><h2>${isFinished ? "Volver a ver" : "Ver"} ${escapeHtml(data.shortTitle)}</h2><p>${isFinished ? "La gala completa permanece disponible en la emisión oficial." : "La emisión oficial puede verse sin salir de la cobertura."}</p></div></div>
+      <div class="event-section-heading reveal"><div><span class="event-kicker">Retransmisión oficial</span><h2>${isFinished ? "Volver a ver" : "Ver"} ${escapeHtml(data.shortTitle)}</h2><p>${isFinished ? (hasCustomArchiveStages ? "La emisión completa permanece disponible en el canal oficial." : "La gala completa permanece disponible en la emisión oficial.") : "La emisión oficial puede verse sin salir de la cobertura."}</p></div></div>
       <div class="event-watch-grid reveal">
         <div class="event-stream"><div class="event-stream-frame"><iframe src="https://www.youtube-nocookie.com/embed/${escapeHtml(data.streamYoutubeId)}?rel=0" title="Retransmisión oficial de ${escapeHtml(data.title)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
-        <aside class="event-watch-card"><h3>${isFinished ? "Sobre esta selección" : "Horarios clave"}</h3>${isFinished ? `<p class="event-watch-summary">Una lectura editorial de la gala: grandes estrenos, regresos y fechas por delante de anuncios menores.</p>` : `<dl class="event-watch-list">${schedule}</dl>`}<div class="event-editorial-note">${escapeHtml(data.editorialNote)}</div></aside>
+        <aside class="event-watch-card"><h3>${isFinished ? "Sobre esta selección" : "Horarios clave"}</h3>${isFinished ? `<p class="event-watch-summary">${hasCustomArchiveStages ? "Una lectura editorial de la presentación con grandes estrenos, regresos y fechas por delante de anuncios menores." : "Una lectura editorial de la gala: grandes estrenos, regresos y fechas por delante de anuncios menores."}</p>` : `<dl class="event-watch-list">${schedule}</dl>`}<div class="event-editorial-note">${escapeHtml(data.editorialNote)}</div></aside>
       </div>
     </section>
 
     <section class="event-section" id="fuentes">
-      <div class="event-section-heading reveal"><div><span class="event-kicker">Procedencia</span><h2>Fuentes de la cobertura</h2><p>${isFinished ? "Los anuncios se han contrastado con la emisión oficial y las coberturas publicadas tras la gala." : "La página distingue los anuncios oficiales de la información previa publicada por medios solventes."}</p></div></div>
+      <div class="event-section-heading reveal"><div><span class="event-kicker">Procedencia</span><h2>Fuentes de la cobertura</h2><p>${isFinished ? (hasCustomArchiveStages ? "Los anuncios se han contrastado con la emisión oficial y las fuentes publicadas tras la presentación." : "Los anuncios se han contrastado con la emisión oficial y las coberturas publicadas tras la gala.") : "La página distingue los anuncios oficiales de la información previa publicada por medios solventes."}</p></div></div>
       <div class="event-sources reveal">${sources}</div>
     </section>
   </div>
@@ -415,7 +441,7 @@ ${isFinished ? "" : `    <section class="event-section" id="confirmados">
 
 <footer><div class="footer-inner"><span>© 2026 Final Secreto</span></div></footer>
 <script src="/js/main.js?v=20260823-1"></script>
-<script src="/js/event-hub.js?v=20260826-3"></script>
+<script src="/js/event-hub.js?v=20260903-1"></script>
 </body>
 </html>
 `;

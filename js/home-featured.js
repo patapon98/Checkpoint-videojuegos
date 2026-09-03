@@ -2,7 +2,7 @@
   const heroCard=document.getElementById('heroCard');
   if(heroCard){
     try{
-      const response=await fetch('/data/events/gamescom-onl-2026.json',{cache:'no-store'});
+      const response=await fetch('/data/events/state-of-play-septiembre-2026.json',{cache:'no-store'});
       if(!response.ok) throw new Error('No se pudo cargar el evento destacado');
       const event=await response.json();
       heroCard.classList.add('event-featured');

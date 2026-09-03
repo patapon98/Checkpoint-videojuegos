@@ -1,0 +1,63 @@
+{
+  "id": "until-dawn-2-fecha-lanzamiento",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "el 28 de enero de 2027",
+      "cada decisión puede alterar la historia",
+      "los ocho integrantes de Dead True"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-09-03",
+  "addedAt": "2026-09-03T17:52:08Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Until Dawn 2"
+    },
+    "copy": {
+      "es": "Until Dawn 2 se lanzará en PS5 el 28 de enero de 2027"
+    }
+  },
+  "tone": "playstation",
+  "title": {
+    "es": "Until Dawn 2 se lanzará en PS5 el 28 de enero de 2027"
+  },
+  "summary": {
+    "es": "Until Dawn 2 se lanzará en PS5 el 28 de enero de 2027. Firesprite desarrolla la secuela junto a AdHoc Studio y mantiene su núcleo de terror narrativo, donde cada decisión puede alterar la historia y determinar quién sobrevive."
+  },
+  "why": {
+    "es": "La nueva historia sigue a los ocho integrantes de Dead True, un falso equipo de cazafantasmas de YouTube, desde Blackwood Sanatorium hasta la abandonada isla Akishima. Las reservas comenzarán el 10 de septiembre."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=-wjhso38sAY",
+    "label": {
+      "es": "Ver el tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de Firesprite con fecha, historia y ediciones"
+      },
+      "url": "https://blog.playstation.com/2026/09/03/until-dawn-2-launches-january-28/"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Resumen oficial de los anuncios de State of Play"
+      },
+      "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El grupo comienza investigando Blackwood Sanatorium, escenario ligado a la primera entrega, antes de que una superviviente de un ataque sobrenatural los conduzca hasta Akishima. Allí, cada interacción puede cambiar relaciones, rutas y muertes dentro de la nueva historia escrita con AdHoc Studio.",
+      "Las reservas de las ediciones estándar y Digital Deluxe incluirán contenido inspirado en el regreso del doctor Hill. La edición superior añadirá atuendos para los ocho miembros de Dead True y Diorama of Death, una función para revisar desde otros ángulos las muertes desbloqueadas."
+    ]
+  }
+}

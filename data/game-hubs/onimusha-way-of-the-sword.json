@@ -2,7 +2,7 @@
   "id": "onimusha-way-of-the-sword",
   "title": "Onimusha: Way of the Sword",
   "subtitle": "Historia, combate, duración y toda la información de la nueva entrega",
-  "status": "Reservas abiertas",
+  "status": "Disponible",
   "releaseDate": "2026-09-04",
   "platforms": ["PS5", "Xbox Series X|S", "PC", "Nintendo Switch 2"],
   "developer": "Capcom",
@@ -62,9 +62,10 @@
     {"label":"Capcom Town Store","url":"https://store.captown.capcom.com/en/blogs/news/0000033","type":"Conversión de la bonificación digital de reserva en bonificación de compra anticipada"}
   ],
   "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-04",
   "seo": {"title":"Onimusha: Way of the Sword: duración, demo y todo lo confirmado","description":"Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.","ogDescription":"Duración, demo, combate y toda la información confirmada sobre Onimusha: Way of the Sword.","heroTitleHtml":"Onimusha: <em>Way of the Sword</em>","heroImageAlt":"Arte promocional oficial de Onimusha: Way of the Sword"},
   "changes": [
+    {"date":"2026-09-04","title":"Onimusha: Way of the Sword ya está disponible","description":"Capcom lanza Onimusha: Way of the Sword el 4 de septiembre de 2026; la ficha pasa de reservas abiertas a disponible. Steam ya muestra la versión de PC como publicada y mantiene los requisitos técnicos oficiales previamente registrados.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","https://www.capcom.co.jp/ir/english/news/html/e260831.html"]},
     {"date":"2026-09-02","title":"Capcom publica un nuevo tráiler centrado en el combate con espada","description":"El Swordplay Action Trailer ofrece un nuevo repaso oficial al sistema de combate con espada de Onimusha: Way of the Sword a pocos días del lanzamiento.","sourceUrls":["https://steamcommunity.com/app/2638890/allnews/"]},
     {"date":"2026-08-26","title":"Capcom muestra el Oni Awakening y nuevos Genma en el sexto tráiler","description":"El sexto tráiler oficial presenta a Ifuu y Burai, un dúo Genma que combina viento y trueno, muestra el duelo de Musashi contra Dokyo y ofrece el primer gameplay del protagonista en su forma Oni completamente despertada.","sourceUrls":["https://blog.playstation.com/2026/08/25/onimusha-way-of-the-sword-interview-demo-update-detailed-new-trailer-revealed/"]},
     {"date":"2026-08-25","title":"Capcom amplía la demo y la lleva a Nintendo Switch 2","description":"La demo recibe una segunda misión ambientada en el Refugio Oni, nuevas mecánicas y el enfrentamiento contra Daidara; la prueba actualizada queda disponible en PS5, Xbox Series X|S, PC y Nintendo Switch 2.","sourceUrls":["https://www.capcom-games.com/onimusha/ws/es/demo"]},

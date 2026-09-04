@@ -1,0 +1,71 @@
+{
+  "id": "crimson-desert-charting-unknown-fecha",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el 16 de octubre de 2026 en Europa",
+      "navegación oceánica, nuevas islas y buceo",
+      "nuevas historias para Kliff, Oongka y Damiane"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-03",
+  "publishedAt": "2026-09-03T14:00:00Z",
+  "addedAt": "2026-09-04T15:27:09Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Crimson Desert"
+    },
+    "copy": {
+      "es": "Crimson Desert amplía Pywel por mar con Charting the Unknown"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Crimson Desert ampliará Pywel por mar el 16 de octubre con Charting the Unknown"
+  },
+  "summary": {
+    "es": "Pearl Abyss lanzará Crimson Desert Enhanced: Charting the Unknown el 16 de octubre de 2026 en Europa para consolas y PC. La expansión añade navegación oceánica, nuevas islas y buceo para explorar tesoros, ruinas sumergidas y misterios bajo el mar."
+  },
+  "why": {
+    "es": "El DLC incorpora también amenazas por tierra y mar, gestión de instalaciones, un sistema de vivienda ampliado y nuevas historias para Kliff, Oongka y Damiane. No estará disponible en Mac durante el lanzamiento."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=HaCtG1F_hfE",
+    "label": {
+      "es": "Ver el tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Pearl Abyss",
+      "type": {
+        "es": "Anuncio oficial con fecha, plataformas y horarios regionales"
+      },
+      "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129"
+    },
+    {
+      "label": "Pearl Abyss",
+      "type": {
+        "es": "Página oficial con sistemas, historias y contenido de la expansión"
+      },
+      "url": "https://crimsondesert.pearlabyss.com/en-US/Game/DLC/charting-the-unknown"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Resumen oficial de State of Play y presentación de la expansión"
+      },
+      "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La exploración se extiende fuera de las costas de Pywel: el jugador podrá ponerse al mando de un barco, viajar a islas inéditas y sumergirse para buscar tesoros y secretos en ruinas submarinas. Los nuevos enemigos obligarán además a adaptar las tácticas tanto en tierra como en el océano.",
+      "Charting the Unknown amplía también la vida cotidiana con instalaciones que se pueden alquilar y gestionar, una vivienda más completa y relaciones más profundas con los habitantes. Sus tramas abarcan una presencia en el desierto, un conflicto político, un viaje más allá del tiempo y un antiguo secreto bajo las olas."
+    ]
+  }
+}

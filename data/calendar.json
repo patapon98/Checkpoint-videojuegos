@@ -3311,8 +3311,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Crimson Desert Enhanced: Charting the Unknown",
         "src": "https://s1.pearlcdn.com/cd/brand/board/2026/09/03/b218a4ad6f420260903130555180.jpg",
         "alt": "Crimson Desert Enhanced: Charting the Unknown",
         "className": "",
@@ -4033,8 +4031,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "DRAGON QUEST MONSTERS: The Withered World",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681610/header.jpg",
         "alt": "DRAGON QUEST MONSTERS: The Withered World",
         "className": "",
@@ -4350,12 +4346,16 @@
       "image": {
         "provider": "rawg",
         "query": "Until Dawn 2",
-        "src": "https://blog.playstation.com/tachyon/2026/09/1329cf72abdda083d86059fff4a9adbd2ff3197c.png?crop_strategy=smart&resize=1088%2C612",
+        "src": "https://media.rawg.io/media/screenshots/984/9844663f1c966cecc686b9cd2b4df10d.jpg",
         "alt": "Until Dawn 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1018058,
+        "rawgSlug": "until-dawn-2-2",
+        "rawgPage": "https://rawg.io/games/until-dawn-2-2",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://blog.playstation.com/2026/09/03/until-dawn-2-launches-january-28/",
@@ -4400,12 +4400,16 @@
       "image": {
         "provider": "rawg",
         "query": "METRO 2039",
-        "src": "https://blog.playstation.com/tachyon/2026/09/ae2d2a69f35864bfe4bce0859b956f13e31794ed.jpg?crop_strategy=smart&resize=1088%2C612",
+        "src": "https://media.rawg.io/media/games/4a5/4a5865eca8376e08a8e31ce278b5248f.jpg",
         "alt": "METRO 2039",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1017176,
+        "rawgSlug": "metro-2039",
+        "rawgPage": "https://rawg.io/games/metro-2039",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/2590240/METRO_2039/",
@@ -4726,8 +4730,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "FINAL FANTASY VII REVELATION",
         "src": "https://blog.playstation.com/tachyon/2026/09/b2011ae5a054c3ae375a364174ee44aff00a0602.jpg?crop_strategy=smart&resize=1088%2C612",
         "alt": "FINAL FANTASY VII REVELATION",
         "className": "",

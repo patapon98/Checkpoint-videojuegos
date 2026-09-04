@@ -23,6 +23,7 @@
     {"src":"https://cms-assets.xboxservices.com/assets/72/97/7297eebb-7bfd-4868-8afd-50f62bfe3ef2.jpg?n=8388488888_Image-1084_Details-intro_1920x720.jpg","alt":"Marcus y Dom avanzan entre las ruinas de Kalona en Gears of War: E-Day"}
   ],
   "media": [
+    {"type":"youtube","videoId":"MFOduD6oS0c","title":"Gears of War: E-Day Campaign - Brotherhood and Hope in a Hopeless World","label":"Podcast oficial de campaña","publishedAt":"2026-09-04"},
     {"type":"youtube","videoId":"-TW2SnAipsE","title":"Gears of War: E-Day - Official Story Trailer","label":"Tráiler de historia","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"_dRYPXrGzck","title":"Gears of War: E-Day - RTX Mega Geometry Developer Video","label":"Vídeo técnico","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"cmawSe1PkPg","title":"Gears of War: E-Day, presentación oficial del multijugador","label":"Multijugador","publishedAt":"2026-07-30"},
@@ -52,9 +53,13 @@
     },
     {
       "kicker": "Combate y exploración",
-      "title": "Kalona combina la ruta principal con desvíos opcionales y equipo táctico",
-      "summary": "La campaña mantiene una estructura principalmente lineal, pero utiliza un folleto turístico como mapa de Kalona y permite desviarse para ayudar a otros escuadrones en misiones secundarias.",
-      "highlights": ["El Tactical Gear incluye objetos recargables con el tiempo, como un inyector de salud y proyectiles capaces de aturdir enemigos.","La recarga activa regresa: acertar el tiempo reduce la espera antes de disparar y fallar puede encasquillar el arma.","Regresan los agujeros de emergencia, el Gnasher y el Longshot; también debutan Gut Puncher e Incinerator."]
+      "title": "Kalona combina la ruta principal con desvíos opcionales y progresión",
+      "summary": "La campaña es lineal en conjunto, pero alterna tramos dirigidos con zonas de varias manzanas donde el jugador puede elegir la ruta, ayudar a otros supervivientes y completar objetivos secundarios.",
+      "highlights": [
+        "El Tactical Gear incluye objetos recargables con el tiempo, como un inyector de salud y proyectiles capaces de aturdir enemigos; también regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.",
+        "Por primera vez en una campaña de Gears se pueden modificar armas. Los Hard Cases ocultos proporcionan progresión adicional; regresan el Gnasher y el Longshot y debutan armas como Gut Puncher e Incinerator.",
+        "Los Locust aprovechan la nueva movilidad igual que el jugador: pueden trepar para flanquear y los Grenadiers usan humo para ocultar su aproximación antes de atacar a corta distancia."
+      ]
     },
     {
       "kicker": "Multijugador",
@@ -75,6 +80,7 @@
   ],
   "pendingHighlights": ["Modos exactos de resolución y rendimiento de cada consola.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
   "sources": [
+    {"label":"Xbox Wire - Official Xbox Podcast","url":"https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/","type":"Detalles oficiales sobre estructura de campaña, exploración, modificación de armas, progresión y tácticas de los Locust"},
     {"label":"Xbox - Official Story Trailer","url":"https://www.youtube.com/watch?v=-TW2SnAipsE","type":"Tráiler oficial de historia estrenado en gamescom Opening Night Live 2026"},
     {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/","type":"Hands-on oficial de campaña, mapa, misiones secundarias, recarga activa y Tactical Gear"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"RTX Mega Geometry, NVIDIA Reflex, DLSS 4.5 y vídeo técnico de PC"},
@@ -96,6 +102,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {"date":"2026-09-05","title":"The Coalition detalla la exploración, la modificación de armas y las tácticas Locust","description":"El Official Xbox Podcast confirma que la campaña alterna tramos lineales con zonas de varias manzanas donde se pueden tomar rutas opcionales, ayudar a otros supervivientes y completar objetivos secundarios. Por primera vez en una campaña de Gears se podrán modificar armas; los Hard Cases aportarán progresión adicional y los Locust podrán usar la nueva movilidad y tácticas como el humo para flanquear al jugador.","sourceUrls":["https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"]},
     {"date":"2026-08-27","title":"Xbox publica el tráiler oficial de historia de Gears of War: E-Day","description":"El tráiler de historia estrenado en gamescom Opening Night Live muestra la irrupción de la Horda Locust en Kalona y nuevos momentos narrativos de Marcus, Dom y el escuadrón Bravo.","sourceUrls":["https://www.youtube.com/watch?v=-TW2SnAipsE"]},
     {"date":"2026-08-27","title":"Xbox detalla el mapa, las misiones secundarias y el Tactical Gear de la campaña","description":"El hands-on oficial de Xbox confirma que un folleto turístico funciona como mapa de Kalona, que la campaña permite desviarse a misiones secundarias opcionales y que el Tactical Gear reúne objetos reutilizables que se recargan con el tiempo. También regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.","sourceUrls":["https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/"]},
     {"date":"2026-08-25","title":"Xbox España confirma una tarjeta regalo entre los incentivos de reserva","description":"La ficha oficial de Xbox España incluye una tarjeta regalo Xbox entre los incentivos de reserva, junto a los aspectos Exfil. El importe no se especifica; los beneficios pueden requerir un código de un solo uso y están limitados a una oferta por persona o cuenta.","sourceUrls":["https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ"]},
@@ -117,7 +124,7 @@
     {"date":"2026-07-30","title":"Ficha publicada tras el Xbox Games Showcase","description":"Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
   "relatedGameIds": ["control-resonant","grand-theft-auto-vi"],
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-05",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

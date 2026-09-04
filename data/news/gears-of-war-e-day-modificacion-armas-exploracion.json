@@ -1,0 +1,57 @@
+{
+  "id": "gears-of-war-e-day-modificacion-armas-exploracion",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "modificar las armas por primera vez en una campaña de la saga",
+      "zonas de varias manzanas",
+      "Los Hard Cases ocultos aportarán progresión adicional"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-04",
+  "addedAt": "2026-09-04T17:39:03Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Gears"
+    },
+    "copy": {
+      "es": "Gears: E-Day llevará modificación de armas y rutas opcionales a la campaña"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Gears of War: E-Day incorporará modificación de armas y rutas opcionales en campaña"
+  },
+  "summary": {
+    "es": "The Coalition ha confirmado que Gears of War: E-Day permitirá modificar las armas por primera vez en una campaña de la saga. La aventura seguirá siendo lineal, pero alternará tramos dirigidos con zonas de varias manzanas, rutas alternativas y objetivos secundarios."
+  },
+  "why": {
+    "es": "Los Hard Cases ocultos aportarán progresión adicional y los Locust compartirán la nueva movilidad del jugador: podrán trepar para rodearlo, mientras los granaderos usarán humo para ocultar su avance a corta distancia. El lanzamiento sigue fijado para el 6 de octubre en Xbox Series X|S y PC."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Podcast y transcripción oficiales sobre exploración, progresión, armas y tácticas enemigas"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"
+    },
+    {
+      "label": "Xbox España",
+      "type": {
+        "es": "Ficha oficial con fecha y plataformas"
+      },
+      "url": "https://www.xbox.com/es-es/games/gears-of-war-eday"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La campaña mantendrá una estructura general lineal, pero abrirá algunos capítulos a varias manzanas de Kalona. En esos espacios se podrá escoger el camino hacia el objetivo, ayudar a escuadrones o familias atrapadas y descubrir relatos ambientales alejados de la ruta principal.",
+      "La exploración tendrá recompensa jugable: las cajas Hard Case alimentarán la progresión y el sistema de modificación trasladará a la campaña ideas antes asociadas al modo Horda. The Coalition también adapta la inteligencia enemiga al movimiento renovado, con Locust capaces de trepar, flanquear y cubrir su aproximación con humo."
+    ]
+  }
+}

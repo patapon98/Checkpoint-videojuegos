@@ -1,0 +1,50 @@
+{
+  "id": "xbox-app-tcl-smart-tv",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "durante los próximos meses",
+      "sin necesidad de una consola",
+      "más de 25 países"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-09-04",
+  "addedAt": "2026-09-04T20:36:54Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox llevará su aplicación a televisores TCL de más de 25 países"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox llevará su aplicación a televisores TCL de más de 25 países"
+  },
+  "summary": {
+    "es": "Microsoft llevará la aplicación de Xbox a televisores inteligentes TCL seleccionados durante los próximos meses. La alianza permitirá acceder a Xbox Cloud Gaming directamente desde la televisión, sin necesidad de una consola."
+  },
+  "why": {
+    "es": "El despliegue alcanzará a millones de usuarios en más de 25 países. Será necesario un mando compatible y tiempo de juego en la nube incluido con Xbox Game Pass o adquirido por separado; Microsoft todavía no ha detallado los modelos ni la fecha exacta."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio oficial de la alianza con TCL, su alcance y sus requisitos"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/04/xbox-app-tcl-smart-tv/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Los usuarios de los televisores compatibles podrán iniciar sesión en la aplicación, conectar un mando y retransmitir juegos mediante Xbox Cloud Gaming. Las partidas guardadas, los logros y la lista de amigos seguirán al jugador entre los distintos dispositivos del ecosistema Xbox.",
+      "La incorporación de TCL amplía la estrategia de Microsoft de llevar Xbox más allá de la consola y abre el servicio a otra gran base instalada de televisores. El anuncio confirma una distribución internacional, pero deja pendientes la lista de modelos compatibles, los mercados concretos y el calendario preciso del despliegue."
+    ]
+  }
+}

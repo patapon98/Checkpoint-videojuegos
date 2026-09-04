@@ -102,7 +102,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
-    {"date":"2026-09-05","title":"The Coalition detalla la exploración, la modificación de armas y las tácticas Locust","description":"El Official Xbox Podcast confirma que la campaña alterna tramos lineales con zonas de varias manzanas donde se pueden tomar rutas opcionales, ayudar a otros supervivientes y completar objetivos secundarios. Por primera vez en una campaña de Gears se podrán modificar armas; los Hard Cases aportarán progresión adicional y los Locust podrán usar la nueva movilidad y tácticas como el humo para flanquear al jugador.","sourceUrls":["https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"]},
+    {"date":"2026-09-04","title":"The Coalition detalla la exploración, la modificación de armas y las tácticas Locust","description":"El Official Xbox Podcast confirma que la campaña alterna tramos lineales con zonas de varias manzanas donde se pueden tomar rutas opcionales, ayudar a otros supervivientes y completar objetivos secundarios. Por primera vez en una campaña de Gears se podrán modificar armas; los Hard Cases aportarán progresión adicional y los Locust podrán usar la nueva movilidad y tácticas como el humo para flanquear al jugador.","sourceUrls":["https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"]},
     {"date":"2026-08-27","title":"Xbox publica el tráiler oficial de historia de Gears of War: E-Day","description":"El tráiler de historia estrenado en gamescom Opening Night Live muestra la irrupción de la Horda Locust en Kalona y nuevos momentos narrativos de Marcus, Dom y el escuadrón Bravo.","sourceUrls":["https://www.youtube.com/watch?v=-TW2SnAipsE"]},
     {"date":"2026-08-27","title":"Xbox detalla el mapa, las misiones secundarias y el Tactical Gear de la campaña","description":"El hands-on oficial de Xbox confirma que un folleto turístico funciona como mapa de Kalona, que la campaña permite desviarse a misiones secundarias opcionales y que el Tactical Gear reúne objetos reutilizables que se recargan con el tiempo. También regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.","sourceUrls":["https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/"]},
     {"date":"2026-08-25","title":"Xbox España confirma una tarjeta regalo entre los incentivos de reserva","description":"La ficha oficial de Xbox España incluye una tarjeta regalo Xbox entre los incentivos de reserva, junto a los aspectos Exfil. El importe no se especifica; los beneficios pueden requerir un código de un solo uso y están limitados a una oferta por persona o cuenta.","sourceUrls":["https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ"]},
@@ -124,7 +124,7 @@
     {"date":"2026-07-30","title":"Ficha publicada tras el Xbox Games Showcase","description":"Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
   "relatedGameIds": ["control-resonant","grand-theft-auto-vi"],
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-04",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

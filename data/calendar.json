@@ -3300,6 +3300,58 @@
       "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
     },
     {
+      "id": "crimson-desert-charting-the-unknown",
+      "title": "Crimson Desert Enhanced: Charting the Unknown",
+      "headingHtml": "Crimson Desert Enhanced: Charting the Unknown <span class=\"tag-dlc\">DLC</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Crimson Desert Enhanced: Charting the Unknown",
+        "src": "https://s1.pearlcdn.com/cd/brand/board/2026/09/03/b218a4ad6f420260903130555180.jpg",
+        "alt": "Crimson Desert Enhanced: Charting the Unknown",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Crimson Desert Enhanced: Charting the Unknown"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "DLC",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129",
+        "official": true,
+        "host": "crimsondesert.pearlabyss.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "Crimson Desert Enhanced: Charting the Unknown",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=HaCtG1F_hfE"
+    },
+    {
       "id": "star-trek-outposts-unknown",
       "title": "Star Trek: Outposts Unknown",
       "headingHtml": "Star Trek: Outposts Unknown",
@@ -3969,6 +4021,60 @@
       "trailer": null
     },
     {
+      "id": "dragon-quest-monsters-the-withered-world",
+      "title": "DRAGON QUEST MONSTERS: The Withered World",
+      "headingHtml": "DRAGON QUEST MONSTERS: The Withered World",
+      "date": "2026-12-03",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "DRAGON QUEST MONSTERS: The Withered World",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681610/header.jpg",
+        "alt": "DRAGON QUEST MONSTERS: The Withered World",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.dragonquest.com/dqmtww/en_US/",
+        "title": "Ver web oficial",
+        "ariaLabel": "Ver la web oficial de DRAGON QUEST MONSTERS: The Withered World"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.dragonquest.com/dqmtww/en_US/",
+        "official": true,
+        "host": "www.dragonquest.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "DRAGON QUEST MONSTERS: The Withered World",
+          "releaseDate": "2026-12-03",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=H1bPRyHqNws"
+    },
+    {
       "id": "attack-on-titan-3",
       "title": "Attack on Titan 3",
       "headingHtml": "Attack on Titan 3",
@@ -4231,6 +4337,106 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=6KXyO3uaFRk"
+    },
+    {
+      "id": "until-dawn-2",
+      "title": "Until Dawn 2",
+      "headingHtml": "Until Dawn 2",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5"
+      ],
+      "platformsHtml": "PS5 (exclusivo)",
+      "image": {
+        "provider": "rawg",
+        "query": "Until Dawn 2",
+        "src": "https://blog.playstation.com/tachyon/2026/09/1329cf72abdda083d86059fff4a9adbd2ff3197c.png?crop_strategy=smart&resize=1088%2C612",
+        "alt": "Until Dawn 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://blog.playstation.com/2026/09/03/until-dawn-2-launches-january-28/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Until Dawn 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://blog.playstation.com/2026/09/03/until-dawn-2-launches-january-28/",
+        "official": true,
+        "host": "blog.playstation.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "Until Dawn 2",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=GA0n6t-iLBw"
+    },
+    {
+      "id": "metro-2039",
+      "title": "METRO 2039",
+      "headingHtml": "METRO 2039",
+      "date": "2027-02-04",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "METRO 2039",
+        "src": "https://blog.playstation.com/tachyon/2026/09/ae2d2a69f35864bfe4bce0859b956f13e31794ed.jpg?crop_strategy=smart&resize=1088%2C612",
+        "alt": "METRO 2039",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2590240/METRO_2039/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir METRO 2039 a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://press.plaion.com/en-US/METRO-2039-LAUNCHES-FEBRUARY-4th-2027",
+        "official": true,
+        "host": "press.plaion.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "METRO 2039",
+          "releaseDate": "2027-02-04",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=bqzOAYzuyu4"
     },
     {
       "id": "tomb-raider-legacy-of-atlantis",
@@ -4506,6 +4712,60 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=YC35xzlYrDc"
+    },
+    {
+      "id": "final-fantasy-vii-revelation",
+      "title": "FINAL FANTASY VII REVELATION",
+      "headingHtml": "FINAL FANTASY VII REVELATION",
+      "date": "2027-04-08",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "FINAL FANTASY VII REVELATION",
+        "src": "https://blog.playstation.com/tachyon/2026/09/b2011ae5a054c3ae375a364174ee44aff00a0602.jpg?crop_strategy=smart&resize=1088%2C612",
+        "alt": "FINAL FANTASY VII REVELATION",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/es-es/concept/10018084",
+        "title": "Ver en PlayStation Store",
+        "ariaLabel": "Ver FINAL FANTASY VII REVELATION en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.square-enix-games.com/en_US/news/final-fantasy-vii-revelation-launches-april-8-2027",
+        "official": true,
+        "host": "www.square-enix-games.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "FINAL FANTASY VII REVELATION",
+          "releaseDate": "2027-04-08",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=8EP14yju-rc"
     }
   ],
   "renderState": "05b12f422044"

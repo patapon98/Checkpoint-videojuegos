@@ -1,0 +1,64 @@
+{
+  "id": "konami-press-start-project-zircon-rev-noir",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "PROJECT ZIRCON",
+      "también llegará en 2027 a Xbox Series X|S y Steam",
+      "combate de Rhapsody in Scarlet"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-03",
+  "publishedAt": "2026-09-03T15:00:00Z",
+  "addedAt": "2026-09-04T08:35:03Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "KONAMI"
+    },
+    "copy": {
+      "es": "KONAMI anuncia Project Zircon y amplía Rev. NOiR a Xbox y PC"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Konami anuncia Project Zircon y confirma Rev. NOiR para Xbox y PC"
+  },
+  "summary": {
+    "es": "Konami ha presentado PROJECT ZIRCON, un roguelike de construcción de mazos que combina estrategia y gestión, y ha confirmado que Rev. NOiR también llegará en 2027 a Xbox Series X|S y Steam, además de PS5."
+  },
+  "why": {
+    "es": "El KONAMI PRESS START amplió además el combate de Rhapsody in Scarlet, mostró por primera vez la jugabilidad de Wai Wai World Craft y repasó Silent Hill: Townfall y Castlevania: Belmont's Curse."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=us-U1NKynio",
+    "label": {
+      "es": "Ver la presentación oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Konami",
+      "type": {
+        "es": "Resumen oficial de KONAMI PRESS START y sus anuncios"
+      },
+      "url": "https://www.konami.com/games/us/en/topics/3402/"
+    },
+    {
+      "label": "Konami",
+      "type": {
+        "es": "Emisión oficial completa de KONAMI PRESS START"
+      },
+      "url": "https://www.youtube.com/watch?v=us-U1NKynio"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "PROJECT ZIRCON divide sus partidas entre fases de estrategia y administración: el jugador expande territorio, obtiene cartas e instalaciones y prepara combinaciones para afrontar escenarios ramificados y varios finales. Konami ya ha abierto su página de deseados en Steam.",
+      "Rev. NOiR combina acción con decisiones estratégicas mediante Astral Sigils y Kardieoses. Su nuevo tráiler profundiza en Asch, Finé y la amenaza del lightfall, mientras que la confirmación de Xbox Series X|S y Steam amplía el lanzamiento anunciado originalmente para PS5."
+    ]
+  }
+}

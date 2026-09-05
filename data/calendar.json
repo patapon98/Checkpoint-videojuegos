@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-06",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -4285,6 +4285,64 @@
       "trailer": "https://www.youtube.com/watch?v=V2hUMKyOGxY"
     },
     {
+      "id": "fate-extra-record",
+      "title": "Fate/EXTRA Record",
+      "headingHtml": "Fate/EXTRA Record <span class=\"tag-dlc\">Remake</span>",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Fate/EXTRA Record",
+        "src": "https://media.rawg.io/media/screenshots/947/9478fca3933e32465b8b155729f0281c.jpg",
+        "alt": "Fate/EXTRA Record",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 964145,
+        "rawgSlug": "fateextra-record",
+        "rawgPage": "https://rawg.io/games/fateextra-record",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2155070/FateEXTRA_Record/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Fate/EXTRA Record a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://marvelousgames.com/games/fate-extra-record",
+        "official": true,
+        "host": "marvelousgames.com",
+        "checkedAt": "2026-09-05",
+        "evidence": {
+          "title": "Fate/EXTRA Record",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=nr5-XGIkbg4"
+    },
+    {
       "id": "tropico-7",
       "title": "Tropico 7",
       "headingHtml": "Tropico 7",
@@ -4385,64 +4443,6 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=GA0n6t-iLBw"
-    },
-    {
-      "id": "fate-extra-record",
-      "title": "Fate/EXTRA Record",
-      "headingHtml": "Fate/EXTRA Record <span class=\"tag-dlc\">Remake</span>",
-      "date": "2027-01-28",
-      "platformKeys": [
-        "ps5",
-        "ps4",
-        "pc",
-        "switch"
-      ],
-      "platformsHtml": "PS5 · PS4 · PC · Switch 2 · Switch",
-      "image": {
-        "provider": "rawg",
-        "query": "Fate/EXTRA Record",
-        "src": "https://media.rawg.io/media/screenshots/947/9478fca3933e32465b8b155729f0281c.jpg",
-        "alt": "Fate/EXTRA Record",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false,
-        "rawgId": 964145,
-        "rawgSlug": "fateextra-record",
-        "rawgPage": "https://rawg.io/games/fateextra-record",
-        "rawgImageType": "background"
-      },
-      "store": {
-        "url": "https://store.steampowered.com/app/2155070/FateEXTRA_Record/",
-        "title": "Wishlist en Steam",
-        "ariaLabel": "Añadir Fate/EXTRA Record a la lista de deseados en Steam"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Remake",
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 55,
-      "source": {
-        "url": "https://marvelousgames.com/games/fate-extra-record",
-        "official": true,
-        "host": "marvelousgames.com",
-        "checkedAt": "2026-09-05",
-        "evidence": {
-          "title": "Fate/EXTRA Record",
-          "releaseDate": "2027-01-28",
-          "platforms": [
-            "ps5",
-            "ps4",
-            "pc",
-            "switch"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=nr5-XGIkbg4"
     },
     {
       "id": "metro-2039",
@@ -4884,5 +4884,5 @@
       "trailer": "https://www.youtube.com/watch?v=8EP14yju-rc"
     }
   ],
-  "renderState": "0ae70d6500b5"
+  "renderState": "87c4d3e3ea3a"
 }

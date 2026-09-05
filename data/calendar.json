@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -3249,6 +3249,56 @@
       "trailer": "https://www.youtube.com/watch?v=HJKj6H4dChA"
     },
     {
+      "id": "crimson-desert-charting-the-unknown",
+      "title": "Crimson Desert Enhanced: Charting the Unknown",
+      "headingHtml": "Crimson Desert Enhanced: Charting the Unknown <span class=\"tag-dlc\">DLC</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://s1.pearlcdn.com/cd/brand/board/2026/09/03/b218a4ad6f420260903130555180.jpg",
+        "alt": "Crimson Desert Enhanced: Charting the Unknown",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Crimson Desert Enhanced: Charting the Unknown"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "DLC",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129",
+        "official": true,
+        "host": "crimsondesert.pearlabyss.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "Crimson Desert Enhanced: Charting the Unknown",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=HaCtG1F_hfE"
+    },
+    {
       "id": "tales-of-eternia-remastered",
       "title": "Tales of Eternia Remastered",
       "headingHtml": "Tales of Eternia Remastered <span class=\"tag-dlc\">Remaster</span>",
@@ -3298,56 +3348,6 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
-    },
-    {
-      "id": "crimson-desert-charting-the-unknown",
-      "title": "Crimson Desert Enhanced: Charting the Unknown",
-      "headingHtml": "Crimson Desert Enhanced: Charting the Unknown <span class=\"tag-dlc\">DLC</span>",
-      "date": "2026-10-16",
-      "platformKeys": [
-        "ps5",
-        "xbox",
-        "pc"
-      ],
-      "platformsHtml": "PS5 · Xbox Series X|S · PC",
-      "image": {
-        "src": "https://s1.pearlcdn.com/cd/brand/board/2026/09/03/b218a4ad6f420260903130555180.jpg",
-        "alt": "Crimson Desert Enhanced: Charting the Unknown",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129",
-        "title": "Ver anuncio oficial",
-        "ariaLabel": "Ver el anuncio oficial de Crimson Desert Enhanced: Charting the Unknown"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "DLC",
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 55,
-      "source": {
-        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129",
-        "official": true,
-        "host": "crimsondesert.pearlabyss.com",
-        "checkedAt": "2026-09-04",
-        "evidence": {
-          "title": "Crimson Desert Enhanced: Charting the Unknown",
-          "releaseDate": "2026-10-16",
-          "platforms": [
-            "ps5",
-            "xbox",
-            "pc"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=HaCtG1F_hfE"
     },
     {
       "id": "star-trek-outposts-unknown",
@@ -3930,6 +3930,58 @@
       "trailer": "https://www.youtube.com/watch?v=VQRLujxTm3c"
     },
     {
+      "id": "dragon-quest-monsters-the-withered-world",
+      "title": "DRAGON QUEST MONSTERS: The Withered World",
+      "headingHtml": "DRAGON QUEST MONSTERS: The Withered World",
+      "date": "2026-12-03",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681610/header.jpg",
+        "alt": "DRAGON QUEST MONSTERS: The Withered World",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.dragonquest.com/dqmtww/en_US/",
+        "title": "Ver web oficial",
+        "ariaLabel": "Ver la web oficial de DRAGON QUEST MONSTERS: The Withered World"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.dragonquest.com/dqmtww/en_US/",
+        "official": true,
+        "host": "www.dragonquest.com",
+        "checkedAt": "2026-09-04",
+        "evidence": {
+          "title": "DRAGON QUEST MONSTERS: The Withered World",
+          "releaseDate": "2026-12-03",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=H1bPRyHqNws"
+    },
+    {
       "id": "warhammer-40000-dawn-of-war-iv",
       "title": "Warhammer 40,000: Dawn of War IV",
       "headingHtml": "Warhammer 40,000: Dawn of War IV",
@@ -4017,58 +4069,6 @@
       },
       "legacy": false,
       "trailer": null
-    },
-    {
-      "id": "dragon-quest-monsters-the-withered-world",
-      "title": "DRAGON QUEST MONSTERS: The Withered World",
-      "headingHtml": "DRAGON QUEST MONSTERS: The Withered World",
-      "date": "2026-12-03",
-      "platformKeys": [
-        "ps5",
-        "xbox",
-        "pc",
-        "switch"
-      ],
-      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
-      "image": {
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681610/header.jpg",
-        "alt": "DRAGON QUEST MONSTERS: The Withered World",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://www.dragonquest.com/dqmtww/en_US/",
-        "title": "Ver web oficial",
-        "ariaLabel": "Ver la web oficial de DRAGON QUEST MONSTERS: The Withered World"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": null,
-      "badge": {
-        "class": "hype hype-high",
-        "text": "Hype alto"
-      },
-      "priority": 70,
-      "source": {
-        "url": "https://www.dragonquest.com/dqmtww/en_US/",
-        "official": true,
-        "host": "www.dragonquest.com",
-        "checkedAt": "2026-09-04",
-        "evidence": {
-          "title": "DRAGON QUEST MONSTERS: The Withered World",
-          "releaseDate": "2026-12-03",
-          "platforms": [
-            "ps5",
-            "xbox",
-            "pc",
-            "switch"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=H1bPRyHqNws"
     },
     {
       "id": "attack-on-titan-3",
@@ -4770,5 +4770,5 @@
       "trailer": "https://www.youtube.com/watch?v=8EP14yju-rc"
     }
   ],
-  "renderState": "05b12f422044"
+  "renderState": "0ae70d6500b5"
 }

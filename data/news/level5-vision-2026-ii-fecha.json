@@ -1,0 +1,57 @@
+{
+  "id": "level5-vision-2026-ii-fecha",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el 10 de septiembre a las 21:00, hora de Japón",
+      "novedades y actualizaciones de varios títulos",
+      "subtítulos en inglés y chino tradicional"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-03",
+  "addedAt": "2026-09-05T17:33:56Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "LEVEL5 VISION"
+    },
+    "copy": {
+      "es": "LEVEL5 VISION 2026 II se emitirá el 10 de septiembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Level-5 anuncia una nueva presentación para el 10 de septiembre"
+  },
+  "summary": {
+    "es": "Level-5 celebrará LEVEL5 VISION 2026 II Dream el 10 de septiembre a las 21:00, hora de Japón. La presentación digital reunirá novedades y actualizaciones de varios títulos de la compañía."
+  },
+  "why": {
+    "es": "La emisión podrá seguirse en YouTube a las 14:00 en España peninsular y tendrá subtítulos en inglés y chino tradicional. Level-5 todavía no ha confirmado qué juegos aparecerán ni cuánto durará el programa."
+  },
+  "sources": [
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Página oficial de LEVEL5 VISION 2026 II Dream"
+      },
+      "url": "https://www.level5.co.jp/vision2026-2/en/"
+    },
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Anuncio oficial de la fecha y el contenido general de la emisión"
+      },
+      "url": "https://x.com/LEVEL5_times/status/2095435125035282829"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "LEVEL5 VISION 2026 II Dream será la segunda presentación propia de la compañía en 2026. Su convocatoria promete información sobre varios proyectos, pero no adelanta una lista de juegos, de modo que cualquier presencia concreta queda pendiente de confirmación.",
+      "Level-5 ofrecerá la emisión a través de su canal oficial de YouTube. La página del evento confirma la hora japonesa y la disponibilidad prevista de subtítulos para facilitar el seguimiento internacional."
+    ]
+  }
+}

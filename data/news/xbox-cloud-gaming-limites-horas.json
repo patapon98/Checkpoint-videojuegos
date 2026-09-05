@@ -1,0 +1,50 @@
+{
+  "id": "xbox-cloud-gaming-limites-horas",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Ultimate tendrá 15 horas al mes, Premium 10 y Essential 5",
+      "comprar horas adicionales en Xbox Store",
+      "comprar tiempo de juego en la nube sin suscripción"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-09-03",
+  "addedAt": "2026-09-05T06:27:02Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Xbox"
+    },
+    "copy": {
+      "es": "Xbox limitará el juego en la nube de Game Pass a entre 5 y 15 horas mensuales"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox limitará el juego en la nube de Game Pass a entre 5 y 15 horas mensuales"
+  },
+  "summary": {
+    "es": "Xbox limitará desde noviembre el juego en la nube incluido en Game Pass: Ultimate tendrá 15 horas al mes, Premium 10 y Essential 5. Cuando se agote el cupo, los usuarios podrán comprar horas adicionales en Xbox Store."
+  },
+  "why": {
+    "es": "La compañía también permitirá comprar tiempo de juego en la nube sin suscripción para transmitir títulos compatibles que ya se posean. Xbox reconoce que el cambio supondrá un coste práctico mayor para algunos jugadores y calcula que afectará al 4 % de los suscriptores de Game Pass."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio oficial de los límites mensuales y el acceso sin suscripción"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "A partir de noviembre, los tres planes de Game Pass incluirán bolsas mensuales distintas para jugar en la nube: 15 horas en Ultimate, 10 en Premium y 5 en Essential. Una vez consumidas, Xbox ofrecerá tiempo adicional de pago, aunque todavía no ha detallado sus precios ni su disponibilidad por mercados.",
+      "El mismo modelo abrirá Xbox Cloud Gaming a quienes no quieran mantener una suscripción. Esos usuarios podrán comprar horas y transmitir desde dispositivos compatibles los juegos elegibles que ya tengan en su biblioteca; la compañía presentará en noviembre las condiciones completas y las herramientas para consultar el tiempo restante."
+    ]
+  }
+}

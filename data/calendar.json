@@ -4387,6 +4387,60 @@
       "trailer": "https://www.youtube.com/watch?v=GA0n6t-iLBw"
     },
     {
+      "id": "fate-extra-record",
+      "title": "Fate/EXTRA Record",
+      "headingHtml": "Fate/EXTRA Record <span class=\"tag-dlc\">Remake</span>",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Fate/EXTRA Record",
+        "src": "https://marvelousgames.com/web/uploads/FER_Featured-2.jpg",
+        "alt": "Fate/EXTRA Record",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2155070/FateEXTRA_Record/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Fate/EXTRA Record a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://marvelousgames.com/games/fate-extra-record",
+        "official": true,
+        "host": "marvelousgames.com",
+        "checkedAt": "2026-09-05",
+        "evidence": {
+          "title": "Fate/EXTRA Record",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=nr5-XGIkbg4"
+    },
+    {
       "id": "metro-2039",
       "title": "METRO 2039",
       "headingHtml": "METRO 2039",
@@ -4610,6 +4664,58 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
+    },
+    {
+      "id": "gundam-rogue-orbit",
+      "title": "GUNDAM ROGUE ORBIT",
+      "headingHtml": "GUNDAM ROGUE ORBIT",
+      "date": "2027-03-05",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "GUNDAM ROGUE ORBIT",
+        "src": "https://gundam-official.com/media/ac45b21a1f70974f740e288797edce97/ac45b21a1f70974f740e288797edce97.jpg",
+        "alt": "GUNDAM ROGUE ORBIT",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1963680/GUNDAM_ROGUE_ORBIT/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir GUNDAM ROGUE ORBIT a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://en.bandainamcoent.eu/gundam/gundam-rogue-orbit",
+        "official": true,
+        "host": "en.bandainamcoent.eu",
+        "checkedAt": "2026-09-05",
+        "evidence": {
+          "title": "GUNDAM ROGUE ORBIT",
+          "releaseDate": "2027-03-05",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=GhvI403SgeI"
     },
     {
       "id": "road-kings",

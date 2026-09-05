@@ -4401,12 +4401,16 @@
       "image": {
         "provider": "rawg",
         "query": "Fate/EXTRA Record",
-        "src": "https://marvelousgames.com/web/uploads/FER_Featured-2.jpg",
+        "src": "https://media.rawg.io/media/screenshots/947/9478fca3933e32465b8b155729f0281c.jpg",
         "alt": "Fate/EXTRA Record",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 964145,
+        "rawgSlug": "fateextra-record",
+        "rawgPage": "https://rawg.io/games/fateextra-record",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/2155070/FateEXTRA_Record/",
@@ -4679,12 +4683,16 @@
       "image": {
         "provider": "rawg",
         "query": "GUNDAM ROGUE ORBIT",
-        "src": "https://gundam-official.com/media/ac45b21a1f70974f740e288797edce97/ac45b21a1f70974f740e288797edce97.jpg",
+        "src": "https://media.rawg.io/media/games/2c9/2c9d62c28cb65fe7807ef06aeb21616a.jpg",
         "alt": "GUNDAM ROGUE ORBIT",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1019803,
+        "rawgSlug": "gundam-rogue-orbit",
+        "rawgPage": "https://rawg.io/games/gundam-rogue-orbit",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/1963680/GUNDAM_ROGUE_ORBIT/",

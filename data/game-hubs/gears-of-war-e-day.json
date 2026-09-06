@@ -68,6 +68,15 @@
       "highlights": ["La beta multijugador se celebró en dos fines de semana y terminó el 17 de agosto.","La campaña y los modos competitivos comparten la nueva movilidad del juego."]
     },
     {
+      "kicker": "Rendimiento en consola",
+      "title": "Xbox anuncia resolución 4K y hasta 60 FPS",
+      "summary": "La ficha oficial de Xbox España indica que Gears of War: E-Day está diseñado para ofrecer resolución 4K y hasta 60 FPS tanto en la campaña como en el multijugador.",
+      "highlights": [
+        "Xbox no detalla todavía qué combinación de resolución y tasa de imágenes corresponde a cada modelo de Xbox Series X|S.",
+        "La visualización de 4K y 60 FPS requiere una pantalla compatible."
+      ]
+    },
+    {
       "kicker": "PC y ecosistema Xbox",
       "title": "RTX Mega Geometry debuta junto a DLSS 4.5 y Reflex",
       "summary": "La versión de PC suma RTX Mega Geometry para aplicar ray tracing sobre geometría Nanite de mayor detalle, además de DLSS 4.5, AMD FSR Redstone, generación de fotogramas, ultrawide y benchmark integrado.",
@@ -78,14 +87,14 @@
       ]
     }
   ],
-  "pendingHighlights": ["Modos exactos de resolución y rendimiento de cada consola.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
+  "pendingHighlights": ["Desglose exacto de resolución y rendimiento por modelo de Xbox Series X|S.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
   "sources": [
     {"label":"Xbox Wire - Official Xbox Podcast","url":"https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/","type":"Detalles oficiales sobre estructura de campaña, exploración, modificación de armas, progresión y tácticas de los Locust"},
     {"label":"Xbox - Official Story Trailer","url":"https://www.youtube.com/watch?v=-TW2SnAipsE","type":"Tráiler oficial de historia estrenado en gamescom Opening Night Live 2026"},
     {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/","type":"Hands-on oficial de campaña, mapa, misiones secundarias, recarga activa y Tactical Gear"},
     {"label":"NVIDIA GeForce","url":"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-dlss-4-5-ray-reconstruction-release-announcements-trailers/","type":"RTX Mega Geometry, NVIDIA Reflex, DLSS 4.5 y vídeo técnico de PC"},
     {"label":"Windows Central","url":"https://www.windowscentral.com/gaming/xbox/gears-of-war-e-day-multiplayer-beta-tests-how-to-enter","type":"Calendario completo de los dos fines de semana de la beta"},
-    {"label":"Xbox España","url":"https://www.xbox.com/es-es/games/gears-of-war-eday","type":"Ficha, fecha, plataformas, modos e imágenes oficiales"},
+    {"label":"Xbox España","url":"https://www.xbox.com/es-es/games/gears-of-war-eday","type":"Ficha, fecha, plataformas, modos, rendimiento 4K/60 FPS e imágenes oficiales"},
     {"label":"Microsoft Store España","url":"https://www.xbox.com/es-ES/games/store/gears-of-war-e-day-pre-order/9PLTG5DJ32XQ","type":"Precio, ediciones, reserva y Game Pass"},
     {"label":"Xbox Store","url":"https://www.xbox.com/en-US/games/store/gears-of-war-e-day-multiplayer-beta/9NHLZS3G6D8H/0010","type":"Calendario y acceso de la beta multijugador"},
     {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/06/07/gears-of-war-eday-direct-xbox-games-showcase-2026/","type":"Campaña, combate, personajes y multijugador"},
@@ -102,6 +111,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {"date":"2026-09-06","title":"Xbox confirma 4K y hasta 60 FPS en campaña y multijugador","description":"La ficha oficial de Xbox España indica que Gears of War: E-Day está diseñado para ofrecer resolución 4K y hasta 60 FPS tanto en la campaña como en el multijugador. Xbox todavía no desglosa los modos ni los objetivos específicos de Xbox Series X y Series S.","sourceUrls":["https://www.xbox.com/es-es/games/gears-of-war-eday"]},
     {"date":"2026-09-04","title":"The Coalition detalla la exploración, la modificación de armas y las tácticas Locust","description":"El Official Xbox Podcast confirma que la campaña alterna tramos lineales con zonas de varias manzanas donde se pueden tomar rutas opcionales, ayudar a otros supervivientes y completar objetivos secundarios. Por primera vez en una campaña de Gears se podrán modificar armas; los Hard Cases aportarán progresión adicional y los Locust podrán usar la nueva movilidad y tácticas como el humo para flanquear al jugador.","sourceUrls":["https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"]},
     {"date":"2026-08-27","title":"Xbox publica el tráiler oficial de historia de Gears of War: E-Day","description":"El tráiler de historia estrenado en gamescom Opening Night Live muestra la irrupción de la Horda Locust en Kalona y nuevos momentos narrativos de Marcus, Dom y el escuadrón Bravo.","sourceUrls":["https://www.youtube.com/watch?v=-TW2SnAipsE"]},
     {"date":"2026-08-27","title":"Xbox detalla el mapa, las misiones secundarias y el Tactical Gear de la campaña","description":"El hands-on oficial de Xbox confirma que un folleto turístico funciona como mapa de Kalona, que la campaña permite desviarse a misiones secundarias opcionales y que el Tactical Gear reúne objetos reutilizables que se recargan con el tiempo. También regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.","sourceUrls":["https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/"]},
@@ -124,7 +134,7 @@
     {"date":"2026-07-30","title":"Ficha publicada tras el Xbox Games Showcase","description":"Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
   "relatedGameIds": ["control-resonant","grand-theft-auto-vi"],
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-06",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

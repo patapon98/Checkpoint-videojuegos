@@ -25,6 +25,7 @@
     {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638890/609dd99944f8928f8a8bd35bb08a6695f7e1fdca/ss_609dd99944f8928f8a8bd35bb08a6695f7e1fdca.1920x1080.jpg","alt":"Templo Kiyomizu-dera recreado en Onimusha: Way of the Sword"}
   ],
   "media": [
+    {"type":"youtube","videoId":"jBP1qJnRXuo","title":"Onimusha: Way of the Sword - Tráiler de lanzamiento","label":"Tráiler oficial","publishedAt":"2026-09-04"},
     {"type":"youtube","videoId":"B1GSlvemBxM","title":"Onimusha: Way of the Sword - Swordplay Action Trailer","label":"Combate con espada","publishedAt":"2026-09-01"},
     {"type":"youtube","videoId":"h3a-5lvgqUs","title":"Onimusha: Way of the Sword - The Legend of the Onimusha","label":"Tráiler de lore","publishedAt":"2026-08-21"},
     {"type":"youtube","videoId":"Nx2jzXMFzdo","title":"Nuevo tráiler de Onimusha: Way of the Sword","label":"Nuevo tráiler","publishedAt":"2026-08-07"},
@@ -45,6 +46,7 @@
   ],
   "pendingHighlights": ["Conjunto definitivo de opciones de accesibilidad.","Plan de contenido poslanzamiento."],
   "sources": [
+    {"label":"Capcom España","url":"https://www.youtube.com/watch?v=jBP1qJnRXuo","type":"Tráiler oficial de lanzamiento"},
     {"label":"Steam Community / Capcom","url":"https://steamcommunity.com/app/2638890/allnews/","type":"Swordplay Action Trailer"},
     {"label":"PlayStation Blog","url":"https://blog.playstation.com/2026/08/25/onimusha-way-of-the-sword-interview-demo-update-detailed-new-trailer-revealed/","type":"Sexto tráiler, Oni Awakening y nuevos enemigos"},
     {"label":"Famitsu","url":"https://www.famitsu.com/article/202608/83267","type":"Declaraciones directas de Capcom sobre rendimiento de Nintendo Switch 2 y otras plataformas"},
@@ -61,10 +63,11 @@
     {"label":"Xbox España","url":"https://www.xbox.com/es-ES/games/store/onimusha-way-of-the-sword/9PJMHTRC9WKB","type":"Precios de las ediciones en consola"},
     {"label":"Capcom Town Store","url":"https://store.captown.capcom.com/en/blogs/news/0000033","type":"Conversión de la bonificación digital de reserva en bonificación de compra anticipada"}
   ],
-  "newsTerms": ["onimusha: way of the sword","onimusha way of the sword","miyamoto musashi"],
-  "updatedAt": "2026-09-06",
+  "newsTerms": ["onimusha: way of-the-sword","onimusha way of the sword","miyamoto musashi"],
+  "updatedAt": "2026-09-07",
   "seo": {"title":"Onimusha: Way of the Sword: duración, demo y todo lo confirmado","description":"Ficha actualizada de Onimusha: Way of the Sword con fecha, duración aproximada, demo, combate, precios, requisitos, tráileres e imágenes oficiales.","ogDescription":"Duración, demo, combate y toda la información confirmada sobre Onimusha: Way of the Sword.","heroTitleHtml":"Onimusha: <em>Way of the Sword</em>","heroImageAlt":"Arte promocional oficial de Onimusha: Way of the Sword"},
   "changes": [
+    {"date":"2026-09-07","title":"Capcom publica el tráiler de lanzamiento","description":"La ficha incorpora el tráiler oficial de lanzamiento publicado por Capcom con motivo del estreno de Onimusha: Way of the Sword, con un montaje final de Musashi, los Genma y los principales enfrentamientos de la aventura.","sourceUrls":["https://www.youtube.com/watch?v=jBP1qJnRXuo"]},
     {"date":"2026-09-06","title":"Los kits de las ediciones especiales ya se venden por separado","description":"Tras el lanzamiento, las tiendas oficiales permiten comprar por separado el Deluxe Kit, el Premium Kit y el Premium Deluxe Kit. Son complementos que requieren el juego base y reproducen, respectivamente, el contenido adicional de las ediciones Deluxe y Premium Deluxe o la combinación de ambos paquetes.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","https://www.xbox.com/pt-PT/games/store/onimusha-wots-premium-kit/9mswpgjfbcjs","https://www.xbox.com/pt-PT/games/store/onimusha-wots-premium-deluxe-kit/9ngmmqs8rfnd"]},
     {"date":"2026-09-04","title":"Onimusha: Way of the Sword ya está disponible","description":"Capcom lanza Onimusha: Way of the Sword el 4 de septiembre de 2026; la ficha pasa de reservas abiertas a disponible. Steam ya muestra la versión de PC como publicada y mantiene los requisitos técnicos oficiales previamente registrados.","sourceUrls":["https://store.steampowered.com/app/2638890/Onimusha_Way_of_the_Sword/","https://www.capcom.co.jp/ir/english/news/html/e260831.html"]},
     {"date":"2026-09-02","title":"Capcom publica un nuevo tráiler centrado en el combate con espada","description":"El Swordplay Action Trailer ofrece un nuevo repaso oficial al sistema de combate con espada de Onimusha: Way of the Sword a pocos días del lanzamiento.","sourceUrls":["https://steamcommunity.com/app/2638890/allnews/"]},

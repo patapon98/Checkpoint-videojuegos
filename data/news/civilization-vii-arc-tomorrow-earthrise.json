@@ -1,0 +1,63 @@
+{
+  "id": "civilization-vii-arc-tomorrow-earthrise",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "una cuarta era gratuita en 2027",
+      "desde la década de 1950 hasta la de 2050",
+      "la primera gran expansión de pago del juego"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-05",
+  "addedAt": "2026-09-07T06:24:41Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Civilization VII"
+    },
+    "copy": {
+      "es": "Civilization VII sumará la Era Atómica y su primera expansión en 2027"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Civilization VII añadirá la Era Atómica gratis y estrenará Earthrise en 2027"
+  },
+  "summary": {
+    "es": "Firaxis ha anunciado Arc of Tomorrow, una gran actualización de Civilization VII que añadirá una cuarta era gratuita en 2027: la Era Atómica. El nuevo periodo ampliará la cronología jugable desde la década de 1950 hasta la de 2050."
+  },
+  "why": {
+    "es": "El estudio también ha presentado Earthrise, la primera gran expansión de pago del juego, centrada en la carrera espacial y la adaptación ambiental. Ambos contenidos llegarán por separado en 2027 y todavía no tienen fecha concreta."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=9iUv8QS4nGM",
+    "label": {
+      "es": "Ver el avance oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Civilization",
+      "type": {
+        "es": "Anuncio oficial de Arc of Tomorrow y Civilization VII: Earthrise"
+      },
+      "url": "https://civilization.2k.com/civ-vii/news/35th-anniversary/"
+    },
+    {
+      "label": "Civilization",
+      "type": {
+        "es": "Página oficial con detalles de contenido, ventanas y preguntas frecuentes"
+      },
+      "url": "https://civilization.2k.com/civ-vii/35th-anniversary/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Arc of Tomorrow incorporará edificios, unidades, árboles tecnológicos, políticas y acontecimientos propios de la Era Atómica. Firaxis prepara además acuerdos multilaterales, guerras por delegación entre ciudades-estado, nuevas opciones nucleares, Grandes Obras de Cine y bienes manufacturados como el uranio enriquecido.",
+      "Earthrise desarrollará una carrera espacial a lo largo de todas las eras: comenzará con la observación de cuerpos celestes, avanzará hacia misiones orbitales y culminará con una agencia capaz de explorar el sistema solar. También añadirá tecnologías para modificar el terreno y responder a desastres ligados al calentamiento global."
+    ]
+  }
+}

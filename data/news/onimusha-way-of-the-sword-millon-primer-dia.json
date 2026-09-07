@@ -1,0 +1,50 @@
+{
+  "id": "onimusha-way-of-the-sword-millon-primer-dia",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "más de un millón de copias en todo el mundo",
+      "durante su primer día a la venta",
+      "más de 10 millones de unidades"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-07",
+  "addedAt": "2026-09-07T09:34:04Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Onimusha"
+    },
+    "copy": {
+      "es": "Onimusha supera el millón de copias en su primer día"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Onimusha: Way of the Sword supera el millón de copias en su primer día"
+  },
+  "summary": {
+    "es": "Capcom ha anunciado que Onimusha: Way of the Sword vendió más de un millón de copias en todo el mundo durante su primer día a la venta, tras su lanzamiento el 4 de septiembre."
+  },
+  "why": {
+    "es": "El estreno del primer Onimusha nuevo en más de 20 años eleva las ventas acumuladas de la saga a más de 10 millones de unidades y refuerza la recuperación de una de las propiedades históricas de Capcom."
+  },
+  "sources": [
+    {
+      "label": "Capcom",
+      "type": {
+        "es": "Comunicado oficial de ventas"
+      },
+      "url": "https://www.capcom.co.jp/ir/english/news/html/e260907.html"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Way of the Sword se estrenó el 4 de septiembre en PS5, Xbox Series X|S, Nintendo Switch 2 y PC. Capcom atribuye el alcance inicial a una campaña de promoción que incluyó demos y pruebas presenciales antes del lanzamiento.",
+      "La compañía presenta el resultado como un nuevo impulso para una serie que llevaba más de dos décadas sin una entrega principal inédita. Con este debut, el conjunto de la franquicia rebasa oficialmente los 10 millones de juegos vendidos."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "blizzcon-2026-programa-emision",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el 12 y 13 de septiembre en Anaheim",
+      "ceremonia de apertura el sábado a las 10:30 PDT",
+      "emitirá gratis la apertura, los paneles principales y las competiciones de esports"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-02",
+  "addedAt": "2026-09-08T02:30:24Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "BlizzCon"
+    },
+    "copy": {
+      "es": "BlizzCon 2026 confirma su programa y una emisión gratuita para el 12 y 13 de septiembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Blizzard detalla el programa y la emisión gratuita de BlizzCon 2026"
+  },
+  "summary": {
+    "es": "BlizzCon 2026 se celebrará el 12 y 13 de septiembre en Anaheim, con la ceremonia de apertura el sábado a las 10:30 PDT. Blizzard emitirá gratis la apertura, los paneles principales y las competiciones de esports."
+  },
+  "why": {
+    "es": "La programación reunirá novedades de World of Warcraft, Diablo, Overwatch, Hearthstone y los clásicos de Blizzard. Parte del programa seguirá bajo reserva hasta después de la ceremonia, por lo que el evento conserva potencial de anuncios relevantes."
+  },
+  "sources": [
+    {
+      "label": "Blizzard Entertainment",
+      "type": {
+        "es": "Guía oficial de programación y retransmisión"
+      },
+      "url": "https://news.blizzard.com/en-gb/article/24294065/know-before-you-go-blizzcon-2026-programming-schedule-viewership-guide-floor-map-and-more"
+    },
+    {
+      "label": "BlizzCon",
+      "type": {
+        "es": "Guía oficial para seguir el evento"
+      },
+      "url": "https://blizzcon.com/es-mx/viewership-guide"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La apertura comenzará a las 19:30 en España peninsular y dará paso a emisiones repartidas entre los canales oficiales de Warcraft, Diablo y Overwatch. La programación incluye paneles de desarrollo, competiciones y actividades de la comunidad.",
+      "Blizzard indica que el horario completo se actualizará después de la ceremonia inaugural y que algunas zonas del recinto permanecen todavía ocultas. Esa reserva convierte la cita en el próximo gran punto de atención para sus principales franquicias."
+    ]
+  }
+}

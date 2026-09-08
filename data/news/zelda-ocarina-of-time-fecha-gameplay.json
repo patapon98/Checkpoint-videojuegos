@@ -1,0 +1,64 @@
+{
+  "id": "zelda-ocarina-of-time-fecha-gameplay",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "el 5 de noviembre de 2026",
+      "cámara libre, salto manual y escenas con voces",
+      "el sistema Threads of Time para seguir objetivos"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-09-08",
+  "addedAt": "2026-09-08T14:52:45Z",
+  "publishedAt": "2026-09-08T14:00:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Ocarina of Time"
+    },
+    "copy": {
+      "es": "Ocarina of Time llegará a Nintendo Switch 2 el 5 de noviembre con gráficos rehechos y nuevas opciones de control"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "El remake de Zelda: Ocarina of Time llegará el 5 de noviembre a Nintendo Switch 2"
+  },
+  "summary": {
+    "es": "Nintendo lanzará The Legend of Zelda: Ocarina of Time el 5 de noviembre de 2026 para Nintendo Switch 2. El remake rehace por completo los gráficos y añade cámara libre, salto manual y escenas con voces."
+  },
+  "why": {
+    "es": "La demostración de Eiji Aonuma presentó además el sistema Threads of Time para seguir objetivos, movimientos más ágiles, apuntado por movimiento y nuevas conversaciones, manteniendo la estructura y el espíritu del original."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=wuFfiTEr2yc",
+    "label": {
+      "es": "Ver el tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo of America",
+      "type": {
+        "es": "Tráiler oficial con fecha de lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=wuFfiTEr2yc"
+    },
+    {
+      "label": "Nintendo of America",
+      "type": {
+        "es": "Demostración oficial de jugabilidad"
+      },
+      "url": "https://www.youtube.com/watch?v=PQvD3p2yGwc"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La demostración recorrió el Bosque Kokiri, el interior del Gran Árbol Deku, la campiña de Hyrule y la ciudadela. Link puede saltar de forma manual, acelerar después de rodar, nadar con más rapidez y cambiar objetos con un solo botón.",
+      "Nintendo conserva las transiciones entre determinadas zonas y amplía los diálogos y la actividad de la ciudad. El apuntado admite movimiento y la ocarina puede reaccionar a instrumentos reales captados por Nintendo Switch 2."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "nintendo-switch-2-zelda-40-aniversario",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "el 29 de octubre de 2026",
+      "un Pro Controller y una funda de transporte a juego",
+      "una nueva opción de hardware con identidad propia"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-09-08",
+  "addedAt": "2026-09-08T14:52:45Z",
+  "publishedAt": "2026-09-08T14:00:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Zelda"
+    },
+    "copy": {
+      "es": "Zelda celebra su 40.º aniversario con una Nintendo Switch 2 especial disponible el 29 de octubre"
+    }
+  },
+  "tone": "platforms",
+  "title": {
+    "es": "Nintendo presenta una Switch 2 especial por el 40.º aniversario de Zelda"
+  },
+  "summary": {
+    "es": "Nintendo lanzará el 29 de octubre de 2026 una edición de Nintendo Switch 2 diseñada por el 40.º aniversario de The Legend of Zelda. Ese mismo día llegarán un Pro Controller y una funda de transporte a juego."
+  },
+  "why": {
+    "es": "La edición traslada la celebración de Zelda al catálogo físico de Nintendo Switch 2 y ofrece una nueva opción de hardware con identidad propia una semana antes del estreno del remake de Ocarina of Time."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=Ymw9UTRu1V0",
+    "label": {
+      "es": "Ver la presentación oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo of America",
+      "type": {
+        "es": "Anuncio oficial del hardware y su fecha de lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=Ymw9UTRu1V0"
+    },
+    {
+      "label": "Nintendo Direct",
+      "type": {
+        "es": "Presentación oficial del 40.º aniversario"
+      },
+      "url": "https://www.nintendo.com/us/nintendo-direct/9-8-2026/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La consola, la base y los mandos Joy-Con reciben un diseño conmemorativo inspirado en la saga. Nintendo acompañará el sistema con un mando Pro y una funda de transporte coordinados, todos previstos para la misma fecha.",
+      "El lanzamiento situará la renovación de hardware justo antes de la llegada de Ocarina of Time a Nintendo Switch 2. Nintendo ha mostrado los tres productos, aunque el anuncio inicial no concreta todavía sus precios ni la disponibilidad por regiones."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dave-the-diver-10-millones-ventas",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha superado los 10 millones de unidades vendidas en todo el mundo",
+      "tres años después de su estreno completo",
+      "Su expansión In the Jungle también ha rebasado el millón de copias"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-09",
+  "publishedAt": "2026-09-09T01:17:16Z",
+  "addedAt": "2026-09-09T08:42:46Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "DAVE THE DIVER"
+    },
+    "copy": {
+      "es": "DAVE THE DIVER supera los 10 millones de copias vendidas"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "DAVE THE DIVER supera los 10 millones de copias vendidas"
+  },
+  "summary": {
+    "es": "MINTROCKET ha anunciado que DAVE THE DIVER ha superado los 10 millones de unidades vendidas en todo el mundo entre PC, PlayStation, Xbox, Nintendo Switch y Switch 2."
+  },
+  "why": {
+    "es": "El juego alcanza la cifra tres años después de su estreno completo y consolida una de las mayores historias comerciales recientes del videojuego coreano premium. Su expansión In the Jungle también ha rebasado el millón de copias."
+  },
+  "sources": [
+    {
+      "label": "MINTROCKET",
+      "type": {
+        "es": "Anuncio oficial de ventas"
+      },
+      "url": "https://x.com/DaveDiverGame/status/2097494514034409685"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto periodístico sobre el hito y el historial de plataformas"
+      },
+      "url": "https://www.gematsu.com/2026/09/dave-the-diver-sales-top-10-million"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "DAVE THE DIVER comenzó su recorrido en el acceso anticipado de Steam en octubre de 2022 y alcanzó su versión completa en junio de 2023. Desde entonces se ha extendido a PlayStation, Xbox, Nintendo Switch y Switch 2, mientras que su lanzamiento mundial en móviles está previsto para el 17 de septiembre.",
+      "Nexon atribuye la continuidad de sus ventas a las nuevas plataformas, los contenidos adicionales y colaboraciones con licencias como Godzilla, Like a Dragon y DREDGE. In the Jungle, la expansión publicada en junio, superó por sí sola el millón de unidades en unos dos meses."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dont-nod-reestructuracion-90-puestos",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "podría suprimir hasta 90 puestos en Francia",
+      "depende en parte de obtener financiación externa",
+      "incertidumbre significativa sobre su continuidad más allá del 31 de enero de 2027"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-09-04",
+  "publishedAt": "2026-09-04T05:30:00Z",
+  "addedAt": "2026-09-09T00:08:39Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "DON’T NOD"
+    },
+    "copy": {
+      "es": "DON’T NOD plantea suprimir hasta 90 puestos y busca financiación para asegurar su continuidad"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "DON’T NOD plantea suprimir hasta 90 puestos y advierte sobre su continuidad"
+  },
+  "summary": {
+    "es": "DON’T NOD podría suprimir hasta 90 puestos en Francia dentro de una reestructuración que concentrará su actividad local en una sola línea de producción. El consejo de administración ya ha autorizado iniciar el proyecto y la negociación con la representación laboral."
+  },
+  "why": {
+    "es": "El estudio afirma que su actividad depende en parte de obtener financiación externa y reconoce una incertidumbre significativa sobre su continuidad más allá del 31 de enero de 2027. Su caja bruta cayó de 15,4 millones de euros al cierre de 2025 a 8 millones a finales de julio."
+  },
+  "sources": [
+    {
+      "label": "DON’T NOD",
+      "type": {
+        "es": "Comunicado regulatorio oficial sobre resultados, financiación y reestructuración"
+      },
+      "url": "https://www.dontnod-bourse.com/fr/informations-financieres/communiques-de-presse/?ID=ACTUS-0-100048"
+    },
+    {
+      "label": "Video Games Chronicle",
+      "type": {
+        "es": "Contexto periodístico sobre el alcance laboral y la situación financiera"
+      },
+      "url": "https://www.videogameschronicle.com/news/life-is-strange-studio-dont-nod-says-it-may-have-to-lay-off-90-staff-warns-it-may-not-last-beyond-january/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El proyecto reorganizaría el estudio francés alrededor de una única línea de producción para concentrar recursos y competencias en los trabajos prioritarios. La cifra de 90 puestos es un máximo sometido al proceso de consulta y negociación, no un recuento definitivo de despidos ejecutados.",
+      "En el primer semestre de 2026, los ingresos operativos económicos se redujeron un 56 % interanual hasta 6,1 millones de euros y el EBITDA económico registró una pérdida de 4,3 millones. La dirección sostiene que el plan resulta esencial para mantener las operaciones mientras busca nuevos fondos."
+    ]
+  }
+}

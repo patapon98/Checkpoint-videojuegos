@@ -1,0 +1,71 @@
+{
+  "id": "metroid-ravenous-switch-2-fecha",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "llegará el 28 de enero de 2027",
+      "la nueva entrega 2D de la saga",
+      "en exclusiva para Nintendo Switch 2"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-09-09",
+  "publishedAt": "2026-09-09T14:28:00Z",
+  "addedAt": "2026-09-09T15:08:57Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Metroid Ravenous"
+    },
+    "copy": {
+      "es": "Metroid Ravenous llegará el 28 de enero de 2027 en exclusiva para Switch 2"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Metroid Ravenous llegará el 28 de enero de 2027 en exclusiva para Switch 2"
+  },
+  "summary": {
+    "es": "Nintendo ha anunciado Metroid Ravenous, la nueva entrega 2D de la saga, que llegará el 28 de enero de 2027 en exclusiva para Nintendo Switch 2."
+  },
+  "why": {
+    "es": "El nuevo juego devuelve a Samus Aran a una aventura de desplazamiento lateral después de Metroid Dread y refuerza el catálogo propio de Switch 2 para comienzos de 2027."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=ku-vSTDNsT8",
+    "label": {
+      "es": "Ver el tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo of America",
+      "type": {
+        "es": "Tráiler oficial de anuncio y fecha"
+      },
+      "url": "https://www.youtube.com/watch?v=ku-vSTDNsT8"
+    },
+    {
+      "label": "Nintendo",
+      "type": {
+        "es": "Presentación oficial Nintendo Direct 9.9.2026"
+      },
+      "url": "https://www.nintendo.com/us/nintendo-direct/9-9-2026/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto periodístico sobre el anuncio"
+      },
+      "url": "https://www.theverge.com/games/992053/the-switch-2-is-getting-a-2d-metroid-called-ravenous"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El tráiler presenta a Samus malherida y atrapada en una luna hostil tras un ataque. La cazarrecompensas deberá sobrevivir, escapar y descubrir quién está detrás de la emboscada.",
+      "La jugabilidad conserva la exploración y la acción de desplazamiento lateral con gráficos tridimensionales, contraataques, Morph Ball y una nueva capacidad para absorber energía de los enemigos."
+    ]
+  }
+}

@@ -99,6 +99,7 @@
     "Plan de contenido poslanzamiento."
   ],
   "sources": [
+    {"label":"Remedy Entertainment","url":"https://x.com/remedygames/status/2097686620627423377","type":"Matriz final oficial de requisitos y objetivos de rendimiento para PC"},
     {"label":"Remedy Entertainment vía PR TIMES: TGS 2026","url":"https://prtimes.jp/main/html/rd/p/000000011.000164183.html","type":"Comunicado oficial sobre la demo jugable de PS5 en Tokyo Game Show 2026"},
     {"label":"Remedy Entertainment: Altered State","url":"https://www.youtube.com/watch?v=VwOJuJRCLGk","type":"Tráiler oficial de gamescom Opening Night Live"},
     {"label":"Remedy Entertainment vía PR TIMES","url":"https://prtimes.jp/main/html/rd/p/000000010.000164183.html","type":"Comunicado oficial: Altered State, GeForce NOW y disponibilidad"},
@@ -118,7 +119,7 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "seo": {
     "title": "CONTROL Resonant: combate, historia y todo lo confirmado",
     "description": "Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.",
@@ -127,6 +128,7 @@
     "heroImageAlt": "Arte promocional oficial de CONTROL Resonant"
   },
   "changes": [
+    {"date":"2026-09-10","title":"Remedy publica los objetivos finales de rendimiento para PC","description":"La matriz final oficial concreta que la configuración mínima apunta a 1080p y 30 FPS en calidad baja con escalado en modo Calidad, mientras la recomendada apunta a 1440p y 60 FPS en calidad media con escalado Equilibrado. Remedy añade además configuraciones Enthusiast, Ray Tracing Minimum, Ray Tracing Recommended y Path Tracing Enthusiast, todas con 16 GB de RAM y SSD de 120 GB.","sourceUrls":["https://x.com/remedygames/status/2097686620627423377"]},
     {"date":"2026-09-09","title":"Steam vuelve a revisar los requisitos de PC de CONTROL Resonant","description":"La ficha oficial de Steam eleva el almacenamiento a 120 GB y sustituye varias referencias de CPU y GPU. El mínimo pasa a Intel i5-8500 o Ryzen 5 3500 con GTX 1070, RX 5600 XT o Intel Arc A580; el recomendado queda en Intel Core i7-10700 o Ryzen 7 3700X con RTX 3060 Ti, RX 6700 XT o Intel Arc B580. Ambas configuraciones requieren 16 GB de RAM y SSD.","sourceUrls":["https://store.steampowered.com/app/3669870/CONTROL_Resonant/"]},
     {"date":"2026-09-09","title":"Steam actualiza los requisitos de PC de CONTROL Resonant","description":"La ficha oficial de Steam concreta la configuración recomendada con Ryzen 7 3700X o Intel equivalente y GeForce RTX 3070 o Radeon RX 6700 XT (8 GB), y mantiene 16 GB de RAM y 100 GB de almacenamiento. La configuración mínima indica Intel i5-8500 o AMD equivalente y GTX 1070 o RX 5600 XT (6 GB).","sourceUrls":["https://store.steampowered.com/app/3669870/CONTROL_Resonant/"]},
     {"date":"2026-08-28","title":"CONTROL Resonant tendrá una demo jugable en Tokyo Game Show 2026","description":"Remedy confirma una demo jugable de la versión de PS5 en el stand de SEGA/ATLUS de Tokyo Game Show 2026, antes del lanzamiento digital del 24 de septiembre.","sourceUrls":["https://prtimes.jp/main/html/rd/p/000000011.000164183.html"]},
@@ -159,24 +161,28 @@
   },
   "price": "Desde 59,99 € en PC",
   "pcRequirements": {
-    "sourceUrl": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+    "sourceUrl": "https://x.com/remedygames/status/2097686620627423377",
     "minimum": [
       {"label":"Sistema operativo","value":"Windows 10 / 11 (64 bit)"},
       {"label":"Procesador","value":"Intel i5-8500 / AMD Ryzen 5 3500"},
       {"label":"Memoria","value":"16 GB de RAM"},
-      {"label":"Tarjeta gráfica","value":"GeForce GTX 1070 / Radeon RX 5600 XT / Intel Arc A580"},
-      {"label":"Almacenamiento","value":"120 GB disponibles"}
+      {"label":"Tarjeta gráfica","value":"GeForce GTX 1070 / Radeon RX 5600 XT / Intel Arc A580 (6 GB VRAM)"},
+      {"label":"Almacenamiento","value":"120 GB disponibles en SSD"},
+      {"label":"Rendimiento objetivo","value":"1080p, 30 FPS, calidad baja, ray tracing desactivado y escalado en modo Calidad"}
     ],
     "recommended": [
       {"label":"Sistema operativo","value":"Windows 10 / 11 (64 bit)"},
       {"label":"Procesador","value":"Intel Core i7-10700 / AMD Ryzen 7 3700X"},
       {"label":"Memoria","value":"16 GB de RAM"},
-      {"label":"Tarjeta gráfica","value":"GeForce RTX 3060 Ti / Radeon RX 6700 XT / Intel Arc B580"},
-      {"label":"Almacenamiento","value":"120 GB disponibles"}
+      {"label":"Tarjeta gráfica","value":"GeForce RTX 3060 Ti / Radeon RX 6700 XT / Intel Arc B580 (8 GB VRAM)"},
+      {"label":"Almacenamiento","value":"120 GB disponibles en SSD"},
+      {"label":"Rendimiento objetivo","value":"1440p, 60 FPS, calidad media, ray tracing desactivado y escalado en modo Equilibrado"}
     ],
     "notes": [
-      "Steam indica que tanto la configuración mínima como la recomendada requieren procesador y sistema operativo de 64 bits.",
-      "SSD obligatorio. Steam no publica objetivos oficiales de resolución, calidad o FPS para estas dos configuraciones."
+      "Remedy exige un sistema operativo de 64 bits, 16 GB de RAM y SSD de 120 GB en todas las configuraciones publicadas.",
+      "La configuración Enthusiast sin ray tracing apunta a 2160p/60 FPS en calidad alta con escalado Rendimiento y requiere RTX 3080 o RX 6800 XT con 10 GB de VRAM.",
+      "Ray Tracing Minimum apunta a 1080p/30 FPS en calidad baja y RT bajo con RTX 2060 SUPER, RX 6600 o Arc A580 (8 GB); Ray Tracing Recommended apunta a 1440p/60 FPS en calidad media y RT medio con RTX 4070 Ti o RX 9070 (10 GB).",
+      "Path Tracing Enthusiast apunta a 2160p/60 FPS en calidad alta y RT alto con RTX 5080 de 12 GB y escalado Rendimiento."
     ]
   },
   "editions": {

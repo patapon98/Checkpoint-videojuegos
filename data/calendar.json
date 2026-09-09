@@ -3812,12 +3812,16 @@
       "image": {
         "provider": "rawg",
         "query": "The Legend of Zelda: Ocarina of Time",
-        "src": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/Marketing2/3OKTBMay01784158342jwugZ3wp08zzZXCWrPOIiyNS7pQz0fYoQD300Z0LrEbNS/intro/intro-keyart-large-up",
+        "src": "https://media.rawg.io/media/games/3a0/3a0c8e9ed3a711c542218831b893a0fa.jpg",
         "alt": "The Legend of Zelda: Ocarina of Time para Nintendo Switch 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 25097,
+        "rawgSlug": "the-legend-of-zelda-ocarina-of-time",
+        "rawgPage": "https://rawg.io/games/the-legend-of-zelda-ocarina-of-time",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",

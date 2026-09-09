@@ -1,0 +1,71 @@
+{
+  "id": "kirby-and-the-world-beyond-switch-2",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "una nueva aventura 3D de exploración libre",
+      "llegará en primavera de 2027",
+      "en exclusiva para Nintendo Switch 2"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-09",
+  "publishedAt": "2026-09-09T14:00:00Z",
+  "addedAt": "2026-09-09T20:52:56Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Kirby and the World Beyond"
+    },
+    "copy": {
+      "es": "Kirby and the World Beyond llevará su exploración 3D a Switch 2 en primavera de 2027"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Kirby and the World Beyond llevará su aventura 3D a Switch 2 en primavera de 2027"
+  },
+  "summary": {
+    "es": "Nintendo ha anunciado Kirby and the World Beyond, una nueva aventura 3D de exploración libre que llegará en primavera de 2027 en exclusiva para Nintendo Switch 2."
+  },
+  "why": {
+    "es": "El nuevo juego amplía la vertiente tridimensional de la saga con un mundo desconocido, habilidades de copia y una propuesta diseñada para el catálogo propio de Switch 2."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=7HE9dF_PfIY",
+    "label": {
+      "es": "Ver el tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo",
+      "type": {
+        "es": "Página oficial del juego"
+      },
+      "url": "https://www.nintendo.com/fr-fr/Jeux/Jeux-Nintendo-Switch-2/Kirby-and-the-World-Beyond-3188542.html"
+    },
+    {
+      "label": "Nintendo",
+      "type": {
+        "es": "Presentación oficial Nintendo Direct 9.9.2026"
+      },
+      "url": "https://www.nintendo.com/us/nintendo-direct/9-9-2026/"
+    },
+    {
+      "label": "Nintendo Japón",
+      "type": {
+        "es": "Tráiler oficial de anuncio"
+      },
+      "url": "https://www.youtube.com/watch?v=7HE9dF_PfIY"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El tráiler muestra a Kirby atravesando una grieta y descubriendo un territorio desconocido que se extiende más allá de los límites de su mundo. La exploración vuelve a desarrollarse en escenarios tridimensionales.",
+      "Kirby podrá recorrer libremente el entorno y emplear sus habilidades de copia, incluida la transformación con espada. Nintendo y HAL Laboratory preparan el lanzamiento como uno de los títulos propios de Switch 2 para la primavera de 2027."
+    ]
+  }
+}

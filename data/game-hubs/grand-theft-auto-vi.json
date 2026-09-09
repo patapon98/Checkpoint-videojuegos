@@ -203,6 +203,14 @@
   },
   "changes": [
     {
+      "date": "2026-09-09",
+      "title": "PlayStation fija la precarga y la hora de desbloqueo en España",
+      "description": "PlayStation Store España indica que las ediciones digitales Standard y Ultimate de GTA VI podrán precargarse siete días antes y fija el desbloqueo a las 23:00 UTC del 18 de noviembre de 2026, equivalente a las 00:00 CET del 19 de noviembre en España peninsular.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/concept/10000730"
+      ]
+    },
+    {
       "date": "2026-09-03",
       "title": "Rockstar amplía la galería oficial a 99 capturas",
       "description": "La galería oficial de GTA VI pasa de 70 a 99 capturas y añade 29 nuevas imágenes en alta resolución de Jason, Lucia, Vice City y otras escenas de Leonida. La ficha incorpora una selección de las nuevas imágenes oficiales.",
@@ -303,7 +311,7 @@
     "beast-of-reincarnation",
     "marvel-tokon-fighting-souls"
   ],
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-09",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
     "region": "España",
@@ -364,6 +372,7 @@
     "notes": [
       "En PS5, el mes de GTA+ se renueva automáticamente al precio habitual si no se cancela.",
       "En Xbox Series X|S, el mes de GTA+ debe canjearse dentro de los 180 días siguientes a la reserva; está limitado a un canje por cuenta en cada plataforma y no está disponible en cuentas para menores con restricciones de contenido por edad.",
+      "PlayStation Store España indica que las ediciones digitales Standard y Ultimate permiten la precarga siete días antes y fija su desbloqueo a las 23:00 UTC del 18 de noviembre de 2026 (00:00 CET del 19 de noviembre en España peninsular).",
       "La versión física de la Standard Edition contiene un código de descarga y no incluye disco; Rockstar prevé su disponibilidad desde el 12 de noviembre para facilitar la precarga.",
       "Los precios de Xbox Series X|S y de la mejora Ultimate corresponden a Xbox España."
     ]

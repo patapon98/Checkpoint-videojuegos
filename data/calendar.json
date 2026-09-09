@@ -3801,6 +3801,58 @@
       "trailer": "https://www.youtube.com/watch?v=w-veMlH2L-A"
     },
     {
+      "id": "the-legend-of-zelda-ocarina-of-time",
+      "title": "The Legend of Zelda: Ocarina of Time",
+      "headingHtml": "The Legend of Zelda: Ocarina of Time <span class=\"tag-dlc\">Remake</span>",
+      "date": "2026-11-05",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "The Legend of Zelda: Ocarina of Time",
+        "src": "https://media.rawg.io/media/games/3a0/3a0c8e9ed3a711c542218831b893a0fa.jpg",
+        "alt": "The Legend of Zelda: Ocarina of Time para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 25097,
+        "rawgSlug": "the-legend-of-zelda-ocarina-of-time",
+        "rawgPage": "https://rawg.io/games/the-legend-of-zelda-ocarina-of-time",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de The Legend of Zelda: Ocarina of Time"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-09",
+        "evidence": {
+          "title": "The Legend of Zelda: Ocarina of Time",
+          "releaseDate": "2026-11-05",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=S6C7og5g7Dc&t=1776s"
+    },
+    {
       "id": "metaphor-refantazio",
       "title": "Metaphor: ReFantazio",
       "headingHtml": "Metaphor: ReFantazio <span class=\"tag-dlc\">Nueva plataforma</span>",

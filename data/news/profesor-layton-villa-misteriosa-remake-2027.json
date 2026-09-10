@@ -1,0 +1,71 @@
+{
+  "id": "profesor-layton-villa-misteriosa-remake-2027",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "El Profesor Layton y la Villa Misteriosa tendrá un remake en 2027",
+      "llegará a Switch 2, Switch, PS5 y PC",
+      "reconstruirá los personajes y la exploración en 3D"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-10",
+  "publishedAt": "2026-09-10T13:51:00Z",
+  "addedAt": "2026-09-10T15:17:57Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Profesor Layton"
+    },
+    "copy": {
+      "es": "Profesor Layton recupera La Villa Misteriosa con un remake"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "El primer Profesor Layton tendrá un remake en 2027"
+  },
+  "summary": {
+    "es": "Level-5 ha anunciado que El Profesor Layton y la Villa Misteriosa tendrá un remake en 2027. La nueva versión llegará a Switch 2, Switch, PS5 y PC."
+  },
+  "why": {
+    "es": "El regreso moderniza el origen de una saga que supera los 20 millones de copias y reconstruirá los personajes y la exploración en 3D, con animaciones en alta resolución y formato panorámico."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=Fi2qQG_xZb8",
+    "label": {
+      "es": "Ver el teaser oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Ficha oficial del remake"
+      },
+      "url": "https://www.layton.jp/fushigi-remake/"
+    },
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Teaser oficial de anuncio"
+      },
+      "url": "https://www.youtube.com/watch?v=Fi2qQG_xZb8"
+    },
+    {
+      "label": "Famitsu",
+      "type": {
+        "es": "Contexto sobre las mejoras de la nueva versión"
+      },
+      "url": "https://www.famitsu.com/article/202609/87531"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La Villa Misteriosa inició la serie en Nintendo DS en 2007 y presentó la investigación de la herencia Reinhold y el enigma de la Manzana Dorada. El remake conservará esa historia y recuperará a Maki Horikita como voz japonesa de Luke.",
+      "Level-5 sustituirá la presentación original por personajes tridimensionales, escenarios renovados y una interfaz de puzles rediseñada. La ficha oficial también confirma HDR, animaciones panorámicas en alta resolución y textos en español."
+    ]
+  }
+}

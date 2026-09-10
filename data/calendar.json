@@ -3884,6 +3884,54 @@
       "trailer": "https://www.youtube.com/watch?v=FlccMxW_0bc"
     },
     {
+      "id": "pikmin-4-nintendo-switch-2-edition-dandori-academy",
+      "title": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy",
+      "headingHtml": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-11-12",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000135059/c5687664c64e87149d31ca6fadc0a3bfe97540316d06ac5aa3ea45b55fc1bf58",
+        "alt": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/pikmin-4-nintendo-switch-2-edition-plus-dandori-academy-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/pikmin-4-nintendo-switch-2-edition-plus-dandori-academy-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy",
+          "releaseDate": "2026-11-12",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=52Fei-sLLQc"
+    },
+    {
       "id": "shadow-of-the-road",
       "title": "Shadow of the Road",
       "headingHtml": "Shadow of the Road",
@@ -4117,6 +4165,54 @@
       "trailer": null
     },
     {
+      "id": "monster-hunter-wilds-switch-2",
+      "title": "Monster Hunter Wilds",
+      "headingHtml": "Monster Hunter Wilds <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-12-04",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Monster Hunter Wilds",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000102602/5cc769a61c646305041e9a10c884ae3c7900e01d6daacb603c50f0667f0bb49a",
+        "alt": "Monster Hunter Wilds",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/monster-hunter-wilds-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Monster Hunter Wilds"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/monster-hunter-wilds-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Monster Hunter Wilds",
+          "releaseDate": "2026-12-04",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=_KAo1wfqjiA"
+    },
+    {
       "id": "attack-on-titan-3",
       "title": "Attack on Titan 3",
       "headingHtml": "Attack on Titan 3",
@@ -4167,6 +4263,58 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=bdYFIXnI2pc"
+    },
+    {
+      "id": "professor-layton-and-the-new-world-of-steam",
+      "title": "Professor Layton and the New World of Steam",
+      "headingHtml": "Professor Layton and the New World of Steam",
+      "date": "2026-12-10",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Professor Layton and the New World of Steam",
+        "src": "https://www.layton.jp/jouki/assets/img/secret/wallpaper/wallpaper_a_1920x1080.jpg",
+        "alt": "Professor Layton and the New World of Steam",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.layton.jp/jouki/en/",
+        "title": "Ver web oficial",
+        "ariaLabel": "Ver la ficha oficial de Professor Layton and the New World of Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.layton.jp/jouki/en/",
+        "official": true,
+        "host": "www.layton.jp",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Professor Layton and the New World of Steam",
+          "releaseDate": "2026-12-10",
+          "platforms": [
+            "ps5",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=A-a6mUiRaP4"
     },
     {
       "id": "stage-tour",
@@ -4275,6 +4423,59 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=BwYNNQJO-AE"
+    },
+    {
+      "id": "danganronpa-2x2",
+      "title": "Danganronpa 2x2",
+      "headingHtml": "Danganronpa 2x2",
+      "date": "2027-01-14",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Danganronpa 2x2",
+        "src": "https://www.danganronpa.com/pages/2x2/assets/data/webp/official/spec/package.webp",
+        "alt": "Danganronpa 2x2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.danganronpa.com/pages/2x2/en/",
+        "title": "Ver web oficial",
+        "ariaLabel": "Ver la ficha oficial de Danganronpa 2x2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.danganronpa.com/pages/2x2/en/",
+        "official": true,
+        "host": "www.danganronpa.com",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Danganronpa 2x2",
+          "releaseDate": "2027-01-14",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false
     },
     {
       "id": "ananta",
@@ -4387,6 +4588,54 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=nr5-XGIkbg4"
+    },
+    {
+      "id": "metroid-ravenous",
+      "title": "Metroid Ravenous",
+      "headingHtml": "Metroid Ravenous",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Metroid Ravenous",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000135071/f067f6f0cb7770ec655a06f152a9c9513fecc5c3ccb745012bf3167990eb023d",
+        "alt": "Metroid Ravenous",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/metroid-ravenous-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Metroid Ravenous"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/metroid-ravenous-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Metroid Ravenous",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ku-vSTDNsT8"
     },
     {
       "id": "tropico-7",
@@ -4716,6 +4965,54 @@
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
     },
     {
+      "id": "hyrule-warriors-age-of-calamity-definitive-edition",
+      "title": "Hyrule Warriors: Age of Calamity – Definitive Edition",
+      "headingHtml": "Hyrule Warriors: Age of Calamity – Definitive Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2027-02-25",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Hyrule Warriors: Age of Calamity – Definitive Edition",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000133213/f8a0202f92623f0f4e06970ce7e76eb99997b6620752fbc2cf633735119e3ae8",
+        "alt": "Hyrule Warriors: Age of Calamity – Definitive Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/hyrule-warriors-age-of-calamity-definitive-edition-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Hyrule Warriors: Age of Calamity – Definitive Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/hyrule-warriors-age-of-calamity-definitive-edition-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Hyrule Warriors: Age of Calamity – Definitive Edition",
+          "releaseDate": "2027-02-25",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=F1oeWfFW1Fk"
+    },
+    {
       "id": "gundam-rogue-orbit",
       "title": "GUNDAM ROGUE ORBIT",
       "headingHtml": "GUNDAM ROGUE ORBIT",
@@ -4928,6 +5225,54 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=8EP14yju-rc"
+    },
+    {
+      "id": "persona-4-revival-switch-2",
+      "title": "Persona 4 Revival",
+      "headingHtml": "Persona 4 Revival <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2027-05-20",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Persona 4 Revival",
+        "src": "https://www.sega.co.jp/en/release/images/260608_4/260608_5_01.jpg",
+        "alt": "Persona 4 Revival",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/whatsnew/nintendo-direct-reveals-metroid-ravenous-kirby-and-the-world-beyond-and-more-games-for-nintendo-switch-2-and-nintendo-switch/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Persona 4 Revival"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.nintendo.com/us/whatsnew/nintendo-direct-reveals-metroid-ravenous-kirby-and-the-world-beyond-and-more-games-for-nintendo-switch-2-and-nintendo-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-10",
+        "evidence": {
+          "title": "Persona 4 Revival",
+          "releaseDate": "2027-05-20",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=5u_MY4zleaI"
     }
   ],
   "renderState": "7ef09c63e162"

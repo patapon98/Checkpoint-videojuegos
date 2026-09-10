@@ -63,6 +63,11 @@ on:
         description: "Rama automática esperada"
         required: false
         type: string
+      generate_after_merge:
+        description: "Regenera las superficies tras fusionar una PR automática"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   actions: write
@@ -94,7 +99,7 @@ jobs:
 
   validate:
     if: >-
-      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_dispatch' && inputs.pr_number != '') ||
       (
         github.event.pull_request.head.repo.full_name == github.repository &&
         (
@@ -244,8 +249,13 @@ jobs:
             --delete-branch \
             --match-head-commit "$expected_sha"
 
+          gh workflow run validate-news.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref main \
+            -f "generate_after_merge=true"
+
   generate:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.generate_after_merge == true)
     runs-on: ubuntu-latest
     steps:
       - name: Descargar main

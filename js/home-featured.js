@@ -20,8 +20,10 @@
         <h3>${event.homeFeature.title}</h3>
         <p>${event.homeFeature.summary}</p>
       `;
+      heroCard.classList.add('is-hydrated');
     }catch(error){
       console.warn(error);
+      heroCard.classList.add('is-hydrated');
     }
   }
 

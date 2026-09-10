@@ -49,7 +49,7 @@
       "kicker": "Campaña cooperativa",
       "title": "El escuadrón Bravo permanece unido durante toda la historia",
       "summary": "La campaña puede jugarse en solitario, con cuatro participantes en línea o con dos jugadores a pantalla dividida en consola.",
-      "highlights": ["Marcus, Dom, Mags Carter y Lucas Reyes están disponibles desde el inicio.","La narración no abandona el punto de vista del escuadrón Bravo."]
+      "highlights": ["Marcus, Dom, Mags Carter y Lucas Reyes están disponibles desde el inicio.","La narración no abandona el punto de vista del escuadrón Bravo.","La lista oficial de logros confirma que la campaña está dividida en cinco actos y que existe dificultad Insane."]
     },
     {
       "kicker": "Combate y exploración",
@@ -57,7 +57,7 @@
       "summary": "La campaña es lineal en conjunto, pero alterna tramos dirigidos con zonas de varias manzanas donde el jugador puede elegir la ruta, ayudar a otros supervivientes y completar objetivos secundarios.",
       "highlights": [
         "El Tactical Gear incluye objetos recargables con el tiempo, como un inyector de salud y proyectiles capaces de aturdir enemigos; también regresa la recarga activa con bonificación por acertar el tiempo y penalización si se falla.",
-        "Por primera vez en una campaña de Gears se pueden modificar armas. Los Hard Cases ocultos proporcionan progresión adicional; regresan el Gnasher y el Longshot y debutan armas como Gut Puncher e Incinerator.",
+        "Por primera vez en una campaña de Gears se pueden modificar armas. Los Hard Cases ocultos proporcionan progresión adicional; los logros oficiales distinguen objetivos secundarios, Hard Cases y coleccionables como categorías de completado. Regresan el Gnasher y el Longshot y debutan armas como Gut Puncher e Incinerator.",
         "Los Locust aprovechan la nueva movilidad igual que el jugador: pueden trepar para flanquear y los Grenadiers usan humo para ocultar su aproximación antes de atacar a corta distancia."
       ]
     },
@@ -89,6 +89,7 @@
   ],
   "pendingHighlights": ["Desglose exacto de resolución y rendimiento por modelo de Xbox Series X|S.","Lista completa de mapas y variantes multijugador.","Contenido de todos los packs de personalización de temporada."],
   "sources": [
+    {"label":"Xbox Wire - Lista oficial de logros","url":"https://news.xbox.com/en-us/2026/09/09/plan-for-emergence-day-today-with-the-full-gears-of-war-e-day-achievements-list/","type":"Estructura de cinco actos, dificultad Insane, objetivos secundarios, Hard Cases y coleccionables"},
     {"label":"Xbox Wire - Official Xbox Podcast","url":"https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/","type":"Detalles oficiales sobre estructura de campaña, exploración, modificación de armas, progresión y tácticas de los Locust"},
     {"label":"Xbox - Official Story Trailer","url":"https://www.youtube.com/watch?v=-TW2SnAipsE","type":"Tráiler oficial de historia estrenado en gamescom Opening Night Live 2026"},
     {"label":"Xbox Wire","url":"https://news.xbox.com/en-us/2026/08/25/gears-of-war-e-day-campaign-preview-gameplay-xbox/","type":"Hands-on oficial de campaña, mapa, misiones secundarias, recarga activa y Tactical Gear"},
@@ -111,6 +112,7 @@
     "heroImageAlt": "Arte promocional oficial de Gears of War: E-Day con dos soldados ante una criatura Locust gigante en una ciudad en ruinas"
   },
   "changes": [
+    {"date":"2026-09-10","title":"The Coalition confirma cinco actos y detalla objetivos de completado","description":"La lista oficial de logros confirma que la campaña de Gears of War: E-Day está estructurada en cinco actos, incluye dificultad Insane y distingue objetivos secundarios, Hard Cases y coleccionables dentro del completado de la historia.","sourceUrls":["https://news.xbox.com/en-us/2026/09/09/plan-for-emergence-day-today-with-the-full-gears-of-war-e-day-achievements-list/"]},
     {"date":"2026-09-06","title":"Xbox confirma 4K y hasta 60 FPS en campaña y multijugador","description":"La ficha oficial de Xbox España indica que Gears of War: E-Day está diseñado para ofrecer resolución 4K y hasta 60 FPS tanto en la campaña como en el multijugador. Xbox todavía no desglosa los modos ni los objetivos específicos de Xbox Series X y Series S.","sourceUrls":["https://www.xbox.com/es-es/games/gears-of-war-eday"]},
     {"date":"2026-09-04","title":"The Coalition detalla la exploración, la modificación de armas y las tácticas Locust","description":"El Official Xbox Podcast confirma que la campaña alterna tramos lineales con zonas de varias manzanas donde se pueden tomar rutas opcionales, ayudar a otros supervivientes y completar objetivos secundarios. Por primera vez en una campaña de Gears se podrán modificar armas; los Hard Cases aportarán progresión adicional y los Locust podrán usar la nueva movilidad y tácticas como el humo para flanquear al jugador.","sourceUrls":["https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"]},
     {"date":"2026-08-27","title":"Xbox publica el tráiler oficial de historia de Gears of War: E-Day","description":"El tráiler de historia estrenado en gamescom Opening Night Live muestra la irrupción de la Horda Locust en Kalona y nuevos momentos narrativos de Marcus, Dom y el escuadrón Bravo.","sourceUrls":["https://www.youtube.com/watch?v=-TW2SnAipsE"]},
@@ -134,7 +136,7 @@
     {"date":"2026-07-30","title":"Ficha publicada tras el Xbox Games Showcase","description":"Se reunieron la fecha, el precio español, la campaña cooperativa, el nuevo movimiento, Horde Siege, tres vídeos y cinco capturas oficiales sin marcos añadidos."}
   ],
   "relatedGameIds": ["control-resonant","grand-theft-auto-vi"],
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-10",
   "price": "Desde 69,99 € en Xbox y PC",
   "pcRequirements": {
     "sourceUrl": "https://store.steampowered.com/app/3010850/Gears_of_War_EDay/",

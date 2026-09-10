@@ -4,7 +4,7 @@ import path from 'node:path';
 const ROOT = process.cwd();
 const REGISTRY = path.join(ROOT, 'data', 'game-hubs', 'index.json');
 const PAGES = path.join(ROOT, 'juegos');
-const VERSION = '20260910a';
+const VERSION = '20260910b';
 
 const stylesheet = `<link rel="stylesheet" href="/css/game-hub-compact.css?v=${VERSION}">`;
 const script = `<script src="/js/game-hub-compact.js?v=${VERSION}" defer></script>`;
@@ -62,6 +62,12 @@ function addSectionGroupLabels(html) {
   return html;
 }
 
+function replaceVersionedResource(html, resource, tag) {
+  const pattern = new RegExp(`<${tag}\\b[^>]*${resource.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^>]*>(?:<\\/${tag}>)?`, 'i');
+  if (!pattern.test(html)) return html;
+  return html.replace(pattern, tag === 'link' ? stylesheet : script);
+}
+
 async function updatePage(id) {
   const page = path.join(PAGES, `${id}.html`);
   const original = await readFile(page, 'utf8');
@@ -72,6 +78,8 @@ async function updatePage(id) {
   html = addSectionGroupLabels(html);
   html = ensureResource(html, '/css/game-hub-compact.css', stylesheet, '</head>');
   html = ensureResource(html, '/js/game-hub-compact.js', script, '</body>');
+  html = replaceVersionedResource(html, '/css/game-hub-compact.css', 'link');
+  html = replaceVersionedResource(html, '/js/game-hub-compact.js', 'script');
 
   if (html !== original) {
     await writeFile(page, html, 'utf8');

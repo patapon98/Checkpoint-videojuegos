@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-10",
   "region": "España y Europa",
   "months": [
     {
@@ -7,7 +7,7 @@
       "label": "Septiembre 2026",
       "availability": "1 de septiembre–5 de octubre",
       "headline": "PlayStation Plus en septiembre de 2026",
-      "source": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/",
       "groups": [
         {
           "id": "essential",
@@ -58,13 +58,100 @@
           "id": "extra",
           "label": "Extra",
           "access": "También disponible para Premium",
-          "pending": "Sony todavía no ha anunciado el catálogo de septiembre. Esta sección se completará cuando se publique la información oficial."
+          "games": [
+            {
+              "title": "RuneScape: Dragonwilds",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/0162248f64f2e0bf702f40bb3608ad8e6b8d89f1.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "WWE 2K26",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/874711f9532a25a8646bc4bf1256da6da246ba01.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "Ball x Pit",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/05ad424c6842555000d0c5f5f52341e9a345d4c4.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "Date Everything!",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/db81552bb5154f6ba1f7cacb636e7af05db3c730.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "Slitterhead",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/8bec7d8b8ac30845593fd1bf047772b40aea1f1c.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "Ninja Gaiden: Ragebound",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/bddc2dc59bfb67c2bd3fc21e9100d28f92c2226a.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "Dungeons of Hinterberg",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/0645476d1f7c9a97321fae602adaa847552c514b.jpeg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            },
+            {
+              "title": "Sniper Elite: Resistance",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/8d3bec7aebf639f2df99ea34e543b5e38455cc9e.jpeg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            }
+          ]
         },
         {
           "id": "premium",
           "label": "Premium",
           "access": "Clásicos y ventajas adicionales",
-          "pending": "Los clásicos y añadidos de Premium para septiembre todavía no se han anunciado oficialmente."
+          "games": [
+            {
+              "title": "Metro Redux",
+              "platforms": [
+                "PS4"
+              ],
+              "available": "Añadidos en septiembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/2690ef0dee0b17a19be70bc0aee77d9c17fab3fc.jpg",
+              "source": "https://blog.playstation.com/2026/09/09/playstation-plus-game-catalog-for-september-runescape-dragonwilds-wwe-2k26-ball-x-pit-date-everything-and-more/"
+            }
+          ]
         }
       ]
     },

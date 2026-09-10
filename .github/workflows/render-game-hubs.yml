@@ -8,6 +8,7 @@ on:
       - "scripts/render-game-hub-pc-requirements.mjs"
       - "scripts/render-game-hub-editions.mjs"
       - "scripts/apply-game-hub-information-architecture.mjs"
+      - "scripts/validate-game-hubs.mjs"
       - "scripts/validate-game-hub-pc-requirements.mjs"
       - "scripts/validate-game-hub-editions.mjs"
       - "css/game-hub-pc-requirements.css"
@@ -41,6 +42,7 @@ jobs:
           node scripts/render-game-hub-pc-requirements.mjs
           node scripts/render-game-hub-editions.mjs
           node scripts/apply-game-hub-information-architecture.mjs
+          node scripts/validate-game-hubs.mjs
           node scripts/validate-game-hub-pc-requirements.mjs
           node scripts/validate-game-hub-editions.mjs
 

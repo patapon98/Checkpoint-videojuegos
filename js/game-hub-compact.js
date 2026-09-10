@@ -3,6 +3,7 @@
 
   const PAGE_SIZE = 5;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let refreshFrame = 0;
 
   function normalizeLabel(value = '') {
     return value.trim().toLocaleLowerCase('es').replace('fecha de lanzamiento', 'lanzamiento');
@@ -95,10 +96,22 @@
 
   function paginateHistory() {
     const list = document.getElementById('gameChangeList');
-    if (!list || list.dataset.paginated === 'true') return;
+    if (!list) return;
+
+    const previousControls = list.nextElementSibling?.classList.contains('game-history-pagination')
+      ? list.nextElementSibling
+      : null;
+    previousControls?.remove();
 
     const items = [...list.querySelectorAll(':scope > .game-change-item')];
-    if (items.length <= PAGE_SIZE) return;
+    items.forEach((item) => {
+      item.hidden = false;
+    });
+
+    if (items.length <= PAGE_SIZE) {
+      delete list.dataset.paginated;
+      return;
+    }
 
     list.dataset.paginated = 'true';
     const totalPages = Math.ceil(items.length / PAGE_SIZE);
@@ -187,11 +200,35 @@
     button.insertAdjacentElement('afterend', body);
   }
 
-  function init() {
+  function refreshDynamicEnhancements() {
     promoteQuickFacts();
     organizeOverview();
     makeCardDetails();
     paginateHistory();
+  }
+
+  function scheduleDynamicRefresh() {
+    if (refreshFrame) return;
+    refreshFrame = window.requestAnimationFrame(() => {
+      refreshFrame = 0;
+      refreshDynamicEnhancements();
+    });
+  }
+
+  function observeDynamicContent() {
+    const observer = new MutationObserver(scheduleDynamicRefresh);
+    const targets = [
+      document.getElementById('gameFacts'),
+      document.getElementById('quickFacts'),
+      document.getElementById('confirmado'),
+      document.getElementById('gameChangeList')
+    ].filter(Boolean);
+
+    targets.forEach((target) => observer.observe(target, { childList: true }));
+  }
+
+  function init() {
+    refreshDynamicEnhancements();
     makeSectionCollapsible('requisitos-pc', {
       closed: 'Ver requisitos de PC',
       open: 'Ocultar requisitos de PC'
@@ -200,6 +237,7 @@
       closed: 'Consultar fuentes y verificación',
       open: 'Ocultar fuentes y verificación'
     });
+    observeDynamicContent();
     document.body.classList.add('game-hub-enhanced');
   }
 

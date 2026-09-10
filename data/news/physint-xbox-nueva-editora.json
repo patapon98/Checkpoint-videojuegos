@@ -1,0 +1,64 @@
+{
+  "id": "physint-xbox-nueva-editora",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Xbox publicará Physint",
+      "mantiene en desarrollo el proyecto de acción y espionaje",
+      "amplía una colaboración que ya incluía OD"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-09-10",
+  "addedAt": "2026-09-10T09:07:51Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Physint"
+    },
+    "copy": {
+      "es": "Physint continuará con Xbox como nueva editora"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox se convierte en la nueva editora de Physint"
+  },
+  "summary": {
+    "es": "Xbox y Kojima Productions han confirmado que Xbox publicará Physint. El acuerdo mantiene en desarrollo el proyecto de acción y espionaje y amplía una colaboración que ya incluía OD."
+  },
+  "why": {
+    "es": "El cambio de socio editorial altera de forma sustancial el encaje de uno de los próximos proyectos de Hideo Kojima y refuerza la relación de su estudio con Xbox."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Comunicado oficial sobre la nueva editora"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/09/xbox-and-kojima-productions-expand-partnership-to-publish-physint/"
+    },
+    {
+      "label": "Kojima Productions",
+      "type": {
+        "es": "Comunicado oficial del estudio"
+      },
+      "url": "https://www.kojimaproductions.jp/en/xbox_partnership_announcement"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto periodístico sobre el cambio de editora"
+      },
+      "url": "https://www.theverge.com/games/993205/physint-hideo-kojima-sony-playstation-microsoft-xbox"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Kojima Productions define Physint como un título de acción y espionaje concebido para replantear el género. La confirmación no incluye todavía una ventana de lanzamiento, plataformas concretas ni nuevas imágenes del juego.",
+      "Xbox ya colabora con el estudio en el proyecto de terror OD. Las compañías señalan que la asociación alrededor de Physint también se extenderá al cine y la televisión, aunque no han detallado esas producciones."
+    ]
+  }
+}

@@ -10,6 +10,24 @@ body[data-hub-layout="compact"] .game-section-nav a {
   white-space: nowrap;
 }
 
+body[data-hub-layout="compact"].game-hub-enhanced .game-layout {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+body[data-hub-layout="compact"].game-hub-enhanced .game-side-column,
+body[data-hub-layout="compact"].game-hub-enhanced .game-return-note {
+  display: none;
+}
+
+body[data-hub-layout="compact"] .game-main-column > .game-section {
+  padding-top: 2.6rem;
+}
+
+body[data-hub-layout="compact"] .game-main-column .section-heading h2 {
+  font-size: clamp(1.75rem, 3.3vw, 2.65rem);
+}
+
 body[data-hub-layout="compact"] #resumen {
   padding-bottom: 1.5rem;
 }
@@ -24,6 +42,7 @@ body[data-hub-layout="compact"] #resumen .game-lead {
 }
 
 body[data-hub-layout="compact"] #resumen .game-facts {
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
   margin: 1rem 0 1.2rem;
 }
 
@@ -259,6 +278,10 @@ body[data-hub-layout="compact"] .game-section-disclosure-body {
   body[data-hub-layout="compact"] #requisitos-pc,
   body[data-hub-layout="compact"] #fuentes {
     scroll-margin-top: 7rem;
+  }
+
+  body[data-hub-layout="compact"] #resumen .game-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   body[data-hub-layout="compact"] .game-history-pagination {

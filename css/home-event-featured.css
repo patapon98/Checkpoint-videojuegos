@@ -1,3 +1,5 @@
+.home-page .ticker-track,.home-page #heroCard{visibility:hidden}
+.home-page .ticker-track.is-hydrated,.home-page #heroCard.is-hydrated{visibility:visible}
 .hero-card.event-featured{position:relative;isolation:isolate;overflow:hidden;border-color:rgba(85,216,255,.48);background:#090b18;color:#fff;box-shadow:0 24px 56px -32px rgba(28,92,255,.85)}
 .hero-card.event-featured::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,8,24,.08) 10%,rgba(6,8,24,.42) 48%,rgba(6,8,24,.98) 100%)}
 .hero-card.event-featured::after{content:"";position:absolute;inset:auto -18% -48% 34%;z-index:-1;height:62%;border-radius:50%;background:rgba(85,216,255,.27);filter:blur(54px);pointer-events:none}

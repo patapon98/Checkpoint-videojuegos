@@ -89,15 +89,24 @@ function removeExistingSection(html) {
 
 function updateEditionsSection(html, data) {
   let output = removeExistingSection(html);
-  output = output.replace(/\s*<a\b[^>]*href="#ediciones"[^>]*>[\s\S]*?<\/a>/gi, "");
+  const compactNavigation = /<a\s+href="#cambios">Detalles<\/a>/i.test(output);
+
+  // La navegación compacta ya conserva Ediciones como destino principal y
+  // agrupa el historial bajo "Detalles". Solo reconstruimos los enlaces del
+  // formato antiguo cuando la página todavía no ha pasado por esa capa.
+  if (!compactNavigation) {
+    output = output.replace(/\s*<a\b[^>]*href="#ediciones"[^>]*>[\s\S]*?<\/a>/gi, "");
+  }
 
   const changesSection = /(<section\b[^>]*\bid="cambios"[^>]*>)/i;
   if (!changesSection.test(output)) throw new Error(`${data.id}: no se encontró el historial de cambios`);
   output = output.replace(changesSection, `${editionsSection(data)}\n      $1`);
 
-  const changesNav = /<a\s+href="#cambios">Cambios<\/a>/i;
-  if (!changesNav.test(output)) throw new Error(`${data.id}: no se encontró el enlace de navegación a Cambios`);
-  output = output.replace(changesNav, '<a href="#ediciones">Ediciones</a><a href="#cambios">Cambios</a>');
+  if (!compactNavigation) {
+    const changesNav = /<a\s+href="#cambios">Cambios<\/a>/i;
+    if (!changesNav.test(output)) throw new Error(`${data.id}: no se encontró el enlace de navegación a Cambios`);
+    output = output.replace(changesNav, '<a href="#ediciones">Ediciones</a><a href="#cambios">Cambios</a>');
+  }
   return output;
 }
 

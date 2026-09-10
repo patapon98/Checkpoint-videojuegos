@@ -1,0 +1,290 @@
+body[data-hub-layout="compact"] .game-section-nav {
+  gap: .35rem;
+  justify-content: center;
+}
+
+body[data-hub-layout="compact"] .game-section-nav a {
+  flex: 0 0 auto;
+  padding: .58rem .9rem;
+  font-size: .86rem;
+  white-space: nowrap;
+}
+
+body[data-hub-layout="compact"].game-hub-enhanced .game-layout {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+body[data-hub-layout="compact"].game-hub-enhanced .game-side-column,
+body[data-hub-layout="compact"].game-hub-enhanced .game-return-note {
+  display: none;
+}
+
+body[data-hub-layout="compact"] .game-main-column > .game-section {
+  padding-top: 2.6rem;
+}
+
+body[data-hub-layout="compact"] .game-main-column .section-heading h2 {
+  font-size: clamp(1.75rem, 3.3vw, 2.65rem);
+}
+
+body[data-hub-layout="compact"] #resumen {
+  padding-bottom: 1.5rem;
+}
+
+body[data-hub-layout="compact"] #resumen .section-heading {
+  margin-bottom: 1rem;
+}
+
+body[data-hub-layout="compact"] #resumen .game-lead {
+  max-width: 78ch;
+  margin-bottom: 1.15rem;
+}
+
+body[data-hub-layout="compact"] #resumen .game-facts {
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  margin: 1rem 0 1.2rem;
+}
+
+body[data-hub-layout="compact"] #resumen .game-overview,
+body[data-hub-layout="compact"] #resumen .game-context-note {
+  max-width: 82ch;
+}
+
+body[data-hub-layout="compact"] #resumen .game-context-note {
+  margin-top: .8rem;
+  font-size: .94rem;
+}
+
+body[data-hub-layout="compact"] #claves {
+  margin-top: 0;
+  padding-top: 1.35rem;
+  padding-bottom: 1.35rem;
+}
+
+body[data-hub-layout="compact"] #claves .section-heading {
+  margin-bottom: 1rem;
+}
+
+body[data-hub-layout="compact"] #claves .section-heading p {
+  max-width: 76ch;
+}
+
+body[data-hub-layout="compact"] .game-spotlight-grid {
+  gap: .75rem;
+}
+
+body[data-hub-layout="compact"] .game-spotlight-card {
+  padding: 1rem 1.05rem;
+}
+
+body[data-hub-layout="compact"] .game-spotlight-card > span {
+  margin-bottom: .25rem;
+}
+
+body[data-hub-layout="compact"] .game-spotlight-card > strong {
+  display: block;
+  margin-bottom: .55rem;
+}
+
+body[data-hub-layout="compact"] .game-inline-toggle,
+body[data-hub-layout="compact"] .knowledge-detail-toggle,
+body[data-hub-layout="compact"] .game-section-disclosure-toggle,
+body[data-hub-layout="compact"] .game-history-page-button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+body[data-hub-layout="compact"] .game-inline-toggle,
+body[data-hub-layout="compact"] .knowledge-detail-toggle {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: .4rem;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  font-size: .78rem;
+  font-weight: 700;
+  opacity: .72;
+}
+
+body[data-hub-layout="compact"] .game-inline-toggle:hover,
+body[data-hub-layout="compact"] .game-inline-toggle:focus-visible,
+body[data-hub-layout="compact"] .knowledge-detail-toggle:hover,
+body[data-hub-layout="compact"] .knowledge-detail-toggle:focus-visible {
+  opacity: 1;
+}
+
+body[data-hub-layout="compact"] .game-spotlight-card p:not([hidden]) {
+  margin-top: .7rem;
+}
+
+body[data-hub-layout="compact"] #confirmado {
+  padding-top: 1.8rem;
+}
+
+body[data-hub-layout="compact"] #confirmado .section-heading {
+  margin-bottom: 1.1rem;
+}
+
+body[data-hub-layout="compact"] .knowledge-grid {
+  gap: .8rem;
+}
+
+body[data-hub-layout="compact"] .knowledge-card {
+  padding: 1.05rem 1.1rem;
+}
+
+body[data-hub-layout="compact"] .knowledge-card-heading {
+  margin-bottom: .65rem;
+}
+
+body[data-hub-layout="compact"] .knowledge-summary {
+  margin-bottom: .35rem;
+}
+
+body[data-hub-layout="compact"] .knowledge-highlights:not([hidden]) {
+  margin-top: .8rem;
+}
+
+body[data-hub-layout="compact"] .knowledge-pending {
+  margin-top: .9rem;
+}
+
+body[data-hub-layout="compact"] #galeria {
+  padding-top: 1.5rem;
+}
+
+body[data-hub-layout="compact"] #cambios .section-heading p {
+  max-width: 72ch;
+}
+
+body[data-hub-layout="compact"] .game-change-list {
+  margin-bottom: 0;
+}
+
+body[data-hub-layout="compact"] .game-change-item[hidden],
+body[data-hub-layout="compact"] .knowledge-highlights[hidden],
+body[data-hub-layout="compact"] .game-spotlight-card p[hidden],
+body[data-hub-layout="compact"] .game-section-disclosure-body[hidden] {
+  display: none !important;
+}
+
+body[data-hub-layout="compact"] .game-history-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .55rem;
+  margin-top: 1rem;
+}
+
+body[data-hub-layout="compact"] .game-history-page-button {
+  display: grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: 999px;
+  background: transparent;
+}
+
+body[data-hub-layout="compact"] .game-history-page-button:hover:not(:disabled),
+body[data-hub-layout="compact"] .game-history-page-button:focus-visible:not(:disabled) {
+  border-color: var(--game-gold);
+}
+
+body[data-hub-layout="compact"] .game-history-page-button:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+body[data-hub-layout="compact"] .game-history-page-status {
+  min-width: 3.3rem;
+  text-align: center;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+body[data-hub-layout="compact"] #requisitos-pc,
+body[data-hub-layout="compact"] #fuentes {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+body[data-hub-layout="compact"] #requisitos-pc .section-heading,
+body[data-hub-layout="compact"] #fuentes .section-heading {
+  margin-bottom: .8rem;
+}
+
+body[data-hub-layout="compact"] .game-section-disclosure-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: .62rem .9rem;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: .7rem;
+  background: transparent;
+  font-size: .84rem;
+  font-weight: 800;
+}
+
+body[data-hub-layout="compact"] .game-section-disclosure-toggle:hover,
+body[data-hub-layout="compact"] .game-section-disclosure-toggle:focus-visible {
+  border-color: var(--game-gold);
+}
+
+body[data-hub-layout="compact"] .game-section-disclosure-toggle[aria-expanded="true"] {
+  margin-bottom: 1rem;
+}
+
+body[data-hub-layout="compact"] .game-section-disclosure-body {
+  animation: game-hub-disclosure-in .18s ease-out both;
+}
+
+@keyframes game-hub-disclosure-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-hub-layout="compact"] .game-section-disclosure-body {
+    animation: none;
+  }
+}
+
+@media (max-width: 760px) {
+  body[data-hub-layout="compact"] .game-section-nav {
+    justify-content: flex-start;
+    padding-inline: .75rem;
+  }
+
+  body[data-hub-layout="compact"] .game-section-nav a {
+    padding: .55rem .75rem;
+    font-size: .8rem;
+  }
+
+  body[data-hub-layout="compact"] #resumen,
+  body[data-hub-layout="compact"] #claves,
+  body[data-hub-layout="compact"] #confirmado,
+  body[data-hub-layout="compact"] #multimedia,
+  body[data-hub-layout="compact"] #galeria,
+  body[data-hub-layout="compact"] #noticias,
+  body[data-hub-layout="compact"] #ediciones,
+  body[data-hub-layout="compact"] #cambios,
+  body[data-hub-layout="compact"] #requisitos-pc,
+  body[data-hub-layout="compact"] #fuentes {
+    scroll-margin-top: 7rem;
+  }
+
+  body[data-hub-layout="compact"] #resumen .game-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-hub-layout="compact"] .game-history-pagination {
+    justify-content: center;
+  }
+}

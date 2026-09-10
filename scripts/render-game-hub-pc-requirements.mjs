@@ -99,9 +99,14 @@ function updateRequirementsSection(html, data) {
   if (!sourceSection.test(output)) throw new Error(`${data.id}: no se encontró la sección #fuentes`);
   output = output.replace(sourceSection, `${requirementsSection(data)}\n      $1`);
 
+  // Compatibilidad con el marcado anterior. Si la ficha todavía usa la
+  // navegación extensa, conserva el acceso directo a requisitos. En las
+  // fichas compactas, Requisitos PC forma parte de "Detalles" y no necesita
+  // un enlace independiente.
   const sourceNav = /<a\s+href="#fuentes">Fuentes<\/a>/i;
-  if (!sourceNav.test(output)) throw new Error(`${data.id}: no se encontró el enlace de navegación a Fuentes`);
-  output = output.replace(sourceNav, '<a href="#requisitos-pc">Requisitos PC</a><a href="#fuentes">Fuentes</a>');
+  if (sourceNav.test(output)) {
+    output = output.replace(sourceNav, '<a href="#requisitos-pc">Requisitos PC</a><a href="#fuentes">Fuentes</a>');
+  }
   return output;
 }
 

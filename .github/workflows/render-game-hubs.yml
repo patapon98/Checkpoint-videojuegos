@@ -7,10 +7,14 @@ on:
       - "scripts/render-game-hubs.mjs"
       - "scripts/render-game-hub-pc-requirements.mjs"
       - "scripts/render-game-hub-editions.mjs"
+      - "scripts/apply-game-hub-information-architecture.mjs"
+      - "scripts/validate-game-hubs.mjs"
       - "scripts/validate-game-hub-pc-requirements.mjs"
       - "scripts/validate-game-hub-editions.mjs"
       - "css/game-hub-pc-requirements.css"
       - "css/game-hub-editions.css"
+      - "css/game-hub-compact.css"
+      - "js/game-hub-compact.js"
   workflow_dispatch:
 
 permissions:
@@ -37,6 +41,8 @@ jobs:
           node scripts/render-game-hubs.mjs
           node scripts/render-game-hub-pc-requirements.mjs
           node scripts/render-game-hub-editions.mjs
+          node scripts/apply-game-hub-information-architecture.mjs
+          node scripts/validate-game-hubs.mjs
           node scripts/validate-game-hub-pc-requirements.mjs
           node scripts/validate-game-hub-editions.mjs
 

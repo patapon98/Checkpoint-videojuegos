@@ -3893,8 +3893,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy",
         "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000135059/c5687664c64e87149d31ca6fadc0a3bfe97540316d06ac5aa3ea45b55fc1bf58",
         "alt": "Pikmin 4 – Nintendo Switch 2 Edition + Dandori Academy",
         "className": "",
@@ -4176,12 +4174,16 @@
       "image": {
         "provider": "rawg",
         "query": "Monster Hunter Wilds",
-        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000102602/5cc769a61c646305041e9a10c884ae3c7900e01d6daacb603c50f0667f0bb49a",
+        "src": "https://media.rawg.io/media/games/91b/91b4edd8fecf88b2b5ca0752321382ee.jpg",
         "alt": "Monster Hunter Wilds",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 973391,
+        "rawgSlug": "monster-hunter-wilds",
+        "rawgPage": "https://rawg.io/games/monster-hunter-wilds",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/monster-hunter-wilds-switch-2/",
@@ -4276,8 +4278,6 @@
       ],
       "platformsHtml": "PS5 · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "Professor Layton and the New World of Steam",
         "src": "https://www.layton.jp/jouki/assets/img/secret/wallpaper/wallpaper_a_1920x1080.jpg",
         "alt": "Professor Layton and the New World of Steam",
         "className": "",
@@ -4437,8 +4437,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "Danganronpa 2x2",
         "src": "https://www.danganronpa.com/pages/2x2/assets/data/webp/official/spec/package.webp",
         "alt": "Danganronpa 2x2",
         "className": "",
@@ -4601,12 +4599,16 @@
       "image": {
         "provider": "rawg",
         "query": "Metroid Ravenous",
-        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000135071/f067f6f0cb7770ec655a06f152a9c9513fecc5c3ccb745012bf3167990eb023d",
+        "src": "https://media.rawg.io/media/games/582/5821d65020c1ac624d985d20e966765f.jpg",
         "alt": "Metroid Ravenous",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1019941,
+        "rawgSlug": "metroid-ravenous",
+        "rawgPage": "https://rawg.io/games/metroid-ravenous",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/metroid-ravenous-switch-2/",
@@ -4974,8 +4976,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Hyrule Warriors: Age of Calamity – Definitive Edition",
         "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000133213/f8a0202f92623f0f4e06970ce7e76eb99997b6620752fbc2cf633735119e3ae8",
         "alt": "Hyrule Warriors: Age of Calamity – Definitive Edition",
         "className": "",
@@ -5238,12 +5238,16 @@
       "image": {
         "provider": "rawg",
         "query": "Persona 4 Revival",
-        "src": "https://www.sega.co.jp/en/release/images/260608_4/260608_5_01.jpg",
+        "src": "https://media.rawg.io/media/screenshots/7ae/7ae90da8257556877d0e75f30e587abb.jpeg",
         "alt": "Persona 4 Revival",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1015575,
+        "rawgSlug": "persona-4-revival",
+        "rawgPage": "https://rawg.io/games/persona-4-revival",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/whatsnew/nintendo-direct-reveals-metroid-ravenous-kirby-and-the-world-beyond-and-more-games-for-nintendo-switch-2-and-nintendo-switch/",

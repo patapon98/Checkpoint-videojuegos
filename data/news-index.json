@@ -1,5 +1,1106 @@
 [
   {
+    "id": "kirby-and-the-world-beyond-switch-2",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "una nueva aventura 3D de exploración libre",
+        "llegará en primavera de 2027",
+        "en exclusiva para Nintendo Switch 2"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-09",
+    "publishedAt": "2026-09-09T14:00:00Z",
+    "addedAt": "2026-09-09T20:52:56Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Kirby and the World Beyond"
+      },
+      "copy": {
+        "es": "Kirby and the World Beyond llevará su exploración 3D a Switch 2 en primavera de 2027"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Kirby and the World Beyond llevará su aventura 3D a Switch 2 en primavera de 2027"
+    },
+    "summary": {
+      "es": "Nintendo ha anunciado Kirby and the World Beyond, una nueva aventura 3D de exploración libre que llegará en primavera de 2027 en exclusiva para Nintendo Switch 2."
+    },
+    "why": {
+      "es": "El nuevo juego amplía la vertiente tridimensional de la saga con un mundo desconocido, habilidades de copia y una propuesta diseñada para el catálogo propio de Switch 2."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=7HE9dF_PfIY",
+      "label": {
+        "es": "Ver el tráiler oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Página oficial del juego"
+        },
+        "url": "https://www.nintendo.com/fr-fr/Jeux/Jeux-Nintendo-Switch-2/Kirby-and-the-World-Beyond-3188542.html"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Presentación oficial Nintendo Direct 9.9.2026"
+        },
+        "url": "https://www.nintendo.com/us/nintendo-direct/9-9-2026/"
+      },
+      {
+        "label": "Nintendo Japón",
+        "type": {
+          "es": "Tráiler oficial de anuncio"
+        },
+        "url": "https://www.youtube.com/watch?v=7HE9dF_PfIY"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El tráiler muestra a Kirby atravesando una grieta y descubriendo un territorio desconocido que se extiende más allá de los límites de su mundo. La exploración vuelve a desarrollarse en escenarios tridimensionales.",
+        "Kirby podrá recorrer libremente el entorno y emplear sus habilidades de copia, incluida la transformación con espada. Nintendo y HAL Laboratory preparan el lanzamiento como uno de los títulos propios de Switch 2 para la primavera de 2027."
+      ]
+    }
+  },
+  {
+    "id": "metroid-ravenous-switch-2-fecha",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "llegará el 28 de enero de 2027",
+        "la nueva entrega 2D de la saga",
+        "en exclusiva para Nintendo Switch 2"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-09-09",
+    "publishedAt": "2026-09-09T14:28:00Z",
+    "addedAt": "2026-09-09T15:08:57Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Metroid Ravenous"
+      },
+      "copy": {
+        "es": "Metroid Ravenous llegará el 28 de enero de 2027 en exclusiva para Switch 2"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Metroid Ravenous llegará el 28 de enero de 2027 en exclusiva para Switch 2"
+    },
+    "summary": {
+      "es": "Nintendo ha anunciado Metroid Ravenous, la nueva entrega 2D de la saga, que llegará el 28 de enero de 2027 en exclusiva para Nintendo Switch 2."
+    },
+    "why": {
+      "es": "El nuevo juego devuelve a Samus Aran a una aventura de desplazamiento lateral después de Metroid Dread y refuerza el catálogo propio de Switch 2 para comienzos de 2027."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=ku-vSTDNsT8",
+      "label": {
+        "es": "Ver el tráiler oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Nintendo of America",
+        "type": {
+          "es": "Tráiler oficial de anuncio y fecha"
+        },
+        "url": "https://www.youtube.com/watch?v=ku-vSTDNsT8"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Presentación oficial Nintendo Direct 9.9.2026"
+        },
+        "url": "https://www.nintendo.com/us/nintendo-direct/9-9-2026/"
+      },
+      {
+        "label": "The Verge",
+        "type": {
+          "es": "Contexto periodístico sobre el anuncio"
+        },
+        "url": "https://www.theverge.com/games/992053/the-switch-2-is-getting-a-2d-metroid-called-ravenous"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El tráiler presenta a Samus malherida y atrapada en una luna hostil tras un ataque. La cazarrecompensas deberá sobrevivir, escapar y descubrir quién está detrás de la emboscada.",
+        "La jugabilidad conserva la exploración y la acción de desplazamiento lateral con gráficos tridimensionales, contraataques, Morph Ball y una nueva capacidad para absorber energía de los enemigos."
+      ]
+    }
+  },
+  {
+    "id": "dave-the-diver-10-millones-ventas",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha superado los 10 millones de unidades vendidas en todo el mundo",
+        "tres años después de su estreno completo",
+        "Su expansión In the Jungle también ha rebasado el millón de copias"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-09",
+    "publishedAt": "2026-09-09T01:17:16Z",
+    "addedAt": "2026-09-09T08:42:46Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "DAVE THE DIVER"
+      },
+      "copy": {
+        "es": "DAVE THE DIVER supera los 10 millones de copias vendidas"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "DAVE THE DIVER supera los 10 millones de copias vendidas"
+    },
+    "summary": {
+      "es": "MINTROCKET ha anunciado que DAVE THE DIVER ha superado los 10 millones de unidades vendidas en todo el mundo entre PC, PlayStation, Xbox, Nintendo Switch y Switch 2."
+    },
+    "why": {
+      "es": "El juego alcanza la cifra tres años después de su estreno completo y consolida una de las mayores historias comerciales recientes del videojuego coreano premium. Su expansión In the Jungle también ha rebasado el millón de copias."
+    },
+    "sources": [
+      {
+        "label": "MINTROCKET",
+        "type": {
+          "es": "Anuncio oficial de ventas"
+        },
+        "url": "https://x.com/DaveDiverGame/status/2097494514034409685"
+      },
+      {
+        "label": "Gematsu",
+        "type": {
+          "es": "Contexto periodístico sobre el hito y el historial de plataformas"
+        },
+        "url": "https://www.gematsu.com/2026/09/dave-the-diver-sales-top-10-million"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "DAVE THE DIVER comenzó su recorrido en el acceso anticipado de Steam en octubre de 2022 y alcanzó su versión completa en junio de 2023. Desde entonces se ha extendido a PlayStation, Xbox, Nintendo Switch y Switch 2, mientras que su lanzamiento mundial en móviles está previsto para el 17 de septiembre.",
+        "Nexon atribuye la continuidad de sus ventas a las nuevas plataformas, los contenidos adicionales y colaboraciones con licencias como Godzilla, Like a Dragon y DREDGE. In the Jungle, la expansión publicada en junio, superó por sí sola el millón de unidades en unos dos meses."
+      ]
+    }
+  },
+  {
+    "id": "dont-nod-reestructuracion-90-puestos",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "podría suprimir hasta 90 puestos en Francia",
+        "depende en parte de obtener financiación externa",
+        "incertidumbre significativa sobre su continuidad más allá del 31 de enero de 2027"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-09-04",
+    "publishedAt": "2026-09-04T05:30:00Z",
+    "addedAt": "2026-09-09T00:08:39Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "DON’T NOD"
+      },
+      "copy": {
+        "es": "DON’T NOD plantea suprimir hasta 90 puestos y busca financiación para asegurar su continuidad"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "DON’T NOD plantea suprimir hasta 90 puestos y advierte sobre su continuidad"
+    },
+    "summary": {
+      "es": "DON’T NOD podría suprimir hasta 90 puestos en Francia dentro de una reestructuración que concentrará su actividad local en una sola línea de producción. El consejo de administración ya ha autorizado iniciar el proyecto y la negociación con la representación laboral."
+    },
+    "why": {
+      "es": "El estudio afirma que su actividad depende en parte de obtener financiación externa y reconoce una incertidumbre significativa sobre su continuidad más allá del 31 de enero de 2027. Su caja bruta cayó de 15,4 millones de euros al cierre de 2025 a 8 millones a finales de julio."
+    },
+    "sources": [
+      {
+        "label": "DON’T NOD",
+        "type": {
+          "es": "Comunicado regulatorio oficial sobre resultados, financiación y reestructuración"
+        },
+        "url": "https://www.dontnod-bourse.com/fr/informations-financieres/communiques-de-presse/?ID=ACTUS-0-100048"
+      },
+      {
+        "label": "Video Games Chronicle",
+        "type": {
+          "es": "Contexto periodístico sobre el alcance laboral y la situación financiera"
+        },
+        "url": "https://www.videogameschronicle.com/news/life-is-strange-studio-dont-nod-says-it-may-have-to-lay-off-90-staff-warns-it-may-not-last-beyond-january/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El proyecto reorganizaría el estudio francés alrededor de una única línea de producción para concentrar recursos y competencias en los trabajos prioritarios. La cifra de 90 puestos es un máximo sometido al proceso de consulta y negociación, no un recuento definitivo de despidos ejecutados.",
+        "En el primer semestre de 2026, los ingresos operativos económicos se redujeron un 56 % interanual hasta 6,1 millones de euros y el EBITDA económico registró una pérdida de 4,3 millones. La dirección sostiene que el plan resulta esencial para mantener las operaciones mientras busca nuevos fondos."
+      ]
+    }
+  },
+  {
+    "id": "nintendo-switch-2-zelda-40-aniversario",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "el 29 de octubre de 2026",
+        "un Pro Controller y una funda de transporte a juego",
+        "una nueva opción de hardware con identidad propia"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-09-08",
+    "addedAt": "2026-09-08T14:52:45Z",
+    "publishedAt": "2026-09-08T14:00:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Zelda"
+      },
+      "copy": {
+        "es": "Zelda celebra su 40.º aniversario con una Nintendo Switch 2 especial disponible el 29 de octubre"
+      }
+    },
+    "tone": "platforms",
+    "title": {
+      "es": "Nintendo presenta una Switch 2 especial por el 40.º aniversario de Zelda"
+    },
+    "summary": {
+      "es": "Nintendo lanzará el 29 de octubre de 2026 una edición de Nintendo Switch 2 diseñada por el 40.º aniversario de The Legend of Zelda. Ese mismo día llegarán un Pro Controller y una funda de transporte a juego."
+    },
+    "why": {
+      "es": "La edición traslada la celebración de Zelda al catálogo físico de Nintendo Switch 2 y ofrece una nueva opción de hardware con identidad propia una semana antes del estreno del remake de Ocarina of Time."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=Ymw9UTRu1V0",
+      "label": {
+        "es": "Ver la presentación oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Nintendo of America",
+        "type": {
+          "es": "Anuncio oficial del hardware y su fecha de lanzamiento"
+        },
+        "url": "https://www.youtube.com/watch?v=Ymw9UTRu1V0"
+      },
+      {
+        "label": "Nintendo Direct",
+        "type": {
+          "es": "Presentación oficial del 40.º aniversario"
+        },
+        "url": "https://www.nintendo.com/us/nintendo-direct/9-8-2026/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La consola, la base y los mandos Joy-Con reciben un diseño conmemorativo inspirado en la saga. Nintendo acompañará el sistema con un mando Pro y una funda de transporte coordinados, todos previstos para la misma fecha.",
+        "El lanzamiento situará la renovación de hardware justo antes de la llegada de Ocarina of Time a Nintendo Switch 2. Nintendo ha mostrado los tres productos, aunque el anuncio inicial no concreta todavía sus precios ni la disponibilidad por regiones."
+      ]
+    }
+  },
+  {
+    "id": "zelda-ocarina-of-time-fecha-gameplay",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "el 5 de noviembre de 2026",
+        "cámara libre, salto manual y escenas con voces",
+        "el sistema Threads of Time para seguir objetivos"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-09-08",
+    "addedAt": "2026-09-08T14:52:45Z",
+    "publishedAt": "2026-09-08T14:00:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Ocarina of Time"
+      },
+      "copy": {
+        "es": "Ocarina of Time llegará a Nintendo Switch 2 el 5 de noviembre con gráficos rehechos y nuevas opciones de control"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "El remake de Zelda: Ocarina of Time llegará el 5 de noviembre a Nintendo Switch 2"
+    },
+    "summary": {
+      "es": "Nintendo lanzará The Legend of Zelda: Ocarina of Time el 5 de noviembre de 2026 para Nintendo Switch 2. El remake rehace por completo los gráficos y añade cámara libre, salto manual y escenas con voces."
+    },
+    "why": {
+      "es": "La demostración de Eiji Aonuma presentó además el sistema Threads of Time para seguir objetivos, movimientos más ágiles, apuntado por movimiento y nuevas conversaciones, manteniendo la estructura y el espíritu del original."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=wuFfiTEr2yc",
+      "label": {
+        "es": "Ver el tráiler oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Nintendo of America",
+        "type": {
+          "es": "Tráiler oficial con fecha de lanzamiento"
+        },
+        "url": "https://www.youtube.com/watch?v=wuFfiTEr2yc"
+      },
+      {
+        "label": "Nintendo of America",
+        "type": {
+          "es": "Demostración oficial de jugabilidad"
+        },
+        "url": "https://www.youtube.com/watch?v=PQvD3p2yGwc"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La demostración recorrió el Bosque Kokiri, el interior del Gran Árbol Deku, la campiña de Hyrule y la ciudadela. Link puede saltar de forma manual, acelerar después de rodar, nadar con más rapidez y cambiar objetos con un solo botón.",
+        "Nintendo conserva las transiciones entre determinadas zonas y amplía los diálogos y la actividad de la ciudad. El apuntado admite movimiento y la ocarina puede reaccionar a instrumentos reales captados por Nintendo Switch 2."
+      ]
+    }
+  },
+  {
+    "id": "blizzcon-2026-programa-emision",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "el 12 y 13 de septiembre en Anaheim",
+        "ceremonia de apertura el sábado a las 10:30 PDT",
+        "emitirá gratis la apertura, los paneles principales y las competiciones de esports"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-02",
+    "addedAt": "2026-09-08T02:30:24Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "BlizzCon"
+      },
+      "copy": {
+        "es": "BlizzCon 2026 confirma su programa y una emisión gratuita para el 12 y 13 de septiembre"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Blizzard detalla el programa y la emisión gratuita de BlizzCon 2026"
+    },
+    "summary": {
+      "es": "BlizzCon 2026 se celebrará el 12 y 13 de septiembre en Anaheim, con la ceremonia de apertura el sábado a las 10:30 PDT. Blizzard emitirá gratis la apertura, los paneles principales y las competiciones de esports."
+    },
+    "why": {
+      "es": "La programación reunirá novedades de World of Warcraft, Diablo, Overwatch, Hearthstone y los clásicos de Blizzard. Parte del programa seguirá bajo reserva hasta después de la ceremonia, por lo que el evento conserva potencial de anuncios relevantes."
+    },
+    "sources": [
+      {
+        "label": "Blizzard Entertainment",
+        "type": {
+          "es": "Guía oficial de programación y retransmisión"
+        },
+        "url": "https://news.blizzard.com/en-gb/article/24294065/know-before-you-go-blizzcon-2026-programming-schedule-viewership-guide-floor-map-and-more"
+      },
+      {
+        "label": "BlizzCon",
+        "type": {
+          "es": "Guía oficial para seguir el evento"
+        },
+        "url": "https://blizzcon.com/es-mx/viewership-guide"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La apertura comenzará a las 19:30 en España peninsular y dará paso a emisiones repartidas entre los canales oficiales de Warcraft, Diablo y Overwatch. La programación incluye paneles de desarrollo, competiciones y actividades de la comunidad.",
+        "Blizzard indica que el horario completo se actualizará después de la ceremonia inaugural y que algunas zonas del recinto permanecen todavía ocultas. Esa reserva convierte la cita en el próximo gran punto de atención para sus principales franquicias."
+      ]
+    }
+  },
+  {
+    "id": "onimusha-way-of-the-sword-millon-primer-dia",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "más de un millón de copias en todo el mundo",
+        "durante su primer día a la venta",
+        "más de 10 millones de unidades"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-07",
+    "addedAt": "2026-09-07T09:34:04Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Onimusha"
+      },
+      "copy": {
+        "es": "Onimusha supera el millón de copias en su primer día"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Onimusha: Way of the Sword supera el millón de copias en su primer día"
+    },
+    "summary": {
+      "es": "Capcom ha anunciado que Onimusha: Way of the Sword vendió más de un millón de copias en todo el mundo durante su primer día a la venta, tras su lanzamiento el 4 de septiembre."
+    },
+    "why": {
+      "es": "El estreno del primer Onimusha nuevo en más de 20 años eleva las ventas acumuladas de la saga a más de 10 millones de unidades y refuerza la recuperación de una de las propiedades históricas de Capcom."
+    },
+    "sources": [
+      {
+        "label": "Capcom",
+        "type": {
+          "es": "Comunicado oficial de ventas"
+        },
+        "url": "https://www.capcom.co.jp/ir/english/news/html/e260907.html"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Way of the Sword se estrenó el 4 de septiembre en PS5, Xbox Series X|S, Nintendo Switch 2 y PC. Capcom atribuye el alcance inicial a una campaña de promoción que incluyó demos y pruebas presenciales antes del lanzamiento.",
+        "La compañía presenta el resultado como un nuevo impulso para una serie que llevaba más de dos décadas sin una entrega principal inédita. Con este debut, el conjunto de la franquicia rebasa oficialmente los 10 millones de juegos vendidos."
+      ]
+    }
+  },
+  {
+    "id": "civilization-vii-arc-tomorrow-earthrise",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "una cuarta era gratuita en 2027",
+        "desde la década de 1950 hasta la de 2050",
+        "la primera gran expansión de pago del juego"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-05",
+    "addedAt": "2026-09-07T06:24:41Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Civilization VII"
+      },
+      "copy": {
+        "es": "Civilization VII sumará la Era Atómica y su primera expansión en 2027"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Civilization VII añadirá la Era Atómica gratis y estrenará Earthrise en 2027"
+    },
+    "summary": {
+      "es": "Firaxis ha anunciado Arc of Tomorrow, una gran actualización de Civilization VII que añadirá una cuarta era gratuita en 2027: la Era Atómica. El nuevo periodo ampliará la cronología jugable desde la década de 1950 hasta la de 2050."
+    },
+    "why": {
+      "es": "El estudio también ha presentado Earthrise, la primera gran expansión de pago del juego, centrada en la carrera espacial y la adaptación ambiental. Ambos contenidos llegarán por separado en 2027 y todavía no tienen fecha concreta."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=9iUv8QS4nGM",
+      "label": {
+        "es": "Ver el avance oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Civilization",
+        "type": {
+          "es": "Anuncio oficial de Arc of Tomorrow y Civilization VII: Earthrise"
+        },
+        "url": "https://civilization.2k.com/civ-vii/news/35th-anniversary/"
+      },
+      {
+        "label": "Civilization",
+        "type": {
+          "es": "Página oficial con detalles de contenido, ventanas y preguntas frecuentes"
+        },
+        "url": "https://civilization.2k.com/civ-vii/35th-anniversary/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Arc of Tomorrow incorporará edificios, unidades, árboles tecnológicos, políticas y acontecimientos propios de la Era Atómica. Firaxis prepara además acuerdos multilaterales, guerras por delegación entre ciudades-estado, nuevas opciones nucleares, Grandes Obras de Cine y bienes manufacturados como el uranio enriquecido.",
+        "Earthrise desarrollará una carrera espacial a lo largo de todas las eras: comenzará con la observación de cuerpos celestes, avanzará hacia misiones orbitales y culminará con una agencia capaz de explorar el sistema solar. También añadirá tecnologías para modificar el terreno y responder a desastres ligados al calentamiento global."
+      ]
+    }
+  },
+  {
+    "id": "level5-vision-2026-ii-fecha",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "el 10 de septiembre a las 21:00, hora de Japón",
+        "novedades y actualizaciones de varios títulos",
+        "subtítulos en inglés y chino tradicional"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-03",
+    "addedAt": "2026-09-05T17:33:56Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "LEVEL5 VISION"
+      },
+      "copy": {
+        "es": "LEVEL5 VISION 2026 II se emitirá el 10 de septiembre"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Level-5 anuncia una nueva presentación para el 10 de septiembre"
+    },
+    "summary": {
+      "es": "Level-5 celebrará LEVEL5 VISION 2026 II Dream el 10 de septiembre a las 21:00, hora de Japón. La presentación digital reunirá novedades y actualizaciones de varios títulos de la compañía."
+    },
+    "why": {
+      "es": "La emisión podrá seguirse en YouTube a las 14:00 en España peninsular y tendrá subtítulos en inglés y chino tradicional. Level-5 todavía no ha confirmado qué juegos aparecerán ni cuánto durará el programa."
+    },
+    "sources": [
+      {
+        "label": "Level-5",
+        "type": {
+          "es": "Página oficial de LEVEL5 VISION 2026 II Dream"
+        },
+        "url": "https://www.level5.co.jp/vision2026-2/en/"
+      },
+      {
+        "label": "Level-5",
+        "type": {
+          "es": "Anuncio oficial de la fecha y el contenido general de la emisión"
+        },
+        "url": "https://x.com/LEVEL5_times/status/2095435125035282829"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "LEVEL5 VISION 2026 II Dream será la segunda presentación propia de la compañía en 2026. Su convocatoria promete información sobre varios proyectos, pero no adelanta una lista de juegos, de modo que cualquier presencia concreta queda pendiente de confirmación.",
+        "Level-5 ofrecerá la emisión a través de su canal oficial de YouTube. La página del evento confirma la hora japonesa y la disponibilidad prevista de subtítulos para facilitar el seguimiento internacional."
+      ]
+    }
+  },
+  {
+    "id": "xbox-cloud-gaming-limites-horas",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "Ultimate tendrá 15 horas al mes, Premium 10 y Essential 5",
+        "comprar horas adicionales en Xbox Store",
+        "comprar tiempo de juego en la nube sin suscripción"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-09-03",
+    "addedAt": "2026-09-05T06:27:02Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox limitará el juego en la nube de Game Pass a entre 5 y 15 horas mensuales"
+      }
+    },
+    "tone": "xbox",
+    "title": {
+      "es": "Xbox limitará el juego en la nube de Game Pass a entre 5 y 15 horas mensuales"
+    },
+    "summary": {
+      "es": "Xbox limitará desde noviembre el juego en la nube incluido en Game Pass: Ultimate tendrá 15 horas al mes, Premium 10 y Essential 5. Cuando se agote el cupo, los usuarios podrán comprar horas adicionales en Xbox Store."
+    },
+    "why": {
+      "es": "La compañía también permitirá comprar tiempo de juego en la nube sin suscripción para transmitir títulos compatibles que ya se posean. Xbox reconoce que el cambio supondrá un coste práctico mayor para algunos jugadores y calcula que afectará al 4 % de los suscriptores de Game Pass."
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Anuncio oficial de los límites mensuales y el acceso sin suscripción"
+        },
+        "url": "https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "A partir de noviembre, los tres planes de Game Pass incluirán bolsas mensuales distintas para jugar en la nube: 15 horas en Ultimate, 10 en Premium y 5 en Essential. Una vez consumidas, Xbox ofrecerá tiempo adicional de pago, aunque todavía no ha detallado sus precios ni su disponibilidad por mercados.",
+        "El mismo modelo abrirá Xbox Cloud Gaming a quienes no quieran mantener una suscripción. Esos usuarios podrán comprar horas y transmitir desde dispositivos compatibles los juegos elegibles que ya tengan en su biblioteca; la compañía presentará en noviembre las condiciones completas y las herramientas para consultar el tiempo restante."
+      ]
+    }
+  },
+  {
+    "id": "nintendo-direct-zelda-switch2-septiembre",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "un Direct de 30 minutos dedicado al 40.º aniversario de The Legend of Zelda",
+        "45 minutos sobre los juegos de Nintendo Switch 2",
+        "Nintendo Treehouse: Live"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-09-04",
+    "addedAt": "2026-09-05T00:27:56Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Nintendo Direct"
+      },
+      "copy": {
+        "es": "Nintendo Direct tendrá dos emisiones: Zelda el 8 y Switch 2 el 9 de septiembre"
+      }
+    },
+    "tone": "nintendo",
+    "title": {
+      "es": "Nintendo anuncia dos Direct consecutivos: Zelda el 8 y Switch 2 el 9 de septiembre"
+    },
+    "summary": {
+      "es": "Nintendo emitirá el 8 de septiembre un Direct de 30 minutos dedicado al 40.º aniversario de The Legend of Zelda. El 9 de septiembre ofrecerá otra presentación de 45 minutos sobre los juegos de Nintendo Switch 2 que llegarán este invierno."
+    },
+    "why": {
+      "es": "Las dos emisiones comenzarán a las 16:00 en España peninsular. Tras el segundo Nintendo Direct se celebrará además un Nintendo Treehouse: Live con partidas de una selección de títulos mostrados durante la presentación."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=9VIcgVU4f1E",
+      "label": {
+        "es": "Ver el Nintendo Direct oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Nintendo UK",
+        "type": {
+          "es": "Anuncio oficial del Nintendo Direct general, su duración y su enfoque"
+        },
+        "url": "https://www.nintendo.com/en-gb/News/Nintendo-Direct/Latest-Nintendo-Direct/Nintendo-Direct-698557.html"
+      },
+      {
+        "label": "Nintendo UK",
+        "type": {
+          "es": "Anuncio oficial del Direct por el 40.º aniversario de The Legend of Zelda"
+        },
+        "url": "https://www.nintendo.com/en-gb/News/Nintendo-Direct/2026/The-Legend-of-Zelda-40th-Anniversary-Direct-08-09-2026-3190030.html"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Página oficial del Nintendo Treehouse posterior a la presentación"
+        },
+        "url": "https://www.nintendo.com/en-ca/whatsnew/events/treehouse-live/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La primera cita estará centrada por completo en The Legend of Zelda y reunirá información relacionada con los 40 años de la serie. Nintendo no ha adelantado juegos concretos, de modo que cualquier contenido adicional sigue sin confirmar hasta la emisión del 8 de septiembre.",
+        "El Direct del día siguiente mirará al calendario de invierno de Nintendo Switch 2 y tendrá una duración aproximada de 45 minutos. Nintendo prolongará la cobertura con una sesión Treehouse en la que enseñará jugabilidad de varios de los títulos incluidos en la presentación."
+      ]
+    }
+  },
+  {
+    "id": "xbox-app-tcl-smart-tv",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "durante los próximos meses",
+        "sin necesidad de una consola",
+        "más de 25 países"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-09-04",
+    "addedAt": "2026-09-04T20:36:54Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox llevará su aplicación a televisores TCL de más de 25 países"
+      }
+    },
+    "tone": "xbox",
+    "title": {
+      "es": "Xbox llevará su aplicación a televisores TCL de más de 25 países"
+    },
+    "summary": {
+      "es": "Microsoft llevará la aplicación de Xbox a televisores inteligentes TCL seleccionados durante los próximos meses. La alianza permitirá acceder a Xbox Cloud Gaming directamente desde la televisión, sin necesidad de una consola."
+    },
+    "why": {
+      "es": "El despliegue alcanzará a millones de usuarios en más de 25 países. Será necesario un mando compatible y tiempo de juego en la nube incluido con Xbox Game Pass o adquirido por separado; Microsoft todavía no ha detallado los modelos ni la fecha exacta."
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Anuncio oficial de la alianza con TCL, su alcance y sus requisitos"
+        },
+        "url": "https://news.xbox.com/en-us/2026/09/04/xbox-app-tcl-smart-tv/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Los usuarios de los televisores compatibles podrán iniciar sesión en la aplicación, conectar un mando y retransmitir juegos mediante Xbox Cloud Gaming. Las partidas guardadas, los logros y la lista de amigos seguirán al jugador entre los distintos dispositivos del ecosistema Xbox.",
+        "La incorporación de TCL amplía la estrategia de Microsoft de llevar Xbox más allá de la consola y abre el servicio a otra gran base instalada de televisores. El anuncio confirma una distribución internacional, pero deja pendientes la lista de modelos compatibles, los mercados concretos y el calendario preciso del despliegue."
+      ]
+    }
+  },
+  {
+    "id": "gears-of-war-e-day-modificacion-armas-exploracion",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "modificar las armas por primera vez en una campaña de la saga",
+        "zonas de varias manzanas",
+        "Los Hard Cases ocultos aportarán progresión adicional"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-04",
+    "addedAt": "2026-09-04T17:39:03Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Gears"
+      },
+      "copy": {
+        "es": "Gears: E-Day llevará modificación de armas y rutas opcionales a la campaña"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Gears of War: E-Day incorporará modificación de armas y rutas opcionales en campaña"
+    },
+    "summary": {
+      "es": "The Coalition ha confirmado que Gears of War: E-Day permitirá modificar las armas por primera vez en una campaña de la saga. La aventura seguirá siendo lineal, pero alternará tramos dirigidos con zonas de varias manzanas, rutas alternativas y objetivos secundarios."
+    },
+    "why": {
+      "es": "Los Hard Cases ocultos aportarán progresión adicional y los Locust compartirán la nueva movilidad del jugador: podrán trepar para rodearlo, mientras los granaderos usarán humo para ocultar su avance a corta distancia. El lanzamiento sigue fijado para el 6 de octubre en Xbox Series X|S y PC."
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Podcast y transcripción oficiales sobre exploración, progresión, armas y tácticas enemigas"
+        },
+        "url": "https://news.xbox.com/en-us/2026/09/04/gears-of-war-e-day-campaign-brotherhood-and-hope-in-a-hopeless-world-official-xbox-podcast/"
+      },
+      {
+        "label": "Xbox España",
+        "type": {
+          "es": "Ficha oficial con fecha y plataformas"
+        },
+        "url": "https://www.xbox.com/es-es/games/gears-of-war-eday"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La campaña mantendrá una estructura general lineal, pero abrirá algunos capítulos a varias manzanas de Kalona. En esos espacios se podrá escoger el camino hacia el objetivo, ayudar a escuadrones o familias atrapadas y descubrir relatos ambientales alejados de la ruta principal.",
+        "La exploración tendrá recompensa jugable: las cajas Hard Case alimentarán la progresión y el sistema de modificación trasladará a la campaña ideas antes asociadas al modo Horda. The Coalition también adapta la inteligencia enemiga al movimiento renovado, con Locust capaces de trepar, flanquear y cubrir su aproximación con humo."
+      ]
+    }
+  },
+  {
+    "id": "crimson-desert-charting-unknown-fecha",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "el 16 de octubre de 2026 en Europa",
+        "navegación oceánica, nuevas islas y buceo",
+        "nuevas historias para Kliff, Oongka y Damiane"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-03",
+    "publishedAt": "2026-09-03T14:00:00Z",
+    "addedAt": "2026-09-04T15:27:09Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Crimson Desert"
+      },
+      "copy": {
+        "es": "Crimson Desert amplía Pywel por mar con Charting the Unknown"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Crimson Desert ampliará Pywel por mar el 16 de octubre con Charting the Unknown"
+    },
+    "summary": {
+      "es": "Pearl Abyss lanzará Crimson Desert Enhanced: Charting the Unknown el 16 de octubre de 2026 en Europa para consolas y PC. La expansión añade navegación oceánica, nuevas islas y buceo para explorar tesoros, ruinas sumergidas y misterios bajo el mar."
+    },
+    "why": {
+      "es": "El DLC incorpora también amenazas por tierra y mar, gestión de instalaciones, un sistema de vivienda ampliado y nuevas historias para Kliff, Oongka y Damiane. No estará disponible en Mac durante el lanzamiento."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=HaCtG1F_hfE",
+      "label": {
+        "es": "Ver el tráiler oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Pearl Abyss",
+        "type": {
+          "es": "Anuncio oficial con fecha, plataformas y horarios regionales"
+        },
+        "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129"
+      },
+      {
+        "label": "Pearl Abyss",
+        "type": {
+          "es": "Página oficial con sistemas, historias y contenido de la expansión"
+        },
+        "url": "https://crimsondesert.pearlabyss.com/en-US/Game/DLC/charting-the-unknown"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Resumen oficial de State of Play y presentación de la expansión"
+        },
+        "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La exploración se extiende fuera de las costas de Pywel: el jugador podrá ponerse al mando de un barco, viajar a islas inéditas y sumergirse para buscar tesoros y secretos en ruinas submarinas. Los nuevos enemigos obligarán además a adaptar las tácticas tanto en tierra como en el océano.",
+        "Charting the Unknown amplía también la vida cotidiana con instalaciones que se pueden alquilar y gestionar, una vivienda más completa y relaciones más profundas con los habitantes. Sus tramas abarcan una presencia en el desierto, un conflicto político, un viaje más allá del tiempo y un antiguo secreto bajo las olas."
+      ]
+    }
+  },
+  {
+    "id": "konami-press-start-project-zircon-rev-noir",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "PROJECT ZIRCON",
+        "también llegará en 2027 a Xbox Series X|S y Steam",
+        "combate de Rhapsody in Scarlet"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-03",
+    "publishedAt": "2026-09-03T15:00:00Z",
+    "addedAt": "2026-09-04T08:35:03Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "KONAMI"
+      },
+      "copy": {
+        "es": "KONAMI anuncia Project Zircon y amplía Rev. NOiR a Xbox y PC"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Konami anuncia Project Zircon y confirma Rev. NOiR para Xbox y PC"
+    },
+    "summary": {
+      "es": "Konami ha presentado PROJECT ZIRCON, un roguelike de construcción de mazos que combina estrategia y gestión, y ha confirmado que Rev. NOiR también llegará en 2027 a Xbox Series X|S y Steam, además de PS5."
+    },
+    "why": {
+      "es": "El KONAMI PRESS START amplió además el combate de Rhapsody in Scarlet, mostró por primera vez la jugabilidad de Wai Wai World Craft y repasó Silent Hill: Townfall y Castlevania: Belmont's Curse."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=us-U1NKynio",
+      "label": {
+        "es": "Ver la presentación oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Konami",
+        "type": {
+          "es": "Resumen oficial de KONAMI PRESS START y sus anuncios"
+        },
+        "url": "https://www.konami.com/games/us/en/topics/3402/"
+      },
+      {
+        "label": "Konami",
+        "type": {
+          "es": "Emisión oficial completa de KONAMI PRESS START"
+        },
+        "url": "https://www.youtube.com/watch?v=us-U1NKynio"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "PROJECT ZIRCON divide sus partidas entre fases de estrategia y administración: el jugador expande territorio, obtiene cartas e instalaciones y prepara combinaciones para afrontar escenarios ramificados y varios finales. Konami ya ha abierto su página de deseados en Steam.",
+        "Rev. NOiR combina acción con decisiones estratégicas mediante Astral Sigils y Kardieoses. Su nuevo tráiler profundiza en Asch, Finé y la amenaza del lightfall, mientras que la confirmación de Xbox Series X|S y Steam amplía el lanzamiento anunciado originalmente para PS5."
+      ]
+    }
+  },
+  {
+    "id": "monster-hunter-wilds-ascendance",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "una expansión masiva para 2027",
+        "la región aérea Skybound Eyrie",
+        "potencia temporalmente las 14 armas"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-03",
+    "addedAt": "2026-09-03T17:52:08Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Monster Hunter Wilds"
+      },
+      "copy": {
+        "es": "Monster Hunter Wilds anuncia la expansión Ascendance para 2027"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Monster Hunter Wilds anuncia Ascendance, su expansión masiva para 2027"
+    },
+    "summary": {
+      "es": "Capcom ha anunciado Monster Hunter Wilds: Ascendance, una expansión masiva para 2027 con una nueva historia posterior a la campaña, la región aérea Skybound Eyrie y monstruos como Lao-Shan Lung, Araketa y Gundoraja."
+    },
+    "why": {
+      "es": "El contenido exige el juego base y alcanzar el rango 40 para entrar en Rango Maestro. Su nueva Boost Bracer potencia temporalmente las 14 armas, mientras que una demo jugable llegará a Tokyo Game Show 2026."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=SodbU0PEVH4",
+      "label": {
+        "es": "Ver el tráiler oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Anuncio oficial de Capcom con historia, monstruos y nuevas mecánicas"
+        },
+        "url": "https://blog.playstation.com/2026/09/03/monster-hunter-wilds-ascendance-reveals-new-monsters-story-details-and-gameplay/"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Resumen oficial de State of Play y confirmación de la demo de TGS"
+        },
+        "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La historia arranca con la llegada del dragón anciano Lao-Shan Lung a las Tierras Prohibidas y avanza varios años respecto al final del juego base. El equipo de expedición habrá levantado la fortaleza Madoi cuando el cielo de Wyveria revele Skybound Eyrie, una nueva zona flotante con ruinas y vida endémica inédita.",
+        "La Boost Bracer usa la eslinga para reforzar durante un tiempo las características propias de cada tipo de arma. Para acceder a la campaña será necesario completar la misión Awaking From a Dream, y Capcom llevará a Tokyo Game Show 2026 una primera prueba centrada en la caza de Araketa."
+      ]
+    }
+  },
+  {
+    "id": "until-dawn-2-fecha-lanzamiento",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "el 28 de enero de 2027",
+        "cada decisión puede alterar la historia",
+        "los ocho integrantes de Dead True"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-09-03",
+    "addedAt": "2026-09-03T17:52:08Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Until Dawn 2"
+      },
+      "copy": {
+        "es": "Until Dawn 2 se lanzará en PS5 el 28 de enero de 2027"
+      }
+    },
+    "tone": "playstation",
+    "title": {
+      "es": "Until Dawn 2 se lanzará en PS5 el 28 de enero de 2027"
+    },
+    "summary": {
+      "es": "Until Dawn 2 se lanzará en PS5 el 28 de enero de 2027. Firesprite desarrolla la secuela junto a AdHoc Studio y mantiene su núcleo de terror narrativo, donde cada decisión puede alterar la historia y determinar quién sobrevive."
+    },
+    "why": {
+      "es": "La nueva historia sigue a los ocho integrantes de Dead True, un falso equipo de cazafantasmas de YouTube, desde Blackwood Sanatorium hasta la abandonada isla Akishima. Las reservas comenzarán el 10 de septiembre."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=-wjhso38sAY",
+      "label": {
+        "es": "Ver el tráiler oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Anuncio oficial de Firesprite con fecha, historia y ediciones"
+        },
+        "url": "https://blog.playstation.com/2026/09/03/until-dawn-2-launches-january-28/"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Resumen oficial de los anuncios de State of Play"
+        },
+        "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El grupo comienza investigando Blackwood Sanatorium, escenario ligado a la primera entrega, antes de que una superviviente de un ataque sobrenatural los conduzca hasta Akishima. Allí, cada interacción puede cambiar relaciones, rutas y muertes dentro de la nueva historia escrita con AdHoc Studio.",
+        "Las reservas de las ediciones estándar y Digital Deluxe incluirán contenido inspirado en el regreso del doctor Hill. La edición superior añadirá atuendos para los ocho miembros de Dead True y Diorama of Death, una función para revisar desde otros ángulos las muertes desbloqueadas."
+      ]
+    }
+  },
+  {
     "id": "mario-kart-8-deluxe-switch2-ocho-jugadores",
     "important": false,
     "emphasis": {
@@ -3450,9 +4551,9 @@
     "id": "xbox-nube-gratis-anuncios",
     "emphasis": {
       "es": [
-        "sin pagar por el acceso a la nube",
-        "límite de una hora",
-        "no se interrumpe con publicidad"
+        "15 horas para Ultimate, 10 para Premium y 5 para Essential",
+        "comprar tiempo adicional en Xbox Store",
+        "usar Xbox Cloud Gaming sin suscribirse a Game Pass"
       ]
     },
     "category": {
@@ -3460,54 +4561,55 @@
       "en": "Platforms"
     },
     "date": "2026-07-23",
+    "updated": "2026-09-03",
     "featured": false,
     "ticker": {
       "keyword": {
         "es": "Xbox"
       },
       "copy": {
-        "es": "Xbox prueba el juego en la nube gratuito con anuncios"
+        "es": "Xbox limitará las horas mensuales de juego en la nube incluidas con Game Pass"
       }
     },
     "tone": "xbox",
     "title": {
-      "es": "Xbox prueba el juego en la nube gratuito con anuncios",
-      "en": "Xbox tests free ad-supported cloud gaming"
+      "es": "Xbox limitará las horas de juego en la nube de Game Pass desde noviembre",
+      "en": "Xbox will cap Game Pass cloud gaming hours starting in November"
     },
     "summary": {
-      "es": "Xbox Insiders pueden retransmitir gratuitamente una selección de juegos que ya poseen después de ver anuncios. Las sesiones duran un máximo de una hora y la publicidad aparece antes de jugar, sin interrumpir la partida.",
-      "en": "Xbox Insiders can stream selected games they already own for free after watching ads. Sessions are limited to one hour and ads play before gameplay rather than interrupting it."
+      "es": "Desde noviembre, Xbox Game Pass incluirá un máximo mensual de 15 horas para Ultimate, 10 para Premium y 5 para Essential. Actualmente los suscriptores compatibles pueden jugar en la nube sin estos límites mensuales.",
+      "en": "Starting in November, Xbox Game Pass will include a monthly maximum of 15 hours for Ultimate, 10 for Premium, and 5 for Essential. Eligible subscribers can currently use cloud gaming without these monthly limits."
     },
     "why": {
-      "es": "Microsoft está probando una nueva puerta de entrada a Xbox Cloud Gaming que reduce el coste de acceso y abre otra vía de monetización al margen de Game Pass.",
-      "en": "Microsoft is testing a new entry point to Xbox Cloud Gaming that lowers access costs and creates a monetisation route outside Game Pass."
+      "es": "Al agotar las horas incluidas se podrá comprar tiempo adicional en Xbox Store. Microsoft también permitirá usar Xbox Cloud Gaming sin suscribirse a Game Pass, mediante horas de pago para retransmitir juegos compatibles que el usuario ya posea.",
+      "en": "After using the included hours, players will be able to purchase additional time through the Xbox Store. Microsoft will also let players use Xbox Cloud Gaming without a Game Pass subscription by buying hours to stream eligible games they own."
     },
     "sources": [
       {
         "label": "Xbox Wire",
         "type": {
-          "es": "Fuente oficial",
-          "en": "Official source"
+          "es": "Anuncio oficial de los límites mensuales y del acceso de pago sin Game Pass",
+          "en": "Official announcement of monthly limits and paid access without Game Pass"
         },
-        "url": "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
+        "url": "https://news.xbox.com/en-us/2026/09/03/xbox-cloud-gaming-changes/"
       },
       {
-        "label": "The Verge",
+        "label": "Xbox Wire",
         "type": {
-          "es": "Contexto",
-          "en": "Context"
+          "es": "Anuncio oficial de la prueba anterior de acceso gratuito con publicidad",
+          "en": "Official announcement of the earlier free ad-supported access test"
         },
-        "url": "https://www.theverge.com/games/969969/xbox-testing-ad-supported-streaming"
+        "url": "https://news.xbox.com/en-us/2026/07/23/game-streaming-ad-supported-xbox-insiders/"
       }
     ],
     "homeDetails": {
       "es": [
-        "La prueba permite a Xbox Insiders retransmitir una selección de juegos que ya poseen sin pagar por el acceso a la nube. Los anuncios se muestran antes de comenzar y cada sesión tiene un límite de una hora.",
-        "Microsoft presenta el sistema como una forma opcional de reducir el coste de entrada. De momento no existe confirmación de que la prueba vaya a convertirse en un nivel comercial permanente."
+        "Microsoft calcula que el límite afectará al 4% de los suscriptores de Game Pass. Todavía no ha detallado cuánto costarán las horas adicionales y advierte de que el tiempo disponible, las opciones de compra, las funciones y los mercados compatibles pueden variar.",
+        "La compañía justifica el cambio por el coste creciente de prestar el servicio a medida que aumentan el uso y la duración de las sesiones. El nuevo acceso sin suscripción permitirá comprar horas para juegos compatibles en propiedad y plantea un modelo distinto de la prueba gratuita con anuncios anunciada para Xbox Insiders en julio."
       ],
       "en": [
-        "The test lets Xbox Insiders stream selected games they already own without paying for cloud access. Ads play before the session begins and each session is limited to one hour.",
-        "Microsoft presents the system as an optional way to lower the cost of entry. There is currently no confirmation that the test will become a permanent commercial tier."
+        "Microsoft estimates that the limit will affect 4% of Game Pass subscribers. It has not yet detailed the price of additional hours and says available time, purchase options, features, and supported markets may vary.",
+        "The company attributes the change to the rising cost of providing the service as usage and session length increase. The new subscription-free option will let players buy hours for eligible games they own and differs from the free ad-supported Xbox Insider test announced in July."
       ]
     }
   },

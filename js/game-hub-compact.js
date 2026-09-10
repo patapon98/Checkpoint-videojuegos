@@ -4,11 +4,45 @@
   const PAGE_SIZE = 5;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-  function moveFactsUp() {
+  function normalizeLabel(value = '') {
+    return value.trim().toLocaleLowerCase('es').replace('fecha de lanzamiento', 'lanzamiento');
+  }
+
+  function promoteQuickFacts() {
+    const facts = document.getElementById('gameFacts');
+    const quickFacts = document.getElementById('quickFacts');
+    if (!facts || !quickFacts) return;
+
+    const labels = new Set(
+      [...facts.querySelectorAll('.game-fact > span')].map((node) => normalizeLabel(node.textContent))
+    );
+
+    quickFacts.querySelectorAll(':scope > div').forEach((row) => {
+      const term = row.querySelector('dt')?.textContent?.trim();
+      const value = row.querySelector('dd')?.textContent?.trim();
+      if (!term || !value || labels.has(normalizeLabel(term))) return;
+
+      const fact = document.createElement('div');
+      fact.className = 'game-fact';
+      const label = document.createElement('span');
+      label.textContent = term;
+      const strong = document.createElement('strong');
+      strong.textContent = value;
+      fact.append(label, strong);
+      facts.appendChild(fact);
+      labels.add(normalizeLabel(term));
+    });
+  }
+
+  function organizeOverview() {
+    const section = document.getElementById('resumen');
     const premise = document.getElementById('gamePremise');
     const facts = document.getElementById('gameFacts');
-    if (!premise || !facts || premise.nextElementSibling === facts) return;
-    premise.insertAdjacentElement('afterend', facts);
+    if (!section || !premise || !facts) return;
+
+    const kicker = section.querySelector('.section-heading .game-kicker');
+    if (kicker) kicker.textContent = 'En un vistazo';
+    if (premise.nextElementSibling !== facts) premise.insertAdjacentElement('afterend', facts);
   }
 
   function makeCardDetails() {
@@ -154,7 +188,8 @@
   }
 
   function init() {
-    moveFactsUp();
+    promoteQuickFacts();
+    organizeOverview();
     makeCardDetails();
     paginateHistory();
     makeSectionCollapsible('requisitos-pc', {
@@ -165,6 +200,7 @@
       closed: 'Consultar fuentes y verificación',
       open: 'Ocultar fuentes y verificación'
     });
+    document.body.classList.add('game-hub-enhanced');
   }
 
   if (document.readyState === 'loading') {

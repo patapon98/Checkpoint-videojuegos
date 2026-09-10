@@ -1,5 +1,69 @@
 [
   {
+    "id": "yo-kai-watch-2-haunted-domain-ps5-pc",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "Yo-kai Watch 2: Haunted Domain también llegará a PS5 y PC",
+        "amplía su lanzamiento más allá de Nintendo Switch 2",
+        "incorporará nuevos Yo-kai y gráficos renovados"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-09-10",
+    "addedAt": "2026-09-10T13:29:32Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Yo-kai Watch 2"
+      },
+      "copy": {
+        "es": "Yo-kai Watch 2 confirma versiones para PS5 y PC"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Yo-kai Watch 2 confirma versiones para PS5 y PC"
+    },
+    "summary": {
+      "es": "Level-5 ha confirmado que Yo-kai Watch 2: Haunted Domain también llegará a PS5 y PC. El remake amplía su lanzamiento más allá de Nintendo Switch 2 y se basará en la edición definitiva Psychic Specters."
+    },
+    "why": {
+      "es": "La expansión multiplataforma abre el regreso de una de las sagas más populares de Level-5 a una audiencia mucho mayor. La compañía también ha aclarado que incorporará nuevos Yo-kai y gráficos renovados."
+    },
+    "sources": [
+      {
+        "label": "Level-5",
+        "type": {
+          "es": "Presentación oficial LEVEL5 VISION 2026 II Dream"
+        },
+        "url": "https://www.youtube.com/live/z9nITMlt8Fk"
+      },
+      {
+        "label": "Level-5",
+        "type": {
+          "es": "Página oficial de la presentación"
+        },
+        "url": "https://www.level5.co.jp/vision/2026-ii/"
+      },
+      {
+        "label": "Famitsu",
+        "type": {
+          "es": "Contexto sobre plataformas y contenido confirmado"
+        },
+        "url": "https://www.famitsu.com/article/202609/87544"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Level-5 anunció inicialmente el remake durante el Nintendo Direct del 9 de septiembre con Nintendo Switch 2 como única plataforma comunicada. Un día después, su presentación LEVEL5 VISION añadió PlayStation 5 y PC mediante Steam al lanzamiento previsto.",
+        "Haunted Domain parte de Yo-kai Watch 2: Psychic Specters, la versión más completa del RPG original de Nintendo 3DS. La nueva edición actualizará el apartado gráfico y añadirá Yo-kai inéditos, aunque todavía no tiene fecha de lanzamiento."
+      ]
+    }
+  },
+  {
     "id": "physint-xbox-nueva-editora",
     "important": true,
     "emphasis": {

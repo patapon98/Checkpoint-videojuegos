@@ -39,15 +39,17 @@ for (const file of files) {
   const sectionIndex = html.indexOf('id="requisitos-pc"');
   const newsIndex = html.indexOf('id="noticias"');
   const sourcesIndex = html.indexOf('id="fuentes"');
+  const detailsNav = /<a\s+href="#cambios">Detalles<\/a>/i.test(html);
 
   if (!isPcGame(data)) {
     expect(sectionIndex === -1, `${label}: muestra requisitos pese a no declarar PC`);
-    expect(!html.includes('href="#requisitos-pc"'), `${label}: conserva un enlace de navegación a requisitos sin versión PC`);
+    expect(!html.includes('href="#requisitos-pc"'), `${label}: conserva un enlace independiente a requisitos sin versión PC`);
     continue;
   }
 
   expect(sectionIndex >= 0, `${label}: falta la sección #requisitos-pc`);
-  expect(html.includes('href="#requisitos-pc"'), `${label}: falta el enlace de navegación a Requisitos PC`);
+  expect(detailsNav, `${label}: falta el acceso de navegación a Detalles`);
+  expect(!html.includes('href="#requisitos-pc"'), `${label}: la navegación compacta no debe separar Requisitos PC de Detalles`);
   expect(newsIndex >= 0 && sourcesIndex >= 0 && newsIndex < sectionIndex && sectionIndex < sourcesIndex,
     `${label}: Requisitos PC debe aparecer entre Noticias y Fuentes`);
   expect(html.includes(`Requisitos de PC de ${escapeHtml(data.title)}`), `${label}: el título de requisitos no coincide`);
@@ -88,4 +90,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Requisitos de PC validados en ${files.length} fichas y cabeceras sin tarjetas de fuentes.`);
+console.log(`Requisitos de PC validados en ${files.length} fichas con navegación compacta y cabeceras sin tarjetas de fuentes.`);

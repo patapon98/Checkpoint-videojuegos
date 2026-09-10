@@ -1,5 +1,76 @@
 [
   {
+    "id": "persona-6-switch-2",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "Persona 6 se publicará en Nintendo Switch 2",
+        "amplía las plataformas confirmadas del nuevo RPG",
+        "sigue sin fecha de lanzamiento"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-09-09",
+    "publishedAt": "2026-09-09T14:00:00Z",
+    "addedAt": "2026-09-10T03:18:28Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Persona 6"
+      },
+      "copy": {
+        "es": "Persona 6 confirma su llegada a Nintendo Switch 2"
+      }
+    },
+    "tone": "nintendo",
+    "title": {
+      "es": "Persona 6 confirma su llegada a Nintendo Switch 2"
+    },
+    "summary": {
+      "es": "Atlus y Nintendo han confirmado que Persona 6 se publicará en Nintendo Switch 2. El anuncio amplía las plataformas confirmadas del nuevo RPG, que sigue sin fecha de lanzamiento."
+    },
+    "why": {
+      "es": "La incorporación de una de las principales sagas de rol japonés refuerza el apoyo de grandes editoras a Switch 2 y garantiza que la consola recibirá la próxima entrega numerada de Persona."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=iAMM22ZeklA",
+      "label": {
+        "es": "Ver el anuncio oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Nintendo of America",
+        "type": {
+          "es": "Vídeo oficial de la versión para Nintendo Switch 2"
+        },
+        "url": "https://www.youtube.com/watch?v=iAMM22ZeklA"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Presentación oficial Nintendo Direct 9.9.2026"
+        },
+        "url": "https://www.nintendo.com/us/nintendo-direct/9-9-2026/"
+      },
+      {
+        "label": "Atlus West",
+        "type": {
+          "es": "Confirmación oficial de la nueva plataforma"
+        },
+        "url": "https://www.facebook.com/AtlusWest/videos/persona-6-is-coming-to-nintendo-switch-2/1415767577182701/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El anuncio del Nintendo Direct recupera la presentación de Persona 6 para confirmar expresamente su versión de Nintendo Switch 2. Atlus no ha concretado todavía una fecha ni ha mostrado sistemas nuevos en esta actualización.",
+        "La confirmación incorpora la próxima entrega principal de Persona al catálogo de la consola. El juego contará una historia independiente con un nuevo reparto de personajes, pero sus detalles argumentales y de jugabilidad permanecen sin revelar."
+      ]
+    }
+  },
+  {
     "id": "kirby-and-the-world-beyond-switch-2",
     "important": true,
     "emphasis": {

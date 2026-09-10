@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://finalsecreto.com/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/noticias</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/noticias/playstation-fin-formato-fisico</loc>
@@ -18,11 +18,15 @@
   </url>
   <url>
     <loc>https://finalsecreto.com/eventos</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-09</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/eventos/gamescom-onl-2026</loc>
     <lastmod>2026-09-03</lastmod>
+  </url>
+  <url>
+    <loc>https://finalsecreto.com/eventos/nintendo-direct-septiembre-2026</loc>
+    <lastmod>2026-09-09</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/eventos/state-of-play-septiembre-2026</loc>
@@ -30,7 +34,7 @@
   </url>
   <url>
     <loc>https://finalsecreto.com/juegos</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-09</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/juegos/beast-of-reincarnation</loc>
@@ -154,7 +158,7 @@
   </url>
   <url>
     <loc>https://finalsecreto.com/calendario</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://finalsecreto.com/playstation-plus</loc>

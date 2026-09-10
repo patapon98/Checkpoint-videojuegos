@@ -1,0 +1,65 @@
+{
+  "id": "inazuma-eleven-secuela-recca-no-kakumei",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Level-5 ha anunciado la secuela directa de Inazuma Eleven: Victory Road",
+      "tendrá como protagonista a un nuevo personaje llamado Nagi Furuboshi",
+      "no tiene fecha ni plataformas confirmadas"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-10",
+  "publishedAt": "2026-09-10T13:35:00Z",
+  "addedAt": "2026-09-10T15:17:58Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Inazuma Eleven"
+    },
+    "copy": {
+      "es": "Inazuma Eleven tendrá una secuela directa de Victory Road"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Level-5 anuncia la secuela de Inazuma Eleven: Victory Road"
+  },
+  "summary": {
+    "es": "Level-5 ha anunciado la secuela directa de Inazuma Eleven: Victory Road. El proyecto, presentado con el título japonés Recca no Kakumei, tendrá como protagonista a un nuevo personaje llamado Nagi Furuboshi."
+  },
+  "why": {
+    "es": "La confirmación garantiza la continuidad de la saga de fútbol y rol con una historia nueva. Level-5 reserva los detalles para su próxima presentación y el juego todavía no tiene fecha ni plataformas confirmadas."
+  },
+  "sources": [
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Presentación oficial LEVEL5 VISION 2026 II Dream"
+      },
+      "url": "https://www.youtube.com/watch?v=z9nITMlt8Fk"
+    },
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Página oficial de la presentación"
+      },
+      "url": "https://www.level5.co.jp/vision/2026-ii/"
+    },
+    {
+      "label": "Famitsu",
+      "type": {
+        "es": "Contexto sobre la secuela y su nuevo protagonista"
+      },
+      "url": "https://www.famitsu.com/article/202609/87552"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La presentación confirmó que Recca no Kakumei continuará directamente la historia de Victory Road. Su primer avance introduce a Nagi Furuboshi, un joven con un origen singular que encabezará la nueva campaña narrativa.",
+      "Level-5 no ha concretado todavía sistemas de juego, plataformas, ventana de lanzamiento ni el título occidental. La compañía emplazó la ampliación del anuncio a su siguiente LEVEL5 VISION."
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "decapolice-retraso-2027",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ha retrasado Decapolice de su ventana prevista para 2026 a 2027",
+      "nuevo tráiler que muestra más investigación en Decasim",
+      "El cambio prolonga la espera de un proyecto anunciado en 2023"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-09-10",
+  "addedAt": "2026-09-11T15:00:15Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Decapolice"
+    },
+    "copy": {
+      "es": "Decapolice retrasa su lanzamiento hasta 2027"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Decapolice retrasa su lanzamiento a 2027"
+  },
+  "summary": {
+    "es": "Level-5 ha retrasado Decapolice de su ventana prevista para 2026 a 2027. El anuncio llegó acompañado de un nuevo tráiler que muestra más investigación en Decasim, interrogatorios y combates por turnos."
+  },
+  "why": {
+    "es": "El cambio prolonga la espera de un proyecto anunciado en 2023 y aplazado en varias ocasiones. Level-5 mantiene confirmadas las versiones para PS5, Switch 2 y PC, pero todavía no concreta el momento de 2027 en el que llegará."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=Eyt5qba-Y24",
+    "label": {
+      "es": "Ver el nuevo tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Tráiler oficial con la nueva ventana de lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=Eyt5qba-Y24"
+    },
+    {
+      "label": "Level-5",
+      "type": {
+        "es": "Presentación oficial LEVEL5 VISION 2026 II Dream"
+      },
+      "url": "https://www.youtube.com/watch?v=z9nITMlt8Fk"
+    },
+    {
+      "label": "Game Informer",
+      "type": {
+        "es": "Contexto sobre el retraso, las plataformas y el nuevo tráiler"
+      },
+      "url": "https://gameinformer.com/2026/09/10/level-5s-futuristic-detective-rpg-decapolice-will-now-launch-in-2027"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El avance recupera a Harvard Marks y la doble investigación entre la ciudad de Broadstone y su réplica virtual, Decasim. Las pesquisas combinan reconstrucción de escenas, organización de pruebas y acusaciones a sospechosos.",
+      "Cuando una negociación no resuelve el caso, los delincuentes pueden transformarse en Crime Beasts y dar paso a enfrentamientos por turnos. Level-5 también confirmó la colaboración de Scrap en el diseño de los casos."
+    ]
+  }
+}

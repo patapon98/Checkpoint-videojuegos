@@ -3350,6 +3350,150 @@
       "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
     },
     {
+      "id": "resident-evil-2-deluxe-edition-switch-2",
+      "title": "Resident Evil 2 Deluxe Edition",
+      "headingHtml": "Resident Evil 2 Deluxe Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Resident Evil 2 Deluxe Edition",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg",
+        "alt": "Resident Evil 2 Deluxe Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-2-deluxe-edition-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Resident Evil 2 Deluxe Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/whatsnew/nintendo-direct-reveals-metroid-ravenous-kirby-and-the-world-beyond-and-more-games-for-nintendo-switch-2-and-nintendo-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-11",
+        "evidence": {
+          "title": "Resident Evil 2 Deluxe Edition",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=iOBBvmV2Q8A"
+    },
+    {
+      "id": "resident-evil-3-switch-2",
+      "title": "Resident Evil 3",
+      "headingHtml": "Resident Evil 3 <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Resident Evil 3",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/header.jpg",
+        "alt": "Resident Evil 3",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-3-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Resident Evil 3"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/whatsnew/nintendo-direct-reveals-metroid-ravenous-kirby-and-the-world-beyond-and-more-games-for-nintendo-switch-2-and-nintendo-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-11",
+        "evidence": {
+          "title": "Resident Evil 3",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=iOBBvmV2Q8A"
+    },
+    {
+      "id": "resident-evil-4-gold-edition-switch-2",
+      "title": "Resident Evil 4 Gold Edition",
+      "headingHtml": "Resident Evil 4 Gold Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Resident Evil 4 Gold Edition",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
+        "alt": "Resident Evil 4 Gold Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-4-gold-edition-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Resident Evil 4 Gold Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/whatsnew/nintendo-direct-reveals-metroid-ravenous-kirby-and-the-world-beyond-and-more-games-for-nintendo-switch-2-and-nintendo-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-09-11",
+        "evidence": {
+          "title": "Resident Evil 4 Gold Edition",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=iOBBvmV2Q8A"
+    },
+    {
       "id": "star-trek-outposts-unknown",
       "title": "Star Trek: Outposts Unknown",
       "headingHtml": "Star Trek: Outposts Unknown",
@@ -4877,6 +5021,60 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=HLMX2w3cwuE"
+    },
+    {
+      "id": "romancing-saga-3-destinies-united",
+      "title": "Romancing SaGa 3: Destinies United",
+      "headingHtml": "Romancing SaGa 3: Destinies United <span class=\"tag-dlc\">Remake</span>",
+      "date": "2027-02-16",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · Switch · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Romancing SaGa 3: Destinies United",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000114053/679853dcdb6c5251a11354f2862f41048ae9e04adbe75be5588e1d706a9e6195",
+        "alt": "Romancing SaGa 3: Destinies United",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4214960/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Romancing SaGa 3: Destinies United"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=oWd7ez7Lmto",
+        "official": true,
+        "host": "www.youtube.com",
+        "checkedAt": "2026-09-11",
+        "evidence": {
+          "title": "Romancing SaGa 3: Destinies United",
+          "releaseDate": "2027-02-16",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "switch",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=oWd7ez7Lmto"
     },
     {
       "id": "persona-4-revival",

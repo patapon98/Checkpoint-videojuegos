@@ -3359,8 +3359,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Resident Evil 2 Deluxe Edition",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg",
         "alt": "Resident Evil 2 Deluxe Edition",
         "className": "",
@@ -3409,12 +3407,16 @@
       "image": {
         "provider": "rawg",
         "query": "Resident Evil 3",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/header.jpg",
+        "src": "https://media.rawg.io/media/games/a4b/a4bb55f42fe837ae7bf1307e7b41cc85.jpg",
         "alt": "Resident Evil 3",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 397477,
+        "rawgSlug": "resident-evil-3",
+        "rawgPage": "https://rawg.io/games/resident-evil-3",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/resident-evil-3-switch-2/",
@@ -3455,8 +3457,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Resident Evil 4 Gold Edition",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
         "alt": "Resident Evil 4 Gold Edition",
         "className": "",
@@ -5035,8 +5035,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · Switch · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Romancing SaGa 3: Destinies United",
         "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000114053/679853dcdb6c5251a11354f2862f41048ae9e04adbe75be5588e1d706a9e6195",
         "alt": "Romancing SaGa 3: Destinies United",
         "className": "",

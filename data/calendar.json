@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -3299,57 +3299,6 @@
       "trailer": "https://www.youtube.com/watch?v=HaCtG1F_hfE"
     },
     {
-      "id": "tales-of-eternia-remastered",
-      "title": "Tales of Eternia Remastered",
-      "headingHtml": "Tales of Eternia Remastered <span class=\"tag-dlc\">Remaster</span>",
-      "date": "2026-10-16",
-      "platformKeys": [
-        "ps5",
-        "ps4",
-        "xbox",
-        "pc",
-        "switch"
-      ],
-      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch 2 · Switch",
-      "image": {
-        "src": "https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/cmq05h9usc60d07kb8wpg4vmc",
-        "alt": "Tales of Eternia Remastered",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://www.bandainamcoent.com/news/tales-of-eternia-remastered-coming-this-october-2026",
-        "title": "Ver anuncio oficial",
-        "ariaLabel": "Ver el anuncio oficial de Tales of Eternia Remastered"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Remaster",
-      "badge": null,
-      "priority": 55,
-      "source": {
-        "url": "https://www.bandainamcoent.com/news/tales-of-eternia-remastered-coming-this-october-2026",
-        "official": true,
-        "host": "www.bandainamcoent.com",
-        "checkedAt": "2026-08-17",
-        "evidence": {
-          "title": "Tales of Eternia Remastered",
-          "releaseDate": "2026-10-16",
-          "platforms": [
-            "ps5",
-            "ps4",
-            "xbox",
-            "pc",
-            "switch"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
-    },
-    {
       "id": "resident-evil-2-deluxe-edition-switch-2",
       "title": "Resident Evil 2 Deluxe Edition",
       "headingHtml": "Resident Evil 2 Deluxe Edition <span class=\"tag-dlc\">Edición</span>",
@@ -3492,6 +3441,57 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=iOBBvmV2Q8A"
+    },
+    {
+      "id": "tales-of-eternia-remastered",
+      "title": "Tales of Eternia Remastered",
+      "headingHtml": "Tales of Eternia Remastered <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-10-16",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "src": "https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/cmq05h9usc60d07kb8wpg4vmc",
+        "alt": "Tales of Eternia Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.bandainamcoent.com/news/tales-of-eternia-remastered-coming-this-october-2026",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Tales of Eternia Remastered"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://www.bandainamcoent.com/news/tales-of-eternia-remastered-coming-this-october-2026",
+        "official": true,
+        "host": "www.bandainamcoent.com",
+        "checkedAt": "2026-08-17",
+        "evidence": {
+          "title": "Tales of Eternia Remastered",
+          "releaseDate": "2026-10-16",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
     },
     {
       "id": "star-trek-outposts-unknown",
@@ -5475,5 +5475,5 @@
       "trailer": "https://www.youtube.com/watch?v=5u_MY4zleaI"
     }
   ],
-  "renderState": "094c6997fbd9"
+  "renderState": "82625c1cc86d"
 }

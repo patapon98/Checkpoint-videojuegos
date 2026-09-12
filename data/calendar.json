@@ -4953,8 +4953,6 @@
       ],
       "platformsHtml": "PS5 · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "Muramasa: Revenant Blades",
         "src": "https://marvelous-usa.com/wp-content/uploads/2026/06/NPR_HeroBG_02.png",
         "alt": "Muramasa: Revenant Blades",
         "className": "",
@@ -5275,12 +5273,16 @@
       "image": {
         "provider": "rawg",
         "query": "Eternal Anima",
-        "src": "https://marvelous-usa.com/wp-content/uploads/2026/09/Eternal-Anima-KV-1024x576.jpg",
+        "src": "https://media.rawg.io/media/screenshots/e43/e43b547155e69d9f3df4c243d238a0a3.jpg",
         "alt": "Eternal Anima",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1019940,
+        "rawgSlug": "eternal-anima",
+        "rawgPage": "https://rawg.io/games/eternal-anima",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://na.eternalanima.com/",

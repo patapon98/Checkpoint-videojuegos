@@ -1,0 +1,71 @@
+{
+  "id": "physint-xbox-editor",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Xbox Game Studios publicará Physint",
+      "el desarrollo continúa",
+      "uno de los cambios de editor más significativos"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-09-10",
+  "addedAt": "2026-09-12T05:59:43Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Physint"
+    },
+    "copy": {
+      "es": "Physint pasa de PlayStation a Xbox como nuevo editor"
+    }
+  },
+  "tone": "xbox",
+  "title": {
+    "es": "Xbox publicará Physint tras la retirada de PlayStation"
+  },
+  "summary": {
+    "es": "Xbox Game Studios publicará Physint, el próximo juego de acción y espionaje de Kojima Productions, después de que PlayStation Studios se retirara del proyecto. Kojima Productions confirma que el desarrollo continúa."
+  },
+  "why": {
+    "es": "El movimiento traslada a la órbita editorial de Xbox un proyecto que nació asociado a PlayStation y supone uno de los cambios de editor más significativos de los últimos años. Todavía no se han anunciado plataformas ni fecha de lanzamiento."
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio oficial del acuerdo editorial"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/09/xbox-and-kojima-productions-expand-partnership-to-publish-physint/"
+    },
+    {
+      "label": "Kojima Productions",
+      "type": {
+        "es": "Confirmación oficial de la continuidad de Physint con Xbox"
+      },
+      "url": "https://www.kojimaproductions.jp/en/xbox_partnership_announcement"
+    },
+    {
+      "label": "PlayStation",
+      "type": {
+        "es": "Comunicado oficial sobre la retirada del proyecto"
+      },
+      "url": "https://x.com/PlayStation/status/2097875212427735146"
+    },
+    {
+      "label": "Game Informer",
+      "type": {
+        "es": "Contexto sobre el cambio de editor y el estado del proyecto"
+      },
+      "url": "https://gameinformer.com/2026/09/10/xbox-will-now-publish-hideo-kojimas-action-espionage-game-physint-after-playstation"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Physint fue anunciado en 2024 como el regreso de Hideo Kojima al género de acción y espionaje. Xbox será ahora el editor del proyecto, mientras Kojima Productions mantiene su compromiso de seguir desarrollándolo y de intentar redefinir el género.",
+      "La operación amplía la colaboración que ambas compañías ya mantenían alrededor de OD y también contempla proyectos conjuntos de cine y televisión. PlayStation ha confirmado por separado el fin de su participación, pero el anuncio no concreta las futuras plataformas de Physint."
+    ]
+  }
+}

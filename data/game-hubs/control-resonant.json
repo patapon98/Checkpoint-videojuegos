@@ -25,6 +25,7 @@
     {"src":"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f/ss_1f13c2f5acc65d9cf11c34e84284fbd3897b4e3f.1920x1080.jpg","alt":"Distrito de Manhattan deformado por fuerzas paranormales en CONTROL Resonant"}
   ],
   "media": [
+    {"type":"youtube","videoId":"mSiiGHA3vPE","title":"CONTROL Resonant: Previously on CONTROL","label":"Resumen oficial de historia","publishedAt":"2026-09-12"},
     {"type":"youtube","videoId":"VwOJuJRCLGk","title":"CONTROL Resonant: Altered State Trailer","label":"Tráiler oficial","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"ZkctlSt4I2E","title":"CONTROL Resonant: Path Tracing & DLSS 4.5 Gameplay","label":"Vídeo técnico","publishedAt":"2026-08-25"},
     {"type":"youtube","videoId":"xAHVb2KpnYQ","title":"CONTROL Resonant: Stepping Into a New World","label":"Diario de desarrollo","publishedAt":"2026-07-23"},
@@ -46,6 +47,7 @@
   ],
   "pendingHighlights": ["Fecha exacta de la versión para Mac.","Modos de resolución y rendimiento en consolas.","Plan de contenido poslanzamiento."],
   "sources": [
+    {"label":"Remedy Entertainment: Previously on CONTROL","url":"https://www.youtube.com/watch?v=mSiiGHA3vPE","type":"Vídeo oficial que resume los acontecimientos de CONTROL antes de la secuela"},
     {"label":"PlayStation Blog: Assist Mode de CONTROL Resonant","url":"https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/","type":"Sergey Mohov, Lead Gameplay Designer de Remedy, detalla los ajustes de dificultad y asistencia"},
     {"label":"Steam News: CONTROL Resonant","url":"https://store.steampowered.com/news/app/3669870","type":"Anuncio oficial con la matriz final de requisitos y objetivos de rendimiento para PC"},
     {"label":"Remedy Entertainment vía PR TIMES: TGS 2026","url":"https://prtimes.jp/main/html/rd/p/000000011.000164183.html","type":"Comunicado oficial sobre la demo jugable de PS5 en Tokyo Game Show 2026"},
@@ -67,9 +69,10 @@
     {"label":"PlayStation Store España","url":"https://store.playstation.com/es-es/product/EP5291-PPSA34547_00-0210080241603648","type":"Funciones de accesibilidad de PS5"}
   ],
   "newsTerms": ["control resonant","control: resonant","dylan faden","el aberrante"],
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "seo": {"title":"CONTROL Resonant: combate, historia y todo lo confirmado","description":"Ficha actualizada de CONTROL Resonant con fecha, historia, combate, precio, requisitos, tráileres, imágenes oficiales y toda la información confirmada.","ogDescription":"Historia, combate cuerpo a cuerpo y toda la información confirmada sobre CONTROL Resonant.","heroTitleHtml":"CONTROL <em>Resonant</em>","heroImageAlt":"Arte promocional oficial de CONTROL Resonant"},
   "changes": [
+    {"date":"2026-09-12","title":"Remedy publica un resumen oficial de la historia de CONTROL","description":"El nuevo vídeo Previously on CONTROL repasa el origen de Jesse y Dylan Faden, el incidente del proyector de diapositivas, la llegada de Jesse al Oldest House y su ascenso a directora de la FBC para situar los acontecimientos que desembocan en CONTROL Resonant.","sourceUrls":["https://www.youtube.com/watch?v=mSiiGHA3vPE"]},
     {"date":"2026-09-11","title":"Remedy detalla el Assist Mode ampliado de CONTROL Resonant","description":"El nuevo Assist Mode permite ajustar por separado la agresividad enemiga, la velocidad de proyectiles, la ventana de esquiva perfecta, el daño, el Falter, la recuperación de Poder y el magnetismo de los ataques cuerpo a cuerpo. También incluye presets, inmortalidad, muertes de un golpe y One-Hit Falters, puede utilizarse para aumentar la dificultad y no bloquea trofeos ni logros.","sourceUrls":["https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/"]},
     {"date":"2026-09-10","title":"Remedy publica los objetivos finales de rendimiento para PC","description":"La matriz final oficial concreta que la configuración mínima apunta a 1080p y 30 FPS en calidad baja con escalado en modo Calidad, mientras la recomendada apunta a 1440p y 60 FPS en calidad media con escalado Equilibrado. Remedy añade además configuraciones Enthusiast, Ray Tracing Minimum, Ray Tracing Recommended y Path Tracing Enthusiast, todas con 16 GB de RAM y SSD de 120 GB.","sourceUrls":["https://store.steampowered.com/news/app/3669870"]},
     {"date":"2026-09-09","title":"Steam vuelve a revisar los requisitos de PC de CONTROL Resonant","description":"La ficha oficial de Steam eleva el almacenamiento a 120 GB y sustituye varias referencias de CPU y GPU. El mínimo pasa a Intel i5-8500 o Ryzen 5 3500 con GTX 1070, RX 5600 XT o Intel Arc A580; el recomendado queda en Intel Core i7-10700 o Ryzen 7 3700X con RTX 3060 Ti, RX 6700 XT o Intel Arc B580. Ambas configuraciones requieren 16 GB de RAM y SSD.","sourceUrls":["https://store.steampowered.com/app/3669870/CONTROL_Resonant/"]},

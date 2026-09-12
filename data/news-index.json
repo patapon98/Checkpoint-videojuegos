@@ -1,5 +1,145 @@
 [
   {
+    "id": "diablo-v-primavera-2029",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "Diablo V llegará en primavera de 2029",
+        "Santuario ha caído",
+        "la primera secuela numerada anunciada de la saga desde Diablo IV"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-12",
+    "addedAt": "2026-09-12T20:39:11Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Diablo V"
+      },
+      "copy": {
+        "es": "Diablo V llegará en primavera de 2029 con Santuario ya derrotado"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Diablo V llegará en primavera de 2029"
+    },
+    "summary": {
+      "es": "Blizzard ha anunciado que Diablo V llegará en primavera de 2029. Santuario ha caído, los héroes han desaparecido y Diablo ha vencido al comienzo de esta nueva entrega."
+    },
+    "why": {
+      "es": "Es la primera secuela numerada anunciada de la saga desde Diablo IV y cambia el punto de partida habitual: la lucha comienza después de la victoria del Señor del Terror. Blizzard aún no ha detallado plataformas ni jugabilidad."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=GxCN_AKYtts",
+      "label": {
+        "es": "Ver el teaser oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Blizzard Entertainment",
+        "type": {
+          "es": "Anuncio oficial de Diablo V y su ventana de lanzamiento"
+        },
+        "url": "https://news.blizzard.com/en-us/article/24297203/diablo-v-is-coming-spring-2029"
+      },
+      {
+        "label": "Blizzard Entertainment",
+        "type": {
+          "es": "Resumen oficial de la ceremonia inaugural de BlizzCon 2026"
+        },
+        "url": "https://news.blizzard.com/en-us/article/24301453/everything-announced-at-blizzcon-2026-opening-ceremony"
+      },
+      {
+        "label": "GamesRadar+",
+        "type": {
+          "es": "Cobertura y contexto del anuncio"
+        },
+        "url": "https://www.gamesradar.com/games/how-to-watch-blizzcon-2026-opening-ceremony/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El teaser sitúa la historia en un Santuario ya conquistado por Diablo, sin los héroes que habían contenido la oscuridad en entregas anteriores. Blizzard plantea así una lucha por sobrevivir y transformarse en un mundo que ya ha perdido.",
+        "La compañía ha fijado el estreno para primavera de 2029, pero todavía no ha mostrado combate ni sistemas jugables. Tampoco ha confirmado plataformas, ediciones o una fecha concreta dentro de esa ventana."
+      ]
+    }
+  },
+  {
+    "id": "world-of-warcraft-forever-noviembre-2026",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "Se estrenará el 4 de noviembre de 2026",
+        "la beta empezará el 17 de septiembre",
+        "tres zonas nuevas, más de 1.000 misiones, nueve mazmorras y dos bandas"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-12",
+    "addedAt": "2026-09-12T20:39:11Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "WoW Forever"
+      },
+      "copy": {
+        "es": "WoW Forever ampliará la Azeroth original desde el 4 de noviembre"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "World of Warcraft: Forever se lanzará el 4 de noviembre"
+    },
+    "summary": {
+      "es": "Blizzard ha presentado World of Warcraft: Forever, una tercera experiencia de WoW junto a Modern y Classic que ampliará la Azeroth original. Se estrenará el 4 de noviembre de 2026 y la beta empezará el 17 de septiembre."
+    },
+    "why": {
+      "es": "Forever convierte la era Vanilla en una línea permanente con contenido nuevo: tres zonas nuevas, más de 1.000 misiones, nueve mazmorras y dos bandas, además de la raza Skyborne. No es una simple reedición de los servidores Classic."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=LfdA6U0WILE",
+      "label": {
+        "es": "Ver el tráiler oficial de jugabilidad"
+      }
+    },
+    "sources": [
+      {
+        "label": "World of Warcraft",
+        "type": {
+          "es": "Página oficial con fecha, contenido y condiciones de acceso"
+        },
+        "url": "https://worldofwarcraft.blizzard.com/en-us/forever"
+      },
+      {
+        "label": "Blizzard Entertainment",
+        "type": {
+          "es": "Resumen oficial de la ceremonia inaugural de BlizzCon 2026"
+        },
+        "url": "https://news.blizzard.com/en-us/article/24301453/everything-announced-at-blizzcon-2026-opening-ceremony"
+      },
+      {
+        "label": "World of Warcraft",
+        "type": {
+          "es": "Tráiler oficial de jugabilidad"
+        },
+        "url": "https://www.youtube.com/watch?v=LfdA6U0WILE"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "World of Warcraft: Forever parte del primer año de Azeroth, conserva el nivel máximo 60 y abre rutas inéditas dentro de esa etapa. Blizzard lo mantendrá como una experiencia separada de WoW Modern y WoW Classic, con su propio crecimiento futuro.",
+        "El contenido inicial incluye nuevas zonas, más de un millar de misiones, nueve mazmorras, dos bandas y una raza jugable adicional. La beta comienza el 17 de septiembre y el lanzamiento completo llegará el 4 de noviembre."
+      ]
+    }
+  },
+  {
     "id": "starcraft-shooter-mundo-abierto-2030",
     "important": true,
     "emphasis": {

@@ -4942,6 +4942,56 @@
       "trailer": "https://www.youtube.com/watch?v=bqzOAYzuyu4"
     },
     {
+      "id": "muramasa-revenant-blades",
+      "title": "Muramasa: Revenant Blades",
+      "headingHtml": "Muramasa: Revenant Blades <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2027-02-04",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PC · Switch 2 · Switch",
+      "image": {
+        "src": "https://marvelous-usa.com/wp-content/uploads/2026/06/NPR_HeroBG_02.png",
+        "alt": "Muramasa: Revenant Blades",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://marvelous-usa.com/games/muramasa-revenant-blades/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Muramasa: Revenant Blades"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://marvelous-usa.com/games/muramasa-revenant-blades/",
+        "official": true,
+        "host": "marvelous-usa.com",
+        "checkedAt": "2026-09-12",
+        "evidence": {
+          "title": "Muramasa: Revenant Blades",
+          "releaseDate": "2027-02-04",
+          "platforms": [
+            "ps5",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=mKXPyW8r4x8"
+    },
+    {
       "id": "tomb-raider-legacy-of-atlantis",
       "title": "Tomb Raider: Legacy of Atlantis",
       "headingHtml": "Tomb Raider: Legacy of Atlantis",
@@ -5207,6 +5257,64 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=F1oeWfFW1Fk"
+    },
+    {
+      "id": "eternal-anima",
+      "title": "Eternal Anima",
+      "headingHtml": "Eternal Anima",
+      "date": "2027-03-04",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Eternal Anima",
+        "src": "https://media.rawg.io/media/screenshots/e43/e43b547155e69d9f3df4c243d238a0a3.jpg",
+        "alt": "Eternal Anima",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1019940,
+        "rawgSlug": "eternal-anima",
+        "rawgPage": "https://rawg.io/games/eternal-anima",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://na.eternalanima.com/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Eternal Anima"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://marvelous-usa.com/games/eternal-anima/",
+        "official": true,
+        "host": "marvelous-usa.com",
+        "checkedAt": "2026-09-12",
+        "evidence": {
+          "title": "Eternal Anima",
+          "releaseDate": "2027-03-04",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=fFyl6UHbKXs"
     },
     {
       "id": "gundam-rogue-orbit",

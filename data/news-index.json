@@ -1,5 +1,69 @@
 [
   {
+    "id": "polyarc-cierre-estudio",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha anunciado el fin de su actividad tras casi 12 años",
+        "está cerrando el desarrollo activo",
+        "uno de los estudios más reconocibles de la realidad virtual"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-09-11",
+    "addedAt": "2026-09-12T00:16:56Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Polyarc"
+      },
+      "copy": {
+        "es": "Polyarc, el estudio de Moss, anuncia su cierre"
+      }
+    },
+    "tone": "industry",
+    "title": {
+      "es": "Polyarc, el estudio de Moss, cierra tras casi 12 años"
+    },
+    "summary": {
+      "es": "Polyarc, creadora de Moss y Moss: Book II, ha anunciado el fin de su actividad tras casi 12 años. El estudio está cerrando el desarrollo activo y se despide de su equipo; una hoja de recolocación reúne a 29 profesionales afectados."
+    },
+    "why": {
+      "es": "El cierre hace desaparecer uno de los estudios más reconocibles de la realidad virtual y llega seis meses después de una reducción de plantilla motivada por sus dificultades para conseguir financiación."
+    },
+    "sources": [
+      {
+        "label": "Polyarc",
+        "type": {
+          "es": "Comunicado oficial del cierre y fin del desarrollo activo"
+        },
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7504247061073002496/"
+      },
+      {
+        "label": "GeekWire",
+        "type": {
+          "es": "Contexto sobre el cierre, el equipo afectado y la trayectoria del estudio"
+        },
+        "url": "https://www.geekwire.com/2026/seattle-vr-studio-polyarc-creator-of-moss-series-closes-down-after-almost-12-years/"
+      },
+      {
+        "label": "Game Informer",
+        "type": {
+          "es": "Confirmación periodística del cierre"
+        },
+        "url": "https://gameinformer.com/news/2026/09/11/moss-developer-polyarc-is-shutting-down"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Fundada en 2015 por antiguos empleados de Bungie, Polyarc se dio a conocer con Moss en 2018 y continuó la historia de Quill con Moss: Book II en 2022. Su catálogo también incluye Glassbreakers y la reciente recopilación sin realidad virtual Moss: The Forgotten Relic.",
+        "El estudio ya había reducido de forma significativa su plantilla en marzo después de no asegurar nueva financiación. Polyarc no ha detallado una causa adicional para el cierre, pero ha compartido una lista de 29 profesionales para ayudarles a encontrar nuevos puestos."
+      ]
+    }
+  },
+  {
     "id": "decapolice-retraso-2027",
     "important": false,
     "emphasis": {

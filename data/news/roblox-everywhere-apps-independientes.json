@@ -1,0 +1,64 @@
+{
+  "id": "roblox-everywhere-apps-independientes",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "aplicaciones independientes para móvil, PC y consolas",
+      "jugar desde Chrome sin instalar la aplicación",
+      "amplía de forma sustancial el alcance de Roblox"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-09-11",
+  "addedAt": "2026-09-12T14:38:17Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Roblox"
+    },
+    "copy": {
+      "es": "Roblox permitirá publicar juegos como aplicaciones independientes"
+    }
+  },
+  "tone": "platforms",
+  "title": {
+    "es": "Roblox llevará sus juegos a aplicaciones independientes"
+  },
+  "summary": {
+    "es": "Roblox ha anunciado Roblox Everywhere, una iniciativa que permitirá a los creadores distribuir sus juegos como aplicaciones independientes para móvil, PC y consolas. La compañía también habilitará jugar desde Chrome sin instalar la aplicación antes de que termine 2026."
+  },
+  "why": {
+    "es": "El cambio rompe la dependencia del cliente principal y amplía de forma sustancial el alcance de Roblox como tecnología de publicación. El plan incorpora además juego individual sin conexión para mediados de 2027, con acceso anticipado previsto próximamente."
+  },
+  "sources": [
+    {
+      "label": "Roblox",
+      "type": {
+        "es": "Anuncio oficial de RDC 2026"
+      },
+      "url": "https://about.roblox.com/newsroom/2026/09/rdc-2026-the-world-needs-more-play"
+    },
+    {
+      "label": "Roblox Investor Relations",
+      "type": {
+        "es": "Comunicado corporativo oficial"
+      },
+      "url": "https://ir.roblox.com/news/news-details/2026/Roblox-Unveils-New-Ways-to-Play-Build-and-Grow-at-the-Roblox-Developers-Conference-RDC/default.aspx"
+    },
+    {
+      "label": "Reuters",
+      "type": {
+        "es": "Contexto sobre el alcance y la distribución anunciada"
+      },
+      "url": "https://www.reuters.com/technology/roblox-expands-tools-help-creators-build-distribute-games-2026-09-11/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Las aplicaciones independientes seguirán utilizando la tecnología y los servicios de Roblox, pero podrán presentarse al público fuera de su cliente habitual. La compañía no ha detallado todavía el proceso de distribución, las tiendas compatibles ni una fecha concreta para esta función.",
+      "Roblox también prepara acceso directo desde páginas web y un modo individual sin conexión que convivirá con las modalidades multijugador. Junto a nuevas herramientas para juegos 2D y por turnos, la iniciativa acerca su infraestructura a una plataforma de desarrollo y publicación más generalista."
+    ]
+  }
+}

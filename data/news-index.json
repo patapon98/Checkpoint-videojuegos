@@ -1,5 +1,76 @@
 [
   {
+    "id": "starcraft-shooter-mundo-abierto-2030",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "un nuevo StarCraft como shooter de mundo abierto",
+        "está previsto para 2030",
+        "la primera entrega principal nueva de la saga desde StarCraft II"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-09-12",
+    "addedAt": "2026-09-12T18:28:50Z",
+    "publishedAt": "2026-09-12T17:50:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "StarCraft"
+      },
+      "copy": {
+        "es": "StarCraft regresa como shooter de mundo abierto y apunta a 2030"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "StarCraft regresa como shooter de mundo abierto en 2030"
+    },
+    "summary": {
+      "es": "Blizzard ha anunciado un nuevo StarCraft como shooter de mundo abierto. El juego pondrá al jugador en la piel de un soldado terran frente al regreso del Enjambre y está previsto para 2030."
+    },
+    "why": {
+      "es": "El proyecto supone la primera entrega principal nueva de la saga desde StarCraft II y abandona la estructura de estrategia en tiempo real. Blizzard no ha mostrado jugabilidad ni ha concretado plataformas."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=9eQUtOQXYgQ",
+      "label": {
+        "es": "Ver el tráiler oficial del anuncio"
+      }
+    },
+    "sources": [
+      {
+        "label": "Blizzard Entertainment",
+        "type": {
+          "es": "Tráiler oficial del anuncio"
+        },
+        "url": "https://www.youtube.com/watch?v=9eQUtOQXYgQ"
+      },
+      {
+        "label": "BlizzCon 2026",
+        "type": {
+          "es": "Presentación oficial de la ceremonia inaugural"
+        },
+        "url": "https://www.youtube.com/watch?v=knbSSHsoSq0"
+      },
+      {
+        "label": "GamesRadar+",
+        "type": {
+          "es": "Cobertura en directo y contexto del anuncio"
+        },
+        "url": "https://www.gamesradar.com/news/live/blizzcon-2026-everything-announced/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El tráiler cinemático presenta a un soldado terran enviado al frente contra una nueva ofensiva del Enjambre. Blizzard define el proyecto como un shooter de mundo abierto, un giro completo respecto a la fórmula histórica de estrategia en tiempo real.",
+        "El anuncio fija un horizonte de lanzamiento en 2030, pero deja todavía sin respuesta las plataformas y el aspecto real de la jugabilidad. La producción está liderada por Dan Hay, veterano de la saga Far Cry, dentro de Blizzard."
+      ]
+    }
+  },
+  {
     "id": "roblox-everywhere-apps-independientes",
     "important": true,
     "emphasis": {

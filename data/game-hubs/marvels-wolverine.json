@@ -239,6 +239,14 @@
   },
   "changes": [
     {
+      "date": "2026-09-13",
+      "title": "PlayStation Store detalla las bonificaciones de reserva y la hora de desbloqueo",
+      "description": "La PlayStation Store española confirma cuatro incentivos de reserva —desbloqueo anticipado del traje clásico marrón, garras reflectantes, un punto de técnica y cuatro avatares— y fija el desbloqueo digital a las 22:00 UTC del 14 de septiembre de 2026.",
+      "sourceUrls": [
+        "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE"
+      ]
+    },
+    {
       "date": "2026-09-03",
       "title": "PlayStation publica el tráiler de lanzamiento",
       "description": "Sony Interactive Entertainment e Insomniac Games publican el tráiler de lanzamiento de Marvel's Wolverine antes de su estreno del 15 de septiembre, con un nuevo montaje centrado en Logan, sus aliados y la amenaza antimutante de Bolivar Trask.",
@@ -363,7 +371,7 @@
     "marvel-tokon-fighting-souls",
     "god-of-war-laufey"
   ],
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-13",
   "price": "Desde 79,99 € en PS5",
   "editions": {
     "sourceUrl": "https://store.playstation.com/es-es/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
@@ -412,8 +420,15 @@
         ]
       }
     ],
-    "preorderBonuses": [],
-    "notes": []
+    "preorderBonuses": [
+      "Desbloqueo anticipado del traje clásico marrón",
+      "Desbloqueo anticipado de garras reflectantes",
+      "Un punto de técnica",
+      "Cuatro avatares para PlayStation"
+    ],
+    "notes": [
+      "La PlayStation Store España fija el desbloqueo digital a las 22:00 UTC del 14 de septiembre de 2026."
+    ]
   },
   "knowledgeSections": [
     {

@@ -2217,8 +2217,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Diablo IV: Age of Hatred Collection",
         "src": "https://dfbmfbnnydoln.cloudfront.net/production/images/thumbnails/social-sharing-diablo-4.32a76540da8e17a15d840138d604ae9a848a9c51.jpg",
         "alt": "Diablo IV: Age of Hatred Collection para Nintendo Switch 2",
         "className": "",
@@ -4048,8 +4046,6 @@
       ],
       "platformsHtml": "PC (Windows · macOS)",
       "image": {
-        "provider": "rawg",
-        "query": "World of Warcraft: Forever",
         "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt766f7698aedb7b7f/6a9bc5882437ed5612d4878f/Open_Graph_-_Camelot.jpg",
         "alt": "World of Warcraft: Forever",
         "className": "",
@@ -4274,8 +4270,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Hela: of Mice & Magic",
         "src": "https://static-eu.prod-my.games/chronos-public-eu-pgdhl-prod/site/Media/Screenshots_09.png",
         "alt": "Hela: of Mice & Magic",
         "className": "",

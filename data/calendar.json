@@ -2208,6 +2208,52 @@
       "trailer": "https://www.youtube.com/watch?v=a46MLlfMt2Y"
     },
     {
+      "id": "diablo-iv-age-of-hatred-collection-switch-2",
+      "title": "Diablo IV: Age of Hatred Collection",
+      "headingHtml": "Diablo IV: Age of Hatred Collection <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-09-15",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://dfbmfbnnydoln.cloudfront.net/production/images/thumbnails/social-sharing-diablo-4.32a76540da8e17a15d840138d604ae9a848a9c51.jpg",
+        "alt": "Diablo IV: Age of Hatred Collection para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/diablo-iv-age-of-hatred-collection-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Diablo IV: Age of Hatred Collection"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 65,
+      "source": {
+        "url": "https://news.blizzard.com/en-us/article/24301509/diablos-next-era-revealed-at-blizzcon-2026-opening-ceremonies-recap",
+        "official": true,
+        "host": "news.blizzard.com",
+        "checkedAt": "2026-09-13",
+        "evidence": {
+          "title": "Diablo IV: Age of Hatred Collection",
+          "releaseDate": "2026-09-15",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "aniimo",
       "title": "Aniimo",
       "headingHtml": "Aniimo",
@@ -3991,6 +4037,52 @@
       "trailer": "https://www.youtube.com/watch?v=S6C7og5g7Dc&t=1776s"
     },
     {
+      "id": "world-of-warcraft-forever",
+      "title": "World of Warcraft: Forever",
+      "headingHtml": "World of Warcraft: Forever",
+      "date": "2026-11-05",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC (Windows · macOS)",
+      "image": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt766f7698aedb7b7f/6a9bc5882437ed5612d4878f/Open_Graph_-_Camelot.jpg",
+        "alt": "World of Warcraft: Forever",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://worldofwarcraft.blizzard.com/en-gb/forever",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de World of Warcraft: Forever"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 75,
+      "source": {
+        "url": "https://worldofwarcraft.blizzard.com/en-gb/forever",
+        "official": true,
+        "host": "worldofwarcraft.blizzard.com",
+        "checkedAt": "2026-09-13",
+        "evidence": {
+          "title": "World of Warcraft: Forever",
+          "releaseDate": "2026-11-05",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=xXaXYxcbA6A"
+    },
+    {
       "id": "metaphor-refantazio",
       "title": "Metaphor: ReFantazio",
       "headingHtml": "Metaphor: ReFantazio <span class=\"tag-dlc\">Nueva plataforma</span>",
@@ -4164,6 +4256,58 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=VQRLujxTm3c"
+    },
+    {
+      "id": "hela-of-mice-and-magic",
+      "title": "Hela: of Mice & Magic",
+      "headingHtml": "Hela: of Mice &amp; Magic",
+      "date": "2026-12-01",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://static-eu.prod-my.games/chronos-public-eu-pgdhl-prod/site/Media/Screenshots_09.png",
+        "alt": "Hela: of Mice & Magic",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://helagame.com/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Hela: of Mice & Magic"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.microids.com/hela-of-mice-magic-will-enchant-players-worldwide-on-december-1st-2026/",
+        "official": true,
+        "host": "www.microids.com",
+        "checkedAt": "2026-09-13",
+        "evidence": {
+          "title": "Hela: of Mice & Magic",
+          "releaseDate": "2026-12-01",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=8gVR37rrXTE"
     },
     {
       "id": "dragon-quest-monsters-the-withered-world",

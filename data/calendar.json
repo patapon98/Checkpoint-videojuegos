@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-14",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -2107,6 +2107,52 @@
       "trailer": "https://www.youtube.com/watch?v=eWULkdcaR5o"
     },
     {
+      "id": "diablo-iv-age-of-hatred-collection-switch-2",
+      "title": "Diablo IV: Age of Hatred Collection",
+      "headingHtml": "Diablo IV: Age of Hatred Collection <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-09-15",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://dfbmfbnnydoln.cloudfront.net/production/images/thumbnails/social-sharing-diablo-4.32a76540da8e17a15d840138d604ae9a848a9c51.jpg",
+        "alt": "Diablo IV: Age of Hatred Collection para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/diablo-iv-age-of-hatred-collection-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Diablo IV: Age of Hatred Collection"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 65,
+      "source": {
+        "url": "https://news.blizzard.com/en-us/article/24301509/diablos-next-era-revealed-at-blizzcon-2026-opening-ceremonies-recap",
+        "official": true,
+        "host": "news.blizzard.com",
+        "checkedAt": "2026-09-13",
+        "evidence": {
+          "title": "Diablo IV: Age of Hatred Collection",
+          "releaseDate": "2026-09-15",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "marvel-s-wolverine",
       "title": "Marvel's Wolverine",
       "headingHtml": "Marvel's Wolverine <a class=\"store-cta\" href=\"https://www.instant-gaming.com/en/13543-buy-marvel-s-wolverine-playstation-5-playstation-store/?igr=gamer-942821\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"Comprar Marvel's Wolverine en Instant Gaming y ayudar a sostener el proyecto\" aria-label=\"Comprar Marvel's Wolverine en Instant Gaming. Este enlace ayuda a sostener el proyecto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 8.5h11l-1 11h-9l-1-11Z\"/><path d=\"M9 9V6.5a3 3 0 0 1 6 0V9\"/></svg><span>Instant Gaming</span></a>",
@@ -2206,52 +2252,6 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=a46MLlfMt2Y"
-    },
-    {
-      "id": "diablo-iv-age-of-hatred-collection-switch-2",
-      "title": "Diablo IV: Age of Hatred Collection",
-      "headingHtml": "Diablo IV: Age of Hatred Collection <span class=\"tag-dlc\">Nueva plataforma</span>",
-      "date": "2026-09-15",
-      "platformKeys": [
-        "switch"
-      ],
-      "platformsHtml": "Switch 2",
-      "image": {
-        "src": "https://dfbmfbnnydoln.cloudfront.net/production/images/thumbnails/social-sharing-diablo-4.32a76540da8e17a15d840138d604ae9a848a9c51.jpg",
-        "alt": "Diablo IV: Age of Hatred Collection para Nintendo Switch 2",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://www.nintendo.com/us/store/products/diablo-iv-age-of-hatred-collection-switch-2/",
-        "title": "Ver ficha oficial",
-        "ariaLabel": "Ver la ficha oficial de Diablo IV: Age of Hatred Collection"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Nueva plataforma",
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 65,
-      "source": {
-        "url": "https://news.blizzard.com/en-us/article/24301509/diablos-next-era-revealed-at-blizzcon-2026-opening-ceremonies-recap",
-        "official": true,
-        "host": "news.blizzard.com",
-        "checkedAt": "2026-09-13",
-        "evidence": {
-          "title": "Diablo IV: Age of Hatred Collection",
-          "releaseDate": "2026-09-15",
-          "platforms": [
-            "switch"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": null
     },
     {
       "id": "aniimo",
@@ -5727,5 +5727,5 @@
       "trailer": "https://www.youtube.com/watch?v=5u_MY4zleaI"
     }
   ],
-  "renderState": "24fa08357646"
+  "renderState": "b8fe2ce08433"
 }

@@ -1,7 +1,45 @@
 {
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-10-01",
   "region": "España y Europa",
   "months": [
+    {
+      "id": "2026-10",
+      "label": "Octubre 2026",
+      "availability": "6 de octubre–2 de noviembre",
+      "headline": "PlayStation Plus en octubre de 2026",
+      "source": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
+      "groups": [
+        {
+          "id": "essential",
+          "label": "Essential",
+          "access": "Disponible también para Extra y Premium",
+          "games": [
+            {
+              "title": "Earth Defense Force: World Brothers 2",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "6 de octubre–2 de noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/09/54ec8cea632c525dca9a512f265d33414b75040f.jpg",
+              "source": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+            }
+          ]
+        },
+        {
+          "id": "extra",
+          "label": "Extra",
+          "access": "También disponible para Premium",
+          "pending": "Sony todavía no ha anunciado el catálogo de octubre. Esta sección se completará cuando se publique la información oficial."
+        },
+        {
+          "id": "premium",
+          "label": "Premium",
+          "access": "Clásicos y ventajas adicionales",
+          "pending": "Los clásicos y añadidos de Premium para octubre todavía no se han anunciado oficialmente."
+        }
+      ]
+    },
     {
       "id": "2026-09",
       "label": "Septiembre 2026",

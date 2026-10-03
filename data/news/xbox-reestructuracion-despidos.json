@@ -3,63 +3,55 @@
   "important": true,
   "emphasis": {
     "es": [
-      "3.200 puestos",
-      "1.600 salidas inmediatas",
-      "no ha cancelado ningún proyecto first-party anunciado"
+      "268 nuevos recortes de puestos",
+      "Activision asumirá el próximo Halo",
+      "todavía es una propuesta"
     ]
   },
   "category": {
-    "es": "Industria",
-    "en": "Industry"
+    "es": "Industria"
   },
   "date": "2026-07-06",
-  "updated": "2026-07-15",
-  "featured": false,
+  "updated": "2026-10-03",
+  "featured": true,
   "ticker": {
     "keyword": {
       "es": "Xbox"
     },
     "copy": {
-      "es": "Xbox recortará 3.200 empleos durante su reestructuración"
+      "es": "Xbox reorganiza Halo y consulta el posible cierre de Ninja Theory"
     }
   },
   "tone": "industry",
   "title": {
-    "es": "Xbox recortará 3.200 empleos en su mayor reestructuración",
-    "en": "Xbox will cut 3,200 jobs in its biggest restructuring"
+    "es": "Xbox reorganiza Halo y propone cerrar Ninja Theory"
   },
   "summary": {
-    "es": "Microsoft prevé reducir alrededor del 20% de la plantilla de Xbox durante su año fiscal 2027. La operación incluye 1.600 salidas inmediatas y cambios de propiedad en varios estudios.",
-    "en": "Microsoft plans to reduce Xbox's workforce by roughly 20 percent during fiscal 2027. The move includes 1,600 immediate departures and ownership changes at several studios."
+    "es": "Microsoft anunció el 22 de septiembre 268 nuevos recortes de puestos dentro de la reestructuración de Xbox. Activision asumirá el próximo Halo y Ninja Theory entra en consulta para un posible cierre."
   },
   "why": {
-    "es": "El alcance de los recortes altera la capacidad de producción de Xbox y evidencia la presión económica sobre los grandes estudios.",
-    "en": "The scale of the cuts changes Xbox's production capacity and highlights the financial pressure on major studios."
+    "es": "La reorganización cambia quién dirige algunas de las grandes sagas de Xbox. El cierre de Ninja Theory todavía es una propuesta, no una decisión ejecutada."
   },
   "sources": [
     {
       "label": "Xbox Wire",
       "type": {
-        "es": "Comunicado oficial",
-        "en": "Official statement"
+        "es": "Actualización oficial del 22 de septiembre"
+      },
+      "url": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio original de julio"
       },
       "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/"
-    },
-    {
-      "label": "Reuters",
-      "type": {
-        "es": "Información",
-        "en": "Reporting"
-      },
-      "url": "https://www.reuters.com/business/world-at-work/microsoft-joins-ai-driven-tech-layoff-wave-with-4800-job-cuts-2026-07-06/"
-    },
-    {
-      "label": "Game Developer",
-      "type": {
-        "es": "Testimonios",
-        "en": "Developer accounts"
-      },
-      "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
     }
-  ]
+  ],
+  "homeDetails": {
+    "es": [
+      "Activision incorporará Rare y World’s Edge y creará un equipo para el próximo Halo. Obsidian pasará a Bethesda y Playground Games y Turn 10 se integrarán en una estructura compartida.",
+      "Xbox sitúa los 268 recortes dentro del plan anunciado en julio. Tras fracasar dos operaciones de venta de Ninja Theory, abre una consulta sobre su cierre mientras estudia alternativas. La consulta de Arkane sigue abierta."
+    ]
+  }
 }

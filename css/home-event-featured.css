@@ -13,3 +13,4 @@
 .event-featured-date span{margin-top:3px;color:#77e2ff;font-size:.62rem;font-weight:900;letter-spacing:.11em}
 @media(max-width:620px){.hero-card.event-featured{min-height:370px}.event-featured-date{top:17px;right:17px;min-width:54px}.event-featured-date b{font-size:1.4rem}}
 @media(prefers-reduced-motion:reduce){.hero-card.event-featured img{transition:none}.hero-card.event-featured:hover img{transform:none}}
+@media(prefers-reduced-motion:reduce){.home-page .hero .line{opacity:1;transform:none}}

@@ -1,0 +1,49 @@
+{
+  "id": "minecraft-sift-cuarta-dimension",
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-26",
+  "addedAt": "2026-10-03T09:24:35.412Z",
+  "featured": false,
+  "tone": "xbox",
+  "title": {
+    "es": "Minecraft tendrá una cuarta dimensión en 2027 con The Sift"
+  },
+  "summary": {
+    "es": "Mojang anunció en Minecraft Live que The Sift llegará a Java y Bedrock en 2027. Será la cuarta dimensión del juego, junto al mundo principal, el Nether y el End."
+  },
+  "why": {
+    "es": "Amplía uno de los sistemas centrales de exploración de Minecraft, aunque todavía no tiene día de lanzamiento confirmado."
+  },
+  "homeDetails": {
+    "es": [
+      "The Sift aparece también en Minecraft Dungeons II. La presentación muestra allí un mundo interconectado, pero eso no confirma que sus reglas de acceso se trasladen tal cual al Minecraft original.",
+      "Mojang sitúa la llegada a Java y Bedrock en el próximo año y la presenta como la primera dimensión nueva en más de catorce años. La ventana de 2027 sigue siendo distinta de una fecha cerrada."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "Java y Bedrock en 2027",
+      "cuarta dimensión",
+      "no tiene día de lanzamiento confirmado"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Minecraft"
+    },
+    "copy": {
+      "es": "Minecraft añadirá The Sift como cuarta dimensión en 2027"
+    }
+  },
+  "sources": [
+    {
+      "label": "Mojang Studios",
+      "type": {
+        "es": "Fuente oficial"
+      },
+      "url": "https://www.minecraft.net/en-us/article/mclive_sept2026_recap"
+    }
+  ]
+}

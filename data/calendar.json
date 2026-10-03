@@ -5030,6 +5030,56 @@
       "trailer": "https://www.youtube.com/watch?v=GA0n6t-iLBw"
     },
     {
+      "id": "elta-defy-all-gods",
+      "title": "Elta: Defy All Gods",
+      "headingHtml": "Elta: Defy All Gods",
+      "date": "2027-02-02",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://cdn.focus-home.com/fhi-fastforward-admin/resources/games/elta-defy-all-gods/images/25082026_a2965456045a49d8b6343af5c870b0f8.jpeg",
+        "alt": "Elta: Defy All Gods",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.focus-entmt.com/en/games/elta-defy-all-gods",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Elta: Defy All Gods"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.focus-entmt.com/en/news/elta-defy-all-gods-set-to-launch-february-2-2027-free-demo-out-now-on-pc-playstation-5-and-xbox-series-xs",
+        "official": true,
+        "host": "www.focus-entmt.com",
+        "checkedAt": "2026-10-03",
+        "evidence": {
+          "title": "Elta: Defy All Gods",
+          "releaseDate": "2027-02-02",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=OFwjdeJaoKs"
+    },
+    {
       "id": "metro-2039",
       "title": "METRO 2039",
       "headingHtml": "METRO 2039",

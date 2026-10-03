@@ -4322,8 +4322,8 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
       "image": {
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681610/header.jpg",
-        "alt": "DRAGON QUEST MONSTERS: The Withered World",
+        "src": "https://www.square-enix.com/asia/newsportal/ja/topics/img/DQM4_KV.jpg",
+        "alt": "Ilustración oficial de DRAGON QUEST MONSTERS: The Withered World con Bianca, Nera y sus monstruos",
         "className": "",
         "gridArt": "",
         "poster": "",
@@ -4346,7 +4346,7 @@
         "url": "https://www.dragonquest.com/dqmtww/en_US/",
         "official": true,
         "host": "www.dragonquest.com",
-        "checkedAt": "2026-09-04",
+        "checkedAt": "2026-10-03",
         "evidence": {
           "title": "DRAGON QUEST MONSTERS: The Withered World",
           "releaseDate": "2026-12-03",

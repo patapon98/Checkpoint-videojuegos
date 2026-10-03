@@ -1,5 +1,55 @@
 [
   {
+    "id": "kena-scars-kosmora-retraso-2027",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "retrasa su lanzamiento a 2027",
+        "versiones para PS5 y PC",
+        "un espíritu canino que funciona como montura, apoyo de combate y pieza de los puzles"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-10-01",
+    "addedAt": "2026-10-03T17:33:17Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Kena"
+      },
+      "copy": {
+        "es": "Kena: Scars of Kosmora retrasa su lanzamiento a 2027"
+      }
+    },
+    "tone": "launch",
+    "title": {
+      "es": "Kena: Scars of Kosmora retrasa su lanzamiento a 2027"
+    },
+    "summary": {
+      "es": "Kena: Scars of Kosmora retrasa su lanzamiento a 2027 para ampliar su fase de pulido. Ember Lab confirma versiones para PS5 y PC y detalla Kosmora, sus templos elementales y un nuevo compañero espiritual."
+    },
+    "why": {
+      "es": "La secuela abandona así su anterior objetivo de lanzamiento y gana una ventana oficial para 2027. El estudio presenta una aventura lineal de mayor escala, con exploración opcional, cuatro culturas interconectadas y un espíritu canino que funciona como montura, apoyo de combate y pieza de los puzles."
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Anuncio oficial de Ember Lab sobre el retraso, las plataformas y el contenido del juego"
+        },
+        "url": "https://blog.playstation.com/2026/10/01/kena-scars-of-kosmora-launches-2027-ember-lab-shares-story-overview/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Ember Lab utilizará el tiempo adicional para pulir una experiencia más amplia que Bridge of Spirits. Aunque conserva una estructura lineal centrada en los personajes, Kosmora ofrecerá rutas opcionales y regiones con culturas, valores y conflictos propios.",
+        "La historia llevará a Kena hasta una isla marcada por cuatro elementos y por antiguos templos de los Guías Espirituales. Su compañero cristalino servirá como montura, participará en los combates y ayudará a resolver los puzles alquímicos del recorrido."
+      ]
+    }
+  },
+  {
     "id": "ps5-qssr-reescalado-ia",
     "important": true,
     "category": {

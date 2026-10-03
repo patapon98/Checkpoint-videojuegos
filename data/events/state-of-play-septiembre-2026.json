@@ -21,7 +21,7 @@
   "dateLabel": "3 de septiembre",
   "countdownTitle": "Emisión finalizada",
   "countdownTimeLabel": "3 de septiembre de 2026",
-  "homeFeatured": true,
+  "homeFeatured": false,
   "homeFeature": {
     "day": "03",
     "month": "SEP",

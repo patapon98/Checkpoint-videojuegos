@@ -1,31 +1,6 @@
-(async function(){
-  const heroCard=document.getElementById('heroCard');
-  if(heroCard){
-    try{
-      const eventSources=[
-        '/data/events/nintendo-direct-septiembre-2026.json',
-        '/data/events/state-of-play-septiembre-2026.json'
-      ];
-      let response=await fetch(eventSources[0],{cache:'no-store'});
-      if(!response.ok) response=await fetch(eventSources[1],{cache:'no-store'});
-      if(!response.ok) throw new Error('No se pudo cargar el evento destacado');
-      const event=await response.json();
-      heroCard.classList.add('event-featured');
-      heroCard.href=`/eventos/${event.id}`;
-      heroCard.setAttribute('aria-label',`${event.phase === 'finished' ? 'Repasar' : 'Seguir'} ${event.title} en Final Secreto`);
-      heroCard.innerHTML=`
-        <img src="${event.heroImage}" alt="${event.heroImageAlt}" />
-        <div class="event-featured-date" aria-hidden="true"><b>${event.homeFeature.day}</b><span>${event.homeFeature.month}</span></div>
-        <div class="tag">${event.homeFeature.tag}</div>
-        <h3>${event.homeFeature.title}</h3>
-        <p>${event.homeFeature.summary}</p>
-      `;
-      heroCard.classList.add('is-hydrated');
-    }catch(error){
-      console.warn(error);
-      heroCard.classList.add('is-hydrated');
-    }
-  }
+(function(){
+  // La selección editorial de Novedades vive en el HTML inicial de la portada.
+  document.getElementById('heroCard')?.classList.add('is-hydrated');
 
   const latestCard=document.querySelector('#cardsGrid a[href="/resenas/gurei"]');
   if(latestCard){

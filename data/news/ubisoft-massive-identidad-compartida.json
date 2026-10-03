@@ -1,0 +1,49 @@
+{
+  "id": "ubisoft-massive-identidad-compartida",
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-09-30",
+  "addedAt": "2026-10-03T09:24:35.412Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Ubisoft agrupa The Division, Ghost Recon y Splinter Cell bajo Massive"
+  },
+  "summary": {
+    "es": "Los equipos de Creative House 2 pasan a trabajar bajo la identidad de Massive Entertainment. El grupo reúne The Division, Ghost Recon, Splinter Cell y la nueva March of Giants."
+  },
+  "why": {
+    "es": "La reorganización concentra varias franquicias importantes bajo una dirección común. No supone que Massive salga de Ubisoft."
+  },
+  "homeDetails": {
+    "es": [
+      "La estructura reúne equipos de Montreal, París, Suecia y Toronto, con Christoph Hartmann al frente. Ubisoft presenta el cambio como una forma de compartir conocimientos creativos y tecnológicos.",
+      "Ubisoft seguirá publicando y distribuyendo sus juegos y afirma que los compromisos con jugadores y socios se mantienen. El anuncio no incluye nuevas fechas de lanzamiento para esas franquicias."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "Massive Entertainment",
+      "dirección común",
+      "No supone que Massive salga de Ubisoft"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Ubisoft"
+    },
+    "copy": {
+      "es": "Ubisoft reúne varias de sus franquicias bajo la identidad de Massive"
+    }
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Fuente oficial"
+      },
+      "url": "https://news.ubisoft.com/en-ca/article/FLHpn759e7w0vtE0TKb47/massive-entertainment-the-next-chapter-begins"
+    }
+  ]
+}

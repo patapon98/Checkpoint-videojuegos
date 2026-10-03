@@ -1,0 +1,65 @@
+{
+  "id": "mario-kart-tour-cierre-servicio",
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-09-30",
+  "addedAt": "2026-10-03T09:24:35.412Z",
+  "featured": false,
+  "tone": "nintendo",
+  "title": {
+    "es": "Mario Kart Tour cierra sus servidores sin una versión sin conexión"
+  },
+  "summary": {
+    "es": "El juego de carreras para móviles dejó de funcionar el 30 de septiembre en España. Nintendo no anunció una versión sin conexión para conservar el acceso a las carreras."
+  },
+  "why": {
+    "es": "El cierre vuelve a mostrar cómo la continuidad de un juego puede depender por completo de sus servidores."
+  },
+  "homeDetails": {
+    "es": [
+      "La aplicación mantiene temporalmente la consulta de estadísticas de tours anteriores y el envío de consultas al soporte. Esa ventana administrativa no permite volver a disputar carreras.",
+      "Nintendo fija el final de la consulta de estadísticas en enero de 2027 y el de las clasificaciones históricas en septiembre de ese año. Guardar esos registros no conserva la experiencia jugable."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "dejó de funcionar el 30 de septiembre",
+      "versión sin conexión"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Mario Kart Tour"
+    },
+    "copy": {
+      "es": "Mario Kart Tour ya ha cerrado y no tiene una versión sin conexión"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nintendo Support",
+      "type": {
+        "es": "Fuente oficial"
+      },
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/71752/~/mario-kart-tour-service-discontinuation"
+    },
+    {
+      "label": "Mario Kart Tour",
+      "type": {
+        "es": "Fuente oficial"
+      },
+      "url": "https://faq.mariokarttour.com/hc/en-us/articles/55861637745305-About-the-End-of-Service-for-Mario-Kart-Tour"
+    },
+    {
+      "label": "TechRadar",
+      "type": {
+        "es": "Contexto del anuncio"
+      },
+      "url": "https://www.techradar.com/gaming/mobile-gaming/nintendos-ios-and-android-racer-mario-kart-tour-will-shut-down-later-this-year-with-no-offline-mode-planned"
+    }
+  ],
+  "article": {
+    "url": "/noticias/mario-kart-tour-cierre-servicio"
+  }
+}

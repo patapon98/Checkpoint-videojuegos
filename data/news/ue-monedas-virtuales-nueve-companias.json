@@ -1,0 +1,50 @@
+{
+  "id": "ue-monedas-virtuales-nueve-companias",
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-09-30",
+  "addedAt": "2026-10-03T09:24:35.412Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "La UE abre actuaciones sobre monedas virtuales en nueve compañías"
+  },
+  "summary": {
+    "es": "La red europea de protección de consumidores ha iniciado un diálogo con nueve compañías por posibles infracciones relacionadas con monedas virtuales. Entre los juegos afectados están Minecraft, Valorant y Candy Crush Saga."
+  },
+  "why": {
+    "es": "La actuación afecta a cómo se presenta el gasto dentro de los juegos. Todavía no equivale a una sanción ni a una prohibición de estas monedas."
+  },
+  "homeDetails": {
+    "es": [
+      "Las actuaciones coordinadas incluyen a Crytek, InnoGames, King, Mojang, Plarium Europe, PLR Worldwide Sales, Riot, Supercell y Ubisoft EMEA. Las autoridades investigan prácticas comerciales, no declaran ilegal cada juego.",
+      "Si las compañías no resuelven las objeciones, las autoridades nacionales pueden adoptar medidas. El diálogo con Microsoft y Activision Blizzard sobre otros juegos comenzó antes y constituye una actuación separada."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "nueve compañías",
+      "posibles infracciones",
+      "Todavía no equivale a una sanción"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Monedas virtuales"
+    },
+    "copy": {
+      "es": "La UE abre actuaciones sobre monedas virtuales en nueve compañías"
+    }
+  },
+  "sources": [
+    {
+      "label": "Comisión Europea",
+      "type": {
+        "es": "Fuente oficial"
+      },
+      "url": "https://commission.europa.eu/topics/consumers/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_nl"
+    }
+  ],
+  "important": true
+}

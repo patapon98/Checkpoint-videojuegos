@@ -1,0 +1,57 @@
+{
+  "id": "ps5-qssr-reescalado-ia",
+  "important": true,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-10-01",
+  "addedAt": "2026-10-03T09:25:25Z",
+  "featured": false,
+  "tone": "platforms",
+  "title": {
+    "es": "Sony lleva el reescalado por IA a la PS5 estándar con QSSR"
+  },
+  "summary": {
+    "es": "Sony ha llevado el reescalado por IA a la PS5 estándar mediante Quick Spectral Super Resolution. QSSR busca mejorar el detalle y la estabilidad de imagen y ya está disponible en Marvel’s Wolverine y Ghost of Yōtei."
+  },
+  "why": {
+    "es": "QSSR adapta a la consola base parte del enfoque de PSSR en PS5 Pro y estará disponible de forma amplia para los estudios de PlayStation. Es un cambio de plataforma que puede ampliar las opciones gráficas de futuros juegos sin exigir el modelo Pro."
+  },
+  "homeDetails": {
+    "es": [
+      "La nueva biblioteca procede de Project Amethyst, la colaboración gráfica de Sony y AMD. Emplea una red neuronal simplificada y una implementación ajustada al hardware de PS5 para reducir el coste de cálculo frente a PSSR.",
+      "Sony mantiene PSSR como la solución de mayor calidad en PS5 Pro, mientras QSSR se estrena como una opción adicional en la consola estándar. Insomniac y Sucker Punch destacan mejoras en la claridad de detalles finos y en la estabilidad temporal de la imagen."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "reescalado por IA a la PS5 estándar",
+      "mejorar el detalle y la estabilidad de imagen",
+      "Marvel’s Wolverine y Ghost of Yōtei"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "PS5"
+    },
+    "copy": {
+      "es": "PS5 estrena QSSR, su reescalado por IA para la consola estándar"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Anuncio oficial de la tecnología, su disponibilidad y los primeros juegos compatibles"
+      },
+      "url": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto técnico y comparación con PSSR en PS5 Pro"
+      },
+      "url": "https://www.theverge.com/games/1003549/sony-ps5-quick-spectral-super-resolution-qssr"
+    }
+  ]
+}

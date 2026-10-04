@@ -1,5 +1,68 @@
 [
   {
+    "id": "croc-2-remaster-fecha-octubre",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "se lanzará el 29 de octubre",
+        "el desarrollo del remaster ya está terminado",
+        "más de 40 niveles de plataformas 3D"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-10-01",
+    "addedAt": "2026-10-04T15:28:06Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Croc 2"
+      },
+      "copy": {
+        "es": "Croc 2 fija su lanzamiento para el 29 de octubre en consolas y PC"
+      }
+    },
+    "tone": "launch",
+    "title": {
+      "es": "Croc 2: Kingdom of the Gobbos llegará el 29 de octubre"
+    },
+    "summary": {
+      "es": "Croc 2: Kingdom of the Gobbos se lanzará el 29 de octubre en PS5, PS4, Xbox Series X|S, Nintendo Switch y PC. Argonaut confirma además que el desarrollo del remaster ya está terminado."
+    },
+    "why": {
+      "es": "La revisión recupera la secuela de 1999 con más de 40 niveles de plataformas 3D, mejoras modernas y Croc2pedia, un museo digital con documentos de diseño, materiales descartados y entrevistas."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=JqNfIpLPLv0",
+      "label": {
+        "es": "Ver anuncio oficial de la fecha"
+      }
+    },
+    "sources": [
+      {
+        "label": "Argonaut Games",
+        "type": {
+          "es": "Anuncio oficial de la fecha y del final del desarrollo"
+        },
+        "url": "https://www.youtube.com/watch?v=JqNfIpLPLv0"
+      },
+      {
+        "label": "Steam",
+        "type": {
+          "es": "Ficha oficial con plataformas, características y contenidos del remaster"
+        },
+        "url": "https://store.steampowered.com/app/4198360/Croc_2_Kingdom_of_the_Gobbos/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La aventura vuelve a recorrer cuatro aldeas conectadas por zonas abiertas, con misiones de rescate, jefes y vehículos como coches, lanchas, vagonetas y un ala delta. El triple salto amplía el repertorio de movimientos del protagonista.",
+        "Croc2pedia reúne documentación de diseño, material promocional, pruebas de animación y modelos de personajes, niveles y objetos eliminados. El archivo incluye también entrevistas con miembros del equipo original y los responsables del remaster."
+      ]
+    }
+  },
+  {
     "id": "kena-scars-kosmora-retraso-2027",
     "important": false,
     "emphasis": {

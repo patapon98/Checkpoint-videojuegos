@@ -285,11 +285,3 @@ html[data-theme="dark"] .news-article-link:hover{
   color:#fff;
 }
 .news-sources.compact .news-article-link{padding:4px 9px;font-size:.7rem}
-
-@media(min-width:801px){
-  .news-page-intro{gap:24px;grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr)}
-  .news-page-intro .section-sub{font-size:.95rem}
-  .news-brief,.news-home-flip-brief .news-home-flip-back{padding:18px}
-  .news-brief h3,.news-home-flip-back.compact h3{font-size:1.2rem}
-  .news-home-flip-back h3{font-size:clamp(1.4rem,2.5vw,1.85rem)}
-}

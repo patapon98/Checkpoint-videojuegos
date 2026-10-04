@@ -23,8 +23,3 @@
   .legal-content{margin-bottom:52px}
   .legal-content section{padding:26px 0}
 }
-@media(min-width:901px){
-  .legal-hero{padding-top:40px}
-  .legal-hero h1{font-size:clamp(2.2rem,4vw,3rem)}
-  .legal-content{max-width:var(--reading-max)}
-}

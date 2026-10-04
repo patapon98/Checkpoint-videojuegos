@@ -6,7 +6,7 @@ const REGISTRY = path.join(ROOT, 'data', 'game-hubs', 'index.json');
 const PAGES = path.join(ROOT, 'juegos');
 const VERSION = '20260910c';
 
-const stylesheet = `<link rel="stylesheet" href="/css/game-hub-compact.css?v=20261004-scale">`;
+const stylesheet = `<link rel="stylesheet" href="/css/game-hub-compact.css?v=${VERSION}">`;
 const script = `<script src="/js/game-hub-compact.js?v=${VERSION}" defer></script>`;
 
 function addBodyLayoutFlag(html) {

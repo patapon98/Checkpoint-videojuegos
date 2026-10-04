@@ -385,22 +385,3 @@ html[data-theme="dark"] .news-tools{background:color-mix(in srgb,var(--card) 88%
   .news-article-archive-item{grid-template-columns:1fr;gap:7px;padding:18px}
   .news-article-archive-cta{margin-top:4px}
 }
-
-/* Tres columnas compactas en escritorio; dos en tablet. No fijar alturas,
-   el reverso conserva su scroll y las acciones mantienen su anclaje. */
-@media(min-width:981px){
-  .news-page #newsArchive.is-grid{gap:14px}
-  .news-page #newsArchive .news-flip-face{padding:18px;border-radius:18px}
-  .news-page #newsArchive .news-archive-body h2{font-size:1.2rem}
-  .news-page #newsArchive.is-list .news-archive-body h2{font-size:1.45rem}
-  .news-page #newsArchive .news-featured .news-flip-front,
-  .news-page #newsArchive.is-list .news-featured .news-flip-front{grid-template-columns:130px minmax(0,1fr);min-height:240px;padding:0}
-  .news-page #newsArchive .news-featured .news-flip-front .news-archive-date{padding:20px 16px}
-  .news-page #newsArchive .news-featured .news-flip-front .news-archive-body,
-  .news-page #newsArchive.is-list .news-featured .news-flip-front .news-archive-body{padding:20px 24px}
-  .news-page #newsArchive .news-featured .news-flip-front .news-archive-body h2,
-  .news-page #newsArchive.is-list .news-featured .news-flip-front .news-archive-body h2{font-size:1.6rem}
-  .news-page #newsArchive.is-grid .news-featured .news-flip-back,
-  .news-page #newsArchive.is-list .news-featured .news-flip-back{padding:20px 24px}
-  .news-page #newsArchive .news-featured .news-flip-front .news-archive-date::after{font-size:3.3rem}
-}

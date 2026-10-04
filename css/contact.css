@@ -85,3 +85,7 @@
   .contact-direct{align-items:flex-start;flex-direction:column;margin-bottom:52px;padding:23px}
   .contact-direct a{width:100%;justify-content:center}
 }
+@media(min-width:961px){
+  .contact-hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;padding-top:40px;padding-bottom:32px}
+  .contact-intro h1{font-size:clamp(2.2rem,4vw,3rem)}
+}

@@ -21,11 +21,11 @@ body[data-hub-layout="compact"].game-hub-enhanced .game-return-note {
 }
 
 body[data-hub-layout="compact"] .game-main-column > .game-section {
-  padding-top: 2.6rem;
+  padding-top: 1.9rem;
 }
 
 body[data-hub-layout="compact"] .game-main-column .section-heading h2 {
-  font-size: clamp(1.75rem, 3.3vw, 2.65rem);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
 }
 
 body[data-hub-layout="compact"] #resumen {

@@ -87,3 +87,18 @@ html[data-theme="dark"]{--story-blue:#7aa2ff;--story-blue-soft:#18223d;--story-d
   .revenue-table{min-width:520px}
 }
 
+@media(min-width:921px){
+  .story-hero{padding:36px 0 42px}
+  .story-hero-grid{grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:32px}
+  .story-hero-copy h1{font-size:clamp(2rem,3.8vw,3rem)}
+  .story-deck{font-size:1.05rem}
+  .story-visual{min-height:340px}
+  .disc{width:160px;height:160px;right:22px;top:34px}
+  .case{width:130px;height:185px;left:24px;bottom:65px;padding:16px}
+  .story-layout{grid-template-columns:minmax(0,640px) minmax(180px,1fr);gap:28px;padding-top:40px}
+  .story-body h2{font-size:1.75rem;margin-top:36px}
+  .story-summary{padding:20px;margin-bottom:26px}
+}
+@media(max-width:620px){
+  .story-hero-copy h1{font-size:clamp(1.9rem,8vw,2.4rem)}
+}

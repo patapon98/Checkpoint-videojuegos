@@ -1,5 +1,62 @@
 [
   {
+    "id": "aion-2-lanzamiento-global",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "ya está disponible en PC desde el 5 de octubre",
+        "cuatro mazmorras para grupos de hasta cinco jugadores",
+        "mascotas que pueden convertirse en monturas"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-10-05",
+    "addedAt": "2026-10-05T15:20:52Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "AION 2"
+      },
+      "copy": {
+        "es": "AION 2 inicia su lanzamiento global en PC"
+      }
+    },
+    "tone": "launch",
+    "title": {
+      "es": "AION 2 inicia su lanzamiento global en PC"
+    },
+    "summary": {
+      "es": "AION 2 ya está disponible en PC desde el 5 de octubre. NC recupera su MMORPG de facciones con los Elyos y los Asmodianos, combate aéreo y expediciones cooperativas."
+    },
+    "why": {
+      "es": "El estreno abre al público una secuela centrada en el vuelo, las historias de dos facciones y cuatro mazmorras para grupos de hasta cinco jugadores. La página oficial detalla además mascotas que pueden convertirse en monturas y recoger botín automáticamente."
+    },
+    "sources": [
+      {
+        "label": "AION 2",
+        "type": {
+          "es": "Sitio oficial de lanzamiento, fecha y contenidos"
+        },
+        "url": "https://aion2.ncsoft.jp/en/contents"
+      },
+      {
+        "label": "Steam",
+        "type": {
+          "es": "Ficha oficial de la versión para PC"
+        },
+        "url": "https://store.steampowered.com/app/3393110/AION_2/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La campaña se articula alrededor de las historias de los Elyos y los Asmodianos. El contenido cooperativo incluye Krao Cave, Urugugu Canyon, Fire Temple y Draupnir, cuatro expediciones con entornos y jefes propios.",
+        "NC celebra el estreno con dos monturas gratuitas para las cuentas creadas antes del 2 de diciembre. Las mascotas acompañan al personaje, pueden transformarse en monturas y aportan funciones como la recogida automática de botín."
+      ]
+    }
+  },
+  {
     "id": "croc-2-remaster-fecha-octubre",
     "important": false,
     "emphasis": {

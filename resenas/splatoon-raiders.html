@@ -50,7 +50,7 @@
     "@type": "Organization",
     "name": "Final Secreto"
   },
-  "datePublished": "2026-08-08",
+  "datePublished": "2026-09-08",
   "inLanguage": "es",
   "dateModified": "2026-10-05",
   "image": "https://finalsecreto.com/img/splatoon-raiders/portada.jpg",
@@ -97,6 +97,11 @@ html[data-theme="dark"]{--accent:#b594ff;--accent-soft:#2a1944;--bg:#120e1b;--ca
 html[data-theme="dark"] .verdict .v-score{color:#b594ff}
 .article-banner{background:linear-gradient(135deg,#7135c8,#ccde48)}
 .article-banner img{object-position:50% 45%}
+/* El centrado usa márgenes para que reveal conserve su desplazamiento vertical. */
+@media(min-width:701px){
+  .article-body>figure.reveal{margin-left:calc((100% - min(920px,100vw - 48px))/2);transform:translateY(28px)}
+  .article-body>figure.reveal.visible{transform:none}
+}
 </style>
 <script>
 (function(){
@@ -133,7 +138,7 @@ html[data-theme="dark"] .verdict .v-score{color:#b594ff}
 <a href="/resenas" class="back">← Volver a reseñas</a>
 <div class="kicker">Reseña · Acción / Looter shooter · Switch 2</div>
 <h1>Splatoon Raiders, una puerta de entrada a la saga</h1>
-<div class="article-meta"><span>Por <img class="byline-avatar" src="/img/alex-blanco-miniatura.jpg" alt="Alex Blanco" width="22" height="22" loading="lazy"><b><a href="/sobre-mi">Alex Blanco</a></b></span><span>8 de agosto de 2026</span><span>5 min de lectura</span></div>
+<div class="article-meta"><span>Por <img class="byline-avatar" src="/img/alex-blanco-miniatura.jpg" alt="Alex Blanco" width="22" height="22" loading="lazy"><b><a href="/sobre-mi">Alex Blanco</a></b></span><span>8 de septiembre de 2026</span><span>5 min de lectura</span></div>
 <div class="article-banner has-img reveal"><img src="../img/splatoon-raiders/portada.jpg" width="1000" height="445" alt="El mecanista y el Clan Surimi descansan junto a una estructura portuaria en las islas Espiralita"><div class="big-ring" style="--target:54"><svg width="84" height="84"><circle class="bg" cx="42" cy="42" r="40"/><circle class="track" cx="42" cy="42" r="36"/><circle class="bar" cx="42" cy="42" r="36"/></svg><span class="num">76</span></div></div>
 </div>
 <aside class="review-hitpoints wrap reveal" aria-labelledby="hitpoints-title"><h2 id="hitpoints-title">Hitpoints</h2><dl>

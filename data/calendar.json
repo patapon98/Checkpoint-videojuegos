@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -3813,6 +3813,60 @@
       "trailer": "https://www.youtube.com/watch?v=pBL7nJLH8ro"
     },
     {
+      "id": "croc-2-kingdom-of-the-gobbos",
+      "title": "Croc 2 Kingdom of the Gobbos",
+      "headingHtml": "Croc 2 Kingdom of the Gobbos <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4198360/98b524b85b19f73e6c705c4b4b80a1567abfd349/header.jpg?t=1790876418",
+        "alt": "Croc 2 Kingdom of the Gobbos",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4198360/Croc_2_Kingdom_of_the_Gobbos/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Croc 2 Kingdom of the Gobbos a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=JqNfIpLPLv0",
+        "official": true,
+        "host": "www.youtube.com",
+        "checkedAt": "2026-10-04",
+        "evidence": {
+          "title": "Croc 2 Kingdom of the Gobbos",
+          "releaseDate": "2026-10-29",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=JqNfIpLPLv0"
+    },
+    {
       "id": "phantom-blade-zero",
       "title": "Phantom Blade Zero",
       "headingHtml": "Phantom Blade Zero",
@@ -3950,60 +4004,6 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=ftyQs4bSve8"
-    },
-    {
-      "id": "croc-2-kingdom-of-the-gobbos",
-      "title": "Croc 2 Kingdom of the Gobbos",
-      "headingHtml": "Croc 2 Kingdom of the Gobbos <span class=\"tag-dlc\">Remaster</span>",
-      "date": "2026-10-29",
-      "platformKeys": [
-        "ps5",
-        "ps4",
-        "xbox",
-        "pc",
-        "switch"
-      ],
-      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch",
-      "image": {
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4198360/98b524b85b19f73e6c705c4b4b80a1567abfd349/header.jpg?t=1790876418",
-        "alt": "Croc 2 Kingdom of the Gobbos",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://store.steampowered.com/app/4198360/Croc_2_Kingdom_of_the_Gobbos/",
-        "title": "Wishlist en Steam",
-        "ariaLabel": "Añadir Croc 2 Kingdom of the Gobbos a la lista de deseados en Steam"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Remaster",
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 55,
-      "source": {
-        "url": "https://www.youtube.com/watch?v=JqNfIpLPLv0",
-        "official": true,
-        "host": "www.youtube.com",
-        "checkedAt": "2026-10-04",
-        "evidence": {
-          "title": "Croc 2 Kingdom of the Gobbos",
-          "releaseDate": "2026-10-29",
-          "platforms": [
-            "ps5",
-            "ps4",
-            "xbox",
-            "pc",
-            "switch"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=JqNfIpLPLv0"
     },
     {
       "id": "godzilla-destroy-all-monsters-melee",
@@ -5831,5 +5831,5 @@
       "trailer": "https://www.youtube.com/watch?v=5u_MY4zleaI"
     }
   ],
-  "renderState": "faa10e4ef790"
+  "renderState": "8efe72166c81"
 }

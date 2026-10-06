@@ -3586,6 +3586,58 @@
       "trailer": "https://www.youtube.com/watch?v=n0Trr5yLK1A"
     },
     {
+      "id": "frostpunk-switch",
+      "title": "Frostpunk",
+      "headingHtml": "Frostpunk <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-19",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Frostpunk",
+        "src": "https://media.rawg.io/media/games/a88/a886c37bf112d009e318b106db9d420a.jpg",
+        "alt": "Frostpunk",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 45821,
+        "rawgSlug": "frostpunk",
+        "rawgPage": "https://rawg.io/games/frostpunk",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-br/store/products/frostpunk-switch/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Frostpunk"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/pt-br/store/products/frostpunk-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-10-06",
+        "evidence": {
+          "title": "Frostpunk",
+          "releaseDate": "2026-10-19",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=_LdRNF9LKyA"
+    },
+    {
       "id": "star-trek-outposts-unknown",
       "title": "Star Trek: Outposts Unknown",
       "headingHtml": "Star Trek: Outposts Unknown",

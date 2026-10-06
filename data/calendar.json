@@ -3597,12 +3597,16 @@
       "image": {
         "provider": "rawg",
         "query": "Frostpunk",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323190/header.jpg",
+        "src": "https://media.rawg.io/media/games/a88/a886c37bf112d009e318b106db9d420a.jpg",
         "alt": "Frostpunk",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 45821,
+        "rawgSlug": "frostpunk",
+        "rawgPage": "https://rawg.io/games/frostpunk",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/pt-br/store/products/frostpunk-switch/",

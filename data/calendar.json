@@ -4247,8 +4247,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "Warhammer Survivors",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669620/header.jpg",
         "alt": "Warhammer Survivors",
         "className": "",

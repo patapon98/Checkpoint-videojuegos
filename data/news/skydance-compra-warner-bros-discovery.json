@@ -1,0 +1,64 @@
+{
+  "id": "skydance-compra-warner-bros-discovery",
+  "important": true,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-10-06",
+  "addedAt": "2026-10-07T11:33:38Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Skydance completa la compra de Warner Bros. Discovery"
+  },
+  "summary": {
+    "es": "Paramount ha completado la adquisición de Warner Bros. Discovery y la compañía combinada adopta el nombre Skydance. La operación coloca Warner Bros. Games y franquicias como Mortal Kombat, Hogwarts Legacy y DC bajo un nuevo propietario."
+  },
+  "why": {
+    "es": "El cierre cambia la propiedad de uno de los mayores catálogos de videojuegos y licencias del sector. Skydance fija al menos 6.000 millones de dólares en sinergias durante tres años, mientras Warner Bros. Games mantiene un catálogo encabezado por Mortal Kombat, Hogwarts Legacy, Batman y LEGO."
+  },
+  "homeDetails": {
+    "es": [
+      "El acuerdo se cerró tras recibir todas las aprobaciones regulatorias y convierte a Paramount y WBD en una sola compañía cotizada bajo el símbolo SKYD. Skydance declara cerca de 70.000 millones de dólares en ingresos y más de 30.000 millones de gasto anual en contenidos.",
+      "En videojuegos, la operación integra Warner Bros. Games en el nuevo grupo. Su catálogo oficial incluye Mortal Kombat, Hogwarts Legacy, Batman: Arkham, LEGO y Game of Thrones, de modo que la propiedad de esas producciones pasa a depender de la estrategia corporativa de Skydance."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "la compañía combinada adopta el nombre Skydance",
+      "cambia la propiedad de uno de los mayores catálogos de videojuegos y licencias del sector",
+      "al menos 6.000 millones de dólares en sinergias durante tres años"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Skydance"
+    },
+    "copy": {
+      "es": "Skydance completa la compra de Warner Bros. Discovery"
+    }
+  },
+  "sources": [
+    {
+      "label": "Skydance",
+      "type": {
+        "es": "Comunicado oficial del cierre de la adquisición"
+      },
+      "url": "https://www.skydance.com/news/press/paramount-completes-acquisition-of-warner-bros-discovery-creating-a-new-global-entertainment-leader-skydance"
+    },
+    {
+      "label": "Warner Bros. Games",
+      "type": {
+        "es": "Catálogo oficial de videojuegos y franquicias"
+      },
+      "url": "https://warnerbrosgames.com/games"
+    },
+    {
+      "label": "Reuters",
+      "type": {
+        "es": "Contexto periodístico sobre la operación y la integración"
+      },
+      "url": "https://www.reuters.com/business/media-telecom/paramount-wraps-up-mega-warner-bros-merger-create-hollywood-powerhouse-skydance-2026-10-06/"
+    }
+  ]
+}

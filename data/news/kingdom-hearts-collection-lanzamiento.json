@@ -1,0 +1,70 @@
+{
+  "id": "kingdom-hearts-collection-lanzamiento",
+  "important": false,
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-10-08",
+  "addedAt": "2026-10-07T18:28:24Z",
+  "featured": false,
+  "tone": "launch",
+  "title": {
+    "es": "KINGDOM HEARTS Collection [I~III] llega a consolas actuales"
+  },
+  "summary": {
+    "es": "KINGDOM HEARTS Collection [I~III] se lanza el 8 de octubre en Nintendo Switch 2, PS5, Xbox Series X|S y Microsoft Store para Windows. La recopilación reúne la historia principal de Sora desde el primer juego hasta KINGDOM HEARTS III + Re Mind."
+  },
+  "why": {
+    "es": "El estreno lleva por primera vez versiones descargables nativas de la saga completa a Nintendo Switch 2 y actualiza su presencia en las consolas actuales. Square Enix ofrece además un 50 % de descuento digital a propietarios de determinadas versiones anteriores."
+  },
+  "homeDetails": {
+    "es": [
+      "El paquete combina KINGDOM HEARTS HD 1.5+2.5 ReMIX, KINGDOM HEARTS HD 2.8 Final Chapter Prologue y KINGDOM HEARTS III + Re Mind. Entre juegos, películas y episodios enlaza el arco principal de Sora, Riku y Kairi frente a la oscuridad.",
+      "En Nintendo Switch 2 la colección abandona el modelo exclusivamente en la nube y pasa a distribuirse como descarga nativa, con transferencia de partidas desde las versiones Cloud. PS5 y Xbox Series reciben también ediciones propias, mientras Steam conserva KINGDOM HEARTS INTEGRUM MASTERPIECE."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "se lanza el 8 de octubre",
+      "reúne la historia principal de Sora",
+      "versiones descargables nativas de la saga completa"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "KINGDOM HEARTS"
+    },
+    "copy": {
+      "es": "KINGDOM HEARTS Collection [I~III] llega a consolas actuales"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=gc8z23S8a-A",
+    "label": {
+      "es": "Ver el tráiler oficial de la colección"
+    }
+  },
+  "sources": [
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Sitio oficial de lanzamiento, plataformas y contenido"
+      },
+      "url": "https://www.square-enix.com/kingdomhearts/collection/es-xl/"
+    },
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Calendario oficial de lanzamiento y plataformas"
+      },
+      "url": "https://www.jp.square-enix.com/tgs26/en/"
+    },
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Tráiler oficial de anuncio y lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=gc8z23S8a-A"
+    }
+  ]
+}

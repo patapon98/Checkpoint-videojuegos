@@ -4235,6 +4235,60 @@
       "trailer": "https://www.youtube.com/watch?v=xXaXYxcbA6A"
     },
     {
+      "id": "warhammer-survivors",
+      "title": "Warhammer Survivors",
+      "headingHtml": "Warhammer Survivors",
+      "date": "2026-11-10",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Warhammer Survivors",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669620/header.jpg",
+        "alt": "Warhammer Survivors",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3669620/Warhammer_Survivors/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Warhammer Survivors a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=mvz8jEINZh0",
+        "official": true,
+        "host": "www.youtube.com",
+        "checkedAt": "2026-10-07",
+        "evidence": {
+          "title": "Warhammer Survivors",
+          "releaseDate": "2026-11-10",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=mvz8jEINZh0"
+    },
+    {
       "id": "metaphor-refantazio",
       "title": "Metaphor: ReFantazio",
       "headingHtml": "Metaphor: ReFantazio <span class=\"tag-dlc\">Nueva plataforma</span>",

@@ -1,5 +1,62 @@
 [
   {
+    "id": "monster-hunter-rise-20-millones-ventas",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "ha superado los 20 millones de copias vendidas en todo el mundo",
+        "se mantiene como el segundo juego más vendido de la historia de Capcom",
+        "sumó unas 700.000 unidades desde el cierre de junio"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-06",
+    "addedAt": "2026-10-07T00:01:39Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Monster Hunter Rise"
+      },
+      "copy": {
+        "es": "Monster Hunter Rise supera los 20 millones de copias vendidas"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Monster Hunter Rise supera los 20 millones de copias vendidas"
+    },
+    "summary": {
+      "es": "Capcom ha anunciado que Monster Hunter Rise ha superado los 20 millones de copias vendidas en todo el mundo. El juego alcanza el hito más de cinco años después de su estreno original en Nintendo Switch."
+    },
+    "why": {
+      "es": "Rise se mantiene como el segundo juego más vendido de la historia de Capcom, por detrás de Monster Hunter: World. El título sumó unas 700.000 unidades desde el cierre de junio, cuando la compañía situó sus ventas acumuladas en 19,3 millones."
+    },
+    "sources": [
+      {
+        "label": "Monster Hunter",
+        "type": {
+          "es": "Anuncio oficial de Capcom sobre el hito de ventas"
+        },
+        "url": "https://x.com/monsterhunter/status/2107320002042790350"
+      },
+      {
+        "label": "Gematsu",
+        "type": {
+          "es": "Contexto periodístico sobre el nuevo total y la cifra anterior"
+        },
+        "url": "https://www.gematsu.com/2026/10/monster-hunter-rise-sales-top-20-million"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Monster Hunter Rise debutó en Nintendo Switch en marzo de 2021 y amplió después su recorrido comercial con versiones para PC, PlayStation y Xbox. Su expansión Sunbreak prolongó la actividad del juego y reforzó una distribución multiplataforma que sigue generando ventas años después del lanzamiento.",
+        "Capcom acompañó el anuncio con una ilustración conmemorativa protagonizada por personajes de la aldea de Kamura. La cifra deja a Rise cerca de los 22,4 millones registrados por Monster Hunter: World y confirma el peso comercial de la saga dentro del catálogo de la compañía."
+      ]
+    }
+  },
+  {
     "id": "aion-2-lanzamiento-global",
     "important": false,
     "emphasis": {

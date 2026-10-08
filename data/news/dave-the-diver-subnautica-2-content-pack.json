@@ -1,0 +1,70 @@
+{
+  "id": "dave-the-diver-subnautica-2-content-pack",
+  "important": false,
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-10-08",
+  "addedAt": "2026-10-08T18:12:12Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "DAVE THE DIVER cerrará sus expansiones con Subnautica 2"
+  },
+  "summary": {
+    "es": "MINTROCKET ha anunciado Subnautica 2 Content Pack, la expansión final de DAVE THE DIVER, con lanzamiento gratuito a comienzos de 2027. La colaboración llevará a Dave y Bancho a Proteus, un nuevo entorno inspirado en Subnautica 2."
+  },
+  "why": {
+    "es": "El contenido incorporará criaturas, recursos, recetas, personajes y enfrentamientos periódicos con un Leviatán, por lo que es una ampliación sustancial y no una colaboración cosmética. El proyecto une dos de las franquicias submarinas más reconocibles de los últimos años."
+  },
+  "homeDetails": {
+    "es": [
+      "MINTROCKET presentó el contenido durante The Triple-i Initiative y confirmó que será el último paquete descargable de DAVE THE DIVER. La expansión se publicará sin coste a comienzos de 2027 y estará ambientada en Proteus, el planeta oceánico de Subnautica 2.",
+      "Dave y Bancho viajarán entre dimensiones para explorar aguas desconocidas, recoger materiales, preparar recetas exóticas y ayudar a nuevos personajes. La presencia recurrente de un Leviatán añadirá peligro a una colaboración que busca trasladar al juego el tono de exploración y supervivencia de Unknown Worlds."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "la expansión final de DAVE THE DIVER",
+      "lanzamiento gratuito a comienzos de 2027",
+      "una ampliación sustancial y no una colaboración cosmética"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "DAVE THE DIVER"
+    },
+    "copy": {
+      "es": "DAVE THE DIVER anuncia su expansión final con Subnautica 2"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=6y78o04QTH4",
+    "label": {
+      "es": "Ver el tráiler oficial de Subnautica 2 Content Pack"
+    }
+  },
+  "sources": [
+    {
+      "label": "MINTROCKET",
+      "type": {
+        "es": "Tráiler oficial de anuncio de la expansión"
+      },
+      "url": "https://www.youtube.com/watch?v=6y78o04QTH4"
+    },
+    {
+      "label": "The Triple-i Initiative",
+      "type": {
+        "es": "Presentación oficial del anuncio"
+      },
+      "url": "https://www.youtube.com/watch?v=LVlyMMWeXfQ"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto periodístico sobre contenido y ventana de lanzamiento"
+      },
+      "url": "https://www.gematsu.com/2026/10/dave-the-diver-dlc-subnautica-2-content-pack-announced"
+    }
+  ]
+}

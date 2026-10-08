@@ -1,0 +1,64 @@
+{
+  "id": "xbox-xp-division-transmedia",
+  "important": true,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-10-08",
+  "addedAt": "2026-10-08T20:32:14Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Xbox XP nace para llevar sus franquicias más allá de los videojuegos"
+  },
+  "summary": {
+    "es": "Xbox ha creado XP, una nueva división dedicada a expandir sus franquicias más allá de los videojuegos. Bajo la presidencia de Kayleen Walters, reunirá cine y televisión, productos, asociaciones y experiencias presenciales."
+  },
+  "why": {
+    "es": "La estructura centraliza capacidades antes dispersas y convierte la explotación transmedia en un área formal de inversión para Xbox. El movimiento marca un cambio estratégico en la gestión de sus mundos y personajes, con los videojuegos como núcleo de cada franquicia."
+  },
+  "homeDetails": {
+    "es": [
+      "XP se divide en cuatro áreas: Xbox Pictures para adaptaciones audiovisuales; Xbox Products para licencias y productos; Xbox Partnerships para acuerdos con creadores y marcas; y Xbox Places para emisiones, eventos, atracciones y otras experiencias físicas.",
+      "Kayleen Walters deja la dirección de Mojang para presidir la nueva división después de impulsar el negocio de productos de Minecraft y producir su adaptación cinematográfica. Maria Angelidou-Smith, exdirectiva de Reddit y Meta, asumirá la dirección de Mojang y Minecraft."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "una nueva división dedicada a expandir sus franquicias más allá de los videojuegos",
+      "cine y televisión, productos, asociaciones y experiencias presenciales",
+      "convierte la explotación transmedia en un área formal de inversión para Xbox"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Xbox XP"
+    },
+    "copy": {
+      "es": "Xbox XP centralizará cine, productos, asociaciones y experiencias"
+    }
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Comunicado oficial de presentación de XP"
+      },
+      "url": "https://news.xbox.com/en-us/2026/10/08/introducing-xp/"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Comunicado oficial sobre liderazgo y estructura"
+      },
+      "url": "https://news.xbox.com/en-us/2026/10/08/new-leadership-appointments-and-xbox-division/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto periodístico sobre la reorganización"
+      },
+      "url": "https://www.theverge.com/games/1007602/xbox-xp-division-film-tv-products-events"
+    }
+  ]
+}

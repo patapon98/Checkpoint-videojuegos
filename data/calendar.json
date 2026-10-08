@@ -3911,6 +3911,54 @@
       "trailer": "https://www.youtube.com/watch?v=pBL7nJLH8ro"
     },
     {
+      "id": "cities-skylines-expanded-edition-switch-2",
+      "title": "Cities: Skylines – Expanded Edition",
+      "headingHtml": "Cities: Skylines – Expanded Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-10-28",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Cities: Skylines – Expanded Edition",
+        "src": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000119229/23f300bdb4fc3d4b84de9ca14ce0b8b82b20bc35e4848dba22642f7b9fe213b0",
+        "alt": "Cities: Skylines – Expanded Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/cities-skylines-expanded-edition-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Cities: Skylines – Expanded Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.paradoxinteractive.com/media/press-releases/paradox-interactive/cities-skylines-expanded-edition-launches-on-nintendo-switch-2-on-october-28",
+        "official": true,
+        "host": "www.paradoxinteractive.com",
+        "checkedAt": "2026-10-08",
+        "evidence": {
+          "title": "Cities: Skylines – Expanded Edition",
+          "releaseDate": "2026-10-28",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=L2HnKgl-HV0"
+    },
+    {
       "id": "croc-2-kingdom-of-the-gobbos",
       "title": "Croc 2 Kingdom of the Gobbos",
       "headingHtml": "Croc 2 Kingdom of the Gobbos <span class=\"tag-dlc\">Remaster</span>",

@@ -1,5 +1,75 @@
 [
   {
+    "id": "the-escapists-3-anuncio-2027",
+    "important": false,
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-08",
+    "addedAt": "2026-10-09T15:04:22Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "The Escapists 3 lleva la saga al 3D y llegará en 2027"
+    },
+    "summary": {
+      "es": "Team17 ha anunciado The Escapists 3 para PC y consolas en 2027. La nueva entrega abandona la perspectiva 2D por un sandbox carcelario completamente en 3D, con cinco prisiones y más de 120 objetos y armas."
+    },
+    "why": {
+      "es": "El regreso llega casi una década después de The Escapists 2 y amplía la fórmula con progresión por experiencia, habilidades desbloqueables y exploración más allá de los muros. Mantendrá el cooperativo local para dos personas y el juego en línea para cuatro."
+    },
+    "homeDetails": {
+      "es": [
+        "Cada una de las cinco prisiones tendrá rutinas, personajes y secretos propios. Los planes de fuga podrán continuar fuera del perímetro, con bosques, cañones, catacumbas y aguas peligrosas como nuevas etapas del escape.",
+        "El sistema de experiencia permitirá adquirir habilidades y trasladar el progreso entre prisiones. Team17 también recuperará el sigilo, el comercio, los trabajos y la fabricación de herramientas, ahora con más de 120 objetos y armas."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "The Escapists 3 para PC y consolas en 2027",
+        "un sandbox carcelario completamente en 3D",
+        "el juego en línea para cuatro"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "The Escapists 3"
+      },
+      "copy": {
+        "es": "The Escapists 3 regresa en 2027 con prisiones completamente en 3D"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=IJuN7NY-rYs",
+      "label": {
+        "es": "Ver el tráiler oficial de The Escapists 3"
+      }
+    },
+    "sources": [
+      {
+        "label": "Team17",
+        "type": {
+          "es": "Ficha oficial con sistemas, contenido y modos de juego"
+        },
+        "url": "https://store.steampowered.com/app/3602260/The_Escapists_3/"
+      },
+      {
+        "label": "The Triple-i Initiative",
+        "type": {
+          "es": "Presentación oficial del anuncio"
+        },
+        "url": "https://www.youtube.com/watch?v=LVlyMMWeXfQ"
+      },
+      {
+        "label": "MeriStation",
+        "type": {
+          "es": "Contexto periodístico sobre la ventana y el regreso de la saga"
+        },
+        "url": "https://as.com/meristation/noticias/es-oficial-the-escapist-3-confirma-el-regreso-de-la-saga-con-un-espectacular-salto-grafico-f202610-n/"
+      }
+    ]
+  },
+  {
     "id": "forza-horizon-6-ps5-fecha-enero-2027",
     "important": true,
     "category": {

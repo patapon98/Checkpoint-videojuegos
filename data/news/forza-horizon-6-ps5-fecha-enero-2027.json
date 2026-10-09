@@ -1,0 +1,70 @@
+{
+  "id": "forza-horizon-6-ps5-fecha-enero-2027",
+  "important": true,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-10-08",
+  "addedAt": "2026-10-09T09:28:42Z",
+  "featured": false,
+  "tone": "platforms",
+  "title": {
+    "es": "Forza Horizon 6 retrasa su versión de PS5 al 26 de enero de 2027"
+  },
+  "summary": {
+    "es": "Forza Horizon 6 llegará a PS5 el 26 de enero de 2027, después de haber mantenido hasta ahora una ventana de lanzamiento para 2026. La versión tendrá edición física, juego cruzado y guardado compartido con Xbox y Steam."
+  },
+  "why": {
+    "es": "La fecha confirma el retraso de uno de los principales lanzamientos multiplataforma de Xbox y amplía su alcance en PlayStation. Coincidirá con la primera expansión, disponible el 21 de enero en todas las plataformas, y con una actualización gratuita."
+  },
+  "homeDetails": {
+    "es": [
+      "Playground Games ha abierto las reservas de las ediciones Standard, Deluxe y Premium para PS5. Esta última permitirá jugar desde el 21 de enero, cinco días antes del estreno general, y el lanzamiento contará también con distribución en disco.",
+      "Panic Button desarrolla la adaptación en colaboración con Playground Games y Turn 10 Studios. La edición incluirá modos de calidad a 4K y 30 FPS y de rendimiento a 60 FPS, además de contenido creado por usuarios compartido entre plataformas."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "Forza Horizon 6 llegará a PS5 el 26 de enero de 2027",
+      "edición física, juego cruzado y guardado compartido con Xbox y Steam",
+      "confirma el retraso de uno de los principales lanzamientos multiplataforma de Xbox"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Forza Horizon 6"
+    },
+    "copy": {
+      "es": "Forza Horizon 6 fija su estreno en PS5 para enero de 2027"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=-5rTTbO4WWw",
+    "label": {
+      "es": "Ver el tráiler oficial de Forza Horizon 6 para PS5"
+    }
+  },
+  "sources": [
+    {
+      "label": "Forza",
+      "type": {
+        "es": "Comunicado oficial de fecha, ediciones y funciones"
+      },
+      "url": "https://forza.net/news/forza-horizon-6-pre-order-ps5"
+    },
+    {
+      "label": "PlayStation",
+      "type": {
+        "es": "Ficha oficial de la versión para PS5"
+      },
+      "url": "https://www.playstation.com/es-cl/games/forza-horizon-6/"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto periodístico sobre el retraso"
+      },
+      "url": "https://www.theverge.com/news/989314/forza-horizon-6-ps5-release-date-january-2027-delay"
+    }
+  ]
+}

@@ -4416,58 +4416,6 @@
       "trailer": "https://www.youtube.com/watch?v=52Fei-sLLQc"
     },
     {
-      "id": "shadow-of-the-road",
-      "title": "Shadow of the Road",
-      "headingHtml": "Shadow of the Road",
-      "date": "2026-11-12",
-      "platformKeys": [
-        "pc"
-      ],
-      "platformsHtml": "PC",
-      "image": {
-        "provider": "rawg",
-        "query": "Shadow of the Road",
-        "src": "https://media.rawg.io/media/screenshots/53d/53df3d564d8caf1fddd27118ec45e6dd.jpg",
-        "alt": "Shadow of the Road",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false,
-        "rawgId": 382756,
-        "rawgSlug": "shadow-of-the-road",
-        "rawgPage": "https://rawg.io/games/shadow-of-the-road",
-        "rawgImageType": "background"
-      },
-      "store": {
-        "url": "https://store.steampowered.com/app/1173980/Shadow_of_the_Road/",
-        "title": "Wishlist en Steam",
-        "ariaLabel": "Añadir Shadow of the Road a la lista de deseados en Steam"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": null,
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 55,
-      "source": {
-        "url": "https://store.steampowered.com/app/1173980/Shadow_of_the_Road/",
-        "official": true,
-        "host": "store.steampowered.com",
-        "checkedAt": "2026-08-28",
-        "evidence": {
-          "title": "Shadow of the Road",
-          "releaseDate": "2026-11-12",
-          "platforms": [
-            "pc"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=-H9o6J7V2XM"
-    },
-    {
       "id": "grand-theft-auto-vi",
       "title": "Grand Theft Auto VI",
       "headingHtml": "Grand Theft Auto VI",
@@ -5867,6 +5815,58 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=GhvI403SgeI"
+    },
+    {
+      "id": "shadow-of-the-road",
+      "title": "Shadow of the Road",
+      "headingHtml": "Shadow of the Road",
+      "date": "2027-03-10",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Shadow of the Road",
+        "src": "https://media.rawg.io/media/screenshots/53d/53df3d564d8caf1fddd27118ec45e6dd.jpg",
+        "alt": "Shadow of the Road",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 382756,
+        "rawgSlug": "shadow-of-the-road",
+        "rawgPage": "https://rawg.io/games/shadow-of-the-road",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/1173980/Shadow_of_the_Road/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Shadow of the Road a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.steampowered.com/app/1173980/Shadow_of_the_Road/",
+        "official": true,
+        "host": "store.steampowered.com",
+        "checkedAt": "2026-10-10",
+        "evidence": {
+          "title": "Shadow of the Road",
+          "releaseDate": "2027-03-10",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=-H9o6J7V2XM"
     },
     {
       "id": "road-kings",

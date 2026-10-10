@@ -1,5 +1,75 @@
 [
   {
+    "id": "crazy-taxi-world-tour-brasil",
+    "important": false,
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-09",
+    "addedAt": "2026-10-10T23:47:00Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Crazy Taxi: World Tour muestra Brasil, el cuarto de sus cinco destinos"
+    },
+    "summary": {
+      "es": "SEGA ha presentado Brasil como el cuarto de los cinco destinos de la campaña de Crazy Taxi: World Tour. El nuevo mapa combinará grandes ciudades, carreteras costeras, playas y paisajes naturales cuando el juego llegue en 2027."
+    },
+    "why": {
+      "es": "La revelación concreta una parte sustancial del viaje mundial de esta nueva entrega y confirma que los comercios reales seguirán formando parte de la identidad de Crazy Taxi, con Habib's, Fogo de Chão y Fast Shop integrados en el escenario."
+    },
+    "homeDetails": {
+      "es": [
+        "El productor Kenji Kanno presentó el destino durante Brasil Game Show. El equipo quiere trasladar al juego el contraste entre calles densas y eclécticas, zonas urbanas modernas, costa luminosa y grandes espacios naturales.",
+        "Brasil se suma a Estados Unidos, Alemania y Japón dentro de una campaña formada por cinco países; todavía queda un destino por descubrir. Crazy Taxi: World Tour está anunciado para PS5, Xbox Series X|S, Nintendo Switch 2 y PC."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "Brasil como el cuarto de los cinco destinos",
+        "grandes ciudades, carreteras costeras, playas y paisajes naturales",
+        "los comercios reales seguirán formando parte de la identidad de Crazy Taxi"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Crazy Taxi"
+      },
+      "copy": {
+        "es": "Crazy Taxi: World Tour revela Brasil como su cuarto destino"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=qdStLWu0RAs",
+      "label": {
+        "es": "Ver el tráiler oficial de Brasil"
+      }
+    },
+    "sources": [
+      {
+        "label": "SEGA",
+        "type": {
+          "es": "Página oficial del juego y del nuevo tráiler"
+        },
+        "url": "https://www.sega.com/crazy-taxi/crazy-taxi-world-tour"
+      },
+      {
+        "label": "SEGA",
+        "type": {
+          "es": "Tráiler oficial Welcome to Brazil"
+        },
+        "url": "https://www.youtube.com/watch?v=qdStLWu0RAs"
+      },
+      {
+        "label": "Gematsu",
+        "type": {
+          "es": "Contexto periodístico y declaraciones del productor"
+        },
+        "url": "https://www.gematsu.com/2026/10/crazy-taxi-world-tour-welcome-to-brazil-trailer-screenshots"
+      }
+    ]
+  },
+  {
     "id": "the-escapists-3-anuncio-2027",
     "important": false,
     "category": {

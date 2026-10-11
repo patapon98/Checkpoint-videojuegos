@@ -1,0 +1,64 @@
+{
+  "id": "mafia-iii-definitive-edition-ps5-xbox-series",
+  "important": false,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-10-08",
+  "addedAt": "2026-10-11T17:41:00Z",
+  "featured": false,
+  "tone": "platforms",
+  "title": {
+    "es": "Mafia III: Definitive Edition estrena versiones nativas para PS5 y Xbox Series"
+  },
+  "summary": {
+    "es": "Mafia III: Definitive Edition ya cuenta con versiones nativas para PS5 y Xbox Series X|S. La actualización incorpora juego a 60 FPS, mejoras técnicas y una actualización gratuita para quienes ya poseían el título en PS4 o Xbox One."
+  },
+  "why": {
+    "es": "El relanzamiento actualiza oficialmente la aventura de Lincoln Clay para la generación vigente diez años después de su estreno. Además de ampliar su continuidad comercial, elimina la dependencia de la retrocompatibilidad en las dos principales familias de consolas."
+  },
+  "homeDetails": {
+    "es": [
+      "2K ha publicado las nuevas ediciones coincidiendo con el décimo aniversario de Mafia III. En PS5 y Xbox Series X|S ofrecen una experiencia a 60 fotogramas por segundo junto a otras mejoras técnicas específicas de las consolas actuales.",
+      "Los propietarios de Mafia III: Definitive Edition en PS4 o Xbox One pueden actualizar sin coste dentro de la misma familia de consolas. El juego reúne la campaña principal y los contenidos descargables Faster, Baby!, Stones Unturned y Sign of the Times."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "versiones nativas para PS5 y Xbox Series X|S",
+      "juego a 60 FPS, mejoras técnicas y una actualización gratuita",
+      "elimina la dependencia de la retrocompatibilidad"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Mafia III"
+    },
+    "copy": {
+      "es": "Mafia III estrena versiones nativas a 60 FPS para PS5 y Xbox Series"
+    }
+  },
+  "sources": [
+    {
+      "label": "Mafia",
+      "type": {
+        "es": "Comunicado oficial del décimo aniversario y las versiones nativas"
+      },
+      "url": "https://mafia.2k.com/news/mafia-iii-anniversary/"
+    },
+    {
+      "label": "PlayStation Store",
+      "type": {
+        "es": "Ficha oficial de Mafia III: Edición Definitiva para PS5"
+      },
+      "url": "https://store.playstation.com/es-es/product/EP1001-PPSA36865_00-MAFIA3DEPS500000"
+    },
+    {
+      "label": "Xbox",
+      "type": {
+        "es": "Ficha oficial de Mafia III: Edición Definitiva para Xbox Series X|S"
+      },
+      "url": "https://www.xbox.com/es-ES/games/store/mafia-iii-edicion-definitiva-para-xbox-series-xs/9p4v2bgjfww7"
+    }
+  ]
+}

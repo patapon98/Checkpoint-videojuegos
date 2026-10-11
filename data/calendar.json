@@ -3130,8 +3130,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S",
       "image": {
-        "provider": "rawg",
-        "query": "Mafia III: Definitive Edition",
         "src": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1518/d4b9b2e7ca92026a59952cacaf8c3fd59909aa012a356f9d.jpg",
         "alt": "Mafia III: Definitive Edition para PS5 y Xbox Series X|S",
         "className": "",

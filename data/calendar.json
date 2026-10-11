@@ -3120,6 +3120,54 @@
       "trailer": "https://www.youtube.com/watch?v=GCD9jqnn-WY"
     },
     {
+      "id": "mafia-iii-definitive-edition-current-gen",
+      "title": "Mafia III: Definitive Edition",
+      "headingHtml": "Mafia III: Definitive Edition <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-08",
+      "platformKeys": [
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1518/d4b9b2e7ca92026a59952cacaf8c3fd59909aa012a356f9d.jpg",
+        "alt": "Mafia III: Definitive Edition para PS5 y Xbox Series X|S",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/es-es/product/EP1001-PPSA36865_00-MAFIA3DEPS500000",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Mafia III: Definitive Edition para PS5"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://mafia.2k.com/news/mafia-iii-anniversary/",
+        "official": true,
+        "host": "mafia.2k.com",
+        "checkedAt": "2026-10-11",
+        "evidence": {
+          "title": "Mafia III: Definitive Edition",
+          "releaseDate": "2026-10-08",
+          "platforms": [
+            "ps5",
+            "xbox"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=kmKOLvnullE"
+    },
+    {
       "id": "dragon-s-dogma-2-dark-arisen",
       "title": "Dragon's Dogma 2: Dark Arisen",
       "headingHtml": "Dragon's Dogma 2: Dark Arisen <span class=\"tag-dlc\">Expansión</span>",

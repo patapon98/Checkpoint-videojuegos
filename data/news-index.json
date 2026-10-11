@@ -1,5 +1,62 @@
 [
   {
+    "id": "xbox-crea-division-xp-nueva-ceo-mojang",
+    "important": true,
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-10-08",
+    "addedAt": "2026-10-11T03:16:00Z",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "Xbox crea la división XP y nombra una nueva directora para Mojang"
+    },
+    "summary": {
+      "es": "Xbox ha creado XP, una nueva división para extender sus franquicias a cine y televisión, productos, alianzas y experiencias en vivo. Kayleen Walters la presidirá, mientras Maria Angelidou-Smith asumirá la dirección de Mojang y Minecraft."
+    },
+    "why": {
+      "es": "La reorganización convierte la expansión transmedia en una estructura propia dentro de Xbox y cambia el liderazgo del estudio responsable de Minecraft. XP coordinará cuatro áreas de inversión sin apartar a los juegos del centro de las franquicias."
+    },
+    "homeDetails": {
+      "es": [
+        "XP agrupa bajo una misma dirección Xbox Pictures, Xbox Products, Xbox Partnerships y Xbox Places. Su alcance incluye adaptaciones audiovisuales, licencias y mercancía, acuerdos de marca, eventos, parques temáticos y otras experiencias presenciales.",
+        "Walters deja la presidencia de Mojang tras impulsar el negocio de productos y participar como productora de la película de Minecraft. Angelidou-Smith, exdirectiva de producto en Reddit y Meta, comenzará como responsable de Mojang y Minecraft el 19 de octubre."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "una nueva división para extender sus franquicias a cine y televisión, productos, alianzas y experiencias en vivo",
+        "convierte la expansión transmedia en una estructura propia dentro de Xbox",
+        "cambia el liderazgo del estudio responsable de Minecraft"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Xbox"
+      },
+      "copy": {
+        "es": "Xbox crea XP para llevar sus franquicias a cine, productos y experiencias"
+      }
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Anuncio oficial de la división XP y sus cuatro áreas de inversión"
+        },
+        "url": "https://news.xbox.com/en-us/2026/10/08/introducing-xp/"
+      },
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Comunicado oficial sobre los nuevos liderazgos de XP y Mojang"
+        },
+        "url": "https://news.xbox.com/en-us/2026/10/08/new-leadership-appointments-and-xbox-division/"
+      }
+    ]
+  },
+  {
     "id": "crazy-taxi-world-tour-brasil",
     "important": false,
     "category": {

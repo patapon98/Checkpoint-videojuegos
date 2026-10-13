@@ -1,0 +1,57 @@
+{
+  "id": "xbox-labs-investigacion-tecnologias-emergentes",
+  "important": true,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-10-13",
+  "addedAt": "2026-10-13T20:51:00Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Xbox crea Xbox Labs para experimentar con nuevas formas de jugar"
+  },
+  "summary": {
+    "es": "Xbox ha creado Xbox Labs, un grupo de diseñadores, ingenieros y científicos que convertirá tecnologías emergentes en experiencias para jugadores y desarrolladores. La compañía afirma que trabajará en abierto y compartirá las herramientas que construya con la industria."
+  },
+  "why": {
+    "es": "La iniciativa formaliza una línea de investigación dentro de Xbox para cuestionar la dependencia entre juegos y hardware, ampliar el acceso y explorar nuevas formas de creación sin sustituir los proyectos ya en marcha."
+  },
+  "homeDetails": {
+    "es": [
+      "El anuncio interno firmado por Asha explica que el equipo estudiará cómo facilitar el acceso a los juegos, prolongar la vida de títulos antiguos y permitir que más jugadores creen o modifiquen experiencias. Su trabajo partirá de prototipos que puedan probar tanto usuarios como estudios.",
+      "Xbox sostiene que el nuevo grupo no reemplaza sus prioridades actuales en juegos, hardware y gestión de franquicias. Xbox Labs medirá su éxito por el aumento de personas que juegan y crean, y prevé compartir con otros desarrolladores las herramientas que surjan de sus experimentos."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "un grupo de diseñadores, ingenieros y científicos",
+      "trabajará en abierto y compartirá las herramientas que construya con la industria",
+      "ampliar el acceso y explorar nuevas formas de creación"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Xbox Labs"
+    },
+    "copy": {
+      "es": "Xbox Labs explorará tecnologías emergentes y compartirá herramientas con desarrolladores"
+    }
+  },
+  "sources": [
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio oficial de la creación, los objetivos y el funcionamiento de Xbox Labs"
+      },
+      "url": "https://news.xbox.com/en-us/2026/10/13/introducing-xbox-labs/"
+    },
+    {
+      "label": "Xbox Labs",
+      "type": {
+        "es": "Sitio oficial del nuevo grupo de experimentación de Xbox"
+      },
+      "url": "https://labs.xbox.com/"
+    }
+  ]
+}

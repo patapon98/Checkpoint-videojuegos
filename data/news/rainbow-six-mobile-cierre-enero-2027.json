@@ -1,0 +1,57 @@
+{
+  "id": "rainbow-six-mobile-cierre-enero-2027",
+  "important": false,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-10-08",
+  "addedAt": "2026-10-13T15:24:00Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Ubisoft cerrará Rainbow Six Mobile el 15 de enero de 2027"
+  },
+  "summary": {
+    "es": "Ubisoft cerrará Rainbow Six Mobile el 15 de enero de 2027, menos de un año después de su lanzamiento global. El equipo publicará la próxima temporada según lo previsto antes de finalizar el servicio."
+  },
+  "why": {
+    "es": "La decisión interrumpe la apuesta móvil de una de las mayores franquicias de Ubisoft y trasladará a su equipo hacia otros proyectos estratégicos a largo plazo."
+  },
+  "homeDetails": {
+    "es": [
+      "Rainbow Six Mobile se lanzó globalmente en febrero de 2026 tras una fase de pruebas iniciada en 2023. Ubisoft mantendrá el juego disponible hasta el 15 de enero y ofrecerá más detalles sobre la transición durante las próximas semanas.",
+      "El estudio todavía publicará la temporada que ya estaba prevista, pero no continuará el desarrollo después del cierre. La compañía explica que los responsables del proyecto pasarán a trabajar en otras iniciativas estratégicas de largo recorrido."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "cerrará Rainbow Six Mobile el 15 de enero de 2027",
+      "menos de un año después de su lanzamiento global",
+      "trasladará a su equipo hacia otros proyectos estratégicos a largo plazo"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Rainbow Six Mobile"
+    },
+    "copy": {
+      "es": "Rainbow Six Mobile cerrará sus servidores el 15 de enero de 2027"
+    }
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Comunicado oficial del cierre del servicio y la transición del equipo"
+      },
+      "url": "https://www.ubisoft.com/en-au/game/rainbow-six/mobile/news-updates/7pg9eqvmqGKyfJHmnrUUKQ/rainbow-six-mobile-update-message-from-the-devs"
+    },
+    {
+      "label": "Game Developer",
+      "type": {
+        "es": "Contexto sobre el lanzamiento global y el fin del desarrollo"
+      },
+      "url": "https://www.gamedeveloper.com/mobile/ubisoft-to-sunset-rainbow-six-mobile-just-seven-months-after-launch"
+    }
+  ]
+}

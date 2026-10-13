@@ -5484,6 +5484,60 @@
       "trailer": "https://www.youtube.com/watch?v=mKXPyW8r4x8"
     },
     {
+      "id": "he-man-and-the-masters-of-the-universe-dragon-pearl-of-destruction",
+      "title": "He-Man and the Masters of the Universe: Dragon Pearl of Destruction",
+      "headingHtml": "He-Man and the Masters of the Universe: Dragon Pearl of Destruction",
+      "date": "2027-02-04",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · Xbox One · PC · Switch",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3749580/04584202cebf3f1361fb8174f522de9a0a55e3c6/header.jpg?t=1791810026",
+        "alt": "He-Man and the Masters of the Universe: Dragon Pearl of Destruction",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3749580/HeMan_and_the_Masters_of_the_Universe_Dragon_Pearl_of_Destruction/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir He-Man and the Masters of the Universe: Dragon Pearl of Destruction a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.facebook.com/clearrivergames/videos/he-man-the-masters-of-the-universe_-dragon-pearl-of-destruction-release-date-tra/1086949384319814/",
+        "official": true,
+        "host": "www.facebook.com",
+        "checkedAt": "2026-10-13",
+        "evidence": {
+          "title": "He-Man and the Masters of the Universe: Dragon Pearl of Destruction",
+          "releaseDate": "2027-02-04",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=nhBZ6EBH7bQ"
+    },
+    {
       "id": "tomb-raider-legacy-of-atlantis",
       "title": "Tomb Raider: Legacy of Atlantis",
       "headingHtml": "Tomb Raider: Legacy of Atlantis",

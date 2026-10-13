@@ -1,5 +1,62 @@
 [
   {
+    "id": "monster-hunter-stories-3-xbox-pc-noviembre",
+    "important": false,
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-10-07",
+    "addedAt": "2026-10-13T00:09:00Z",
+    "featured": false,
+    "tone": "platforms",
+    "title": {
+      "es": "Monster Hunter Stories 3 llegará a Xbox en PC el 18 de noviembre"
+    },
+    "summary": {
+      "es": "Monster Hunter Stories 3: Twisted Reflection se publicará en Xbox para PC el 18 de noviembre de 2026. La nueva versión incluirá Xbox Play Anywhere para compartir compra, progreso, contenidos adicionales y logros con Xbox Series X|S."
+    },
+    "why": {
+      "es": "La incorporación amplía el acceso al RPG de Capcom dentro del ecosistema de Microsoft y permite alternar entre consola, ordenadores con Windows 11 y dispositivos portátiles compatibles sin volver a comprar el juego."
+    },
+    "homeDetails": {
+      "es": [
+        "Capcom ha confirmado que la edición de Xbox para PC mantendrá de forma sincronizada los datos de guardado, los logros y el contenido adicional. La función Xbox Play Anywhere permitirá continuar la misma partida en los dispositivos compatibles.",
+        "El juego ya está disponible en Xbox Series X|S y su llegada a la tienda de Microsoft para Windows completa esa continuidad entre consola y PC. La entrega propone combates por turnos y una historia centrada en dos reinos enfrentados y dos Rathalos gemelos."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "se publicará en Xbox para PC el 18 de noviembre de 2026",
+        "compartir compra, progreso, contenidos adicionales y logros con Xbox Series X|S",
+        "amplía el acceso al RPG de Capcom dentro del ecosistema de Microsoft"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Monster Hunter Stories 3"
+      },
+      "copy": {
+        "es": "Monster Hunter Stories 3 llegará a Xbox en PC el 18 de noviembre"
+      }
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Comunicado oficial de Capcom sobre fecha y Xbox Play Anywhere"
+        },
+        "url": "https://news.xbox.com/en-us/2026/10/07/monster-hunter-stories-3-xbox-px-xbox-play-anywhere-announce/"
+      },
+      {
+        "label": "Monster Hunter",
+        "type": {
+          "es": "Página oficial de plataformas y lanzamiento"
+        },
+        "url": "https://www.monsterhunter.com/stories3/en-us/"
+      }
+    ]
+  },
+  {
     "id": "mafia-iii-definitive-edition-ps5-xbox-series",
     "important": false,
     "category": {

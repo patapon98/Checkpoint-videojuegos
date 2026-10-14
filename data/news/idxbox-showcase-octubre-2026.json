@@ -1,0 +1,57 @@
+{
+  "id": "idxbox-showcase-octubre-2026",
+  "important": false,
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-10-13",
+  "addedAt": "2026-10-14T18:23:16Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "ID@Xbox fija para el 20 de octubre un showcase con 20 juegos"
+  },
+  "summary": {
+    "es": "Xbox e IGN emitirán un nuevo ID@Xbox Showcase el 20 de octubre a las 19:00 en España peninsular. La presentación reunirá 20 juegos para Xbox y PC, con estrenos mundiales, nuevos tráilers y gameplay."
+  },
+  "why": {
+    "es": "La cita concentra en una sola emisión novedades de proyectos independientes y confirma a The Wolf Among Us Remastered entre sus contenidos. El resto de la selección mantiene margen para anuncios inéditos antes del cierre de octubre."
+  },
+  "homeDetails": {
+    "es": [
+      "La retransmisión comenzará a las 10:00 PT, 13:00 ET y 18:00 BST, equivalente a las 19:00 en España peninsular. Podrá seguirse a través de IGN y de sus canales en YouTube, Twitch, Facebook y X.",
+      "Xbox e IGN anticipan veinte juegos, varias primicias y nuevas demostraciones de jugabilidad. Además de The Wolf Among Us Remastered, el programa incluirá proyectos publicados por Critical Reflex y otros títulos todavía reservados para la emisión."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "el 20 de octubre a las 19:00 en España peninsular",
+      "20 juegos para Xbox y PC",
+      "estrenos mundiales, nuevos tráilers y gameplay"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "ID@Xbox"
+    },
+    "copy": {
+      "es": "ID@Xbox anuncia un showcase con 20 juegos para el 20 de octubre"
+    }
+  },
+  "sources": [
+    {
+      "label": "IGN",
+      "type": {
+        "es": "Anuncio oficial del showcase coorganizado con Xbox"
+      },
+      "url": "https://www.ign.com/articles/id-xbox-showcase-october-2026-how-to-watch"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Agenda oficial de Xbox que enlaza la convocatoria del evento"
+      },
+      "url": "https://news.xbox.com/en-us/recent-news/"
+    }
+  ]
+}

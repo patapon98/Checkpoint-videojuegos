@@ -5114,6 +5114,64 @@
       "trailer": "https://www.youtube.com/watch?v=V2hUMKyOGxY"
     },
     {
+      "id": "arizona-sunshine-remake",
+      "title": "Arizona Sunshine",
+      "headingHtml": "Arizona Sunshine <span class=\"tag-dlc\">Remake</span>",
+      "date": "2027-01-21",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Arizona Sunshine",
+        "src": "https://media.rawg.io/media/games/a1b/a1b735e48a08900f9e80a0ffa9f41e74.jpg",
+        "alt": "Arizona Sunshine",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 10020,
+        "rawgSlug": "arizona-sunshine",
+        "rawgPage": "https://rawg.io/games/arizona-sunshine",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4308420/Arizona_Sunshine/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Arizona Sunshine a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.playstation.com/concept/10019858",
+        "official": true,
+        "host": "store.playstation.com",
+        "checkedAt": "2026-10-15",
+        "evidence": {
+          "title": "Arizona Sunshine",
+          "releaseDate": "2027-01-21",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=uzBDuoZXTH0"
+    },
+    {
       "id": "forza-horizon-6-ps5",
       "title": "Forza Horizon 6",
       "headingHtml": "Forza Horizon 6 <span class=\"tag-dlc\">Nueva plataforma</span>",
@@ -6069,6 +6127,58 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=PoYMFv8V1ag"
+    },
+    {
+      "id": "007-first-light-switch-2",
+      "title": "007 First Light",
+      "headingHtml": "007 First Light <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2027-03-18",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "007 First Light",
+        "src": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
+        "alt": "007 First Light para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1004298,
+        "rawgSlug": "007-first-light",
+        "rawgPage": "https://rawg.io/games/007-first-light",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://ioi.dk/007firstlightgame/news/2026/007-first-light-switch-2-date-confirmed",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de 007 First Light para Nintendo Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://ioi.dk/007firstlightgame/news/2026/007-first-light-switch-2-date-confirmed",
+        "official": true,
+        "host": "ioi.dk",
+        "checkedAt": "2026-10-15",
+        "evidence": {
+          "title": "007 First Light",
+          "releaseDate": "2027-03-18",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=Jom-jxUEqJg"
     },
     {
       "id": "exodus",

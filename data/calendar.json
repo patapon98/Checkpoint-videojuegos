@@ -5128,12 +5128,16 @@
       "image": {
         "provider": "rawg",
         "query": "Arizona Sunshine",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4308420/efdd952517dca2bbe84428c381d023ce71cc3c1d/header.jpg?t=1791997257",
+        "src": "https://media.rawg.io/media/games/a1b/a1b735e48a08900f9e80a0ffa9f41e74.jpg",
         "alt": "Arizona Sunshine",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 10020,
+        "rawgSlug": "arizona-sunshine",
+        "rawgPage": "https://rawg.io/games/arizona-sunshine",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.steampowered.com/app/4308420/Arizona_Sunshine/",
@@ -6136,12 +6140,16 @@
       "image": {
         "provider": "rawg",
         "query": "007 First Light",
-        "src": "https://cms.ioi.dk/media/actjhptq/007fl_deluxeedition_preorder_beautyshot_master_1920px_nsw_web.jpg?hmac=96df05c57f83c831434ae5f5727a328130800c5079666cb191f890700bfb62a9&quality=78",
+        "src": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
         "alt": "007 First Light para Nintendo Switch 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1004298,
+        "rawgSlug": "007-first-light",
+        "rawgPage": "https://rawg.io/games/007-first-light",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://ioi.dk/007firstlightgame/news/2026/007-first-light-switch-2-date-confirmed",

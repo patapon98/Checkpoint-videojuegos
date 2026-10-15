@@ -5851,9 +5851,9 @@
     "important": true,
     "emphasis": {
       "es": [
-        "una presentación de 27 minutos capturada íntegramente a partir de imágenes del juego en PlayStation 5",
-        "la primera demostración extensa y oficial de GTA VI",
-        "el lanzamiento para el 19 de noviembre de 2026"
+        "una conspiración criminal que recorre Leonida",
+        "Justice firma la banda sonora original",
+        "mantiene el lanzamiento para el 19 de noviembre de 2026"
       ]
     },
     "category": {
@@ -5861,53 +5861,53 @@
     },
     "date": "2026-08-06",
     "publishedAt": "2026-08-06T12:20:00Z",
-    "updated": "2026-08-27",
+    "updated": "2026-10-15",
     "featured": false,
     "ticker": {
       "keyword": {
         "es": "GTA VI"
       },
       "copy": {
-        "es": "GTA VI enseña 27 minutos de material del juego capturado en PS5"
+        "es": "GTA VI estrena su tráiler de lanzamiento y concreta el conflicto de Jason y Lucia"
       }
     },
     "tone": "rockstar",
     "title": {
-      "es": "GTA VI muestra 27 minutos de metraje del juego capturado en PS5"
+      "es": "GTA VI estrena su tráiler de lanzamiento y sitúa a Jason y Lucia en una conspiración"
     },
     "summary": {
-      "es": "Rockstar Games y Netflix han estrenado Grand Theft Auto VI: Una mirada extendida, una presentación de 27 minutos capturada íntegramente a partir de imágenes del juego en PlayStation 5. El vídeo sigue a Jason y Lucia por Vice City, incluida una misión que acaba en un tiroteo y una huida policial."
+      "es": "Rockstar Games ha publicado el tráiler de lanzamiento de GTA VI: el avance sitúa a Jason y Lucia en una conspiración criminal que recorre Leonida después de que un golpe aparentemente sencillo salga mal. El vídeo presenta además «Flower in a Hurricane», de Justice, y mantiene el lanzamiento para el 19 de noviembre de 2026."
     },
     "why": {
-      "es": "Es la primera demostración extensa y oficial de GTA VI y sustituye las expectativas del anuncio original por una muestra directa de su mundo, su puesta en escena y el funcionamiento de la pareja protagonista. Rockstar mantiene el lanzamiento para el 19 de noviembre de 2026 en PS5 y Xbox Series X|S."
+      "es": "El adelanto final aporta una formulación oficial del conflicto central de la pareja protagonista y amplía una de las partes esenciales del mundo: Justice firma la banda sonora original, el juego tendrá la selección más amplia de emisoras y pódcast de la serie y su álbum reunirá 34 temas originales. Es una evolución sustancial de la presentación extendida de agosto, no solo un recordatorio promocional."
     },
     "sources": [
       {
         "label": "Rockstar Games",
         "type": {
-          "es": "Presentación oficial y ficha del juego"
+          "es": "Comunicado oficial del tráiler de lanzamiento"
         },
-        "url": "https://www.rockstargames.com/newswire/article/9k2kaa1o3297k9/grand-theft-auto-vi-an-extended-look"
+        "url": "https://www.rockstargames.com/es/newswire/article/517572321a549a/watch-the-grand-theft-auto-vi-launch-trailer"
       },
       {
-        "label": "Netflix Tudum",
+        "label": "Rockstar Games",
         "type": {
-          "es": "Confirmación oficial del metraje, la duración y las plataformas"
+          "es": "Vídeo oficial del tráiler de lanzamiento"
         },
-        "url": "https://www.netflix.com/tudum/articles/grand-theft-auto-6-extended-first-look"
+        "url": "https://www.rockstargames.com/VI/launch-trailer"
       },
       {
-        "label": "Netflix",
+        "label": "Rockstar Games",
         "type": {
-          "es": "Vídeo oficial de la presentación"
+          "es": "Ficha oficial de la música, las emisoras y el álbum"
         },
-        "url": "https://www.netflix.com/title/83035795"
+        "url": "https://www.rockstargames.com/VI/music"
       }
     ],
     "homeDetails": {
       "es": [
-        "La presentación combina escenas de historia y material del juego sin separar ambos formatos. Jason y Lucia preparan y ejecutan un trabajo para Boobie Ike, entran en un edificio tomado por narcotraficantes y escapan cuando irrumpe la policía; también se ven conducción, combate en tercera persona y remates a cámara lenta.",
-        "Fuera de la misión, el vídeo recorre apartamentos, bares, calles y la silueta de Vice City, con televisión ficticia y la sátira habitual de la serie. Netflix confirma que todo el metraje fue capturado en PS5; Rockstar publicará la presentación abierta en YouTube y su web el 28 de agosto a las 03:00 en España."
+        "El tráiler presenta el punto de partida de la historia con mayor claridad: Jason y Lucia quedan atrapados en una trama criminal que se extiende por todo el estado tras el fracaso de un golpe. La pareja vuelve a ocupar el centro del montaje entre persecuciones, violencia y nuevas escenas de Vice City y el resto de Leonida.",
+        "Rockstar acompaña el avance con una ampliación musical de peso. Justice compone la banda sonora original y estrena «Flower in a Hurricane» junto a Tame Impala, SZA y King Gizzard & The Lizard Wizard; el álbum oficial llegará el 19 de noviembre con 34 canciones originales y el juego promete su mayor oferta de radio y pódcast."
       ]
     }
   },

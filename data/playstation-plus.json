@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-15",
   "region": "España y Europa",
   "months": [
     {
@@ -7,7 +7,7 @@
       "label": "Octubre 2026",
       "availability": "6 de octubre–2 de noviembre",
       "headline": "PlayStation Plus en octubre de 2026",
-      "source": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
+      "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/",
       "groups": [
         {
           "id": "essential",
@@ -30,13 +30,91 @@
           "id": "extra",
           "label": "Extra",
           "access": "También disponible para Premium",
-          "pending": "Sony todavía no ha anunciado el catálogo de octubre. Esta sección se completará cuando se publique la información oficial."
+          "games": [
+            {
+              "title": "Mafia: The Old Country",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/a2c380e0a1d61aed6e23172eb2aa46838fd1d7d4.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            },
+            {
+              "title": "Horizon Forbidden West",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/09b1d080937b82faaf6a329e6de4bf2cb65e83ef.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            },
+            {
+              "title": "Mycopunk",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/bf695de055041fea86456e4bf43f962a7abb68fc.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            },
+            {
+              "title": "Poppy Playtime: Chapter 2",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/efe9b80dd58bf2accb88072de3b28b4eae24a111.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            },
+            {
+              "title": "The Midnight Walk",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/8b6e372631fb148cd49518c2814354efa7b61920.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            },
+            {
+              "title": "Tales of Arise – Beyond the Dawn Edition",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/80ecbe4c2527c2befd498d1c841b14a6a762e031.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            },
+            {
+              "title": "Monster Energy Supercross 25 – The Official Video Game",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/2c08cee231b053b6898fa8905fe9a82352e6518c.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            }
+          ]
         },
         {
           "id": "premium",
           "label": "Premium",
           "access": "Clásicos y ventajas adicionales",
-          "pending": "Los clásicos y añadidos de Premium para octubre todavía no se han anunciado oficialmente."
+          "games": [
+            {
+              "title": "RollerCoaster Tycoon 3 Complete Edition",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en octubre",
+              "image": "https://blog.playstation.com/uploads/2026/10/4b18a2c6f55e32d04894abcf3900caef2ae80e11.jpg",
+              "source": "https://blog.playstation.com/2026/10/14/playstation-plus-game-catalog-for-october-mafia-the-old-country-horizon-forbidden-west-mycopunk-and-more/"
+            }
+          ]
         }
       ]
     },

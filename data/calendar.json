@@ -3874,6 +3874,58 @@
       "trailer": null
     },
     {
+      "id": "peak-console",
+      "title": "PEAK",
+      "headingHtml": "PEAK <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-22",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "PEAK",
+        "src": "https://blog.playstation.com/uploads/2026/10/f1563de5fb85c4993c3795537b7b74d49afcb0e6.jpg",
+        "alt": "PEAK para consolas",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://blog.es.playstation.com/2026/10/15/peak-esta-escalando-de-camino-a-la-ps5-el-22-de-octubre/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de PEAK para consolas"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=OsO0Dpt9OPs",
+        "official": true,
+        "host": "www.youtube.com",
+        "checkedAt": "2026-10-16",
+        "evidence": {
+          "title": "PEAK",
+          "releaseDate": "2026-10-22",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=OsO0Dpt9OPs"
+    },
+    {
       "id": "call-of-duty-modern-warfare-4",
       "title": "Call of Duty: Modern Warfare 4",
       "headingHtml": "Call of Duty: Modern Warfare 4",

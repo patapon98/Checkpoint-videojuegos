@@ -1,0 +1,72 @@
+{
+  "id": "squad-consolas-2027",
+  "important": false,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-10-15",
+  "addedAt": "2026-10-16T15:10:00Z",
+  "featured": false,
+  "tone": "launch",
+  "title": {
+    "es": "Squad llegará a PS5 y Xbox Series en 2027"
+  },
+  "summary": {
+    "es": "Squad llegará a PS5 y Xbox Series X|S en 2027, después de más de una década ligado al PC. La adaptación conservará las partidas de hasta 100 jugadores y estrenará una alfa gratuita en PS5 del 16 al 25 de octubre de 2026."
+  },
+  "why": {
+    "es": "La expansión abre las consolas a uno de los referentes del combate táctico a gran escala y plantea un futuro compartido entre plataformas. PlayStation y Xbox tendrán juego cruzado opcional, mientras que los usuarios de PC podrán acceder voluntariamente a servidores comunitarios compatibles con las reglas de consola."
+  },
+  "homeDetails": {
+    "es": [
+      "Offworld Industries y Secret Mode preparan una edición para consolas del shooter militar centrado en la coordinación. Squad enfrenta a dos equipos de 50 participantes con infantería, blindados, helicópteros, logística y una estructura de mando apoyada en la comunicación por voz.",
+      "La versión de PS5 y Xbox Series incluirá servidores dedicados, navegador de servidores y contenido alineado con PC tras el lanzamiento. El estudio apunta a 60 imágenes por segundo en PS5 y Series X, mientras que Series S tendrá como objetivo 30 imágenes por segundo; las cifras definitivas se confirmarán más adelante."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "llegará a PS5 y Xbox Series X|S en 2027",
+      "partidas de hasta 100 jugadores",
+      "juego cruzado opcional"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Squad"
+    },
+    "copy": {
+      "es": "Squad llegará a PS5 y Xbox Series X|S en 2027"
+    }
+  },
+  "sources": [
+    {
+      "label": "Offworld Industries",
+      "type": {
+        "es": "Anuncio oficial y preguntas frecuentes"
+      },
+      "url": "https://www.joinsquad.com/updates/squad-is-coming-to-console"
+    },
+    {
+      "label": "Squad",
+      "type": {
+        "es": "Página oficial de la edición para consolas y la alfa"
+      },
+      "url": "https://alpha.joinsquad.com/"
+    },
+    {
+      "label": "PlayStation Store",
+      "type": {
+        "es": "Ficha oficial de la alfa para PS5"
+      },
+      "url": "https://store.playstation.com/en-gb/product/EP7072-PPSA39737_00-SQUADPS5BETATEST"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto del anuncio y antecedentes del lanzamiento en PC"
+      },
+      "url": "https://www.gematsu.com/2026/10/squad-coming-to-ps5-xbox-series-in-2027"
+    }
+  ],
+  "trailer": "https://www.youtube.com/watch?v=MS-5d-WuJFY"
+}

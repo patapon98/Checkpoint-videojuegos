@@ -1,0 +1,65 @@
+{
+  "id": "peak-consolas-octubre-2026",
+  "important": false,
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-10-15",
+  "addedAt": "2026-10-16T06:25:00Z",
+  "featured": false,
+  "tone": "launch",
+  "title": {
+    "es": "PEAK llegará a PS5, Xbox Series y Switch 2 el 22 de octubre"
+  },
+  "summary": {
+    "es": "PEAK llegará a PS5, Xbox Series X|S y Nintendo Switch 2 el 22 de octubre de 2026. Las versiones de consola del cooperativo de escalada permitirán el juego cruzado entre las tres plataformas y con la comunidad de Steam."
+  },
+  "why": {
+    "es": "El lanzamiento lleva a todas las consolas actuales un título nacido en PC y evita dividir a sus jugadores por plataforma. La fecha, anunciada a solo una semana del estreno, convierte el salto de PEAK en una ampliación inmediata de su público potencial."
+  },
+  "homeDetails": {
+    "es": [
+      "Landfall y Aggro Crab trasladan a consolas la misma propuesta cooperativa de supervivencia y escalada. Un grupo de exploradores debe ascender una montaña cambiante, administrar su resistencia y ayudarse con cuerdas, alimentos y otras herramientas para alcanzar la cima.",
+      "La compatibilidad cruzada conectará a quienes jueguen en PS5, Xbox Series X|S y Switch 2 con la base existente de Steam. Landfall confirma además que los servicios de suscripción de cada consola serán necesarios para utilizar el multijugador en línea."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "el 22 de octubre de 2026",
+      "juego cruzado entre las tres plataformas y con la comunidad de Steam",
+      "evita dividir a sus jugadores por plataforma"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "PEAK"
+    },
+    "copy": {
+      "es": "PEAK llegará a PS5, Xbox Series y Switch 2 el 22 de octubre"
+    }
+  },
+  "sources": [
+    {
+      "label": "Landfall",
+      "type": {
+        "es": "Anuncio oficial del lanzamiento en consolas"
+      },
+      "url": "https://landfall.se/"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Presentación oficial de la versión para PS5"
+      },
+      "url": "https://blog.playstation.com/2026/10/15/peak-climbs-its-way-onto-ps5-october-22/"
+    },
+    {
+      "label": "Landfall",
+      "type": {
+        "es": "Documento oficial sobre el juego cruzado"
+      },
+      "url": "https://landfall.se/faq/"
+    }
+  ],
+  "trailer": "https://www.youtube.com/watch?v=OsO0Dpt9OPs"
+}

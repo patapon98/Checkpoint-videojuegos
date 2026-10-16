@@ -3887,13 +3887,16 @@
       "image": {
         "provider": "rawg",
         "query": "PEAK",
-        "src": "https://blog.playstation.com/uploads/2026/10/f1563de5fb85c4993c3795537b7b74d49afcb0e6.jpg",
+        "src": "https://media.rawg.io/media/screenshots/f93/f93e62d27608b695088cad83e346643d.jpg",
         "alt": "PEAK para consolas",
         "className": "",
         "gridArt": "",
         "poster": "",
         "legacy": false,
-        "rawgId": 998524
+        "rawgId": 998524,
+        "rawgSlug": "peak-2",
+        "rawgPage": "https://rawg.io/games/peak-2",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://blog.es.playstation.com/2026/10/15/peak-esta-escalando-de-camino-a-la-ps5-el-22-de-octubre/",

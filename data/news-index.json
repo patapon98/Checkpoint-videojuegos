@@ -1,5 +1,69 @@
 [
   {
+    "id": "xbox-nano-controller",
+    "important": false,
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-10-14",
+    "addedAt": "2026-10-17T15:18:00Z",
+    "featured": false,
+    "tone": "launch",
+    "title": {
+      "es": "Xbox presenta su mando Nano por 49,99 dólares"
+    },
+    "summary": {
+      "es": "Xbox ha presentado el Xbox Nano Controller, su mando más pequeño y ligero hasta la fecha. Costará 49,99 dólares, podrá reservarse desde el anuncio y llegará el 4 de noviembre de 2026 en Estados Unidos."
+    },
+    "why": {
+      "es": "El nuevo modelo conserva los 18 controles habituales en un cuerpo de poco más de cinco pulgadas y 99 gramos. Incluye batería recargable, botón programable, Xbox Wireless y Bluetooth, y también se distribuirá en España, Japón y otros mercados durante noviembre."
+    },
+    "homeDetails": {
+      "es": [
+        "Microsoft plantea el Xbox Nano Controller como una puerta de entrada más asequible para jugadores jóvenes, manos pequeñas y quienes buscan un mando fácil de transportar. Mantiene la disposición estándar de botones y puede utilizarse con consolas Xbox y dispositivos compatibles mediante Xbox Wireless o Bluetooth.",
+        "El mando incorpora una batería recargable y un botón de acción configurable para capturas, grabación u otros accesos directos. La tienda estadounidense fija el lanzamiento para el 4 de noviembre, mientras que Xbox confirma su llegada durante noviembre a España, Japón y numerosos mercados de América, Europa y Asia."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "su mando más pequeño y ligero hasta la fecha",
+        "Costará 49,99 dólares",
+        "batería recargable, botón programable, Xbox Wireless y Bluetooth"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Xbox Nano"
+      },
+      "copy": {
+        "es": "Xbox Nano llegará en noviembre por 49,99 dólares"
+      }
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Anuncio oficial"
+        },
+        "url": "https://news.xbox.com/en-us/2026/10/14/xbox-nano-controller/"
+      },
+      {
+        "label": "Microsoft Store",
+        "type": {
+          "es": "Ficha oficial de producto, precio y lanzamiento"
+        },
+        "url": "https://www.microsoft.com/en-us/d/xbox-nano-controller/8wg5vqp0x4g3"
+      },
+      {
+        "label": "Xbox",
+        "type": {
+          "es": "Página oficial de características"
+        },
+        "url": "https://www.xbox.com/accessories/controllers/xbox-nano-controller"
+      }
+    ]
+  },
+  {
     "id": "squad-consolas-2027",
     "important": false,
     "category": {

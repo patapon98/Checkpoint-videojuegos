@@ -1,5 +1,62 @@
 [
   {
+    "id": "rog-xbox-ally-x20",
+    "important": false,
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-10-15",
+    "addedAt": "2026-10-18T18:23:03Z",
+    "featured": false,
+    "tone": "launch",
+    "title": {
+      "es": "ROG Xbox Ally X20 se estrena por 1.299 dólares"
+    },
+    "summary": {
+      "es": "ASUS ha puesto a la venta la ROG Xbox Ally X20 por 1.299 dólares. La portátil premium incorpora una pantalla OLED de 7,4 pulgadas y 120 Hz, procesador AMD Ryzen AI Z2 Extreme, 24 GB de memoria y batería de 80 Wh."
+    },
+    "why": {
+      "es": "El modelo del 20.º aniversario es la ROG Ally más avanzada hasta la fecha y eleva el precio máximo de la familia Xbox Ally. Añade controles TMR, refrigeración rediseñada y un modo de viaje, mientras mantiene Windows 11 y el acceso a las principales tiendas de PC."
+    },
+    "homeDetails": {
+      "es": [
+        "La edición combina un chasis translúcido negro con detalles dorados y una pantalla ROG Nebula HDR OLED de 1.920 × 1.080 píxeles. El panel admite VRR entre 30 y 120 Hz, Dolby Vision y un brillo HDR máximo anunciado de 1.400 nits.",
+        "ASUS vende la máquina por separado a 1.299 dólares y ofrece un paquete de 2.499 dólares con gafas ROG XREAL R1 Edition 20, carcasa dbrand Killswitch y maletín Pelican. La compañía también mantiene los modelos Xbox Ally y Xbox Ally X a 599 y 999 dólares."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "por 1.299 dólares",
+        "una pantalla OLED de 7,4 pulgadas y 120 Hz",
+        "la ROG Ally más avanzada hasta la fecha"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "ROG Xbox Ally X20"
+      },
+      "copy": {
+        "es": "ROG Xbox Ally X20 llega por 1.299 dólares con pantalla OLED"
+      }
+    },
+    "sources": [
+      {
+        "label": "ASUS Pressroom",
+        "type": {
+          "es": "Comunicado oficial de disponibilidad y precio"
+        },
+        "url": "https://press.asus.com/news/press-releases/rog-xbox-ally-x20-anniversary-edition-available/"
+      },
+      {
+        "label": "Republic of Gamers",
+        "type": {
+          "es": "Ficha oficial de producto y especificaciones"
+        },
+        "url": "https://rog.asus.com/gaming-handhelds/rog-ally/rog-xbox-ally-x20-2026/"
+      }
+    ]
+  },
+  {
     "id": "xbox-nano-controller",
     "important": false,
     "category": {

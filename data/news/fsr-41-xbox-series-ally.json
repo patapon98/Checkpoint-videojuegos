@@ -1,0 +1,57 @@
+{
+  "id": "fsr-41-xbox-series-ally",
+  "important": true,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-10-20",
+  "addedAt": "2026-10-20T17:40:00Z",
+  "featured": false,
+  "tone": "platforms",
+  "title": {
+    "es": "AMD confirma FSR 4.1 para Xbox Series X|S y Xbox Ally"
+  },
+  "summary": {
+    "es": "AMD y Microsoft han confirmado que FSR 4.1 llegará a Xbox Series X|S y a las portátiles ROG Xbox Ally. La tecnología de reescalado con aprendizaje automático se ofrecerá a los desarrolladores, aunque las consolas todavía no tienen fecha de estreno."
+  },
+  "why": {
+    "es": "El anuncio lleva una reconstrucción de imagen más avanzada a la generación actual de Xbox y extiende la alianza gráfica entre AMD y Microsoft. Las compañías también anticipan que Project Helix utilizará FSR Diamond en el próximo hardware de Xbox."
+  },
+  "homeDetails": {
+    "es": [
+      "FSR 4.1 amplía el soporte a las GPU Radeon RX 6000 y a procesadores Ryzen AI, además de las máquinas portátiles Xbox Ally. En Xbox Series X|S llegará «próximamente» como una herramienta adicional para que los estudios equilibren calidad de imagen y rendimiento.",
+      "Microsoft no ha detallado qué juegos serán compatibles ni si cada título necesitará una actualización específica. El anuncio sí vincula la colaboración con la siguiente generación: Project Helix recurrirá a FSR Diamond, una evolución destinada al futuro hardware de Xbox."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "FSR 4.1 llegará a Xbox Series X|S y a las portátiles ROG Xbox Ally",
+      "las consolas todavía no tienen fecha de estreno",
+      "Project Helix utilizará FSR Diamond"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "FSR 4.1"
+    },
+    "copy": {
+      "es": "FSR 4.1 llegará a Xbox Series X|S y a las portátiles Xbox Ally"
+    }
+  },
+  "sources": [
+    {
+      "label": "AMD Gaming",
+      "type": {
+        "es": "Vídeo oficial del anuncio y la colaboración con Xbox"
+      },
+      "url": "https://www.youtube.com/watch?v=fT6TIXnmv-s"
+    },
+    {
+      "label": "The Verge",
+      "type": {
+        "es": "Contexto técnico, disponibilidad y declaraciones de Xbox"
+      },
+      "url": "https://www.theverge.com/news/1014455/amd-fsr-4-1-xbox-consoles-handhelds-laptops"
+    }
+  ]
+}

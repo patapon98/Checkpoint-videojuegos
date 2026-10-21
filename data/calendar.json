@@ -4127,12 +4127,16 @@
       "image": {
         "provider": "rawg",
         "query": "Mouthwashing",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg",
+        "src": "https://media.rawg.io/media/games/ba1/ba1bf58929130f56be870b6217746aed.jpg",
         "alt": "Mouthwashing para Xbox",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 989580,
+        "rawgSlug": "mouthwashing",
+        "rawgPage": "https://rawg.io/games/mouthwashing",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.xbox.com/en-US/games/store/mouthwashing/9mvncsj14754",
@@ -4353,8 +4357,6 @@
       ],
       "platformsHtml": "Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "ZERO PARADES: Director's Cut",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2863680/header.jpg",
         "alt": "ZERO PARADES: Director’s Cut para Xbox",
         "className": "",
@@ -4544,8 +4546,6 @@
       ],
       "platformsHtml": "Xbox Series X|S",
       "image": {
-        "provider": "rawg",
-        "query": "DreamWorks Shrek 2 Remastered",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2523740/header.jpg",
         "alt": "DreamWorks Shrek 2 Remastered",
         "className": "",
@@ -4961,8 +4961,6 @@
       ],
       "platformsHtml": "Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "A Game About Digging a Hole Together",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4018610/header.jpg",
         "alt": "A Game About Digging a Hole Together",
         "className": "",

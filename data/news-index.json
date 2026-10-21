@@ -1,5 +1,62 @@
 [
   {
+    "id": "bioware-cierre-mass-effect-cancelado",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "BioWare cierra después de más de tres décadas",
+        "termina el desarrollo inicial del próximo Mass Effect",
+        "desaparece uno de los estudios que definieron el RPG occidental"
+      ]
+    },
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-10-21",
+    "addedAt": "2026-10-21T20:52:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "BioWare"
+      },
+      "copy": {
+        "es": "BioWare cierra y EA cancela el próximo Mass Effect"
+      }
+    },
+    "tone": "industry",
+    "title": {
+      "es": "EA cierra BioWare y cancela el próximo Mass Effect"
+    },
+    "summary": {
+      "es": "BioWare cierra después de más de tres décadas y termina el desarrollo inicial del próximo Mass Effect. EA pone fin al estudio responsable de Dragon Age, Mass Effect y Star Wars: Knights of the Old Republic."
+    },
+    "why": {
+      "es": "Con esta decisión desaparece uno de los estudios que definieron el RPG occidental y queda cancelado el proyecto que debía continuar la principal saga de BioWare."
+    },
+    "sources": [
+      {
+        "label": "BioWare Blog",
+        "type": {
+          "es": "Comunicado oficial"
+        },
+        "url": "https://blog.bioware.com/2026/10/21/bioware-update/"
+      },
+      {
+        "label": "Reuters",
+        "type": {
+          "es": "Contexto empresarial"
+        },
+        "url": "https://www.reuters.com/technology/ea-shutter-bioware-studio-cut-jobs-it-narrows-game-slate-2026-10-21/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "El comunicado de despedida de BioWare confirma que la compañía cierra y que finaliza la fase inicial del siguiente Mass Effect. El proyecto llevaba años anunciado, pero nunca había recibido título ni fecha de lanzamiento.",
+        "El cierre concluye una trayectoria iniciada en 1995 y ligada a Baldur’s Gate, Neverwinter Nights, Dragon Age, Mass Effect, Anthem y Star Wars: Knights of the Old Republic. EA concentra así su cartera y deja sin continuidad al equipo que mantenía vivo el próximo capítulo de Mass Effect."
+      ]
+    }
+  },
+  {
     "id": "fsr-41-xbox-series-ally",
     "important": true,
     "category": {

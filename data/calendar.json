@@ -4115,6 +4115,56 @@
       "trailer": "https://www.youtube.com/watch?v=JqNfIpLPLv0"
     },
     {
+      "id": "mouthwashing-xbox",
+      "title": "Mouthwashing",
+      "headingHtml": "Mouthwashing <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "Xbox Series X|S · Xbox One · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Mouthwashing",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2475490/header.jpg",
+        "alt": "Mouthwashing para Xbox",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.xbox.com/en-US/games/store/mouthwashing/9mvncsj14754",
+        "title": "Ver en Xbox",
+        "ariaLabel": "Ver Mouthwashing en Xbox"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026/",
+        "official": true,
+        "host": "news.xbox.com",
+        "checkedAt": "2026-10-21",
+        "evidence": {
+          "title": "Mouthwashing",
+          "releaseDate": "2026-10-29",
+          "platforms": [
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=q9Yz15z-5AM"
+    },
+    {
       "id": "phantom-blade-zero",
       "title": "Phantom Blade Zero",
       "headingHtml": "Phantom Blade Zero",
@@ -4293,6 +4343,56 @@
       "trailer": "https://www.youtube.com/watch?v=w-veMlH2L-A"
     },
     {
+      "id": "zero-parades-directors-cut-xbox",
+      "title": "ZERO PARADES: Director’s Cut",
+      "headingHtml": "ZERO PARADES: Director’s Cut <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-03",
+      "platformKeys": [
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "ZERO PARADES: Director's Cut",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2863680/header.jpg",
+        "alt": "ZERO PARADES: Director’s Cut para Xbox",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de ZERO PARADES: Director’s Cut para Xbox"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026/",
+        "official": true,
+        "host": "news.xbox.com",
+        "checkedAt": "2026-10-21",
+        "evidence": {
+          "title": "ZERO PARADES: Director’s Cut",
+          "releaseDate": "2026-11-03",
+          "platforms": [
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=q0kzMHLNIgs"
+    },
+    {
       "id": "escape-academy-2-back-2-school",
       "title": "Escape Academy 2: Back 2 School",
       "headingHtml": "Escape Academy 2: Back 2 School",
@@ -4433,6 +4533,54 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=xXaXYxcbA6A"
+    },
+    {
+      "id": "dreamworks-shrek-2-remastered",
+      "title": "DreamWorks Shrek 2 Remastered",
+      "headingHtml": "DreamWorks Shrek 2 Remastered <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-11-10",
+      "platformKeys": [
+        "xbox"
+      ],
+      "platformsHtml": "Xbox Series X|S",
+      "image": {
+        "provider": "rawg",
+        "query": "DreamWorks Shrek 2 Remastered",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2523740/header.jpg",
+        "alt": "DreamWorks Shrek 2 Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.xbox.com/en-US/games/store/shrek-2-remastered/9pcw6x6zqp4z",
+        "title": "Reservar en Xbox",
+        "ariaLabel": "Reservar DreamWorks Shrek 2 Remastered en Xbox"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026/",
+        "official": true,
+        "host": "news.xbox.com",
+        "checkedAt": "2026-10-21",
+        "evidence": {
+          "title": "DreamWorks Shrek 2 Remastered",
+          "releaseDate": "2026-11-10",
+          "platforms": [
+            "xbox"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=CL36wpvgeis"
     },
     {
       "id": "warhammer-survivors",
@@ -4801,6 +4949,56 @@
       },
       "legacy": false,
       "trailer": null
+    },
+    {
+      "id": "a-game-about-digging-a-hole-together",
+      "title": "A Game About Digging a Hole Together",
+      "headingHtml": "A Game About Digging a Hole Together",
+      "date": "2026-12-04",
+      "platformKeys": [
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "A Game About Digging a Hole Together",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4018610/header.jpg",
+        "alt": "A Game About Digging a Hole Together",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.xbox.com/en-US/games/store/a-game-about-digging-a-hole-together/9nb9dvk9hxvf",
+        "title": "Ver en Xbox",
+        "ariaLabel": "Ver A Game About Digging a Hole Together en Xbox"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 50,
+      "source": {
+        "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026/",
+        "official": true,
+        "host": "news.xbox.com",
+        "checkedAt": "2026-10-21",
+        "evidence": {
+          "title": "A Game About Digging a Hole Together",
+          "releaseDate": "2026-12-04",
+          "platforms": [
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=BkFHdDpwcaU"
     },
     {
       "id": "monster-hunter-wilds-switch-2",

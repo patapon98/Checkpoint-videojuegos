@@ -3,15 +3,16 @@
   "important": false,
   "emphasis": {
     "es": [
-      "el 16 de octubre de 2026 en Europa",
-      "navegación oceánica, nuevas islas y buceo",
-      "nuevas historias para Kliff, Oongka y Damiane"
+      "el 29 de octubre de 2026",
+      "ruinas, cofres, nuevas criaturas y monturas",
+      "una evolución sustancial de Pywel"
     ]
   },
   "category": {
     "es": "Juegos"
   },
   "date": "2026-09-03",
+  "updated": "2026-10-21",
   "publishedAt": "2026-09-03T14:00:00Z",
   "addedAt": "2026-09-04T15:27:09Z",
   "featured": false,
@@ -25,13 +26,13 @@
   },
   "tone": "games",
   "title": {
-    "es": "Crimson Desert ampliará Pywel por mar el 16 de octubre con Charting the Unknown"
+    "es": "Crimson Desert detalla su expansión submarina, retrasada al 29 de octubre"
   },
   "summary": {
-    "es": "Pearl Abyss lanzará Crimson Desert Enhanced: Charting the Unknown el 16 de octubre de 2026 en Europa para consolas y PC. La expansión añade navegación oceánica, nuevas islas y buceo para explorar tesoros, ruinas sumergidas y misterios bajo el mar."
+    "es": "Pearl Abyss lanzará Crimson Desert Enhanced: Charting the Unknown el 29 de octubre de 2026 tras retrasar dos semanas la expansión. Su presentación detallada confirma un mundo submarino con ruinas, cofres, nuevas criaturas y monturas."
   },
   "why": {
-    "es": "El DLC incorpora también amenazas por tierra y mar, gestión de instalaciones, un sistema de vivienda ampliado y nuevas historias para Kliff, Oongka y Damiane. No estará disponible en Mac durante el lanzamiento."
+    "es": "Kliff, Oongka y Damiane podrán bucear sin una misión previa, aunque el aire limitará el tiempo bajo el agua y el equipo permitirá prolongarlo. La exploración marítima, los secretos sumergidos y los sistemas de vivienda hacen de este contenido una evolución sustancial de Pywel."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=HaCtG1F_hfE",
@@ -43,29 +44,29 @@
     {
       "label": "Pearl Abyss",
       "type": {
-        "es": "Anuncio oficial con fecha, plataformas y horarios regionales"
+        "es": "Actualización oficial de la fecha de lanzamiento"
       },
-      "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=129"
+      "url": "https://crimsondesert.pearlabyss.com/EN-US/News/Notice/Detail?_boardNo=134"
     },
     {
       "label": "Pearl Abyss",
       "type": {
-        "es": "Página oficial con sistemas, historias y contenido de la expansión"
+        "es": "Presentación oficial de las características de la expansión"
       },
-      "url": "https://crimsondesert.pearlabyss.com/en-US/Game/DLC/charting-the-unknown"
+      "url": "https://crimsondesert.pearlabyss.com/en-us/News/Notice/Detail?_boardNo=137"
     },
     {
-      "label": "PlayStation Blog",
+      "label": "Pearl Abyss",
       "type": {
-        "es": "Resumen oficial de State of Play y presentación de la expansión"
+        "es": "Página oficial con plataformas y contenido de Charting the Unknown"
       },
-      "url": "https://blog.playstation.com/2026/09/03/state-of-play-state-of-play-japan-all-announcements-trailers/"
+      "url": "https://crimsondesert.pearlabyss.com/en-US/Game/DLC/charting-the-unknown"
     }
   ],
   "homeDetails": {
     "es": [
-      "La exploración se extiende fuera de las costas de Pywel: el jugador podrá ponerse al mando de un barco, viajar a islas inéditas y sumergirse para buscar tesoros y secretos en ruinas submarinas. Los nuevos enemigos obligarán además a adaptar las tácticas tanto en tierra como en el océano.",
-      "Charting the Unknown amplía también la vida cotidiana con instalaciones que se pueden alquilar y gestionar, una vivienda más completa y relaciones más profundas con los habitantes. Sus tramas abarcan una presencia en el desierto, un conflicto político, un viaje más allá del tiempo y un antiguo secreto bajo las olas."
+      "La inmersión no exige completar una misión concreta, de modo que los tres protagonistas podrán explorar el fondo marino desde el inicio de la expansión. La respiración funciona como límite natural y los trajes u otros objetos permitirán permanecer más tiempo bajo el agua.",
+      "Pearl Abyss sitúa entre las recompensas ruinas y cofres sumergidos, además de nuevas formas de vida que pueden convertirse en monturas. El retraso del 15 al 29 de octubre busca aportar dos semanas adicionales de pulido y estabilidad antes del lanzamiento."
     ]
   }
 }

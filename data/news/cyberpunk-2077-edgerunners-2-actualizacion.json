@@ -1,0 +1,64 @@
+{
+  "id": "cyberpunk-2077-edgerunners-2-actualizacion",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "una nueva misión que funciona como precuela del anime",
+      "el combate con dos pistolas o revólveres",
+      "los mods integrados entre plataformas"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-10-22",
+  "addedAt": "2026-10-22T15:10:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Cyberpunk 2077"
+    },
+    "copy": {
+      "es": "Cyberpunk 2077 añade una misión, combate con dos armas y mods integrados"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Cyberpunk 2077 estrena misión, combate dual y mods integrados"
+  },
+  "summary": {
+    "es": "Cyberpunk 2077 ha estrenado gratis la actualización Edgerunners 2, con una nueva misión que funciona como precuela del anime. También incorpora el combate con dos pistolas o revólveres, nuevos estilos de ciberware y mods integrados entre plataformas."
+  },
+  "why": {
+    "es": "La versión 2.5 amplía el juego con contenido narrativo y un estilo de combate completo, no solo con objetos cosméticos. La integración de Mod.io permite además descubrir e instalar creaciones desde el propio juego."
+  },
+  "sources": [
+    {
+      "label": "Cyberpunk 2077",
+      "type": {
+        "es": "Página oficial de contenido y características"
+      },
+      "url": "https://www.cyberpunk.net/us/en/edgerunners-2-update"
+    },
+    {
+      "label": "Cyberpunk 2077 News",
+      "type": {
+        "es": "Anuncio oficial de lanzamiento"
+      },
+      "url": "https://www.cyberpunk.net/en/news/52125/cyberpunk-2077s-edgerunners-2-update-2-5-is-out-now"
+    },
+    {
+      "label": "CD PROJEKT RED",
+      "type": {
+        "es": "Comunicado oficial del anuncio"
+      },
+      "url": "https://press.cdprojektred.com/en/news/1876/edgerunners-2-update-announced-for-cyberpunk-2077"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La misión inédita sirve de antesala a Cyberpunk: Edgerunners 2 e incorpora personajes de la serie, equipo inspirado en Weak Kingsley y una emisora con música de las dos temporadas. El contenido está disponible sin necesidad de poseer Phantom Liberty.",
+      "El nuevo estilo de combate permite equipar simultáneamente dos pistolas o revólveres y cuenta con ventajas y habilidades propias. Los vendedores Glamdocs añaden 40 diseños de ciberware personalizables, mientras Mod.io lleva un panel de mods al propio juego."
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "fallout-76-world-pets-diciembre",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "llegará en diciembre",
+      "permitirá llevar por Appalachia a gatos, perros, radhogs y sanguinarios domesticados",
+      "una versión renovada de Skyline Valley"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-10-23",
+  "addedAt": "2026-10-23T20:58:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Fallout 76"
+    },
+    "copy": {
+      "es": "Fallout 76 estrenará World Pets en diciembre"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Fallout 76 llevará World Pets a Appalachia en diciembre"
+  },
+  "summary": {
+    "es": "Fallout 76 recibirá la actualización World Pets, que llegará en diciembre y permitirá llevar por Appalachia a gatos, perros, radhogs y sanguinarios domesticados. La actualización también incorporará una versión renovada de Skyline Valley."
+  },
+  "why": {
+    "es": "World Pets convierte las mascotas del C.A.M.P. en compañeros de exploración y combate que progresan junto al jugador. La ampliación cambia su función dentro del mundo abierto y acompaña el regreso a una región que recibirá nuevo contenido."
+  },
+  "sources": [
+    {
+      "label": "Fallout",
+      "type": {
+        "es": "Resumen oficial de Fallout Day y anuncio de lanzamiento"
+      },
+      "url": "https://fallout.bethesda.net/en-US/news/fallout-day-celebration-2026-roundup"
+    },
+    {
+      "label": "Fallout 76",
+      "type": {
+        "es": "Hoja de ruta oficial con sistemas y calendario de la actualización"
+      },
+      "url": "https://fallout.bethesda.net/en-US/news/letter-from-the-directors-september-2026"
+    }
+  ],
+  "trailer": "https://www.youtube.com/watch?v=EjokV-YIaQM",
+  "homeDetails": {
+    "es": [
+      "Bethesda ha confirmado durante el cierre de Fallout Day que las mascotas abandonarán el C.A.M.P. para acompañar al jugador por el mundo. La selección incluye gatos, perros, radhogs y sanguinarios domesticados, cada uno con progresión y órdenes propias.",
+      "La actualización de invierno recuperará Skyline Valley con nuevas actividades de cazarrecompensas y mejoras vinculadas a los compañeros. Las mascotas podrán seguir, proteger o atacar, ganar niveles y aportar ventajas configurables durante la exploración."
+    ]
+  }
+}

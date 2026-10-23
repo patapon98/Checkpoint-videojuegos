@@ -4542,9 +4542,12 @@
       "headingHtml": "DreamWorks Shrek 2 Remastered <span class=\"tag-dlc\">Remaster</span>",
       "date": "2026-11-10",
       "platformKeys": [
-        "xbox"
+        "ps5",
+        "xbox",
+        "switch",
+        "pc"
       ],
-      "platformsHtml": "Xbox Series X|S",
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · Switch · PC",
       "image": {
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2523740/header.jpg",
         "alt": "DreamWorks Shrek 2 Remastered",
@@ -4567,15 +4570,18 @@
       },
       "priority": 55,
       "source": {
-        "url": "https://news.xbox.com/en-us/2026/10/20/id-xbox-ign-showcase-october-2026/",
+        "url": "https://www.gamespress.com/ja-JP/Aspyr-Reveals-DreamWorks-Shrek-2-Remastered-Launching-on-PC-Consoles-N",
         "official": true,
-        "host": "news.xbox.com",
-        "checkedAt": "2026-10-21",
+        "host": "www.gamespress.com",
+        "checkedAt": "2026-10-23",
         "evidence": {
           "title": "DreamWorks Shrek 2 Remastered",
           "releaseDate": "2026-11-10",
           "platforms": [
-            "xbox"
+            "ps5",
+            "xbox",
+            "switch",
+            "pc"
           ]
         }
       },

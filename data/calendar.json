@@ -4308,6 +4308,58 @@
       "trailer": "https://www.youtube.com/watch?v=ftyQs4bSve8"
     },
     {
+      "id": "look-outside-consoles",
+      "title": "Look Outside",
+      "headingHtml": "Look Outside <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-30",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Look Outside",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3373660/header.jpg",
+        "alt": "Look Outside para PS5, PS4, Switch 2 y Switch",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.devolverdigital.com/games/look-outside",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Look Outside"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://twitter.com/devolverdigital/status/2113662109305217348",
+        "official": true,
+        "host": "twitter.com",
+        "checkedAt": "2026-10-24",
+        "evidence": {
+          "title": "Look Outside",
+          "releaseDate": "2026-10-30",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "godzilla-destroy-all-monsters-melee",
       "title": "Godzilla: Destroy All Monsters Melee",
       "headingHtml": "Godzilla: Destroy All Monsters Melee <span class=\"tag-dlc\">Remaster</span>",

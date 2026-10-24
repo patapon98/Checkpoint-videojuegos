@@ -4321,12 +4321,16 @@
       "image": {
         "provider": "rawg",
         "query": "Look Outside",
-        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3373660/header.jpg",
+        "src": "https://media.rawg.io/media/games/3b3/3b32f939953b4680a8cf95f385990754.jpg",
         "alt": "Look Outside para PS5, PS4, Switch 2 y Switch",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 999964,
+        "rawgSlug": "look-outside",
+        "rawgPage": "https://rawg.io/games/look-outside",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.devolverdigital.com/games/look-outside",

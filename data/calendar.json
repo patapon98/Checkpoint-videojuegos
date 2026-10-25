@@ -4320,12 +4320,16 @@
       "image": {
         "provider": "rawg",
         "query": "RV There Yet?",
-        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1210/ea990ac68a235a259ff5a4d9861be852c87deb2c38e346e0.png",
+        "src": "https://media.rawg.io/media/games/c55/c55f5d9e15c6821b6bc24b02fd33b588.jpg",
         "alt": "RV There Yet? para PS5 y Switch 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 1012586,
+        "rawgSlug": "rv-there-yet",
+        "rawgPage": "https://rawg.io/games/rv-there-yet",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://store.playstation.com/en-us/concept/10018073",

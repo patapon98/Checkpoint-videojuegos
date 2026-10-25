@@ -1,0 +1,65 @@
+{
+  "id": "rv-there-yet-ps5-switch-2",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "llegará a PS5 y Nintendo Switch 2 el 29 de octubre",
+      "juego cruzado entre todas las plataformas",
+      "amplía así su recorrido"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-10-21",
+  "addedAt": "2026-10-25T09:26:50Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "RV There Yet?"
+    },
+    "copy": {
+      "es": "RV There Yet? llegará a PS5 y Switch 2 con juego cruzado"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "RV There Yet? llegará a PS5 y Switch 2 el 29 de octubre"
+  },
+  "summary": {
+    "es": "RV There Yet? llegará a PS5 y Nintendo Switch 2 el 29 de octubre con juego cruzado entre todas las plataformas. El cooperativo de Nuggets Entertainment amplía así su recorrido tras estrenarse en PC y Xbox Series."
+  },
+  "why": {
+    "es": "El lanzamiento abre el fenómeno cooperativo a las dos consolas que todavía no lo habían recibido y mantiene unida a su comunidad mediante cross-play. La fecha sitúa ambas versiones a solo unos días de su anuncio oficial."
+  },
+  "sources": [
+    {
+      "label": "Nuggets Entertainment",
+      "type": {
+        "es": "Vídeo oficial del estudio con fecha, plataformas y juego cruzado"
+      },
+      "url": "https://www.youtube.com/watch?v=yUDz69O2gYs"
+    },
+    {
+      "label": "PlayStation Store",
+      "type": {
+        "es": "Ficha oficial con fecha y características de la versión para PS5"
+      },
+      "url": "https://store.playstation.com/en-us/concept/10018073"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto sobre el anuncio y las versiones existentes"
+      },
+      "url": "https://www.gematsu.com/2026/10/rv-there-yet-coming-to-ps5-switch-2-on-october-29"
+    }
+  ],
+  "trailer": "https://www.youtube.com/watch?v=yUDz69O2gYs",
+  "homeDetails": {
+    "es": [
+      "Nuggets Entertainment llevará su aventura cooperativa de conducción a PS5 y Nintendo Switch 2 el 29 de octubre. Hasta ahora el juego estaba disponible en PC y Xbox Series, por lo que el estreno completa su presencia en las consolas actuales.",
+      "La incorporación de juego cruzado permitirá formar grupos de hasta cuatro personas sin separar a quienes juegan en PC, Xbox, PlayStation o Nintendo. El objetivo seguirá siendo conducir una autocaravana por Mabutts Valley coordinando volante, cabrestantes y reparaciones."
+    ]
+  }
+}

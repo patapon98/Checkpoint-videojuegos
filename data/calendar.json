@@ -4308,6 +4308,60 @@
       "trailer": "https://www.youtube.com/watch?v=ftyQs4bSve8"
     },
     {
+      "id": "rv-there-yet-ps5-switch-2",
+      "title": "RV There Yet?",
+      "headingHtml": "RV There Yet? <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "ps5",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "RV There Yet?",
+        "src": "https://media.rawg.io/media/games/c55/c55f5d9e15c6821b6bc24b02fd33b588.jpg",
+        "alt": "RV There Yet? para PS5 y Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1012586,
+        "rawgSlug": "rv-there-yet",
+        "rawgPage": "https://rawg.io/games/rv-there-yet",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://store.playstation.com/en-us/concept/10018073",
+        "title": "Ver en PlayStation Store",
+        "ariaLabel": "Ver RV There Yet? en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=yUDz69O2gYs",
+        "official": true,
+        "host": "www.youtube.com",
+        "checkedAt": "2026-10-25",
+        "evidence": {
+          "title": "RV There Yet?",
+          "releaseDate": "2026-10-29",
+          "platforms": [
+            "ps5",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=yUDz69O2gYs"
+    },
+    {
       "id": "look-outside-consoles",
       "title": "Look Outside",
       "headingHtml": "Look Outside <span class=\"tag-dlc\">Nueva plataforma</span>",

@@ -1,0 +1,57 @@
+{
+  "id": "fight-night-regresa-ea-sports",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ha confirmado el regreso de Fight Night",
+      "inactiva desde Fight Night Champion en 2011",
+      "no concreta todavía título, fecha de lanzamiento, plataformas ni características"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-10-20",
+  "addedAt": "2026-10-26T02:49:27Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Fight Night"
+    },
+    "copy": {
+      "es": "Fight Night regresará tras quince años sin nuevas entregas"
+    }
+  },
+  "tone": "reveal",
+  "title": {
+    "es": "EA Sports confirma el regreso de Fight Night tras quince años"
+  },
+  "summary": {
+    "es": "EA Sports ha confirmado el regreso de Fight Night, su saga de boxeo inactiva desde Fight Night Champion en 2011. El anuncio oficial no concreta todavía título, fecha de lanzamiento, plataformas ni características."
+  },
+  "why": {
+    "es": "El retorno recupera una de las principales franquicias de boxeo tras quince años sin entregas y devuelve a EA a un género que había cedido a alternativas como Undisputed. La ausencia de detalles obliga a tratarlo como confirmación de proyecto, no como anuncio completo de lanzamiento."
+  },
+  "sources": [
+    {
+      "label": "Electronic Arts",
+      "type": {
+        "es": "Publicación oficial de EA que confirma el regreso de la saga"
+      },
+      "url": "https://x.com/EA/status/2112604996265292060"
+    },
+    {
+      "label": "GamesRadar+",
+      "type": {
+        "es": "Contexto sobre la confirmación y los datos todavía no anunciados"
+      },
+      "url": "https://www.gamesradar.com/games/sports/ea-finally-says-the-words-ps3-gamers-have-waited-15-years-to-hear-fight-night-is-coming-back/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "EA Sports reactivó la marca el 20 de octubre mediante una cuenta oficial dedicada a Fight Night y un mensaje que confirma que la serie volverá. La compañía no acompañó el anuncio de un tráiler de juego, imágenes, ventana de estreno o lista de sistemas.",
+      "Fight Night Champion fue la última entrega de la franquicia y se publicó en 2011 para PlayStation 3 y Xbox 360. Desde entonces EA había concentrado sus juegos de deportes de combate en UFC, mientras Undisputed ocupaba el espacio del boxeo de simulación."
+    ]
+  }
+}

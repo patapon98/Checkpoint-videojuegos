@@ -4015,6 +4015,58 @@
       "trailer": "https://www.youtube.com/watch?v=pBL7nJLH8ro"
     },
     {
+      "id": "the-outlast-trials-switch-2",
+      "title": "The Outlast Trials",
+      "headingHtml": "The Outlast Trials <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-27",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "The Outlast Trials",
+        "src": "https://media.rawg.io/media/games/cb7/cb79272fea3ffdba3fd48d44cc78d132.jpg",
+        "alt": "The Outlast Trials para Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 485138,
+        "rawgSlug": "the-outlast-trials",
+        "rawgPage": "https://rawg.io/games/the-outlast-trials",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://www.nintendo.com/pt-br/store/products/the-outlast-trials-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de The Outlast Trials para Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://www.nintendo.com/pt-br/store/products/the-outlast-trials-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-10-28",
+        "evidence": {
+          "title": "The Outlast Trials",
+          "releaseDate": "2026-10-27",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=K5C1HlrMtnQ"
+    },
+    {
       "id": "cities-skylines-expanded-edition-switch-2",
       "title": "Cities: Skylines – Expanded Edition",
       "headingHtml": "Cities: Skylines – Expanded Edition <span class=\"tag-dlc\">Edición</span>",

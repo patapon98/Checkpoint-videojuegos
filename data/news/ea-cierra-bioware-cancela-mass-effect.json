@@ -1,0 +1,57 @@
+{
+  "id": "ea-cierra-bioware-cancela-mass-effect",
+  "important": true,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-10-21",
+  "addedAt": "2026-10-28T20:32:39Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "EA cierra BioWare y cancela el próximo Mass Effect"
+  },
+  "summary": {
+    "es": "Electronic Arts cierra BioWare y pone fin al desarrollo temprano del próximo Mass Effect. La reestructuración termina con más de treinta años de actividad del estudio responsable de Dragon Age, Mass Effect y clásicos como Knights of the Old Republic."
+  },
+  "why": {
+    "es": "El cierre elimina uno de los estudios históricos del rol occidental y cancela la continuación de una de las mayores franquicias de Electronic Arts. La compañía concentrará su inversión en menos proyectos de gran escala."
+  },
+  "homeDetails": {
+    "es": [
+      "EA explica que un equipo reducido de BioWare trabajaba todavía en una fase inicial del siguiente Mass Effect, pero ha decidido no continuar el proyecto y cerrar tanto el estudio como su espacio de trabajo en Edmonton.",
+      "La reorganización mantiene en desarrollo Marvel’s Iron Man y la próxima entrega de Star Wars Jedi. Electronic Arts afirma que ayudará a las personas afectadas a explorar otras oportunidades dentro de la compañía."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "cierra BioWare",
+      "pone fin al desarrollo temprano del próximo Mass Effect",
+      "concentrará su inversión en menos proyectos de gran escala"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "BioWare"
+    },
+    "copy": {
+      "es": "EA cierra BioWare y cancela el próximo Mass Effect"
+    }
+  },
+  "sources": [
+    {
+      "label": "Electronic Arts",
+      "type": {
+        "es": "Anuncio oficial de la reestructuración, el cierre del estudio y el fin del proyecto"
+      },
+      "url": "https://www.ea.com/news/building-eas-next-chapter"
+    },
+    {
+      "label": "BioWare",
+      "type": {
+        "es": "Comunicado oficial del estudio sobre su cierre y el próximo Mass Effect"
+      },
+      "url": "https://blog.bioware.com/2026/10/21/bioware-update/"
+    }
+  ]
+}

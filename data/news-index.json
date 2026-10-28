@@ -1,5 +1,62 @@
 [
   {
+    "id": "mobile-suit-gundam-battle-operation-3-anunciado",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "ha anunciado Mobile Suit Gundam Battle Operation 3",
+        "juego de acción por equipos gratuito para PlayStation 5 y Steam",
+        "hasta 18 participantes y habilidades SP"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-28",
+    "addedAt": "2026-10-28T11:59:14Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Gundam Battle Operation 3"
+      },
+      "copy": {
+        "es": "Gundam Battle Operation 3 llevará sus batallas gratuitas a PS5 y Steam"
+      }
+    },
+    "tone": "reveal",
+    "title": {
+      "es": "Mobile Suit Gundam Battle Operation 3 llegará a PS5 y Steam"
+    },
+    "summary": {
+      "es": "Bandai Namco ha anunciado Mobile Suit Gundam Battle Operation 3, un juego de acción por equipos gratuito para PlayStation 5 y Steam. La ficha oficial confirma partidas para hasta 18 participantes y habilidades SP, pero mantiene pendiente la fecha de lanzamiento."
+    },
+    "why": {
+      "es": "La tercera entrega amplía la serie multijugador de Gundam con estreno simultáneo en consola y PC, y ya permite añadirla a la lista de deseos en ambas plataformas. El anuncio es sustancial por tratarse de un juego nuevo, aunque Bandai Namco todavía no ha concretado su calendario."
+    },
+    "sources": [
+      {
+        "label": "Bandai Namco Entertainment",
+        "type": {
+          "es": "Web oficial con plataformas, modelo de negocio, número de jugadores y estado de la fecha"
+        },
+        "url": "https://bobobo-sp.ggame.jp/en/"
+      },
+      {
+        "label": "GUNDAM CHANNEL INTL",
+        "type": {
+          "es": "Tráiler oficial de anuncio"
+        },
+        "url": "https://www.youtube.com/watch?v=hTdVcrrSK1w"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Bandai Namco presentó la secuela durante la emisión por el 40.º aniversario de los videojuegos de Gundam. Su web define el proyecto como una experiencia multijugador en línea de acción por equipos que reúne mobile suits de distintas obras de la franquicia.",
+        "Además de combatir a bordo de los mechas, los jugadores podrán actuar como infantería y emplear nuevas habilidades SP para alterar el curso de cada enfrentamiento. La ficha sitúa el máximo en 18 participantes y señala que el acceso será gratuito con contenido de pago opcional."
+      ]
+    }
+  },
+  {
     "id": "fight-night-regresa-ea-sports",
     "important": false,
     "emphasis": {

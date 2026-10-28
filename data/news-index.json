@@ -1,5 +1,62 @@
 [
   {
+    "id": "witchbrook-fecha-lanzamiento-enero-2027",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "se estrenará el 28 de enero de 2027",
+        "Nintendo Switch 2 y Nintendo Switch",
+        "sustituye la ventana de 2026 por una fecha concreta"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-10-28",
+    "addedAt": "2026-10-28T15:08:31Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Witchbrook"
+      },
+      "copy": {
+        "es": "Witchbrook fija su lanzamiento para el 28 de enero de 2027"
+      }
+    },
+    "tone": "launch",
+    "title": {
+      "es": "Witchbrook se lanzará el 28 de enero de 2027"
+    },
+    "summary": {
+      "es": "Witchbrook se estrenará el 28 de enero de 2027 en Nintendo Switch 2 y Nintendo Switch. El nuevo tráiler oficial confirma también que la simulación de vida mágica de Chucklefish permitirá jugar en línea con hasta cuatro participantes."
+    },
+    "why": {
+      "es": "El anuncio sustituye la ventana de 2026 por una fecha concreta para uno de los proyectos independientes más esperados de los últimos años. La presentación enseña clases, relaciones, cultivos y exploración en Mossport, además de confirmar el multijugador."
+    },
+    "sources": [
+      {
+        "label": "Nintendo of America",
+        "type": {
+          "es": "Tráiler oficial con fecha, plataformas y multijugador"
+        },
+        "url": "https://www.youtube.com/watch?v=jm7Q54YWVrI"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Página oficial del Indie World en el que se realizó el anuncio"
+        },
+        "url": "https://www.nintendo.com/us/indie-world/showcase/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Witchbrook propone comenzar una nueva vida como aprendiz de bruja en la localidad costera de Mossport. El recorrido incluye clases en Witchbrook College, elaboración de objetos, personalización del hogar y relaciones con otros habitantes.",
+        "El juego podrá disfrutarse en solitario o en línea con hasta cuatro participantes, que compartirán las actividades y la exploración del mundo. Nintendo ya permite añadirlo a la lista de deseos en sus dos consolas."
+      ]
+    }
+  },
+  {
     "id": "mobile-suit-gundam-battle-operation-3-anunciado",
     "important": false,
     "emphasis": {

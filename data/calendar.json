@@ -4362,6 +4362,54 @@
       "trailer": "https://www.youtube.com/watch?v=2X-X5C4jG0A"
     },
     {
+      "id": "sword-of-the-sea-switch-2",
+      "title": "Sword of the Sea",
+      "headingHtml": "Sword of the Sea <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-10-29",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Sword of the Sea",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000128731/b53578325c55c682427849041d9fed1f4fca7c22553e1d2993e91da452851d14",
+        "alt": "Sword of the Sea para Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/sword-of-the-sea-switch-2/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Sword of the Sea para Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/sword-of-the-sea-switch-2/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-10-29",
+        "evidence": {
+          "title": "Sword of the Sea",
+          "releaseDate": "2026-10-29",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=59oPNDPoDYA"
+    },
+    {
       "id": "the-wolf-among-us-remastered",
       "title": "The Wolf Among Us Remastered",
       "headingHtml": "The Wolf Among Us Remastered <span class=\"tag-dlc\">Remaster</span>",
@@ -4884,6 +4932,56 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=52Fei-sLLQc"
+    },
+    {
+      "id": "spirit-crossing",
+      "title": "Spirit Crossing",
+      "headingHtml": "Spirit Crossing",
+      "date": "2026-11-16",
+      "platformKeys": [
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Spirit Crossing",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000129965/ad4ca250a6af81b570279be849ed9440bb9eb111ab88930ede3bc6ab1169e73b",
+        "alt": "Spirit Crossing",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2321960/Spirit_Crossing/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Spirit Crossing a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000001.000193049.html",
+        "official": true,
+        "host": "prtimes.jp",
+        "checkedAt": "2026-10-29",
+        "evidence": {
+          "title": "Spirit Crossing",
+          "releaseDate": "2026-11-16",
+          "platforms": [
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=8PJE7G4oDgY"
     },
     {
       "id": "grand-theft-auto-vi",
@@ -5854,6 +5952,60 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=GA0n6t-iLBw"
+    },
+    {
+      "id": "witchbrook",
+      "title": "Witchbrook",
+      "headingHtml": "Witchbrook",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Xbox One · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Witchbrook",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000136264/17c5c96f405bde21c6bf2396bf6dfd2dacd329f53d08634191e4732ba2cbff0d",
+        "alt": "Witchbrook",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.witchbrook.com/release-date/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de la fecha de Witchbrook"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.witchbrook.com/release-date/",
+        "official": true,
+        "host": "www.witchbrook.com",
+        "checkedAt": "2026-10-29",
+        "evidence": {
+          "title": "Witchbrook",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=upnkhFNuD_w"
     },
     {
       "id": "elta-defy-all-gods",

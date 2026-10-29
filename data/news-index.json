@@ -1,5 +1,62 @@
 [
   {
+    "id": "pokemon-unite-cierre-marzo-2027",
+    "important": true,
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-10-26",
+    "addedAt": "2026-10-29T02:36:31Z",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "Pokémon UNITE cerrará sus servidores el 23 de marzo de 2027"
+    },
+    "summary": {
+      "es": "The Pokémon Company cerrará Pokémon UNITE el 23 de marzo de 2027 a las 00:00 UTC en Nintendo Switch y dispositivos móviles. A partir de ese momento ya no será posible iniciar sesión ni participar en combates."
+    },
+    "why": {
+      "es": "El cierre pone fin a casi seis años de actividad de uno de los principales servicios en línea de Pokémon. La compañía conservará únicamente una biblioteca local limitada para quienes descarguen sus datos antes de la desconexión."
+    },
+    "homeDetails": {
+      "es": [
+        "La venta de gemas Æos, las nuevas altas del Club UNITE y sus renovaciones automáticas quedaron suspendidas el 27 de octubre a las 05:00 UTC. Los saldos existentes podrán utilizarse hasta el cierre del servicio.",
+        "Una actualización del 12 de noviembre añadirá un evento de despedida y una función de biblioteca para consultar licencias, holoatuendos y ciertos registros. Sus datos deberán descargarse antes del cierre y no tendrán soporte posterior."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "cerrará Pokémon UNITE el 23 de marzo de 2027 a las 00:00 UTC",
+        "ya no será posible iniciar sesión ni participar en combates",
+        "pone fin a casi seis años de actividad"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Pokémon UNITE"
+      },
+      "copy": {
+        "es": "Pokémon UNITE cerrará sus servidores el 23 de marzo de 2027"
+      }
+    },
+    "sources": [
+      {
+        "label": "Pokémon UNITE",
+        "type": {
+          "es": "Comunicado oficial con la fecha de cierre y el calendario de desconexión"
+        },
+        "url": "https://unite.pokemon.com/en-gb/news/unite-end-of-service/"
+      },
+      {
+        "label": "Pokémon UNITE",
+        "type": {
+          "es": "Anuncio oficial del evento de despedida y la biblioteca local"
+        },
+        "url": "https://unite.pokemon.com/en-us/news/unite-special-event-library-feature/"
+      }
+    ]
+  },
+  {
     "id": "ea-cierra-bioware-cancela-mass-effect",
     "important": true,
     "category": {

@@ -4373,12 +4373,16 @@
       "image": {
         "provider": "rawg",
         "query": "Sword of the Sea",
-        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000128731/b53578325c55c682427849041d9fed1f4fca7c22553e1d2993e91da452851d14",
+        "src": "https://media.rawg.io/media/games/96b/96bb45a0f2d767dc62f44ae77f5a2387.jpg",
         "alt": "Sword of the Sea para Switch 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 961195,
+        "rawgSlug": "sword-of-the-sea",
+        "rawgPage": "https://rawg.io/games/sword-of-the-sea",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/sword-of-the-sea-switch-2/",
@@ -4944,8 +4948,6 @@
       ],
       "platformsHtml": "PC · Switch 2 · Switch",
       "image": {
-        "provider": "rawg",
-        "query": "Spirit Crossing",
         "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000129965/ad4ca250a6af81b570279be849ed9440bb9eb111ab88930ede3bc6ab1169e73b",
         "alt": "Spirit Crossing",
         "className": "",
@@ -5968,12 +5970,16 @@
       "image": {
         "provider": "rawg",
         "query": "Witchbrook",
-        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000136264/17c5c96f405bde21c6bf2396bf6dfd2dacd329f53d08634191e4732ba2cbff0d",
+        "src": "https://media.rawg.io/media/screenshots/a08/a08e9ae9cd49a82e84e3e231c894119c.jpg",
         "alt": "Witchbrook",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 482919,
+        "rawgSlug": "witchbrook",
+        "rawgPage": "https://rawg.io/games/witchbrook",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.witchbrook.com/release-date/",

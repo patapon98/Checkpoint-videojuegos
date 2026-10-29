@@ -1,5 +1,62 @@
 [
   {
+    "id": "assassins-creed-valhalla-nueva-partida-plus",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "Nueva partida+ a Assassin’s Creed Valhalla el 5 de noviembre",
+        "Codename Hexe no ofrecerá su próxima gran novedad hasta 2027",
+        "Ubisoft no tiene ahora otro remake de Assassin’s Creed en desarrollo"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-29",
+    "addedAt": "2026-10-29T18:16:35Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Assassin’s Creed Valhalla"
+      },
+      "copy": {
+        "es": "Assassin’s Creed Valhalla recibirá Nueva partida+ el 5 de noviembre"
+      }
+    },
+    "tone": "launch",
+    "title": {
+      "es": "Assassin’s Creed Valhalla recibirá Nueva partida+ el 5 de noviembre"
+    },
+    "summary": {
+      "es": "Ubisoft añadirá Nueva partida+ a Assassin’s Creed Valhalla el 5 de noviembre, con escalado propio, progresión opcional, nuevas runas, logros, alijo, recompensas y mejoras para el equipo divino. La actualización de la saga confirma además que Codename Hexe no ofrecerá su próxima gran novedad hasta 2027."
+    },
+    "why": {
+      "es": "La función responde a una de las peticiones más persistentes de la comunidad seis años después del estreno de Valhalla y llega acompañada de sistemas que modifican la progresión. La hoja de ruta también aclara el estado de Invictus, Hexe y los remakes: Ubisoft no tiene ahora otro remake de Assassin’s Creed en desarrollo."
+    },
+    "sources": [
+      {
+        "label": "Ubisoft",
+        "type": {
+          "es": "Actualización oficial de la saga con fecha y contenido de Nueva partida+"
+        },
+        "url": "https://www.ubisoft.com/es-es/game/assassins-creed/news/MW9NJgNmVSPHu2AVCFHH9/assassins-creed-actualizacin-de-otoo-de-2026"
+      },
+      {
+        "label": "Ubisoft News",
+        "type": {
+          "es": "Comunicado oficial sobre Valhalla, Invictus, Hexe y los remakes"
+        },
+        "url": "https://www.ubisoft.com/en-us/game/assassins-creed/news/MW9NJgNmVSPHu2AVCFHH9/assassins-creed-fall-2026-update"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La Nueva partida+ permitirá reiniciar la aventura de Eivor conservando buena parte del progreso, con un escalado específico. También incorporará una modalidad opcional que suma equipo, runas y maestrías al poder general, además de mitrilo para reforzar objetos de calidad divina.",
+        "Ubisoft indica que Codename Invictus está siendo replanteado tras sus primeras pruebas privadas para reflejar mejor los pilares de la saga. Codename Hexe sigue avanzando, pero su próxima gran presentación se reserva para 2027, mientras la compañía afirma que no desarrolla actualmente otro remake."
+      ]
+    }
+  },
+  {
     "id": "pokemon-unite-cierre-marzo-2027",
     "important": true,
     "category": {

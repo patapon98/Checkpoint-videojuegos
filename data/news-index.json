@@ -1,5 +1,55 @@
 [
   {
+    "id": "cronos-lazarus-expansion-diciembre",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "una campaña de terror en tercera persona protagonizada por el Pathfinder",
+        "llegará el 3 de diciembre a PS5, Xbox Series X|S y PC",
+        "la versión de Nintendo Switch 2 queda prevista para el primer trimestre de 2027"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-29",
+    "addedAt": "2026-10-30T15:25:09Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Cronos: Lazarus"
+      },
+      "copy": {
+        "es": "Cronos: Lazarus llegará el 3 de diciembre a PS5, Xbox Series y PC"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Cronos: Lazarus ampliará The New Dawn el 3 de diciembre"
+    },
+    "summary": {
+      "es": "Cronos: The New Dawn recibirá Lazarus, una campaña de terror en tercera persona protagonizada por el Pathfinder. La expansión llegará el 3 de diciembre a PS5, Xbox Series X|S y PC por 9,99 dólares."
+    },
+    "why": {
+      "es": "La historia funciona como precuela y explicará cómo el Pathfinder acabó convertido en el Warden, con combates más rápidos y agresivos. Además, la versión de Nintendo Switch 2 queda prevista para el primer trimestre de 2027."
+    },
+    "sources": [
+      {
+        "label": "Bloober Team",
+        "type": {
+          "es": "Anuncio oficial con fecha, plataformas, precio y contenido de la expansión"
+        },
+        "url": "https://www.blooberteam.com/news/2026/10/29/cronos-lazarus-launches-on-december-3-for-pc-playstation-5-and-xbox-series-xs"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Lazarus se sitúa antes de los acontecimientos de Cronos: The New Dawn y sigue una misión de reactivación que la Collective quiere mantener oculta. El Tracker perseguirá al protagonista para impedir que la complete.",
+        "Bloober Team plantea una variante más agresiva de su terror de supervivencia, con encuentros que exigen reaccionar con rapidez y administrar los recursos bajo mayor presión. La campaña también profundizará en la agenda de la Collective."
+      ]
+    }
+  },
+  {
     "id": "dune-awakening-blood-and-ice-expansion",
     "important": true,
     "emphasis": {

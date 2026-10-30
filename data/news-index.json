@@ -1,5 +1,69 @@
 [
   {
+    "id": "dune-awakening-blood-and-ice-expansion",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "una expansión gratuita con unas 35 horas de progresión",
+        "un mapa completamente nuevo llamado Cuenca Polar",
+        "el juego sin conexión llegará en noviembre y el juego cruzado completo en enero de 2027"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-10-29",
+    "addedAt": "2026-10-30T09:26:26Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Dune: Awakening"
+      },
+      "copy": {
+        "es": "Dune: Awakening recibirá la expansión gratuita Blood and Ice el 1 de diciembre"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Dune: Awakening recibirá la expansión gratuita Blood and Ice el 1 de diciembre"
+    },
+    "summary": {
+      "es": "Dune: Awakening ampliará Arrakis el 1 de diciembre con Blood and Ice, una expansión gratuita con unas 35 horas de progresión. La actualización llevará la supervivencia a un mapa completamente nuevo llamado Cuenca Polar, dividido entre tundra y casquete de hielo."
+    },
+    "why": {
+      "es": "El nuevo territorio obliga a sustituir las estrategias contra el calor por equipo, recursos y sistemas de temperatura adaptados al frío. Funcom también confirma que el juego sin conexión llegará en noviembre y el juego cruzado completo en enero de 2027."
+    },
+    "sources": [
+      {
+        "label": "Dune: Awakening",
+        "type": {
+          "es": "Anuncio oficial con fecha, mapa, contenido y hoja de ruta"
+        },
+        "url": "https://duneawakening.com/es/news/free-blood-and-ice-expansion/"
+      },
+      {
+        "label": "Funcom",
+        "type": {
+          "es": "Comunicado oficial de la expansión gratuita y sus nuevas funciones"
+        },
+        "url": "https://pr.funcom.com/Dune-Awakenings-free-Blood-and-Ice-expansion-launches-December-1"
+      },
+      {
+        "label": "Bandai Namco Entertainment Europe",
+        "type": {
+          "es": "Publicación oficial con plataformas, duración y sistemas anunciados"
+        },
+        "url": "https://en.bandainamcoent.eu/dune/news/dune-awakenings-free-blood-and-ice-expansion-launches-december-1"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La Cuenca Polar introduce dos biomas conectados. La tundra alberga fortalezas de familias dedicadas al comercio de agua, mientras el casquete de hielo concentra los recursos más valiosos y exige fabricar equipo exclusivo para soportar las bajas temperaturas.",
+        "Blood and Ice añadirá módulos para vehículos, aumentos y rasgos de especialización, además de un menú para seguir eventos con historias y recompensas. En enero será posible copiar personajes entre servidores multijugador, partidas individuales y determinados servidores privados."
+      ]
+    }
+  },
+  {
     "id": "assassins-creed-valhalla-nueva-partida-plus",
     "important": false,
     "emphasis": {

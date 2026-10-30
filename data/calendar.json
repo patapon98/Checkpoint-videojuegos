@@ -5026,6 +5026,58 @@
       "trailer": "https://www.youtube.com/watch?v=VQRLujxTm3c"
     },
     {
+      "id": "dune-awakening-blood-and-ice",
+      "title": "Dune: Awakening – Blood and Ice",
+      "headingHtml": "Dune: Awakening – Blood and Ice <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2026-12-01",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Dune: Awakening – Blood and Ice",
+        "src": "https://imgeucdn.gamespress.com/cdn/files/Funcom/2022/08/191718-dc49bbb6/DA_LOGO_72DPI_4K.png?bgcolor=transparent&format=png&mode=max&otf=y&quality=90&sky=70922abce8ee202e3e596a24180eef1ae13934e34c31c4cc71e6b2edf0aa9a6f&w=240",
+        "alt": "Logotipo oficial de Dune: Awakening – Blood and Ice",
+        "className": "fit-contain",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://pr.funcom.com/Dune-Awakenings-free-Blood-and-Ice-expansion-launches-December-1",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Dune: Awakening – Blood and Ice"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://pr.funcom.com/Dune-Awakenings-free-Blood-and-Ice-expansion-launches-December-1",
+        "official": true,
+        "host": "pr.funcom.com",
+        "checkedAt": "2026-10-30",
+        "evidence": {
+          "title": "Dune: Awakening – Blood and Ice",
+          "releaseDate": "2026-12-01",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=Qa-b9P8RzqE"
+    },
+    {
       "id": "hela-of-mice-and-magic",
       "title": "Hela: of Mice & Magic",
       "headingHtml": "Hela: of Mice &amp; Magic",

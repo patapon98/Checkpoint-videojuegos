@@ -1,0 +1,58 @@
+{
+  "id": "romero-games-nuevo-editor-shooter",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ha firmado con un nuevo editor para mantener en marcha su shooter sin anunciar",
+      "ha reincorporado a diez responsables",
+      "el juego ha sido rediseñado por completo para la plantilla actual"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-10-30",
+  "publishedAt": "2026-10-30T13:42:00Z",
+  "addedAt": "2026-10-31T03:17:05Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Romero Games"
+    },
+    "copy": {
+      "es": "Romero Games rescata su shooter con un nuevo editor y recupera parte del equipo"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Romero Games rescata su shooter con un nuevo editor y recupera parte del equipo"
+  },
+  "summary": {
+    "es": "Romero Games ha firmado con un nuevo editor para mantener en marcha su shooter sin anunciar tras perder la financiación de Xbox. El estudio ha reincorporado a diez responsables y trabaja ahora con un equipo de unas 15 o 16 personas."
+  },
+  "why": {
+    "es": "John Romero explica que no terminarán el proyecto original para 110 empleados: el juego ha sido rediseñado por completo para la plantilla actual, aunque reutiliza personajes, armas, arte y código. El editor aún no ha sido identificado."
+  },
+  "sources": [
+    {
+      "label": "Romero Games",
+      "type": {
+        "es": "Confirmación oficial de la continuidad y el nuevo alcance del shooter"
+      },
+      "url": "https://www.romerogames.com/"
+    },
+    {
+      "label": "Video Games Chronicle",
+      "type": {
+        "es": "Entrevista directa con John Romero sobre el nuevo editor, el equipo y el rediseño"
+      },
+      "url": "https://www.videogameschronicle.com/news/john-romero-confirms-his-axed-xbox-game-has-a-new-publisher-and-hes-rehired-some-staff/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Tras perder el acuerdo de publicación, el estudio pasó de unas 110 personas a solo cinco. La nueva financiación le ha permitido recuperar a diez antiguos responsables de área y adaptar la producción a una estructura mucho más pequeña.",
+      "Romero Games conserva la propiedad intelectual, el arte y el código del desarrollo cancelado, pero no pretende completar aquella versión. El editor no impondrá objetivos creativos y todavía no se han comunicado el nombre, las plataformas ni una fecha."
+    ]
+  }
+}

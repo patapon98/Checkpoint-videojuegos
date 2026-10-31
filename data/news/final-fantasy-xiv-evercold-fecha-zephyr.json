@@ -1,0 +1,70 @@
+{
+  "id": "final-fantasy-xiv-evercold-fecha-zephyr",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "el 23 de febrero de 2027",
+      "Zephyr, el segundo trabajo nuevo de la expansión",
+      "el modo de combate Evolved, la dificultad Fierce, el sistema de recompensas Seasons"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-10-31",
+  "addedAt": "2026-10-31T08:42:08Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Final Fantasy XIV: Evercold"
+    },
+    "copy": {
+      "es": "Final Fantasy XIV: Evercold llegará el 23 de febrero de 2027"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Final Fantasy XIV: Evercold llegará el 23 de febrero con Zephyr"
+  },
+  "summary": {
+    "es": "Square Enix lanzará Final Fantasy XIV: Evercold el 23 de febrero de 2027 y ha presentado a Zephyr, el segundo trabajo nuevo de la expansión. Será un DPS físico a distancia que combinará ballesta y el apoyo del familiar aviar Nephele."
+  },
+  "why": {
+    "es": "Las reservas abrirán el 4 de noviembre y el acceso anticipado está previsto para el 19 de febrero. La presentación también ha detallado el modo de combate Evolved, la dificultad Fierce, el sistema de recompensas Seasons y la incursión con Evangelion."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=4qHEQ2CyOoA",
+    "label": {
+      "es": "Ver el tráiler oficial completo"
+    }
+  },
+  "sources": [
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Comunicado oficial con la fecha, Zephyr y las novedades de Evercold"
+      },
+      "url": "https://press.uk.square-enix.com/en-GB/ZEPHYR-UNVEILED-AS-SECOND-NEW-JOB-FOR-FINAL-FANTASY-XIV-EVERCOLD-SET-T"
+    },
+    {
+      "label": "Final Fantasy XIV Lodestone",
+      "type": {
+        "es": "Anuncio oficial de la fecha de lanzamiento y el acceso anticipado"
+      },
+      "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/8874f1c53cc82ba16ae400053034af16e65dbe3f"
+    },
+    {
+      "label": "Final Fantasy XIV",
+      "type": {
+        "es": "Página oficial de los nuevos trabajos Bastion y Zephyr"
+      },
+      "url": "https://na.finalfantasyxiv.com/evercold/job/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Zephyr será el segundo trabajo nuevo de Evercold junto a Bastion. Este DPS físico a distancia empleará una ballesta y combatirá con Nephele, un familiar aviar, mientras la expansión introducirá las variantes de combate Evolved y Reborn y elevará el nivel máximo a 110.",
+      "Evercold llegará a PlayStation 5, PlayStation 4, Xbox Series X|S, PC y Mac. Además de la fecha, Square Enix confirmó las reservas para el 4 de noviembre, el acceso anticipado del 19 de febrero, la nueva dificultad Fierce y una incursión de ocho jugadores basada en Evangelion."
+    ]
+  }
+}

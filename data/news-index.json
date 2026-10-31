@@ -1,5 +1,69 @@
 [
   {
+    "id": "spirit-crossing-fecha-lanzamiento-noviembre",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "el 16 de noviembre de 2026",
+        "una comunidad de hasta 100 personas en línea",
+        "la primera llegada del proyecto a consolas"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-10-28",
+    "addedAt": "2026-10-31T17:52:22Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Spirit Crossing"
+      },
+      "copy": {
+        "es": "Spirit Crossing llegará el 16 de noviembre a PC y Nintendo Switch"
+      }
+    },
+    "tone": "launch",
+    "title": {
+      "es": "Spirit Crossing llegará el 16 de noviembre a PC y Nintendo Switch"
+    },
+    "summary": {
+      "es": "Spry Fox lanzará Spirit Crossing el 16 de noviembre de 2026 en PC, Nintendo Switch y Switch 2. El MMO de vida colaborativa de los creadores de Cozy Grove permitirá jugar en solitario o compartir su mundo con una comunidad de hasta 100 personas en línea."
+    },
+    "why": {
+      "es": "El estreno marca la salida de la fase beta y la primera llegada del proyecto a consolas. Los jugadores podrán construir una casa, personalizar su personaje, ayudar a espíritus y colaborar para contener tormentas mágicas en un mundo persistente sobre las nubes."
+    },
+    "sources": [
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Resumen oficial del Indie World con fecha, plataformas y contenido"
+        },
+        "url": "https://www.nintendo.com/us/whatsnew/new-indie-world-showcase-features-cozy-and-chaotic-fun-for-nintendo-switch-2-and-nintendo-switch/"
+      },
+      {
+        "label": "Nintendo Store",
+        "type": {
+          "es": "Ficha oficial de Switch 2 con fecha y capacidad en línea"
+        },
+        "url": "https://www.nintendo.com/us/store/products/spirit-crossing-switch-2/"
+      },
+      {
+        "label": "Spry Fox",
+        "type": {
+          "es": "Comunicado oficial distribuido en Games Press con fecha y plataformas"
+        },
+        "url": "https://www.gamespress.com/pt/Cozy-MMO-Spirit-Crossing-launches-November-16th"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Spirit Crossing propone recorrer un archipiélago situado sobre las nubes, ayudar a espíritus y reparar vínculos entre mundos mientras se afrontan tormentas mágicas. La experiencia combina exploración, recolección, construcción y actividades tranquilas como pescar o conversar junto a una hoguera.",
+        "La personalización incluirá cientos de peinados, tintes, prendas, prótesis y gestos, además de herramientas para diseñar una casa en la montaña. Spry Fox permitirá avanzar en solitario o compartir el entorno con otros jugadores, sin exigir que todos realicen las mismas tareas al mismo tiempo."
+      ]
+    }
+  },
+  {
     "id": "final-fantasy-xiv-evercold-fecha-zephyr",
     "important": true,
     "emphasis": {

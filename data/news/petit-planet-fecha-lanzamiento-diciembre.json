@@ -1,0 +1,57 @@
+{
+  "id": "petit-planet-fecha-lanzamiento-diciembre",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el 4 de diciembre de 2026",
+      "será gratuito",
+      "cultivo, pesca, decoración, exploración y espacios sociales entre jugadores"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-10-30",
+  "addedAt": "2026-10-31T08:42:08Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Petit Planet"
+    },
+    "copy": {
+      "es": "Petit Planet se estrenará gratis el 4 de diciembre en PC y móviles"
+    }
+  },
+  "tone": "launch",
+  "title": {
+    "es": "Petit Planet se lanzará el 4 de diciembre en PC y móviles"
+  },
+  "summary": {
+    "es": "HoYoverse lanzará Petit Planet el 4 de diciembre de 2026 en PC, iOS y Android. Su primer simulador de vida galáctica será gratuito y permitirá construir un planeta propio, convivir con sus habitantes y explorar el Starsea."
+  },
+  "why": {
+    "es": "La predescarga comenzará el 1 de diciembre y el registro previo ya está abierto. El anuncio concreta la llegada del nuevo proyecto de HoYoverse, con cultivo, pesca, decoración, exploración y espacios sociales entre jugadores."
+  },
+  "sources": [
+    {
+      "label": "Petit Planet",
+      "type": {
+        "es": "Anuncio oficial de HoYoverse con fecha y plataformas"
+      },
+      "url": "https://planet.hoyoverse.com/en-us/home?detail=163596"
+    },
+    {
+      "label": "Epic Games Store",
+      "type": {
+        "es": "Ficha oficial para PC con fecha, precio y características"
+      },
+      "url": "https://store.epicgames.com/p/petit-planet-5f821d"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Petit Planet propone cultivar, pescar, cocinar, decorar y cuidar un planeta que crecerá con nuevos vecinos. Cada habitante tendrá personalidad propia, y sus historias y aficiones se integrarán en la rutina del simulador de vida de HoYoverse.",
+      "El viaje por el Starsea permitirá visitar otros planetas, reunir recursos y participar en actividades sociales con más jugadores en espacios compartidos. La predescarga arrancará el 1 de diciembre antes del estreno gratuito en PC, iOS y Android."
+    ]
+  }
+}

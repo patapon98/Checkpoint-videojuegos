@@ -4522,6 +4522,54 @@
       "trailer": null
     },
     {
+      "id": "resonance-of-fate-enhanced-remaster",
+      "title": "Resonance of Fate Enhanced Remaster",
+      "headingHtml": "Resonance of Fate Enhanced Remaster <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-10-30",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC (DLC para 4K/HD Edition)",
+      "image": {
+        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2807/047f6949e96599cd5839347cec1edb280aa960979f07a0d1.png",
+        "alt": "Resonance of Fate Enhanced Remaster",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/en-us/product/JP0062-PPSA39354_00-0293097849496234",
+        "title": "Ver en PlayStation Store",
+        "ariaLabel": "Ver Resonance of Fate Enhanced Remaster en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.tri-ace.co.jp/en/products/",
+        "official": true,
+        "host": "www.tri-ace.co.jp",
+        "checkedAt": "2026-10-31",
+        "evidence": {
+          "title": "Resonance of Fate Enhanced Remaster",
+          "releaseDate": "2026-10-30",
+          "platforms": [
+            "ps5",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "godzilla-destroy-all-monsters-melee",
       "title": "Godzilla: Destroy All Monsters Melee",
       "headingHtml": "Godzilla: Destroy All Monsters Melee <span class=\"tag-dlc\">Remaster</span>",
@@ -4657,6 +4705,52 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=Aer93YCNrRI"
+    },
+    {
+      "id": "stellar-blade-complete-edition-switch-2",
+      "title": "Stellar Blade Complete Edition",
+      "headingHtml": "Stellar Blade Complete Edition <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-05",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "src": "https://eve.shiftup.co.kr/ns2/assets/images/main/img_world_01.jpg",
+        "alt": "EVE explora una ciudad en ruinas en Stellar Blade Complete Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://eve.shiftup.co.kr/ns2/?lang=en",
+        "title": "Ver la web oficial",
+        "ariaLabel": "Ver la web oficial de Stellar Blade Complete Edition para Nintendo Switch 2"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://eve.shiftup.co.kr/ns2/?lang=en",
+        "official": true,
+        "host": "eve.shiftup.co.kr",
+        "checkedAt": "2026-10-31",
+        "evidence": {
+          "title": "Stellar Blade Complete Edition",
+          "releaseDate": "2026-11-05",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=4xMYdFHn-Zs"
     },
     {
       "id": "the-legend-of-zelda-ocarina-of-time",
@@ -5367,6 +5461,54 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=_KAo1wfqjiA"
+    },
+    {
+      "id": "petit-planet",
+      "title": "Petit Planet",
+      "headingHtml": "Petit Planet",
+      "date": "2026-12-04",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC · iOS · Android",
+      "image": {
+        "src": "https://cdn1.epicgames.com/spt-assets/ae150f8b84cc44e392fa96dcbf498a3d/petit-planet-1o4m5.png",
+        "alt": "Petit Planet",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://planet.hoyoverse.com/en-us/",
+        "title": "Ver la web oficial",
+        "ariaLabel": "Ver la web oficial de Petit Planet"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://planet.hoyoverse.com/en-us/home?detail=163596",
+        "official": true,
+        "host": "planet.hoyoverse.com",
+        "checkedAt": "2026-10-31",
+        "evidence": {
+          "title": "Petit Planet",
+          "releaseDate": "2026-12-04",
+          "platforms": [
+            "pc",
+            "ios",
+            "android"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
     },
     {
       "id": "attack-on-titan-3",

@@ -4532,8 +4532,6 @@
       ],
       "platformsHtml": "PS5 · PC (DLC para 4K/HD Edition)",
       "image": {
-        "provider": "rawg",
-        "query": "Resonance of Fate Enhanced Remaster",
         "src": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2807/047f6949e96599cd5839347cec1edb280aa960979f07a0d1.png",
         "alt": "Resonance of Fate Enhanced Remaster",
         "className": "",
@@ -4718,8 +4716,6 @@
       ],
       "platformsHtml": "Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "Stellar Blade Complete Edition",
         "src": "https://eve.shiftup.co.kr/ns2/assets/images/main/img_world_01.jpg",
         "alt": "EVE explora una ciudad en ruinas en Stellar Blade Complete Edition",
         "className": "",
@@ -5476,8 +5472,6 @@
       ],
       "platformsHtml": "PC · iOS · Android",
       "image": {
-        "provider": "rawg",
-        "query": "Petit Planet",
         "src": "https://cdn1.epicgames.com/spt-assets/ae150f8b84cc44e392fa96dcbf498a3d/petit-planet-1o4m5.png",
         "alt": "Petit Planet",
         "className": "",

@@ -5731,8 +5731,6 @@
       ],
       "platformsHtml": "PS5 · PC · iOS · Android",
       "image": {
-        "provider": "rawg",
-        "query": "Silver Palace",
         "src": "https://mma.prnasia.com/media2/2684901/KV_EN.jpg?p=publish",
         "alt": "Silver Palace",
         "className": "",
@@ -6702,8 +6700,6 @@
       ],
       "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch 2",
       "image": {
-        "provider": "rawg",
-        "query": "FINAL FANTASY XIV: Evercold",
         "src": "https://lds-img.finalfantasyxiv.com/promo/h/i/8s7WaHzghuB0OpDke4-qp_tip0.jpg",
         "alt": "FINAL FANTASY XIV: Evercold",
         "className": "",

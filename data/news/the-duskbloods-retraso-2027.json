@@ -1,0 +1,57 @@
+{
+  "id": "the-duskbloods-retraso-2027",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "retrasa The Duskbloods de 2026 a 2027",
+      "ajustar sus reglas y equilibrio",
+      "mantiene el PvPvE para hasta ocho participantes"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-10-29",
+  "addedAt": "2026-11-01T18:27:24Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "The Duskbloods"
+    },
+    "copy": {
+      "es": "The Duskbloods retrasa su lanzamiento a 2027"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "The Duskbloods retrasa su lanzamiento a 2027"
+  },
+  "summary": {
+    "es": "FromSoftware retrasa The Duskbloods de 2026 a 2027. El multijugador de acción exclusivo de Nintendo Switch 2 necesitará más tiempo para ajustar sus reglas y equilibrio tras la prueba de red celebrada en agosto."
+  },
+  "why": {
+    "es": "El estudio quiere elevar la profundidad estratégica y las distintas formas de abordar el combate que los jugadores valoraron durante la prueba. La nueva ventana sigue sin concretar mes o fecha y mantiene el PvPvE para hasta ocho participantes."
+  },
+  "sources": [
+    {
+      "label": "FromSoftware",
+      "type": {
+        "es": "Comunicado oficial sobre el retraso y sus motivos"
+      },
+      "url": "https://www.fromsoftware.jp/jp/pressrelease/20261029_theduskbloods_postponement.html"
+    },
+    {
+      "label": "Kadokawa",
+      "type": {
+        "es": "Comunicado oficial en inglés con la nueva ventana y los datos del juego"
+      },
+      "url": "https://group.kadokawa.co.jp/global/information/news_release/2026103001_en.html"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "The Duskbloods es un juego de acción multijugador en el que los Bloodsworn compiten por la llamada First Blood. Las partidas combinarán enfrentamientos entre jugadores y combates contra enemigos en línea con hasta ocho participantes.",
+      "FromSoftware utilizará el tiempo adicional para realizar los ajustes finales de reglas y equilibrio a partir de la respuesta obtenida en la prueba de red de agosto. El proyecto continúa anunciado únicamente para Nintendo Switch 2 y todavía no tiene una fecha concreta dentro de 2027."
+    ]
+  }
+}

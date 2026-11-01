@@ -5721,6 +5721,56 @@
       "trailer": "https://www.youtube.com/watch?v=BwYNNQJO-AE"
     },
     {
+      "id": "silver-palace",
+      "title": "Silver Palace",
+      "headingHtml": "Silver Palace",
+      "date": "2026-12-14",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC · iOS · Android",
+      "image": {
+        "src": "https://mma.prnasia.com/media2/2684901/KV_EN.jpg?p=publish",
+        "alt": "Silver Palace",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://silverpalace.elementagames.com/en-us",
+        "title": "Ver la web oficial",
+        "ariaLabel": "Ver la web oficial de Silver Palace"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.gamespress.com/en-US/Silver-Palace-Sets-Global-Launch-Date-for-December-14-2026",
+        "official": true,
+        "host": "www.gamespress.com",
+        "checkedAt": "2026-11-01",
+        "evidence": {
+          "title": "Silver Palace",
+          "releaseDate": "2026-12-14",
+          "platforms": [
+            "ps5",
+            "pc",
+            "ios",
+            "android"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=HdbINn5ciIs"
+    },
+    {
       "id": "danganronpa-2x2",
       "title": "Danganronpa 2x2",
       "headingHtml": "Danganronpa 2x2",
@@ -6635,6 +6685,60 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=3iW1i78zFvk"
+    },
+    {
+      "id": "final-fantasy-xiv-evercold",
+      "title": "FINAL FANTASY XIV: Evercold",
+      "headingHtml": "FINAL FANTASY XIV: Evercold <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2027-02-23",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch 2",
+      "image": {
+        "src": "https://lds-img.finalfantasyxiv.com/promo/h/i/8s7WaHzghuB0OpDke4-qp_tip0.jpg",
+        "alt": "FINAL FANTASY XIV: Evercold",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://eu.finalfantasyxiv.com/evercold/",
+        "title": "Ver la web oficial",
+        "ariaLabel": "Ver la web oficial de FINAL FANTASY XIV: Evercold"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://press.uk.square-enix.com/ZEPHYR-UNVEILED-AS-SECOND-NEW-JOB-FOR-FINAL-FANTASY-XIV-EVERCOLD-SET-T",
+        "official": true,
+        "host": "press.uk.square-enix.com",
+        "checkedAt": "2026-11-01",
+        "evidence": {
+          "title": "FINAL FANTASY XIV: Evercold",
+          "releaseDate": "2027-02-23",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=4qHEQ2CyOoA"
     },
     {
       "id": "hyrule-warriors-age-of-calamity-definitive-edition",

@@ -4,14 +4,15 @@
   "emphasis": {
     "es": [
       "el 4 de diciembre de 2026",
-      "será gratuito",
-      "cultivo, pesca, decoración, exploración y espacios sociales entre jugadores"
+      "una versión para Nintendo Switch 2 prevista para 2027",
+      "todavía no ha concretado la fecha de esa versión"
     ]
   },
   "category": {
     "es": "Lanzamientos"
   },
   "date": "2026-10-30",
+  "updated": "2026-11-01",
   "addedAt": "2026-10-31T08:42:08Z",
   "featured": false,
   "ticker": {
@@ -19,26 +20,33 @@
       "es": "Petit Planet"
     },
     "copy": {
-      "es": "Petit Planet se estrenará gratis el 4 de diciembre en PC y móviles"
+      "es": "Petit Planet llegará el 4 de diciembre y tendrá versión para Switch 2 en 2027"
     }
   },
   "tone": "launch",
   "title": {
-    "es": "Petit Planet se lanzará el 4 de diciembre en PC y móviles"
+    "es": "Petit Planet llegará el 4 de diciembre y tendrá versión para Switch 2 en 2027"
   },
   "summary": {
-    "es": "HoYoverse lanzará Petit Planet el 4 de diciembre de 2026 en PC, iOS y Android. Su primer simulador de vida galáctica será gratuito y permitirá construir un planeta propio, convivir con sus habitantes y explorar el Starsea."
+    "es": "HoYoverse lanzará Petit Planet el 4 de diciembre de 2026 en PC, iOS y Android, y ha confirmado una versión para Nintendo Switch 2 prevista para 2027. Su simulador de vida galáctica será gratuito y permitirá construir un planeta propio, convivir con sus habitantes y explorar el Starsea."
   },
   "why": {
-    "es": "La predescarga comenzará el 1 de diciembre y el registro previo ya está abierto. El anuncio concreta la llegada del nuevo proyecto de HoYoverse, con cultivo, pesca, decoración, exploración y espacios sociales entre jugadores."
+    "es": "La predescarga comenzará el 1 de diciembre y el registro previo ya está abierto. El anuncio de Switch 2 amplía el alcance del nuevo proyecto de HoYoverse, aunque la compañía todavía no ha concretado la fecha de esa versión."
   },
   "sources": [
     {
       "label": "Petit Planet",
       "type": {
-        "es": "Anuncio oficial de HoYoverse con fecha y plataformas"
+        "es": "Anuncio oficial de HoYoverse con fecha y plataformas de lanzamiento"
       },
       "url": "https://planet.hoyoverse.com/en-us/home?detail=163596"
+    },
+    {
+      "label": "Petit Planet en YouTube",
+      "type": {
+        "es": "Programa oficial que confirma la versión de Nintendo Switch 2 para 2027"
+      },
+      "url": "https://www.youtube.com/watch?v=APPc11eocMM"
     },
     {
       "label": "Epic Games Store",
@@ -51,7 +59,7 @@
   "homeDetails": {
     "es": [
       "Petit Planet propone cultivar, pescar, cocinar, decorar y cuidar un planeta que crecerá con nuevos vecinos. Cada habitante tendrá personalidad propia, y sus historias y aficiones se integrarán en la rutina del simulador de vida de HoYoverse.",
-      "El viaje por el Starsea permitirá visitar otros planetas, reunir recursos y participar en actividades sociales con más jugadores en espacios compartidos. La predescarga arrancará el 1 de diciembre antes del estreno gratuito en PC, iOS y Android."
+      "El viaje por el Starsea permitirá visitar otros planetas, reunir recursos y participar en actividades sociales con más jugadores en espacios compartidos. La predescarga arrancará el 1 de diciembre antes del estreno gratuito en PC, iOS y Android; Switch 2 se incorporará en 2027."
     ]
   }
 }

@@ -1,5 +1,61 @@
 [
   {
+    "id": "gta-vi-precarga-212-gb",
+    "emphasis": {
+      "es": [
+        "La precarga de GTA VI comenzará el 10 de noviembre",
+        "la descarga ocupará hasta 212 GB",
+        "una diferencia útil para organizar la descarga"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-11-03",
+    "addedAt": "2026-11-03T18:23:52Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "GTA VI"
+      },
+      "copy": {
+        "es": "GTA VI abrirá la precarga el 10 de noviembre y ocupará hasta 212 GB"
+      }
+    },
+    "tone": "rockstar",
+    "title": {
+      "es": "GTA VI abrirá la precarga el 10 de noviembre y exigirá hasta 212 GB"
+    },
+    "summary": {
+      "es": "La precarga de GTA VI comenzará el 10 de noviembre para quienes hayan reservado el juego. Rockstar indica que la descarga ocupará hasta 212 GB según el dispositivo antes del lanzamiento del 19 de noviembre en PS5 y Xbox Series X|S."
+    },
+    "why": {
+      "es": "La fecha concreta y el tamaño convierten el anuncio en información práctica para preparar el estreno más seguido del año. PlayStation habilitará la descarga a medianoche local, mientras que Xbox lo hará a las 00:00 GMT: una diferencia útil para organizar la descarga."
+    },
+    "sources": [
+      {
+        "label": "Rockstar Games",
+        "type": {
+          "es": "Comunicado oficial con fechas, tamaño y condiciones de la precarga"
+        },
+        "url": "https://www.rockstargames.com/es/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Guía oficial de PlayStation para preparar la descarga en PS5"
+        },
+        "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "En PS5, la precarga se abrirá el 10 de noviembre a medianoche en cada zona horaria y Sony recomienda liberar al menos 212 GB. En Xbox Series X|S empezará de forma simultánea en todo el mundo a las 00:00 GMT del mismo día.",
+        "Rockstar añade que las ediciones con código dentro de la caja deberían llegar a las tiendas desde el 12 de noviembre. La descarga anticipada no modifica la fecha de acceso: GTA VI se desbloqueará el 19 de noviembre en ambas consolas."
+      ]
+    }
+  },
+  {
     "id": "nagoshi-studio-disolucion",
     "important": true,
     "emphasis": {

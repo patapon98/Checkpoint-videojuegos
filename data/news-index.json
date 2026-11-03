@@ -1,5 +1,75 @@
 [
   {
+    "id": "the-elder-scrolls-vi-sentinel",
+    "important": true,
+    "emphasis": {
+      "es": [
+        "se llamará The Elder Scrolls VI: Sentinel",
+        "la revelación oficial del nombre y la localización",
+        "no ha comunicado fecha, plataformas ni gameplay"
+      ]
+    },
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-03",
+    "addedAt": "2026-11-03T21:16:57Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "The Elder Scrolls VI"
+      },
+      "copy": {
+        "es": "The Elder Scrolls VI adopta oficialmente el subtítulo Sentinel"
+      }
+    },
+    "tone": "reveal",
+    "title": {
+      "es": "Bethesda confirma The Elder Scrolls VI: Sentinel"
+    },
+    "summary": {
+      "es": "Bethesda ha confirmado que su próximo RPG se llamará The Elder Scrolls VI: Sentinel. El estudio presenta el teaser como la revelación oficial del nombre y la localización, pero no ha comunicado fecha, plataformas ni gameplay."
+    },
+    "why": {
+      "es": "Es la primera actualización pública que concreta la identidad del proyecto desde su anuncio en 2018. El breve vídeo remite de forma explícita a Hammerfell y Bethesda confirma que el desarrollo continúa, aunque advierte de que todavía tardará en compartir más información."
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=mFu8t9735IY",
+      "label": {
+        "es": "Ver revelación oficial del nombre"
+      }
+    },
+    "sources": [
+      {
+        "label": "Bethesda Game Studios",
+        "type": {
+          "es": "Anuncio oficial del nombre, la localización y el estado del desarrollo"
+        },
+        "url": "https://twitter.com/BethesdaStudios/status/2117635316370563092"
+      },
+      {
+        "label": "Bethesda Softworks",
+        "type": {
+          "es": "Vídeo oficial de revelación de The Elder Scrolls VI: Sentinel"
+        },
+        "url": "https://www.youtube.com/watch?v=mFu8t9735IY"
+      },
+      {
+        "label": "Gematsu",
+        "type": {
+          "es": "Contexto sobre el anuncio y el contenido del teaser"
+        },
+        "url": "https://www.gematsu.com/2026/11/the-elder-scrolls-vi-sentinel-subtitle-announced"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "La revelación cierra el vídeo con el que Bethesda Game Studios celebra su 40.º aniversario. Todd Howard introduce el anuncio después de repasar la trayectoria del estudio y el logotipo de Sentinel aparece como primera concreción oficial del proyecto en más de ocho años.",
+        "El teaser acompaña el título con una cita atribuida a Yazar, un sacerdote polilla que se dirige a la reina Iradne de Hammerfell. Bethesda describe el material como una revelación del nombre y la localización, pero mantiene sin concretar el alcance del mundo, su ventana de lanzamiento y las plataformas previstas."
+      ]
+    }
+  },
+  {
     "id": "gta-vi-precarga-212-gb",
     "emphasis": {
       "es": [

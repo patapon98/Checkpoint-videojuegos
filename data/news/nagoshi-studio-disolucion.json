@@ -1,0 +1,64 @@
+{
+  "id": "nagoshi-studio-disolucion",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Nagoshi Studio se ha disuelto",
+      "entra ahora en proceso de liquidación",
+      "el futuro de Gang of Dragon queda sin aclarar"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-02",
+  "addedAt": "2026-11-03T02:44:43Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Nagoshi Studio"
+    },
+    "copy": {
+      "es": "Nagoshi Studio se disuelve y deja en el aire Gang of Dragon"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Nagoshi Studio se disuelve y deja en el aire Gang of Dragon"
+  },
+  "summary": {
+    "es": "Nagoshi Studio se ha disuelto por acuerdo de su junta de accionistas del 31 de octubre. El estudio fundado por Toshihiro Nagoshi con financiación de NetEase entra ahora en proceso de liquidación."
+  },
+  "why": {
+    "es": "El cierre pone fin al primer estudio independiente del creador de Yakuza y el futuro de Gang of Dragon queda sin aclarar. El proyecto fue anunciado en The Game Awards 2025, pero todavía no existe una confirmación oficial sobre su cancelación o posible continuidad."
+  },
+  "sources": [
+    {
+      "label": "Kanpo",
+      "type": {
+        "es": "Documento oficial del Gobierno de Japón con el anuncio de disolución"
+      },
+      "url": "https://www.kanpo.go.jp/20261102/20261102g00240/pdf/20261102g00240full00010200.pdf"
+    },
+    {
+      "label": "Nagoshi Studio",
+      "type": {
+        "es": "Página corporativa oficial con la fundación y la identidad del estudio"
+      },
+      "url": "https://www.nagoshistudio.com/company"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto sobre la disolución y el único proyecto anunciado por el estudio"
+      },
+      "url": "https://www.gematsu.com/2026/11/nagoshi-studio-shuts-down"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El boletín oficial japonés del 2 de noviembre recoge que la junta de accionistas acordó la disolución el 31 de octubre y abrió el periodo para que los acreedores presenten sus reclamaciones. Se trata de una liquidación societaria y no de un procedimiento de quiebra anunciado.",
+      "Toshihiro Nagoshi creó el estudio en noviembre de 2021 después de abandonar Sega, donde estuvo ligado a Yakuza, Judgment, Daytona USA y Super Monkey Ball. Su único juego presentado fue Gang of Dragon, una aventura de acción ambientada en Kabukicho y protagonizada por Ma Dong-seok."
+    ]
+  }
+}

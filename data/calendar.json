@@ -5274,6 +5274,62 @@
       "trailer": "https://www.youtube.com/watch?v=H1bPRyHqNws"
     },
     {
+      "id": "thief-the-dark-project-remastered",
+      "title": "Thief: The Dark Project Remastered",
+      "headingHtml": "Thief: The Dark Project Remastered <span class=\"tag-dlc\">Remaster</span>",
+      "date": "2026-12-03",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC · Switch 2 · Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Thief: The Dark Project Remastered",
+        "src": "https://atari.com/cdn/shop/files/TTDPR_023.jpg?v=1780609698&width=1600",
+        "alt": "Thief: The Dark Project Remastered",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://atari.com/products/thief-the-dark-project-remastered",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Thief: The Dark Project Remastered"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remaster",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://www.gamespress.com/Nightdive-Studios-Eidos-Montreal-And-Ataris-Thief-The-Dark-Project-Rem",
+        "official": true,
+        "host": "www.gamespress.com",
+        "checkedAt": "2026-11-04",
+        "evidence": {
+          "title": "Thief: The Dark Project Remastered",
+          "releaseDate": "2026-12-03",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=QuclsDMslyQ"
+    },
+    {
       "id": "warhammer-40000-dawn-of-war-iv",
       "title": "Warhammer 40,000: Dawn of War IV",
       "headingHtml": "Warhammer 40,000: Dawn of War IV",
@@ -7161,6 +7217,54 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=8EP14yju-rc"
+    },
+    {
+      "id": "stronghold-4",
+      "title": "Stronghold 4",
+      "headingHtml": "Stronghold 4",
+      "date": "2027-04-20",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Stronghold 4",
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2153760/954165955d8a2aa9827444bb1532cecea5b9c2dd/header_alt_assets_2.jpg?t=1792773563",
+        "alt": "Stronghold 4",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/2153760/Stronghold_4/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir Stronghold 4 a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://steamcommunity.com/app/2153760/allnews/",
+        "official": true,
+        "host": "steamcommunity.com",
+        "checkedAt": "2026-11-04",
+        "evidence": {
+          "title": "Stronghold 4",
+          "releaseDate": "2027-04-20",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=G5iFil7KIIg"
     },
     {
       "id": "persona-4-revival-switch-2",

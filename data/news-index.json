@@ -1,5 +1,62 @@
 [
   {
+    "id": "thief-the-dark-project-remastered-fecha",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "el 3 de diciembre",
+        "la campaña inédita The Tarnished Mirror",
+        "integra una historia nueva en el canon de la saga"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-11-02",
+    "addedAt": "2026-11-04T15:14:38Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Thief"
+      },
+      "copy": {
+        "es": "Thief volverá el 3 de diciembre con su remaster y una campaña inédita"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Thief: The Dark Project Remastered llegará el 3 de diciembre"
+    },
+    "summary": {
+      "es": "Nightdive Studios lanzará Thief: The Dark Project Remastered el 3 de diciembre en PS5, PS4, Xbox Series X|S, PC, Nintendo Switch 2 y Nintendo Switch. La edición reunirá el juego original, el contenido de Thief Gold y la campaña inédita The Tarnished Mirror."
+    },
+    "why": {
+      "es": "El remaster recupera una obra que ayudó a definir el sigilo en primera persona e integra una historia nueva en el canon de la saga. The Tarnished Mirror conectará el primer juego con Thief II: The Metal Age y añadirá nuevas facciones, escenarios y enemigos."
+    },
+    "sources": [
+      {
+        "label": "Nightdive Studios, Eidos-Montréal y Atari",
+        "type": {
+          "es": "Comunicado oficial con fecha, plataformas y contenido del remaster"
+        },
+        "url": "https://www.gamespress.com/en-US/Nightdive-Studios-Eidos-Montreal-And-Ataris-Thief-The-Dark-Project-Rem"
+      },
+      {
+        "label": "Atari",
+        "type": {
+          "es": "Ficha oficial con características y ediciones"
+        },
+        "url": "https://atari.com/products/thief-the-dark-project-remastered"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Nightdive emplea su motor KEX para actualizar texturas, modelos y animaciones, junto con controles modernos, selector de misiones y una rueda rápida de armas y objetos. La edición también conserva las misiones y mejoras añadidas por Thief Gold.",
+        "The Tarnished Mirror ha sido creada por responsables de la campaña comunitaria The Black Parade. Su historia parte de un robo que conduce a Garrett hacia una conspiración, nuevas alianzas y una necrópolis sumergida con elementos de terror lovecraftiano."
+      ]
+    }
+  },
+  {
     "id": "the-elder-scrolls-vi-sentinel",
     "important": true,
     "emphasis": {

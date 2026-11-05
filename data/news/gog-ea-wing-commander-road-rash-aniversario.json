@@ -1,0 +1,64 @@
+{
+  "id": "gog-ea-wing-commander-road-rash-aniversario",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "ediciones aniversario de seis clásicos de Wing Commander y Privateer 2",
+      "junto con Road Rash",
+      "la versión Legacy y una nueva versión adaptada"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-05",
+  "publishedAt": "2026-11-05T18:00:00Z",
+  "addedAt": "2026-11-05T18:32:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Wing Commander"
+    },
+    "copy": {
+      "es": "Wing Commander, Privateer 2 y Road Rash regresan con ediciones aniversario"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "GOG y EA restauran Wing Commander, Privateer 2 y Road Rash"
+  },
+  "summary": {
+    "es": "GOG y Electronic Arts han publicado ediciones aniversario de seis clásicos de Wing Commander y Privateer 2, junto con Road Rash. Cada título reúne la versión Legacy y una nueva versión adaptada, y quienes ya poseían los juegos en GOG reciben el paquete correspondiente."
+  },
+  "why": {
+    "es": "La colección recupera siete juegos del catálogo histórico de EA en versiones sin DRM preparadas para equipos actuales sin retirar las ediciones originales. Wing Commander: Prophecy también se incorpora al Programa de Preservación de GOG tras un trabajo conjunto con su comunidad de modding."
+  },
+  "sources": [
+    {
+      "label": "GOG",
+      "type": {
+        "es": "Página oficial con las siete ediciones aniversario disponibles"
+      },
+      "url": "https://www.gog.com/en/anniversary"
+    },
+    {
+      "label": "GOG",
+      "type": {
+        "es": "Presentación oficial de la colaboración con EA y la restauración"
+      },
+      "url": "https://www.youtube.com/watch?v=LcjptSS0-e4"
+    }
+  ],
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=LcjptSS0-e4",
+    "label": {
+      "es": "Ver el GOG Showcase oficial"
+    }
+  },
+  "homeDetails": {
+    "es": [
+      "La selección incluye Wing Commander y Wing Commander II en ediciones de 35.º aniversario, además de Wing Commander III, Wing Commander IV, Wing Commander: Prophecy, Privateer 2 y Road Rash en ediciones de 30.º aniversario. Los siete paquetes conservan la versión Legacy junto a la adaptación preparada para sistemas actuales.",
+      "GOG ha colaborado con EA y con responsables de modificaciones comunitarias para restaurar Wing Commander: Prophecy y añadir alternativas como el control con mando. Los usuarios que ya tenían cualquiera de los clásicos en su biblioteca reciben su edición aniversario sin tener que volver a comprarla."
+    ]
+  }
+}

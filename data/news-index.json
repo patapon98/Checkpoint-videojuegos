@@ -7776,54 +7776,62 @@
     "important": true,
     "emphasis": {
       "es": [
-        "el beneficio operativo de PlayStation aumentó un 37%",
-        "alcanzó 202.000 millones de yenes",
-        "125 millones de usuarios activos mensuales"
+        "el beneficio operativo de PlayStation aumentó un 83%",
+        "eleva a 700.000 millones de yenes su previsión anual",
+        "las ventas de PS5 bajaron a 2,6 millones de unidades"
       ]
     },
     "category": {
       "es": "Industria"
     },
     "date": "2026-07-31",
+    "updated": "2026-11-05",
     "featured": false,
     "ticker": {
       "keyword": {
         "es": "PlayStation"
       },
       "copy": {
-        "es": "El beneficio operativo de PlayStation creció un 37% pese a la caída del hardware"
+        "es": "PlayStation eleva un 83% su beneficio trimestral y mejora su previsión anual"
       }
     },
     "tone": "playstation",
     "title": {
-      "es": "El beneficio operativo de PlayStation creció un 37% pese a la caída del hardware"
+      "es": "PlayStation eleva un 83% su beneficio trimestral y mejora sus previsiones"
     },
     "summary": {
-      "es": "Entre abril y junio de 2026, el beneficio operativo de PlayStation aumentó un 37% y alcanzó 202.000 millones de yenes. Sony registró 125 millones de usuarios activos mensuales, mientras las ventas de PS5 bajaron hasta 1,6 millones de unidades."
+      "es": "Entre julio y septiembre de 2026, el beneficio operativo de PlayStation aumentó un 83% hasta 220.100 millones de yenes. Sony eleva a 700.000 millones de yenes su previsión anual, mientras las ventas de PS5 bajaron a 2,6 millones de unidades."
     },
     "why": {
-      "es": "La división mejora su rentabilidad aunque vende menos consolas y el tiempo total de juego retrocede un 4%. Sony ha elevado su previsión anual para el negocio de videojuegos y servicios de red."
+      "es": "La división casi duplicó su beneficio gracias al software de terceros, PlayStation Network y el tipo de cambio, aunque vendió menos consolas. Los usuarios activos mensuales crecieron hasta 127 millones y Sony revisó al alza tanto los ingresos como el beneficio anual del negocio."
     },
     "sources": [
       {
         "label": "Sony Group",
         "type": {
-          "es": "Resultados oficiales del primer trimestre fiscal"
+          "es": "Presentación oficial de resultados del segundo trimestre fiscal"
         },
-        "url": "https://www.sony.com/en/SonyInfo/IR/library/presen/er/"
+        "url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonypre.pdf"
+      },
+      {
+        "label": "Sony Group",
+        "type": {
+          "es": "Documento oficial con ventas de PS5 y usuarios activos"
+        },
+        "url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_supplement.pdf"
       },
       {
         "label": "Reuters",
         "type": {
-          "es": "Resultados, previsiones y ventas de PS5"
+          "es": "Contexto sobre resultados, previsiones y mercado de memoria"
         },
-        "url": "https://www.reuters.com/world/asia-pacific/sony-posts-40-rise-q1-profit-beating-estimates-2026-07-31/"
+        "url": "https://www.reuters.com/business/retail-consumer/sony-posts-45-q2-profit-rise-beating-estimates-2026-11-05/"
       }
     ],
     "homeDetails": {
       "es": [
-        "Los ingresos del segmento se mantuvieron prácticamente planos. El crecimiento del beneficio procedió de una combinación más favorable de software y servicios, control de costes y efectos del tipo de cambio, no de un aumento en la venta de consolas.",
-        "Sony vendió 1,6 millones de PS5 frente a 2,4 millones un año antes. La base mensual alcanzó un récord de 125 millones de cuentas, pero el tiempo total de juego cayó un 4%, una señal de que el alcance de la plataforma y la intensidad de uso no evolucionaron en la misma dirección."
+        "Los ingresos trimestrales de Game & Network Services crecieron un 9% hasta 1,2085 billones de yenes. Sony atribuye la mejora al tipo de cambio y al aumento de las ventas de servicios de red, juegos propios y títulos de terceros, frente al descenso de los ingresos de hardware.",
+        "Sony vendió 2,6 millones de PS5, por debajo de los 4 millones del mismo trimestre anterior, pero la base mensual subió de 119 a 127 millones de cuentas. Para el ejercicio completo, la compañía aumenta su previsión de ingresos del segmento a 4,83 billones de yenes y la de beneficio operativo a 700.000 millones."
       ]
     }
   },

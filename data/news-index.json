@@ -68,15 +68,16 @@
     "important": false,
     "emphasis": {
       "es": [
-        "ha abierto las inscripciones para probar dos servicios nuevos",
-        "un espacio para compartir capturas, vídeos, debates y encuestas",
-        "llegará a Linux y se rediseñará en Windows y Mac"
+        "GOG ha situado en 2027 el estreno de sus dos servicios nuevos",
+        "una nueva versión de GOG Galaxy que llegará a Linux",
+        "Las inscripciones para ambas pruebas ya están abiertas"
       ]
     },
     "category": {
       "es": "Plataformas"
     },
     "date": "2026-11-05",
+    "updated": "2026-11-06",
     "publishedAt": "2026-11-05T18:00:00Z",
     "addedAt": "2026-11-05T18:32:00Z",
     "featured": false,
@@ -85,26 +86,33 @@
         "es": "GOG Galaxy"
       },
       "copy": {
-        "es": "GOG Galaxy prepara su llegada a Linux y GOG Social abre su beta"
+        "es": "GOG Galaxy llegará a Linux en 2027 y GOG Social abre su beta"
       }
     },
     "tone": "platforms",
     "title": {
-      "es": "GOG Galaxy llegará a Linux y GOG Social abre sus inscripciones beta"
+      "es": "GOG Galaxy llegará a Linux en 2027 y GOG Social abre sus inscripciones beta"
     },
     "summary": {
-      "es": "GOG ha abierto las inscripciones para probar dos servicios nuevos: GOG Social, un espacio para compartir capturas, vídeos, debates y encuestas, y una nueva versión de GOG Galaxy que llegará a Linux y se rediseñará en Windows y Mac."
+      "es": "GOG ha situado en 2027 el estreno de sus dos servicios nuevos: GOG Social, un espacio para compartir capturas, vídeos, debates y encuestas, y una nueva versión de GOG Galaxy que llegará a Linux con un cliente más rápido, personalizable y rediseñado."
     },
     "why": {
-      "es": "La expansión lleva por primera vez el cliente oficial de GOG a Linux y añade una capa social propia vinculada a los juegos de la tienda. La compañía permite registrarse para ambas betas, pero todavía no ha comunicado sus fechas de lanzamiento."
+      "es": "La ventana oficial aclara que la expansión a Linux y la nueva capa social forman parte del plan de GOG para 2027. Las inscripciones para ambas pruebas ya están abiertas, pero la compañía todavía no ha concretado el calendario de acceso ni las distribuciones de Linux compatibles."
     },
     "sources": [
       {
         "label": "GOG",
         "type": {
-          "es": "Página oficial del showcase con acceso a las inscripciones beta"
+          "es": "Página oficial del aniversario con la ventana de 2027 y las inscripciones beta"
         },
         "url": "https://www.gog.com/en/anniversary"
+      },
+      {
+        "label": "GOG",
+        "type": {
+          "es": "Comunicado oficial sobre GOG Galaxy para Linux y la renovación del cliente"
+        },
+        "url": "https://www.gog.com/pl/news/we_re_celebrating_18_years_with_the_first_gog_showcase_restored_wing_commander_prophecy_gog_galaxy_announcements_and_more"
       },
       {
         "label": "GOG",
@@ -122,8 +130,8 @@
     },
     "homeDetails": {
       "es": [
-        "GOG Social se presenta como un espacio conectado con los juegos de la tienda donde la comunidad podrá compartir capturas y vídeos, abrir debates y crear encuestas. Por ahora el acceso se limita a una inscripción para la beta y GOG no ha detallado cuántos usuarios podrán entrar ni cuándo comenzará el despliegue general.",
-        "La nueva versión de GOG Galaxy amplía el cliente oficial a Linux y acompaña ese estreno con un rediseño para Windows y Mac. La página del showcase ya permite solicitar acceso a la beta, aunque la compañía no ha concretado una fecha de lanzamiento ni las distribuciones de Linux compatibles."
+        "GOG Social se presenta como un espacio conectado con los juegos de la tienda donde la comunidad podrá compartir capturas y vídeos, abrir debates y crear encuestas. La página oficial lo incluye en el hito de 2027 y permite apuntarse a la prueba, aunque todavía no detalla el calendario de acceso.",
+        "La nueva versión de GOG Galaxy también está prevista para 2027 y llevará por primera vez el cliente oficial a Linux. GOG promete una aplicación más rápida, personalizable y con una interfaz moderna, pero aún no ha especificado qué distribuciones serán compatibles."
       ]
     }
   },

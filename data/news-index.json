@@ -1,5 +1,133 @@
 [
   {
+    "id": "gog-ea-wing-commander-road-rash-aniversario",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "ediciones aniversario de seis clásicos de Wing Commander y Privateer 2",
+        "junto con Road Rash",
+        "la versión Legacy y una nueva versión adaptada"
+      ]
+    },
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-11-05",
+    "publishedAt": "2026-11-05T18:00:00Z",
+    "addedAt": "2026-11-05T18:32:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Wing Commander"
+      },
+      "copy": {
+        "es": "Wing Commander, Privateer 2 y Road Rash regresan con ediciones aniversario"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "GOG y EA restauran Wing Commander, Privateer 2 y Road Rash"
+    },
+    "summary": {
+      "es": "GOG y Electronic Arts han publicado ediciones aniversario de seis clásicos de Wing Commander y Privateer 2, junto con Road Rash. Cada título reúne la versión Legacy y una nueva versión adaptada, y quienes ya poseían los juegos en GOG reciben el paquete correspondiente."
+    },
+    "why": {
+      "es": "La colección recupera siete juegos del catálogo histórico de EA en versiones sin DRM preparadas para equipos actuales sin retirar las ediciones originales. Wing Commander: Prophecy también se incorpora al Programa de Preservación de GOG tras un trabajo conjunto con su comunidad de modding."
+    },
+    "sources": [
+      {
+        "label": "GOG",
+        "type": {
+          "es": "Página oficial con las siete ediciones aniversario disponibles"
+        },
+        "url": "https://www.gog.com/en/anniversary"
+      },
+      {
+        "label": "GOG",
+        "type": {
+          "es": "Presentación oficial de la colaboración con EA y la restauración"
+        },
+        "url": "https://www.youtube.com/watch?v=LcjptSS0-e4"
+      }
+    ],
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=LcjptSS0-e4",
+      "label": {
+        "es": "Ver el GOG Showcase oficial"
+      }
+    },
+    "homeDetails": {
+      "es": [
+        "La selección incluye Wing Commander y Wing Commander II en ediciones de 35.º aniversario, además de Wing Commander III, Wing Commander IV, Wing Commander: Prophecy, Privateer 2 y Road Rash en ediciones de 30.º aniversario. Los siete paquetes conservan la versión Legacy junto a la adaptación preparada para sistemas actuales.",
+        "GOG ha colaborado con EA y con responsables de modificaciones comunitarias para restaurar Wing Commander: Prophecy y añadir alternativas como el control con mando. Los usuarios que ya tenían cualquiera de los clásicos en su biblioteca reciben su edición aniversario sin tener que volver a comprarla."
+      ]
+    }
+  },
+  {
+    "id": "gog-galaxy-linux-social-beta",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "ha abierto las inscripciones para probar dos servicios nuevos",
+        "un espacio para compartir capturas, vídeos, debates y encuestas",
+        "llegará a Linux y se rediseñará en Windows y Mac"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-11-05",
+    "publishedAt": "2026-11-05T18:00:00Z",
+    "addedAt": "2026-11-05T18:32:00Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "GOG Galaxy"
+      },
+      "copy": {
+        "es": "GOG Galaxy prepara su llegada a Linux y GOG Social abre su beta"
+      }
+    },
+    "tone": "platforms",
+    "title": {
+      "es": "GOG Galaxy llegará a Linux y GOG Social abre sus inscripciones beta"
+    },
+    "summary": {
+      "es": "GOG ha abierto las inscripciones para probar dos servicios nuevos: GOG Social, un espacio para compartir capturas, vídeos, debates y encuestas, y una nueva versión de GOG Galaxy que llegará a Linux y se rediseñará en Windows y Mac."
+    },
+    "why": {
+      "es": "La expansión lleva por primera vez el cliente oficial de GOG a Linux y añade una capa social propia vinculada a los juegos de la tienda. La compañía permite registrarse para ambas betas, pero todavía no ha comunicado sus fechas de lanzamiento."
+    },
+    "sources": [
+      {
+        "label": "GOG",
+        "type": {
+          "es": "Página oficial del showcase con acceso a las inscripciones beta"
+        },
+        "url": "https://www.gog.com/en/anniversary"
+      },
+      {
+        "label": "GOG",
+        "type": {
+          "es": "Presentación oficial de GOG Social y del nuevo GOG Galaxy"
+        },
+        "url": "https://www.youtube.com/watch?v=LcjptSS0-e4"
+      }
+    ],
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=LcjptSS0-e4",
+      "label": {
+        "es": "Ver el GOG Showcase oficial"
+      }
+    },
+    "homeDetails": {
+      "es": [
+        "GOG Social se presenta como un espacio conectado con los juegos de la tienda donde la comunidad podrá compartir capturas y vídeos, abrir debates y crear encuestas. Por ahora el acceso se limita a una inscripción para la beta y GOG no ha detallado cuántos usuarios podrán entrar ni cuándo comenzará el despliegue general.",
+        "La nueva versión de GOG Galaxy amplía el cliente oficial a Linux y acompaña ese estreno con un rediseño para Windows y Mac. La página del showcase ya permite solicitar acceso a la beta, aunque la compañía no ha concretado una fecha de lanzamiento ni las distribuciones de Linux compatibles."
+      ]
+    }
+  },
+  {
     "id": "thief-the-dark-project-remastered-fecha",
     "important": false,
     "emphasis": {

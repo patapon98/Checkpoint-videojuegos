@@ -7550,9 +7550,9 @@
     "important": true,
     "emphasis": {
       "es": [
-        "Switch 2 alcanza 23,68 millones de consolas distribuidas",
-        "sumó 3,82 millones entre abril y junio de 2026",
-        "Tomodachi Life: Living the Dream supera los 8 millones vendidos al consumidor"
+        "el beneficio operativo de Nintendo aumentó un 49,1%",
+        "los ingresos bajaron un 12,1%",
+        "Switch 2 vendió 6,49 millones de consolas"
       ]
     },
     "category": {
@@ -7560,38 +7560,53 @@
     },
     "date": "2026-08-06",
     "publishedAt": "2026-08-06T09:47:00Z",
+    "updated": "2026-11-05",
     "featured": false,
     "ticker": {
       "keyword": {
         "es": "Nintendo"
       },
       "copy": {
-        "es": "Switch 2 supera los 23,68 millones y Tomodachi Life rebasa los 8 millones"
+        "es": "Nintendo eleva un 49,1% su beneficio semestral pese a vender menos Switch 2"
       }
     },
     "tone": "nintendo",
     "title": {
-      "es": "Switch 2 supera los 23,68 millones y Tomodachi Life ya vende más de 8 millones"
+      "es": "Nintendo eleva un 49,1% su beneficio semestral pese a vender menos Switch 2"
     },
     "summary": {
-      "es": "Nintendo distribuyó 3,82 millones de Switch 2 entre abril y junio de 2026, elevando el total acumulado de la consola a 23,68 millones. Tomodachi Life: Living the Dream, por su parte, ya ha superado los 8 millones de copias vendidas al consumidor en todo el mundo."
+      "es": "Entre abril y septiembre de 2026, el beneficio operativo de Nintendo aumentó un 49,1% hasta 216.500 millones de yenes, aunque los ingresos bajaron un 12,1%. Switch 2 vendió 6,49 millones de consolas, un 37,4% menos interanual."
     },
     "why": {
-      "es": "Switch 2 mantiene un ritmo sólido durante su segundo año, mientras que Tomodachi Life confirma que el regreso de la saga se ha convertido en uno de los mayores éxitos recientes de Nintendo."
+      "es": "La mayor proporción de software, el crecimiento del negocio digital y el reembolso de aranceles elevaron la rentabilidad pese al descenso del hardware. Nintendo mantiene sus previsiones anuales y Tomodachi Life: Living the Dream alcanza 8,81 millones de unidades."
     },
     "sources": [
       {
         "label": "Nintendo",
         "type": {
-          "es": "Resultados financieros y documento explicativo"
+          "es": "Resultados oficiales del primer semestre fiscal"
         },
-        "url": "https://www.nintendo.co.jp/ir/en/finance/earnings/index.html"
+        "url": "https://www.nintendo.co.jp/ir/pdf/2026/261105e.pdf"
+      },
+      {
+        "label": "Nintendo",
+        "type": {
+          "es": "Presentación oficial con ventas de hardware y software"
+        },
+        "url": "https://www.nintendo.co.jp/ir/pdf/2026/261105_3e.pdf"
+      },
+      {
+        "label": "Reuters",
+        "type": {
+          "es": "Contexto sobre resultados y suministro de memoria"
+        },
+        "url": "https://www.reuters.com/business/retail-consumer/sony-posts-45-q2-profit-rise-beating-estimates-2026-11-05/"
       }
     ],
     "homeDetails": {
       "es": [
-        "El software de Switch 2 vendió 9,46 millones de unidades durante el trimestre, un 9,2% más interanual. Las ventas trimestrales de hardware bajaron un 34,4% frente al trimestre de lanzamiento, una comparación especialmente exigente por el estreno de la consola.",
-        "Nintendo registra 7,94 millones de unidades de Tomodachi Life distribuidas hasta el 30 de junio, mientras que la cifra superior a 8 millones corresponde a ventas estimadas al consumidor hasta el 5 de agosto. Son métricas distintas: sell-in frente a sell-through."
+        "Nintendo atribuye el aumento del beneficio a unas ventas estables de software, a su mayor peso dentro del negocio y al reembolso de aranceles estadounidenses que había registrado como coste. Las ventas digitales crecieron un 60,5% hasta 249.600 millones de yenes y ya representan el 60,7% del software.",
+        "Switch 2 colocó 6,49 millones de consolas y 24,49 millones de juegos durante el semestre; el hardware bajó, pero el software creció un 18,8%. Splatoon Raiders alcanzó 2,42 millones, Fire Emblem: Fortune's Weave 1,34 millones y Tomodachi Life: Living the Dream 8,81 millones."
       ]
     }
   },

@@ -6562,45 +6562,6 @@
       "trailer": "https://www.youtube.com/watch?v=fn1EREGsdFg"
     },
     {
-      "id": "god-of-war-laufey",
-      "title": "God of War Laufey",
-      "headingHtml": "God of War Laufey",
-      "date": "2027-02-16",
-      "platformKeys": [
-        "ps5"
-      ],
-      "platformsHtml": "PS5 (exclusivo)",
-      "image": {
-        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2715/d6da00e85166c72dc55aad6c3062524da9bfd74e8786718d.jpg?thumb=true&w=420",
-        "alt": "God of War Laufey",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": true
-      },
-      "store": {
-        "url": "https://store.playstation.com/en-us/concept/10009461",
-        "title": "Wishlist en PlayStation Store",
-        "ariaLabel": "Wishlist en PlayStation Store"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": null,
-      "badge": {
-        "class": "hype hype-high",
-        "text": "Hype alto"
-      },
-      "priority": 70,
-      "source": {
-        "url": "https://store.playstation.com/en-us/concept/10009461",
-        "official": false,
-        "host": "store.playstation.com",
-        "checkedAt": null
-      },
-      "legacy": true,
-      "trailer": "https://www.youtube.com/watch?v=HLMX2w3cwuE"
-    },
-    {
       "id": "romancing-saga-3-destinies-united",
       "title": "Romancing SaGa 3: Destinies United",
       "headingHtml": "Romancing SaGa 3: Destinies United <span class=\"tag-dlc\">Remake</span>",
@@ -7261,6 +7222,52 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=G5iFil7KIIg"
+    },
+    {
+      "id": "god-of-war-laufey",
+      "title": "God of War Laufey",
+      "headingHtml": "God of War Laufey",
+      "date": "2027-05-20",
+      "platformKeys": [
+        "ps5"
+      ],
+      "platformsHtml": "PS5 (exclusivo)",
+      "image": {
+        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2715/d6da00e85166c72dc55aad6c3062524da9bfd74e8786718d.jpg",
+        "alt": "God of War Laufey",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/en-us/concept/10009461",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de God of War Laufey en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://x.com/SonySantaMonica/status/2118025571020271817",
+        "official": true,
+        "host": "x.com",
+        "checkedAt": "2026-11-05",
+        "evidence": {
+          "title": "God of War Laufey",
+          "releaseDate": "2027-05-20",
+          "platforms": [
+            "ps5"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=HLMX2w3cwuE"
     },
     {
       "id": "persona-4-revival-switch-2",

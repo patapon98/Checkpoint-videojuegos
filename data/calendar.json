@@ -4897,6 +4897,54 @@
       "trailer": "https://www.youtube.com/watch?v=CL36wpvgeis"
     },
     {
+      "id": "hard-west-2-consoles",
+      "title": "Hard West 2",
+      "headingHtml": "Hard West 2 <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-10",
+      "platformKeys": [
+        "ps5",
+        "xbox"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1282410/header.jpg",
+        "alt": "Hard West 2 para PS5 y Xbox Series X|S",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/es-es/concept/10016848",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Hard West 2 en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.gamespress.com/es/Hard-West-2-a-turn-based-strategy-game-set-in-the-American-Wild-West-i",
+        "official": true,
+        "host": "www.gamespress.com",
+        "checkedAt": "2026-11-06",
+        "evidence": {
+          "title": "Hard West 2",
+          "releaseDate": "2026-11-10",
+          "platforms": [
+            "ps5",
+            "xbox"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=818O9uExW9o"
+    },
+    {
       "id": "warhammer-survivors",
       "title": "Warhammer Survivors",
       "headingHtml": "Warhammer Survivors",

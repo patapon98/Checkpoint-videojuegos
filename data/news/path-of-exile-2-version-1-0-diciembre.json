@@ -3,15 +3,16 @@
   "important": true,
   "emphasis": {
     "es": [
-      "saldrá del acceso anticipado el 11 de diciembre",
-      "pasará a ser completamente gratuito",
-      "la clase Duelista"
+      "los actos 5 y 6",
+      "el regreso a Oriath",
+      "la clase Sombra"
     ]
   },
   "category": {
     "es": "Lanzamientos"
   },
   "date": "2026-08-26",
+  "updated": "2026-11-06",
   "addedAt": "2026-08-26T02:58:10Z",
   "featured": false,
   "ticker": {
@@ -19,18 +20,18 @@
       "es": "Path of Exile 2"
     },
     "copy": {
-      "es": "Path of Exile 2 lanzará su versión 1.0 gratuita el 11 de diciembre"
+      "es": "Path of Exile 2 sumará los actos 5 y 6 y la clase Sombra el 11 de diciembre"
     }
   },
   "tone": "launch",
   "title": {
-    "es": "Path of Exile 2 fija para diciembre su lanzamiento completo y gratuito"
+    "es": "Path of Exile 2 completará su campaña con los actos 5 y 6 y la clase Sombra"
   },
   "summary": {
-    "es": "Grinding Gear Games ha anunciado que Path of Exile 2 saldrá del acceso anticipado el 11 de diciembre. Con la versión 1.0, el RPG de acción pasará a ser completamente gratuito en PS5, Xbox Series X|S y PC."
+    "es": "Grinding Gear Games ha ampliado en ExileCon los detalles de la versión 1.0 de Path of Exile 2, prevista para el 11 de diciembre: el lanzamiento gratuito incorporará los actos 5 y 6, el regreso a Oriath y la clase Sombra."
   },
   "why": {
-    "es": "El lanzamiento completo incorporará la clase Duelista y ampliará la campaña, el final del juego, la progresión, las habilidades, el equipo, los jefes y las zonas disponibles."
+    "es": "La revelación concreta dos de los principales huecos del acceso anticipado. La campaña podrá recorrerse completa hasta Oriath y el Sombra se sumará como nueva clase jugable junto al Duelista ya anunciado."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=BwYNNQJO-AE",
@@ -54,17 +55,24 @@
       "url": "https://store.steampowered.com/app/2694490/Path_of_Exile_2/"
     },
     {
-      "label": "PlayStation Blog",
+      "label": "Path of Exile",
       "type": {
-        "es": "Recapitulación oficial de Gamescom y confirmación del lanzamiento en PS5"
+        "es": "Tráiler oficial del regreso a Oriath y de los actos 5 y 6"
       },
-      "url": "https://blog.playstation.com/2026/08/25/gamescom-opening-night-live-highlights-19-games-coming-to-playstation/"
+      "url": "https://www.youtube.com/watch?v=GiJ_2QdjoWg"
+    },
+    {
+      "label": "Path of Exile",
+      "type": {
+        "es": "Tráiler oficial de la clase Sombra para la versión 1.0"
+      },
+      "url": "https://www.youtube.com/watch?v=FD-lo79LtAM"
     }
   ],
   "homeDetails": {
     "es": [
       "La versión 1.0 cerrará una etapa de acceso anticipado iniciada en diciembre de 2024. Grinding Gear Games mantendrá el modelo free-to-play del primer juego, por lo que dejará de ser necesario adquirir uno de los paquetes de colaborador que dan acceso a la versión actual.",
-      "El Duelista debutó en Opening Night Live como especialista en espadas y será una de las incorporaciones del estreno completo. El estudio también prevé añadir dos actos, más clases y ascendencias, nuevas gemas y objetos, además de ampliar las áreas, los monstruos, los jefes y el contenido de final de juego."
+      "La campaña añadirá los actos 5 y 6 y llevará de nuevo a los jugadores a una Oriath devastada. El Sombra se incorporará como clase jugable en el lanzamiento completo, junto al Duelista y las espadas que el estudio había presentado previamente."
     ]
   }
 }

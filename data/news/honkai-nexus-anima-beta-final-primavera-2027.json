@@ -1,0 +1,70 @@
+{
+  "id": "honkai-nexus-anima-beta-final-primavera-2027",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el 25 de noviembre de 2026",
+      "su lanzamiento está previsto para la primavera de 2027",
+      "nuevos personajes, ánimas, regiones y modos de juego"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-05",
+  "addedAt": "2026-11-06T15:20:41Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Honkai: Nexus Anima"
+    },
+    "copy": {
+      "es": "Honkai: Nexus Anima abrirá su beta final el 25 de noviembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Honkai: Nexus Anima fija su beta final para el 25 de noviembre"
+  },
+  "summary": {
+    "es": "HoYoverse iniciará la beta cerrada final de Honkai: Nexus Anima el 25 de noviembre de 2026 en PC, iOS y Android. La prueba ampliará la historia y permitirá descubrir nuevos personajes, ánimas, regiones y modos de juego."
+  },
+  "why": {
+    "es": "Las inscripciones ya están abiertas y su lanzamiento está previsto para la primavera de 2027. El anuncio concreta por primera vez una ventana para el nuevo RPG gratuito de aventura y colección de criaturas de HoYoverse."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=eZoiElsK8xk",
+    "label": {
+      "es": "Ver gameplay oficial de la beta"
+    }
+  },
+  "sources": [
+    {
+      "label": "HoYoverse",
+      "type": {
+        "es": "Comunicado oficial con la fecha, las plataformas y la ventana de lanzamiento"
+      },
+      "url": "https://www.gamespress.com/es/Honkai-Nexus-Anima-Final-Closed-Beta-Recruitment-Now-Open"
+    },
+    {
+      "label": "Honkai: Nexus Anima",
+      "type": {
+        "es": "Sitio web oficial de registro para el juego y la prueba"
+      },
+      "url": "https://hna.hoyoverse.com/en-us"
+    },
+    {
+      "label": "Honkai: Nexus Anima en YouTube",
+      "type": {
+        "es": "Gameplay oficial de la beta cerrada final"
+      },
+      "url": "https://www.youtube.com/watch?v=eZoiElsK8xk"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La beta será de acceso limitado y borrará todo el progreso cuando termine. HoYoverse aceptará solicitudes hasta el 22 de noviembre y seleccionará a participantes entre quienes completen el cuestionario de registro; la compañía todavía no ha comunicado cuándo finalizará la prueba.",
+      "Esta versión parte de la ciudad de Iya y amplía la exploración con nuevas zonas, capítulos de historia, aliados y rivales. También incorpora más criaturas coleccionables y sistemas adicionales antes del estreno gratuito previsto para PC, iOS y Android en primavera de 2027."
+    ]
+  }
+}

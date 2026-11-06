@@ -4,15 +4,15 @@
   "emphasis": {
     "es": [
       "los actos 5 y 6",
-      "el regreso a Oriath",
-      "la clase Sombra"
+      "la clase Sombra",
+      "una historia nueva para el final del juego"
     ]
   },
   "category": {
     "es": "Lanzamientos"
   },
   "date": "2026-08-26",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "addedAt": "2026-08-26T02:58:10Z",
   "featured": false,
   "ticker": {
@@ -20,18 +20,18 @@
       "es": "Path of Exile 2"
     },
     "copy": {
-      "es": "Path of Exile 2 sumará los actos 5 y 6 y la clase Sombra el 11 de diciembre"
+      "es": "Path of Exile 2 estrenará Conquerors of Wraeclast con su versión 1.0"
     }
   },
   "tone": "launch",
   "title": {
-    "es": "Path of Exile 2 completará su campaña con los actos 5 y 6 y la clase Sombra"
+    "es": "Path of Exile 2 suma Conquerors of Wraeclast a su lanzamiento completo"
   },
   "summary": {
-    "es": "Grinding Gear Games ha ampliado en ExileCon los detalles de la versión 1.0 de Path of Exile 2, prevista para el 11 de diciembre: el lanzamiento gratuito incorporará los actos 5 y 6, el regreso a Oriath y la clase Sombra."
+    "es": "Grinding Gear Games ha completado en ExileCon la presentación de la versión 1.0 de Path of Exile 2, prevista para el 11 de diciembre: además de los actos 5 y 6 y la clase Sombra, estrenará Conquerors of Wraeclast con una historia nueva para el final del juego."
   },
   "why": {
-    "es": "La revelación concreta dos de los principales huecos del acceso anticipado. La campaña podrá recorrerse completa hasta Oriath y el Sombra se sumará como nueva clase jugable junto al Duelista ya anunciado."
+    "es": "La liga de desafío permitirá rescatar aliados, localizar fortalezas enemigas y desplegar tropas para conquistar Wraeclast, ampliando de forma material el endgame que acompañará al estreno gratuito."
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=BwYNNQJO-AE",
@@ -67,12 +67,26 @@
         "es": "Tráiler oficial de la clase Sombra para la versión 1.0"
       },
       "url": "https://www.youtube.com/watch?v=FD-lo79LtAM"
+    },
+    {
+      "label": "Path of Exile",
+      "type": {
+        "es": "Tráiler oficial de la liga Conquerors of Wraeclast y sus sistemas de endgame"
+      },
+      "url": "https://www.youtube.com/watch?v=NVLdP41VBfk"
+    },
+    {
+      "label": "Grinding Gear Games",
+      "type": {
+        "es": "Página oficial del lanzamiento completo de Path of Exile 2"
+      },
+      "url": "https://es.pathofexile2.com/fullrelease"
     }
   ],
   "homeDetails": {
     "es": [
       "La versión 1.0 cerrará una etapa de acceso anticipado iniciada en diciembre de 2024. Grinding Gear Games mantendrá el modelo free-to-play del primer juego, por lo que dejará de ser necesario adquirir uno de los paquetes de colaborador que dan acceso a la versión actual.",
-      "La campaña añadirá los actos 5 y 6 y llevará de nuevo a los jugadores a una Oriath devastada. El Sombra se incorporará como clase jugable en el lanzamiento completo, junto al Duelista y las espadas que el estudio había presentado previamente."
+      "La campaña añadirá los actos 5 y 6 y llevará de nuevo a los jugadores a una Oriath devastada, mientras el Sombra se incorporará como clase jugable. Conquerors of Wraeclast añadirá una historia de final del juego centrada en reunir aliados, asaltar fortalezas y dirigir un ejército contra el Señor de la sangre."
     ]
   }
 }

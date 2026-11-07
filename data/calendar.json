@@ -4897,6 +4897,58 @@
       "trailer": "https://www.youtube.com/watch?v=CL36wpvgeis"
     },
     {
+      "id": "football-manager-27",
+      "title": "Football Manager 27",
+      "headingHtml": "Football Manager 27",
+      "date": "2026-11-10",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC/Mac",
+      "image": {
+        "provider": "rawg",
+        "query": "Football Manager 27",
+        "src": "https://cdn.footballmanager.com/site/2026-09/Header.jpg",
+        "alt": "Football Manager 27 para PS5, Xbox Series X|S y PC/Mac",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.footballmanager.com/fm27",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Football Manager 27"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.footballmanager.com/news/football-manager-27-launches-10-november",
+        "official": true,
+        "host": "www.footballmanager.com",
+        "checkedAt": "2026-11-07",
+        "evidence": {
+          "title": "Football Manager 27",
+          "releaseDate": "2026-11-10",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": null
+    },
+    {
       "id": "hard-west-2-consoles",
       "title": "Hard West 2",
       "headingHtml": "Hard West 2 <span class=\"tag-dlc\">Nueva plataforma</span>",

@@ -1,5 +1,55 @@
 [
   {
+    "id": "ratchet-clank-ranger-rumble-cierre",
+    "important": false,
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-11-06",
+    "addedAt": "2026-11-07T14:49:05Z",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "Ratchet & Clank: Ranger Rumble cerrará sus servidores el 1 de mayo de 2027"
+    },
+    "summary": {
+      "es": "El equipo de Ratchet & Clank: Ranger Rumble cesará el desarrollo del juego móvil tras su actualización final del 6 de noviembre de 2026. La aplicación será retirada de App Store y Google Play el 21 de noviembre y cerrará sus servidores el 1 de mayo de 2027."
+    },
+    "why": {
+      "es": "La decisión cancela la continuidad de un juego móvil ligado a una de las franquicias históricas de PlayStation y hará que deje de ser accesible incluso para quienes lo conserven instalado."
+    },
+    "homeDetails": {
+      "es": [
+        "El equipo ha publicado el 6 de noviembre la última actualización prevista. No habrá nuevas incorporaciones de contenido ni continuidad del desarrollo después de ese parche.",
+        "Quienes ya hayan descargado Ranger Rumble podrán seguir jugando después de su retirada de las tiendas, pero solo hasta la desconexión definitiva del servicio el 1 de mayo de 2027."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "cesará el desarrollo del juego móvil",
+        "será retirada de App Store y Google Play el 21 de noviembre",
+        "cerrará sus servidores el 1 de mayo de 2027"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Ranger Rumble"
+      },
+      "copy": {
+        "es": "Ranger Rumble cerrará sus servidores el 1 de mayo de 2027"
+      }
+    },
+    "sources": [
+      {
+        "label": "Ratchet & Clank: Ranger Rumble",
+        "type": {
+          "es": "Comunicado oficial sobre el fin del desarrollo, la retirada de tiendas y el cierre de servidores"
+        },
+        "url": "https://www.rangerrumble.com/"
+      }
+    ]
+  },
+  {
     "id": "path-of-exile-covens-of-umbra-endgame",
     "important": false,
     "emphasis": {

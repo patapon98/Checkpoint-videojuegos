@@ -4908,8 +4908,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC/Mac",
       "image": {
-        "provider": "rawg",
-        "query": "Football Manager 27",
         "src": "https://cdn.footballmanager.com/site/2026-09/Header.jpg",
         "alt": "Football Manager 27 para PS5, Xbox Series X|S y PC/Mac",
         "className": "",

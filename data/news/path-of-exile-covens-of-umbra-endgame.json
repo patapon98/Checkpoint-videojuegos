@@ -1,0 +1,63 @@
+{
+  "id": "path-of-exile-covens-of-umbra-endgame",
+  "important": false,
+  "emphasis": {
+    "es": [
+      "el 13 de noviembre",
+      "cambios fundamentales para el final del juego",
+      "Threads of Creation sustituirá a los Scarabs"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-06",
+  "addedAt": "2026-11-07T03:25:03Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Path of Exile"
+    },
+    "copy": {
+      "es": "Path of Exile remodelará su endgame con Covens of Umbra"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Path of Exile: Covens of Umbra remodelará el endgame el 13 de noviembre"
+  },
+  "summary": {
+    "es": "Grinding Gear Games lanzará Path of Exile: Covens of Umbra gratis el 13 de noviembre en PC y consolas. La expansión añadirá una liga de desafío y cambios fundamentales para el final del juego, junto a objetos únicos y una revisión masiva del botín."
+  },
+  "why": {
+    "es": "Threads of Creation sustituirá a los Scarabs, el árbol pasivo del Atlas recibirá un rediseño completo y casi todas las mecánicas de liga del endgame serán ampliadas o modificadas."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=XaySR0RjRPA",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Grinding Gear Games",
+      "type": {
+        "es": "Página oficial de la expansión, sus sistemas de endgame y la fecha de lanzamiento"
+      },
+      "url": "https://es.pathofexile.com/covens"
+    },
+    {
+      "label": "Path of Exile",
+      "type": {
+        "es": "Tráiler oficial de Covens of Umbra"
+      },
+      "url": "https://www.youtube.com/watch?v=XaySR0RjRPA"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La nueva liga enfrentará a los jugadores con aquelarres que intentan invocar a su reina. Tras derrotarlos será posible elegir un Destino para el jefe del área, elevar la dificultad y las recompensas y obtener Vísceras con las que reforzar un Wickerman propio.",
+      "El nuevo sistema Threads of Creation permitirá fijar mecánicas de liga desde el dispositivo de mapas y escalar su dificultad. La expansión también renovará el árbol del Atlas, ajustará casi todas las actividades del endgame y cambiará de forma profunda la generación de botín mágico y raro."
+    ]
+  }
+}

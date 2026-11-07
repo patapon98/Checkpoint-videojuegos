@@ -1,0 +1,57 @@
+{
+  "id": "the-division-2-echoes-central-park-lanzamiento",
+  "important": false,
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-03",
+  "addedAt": "2026-11-07T17:52:27Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "The Division 2 abre Central Park en su mayor expansión desde Warlords of New York"
+  },
+  "summary": {
+    "es": "Ubisoft ha lanzado The Division 2: Echoes of Central Park en PS5, Xbox Series X|S y PC. La expansión abre Central Park y el Upper West Side por primera vez en la franquicia con una campaña jugable en solitario o cooperativo."
+  },
+  "why": {
+    "es": "Es la mayor experiencia añadida a The Division 2 desde Warlords of New York e incorpora tres compañeros, seis variantes de habilidades y un endgame rejugable cuyas ventajas o desventajas dependen del rendimiento en cada encuentro."
+  },
+  "homeDetails": {
+    "es": [
+      "La historia adopta un tono de terror y se desarrolla como un recuerdo narrado tras los acontecimientos de Warlords of New York. Los agentes investigarán desapariciones y rumores sobre una nueva amenaza entre el Upper West Side y un Central Park invadido por la vegetación.",
+      "La campaña permite elegir entre tres compañeros con estilos de combate propios y ofrece un aumento directo al nivel 40. Después de completar la historia, el parque se convierte en una actividad rejugable con encuentros que alteran las condiciones y recompensas de los siguientes desafíos."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "abre Central Park y el Upper West Side por primera vez en la franquicia",
+      "la mayor experiencia añadida a The Division 2 desde Warlords of New York",
+      "un endgame rejugable cuyas ventajas o desventajas dependen del rendimiento en cada encuentro"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "The Division 2"
+    },
+    "copy": {
+      "es": "The Division 2 abre Central Park en su mayor expansión desde Warlords of New York"
+    }
+  },
+  "sources": [
+    {
+      "label": "Ubisoft",
+      "type": {
+        "es": "Comunicado oficial de lanzamiento con plataformas, historia y sistemas de la expansión"
+      },
+      "url": "https://www.ubisoft.com/en-gb/game/the-division/news-updates/4yCTNp7RZ1Fdm1kMKYgndg/the-division-2-echoes-of-central-park-dlc-is-available-now"
+    },
+    {
+      "label": "Ubisoft Store",
+      "type": {
+        "es": "Ficha oficial con la fecha de lanzamiento y las ediciones disponibles"
+      },
+      "url": "https://store.ubisoft.com/us/the-division-2-echoes-dlc"
+    }
+  ]
+}

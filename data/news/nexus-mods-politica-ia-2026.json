@@ -1,0 +1,57 @@
+{
+  "id": "nexus-mods-politica-ia-2026",
+  "important": false,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-11-03",
+  "addedAt": "2026-11-08T15:08:31Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Nexus Mods exigirá identificar el uso de IA y limitará la reutilización sin permiso"
+  },
+  "summary": {
+    "es": "Nexus Mods obligará a declarar el uso de IA generativa en archivos, recursos y páginas de cada mod. La plataforma ha abierto un periodo de adaptación que termina el 2 de enero de 2027 y después podrá aplicar avisos, restricciones o retiradas a quienes incumplan las nuevas reglas."
+  },
+  "why": {
+    "es": "La política también añadirá permisos específicos para el entrenamiento de IA y las versiones derivadas, configurados por defecto como «Pregúntame». Nexus Mods afirma además que no usará los mods alojados para entrenar IA ni los venderá o licenciará con ese fin."
+  },
+  "homeDetails": {
+    "es": [
+      "Los autores deberán distinguir entre contenido generado principalmente por IA, material promocional creado con IA y trabajos dirigidos por personas con asistencia limitada. Esta última categoría exigirá indicar las herramientas utilizadas, los elementos afectados y pruebas del proceso de desarrollo cuando exista una disputa de moderación.",
+      "Los nuevos archivos deben completar ya los campos de declaración y permisos, mientras que los mods existentes disponen de sesenta días para adaptarse. La plataforma también prepara controles para que cada usuario decida cuánto contenido creado con IA quiere encontrar, aunque esas opciones de descubrimiento llegarán más adelante."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "obligará a declarar el uso de IA generativa",
+      "termina el 2 de enero de 2027",
+      "no usará los mods alojados para entrenar IA"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Nexus Mods"
+    },
+    "copy": {
+      "es": "Nexus Mods exigirá declarar el uso de IA y fijará permisos para reutilizar contenidos"
+    }
+  },
+  "sources": [
+    {
+      "label": "Nexus Mods",
+      "type": {
+        "es": "Anuncio oficial de la política sobre IA, el periodo de adaptación y su aplicación"
+      },
+      "url": "https://www.nexusmods.com/news/15654"
+    },
+    {
+      "label": "Centro de ayuda de Nexus Mods",
+      "type": {
+        "es": "Documento oficial con las categorías, los permisos y las reglas de moderación"
+      },
+      "url": "https://help.nexusmods.com/article/180-ai-policy-changes-2026"
+    }
+  ]
+}

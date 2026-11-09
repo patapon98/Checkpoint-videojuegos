@@ -1,0 +1,64 @@
+{
+  "id": "playstation-portal-player-japon-almacenamiento",
+  "important": false,
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-11-09",
+  "addedAt": "2026-11-09T18:16:54Z",
+  "featured": false,
+  "tone": "platforms",
+  "title": {
+    "es": "PlayStation Portal suma almacenamiento en un nuevo modelo japonés para jugar sin PS5"
+  },
+  "summary": {
+    "es": "Sony lanzará en Japón un nuevo PlayStation Portal Player el 10 de diciembre por 39.980 yenes, unos 226 euros al cambio de referencia. El modelo Midnight Black añade almacenamiento interno y permite jugar por streaming sin disponer de una PS5 mediante PlayStation Plus Premium."
+  },
+  "why": {
+    "es": "PlayStation elimina «Remote» del nombre para reflejar que Portal ya no depende únicamente del uso a distancia de una consola. El almacenamiento se reserva para funciones futuras todavía no detalladas y el dispositivo seguirá sin permitir descargar juegos de PS5."
+  },
+  "homeDetails": {
+    "es": [
+      "La nueva edición estará limitada a Japón, solo podrá configurarse en japonés y exigirá una cuenta de PlayStation registrada en el país. Las reservas comenzarán el 13 de noviembre e incluirá un mes de PlayStation Plus Premium para acceder desde el primer momento a los juegos compatibles con la nube.",
+      "Sony mantiene la pantalla LCD de ocho pulgadas a 1080p y 60 imágenes por segundo, el audio 3D, la respuesta háptica y los gatillos adaptativos del modelo actual. La compañía no ha comunicado ni la capacidad del almacenamiento añadido ni su utilidad concreta, que explicará cuando cierre las funciones previstas."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "añade almacenamiento interno",
+      "permite jugar por streaming sin disponer de una PS5 mediante PlayStation Plus Premium",
+      "seguirá sin permitir descargar juegos de PS5"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "PlayStation Portal"
+    },
+    "copy": {
+      "es": "PlayStation Portal añade almacenamiento en un nuevo modelo japonés para jugar sin PS5"
+    }
+  },
+  "sources": [
+    {
+      "label": "PlayStation Blog Japón",
+      "type": {
+        "es": "Anuncio oficial del modelo, el precio, la fecha y el almacenamiento añadido"
+      },
+      "url": "https://blog.ja.playstation.com/2026/11/09/20261109-playstation-portal-announcement-o/"
+    },
+    {
+      "label": "PlayStation Japón",
+      "type": {
+        "es": "Ficha oficial con las condiciones del streaming y las limitaciones del dispositivo"
+      },
+      "url": "https://www.playstation.com/ja-jp/accessories/playstation-portal-player/"
+    },
+    {
+      "label": "Banco Central Europeo",
+      "type": {
+        "es": "Tipo de cambio oficial de referencia del 9 de noviembre de 2026"
+      },
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.es.html"
+    }
+  ]
+}

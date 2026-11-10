@@ -4787,6 +4787,54 @@
       "trailer": "https://www.youtube.com/watch?v=xXaXYxcbA6A"
     },
     {
+      "id": "ashes-of-the-singularity-ii",
+      "title": "Ashes of the Singularity II",
+      "headingHtml": "Ashes of the Singularity II",
+      "date": "2026-11-10",
+      "platformKeys": [
+        "pc"
+      ],
+      "platformsHtml": "PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Ashes of the Singularity II",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3499790/header.jpg",
+        "alt": "Ashes of the Singularity II",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.ashesofthesingularity.com/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Ashes of the Singularity II"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.ashesofthesingularity.com/article/542557/ashes-of-the-singularity-ii-release-date-announcement",
+        "official": true,
+        "host": "www.ashesofthesingularity.com",
+        "checkedAt": "2026-11-10",
+        "evidence": {
+          "title": "Ashes of the Singularity II",
+          "releaseDate": "2026-11-10",
+          "platforms": [
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=SV3k4yxWKS0"
+    },
+    {
       "id": "dreamworks-shrek-2-remastered",
       "title": "DreamWorks Shrek 2 Remastered",
       "headingHtml": "DreamWorks Shrek 2 Remastered <span class=\"tag-dlc\">Remaster</span>",

@@ -4796,8 +4796,6 @@
       ],
       "platformsHtml": "PC",
       "image": {
-        "provider": "rawg",
-        "query": "Ashes of the Singularity II",
         "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3499790/header.jpg",
         "alt": "Ashes of the Singularity II",
         "className": "",

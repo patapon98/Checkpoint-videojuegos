@@ -1,5 +1,126 @@
 [
   {
+    "id": "dragon-quest-rpg-makaiju-isla-2027",
+    "important": false,
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-10",
+    "addedAt": "2026-11-10T02:49:48Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima llegará globalmente en 2027"
+    },
+    "summary": {
+      "es": "Square Enix ha anunciado Dragon Quest RPG: Makaiju to Michibikareshi Shima, un nuevo juego para iOS y Android que llegará globalmente en 2027, salvo en algunos territorios. Será un RPG gratuito con compras de objetos y adaptará a móviles la aventura clásica de la serie."
+    },
+    "why": {
+      "es": "El proyecto mantendrá la exploración, los combates por comandos y la progresión que definen a Dragon Quest. Yuji Horii ejercerá como director general, con diseños de personajes de Akira Toriyama, música de Koichi Sugiyama y desarrollo de Wright Flyer Studios."
+    },
+    "homeDetails": {
+      "es": [
+        "Square Enix prepara un lanzamiento simultáneo mundial durante 2027, aunque advierte de que algunos territorios quedarán fuera. La compañía todavía no ha concretado el mes de estreno ni los detalles de la historia y los sistemas, que ampliará en próximos anuncios.",
+        "Wright Flyer Studios desarrolla el juego junto a Square Enix, que se encarga de la planificación y la producción. El comunicado lo define como una experiencia diseñada específicamente para smartphones y confirma un modelo básico gratuito financiado mediante compras de objetos."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "llegará globalmente en 2027",
+        "un nuevo juego para iOS y Android",
+        "mantendrá la exploración, los combates por comandos y la progresión"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Dragon Quest RPG"
+      },
+      "copy": {
+        "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima llegará globalmente en 2027"
+      }
+    },
+    "sources": [
+      {
+        "label": "Square Enix",
+        "type": {
+          "es": "Comunicado oficial con la ventana, las plataformas, el modelo de negocio y el equipo creativo"
+        },
+        "url": "https://www.jp.square-enix.com/company/ja/news/files/9b8c63da4c5f7bd932c77a270f7e6b5b.pdf"
+      },
+      {
+        "label": "Dragon Quest",
+        "type": {
+          "es": "Tráiler oficial de anuncio del nuevo juego"
+        },
+        "url": "https://www.youtube.com/watch?v=TVZtZAPrQy8"
+      }
+    ]
+  },
+  {
+    "id": "playstation-portal-player-japon-almacenamiento",
+    "important": false,
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-11-09",
+    "addedAt": "2026-11-09T18:16:54Z",
+    "featured": false,
+    "tone": "platforms",
+    "title": {
+      "es": "PlayStation Portal suma almacenamiento en un nuevo modelo japonés para jugar sin PS5"
+    },
+    "summary": {
+      "es": "Sony lanzará en Japón un nuevo PlayStation Portal Player el 10 de diciembre por 39.980 yenes, unos 226 euros al cambio de referencia. El modelo Midnight Black añade almacenamiento interno y permite jugar por streaming sin disponer de una PS5 mediante PlayStation Plus Premium."
+    },
+    "why": {
+      "es": "PlayStation elimina «Remote» del nombre para reflejar que Portal ya no depende únicamente del uso a distancia de una consola. El almacenamiento se reserva para funciones futuras todavía no detalladas y el dispositivo seguirá sin permitir descargar juegos de PS5."
+    },
+    "homeDetails": {
+      "es": [
+        "La nueva edición estará limitada a Japón, solo podrá configurarse en japonés y exigirá una cuenta de PlayStation registrada en el país. Las reservas comenzarán el 13 de noviembre e incluirá un mes de PlayStation Plus Premium para acceder desde el primer momento a los juegos compatibles con la nube.",
+        "Sony mantiene la pantalla LCD de ocho pulgadas a 1080p y 60 imágenes por segundo, el audio 3D, la respuesta háptica y los gatillos adaptativos del modelo actual. La compañía no ha comunicado ni la capacidad del almacenamiento añadido ni su utilidad concreta, que explicará cuando cierre las funciones previstas."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "añade almacenamiento interno",
+        "permite jugar por streaming sin disponer de una PS5 mediante PlayStation Plus Premium",
+        "seguirá sin permitir descargar juegos de PS5"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "PlayStation Portal"
+      },
+      "copy": {
+        "es": "PlayStation Portal añade almacenamiento en un nuevo modelo japonés para jugar sin PS5"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog Japón",
+        "type": {
+          "es": "Anuncio oficial del modelo, el precio, la fecha y el almacenamiento añadido"
+        },
+        "url": "https://blog.ja.playstation.com/2026/11/09/20261109-playstation-portal-announcement-o/"
+      },
+      {
+        "label": "PlayStation Japón",
+        "type": {
+          "es": "Ficha oficial con las condiciones del streaming y las limitaciones del dispositivo"
+        },
+        "url": "https://www.playstation.com/ja-jp/accessories/playstation-portal-player/"
+      },
+      {
+        "label": "Banco Central Europeo",
+        "type": {
+          "es": "Tipo de cambio oficial de referencia del 9 de noviembre de 2026"
+        },
+        "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.es.html"
+      }
+    ]
+  },
+  {
     "id": "nexus-mods-politica-ia-2026",
     "important": false,
     "category": {

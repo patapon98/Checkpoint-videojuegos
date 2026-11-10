@@ -1,0 +1,57 @@
+{
+  "id": "dragon-quest-rpg-makaiju-isla-2027",
+  "important": false,
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-10",
+  "addedAt": "2026-11-10T02:49:48Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima llegará globalmente en 2027"
+  },
+  "summary": {
+    "es": "Square Enix ha anunciado Dragon Quest RPG: Makaiju to Michibikareshi Shima, un nuevo juego para iOS y Android que llegará globalmente en 2027, salvo en algunos territorios. Será un RPG gratuito con compras de objetos y adaptará a móviles la aventura clásica de la serie."
+  },
+  "why": {
+    "es": "El proyecto mantendrá la exploración, los combates por comandos y la progresión que definen a Dragon Quest. Yuji Horii ejercerá como director general, con diseños de personajes de Akira Toriyama, música de Koichi Sugiyama y desarrollo de Wright Flyer Studios."
+  },
+  "homeDetails": {
+    "es": [
+      "Square Enix prepara un lanzamiento simultáneo mundial durante 2027, aunque advierte de que algunos territorios quedarán fuera. La compañía todavía no ha concretado el mes de estreno ni los detalles de la historia y los sistemas, que ampliará en próximos anuncios.",
+      "Wright Flyer Studios desarrolla el juego junto a Square Enix, que se encarga de la planificación y la producción. El comunicado lo define como una experiencia diseñada específicamente para smartphones y confirma un modelo básico gratuito financiado mediante compras de objetos."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "llegará globalmente en 2027",
+      "un nuevo juego para iOS y Android",
+      "mantendrá la exploración, los combates por comandos y la progresión"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Dragon Quest RPG"
+    },
+    "copy": {
+      "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima llegará globalmente en 2027"
+    }
+  },
+  "sources": [
+    {
+      "label": "Square Enix",
+      "type": {
+        "es": "Comunicado oficial con la ventana, las plataformas, el modelo de negocio y el equipo creativo"
+      },
+      "url": "https://www.jp.square-enix.com/company/ja/news/files/9b8c63da4c5f7bd932c77a270f7e6b5b.pdf"
+    },
+    {
+      "label": "Dragon Quest",
+      "type": {
+        "es": "Tráiler oficial de anuncio del nuevo juego"
+      },
+      "url": "https://www.youtube.com/watch?v=TVZtZAPrQy8"
+    }
+  ]
+}

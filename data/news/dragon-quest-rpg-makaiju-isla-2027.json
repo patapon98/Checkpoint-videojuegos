@@ -5,29 +5,30 @@
     "es": "Juegos"
   },
   "date": "2026-11-10",
+  "updated": "2026-11-11",
   "addedAt": "2026-11-10T02:49:48Z",
   "featured": false,
   "tone": "games",
   "title": {
-    "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima llegará globalmente en 2027"
+    "es": "Dragon Quest RPG detalla sus combates y fija una beta cerrada para diciembre"
   },
   "summary": {
-    "es": "Square Enix ha anunciado Dragon Quest RPG: Makaiju to Michibikareshi Shima, un nuevo juego para iOS y Android que llegará globalmente en 2027, salvo en algunos territorios. Será un RPG gratuito con compras de objetos y adaptará a móviles la aventura clásica de la serie."
+    "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima permitirá explorar libremente sus mapas, incorpora habilidades rápidas y ataques combinados y dejará desarrollar una base con los recursos de la aventura. Square Enix celebrará una beta cerrada del 8 al 15 de diciembre en iOS y Android."
   },
   "why": {
-    "es": "El proyecto mantendrá la exploración, los combates por comandos y la progresión que definen a Dragon Quest. Yuji Horii ejercerá como director general, con diseños de personajes de Akira Toriyama, música de Koichi Sugiyama y desarrollo de Wright Flyer Studios."
+    "es": "La prueba contará con 25.000 participantes seleccionados por sorteo si se supera el cupo y servirá para ajustar el juego antes de su lanzamiento global en 2027. La página oficial también concreta los requisitos mínimos y recomendados de los dispositivos compatibles."
   },
   "homeDetails": {
     "es": [
-      "Square Enix prepara un lanzamiento simultáneo mundial durante 2027, aunque advierte de que algunos territorios quedarán fuera. La compañía todavía no ha concretado el mes de estreno ni los detalles de la historia y los sistemas, que ampliará en próximos anuncios.",
-      "Wright Flyer Studios desarrolla el juego junto a Square Enix, que se encarga de la planificación y la producción. El comunicado lo define como una experiencia diseñada específicamente para smartphones y confirma un modelo básico gratuito financiado mediante compras de objetos."
+      "El nuevo material amplía la fórmula anunciada inicialmente. Los combates por comandos permitirán usar las acciones «hayawaza» y «renkei» para encadenar habilidades y ataques conjuntos, mientras que los resultados de cada expedición servirán para ampliar una base propia y preparar las siguientes aventuras.",
+      "Las solicitudes para la beta permanecerán abiertas hasta el 23 de noviembre y los seleccionados recibirán el resultado el 4 de diciembre. La prueba exige como mínimo un iPhone 11 con iOS 15 o un dispositivo Android 9 de 64 bits con Snapdragon 855, además de cuatro o seis GB de memoria según el sistema."
     ]
   },
   "emphasis": {
     "es": [
-      "llegará globalmente en 2027",
-      "un nuevo juego para iOS y Android",
-      "mantendrá la exploración, los combates por comandos y la progresión"
+      "incorpora habilidades rápidas y ataques combinados",
+      "una beta cerrada del 8 al 15 de diciembre",
+      "25.000 participantes seleccionados por sorteo"
     ]
   },
   "ticker": {
@@ -35,23 +36,30 @@
       "es": "Dragon Quest RPG"
     },
     "copy": {
-      "es": "Dragon Quest RPG: Makaiju to Michibikareshi Shima llegará globalmente en 2027"
+        "es": "Dragon Quest RPG detalla sus combates y abre una beta cerrada para diciembre"
     }
   },
   "sources": [
     {
-      "label": "Square Enix",
+        "label": "Dragon Quest",
       "type": {
-        "es": "Comunicado oficial con la ventana, las plataformas, el modelo de negocio y el equipo creativo"
+          "es": "Anuncio oficial con los sistemas de juego, el calendario de la beta y el número de participantes"
       },
-      "url": "https://www.jp.square-enix.com/company/ja/news/files/9b8c63da4c5f7bd932c77a270f7e6b5b.pdf"
+        "url": "https://www.dragonquest.jp/news/detail/4301/"
     },
     {
-      "label": "Dragon Quest",
+        "label": "Dragon Quest RPG",
       "type": {
-        "es": "Tráiler oficial de anuncio del nuevo juego"
+          "es": "Página oficial internacional con los requisitos técnicos y las condiciones de participación"
       },
-      "url": "https://www.youtube.com/watch?v=TVZtZAPrQy8"
+        "url": "https://dqrpg.dragonquest.com/en/cbt/"
+      },
+      {
+        "label": "WFS",
+        "type": {
+          "es": "Comunicado oficial del 11 de noviembre con los detalles del juego y la beta cerrada"
+        },
+        "url": "https://www.wfs.games/news/20261111_01.html"
     }
   ]
 }

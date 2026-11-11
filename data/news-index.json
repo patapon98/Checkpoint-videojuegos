@@ -692,15 +692,16 @@
     "id": "gta-vi-precarga-212-gb",
     "emphasis": {
       "es": [
-        "La precarga de GTA VI comenzará el 10 de noviembre",
-        "la descarga ocupará hasta 212 GB",
-        "una diferencia útil para organizar la descarga"
+        "GTA VI se podrá jugar desde el 19 de noviembre mediante Xbox Cloud Gaming",
+        "incluido Xbox One",
+        "comprar tiempo de juego en la nube sin una suscripción a Game Pass"
       ]
     },
     "category": {
       "es": "Plataformas"
     },
     "date": "2026-11-03",
+    "updated": "2026-11-10",
     "addedAt": "2026-11-03T18:23:52Z",
     "featured": false,
     "ticker": {
@@ -708,39 +709,46 @@
         "es": "GTA VI"
       },
       "copy": {
-        "es": "GTA VI abrirá la precarga el 10 de noviembre y ocupará hasta 212 GB"
+        "es": "GTA VI llegará a Xbox One mediante la nube desde el día de lanzamiento"
       }
     },
     "tone": "rockstar",
     "title": {
-      "es": "GTA VI abrirá la precarga el 10 de noviembre y exigirá hasta 212 GB"
+      "es": "GTA VI llegará a Xbox One mediante la nube desde el día de lanzamiento"
     },
     "summary": {
-      "es": "La precarga de GTA VI comenzará el 10 de noviembre para quienes hayan reservado el juego. Rockstar indica que la descarga ocupará hasta 212 GB según el dispositivo antes del lanzamiento del 19 de noviembre en PS5 y Xbox Series X|S."
+      "es": "GTA VI se podrá jugar desde el 19 de noviembre mediante Xbox Cloud Gaming en Xbox Series X|S y Xbox One. La versión transmitida utilizará la configuración gráfica de Xbox Series S y exigirá comprar el juego por separado."
     },
     "why": {
-      "es": "La fecha concreta y el tamaño convierten el anuncio en información práctica para preparar el estreno más seguido del año. PlayStation habilitará la descarga a medianoche local, mientras que Xbox lo hará a las 00:00 GMT: una diferencia útil para organizar la descarga."
+      "es": "La nube amplía el acceso al lanzamiento más allá de las versiones nativas para PS5 y Xbox Series X|S, incluido Xbox One. Desde el 11 de noviembre, Microsoft también permitirá comprar tiempo de juego en la nube sin una suscripción a Game Pass en los mercados compatibles."
     },
     "sources": [
       {
         "label": "Rockstar Games",
         "type": {
-          "es": "Comunicado oficial con fechas, tamaño y condiciones de la precarga"
+          "es": "Comunicado oficial con la disponibilidad en la nube, la configuración gráfica y las funciones de consola"
         },
-        "url": "https://www.rockstargames.com/es/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+        "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now"
+      },
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Anuncio oficial con los dispositivos, la hora de apertura y las condiciones de Xbox Cloud Gaming"
+        },
+        "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
       },
       {
         "label": "PlayStation Blog",
         "type": {
-          "es": "Guía oficial de PlayStation para preparar la descarga en PS5"
+          "es": "Información oficial sobre la precarga y las funciones de PS5 y PS5 Pro"
         },
-        "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
+        "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
       }
     ],
     "homeDetails": {
       "es": [
-        "En PS5, la precarga se abrirá el 10 de noviembre a medianoche en cada zona horaria y Sony recomienda liberar al menos 212 GB. En Xbox Series X|S empezará de forma simultánea en todo el mundo a las 00:00 GMT del mismo día.",
-        "Rockstar añade que las ediciones con código dentro de la caja deberían llegar a las tiendas desde el 12 de noviembre. La descarga anticipada no modifica la fecha de acceso: GTA VI se desbloqueará el 19 de noviembre en ambas consolas."
+        "El acceso mediante Xbox Cloud Gaming comenzará a la 1:00 ET del 19 de noviembre. En Xbox Series X|S seguirá disponible la instalación nativa, mientras que Xbox One dependerá de la transmisión; la disponibilidad, las opciones de compra y las funciones pueden variar según el mercado y el dispositivo.",
+        "La precarga ya está abierta para las reservas digitales y los códigos incluidos en caja. Rockstar confirma un objetivo de 30 imágenes por segundo en las versiones nativas, mejoras de PSSR y sombras con trazado de rayos en PS5 Pro y compatibilidad con Remote Play en PlayStation y Xbox."
       ]
     }
   },

@@ -1,0 +1,65 @@
+{
+  "id": "playstation-cancela-fairgames-haven-studios",
+  "important": true,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-10",
+  "publishedAt": "2026-11-10T20:38:00Z",
+  "addedAt": "2026-11-11T12:10:34Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "PlayStation cancela Fairgames y mantiene abierto Haven Studios"
+  },
+  "summary": {
+    "es": "Sony Interactive Entertainment ha cancelado Fairgames, el juego competitivo de atracos que Haven Studios desarrollaba para PS5 y PC. La decisión llega después de que una prueba con miles de jugadores no alcanzara los objetivos internos de respuesta y retención."
+  },
+  "why": {
+    "es": "PlayStation no aplicará despidos como consecuencia de la cancelación y Haven Studios seguirá abierto para colaborar con otros equipos de la compañía. El abandono del proyecto supone otro retroceso para la estrategia de juegos como servicio de Sony."
+  },
+  "homeDetails": {
+    "es": [
+      "Los responsables de PlayStation explicaron a la plantilla que la prueba demostró preparación operativa y capacidad para mantener un servicio en directo, pero que las opiniones de los participantes y los datos de retención quedaron por debajo de las metas fijadas. La situación del mercado de los shooters PvP también influyó en el cese del desarrollo.",
+      "Un portavoz de PlayStation confirmó que la cancelación no comportará recortes de empleo en Haven Studios. El estudio de Montreal pasará a apoyar a otros equipos de PlayStation Studios mientras explora nuevas oportunidades creativas, por lo que la decisión termina Fairgames sin cerrar la compañía que lo desarrollaba."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "ha cancelado Fairgames",
+      "una prueba con miles de jugadores no alcanzara los objetivos internos",
+      "Haven Studios seguirá abierto"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Fairgames"
+    },
+    "copy": {
+      "es": "PlayStation cancela Fairgames y mantiene abierto Haven Studios"
+    }
+  },
+  "sources": [
+    {
+      "label": "Bloomberg",
+      "type": {
+        "es": "Información confirmada por un portavoz de PlayStation y por una comunicación interna de sus responsables"
+      },
+      "url": "https://www.bloomberg.com/news/articles/2026-11-10/playstation-cancels-online-shooting-title-fairgames"
+    },
+    {
+      "label": "PlayStation Blog",
+      "type": {
+        "es": "Presentación oficial de Fairgames y confirmación original de PS5 y PC"
+      },
+      "url": "https://blog.playstation.com/2023/05/24/introducing-fairgame-a-competitive-heist-experience-coming-to-ps5-and-pc/"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto sobre la cancelación, la prueba interna y la continuidad de Haven Studios"
+      },
+      "url": "https://www.gematsu.com/2026/11/fairgame-canceled"
+    }
+  ]
+}

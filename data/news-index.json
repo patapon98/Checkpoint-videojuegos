@@ -1,5 +1,62 @@
 [
   {
+    "id": "the-outer-worlds-2-side-effects-guaranteed-diciembre",
+    "important": false,
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-11-10",
+    "addedAt": "2026-11-11T06:16:05Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "The Outer Worlds 2 estrenará su primer DLC narrativo el 2 de diciembre"
+    },
+    "summary": {
+      "es": "The Outer Worlds 2: Side Effects Guaranteed llegará el 2 de diciembre a PS5, Xbox Series X|S y PC como primera parte de una expansión narrativa en dos capítulos. Añade la región Elysium Valley y eleva el nivel máximo de 30 a 36."
+    },
+    "why": {
+      "es": "Las decisiones tomadas en esta historia afectarán al segundo capítulo, previsto para primavera de 2027. El DLC incorpora 15 ventajas, cuatro defectos, nuevas armas y armaduras y un inicio alternativo para acceder directamente al contenido."
+    },
+    "homeDetails": {
+      "es": [
+        "La historia comienza con una señal de socorro procedente de una nave abandonada y conduce hasta Elysium Valley, una nueva región de Eden. Allí, dos agentes de Sub Rosa proponen soluciones opuestas para una tripulación contaminada y para el futuro de un asentamiento olvidado por el Protectorado.",
+        "Side Effects Guaranteed costará 14,99 dólares y también forma parte de la Premium Edition y su mejora. Junto al DLC llegará una actualización gratuita que permitirá redistribuir los atributos en cualquier momento y ajustar los puntos de habilidad obtenidos por nivel en las partidas personalizadas."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "primera parte de una expansión narrativa en dos capítulos",
+        "eleva el nivel máximo de 30 a 36",
+        "Las decisiones tomadas en esta historia afectarán al segundo capítulo"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "The Outer Worlds 2"
+      },
+      "copy": {
+        "es": "The Outer Worlds 2 estrenará su primer DLC narrativo el 2 de diciembre"
+      }
+    },
+    "sources": [
+      {
+        "label": "Xbox Wire",
+        "type": {
+          "es": "Anuncio oficial de Obsidian con la fecha, la historia, los sistemas y el precio del DLC"
+        },
+        "url": "https://news.xbox.com/en-us/2026/11/10/side-effects-guaranteed-the-outer-worlds-2-dlc/"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Presentación oficial de Obsidian con la confirmación para PS5 y los detalles de contenido"
+        },
+        "url": "https://blog.playstation.com/2026/11/10/the-outer-worlds-2s-first-dlc-arrives-december-2/"
+      }
+    ]
+  },
+  {
     "id": "dragon-quest-rpg-makaiju-isla-2027",
     "important": false,
     "category": {

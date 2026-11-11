@@ -1,7 +1,121 @@
 {
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-11-11",
   "region": "España y Europa",
   "months": [
+    {
+      "id": "2026-11",
+      "label": "Noviembre 2026",
+      "availability": "Añadidos en noviembre",
+      "headline": "PlayStation Plus en noviembre de 2026",
+      "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/",
+      "groups": [
+        {
+          "id": "essential",
+          "label": "Essential",
+          "access": "Disponible también para Extra y Premium",
+          "pending": "Los juegos mensuales de Essential para noviembre todavía no se han anunciado oficialmente."
+        },
+        {
+          "id": "extra",
+          "label": "Extra",
+          "access": "También disponible para Premium",
+          "games": [
+            {
+              "title": "Death Stranding 2: On the Beach",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/be07500b8d288a2ac8b3bdd91247f5a62b972d68.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "Like a Dragon: Pirate Yakuza in Hawaii",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/0f9cbfa84d97aacff67d89beb5d26cd741adf9ec.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "Atomfall",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/3dd25d1cd2330dd434593ae7c888a90966956aa1.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "Dragon Quest III HD-2D Remake",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/7b190a5bdff74d3fe44ef889710e6e31c7f022f2.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "Trepang2",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/e1afeb3dfa8a6d1a538d9ea6abf91198f8d61620.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "MotoGP 26",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/0d59d41c5286d66a684961c01109c3ed0de6b77c.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "Hell Let Loose",
+              "platforms": [
+                "PS5"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/0cd8b55a9964079707e4ac258aa3e7cf71544131.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            },
+            {
+              "title": "Cricket 26 – The Official Game of the Ashes",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/4558185a934daca6bacc1083653362cf66b868a1.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            }
+          ]
+        },
+        {
+          "id": "premium",
+          "label": "Premium",
+          "access": "Clásicos y ventajas adicionales",
+          "games": [
+            {
+              "title": "Freedom Wars Remastered",
+              "platforms": [
+                "PS5",
+                "PS4"
+              ],
+              "available": "Añadidos en noviembre",
+              "image": "https://blog.playstation.com/uploads/2026/11/0bb41af2b6b1f9d348b03313a6f66e0c5fc3470b.jpg",
+              "source": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "2026-10",
       "label": "Octubre 2026",

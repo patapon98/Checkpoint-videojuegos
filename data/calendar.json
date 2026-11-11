@@ -5308,6 +5308,56 @@
       "trailer": "https://www.youtube.com/watch?v=8gVR37rrXTE"
     },
     {
+      "id": "the-outer-worlds-2-side-effects-guaranteed",
+      "title": "The Outer Worlds 2: Side Effects Guaranteed",
+      "headingHtml": "The Outer Worlds 2: Side Effects Guaranteed <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2026-12-02",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/XBOX_TOW-Expansion_KeyArt_Horizontal-3ff701b040bc3de8c709-1600x900.jpg",
+        "alt": "The Outer Worlds 2: Side Effects Guaranteed",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://news.xbox.com/en-us/2026/11/10/side-effects-guaranteed-the-outer-worlds-2-dlc/",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de The Outer Worlds 2: Side Effects Guaranteed"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://news.xbox.com/en-us/2026/11/10/side-effects-guaranteed-the-outer-worlds-2-dlc/",
+        "official": true,
+        "host": "news.xbox.com",
+        "checkedAt": "2026-11-11",
+        "evidence": {
+          "title": "The Outer Worlds 2: Side Effects Guaranteed",
+          "releaseDate": "2026-12-02",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=Ay7aUFfZ9os"
+    },
+    {
       "id": "dragon-quest-monsters-the-withered-world",
       "title": "DRAGON QUEST MONSTERS: The Withered World",
       "headingHtml": "DRAGON QUEST MONSTERS: The Withered World",

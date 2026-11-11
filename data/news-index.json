@@ -1,5 +1,55 @@
 [
   {
+    "id": "my-games-management-buyout-2026",
+    "important": false,
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-11-10",
+    "addedAt": "2026-11-11T21:18:45Z",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "La dirección de MY.GAMES acuerda comprar la compañía a su único accionista"
+    },
+    "summary": {
+      "es": "La dirección de MY.GAMES ha firmado un acuerdo para adquirir la compañía a su único accionista, Alexander Chachava. La operación está liderada por la consejera delegada Elena Grigorian y el director de operaciones Denis Savuta, con respaldo del inversor Georgy Nurislamov."
+    },
+    "why": {
+      "es": "La compra trasladará el control del editor de War Robots y Rush Royale a su equipo directivo cuando se complete, previsiblemente durante 2026. MY.GAMES mantendrá su marca, su liderazgo y sus operaciones mientras avanza el cierre de la transacción."
+    },
+    "homeDetails": {
+      "es": [
+        "El acuerdo definitivo culmina un proceso iniciado en 2025 para estudiar alternativas estratégicas. Nurislamov participa como inversor privado incorporado por la propia dirección, aunque MY.GAMES no ha comunicado el precio ni otros términos financieros de la compra.",
+        "Grigorian y Savuta seguirán al frente de la empresa durante el proceso y después de su cierre. La compañía afirma que la actividad diaria, las relaciones con clientes y socios y la gestión de su catálogo continuarán sin cambios mientras se completa la operación."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "ha firmado un acuerdo para adquirir la compañía a su único accionista",
+        "trasladará el control del editor de War Robots y Rush Royale a su equipo directivo",
+        "mantendrá su marca, su liderazgo y sus operaciones"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "MY.GAMES"
+      },
+      "copy": {
+        "es": "MY.GAMES pasará a manos de su equipo directivo mediante una compra de la compañía"
+      }
+    },
+    "sources": [
+      {
+        "label": "MY.GAMES",
+        "type": {
+          "es": "Comunicado oficial sobre la compra por la dirección, los participantes y la continuidad operativa"
+        },
+        "url": "https://about.my.games/es-ES/news/639"
+      }
+    ]
+  },
+  {
     "id": "playstation-cancela-fairgames-haven-studios",
     "important": true,
     "category": {

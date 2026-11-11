@@ -8505,62 +8505,69 @@
     "important": true,
     "emphasis": {
       "es": [
-        "el beneficio operativo de PlayStation aumentó un 83%",
-        "eleva a 700.000 millones de yenes su previsión anual",
-        "las ventas de PS5 bajaron a 2,6 millones de unidades"
+        "ha superado los 100 millones de unidades distribuidas",
+        "2,1 millones más en 40 días",
+        "la generación más rentable de PlayStation"
       ]
     },
     "category": {
       "es": "Industria"
     },
     "date": "2026-07-31",
-    "updated": "2026-11-05",
+    "updated": "2026-11-10",
     "featured": false,
     "ticker": {
       "keyword": {
-        "es": "PlayStation"
+        "es": "PS5"
       },
       "copy": {
-        "es": "PlayStation eleva un 83% su beneficio trimestral y mejora su previsión anual"
+        "es": "PS5 supera los 100 millones de unidades distribuidas en todo el mundo"
       }
     },
     "tone": "playstation",
     "title": {
-      "es": "PlayStation eleva un 83% su beneficio trimestral y mejora sus previsiones"
+      "es": "PS5 supera los 100 millones de unidades distribuidas en todo el mundo"
     },
     "summary": {
-      "es": "Entre julio y septiembre de 2026, el beneficio operativo de PlayStation aumentó un 83% hasta 220.100 millones de yenes. Sony eleva a 700.000 millones de yenes su previsión anual, mientras las ventas de PS5 bajaron a 2,6 millones de unidades."
+      "es": "Sony Interactive Entertainment confirma que PS5 ha superado los 100 millones de unidades distribuidas en todo el mundo a 10 de noviembre de 2026. El hito supone 2,1 millones más en 40 días desde el cierre del último trimestre."
     },
     "why": {
-      "es": "La división casi duplicó su beneficio gracias al software de terceros, PlayStation Network y el tipo de cambio, aunque vendió menos consolas. Los usuarios activos mensuales crecieron hasta 127 millones y Sony revisó al alza tanto los ingresos como el beneficio anual del negocio."
+      "es": "La consola cruza una barrera histórica seis años después de su lanzamiento y consolida una base instalada decisiva para el negocio de Sony. La compañía presenta además a PS5 como la generación más rentable de PlayStation, con más de 136.000 millones de dólares en ventas."
     },
     "sources": [
       {
-        "label": "Sony Group",
+        "label": "Sony Interactive Entertainment",
         "type": {
-          "es": "Presentación oficial de resultados del segundo trimestre fiscal"
+          "es": "Registro oficial de ventas acumuladas de hardware PlayStation"
         },
-        "url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_sonypre.pdf"
+        "url": "https://sonyinteractive.com/en/our-company/business-data-sales/"
+      },
+      {
+        "label": "Sony Interactive Entertainment",
+        "type": {
+          "es": "Página corporativa oficial con la base instalada y los resultados acumulados de PS5"
+        },
+        "url": "https://sonyinteractive.com/en/our-company/"
       },
       {
         "label": "Sony Group",
         "type": {
-          "es": "Documento oficial con ventas de PS5 y usuarios activos"
+          "es": "Documento oficial de resultados con las unidades distribuidas al cierre de septiembre"
         },
         "url": "https://www.sony.com/en/SonyInfo/IR/library/er/pdf/26q2_supplement.pdf"
       },
       {
-        "label": "Reuters",
+        "label": "Gematsu",
         "type": {
-          "es": "Contexto sobre resultados, previsiones y mercado de memoria"
+          "es": "Contexto sobre el avance desde los 97,9 millones del último trimestre"
         },
-        "url": "https://www.reuters.com/business/retail-consumer/sony-posts-45-q2-profit-rise-beating-estimates-2026-11-05/"
+        "url": "https://www.gematsu.com/2026/11/ps5-shipments-top-100-million"
       }
     ],
     "homeDetails": {
       "es": [
-        "Los ingresos trimestrales de Game & Network Services crecieron un 9% hasta 1,2085 billones de yenes. Sony atribuye la mejora al tipo de cambio y al aumento de las ventas de servicios de red, juegos propios y títulos de terceros, frente al descenso de los ingresos de hardware.",
-        "Sony vendió 2,6 millones de PS5, por debajo de los 4 millones del mismo trimestre anterior, pero la base mensual subió de 119 a 127 millones de cuentas. Para el ejercicio completo, la compañía aumenta su previsión de ingresos del segmento a 4,83 billones de yenes y la de beneficio operativo a 700.000 millones."
+        "La página oficial de datos comerciales de Sony Interactive Entertainment sitúa el acumulado mundial de PS5 por encima de los 100 millones de unidades distribuidas a fecha de 10 de noviembre. El último informe trimestral había dejado el total en 97,9 millones al 30 de septiembre, por lo que la consola sumó al menos 2,1 millones durante los 40 días siguientes.",
+        "Sony acompaña el nuevo hito con una lectura más amplia del negocio: PlayStation reúne 127 millones de usuarios activos mensuales entre PS5 y PS4, y la generación de PS5 acumula más de 136.000 millones de dólares en ventas y 13.000 millones de beneficio operativo. La base instalada refuerza así el peso del software y los servicios en la recta final del ciclo."
       ]
     }
   },

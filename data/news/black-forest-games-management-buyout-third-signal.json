@@ -1,0 +1,57 @@
+{
+  "id": "black-forest-games-management-buyout-third-signal",
+  "important": false,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-11",
+  "addedAt": "2026-11-12T08:43:23Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Black Forest Games deja THQ Nordic y funda el grupo independiente Third Signal"
+  },
+  "summary": {
+    "es": "Black Forest Games sale de THQ Nordic mediante una compra por su dirección después de nueve años dentro de Embracer Group. El estudio de Destroy All Humans! se convierte además en miembro fundador de Third Signal, un nuevo grupo independiente de desarrolladores."
+  },
+  "why": {
+    "es": "La dirección de Black Forest Games será copropietaria del grupo junto a Third Signal Ventures y el estudio continuará publicando bajo su propia marca. La separación no rompe por completo la relación anterior: Black Forest Games y THQ Nordic seguirán colaborando en tareas de desarrollo."
+  },
+  "homeDetails": {
+    "es": [
+      "THQ Nordic adquirió Black Forest Games en 2017 y el equipo permaneció desde entonces dentro de la estructura de Embracer. El estudio alemán es responsable de los remakes de Destroy All Humans!, además de Giana Sisters: Twisted Dreams, Fade to Silence y Rogue Stormers.",
+      "Third Signal nace como un grupo de estudios centrado en juegos prémium para PC y consolas, con la intención de ofrecer independencia, recursos y libertad creativa a equipos experimentados. Black Forest Games afirma que ya trabaja en un proyecto nuevo, aunque todavía no ha revelado su nombre ni sus plataformas."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "sale de THQ Nordic mediante una compra por su dirección",
+      "miembro fundador de Third Signal",
+      "seguirán colaborando en tareas de desarrollo"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Black Forest Games"
+    },
+    "copy": {
+      "es": "Black Forest Games abandona THQ Nordic y cofundará el grupo independiente Third Signal"
+    }
+  },
+  "sources": [
+    {
+      "label": "Third Signal",
+      "type": {
+        "es": "Comunicado oficial sobre la compra por la dirección, la independencia y la nueva estructura del grupo"
+      },
+      "url": "https://www.gamespress.com/en-US/Black-Forest-Games-spins-out-of-THQ-Nordic-to-co-found-Third-Signal"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Contexto sobre la separación y la continuidad de la colaboración con THQ Nordic"
+      },
+      "url": "https://www.gematsu.com/2026/11/black-forest-games-splits-from-thq-nordic"
+    }
+  ]
+}

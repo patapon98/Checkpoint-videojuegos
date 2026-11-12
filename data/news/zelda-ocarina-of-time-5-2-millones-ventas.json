@@ -1,0 +1,50 @@
+{
+  "id": "zelda-ocarina-of-time-5-2-millones-ventas",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "ha vendido más de 5,2 millones de unidades en todo el mundo durante sus primeros cuatro días",
+      "el juego de Nintendo para Switch 2 con el lanzamiento más rápido a escala mundial",
+      "La cifra incluye copias físicas y digitales"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-11",
+  "addedAt": "2026-11-12T12:06:00Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Ocarina of Time"
+    },
+    "copy": {
+      "es": "Ocarina of Time supera 5,2 millones de unidades en cuatro días y firma el estreno más rápido de Switch 2"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Zelda: Ocarina of Time supera los 5,2 millones de unidades en cuatro días"
+  },
+  "summary": {
+    "es": "The Legend of Zelda: Ocarina of Time ha vendido más de 5,2 millones de unidades en todo el mundo durante sus primeros cuatro días. Nintendo lo sitúa como su juego de venta más rápida para Nintendo Switch 2."
+  },
+  "why": {
+    "es": "El remake se convierte en el juego de Nintendo para Switch 2 con el lanzamiento más rápido a escala mundial y también en Estados Unidos, Canadá y Latinoamérica. La cifra incluye copias físicas y digitales."
+  },
+  "sources": [
+    {
+      "label": "Nintendo",
+      "type": {
+        "es": "Anuncio oficial del hito de ventas"
+      },
+      "url": "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Nintendo contabiliza las ventas registradas desde el estreno mundial del 5 de noviembre hasta el cierre de sus primeros cuatro días en el mercado. El resultado marca un arranque excepcional para la reconstrucción del clásico de Nintendo 64 dentro de la celebración del 40.º aniversario de The Legend of Zelda.",
+      "El récord se limita a juegos publicados por Nintendo para Nintendo Switch 2 y se apoya en los datos internos de la compañía. La comunicación oficial no ofrece un desglose entre formato físico y digital ni cifras separadas por territorio."
+    ]
+  }
+}

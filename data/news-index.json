@@ -1,5 +1,55 @@
 [
   {
+    "id": "conan-the-black-pyramid-anuncio",
+    "important": false,
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-11",
+    "addedAt": "2026-11-12T00:07:37Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Conan: The Black Pyramid llevará al bárbaro a un roguelite cooperativo en 2027"
+    },
+    "summary": {
+      "es": "Games Farm y Grindstone han anunciado Conan: The Black Pyramid para PC en 2027. El nuevo RPG de acción roguelite mezcla espada y brujería con horror cósmico y permitirá jugar en solitario o en cooperativo en línea para dos personas."
+    },
+    "why": {
+      "es": "El juego reunirá a cinco héroes del universo de Robert E. Howard, incluidos Conan, Solomon Kane y Dark Agnes. Cada descenso por la pirámide cambiará rutas, combates y acontecimientos, mientras los jugadores construyen su personaje con recuerdos, artefactos y maestrías."
+    },
+    "homeDetails": {
+      "es": [
+        "La Pirámide Negra funciona como un laberinto fuera del tiempo que conecta ruinas, reinos devastados y salas ocultistas de distintas épocas. Las partidas desbloquearán mejoras permanentes y nuevos fragmentos de una historia centrada en descubrir quién ha reunido allí a los héroes.",
+        "El combate combina ataques cuerpo a cuerpo, esgrima, armas de fuego y magia, con paradas, ejecuciones y estados alterados. Cada personaje tendrá variantes llamadas Warrior Memories, y ya es posible solicitar acceso a futuras pruebas desde la ficha oficial de Steam."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "El nuevo RPG de acción roguelite mezcla espada y brujería con horror cósmico",
+        "cooperativo en línea para dos personas",
+        "cinco héroes del universo de Robert E. Howard"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Conan"
+      },
+      "copy": {
+        "es": "Conan: The Black Pyramid llegará a PC en 2027 con cooperativo para dos"
+      }
+    },
+    "sources": [
+      {
+        "label": "Steam",
+        "type": {
+          "es": "Ficha oficial de Games Farm y Grindstone con plataforma, ventana y sistemas principales"
+        },
+        "url": "https://store.steampowered.com/app/5367670/Conan_The_Black_Pyramid/"
+      }
+    ]
+  },
+  {
     "id": "my-games-management-buyout-2026",
     "important": false,
     "category": {

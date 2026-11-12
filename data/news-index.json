@@ -1,5 +1,75 @@
 [
   {
+    "id": "warhammer-40000-dark-heresy-fecha-enero-2027",
+    "important": false,
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-11-09",
+    "addedAt": "2026-11-12T06:03:43Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Warhammer 40,000: Dark Heresy fija el 28 de enero para PS5, Xbox Series y PC"
+    },
+    "summary": {
+      "es": "Owlcat Games lanzará Warhammer 40,000: Dark Heresy el 28 de enero de 2027 en PS5, Xbox Series X|S y PC. La versión de Nintendo Switch 2 llegará más adelante, todavía sin una fecha concreta."
+    },
+    "why": {
+      "es": "El RPG llevará a la Inquisición al sector Calixis con investigaciones, decisiones con consecuencias y un sistema de combate táctico renovado. La beta para fundadores cerrará el 7 de enero como parte de los preparativos para el estreno."
+    },
+    "homeDetails": {
+      "es": [
+        "La campaña comienza con un acólito de bajo rango que forma una banda de guerra para investigar cultos, conspiraciones y herejías. Entre los posibles compañeros figuran psíquicos, parias, un corsario aeldari y un kroot, cada uno con capacidades propias dentro y fuera del combate.",
+        "Las pesquisas permitirán decidir cómo perseguir la verdad y asumir las consecuencias de cada método, mientras los aliados aportan consejo durante los casos y habilidades en las batallas. Owlcat mantendrá disponibles los paquetes de fundador hasta comienzos de enero y comunicará después la fecha de Switch 2."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "el 28 de enero de 2027",
+        "La versión de Nintendo Switch 2 llegará más adelante",
+        "investigaciones, decisiones con consecuencias y un sistema de combate táctico renovado"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Dark Heresy"
+      },
+      "copy": {
+        "es": "Dark Heresy llegará el 28 de enero de 2027 a PS5, Xbox Series y PC"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=PKccIqfBskc",
+      "label": {
+        "es": "Ver tráiler oficial de la fecha"
+      }
+    },
+    "sources": [
+      {
+        "label": "Owlcat Games",
+        "type": {
+          "es": "Comunicado oficial con fecha, plataformas y detalles del juego"
+        },
+        "url": "https://www.gamespress.com/en-GB/Warhammer-40000-Dark-Heresy-Launches-on-January-28th-2027"
+      },
+      {
+        "label": "Steam",
+        "type": {
+          "es": "Ficha oficial del juego y sus características principales"
+        },
+        "url": "https://store.steampowered.com/app/3710600/Warhammer_40000_Dark_Heresy/"
+      },
+      {
+        "label": "Owlcat Games en YouTube",
+        "type": {
+          "es": "Tráiler oficial de la fecha de lanzamiento"
+        },
+        "url": "https://www.youtube.com/watch?v=PKccIqfBskc"
+      }
+    ]
+  },
+  {
     "id": "conan-the-black-pyramid-anuncio",
     "important": false,
     "category": {

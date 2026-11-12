@@ -1,5 +1,62 @@
 [
   {
+    "id": "vindictus-defying-fate-ps5-2027",
+    "important": false,
+    "emphasis": {
+      "es": [
+        "llegará a PlayStation 5 en 2027",
+        "confirma por primera vez una consola concreta",
+        "permitirá afrontar amenazas junto a otros jugadores"
+      ]
+    },
+    "category": {
+      "es": "Plataformas"
+    },
+    "date": "2026-11-12",
+    "addedAt": "2026-11-12T18:14:10Z",
+    "featured": false,
+    "ticker": {
+      "keyword": {
+        "es": "Vindictus: Defying Fate"
+      },
+      "copy": {
+        "es": "Vindictus: Defying Fate confirma su versión para PS5 y mantiene el lanzamiento en 2027"
+      }
+    },
+    "tone": "games",
+    "title": {
+      "es": "Vindictus: Defying Fate confirma su llegada a PS5 en 2027"
+    },
+    "summary": {
+      "es": "Nexon ha anunciado que Vindictus: Defying Fate llegará a PlayStation 5 en 2027. La nueva página de PlayStation Store confirma una versión mejorada para PS5 Pro y partidas en línea para hasta cuatro jugadores."
+    },
+    "why": {
+      "es": "El anuncio confirma por primera vez una consola concreta para el RPG de acción, que hasta ahora solo tenía asegurado su estreno en PC y una referencia genérica a consolas. La campaña estará centrada en el juego individual, pero también permitirá afrontar amenazas junto a otros jugadores."
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Anuncio oficial de la versión para PS5"
+        },
+        "url": "https://blog.playstation.com/2026/11/12/vindictus-defying-fate-comes-to-ps5-next-year/"
+      },
+      {
+        "label": "PlayStation Store",
+        "type": {
+          "es": "Ficha oficial con ventana y funciones de la versión para PS5"
+        },
+        "url": "https://store.playstation.com/en-us/concept/10011300/"
+      }
+    ],
+    "homeDetails": {
+      "es": [
+        "Vindictus: Defying Fate es una reinterpretación independiente del universo del Vindictus original, ambientada en una fantasía medieval inspirada en la mitología celta. Cada héroe tiene armas y respuestas defensivas propias, desde esquivas encadenadas hasta bloqueos, contraataques y enfrentamientos de fuerza.",
+        "Nexon describe la aventura como una experiencia principalmente individual, aunque prepara contenido multijugador para combatir amenazas de gran escala. La ficha de PlayStation añade compatibilidad con las funciones del mando DualSense, mejoras para PS5 Pro y catorce opciones de accesibilidad."
+      ]
+    }
+  },
+  {
     "id": "zelda-ocarina-of-time-5-2-millones-ventas",
     "important": true,
     "emphasis": {

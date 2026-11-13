@@ -1,0 +1,57 @@
+{
+  "id": "wolfenstein-3-oficialmente-en-produccion",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Wolfenstein 3 está oficialmente en producción",
+      "Brian Bloom y Debra Wilson volverán",
+      "confirma la continuidad de una de las sagas históricas del género"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-12",
+  "addedAt": "2026-11-13T02:36:07Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Wolfenstein 3"
+    },
+    "copy": {
+      "es": "Wolfenstein 3 entra oficialmente en producción en MachineGames"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Wolfenstein 3 está oficialmente en producción en MachineGames"
+  },
+  "summary": {
+    "es": "Xbox y Bethesda han anunciado que Wolfenstein 3 está oficialmente en producción en MachineGames. Brian Bloom y Debra Wilson volverán para interpretar a BJ Blazkowicz y Grace Walker, respectivamente."
+  },
+  "why": {
+    "es": "La confirmación convierte en proyecto activo una continuación largamente esperada y confirma la continuidad de una de las sagas históricas del género. MachineGames todavía no ha comunicado plataformas ni ventana de lanzamiento."
+  },
+  "sources": [
+    {
+      "label": "Bethesda",
+      "type": {
+        "es": "Confirmación oficial del desarrollo y del regreso de sus protagonistas"
+      },
+      "url": "https://bethesda.net/en-US/news/xbox-25-id-software-machinegames-news"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Resumen oficial del 25.º aniversario de Xbox"
+      },
+      "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La directora ejecutiva de Xbox, Asha Sharma, comunicó durante el FanFest del 25.º aniversario que Wolfenstein 3 ya se encuentra en producción. MachineGames confirmó después que trabaja en la siguiente entrega de la franquicia y que compartirá más información cuando el proyecto esté preparado.",
+      "El anuncio incluye el regreso de Brian Bloom como BJ Blazkowicz y de Debra Wilson como Grace Walker, con material de captura de movimiento y una primera imagen del guion. Bethesda no ha detallado todavía las plataformas, la fecha ni los sistemas jugables de esta nueva entrega."
+    ]
+  }
+}

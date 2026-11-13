@@ -1,0 +1,64 @@
+{
+  "id": "nvidia-jensen-huang-dimision-colette-kress",
+  "important": true,
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-12",
+  "addedAt": "2026-11-13T20:32:50Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "Jensen Huang dimite como CEO de NVIDIA; Colette Kress asume de forma interina"
+  },
+  "summary": {
+    "es": "Jensen Huang ha dimitido con efecto inmediato como presidente y consejero delegado de NVIDIA, además de abandonar el consejo. La directora financiera Colette Kress ocupa el cargo de forma interina mientras la compañía busca un sucesor permanente."
+  },
+  "why": {
+    "es": "El relevo pone fin a 33 años de liderazgo del cofundador al frente de una de las compañías más influyentes en gráficos, inteligencia artificial y hardware para videojuegos. NVIDIA afirma que sus operaciones, compromisos con clientes y hoja de ruta de productos continuarán sin interrupción."
+  },
+  "homeDetails": {
+    "es": [
+      "Colette Kress se incorporó a NVIDIA en 2013 y seguirá ejerciendo también como vicepresidenta ejecutiva y directora financiera mientras ocupa la dirección interina. El consejo ha iniciado un proceso de búsqueda que valorará candidatos internos y externos para nombrar a la persona que asumirá el cargo de forma permanente.",
+      "La compañía también ha designado a Harvey C. Jones como primer presidente de su consejo de administración. NVIDIA mantiene sin cambios la presentación de sus resultados del tercer trimestre fiscal de 2027 para el 17 de noviembre y asegura que la transición no alterará su estrategia tecnológica."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "ha dimitido con efecto inmediato como presidente y consejero delegado de NVIDIA",
+      "Colette Kress ocupa el cargo de forma interina",
+      "pone fin a 33 años de liderazgo del cofundador"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Jensen Huang"
+    },
+    "copy": {
+      "es": "Jensen Huang deja NVIDIA tras 33 años y Colette Kress asume como CEO interina"
+    }
+  },
+  "sources": [
+    {
+      "label": "NVIDIA Newsroom",
+      "type": {
+        "es": "Comunicado oficial sobre la dimisión, el relevo interino y la búsqueda de un sucesor"
+      },
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/"
+    },
+    {
+      "label": "NVIDIA Investor Relations",
+      "type": {
+        "es": "Comunicado oficial a inversores con los cambios en la dirección y el consejo"
+      },
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
+    },
+    {
+      "label": "SEC",
+      "type": {
+        "es": "Registro regulatorio oficial de la dimisión y los nombramientos"
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+    }
+  ]
+}

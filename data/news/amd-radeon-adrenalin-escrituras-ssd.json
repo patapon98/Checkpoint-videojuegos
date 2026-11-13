@@ -1,0 +1,57 @@
+{
+  "id": "amd-radeon-adrenalin-escrituras-ssd",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "corrige una actividad excesiva de escritura en la unidad del sistema",
+      "Radeon RX 7000 y RX 9000",
+      "reducir el desgaste innecesario del SSD"
+    ]
+  },
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-11-12",
+  "addedAt": "2026-11-13T09:22:45Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "AMD Adrenalin 26.11.1"
+    },
+    "copy": {
+      "es": "AMD Adrenalin 26.11.1 corrige las escrituras excesivas en SSD de las Radeon más recientes"
+    }
+  },
+  "tone": "platforms",
+  "title": {
+    "es": "AMD corrige las escrituras excesivas en SSD de sus controladores Radeon"
+  },
+  "summary": {
+    "es": "AMD ha publicado Adrenalin 26.11.1, un controlador opcional que corrige una actividad excesiva de escritura en la unidad del sistema. El problema podía aparecer con el equipo en reposo en tarjetas Radeon RX 7000 y RX 9000."
+  },
+  "why": {
+    "es": "Las escrituras continuas pueden acelerar el desgaste de la unidad. Actualizar permite reducir el desgaste innecesario del SSD, por lo que AMD recomienda instalar la nueva versión a quienes sufran la incidencia. El controlador también corrige escrituras excesivas al mover o redimensionar ventanas."
+  },
+  "sources": [
+    {
+      "label": "AMD Support",
+      "type": {
+        "es": "Aviso oficial de la incidencia y recomendación de actualización"
+      },
+      "url": "https://www.amd.com/en/resources/support-articles/faqs/PA-365.html"
+    },
+    {
+      "label": "AMD",
+      "type": {
+        "es": "Notas oficiales del controlador Adrenalin 26.11.1"
+      },
+      "url": "https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-11-1.html"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "AMD identifica el fallo como una actividad de escritura excesiva sobre la unidad del sistema cuando el ordenador permanece inactivo con tarjetas Radeon RX 7000 y RX 9000. Las notas de la versión añaden un segundo caso relacionado con mover o cambiar el tamaño de las ventanas de aplicaciones.",
+      "Adrenalin 26.11.1 está disponible para Windows 10 y Windows 11 y admite GPU Radeon de las familias RX 5000, RX 6000, RX 7000 y RX 9000, aunque el aviso específico en reposo se limita a las dos generaciones más recientes. AMD aconseja usar los controladores del fabricante en portátiles y equipos todo en uno cuando necesiten funciones personalizadas."
+    ]
+  }
+}

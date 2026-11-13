@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "también a PS5",
-      "juego cruzado y cooperativo online para hasta cuatro personas",
-      "priorizando el alcance comercial"
+      "añadirá Firefight este invierno",
+      "modo cooperativo PvE para cuatro jugadores",
+      "llegará mediante una actualización gratuita"
     ]
   },
   "category": {
@@ -13,19 +13,34 @@
     "en": "Releases"
   },
   "date": "2026-07-23",
+  "updated": "2026-11-12",
   "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Halo: Campaign Evolved"
+    },
+    "copy": {
+      "es": "Halo: Campaign Evolved recibirá Firefight gratis este invierno"
+    }
+  },
   "tone": "halo",
   "title": {
-    "es": "Halo: Campaign Evolved llega el 28 de julio también a PS5",
-    "en": "Halo: Campaign Evolved launches July 28, including on PS5"
+    "es": "Halo: Campaign Evolved recibirá Firefight gratis este invierno",
+    "en": "Halo: Campaign Evolved will get Firefight for free this winter"
   },
   "summary": {
-    "es": "El remake de la primera campaña de Halo se estrena en Xbox Series, PC, nube y PlayStation 5, con juego cruzado y hasta cuatro jugadores en cooperativo online.",
-    "en": "The remake of Halo's first campaign launches on Xbox Series, PC, cloud and PlayStation 5, with cross-play and four-player online co-op."
+    "es": "Halo: Campaign Evolved añadirá Firefight este invierno como modo cooperativo PvE para cuatro jugadores. El contenido llegará mediante una actualización gratuita en Xbox Series, PC y PS5.",
+    "en": "Halo: Campaign Evolved will add Firefight this winter as a four-player cooperative PvE mode. The content will arrive as a free update on Xbox Series, PC and PS5."
   },
   "why": {
-    "es": "La llegada simultánea a PlayStation confirma hasta qué punto Xbox está ampliando el alcance de sus franquicias históricas.",
-    "en": "Its simultaneous PlayStation release shows how far Xbox is expanding the reach of its historic franchises."
+    "es": "La incorporación amplía el remake más allá de su campaña y recupera uno de los modos de supervivencia más reconocibles de Halo. Firefight incluirá nuevos mapas y distintos arsenales, con más detalles previstos para Halo Fest los días 12 y 13 de diciembre.",
+    "en": "The addition expands the remake beyond its campaign and brings back one of Halo's signature survival modes. Firefight will feature new maps and varied weapon loadouts, with more details planned for Halo Fest on December 12 and 13."
+  },
+  "homeDetails": {
+    "es": [
+      "Firefight enfrenta a un equipo de Spartans contra oleadas sucesivas de enemigos en partidas de resistencia cooperativa. Halo Studios ha confirmado que la versión de Campaign Evolved permitirá jugar con cuatro participantes y estrenará mapas preparados para este formato.",
+      "El remake ya ofrecía la campaña reconstruida, juego cruzado y cooperativo online para cuatro personas en Xbox Series, PC y PlayStation 5. La actualización de invierno añadirá así una actividad separada de la historia sin coste adicional para quienes tengan el juego."
+    ]
   },
   "trailer": {
     "url": "https://www.youtube.com/watch?v=5KhzCSeZxAU",
@@ -50,6 +65,20 @@
         "en": "Context"
       },
       "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Anuncio oficial de Halo Studios sobre Firefight, su ventana y su distribución gratuita"
+      },
+      "url": "https://news.xbox.com/en-us/2026/11/12/halo-campaign-evolved-firefight-free-update-this-winter/"
+    },
+    {
+      "label": "Xbox Wire",
+      "type": {
+        "es": "Resumen oficial del FanFest con la incorporación de Firefight"
+      },
+      "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
     }
   ]
 }

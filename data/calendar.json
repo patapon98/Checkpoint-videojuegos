@@ -6758,6 +6758,58 @@
       "trailer": "https://www.youtube.com/watch?v=mKXPyW8r4x8"
     },
     {
+      "id": "romancing-saga-3-destinies-united",
+      "title": "Romancing SaGa 3: Destinies United",
+      "headingHtml": "Romancing SaGa 3: Destinies United <span class=\"tag-dlc\">Remake</span>",
+      "date": "2027-02-04",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · Switch · PC",
+      "image": {
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000114053/679853dcdb6c5251a11354f2862f41048ae9e04adbe75be5588e1d706a9e6195",
+        "alt": "Romancing SaGa 3: Destinies United",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/4214960/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Romancing SaGa 3: Destinies United"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Remake",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://press.es.square-enix.com/es/RELEASE-VON-ROMANCING-SAGA-3-DESTINIES-UNITED-AUF-DEN-4-FEBRUAR-VORGEZ",
+        "official": true,
+        "host": "press.es.square-enix.com",
+        "checkedAt": "2026-11-13",
+        "evidence": {
+          "title": "Romancing SaGa 3: Destinies United",
+          "releaseDate": "2027-02-04",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "switch",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=oWd7ez7Lmto"
+    },
+    {
       "id": "tomb-raider-legacy-of-atlantis",
       "title": "Tomb Raider: Legacy of Atlantis",
       "headingHtml": "Tomb Raider: Legacy of Atlantis",
@@ -6798,58 +6850,6 @@
       },
       "legacy": true,
       "trailer": "https://www.youtube.com/watch?v=fn1EREGsdFg"
-    },
-    {
-      "id": "romancing-saga-3-destinies-united",
-      "title": "Romancing SaGa 3: Destinies United",
-      "headingHtml": "Romancing SaGa 3: Destinies United <span class=\"tag-dlc\">Remake</span>",
-      "date": "2027-02-16",
-      "platformKeys": [
-        "ps5",
-        "xbox",
-        "switch",
-        "pc"
-      ],
-      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2 · Switch · PC",
-      "image": {
-        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/store/software/switch2/70010000114053/679853dcdb6c5251a11354f2862f41048ae9e04adbe75be5588e1d706a9e6195",
-        "alt": "Romancing SaGa 3: Destinies United",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://store.steampowered.com/app/4214960/",
-        "title": "Ver ficha oficial",
-        "ariaLabel": "Ver la ficha oficial de Romancing SaGa 3: Destinies United"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Remake",
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 55,
-      "source": {
-        "url": "https://www.youtube.com/watch?v=oWd7ez7Lmto",
-        "official": true,
-        "host": "www.youtube.com",
-        "checkedAt": "2026-09-11",
-        "evidence": {
-          "title": "Romancing SaGa 3: Destinies United",
-          "releaseDate": "2027-02-16",
-          "platforms": [
-            "ps5",
-            "xbox",
-            "switch",
-            "pc"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=oWd7ez7Lmto"
     },
     {
       "id": "persona-4-revival",

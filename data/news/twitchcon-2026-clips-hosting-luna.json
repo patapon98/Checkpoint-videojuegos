@@ -1,0 +1,49 @@
+{
+  "id": "twitchcon-2026-clips-hosting-luna",
+  "category": {
+    "es": "Plataformas"
+  },
+  "date": "2026-11-13",
+  "addedAt": "2026-11-13T23:51:21Z",
+  "featured": false,
+  "tone": "platform",
+  "title": {
+    "es": "Twitch recuperará Hosting y ampliará los clips hasta cinco minutos"
+  },
+  "summary": {
+    "es": "Twitch ha anunciado en TwitchCon San Diego que trabaja en clips de hasta cinco minutos y recuperará Hosting a finales de 2026 con chat compartido entre comunidades. La plataforma también prueba invitaciones para jugar con espectadores mediante Amazon Luna."
+  },
+  "why": {
+    "es": "El regreso de Hosting cambia cómo los canales mantienen activa su comunidad al terminar una emisión, mientras que los clips más largos amplían las opciones para descubrir y reutilizar contenido. La integración de Amazon Luna añade además acceso inmediato a juegos compatibles desde Twitch."
+  },
+  "homeDetails": {
+    "es": [
+      "La nueva versión de Hosting permitirá mostrar otro canal en directo desde la página de un creador cuando esté desconectado. Las dos comunidades compartirán un único chat, con la opción de ver todos los mensajes identificados por canal o limitar la conversación a la audiencia del anfitrión; Twitch también experimenta con Host Trains que rotan automáticamente entre varios canales.",
+      "Twitch prevé elevar de 60 segundos a cinco minutos la duración máxima de los clips y permitir combinar varios fragmentos. Desde el 13 de noviembre, los creadores pueden invitar hasta a siete espectadores a partidas de títulos compatibles de Luna GameNight, mientras la plataforma prueba un botón para abrir en Amazon Luna el juego que se está viendo."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "clips de hasta cinco minutos",
+      "recuperará Hosting a finales de 2026 con chat compartido entre comunidades",
+      "prueba invitaciones para jugar con espectadores mediante Amazon Luna"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Twitch"
+    },
+    "copy": {
+      "es": "Twitch recuperará Hosting, ampliará los clips y conectará partidas con Amazon Luna"
+    }
+  },
+  "sources": [
+    {
+      "label": "Twitch Blog",
+      "type": {
+        "es": "Anuncio oficial de los cambios presentados durante TwitchCon San Diego 2026"
+      },
+      "url": "https://blog.twitch.tv/en/2026/11/13/twitchcon-san-diego-2026/"
+    }
+  ]
+}

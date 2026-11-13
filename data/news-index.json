@@ -9792,9 +9792,9 @@
     "id": "xbox-retrocompatibilidad-pc",
     "emphasis": {
       "es": [
-        "sin comprar otra copia",
-        "trasladar su catálogo histórico a PC",
-        "mejorar su conservación"
+        "amplía a 25 juegos su catálogo retrocompatible en PC",
+        "21 títulos adicionales de la Xbox original",
+        "refuerza el acceso legal y la conservación"
       ]
     },
     "category": {
@@ -9802,44 +9802,51 @@
       "en": "Platforms"
     },
     "date": "2026-07-22",
+    "updated": "2026-11-12",
     "featured": false,
     "ticker": {
       "keyword": {
         "es": "Xbox"
       },
       "copy": {
-        "es": "Xbox estrena la retrocompatibilidad de sus clásicos en PC"
+        "es": "Xbox amplía a 25 juegos su retrocompatibilidad en PC y añade logros a cuatro clásicos"
       }
     },
     "tone": "xbox",
     "title": {
-      "es": "Xbox lleva su retrocompatibilidad a PC con cuatro clásicos",
-      "en": "Xbox brings backward compatibility to PC with four classics"
+      "es": "Xbox amplía a 25 juegos su retrocompatibilidad en PC",
+      "en": "Xbox expands backward compatibility on PC to 25 games"
     },
     "summary": {
-      "es": "Blinx, Conker: Live & Reloaded, Crimson Skies y Fuzion Frenzy ya pueden jugarse en Windows 11. Las licencias digitales compradas en consola se trasladan a PC mediante Xbox Play Anywhere.",
-      "en": "Blinx, Conker: Live & Reloaded, Crimson Skies and Fuzion Frenzy are now playable on Windows 11. Digital console licenses carry over to PC through Xbox Play Anywhere."
+      "es": "Xbox amplía a 25 juegos su catálogo retrocompatible en PC con 21 títulos adicionales de la Xbox original. La nueva selección incluye Morrowind, los dos Knights of the Old Republic y TimeSplitters 2, entre otros clásicos.",
+      "en": "Xbox expands its backward-compatible PC catalogue to 25 games with 21 additional original Xbox titles. The new selection includes Morrowind, both Knights of the Old Republic games, and TimeSplitters 2."
     },
     "why": {
-      "es": "Es el inicio de un programa más amplio que puede abrir el catálogo histórico de Xbox al PC y mejorar su conservación.",
-      "en": "It starts a wider effort that could open Xbox's back catalogue to PC and improve preservation."
+      "es": "La ampliación multiplica por más de seis el catálogo inicial y refuerza el acceso legal y la conservación de juegos de la primera Xbox en Windows 11. KOTOR, KOTOR II, Blinx y Conker reciben además logros por primera vez, también en Xbox One y Xbox Series.",
+      "en": "The expansion grows the initial catalogue by more than six times and strengthens legal access to and preservation of original Xbox games on Windows 11. KOTOR, KOTOR II, Blinx, and Conker also gain achievements for the first time, including on Xbox One and Xbox Series."
+    },
+    "homeDetails": {
+      "es": [
+        "Los 21 juegos incorporados abarcan producciones de Microsoft y de terceros: desde The Elder Scrolls III: Morrowind y dos entregas de TimeSplitters hasta una amplia colección de Star Wars con Republic Commando, Battlefront y Jedi Academy. Morrowind y Grabbed by the Ghoulies también forman parte de Xbox Game Pass en los territorios compatibles.",
+        "Todos los juegos retrocompatibles de la Xbox original disponibles en PC admiten ahora ratón y teclado, mientras que Microsoft ha mejorado el rendimiento y la estabilidad de los cuatro títulos iniciales. La compañía confirma que seguirá ampliando el programa y que llevará los logros a más clásicos en el futuro."
+      ]
     },
     "sources": [
       {
         "label": "Xbox Wire",
         "type": {
-          "es": "Fuente oficial",
-          "en": "Official source"
+          "es": "Anuncio oficial de la ampliación a 25 juegos y de los nuevos logros",
+          "en": "Official announcement of the expansion to 25 games and new achievements"
         },
-        "url": "https://news.xbox.com/en-us/2026/07/22/xbox-backward-compatibility-on-pc/"
+        "url": "https://news.xbox.com/en-us/2026/11/12/25-original-xbox-games-now-available-on-pc/"
       },
       {
-        "label": "The Verge",
+        "label": "Xbox Wire",
         "type": {
-          "es": "Contexto",
-          "en": "Context"
+          "es": "Anuncio oficial del lanzamiento inicial de la retrocompatibilidad en PC",
+          "en": "Official announcement of the initial backward compatibility launch on PC"
         },
-        "url": "https://www.theverge.com/news/969117/microsoft-xbox-games-pc-backward-compatibility"
+        "url": "https://news.xbox.com/en-us/2026/07/22/xbox-backward-compatibility-on-pc/"
       }
     ]
   },

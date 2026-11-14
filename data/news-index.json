@@ -1,5 +1,54 @@
 [
   {
+    "id": "god-of-war-sons-of-sparta-ps4-noviembre",
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-11-13",
+    "addedAt": "2026-11-14T09:15:22Z",
+    "featured": false,
+    "tone": "playstation",
+    "title": {
+      "es": "God of War Sons of Sparta llegará a PS4 el 16 de noviembre con dos modos nuevos"
+    },
+    "summary": {
+      "es": "God of War Sons of Sparta llegará a PS4 el 16 de noviembre a medianoche, hora local. Ese mismo día, PS4 y PS5 recibirán los nuevos modos Hermes y Erebus mediante una actualización."
+    },
+    "why": {
+      "es": "El lanzamiento amplía a PS4 una entrega canónica de God of War que hasta ahora solo estaba disponible en PS5. Los dos modos nuevos añaden herramientas de speedrun y un desafío en el que cualquier golpe resulta letal."
+    },
+    "homeDetails": {
+      "es": [
+        "Hermes convierte la campaña en una carrera contrarreloj con un temporizador por segmentos, una tabla de clasificación persistente y herramientas específicas para quienes buscan completar el juego a máxima velocidad. El modo se desbloquea al terminar la historia o mediante un código introducido en el menú principal.",
+        "Erebus modifica las reglas de combate para que tanto Kratos como sus enemigos caigan con un solo impacto. La elección del modo se realiza al crear una partida nueva y queda vinculada a ese archivo de guardado, sin posibilidad de cambiarla después."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "llegará a PS4 el 16 de noviembre a medianoche, hora local",
+        "PS4 y PS5 recibirán los nuevos modos Hermes y Erebus",
+        "amplía a PS4 una entrega canónica de God of War"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "God of War"
+      },
+      "copy": {
+        "es": "God of War Sons of Sparta llegará a PS4 el 16 de noviembre con Hermes y Erebus"
+      }
+    },
+    "sources": [
+      {
+        "label": "PlayStation Blog España",
+        "type": {
+          "es": "Anuncio oficial de la versión para PS4, la fecha y los dos modos nuevos"
+        },
+        "url": "https://blog.es.playstation.com/2026/02/17/god-of-war-sons-of-sparta-lo-que-hay-que-saber/"
+      }
+    ]
+  },
+  {
     "id": "twitchcon-2026-clips-hosting-luna",
     "category": {
       "es": "Plataformas"

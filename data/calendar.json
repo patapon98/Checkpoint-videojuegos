@@ -5118,6 +5118,58 @@
       "trailer": "https://www.youtube.com/watch?v=52Fei-sLLQc"
     },
     {
+      "id": "god-of-war-sons-of-sparta-ps4",
+      "title": "God of War Sons of Sparta",
+      "headingHtml": "God of War Sons of Sparta <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-16",
+      "platformKeys": [
+        "ps4"
+      ],
+      "platformsHtml": "PS4",
+      "image": {
+        "provider": "rawg",
+        "query": "God of War Sons of Sparta",
+        "src": "https://media.rawg.io/media/games/1f7/1f7638248338d3630682ff5508e6e0f7.jpg",
+        "alt": "God of War Sons of Sparta para PS4",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false,
+        "rawgId": 1015995,
+        "rawgSlug": "god-of-war-sons-of-sparta",
+        "rawgPage": "https://rawg.io/games/god-of-war-sons-of-sparta",
+        "rawgImageType": "background"
+      },
+      "store": {
+        "url": "https://www.playstation.com/es-es/games/god-of-war-sons-of-sparta/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de God of War Sons of Sparta"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://blog.es.playstation.com/2026/02/17/god-of-war-sons-of-sparta-lo-que-hay-que-saber/",
+        "official": true,
+        "host": "blog.es.playstation.com",
+        "checkedAt": "2026-11-14",
+        "evidence": {
+          "title": "God of War Sons of Sparta",
+          "releaseDate": "2026-11-16",
+          "platforms": [
+            "ps4"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=uft6nVrt_dY"
+    },
+    {
       "id": "spirit-crossing",
       "title": "Spirit Crossing",
       "headingHtml": "Spirit Crossing",

@@ -1,0 +1,57 @@
+{
+  "id": "bandai-namco-cierra-reflector-entertainment",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "Bandai Namco ha decidido cerrar la actividad de Reflector Entertainment",
+      "disolver y liquidar el estudio canadiense",
+      "una pérdida extraordinaria de unos 21 millones de euros"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-10",
+  "addedAt": "2026-11-14T12:16:29Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Reflector Entertainment"
+    },
+    "copy": {
+      "es": "Bandai Namco disolverá y liquidará Reflector Entertainment"
+    }
+  },
+  "tone": "industry",
+  "title": {
+    "es": "Bandai Namco cerrará Reflector Entertainment y asumirá una pérdida de 21 millones de euros"
+  },
+  "summary": {
+    "es": "Bandai Namco ha decidido cerrar la actividad de Reflector Entertainment, disolver y liquidar el estudio canadiense responsable de Unknown 9: Awakening. La compañía todavía no ha fijado una fecha para completar el proceso."
+  },
+  "why": {
+    "es": "El cierre elimina otro equipo de desarrollo interno de una gran editora y dejará una pérdida extraordinaria de unos 21 millones de euros. Bandai Namco atribuye la decisión a su revisión de los planes futuros, la inversión necesaria, la rentabilidad y la viabilidad del negocio."
+  },
+  "sources": [
+    {
+      "label": "Bandai Namco Holdings",
+      "type": {
+        "es": "Comunicado corporativo oficial sobre la disolución y liquidación"
+      },
+      "url": "https://www.bandainamco.co.jp/files/E_HP_Clean__E980A3E7B590E5AD90E4BC9AE7A4BEE381AEE8.pdf"
+    },
+    {
+      "label": "Bandai Namco Holdings",
+      "type": {
+        "es": "Archivo oficial de comunicados de noviembre de 2026"
+      },
+      "url": "https://www.bandainamco.co.jp/en/releases/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El consejo de administración de Bandai Namco Holdings aprobó la disolución y liquidación el 10 de noviembre. El grupo explica que dejará de operar Reflector después de valorar sus planes futuros, la inversión adicional necesaria y las posibilidades de rentabilidad y continuidad.",
+      "Reflector fue fundado en Montreal en 2015 y Bandai Namco Entertainment Europe controla el cien por cien de sus acciones. La liquidación terminará cuando concluyan los trámites previstos por la legislación local; su calendario y el importe final de la pérdida aún pueden variar."
+    ]
+  }
+}

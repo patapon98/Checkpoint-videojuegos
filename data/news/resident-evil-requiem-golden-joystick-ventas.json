@@ -1,0 +1,56 @@
+{
+  "id": "resident-evil-requiem-golden-joystick-ventas",
+  "emphasis": {
+    "es": [
+      "ha ganado Ultimate Game of the Year y Console Game of the Year",
+      "sus ventas mundiales han alcanzado 8,5 millones de unidades",
+      "es el título más premiado de la ceremonia"
+    ]
+  },
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-12",
+  "addedAt": "2026-11-14T17:54:15Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Resident Evil Requiem"
+    },
+    "copy": {
+      "es": "Resident Evil Requiem gana el Golden Joystick a juego del año y alcanza 8,5 millones de copias"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Resident Evil Requiem gana el Golden Joystick a juego del año y alcanza 8,5 millones de copias"
+  },
+  "summary": {
+    "es": "Resident Evil Requiem ha ganado Ultimate Game of the Year y Console Game of the Year en los Golden Joystick Awards 2026. Capcom confirma además que sus ventas mundiales han alcanzado 8,5 millones de unidades."
+  },
+  "why": {
+    "es": "Con cuatro galardones, Resident Evil Requiem es el título más premiado de la ceremonia junto a MECCHA CHAMELEON. Capcom también recibió el premio a estudio del año y sumó reconocimientos para Onimusha: Way of the Sword y PRAGMATA."
+  },
+  "sources": [
+    {
+      "label": "Capcom",
+      "type": {
+        "es": "Comunicado oficial sobre los premios y el nuevo total de ventas"
+      },
+      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/0ed/140120261112575040.pdf"
+    },
+    {
+      "label": "Golden Joystick Awards",
+      "type": {
+        "es": "Comunicado oficial con la relación completa de ganadores"
+      },
+      "url": "https://www.gamespress.com/tr/Winners-Announced-at-the-44th-Golden-Joystick-Awards-Presented-by-Pot-"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "La votación del público concedió a Resident Evil Requiem los premios Ultimate Game of the Year, Console Game of the Year y Best Game Trailer. Angela Sant’Albano completó su palmarés con el reconocimiento a mejor interpretación protagonista por su papel como Grace Ashcroft.",
+      "El comunicado de Capcom eleva el rendimiento comercial del juego desde los ocho millones comunicados anteriormente hasta 8,5 millones de copias. La editora también fue nombrada Studio of the Year, mientras Onimusha obtuvo el premio al mejor diseño de audio y Grace Saif fue distinguida por PRAGMATA."
+    ]
+  }
+}

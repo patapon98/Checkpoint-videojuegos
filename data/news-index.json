@@ -1,5 +1,56 @@
 [
   {
+    "id": "paradox-mattias-lilja-nuevo-ceo",
+    "important": false,
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-11T17:25:00Z",
+    "addedAt": "2026-11-15T15:09:50Z",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "Mattias Lilja será el nuevo CEO de Paradox Interactive en enero"
+    },
+    "summary": {
+      "es": "Paradox Interactive ha nombrado a Mattias Lilja nuevo CEO a partir del 4 de enero de 2027. Sustituirá a Fredrik Wester, que dejará la dirección ejecutiva pero seguirá en el consejo y como mayor accionista."
+    },
+    "why": {
+      "es": "El relevo traslada la gestión diaria a un veterano que ha dirigido estudios y publicación dentro de Paradox. La compañía mantiene su estrategia, mientras Wester se concentrará en su desarrollo a largo plazo desde el consejo."
+    },
+    "homeDetails": {
+      "es": [
+        "Lilja se incorporó a Paradox en 2009 como su primer productor y desde entonces ha dirigido la organización de estudios y el área de publicación, además de ejercer como director de operaciones y consejero delegado adjunto. Participó en la etapa que consolidó Cities: Skylines, Hearts of Iron IV y Stellaris.",
+        "Wester permanecerá como CEO hasta completar el traspaso el 4 de enero y conservará su asiento en el consejo. Lilja anticipa más inversión en el negocio principal, herramientas y servicios para jugadores y creadores de mods, sin anunciar cambios en la cartera de juegos ni en la orientación estratégica."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "Mattias Lilja nuevo CEO a partir del 4 de enero de 2027",
+        "seguirá en el consejo y como mayor accionista",
+        "La compañía mantiene su estrategia"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Paradox Interactive"
+      },
+      "copy": {
+        "es": "Paradox Interactive nombrará CEO a Mattias Lilja el 4 de enero de 2027"
+      }
+    },
+    "sources": [
+      {
+        "label": "Paradox Interactive",
+        "type": {
+          "es": "Comunicado oficial sobre el relevo ejecutivo y la fecha de incorporación"
+        },
+        "url": "https://www.paradoxinteractive.com/media/press-releases/paradox-interactive/mattias-lilja-takes-over-as-ceo-and-will-lead-paradox-interactive-ab-publ-to-its-next-level"
+      }
+    ]
+  },
+  {
     "id": "minecraft-bedrock-mano-secundaria-disco-arrojadizo",
     "category": {
       "es": "Juegos"

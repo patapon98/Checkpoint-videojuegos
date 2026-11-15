@@ -1,5 +1,55 @@
 [
   {
+    "id": "minecraft-bedrock-mano-secundaria-disco-arrojadizo",
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-14",
+    "addedAt": "2026-11-15T12:25:37Z",
+    "important": true,
+    "featured": false,
+    "tone": "xbox",
+    "title": {
+      "es": "Minecraft llevará la mano secundaria completa a Bedrock y añadirá el disco arrojadizo en 2027"
+    },
+    "summary": {
+      "es": "Mojang ha anunciado que la primera entrega de Minecraft de 2027 incorporará un disco arrojadizo que rebota, atraviesa varios enemigos y regresa al jugador. Bedrock recibirá además compatibilidad completa con la mano secundaria."
+    },
+    "why": {
+      "es": "La paridad con Java cambia un sistema básico de inventario y combate para la enorme comunidad de Bedrock, mientras el nuevo disco amplía las opciones de ataque a distancia con una mecánica propia."
+    },
+    "homeDetails": {
+      "es": [
+        "El disco arrojadizo podrá fabricarse en cobre, hierro, oro, diamante y netherita. Su alcance será limitado, pero rebotará en superficies duras para prolongar la trayectoria y podrá atravesar a varios enemigos alineados antes de volver a la mano del jugador.",
+        "Bedrock solo permite ahora colocar determinados objetos en la ranura secundaria, a diferencia de Java, que ofrece esa libertad desde 2016. Mojang ampliará la función a cualquier objeto con la primera entrega de contenido de 2027, todavía sin fecha concreta."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "un disco arrojadizo que rebota",
+        "compatibilidad completa con la mano secundaria",
+        "cambia un sistema básico de inventario y combate"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Minecraft"
+      },
+      "copy": {
+        "es": "Minecraft añadirá el disco arrojadizo y la mano secundaria completa a Bedrock en 2027"
+      }
+    },
+    "sources": [
+      {
+        "label": "Mojang Studios",
+        "type": {
+          "es": "Fuente oficial sobre las funciones de la primera entrega de 2027"
+        },
+        "url": "https://www.minecraft.net/en-us/article/twitchcon-gamedrop-features"
+      }
+    ]
+  },
+  {
     "id": "resident-evil-requiem-golden-joystick-ventas",
     "emphasis": {
       "es": [

@@ -5258,6 +5258,58 @@
       "trailer": "https://www.youtube.com/watch?v=VQRLujxTm3c"
     },
     {
+      "id": "the-binding-of-isaac-repentance-plus",
+      "title": "The Binding of Isaac: Repentance+",
+      "headingHtml": "The Binding of Isaac: Repentance+ <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-11-19",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "The Binding of Isaac: Repentance+",
+        "src": "https://store.nicalis.com/cdn/shop/files/Gold_Cover_Sheet_600x.png?v=1760640176",
+        "alt": "The Binding of Isaac: Repentance+ para PS5, Xbox Series X|S y Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/The-Binding-of-Isaac-Repentance-3198821.html",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de The Binding of Isaac: Repentance+"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.youtube.com/watch?v=d-xVnzs-b6Y",
+        "official": true,
+        "host": "www.youtube.com",
+        "checkedAt": "2026-11-15",
+        "evidence": {
+          "title": "The Binding of Isaac: Repentance+",
+          "releaseDate": "2026-11-19",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=d-xVnzs-b6Y"
+    },
+    {
       "id": "dune-awakening-blood-and-ice",
       "title": "Dune: Awakening – Blood and Ice",
       "headingHtml": "Dune: Awakening – Blood and Ice <span class=\"tag-dlc\">Expansión</span>",

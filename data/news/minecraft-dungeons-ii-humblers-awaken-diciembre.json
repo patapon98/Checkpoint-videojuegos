@@ -1,0 +1,58 @@
+{
+  "id": "minecraft-dungeons-ii-humblers-awaken-diciembre",
+  "important": true,
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-15",
+  "addedAt": "2026-11-15T21:13:46Z",
+  "featured": false,
+  "tone": "xbox",
+  "title": {
+    "es": "The Humblers Awaken llegará a Minecraft Dungeons II el 1 de diciembre"
+  },
+  "summary": {
+    "es": "Mojang lanzará The Humblers Awaken, la primera expansión de Minecraft Dungeons II, el 1 de diciembre. Añadirá nuevas misiones, armas, artefactos y talismanes en los campos de esporas y las madrigueras del Sift."
+  },
+  "why": {
+    "es": "La expansión abre el contenido posterior al lanzamiento de Minecraft Dungeons II con nuevas zonas y equipo. Mojang también ha presentado Trial Dungeons, un sistema de desafíos diarios y semanales que amplía el tramo final del juego."
+  },
+  "homeDetails": {
+    "es": [
+      "La historia llevará de nuevo al grupo al Sift para investigar el despertar de los humblers, criaturas antiguas que permanecían bajo tierra. El recorrido incluirá campos de hongos y túneles subterráneos, además de nuevas recompensas de equipo y elementos cosméticos.",
+      "Durante la presentación de TwitchCon, el equipo mostró también Trial Dungeons: mazmorras con rotación diaria y semanal, modificadores y recompensas destinadas a prolongar la progresión después de la campaña. La expansión forma parte de la Deluxe Edition, que incluye los dos primeros contenidos descargables."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "la primera expansión de Minecraft Dungeons II",
+      "el 1 de diciembre",
+      "un sistema de desafíos diarios y semanales"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Minecraft Dungeons II"
+    },
+    "copy": {
+      "es": "Minecraft Dungeons II recibirá The Humblers Awaken el 1 de diciembre"
+    }
+  },
+  "trailer": "https://www.youtube.com/watch?v=s0w_pTOXDBQ",
+  "sources": [
+    {
+      "label": "Minecraft",
+      "type": {
+        "es": "Tráiler oficial con la fecha y el contenido de la expansión"
+      },
+      "url": "https://www.youtube.com/watch?v=s0w_pTOXDBQ"
+    },
+    {
+      "label": "Minecraft en TwitchCon",
+      "type": {
+        "es": "Presentación oficial de la expansión y el sistema Trial Dungeons"
+      },
+      "url": "https://www.youtube.com/watch?v=E1eJz7IC4Tk"
+    }
+  ]
+}

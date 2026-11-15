@@ -1,5 +1,64 @@
 [
   {
+    "id": "league-of-legends-new-dawn-2027",
+    "important": true,
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T21:30:00Z",
+    "addedAt": "2026-11-15T23:48:14Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "League of Legends: New Dawn renovará el cliente y la Grieta del Invocador en 2027"
+    },
+    "summary": {
+      "es": "Riot Games lanzará League of Legends: New Dawn más adelante en 2027. La gran renovación incorporará un cliente modernizado, actualizará la Grieta del Invocador y revisará la presentación, la jugabilidad y la experiencia de nuevos jugadores."
+    },
+    "why": {
+      "es": "New Dawn moderniza la infraestructura visible y el principal campo de batalla de uno de los juegos más seguidos del mundo. Riot reserva la presentación completa para enero, pero confirma que el cambio va más allá de una actualización visual."
+    },
+    "homeDetails": {
+      "es": [
+        "El primer avance, presentado durante la final del Mundial de League of Legends, muestra una nueva dirección artística para la Grieta del Invocador, con escenarios, campamentos y objetivos rediseñados. Riot todavía no ha detallado las reglas o sistemas concretos que cambiarán en las partidas.",
+        "El estudio describe New Dawn como el inicio de una nueva etapa para League of Legends y mantiene el proyecto dentro del juego existente, no como una secuela independiente. La revelación de enero ampliará el alcance de la jugabilidad, el cliente y la incorporación de nuevos jugadores antes del lanzamiento posterior en 2027."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "un cliente modernizado",
+        "actualizará la Grieta del Invocador",
+        "el cambio va más allá de una actualización visual"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "League of Legends"
+      },
+      "copy": {
+        "es": "League of Legends estrenará la renovación New Dawn más adelante en 2027"
+      }
+    },
+    "trailer": "https://www.youtube.com/watch?v=vs3p3mNhRXo",
+    "sources": [
+      {
+        "label": "Riot Games",
+        "type": {
+          "es": "Avance oficial de New Dawn y su ventana de lanzamiento"
+        },
+        "url": "https://www.youtube.com/watch?v=vs3p3mNhRXo"
+      },
+      {
+        "label": "League of Legends",
+        "type": {
+          "es": "Página oficial de la nueva etapa del juego"
+        },
+        "url": "https://www.leagueoflegends.com/en-us/new-dawn/"
+      }
+    ]
+  },
+  {
     "id": "minecraft-dungeons-ii-humblers-awaken-diciembre",
     "important": true,
     "category": {

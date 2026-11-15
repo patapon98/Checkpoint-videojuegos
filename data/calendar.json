@@ -5271,12 +5271,16 @@
       "image": {
         "provider": "rawg",
         "query": "The Binding of Isaac: Repentance+",
-        "src": "https://store.nicalis.com/cdn/shop/files/Gold_Cover_Sheet_600x.png?v=1760640176",
+        "src": "https://media.rawg.io/media/screenshots/f76/f76b46caccc642a46fa7e9ef7406b38b.jpg",
         "alt": "The Binding of Isaac: Repentance+ para PS5, Xbox Series X|S y Nintendo Switch 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 536886,
+        "rawgSlug": "the-binding-of-isaac-repentance",
+        "rawgPage": "https://rawg.io/games/the-binding-of-isaac-repentance",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/The-Binding-of-Isaac-Repentance-3198821.html",

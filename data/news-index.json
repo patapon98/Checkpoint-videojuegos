@@ -1,5 +1,62 @@
 [
   {
+    "id": "super-meat-boy-again-plus",
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-14",
+    "addedAt": "2026-11-16T15:35:00Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Super Meat Boy Again+ rehace el clásico con niveles y secretos nuevos"
+    },
+    "summary": {
+      "es": "Team Meat ha anunciado Super Meat Boy Again+, una nueva versión de su plataformas de 2010 para PC. Mantendrá más de 300 niveles y sumará arte, música, escenas, fases, secretos y desbloqueables nuevos."
+    },
+    "why": {
+      "es": "El proyecto recupera uno de los referentes del plataformas independiente con una revisión que va más allá del apartado visual. Todavía no tiene fecha de lanzamiento y Steam es la única plataforma confirmada."
+    },
+    "homeDetails": {
+      "es": [
+        "Team Meat plantea esta edición como una forma de volver al diseño del original sin limitarse a una remasterización. Los veteranos encontrarán recorridos y secretos inéditos, mientras que los nuevos jugadores recibirán una presentación renovada del exigente plataformas de precisión.",
+        "Danny Baranowsky, compositor del juego de 2010, regresará con una banda sonora ampliada. El estudio también promete más de 300 niveles, secuencias animadas y una novedad asociada al signo «+» que prefiere mantener oculta hasta que los jugadores puedan descubrirla."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "Super Meat Boy Again+",
+        "más de 300 niveles",
+        "va más allá del apartado visual"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Super Meat Boy"
+      },
+      "copy": {
+        "es": "Super Meat Boy Again+ renueva el clásico con niveles y secretos nuevos"
+      }
+    },
+    "trailer": "https://www.youtube.com/watch?v=jYA72wBTU-4",
+    "sources": [
+      {
+        "label": "Team Meat en Steam",
+        "type": {
+          "es": "Ficha oficial con las características y plataformas confirmadas"
+        },
+        "url": "https://store.steampowered.com/app/4269060/Super_Meat_Boy_Again/"
+      },
+      {
+        "label": "Team Meat",
+        "type": {
+          "es": "Tráiler oficial de presentación"
+        },
+        "url": "https://www.youtube.com/watch?v=jYA72wBTU-4"
+      }
+    ]
+  },
+  {
     "id": "league-of-legends-new-dawn-2027",
     "important": true,
     "category": {

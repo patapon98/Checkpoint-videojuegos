@@ -5216,6 +5216,54 @@
       "trailer": "https://www.youtube.com/watch?v=8PJE7G4oDgY"
     },
     {
+      "id": "popucom-ps5",
+      "title": "POPUCOM",
+      "headingHtml": "POPUCOM <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-17",
+      "platformKeys": [
+        "ps5"
+      ],
+      "platformsHtml": "PS5",
+      "image": {
+        "provider": "rawg",
+        "query": "POPUCOM",
+        "src": "https://image.api.playstation.com/vulcan/ap/rnd/202609/1810/c228e80676acefb5977f07cae389e2150b671248ab552eaf.jpg",
+        "alt": "POPUCOM para PS5",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.playstation.com/en-th/concept/10009072/",
+        "title": "Ver en PlayStation Store",
+        "ariaLabel": "Ver POPUCOM para PS5 en PlayStation Store"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://store.playstation.com/en-th/concept/10009072/",
+        "official": true,
+        "host": "store.playstation.com",
+        "checkedAt": "2026-11-17",
+        "evidence": {
+          "title": "POPUCOM",
+          "releaseDate": "2026-11-17",
+          "platforms": [
+            "ps5"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=aIgoMJcXCzA"
+    },
+    {
       "id": "grand-theft-auto-vi",
       "title": "Grand Theft Auto VI",
       "headingHtml": "Grand Theft Auto VI",

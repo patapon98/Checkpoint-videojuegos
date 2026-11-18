@@ -1,0 +1,63 @@
+{
+  "id": "coral-island-switch-2-fecha",
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-18",
+  "publishedAt": "2026-11-18T18:36:12Z",
+  "addedAt": "2026-11-18T21:05:47Z",
+  "featured": false,
+  "tone": "launch",
+  "title": {
+    "es": "Coral Island llegará a Nintendo Switch 2 el 7 de diciembre"
+  },
+  "summary": {
+    "es": "Coral Island se estrenará en Nintendo Switch 2 el 7 de diciembre de 2026. La nueva versión llegará junto a la actualización gratuita 1.4 Kids Grow Up para todas las plataformas, con juego cruzado y multijugador para cuatro personas."
+  },
+  "why": {
+    "es": "La fecha concreta una versión esperada desde que el estudio descartó el lanzamiento en la primera Nintendo Switch. La actualización ampliará la vida familiar con hijos que crecerán hasta la adolescencia, nuevas escenas e intereses propios."
+  },
+  "homeDetails": {
+    "es": [
+      "La edición para Nintendo Switch 2 permitirá jugar en solitario o en grupos de hasta cuatro personas. El juego cruzado conectará las plataformas compatibles, aunque el anuncio no detalla todavía el precio ni el rendimiento técnico en la consola de Nintendo.",
+      "Kids Grow Up añadirá cuatro etapas de crecimiento para los hijos, desde bebés hasta adolescentes. También incorporará nuevos hitos familiares, diálogos y escenas, además de mejoras de interfaz, iluminación, vibración y calidad de vida."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "el 7 de diciembre de 2026",
+      "la actualización gratuita 1.4 Kids Grow Up",
+      "juego cruzado y multijugador para cuatro personas"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Coral Island"
+    },
+    "copy": {
+      "es": "Coral Island llegará a Switch 2 el 7 de diciembre con la actualización 1.4"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=ply0Klk0c1E",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Stairway Games y Balor Games",
+      "type": {
+        "es": "Comunicado oficial con la fecha, las plataformas y el contenido de la actualización"
+      },
+      "url": "https://www.gamespress.com/en-US/Coral-Island-Plants-New-Roots-on-Nintendo-Switch-2-December-7"
+    },
+    {
+      "label": "Balor Games",
+      "type": {
+        "es": "Tráiler oficial con la fecha de lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=ply0Klk0c1E"
+    }
+  ]
+}

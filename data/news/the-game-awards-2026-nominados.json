@@ -1,0 +1,57 @@
+{
+  "id": "the-game-awards-2026-nominados",
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-17",
+  "publishedAt": "2026-11-17T17:00:00Z",
+  "addedAt": "2026-11-18T12:17:00Z",
+  "featured": false,
+  "tone": "industry",
+  "title": {
+    "es": "GTA VI lidera las nominaciones de The Game Awards 2026"
+  },
+  "summary": {
+    "es": "The Game Awards ha anunciado los nominados de 2026. GTA VI encabeza la lista con ocho candidaturas, seguido por CONTROL Resonant y Resident Evil Requiem con seis cada uno."
+  },
+  "why": {
+    "es": "La votación pública ya está abierta y terminará el 9 de diciembre. Los ganadores se conocerán durante la gala del 10 de diciembre, que también incluirá anuncios y estrenos mundiales."
+  },
+  "homeDetails": {
+    "es": [
+      "GTA VI compite por Juego del Año y Mejor Dirección, entre otras categorías. CONTROL Resonant y Resident Evil Requiem acumulan seis nominaciones cada uno, mientras que Phantom Blade Zero suma cinco.",
+      "La selección procede de un jurado internacional formado por más de 160 medios y creadores. El público puede votar en la web oficial hasta el 9 de diciembre a las 18:00 en la costa del Pacífico de Estados Unidos."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "GTA VI encabeza la lista con ocho candidaturas",
+      "CONTROL Resonant y Resident Evil Requiem con seis cada uno",
+      "La votación pública ya está abierta"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "The Game Awards"
+    },
+    "copy": {
+      "es": "The Game Awards abre la votación con GTA VI como juego más nominado"
+    }
+  },
+  "sources": [
+    {
+      "label": "The Game Awards",
+      "type": {
+        "es": "Página oficial de nominados y votación"
+      },
+      "url": "https://thegameawards.com/nominees"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Medio especializado con el recuento completo de candidaturas"
+      },
+      "url": "https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced"
+    }
+  ]
+}

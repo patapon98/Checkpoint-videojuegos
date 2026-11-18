@@ -1,5 +1,63 @@
 [
   {
+    "id": "firaxis-reestructuracion-despidos-2026",
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-11-17",
+    "publishedAt": "2026-11-17T16:26:00Z",
+    "addedAt": "2026-11-18T14:50:00Z",
+    "featured": false,
+    "important": true,
+    "tone": "industry",
+    "title": {
+      "es": "Firaxis reduce su plantilla y pierde a su directora de estudio"
+    },
+    "summary": {
+      "es": "2K ha confirmado una reestructuración en Firaxis que reduce el tamaño del estudio. Bloomberg cifra el recorte en unas 60 personas, cerca de un tercio de la plantilla, y la directora Heather Hazen deja el cargo."
+    },
+    "why": {
+      "es": "El cambio afecta al estudio responsable de Civilization y XCOM, altera su dirección y concentra el equipo en diseño, tecnología y experiencia de juego. 2K lo presenta como un reinicio centrado en los juegos de estrategia."
+    },
+    "homeDetails": {
+      "es": [
+        "La editora no ha publicado una cifra propia de afectados, pero confirmó los despidos y la salida de Heather Hazen en una declaración remitida a varios medios. Bloomberg sitúa la reducción alrededor de 60 puestos.",
+        "Firaxis continuará enfocada en los juegos de estrategia que definieron su trayectoria. La marcha de su responsable abre además una nueva etapa de liderazgo para el estudio que desarrolla Civilization y la serie XCOM."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "una reestructuración en Firaxis",
+        "unas 60 personas, cerca de un tercio de la plantilla",
+        "un reinicio centrado en los juegos de estrategia"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Firaxis"
+      },
+      "copy": {
+        "es": "Firaxis reduce cerca de un tercio de su plantilla y cambia de dirección"
+      }
+    },
+    "sources": [
+      {
+        "label": "Game Developer",
+        "type": {
+          "es": "Declaración oficial de 2K que confirma la reestructuración y la salida de la directora"
+        },
+        "url": "https://www.gamedeveloper.com/business/take-two-lays-off-firaxis-employees-on-eve-of-grand-theft-auto-vi-launch"
+      },
+      {
+        "label": "Bloomberg",
+        "type": {
+          "es": "Información periodística sobre el alcance del recorte"
+        },
+        "url": "https://news.bloomberglaw.com/human-resources-news/take-twos-firaxis-video-game-studio-cuts-a-third-of-its-staff"
+      }
+    ]
+  },
+  {
     "id": "the-game-awards-2026-nominados",
     "category": {
       "es": "Industria"

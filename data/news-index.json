@@ -1,5 +1,63 @@
 [
   {
+    "id": "ubisoft-despidos-montreal-quebec-2026",
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-11-19",
+    "publishedAt": "2026-11-19T15:26:45Z",
+    "addedAt": "2026-11-19T20:32:35Z",
+    "featured": false,
+    "important": true,
+    "tone": "industry",
+    "title": {
+      "es": "Ubisoft elimina 166 puestos en Montreal y Quebec"
+    },
+    "summary": {
+      "es": "Ubisoft ha confirmado la eliminación de 166 puestos en sus operaciones de Montreal y Quebec. La compañía atribuye el recorte a la evolución de su cartera y al ajuste de los equipos a sus prioridades actuales de producción y negocio."
+    },
+    "why": {
+      "es": "La medida afecta a dos estudios vinculados a franquicias como Assassin's Creed y Rainbow Six, y prolonga la reducción de costes de la editora. Ubisoft asegura que su plantilla ya disminuyó en cerca de 1.100 personas durante el último semestre."
+    },
+    "homeDetails": {
+      "es": [
+        "Ubisoft no ha detallado públicamente qué proyectos o departamentos concentran las salidas. Los 166 puestos representan menos del 4 % de la plantilla conjunta de Montreal y Quebec, según la información confirmada por la empresa.",
+        "El recorte coincide con la publicación de los resultados semestrales de Ubisoft. Aunque Assassin's Creed Black Flag Resynced superó las expectativas, la editora registró pérdidas operativas y mantiene su objetivo de reducir la base de costes fijos hasta marzo de 2028."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "la eliminación de 166 puestos",
+        "dos estudios vinculados a franquicias como Assassin's Creed y Rainbow Six",
+        "cerca de 1.100 personas durante el último semestre"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Ubisoft"
+      },
+      "copy": {
+        "es": "Ubisoft elimina 166 puestos en sus estudios de Montreal y Quebec"
+      }
+    },
+    "sources": [
+      {
+        "label": "Ubisoft",
+        "type": {
+          "es": "Comunicado oficial de resultados sobre el programa de reducción de costes y plantilla"
+        },
+        "url": "https://staticctf.ubisoft.com/8aefmxkxpxwl/3zWBw9DLFyjmXNAGPYBi3F/a9bbd72b5f2ef790c254e4fd21cfcd04/Ubisoft_FY27_H1_Earnings_PR_EN_vF.pdf"
+      },
+      {
+        "label": "Reuters",
+        "type": {
+          "es": "Declaración oficial de Ubisoft que confirma los 166 puestos afectados"
+        },
+        "url": "https://www.reuters.com/business/world-at-work/ubisoft-cut-166-jobs-montral-qubec-city-2026-11-19/"
+      }
+    ]
+  },
+  {
     "id": "coral-island-switch-2-fecha",
     "category": {
       "es": "Lanzamientos"

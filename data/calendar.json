@@ -5911,6 +5911,54 @@
       "trailer": null
     },
     {
+      "id": "coral-island-switch-2",
+      "title": "Coral Island",
+      "headingHtml": "Coral Island <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-12-07",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Coral Island",
+        "src": "https://imgeucdn.gamespress.com/cdn/files/Games%20Press/2026/11/181804-5047a7bf/Coral_Island_1.4_Update_Release_Date_Thumbnail.png?bgcolor=transparent&format=png&mode=max&otf=y&quality=90&sky=2feac6140740b590cbeb951084fd9b0c45f95382fe4e301d00a1a1b7722a9876&w=533",
+        "alt": "Coral Island para Nintendo Switch 2",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://balor.gg/ciSWITCH2",
+        "title": "Wishlist en Nintendo eShop",
+        "ariaLabel": "Añadir Coral Island para Nintendo Switch 2 a la lista de deseos"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.gamespress.com/en-US/Coral-Island-Plants-New-Roots-on-Nintendo-Switch-2-December-7",
+        "official": true,
+        "host": "www.gamespress.com",
+        "checkedAt": "2026-11-19",
+        "evidence": {
+          "title": "Coral Island",
+          "releaseDate": "2026-12-07",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ply0Klk0c1E"
+    },
+    {
       "id": "attack-on-titan-3",
       "title": "Attack on Titan 3",
       "headingHtml": "Attack on Titan 3",

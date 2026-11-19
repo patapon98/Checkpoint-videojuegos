@@ -5922,12 +5922,16 @@
       "image": {
         "provider": "rawg",
         "query": "Coral Island",
-        "src": "https://imgeucdn.gamespress.com/cdn/files/Games%20Press/2026/11/181804-5047a7bf/Coral_Island_1.4_Update_Release_Date_Thumbnail.png?bgcolor=transparent&format=png&mode=max&otf=y&quality=90&sky=2feac6140740b590cbeb951084fd9b0c45f95382fe4e301d00a1a1b7722a9876&w=533",
+        "src": "https://media.rawg.io/media/games/196/196381a3afc69bd73d4374fdbf5ef774.jpg",
         "alt": "Coral Island para Nintendo Switch 2",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 830059,
+        "rawgSlug": "coral-island",
+        "rawgPage": "https://rawg.io/games/coral-island",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://blog.stairwaygames.com/post/coral-island-nintendo-switch-2-the-kids-grow-up-update-arrive-this-winter",

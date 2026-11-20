@@ -1,0 +1,69 @@
+{
+  "id": "zenless-zone-zero-honkai-star-rail-colaboracion",
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-20",
+  "addedAt": "2026-11-20T12:08:45Z",
+  "featured": false,
+  "tone": "launch",
+  "title": {
+    "es": "Zenless Zone Zero cruzará Honkai: Star Rail el 2 de diciembre"
+  },
+  "summary": {
+    "es": "HoYoverse lanzará la versión 3.4 de Zenless Zone Zero el 2 de diciembre, con una colaboración con Honkai: Star Rail que incorporará a Robin y Kafka como agentes jugables. Robin será gratuita y la actualización cerrará el arco principal de Roscaelifer."
+  },
+  "why": {
+    "es": "El cruce une dos de las franquicias principales de HoYoverse dentro del propio juego, no como un simple evento cosmético. También introduce a Sunbringer, nuevas mecánicas de combate y cambios permanentes en varios modos."
+  },
+  "homeDetails": {
+    "es": [
+      "La historia enfrentará a Dracaene, Lindverne y Eldreda en una batalla conjunta por la supervivencia de Roscaelifer. Sunbringer debutará como agente de grado S y primera encadenadora, acompañada por un nuevo motor amplificador y el bangbú Sleepwalkerboo.",
+      "Robin podrá apoyar al equipo desde fuera del campo con escudos y mejoras, mientras que Kafka será una agente eléctrica centrada en anomalías y daño de desorden. La colaboración incluirá un evento narrativo, el bangbú Pom-Pom y recompensas temáticas."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "el 2 de diciembre",
+      "Robin será gratuita",
+      "cerrará el arco principal de Roscaelifer"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Zenless Zone Zero"
+    },
+    "copy": {
+      "es": "Zenless Zone Zero cruzará Honkai: Star Rail el 2 de diciembre"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=oSNwzOoxpM4",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "HoYoverse",
+      "type": {
+        "es": "Comunicado oficial con la fecha, los personajes y el contenido de la versión 3.4"
+      },
+      "url": "https://www.gamespress.com/es/Zenless-Zone-Zero-Version-34-The-Finality-of-the-Day-Launches-December"
+    },
+    {
+      "label": "Zenless Zone Zero",
+      "type": {
+        "es": "Anuncio oficial del programa especial dedicado a la versión 3.4"
+      },
+      "url": "https://zenless.hoyoverse.com/en-us/news/167352?catchSpider=1&page=newsLink"
+    },
+    {
+      "label": "Zenless Zone Zero",
+      "type": {
+        "es": "Tráiler oficial de la versión 3.4 y la colaboración"
+      },
+      "url": "https://www.youtube.com/watch?v=oSNwzOoxpM4"
+    }
+  ]
+}

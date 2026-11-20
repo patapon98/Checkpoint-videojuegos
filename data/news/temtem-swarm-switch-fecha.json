@@ -1,0 +1,62 @@
+{
+  "id": "temtem-swarm-switch-fecha",
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-20",
+  "addedAt": "2026-11-20T18:07:22Z",
+  "featured": false,
+  "tone": "launch",
+  "title": {
+    "es": "Temtem: Swarm llegará a Nintendo Switch el 21 de enero"
+  },
+  "summary": {
+    "es": "Temtem: Swarm llegará a Nintendo Switch el 21 de enero de 2027. La versión incluirá el paquete completo de la versión 1.0 y juego cruzado con PC y PlayStation 5 desde el primer día."
+  },
+  "why": {
+    "es": "La fecha amplía a una consola portátil el spin-off de acción de Temtem, ya disponible en PC y PS5. El estreno conservará la cooperación en línea para tres jugadores y conectará a la comunidad entre plataformas."
+  },
+  "homeDetails": {
+    "es": [
+      "La edición de Nintendo Switch incorporará desde el lanzamiento toda la plantilla de criaturas de la versión 1.0, la torre Evershifting generada de forma procedimental, la Tempedia y el sistema Prestige con variantes Luma y Umbra.",
+      "Temtem: Swarm combina supervivencia contra oleadas con captura y evolución de criaturas. Puede jugarse en solitario, con emparejamiento o en cooperación para tres personas, e incluye el modo Ghost para seguir ayudando al equipo tras caer."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "el 21 de enero de 2027",
+      "el paquete completo de la versión 1.0",
+      "juego cruzado con PC y PlayStation 5 desde el primer día"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Temtem: Swarm"
+    },
+    "copy": {
+      "es": "Temtem: Swarm llegará a Nintendo Switch el 21 de enero con juego cruzado"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=HTJG447B4ak",
+    "label": {
+      "es": "Ver tráiler oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Crema y GGTech Studios",
+      "type": {
+        "es": "Comunicado oficial con la fecha, el contenido y el juego cruzado de la versión para Nintendo Switch"
+      },
+      "url": "https://www.gamespress.com/en-GB/Temtem-Swarm-Brings-Portable-Chaos-to-Nintendo-Switch-on-January-21"
+    },
+    {
+      "label": "Temtem",
+      "type": {
+        "es": "Tráiler oficial con la fecha de lanzamiento en Nintendo Switch"
+      },
+      "url": "https://www.youtube.com/watch?v=HTJG447B4ak"
+    }
+  ]
+}

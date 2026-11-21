@@ -6397,12 +6397,16 @@
       "image": {
         "provider": "rawg",
         "query": "Temtem: Swarm",
-        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000098314/000eaf6abbd8ab21ac5dc95819bc544cf6d052faa0e9befb75c2b821193d5b4d",
+        "src": "https://media.rawg.io/media/screenshots/d9d/d9d1e3d0a820f3352975f8c5b723f28d.jpg",
         "alt": "Temtem: Swarm para Nintendo Switch",
         "className": "",
         "gridArt": "",
         "poster": "",
-        "legacy": false
+        "legacy": false,
+        "rawgId": 992685,
+        "rawgSlug": "temtem-swarm",
+        "rawgPage": "https://rawg.io/games/temtem-swarm",
+        "rawgImageType": "background"
       },
       "store": {
         "url": "https://www.nintendo.com/us/store/products/temtem-swarm-switch/",

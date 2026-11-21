@@ -6386,6 +6386,54 @@
       "trailer": "https://www.youtube.com/watch?v=uzBDuoZXTH0"
     },
     {
+      "id": "temtem-swarm-switch",
+      "title": "Temtem: Swarm",
+      "headingHtml": "Temtem: Swarm <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2027-01-21",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "Temtem: Swarm",
+        "src": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/store/software/switch/70010000098314/000eaf6abbd8ab21ac5dc95819bc544cf6d052faa0e9befb75c2b821193d5b4d",
+        "alt": "Temtem: Swarm para Nintendo Switch",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/us/store/products/temtem-swarm-switch/",
+        "title": "Ver en Nintendo eShop",
+        "ariaLabel": "Ver Temtem: Swarm para Nintendo Switch en Nintendo eShop"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/us/store/products/temtem-swarm-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-11-21",
+        "evidence": {
+          "title": "Temtem: Swarm",
+          "releaseDate": "2027-01-21",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=HTJG447B4ak"
+    },
+    {
       "id": "forza-horizon-6-ps5",
       "title": "Forza Horizon 6",
       "headingHtml": "Forza Horizon 6 <span class=\"tag-dlc\">Nueva plataforma</span>",

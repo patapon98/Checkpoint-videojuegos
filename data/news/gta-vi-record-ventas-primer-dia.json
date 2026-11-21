@@ -1,0 +1,65 @@
+{
+  "id": "gta-vi-record-ventas-primer-dia",
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-20",
+  "publishedAt": "2026-11-20T19:20:00Z",
+  "addedAt": "2026-11-21T11:50:15Z",
+  "featured": false,
+  "important": true,
+  "tone": "industry",
+  "title": {
+    "es": "Grand Theft Auto VI genera 3.790 millones de dólares en su primer día"
+  },
+  "summary": {
+    "es": "Grand Theft Auto VI alcanzó 3.790 millones de dólares en ventas minoristas durante su primer día, según las estimaciones mundiales de Take-Two. La compañía también cifra en 32,5 millones las unidades vendidas antes del lanzamiento."
+  },
+  "why": {
+    "es": "Take-Two califica el estreno como el mayor lanzamiento de entretenimiento de la historia. El resultado sitúa a GTA VI en una escala comercial sin precedentes para un videojuego y confirma el enorme impacto de su llegada tras trece años sin una entrega principal nueva."
+  },
+  "homeDetails": {
+    "es": [
+      "La estimación de ventas del primer día abarca el cierre del 19 de noviembre en todo el mundo y procede de Rockstar Games, filial de Take-Two. El editor comunicó las cifras tanto en su sala de prensa corporativa como en un informe 8-K presentado ante la SEC de Estados Unidos.",
+      "Grand Theft Auto VI está disponible en PlayStation 5 y Xbox Series X|S. Como referencia histórica, Grand Theft Auto V necesitó tres días para superar los 1.000 millones de dólares, mientras que la nueva entrega rebasa ampliamente esa marca en su primera jornada."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "3.790 millones de dólares en ventas minoristas durante su primer día",
+      "32,5 millones las unidades vendidas antes del lanzamiento",
+      "el mayor lanzamiento de entretenimiento de la historia"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Grand Theft Auto VI"
+    },
+    "copy": {
+      "es": "Grand Theft Auto VI alcanza 3.790 millones de dólares en ventas durante su primer día"
+    }
+  },
+  "sources": [
+    {
+      "label": "Take-Two Interactive",
+      "type": {
+        "es": "Comunicado oficial con las ventas del primer día y las unidades vendidas antes del lanzamiento"
+      },
+      "url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
+    },
+    {
+      "label": "SEC de Estados Unidos",
+      "type": {
+        "es": "Registro regulatorio 8-K de Take-Two que incorpora el comunicado oficial de Rockstar Games"
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026075217/exhibit9918k.htm"
+    },
+    {
+      "label": "Associated Press",
+      "type": {
+        "es": "Contexto periodístico sobre el récord y la comparación con el lanzamiento de Grand Theft Auto V"
+      },
+      "url": "https://apnews.com/article/15c69f76548ab5659bc3fe44a69756d8"
+    }
+  ]
+}

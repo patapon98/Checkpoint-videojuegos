@@ -1,5 +1,69 @@
 [
   {
+    "id": "synduality-version-offline-detalles",
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T09:00:00Z",
+    "addedAt": "2026-11-21T15:27:01Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "SYNDUALITY detalla su versión sin conexión tras el cierre del servicio"
+    },
+    "summary": {
+      "es": "Bandai Namco ha detallado cómo funcionará la versión sin conexión de SYNDUALITY Echo of Ada cuando termine el servicio en línea después de mayo de 2027. Conservará la historia y las solicitudes, pero será exclusivamente para un jugador y exigirá migrar los datos durante el periodo habilitado."
+    },
+    "why": {
+      "es": "La conversión evitará que el juego desaparezca por completo tras el cierre de sus servidores, aunque eliminará su estructura PvPvE y el multijugador. La migración preservará parte del progreso y de los objetos adquiridos, mientras Bandai Namco adaptará el equilibrio y los sistemas dependientes de la conexión."
+    },
+    "homeDetails": {
+      "es": [
+        "Los propietarios actuales recibirán la versión sin conexión mediante una actualización gratuita. Quien no complete el procedimiento de transferencia mientras los servidores estén disponibles podrá seguir jugando, pero tendrá que comenzar con una partida nueva y perderá definitivamente los datos trasladables.",
+        "Bandai Namco prepara métodos alternativos para conseguir materiales de incursiones, recetas y recompensas de eventos, salvo determinadas colaboraciones y premios de clasificación. El contenido adicional de la cuarta temporada seguirá vendiéndose, pero la compañía no prevé soporte, actualizaciones ni correcciones posteriores al estreno de la edición sin conexión."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "exclusivamente para un jugador",
+        "exigirá migrar los datos durante el periodo habilitado",
+        "evitará que el juego desaparezca por completo"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "SYNDUALITY"
+      },
+      "copy": {
+        "es": "SYNDUALITY conservará historia y progreso en su versión sin conexión"
+      }
+    },
+    "sources": [
+      {
+        "label": "Bandai Namco Entertainment",
+        "type": {
+          "es": "Comunicado oficial con los detalles de contenido, migración, equilibrio y soporte de la versión sin conexión"
+        },
+        "url": "https://www.bandainamcoent.com/news/synduality-echo-of-ada-faq-transitioning-to-the-offline-exclusive-version"
+      },
+      {
+        "label": "SYNDUALITY Echo of Ada",
+        "type": {
+          "es": "Página oficial japonesa que identifica la ampliación de la información publicada el 20 de noviembre"
+        },
+        "url": "https://synduality-ada.bn-ent.net/news/info_offline_02.php"
+      },
+      {
+        "label": "Bandai Namco Entertainment",
+        "type": {
+          "es": "Anuncio oficial del cierre del servicio, la versión sin conexión y el calendario previsto para la transición"
+        },
+        "url": "https://www.bandainamcoent.com/news/synduality-echo-of-ada-end-of-online-services-and-offline-version-confirmed"
+      }
+    ]
+  },
+  {
     "id": "gta-vi-record-ventas-primer-dia",
     "category": {
       "es": "Industria"

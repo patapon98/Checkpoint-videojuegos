@@ -1,5 +1,75 @@
 [
   {
+    "id": "hounded-ps5-pc-2027",
+    "important": false,
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-17",
+    "addedAt": "2026-11-22T18:14:03Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Hounded llevará la aventura de Duke a PS5 y PC en 2027"
+    },
+    "summary": {
+      "es": "Hounded llegará a PS5 y PC en 2027. La aventura en tercera persona pondrá a los jugadores en la piel de Duke, un border collie que busca a su amo por el mundo de fantasía de pólvora de Anglodia."
+    },
+    "why": {
+      "es": "El anuncio confirma la versión de PS5 y presenta los sistemas principales del proyecto: rastreo mediante el olfato, agilidad canina y poderes sobrenaturales para explorar el entorno. Su protagonista también utilizará un sistema propio de Motion Matching creado para reproducir el movimiento de un perro."
+    },
+    "homeDetails": {
+      "es": [
+        "Duke deberá seguir el rastro de Fletcher, su amo desaparecido y líder fugitivo de una rebelión contra el rey Jaymes. El Cazador perseguirá a ambos a través de Anglodia, una tierra inspirada en la Gran Bretaña de finales del siglo XVIII donde las armas de pólvora conviven con tecnología y magia.",
+        "La Corriente otorgará a Duke habilidades desbloqueables para romper obstáculos, activar máquinas y percibir Imprints, ecos de acontecimientos pasados. IMPRNT Studios anima a mano las expresiones del border collie y ha desarrollado en Unreal Engine un sistema que selecciona movimientos desde una biblioteca basada en referencias de perros reales."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "Hounded llegará a PS5 y PC en 2027",
+        "rastreo mediante el olfato, agilidad canina y poderes sobrenaturales",
+        "un sistema propio de Motion Matching creado para reproducir el movimiento de un perro"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Hounded"
+      },
+      "copy": {
+        "es": "Hounded confirma su aventura canina para PS5 y PC en 2027"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=DrmTMGp7O6U",
+      "label": {
+        "es": "Ver diario de desarrollo oficial"
+      }
+    },
+    "sources": [
+      {
+        "label": "Silver Lining Interactive",
+        "type": {
+          "es": "Comunicado oficial con plataformas, ventana de lanzamiento y sistemas principales"
+        },
+        "url": "https://silverliningint.com/dog-adventure-game-hounded-officially-confirmed-for-ps5/"
+      },
+      {
+        "label": "PlayStation Blog",
+        "type": {
+          "es": "Presentación oficial de Duke, Anglodia, la magia y el sistema de animación"
+        },
+        "url": "https://blog.playstation.com/2026/11/17/introducing-hounded-crafting-the-dog-adventure-coming-to-ps5-in-2027/"
+      },
+      {
+        "label": "PlayStation Store",
+        "type": {
+          "es": "Ficha oficial de PS5 con la premisa y las características del juego"
+        },
+        "url": "https://store.playstation.com/en-us/concept/10021459/"
+      }
+    ]
+  },
+  {
     "id": "the-elder-scrolls-online-winterhold-temporada-3",
     "category": {
       "es": "Juegos"

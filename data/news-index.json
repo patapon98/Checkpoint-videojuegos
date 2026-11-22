@@ -1,5 +1,62 @@
 [
   {
+    "id": "the-elder-scrolls-online-winterhold-temporada-3",
+    "category": {
+      "es": "Juegos"
+    },
+    "date": "2026-11-17",
+    "addedAt": "2026-11-22T09:15:20Z",
+    "featured": false,
+    "important": true,
+    "tone": "games",
+    "title": {
+      "es": "The Elder Scrolls Online llevará su tercera temporada a Winterhold en 2027"
+    },
+    "summary": {
+      "es": "The Elder Scrolls Online ampliará su mapa de la Segunda Era con Winterhold a comienzos de 2027. La nueva zona principal y su trama formarán parte de la tercera temporada, con una presentación más amplia prevista para enero."
+    },
+    "why": {
+      "es": "El anuncio confirma el próximo gran destino de The Elder Scrolls Online y recupera una región central de Skyrim para una historia nueva. Winterhold será una ampliación sustancial del mundo del juego, aunque sus sistemas, alcance y modelo de acceso todavía no se han detallado."
+    },
+    "homeDetails": {
+      "es": [
+        "ZeniMax Online Studios describe Winterhold como una zona principal que ampliará el mapa de la Segunda Era. La región llegará acompañada de una trama nueva como parte de la tercera temporada de The Elder Scrolls Online.",
+        "El estudio ofrecerá una presentación especial en enero para enseñar la zona con más detalle. La carta de cierre de año de la comunidad, prevista para diciembre, concretará cuándo se celebrará esa emisión."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "ampliará su mapa de la Segunda Era con Winterhold a comienzos de 2027",
+        "La nueva zona principal y su trama formarán parte de la tercera temporada",
+        "recupera una región central de Skyrim para una historia nueva"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Winterhold"
+      },
+      "copy": {
+        "es": "Winterhold será la nueva zona principal de The Elder Scrolls Online en 2027"
+      }
+    },
+    "sources": [
+      {
+        "label": "The Elder Scrolls Online",
+        "type": {
+          "es": "Anuncio oficial de la zona, la trama, la ventana de lanzamiento y la presentación de enero"
+        },
+        "url": "https://www.elderscrollsonline.com/en-gb/news/post/70643"
+      },
+      {
+        "label": "Bethesda",
+        "type": {
+          "es": "Sala de noticias oficial que confirma Winterhold para la tercera temporada en 2027"
+        },
+        "url": "https://elderscrolls.bethesda.net/en-EU/news"
+      }
+    ]
+  },
+  {
     "id": "synduality-version-offline-detalles",
     "category": {
       "es": "Juegos"

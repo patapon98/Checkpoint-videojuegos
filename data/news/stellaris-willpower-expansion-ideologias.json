@@ -1,0 +1,58 @@
+{
+  "id": "stellaris-willpower-expansion-ideologias",
+  "important": false,
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-23",
+  "publishedAt": "2026-11-23T14:16:00Z",
+  "addedAt": "2026-11-23T17:50:55Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "Stellaris: Willpower ya está disponible con ideologías y una nueva vía de victoria"
+  },
+  "summary": {
+    "es": "Paradox Interactive ha lanzado Stellaris: Willpower en PC. La expansión convierte las éticas fanáticas en ideologías capaces de cruzar fronteras, desestabilizar imperios y abrir una nueva vía de victoria sin conquista directa."
+  },
+  "why": {
+    "es": "El contenido añade diplomacia y espionaje ideológicos, Salones Galácticos reubicables y tres nuevos orígenes. También llega junto a la actualización gratuita 4.6 Corona Borealis, con ajustes de sistemas y equilibrio."
+  },
+  "homeDetails": {
+    "es": [
+      "Las ideologías pueden propagarse mediante bases estelares, hiperrelés y balizas, generar facciones fanáticas en otros imperios y provocar revueltas si el jugador no mantiene el impulso de sus propios principios.",
+      "La ambición Fuerza de Voluntad plantea convertir poblaciones, atraer imperios y derrotar a los Imperios Caídos como alternativa a dominar la galaxia por conquista. Willpower cuesta 24,99 euros y forma parte del pase de expansión de la temporada 10."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "convierte las éticas fanáticas en ideologías capaces de cruzar fronteras",
+      "una nueva vía de victoria sin conquista directa",
+      "tres nuevos orígenes"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Stellaris: Willpower"
+    },
+    "copy": {
+      "es": "Stellaris: Willpower ya está disponible con ideologías y una nueva vía de victoria"
+    }
+  },
+  "sources": [
+    {
+      "label": "Paradox Interactive",
+      "type": {
+        "es": "Comunicado oficial de lanzamiento con los sistemas, el contenido, el precio y la actualización gratuita"
+      },
+      "url": "https://www.paradoxinteractive.com/media/press-releases/paradox-interactive/new-willpower-expansion-available-today-for-stellaris"
+    },
+    {
+      "label": "Paradox Interactive",
+      "type": {
+        "es": "Ficha oficial de la expansión con el funcionamiento de las ideologías y sus nuevas mecánicas"
+      },
+      "url": "https://www.paradoxinteractive.com/games/stellaris/add-ons/stellaris-willpower"
+    }
+  ]
+}

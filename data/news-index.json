@@ -1,5 +1,62 @@
 [
   {
+    "id": "unreal-engine-6-verse-sin-blueprints",
+    "important": true,
+    "category": {
+      "es": "Industria"
+    },
+    "date": "2026-11-20",
+    "addedAt": "2026-11-23T03:25:50Z",
+    "featured": false,
+    "tone": "industry",
+    "title": {
+      "es": "Unreal Engine 6 prescindirá de Blueprints y trasladará el gameplay a Verse"
+    },
+    "summary": {
+      "es": "Epic Games ha confirmado que Unreal Engine 6, incluido su acceso anticipado, no incluirá Blueprints ni el Actor Gameplay Framework. El gameplay se construirá con Verse y el nuevo Scene Graph."
+    },
+    "why": {
+      "es": "El cambio sustituye el plan anterior de mantener ambos sistemas durante la transición desde UE5. Epic confía en la conversión asistida por inteligencia artificial y ya prueba el traslado de más de 20.000 Blueprints de Fortnite a unos tres millones de líneas de Verse."
+    },
+    "homeDetails": {
+      "es": [
+        "La hoja de ruta publicada en junio contemplaba que Blueprints y Actors convivieran con las nuevas herramientas durante el acceso anticipado y la versión 6.0. Epic elimina ahora esa etapa híbrida para concentrar el desarrollo de gameplay en Verse y Scene Graph desde el inicio.",
+        "Los proyectos en Unreal Engine 5 podrán seguir funcionando en esa rama. Para facilitar una migración futura, Epic prepara conversión de Blueprints a Verse, mayor acceso de Python al editor y modelos integrados que podrán consultar la documentación y el contexto del proyecto."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "no incluirá Blueprints ni el Actor Gameplay Framework",
+        "El gameplay se construirá con Verse y el nuevo Scene Graph",
+        "más de 20.000 Blueprints de Fortnite"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Unreal Engine 6"
+      },
+      "copy": {
+        "es": "Unreal Engine 6 prescindirá de Blueprints y trasladará el gameplay a Verse"
+      }
+    },
+    "sources": [
+      {
+        "label": "Unreal Engine",
+        "type": {
+          "es": "Comunicado oficial sobre la retirada de Blueprints, la transición a Verse y las herramientas de conversión"
+        },
+        "url": "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6"
+      },
+      {
+        "label": "Unreal Engine",
+        "type": {
+          "es": "Hoja de ruta oficial anterior con el calendario de UE6 y el plan original de convivencia durante la transición"
+        },
+        "url": "https://www.unrealengine.com/news/the-road-to-ue-6"
+      }
+    ]
+  },
+  {
     "id": "hounded-ps5-pc-2027",
     "important": false,
     "category": {

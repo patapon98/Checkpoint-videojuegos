@@ -6233,8 +6233,6 @@
       ],
       "platformsHtml": "PS5 · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Nioh 3: Bloody Insurrection",
         "src": "https://teamninja-studio.com/nioh3/assets/img/dlc/dlc2_logo_en.png",
         "alt": "Nioh 3: Bloody Insurrection",
         "className": "",
@@ -6868,8 +6866,6 @@
       ],
       "platformsHtml": "PS5 · Xbox Series X|S · PC",
       "image": {
-        "provider": "rawg",
-        "query": "Nioh 3 Complete Edition",
         "src": "https://teamninja-studio.com/nioh3/assets/img/ce/kv.png",
         "alt": "Nioh 3 Complete Edition para PS5, Xbox Series X|S y PC",
         "className": "",

@@ -6223,6 +6223,51 @@
       "trailer": "https://www.youtube.com/watch?v=HdbINn5ciIs"
     },
     {
+      "id": "nioh-3-bloody-insurrection",
+      "title": "Nioh 3: Bloody Insurrection",
+      "headingHtml": "Nioh 3: Bloody Insurrection <span class=\"tag-dlc\">DLC</span>",
+      "date": "2026-12-17",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC",
+      "image": {
+        "src": "https://teamninja-studio.com/nioh3/assets/img/dlc/dlc2_logo_en.png",
+        "alt": "Nioh 3: Bloody Insurrection",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://teamninja-studio.com/nioh3/us/dlc/",
+        "title": "Ver detalles oficiales",
+        "ariaLabel": "Ver los detalles oficiales de Nioh 3: Bloody Insurrection"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "DLC",
+      "badge": null,
+      "priority": 55,
+      "source": {
+        "url": "https://teamninja-studio.com/nioh3/us/dlc/",
+        "official": true,
+        "host": "teamninja-studio.com",
+        "checkedAt": "2026-11-24",
+        "evidence": {
+          "title": "Nioh 3: Bloody Insurrection",
+          "releaseDate": "2026-12-17",
+          "platforms": [
+            "ps5",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ra04S_JrvwY"
+    },
+    {
       "id": "danganronpa-2x2",
       "title": "Danganronpa 2x2",
       "headingHtml": "Danganronpa 2x2",
@@ -6808,6 +6853,56 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=upnkhFNuD_w"
+    },
+    {
+      "id": "nioh-3-complete-edition",
+      "title": "Nioh 3 Complete Edition",
+      "headingHtml": "Nioh 3 Complete Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://teamninja-studio.com/nioh3/assets/img/ce/kv.png",
+        "alt": "Nioh 3 Complete Edition para PS5, Xbox Series X|S y PC",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://teamninja-studio.com/nioh3/us/ce/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Nioh 3 Complete Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://teamninja-studio.com/nioh3/us/ce/",
+        "official": true,
+        "host": "teamninja-studio.com",
+        "checkedAt": "2026-11-24",
+        "evidence": {
+          "title": "Nioh 3 Complete Edition",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ra04S_JrvwY"
     },
     {
       "id": "elta-defy-all-gods",

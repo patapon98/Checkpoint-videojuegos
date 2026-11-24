@@ -1,5 +1,63 @@
 [
   {
+    "id": "nioh-3-xbox-complete-edition-bloody-insurrection",
+    "important": true,
+    "category": {
+      "es": "Lanzamientos"
+    },
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T01:41:00Z",
+    "addedAt": "2026-11-24T02:51:39Z",
+    "featured": false,
+    "tone": "games",
+    "title": {
+      "es": "Nioh 3 llegará a Xbox Series el 28 de enero con su Complete Edition"
+    },
+    "summary": {
+      "es": "Koei Tecmo llevará Nioh 3 a Xbox Series el 28 de enero de 2027 mediante una Complete Edition que también llegará a PS5 y PC. El paquete reunirá el juego base y sus dos grandes expansiones, Hell Rising y Bloody Insurrection."
+    },
+    "why": {
+      "es": "Bloody Insurrection se estrenará el 17 de diciembre y trasladará la campaña a la rebelión de Shimabara de 1638. La llegada a Xbox amplía por primera vez las plataformas de esta entrega, hasta ahora disponible únicamente en PS5 y PC."
+    },
+    "homeDetails": {
+      "es": [
+        "La segunda expansión seguirá a Takechiyo en su persecución de los alquimistas españoles y añadirá una nueva región formada por la ciudad fortificada de Shimabara, las cavernas bajo el monte Unzen y el castillo de Hara.",
+        "La Complete Edition incluirá las dos historias descargables, nuevos enemigos, yokai, jefes y equipo, además de los conjuntos y accesorios de sus ediciones especiales. En Xbox se publicará tanto para Series X|S como para PC mediante Microsoft Store."
+      ]
+    },
+    "emphasis": {
+      "es": [
+        "Nioh 3 a Xbox Series el 28 de enero de 2027",
+        "reunirá el juego base y sus dos grandes expansiones",
+        "trasladará la campaña a la rebelión de Shimabara de 1638"
+      ]
+    },
+    "ticker": {
+      "keyword": {
+        "es": "Nioh 3"
+      },
+      "copy": {
+        "es": "Nioh 3 llegará a Xbox Series el 28 de enero con su Complete Edition"
+      }
+    },
+    "sources": [
+      {
+        "label": "Xbox",
+        "type": {
+          "es": "Ficha oficial de la Complete Edition con fecha, plataformas y contenido incluido"
+        },
+        "url": "https://www.xbox.com/es-es/games/store/nioh-3-complete-edition/9p97zmgbtpds"
+      },
+      {
+        "label": "Gematsu",
+        "type": {
+          "es": "Información del anuncio con la fecha y los contenidos de Bloody Insurrection"
+        },
+        "url": "https://www.gematsu.com/2026/11/nioh-3-dlc-bloody-insurrection-launches-december-17-complete-edition-launches-january-28-2027-alongside-xbox-series-version"
+      }
+    ]
+  },
+  {
     "id": "stellaris-willpower-expansion-ideologias",
     "important": false,
     "category": {

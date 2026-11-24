@@ -1,0 +1,65 @@
+{
+  "id": "lords-of-the-fallen-ii-abril-2027",
+  "important": false,
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-24",
+  "publishedAt": "2026-11-24T18:59:00Z",
+  "addedAt": "2026-11-24T20:43:24Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "Lords of the Fallen II fija su lanzamiento para abril de 2027"
+  },
+  "summary": {
+    "es": "Lords of the Fallen II se lanzará en abril de 2027 para PS5, Xbox Series X|S, Nintendo Switch 2 y PC. CI Games comunicará el día exacto de estreno durante diciembre."
+  },
+  "why": {
+    "es": "La nueva ventana concreta el anterior objetivo del primer trimestre de 2027 y sitúa la secuela en un único mes. El RPG de acción volverá a conectar los reinos de los vivos y los muertos en una aventura ambientada cien años después de la entrega de 2023."
+  },
+  "homeDetails": {
+    "es": [
+      "CI Games formalizó el cambio mediante un comunicado regulatorio fechado el 24 de noviembre. La compañía había trasladado el proyecto desde otoño de 2026 al primer trimestre de 2027 para disponer de más tiempo de integración, ajustes y pulido.",
+      "Hexworks prepara un mundo dividido entre Axiom y Umbral, con cuatro grandes biomas y una lámpara capaz de alterar el entorno y el combate entre ambos reinos. El lanzamiento será simultáneo en consolas y en PC mediante Steam y Epic Games Store."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "Lords of the Fallen II se lanzará en abril de 2027",
+      "CI Games comunicará el día exacto de estreno durante diciembre",
+      "concreta el anterior objetivo del primer trimestre de 2027"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Lords of the Fallen II"
+    },
+    "copy": {
+      "es": "Lords of the Fallen II fija abril de 2027 como ventana de lanzamiento"
+    }
+  },
+  "sources": [
+    {
+      "label": "Marek Tymiński",
+      "type": {
+        "es": "Anuncio oficial del fundador y consejero delegado de CI Games con la ventana de lanzamiento"
+      },
+      "url": "https://x.com/tyminski_marek/status/2125289922311446687"
+    },
+    {
+      "label": "CI Games",
+      "type": {
+        "es": "Comunicado regulatorio oficial con abril de 2027 y la confirmación de una fecha exacta en diciembre"
+      },
+      "url": "https://pap-mediaroom.pl/biznes-i-finanse/ci-games-se-392026-aktualizacja-harmonogramu-prac-nad-gra-lords-fallen-ii"
+    },
+    {
+      "label": "Lords of the Fallen",
+      "type": {
+        "es": "Web oficial con las plataformas confirmadas para el lanzamiento"
+      },
+      "url": "https://www.lordsofthefallen.com/news/lords-of-the-fallen-ii-comes-to-nintendo-switch-2/"
+    }
+  ]
+}

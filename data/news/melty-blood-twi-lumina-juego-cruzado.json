@@ -1,0 +1,64 @@
+{
+  "id": "melty-blood-twi-lumina-juego-cruzado",
+  "important": false,
+  "category": {
+    "es": "Juegos"
+  },
+  "date": "2026-11-25",
+  "publishedAt": "2026-11-25T11:00:00Z",
+  "addedAt": "2026-11-25T18:29:00Z",
+  "featured": false,
+  "tone": "games",
+  "title": {
+    "es": "Melty Blood: Twi-Lumina confirma juego cruzado y suma a Satsuki Yumizuka"
+  },
+  "summary": {
+    "es": "Melty Blood: Twi-Lumina tendrá juego cruzado entre todas sus plataformas y añadirá a Satsuki Yumizuka como personaje jugable. Aniplex también ha presentado dos tipos de control y un modo de gran escenario escrito por Kinoko Nasu."
+  },
+  "why": {
+    "es": "La secuela llegará el 22 de abril de 2027 a PS5, PS4, Xbox One, Nintendo Switch, Switch 2 y Steam. El juego cruzado amplía la base competitiva de la serie, mientras Act y Duel separan una entrada accesible de la ejecución tradicional con comandos."
+  },
+  "homeDetails": {
+    "es": [
+      "Satsuki será una luchadora de potencia que aprovechará su fuerza física y una regeneración acelerada para sostener la presión. Se unirá a Len y White Len como los tres personajes nuevos, junto a una plantilla renovada de 22 combatientes procedentes de Type Lumina.",
+      "El Grand Scenario Mode contará una historia nueva centrada en Shiki Tohno y escrita por Kinoko Nasu. En combate, el esquema Act permitirá ejecutar técnicas especiales con un botón, mientras Duel conservará los comandos tradicionales para quienes busquen un control más preciso."
+    ]
+  },
+  "emphasis": {
+    "es": [
+      "juego cruzado entre todas sus plataformas",
+      "Satsuki Yumizuka como personaje jugable",
+      "un modo de gran escenario escrito por Kinoko Nasu"
+    ]
+  },
+  "ticker": {
+    "keyword": {
+      "es": "Melty Blood: Twi-Lumina"
+    },
+    "copy": {
+      "es": "Melty Blood: Twi-Lumina confirma juego cruzado y presenta a Satsuki Yumizuka"
+    }
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=-itIG-yUwFA",
+    "label": {
+      "es": "Ver el tráiler principal oficial"
+    }
+  },
+  "sources": [
+    {
+      "label": "Melty Blood: Twi-Lumina",
+      "type": {
+        "es": "Web oficial con el juego cruzado, los sistemas de combate, los personajes y el modo de gran escenario"
+      },
+      "url": "https://meltyblood.twilumina.com/"
+    },
+    {
+      "label": "TYPE-MOON Games",
+      "type": {
+        "es": "Tráiler oficial con Satsuki Yumizuka, el juego cruzado y las novedades principales"
+      },
+      "url": "https://www.youtube.com/watch?v=-itIG-yUwFA"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "region": "España y Europa",
   "settings": {
     "archiveMonths": 1,
@@ -6645,6 +6645,56 @@
       "trailer": "https://www.youtube.com/watch?v=ku-vSTDNsT8"
     },
     {
+      "id": "nioh-3-complete-edition",
+      "title": "Nioh 3 Complete Edition",
+      "headingHtml": "Nioh 3 Complete Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2027-01-28",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC",
+      "image": {
+        "src": "https://teamninja-studio.com/nioh3/assets/img/ce/kv.png",
+        "alt": "Nioh 3 Complete Edition para PS5, Xbox Series X|S y PC",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://teamninja-studio.com/nioh3/us/ce/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Nioh 3 Complete Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://teamninja-studio.com/nioh3/us/ce/",
+        "official": true,
+        "host": "teamninja-studio.com",
+        "checkedAt": "2026-11-24",
+        "evidence": {
+          "title": "Nioh 3 Complete Edition",
+          "releaseDate": "2027-01-28",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ra04S_JrvwY"
+    },
+    {
       "id": "tropico-7",
       "title": "Tropico 7",
       "headingHtml": "Tropico 7",
@@ -6853,56 +6903,6 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=upnkhFNuD_w"
-    },
-    {
-      "id": "nioh-3-complete-edition",
-      "title": "Nioh 3 Complete Edition",
-      "headingHtml": "Nioh 3 Complete Edition <span class=\"tag-dlc\">Edición</span>",
-      "date": "2027-01-28",
-      "platformKeys": [
-        "ps5",
-        "xbox",
-        "pc"
-      ],
-      "platformsHtml": "PS5 · Xbox Series X|S · PC",
-      "image": {
-        "src": "https://teamninja-studio.com/nioh3/assets/img/ce/kv.png",
-        "alt": "Nioh 3 Complete Edition para PS5, Xbox Series X|S y PC",
-        "className": "",
-        "gridArt": "",
-        "poster": "",
-        "legacy": false
-      },
-      "store": {
-        "url": "https://teamninja-studio.com/nioh3/us/ce/",
-        "title": "Ver ficha oficial",
-        "ariaLabel": "Ver la ficha oficial de Nioh 3 Complete Edition"
-      },
-      "affiliate": null,
-      "review": null,
-      "tag": "Edición",
-      "badge": {
-        "class": "hype hype-mid",
-        "text": "Interesante"
-      },
-      "priority": 60,
-      "source": {
-        "url": "https://teamninja-studio.com/nioh3/us/ce/",
-        "official": true,
-        "host": "teamninja-studio.com",
-        "checkedAt": "2026-11-24",
-        "evidence": {
-          "title": "Nioh 3 Complete Edition",
-          "releaseDate": "2027-01-28",
-          "platforms": [
-            "ps5",
-            "xbox",
-            "pc"
-          ]
-        }
-      },
-      "legacy": false,
-      "trailer": "https://www.youtube.com/watch?v=ra04S_JrvwY"
     },
     {
       "id": "elta-defy-all-gods",
@@ -7917,5 +7917,5 @@
       "trailer": "https://www.youtube.com/watch?v=5u_MY4zleaI"
     }
   ],
-  "renderState": "e9a450c654d5"
+  "renderState": "2dcf0a740420"
 }

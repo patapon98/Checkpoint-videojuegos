@@ -5364,6 +5364,54 @@
       "trailer": "https://www.youtube.com/watch?v=d-xVnzs-b6Y"
     },
     {
+      "id": "the-wolf-among-us-remastered-switch",
+      "title": "The Wolf Among Us Remastered",
+      "headingHtml": "The Wolf Among Us Remastered <span class=\"tag-dlc\">Nueva plataforma</span>",
+      "date": "2026-11-29",
+      "platformKeys": [
+        "switch"
+      ],
+      "platformsHtml": "Switch",
+      "image": {
+        "provider": "rawg",
+        "query": "The Wolf Among Us Remastered",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3884860/80ddd096b6fdd5ab25162251bee4131c78cdf351/header.jpg?t=1787762158",
+        "alt": "The Wolf Among Us Remastered para Nintendo Switch",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.nintendo.com/US/store/products/the-wolf-among-us-remastered-switch/",
+        "title": "Ver en Nintendo eShop",
+        "ariaLabel": "Ver The Wolf Among Us Remastered para Nintendo Switch en Nintendo eShop"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Nueva plataforma",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.nintendo.com/US/store/products/the-wolf-among-us-remastered-switch/",
+        "official": true,
+        "host": "www.nintendo.com",
+        "checkedAt": "2026-11-25",
+        "evidence": {
+          "title": "The Wolf Among Us Remastered",
+          "releaseDate": "2026-11-29",
+          "platforms": [
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=ftyQs4bSve8"
+    },
+    {
       "id": "dune-awakening-blood-and-ice",
       "title": "Dune: Awakening – Blood and Ice",
       "headingHtml": "Dune: Awakening – Blood and Ice <span class=\"tag-dlc\">Expansión</span>",
@@ -7915,6 +7963,56 @@
       },
       "legacy": false,
       "trailer": "https://www.youtube.com/watch?v=5u_MY4zleaI"
+    },
+    {
+      "id": "showa-american-story",
+      "title": "Showa American Story",
+      "headingHtml": "Showa American Story",
+      "date": "2027-10-28",
+      "platformKeys": [
+        "ps5",
+        "pc"
+      ],
+      "platformsHtml": "PS5 · PC",
+      "image": {
+        "provider": "rawg",
+        "query": "Showa American Story",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687540/ce4d0d62bcc4d558977f34685bb52e65f788a3f0/header.jpg?t=1795464697",
+        "alt": "Showa American Story",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.showaamericanstory.com/",
+        "title": "Ver web oficial",
+        "ariaLabel": "Ver la web oficial de Showa American Story"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 60,
+      "source": {
+        "url": "https://twitter.com/NEKCOM_SAS/status/2125227949997584386",
+        "official": true,
+        "host": "twitter.com",
+        "checkedAt": "2026-11-25",
+        "evidence": {
+          "title": "Showa American Story",
+          "releaseDate": "2027-10-28",
+          "platforms": [
+            "ps5",
+            "pc"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=xDTTmhk7ME4"
     }
   ],
   "renderState": "2dcf0a740420"

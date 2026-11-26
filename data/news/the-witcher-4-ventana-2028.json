@@ -3,9 +3,9 @@
   "important": true,
   "emphasis": {
     "es": [
-      "la compilación actual ya puede ejecutarse en PC, PlayStation y Xbox",
-      "sigue en producción completa",
-      "519 desarrolladores"
+      "mantiene 2028 como ventana de lanzamiento",
+      "una colaboración específica para la campaña de marketing de The Witcher 4",
+      "más de 500 desarrolladores"
     ]
   },
   "category": {
@@ -14,53 +14,53 @@
   "date": "2026-08-24",
   "publishedAt": "2026-08-24T15:24:39Z",
   "addedAt": "2026-08-24T18:06:17Z",
-  "updated": "2026-09-03",
+  "updated": "2026-11-24",
   "featured": false,
   "ticker": {
     "keyword": {
       "es": "The Witcher 4"
     },
     "copy": {
-      "es": "The Witcher 4 mantiene 2028 y ya tiene una compilación ejecutable en PC, PlayStation y Xbox"
+      "es": "The Witcher 4 mantiene 2028 y suma a PlayStation a su campaña de marketing"
     }
   },
   "tone": "games",
   "title": {
-    "es": "The Witcher 4 mantiene 2028 y ya tiene una compilación ejecutable en PC, PlayStation y Xbox"
+    "es": "The Witcher 4 mantiene 2028 y suma a PlayStation a su campaña de marketing"
   },
   "summary": {
-    "es": "CD Projekt mantiene 2028 como ventana objetivo de The Witcher 4 y aclara que la compilación actual ya puede ejecutarse en PC, PlayStation y Xbox. El RPG sigue en producción completa con 519 desarrolladores."
+    "es": "CD Projekt mantiene 2028 como ventana de lanzamiento y firma con Sony una colaboración específica para la campaña de marketing de The Witcher 4. El RPG continúa como el mayor proyecto del estudio, con más de 500 desarrolladores."
   },
   "why": {
-    "es": "Que la compilación arranque en las tres plataformas no significa que el juego esté terminado. El equipo ya conoce sus elementos principales y está llenando el mundo de contenido, mientras revisa el progreso mediante hitos internos antes del lanzamiento."
+    "es": "El acuerdo coloca a PlayStation como socio promocional de uno de los lanzamientos más esperados de 2028, pero la documentación oficial solo detalla marketing y la presencia de juegos de CD Projekt en PlayStation y PlayStation Plus: no anuncia exclusividad ni cambia las plataformas ya previstas."
   },
   "sources": [
     {
       "label": "CD Projekt",
       "type": {
-        "es": "Transcripción oficial de los resultados del primer semestre de 2026"
+        "es": "Transcripción oficial de los resultados del tercer trimestre de 2026"
       },
-      "url": "https://www.cdprojekt.com/en/wp-content/uploads-en/2026/09/transcript-of-audio-webcast-on-cd-projekt-group-h1-2026-earnings.pdf"
+      "url": "https://www.cdprojekt.com/en/wp-content/uploads-en/2026/11/transcript-of-audio-webcast-on-cd-projekt-red-group-q3-2026-earnings.pdf"
     },
     {
       "label": "CD Projekt",
       "type": {
-        "es": "Centro oficial de resultados con cifras y calendario de lanzamientos"
+        "es": "Estados financieros oficiales que documentan los acuerdos con Sony"
       },
-      "url": "https://www.cdprojekt.com/en/investors/result-center/"
+      "url": "https://www.cdprojekt.com/en/wp-content/uploads-en/2026/11/consolidated-financial-statements-of-the-cd-projekt-red-group-for-q3-2026.pdf"
     },
     {
-      "label": "The Witcher",
+      "label": "CD Projekt",
       "type": {
-        "es": "Página oficial del proyecto y su nueva saga protagonizada por Ciri"
+        "es": "Centro oficial de resultados del tercer trimestre de 2026"
       },
-      "url": "https://www.thewitcher.com/sg/en/witcher4"
+      "url": "https://www.cdprojekt.com/en/investors/result-center/q3-2026-earnings/"
     }
   ],
   "homeDetails": {
     "es": [
-      "Michał Nowakowski precisó que la versión que usa el equipo puede arrancar en los sistemas objetivo, pero todavía no representa un juego completo con todo su contenido. La confirmación acota las plataformas previstas sin anticipar el estado final de cada versión.",
-      "CD Projekt describe la producción completa como la fase en la que ya sabe qué juego está construyendo y desarrolla sus contenidos y sistemas. The Witcher 4 abrirá una nueva saga con Ciri y continúa siendo el proyecto más grande del estudio."
+      "CD Projekt firmó el 24 de noviembre nuevos acuerdos con Sony Interactive Entertainment. Además de cubrir la presencia de sus juegos en PlayStation y en PlayStation Plus, incorporan una colaboración durante la próxima campaña de marketing de The Witcher 4.",
+      "La compañía mantiene el lanzamiento previsto para 2028 y sitúa el proyecto muy por delante del resto de sus producciones por tamaño de equipo. El acuerdo define la promoción del RPG, mientras que los documentos publicados no comunican exclusividad ni una alteración de sus plataformas."
     ]
   }
 }

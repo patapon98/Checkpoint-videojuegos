@@ -6269,6 +6269,58 @@
       "trailer": "https://www.youtube.com/watch?v=HdbINn5ciIs"
     },
     {
+      "id": "yooka-laylee-and-the-impossible-lair-definitive-edition",
+      "title": "Yooka-Laylee and the Impossible Lair: Definitive Edition",
+      "headingHtml": "Yooka-Laylee and the Impossible Lair: Definitive Edition <span class=\"tag-dlc\">Edición</span>",
+      "date": "2026-12-15",
+      "platformKeys": [
+        "ps5",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PC · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "Yooka-Laylee and the Impossible Lair: Definitive Edition",
+        "src": "https://www.playtonicgames.com/app/uploads/2026/11/Yooka-Laylee-IL-10-scaled.jpg",
+        "alt": "Yooka-Laylee and the Impossible Lair: Definitive Edition",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.playtonicgames.com/",
+        "title": "Ver ficha oficial",
+        "ariaLabel": "Ver la ficha oficial de Yooka-Laylee and the Impossible Lair: Definitive Edition"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Edición",
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://www.playtonicgames.com/",
+        "official": true,
+        "host": "www.playtonicgames.com",
+        "checkedAt": "2026-11-26",
+        "evidence": {
+          "title": "Yooka-Laylee and the Impossible Lair: Definitive Edition",
+          "releaseDate": "2026-12-15",
+          "platforms": [
+            "ps5",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=bMUMhk3fP4g"
+    },
+    {
       "id": "nioh-3-bloody-insurrection",
       "title": "Nioh 3: Bloody Insurrection",
       "headingHtml": "Nioh 3: Bloody Insurrection <span class=\"tag-dlc\">DLC</span>",

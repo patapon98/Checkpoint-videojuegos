@@ -6527,6 +6527,60 @@
       "trailer": "https://www.youtube.com/watch?v=uzBDuoZXTH0"
     },
     {
+      "id": "hark-the-ghoul",
+      "title": "HARK THE GHOUL",
+      "headingHtml": "HARK THE GHOUL",
+      "date": "2027-01-21",
+      "platformKeys": [
+        "ps5",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · Xbox Series X|S · PC · Switch · Switch 2",
+      "image": {
+        "provider": "rawg",
+        "query": "HARK THE GHOUL",
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3058660/header.jpg?t=1795726221",
+        "alt": "HARK THE GHOUL",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://store.steampowered.com/app/3058660/HARK_THE_GHOUL/",
+        "title": "Wishlist en Steam",
+        "ariaLabel": "Añadir HARK THE GHOUL a la lista de deseados en Steam"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": null,
+      "badge": {
+        "class": "hype hype-mid",
+        "text": "Interesante"
+      },
+      "priority": 55,
+      "source": {
+        "url": "https://steamcommunity.com/app/3058660/",
+        "official": true,
+        "host": "steamcommunity.com",
+        "checkedAt": "2026-11-27",
+        "evidence": {
+          "title": "HARK THE GHOUL",
+          "releaseDate": "2027-01-21",
+          "platforms": [
+            "ps5",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=sZX1EsTg6ZY"
+    },
+    {
       "id": "temtem-swarm-switch",
       "title": "Temtem: Swarm",
       "headingHtml": "Temtem: Swarm <span class=\"tag-dlc\">Nueva plataforma</span>",

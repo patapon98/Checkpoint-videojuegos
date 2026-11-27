@@ -1,0 +1,65 @@
+{
+  "id": "hollow-knight-silksong-sea-of-sorrow-fecha",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "llegará el 11 de diciembre de 2026",
+      "será gratuito para todos los jugadores",
+      "nuevas zonas, jefes y herramientas"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-27",
+  "publishedAt": "2026-11-27T15:00:00Z",
+  "addedAt": "2026-11-27T15:18:31Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Sea of Sorrow"
+    },
+    "copy": {
+      "es": "Sea of Sorrow llegará gratis a Hollow Knight: Silksong el 11 de diciembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Hollow Knight: Silksong fija Sea of Sorrow para el 11 de diciembre"
+  },
+  "summary": {
+    "es": "Team Cherry confirma que Sea of Sorrow, la primera gran expansión de Hollow Knight: Silksong, llegará el 11 de diciembre de 2026. El contenido será gratuito para todos los jugadores del juego base."
+  },
+  "why": {
+    "es": "La fecha cierra la ventana anunciada para 2026 y concreta el regreso de Hornet con una aventura de temática marítima que incorporará nuevas zonas, jefes y herramientas sin coste adicional."
+  },
+  "sources": [
+    {
+      "label": "Team Cherry",
+      "type": {
+        "es": "Presentación oficial con la fecha de lanzamiento"
+      },
+      "url": "https://www.youtube.com/watch?v=M-QUgdcBpZU"
+    },
+    {
+      "label": "Team Cherry",
+      "type": {
+        "es": "Anuncio oficial de la expansión y sus contenidos"
+      },
+      "url": "https://www.teamcherry.com.au/blog/holiday2025"
+    },
+    {
+      "label": "MeriStation",
+      "type": {
+        "es": "Información y contexto editorial"
+      },
+      "url": "https://as.com/meristation/noticias/el-dlc-de-hollow-knight-silksong-sea-of-sorrow-confirma-su-fecha-de-lanzamiento-y-es-gratis-para-todos-f202611-n/"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Team Cherry comunicó la fecha durante Cherry Time!, su presentación especial de noviembre. La expansión se estrenará dos semanas después del anuncio y mantendrá el compromiso previo del estudio de ofrecerla sin coste a quienes ya tengan Hollow Knight: Silksong.",
+      "Sea of Sorrow llevará a Hornet a recorrer y explorar bajo mares castigados por la sal. El estudio había adelantado que este bloque de contenido ampliaría la aventura con escenarios, combates contra jefes y herramientas inéditas para la protagonista."
+    ]
+  }
+}

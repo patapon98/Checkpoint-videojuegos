@@ -1,0 +1,65 @@
+{
+  "id": "team-cherry-presents-tres-juegos",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "estrena el sello editorial Team Cherry Presents",
+      "publicará tres nuevos juegos para PC",
+      "amplía la actividad del estudio más allá de Hollow Knight"
+    ]
+  },
+  "category": {
+    "es": "Industria"
+  },
+  "date": "2026-11-27",
+  "publishedAt": "2026-11-27T15:00:00Z",
+  "addedAt": "2026-11-27T18:09:46Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Team Cherry Presents"
+    },
+    "copy": {
+      "es": "Team Cherry Presents nace con tres nuevos juegos independientes para PC"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Team Cherry estrena sello editorial y presenta tres juegos"
+  },
+  "summary": {
+    "es": "Team Cherry estrena el sello editorial Team Cherry Presents y publicará tres nuevos juegos para PC: Blokkan: Secret of the Walking City, Radio Rain y The Botanist and the Translator. Ninguno tiene todavía fecha de lanzamiento."
+  },
+  "why": {
+    "es": "La iniciativa amplía la actividad del estudio más allá de Hollow Knight y lo convierte en editor y apoyo técnico de proyectos externos, con Huy Le como nuevo cuarto miembro y director técnico de la línea."
+  },
+  "sources": [
+    {
+      "label": "Team Cherry",
+      "type": {
+        "es": "Anuncio oficial del sello y sus tres primeros juegos"
+      },
+      "url": "https://www.teamcherry.com.au/blog/its-cherry-time"
+    },
+    {
+      "label": "Team Cherry",
+      "type": {
+        "es": "Presentación oficial Cherry Time!"
+      },
+      "url": "https://www.youtube.com/watch?v=M-QUgdcBpZU"
+    },
+    {
+      "label": "Gematsu",
+      "type": {
+        "es": "Información y contexto editorial sobre Team Cherry Presents"
+      },
+      "url": "https://www.gematsu.com/companies/team-cherry/team-cherry-presents"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "El sello publicará los proyectos cuando estén listos y prestará apoyo técnico durante su desarrollo. Huy Le se incorpora como cuarto integrante de Team Cherry y asumirá herramientas, sistemas, mecánicas y resolución de problemas para los juegos de la nueva línea.",
+      "Blokkan propone una aventura de misterio y puzles en una ciudad robótica ambulante; Radio Rain combina plataformas y acción en unas ruinas azotadas por la lluvia; The Botanist and the Translator plantea una investigación botánica a escala planetaria."
+    ]
+  }
+}

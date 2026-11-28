@@ -1,0 +1,71 @@
+{
+  "id": "warframe-tau-fecha-diciembre",
+  "important": true,
+  "emphasis": {
+    "es": [
+      "llegará gratis el 9 de diciembre de 2026",
+      "su primer sistema estelar nuevo en 13 años",
+      "Fornax y los páramos de Perita"
+    ]
+  },
+  "category": {
+    "es": "Lanzamientos"
+  },
+  "date": "2026-11-27",
+  "publishedAt": "2026-11-27T19:00:00Z",
+  "addedAt": "2026-11-28T09:05:32Z",
+  "featured": false,
+  "ticker": {
+    "keyword": {
+      "es": "Warframe: Tau"
+    },
+    "copy": {
+      "es": "Warframe: Tau abrirá un nuevo sistema estelar el 9 de diciembre"
+    }
+  },
+  "tone": "games",
+  "title": {
+    "es": "Warframe: Tau fija el 9 de diciembre para abrir un nuevo sistema estelar"
+  },
+  "summary": {
+    "es": "Digital Extremes confirma que Warframe: Tau llegará gratis el 9 de diciembre de 2026 a PC, consolas y móviles. La actualización abrirá su primer sistema estelar nuevo en 13 años con una carta estelar propia."
+  },
+  "why": {
+    "es": "El salto amplía materialmente el universo de Warframe con la ciudad anular de Fornax y los páramos de Perita, nuevos modos, sindicatos, misiones y una trama detectivesca que seguirá creciendo tras el estreno."
+  },
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=hcfQbzCHVvk",
+    "label": {
+      "es": "Ver el tráiler oficial de jugabilidad"
+    }
+  },
+  "sources": [
+    {
+      "label": "Digital Extremes",
+      "type": {
+        "es": "Anuncio oficial de la fecha, plataformas y contenidos de Tau"
+      },
+      "url": "https://www.digitalextremes.com/news/november-warframe-devstream-highlights-warframe-tau-set-for-release-december-9"
+    },
+    {
+      "label": "Warframe",
+      "type": {
+        "es": "Página oficial del nuevo sistema estelar y sus mundos"
+      },
+      "url": "https://www.warframe.com/en/tau"
+    },
+    {
+      "label": "Warframe",
+      "type": {
+        "es": "Tráiler oficial de jugabilidad de Warframe: Tau"
+      },
+      "url": "https://www.youtube.com/watch?v=hcfQbzCHVvk"
+    }
+  ],
+  "homeDetails": {
+    "es": [
+      "Tau se estrenará gratis en todas las versiones de Warframe para PC, consolas y móviles. Digital Extremes presenta el destino como una carta estelar artesanal que continuará expandiéndose, trece años después de que el juego empezara a construir su historia alrededor del sistema de Origen.",
+      "La primera etapa conecta tres centros sociales de Fornax mediante recorridos a pie y una red de autopistas, e incorpora modos como Racket y Mayhem, variantes de misiones existentes y su propio Steel Path. The Fornax Informer añadirá tres facciones, pistas, interrogatorios y recompensas ligadas a una investigación dentro de la ciudad."
+    ]
+  }
+}

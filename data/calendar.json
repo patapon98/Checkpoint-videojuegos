@@ -6163,6 +6163,60 @@
       "trailer": "https://www.youtube.com/watch?v=xU-qK6FyUoM"
     },
     {
+      "id": "hollow-knight-silksong-sea-of-sorrow",
+      "title": "Hollow Knight: Silksong – Sea of Sorrow",
+      "headingHtml": "Hollow Knight: Silksong – Sea of Sorrow <span class=\"tag-dlc\">Expansión</span>",
+      "date": "2026-12-11",
+      "platformKeys": [
+        "ps5",
+        "ps4",
+        "xbox",
+        "pc",
+        "switch"
+      ],
+      "platformsHtml": "PS5 · PS4 · Xbox Series X|S · PC (Windows · macOS · Linux) · Switch 2 · Switch",
+      "image": {
+        "src": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/header.jpg",
+        "alt": "Hollow Knight: Silksong – Sea of Sorrow",
+        "className": "",
+        "gridArt": "",
+        "poster": "",
+        "legacy": false
+      },
+      "store": {
+        "url": "https://www.teamcherry.com.au/blog/its-cherry-time",
+        "title": "Ver anuncio oficial",
+        "ariaLabel": "Ver el anuncio oficial de Hollow Knight: Silksong – Sea of Sorrow"
+      },
+      "affiliate": null,
+      "review": null,
+      "tag": "Expansión",
+      "badge": {
+        "class": "hype hype-high",
+        "text": "Hype alto"
+      },
+      "priority": 70,
+      "source": {
+        "url": "https://www.teamcherry.com.au/blog/its-cherry-time",
+        "official": true,
+        "host": "www.teamcherry.com.au",
+        "checkedAt": "2026-11-28",
+        "evidence": {
+          "title": "Hollow Knight: Silksong – Sea of Sorrow",
+          "releaseDate": "2026-12-11",
+          "platforms": [
+            "ps5",
+            "ps4",
+            "xbox",
+            "pc",
+            "switch"
+          ]
+        }
+      },
+      "legacy": false,
+      "trailer": "https://www.youtube.com/watch?v=7hj4g173FhM"
+    },
+    {
       "id": "path-of-exile-2",
       "title": "Path of Exile 2",
       "headingHtml": "Path of Exile 2",
